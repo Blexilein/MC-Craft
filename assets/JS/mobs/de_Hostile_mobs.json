@@ -1,0 +1,4154 @@
+[
+  {
+    "id": "minecraft:blaze",
+    "name": "Lohe",
+    "numeric_id": "( Nur Bedrock ) 43",
+    "type": "hostile",
+    "category": "Feindliche Mobs",
+    "icon": "/assets/img/mobs/hostile/Blaze.webp",
+    "description": "Lohe ist feindlich.",
+    "biome": "Netherfestungen; Bedrock zusätzlich natürlich in Festungsbereichen",
+    "aliases": [],
+    "introduced_date": "2011-09-22",
+    "removed_date": "",
+    "gallery": [],
+    "model": "",
+    "animation": [],
+    "source": "",
+    "updated_at": "2026-08-22",
+    "notes": "Schneebälle verursachen bei Lohen Schaden; Wassereimer können im Nether nicht normal platziert werden.",
+    "version": "Java Edition Beta 1.9 Prerelease / Bedrock Edition 0.12.1",
+    "edition": "Java Edition, Bedrock Edition",
+    "effects": [],
+    "effect_immunities": [],
+    "status": "Verfügbar",
+    "tags": [
+      "Feindliche Mobs",
+      "Feindlich"
+    ],
+    "related_entries": [],
+    "command": "/summon minecraft:blaze",
+    "version_history": [
+      {
+        "version": "Java Edition Beta 1.9 Prerelease / Bedrock Edition 0.12.1",
+        "change": "Hinzugefügt.",
+        "type": "added",
+        "date": "2011-09-22"
+      }
+    ],
+    "texture": [
+      {
+        "name": "Blaze Blaze",
+        "category": "standard",
+        "description": "Variante: Blaze Blaze.",
+        "file": "/assets/img/texture/mobs/blaze/blaze.png"
+      }
+    ],
+    "sounds": [],
+    "health": 20,
+    "damage": "Nahkampf: Einfach 4, Normal 6, Schwer 9; Feuerball: 5 plus Brandschaden",
+    "armor": 0,
+    "experience": "10",
+    "dimension": "Nether",
+    "movement_speed": 0.23,
+    "size": {
+      "width": "Breite: 0.6",
+      "height": "Höhe: 1.8"
+    },
+    "spawn": {
+      "light_level": [
+        "Java: aus Spawnern bis Lichtstufe 11; natürliche Festungs-Spawns bis 11",
+        "Bedrock-Regeln abweichend"
+      ],
+      "biome": "Netherfestungsbereiche",
+      "structure": "Netherfestung"
+    },
+    "light_level": [
+      "Java: aus Spawnern bis Lichtstufe 11; natürliche Festungs-Spawns bis 11",
+      "Bedrock-Regeln abweichend"
+    ],
+    "classification": "Feindlich",
+    "renewable": "Ja",
+    "can_despawn": "Ja, sofern die normalen Despawn-Regeln gelten",
+    "tameable": "Nein",
+    "breedable": "Nein",
+    "duplicable": "Nein",
+    "duplication_item": "",
+    "leashable": "Nein",
+    "rideable": "Nein",
+    "baby_variant": "Nein",
+    "drops": [
+      {
+        "item": "minecraft:blaze_rod",
+        "chance": "100 %",
+        "amount": "0–1 (+0–1 je Plünderungsstufe)",
+        "condition": "Nur bei Tod durch Spieler oder gezähmten Wolf"
+      }
+    ],
+    "abilities": [
+      "Fliegt und schwebt",
+      "Feuert Salven aus drei Feuerbällen",
+      "Ist immun gegen Feuer und Lava",
+      "Nimmt Schaden durch Wasser, Regen, Schneebälle und Pulverschnee"
+    ],
+    "fun_fact": "Schneebälle verursachen bei Lohen Schaden; Wassereimer können im Nether nicht normal platziert werden.",
+    "attack_type": "Nahkampf und Feuerball-Fernkampf",
+    "targets": [
+      "Spieler",
+      "Schneegolem"
+    ],
+    "enemy_mobs": [],
+    "follows": [],
+    "healing_item": "",
+    "fire_immune": "Ja",
+    "undead": "Nein",
+    "boss_bar": "Nein",
+    "knockback_resistance": "",
+    "loot_table": "minecraft:entities/blaze",
+    "java_entity_id": "minecraft:blaze",
+    "bedrock_entity_id": "minecraft:blaze"
+  },
+  {
+    "id": "minecraft:bogged",
+    "name": "Sumpfskelett",
+    "numeric_id": "( Nur Bedrock ) 144",
+    "type": "hostile",
+    "category": "Feindliche Mobs",
+    "icon": "/assets/img/mobs/hostile/Bogged.webp",
+    "description": "Sumpfskelett ist feindlich / untot.",
+    "biome": "Sumpf und Mangrovensumpf",
+    "aliases": [
+      "Sumpf-Skelett"
+    ],
+    "introduced_date": "2024-06-13",
+    "removed_date": "",
+    "gallery": [],
+    "model": "",
+    "animation": [],
+    "source": "",
+    "updated_at": "2026-08-22",
+    "notes": "Die Pilze werden durch Scheren gewonnen und sind keine normalen Todesdrops.",
+    "version": "Java Edition 1.21 / Bedrock Edition 1.21.0",
+    "edition": "Java Edition, Bedrock Edition",
+    "effects": [],
+    "effect_immunities": [
+      "Gift",
+      "Regeneration"
+    ],
+    "status": "Verfügbar",
+    "tags": [
+      "Feindliche Mobs",
+      "Feindlich / untot",
+      "Untot"
+    ],
+    "related_entries": [],
+    "command": "/summon minecraft:bogged",
+    "version_history": [
+      {
+        "version": "Java Edition 1.21 / Bedrock Edition 1.21.0",
+        "change": "Hinzugefügt.",
+        "type": "added",
+        "date": "2024-06-13"
+      }
+    ],
+    "texture": [
+      {
+        "name": "Bogged Bogged Overlay",
+        "category": "standard",
+        "description": "Variante: Bogged Bogged Overlay.",
+        "file": "/assets/img/texture/mobs/bogged/bogged_overlay.png"
+      },
+      {
+        "name": "Bogged Bogged",
+        "category": "standard",
+        "description": "Variante: Bogged Bogged.",
+        "file": "/assets/img/texture/mobs/bogged/bogged.png"
+      }
+    ],
+    "sounds": [],
+    "health": 16,
+    "damage": "Bogenpfeile abhängig von Schwierigkeit; zusätzlich Gift I für 4 Sekunden",
+    "armor": 2,
+    "experience": "5 plus 1–3 je natürlich erzeugtem Ausrüstungsteil",
+    "dimension": "Overworld",
+    "movement_speed": 0.25,
+    "size": {
+      "width": "Breite: 0.6",
+      "height": "Höhe: 1.99"
+    },
+    "spawn": {
+      "light_level": [
+        "Blocklicht 0 bei natürlichem Spawn"
+      ],
+      "biome": "Sumpf, Mangrovensumpf",
+      "structure": "Prüfungskammer möglich"
+    },
+    "light_level": [
+      "Blocklicht 0 bei natürlichem Spawn"
+    ],
+    "classification": "Feindlich / untot",
+    "renewable": "Ja",
+    "can_despawn": "Ja, sofern die normalen Despawn-Regeln gelten",
+    "tameable": "Nein",
+    "breedable": "Nein",
+    "duplicable": "Nein",
+    "duplication_item": "",
+    "leashable": "Nein",
+    "rideable": "Nein",
+    "baby_variant": "Nein",
+    "drops": [
+      {
+        "item": "minecraft:arrow",
+        "chance": "100 %",
+        "amount": "0–2 (+0–1 je Plünderungsstufe)"
+      },
+      {
+        "item": "minecraft:bone",
+        "chance": "100 %",
+        "amount": "0–2 (+0–1 je Plünderungsstufe)"
+      },
+      {
+        "item": "Natürlich erzeugter Bogen",
+        "chance": "8,5 % (+1 Prozentpunkt je Plünderungsstufe)",
+        "amount": "1"
+      },
+      {
+        "item": "Pfeil der Vergiftung",
+        "chance": "Bis zu 1",
+        "amount": "0–1",
+        "condition": "Nur bei Tod durch Spieler/gezähmten Wolf; Plünderung erhöht das Maximum"
+      }
+    ],
+    "abilities": [
+      "Schießt langsamer als ein normales Skelett",
+      "Verursacht Gift mit seinen Pfeilen",
+      "Kann mit einer Schere zwei Pilze abgeben",
+      "Verbrennt im Sonnenlicht"
+    ],
+    "fun_fact": "Die Pilze werden durch Scheren gewonnen und sind keine normalen Todesdrops.",
+    "attack_type": "Bogen mit Giftpfeilen",
+    "targets": [
+      "Spieler",
+      "Dorfbewohner",
+      "Eisengolem",
+      "Baby-Schildkröten"
+    ],
+    "enemy_mobs": [],
+    "follows": [],
+    "healing_item": "",
+    "fire_immune": "Nein; viele Untote verbrennen im Sonnenlicht, sofern nicht geschützt",
+    "undead": "Ja",
+    "boss_bar": "Nein",
+    "knockback_resistance": "",
+    "loot_table": "minecraft:entities/bogged",
+    "java_entity_id": "minecraft:bogged",
+    "bedrock_entity_id": "minecraft:bogged"
+  },
+  {
+    "id": "minecraft:breeze",
+    "name": "Böe",
+    "numeric_id": "( Nur Bedrock ) 140",
+    "type": "hostile",
+    "category": "Feindliche Mobs",
+    "icon": "/assets/img/mobs/hostile/Breeze.webp",
+    "description": "Böe ist feindlich.",
+    "biome": "Keine natürliche Biom-Bindung",
+    "aliases": [
+      "Brise"
+    ],
+    "introduced_date": "2024-06-13",
+    "removed_date": "",
+    "gallery": [],
+    "model": "",
+    "animation": [],
+    "source": "",
+    "updated_at": "2026-08-22",
+    "notes": "",
+    "version": "Java Edition 1.21 / Bedrock Edition 1.21.0",
+    "edition": "Java Edition, Bedrock Edition",
+    "effects": [],
+    "effect_immunities": [],
+    "status": "Verfügbar",
+    "tags": [
+      "Feindliche Mobs",
+      "Feindlich"
+    ],
+    "related_entries": [],
+    "command": "/summon minecraft:breeze",
+    "version_history": [
+      {
+        "version": "Java Edition 1.21 / Bedrock Edition 1.21.0",
+        "change": "Hinzugefügt.",
+        "type": "added",
+        "date": "2024-06-13"
+      }
+    ],
+    "texture": [
+      {
+        "name": "Breeze Breeze Eyes",
+        "category": "eyes",
+        "description": "Variante: Breeze Breeze Eyes.",
+        "file": "/assets/img/texture/mobs/breeze/breeze_eyes.png"
+      },
+      {
+        "name": "Breeze Breeze Wind",
+        "category": "standard",
+        "description": "Variante: Breeze Breeze Wind.",
+        "file": "/assets/img/texture/mobs/breeze/breeze_wind.png"
+      },
+      {
+        "name": "Breeze Breeze",
+        "category": "standard",
+        "description": "Variante: Breeze Breeze.",
+        "file": "/assets/img/texture/mobs/breeze/breeze.png"
+      }
+    ],
+    "sounds": [],
+    "health": 30,
+    "damage": "Windladung: direkter Treffer 1; Windstoß verursacht fall- und situationsabhängigen Zusatzschaden",
+    "armor": 0,
+    "experience": "10",
+    "dimension": "Overworld",
+    "movement_speed": 0.35,
+    "size": {
+      "width": "Breite: 0.6",
+      "height": "Höhe: 1.77"
+    },
+    "spawn": {
+      "light_level": [
+        "Beliebig"
+      ],
+      "biome": "Keine",
+      "structure": "Prüfungskammer aus bestimmten Prüfungs-Spawnern"
+    },
+    "light_level": [
+      "Beliebig"
+    ],
+    "classification": "Feindlich",
+    "renewable": "Ja",
+    "can_despawn": "Ja, sofern die normalen Despawn-Regeln gelten",
+    "tameable": "Nein",
+    "breedable": "Nein",
+    "duplicable": "Nein",
+    "duplication_item": "",
+    "leashable": "Nein",
+    "rideable": "Nein",
+    "baby_variant": "Nein",
+    "drops": [
+      {
+        "item": "minecraft:breeze_rod",
+        "chance": "100 %",
+        "amount": "1–2 (+1 je Plünderungsstufe möglich)",
+        "condition": "Nur bei Tod durch Spieler oder gezähmten Wolf"
+      }
+    ],
+    "abilities": [
+      "Springt sehr weit",
+      "Schießt Windladungen",
+      "Windstöße betätigen geeignete Knöpfe, Hebel, Türen und Falltüren",
+      "Ist gegen viele Projektilarten immun und lenkt sie ab"
+    ],
+    "fun_fact": "",
+    "attack_type": "Windladungs-Fernkampf",
+    "targets": [
+      "Spieler",
+      "Eisengolem"
+    ],
+    "enemy_mobs": [],
+    "follows": [],
+    "healing_item": "",
+    "fire_immune": "Nein",
+    "undead": "Nein",
+    "boss_bar": "Nein",
+    "knockback_resistance": "",
+    "loot_table": "minecraft:entities/breeze",
+    "java_entity_id": "minecraft:breeze",
+    "bedrock_entity_id": "minecraft:breeze"
+  },
+  {
+    "id": "minecraft:creaking",
+    "name": "Knarz",
+    "numeric_id": "( Nur Bedrock ) 146",
+    "type": "hostile",
+    "category": "Feindliche Mobs",
+    "icon": "/assets/img/mobs/hostile/Creaking.gif",
+    "description": "Knarz ist feindlich / herzgebundene kreatur.",
+    "biome": "Blasser Garten",
+    "aliases": [],
+    "introduced_date": "2024-10-22",
+    "removed_date": "",
+    "gallery": [],
+    "model": "",
+    "animation": [],
+    "source": "",
+    "updated_at": "2026-08-22",
+    "notes": "Nur die per Spawn-Ei oder Befehl unabhängig erzeugte Form besitzt 1 Lebenspunkt und kann normal getötet werden; beide Formen lassen nichts fallen.",
+    "version": "Java Edition 1.21.2 / Bedrock Edition 1.21.50",
+    "edition": "Java Edition, Bedrock Edition",
+    "effects": [],
+    "effect_immunities": [],
+    "status": "Verfügbar",
+    "tags": [
+      "Feindliche Mobs",
+      "Feindlich / herzgebundene Kreatur"
+    ],
+    "related_entries": [],
+    "command": "/summon minecraft:creaking",
+    "version_history": [
+      {
+        "version": "Java Edition 1.21.2 / Bedrock Edition 1.21.50",
+        "change": "Hinzugefügt.",
+        "type": "added",
+        "date": "2024-10-22"
+      }
+    ],
+    "texture": [
+      {
+        "name": "Creaking Creaking Eyes",
+        "category": "eyes",
+        "description": "Variante: Creaking Creaking Eyes.",
+        "file": "/assets/img/texture/mobs/creaking/creaking_eyes.png"
+      },
+      {
+        "name": "Creaking Creaking",
+        "category": "standard",
+        "description": "Variante: Creaking Creaking.",
+        "file": "/assets/img/texture/mobs/creaking/creaking.png"
+      }
+    ],
+    "sounds": [],
+    "health": "Herzgebunden: nicht normal verwundbar; unabhängig beschworen: 1",
+    "damage": "Einfach 2, Normal 3, Schwer 4",
+    "armor": 0,
+    "experience": "0",
+    "dimension": "Overworld",
+    "movement_speed": 0.3,
+    "size": {
+      "width": "Breite: 0.9",
+      "height": "Höhe: 2.7"
+    },
+    "spawn": {
+      "light_level": [
+        "Lichtunabhängig; nur nachts bei aktivem Knarzherz"
+      ],
+      "biome": "Blasser Garten",
+      "structure": "Knarzherz"
+    },
+    "light_level": [
+      "Lichtunabhängig; nur nachts bei aktivem Knarzherz"
+    ],
+    "classification": "Feindlich / herzgebundene Kreatur",
+    "renewable": "Ja",
+    "can_despawn": "Ja, sofern die normalen Despawn-Regeln gelten",
+    "tameable": "Nein",
+    "breedable": "Nein",
+    "duplicable": "Nein",
+    "duplication_item": "",
+    "leashable": "Nein",
+    "rideable": "Nein",
+    "baby_variant": "Nein",
+    "drops": [],
+    "abilities": [
+      "Bewegt sich nur, wenn kein überlebender Spieler es ansieht",
+      "Herzgebundene Form leitet Trefferpartikel zum Knarzherz",
+      "Verschwindet, wenn das zugehörige Herz zerstört oder inaktiv wird"
+    ],
+    "fun_fact": "Nur die per Spawn-Ei oder Befehl unabhängig erzeugte Form besitzt 1 Lebenspunkt und kann normal getötet werden; beide Formen lassen nichts fallen.",
+    "attack_type": "Nahkampf",
+    "targets": [
+      "Spieler"
+    ],
+    "enemy_mobs": [],
+    "follows": [],
+    "healing_item": "",
+    "fire_immune": "Nein",
+    "undead": "Nein",
+    "boss_bar": "Nein",
+    "knockback_resistance": "",
+    "loot_table": "minecraft:entities/creaking",
+    "java_entity_id": "minecraft:creaking",
+    "bedrock_entity_id": "minecraft:creaking"
+  },
+  {
+    "id": "minecraft:creeper",
+    "name": "Creeper",
+    "numeric_id": "( Nur Bedrock ) 33",
+    "type": "hostile",
+    "category": "Feindliche Mobs",
+    "icon": "/assets/img/mobs/hostile/Creeper.png",
+    "description": "Creeper ist feindlich.",
+    "biome": "Fast alle geeigneten Oberweltbiome",
+    "aliases": [],
+    "introduced_date": "2009-09-01",
+    "removed_date": "",
+    "gallery": [],
+    "model": "",
+    "animation": [],
+    "source": "",
+    "updated_at": "2026-08-22",
+    "notes": "",
+    "version": "Java Edition Classic 0.24 SURVIVAL TEST / Bedrock Edition 0.4.0",
+    "edition": "Java Edition, Bedrock Edition",
+    "effects": [],
+    "effect_immunities": [],
+    "status": "Verfügbar",
+    "tags": [
+      "Feindliche Mobs",
+      "Feindlich"
+    ],
+    "related_entries": [],
+    "command": "/summon minecraft:creeper",
+    "version_history": [
+      {
+        "version": "Java Edition Classic 0.24 SURVIVAL TEST / Bedrock Edition 0.4.0",
+        "change": "Hinzugefügt.",
+        "type": "added",
+        "date": "2009-09-01"
+      }
+    ],
+    "texture": [
+      {
+        "name": "Creeper Creeper Armor",
+        "category": "armor",
+        "description": "Variante: Creeper Creeper Armor.",
+        "file": "/assets/img/texture/mobs/creeper/creeper_armor.png"
+      },
+      {
+        "name": "Creeper Creeper",
+        "category": "standard",
+        "description": "Variante: Creeper Creeper.",
+        "file": "/assets/img/texture/mobs/creeper/creeper.png"
+      }
+    ],
+    "sounds": [],
+    "health": 20,
+    "damage": "Explosion maximal: Einfach 22, Normal 43, Schwer 64; Entfernung reduziert den Schaden",
+    "armor": 0,
+    "experience": "5",
+    "dimension": "Overworld",
+    "movement_speed": 0.2,
+    "size": {
+      "width": "Breite: 0.6",
+      "height": "Höhe: 1.7"
+    },
+    "spawn": {
+      "light_level": [
+        "Blocklicht 0"
+      ],
+      "biome": "Fast alle geeigneten Oberweltbiome",
+      "structure": "Keine"
+    },
+    "light_level": [
+      "Blocklicht 0"
+    ],
+    "classification": "Feindlich",
+    "renewable": "Ja",
+    "can_despawn": "Ja, sofern die normalen Despawn-Regeln gelten",
+    "tameable": "Nein",
+    "breedable": "Nein",
+    "duplicable": "Nein",
+    "duplication_item": "",
+    "leashable": "Nein",
+    "rideable": "Nein",
+    "baby_variant": "Nein",
+    "drops": [
+      {
+        "item": "minecraft:gunpowder",
+        "chance": "100 %",
+        "amount": "0–2 (+0–1 je Plünderungsstufe)"
+      },
+      {
+        "item": "Musikplatte",
+        "chance": "100 %",
+        "amount": "1",
+        "condition": "Wenn ein Skelett, Eiswanderer oder Sumpfskelett den Creeper tötet"
+      },
+      {
+        "item": "minecraft:creeper_head",
+        "chance": "100 %",
+        "amount": "1",
+        "condition": "Wenn die Explosion eines geladenen Creepers ihn tötet; pro geladener Explosion in Java höchstens ein Kopf"
+      }
+    ],
+    "abilities": [
+      "Nähert sich fast lautlos",
+      "Zündet in Zielnähe",
+      "Kann durch Blitz zum geladenen Creeper werden",
+      "Katzen und Ozelots schrecken ihn ab"
+    ],
+    "fun_fact": "",
+    "attack_type": "Selbstexplosion",
+    "targets": [
+      "Spieler",
+      "Eisengolem",
+      "Schneegolem"
+    ],
+    "enemy_mobs": [],
+    "follows": [],
+    "healing_item": "",
+    "fire_immune": "Nein",
+    "undead": "Nein",
+    "boss_bar": "Nein",
+    "knockback_resistance": "",
+    "loot_table": "minecraft:entities/creeper",
+    "java_entity_id": "minecraft:creeper",
+    "bedrock_entity_id": "minecraft:creeper"
+  },
+  {
+    "id": "minecraft:creeper",
+    "name": "Geladener Creeper",
+    "numeric_id": "Keine (Entsteht durch Blitzeinschlag an einem normalen Creeper)",
+    "type": "hostile",
+    "category": "Feindliche Mobs",
+    "icon": "/assets/img/mobs/hostile/Charged_Creeper.webp",
+    "description": "Geladener Creeper ist feindliche creeper-variante; keine eigene entity-id.",
+    "biome": "Überall, wo ein Creeper von Blitz getroffen wird",
+    "aliases": [],
+    "introduced_date": "2011-04-19",
+    "removed_date": "",
+    "gallery": [],
+    "model": "",
+    "animation": [],
+    "source": "",
+    "updated_at": "2026-08-22",
+    "notes": "Der geladene Creeper ist ein Datenzustand von minecraft:creeper und kein eigener Mobtyp.",
+    "version": "Java Edition Beta 1.5 / Bedrock Edition 0.12.1",
+    "edition": "Java Edition, Bedrock Edition",
+    "effects": [],
+    "effect_immunities": [],
+    "status": "Verfügbar",
+    "tags": [
+      "Feindliche Mobs",
+      "Feindliche Creeper-Variante; keine eigene Entity-ID"
+    ],
+    "related_entries": [],
+    "command": "/summon minecraft:creeper ~ ~ ~ {powered:1b}",
+    "version_history": [
+      {
+        "version": "Java Edition Beta 1.5 / Bedrock Edition 0.12.1",
+        "change": "Hinzugefügt.",
+        "type": "added",
+        "date": "2011-04-19"
+      }
+    ],
+    "texture": [
+      {
+        "name": "Creeper",
+        "category": "standard",
+        "description": "Standardtextur.",
+        "file": "/assets/img/texture/mobs/creeper/creeper.png"
+      },
+      {
+        "name": "Creeper Rüstung",
+        "category": "armor",
+        "description": "Blitz-Rüstung (geladen).",
+        "file": "/assets/img/texture/mobs/creeper/creeper_armor.png"
+      }
+    ],
+    "sounds": [],
+    "health": 20,
+    "damage": "Explosion maximal: Einfach 43, Normal 85, Schwer 127; Entfernung reduziert den Schaden",
+    "armor": 0,
+    "experience": "5",
+    "dimension": "Overworld",
+    "movement_speed": 0.2,
+    "size": {
+      "width": "Breite: 0.6",
+      "height": "Höhe: 1.7"
+    },
+    "spawn": {
+      "light_level": [
+        "Nicht direkt lichtabhängig"
+      ],
+      "biome": "Entsteht aus einem Creeper durch natürlichen oder herbeigerufenen Blitz",
+      "structure": "Keine"
+    },
+    "light_level": [
+      "Nicht direkt lichtabhängig"
+    ],
+    "classification": "Feindliche Creeper-Variante; keine eigene Entity-ID",
+    "renewable": "Ja",
+    "can_despawn": "Ja, sofern die normalen Despawn-Regeln gelten",
+    "tameable": "Nein",
+    "breedable": "Nein",
+    "duplicable": "Nein",
+    "duplication_item": "",
+    "leashable": "Nein",
+    "rideable": "Nein",
+    "baby_variant": "Nein",
+    "drops": [
+      {
+        "item": "minecraft:gunpowder",
+        "chance": "100 %",
+        "amount": "0–2 (+0–1 je Plünderungsstufe)"
+      },
+      {
+        "item": "Mobkopf",
+        "chance": "100 %",
+        "amount": "1 je berechtigtem Opfer",
+        "condition": "Explosion tötet Creeper, Zombie, Skelett, Witherskelett oder Piglin; Java begrenzt die Explosion normalerweise auf einen Kopf"
+      }
+    ],
+    "abilities": [
+      "Doppelte Explosionsstärke eines normalen Creepers",
+      "Erzeugt unter passenden Bedingungen Mobköpfe",
+      "Ist an einer blauen elektrischen Aura erkennbar"
+    ],
+    "fun_fact": "Der geladene Creeper ist ein Datenzustand von minecraft:creeper und kein eigener Mobtyp.",
+    "attack_type": "Verstärkte Selbstexplosion",
+    "targets": [
+      "Spieler",
+      "Eisengolem",
+      "Schneegolem"
+    ],
+    "enemy_mobs": [],
+    "follows": [],
+    "healing_item": "",
+    "fire_immune": "Nein",
+    "undead": "Nein",
+    "boss_bar": "Nein",
+    "knockback_resistance": "",
+    "loot_table": "minecraft:entities/creeper",
+    "java_entity_id": "Keine eigene Entity-ID",
+    "bedrock_entity_id": "Keine eigene Entity-ID"
+  },
+  {
+    "id": "minecraft:elder_guardian",
+    "name": "Großer Wächter",
+    "numeric_id": "( Nur Bedrock ) 50",
+    "type": "hostile",
+    "category": "Feindliche Mobs",
+    "icon": "/assets/img/mobs/hostile/Elder_Guardian.webp",
+    "description": "Großer Wächter ist feindlich / aquatisch.",
+    "biome": "Tiefe Ozeanbiome mit Ozeanmonument",
+    "aliases": [],
+    "introduced_date": "2014-09-02",
+    "removed_date": "",
+    "gallery": [],
+    "model": "",
+    "animation": [],
+    "source": "",
+    "updated_at": "2026-08-22",
+    "notes": "",
+    "version": "Java Edition 1.8 / Bedrock Edition 0.16.0",
+    "edition": "Java Edition, Bedrock Edition",
+    "effects": [],
+    "effect_immunities": [],
+    "status": "Verfügbar",
+    "tags": [
+      "Feindliche Mobs",
+      "Feindlich / aquatisch"
+    ],
+    "related_entries": [],
+    "command": "/summon minecraft:elder_guardian",
+    "version_history": [
+      {
+        "version": "Java Edition 1.8 / Bedrock Edition 0.16.0",
+        "change": "Hinzugefügt.",
+        "type": "added",
+        "date": "2014-09-02"
+      }
+    ],
+    "texture": [
+      {
+        "name": "Guardian Guardian Beam",
+        "category": "standard",
+        "description": "Variante: Guardian Guardian Beam.",
+        "file": "/assets/img/texture/mobs/guardian/guardian_beam.png"
+      },
+      {
+        "name": "Guardian Guardian Elder",
+        "category": "standard",
+        "description": "Variante: Guardian Guardian Elder.",
+        "file": "/assets/img/texture/mobs/guardian/guardian_elder.png"
+      }
+    ],
+    "sounds": [],
+    "health": 80,
+    "damage": "Laser: Einfach 5, Normal 8, Schwer 12; ausgefahrene Stacheln verursachen 2",
+    "armor": 0,
+    "experience": "10",
+    "dimension": "Overworld",
+    "movement_speed": 0.3,
+    "size": {
+      "width": "Breite: 1.9975",
+      "height": "Höhe: 1.9975"
+    },
+    "spawn": {
+      "light_level": [
+        "Nicht lichtabhängig"
+      ],
+      "biome": "Ozeanmonument-Biome",
+      "structure": "Ozeanmonument, feste Positionen bei der Generierung"
+    },
+    "light_level": [
+      "Nicht lichtabhängig"
+    ],
+    "classification": "Feindlich / aquatisch",
+    "renewable": "Nein; drei werden mit jedem Ozeanmonument erzeugt",
+    "can_despawn": "Nein",
+    "tameable": "Nein",
+    "breedable": "Nein",
+    "duplicable": "Nein",
+    "duplication_item": "",
+    "leashable": "Nein",
+    "rideable": "Nein",
+    "baby_variant": "Nein",
+    "drops": [
+      {
+        "item": "minecraft:prismarine_shard",
+        "chance": "100 %",
+        "amount": "0–2 (+0–1 je Plünderungsstufe)"
+      },
+      {
+        "item": "minecraft:wet_sponge",
+        "chance": "100 %",
+        "amount": "1"
+      },
+      {
+        "item": "Roher Kabeljau oder Prismarinkristalle",
+        "chance": "Gemeinsame zufällige Beute",
+        "amount": "0–1 beziehungsweise 0–2",
+        "condition": "Edtionsabhängige Loot-Tabelle"
+      },
+      {
+        "item": "minecraft:tide_armor_trim_smithing_template",
+        "chance": "20 %",
+        "amount": "1",
+        "condition": "Java Edition; in Bedrock stammt die Vorlage aus Monument-Truhen"
+      }
+    ],
+    "abilities": [
+      "Verursacht regelmäßig Abbaulähmung III bei Spielern in Reichweite",
+      "Feuert einen aufladbaren Laser",
+      "Verursacht Rückschlagschaden bei ausgefahrenen Stacheln",
+      "Überlebt an Land"
+    ],
+    "fun_fact": "",
+    "attack_type": "Aufladbarer Laser und Stachelschaden",
+    "targets": [
+      "Spieler",
+      "Tintenfische",
+      "Axolotl"
+    ],
+    "enemy_mobs": [],
+    "follows": [],
+    "healing_item": "",
+    "fire_immune": "Nein",
+    "undead": "Nein",
+    "boss_bar": "Nein",
+    "knockback_resistance": "",
+    "loot_table": "minecraft:entities/elder_guardian",
+    "java_entity_id": "minecraft:elder_guardian",
+    "bedrock_entity_id": "minecraft:elder_guardian"
+  },
+  {
+    "id": "minecraft:endermite",
+    "name": "Endermite",
+    "numeric_id": "( Nur Bedrock ) 55",
+    "type": "hostile",
+    "category": "Feindliche Mobs",
+    "icon": "/assets/img/mobs/hostile/Endermite.gif",
+    "description": "Endermite ist feindlich / gliederfüßer.",
+    "biome": "Keine natürliche Biom-Bindung",
+    "aliases": [],
+    "introduced_date": "2014-09-02",
+    "removed_date": "",
+    "gallery": [],
+    "model": "",
+    "animation": [],
+    "source": "",
+    "updated_at": "2026-08-22",
+    "notes": "Die Chance beträgt 5 % pro geworfener Enderperle; Enderman-Teleportationen erzeugen keine Endermiten.",
+    "version": "Java Edition 1.8 / Bedrock Edition 1.0.0",
+    "edition": "Java Edition, Bedrock Edition",
+    "effects": [],
+    "effect_immunities": [],
+    "status": "Verfügbar",
+    "tags": [
+      "Feindliche Mobs",
+      "Feindlich / Gliederfüßer"
+    ],
+    "related_entries": [],
+    "command": "/summon minecraft:endermite",
+    "version_history": [
+      {
+        "version": "Java Edition 1.8 / Bedrock Edition 1.0.0",
+        "change": "Hinzugefügt.",
+        "type": "added",
+        "date": "2014-09-02"
+      }
+    ],
+    "texture": [
+      {
+        "name": "Endermite Endermite",
+        "category": "standard",
+        "description": "Variante: Endermite Endermite.",
+        "file": "/assets/img/texture/mobs/endermite/endermite.png"
+      }
+    ],
+    "sounds": [],
+    "health": 8,
+    "damage": "Einfach 2, Normal 2, Schwer 3",
+    "armor": 0,
+    "experience": "3",
+    "dimension": "Entsteht in jeder Dimension durch geworfene Enderperlen",
+    "movement_speed": 0.25,
+    "size": {
+      "width": "Breite: 0.4",
+      "height": "Höhe: 0.3"
+    },
+    "spawn": {
+      "light_level": [
+        "Nicht lichtabhängig"
+      ],
+      "biome": "Keine",
+      "structure": "Keine",
+      "method": "5-%-Chance beim Landen einer vom Spieler geworfenen Enderperle"
+    },
+    "light_level": [
+      "Nicht lichtabhängig"
+    ],
+    "classification": "Feindlich / Gliederfüßer",
+    "renewable": "Ja",
+    "can_despawn": "Ja; ohne Namensschild normalerweise nach 2 Minuten",
+    "tameable": "Nein",
+    "breedable": "Nein",
+    "duplicable": "Nein",
+    "duplication_item": "",
+    "leashable": "Nein",
+    "rideable": "Nein",
+    "baby_variant": "Nein",
+    "drops": [],
+    "abilities": [
+      "Kann beim Werfen einer Enderperle entstehen",
+      "Provoziert nahe Endermen, sofern es nicht mit Spawn-Ei oder Befehl erzeugt wurde"
+    ],
+    "fun_fact": "Die Chance beträgt 5 % pro geworfener Enderperle; Enderman-Teleportationen erzeugen keine Endermiten.",
+    "attack_type": "Nahkampf",
+    "targets": [
+      "Spieler",
+      "Eisengolem"
+    ],
+    "enemy_mobs": [
+      "Enderman"
+    ],
+    "follows": [],
+    "healing_item": "",
+    "fire_immune": "Nein",
+    "undead": "Nein",
+    "boss_bar": "Nein",
+    "knockback_resistance": "",
+    "loot_table": "minecraft:entities/endermite",
+    "java_entity_id": "minecraft:endermite",
+    "bedrock_entity_id": "minecraft:endermite"
+  },
+  {
+    "id": "minecraft:evoker",
+    "name": "Magier",
+    "numeric_id": "( Nur Bedrock ) evoker: 104 / evoker_fangs: 105",
+    "type": "hostile",
+    "category": "Feindliche Mobs",
+    "icon": "/assets/img/mobs/hostile/Evoker.webp",
+    "description": "Magier ist feindlich / illager.",
+    "biome": "Waldanwesen und Dörfer während Überfällen",
+    "aliases": [],
+    "introduced_date": "2016-11-14",
+    "removed_date": "",
+    "gallery": [],
+    "model": "",
+    "animation": [],
+    "source": "",
+    "updated_at": "2026-08-22",
+    "notes": "",
+    "version": "Java Edition 1.11 / Bedrock Edition 1.0.0",
+    "edition": "Java Edition, Bedrock Edition",
+    "effects": [],
+    "effect_immunities": [],
+    "status": "Verfügbar",
+    "tags": [
+      "Feindliche Mobs",
+      "Feindlich / Illager"
+    ],
+    "related_entries": [],
+    "command": "/summon minecraft:evoker",
+    "version_history": [
+      {
+        "version": "Java Edition 1.11 / Bedrock Edition 1.0.0",
+        "change": "Hinzugefügt.",
+        "type": "added",
+        "date": "2016-11-14"
+      }
+    ],
+    "texture": [
+      {
+        "name": "Evoker Evoker Fangs",
+        "category": "standard",
+        "description": "Variante: Evoker Evoker Fangs.",
+        "file": "/assets/img/texture/mobs/evoker/evoker_fangs.png"
+      },
+      {
+        "name": "Evoker Evoker",
+        "category": "standard",
+        "description": "Variante: Evoker Evoker.",
+        "file": "/assets/img/texture/mobs/evoker/evoker.png"
+      }
+    ],
+    "sounds": [],
+    "health": 24,
+    "damage": "Fangzähne: 6 und ignorieren Rüstung; beschworene Plagegeister greifen zusätzlich an",
+    "armor": 0,
+    "experience": "10",
+    "dimension": "Overworld",
+    "movement_speed": 0.5,
+    "size": {
+      "width": "Breite: 0.6",
+      "height": "Höhe: 1.95"
+    },
+    "spawn": {
+      "light_level": [
+        "Nicht lichtabhängig"
+      ],
+      "biome": "Waldanwesen oder Überfallgebiet",
+      "structure": "Waldanwesen, Überfall"
+    },
+    "light_level": [
+      "Nicht lichtabhängig"
+    ],
+    "classification": "Feindlich / Illager",
+    "renewable": "Ja",
+    "can_despawn": "Nein im Waldanwesen; Überfallregeln bei Raid-Magiern",
+    "tameable": "Nein",
+    "breedable": "Nein",
+    "duplicable": "Nein",
+    "duplication_item": "",
+    "leashable": "Nein",
+    "rideable": "Nein",
+    "baby_variant": "Nein",
+    "drops": [
+      {
+        "item": "minecraft:totem_of_undying",
+        "chance": "100 %",
+        "amount": "1",
+        "condition": "Nicht von Plünderung beeinflusst"
+      },
+      {
+        "item": "minecraft:emerald",
+        "chance": "100 %",
+        "amount": "0–1 (+0–1 je Plünderungsstufe)"
+      },
+      {
+        "item": "Ominöses Banner",
+        "chance": "100 %",
+        "amount": "1",
+        "condition": "Nur als Hauptmann"
+      }
+    ],
+    "abilities": [
+      "Beschwört drei Plagegeister",
+      "Erzeugt Reihen oder Kreise aus Fangzähnen",
+      "Färbt blaue Schafe rot, wenn mobGriefing aktiv ist"
+    ],
+    "fun_fact": "",
+    "attack_type": "Fangzahn-Zauber und Beschwörung",
+    "targets": [
+      "Spieler",
+      "Dorfbewohner",
+      "Fahrende Händler",
+      "Eisengolems",
+      "Blaue Schafe für den Wololo-Zauber"
+    ],
+    "enemy_mobs": [],
+    "follows": [],
+    "healing_item": "",
+    "fire_immune": "Nein",
+    "undead": "Nein",
+    "boss_bar": "Nein",
+    "knockback_resistance": "",
+    "loot_table": "minecraft:entities/evoker",
+    "java_entity_id": "minecraft:evoker",
+    "bedrock_entity_id": "minecraft:evoker"
+  },
+  {
+    "id": "minecraft:ghast",
+    "name": "Ghast",
+    "numeric_id": "( Nur Bedrock ) 41",
+    "type": "hostile",
+    "category": "Feindliche Mobs",
+    "icon": "/assets/img/mobs/hostile/Ghast.webp",
+    "description": "Ghast ist feindlich.",
+    "biome": "Netheröde, Seelensandtal und Basaltdelta",
+    "aliases": [],
+    "introduced_date": "2010-10-30",
+    "removed_date": "",
+    "gallery": [],
+    "model": "",
+    "animation": [],
+    "source": "",
+    "updated_at": "2026-08-22",
+    "notes": "",
+    "version": "Java Edition Alpha v1.2.0 / Bedrock Edition 0.12.1",
+    "edition": "Java Edition, Bedrock Edition",
+    "effects": [],
+    "effect_immunities": [],
+    "status": "Verfügbar",
+    "tags": [
+      "Feindliche Mobs",
+      "Feindlich"
+    ],
+    "related_entries": [],
+    "command": "/summon minecraft:ghast",
+    "version_history": [
+      {
+        "version": "Java Edition Alpha v1.2.0 / Bedrock Edition 0.12.1",
+        "change": "Hinzugefügt.",
+        "type": "added",
+        "date": "2010-10-30"
+      }
+    ],
+    "texture": [
+      {
+        "name": "Ghast Ghast Shooting",
+        "category": "attack",
+        "description": "Variante: Ghast Ghast Shooting.",
+        "file": "/assets/img/texture/mobs/ghast/ghast_shooting.png"
+      },
+      {
+        "name": "Ghast Ghast",
+        "category": "standard",
+        "description": "Variante: Ghast Ghast.",
+        "file": "/assets/img/texture/mobs/ghast/ghast.png"
+      }
+    ],
+    "sounds": [],
+    "health": 10,
+    "damage": "Feuerball: direkter Treffer 6 plus Explosion bis Einfach 9, Normal 17, Schwer 25",
+    "armor": 0,
+    "experience": "5",
+    "dimension": "Nether",
+    "movement_speed": 0.03,
+    "size": {
+      "width": "Breite: 4.0",
+      "height": "Höhe: 4.0"
+    },
+    "spawn": {
+      "light_level": [
+        "Java: 11 oder niedriger; Bedrock-Regeln abweichend"
+      ],
+      "biome": "Große offene Bereiche in Netheröde, Seelensandtal, Basaltdelta",
+      "structure": "Keine"
+    },
+    "light_level": [
+      "Java: 11 oder niedriger; Bedrock-Regeln abweichend"
+    ],
+    "classification": "Feindlich",
+    "renewable": "Ja",
+    "can_despawn": "Ja, sofern die normalen Despawn-Regeln gelten",
+    "tameable": "Nein",
+    "breedable": "Nein",
+    "duplicable": "Nein",
+    "duplication_item": "",
+    "leashable": "Nein",
+    "rideable": "Nein",
+    "baby_variant": "Nein",
+    "drops": [
+      {
+        "item": "minecraft:gunpowder",
+        "chance": "100 %",
+        "amount": "0–2 (+0–1 je Plünderungsstufe)"
+      },
+      {
+        "item": "minecraft:ghast_tear",
+        "chance": "100 %",
+        "amount": "0–1 (+0–1 je Plünderungsstufe)"
+      }
+    ],
+    "abilities": [
+      "Fliegt",
+      "Schießt explosive Feuerbälle",
+      "Feuerbälle können durch einen Treffer zurückgelenkt werden",
+      "Ist immun gegen Feuer und Lava"
+    ],
+    "fun_fact": "",
+    "attack_type": "Explosive Feuerbälle",
+    "targets": [
+      "Spieler",
+      "Eisengolem"
+    ],
+    "enemy_mobs": [],
+    "follows": [],
+    "healing_item": "",
+    "fire_immune": "Ja",
+    "undead": "Nein",
+    "boss_bar": "Nein",
+    "knockback_resistance": "",
+    "loot_table": "minecraft:entities/ghast",
+    "java_entity_id": "minecraft:ghast",
+    "bedrock_entity_id": "minecraft:ghast"
+  },
+  {
+    "id": "minecraft:guardian",
+    "name": "Wächter",
+    "numeric_id": "( Nur Bedrock ) 49",
+    "type": "hostile",
+    "category": "Feindliche Mobs",
+    "icon": "/assets/img/mobs/hostile/Guardian.webp",
+    "description": "Wächter ist feindlich / aquatisch.",
+    "biome": "Ozeanmonument-Bereich",
+    "aliases": [],
+    "introduced_date": "2014-09-02",
+    "removed_date": "",
+    "gallery": [],
+    "model": "",
+    "animation": [],
+    "source": "",
+    "updated_at": "2026-08-22",
+    "notes": "",
+    "version": "Java Edition 1.8 / Bedrock Edition 0.16.0",
+    "edition": "Java Edition, Bedrock Edition",
+    "effects": [],
+    "effect_immunities": [],
+    "status": "Verfügbar",
+    "tags": [
+      "Feindliche Mobs",
+      "Feindlich / aquatisch"
+    ],
+    "related_entries": [],
+    "command": "/summon minecraft:guardian",
+    "version_history": [
+      {
+        "version": "Java Edition 1.8 / Bedrock Edition 0.16.0",
+        "change": "Hinzugefügt.",
+        "type": "added",
+        "date": "2014-09-02"
+      }
+    ],
+    "texture": [
+      {
+        "name": "Guardian Guardian",
+        "category": "standard",
+        "description": "Variante: Guardian Guardian.",
+        "file": "/assets/img/texture/mobs/guardian/guardian.png"
+      },
+      {
+        "name": "Guardian Guardian Beam",
+        "category": "standard",
+        "description": "Variante: Guardian Guardian Beam.",
+        "file": "/assets/img/texture/mobs/guardian/guardian_beam.png"
+      }
+    ],
+    "sounds": [],
+    "health": 30,
+    "damage": "Laser: Einfach 4, Normal 6, Schwer 9; ausgefahrene Stacheln verursachen 2",
+    "armor": 0,
+    "experience": "10",
+    "dimension": "Overworld",
+    "movement_speed": 0.5,
+    "size": {
+      "width": "Breite: 0.85",
+      "height": "Höhe: 0.85"
+    },
+    "spawn": {
+      "light_level": [
+        "Java: Wasser mit geeigneter Sicht zum Himmel oder reduzierter Chance ohne",
+        "Bedrock: festgelegte Spawnpositionen am Monument"
+      ],
+      "biome": "Ozeanmonument",
+      "structure": "Ozeanmonument"
+    },
+    "light_level": [
+      "Java: Wasser mit geeigneter Sicht zum Himmel oder reduzierter Chance ohne",
+      "Bedrock: festgelegte Spawnpositionen am Monument"
+    ],
+    "classification": "Feindlich / aquatisch",
+    "renewable": "Ja",
+    "can_despawn": "Ja, sofern die normalen Despawn-Regeln gelten",
+    "tameable": "Nein",
+    "breedable": "Nein",
+    "duplicable": "Nein",
+    "duplication_item": "",
+    "leashable": "Nein",
+    "rideable": "Nein",
+    "baby_variant": "Nein",
+    "drops": [
+      {
+        "item": "minecraft:prismarine_shard",
+        "chance": "100 %",
+        "amount": "0–2 (+0–1 je Plünderungsstufe)"
+      },
+      {
+        "item": "Roher Kabeljau oder Prismarinkristalle",
+        "chance": "Zufällige gemeinsame Beute",
+        "amount": "0–1 beziehungsweise 0–2",
+        "condition": "Editionsabhängig"
+      }
+    ],
+    "abilities": [
+      "Feuert einen aufladbaren Laser",
+      "Verursacht Schaden bei Nahkampftreffern gegen ausgefahrene Stacheln",
+      "Schwimmt schnell zum Ziel",
+      "Überlebt an Land"
+    ],
+    "fun_fact": "",
+    "attack_type": "Aufladbarer Laser und Stachelschaden",
+    "targets": [
+      "Spieler",
+      "Tintenfische",
+      "Axolotl"
+    ],
+    "enemy_mobs": [],
+    "follows": [],
+    "healing_item": "",
+    "fire_immune": "Nein",
+    "undead": "Nein",
+    "boss_bar": "Nein",
+    "knockback_resistance": "",
+    "loot_table": "minecraft:entities/guardian",
+    "java_entity_id": "minecraft:guardian",
+    "bedrock_entity_id": "minecraft:guardian"
+  },
+  {
+    "id": "minecraft:hoglin",
+    "name": "Hoglin",
+    "numeric_id": "( Nur Bedrock ) 124",
+    "type": "hostile",
+    "category": "Feindliche Mobs",
+    "icon": "/assets/img/mobs/hostile/Hoglin.webp",
+    "description": "Hoglin ist feindlich / tier.",
+    "biome": "Karmesinwald",
+    "aliases": [],
+    "introduced_date": "2020-06-23",
+    "removed_date": "",
+    "gallery": [],
+    "model": "",
+    "animation": [],
+    "source": "",
+    "updated_at": "2026-08-22",
+    "notes": "",
+    "version": "Java Edition 1.16 / Bedrock Edition 1.16.0",
+    "edition": "Java Edition, Bedrock Edition",
+    "effects": [],
+    "effect_immunities": [],
+    "status": "Verfügbar",
+    "tags": [
+      "Feindliche Mobs",
+      "Feindlich / Tier"
+    ],
+    "related_entries": [],
+    "command": "/summon minecraft:hoglin",
+    "version_history": [
+      {
+        "version": "Java Edition 1.16 / Bedrock Edition 1.16.0",
+        "change": "Hinzugefügt.",
+        "type": "added",
+        "date": "2020-06-23"
+      }
+    ],
+    "texture": [
+      {
+        "name": "Hoglin Hoglin Baby",
+        "category": "baby",
+        "description": "Variante: Hoglin Hoglin Baby.",
+        "file": "/assets/img/texture/mobs/hoglin/hoglin_baby.png"
+      },
+      {
+        "name": "Hoglin Hoglin",
+        "category": "standard",
+        "description": "Variante: Hoglin Hoglin.",
+        "file": "/assets/img/texture/mobs/hoglin/hoglin.png"
+      }
+    ],
+    "sounds": [],
+    "health": 40,
+    "damage": "Erwachsen Java: Einfach 2,5–5, Normal 3–8, Schwer 4,5–12; Bedrock abweichend",
+    "armor": 0,
+    "experience": "Erwachsen 5; 1–7 beim Züchten",
+    "dimension": "Nether",
+    "movement_speed": 0.3,
+    "size": {
+      "width": "Breite: 0.9",
+      "height": "Höhe: 0.9",
+      "baby": {
+        "width": "Breite: 0.45",
+        "height": "Höhe: 0.45"
+      }
+    },
+    "spawn": {
+      "light_level": [
+        "Nicht lichtabhängig"
+      ],
+      "biome": "Karmesinwald",
+      "structure": "Hoglinstall-Bastion möglich"
+    },
+    "light_level": [
+      "Nicht lichtabhängig"
+    ],
+    "classification": "Feindlich / Tier",
+    "renewable": "Ja",
+    "can_despawn": "Ja, sofern die normalen Despawn-Regeln gelten",
+    "tameable": "Nein",
+    "breedable": "Ja, mit Karmesinpilz",
+    "duplicable": "Nein",
+    "duplication_item": "",
+    "leashable": "Ja",
+    "rideable": "Nein",
+    "baby_variant": "Ja",
+    "drops": [
+      {
+        "item": "minecraft:porkchop",
+        "chance": "100 %",
+        "amount": "Java 2–4 / Bedrock 2–5; +0–1 je Plünderungsstufe",
+        "condition": "Gekocht, wenn der Hoglin brennend stirbt"
+      },
+      {
+        "item": "minecraft:leather",
+        "chance": "100 %",
+        "amount": "0–1 (+0–1 je Plünderungsstufe)"
+      }
+    ],
+    "abilities": [
+      "Schleudert Ziele hoch",
+      "Flieht vor Wirrpilzen, Netherportalen und Respawnankern",
+      "Verwandelt sich außerhalb des Nethers nach 15 Sekunden in einen Zoglin"
+    ],
+    "fun_fact": "",
+    "attack_type": "Stoß-Nahkampf",
+    "targets": [
+      "Spieler",
+      "Piglins unter Jagdbedingungen",
+      "Rüstungshalter"
+    ],
+    "enemy_mobs": [],
+    "follows": [],
+    "healing_item": "",
+    "fire_immune": "Nein",
+    "undead": "Nein",
+    "boss_bar": "Nein",
+    "knockback_resistance": "",
+    "loot_table": "minecraft:entities/hoglin",
+    "java_entity_id": "minecraft:hoglin",
+    "bedrock_entity_id": "minecraft:hoglin"
+  },
+  {
+    "id": "minecraft:husk",
+    "name": "Wüstenzombie",
+    "numeric_id": "( Nur Bedrock ) 47",
+    "type": "hostile",
+    "category": "Feindliche Mobs",
+    "icon": "/assets/img/mobs/hostile/Husk.webp",
+    "description": "Wüstenzombie ist feindlich / untot.",
+    "biome": "Wüste",
+    "aliases": [],
+    "introduced_date": "2016-06-08",
+    "removed_date": "",
+    "gallery": [],
+    "model": "",
+    "animation": [],
+    "source": "",
+    "updated_at": "2026-08-22",
+    "notes": "",
+    "version": "Java Edition 1.10 / Bedrock Edition 0.15.0",
+    "edition": "Java Edition, Bedrock Edition",
+    "effects": [
+      {
+        "name": "Hunger",
+        "type": "verursacht",
+        "level": "I",
+        "duration": "7 × regionale Schwierigkeit Sekunden",
+        "chance": "Bei unbewaffnetem Nahkampftreffer",
+        "condition": "Nicht durch eine gehaltene Waffe",
+        "description": "Erhöht die Erschöpfung des Spielers."
+      }
+    ],
+    "effect_immunities": [
+      "Gift",
+      "Regeneration"
+    ],
+    "status": "Verfügbar",
+    "tags": [
+      "Feindliche Mobs",
+      "Feindlich / untot",
+      "Untot"
+    ],
+    "related_entries": [],
+    "command": "/summon minecraft:husk",
+    "version_history": [
+      {
+        "version": "Java Edition 1.10 / Bedrock Edition 0.15.0",
+        "change": "Hinzugefügt.",
+        "type": "added",
+        "date": "2016-06-08"
+      }
+    ],
+    "texture": [
+      {
+        "name": "Husk Husk Baby",
+        "category": "baby",
+        "description": "Variante: Husk Husk Baby.",
+        "file": "/assets/img/texture/mobs/husk/husk_baby.png"
+      },
+      {
+        "name": "Husk Husk",
+        "category": "standard",
+        "description": "Variante: Husk Husk.",
+        "file": "/assets/img/texture/mobs/husk/husk.png"
+      }
+    ],
+    "sounds": [],
+    "health": 20,
+    "damage": "Unbewaffnet: Einfach 2,5, Normal 3, Schwer 4,5; zusätzlich Hunger",
+    "armor": 2,
+    "experience": "5 (Baby: 12) plus Ausrüstungsbonus",
+    "dimension": "Overworld",
+    "movement_speed": 0.23,
+    "size": {
+      "width": "Breite: 0.6",
+      "height": "Höhe: 1.95"
+    },
+    "spawn": {
+      "light_level": [
+        "Blocklicht 0 an der Oberfläche"
+      ],
+      "biome": "Wüste",
+      "structure": "Keine; nicht in Höhlen"
+    },
+    "light_level": [
+      "Blocklicht 0 an der Oberfläche"
+    ],
+    "classification": "Feindlich / untot",
+    "renewable": "Ja",
+    "can_despawn": "Ja, sofern die normalen Despawn-Regeln gelten",
+    "tameable": "Nein",
+    "breedable": "Nein",
+    "duplicable": "Nein",
+    "duplication_item": "",
+    "leashable": "Nein",
+    "rideable": "Nein",
+    "baby_variant": "Ja",
+    "drops": [
+      {
+        "item": "minecraft:rotten_flesh",
+        "chance": "100 %",
+        "amount": "0–2 (+0–1 je Plünderungsstufe)"
+      },
+      {
+        "item": "Eisenbarren, Karotte, Kartoffel oder Ofenkartoffel",
+        "chance": "Zusammen 2,5 % Basiswahrscheinlichkeit",
+        "amount": "1",
+        "condition": "Nur bei Tod durch Spieler/gezähmten Wolf; steigt mit Plünderung"
+      }
+    ],
+    "abilities": [
+      "Verbrennt nicht im Sonnenlicht",
+      "Verursacht Hunger",
+      "Verwandelt sich in Wasser zuerst in einen Zombie und danach in einen Ertrunkenen"
+    ],
+    "fun_fact": "",
+    "attack_type": "Nahkampf",
+    "targets": [
+      "Spieler",
+      "Dorfbewohner",
+      "Fahrende Händler",
+      "Eisengolem",
+      "Schildkröteneier"
+    ],
+    "enemy_mobs": [],
+    "follows": [],
+    "healing_item": "",
+    "fire_immune": "Nein; viele Untote verbrennen im Sonnenlicht, sofern nicht geschützt",
+    "undead": "Ja",
+    "boss_bar": "Nein",
+    "knockback_resistance": "",
+    "loot_table": "minecraft:entities/husk",
+    "java_entity_id": "minecraft:husk",
+    "bedrock_entity_id": "minecraft:husk"
+  },
+  {
+    "id": "minecraft:magma_cube",
+    "name": "Magmawürfel",
+    "numeric_id": "( Nur Bedrock ) 42",
+    "type": "hostile",
+    "category": "Feindliche Mobs",
+    "icon": "/assets/img/mobs/hostile/Magma_Cube.webp",
+    "description": "Magmawürfel ist feindlich.",
+    "biome": "Netheröde und Basaltdelta",
+    "aliases": [],
+    "introduced_date": "2011-09-22",
+    "removed_date": "",
+    "gallery": [],
+    "model": "",
+    "animation": [],
+    "source": "",
+    "updated_at": "2026-08-22",
+    "notes": "Magmawürfel hinterlassen beim Springen kein Feuer.",
+    "version": "Java Edition Beta 1.9 Prerelease / Bedrock Edition 0.11.0",
+    "edition": "Java Edition, Bedrock Edition",
+    "effects": [],
+    "effect_immunities": [],
+    "status": "Verfügbar",
+    "tags": [
+      "Feindliche Mobs",
+      "Feindlich"
+    ],
+    "related_entries": [],
+    "command": "/summon minecraft:magma_cube",
+    "version_history": [
+      {
+        "version": "Java Edition Beta 1.9 Prerelease / Bedrock Edition 0.11.0",
+        "change": "Hinzugefügt.",
+        "type": "added",
+        "date": "2011-09-22"
+      }
+    ],
+    "texture": [
+      {
+        "name": "Magmawürfel",
+        "category": "standard",
+        "description": "Standardtextur.",
+        "file": "/assets/img/texture/mobs/magmacube/magmacube.png"
+      }
+    ],
+    "sounds": [],
+    "health": {
+      "groß": 16,
+      "mittel": 4,
+      "klein": 1
+    },
+    "damage": {
+      "groß": 6,
+      "mittel": 4,
+      "klein": 3
+    },
+    "armor": "Größe × 3",
+    "experience": "Groß 4, mittel 2, klein 1",
+    "dimension": "Nether",
+    "movement_speed": 0.4,
+    "size": {
+      "width": "Breite: 2.04",
+      "height": "Höhe: 2.04"
+    },
+    "spawn": {
+      "light_level": [
+        "Beliebig"
+      ],
+      "biome": "Besonders Basaltdelta; außerdem Netheröde",
+      "structure": "Netherfestung und Schatzkammer-Bastion möglich"
+    },
+    "light_level": [
+      "Beliebig"
+    ],
+    "classification": "Feindlich",
+    "renewable": "Ja",
+    "can_despawn": "Ja, sofern die normalen Despawn-Regeln gelten",
+    "tameable": "Nein",
+    "breedable": "Nein",
+    "duplicable": "Nein",
+    "duplication_item": "",
+    "leashable": "Nein",
+    "rideable": "Nein",
+    "baby_variant": "Nein",
+    "drops": [
+      {
+        "item": "minecraft:magma_cream",
+        "chance": "Groß/Mittel: 25 % pro Versuch",
+        "amount": "0–1 (+1 Versuch je Plünderungsstufe)",
+        "condition": "Kleine Magmawürfel lassen keine Magmacreme fallen"
+      }
+    ],
+    "abilities": [
+      "Teilt sich beim Tod in kleinere Magmawürfel",
+      "Ist immun gegen Feuer und Lava",
+      "Kann in Lava schwimmen",
+      "Kleine Magmawürfel verursachen anders als kleine Schleime Schaden"
+    ],
+    "fun_fact": "Magmawürfel hinterlassen beim Springen kein Feuer.",
+    "attack_type": "Sprung-Nahkampf",
+    "targets": [
+      "Spieler",
+      "Eisengolem"
+    ],
+    "enemy_mobs": [],
+    "follows": [],
+    "healing_item": "",
+    "fire_immune": "Ja",
+    "undead": "Nein",
+    "boss_bar": "Nein",
+    "knockback_resistance": "",
+    "loot_table": "minecraft:entities/magma_cube",
+    "java_entity_id": "minecraft:magma_cube",
+    "bedrock_entity_id": "minecraft:magma_cube"
+  },
+  {
+    "id": "minecraft:phantom",
+    "name": "Phantom",
+    "numeric_id": "( Nur Bedrock ) 58",
+    "type": "hostile",
+    "category": "Feindliche Mobs",
+    "icon": "/assets/img/mobs/hostile/Phantom.webp",
+    "description": "Phantom ist feindlich / untot.",
+    "biome": "Über Spielern unter freiem Himmel",
+    "aliases": [],
+    "introduced_date": "2018-07-18",
+    "removed_date": "",
+    "gallery": [],
+    "model": "",
+    "animation": [],
+    "source": "",
+    "updated_at": "2026-08-22",
+    "notes": "",
+    "version": "Java Edition 1.13 / Bedrock Edition 1.6.0",
+    "edition": "Java Edition, Bedrock Edition",
+    "effects": [],
+    "effect_immunities": [
+      "Gift",
+      "Regeneration"
+    ],
+    "status": "Verfügbar",
+    "tags": [
+      "Feindliche Mobs",
+      "Feindlich / untot",
+      "Untot"
+    ],
+    "related_entries": [],
+    "command": "/summon minecraft:phantom",
+    "version_history": [
+      {
+        "version": "Java Edition 1.13 / Bedrock Edition 1.6.0",
+        "change": "Hinzugefügt.",
+        "type": "added",
+        "date": "2018-07-18"
+      }
+    ],
+    "texture": [
+      {
+        "name": "Phantom Phantom Eyes",
+        "category": "eyes",
+        "description": "Variante: Phantom Phantom Eyes.",
+        "file": "/assets/img/texture/mobs/phantom/phantom_eyes.png"
+      },
+      {
+        "name": "Phantom Phantom",
+        "category": "standard",
+        "description": "Variante: Phantom Phantom.",
+        "file": "/assets/img/texture/mobs/phantom/phantom.png"
+      }
+    ],
+    "sounds": [],
+    "health": 20,
+    "damage": "Einfach 4, Normal 6, Schwer 9",
+    "armor": 0,
+    "experience": "5",
+    "dimension": "Overworld",
+    "movement_speed": 0.7,
+    "size": {
+      "width": "Breite: 0.9",
+      "height": "Höhe: 0.5"
+    },
+    "spawn": {
+      "light_level": [
+        "Nachts; Spieler muss unter freiem Himmel sein"
+      ],
+      "biome": "Fast alle Oberweltbiome",
+      "structure": "Keine",
+      "condition": "Spieler hat mindestens drei Ingame-Tage nicht geschlafen und doInsomnia ist aktiv"
+    },
+    "light_level": [
+      "Nachts; Spieler muss unter freiem Himmel sein"
+    ],
+    "classification": "Feindlich / untot",
+    "renewable": "Ja",
+    "can_despawn": "Ja, sofern die normalen Despawn-Regeln gelten",
+    "tameable": "Nein",
+    "breedable": "Nein",
+    "duplicable": "Nein",
+    "duplication_item": "",
+    "leashable": "Nein",
+    "rideable": "Nein",
+    "baby_variant": "Nein",
+    "drops": [
+      {
+        "item": "minecraft:phantom_membrane",
+        "chance": "100 %",
+        "amount": "0–1 (+0–1 je Plünderungsstufe)",
+        "condition": "Nur bei Tod durch Spieler oder gezähmten Wolf"
+      }
+    ],
+    "abilities": [
+      "Fliegt in Kreisen und greift im Sturzflug an",
+      "Verbrennt im Sonnenlicht",
+      "Katzen fauchen und schlagen Phantome zurück"
+    ],
+    "fun_fact": "",
+    "attack_type": "Sturzflug-Nahkampf",
+    "targets": [
+      "Spieler mit hoher Schlaflosigkeit"
+    ],
+    "enemy_mobs": [
+      "Katze"
+    ],
+    "follows": [],
+    "healing_item": "",
+    "fire_immune": "Nein; viele Untote verbrennen im Sonnenlicht, sofern nicht geschützt",
+    "undead": "Ja",
+    "boss_bar": "Nein",
+    "knockback_resistance": "",
+    "loot_table": "minecraft:entities/phantom",
+    "java_entity_id": "minecraft:phantom",
+    "bedrock_entity_id": "minecraft:phantom"
+  },
+  {
+    "id": "minecraft:piglin_brute",
+    "name": "Piglin-Barbar",
+    "numeric_id": "( Nur Bedrock ) 127",
+    "type": "hostile",
+    "category": "Feindliche Mobs",
+    "icon": "/assets/img/mobs/hostile/Piglin_Brute.webp",
+    "description": "Piglin-Barbar ist feindlich / piglin.",
+    "biome": "Keine natürliche Biom-Bindung außerhalb von Bastionen",
+    "aliases": [
+      "Piglin-Berserker"
+    ],
+    "introduced_date": "2020-08-11",
+    "removed_date": "",
+    "gallery": [],
+    "model": "",
+    "animation": [],
+    "source": "",
+    "updated_at": "2026-08-22",
+    "notes": "",
+    "version": "Java Edition 1.16.2 / Bedrock Edition 1.16.20",
+    "edition": "Java Edition, Bedrock Edition",
+    "effects": [],
+    "effect_immunities": [],
+    "status": "Verfügbar",
+    "tags": [
+      "Feindliche Mobs",
+      "Feindlich / Piglin"
+    ],
+    "related_entries": [],
+    "command": "/summon minecraft:piglin_brute",
+    "version_history": [
+      {
+        "version": "Java Edition 1.16.2 / Bedrock Edition 1.16.20",
+        "change": "Hinzugefügt.",
+        "type": "added",
+        "date": "2020-08-11"
+      }
+    ],
+    "texture": [
+      {
+        "name": "Piglin Piglin Brute",
+        "category": "standard",
+        "description": "Variante: Piglin Piglin Brute.",
+        "file": "/assets/img/texture/mobs/piglin/piglin_brute.png"
+      }
+    ],
+    "sounds": [],
+    "health": 50,
+    "damage": "Mit Goldaxt – Java: Einfach 7,5, Normal 13, Schwer 19,5; Bedrock abweichend",
+    "armor": 0,
+    "experience": "20 plus Ausrüstungsbonus",
+    "dimension": "Nether",
+    "movement_speed": 0.35,
+    "size": {
+      "width": "Breite: 0.6",
+      "height": "Höhe: 1.95"
+    },
+    "spawn": {
+      "light_level": [
+        "Nicht lichtabhängig"
+      ],
+      "biome": "Bastionsruine",
+      "structure": "Wird einmalig mit Bastionsruinen erzeugt"
+    },
+    "light_level": [
+      "Nicht lichtabhängig"
+    ],
+    "classification": "Feindlich / Piglin",
+    "renewable": "Nein in Survival; entsteht nur bei Bastionsgenerierung",
+    "can_despawn": "Nein",
+    "tameable": "Nein",
+    "breedable": "Nein",
+    "duplicable": "Nein",
+    "duplication_item": "",
+    "leashable": "Nein",
+    "rideable": "Nein",
+    "baby_variant": "Nein",
+    "drops": [
+      {
+        "item": "Natürlich erzeugte Goldaxt",
+        "chance": "8,5 % (+1 Prozentpunkt je Plünderungsstufe)",
+        "amount": "1"
+      }
+    ],
+    "abilities": [
+      "Ist unabhängig von Goldrüstung immer feindlich",
+      "Tauscht nicht",
+      "Flieht nicht vor Seelenfeuer oder Zoglins",
+      "Verwandelt sich außerhalb des Nethers in einen zombifizierten Piglin"
+    ],
+    "fun_fact": "",
+    "attack_type": "Axt-Nahkampf",
+    "targets": [
+      "Spieler",
+      "Witherskelette",
+      "Wither"
+    ],
+    "enemy_mobs": [],
+    "follows": [],
+    "healing_item": "",
+    "fire_immune": "Nein",
+    "undead": "Nein",
+    "boss_bar": "Nein",
+    "knockback_resistance": "",
+    "loot_table": "minecraft:entities/piglin_brute",
+    "java_entity_id": "minecraft:piglin_brute",
+    "bedrock_entity_id": "minecraft:piglin_brute"
+  },
+  {
+    "id": "minecraft:pillager",
+    "name": "Plünderer",
+    "numeric_id": "( Nur Bedrock ) 114",
+    "type": "hostile",
+    "category": "Feindliche Mobs",
+    "icon": "/assets/img/mobs/hostile/Pillager.webp",
+    "description": "Plünderer ist feindlich / illager.",
+    "biome": "Patrouillen, Außenposten und Überfälle",
+    "aliases": [],
+    "introduced_date": "2019-04-23",
+    "removed_date": "",
+    "gallery": [],
+    "model": "",
+    "animation": [],
+    "source": "",
+    "updated_at": "2026-08-22",
+    "notes": "Normale Plünderer lassen keine Pfeile fallen; Smaragde gehören nur zu bestimmten Bedrock-Überfallbelohnungen.",
+    "version": "Java Edition 1.14 / Bedrock Edition 1.9.0",
+    "edition": "Java Edition, Bedrock Edition",
+    "effects": [],
+    "effect_immunities": [],
+    "status": "Verfügbar",
+    "tags": [
+      "Feindliche Mobs",
+      "Feindlich / Illager"
+    ],
+    "related_entries": [],
+    "command": "/summon minecraft:pillager",
+    "version_history": [
+      {
+        "version": "Java Edition 1.14 / Bedrock Edition 1.9.0",
+        "change": "Hinzugefügt.",
+        "type": "added",
+        "date": "2019-04-23"
+      }
+    ],
+    "texture": [
+      {
+        "name": "Pillager Pillager",
+        "category": "standard",
+        "description": "Variante: Pillager Pillager.",
+        "file": "/assets/img/texture/mobs/pillager/pillager.png"
+      }
+    ],
+    "sounds": [],
+    "health": 24,
+    "damage": "Armbrustpfeile abhängig von Schwierigkeit und Treffer",
+    "armor": 0,
+    "experience": "5 plus Ausrüstungsbonus",
+    "dimension": "Overworld",
+    "movement_speed": 0.35,
+    "size": {
+      "width": "Breite: 0.6",
+      "height": "Höhe: 1.95"
+    },
+    "spawn": {
+      "light_level": [
+        "Außenposten und Patrouillen nach eigenen Regeln"
+      ],
+      "biome": "Viele Oberweltbiome",
+      "structure": "Plünderer-Außenposten, Überfall"
+    },
+    "light_level": [
+      "Außenposten und Patrouillen nach eigenen Regeln"
+    ],
+    "classification": "Feindlich / Illager",
+    "renewable": "Ja",
+    "can_despawn": "Ja, sofern die normalen Despawn-Regeln gelten",
+    "tameable": "Nein",
+    "breedable": "Nein",
+    "duplicable": "Nein",
+    "duplication_item": "",
+    "leashable": "Nein",
+    "rideable": "Nein",
+    "baby_variant": "Nein",
+    "drops": [
+      {
+        "item": "Natürlich erzeugte Armbrust",
+        "chance": "8,5 % (+1 Prozentpunkt je Plünderungsstufe)",
+        "amount": "1"
+      },
+      {
+        "item": "Ominöses Banner",
+        "chance": "100 %",
+        "amount": "1",
+        "condition": "Nur als Hauptmann"
+      },
+      {
+        "item": "Spezielle Überfallbeute",
+        "chance": "Nur Bedrock Edition",
+        "amount": "Variabel",
+        "condition": "Nur während eines Überfalls; kann Smaragde und weitere Gegenstände enthalten"
+      }
+    ],
+    "abilities": [
+      "Lädt und feuert Armbrüste",
+      "Bildet Patrouillen",
+      "Nimmt an Überfällen teil",
+      "Kann als Hauptmann ein ominöses Banner tragen"
+    ],
+    "fun_fact": "Normale Plünderer lassen keine Pfeile fallen; Smaragde gehören nur zu bestimmten Bedrock-Überfallbelohnungen.",
+    "attack_type": "Armbrust-Fernkampf",
+    "targets": [
+      "Spieler",
+      "Dorfbewohner",
+      "Fahrende Händler",
+      "Eisengolems"
+    ],
+    "enemy_mobs": [],
+    "follows": [],
+    "healing_item": "",
+    "fire_immune": "Nein",
+    "undead": "Nein",
+    "boss_bar": "Nein",
+    "knockback_resistance": "",
+    "loot_table": "minecraft:entities/pillager",
+    "java_entity_id": "minecraft:pillager",
+    "bedrock_entity_id": "minecraft:pillager"
+  },
+  {
+    "id": "minecraft:ravager",
+    "name": "Verwüster",
+    "numeric_id": "( Nur Bedrock ) 59",
+    "type": "hostile",
+    "category": "Feindliche Mobs",
+    "icon": "/assets/img/mobs/hostile/Ravager.webp",
+    "description": "Verwüster ist feindlich / illager-bestie.",
+    "biome": "Dörfer während Überfällen",
+    "aliases": [],
+    "introduced_date": "2019-04-23",
+    "removed_date": "",
+    "gallery": [],
+    "model": "",
+    "animation": [],
+    "source": "",
+    "updated_at": "2026-08-22",
+    "notes": "Der Verwüster ist stark rückstoßresistent, aber nicht vollständig immun.",
+    "version": "Java Edition 1.14 / Bedrock Edition 1.10.0",
+    "edition": "Java Edition, Bedrock Edition",
+    "effects": [],
+    "effect_immunities": [],
+    "status": "Verfügbar",
+    "tags": [
+      "Feindliche Mobs",
+      "Feindlich / Illager-Bestie"
+    ],
+    "related_entries": [],
+    "command": "/summon minecraft:ravager",
+    "version_history": [
+      {
+        "version": "Java Edition 1.14 / Bedrock Edition 1.10.0",
+        "change": "Hinzugefügt.",
+        "type": "added",
+        "date": "2019-04-23"
+      }
+    ],
+    "texture": [
+      {
+        "name": "Ravager Ravager",
+        "category": "standard",
+        "description": "Variante: Ravager Ravager.",
+        "file": "/assets/img/texture/mobs/ravager/ravager.png"
+      }
+    ],
+    "sounds": [],
+    "health": 100,
+    "damage": "Biss: Einfach 7, Normal 12, Schwer 18; Brüllen verursacht 6 und starken Rückstoß",
+    "armor": 0,
+    "experience": "20",
+    "dimension": "Overworld",
+    "movement_speed": 0.3,
+    "size": {
+      "width": "Breite: 1.2",
+      "height": "Höhe: 2.2"
+    },
+    "spawn": {
+      "light_level": [
+        "Nicht lichtabhängig"
+      ],
+      "biome": "Überfallgebiet",
+      "structure": "Überfall"
+    },
+    "light_level": [
+      "Nicht lichtabhängig"
+    ],
+    "classification": "Feindlich / Illager-Bestie",
+    "renewable": "Ja",
+    "can_despawn": "Ja, sofern die normalen Despawn-Regeln gelten",
+    "tameable": "Nein",
+    "breedable": "Nein",
+    "duplicable": "Nein",
+    "duplication_item": "",
+    "leashable": "Nein",
+    "rideable": "Nein",
+    "baby_variant": "Nein",
+    "drops": [
+      {
+        "item": "minecraft:saddle",
+        "chance": "100 %",
+        "amount": "1",
+        "condition": "Nicht von Plünderung beeinflusst"
+      }
+    ],
+    "abilities": [
+      "Kann durch Blocken mit einem Schild betäubt werden",
+      "Brüllt nach erfolgreichem Betäuben",
+      "Zerstört bestimmte Pflanzen und Blätter",
+      "Kann in Überfällen Reiter tragen"
+    ],
+    "fun_fact": "Der Verwüster ist stark rückstoßresistent, aber nicht vollständig immun.",
+    "attack_type": "Biss, Rammstoß und Brüllen",
+    "targets": [
+      "Spieler",
+      "Dorfbewohner",
+      "Fahrende Händler",
+      "Eisengolems"
+    ],
+    "enemy_mobs": [],
+    "follows": [],
+    "healing_item": "",
+    "fire_immune": "Nein",
+    "undead": "Nein",
+    "boss_bar": "Nein",
+    "knockback_resistance": 0.75,
+    "loot_table": "minecraft:entities/ravager",
+    "java_entity_id": "minecraft:ravager",
+    "bedrock_entity_id": "minecraft:ravager"
+  },
+  {
+    "id": "minecraft:shulker",
+    "name": "Shulker",
+    "numeric_id": "( Nur Bedrock ) shulker: 54 / shulker_bullet: 76",
+    "type": "hostile",
+    "category": "Feindliche Mobs",
+    "icon": "/assets/img/mobs/hostile/shulker.gif",
+    "description": "Shulker ist feindlich / golem-artig.",
+    "biome": "Äußere Endinseln",
+    "aliases": [],
+    "introduced_date": "2016-02-29",
+    "removed_date": "",
+    "gallery": [],
+    "model": "",
+    "animation": [],
+    "source": "",
+    "updated_at": "2026-08-22",
+    "notes": "",
+    "version": "Java Edition 1.9 / Bedrock Edition 1.0.0",
+    "edition": "Java Edition, Bedrock Edition",
+    "effects": [],
+    "effect_immunities": [],
+    "status": "Verfügbar",
+    "tags": [
+      "Feindliche Mobs",
+      "Feindlich / Golem-artig"
+    ],
+    "related_entries": [],
+    "command": "/summon minecraft:shulker",
+    "version_history": [
+      {
+        "version": "Java Edition 1.9 / Bedrock Edition 1.0.0",
+        "change": "Hinzugefügt.",
+        "type": "added",
+        "date": "2016-02-29"
+      }
+    ],
+    "texture": [
+      {
+        "name": "Shulker Shulker Black",
+        "category": "standard",
+        "description": "Variante: Shulker Shulker Black.",
+        "file": "/assets/img/texture/mobs/shulker/shulker_black.png"
+      },
+      {
+        "name": "Shulker Shulker Blue",
+        "category": "standard",
+        "description": "Variante: Shulker Shulker Blue.",
+        "file": "/assets/img/texture/mobs/shulker/shulker_blue.png"
+      },
+      {
+        "name": "Shulker Shulker Brown",
+        "category": "standard",
+        "description": "Variante: Shulker Shulker Brown.",
+        "file": "/assets/img/texture/mobs/shulker/shulker_brown.png"
+      },
+      {
+        "name": "Shulker Shulker Cyan",
+        "category": "standard",
+        "description": "Variante: Shulker Shulker Cyan.",
+        "file": "/assets/img/texture/mobs/shulker/shulker_cyan.png"
+      },
+      {
+        "name": "Shulker Shulker Gray",
+        "category": "standard",
+        "description": "Variante: Shulker Shulker Gray.",
+        "file": "/assets/img/texture/mobs/shulker/shulker_gray.png"
+      },
+      {
+        "name": "Shulker Shulker Green",
+        "category": "standard",
+        "description": "Variante: Shulker Shulker Green.",
+        "file": "/assets/img/texture/mobs/shulker/shulker_green.png"
+      },
+      {
+        "name": "Shulker Shulker Light Blue",
+        "category": "standard",
+        "description": "Variante: Shulker Shulker Light Blue.",
+        "file": "/assets/img/texture/mobs/shulker/shulker_light_blue.png"
+      },
+      {
+        "name": "Shulker Shulker Light Gray",
+        "category": "standard",
+        "description": "Variante: Shulker Shulker Light Gray.",
+        "file": "/assets/img/texture/mobs/shulker/shulker_light_gray.png"
+      },
+      {
+        "name": "Shulker Shulker Lime",
+        "category": "standard",
+        "description": "Variante: Shulker Shulker Lime.",
+        "file": "/assets/img/texture/mobs/shulker/shulker_lime.png"
+      },
+      {
+        "name": "Shulker Shulker Magenta",
+        "category": "standard",
+        "description": "Variante: Shulker Shulker Magenta.",
+        "file": "/assets/img/texture/mobs/shulker/shulker_magenta.png"
+      },
+      {
+        "name": "Shulker Shulker Orange",
+        "category": "standard",
+        "description": "Variante: Shulker Shulker Orange.",
+        "file": "/assets/img/texture/mobs/shulker/shulker_orange.png"
+      },
+      {
+        "name": "Shulker Shulker Pink",
+        "category": "standard",
+        "description": "Variante: Shulker Shulker Pink.",
+        "file": "/assets/img/texture/mobs/shulker/shulker_pink.png"
+      },
+      {
+        "name": "Shulker Shulker Purple",
+        "category": "standard",
+        "description": "Variante: Shulker Shulker Purple.",
+        "file": "/assets/img/texture/mobs/shulker/shulker_purple.png"
+      },
+      {
+        "name": "Shulker Shulker Red",
+        "category": "standard",
+        "description": "Variante: Shulker Shulker Red.",
+        "file": "/assets/img/texture/mobs/shulker/shulker_red.png"
+      },
+      {
+        "name": "Shulker Shulker White",
+        "category": "standard",
+        "description": "Variante: Shulker Shulker White.",
+        "file": "/assets/img/texture/mobs/shulker/shulker_white.png"
+      },
+      {
+        "name": "Shulker Shulker Yellow",
+        "category": "standard",
+        "description": "Variante: Shulker Shulker Yellow.",
+        "file": "/assets/img/texture/mobs/shulker/shulker_yellow.png"
+      },
+      {
+        "name": "Shulker Shulker",
+        "category": "standard",
+        "description": "Variante: Shulker Shulker.",
+        "file": "/assets/img/texture/mobs/shulker/shulker.png"
+      },
+      {
+        "name": "Shulker Spark",
+        "category": "standard",
+        "description": "Variante: Shulker Spark.",
+        "file": "/assets/img/texture/mobs/shulker/spark.png"
+      }
+    ],
+    "sounds": [],
+    "health": 30,
+    "damage": "Shulkerkugel: 4 plus Levitation",
+    "armor": "Geschlossen: 20; geöffnet: 0",
+    "experience": "5",
+    "dimension": "The End",
+    "movement_speed": 0,
+    "size": {
+      "width": "Breite: 1.0",
+      "height": "Höhe: 1.0"
+    },
+    "spawn": {
+      "light_level": [
+        "Nicht lichtabhängig"
+      ],
+      "biome": "Äußere Endinseln",
+      "structure": "Wird mit Endstädten erzeugt; kann sich unter Projektilbeschuss vermehren"
+    },
+    "light_level": [
+      "Nicht lichtabhängig"
+    ],
+    "classification": "Feindlich / Golem-artig",
+    "renewable": "Ja",
+    "can_despawn": "Nein",
+    "tameable": "Nein",
+    "breedable": "Nein",
+    "duplicable": "Nein",
+    "duplication_item": "",
+    "leashable": "Nein",
+    "rideable": "Nein",
+    "baby_variant": "Nein",
+    "drops": [
+      {
+        "item": "minecraft:shulker_shell",
+        "chance": "50 % Basiswahrscheinlichkeit",
+        "amount": "0–1",
+        "condition": "Plünderung erhöht die Wahrscheinlichkeit; bei Tod durch anderen Shulker garantiert eine Schale möglich"
+      }
+    ],
+    "abilities": [
+      "Schießt zielsuchende Projektile mit Levitation",
+      "Teleportiert bei Gefahr oder ungültiger Position",
+      "Geschlossene Schale bietet 20 Rüstungspunkte",
+      "Kann durch Treffer anderer Shulker einen neuen Shulker erzeugen"
+    ],
+    "fun_fact": "",
+    "attack_type": "Zielsuchende Shulkerkugel",
+    "targets": [
+      "Spieler",
+      "Eisengolem",
+      "Schneegolem"
+    ],
+    "enemy_mobs": [],
+    "follows": [],
+    "healing_item": "",
+    "fire_immune": "Nein",
+    "undead": "Nein",
+    "boss_bar": "Nein",
+    "knockback_resistance": "",
+    "loot_table": "minecraft:entities/shulker",
+    "java_entity_id": "minecraft:shulker",
+    "bedrock_entity_id": "minecraft:shulker"
+  },
+  {
+    "id": "minecraft:silverfish",
+    "name": "Silberfischchen",
+    "numeric_id": "( Nur Bedrock ) 39",
+    "type": "hostile",
+    "category": "Feindliche Mobs",
+    "icon": "/assets/img/mobs/hostile/Silverfish.webp",
+    "description": "Silberfischchen ist feindlich / gliederfüßer.",
+    "biome": "Gebirgsbiome und Festungen",
+    "aliases": [],
+    "introduced_date": "2011-09-14",
+    "removed_date": "",
+    "gallery": [],
+    "model": "",
+    "animation": [],
+    "source": "",
+    "updated_at": "2026-08-22",
+    "notes": "",
+    "version": "Java Edition Beta 1.8 / Bedrock Edition 0.9.0",
+    "edition": "Java Edition, Bedrock Edition",
+    "effects": [],
+    "effect_immunities": [],
+    "status": "Verfügbar",
+    "tags": [
+      "Feindliche Mobs",
+      "Feindlich / Gliederfüßer"
+    ],
+    "related_entries": [],
+    "command": "/summon minecraft:silverfish",
+    "version_history": [
+      {
+        "version": "Java Edition Beta 1.8 / Bedrock Edition 0.9.0",
+        "change": "Hinzugefügt.",
+        "type": "added",
+        "date": "2011-09-14"
+      }
+    ],
+    "texture": [
+      {
+        "name": "Silverfish Silverfish",
+        "category": "standard",
+        "description": "Variante: Silverfish Silverfish.",
+        "file": "/assets/img/texture/mobs/silverfish/silverfish.png"
+      }
+    ],
+    "sounds": [],
+    "health": 8,
+    "damage": "Einfach 1, Normal 1, Schwer 1,5",
+    "armor": 0,
+    "experience": "5",
+    "dimension": "Overworld",
+    "movement_speed": 0.25,
+    "size": {
+      "width": "Breite: 0.4",
+      "height": "Höhe: 0.3"
+    },
+    "spawn": {
+      "light_level": [
+        "Spawner: Lichtstufe 11 oder niedriger beziehungsweise ohne sichtbaren Spieler abhängig von Edition"
+      ],
+      "biome": "Gebirge oder Struktur",
+      "structure": "Festung; aus befallenen Blöcken"
+    },
+    "light_level": [
+      "Spawner: Lichtstufe 11 oder niedriger beziehungsweise ohne sichtbaren Spieler abhängig von Edition"
+    ],
+    "classification": "Feindlich / Gliederfüßer",
+    "renewable": "Ja",
+    "can_despawn": "Ja, sofern die normalen Despawn-Regeln gelten",
+    "tameable": "Nein",
+    "breedable": "Nein",
+    "duplicable": "Nein",
+    "duplication_item": "",
+    "leashable": "Nein",
+    "rideable": "Nein",
+    "baby_variant": "Nein",
+    "drops": [],
+    "abilities": [
+      "Versteckt sich in geeigneten Steinblöcken",
+      "Ruft bei erlittenem Schaden nahe Silberfischchen aus befallenen Blöcken",
+      "Befallene Blöcke lassen sich mit Behutsamkeit ohne Silberfisch abbauen"
+    ],
+    "fun_fact": "",
+    "attack_type": "Nahkampf",
+    "targets": [
+      "Spieler",
+      "Eisengolem"
+    ],
+    "enemy_mobs": [],
+    "follows": [],
+    "healing_item": "",
+    "fire_immune": "Nein",
+    "undead": "Nein",
+    "boss_bar": "Nein",
+    "knockback_resistance": "",
+    "loot_table": "minecraft:entities/silverfish",
+    "java_entity_id": "minecraft:silverfish",
+    "bedrock_entity_id": "minecraft:silverfish"
+  },
+  {
+    "id": "minecraft:skeleton",
+    "name": "Skelett",
+    "numeric_id": "( Nur Bedrock ) 34",
+    "type": "hostile",
+    "category": "Feindliche Mobs",
+    "icon": "/assets/img/mobs/hostile/Skeleton.webp",
+    "description": "Skelett ist feindlich / untot.",
+    "biome": "Fast alle geeigneten Oberweltbiome",
+    "aliases": [],
+    "introduced_date": "2009-09-01",
+    "removed_date": "",
+    "gallery": [],
+    "model": "",
+    "animation": [],
+    "source": "",
+    "updated_at": "2026-08-22",
+    "notes": "",
+    "version": "Java Edition Classic 0.24 SURVIVAL TEST / Bedrock Edition 0.3.3",
+    "edition": "Java Edition, Bedrock Edition",
+    "effects": [],
+    "effect_immunities": [
+      "Gift",
+      "Regeneration"
+    ],
+    "status": "Verfügbar",
+    "tags": [
+      "Feindliche Mobs",
+      "Feindlich / untot",
+      "Untot"
+    ],
+    "related_entries": [],
+    "command": "/summon minecraft:skeleton",
+    "version_history": [
+      {
+        "version": "Java Edition Classic 0.24 SURVIVAL TEST / Bedrock Edition 0.3.3",
+        "change": "Hinzugefügt.",
+        "type": "added",
+        "date": "2009-09-01"
+      }
+    ],
+    "texture": [
+      {
+        "name": "Skeleton Skeleton",
+        "category": "standard",
+        "description": "Variante: Skeleton Skeleton.",
+        "file": "/assets/img/texture/mobs/skeleton/skeleton.png"
+      }
+    ],
+    "sounds": [],
+    "health": 20,
+    "damage": "Bogenpfeile: abhängig von Schwierigkeit und Entfernung; Nahkampf ohne Bogen: Einfach/Normal 2, Schwer 3",
+    "armor": 0,
+    "experience": "5 plus 1–3 je natürlich erzeugtem Ausrüstungsteil",
+    "dimension": "Overworld",
+    "movement_speed": 0.25,
+    "size": {
+      "width": "Breite: 0.6",
+      "height": "Höhe: 1.99"
+    },
+    "spawn": {
+      "light_level": [
+        "Blocklicht 0"
+      ],
+      "biome": "Fast alle geeigneten Oberweltbiome",
+      "structure": "Spawner und verschiedene Strukturen möglich"
+    },
+    "light_level": [
+      "Blocklicht 0"
+    ],
+    "classification": "Feindlich / untot",
+    "renewable": "Ja",
+    "can_despawn": "Ja, sofern die normalen Despawn-Regeln gelten",
+    "tameable": "Nein",
+    "breedable": "Nein",
+    "duplicable": "Nein",
+    "duplication_item": "",
+    "leashable": "Nein",
+    "rideable": "Nein",
+    "baby_variant": "Nein",
+    "drops": [
+      {
+        "item": "minecraft:arrow",
+        "chance": "100 %",
+        "amount": "0–2 (+0–1 je Plünderungsstufe)"
+      },
+      {
+        "item": "minecraft:bone",
+        "chance": "100 %",
+        "amount": "0–2 (+0–1 je Plünderungsstufe)"
+      },
+      {
+        "item": "Natürlich erzeugter Bogen",
+        "chance": "8,5 % (+1 Prozentpunkt je Plünderungsstufe)",
+        "amount": "1"
+      }
+    ],
+    "abilities": [
+      "Schießt mit dem Bogen",
+      "Verbrennt ohne schützenden Helm im direkten Sonnenlicht",
+      "Flieht vor Wölfen",
+      "Kann als Spinnen- oder Skelettpferdreiter erscheinen"
+    ],
+    "fun_fact": "",
+    "attack_type": "Bogen-Fernkampf",
+    "targets": [
+      "Spieler",
+      "Dorfbewohner",
+      "Eisengolem",
+      "Baby-Schildkröten"
+    ],
+    "enemy_mobs": [],
+    "follows": [],
+    "healing_item": "",
+    "fire_immune": "Nein; viele Untote verbrennen im Sonnenlicht, sofern nicht geschützt",
+    "undead": "Ja",
+    "boss_bar": "Nein",
+    "knockback_resistance": "",
+    "loot_table": "minecraft:entities/skeleton",
+    "java_entity_id": "minecraft:skeleton",
+    "bedrock_entity_id": "minecraft:skeleton"
+  },
+  {
+    "id": "minecraft:slime",
+    "name": "Schleim",
+    "numeric_id": "( Nur Bedrock ) 37",
+    "type": "hostile",
+    "category": "Feindliche Mobs",
+    "icon": "/assets/img/mobs/hostile/Slime.webp",
+    "description": "Schleim ist feindlich; kleine schleime verfolgen, verursachen aber keinen schaden.",
+    "biome": "Sümpfe und unterirdische Schleimchunks",
+    "aliases": [],
+    "introduced_date": "2010-07-23",
+    "removed_date": "",
+    "gallery": [],
+    "model": "",
+    "animation": [],
+    "source": "",
+    "updated_at": "2026-08-22",
+    "notes": "",
+    "version": "Java Edition Alpha v1.0.11 / Bedrock Edition 0.9.0",
+    "edition": "Java Edition, Bedrock Edition",
+    "effects": [],
+    "effect_immunities": [],
+    "status": "Verfügbar",
+    "tags": [
+      "Feindliche Mobs",
+      "Feindlich; kleine Schleime verfolgen, verursachen aber keinen Schaden"
+    ],
+    "related_entries": [],
+    "command": "/summon minecraft:slime",
+    "version_history": [
+      {
+        "version": "Java Edition Alpha v1.0.11 / Bedrock Edition 0.9.0",
+        "change": "Hinzugefügt.",
+        "type": "added",
+        "date": "2010-07-23"
+      }
+    ],
+    "texture": [
+      {
+        "name": "Slime Slime",
+        "category": "standard",
+        "description": "Variante: Slime Slime.",
+        "file": "/assets/img/texture/mobs/slime/slime.png"
+      }
+    ],
+    "sounds": [],
+    "health": {
+      "groß": 16,
+      "mittel": 4,
+      "klein": 1
+    },
+    "damage": {
+      "groß": 4,
+      "mittel": 2,
+      "klein": 0
+    },
+    "armor": 0,
+    "experience": "Groß 4, mittel 2, klein 1",
+    "dimension": "Overworld",
+    "movement_speed": 0.4,
+    "size": {
+      "width": "Breite: 2.04",
+      "height": "Höhe: 2.04"
+    },
+    "spawn": {
+      "light_level": [
+        "Schleimchunk unter Y 40: lichtunabhängig",
+        "Sumpf: Lichtstufe 7 oder niedriger; Mondphase beeinflusst Chance"
+      ],
+      "biome": "Sumpf/Mangrovensumpf oder unterirdischer Schleimchunk",
+      "structure": "Keine"
+    },
+    "light_level": [
+      "Schleimchunk unter Y 40: lichtunabhängig",
+      "Sumpf: Lichtstufe 7 oder niedriger; Mondphase beeinflusst Chance"
+    ],
+    "classification": "Feindlich; kleine Schleime verfolgen, verursachen aber keinen Schaden",
+    "renewable": "Ja",
+    "can_despawn": "Ja, sofern die normalen Despawn-Regeln gelten",
+    "tameable": "Nein",
+    "breedable": "Nein",
+    "duplicable": "Nein",
+    "duplication_item": "",
+    "leashable": "Nein",
+    "rideable": "Nein",
+    "baby_variant": "Nein",
+    "drops": [
+      {
+        "item": "minecraft:slime_ball",
+        "chance": "100 %",
+        "amount": "0–2 (+0–1 je Plünderungsstufe)",
+        "condition": "Nur kleine Schleime"
+      }
+    ],
+    "abilities": [
+      "Teilt sich beim Tod in kleinere Schleime",
+      "Springt regelmäßig",
+      "Kleine Schleime verursachen keinen direkten Schaden",
+      "Spawnchance im Sumpf hängt von der Mondphase ab"
+    ],
+    "fun_fact": "",
+    "attack_type": "Sprung-Nahkampf",
+    "targets": [
+      "Spieler",
+      "Eisengolem",
+      "Schneegolem"
+    ],
+    "enemy_mobs": [],
+    "follows": [],
+    "healing_item": "",
+    "fire_immune": "Nein",
+    "undead": "Nein",
+    "boss_bar": "Nein",
+    "knockback_resistance": "",
+    "loot_table": "minecraft:entities/slime",
+    "java_entity_id": "minecraft:slime",
+    "bedrock_entity_id": "minecraft:slime"
+  },
+  {
+    "id": "minecraft:stray",
+    "name": "Eiswanderer",
+    "numeric_id": "( Nur Bedrock ) 46",
+    "type": "hostile",
+    "category": "Feindliche Mobs",
+    "icon": "/assets/img/mobs/hostile/Stray.webp",
+    "description": "Eiswanderer ist feindlich / untot.",
+    "biome": "Verschneite Ebenen, Eiszapfen und gefrorene Ozeanbiome; editionsabhängig",
+    "aliases": [
+      "Eisiger Skelett"
+    ],
+    "introduced_date": "2016-06-08",
+    "removed_date": "",
+    "gallery": [],
+    "model": "",
+    "animation": [],
+    "source": "",
+    "updated_at": "2026-08-22",
+    "notes": "Schnee schützt Eiswanderer nicht grundsätzlich vor Sonnenbrand.",
+    "version": "Java Edition 1.10 / Bedrock Edition 0.15.0",
+    "edition": "Java Edition, Bedrock Edition",
+    "effects": [],
+    "effect_immunities": [
+      "Gift",
+      "Regeneration"
+    ],
+    "status": "Verfügbar",
+    "tags": [
+      "Feindliche Mobs",
+      "Feindlich / untot",
+      "Untot"
+    ],
+    "related_entries": [],
+    "command": "/summon minecraft:stray",
+    "version_history": [
+      {
+        "version": "Java Edition 1.10 / Bedrock Edition 0.15.0",
+        "change": "Hinzugefügt.",
+        "type": "added",
+        "date": "2016-06-08"
+      }
+    ],
+    "texture": [
+      {
+        "name": "Stray Stray Overlay",
+        "category": "standard",
+        "description": "Variante: Stray Stray Overlay.",
+        "file": "/assets/img/texture/mobs/stray/stray_overlay.png"
+      },
+      {
+        "name": "Stray Stray",
+        "category": "standard",
+        "description": "Variante: Stray Stray.",
+        "file": "/assets/img/texture/mobs/stray/stray.png"
+      }
+    ],
+    "sounds": [],
+    "health": 20,
+    "damage": "Bogenpfeile abhängig von Schwierigkeit; zusätzlich Langsamkeit I für 30 Sekunden",
+    "armor": 0,
+    "experience": "5 plus Ausrüstungsbonus",
+    "dimension": "Overworld",
+    "movement_speed": 0.25,
+    "size": {
+      "width": "Breite: 0.6",
+      "height": "Höhe: 1.99"
+    },
+    "spawn": {
+      "light_level": [
+        "Blocklicht 0"
+      ],
+      "biome": "Kalte verschneite Biome",
+      "structure": "Keine"
+    },
+    "light_level": [
+      "Blocklicht 0"
+    ],
+    "classification": "Feindlich / untot",
+    "renewable": "Ja",
+    "can_despawn": "Ja, sofern die normalen Despawn-Regeln gelten",
+    "tameable": "Nein",
+    "breedable": "Nein",
+    "duplicable": "Nein",
+    "duplication_item": "",
+    "leashable": "Nein",
+    "rideable": "Nein",
+    "baby_variant": "Nein",
+    "drops": [
+      {
+        "item": "minecraft:arrow",
+        "chance": "100 %",
+        "amount": "0–2 (+0–1 je Plünderungsstufe)"
+      },
+      {
+        "item": "minecraft:bone",
+        "chance": "100 %",
+        "amount": "0–2 (+0–1 je Plünderungsstufe)"
+      },
+      {
+        "item": "Natürlich erzeugter Bogen",
+        "chance": "8,5 % (+1 Prozentpunkt je Plünderungsstufe)",
+        "amount": "1"
+      },
+      {
+        "item": "Pfeil der Langsamkeit",
+        "chance": "Bis zu 1",
+        "amount": "0–1",
+        "condition": "Nur bei Tod durch Spieler/gezähmten Wolf; steigt mit Plünderung"
+      }
+    ],
+    "abilities": [
+      "Schießt Pfeile der Langsamkeit",
+      "Ein Skelett verwandelt sich nach 7 Sekunden in Pulverschnee in einen Eiswanderer",
+      "Verbrennt im direkten Sonnenlicht"
+    ],
+    "fun_fact": "Schnee schützt Eiswanderer nicht grundsätzlich vor Sonnenbrand.",
+    "attack_type": "Bogen mit Verlangsamungspfeilen",
+    "targets": [
+      "Spieler",
+      "Dorfbewohner",
+      "Eisengolem",
+      "Baby-Schildkröten"
+    ],
+    "enemy_mobs": [],
+    "follows": [],
+    "healing_item": "",
+    "fire_immune": "Nein; viele Untote verbrennen im Sonnenlicht, sofern nicht geschützt",
+    "undead": "Ja",
+    "boss_bar": "Nein",
+    "knockback_resistance": "",
+    "loot_table": "minecraft:entities/stray",
+    "java_entity_id": "minecraft:stray",
+    "bedrock_entity_id": "minecraft:stray"
+  },
+  {
+    "id": "minecraft:vex",
+    "name": "Plagegeist",
+    "numeric_id": "( Nur Bedrock ) 105",
+    "type": "hostile",
+    "category": "Feindliche Mobs",
+    "icon": "/assets/img/mobs/hostile/Angry_Vex.webp",
+    "description": "Plagegeist ist feindlich / illager-helfer.",
+    "biome": "Keine natürliche Biom-Bindung",
+    "aliases": [],
+    "introduced_date": "2016-11-14",
+    "removed_date": "",
+    "gallery": [],
+    "model": "",
+    "animation": [],
+    "source": "",
+    "updated_at": "2026-08-22",
+    "notes": "",
+    "version": "Java Edition 1.11 / Bedrock Edition 1.0.0",
+    "edition": "Java Edition, Bedrock Edition",
+    "effects": [],
+    "effect_immunities": [],
+    "status": "Verfügbar",
+    "tags": [
+      "Feindliche Mobs",
+      "Feindlich / Illager-Helfer"
+    ],
+    "related_entries": [],
+    "command": "/summon minecraft:vex",
+    "version_history": [
+      {
+        "version": "Java Edition 1.11 / Bedrock Edition 1.0.0",
+        "change": "Hinzugefügt.",
+        "type": "added",
+        "date": "2016-11-14"
+      }
+    ],
+    "texture": [
+      {
+        "name": "Vex Vex Charging",
+        "category": "standard",
+        "description": "Variante: Vex Vex Charging.",
+        "file": "/assets/img/texture/mobs/vex/vex_charging.png"
+      },
+      {
+        "name": "Vex Vex",
+        "category": "standard",
+        "description": "Variante: Vex Vex.",
+        "file": "/assets/img/texture/mobs/vex/vex.png"
+      }
+    ],
+    "sounds": [],
+    "health": 14,
+    "damage": "Java: Einfach 5,5, Normal 9, Schwer 13,5; Bedrock abweichend",
+    "armor": 0,
+    "experience": "3",
+    "dimension": "Overworld",
+    "movement_speed": 0.9,
+    "size": {
+      "width": "Breite: 0.4",
+      "height": "Höhe: 0.8"
+    },
+    "spawn": {
+      "light_level": [
+        "Nicht lichtabhängig"
+      ],
+      "biome": "Bei einem Magier im Kampf",
+      "structure": "Waldanwesen oder Überfall möglich"
+    },
+    "light_level": [
+      "Nicht lichtabhängig"
+    ],
+    "classification": "Feindlich / Illager-Helfer",
+    "renewable": "Ja",
+    "can_despawn": "Ja, sofern die normalen Despawn-Regeln gelten",
+    "tameable": "Nein",
+    "breedable": "Nein",
+    "duplicable": "Nein",
+    "duplication_item": "",
+    "leashable": "Nein",
+    "rideable": "Nein",
+    "baby_variant": "Nein",
+    "drops": [],
+    "abilities": [
+      "Fliegt durch feste Blöcke",
+      "Stürzt sich mit Eisenschwert auf Ziele",
+      "Von Magiern beschworene Plagegeister beginnen nach 30–119 Sekunden Lebenspunkte zu verlieren"
+    ],
+    "fun_fact": "",
+    "attack_type": "Fliegender Schwert-Nahkampf",
+    "targets": [
+      "Ziele seines Magiers",
+      "Spieler",
+      "Dorfbewohner",
+      "Eisengolem"
+    ],
+    "enemy_mobs": [],
+    "follows": [],
+    "healing_item": "",
+    "fire_immune": "Nein",
+    "undead": "Nein",
+    "boss_bar": "Nein",
+    "knockback_resistance": "",
+    "loot_table": "minecraft:entities/vex",
+    "java_entity_id": "minecraft:vex",
+    "bedrock_entity_id": "minecraft:vex"
+  },
+  {
+    "id": "minecraft:vindicator",
+    "name": "Diener",
+    "numeric_id": "( Nur Bedrock ) 57",
+    "type": "hostile",
+    "category": "Feindliche Mobs",
+    "icon": "/assets/img/mobs/hostile/Diener.png",
+    "description": "Diener ist feindlich / illager.",
+    "biome": "Waldanwesen, Patrouillen (Bedrock) und Überfälle",
+    "aliases": [],
+    "introduced_date": "2016-11-14",
+    "removed_date": "",
+    "gallery": [],
+    "model": "",
+    "animation": [],
+    "source": "",
+    "updated_at": "2026-08-22",
+    "notes": "Diener tragen Eisensäxte, keine Diamantäxte.",
+    "version": "Java Edition 1.11 / Bedrock Edition 1.0.0",
+    "edition": "Java Edition, Bedrock Edition",
+    "effects": [],
+    "effect_immunities": [],
+    "status": "Verfügbar",
+    "tags": [
+      "Feindliche Mobs",
+      "Feindlich / Illager"
+    ],
+    "related_entries": [],
+    "command": "/summon minecraft:vindicator",
+    "version_history": [
+      {
+        "version": "Java Edition 1.11 / Bedrock Edition 1.0.0",
+        "change": "Hinzugefügt.",
+        "type": "added",
+        "date": "2016-11-14"
+      }
+    ],
+    "texture": [
+      {
+        "name": "Vindicator Vindicator",
+        "category": "standard",
+        "description": "Variante: Vindicator Vindicator.",
+        "file": "/assets/img/texture/mobs/vindicator/vindicator.png"
+      }
+    ],
+    "sounds": [],
+    "health": 24,
+    "damage": "Mit Eisenaxt – Java: Einfach 7,5, Normal 13, Schwer 19,5; Bedrock abweichend",
+    "armor": 0,
+    "experience": "5 plus Ausrüstungsbonus",
+    "dimension": "Overworld",
+    "movement_speed": 0.35,
+    "size": {
+      "width": "Breite: 0.6",
+      "height": "Höhe: 1.95"
+    },
+    "spawn": {
+      "light_level": [
+        "Nicht lichtabhängig bei Struktur/Überfall"
+      ],
+      "biome": "Waldanwesen oder Überfallgebiet",
+      "structure": "Waldanwesen, Überfall"
+    },
+    "light_level": [
+      "Nicht lichtabhängig bei Struktur/Überfall"
+    ],
+    "classification": "Feindlich / Illager",
+    "renewable": "Ja",
+    "can_despawn": "Ja, sofern die normalen Despawn-Regeln gelten",
+    "tameable": "Nein",
+    "breedable": "Nein",
+    "duplicable": "Nein",
+    "duplication_item": "",
+    "leashable": "Nein",
+    "rideable": "Nein",
+    "baby_variant": "Nein",
+    "drops": [
+      {
+        "item": "minecraft:emerald",
+        "chance": "100 %",
+        "amount": "0–1 (+0–1 je Plünderungsstufe)"
+      },
+      {
+        "item": "Natürlich erzeugte Eisenaxt",
+        "chance": "8,5 % (+1 Prozentpunkt je Plünderungsstufe)",
+        "amount": "1"
+      },
+      {
+        "item": "Ominöses Banner",
+        "chance": "100 %",
+        "amount": "1",
+        "condition": "Nur als Hauptmann"
+      }
+    ],
+    "abilities": [
+      "Sprintet beim Angriff",
+      "Kann Türen öffnen",
+      "Wird mit dem Namen Johnny gegen fast alle Mobs aggressiv"
+    ],
+    "fun_fact": "Diener tragen Eisensäxte, keine Diamantäxte.",
+    "attack_type": "Axt-Nahkampf",
+    "targets": [
+      "Spieler",
+      "Dorfbewohner",
+      "Fahrende Händler",
+      "Eisengolems"
+    ],
+    "enemy_mobs": [],
+    "follows": [],
+    "healing_item": "",
+    "fire_immune": "Nein",
+    "undead": "Nein",
+    "boss_bar": "Nein",
+    "knockback_resistance": "",
+    "loot_table": "minecraft:entities/vindicator",
+    "java_entity_id": "minecraft:vindicator",
+    "bedrock_entity_id": "minecraft:vindicator"
+  },
+  {
+    "id": "minecraft:warden",
+    "name": "Wärter",
+    "numeric_id": "( Nur Bedrock ) 131",
+    "type": "hostile",
+    "category": "Feindliche Mobs",
+    "icon": "/assets/img/mobs/hostile/Warden.webp",
+    "description": "Wärter ist feindlich / blind.",
+    "biome": "Tiefes Dunkel",
+    "aliases": [
+      "Wächter"
+    ],
+    "introduced_date": "2022-06-07",
+    "removed_date": "",
+    "gallery": [],
+    "model": "",
+    "animation": [],
+    "source": "",
+    "updated_at": "2026-08-22",
+    "notes": "Der Wärter ist nicht als Boss klassifiziert und besitzt keine Bossleiste.",
+    "version": "Java Edition 1.19 / Bedrock Edition 1.19.0",
+    "edition": "Java Edition, Bedrock Edition",
+    "effects": [],
+    "effect_immunities": [],
+    "status": "Verfügbar",
+    "tags": [
+      "Feindliche Mobs",
+      "Feindlich / Blind"
+    ],
+    "related_entries": [],
+    "command": "/summon minecraft:warden",
+    "version_history": [
+      {
+        "version": "Java Edition 1.19 / Bedrock Edition 1.19.0",
+        "change": "Hinzugefügt.",
+        "type": "added",
+        "date": "2022-06-07"
+      }
+    ],
+    "texture": [
+      {
+        "name": "Warden Warden Bioluminescent Layer",
+        "category": "standard",
+        "description": "Variante: Warden Warden Bioluminescent Layer.",
+        "file": "/assets/img/texture/mobs/warden/warden_bioluminescent_layer.png"
+      },
+      {
+        "name": "Warden Warden Heart",
+        "category": "standard",
+        "description": "Variante: Warden Warden Heart.",
+        "file": "/assets/img/texture/mobs/warden/warden_heart.png"
+      },
+      {
+        "name": "Warden Warden Pulsating Spots 1",
+        "category": "standard",
+        "description": "Variante: Warden Warden Pulsating Spots 1.",
+        "file": "/assets/img/texture/mobs/warden/warden_pulsating_spots_1.png"
+      },
+      {
+        "name": "Warden Warden Pulsating Spots 2",
+        "category": "standard",
+        "description": "Variante: Warden Warden Pulsating Spots 2.",
+        "file": "/assets/img/texture/mobs/warden/warden_pulsating_spots_2.png"
+      },
+      {
+        "name": "Warden Warden",
+        "category": "standard",
+        "description": "Variante: Warden Warden.",
+        "file": "/assets/img/texture/mobs/warden/warden.png"
+      }
+    ],
+    "sounds": [],
+    "health": 500,
+    "damage": "Nahkampf: Einfach 16, Normal 30, Schwer 45; Schallangriff: 10 und umgeht Rüstung, Schilde und viele Schutzmechaniken",
+    "armor": 0,
+    "experience": "5",
+    "dimension": "Overworld",
+    "movement_speed": 0.3,
+    "size": {
+      "width": "Breite: 0.9",
+      "height": "Höhe: 2.9"
+    },
+    "spawn": {
+      "light_level": [
+        "Nicht lichtabhängig"
+      ],
+      "biome": "Tiefes Dunkel",
+      "structure": "Wird nach wiederholten Warnungen eines natürlich erzeugten Sculk-Kreischers aus dem Boden gerufen"
+    },
+    "light_level": [
+      "Nicht lichtabhängig"
+    ],
+    "classification": "Feindlich / Blind",
+    "renewable": "Ja",
+    "can_despawn": "Gräbt sich nach etwa 60 Sekunden ohne wahrgenommene Aktivität wieder ein",
+    "tameable": "Nein",
+    "breedable": "Nein",
+    "duplicable": "Nein",
+    "duplication_item": "",
+    "leashable": "Nein",
+    "rideable": "Nein",
+    "baby_variant": "Nein",
+    "drops": [
+      {
+        "item": "minecraft:sculk_catalyst",
+        "chance": "100 %",
+        "amount": "1",
+        "condition": "Nicht von Plünderung beeinflusst"
+      }
+    ],
+    "abilities": [
+      "Ist blind und ortet Ziele durch Vibrationen und Geruch",
+      "Schallangriff durchdringt Blöcke",
+      "Ist immun gegen Feuer und Lava",
+      "Deaktiviert Schilde mit Nahkampftreffern"
+    ],
+    "fun_fact": "Der Wärter ist nicht als Boss klassifiziert und besitzt keine Bossleiste.",
+    "attack_type": "Extremer Nahkampf und Schall-Fernangriff",
+    "targets": [
+      "Vibrationen, Gerüche und provozierende Entities; keine Wärter"
+    ],
+    "enemy_mobs": [],
+    "follows": [],
+    "healing_item": "",
+    "fire_immune": "Ja",
+    "undead": "Nein",
+    "boss_bar": "Nein",
+    "knockback_resistance": 1,
+    "loot_table": "minecraft:entities/warden",
+    "java_entity_id": "minecraft:warden",
+    "bedrock_entity_id": "minecraft:warden"
+  },
+  {
+    "id": "minecraft:witch",
+    "name": "Hexe",
+    "numeric_id": "( Nur Bedrock ) 45",
+    "type": "hostile",
+    "category": "Feindliche Mobs",
+    "icon": "/assets/img/mobs/hostile/Witch.webp",
+    "description": "Hexe ist feindlich.",
+    "biome": "Viele Oberweltbiome; feste Hütte im Sumpf",
+    "aliases": [],
+    "introduced_date": "2012-10-25",
+    "removed_date": "",
+    "gallery": [],
+    "model": "",
+    "animation": [],
+    "source": "",
+    "updated_at": "2026-08-22",
+    "notes": "",
+    "version": "Java Edition 1.4.2 / Bedrock Edition 0.14.0",
+    "edition": "Java Edition, Bedrock Edition",
+    "effects": [],
+    "effect_immunities": [],
+    "status": "Verfügbar",
+    "tags": [
+      "Feindliche Mobs",
+      "Feindlich"
+    ],
+    "related_entries": [],
+    "command": "/summon minecraft:witch",
+    "version_history": [
+      {
+        "version": "Java Edition 1.4.2 / Bedrock Edition 0.14.0",
+        "change": "Hinzugefügt.",
+        "type": "added",
+        "date": "2012-10-25"
+      }
+    ],
+    "texture": [
+      {
+        "name": "Witch Witch",
+        "category": "standard",
+        "description": "Variante: Witch Witch.",
+        "file": "/assets/img/texture/mobs/witch/witch.png"
+      }
+    ],
+    "sounds": [],
+    "health": 26,
+    "damage": "Wurftränke verursachen abhängig von Ziel und Entfernung Schaden oder negative Effekte",
+    "armor": 0,
+    "experience": "5",
+    "dimension": "Overworld",
+    "movement_speed": 0.25,
+    "size": {
+      "width": "Breite: 0.6",
+      "height": "Höhe: 1.95"
+    },
+    "spawn": {
+      "light_level": [
+        "Blocklicht 0 bei natürlichem Monsterspawn"
+      ],
+      "biome": "Viele Oberweltbiome",
+      "structure": "Sumpfhütte oder Überfall"
+    },
+    "light_level": [
+      "Blocklicht 0 bei natürlichem Monsterspawn"
+    ],
+    "classification": "Feindlich",
+    "renewable": "Ja",
+    "can_despawn": "Ja, sofern die normalen Despawn-Regeln gelten",
+    "tameable": "Nein",
+    "breedable": "Nein",
+    "duplicable": "Nein",
+    "duplication_item": "",
+    "leashable": "Nein",
+    "rideable": "Nein",
+    "baby_variant": "Nein",
+    "drops": [
+      {
+        "item": "Leuchtsteinstaub, Redstone-Staub, Zucker, Spinnenauge, Glasflasche, Schwarzpulver oder Stock",
+        "chance": "1–3 Beutegruppen",
+        "amount": "Je 0–2; Plünderung erhöht Würfe"
+      },
+      {
+        "item": "Gerade getrunkener Trank",
+        "chance": "8,5 % (+1 Prozentpunkt je Plünderungsstufe)",
+        "amount": "1",
+        "condition": "Nur wenn die Hexe beim Tod einen Trank trinkt"
+      }
+    ],
+    "abilities": [
+      "Wirft negative Tränke passend zur Entfernung und zum Ziel",
+      "Trinkt Heilung, Feuerresistenz, Wasseratmung oder Schnelligkeit situationsabhängig",
+      "Besitzt 85 % Resistenz gegen Magieschaden"
+    ],
+    "fun_fact": "",
+    "attack_type": "Wurftränke",
+    "targets": [
+      "Spieler",
+      "Eisengolem",
+      "Schneegolem"
+    ],
+    "enemy_mobs": [],
+    "follows": [],
+    "healing_item": [
+      "Trank der Heilung",
+      "Trank der Regeneration"
+    ],
+    "fire_immune": "Nein",
+    "undead": "Nein",
+    "boss_bar": "Nein",
+    "knockback_resistance": "",
+    "loot_table": "minecraft:entities/witch",
+    "java_entity_id": "minecraft:witch",
+    "bedrock_entity_id": "minecraft:witch"
+  },
+  {
+    "id": "minecraft:wither_skeleton",
+    "name": "Witherskelett",
+    "numeric_id": "( Nur Bedrock ) 48",
+    "type": "hostile",
+    "category": "Feindliche Mobs",
+    "icon": "/assets/img/mobs/hostile/Wither_Skeleton.webp",
+    "description": "Witherskelett ist feindlich / untot.",
+    "biome": "Netherfestungsbereiche",
+    "aliases": [
+      "Wither-Skelett"
+    ],
+    "introduced_date": "2012-10-25",
+    "removed_date": "",
+    "gallery": [],
+    "model": "",
+    "animation": [],
+    "source": "",
+    "updated_at": "2026-08-22",
+    "notes": "",
+    "version": "Java Edition 1.4.2 / Bedrock Edition 0.12.1",
+    "edition": "Java Edition, Bedrock Edition",
+    "effects": [
+      {
+        "name": "Wither",
+        "type": "verursacht",
+        "level": "I",
+        "duration": "Normal: 10 Sekunden; Schwer: 40 Sekunden",
+        "chance": "Bei Nahkampftreffer",
+        "condition": "Java: nicht auf Einfach; Bedrock kann abweichen",
+        "description": "Kann das Ziel töten und färbt die Lebensanzeige dunkel."
+      }
+    ],
+    "effect_immunities": [
+      "Gift",
+      "Regeneration",
+      "Wither"
+    ],
+    "status": "Verfügbar",
+    "tags": [
+      "Feindliche Mobs",
+      "Feindlich / untot",
+      "Untot"
+    ],
+    "related_entries": [],
+    "command": "/summon minecraft:wither_skeleton",
+    "version_history": [
+      {
+        "version": "Java Edition 1.4.2 / Bedrock Edition 0.12.1",
+        "change": "Hinzugefügt.",
+        "type": "added",
+        "date": "2012-10-25"
+      }
+    ],
+    "texture": [
+      {
+        "name": "Wither Skeleton Wither Skeleton",
+        "category": "standard",
+        "description": "Variante: Wither Skeleton Wither Skeleton.",
+        "file": "/assets/img/texture/mobs/wither_skeleton/wither_skeleton.png"
+      }
+    ],
+    "sounds": [],
+    "health": 20,
+    "damage": "Mit Steinschwert – Einfach 5, Normal 8, Schwer 12; zusätzlich Wither",
+    "armor": 0,
+    "experience": "5 plus Ausrüstungsbonus",
+    "dimension": "Nether",
+    "movement_speed": 0.25,
+    "size": {
+      "width": "Breite: 0.7",
+      "height": "Höhe: 2.4"
+    },
+    "spawn": {
+      "light_level": [
+        "Java: 7 oder niedriger; Bedrock-Regeln abweichend"
+      ],
+      "biome": "Netherfestung",
+      "structure": "Netherfestung"
+    },
+    "light_level": [
+      "Java: 7 oder niedriger; Bedrock-Regeln abweichend"
+    ],
+    "classification": "Feindlich / untot",
+    "renewable": "Ja",
+    "can_despawn": "Ja, sofern die normalen Despawn-Regeln gelten",
+    "tameable": "Nein",
+    "breedable": "Nein",
+    "duplicable": "Nein",
+    "duplication_item": "",
+    "leashable": "Nein",
+    "rideable": "Nein",
+    "baby_variant": "Nein",
+    "drops": [
+      {
+        "item": "minecraft:bone",
+        "chance": "100 %",
+        "amount": "0–2 (+0–1 je Plünderungsstufe)"
+      },
+      {
+        "item": "minecraft:coal",
+        "chance": "33,3 %",
+        "amount": "1 (+0–1 je Plünderungsstufe möglich)"
+      },
+      {
+        "item": "minecraft:wither_skeleton_skull",
+        "chance": "Java 2,5 % / Bedrock 2,5 %",
+        "amount": "1",
+        "condition": "Nur bei Tod durch Spieler/gezähmten Wolf; +1 Prozentpunkt je Plünderungsstufe"
+      },
+      {
+        "item": "Natürlich erzeugtes Steinschwert",
+        "chance": "8,5 % (+1 Prozentpunkt je Plünderungsstufe)",
+        "amount": "1"
+      }
+    ],
+    "abilities": [
+      "Verursacht Wither",
+      "Ist immun gegen Feuer und Lava",
+      "Ist selbst gegen Wither immun",
+      "Passt wegen seiner Höhe nicht durch zwei Blöcke hohe Durchgänge"
+    ],
+    "fun_fact": "",
+    "attack_type": "Schwert-Nahkampf",
+    "targets": [
+      "Spieler",
+      "Piglins",
+      "Piglin-Barbaren",
+      "Eisengolems",
+      "Baby-Schildkröten"
+    ],
+    "enemy_mobs": [],
+    "follows": [],
+    "healing_item": "",
+    "fire_immune": "Ja",
+    "undead": "Ja",
+    "boss_bar": "Nein",
+    "knockback_resistance": "",
+    "loot_table": "minecraft:entities/wither_skeleton",
+    "java_entity_id": "minecraft:wither_skeleton",
+    "bedrock_entity_id": "minecraft:wither_skeleton"
+  },
+  {
+    "id": "minecraft:parched",
+    "name": "Parched",
+    "numeric_id": "( Nur Bedrock ) 151",
+    "type": "hostile",
+    "category": "Feindliche Mobs",
+    "icon": "/assets/img/mobs/hostile/Parched.png",
+    "description": "Parched ist feindlich / untot.",
+    "biome": "Wüste",
+    "aliases": [
+      "Wüstenwanderer"
+    ],
+    "introduced_date": "2025-12-09",
+    "removed_date": "",
+    "gallery": [],
+    "model": "",
+    "animation": [],
+    "source": "",
+    "updated_at": "2026-08-22",
+    "notes": "Der Kürbis ist nur mögliche Halloween-Ausrüstung und kein eigener regulärer Drop.",
+    "version": "Java Edition 1.21.11 / Bedrock Edition 1.21.130",
+    "edition": "Java Edition, Bedrock Edition",
+    "effects": [
+      {
+        "name": "Schwäche",
+        "type": "verursacht",
+        "level": "I",
+        "duration": "30 Sekunden",
+        "chance": "Bei Pfeiltreffer",
+        "condition": "Pfeil des Parched",
+        "description": "Verringert Nahkampfschaden."
+      }
+    ],
+    "effect_immunities": [
+      "Gift",
+      "Regeneration",
+      "Schwäche"
+    ],
+    "status": "Verfügbar",
+    "tags": [
+      "Feindliche Mobs",
+      "Feindlich / untot",
+      "Untot"
+    ],
+    "related_entries": [],
+    "command": "/summon minecraft:parched",
+    "version_history": [
+      {
+        "version": "Java Edition 1.21.11 / Bedrock Edition 1.21.130",
+        "change": "Hinzugefügt.",
+        "type": "added",
+        "date": "2025-12-09"
+      }
+    ],
+    "texture": [
+      {
+        "name": "Parched Parched",
+        "category": "standard",
+        "description": "Variante: Parched Parched.",
+        "file": "/assets/img/texture/mobs/parched/parched.png"
+      }
+    ],
+    "sounds": [],
+    "health": 16,
+    "damage": "Bogen: Einfach 4–8, Normal 6–8, Schwer 8–10; Nahkampf Einfach/Normal 2, Schwer 3",
+    "armor": 2,
+    "experience": "5 plus 1–3 je natürlich erzeugtem Ausrüstungsteil",
+    "dimension": "Overworld",
+    "movement_speed": 0.25,
+    "size": {
+      "width": "Breite: 0.6",
+      "height": "Höhe: 1.99"
+    },
+    "spawn": {
+      "light_level": [
+        "Blocklicht 0 an der Wüstenoberfläche"
+      ],
+      "biome": "Wüste",
+      "structure": "Keine; nicht in Höhlen"
+    },
+    "light_level": [
+      "Blocklicht 0 an der Wüstenoberfläche"
+    ],
+    "classification": "Feindlich / untot",
+    "renewable": "Ja",
+    "can_despawn": "Ja, sofern die normalen Despawn-Regeln gelten",
+    "tameable": "Nein",
+    "breedable": "Nein",
+    "duplicable": "Nein",
+    "duplication_item": "",
+    "leashable": "Nein",
+    "rideable": "Nein",
+    "baby_variant": "Nein",
+    "drops": [
+      {
+        "item": "minecraft:arrow",
+        "chance": "100 %",
+        "amount": "0–2 (+0–1 je Plünderungsstufe)"
+      },
+      {
+        "item": "minecraft:bone",
+        "chance": "100 %",
+        "amount": "0–2 (+0–1 je Plünderungsstufe)"
+      },
+      {
+        "item": "Natürlich erzeugter Bogen",
+        "chance": "8,5 % (+1 Prozentpunkt je Plünderungsstufe)",
+        "amount": "1"
+      },
+      {
+        "item": "Pfeil der Schwäche",
+        "chance": "Bis zu 1",
+        "amount": "0–1",
+        "condition": "Nur bei Tod durch Spieler/gezähmten Wolf; Plünderung erhöht Maximum"
+      }
+    ],
+    "abilities": [
+      "Schießt Pfeile der Schwäche",
+      "Feuert langsamer als ein normales Skelett",
+      "Verbrennt nicht im Sonnenlicht",
+      "Ist gegen Schwäche immun"
+    ],
+    "fun_fact": "Der Kürbis ist nur mögliche Halloween-Ausrüstung und kein eigener regulärer Drop.",
+    "attack_type": "Bogen mit Schwächepfeilen",
+    "targets": [
+      "Spieler",
+      "Dorfbewohner",
+      "Eisengolem",
+      "Schildkröteneier"
+    ],
+    "enemy_mobs": [],
+    "follows": [],
+    "healing_item": "",
+    "fire_immune": "Nein; viele Untote verbrennen im Sonnenlicht, sofern nicht geschützt",
+    "undead": "Ja",
+    "boss_bar": "Nein",
+    "knockback_resistance": "",
+    "loot_table": "minecraft:entities/parched",
+    "java_entity_id": "minecraft:parched",
+    "bedrock_entity_id": "minecraft:parched"
+  },
+  {
+    "id": "minecraft:zoglin",
+    "name": "Zoglin",
+    "numeric_id": "( Nur Bedrock ) 126",
+    "type": "hostile",
+    "category": "Feindliche Mobs",
+    "icon": "/assets/img/mobs/hostile/Zoglin.webp",
+    "description": "Zoglin ist feindlich / untot.",
+    "biome": "Keine natürliche Biom-Bindung",
+    "aliases": [],
+    "introduced_date": "2020-06-23",
+    "removed_date": "",
+    "gallery": [],
+    "model": "",
+    "animation": [],
+    "source": "",
+    "updated_at": "2026-08-22",
+    "notes": "Zoglins lassen kein Leder fallen.",
+    "version": "Java Edition 1.16 / Bedrock Edition 1.16.0",
+    "edition": "Java Edition, Bedrock Edition",
+    "effects": [],
+    "effect_immunities": [
+      "Gift",
+      "Regeneration"
+    ],
+    "status": "Verfügbar",
+    "tags": [
+      "Feindliche Mobs",
+      "Feindlich / untot",
+      "Untot"
+    ],
+    "related_entries": [],
+    "command": "/summon minecraft:zoglin",
+    "version_history": [
+      {
+        "version": "Java Edition 1.16 / Bedrock Edition 1.16.0",
+        "change": "Hinzugefügt.",
+        "type": "added",
+        "date": "2020-06-23"
+      }
+    ],
+    "texture": [
+      {
+        "name": "Zoglin Zoglin Baby",
+        "category": "baby",
+        "description": "Variante: Zoglin Zoglin Baby.",
+        "file": "/assets/img/texture/mobs/zoglin/zoglin_baby.png"
+      },
+      {
+        "name": "Zoglin Zoglin",
+        "category": "standard",
+        "description": "Variante: Zoglin Zoglin.",
+        "file": "/assets/img/texture/mobs/zoglin/zoglin.png"
+      }
+    ],
+    "sounds": [],
+    "health": 40,
+    "damage": "Erwachsen Java: Einfach 2,5–5, Normal 3–8, Schwer 4,5–12; Bedrock abweichend",
+    "armor": 0,
+    "experience": "5",
+    "dimension": "Alle außerhalb des Nethers durch Hoglin-Umwandlung",
+    "movement_speed": 0.3,
+    "size": {
+      "width": "Breite: 0.9",
+      "height": "Höhe: 0.9",
+      "baby": {
+        "width": "Breite: 0.45",
+        "height": "Höhe: 0.45"
+      }
+    },
+    "spawn": {
+      "light_level": [
+        "Nicht lichtabhängig"
+      ],
+      "biome": "Entsteht, wenn ein Hoglin 15 Sekunden außerhalb des Nethers bleibt",
+      "structure": "Keine"
+    },
+    "light_level": [
+      "Nicht lichtabhängig"
+    ],
+    "classification": "Feindlich / untot",
+    "renewable": "Ja",
+    "can_despawn": "Ja, sofern die normalen Despawn-Regeln gelten",
+    "tameable": "Nein",
+    "breedable": "Nein",
+    "duplicable": "Nein",
+    "duplication_item": "",
+    "leashable": "Nein",
+    "rideable": "Nein",
+    "baby_variant": "Ja, wenn ein Baby-Hoglin umgewandelt wird",
+    "drops": [
+      {
+        "item": "minecraft:rotten_flesh",
+        "chance": "100 %",
+        "amount": "1–3 (+0–1 je Plünderungsstufe)"
+      }
+    ],
+    "abilities": [
+      "Greift fast alle Lebewesen an",
+      "Schleudert Ziele hoch",
+      "Kann nicht gezüchtet werden",
+      "Entsteht durch Umwandlung eines Hoglins"
+    ],
+    "fun_fact": "Zoglins lassen kein Leder fallen.",
+    "attack_type": "Stoß-Nahkampf",
+    "targets": [
+      "Fast alle Mobs außer Creepern, Ghasts, Zoglins und Rüstungshaltern"
+    ],
+    "enemy_mobs": [],
+    "follows": [],
+    "healing_item": "",
+    "fire_immune": "Nein; viele Untote verbrennen im Sonnenlicht, sofern nicht geschützt",
+    "undead": "Ja",
+    "boss_bar": "Nein",
+    "knockback_resistance": "",
+    "loot_table": "minecraft:entities/zoglin",
+    "java_entity_id": "minecraft:zoglin",
+    "bedrock_entity_id": "minecraft:zoglin"
+  },
+  {
+    "id": "minecraft:zombie",
+    "name": "Zombie",
+    "numeric_id": "( Nur Bedrock ) 32",
+    "type": "hostile",
+    "category": "Feindliche Mobs",
+    "icon": "/assets/img/mobs/hostile/Zombie.webp",
+    "description": "Zombie ist feindlich / untot.",
+    "biome": "Fast alle geeigneten Oberweltbiome",
+    "aliases": [],
+    "introduced_date": "2009-09-01",
+    "removed_date": "",
+    "gallery": [],
+    "model": "",
+    "animation": [],
+    "source": "",
+    "updated_at": "2026-08-22",
+    "notes": "",
+    "version": "Java Edition Classic 0.24 SURVIVAL TEST / Bedrock Edition 0.2.0",
+    "edition": "Java Edition, Bedrock Edition",
+    "effects": [],
+    "effect_immunities": [
+      "Gift",
+      "Regeneration"
+    ],
+    "status": "Verfügbar",
+    "tags": [
+      "Feindliche Mobs",
+      "Feindlich / untot",
+      "Untot"
+    ],
+    "related_entries": [],
+    "command": "/summon minecraft:zombie",
+    "version_history": [
+      {
+        "version": "Java Edition Classic 0.24 SURVIVAL TEST / Bedrock Edition 0.2.0",
+        "change": "Hinzugefügt.",
+        "type": "added",
+        "date": "2009-09-01"
+      }
+    ],
+    "texture": [
+      {
+        "name": "Zombie Zombie Baby",
+        "category": "baby",
+        "description": "Variante: Zombie Zombie Baby.",
+        "file": "/assets/img/texture/mobs/zombie/zombie_baby.png"
+      },
+      {
+        "name": "Zombie Zombie",
+        "category": "standard",
+        "description": "Variante: Zombie Zombie.",
+        "file": "/assets/img/texture/mobs/zombie/zombie.png"
+      }
+    ],
+    "sounds": [],
+    "health": 20,
+    "damage": "Unbewaffnet: Einfach 2,5, Normal 3, Schwer 4,5; Waffen verändern den Schaden",
+    "armor": 2,
+    "experience": "Erwachsen 5, Baby 12, plus Ausrüstungsbonus",
+    "dimension": "Overworld",
+    "movement_speed": 0.23,
+    "size": {
+      "width": "Breite: 0.6",
+      "height": "Höhe: 1.95",
+      "baby": {
+        "width": "Breite: 0.3",
+        "height": "Höhe: 0.975"
+      }
+    },
+    "spawn": {
+      "light_level": [
+        "Blocklicht 0"
+      ],
+      "biome": "Fast alle geeigneten Oberweltbiome",
+      "structure": "Spawner und verschiedene Strukturen möglich"
+    },
+    "light_level": [
+      "Blocklicht 0"
+    ],
+    "classification": "Feindlich / untot",
+    "renewable": "Ja",
+    "can_despawn": "Ja, sofern die normalen Despawn-Regeln gelten",
+    "tameable": "Nein",
+    "breedable": "Nein",
+    "duplicable": "Nein",
+    "duplication_item": "",
+    "leashable": "Nein",
+    "rideable": "Nein",
+    "baby_variant": "Ja",
+    "drops": [
+      {
+        "item": "minecraft:rotten_flesh",
+        "chance": "100 %",
+        "amount": "0–2 (+0–1 je Plünderungsstufe)"
+      },
+      {
+        "item": "Eisenbarren, Karotte, Kartoffel oder Ofenkartoffel",
+        "chance": "Zusammen 2,5 % Basiswahrscheinlichkeit",
+        "amount": "1",
+        "condition": "Nur bei Tod durch Spieler/gezähmten Wolf; steigt mit Plünderung"
+      }
+    ],
+    "abilities": [
+      "Verbrennt ohne schützenden Helm im Sonnenlicht",
+      "Kann auf Schwer Holztüren zerstören",
+      "Kann Verstärkung rufen",
+      "Verwandelt sich nach längerem Untertauchen in einen Ertrunkenen",
+      "Babyzombies bewegen sich schneller und können Jockeys bilden"
+    ],
+    "fun_fact": "",
+    "attack_type": "Nahkampf",
+    "targets": [
+      "Spieler",
+      "Dorfbewohner",
+      "Fahrende Händler",
+      "Eisengolem",
+      "Schildkröteneier"
+    ],
+    "enemy_mobs": [],
+    "follows": [],
+    "healing_item": "",
+    "fire_immune": "Nein; viele Untote verbrennen im Sonnenlicht, sofern nicht geschützt",
+    "undead": "Ja",
+    "boss_bar": "Nein",
+    "knockback_resistance": "",
+    "loot_table": "minecraft:entities/zombie",
+    "java_entity_id": "minecraft:zombie",
+    "bedrock_entity_id": "minecraft:zombie"
+  },
+  {
+    "id": "minecraft:zombie_villager",
+    "name": "Zombiedorfbewohner",
+    "numeric_id": "( Nur Bedrock ) Neu 116 Alt 44",
+    "type": "hostile",
+    "category": "Feindliche Mobs",
+    "icon": "/assets/img/mobs/hostile/Zombie_Villager.webp",
+    "description": "Zombiedorfbewohner ist feindlich / untot.",
+    "biome": "Viele Oberweltbiome; entsteht auch durch Zombieangriff auf Dorfbewohner",
+    "aliases": [
+      "Zombie-Dorfbewohner"
+    ],
+    "introduced_date": "2011-09-22",
+    "removed_date": "",
+    "gallery": [],
+    "model": "",
+    "animation": [],
+    "source": "",
+    "updated_at": "2026-08-22",
+    "notes": "",
+    "version": "Java Edition Beta 1.9 Prerelease / Bedrock Edition 0.12.1",
+    "edition": "Java Edition, Bedrock Edition",
+    "effects": [],
+    "effect_immunities": [
+      "Gift",
+      "Regeneration"
+    ],
+    "status": "Verfügbar",
+    "tags": [
+      "Feindliche Mobs",
+      "Feindlich / untot",
+      "Untot"
+    ],
+    "related_entries": [],
+    "command": "/summon minecraft:zombie_villager",
+    "version_history": [
+      {
+        "version": "Java Edition Beta 1.9 Prerelease / Bedrock Edition 0.12.1",
+        "change": "Hinzugefügt.",
+        "type": "added",
+        "date": "2011-09-22"
+      }
+    ],
+    "texture": [
+      {
+        "name": "Zombie Villager Baby Desert",
+        "category": "baby",
+        "description": "Variante: Zombie Villager Baby Desert.",
+        "file": "/assets/img/texture/mobs/zombie_villager/baby/desert.png"
+      },
+      {
+        "name": "Zombie Villager Baby Jungle",
+        "category": "baby",
+        "description": "Variante: Zombie Villager Baby Jungle.",
+        "file": "/assets/img/texture/mobs/zombie_villager/baby/jungle.png"
+      },
+      {
+        "name": "Zombie Villager Baby Plains",
+        "category": "baby",
+        "description": "Variante: Zombie Villager Baby Plains.",
+        "file": "/assets/img/texture/mobs/zombie_villager/baby/plains.png"
+      },
+      {
+        "name": "Zombie Villager Baby Savanna",
+        "category": "baby",
+        "description": "Variante: Zombie Villager Baby Savanna.",
+        "file": "/assets/img/texture/mobs/zombie_villager/baby/savanna.png"
+      },
+      {
+        "name": "Zombie Villager Baby Snow",
+        "category": "baby",
+        "description": "Variante: Zombie Villager Baby Snow.",
+        "file": "/assets/img/texture/mobs/zombie_villager/baby/snow.png"
+      },
+      {
+        "name": "Zombie Villager Baby Swamp",
+        "category": "baby",
+        "description": "Variante: Zombie Villager Baby Swamp.",
+        "file": "/assets/img/texture/mobs/zombie_villager/baby/swamp.png"
+      },
+      {
+        "name": "Zombie Villager Baby Taiga",
+        "category": "baby",
+        "description": "Variante: Zombie Villager Baby Taiga.",
+        "file": "/assets/img/texture/mobs/zombie_villager/baby/taiga.png"
+      },
+      {
+        "name": "Zombie Villager Profession Level Diamond",
+        "category": "standard",
+        "description": "Variante: Zombie Villager Profession Level Diamond.",
+        "file": "/assets/img/texture/mobs/zombie_villager/profession_level/diamond.png"
+      },
+      {
+        "name": "Zombie Villager Profession Level Emerald",
+        "category": "standard",
+        "description": "Variante: Zombie Villager Profession Level Emerald.",
+        "file": "/assets/img/texture/mobs/zombie_villager/profession_level/emerald.png"
+      },
+      {
+        "name": "Zombie Villager Profession Level Gold",
+        "category": "standard",
+        "description": "Variante: Zombie Villager Profession Level Gold.",
+        "file": "/assets/img/texture/mobs/zombie_villager/profession_level/gold.png"
+      },
+      {
+        "name": "Zombie Villager Profession Level Iron",
+        "category": "standard",
+        "description": "Variante: Zombie Villager Profession Level Iron.",
+        "file": "/assets/img/texture/mobs/zombie_villager/profession_level/iron.png"
+      },
+      {
+        "name": "Zombie Villager Profession Level Stone",
+        "category": "standard",
+        "description": "Variante: Zombie Villager Profession Level Stone.",
+        "file": "/assets/img/texture/mobs/zombie_villager/profession_level/stone.png"
+      },
+      {
+        "name": "Zombie Villager Profession Armorer",
+        "category": "armor",
+        "description": "Variante: Zombie Villager Profession Armorer.",
+        "file": "/assets/img/texture/mobs/zombie_villager/profession/armorer.png"
+      },
+      {
+        "name": "Zombie Villager Profession Butcher",
+        "category": "standard",
+        "description": "Variante: Zombie Villager Profession Butcher.",
+        "file": "/assets/img/texture/mobs/zombie_villager/profession/butcher.png"
+      },
+      {
+        "name": "Zombie Villager Profession Cartographer",
+        "category": "standard",
+        "description": "Variante: Zombie Villager Profession Cartographer.",
+        "file": "/assets/img/texture/mobs/zombie_villager/profession/cartographer.png"
+      },
+      {
+        "name": "Zombie Villager Profession Cleric",
+        "category": "standard",
+        "description": "Variante: Zombie Villager Profession Cleric.",
+        "file": "/assets/img/texture/mobs/zombie_villager/profession/cleric.png"
+      },
+      {
+        "name": "Zombie Villager Profession Farmer",
+        "category": "standard",
+        "description": "Variante: Zombie Villager Profession Farmer.",
+        "file": "/assets/img/texture/mobs/zombie_villager/profession/farmer.png"
+      },
+      {
+        "name": "Zombie Villager Profession Fisherman",
+        "category": "standard",
+        "description": "Variante: Zombie Villager Profession Fisherman.",
+        "file": "/assets/img/texture/mobs/zombie_villager/profession/fisherman.png"
+      },
+      {
+        "name": "Zombie Villager Profession Fletcher",
+        "category": "standard",
+        "description": "Variante: Zombie Villager Profession Fletcher.",
+        "file": "/assets/img/texture/mobs/zombie_villager/profession/fletcher.png"
+      },
+      {
+        "name": "Zombie Villager Profession Leatherworker",
+        "category": "standard",
+        "description": "Variante: Zombie Villager Profession Leatherworker.",
+        "file": "/assets/img/texture/mobs/zombie_villager/profession/leatherworker.png"
+      },
+      {
+        "name": "Zombie Villager Profession Librarian",
+        "category": "standard",
+        "description": "Variante: Zombie Villager Profession Librarian.",
+        "file": "/assets/img/texture/mobs/zombie_villager/profession/librarian.png"
+      },
+      {
+        "name": "Zombie Villager Profession Mason",
+        "category": "standard",
+        "description": "Variante: Zombie Villager Profession Mason.",
+        "file": "/assets/img/texture/mobs/zombie_villager/profession/mason.png"
+      },
+      {
+        "name": "Zombie Villager Profession Nitwit",
+        "category": "standard",
+        "description": "Variante: Zombie Villager Profession Nitwit.",
+        "file": "/assets/img/texture/mobs/zombie_villager/profession/nitwit.png"
+      },
+      {
+        "name": "Zombie Villager Profession Shepherd",
+        "category": "standard",
+        "description": "Variante: Zombie Villager Profession Shepherd.",
+        "file": "/assets/img/texture/mobs/zombie_villager/profession/shepherd.png"
+      },
+      {
+        "name": "Zombie Villager Profession Toolsmith",
+        "category": "standard",
+        "description": "Variante: Zombie Villager Profession Toolsmith.",
+        "file": "/assets/img/texture/mobs/zombie_villager/profession/toolsmith.png"
+      },
+      {
+        "name": "Zombie Villager Profession Weaponsmith",
+        "category": "standard",
+        "description": "Variante: Zombie Villager Profession Weaponsmith.",
+        "file": "/assets/img/texture/mobs/zombie_villager/profession/weaponsmith.png"
+      },
+      {
+        "name": "Zombie Villager Type Desert",
+        "category": "standard",
+        "description": "Variante: Zombie Villager Type Desert.",
+        "file": "/assets/img/texture/mobs/zombie_villager/type/desert.png"
+      },
+      {
+        "name": "Zombie Villager Type Jungle",
+        "category": "standard",
+        "description": "Variante: Zombie Villager Type Jungle.",
+        "file": "/assets/img/texture/mobs/zombie_villager/type/jungle.png"
+      },
+      {
+        "name": "Zombie Villager Type Plains",
+        "category": "standard",
+        "description": "Variante: Zombie Villager Type Plains.",
+        "file": "/assets/img/texture/mobs/zombie_villager/type/plains.png"
+      },
+      {
+        "name": "Zombie Villager Type Savanna",
+        "category": "standard",
+        "description": "Variante: Zombie Villager Type Savanna.",
+        "file": "/assets/img/texture/mobs/zombie_villager/type/savanna.png"
+      },
+      {
+        "name": "Zombie Villager Type Snow",
+        "category": "standard",
+        "description": "Variante: Zombie Villager Type Snow.",
+        "file": "/assets/img/texture/mobs/zombie_villager/type/snow.png"
+      },
+      {
+        "name": "Zombie Villager Type Swamp",
+        "category": "standard",
+        "description": "Variante: Zombie Villager Type Swamp.",
+        "file": "/assets/img/texture/mobs/zombie_villager/type/swamp.png"
+      },
+      {
+        "name": "Zombie Villager Type Taiga",
+        "category": "standard",
+        "description": "Variante: Zombie Villager Type Taiga.",
+        "file": "/assets/img/texture/mobs/zombie_villager/type/taiga.png"
+      },
+      {
+        "name": "Zombie Villager Zombie Villager Baby",
+        "category": "baby",
+        "description": "Variante: Zombie Villager Zombie Villager Baby.",
+        "file": "/assets/img/texture/mobs/zombie_villager/zombie_villager_baby.png"
+      },
+      {
+        "name": "Zombie Villager Zombie Villager",
+        "category": "standard",
+        "description": "Variante: Zombie Villager Zombie Villager.",
+        "file": "/assets/img/texture/mobs/zombie_villager/zombie_villager.png"
+      }
+    ],
+    "sounds": [],
+    "health": 20,
+    "damage": "Unbewaffnet: Einfach 2,5, Normal 3, Schwer 4,5; Waffen verändern den Schaden",
+    "armor": 2,
+    "experience": "Erwachsen 5, Baby 12, plus Ausrüstungsbonus",
+    "dimension": "Overworld",
+    "movement_speed": 0.23,
+    "size": {
+      "width": "Breite: 0.6",
+      "height": "Höhe: 1.95",
+      "baby": {
+        "width": "Breite: 0.3",
+        "height": "Höhe: 0.975"
+      }
+    },
+    "spawn": {
+      "light_level": [
+        "Blocklicht 0 bei natürlichem Spawn"
+      ],
+      "biome": "Viele Oberweltbiome",
+      "structure": "Iglu-Keller oder verlassenes Dorf möglich"
+    },
+    "light_level": [
+      "Blocklicht 0 bei natürlichem Spawn"
+    ],
+    "classification": "Feindlich / untot",
+    "renewable": "Ja",
+    "can_despawn": "Ja, sofern die normalen Despawn-Regeln gelten",
+    "tameable": "Nein",
+    "breedable": "Nein",
+    "duplicable": "Nein",
+    "duplication_item": "",
+    "leashable": "Nein",
+    "rideable": "Nein",
+    "baby_variant": "Ja",
+    "drops": [
+      {
+        "item": "minecraft:rotten_flesh",
+        "chance": "100 %",
+        "amount": "0–2 (+0–1 je Plünderungsstufe)"
+      },
+      {
+        "item": "Eisenbarren, Karotte, Kartoffel oder Ofenkartoffel",
+        "chance": "Zusammen 2,5 % Basiswahrscheinlichkeit",
+        "amount": "1",
+        "condition": "Nur bei Tod durch Spieler/gezähmten Wolf; steigt mit Plünderung"
+      }
+    ],
+    "abilities": [
+      "Kann mit Schwäche und goldenem Apfel geheilt werden",
+      "Behält Beruf, Biomkleidung und Handelsdaten für die Heilung",
+      "Verbrennt ohne Kopfschutz im Sonnenlicht",
+      "Kann auf Schwer Holztüren zerstören"
+    ],
+    "fun_fact": "",
+    "attack_type": "Nahkampf",
+    "targets": [
+      "Spieler",
+      "Dorfbewohner",
+      "Fahrende Händler",
+      "Eisengolem",
+      "Schildkröteneier"
+    ],
+    "enemy_mobs": [],
+    "follows": [],
+    "healing_item": "",
+    "fire_immune": "Nein; viele Untote verbrennen im Sonnenlicht, sofern nicht geschützt",
+    "undead": "Ja",
+    "boss_bar": "Nein",
+    "knockback_resistance": "",
+    "loot_table": "minecraft:entities/zombie_villager",
+    "java_entity_id": "minecraft:zombie_villager",
+    "bedrock_entity_id": "minecraft:zombie_villager"
+  }
+]

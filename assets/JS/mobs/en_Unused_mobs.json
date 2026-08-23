@@ -1,0 +1,132 @@
+[
+  {
+    "id": "minecraft:elder_guardian_ghost",
+    "name": "Ghostly Elder Guardian",
+    "type": "summonable",
+    "icon": "/assets/img/mobs/unused/elder_guardian_ghost.gif",
+    "health": 80,
+    "damage": 8,
+    "description": "Removed ghost version • Transparent appearance • Same abilities as normal elder guardian",
+    "version": "Removed",
+    "dimension": "Overworld",
+    "movement_speed": 0.3,
+    "size": {
+      "width": 1.9975,
+      "height": 1.9975
+    },
+    "spawn": {
+      "light_level": [
+        "Unknown"
+      ],
+      "biome": "Not implemented in game",
+      "structure": "None"
+    },
+    "light_level": [
+      "Unknown"
+    ],
+    "fun_fact": "This ghost version was never officially released in the game!",
+    "abilities": [
+      "Laser attacks",
+      "Mining Fatigue effect",
+      "Transparent appearance",
+      "Ghostly movement"
+    ],
+    "drops": [
+      {
+        "item": "minecraft:prismarine_shard",
+        "chance": "100%",
+        "amount": "0-2"
+      }
+    ]
+  },
+  {
+    "id": "minecraft:giant",
+    "name": "Giant",
+    "type": "summonable",
+    "icon": "/assets/img/mobs/unused/Zombie.webp",
+    "health": 100,
+    "damage": 50,
+    "description": "Giant zombie variant • 6x larger than normal • No AI in game • Only spawnable by command",
+    "version": "Beta 1.8",
+    "dimension": "Overworld",
+    "movement_speed": 0.5,
+    "size": {
+      "width": 3.6,
+      "height": 10.8
+    },
+    "spawn": {
+      "light_level": [
+        "Unknown"
+      ],
+      "biome": "Only spawnable by command",
+      "structure": "None"
+    },
+    "light_level": [
+      "Unknown"
+    ],
+    "fun_fact": "Giants have no movement AI and do not move unless given commands!",
+    "abilities": [
+      "Extremely large size",
+      "No natural movement",
+      "Only spawnable by command",
+      "Huge damage"
+    ],
+    "drops": [
+      {
+        "item": "minecraft:rotten_flesh",
+        "chance": "100%",
+        "amount": "0-5"
+      }
+    ]
+  },
+  {
+    "id": "minecraft:illusioner",
+    "name": "Illusioner",
+    "type": "summonable",
+    "icon": "/assets/img/mobs/unused/Illusioner.webp",
+    "health": 32,
+    "damage": 4,
+    "description": "Illager wizard • Creates illusions • Blinds players • Only spawnable by command",
+    "version": "1.12",
+    "dimension": "Overworld",
+    "movement_speed": 0.35,
+    "size": {
+      "width": 0.6,
+      "height": 1.95
+    },
+    "spawn": {
+      "light_level": [
+        "Unknown"
+      ],
+      "biome": "Only spawnable by command",
+      "structure": "None"
+    },
+    "light_level": [
+      "Unknown"
+    ],
+    "fun_fact": "The Illusioner was announced in 2017 but never naturally implemented in the game!",
+    "abilities": [
+      "Creates copies of itself",
+      "Temporarily blinds players",
+      "Bow attacks",
+      "Illager wizard"
+    ],
+    "drops": [
+      {
+        "item": "minecraft:emerald",
+        "chance": "50%",
+        "amount": "0-1"
+      },
+      {
+        "item": "minecraft:arrow",
+        "chance": "100%",
+        "amount": "0-2"
+      },
+      {
+        "item": "minecraft:bow",
+        "chance": "8.5%",
+        "amount": "1"
+      }
+    ]
+  }
+]

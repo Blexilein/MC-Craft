@@ -1,0 +1,378 @@
+[
+  {
+    "id": "minecraft:elder_guardian_ghost",
+    "name": "Geist des Großen Wächters",
+    "numeric_id": "Nur Bedrock: 120",
+    "type": "summonable",
+    "category": "Unbenutzte Bedrock-Entity",
+    "icon": "/assets/img/mobs/unused/elder_guardian_ghost.gif",
+    "description": "Eine unbenutzte Bedrock-Entity für die geisterhafte Darstellung des Großen Wächters. Sie erscheint nicht natürlich und besitzt keine reguläre Kampf-KI.",
+    "biome": "Keine natürliche Biom-Bindung",
+    "structure": "Keine; die bekannte Geisterdarstellung hängt mit dem Effekt eines Großen Wächters zusammen",
+    "dimension": "Alle per Befehl; keine natürliche Dimension",
+    "movement_speed": "Keine normale Wegfindungs-KI",
+    "size": {
+      "width": 1.9975,
+      "height": 1.9975
+    },
+    "aliases": [
+      "Elder Guardian Ghost",
+      "Geisterhafter Großer Wächter"
+    ],
+    "introduced_date": "2019-07-26",
+    "removed_date": null,
+    "gallery": [],
+    "model": "Großer-Wächter-Modell",
+    "animation": [],
+    "source": "",
+    "updated_at": "2026-08-22",
+    "notes": "Nur in der Bedrock Edition vorhanden. Die Entity selbst greift nicht mit Laser an und verursacht keine Abbaulähmung; diese Behauptungen aus der alten Datei waren falsch.",
+    "version": "Bedrock Edition Beta 1.13.0.4",
+    "edition": "Nur Bedrock Edition",
+    "effects": [],
+    "effect_immunities": [],
+    "status": "Unbenutzt; nur über Befehle erreichbar",
+    "tags": [
+      "Unbenutzt",
+      "Bedrock Edition",
+      "Befehls-Entity",
+      "Wächter"
+    ],
+    "related_entries": [
+      "minecraft:elder_guardian",
+      "minecraft:guardian",
+      "minecraft:mining_fatigue"
+    ],
+    "command": "/summon elder_guardian_ghost ~ ~ ~",
+    "version_history": [
+      {
+        "version": "Bedrock Edition Beta 1.13.0.4",
+        "change": "Die unbenutzte Entity Geist des Großen Wächters wurde hinzugefügt.",
+        "type": "added",
+        "date": "2019-07-26"
+      }
+    ],
+    "texture": [
+      {
+        "name": "Guardian Guardian Elder",
+        "category": "Standardtextur",
+        "description": "Variante: Guardian Guardian Elder.",
+        "file": "/assets/img/texture/mobs/guardian/guardian_elder.png"
+      }
+    ],
+    "sounds": [],
+    "health": 80,
+    "damage": 0,
+    "armor": 0,
+    "experience": "0",
+    "spawn": {
+      "light_level": [
+        "Nicht anwendbar"
+      ],
+      "biome": "Keine",
+      "structure": "Keine",
+      "method": "Nur Bedrock-Befehl /summon elder_guardian_ghost"
+    },
+    "light_level": [
+      "Nicht anwendbar"
+    ],
+    "classification": "Unbenutzte interne Entity; kein regulärer Mob",
+    "renewable": "Nicht anwendbar",
+    "can_despawn": "Kein normales Spawn-/Despawn-Verhalten",
+    "tameable": "Nein",
+    "breedable": "Nein",
+    "duplicable": "Nein",
+    "duplication_item": "Keines",
+    "leashable": "Nein",
+    "rideable": "Nein",
+    "baby_variant": "Nein",
+    "drops": [],
+    "abilities": [
+      "Dient als eigenständige geisterhafte Wächterdarstellung",
+      "Steigt außerhalb von Wasser und sinkt in Wasser",
+      "Besitzt keine reguläre Angriffs- oder Wegfindungs-KI"
+    ],
+    "fun_fact": "Die Entity ist nicht der eigentliche Große Wächter und erscheint niemals als normaler Gegner.",
+    "attack_type": "Keiner",
+    "targets": [],
+    "enemy_mobs": [],
+    "follows": [],
+    "healing_item": [],
+    "fire_immune": "Nein",
+    "undead": "Nein",
+    "boss_bar": "Nein",
+    "knockback_resistance": 0,
+    "loot_table": "Keine reguläre Loot-Tabelle",
+    "java_entity_id": "Nicht vorhanden",
+    "bedrock_entity_id": "minecraft:elder_guardian_ghost"
+  },
+  {
+    "id": "minecraft:giant",
+    "name": "Riese",
+    "numeric_id": "Keine numerische ID",
+    "type": "summonable",
+    "category": "Unbenutzter Java-Mob",
+    "icon": "/assets/img/mobs/unused/Zombie.webp",
+    "description": "Eine sechsfach vergrößerte Zombie-Gestalt ohne aktive KI. Der Riese erscheint nicht natürlich und ist in der Java Edition nur über Befehle oder Datenpakete erreichbar.",
+    "biome": "Keine natürliche Biom-Bindung",
+    "structure": "Keine",
+    "dimension": "Alle per Befehl; keine natürliche Dimension",
+    "movement_speed": "Attribut 0,5; bewegt sich ohne hinzugefügte KI nicht",
+    "size": {
+      "width": 3.6,
+      "height": 12
+    },
+    "aliases": [
+      "Giant",
+      "Riesenzombie"
+    ],
+    "introduced_date": "2010-02-05",
+    "removed_date": null,
+    "gallery": [],
+    "model": "Sechsfach skaliertes Zombie-Modell",
+    "animation": [],
+    "source": "",
+    "updated_at": "2026-08-22",
+    "notes": "Der Riese besitzt zwar ein Angriffsschadens-Attribut, kann ohne künstlich hinzugefügte KI aber kein Ziel verfolgen oder angreifen.",
+    "version": "Java Edition Indev 0.31 20100205",
+    "edition": "Nur Java Edition",
+    "effects": [],
+    "effect_immunities": [
+      "Gift",
+      "Regeneration"
+    ],
+    "status": "Unbenutzt; nur über Befehle oder Datenpakete erreichbar",
+    "tags": [
+      "Unbenutzt",
+      "Java Edition",
+      "Befehls-Mob",
+      "Untot"
+    ],
+    "related_entries": [
+      "minecraft:zombie",
+      "minecraft:husk",
+      "minecraft:drowned"
+    ],
+    "command": "/summon minecraft:giant",
+    "version_history": [
+      {
+        "version": "Java Edition Indev 0.31 20100205",
+        "change": "Der Riese wurde hinzugefügt, erhielt aber keinen natürlichen Spawn.",
+        "type": "added",
+        "date": "2010-02-05"
+      }
+    ],
+    "texture": [
+      {
+        "name": "Gaint Gaint",
+        "category": "Standardtextur",
+        "description": "Variante: Gaint Gaint.",
+        "file": "/assets/img/texture/mobs/gaint/gaint.png"
+      }
+    ],
+    "sounds": [],
+    "health": 100,
+    "damage": "Angriffsschadens-Attribut 50; tatsächlich kein Angriff ohne hinzugefügte KI",
+    "armor": 0,
+    "experience": "5 beim Töten durch Spieler oder gezähmten Wolf",
+    "spawn": {
+      "light_level": [
+        "Nicht anwendbar"
+      ],
+      "biome": "Keine",
+      "structure": "Keine",
+      "method": "Nur Java-Befehl /summon minecraft:giant oder Datenpaket"
+    },
+    "light_level": [
+      "Nicht anwendbar"
+    ],
+    "classification": "Unbenutzter feindlicher Mob / untot",
+    "renewable": "Nur wiederholt per Befehl",
+    "can_despawn": "Kann ohne PersistenceRequired nach Monsterregeln despawnen",
+    "tameable": "Nein",
+    "breedable": "Nein",
+    "duplicable": "Nein",
+    "duplication_item": "Keines",
+    "leashable": "Nein",
+    "rideable": "Nein",
+    "baby_variant": "Nein",
+    "drops": [],
+    "abilities": [
+      "Extrem großes Modell und große Hitbox",
+      "Besitzt keine aktive Bewegungs- oder Angriffs-KI",
+      "Kann durch Befehle mit benutzerdefiniertem Verhalten verwendet werden"
+    ],
+    "fun_fact": "Der Riese wurde bereits 2010 in Indev hinzugefügt – deutlich vor Beta 1.8.",
+    "attack_type": "Ohne KI keiner",
+    "targets": [],
+    "enemy_mobs": [],
+    "follows": [],
+    "healing_item": [],
+    "fire_immune": "Nein",
+    "undead": "Ja",
+    "boss_bar": "Nein",
+    "knockback_resistance": 0,
+    "loot_table": "Keine regulären Item-Drops",
+    "java_entity_id": "minecraft:giant",
+    "bedrock_entity_id": "Nicht vorhanden"
+  },
+  {
+    "id": "minecraft:illusioner",
+    "name": "Illusionist",
+    "numeric_id": "Keine numerische ID",
+    "type": "summonable",
+    "category": "Unbenutzter Java-Mob",
+    "icon": "/assets/img/mobs/unused/Illusioner.webp",
+    "description": "Ein vollständig funktionsfähiger, aber unbenutzter Illager-Zauberer. Er greift mit einem Bogen an, blendet Spieler und erzeugt vier Scheinbilder.",
+    "biome": "Keine natürliche Biom-Bindung",
+    "structure": "Keine; erscheint nicht in Waldanwesen, Außenposten, Patrouillen oder Überfällen",
+    "dimension": "Alle per Befehl; keine natürliche Dimension",
+    "movement_speed": 0.5,
+    "size": {
+      "width": 0.6,
+      "height": 1.95
+    },
+    "aliases": [
+      "Illusioner",
+      "Illusionsmagier"
+    ],
+    "introduced_date": "2017-04-20",
+    "removed_date": null,
+    "gallery": [],
+    "model": "Illager-Modell",
+    "animation": [
+      "Zauberanimation",
+      "Bogenanimation"
+    ],
+    "source": "",
+    "updated_at": "2026-08-22",
+    "notes": "Der Illusionist wurde in Snapshot 17w16a hinzugefügt, jedoch nie in den normalen Survival-Spawn integriert.",
+    "version": "Java Edition 17w16a (Entwicklung von 1.12)",
+    "edition": "Nur Java Edition",
+    "effects": [
+      {
+        "name": "Blindheit",
+        "type": "verursacht",
+        "level": "I",
+        "duration": "20 Sekunden",
+        "chance": "Beim ersten Angriff auf einen neuen Spieler, wenn die regionale Schwierigkeit über 2 liegt",
+        "condition": "Nur gegen Spieler",
+        "description": "Der Illusionist blendet den anvisierten Spieler."
+      },
+      {
+        "name": "Unsichtbarkeit",
+        "type": "erhält",
+        "level": "I",
+        "duration": "60 Sekunden, im Kampf erneuert",
+        "chance": "100 % im Kampf",
+        "condition": "Beim Spiegelzauber",
+        "description": "Der echte Illusionist wird unsichtbar und vier Scheinbilder erscheinen."
+      }
+    ],
+    "effect_immunities": [],
+    "status": "Unbenutzt; nur über Befehl oder Datenpaket erreichbar",
+    "tags": [
+      "Unbenutzt",
+      "Java Edition",
+      "Illager",
+      "Zauberer",
+      "Befehls-Mob"
+    ],
+    "related_entries": [
+      "minecraft:evoker",
+      "minecraft:pillager",
+      "minecraft:vindicator",
+      "minecraft:bow"
+    ],
+    "command": "/summon minecraft:illusioner",
+    "version_history": [
+      {
+        "version": "Java Edition 17w16a",
+        "change": "Der Illusionist wurde als unbenutzter Mob hinzugefügt.",
+        "type": "added",
+        "date": "2017-04-20"
+      },
+      {
+        "version": "Java Edition 1.12",
+        "change": "Der Illusionist blieb in der Veröffentlichung enthalten, erhielt aber keinen natürlichen Spawn.",
+        "type": "changed",
+        "date": "2017-06-07"
+      }
+    ],
+    "texture": [
+      {
+        "name": "Illusioner Illusioner",
+        "category": "Standardtextur",
+        "description": "Variante: Illusioner Illusioner.",
+        "file": "/assets/img/texture/mobs/Illusioner/Illusioner.png"
+      }
+    ],
+    "sounds": [],
+    "health": 32,
+    "damage": "Bogenpfeile; Schaden abhängig von Schwierigkeit, Entfernung und Pfeiltreffer",
+    "armor": 0,
+    "experience": "5 beim Töten durch Spieler oder gezähmten Wolf",
+    "spawn": {
+      "light_level": [
+        "Nicht anwendbar"
+      ],
+      "biome": "Keine",
+      "structure": "Keine",
+      "method": "Nur Java-Befehl /summon minecraft:illusioner oder Datenpaket"
+    },
+    "light_level": [
+      "Nicht anwendbar"
+    ],
+    "classification": "Feindlich / Illager",
+    "renewable": "Nur wiederholt per Befehl oder Datenpaket",
+    "can_despawn": "Kann ohne PersistenceRequired nach Monsterregeln despawnen",
+    "tameable": "Nein",
+    "breedable": "Nein",
+    "duplicable": "Nein",
+    "duplication_item": "Keines",
+    "leashable": "Nein",
+    "rideable": "Nein",
+    "baby_variant": "Nein",
+    "drops": [
+      {
+        "item": "Natürlich erzeugter Bogen",
+        "chance": "8,5 % (+1 Prozentpunkt je Plünderungsstufe)",
+        "amount": "1",
+        "condition": "Nur bei Tod durch Spieler oder gezähmten Wolf"
+      },
+      {
+        "item": "Ominöses Banner",
+        "chance": "100 %",
+        "amount": "1",
+        "condition": "Nur wenn der Illusionist als Patrouillen-/Überfallhauptmann gesetzt wurde"
+      }
+    ],
+    "abilities": [
+      "Erzeugt vier rein visuelle Scheinbilder",
+      "Macht den echten Körper unsichtbar",
+      "Kann Spieler 20 Sekunden blenden",
+      "Sieht sein Ziel durch Blöcke",
+      "Greift mit dem Bogen an"
+    ],
+    "fun_fact": "Die vier Kopien besitzen keine eigenen Trefferboxen; nur der unsichtbare echte Illusionist kann getroffen werden.",
+    "attack_type": "Bogen-Fernkampf und Zauber",
+    "targets": [
+      "Spieler",
+      "Erwachsene Dorfbewohner",
+      "Fahrende Händler",
+      "Eisengolems"
+    ],
+    "enemy_mobs": [
+      "Eisengolem"
+    ],
+    "follows": [],
+    "healing_item": [],
+    "fire_immune": "Nein",
+    "undead": "Nein",
+    "boss_bar": "Nein",
+    "knockback_resistance": 0,
+    "loot_table": "minecraft:entities/illusioner",
+    "java_entity_id": "minecraft:illusioner",
+    "bedrock_entity_id": "Nicht vorhanden"
+  }
+]

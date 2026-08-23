@@ -1,0 +1,304 @@
+[
+  {
+    "id": "minecraft:player",
+    "name": "Spieler",
+    "numeric_id": "Nur Bedrock: 63",
+    "type": "player",
+    "category": "Spieler",
+    "icon": "/assets/img/mobs/player/Steve.png",
+    "description": "Die vom Menschen gesteuerte Spielfigur. Steve, Alex, Ari, Efe, Kai, Makena, Noor, Sunny und Zuri sind Standard-Skinfiguren, aber keine unterschiedlichen Mobs.",
+    "biome": "Alle Biome",
+    "structure": "Keine feste Struktur",
+    "dimension": "Overworld, Nether und The End",
+    "movement_speed": {
+      "attribute": 0.1,
+      "walking": "ca. 4,317 Blöcke/Sekunde",
+      "sprinting": "ca. 5,612 Blöcke/Sekunde",
+      "sneaking": "ca. 1,295 Blöcke/Sekunde",
+      "note": "Untergrund, Effekte, Verzauberungen und Aktionen verändern die Geschwindigkeit."
+    },
+    "size": {
+      "width": "Breite: 0.6",
+      "height": "Höhe: 1.8",
+      "sneaking": {
+        "width": "Breite: 0.6",
+        "height": "Höhe: 1.5"
+      },
+      "gliding_swimming": {
+        "width": "Breite: 0.6",
+        "height": "Höhe: 0.6"
+      },
+      "sleeping": {
+        "width": "Breite: 0.2",
+        "height": "Höhe: 0.2"
+      }
+    },
+    "aliases": [
+      "Steve",
+      "Alex",
+      "Ari",
+      "Efe",
+      "Kai",
+      "Makena",
+      "Noor",
+      "Sunny",
+      "Zuri"
+    ],
+    "introduced_date": "2009-05-13",
+    "removed_date": null,
+    "gallery": [],
+    "model": "Wide- oder Slim-Spielermodell",
+    "animation": [
+      "Gehen",
+      "Sprinten",
+      "Schleichen",
+      "Schwimmen",
+      "Kriechen",
+      "Fliegen",
+      "Elytra-Gleiten",
+      "Schlafen",
+      "Angreifen",
+      "Benutzen"
+    ],
+    "source": "",
+    "updated_at": "2026-08-22",
+    "notes": "Der Spieler ist technisch eine Entity, aber kein Mob. Er kann nicht mit /summon erzeugt werden und besitzt keine normale Mob-Loot-Tabelle.",
+    "version": "Java Edition Pre-Classic rd-132328; Bedrock-Vorgänger Pocket Edition Alpha v0.1.0",
+    "edition": "Java Edition, Bedrock Edition",
+    "effects": [],
+    "effect_immunities": [],
+    "status": "Verfügbar",
+    "tags": [
+      "Spieler",
+      "Entity",
+      "Wide",
+      "Slim",
+      "Standard-Skins"
+    ],
+    "related_entries": [
+      "minecraft:player_head",
+      "minecraft:bed",
+      "minecraft:respawn_anchor",
+      "minecraft:elytra",
+      "minecraft:armor"
+    ],
+    "command": "Nicht mit /summon beschwörbar; Spieler entstehen beim Beitritt zur Welt",
+    "version_history": [
+      {
+        "version": "Java Edition Pre-Classic rd-132328",
+        "change": "Menschen beziehungsweise die frühe Spielerfigur wurden hinzugefügt.",
+        "type": "added",
+        "date": "2009-05-13"
+      },
+      {
+        "version": "Java Edition 1.8",
+        "change": "Alex und das Slim-Arm-Modell wurden als Standardoption ergänzt.",
+        "type": "changed",
+        "date": "2014-09-02"
+      },
+      {
+        "version": "Bedrock Edition 1.19.50",
+        "change": "Ari, Efe, Kai, Makena, Noor, Sunny und Zuri wurden als weitere Standardfiguren ergänzt.",
+        "type": "changed",
+        "date": "2022-11-29"
+      },
+      {
+        "version": "Java Edition 1.19.3",
+        "change": "Die sieben weiteren Standardfiguren wurden auch in der Java Edition verfügbar.",
+        "type": "changed",
+        "date": "2022-12-07"
+      }
+    ],
+    "texture": [
+      {
+        "name": "Player Slim Alex",
+        "category": "Slim-Spielermodell",
+        "description": "Variante: Player Slim Alex.",
+        "file": "/assets/img/texture/mobs/player/slim/alex.png"
+      },
+      {
+        "name": "Player Slim Ari",
+        "category": "Slim-Spielermodell",
+        "description": "Variante: Player Slim Ari.",
+        "file": "/assets/img/texture/mobs/player/slim/ari.png"
+      },
+      {
+        "name": "Player Slim Efe",
+        "category": "Slim-Spielermodell",
+        "description": "Variante: Player Slim Efe.",
+        "file": "/assets/img/texture/mobs/player/slim/efe.png"
+      },
+      {
+        "name": "Player Slim Kai",
+        "category": "Slim-Spielermodell",
+        "description": "Variante: Player Slim Kai.",
+        "file": "/assets/img/texture/mobs/player/slim/kai.png"
+      },
+      {
+        "name": "Player Slim Makena",
+        "category": "Slim-Spielermodell",
+        "description": "Variante: Player Slim Makena.",
+        "file": "/assets/img/texture/mobs/player/slim/makena.png"
+      },
+      {
+        "name": "Player Slim Noor",
+        "category": "Slim-Spielermodell",
+        "description": "Variante: Player Slim Noor.",
+        "file": "/assets/img/texture/mobs/player/slim/noor.png"
+      },
+      {
+        "name": "Player Slim Steve",
+        "category": "Slim-Spielermodell",
+        "description": "Variante: Player Slim Steve.",
+        "file": "/assets/img/texture/mobs/player/slim/steve.png"
+      },
+      {
+        "name": "Player Slim Sunny",
+        "category": "Slim-Spielermodell",
+        "description": "Variante: Player Slim Sunny.",
+        "file": "/assets/img/texture/mobs/player/slim/sunny.png"
+      },
+      {
+        "name": "Player Slim Zuri",
+        "category": "Slim-Spielermodell",
+        "description": "Variante: Player Slim Zuri.",
+        "file": "/assets/img/texture/mobs/player/slim/zuri.png"
+      },
+      {
+        "name": "Player Wide Alex",
+        "category": "Wide-Spielermodell",
+        "description": "Variante: Player Wide Alex.",
+        "file": "/assets/img/texture/mobs/player/wide/alex.png"
+      },
+      {
+        "name": "Player Wide Ari",
+        "category": "Wide-Spielermodell",
+        "description": "Variante: Player Wide Ari.",
+        "file": "/assets/img/texture/mobs/player/wide/ari.png"
+      },
+      {
+        "name": "Player Wide Efe",
+        "category": "Wide-Spielermodell",
+        "description": "Variante: Player Wide Efe.",
+        "file": "/assets/img/texture/mobs/player/wide/efe.png"
+      },
+      {
+        "name": "Player Wide Kai",
+        "category": "Wide-Spielermodell",
+        "description": "Variante: Player Wide Kai.",
+        "file": "/assets/img/texture/mobs/player/wide/kai.png"
+      },
+      {
+        "name": "Player Wide Makena",
+        "category": "Wide-Spielermodell",
+        "description": "Variante: Player Wide Makena.",
+        "file": "/assets/img/texture/mobs/player/wide/makena.png"
+      },
+      {
+        "name": "Player Wide Noor",
+        "category": "Wide-Spielermodell",
+        "description": "Variante: Player Wide Noor.",
+        "file": "/assets/img/texture/mobs/player/wide/noor.png"
+      },
+      {
+        "name": "Player Wide Steve",
+        "category": "Wide-Spielermodell",
+        "description": "Variante: Player Wide Steve.",
+        "file": "/assets/img/texture/mobs/player/wide/steve.png"
+      },
+      {
+        "name": "Player Wide Sunny",
+        "category": "Wide-Spielermodell",
+        "description": "Variante: Player Wide Sunny.",
+        "file": "/assets/img/texture/mobs/player/wide/sunny.png"
+      },
+      {
+        "name": "Player Wide Zuri",
+        "category": "Wide-Spielermodell",
+        "description": "Variante: Player Wide Zuri.",
+        "file": "/assets/img/texture/mobs/player/wide/zuri.png"
+      },
+      {
+        "name": "Equipment Wings Elytra",
+        "category": "Ausrüstung",
+        "description": "Variante: Equipment Wings Elytra.",
+        "file": "/assets/img/texture/mobs/equipment/wings/elytra.png"
+      }
+    ],
+    "sounds": [],
+    "health": "Standard: 20; durch Attribute und Befehle veränderbar",
+    "damage": "Unbewaffnet: 1; mit Gegenständen abhängig von Waffe, Verzauberungen, Angriffsstärke und Edition",
+    "armor": "0–20 Rüstungspunkte; zusätzlich Rüstungshärte und Verzauberungen möglich",
+    "experience": "Beim Tod: 7 × Erfahrungslevel, höchstens 100 Erfahrungspunkte; entfällt bei keepInventory",
+    "spawn": {
+      "light_level": [
+        "Beliebig"
+      ],
+      "biome": "Alle",
+      "structure": "Keine",
+      "method": "Weltspawn oder gesetzter Respawnpunkt durch Bett, Respawnanker oder Befehl"
+    },
+    "light_level": [
+      "Beliebig"
+    ],
+    "classification": "Spieler; kein Mob",
+    "renewable": "Nicht anwendbar",
+    "can_despawn": "Nein; wird beim Verlassen des Spiels aus der Welt entladen",
+    "tameable": "Nein",
+    "breedable": "Nein",
+    "duplicable": "Nein",
+    "duplication_item": "Keines",
+    "leashable": "Nein",
+    "rideable": "Kann andere reitbare Entities benutzen; selbst kein normales Reittier",
+    "baby_variant": "Nein",
+    "drops": [
+      {
+        "item": "Inventarinhalt",
+        "chance": "100 %",
+        "amount": "Vorhandene Menge",
+        "condition": "Nicht bei keepInventory; Gegenstände mit Fluch des Verschwindens verschwinden"
+      },
+      {
+        "item": "Erfahrungskugeln",
+        "chance": "100 %",
+        "amount": "7 × Level, maximal 100 XP",
+        "condition": "Nicht bei keepInventory"
+      }
+    ],
+    "abilities": [
+      "Baut und zerstört Blöcke",
+      "Verwendet Werkzeuge, Waffen und Gegenstände",
+      "Trägt Rüstung und Elytren",
+      "Geht, sprintet, springt, schleicht, schwimmt, kriecht und gleitet",
+      "Kann je nach Spielmodus fliegen, unverwundbar sein oder Blöcke durchqueren",
+      "Besitzt Inventar, Hunger, Erfahrung und Respawnmechanik"
+    ],
+    "fun_fact": "Steve und Alex sind keine männliche und weibliche Mob-Variante, sondern zwei von mehreren auswählbaren Standard-Skins.",
+    "attack_type": "Spielergesteuert: Nahkampf, Fernkampf, Effekte, Explosionen und weitere Mechaniken",
+    "targets": [],
+    "enemy_mobs": [
+      "Abhängig von Verhalten und Spielmodus"
+    ],
+    "follows": [],
+    "healing_item": [
+      "Nahrung über natürliche Regeneration",
+      "Heiltränke",
+      "Regenerationstränke",
+      "Goldener Apfel",
+      "Verzauberter goldener Apfel",
+      "Totem der Unsterblichkeit"
+    ],
+    "fire_immune": "Nein; im Kreativ- und Zuschauermodus normalerweise gegen Schaden geschützt",
+    "undead": "Nein",
+    "boss_bar": "Nein",
+    "knockback_resistance": "Standard 0; durch Attribute/Ausrüstung veränderbar",
+    "loot_table": "Keine Mob-Loot-Tabelle",
+    "java_entity_id": "minecraft:player (intern; nicht mit /summon beschwörbar)",
+    "bedrock_entity_id": "minecraft:player",
+    "attack_strength": {
+      "fist": "1 Schaden",
+      "items": "Abhängig von Gegenstand und Edition",
+      "java_cooldown": "Seit Java 1.9 beeinflusst die Angriffsstärke den verursachten Schaden"
+    }
+  }
+]

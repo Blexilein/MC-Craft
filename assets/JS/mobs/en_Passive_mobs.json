@@ -1,0 +1,1865 @@
+[
+  {
+    "id": "minecraft:allay",
+    "name": "Allay",
+    "type": "passive",
+    "icon": "/assets/img/mobs/passive/Allay.webp",
+    "health": 20,
+    "damage": 0,
+    "description": "Collects items for players after being given one.",
+    "version": "1.19 (The Wild Update)",
+    "dimension": "overworld",
+    "movement_speed": 0.4,
+    "size": {
+      "width": 0.35,
+      "height": 0.6
+    },
+    "spawn": {
+      "light_level": [
+        "0-15"
+      ],
+      "biome": "Woodland Mansions, Pillager Outposts",
+      "structure": "Cages"
+    },
+    "light_level": [
+      "0-15"
+    ],
+    "fun_fact": "Won the Mob Vote 2021! Dances to music and collects items. If an allay is killed while holding a totem of undying, the totem is consumed and the allay is revived.",
+    "texture": [
+      {
+        "name": "Allay Default Texture",
+        "description": "Allay default texture.",
+        "file": "/assets/img/texture/mobs/allay/allay.png"
+      }
+    ],
+    "abilities": [
+      "Flies",
+      "Collects items"
+    ]
+  },
+  {
+    "id": "minecraft:armadillo",
+    "name": "Armadillo",
+    "type": "passive",
+    "icon": "/assets/img/mobs/passive/Armadillo.gif",
+    "health": 12,
+    "damage": 0,
+    "description": "Rolls into a ball when threatened. Drops armadillo scutes.",
+    "version": "1.20.5 (Trails & Tales)",
+    "dimension": "overworld",
+    "movement_speed": 0.14,
+    "size": {
+      "width": 0.65,
+      "height": 0.7
+    },
+    "spawn": {
+      "light_level": "7+",
+      "biome": "Savanna",
+      "structure": "None"
+    },
+    "light_level": [
+      "7+"
+    ],
+    "fun_fact": "Rolls into a ball when in danger, provides scutes for wolf armor.",
+    "abilities": [
+      "None"
+    ],
+    "texture": [
+      {
+        "name": "Armadillo Default Texture",
+        "description": "Armadillo default texture.",
+        "file": "/assets/img/texture/mobs/armadillo/armadillo.png"
+      }
+    ],
+    "drops": [
+      {
+        "item": "minecraft:armadillo_scute",
+        "chance": "100%",
+        "amount": "1"
+      },
+      {
+        "item": "1-3 XP",
+        "chance": "100%",
+        "amount": "1"
+      }
+    ]
+  },
+  {
+    "id": "minecraft:axolotl",
+    "name": "Axolotl",
+    "type": "passive",
+    "icon": "/assets/img/mobs/passive/Axolotl.gif",
+    "health": 14,
+    "damage": 2,
+    "description": "Fights underwater mobs and regenerates health.",
+    "version": "1.17 (Caves & Cliffs)",
+    "dimension": "overworld",
+    "movement_speed": 1,
+    "size": {
+      "width": 0.75,
+      "height": 0.42
+    },
+    "spawn": {
+      "light_level": "any",
+      "biome": "Lush Caves",
+      "structure": "None"
+    },
+    "light_level": [
+      "any"
+    ],
+    "fun_fact": "Can play dead to heal – based on a real salamander.",
+    "abilities": [
+      "Axolotls are passive toward players, can be led, and follow players holding a tropical fish bucket in either hand.",
+      "Axolotls attack the following mobs, dealing 2HP ❤️ damage per attack:",
+      "Cod, Salmon, Pufferfish, Tropical Fish, Tadpole, Squid",
+      "Glow Squid, Drowned, Guardian, Elder Guardian"
+    ],
+    "texture": [
+      {
+        "name": "Axolotl Default Texture",
+        "description": "Axolotl default texture.",
+        "file": "/assets/img/texture/mobs/axolotl/axolotl.png"
+      }
+    ],
+    "drops": [
+      {
+        "item": "minecraft:",
+        "chance": "100%",
+        "amount": "0"
+      }
+    ]
+  },
+  {
+    "id": "minecraft:bat",
+    "name": "Bat",
+    "type": "passive",
+    "icon": "/assets/img/mobs/passive/Bat.webp",
+    "health": 6,
+    "damage": 0,
+    "description": "Flies aimlessly and ignores players.",
+    "version": "Beta 1.4.2",
+    "dimension": "overworld",
+    "movement_speed": 0.7,
+    "size": {
+      "width": 0.5,
+      "height": 0.9
+    },
+    "spawn": {
+      "light_level": [
+        "3+",
+        "From October 20 – November 3: 6+ (JE Only)"
+      ],
+      "biome": "Caves",
+      "structure": "None"
+    },
+    "light_level": [
+      "3+",
+      "From October 20 – November 3: 6+ (JE Only)"
+    ],
+    "fun_fact": "The only mob that can sleep upside down.",
+    "abilities": [
+      "Flies",
+      "Only mob that can sleep upside down"
+    ],
+    "texture": [
+      {
+        "name": "Bat Default Texture",
+        "description": "Bat default texture.",
+        "file": "/assets/img/texture/mobs/bat/bat.png"
+      }
+    ],
+    "drops": [
+      {
+        "item": "minecraft:",
+        "chance": "100%",
+        "amount": "1"
+      }
+    ]
+  },
+  {
+    "id": "minecraft:camel",
+    "name": "Camel",
+    "type": "passive",
+    "icon": "/assets/img/mobs/passive/Camel.webp",
+    "health": 32,
+    "damage": 0,
+    "description": "Can carry players and make high jumps.",
+    "version": "1.20",
+    "dimension": "overworld",
+    "movement_speed": 0.17,
+    "size": {
+      "width": 1.7,
+      "height": 2.375
+    },
+    "spawn": {
+      "light_level": "7+",
+      "biome": "Desert, Desert village",
+      "structure": "Desert Villages"
+    },
+    "light_level": [
+      "7+"
+    ],
+    "fun_fact": "Can jump higher than any other mount – perfect for deserts!",
+    "abilities": [
+      "Can carry up to 2 players."
+    ],
+    "texture": [
+      {
+        "name": "Camel Default Texture",
+        "description": "Camel default texture.",
+        "file": "/assets/img/texture/mobs/camel/camel.png"
+      }
+    ],
+    "drops": [
+      {
+        "item": "1–3XP",
+        "chance": "100%",
+        "amount": "1"
+      }
+    ]
+  },
+  {
+    "id": "minecraft:camel_husk",
+    "name": "Zombie Camel",
+    "type": "passive",
+    "icon": "/assets/img/mobs/passive/Camel_Husk.png",
+    "health": 32,
+    "damage": 0,
+    "description": "Undead camel variant • Spawns in deserts • Can be ridden • Occasionally spawns with a husk and parched on its back.",
+    "version": "1.21.11",
+    "dimension": "Overworld",
+    "movement_speed": 0.2,
+    "size": {
+      "width": 1.7,
+      "height": 2.375,
+      "sitting": {
+        "width": 1.7,
+        "height": 0.945
+      }
+    },
+    "spawn": {
+      "light_level": [
+        "0-15"
+      ],
+      "biome": "Desert",
+      "structure": "None"
+    },
+    "light_level": [
+      "0-15"
+    ],
+    "fun_fact": "Zombie camels occasionally spawn with a husk and a parched on their back.",
+    "abilities": [
+      "Can be saddled and ridden",
+      "Spawns at night and during thunderstorms",
+      "Can carry up to 2 players.",
+      "Undead camel variant"
+    ],
+    "texture": [
+      {
+        "name": "Zombie Camel Default Texture",
+        "description": "Zombie Camel default texture.",
+        "file": "/assets/img/texture/mobs/camel_husk/camel_husk.png"
+      }
+    ],
+    "drops": [
+      {
+        "item": "minecraft:",
+        "chance": "25%",
+        "amount": "1"
+      }
+    ]
+  },
+  {
+    "id": "minecraft:cat",
+    "name": "Cat",
+    "type": "passive",
+    "icon": "/assets/img/mobs/passive/Cat.gif",
+    "health": 10,
+    "damage": 3,
+    "description": "Helps against phantoms and follows players.",
+    "version": "1.2.1",
+    "dimension": "overworld",
+    "movement_speed": 0.3,
+    "size": {
+      "width": 0.6,
+      "height": 0.7
+    },
+    "spawn": {
+      "light_level": "7+",
+      "biome": "Villages, Swamp huts (only black cats)",
+      "structure": "None"
+    },
+    "light_level": [
+      "7+"
+    ],
+    "fun_fact": "Protects you from phantoms when fed!",
+    "texture": [
+      {
+        "name": "Cat Default Texture",
+        "description": "Cat default texture.",
+        "file": "/assets/img/texture/mobs/cat/cat.png"
+      }
+    ],
+    "abilities": [
+      "Cats attack the following mobs, dealing 3HP ❤️ damage per attack:",
+      "Rabbits, baby turtles"
+    ],
+    "drops": [
+      {
+        "item": "minecraft:",
+        "chance": "100%",
+        "amount": "0"
+      }
+    ]
+  },
+  {
+    "id": "minecraft:chicken",
+    "name": "Chicken",
+    "type": "passive",
+    "icon": "/assets/img/mobs/passive/Chicken.png",
+    "health": 4,
+    "damage": 0,
+    "description": "Passive farm animal • Lays eggs every 5-10 minutes • Can be bred with seeds • Flutters when falling • Chicks grow in 20 minutes",
+    "version": "1.0.14",
+    "dimension": "Overworld",
+    "movement_speed": 0.25,
+    "size": {
+      "width": 0.4,
+      "height": 0.7,
+      "baby": {
+        "width": 0.2,
+        "height": 0.35
+      }
+    },
+    "spawn": {
+      "light_level": [
+        "9-15"
+      ],
+      "biome": "All Overworld biomes (except oceans, deserts)",
+      "structure": "None"
+    },
+    "light_level": [
+      "0-15"
+    ],
+    "fun_fact": "Chickens take no fall damage if they flutter before impact!",
+    "abilities": [
+      "Egg laying: every 5-10 minutes",
+      "Breeding: can be bred with seeds",
+      "Fall safe: reduces fall damage by fluttering",
+      "Chick spawn: thrown eggs have a 1 in 8 chance to spawn chicks"
+    ],
+    "drops": [
+      {
+        "item": "minecraft:feather",
+        "chance": "100%",
+        "amount": "0-2"
+      },
+      {
+        "item": "minecraft:chicken",
+        "chance": "100%",
+        "amount": "1"
+      },
+      {
+        "item": "minecraft:egg",
+        "chance": "100%",
+        "amount": "1"
+      }
+    ],
+    "texture": [
+      {
+        "name": "Chicken Default Texture",
+        "description": "Chicken default texture.",
+        "file": "/assets/img/texture/mobs/chicken/chicken.png"
+      }
+    ]
+  },
+  {
+    "id": "minecraft:cod",
+    "name": "Cod",
+    "type": "passive",
+    "icon": "/assets/img/mobs/passive/Cod.gif",
+    "health": 3,
+    "damage": 0,
+    "description": "Passive fish • Swims in water • Can be caught with bucket",
+    "version": "1.13",
+    "dimension": "Overworld",
+    "movement_speed": 0.7,
+    "size": {
+      "width": 0.5,
+      "height": 0.3
+    },
+    "spawn": {
+      "light_level": [
+        "0-15"
+      ],
+      "biome": "Cold Ocean, Deep Cold Ocean, Lukewarm Ocean, Deep Lukewarm Ocean, Ocean, Deep Ocean, Frozen Ocean[BE], Deep Frozen Ocean[BE]",
+      "structure": "None"
+    },
+    "light_level": [
+      "0-15"
+    ],
+    "fun_fact": "Cod can only survive in water!",
+    "abilities": [
+      "Swims",
+      "Can be caught with water bucket"
+    ],
+    "texture": [
+      {
+        "name": "Cod Default Texture",
+        "description": "Cod default texture.",
+        "file": "/assets/img/texture/mobs/fish/cod.png"
+      }
+    ],
+    "drops": [
+      {
+        "item": "minecraft:cod",
+        "chance": "100%",
+        "amount": "1"
+      },
+      {
+        "item": "minecraft:bone_meal",
+        "chance": "5%",
+        "amount": "1-2"
+      }
+    ]
+  },
+  {
+    "id": "minecraft:copper_golem",
+    "name": "Copper Golem",
+    "type": "passive",
+    "icon": "/assets/img/mobs/passive/Copper_golem.gif",
+    "health": 12,
+    "damage": 0,
+    "description": "Player-built mob • Randomly presses copper buttons • Oxidizes over time • Can be waxed",
+    "version": "1.21.9",
+    "dimension": "Overworld",
+    "movement_speed": 0.25,
+    "size": {
+      "width": 0.49,
+      "height": 0.98
+    },
+    "spawn": {
+      "light_level": [
+        "0-15"
+      ],
+      "biome": "All",
+      "structure": "Built by player"
+    },
+    "light_level": [
+      "0-15"
+    ],
+    "fun_fact": "The copper golem oxidizes like normal copper blocks and can be treated with an axe or honeycomb!",
+    "abilities": [
+      "Presses copper buttons",
+      "Random activation",
+      "Oxidizes over time",
+      "Can be waxed"
+    ],
+    "texture": [
+      {
+        "name": "Copper Golem Default Texture",
+        "description": "Copper Golem default texture.",
+        "file": "/assets/img/texture/mobs/copper_golem/copper_golem.png"
+      }
+    ],
+    "drops": [
+      {
+        "item": "minecraft:copper_ingot",
+        "chance": "100%",
+        "amount": "1-3"
+      },
+      {
+        "item": "minecraft:oxidized_copper",
+        "chance": "25%",
+        "amount": "1"
+      }
+    ]
+  },
+  {
+    "id": "minecraft:cow",
+    "name": "Cow",
+    "type": "passive",
+    "icon": "/assets/img/mobs/passive/Cow.png",
+    "health": 10,
+    "damage": 0,
+    "description": "Passive farm animal • Can be bred with wheat • Gives milk with bucket • Drops leather and meat",
+    "version": "1.0.8 (Alpha)",
+    "dimension": "Overworld",
+    "movement_speed": 0.2,
+    "size": {
+      "width": 0.9,
+      "height": 1.4,
+      "baby": {
+        "width": 0.45,
+        "height": 0.7
+      }
+    },
+    "spawn": {
+      "light_level": [
+        "9-15"
+      ],
+      "biome": "Most Overworld biomes (grass blocks with 2 blocks space)",
+      "structure": "None"
+    },
+    "light_level": [
+      "9-15"
+    ],
+    "fun_fact": "Cows can spawn from shearing mooshrooms!",
+    "abilities": [
+      "Gives milk with bucket",
+      "Breedable with wheat",
+      "Calf grows in 20 minutes"
+    ],
+    "texture": [
+      {
+        "name": "Cow Default Texture",
+        "description": "Cow default texture.",
+        "file": "/assets/img/texture/mobs/cow/cow.png"
+      }
+    ],
+    "drops": [
+      {
+        "item": "minecraft:beef",
+        "chance": "100%",
+        "amount": "1-3"
+      },
+      {
+        "item": "minecraft:leather",
+        "chance": "100%",
+        "amount": "0-2"
+      }
+    ]
+  },
+  {
+    "id": "minecraft:donkey",
+    "name": "Donkey",
+    "type": "passive",
+    "icon": "/assets/img/mobs/passive/Donkey.webp",
+    "health": 15,
+    "damage": 0,
+    "description": "Passive mount • Can be tamed and ridden • Carries chests with inventory • Can be bred with horses",
+    "version": "1.6.1",
+    "dimension": "Overworld",
+    "movement_speed": 0.175,
+    "size": {
+      "width": 1.3965,
+      "height": 1.5,
+      "baby": {
+        "width": 0.6982,
+        "height": 0.75
+      }
+    },
+    "spawn": {
+      "light_level": [
+        "9-15"
+      ],
+      "biome": "Meadow, Plains, Sunflower Plains, Savanna, Savanna Plateau, Windswept Savanna",
+      "structure": "None"
+    },
+    "light_level": [
+      "0-15"
+    ],
+    "fun_fact": "Donkeys can carry chests and have 15 inventory slots!",
+    "abilities": [
+      "Carry chest (15 slots)",
+      "Tamable and rideable",
+      "Breedable with sugar, wheat, apples, carrots",
+      "Can be saddled"
+    ],
+    "texture": [
+      {
+        "name": "Donkey Default Texture",
+        "description": "Donkey default texture.",
+        "file": "/assets/img/texture/mobs/donkey/donkey.png"
+      }
+    ],
+    "drops": [
+      {
+        "item": "minecraft:leather",
+        "chance": "100%",
+        "amount": "0-2"
+      }
+    ]
+  },
+  {
+    "id": "minecraft:frog",
+    "name": "Frog",
+    "type": "passive",
+    "icon": "/assets/img/mobs/passive/Cold_Frog.webp",
+    "health": 10,
+    "damage": 0,
+    "description": "Passive animal • Eats small slimes and magma cubes • Jumps around • Grows from tadpole",
+    "version": "1.19",
+    "dimension": "Overworld",
+    "movement_speed": 1,
+    "size": {
+      "width": 0.5,
+      "height": 0.5
+    },
+    "spawn": {
+      "light_level": [
+        "0-15"
+      ],
+      "biome": "Swamp, Mangrove Swamp",
+      "structure": "None"
+    },
+    "light_level": [
+      "0-15"
+    ],
+    "fun_fact": "Frogs drop froglights when they eat magma cubes!",
+    "abilities": [
+      "Can instantly eat small slimes and magma cubes",
+      "Jumps around",
+      "Can be bred with slimeballs",
+      "Grows from tadpole"
+    ],
+    "drops": [
+      {
+        "item": "minecraft:slime_ball",
+        "chance": "50%",
+        "amount": "1-2"
+      }
+    ],
+    "texture": [
+      {
+        "name": "Frog Default Texture",
+        "description": "Frog default texture.",
+        "file": "/assets/img/texture/mobs/frog/frog.png"
+      }
+    ]
+  },
+  {
+    "id": "minecraft:glow_squid",
+    "name": "Glow Squid",
+    "type": "passive",
+    "icon": "/assets/img/mobs/passive/Glow_Squid.webp",
+    "health": 10,
+    "damage": 0,
+    "description": "Passive aquatic mob • Glows underwater • Swims in deep ocean biomes",
+    "version": "1.17",
+    "dimension": "Overworld",
+    "movement_speed": 0.7,
+    "size": {
+      "width": 0.8,
+      "height": 0.8,
+      "baby": {
+        "width": 0.4,
+        "height": 0.4
+      }
+    },
+    "spawn": {
+      "light_level": [
+        "0-15"
+      ],
+      "biome": "Deep Ocean, Deep Cold Ocean, Deep Lukewarm Ocean",
+      "structure": "None"
+    },
+    "light_level": [
+      "0-15"
+    ],
+    "fun_fact": "Glow squids actually glow underwater!",
+    "abilities": [
+      "Swims",
+      "Glows underwater",
+      "Ink defense"
+    ],
+    "drops": [
+      {
+        "item": "minecraft:glow_ink_sac",
+        "chance": "100%",
+        "amount": "1-3"
+      }
+    ],
+    "texture": [
+      {
+        "name": "Glow Squid Default Texture",
+        "description": "Glow Squid default texture.",
+        "file": "/assets/img/texture/mobs/glow_squid/glow_squid.png"
+      }
+    ]
+  },
+  {
+    "id": "minecraft:happy_ghast",
+    "name": "Happy Ghast",
+    "type": "passive",
+    "icon": "/assets/img/mobs/passive/Happy_Ghast.webp",
+    "health": 20,
+    "damage": 0,
+    "description": "Passive flying mob • Bred from dried ghasts • Follows players and animals",
+    "version": "1.21.6",
+    "dimension": "Overworld",
+    "movement_speed": 0.05,
+    "size": {
+      "width": 4,
+      "height": 4,
+      "baby": {
+        "width": 0.95,
+        "height": 0.95
+      }
+    },
+    "spawn": {
+      "light_level": [
+        "0-15"
+      ],
+      "biome": "By rehydrating dried ghasts",
+      "structure": ""
+    },
+    "light_level": [
+      "0-15"
+    ],
+    "fun_fact": "Baby ghasts grow faster when fed snowballs!",
+    "abilities": [
+      "Flies",
+      "Follows players and animals",
+      "Can be equipped with harness"
+    ],
+    "drops": [
+      {
+        "item": "minecraft:ghast_tear",
+        "chance": "100%",
+        "amount": "1"
+      },
+      {
+        "item": "minecraft:gunpowder",
+        "chance": "75%",
+        "amount": "0-2"
+      }
+    ],
+    "texture": [
+      {
+        "name": "Happy Ghast Default Texture",
+        "description": "Happy Ghast default texture.",
+        "file": "/assets/img/texture/mobs/happy_ghast/happy_ghast.png"
+      }
+    ]
+  },
+  {
+    "id": "minecraft:horse",
+    "name": "Horse",
+    "type": "passive",
+    "icon": "/assets/img/mobs/passive/Horse.webp",
+    "health": 15,
+    "damage": 0,
+    "description": "Passive mount • Different coat colors • Can be tamed and ridden • Varying speeds and jump heights",
+    "version": "1.6.1",
+    "dimension": "Overworld",
+    "movement_speed": 0.1125,
+    "size": {
+      "width": 1.3965,
+      "height": 1.6,
+      "baby": {
+        "width": 0.6982,
+        "height": 0.8
+      }
+    },
+    "spawn": {
+      "light_level": [
+        "9-15"
+      ],
+      "biome": "Plains, Sunflower Plains, Savanna, Savanna Plateau, Windswept Savanna, Villages",
+      "structure": "None"
+    },
+    "light_level": [
+      "0-15"
+    ],
+    "fun_fact": "Horses have random stats for speed, jump height, and health!",
+    "abilities": [
+      "Tamable and rideable",
+      "Can be equipped with saddle and horse armor",
+      "Breedable with sugar, wheat, apples, carrots",
+      "Each horse has different movement stats"
+    ],
+    "drops": [
+      {
+        "item": "minecraft:leather",
+        "chance": "100%",
+        "amount": "0-2"
+      }
+    ],
+    "texture": [
+      {
+        "name": "Horse Default Texture",
+        "description": "Horse default texture.",
+        "file": "/assets/img/texture/mobs/horse/horse.png"
+      }
+    ]
+  },
+  {
+    "id": "minecraft:mooshroom",
+    "name": "Mooshroom",
+    "type": "passive",
+    "icon": "/assets/img/mobs/passive/Mooshroom.png",
+    "health": 10,
+    "damage": 0,
+    "description": "Passive farm animal • Spawns only in mushroom fields • Gives mushroom stew with bowl • Turns into normal cow when sheared",
+    "version": "1.0.0",
+    "dimension": "Overworld",
+    "movement_speed": 0.2,
+    "size": {
+      "width": 0.9,
+      "height": 1.4,
+      "baby": {
+        "width": 0.45,
+        "height": 0.7
+      }
+    },
+    "spawn": {
+      "light_level": [
+        "9-15"
+      ],
+      "biome": "Mushroom Fields",
+      "structure": "None"
+    },
+    "light_level": [
+      "0-15"
+    ],
+    "fun_fact": "Mooshrooms can change their mushroom type by feeding them flowers!",
+    "abilities": [
+      "Gives mushroom stew with bowl",
+      "Breedable with wheat",
+      "Can be sheared into normal cow",
+      "Milkable with bucket"
+    ],
+    "drops": [
+      {
+        "item": "minecraft:leather",
+        "chance": "100%",
+        "amount": "0-2"
+      },
+      {
+        "item": "minecraft:beef",
+        "chance": "100%",
+        "amount": "1-3"
+      },
+      {
+        "item": "minecraft:red_mushroom",
+        "chance": "100%",
+        "amount": "5"
+      }
+    ],
+    "texture": [
+      {
+        "name": "Mooshroom Default Texture",
+        "description": "Mooshroom default texture.",
+        "file": "/assets/img/texture/mobs/mooshroom/mooshroom.png"
+      }
+    ]
+  },
+  {
+    "id": "minecraft:mule",
+    "name": "Mule",
+    "type": "passive",
+    "icon": "/assets/img/mobs/passive/Mule.webp",
+    "health": 15,
+    "damage": 0,
+    "description": "Passive mount • Crossbreed of horse and donkey • Can carry chests • Infertile • Tamable",
+    "version": "1.6.1",
+    "dimension": "Overworld",
+    "movement_speed": 0.175,
+    "size": {
+      "width": 1.3965,
+      "height": 1.6,
+      "baby": {
+        "width": 0.6982,
+        "height": 0.8
+      }
+    },
+    "spawn": {
+      "light_level": [
+        ""
+      ],
+      "biome": "By breeding horse and donkey",
+      "structure": ""
+    },
+    "light_level": [
+      "0-15"
+    ],
+    "fun_fact": "Mules are infertile and cannot breed!",
+    "abilities": [
+      "Can carry chests (15 slots)",
+      "Tamable and rideable",
+      "Can be saddled",
+      "Healable with various foods"
+    ],
+    "drops": [
+      {
+        "item": "minecraft:leather",
+        "chance": "100%",
+        "amount": "0-2"
+      }
+    ],
+    "texture": [
+      {
+        "name": "Mule Default Texture",
+        "description": "Mule default texture.",
+        "file": "/assets/img/texture/mobs/mule/mule.png"
+      }
+    ]
+  },
+  {
+    "id": "minecraft:ocelot",
+    "name": "Ocelot",
+    "type": "passive",
+    "icon": "/assets/img/mobs/passive/Ocelot.webp",
+    "health": 10,
+    "damage": 0,
+    "description": "Passive wild cat • Spawns in jungles • Can be tamed with raw fish • Scares creepers",
+    "version": "1.2.1",
+    "dimension": "Overworld",
+    "movement_speed": 0.3,
+    "size": {
+      "width": 0.6,
+      "height": 0.7,
+      "baby": {
+        "width": 0.3,
+        "height": 0.35
+      }
+    },
+    "spawn": {
+      "light_level": [
+        "9-15"
+      ],
+      "biome": "Jungle, Bamboo Jungle[BE], Sparse Jungle[BE]",
+      "structure": "None"
+    },
+    "light_level": [
+      "0-15"
+    ],
+    "fun_fact": "Tamed ocelots become house cats and scare creepers away!",
+    "abilities": [
+      "Can be tamed with raw fish",
+      "Hunts chickens and baby turtles",
+      "Scares creepers away",
+      "Fast and agile movement"
+    ],
+    "drops": [
+      {
+        "item": "minecraft:experience_orb",
+        "chance": "100%",
+        "amount": "1-3"
+      }
+    ],
+    "texture": [
+      {
+        "name": "Ocelot Default Texture",
+        "description": "Ocelot default texture.",
+        "file": "/assets/img/texture/mobs/ocelot/ocelot.png"
+      }
+    ]
+  },
+  {
+    "id": "minecraft:parrot",
+    "name": "Parrot",
+    "type": "passive",
+    "icon": "/assets/img/mobs/passive/parrot.gif",
+    "health": 6,
+    "damage": 0,
+    "description": "Passive bird • Can imitate other mob sounds • Poisoned by cookies • Can sit on shoulders",
+    "version": "1.12",
+    "dimension": "Overworld",
+    "movement_speed": 0.2,
+    "size": {
+      "width": 0.5,
+      "height": 0.9
+    },
+    "spawn": {
+      "light_level": [
+        "9-15"
+      ],
+      "biome": "Jungle, Bamboo Jungle, Sparse Jungle[BE]",
+      "structure": "None"
+    },
+    "light_level": [
+      "0-15"
+    ],
+    "fun_fact": "Parrots dance when a music disc is played!",
+    "abilities": [
+      "Can sit on shoulder",
+      "Imitates sounds of other mobs",
+      "Dances to music",
+      "Can be tamed with seeds"
+    ],
+    "drops": [
+      {
+        "item": "minecraft:feather",
+        "chance": "100%",
+        "amount": "1-2"
+      }
+    ],
+    "texture": [
+      {
+        "name": "Parrot Default Texture",
+        "description": "Parrot default texture.",
+        "file": "/assets/img/texture/mobs/parrot/parrot.png"
+      }
+    ]
+  },
+  {
+    "id": "minecraft:pig",
+    "name": "Pig",
+    "type": "passive",
+    "icon": "/assets/img/mobs/passive/pig.png",
+    "health": 10,
+    "damage": 0,
+    "description": "Passive farm animal • Can be ridden with saddle • Steerable with carrot on a stick • Provides porkchops",
+    "version": "0.24_SURVIVAL_TEST",
+    "dimension": "Overworld",
+    "movement_speed": 0.25,
+    "size": {
+      "width": 0.9,
+      "height": 0.9,
+      "baby": {
+        "width": 0.45,
+        "height": 0.45
+      }
+    },
+    "spawn": {
+      "light_level": [
+        "9-15"
+      ],
+      "biome": "Most Overworld biomes (grass blocks with 2 blocks space)",
+      "structure": "None"
+    },
+    "light_level": [
+      "0-15"
+    ],
+    "fun_fact": "Pigs can be ridden with a saddle and steered with a carrot on a stick!",
+    "abilities": [
+      "Can be ridden with saddle",
+      "Steerable with carrot on a stick",
+      "Breedable with carrots, potatoes, beets",
+      "Turns into zombie piglin if struck by lightning"
+    ],
+    "drops": [
+      {
+        "item": "minecraft:porkchop",
+        "chance": "100%",
+        "amount": "1-3"
+      },
+      {
+        "item": "minecraft:saddle",
+        "chance": "100%",
+        "amount": "1"
+      }
+    ],
+    "texture": [
+      {
+        "name": "Pig Default Texture",
+        "description": "Pig default texture.",
+        "file": "/assets/img/texture/mobs/pig/pig.png"
+      }
+    ]
+  },
+  {
+    "id": "minecraft:rabbit",
+    "name": "Rabbit",
+    "type": "passive",
+    "icon": "/assets/img/mobs/passive/Rabbit.gif",
+    "health": 3,
+    "damage": 0,
+    "description": "Passive animal • Jumps around • Different fur colors by biome • Rare killer bunny variant",
+    "version": "1.8",
+    "dimension": "Overworld",
+    "movement_speed": 0.3,
+    "size": {
+      "width": 0.4,
+      "height": 0.5,
+      "baby": {
+        "width": 0.2,
+        "height": 0.25
+      }
+    },
+    "spawn": {
+      "light_level": [
+        "9-15"
+      ],
+      "biome": "Snowy Plains, Desert, Taiga, Flower Forest, Meadow, Cherry Grove, Mountains",
+      "structure": "None"
+    },
+    "light_level": [
+      "0-15"
+    ],
+    "fun_fact": "There is an extremely rare killer bunny variant that attacks!",
+    "abilities": [
+      "Fast jumping",
+      "Breedable with dandelions and carrots",
+      "Different fur colors per biome",
+      "Rare killer bunny variant[JE]"
+    ],
+    "drops": [
+      {
+        "item": "minecraft:rabbit_hide",
+        "chance": "100%",
+        "amount": "0-1"
+      },
+      {
+        "item": "minecraft:rabbit",
+        "chance": "100%",
+        "amount": "0-1"
+      },
+      {
+        "item": "minecraft:rabbit_foot",
+        "chance": "10%",
+        "amount": "1"
+      }
+    ],
+    "texture": [
+      {
+        "name": "Rabbit Default Texture",
+        "description": "Rabbit default texture.",
+        "file": "/assets/img/texture/mobs/rabbit/rabbit.png"
+      }
+    ]
+  },
+  {
+    "id": "minecraft:salmon",
+    "name": "Salmon",
+    "type": "passive",
+    "icon": "/assets/img/mobs/passive/Salmon.webp",
+    "health": 3,
+    "damage": 0,
+    "description": "Passive fish • Swims in water • Three different sizes • Can be caught with water bucket",
+    "version": "1.13",
+    "dimension": "Overworld",
+    "movement_speed": 0.7,
+    "size": {
+      "width": 0.7,
+      "height": 0.4
+    },
+    "spawn": {
+      "light_level": [
+        "0-15"
+      ],
+      "biome": "River, Frozen River, Cold Ocean, Deep Cold Ocean, Frozen Ocean, Deep Frozen Ocean",
+      "structure": "None"
+    },
+    "light_level": [
+      "0-15"
+    ],
+    "fun_fact": "Salmon come in three different sizes – small, medium, and large!",
+    "abilities": [
+      "Swims",
+      "Can be caught with water bucket",
+      "Jumps out of water"
+    ],
+    "drops": [
+      {
+        "item": "minecraft:salmon",
+        "chance": "100%",
+        "amount": "1"
+      },
+      {
+        "item": "minecraft:bone_meal",
+        "chance": "5%",
+        "amount": "1-2"
+      }
+    ],
+    "texture": [
+      {
+        "name": "Salmon Default Texture",
+        "description": "Salmon default texture.",
+        "file": "/assets/img/texture/mobs/fish/salmon.png"
+      }
+    ]
+  },
+  {
+    "id": "minecraft:sheep",
+    "name": "Sheep",
+    "type": "passive",
+    "icon": "/assets/img/mobs/passive/sheep.gif",
+    "health": 8,
+    "damage": 0,
+    "description": "Passive farm animal • Can be sheared • Wool regrows • Can be dyed",
+    "version": "0.28 (Classic)",
+    "dimension": "Overworld",
+    "movement_speed": 0.23,
+    "size": {
+      "width": 0.9,
+      "height": 1.3,
+      "baby": {
+        "width": 0.45,
+        "height": 0.65
+      }
+    },
+    "spawn": {
+      "light_level": [
+        "9-15"
+      ],
+      "biome": "Most Overworld biomes (grass blocks with 2 blocks space)",
+      "structure": "None"
+    },
+    "light_level": [
+      "0-15"
+    ],
+    "fun_fact": "Sheep named 'jeb_' constantly cycle through all dye colors like a rainbow!",
+    "abilities": [
+      "Wool obtained by shearing",
+      "Wool regrows after eating grass",
+      "Can be dyed",
+      "Breedable with wheat"
+    ],
+    "drops": [
+      {
+        "item": "minecraft:wool",
+        "chance": "100%",
+        "amount": "1"
+      },
+      {
+        "item": "minecraft:mutton",
+        "chance": "100%",
+        "amount": "1-2"
+      }
+    ],
+    "texture": [
+      {
+        "name": "Sheep Default Texture",
+        "description": "Sheep default texture.",
+        "file": "/assets/img/texture/mobs/sheep/sheep.png"
+      }
+    ]
+  },
+  {
+    "id": "minecraft:skeleton_horse",
+    "name": "Skeleton Horse",
+    "type": "passive",
+    "icon": "/assets/img/mobs/passive/Skeleton_Horse.webp",
+    "health": 15,
+    "damage": 0,
+    "description": "Undead mount • Spawns from skeleton traps • Can be ridden without taming • Underwater breathing",
+    "version": "1.6.1",
+    "dimension": "Overworld",
+    "movement_speed": 0.2,
+    "size": {
+      "width": 1.3965,
+      "height": 1.6,
+      "baby": {
+        "width": 0.6982,
+        "height": 0.8
+      }
+    },
+    "spawn": {
+      "light_level": [
+        "0-15"
+      ],
+      "biome": "",
+      "structure": "None"
+    },
+    "light_level": [
+      "0-15"
+    ],
+    "fun_fact": "Skeleton horses can be ridden without taming and do not drown!",
+    "abilities": [
+      "Can be ridden immediately",
+      "No oxygen loss underwater",
+      "Immune to drowning",
+      "Appears from skeleton traps"
+    ],
+    "drops": [
+      {
+        "item": "minecraft:bone",
+        "chance": "100%",
+        "amount": "0-2"
+      },
+      {
+        "item": "minecraft:saddle",
+        "chance": "100%",
+        "amount": "1"
+      }
+    ],
+    "texture": [
+      {
+        "name": "Skeleton Horse Default Texture",
+        "description": "Skeleton Horse default texture.",
+        "file": "/assets/img/texture/mobs/skelet_horse/skelet_horse.png"
+      }
+    ]
+  },
+  {
+    "id": "minecraft:sulfur_cube",
+    "name": "Sulfur Cube",
+    "type": "passive",
+    "icon": "/assets/img/mobs/passive/Sulfur_Cube.png",
+    "health": {
+      "large": 9,
+      "small": 4
+    },
+    "damage": 0,
+    "description": "A passive, cube-shaped mob that lives in sulfur caves. Can absorb blocks and retrieve them with shears. Depending on the absorbed block, its physics change: ice makes it slippery, wood gives it bounce, wool makes it light, iron heavy, and stone keeps it low.",
+    "version": "TBA",
+    "numeric_id": "( Bedrock only ) TBA",
+    "dimension": "Overworld (Sulfur Caves)",
+    "movement_speed": "Unknown",
+    "size": {
+      "large": {
+        "width": "Width: 0.98",
+        "height": "Height: 0.98"
+      },
+      "small": {
+        "width": "Width: 0.49",
+        "height": "Height: 0.49"
+      }
+    },
+    "spawn": {
+      "light_level": [
+        "TBA"
+      ],
+      "biome": "Sulfur Caves",
+      "structure": "None",
+      "note": "Spawns in special Sulfur Caves biomes."
+    },
+    "light_level": [
+      "TBA"
+    ],
+    "fun_fact": "Can absorb blocks and then appear with the appearance of the absorbed block. Using shears removes the block again. The absorbed block influences its movement properties.",
+    "abilities": [
+      "Absorb blocks (by touching them)",
+      "Remove block with shears",
+      "Can be leashed",
+      "Passive – does not attack players",
+      "Physics effects depending on block: ice (slippery), wood (bouncy), wool (light), iron (heavy), stone (stays low)"
+    ],
+    "knockback_resistance": {
+      "Rubber Ball": -2,
+      "Football": -1,
+      "Medicine Ball": 0.7,
+      "Golf Ball": -2,
+      "Beach Ball": -1,
+      "Hockey Puck": 0.5,
+      "Curling Stone": 0.8,
+      "Sticky": -2,
+      "High Resistance": 0.7
+    },
+    "usable_items": [
+      "Blocks",
+      "Shears (when it has absorbed a block)",
+      "Bucket",
+      "Lead",
+      "Name Tag",
+      "Slimeball",
+      "Golden Dandelion"
+    ],
+    "texture": [
+      {
+        "name": "Sulfur Cube Default Texture",
+        "description": "Sulfur Cube default texture.",
+        "file": "/assets/img/texture/mobs/small_sulfur_cube/small_sulfur_cube.png"
+      }
+    ],
+    "drops": [
+      {
+        "item": "minecraft:sulfur_dust",
+        "chance": "TBA",
+        "amount": "TBA"
+      },
+      {
+        "item": "minecraft:experience_orb",
+        "chance": "100%",
+        "amount": "1-3"
+      }
+    ],
+    "xp": "1-3"
+  },
+  {
+    "id": "minecraft:sniffer",
+    "name": "Sniffer",
+    "type": "passive",
+    "icon": "/assets/img/mobs/passive/Sniffer.webp",
+    "health": 14,
+    "damage": 0,
+    "description": "Passive prehistoric dinosaur • Can dig up ancient seeds • Grows from eggs • Largest passive mob",
+    "version": "1.20",
+    "dimension": "Overworld",
+    "movement_speed": 0.1,
+    "size": {
+      "width": 1.9,
+      "height": 1.75,
+      "baby": {
+        "width": 0.95,
+        "height": 0.875
+      }
+    },
+    "spawn": {
+      "light_level": [
+        "0-15"
+      ],
+      "biome": "From sniffer eggs found in suspicious sand/gravel",
+      "structure": "None"
+    },
+    "light_level": [
+      "0-15"
+    ],
+    "fun_fact": "Sniffers can dig up ancient seeds like torchflower and pitcher plant seeds!",
+    "abilities": [
+      "Digs up ancient seeds",
+      "Slow but powerful movement",
+      "Cannot be tamed but can be led",
+      "Special sniffing sound effect"
+    ],
+    "drops": [
+      {
+        "item": "minecraft:torchflower_seeds",
+        "chance": "100%",
+        "amount": "1-2"
+      }
+    ],
+    "texture": [
+      {
+        "name": "Sniffer Default Texture",
+        "description": "Sniffer default texture.",
+        "file": "/assets/img/texture/mobs/sniffer/sniffer.png"
+      }
+    ]
+  },
+  {
+    "id": "minecraft:snow_golem",
+    "name": "Snow Golem",
+    "type": "passive",
+    "icon": "/assets/img/mobs/passive/Snow_Golem.png",
+    "health": 4,
+    "damage": 0,
+    "description": "Passive constructed mob • Throws snowballs at enemies • Leaves snow trail • Melts in warm biomes",
+    "version": "1.0.0",
+    "dimension": "Overworld",
+    "movement_speed": 0.2,
+    "size": {
+      "width": 0.7,
+      "height": 1.9
+    },
+    "spawn": {
+      "light_level": [
+        "0-15"
+      ],
+      "biome": "Built by player (2 snow blocks + pumpkin)",
+      "structure": "None"
+    },
+    "light_level": [
+      "0-15"
+    ],
+    "fun_fact": "Snow golems can provoke endermen if they hit them with snowballs!",
+    "abilities": [
+      "Throws snowballs at hostile mobs",
+      "Leaves snow trail on blocks",
+      "Melts in deserts, Nether, and rain",
+      "Can have its pumpkin removed with shears"
+    ],
+    "drops": [
+      {
+        "item": "minecraft:snowball",
+        "chance": "100%",
+        "amount": "0-15"
+      }
+    ],
+    "texture": [
+      {
+        "name": "Snow Golem Default Texture",
+        "description": "Snow Golem default texture.",
+        "file": "/assets/img/texture/mobs/snow_golem/snow_golem.png"
+      }
+    ]
+  },
+  {
+    "id": "minecraft:squid",
+    "name": "Squid",
+    "type": "passive",
+    "icon": "/assets/img/mobs/passive/Squid.webp",
+    "health": 10,
+    "damage": 0,
+    "description": "Passive water creature • Swims in oceans and rivers • Releases ink clouds when hurt • Oldest fish mob",
+    "version": "1.0.0",
+    "dimension": "Overworld",
+    "movement_speed": 0.7,
+    "size": {
+      "width": 0.8,
+      "height": 0.8
+    },
+    "spawn": {
+      "light_level": [
+        "0-15"
+      ],
+      "biome": "Ocean, Deep Ocean, River, Underground water",
+      "structure": ""
+    },
+    "light_level": [
+      "0-15"
+    ],
+    "fun_fact": "Squid were the first water mob in Minecraft and have existed since Alpha!",
+    "abilities": [
+      "Swims",
+      "Ink cloud when hurt",
+      "Can only survive underwater"
+    ],
+    "drops": [
+      {
+        "item": "minecraft:ink_sac",
+        "chance": "100%",
+        "amount": "1-3"
+      }
+    ],
+    "texture": [
+      {
+        "name": "Squid Default Texture",
+        "description": "Squid default texture.",
+        "file": "/assets/img/texture/mobs/squid/squid.png"
+      }
+    ]
+  },
+  {
+    "id": "minecraft:strider",
+    "name": "Strider",
+    "type": "passive",
+    "icon": "/assets/img/mobs/passive/Strider.webp",
+    "health": 20,
+    "damage": 0,
+    "description": "Passive Nether mob • Walks on lava • Can be ridden with saddle • Steerable with warped fungus",
+    "version": "1.16",
+    "dimension": "Nether",
+    "movement_speed": 0.1,
+    "size": {
+      "width": 0.9,
+      "height": 1.7,
+      "baby": {
+        "width": 0.45,
+        "height": 0.85
+      }
+    },
+    "spawn": {
+      "light_level": [
+        "0-15"
+      ],
+      "biome": "Nether Wastes, Soul Sand Valley",
+      "structure": "None"
+    },
+    "light_level": [
+      "0-15"
+    ],
+    "fun_fact": "Striders can walk on lava and are damaged by water!",
+    "abilities": [
+      "Immune to lava damage",
+      "Can be ridden with saddle",
+      "Steerable with warped fungus",
+      "Breedable with warped fungus"
+    ],
+    "drops": [
+      {
+        "item": "minecraft:string",
+        "chance": "100%",
+        "amount": "2-5"
+      }
+    ],
+    "texture": [
+      {
+        "name": "Strider Default Texture",
+        "description": "Strider default texture.",
+        "file": "/assets/img/texture/mobs/strider/strider.png"
+      }
+    ]
+  },
+  {
+    "id": "minecraft:tadpole",
+    "name": "Tadpole",
+    "type": "passive",
+    "icon": "/assets/img/mobs/passive/Tadpole.webp",
+    "health": 6,
+    "damage": 0,
+    "description": "Baby version of frog • Swims in water • Grows into frog • Can be caught with water bucket",
+    "version": "1.19",
+    "dimension": "Overworld",
+    "movement_speed": 1,
+    "size": {
+      "width": 0.4,
+      "height": 0.3
+    },
+    "spawn": {
+      "light_level": [
+        "0-15"
+      ],
+      "biome": "Swamp, Mangrove Swamp",
+      "structure": ""
+    },
+    "light_level": [
+      "0-15"
+    ],
+    "fun_fact": "Tadpoles grow into different frog colors depending on the biome they grow in!",
+    "abilities": [
+      "Swims",
+      "Can be caught with water bucket",
+      "Grows into frog in 20 minutes",
+      "Can jump on land"
+    ],
+    "drops": [
+      {
+        "item": "minecraft:slime_ball",
+        "chance": "100%",
+        "amount": "1"
+      },
+      {
+        "item": "minecraft:experience_orb",
+        "chance": "100%",
+        "amount": "1-3"
+      }
+    ],
+    "texture": [
+      {
+        "name": "Tadpole Default Texture",
+        "description": "Tadpole default texture.",
+        "file": "/assets/img/texture/mobs/tadpole/tadpole.png"
+      }
+    ]
+  },
+  {
+    "id": "minecraft:tropical_fish",
+    "name": "Tropical Fish",
+    "type": "passive",
+    "icon": "/assets/img/mobs/passive/Clownfish.webp",
+    "health": 3,
+    "damage": 0,
+    "description": "Passive ornamental fish • Many color variants • Swims in warm oceans • Can be caught with water bucket",
+    "version": "1.13",
+    "dimension": "Overworld",
+    "movement_speed": 0.7,
+    "size": {
+      "width": 0.5,
+      "height": 0.4
+    },
+    "spawn": {
+      "light_level": [
+        "0-15"
+      ],
+      "biome": "Warm Ocean, Deep Warm Ocean, Lukewarm Ocean, Deep Lukewarm Ocean",
+      "structure": "None"
+    },
+    "light_level": [
+      "0-15"
+    ],
+    "fun_fact": "There are over 2,700 different natural variants of tropical fish!",
+    "abilities": [
+      "Swims",
+      "Can be caught with water bucket",
+      "Many color patterns and shapes"
+    ],
+    "drops": [
+      {
+        "item": "minecraft:tropical_fish",
+        "chance": "100%",
+        "amount": "1"
+      },
+      {
+        "item": "minecraft:bone_meal",
+        "chance": "5%",
+        "amount": "1-2"
+      }
+    ],
+    "texture": [
+      {
+        "name": "Tropical Fish Default Texture",
+        "description": "Tropical Fish default texture.",
+        "file": "/assets/img/texture/mobs/fish/tropical_fish.png"
+      }
+    ]
+  },
+  {
+    "id": "minecraft:turtle",
+    "name": "Turtle",
+    "type": "passive",
+    "icon": "/assets/img/mobs/passive/Turtle.webp",
+    "health": 30,
+    "damage": 0,
+    "description": "Passive animal • Lays eggs on home beach • Babies grow slowly • Provides scutes",
+    "version": "1.13",
+    "dimension": "Overworld",
+    "movement_speed": 0.16,
+    "size": {
+      "width": 1.2,
+      "height": 0.4,
+      "baby": {
+        "width": 0.6,
+        "height": 0.2
+      }
+    },
+    "spawn": {
+      "light_level": [
+        "9-15"
+      ],
+      "biome": "Beach, Warm Beaches",
+      "structure": "None"
+    },
+    "light_level": [
+      "0-15"
+    ],
+    "fun_fact": "Turtle scutes can be crafted into a turtle shell helmet that gives water breathing!",
+    "abilities": [
+      "Lays eggs on home beach",
+      "Breedable with seagrass",
+      "Retracts head when threatened",
+      "Slow movement on land and in water"
+    ],
+    "drops": [
+      {
+        "item": "minecraft:seagrass",
+        "chance": "100%",
+        "amount": "0-2"
+      },
+      {
+        "item": "minecraft:scute",
+        "chance": "100%",
+        "amount": "1"
+      }
+    ],
+    "texture": [
+      {
+        "name": "Turtle Default Texture",
+        "description": "Turtle default texture.",
+        "file": "/assets/img/texture/mobs/turtle/turtle.png"
+      }
+    ]
+  },
+  {
+    "id": "minecraft:villager",
+    "name": "Villager",
+    "type": "passive",
+    "icon": "/assets/img/mobs/passive/Villager.gif",
+    "health": 20,
+    "damage": 0,
+    "description": "Passive NPC • Offers trades • Has various professions • Can be bred • Lives in villages",
+    "version": "1.0.0",
+    "dimension": "Overworld",
+    "movement_speed": 0.5,
+    "size": {
+      "width": 0.6,
+      "height": 1.95,
+      "baby": {
+        "width": 0.3,
+        "height": 0.975
+      }
+    },
+    "spawn": {
+      "light_level": [
+        "9-15"
+      ],
+      "biome": "Villages in various biomes",
+      "structure": "Village"
+    },
+    "light_level": [
+      "0-15"
+    ],
+    "fun_fact": "Villagers can level up through trading and offer better deals!",
+    "abilities": [
+      "Trades various items",
+      "Takes professions from workstations",
+      "Breeding with food",
+      "Trade level increases with trades"
+    ],
+    "drops": [
+      {
+        "item": "minecraft:experience_orb",
+        "chance": "100%",
+        "amount": "3-8"
+      }
+    ],
+    "texture": [
+      {
+        "name": "Villager Default Texture",
+        "description": "Villager default texture.",
+        "file": "/assets/img/texture/mobs/villager/villager.png"
+      }
+    ]
+  },
+  {
+    "id": "minecraft:wandering_trader",
+    "name": "Wandering Trader",
+    "type": "passive",
+    "icon": "/assets/img/mobs/passive/Wandering_Trader.webp",
+    "health": 20,
+    "damage": 0,
+    "description": "Special trader mob • Appears randomly • Offers exotic goods • Has two llama companions • Despawns after time",
+    "version": "1.14",
+    "dimension": "Overworld",
+    "movement_speed": 0.5,
+    "size": {
+      "width": 0.6,
+      "height": 1.95
+    },
+    "spawn": {
+      "light_level": [
+        "0-15"
+      ],
+      "biome": "All Overworld biomes",
+      "structure": "All Overworld biomes"
+    },
+    "light_level": [
+      "0-15"
+    ],
+    "fun_fact": "Wandering traders only appear near players and despawn after 2-3 Minecraft days!",
+    "abilities": [
+      "Trades rare items",
+      "Spawns with two leashed llamas",
+      "Drinks invisibility potion when threatened",
+      "Cannot open doors"
+    ],
+    "drops": [
+      {
+        "item": "minecraft:lead",
+        "chance": "100%",
+        "amount": "2"
+      }
+    ],
+    "texture": [
+      {
+        "name": "Wandering Trader Default Texture",
+        "description": "Wandering Trader default texture.",
+        "file": "/assets/img/texture/mobs/wandering_trader/wandering_trader.png"
+      }
+    ]
+  },
+  {
+    "id": "minecraft:zombie_horse",
+    "name": "Zombie Horse",
+    "type": "passive",
+    "icon": "/assets/img/mobs/passive/Zombie_Horse.png",
+    "health": 15,
+    "damage": 0,
+    "description": "Undead horse variant • Can be ridden without taming • Immune to drowning • Spawnable only by command from version 1.6.1 to 1.21.10 • From 1.21.11 it spawns with a zombie on its back",
+    "version": "1.6.1",
+    "dimension": "Overworld",
+    "movement_speed": 0.2,
+    "size": {
+      "width": 1.3965,
+      "height": 1.6,
+      "baby": {
+        "width": 0.6982,
+        "height": 0.8
+      }
+    },
+    "spawn": {
+      "light_level": [
+        ""
+      ],
+      "biome": "From version 1.6.1 to 1.21.10 only spawnable by command; from 1.21.11 it spawns with a zombie on its back",
+      "structure": ""
+    },
+    "light_level": [
+      "0-15"
+    ],
+    "fun_fact": "Zombie horses can be ridden without taming and do not drown in water!",
+    "abilities": [
+      "Can be ridden immediately",
+      "Immune to drowning",
+      "No taming required",
+      "Can be equipped with saddle"
+    ],
+    "texture": [
+      {
+        "name": "Zombie Horse Default Texture",
+        "description": "Zombie Horse default texture.",
+        "file": "/assets/img/texture/mobs/zombie_horse/zombie_horse.png"
+      }
+    ],
+    "drops": [
+      {
+        "item": "minecraft:rotten_flesh",
+        "chance": "100%",
+        "amount": "0-2"
+      }
+    ]
+  }
+]

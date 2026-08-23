@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="de" data-theme="overworld">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Mohamad Laith AKA 'Blexilein'">
+    <meta name="robots" content="index, follow">
+    <meta name="description" content="Erstelle eigene Minecraft Advancement- und Achievement-Bilder mit Titel, zweiter Textzeile, Icon und freien Farben als PNG.">
+    <meta name="keywords" content="Minecraft, Advancement Generator, Achievement Bild, Advancement PNG, Minecraft Generator">
+    <link rel="canonical" href="https://mc-craft.com/blog/advancement-generator.html">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="MC-Craft | Advancement Generator">
+    <meta property="og:description" content="Erstelle eigene Minecraft Advancement- und Achievement-Bilder mit Titel, zweiter Textzeile, Icon und freien Farben als PNG.">
+    <meta property="og:url" content="https://mc-craft.com/blog/advancement-generator.html">
+    <meta property="og:image" content="https://mc-craft.com/assets/img/favicon/mc-craft.png">
+    <meta property="og:image:alt" content="MC-Craft Logo">
+    <meta property="og:site_name" content="MC-Craft">
+    <meta property="og:locale" content="de_DE">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="MC-Craft | Advancement Generator">
+    <meta name="twitter:description" content="Erstelle eigene Minecraft Advancement- und Achievement-Bilder mit Titel, zweiter Textzeile, Icon und freien Farben als PNG.">
+    <meta name="twitter:image" content="https://mc-craft.com/assets/img/favicon/mc-craft.png">
+    <meta name="theme-color" content="#148200">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicon/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon/favicon-32x32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/assets/img/favicon/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="/assets/img/favicon/android-chrome-512x512.png">
+    <link rel="icon" href="/assets/img/favicon/favicon.ico">
+    <link rel="manifest" href="/site.webmanifest">
+    <!-- "Minecraft"-Pixelfont wird nur nach Cookie-Zustimmung per JS geladen (assets/JS/modules/mc-preferences.js) -->
+    <link rel="stylesheet" href="/assets/fontawesome/all.min.css">
+    <link rel="stylesheet" href="/assets/CSS/homepage.css">
+    <link rel="stylesheet" href="/assets/CSS/advancement-generator.css">
+    <link rel="stylesheet" href="/assets/CSS/site-modern-v1.css">
+    <title data-i18n="site_title">MC-Craft | Advancement Generator</title>
+</head>
+<body>
+    <div class="loader" id="loader">
+        <div class="loader-content">
+            <div class="loading-spinner"><div class="spinner"></div></div>
+            <p class="loading-text" data-i18n="loader_text">Advancement Generator wird geladen...</p>
+            <div class="loading-progress"></div>
+        </div>
+    </div>
+
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <a href="/index.html" class="logo">
+                    <div class="logo-icon"></div>
+                    <span class="logo-text" data-i18n="site_title_short">MC-Craft</span>
+                </a>
+                <nav class="navigation">
+                    <ul class="nav-list">
+                        <li><a href="/index.html" class="nav-link" data-i18n="nav_home">Home</a></li>
+                        <li class="dropdown">
+                            <button class="dropdown-btn nav-link" data-i18n="tools_dropdown">Werkzeuge</button>
+                            <ul class="dropdown-menu">
+                                <li><a href="/blog/text-converter.html" data-i18n="nav_text_converter">Text Konverter</a></li>
+                                <li><a href="/blog/color-text.html" data-i18n="nav_color_text">Farbtext</a></li>
+                                <li><a href="/blog/items.html" data-i18n="nav_items">Items Datenbank</a></li>
+                                <li><a href="/blog/mobs.html" data-i18n="nav_mobs">Mobs Datenbank</a></li>
+                                <li><a href="/blog/server-status.html" data-i18n="nav_server_status">Server Status</a></li>
+                                <li><a href="/blog/minecraft-api-status.html">Minecraft API Status</a></li>
+                                <li><a href="/blog/skin-lookup.html" data-i18n="nav_skin_lookup">Skin Lookup</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <button class="dropdown-btn nav-link" data-i18n="discover_dropdown">Entdecken</button>
+                            <ul class="dropdown-menu">
+                                <li><a href="/blog/skin-editor.html" data-i18n="nav_skin_editor">Skin Editor</a></li>
+                                <li><a href="/blog/day-night-cycle.html" data-i18n="nav_day_night_cycle">Tag-Nacht-Zyklus</a></li>
+                                <li><a href="/blog/end_poem.html" data-i18n="nav_end_poem">End Poem</a></li>
+                                <li><a href="/blog/minecraft-capes.html" data-i18n="nav_capes">Cape-Datenbank</a></li>
+                                <li><a href="/blog/minecraft-versions.html">Minecraft Versionen</a></li>
+                                <li><a href="/blog/minecraft-skins.html" data-i18n="nav_skins">Skin-Bibliothek</a></li>
+                                <li><a href="/blog/beacon-color-mixer.html" data-i18n="nav_beacon_mixer">Beacon Color Mixer</a></li>
+                                <li><a href="/blog/qr-generator.html">QR Generator</a></li>
+                                <li><a href="/blog/advancement-generator.html" class="active" data-i18n="nav_advancement">Advancement Generator</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="sound-toggle">
+                    <button class="sound-btn" id="soundBtn" aria-label="Sound ein/aus">
+                        <img src="/assets/img/backgrounds/sound-on.svg" alt="Sound an" class="sound-icon" id="soundIcon">
+                    </button>
+                </div>
+                <div class="lang-switcher">
+                    <button class="lang-btn" id="langBtn" aria-label="Sprache umschalten">
+                        <img src="/assets/img/backgrounds/de.svg" alt="Deutsch" class="flag-icon" id="langFlag">
+                    </button>
+                </div>
+                <div class="theme-switcher">
+                    <button class="theme-btn" id="themeBtn">
+                        <i class="fa-solid fa-palette"></i>
+                    </button>
+                    <div class="theme-dropdown" id="themeDropdown">
+                        <button class="theme-option" data-theme="overworld">
+                            <i class="fas fa-cube"></i>
+                            <span data-i18n="theme_overworld">Overworld</span>
+                        </button>
+                        <button class="theme-option" data-theme="nether">
+                            <i class="fas fa-fire"></i>
+                            <span data-i18n="theme_nether">Nether</span>
+                        </button>
+                        <button class="theme-option" data-theme="end">
+                            <i class="fas fa-moon"></i>
+                            <span data-i18n="theme_end">The End</span>
+                        </button>
+                    </div>
+                </div>
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <div class="mobile-nav" id="mobileNav">
+        <div class="mobile-nav-header">
+            <div class="logo">
+                <div class="logo-icon"></div>
+                <span class="logo-text" data-i18n="site_title_short">MC-Craft</span>
+            </div>
+            <button class="close-btn" id="closeBtn">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <ul class="mobile-nav-list">
+            <li><a href="/index.html" class="mobile-nav-link" data-i18n="nav_home">Home</a></li>
+            <li><a href="/blog/text-converter.html" class="mobile-nav-link" data-i18n="nav_text_converter">Text Konverter</a></li>
+            <li><a href="/blog/color-text.html" class="mobile-nav-link" data-i18n="nav_color_text">Farbtext</a></li>
+            <li><a href="/blog/items.html" class="mobile-nav-link" data-i18n="nav_items">Items Datenbank</a></li>
+            <li><a href="/blog/mobs.html" class="mobile-nav-link" data-i18n="nav_mobs">Mobs Datenbank</a></li>
+            <li><a href="/blog/server-status.html" class="mobile-nav-link" data-i18n="nav_server_status">Server Status</a></li>
+            <li><a href="/blog/minecraft-api-status.html" class="mobile-nav-link">Minecraft API Status</a></li>
+            <li><a href="/blog/skin-lookup.html" class="mobile-nav-link" data-i18n="nav_skin_lookup">Skin Lookup</a></li>
+            <li><a href="/blog/skin-editor.html" class="mobile-nav-link" data-i18n="nav_skin_editor">Skin Editor</a></li>
+            <li><a href="/blog/day-night-cycle.html" class="mobile-nav-link" data-i18n="nav_day_night_cycle">Tag-Nacht-Zyklus</a></li>
+            <li><a href="/blog/end_poem.html" class="mobile-nav-link" data-i18n="nav_end_poem">End Poem</a></li>
+            <li><a href="/blog/minecraft-capes.html" class="mobile-nav-link" data-i18n="nav_capes">Cape-Datenbank</a></li>
+            <li><a href="/blog/minecraft-versions.html" class="mobile-nav-link">Minecraft Versionen</a></li>
+            <li><a href="/blog/minecraft-skins.html" class="mobile-nav-link" data-i18n="nav_skins">Skin-Bibliothek</a></li>
+            <li><a href="/blog/beacon-color-mixer.html" class="mobile-nav-link" data-i18n="nav_beacon_mixer">Beacon Color Mixer</a></li>
+            <li><a href="/blog/qr-generator.html" class="mobile-nav-link">QR Generator</a></li>
+            <li><a href="/blog/advancement-generator.html" class="mobile-nav-link" data-i18n="nav_advancement">Advancement Generator</a></li>
+        </ul>
+        <div class="mobile-theme-switcher">
+            <h4 data-i18n="theme_select">Theme auswählen:</h4>
+            <div class="theme-options">
+                <button class="theme-option-btn" data-theme="overworld">
+                    <i class="fas fa-cube"></i> <span data-i18n="theme_overworld">Overworld</span>
+                </button>
+                <button class="theme-option-btn" data-theme="nether">
+                    <i class="fas fa-fire"></i> <span data-i18n="theme_nether">Nether</span>
+                </button>
+                <button class="theme-option-btn" data-theme="end">
+                    <i class="fas fa-moon"></i> <span data-i18n="theme_end">The End</span>
+                </button>
+            </div>
+            <div class="mobile-sound-lang">
+                <button class="mobile-sound-btn" id="mobileSoundBtn">
+                    <img src="/assets/img/backgrounds/sound-on.svg" alt="Sound an" class="sound-icon" id="mobileSoundIcon">
+                    <span data-i18n="sound_toggle">Sound</span>
+                </button>
+                <button class="mobile-lang-btn" id="mobileLangBtn">
+                    <img src="/assets/img/backgrounds/de.svg" alt="Deutsch" class="flag-icon" id="mobileLangFlag">
+                    <span data-i18n="language">Sprache</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <main class="main">
+        <section class="hero" id="home">
+            <div class="hero-bg-grid"></div>
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-badge"><span class="hero-badge-dot"></span> <span data-i18n="hero_badge">V 1.0.0 IST DA</span></div>
+                    <h1 class="hero-title" data-i18n="hero_title">DEIN <span class="highlight">ADVANCEMENT</span> GENERATOR</h1>
+                    <p class="hero-description" data-i18n="hero_desc">Baue eigene Achievement- und Advancement-Bilder mit zwei Textzeilen, Icon und freien Farben. Direkt als PNG für Thumbnails, Discord und Overlays.</p>
+                    <div class="hero-buttons">
+                        <a href="#generator" class="btn btn-primary"><i class="fas fa-trophy"></i> <span data-i18n="hero_btn">Zum Generator</span></a>
+                        <a href="/index.html#tools" class="btn btn-secondary"><i class="fas fa-tools"></i> <span data-i18n="hero_btn_tools">Alle Tools</span></a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="hero-grid-staggered">
+                        <div class="hero-stagger-col hero-stagger-left">
+                            <div class="grid-item">
+                                <i class="fas fa-trophy"></i>
+                                <span data-i18n="hero_grid_frames">4 RAHMEN</span>
+                            </div>
+                            <div class="grid-item">
+                                <i class="fas fa-download"></i>
+                                <span data-i18n="hero_grid_export">PNG EXPORT</span>
+                            </div>
+                        </div>
+                        <div class="hero-stagger-col hero-stagger-right">
+                            <div class="grid-item">
+                                <i class="fas fa-align-left"></i>
+                                <span data-i18n="hero_grid_lines">2 TEXTZEILEN</span>
+                            </div>
+                            <div class="grid-item">
+                                <i class="fas fa-palette"></i>
+                                <span data-i18n="hero_grid_colors">FREIE FARBEN</span>
+                            </div>
+                        </div>
+                        <div class="floating-cube floating-cube-1"></div>
+                        <div class="floating-cube floating-cube-2"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="generator-section" id="generator">
+            <div class="container adv-grid">
+                <div class="panel controls-panel">
+                    <h2><i class="fas fa-sliders-h"></i> <span data-i18n="settings_title">Einstellungen</span></h2>
+
+                    <label data-i18n="frame_label">Rahmen-Typ</label>
+                    <div class="frame-grid" id="frameGrid">
+                        <button type="button" class="frame-btn" data-frame="achievement">
+                            <span class="frame-btn-title" data-i18n="frame_achievement">Achievement Get!</span>
+                            <span class="frame-btn-hint" data-i18n="frame_achievement_hint">Vor 1.12, gelb</span>
+                        </button>
+                        <button type="button" class="frame-btn active" data-frame="advancement">
+                            <span class="frame-btn-title" data-i18n="frame_advancement">Advancement Made!</span>
+                            <span class="frame-btn-hint" data-i18n="frame_advancement_hint">Ab 1.12, grün</span>
+                        </button>
+                        <button type="button" class="frame-btn" data-frame="challenge">
+                            <span class="frame-btn-title" data-i18n="frame_challenge">Challenge Complete!</span>
+                            <span class="frame-btn-hint" data-i18n="frame_challenge_hint">Lila</span>
+                        </button>
+                        <button type="button" class="frame-btn" data-frame="goal">
+                            <span class="frame-btn-title" data-i18n="frame_goal">Goal Reached!</span>
+                            <span class="frame-btn-hint" data-i18n="frame_goal_hint">Ziel, gelb</span>
+                        </button>
+                    </div>
+
+                    <label data-i18n="style_label">Box-Stil</label>
+                    <div class="style-grid" id="styleGrid"></div>
+
+                    <label for="line1Input" data-i18n="line1_label">Zeile 1 (Überschrift)</label>
+                    <input type="text" id="line1Input" maxlength="60" data-i18n-placeholder="line1_placeholder" placeholder="Advancement Made!">
+                    <p class="field-hint"><span id="line1Count">17</span> / 60 <span data-i18n="chars_hint">Zeichen</span></p>
+
+                    <label for="line2Input" data-i18n="line2_label">Zeile 2 (Unterschrift, weiß)</label>
+                    <input type="text" id="line2Input" maxlength="60" data-i18n-placeholder="line2_placeholder" placeholder="Getting an Upgrade">
+                    <p class="field-hint"><span id="line2Count">18</span> / 60 <span data-i18n="chars_hint">Zeichen</span></p>
+
+                    <label class="color-toggle switch-row" for="line3Toggle">
+                        <input type="checkbox" id="line3Toggle">
+                        <span data-i18n="line3_toggle">3. Zeile anzeigen</span>
+                    </label>
+                    <div id="line3Row" style="display: none;">
+                        <label for="line3Input" data-i18n="line3_label">Zeile 3 (optional)</label>
+                        <input type="text" id="line3Input" maxlength="60" data-i18n-placeholder="line3_placeholder" placeholder="mc-craft.com">
+                        <p class="field-hint"><span id="line3Count">11</span> / 60 <span data-i18n="chars_hint">Zeichen</span></p>
+                    </div>
+
+                    <label class="color-toggle switch-row" for="line4Toggle">
+                        <input type="checkbox" id="line4Toggle">
+                        <span data-i18n="line4_toggle">4. Zeile anzeigen</span>
+                    </label>
+                    <div id="line4Row" style="display: none;">
+                        <label for="line4Input" data-i18n="line4_label">Zeile 4 (optional)</label>
+                        <input type="text" id="line4Input" maxlength="60" data-i18n-placeholder="line4_placeholder" placeholder="=D">
+                        <p class="field-hint"><span id="line4Count">11</span> / 60 <span data-i18n="chars_hint">Zeichen</span></p>
+                    </div>
+
+                    <label data-i18n="icon_label">Icon</label>
+                    <div class="icon-group-tabs" id="iconGroupTabs">
+                        <button type="button" class="icon-group-tab active" data-group="all" data-i18n="icon_tab_all">Alle</button>
+                        <button type="button" class="icon-group-tab" data-group="item" data-i18n="icon_tab_items">Items</button>
+                        <button type="button" class="icon-group-tab" data-group="mob" data-i18n="icon_tab_mobs">Mobs</button>
+                        <button type="button" class="icon-group-tab" data-group="heart" data-i18n="icon_tab_hearts">Herzen</button>
+                        <button type="button" class="icon-group-tab" data-group="dialog" data-i18n="icon_tab_dialogs">Dialoge</button>
+                    </div>
+                    <div class="icon-sub-tabs" id="iconSubTabs" style="display: none;"></div>
+                    <input type="search" id="iconSearch" data-i18n-placeholder="icon_search_placeholder" placeholder="Item oder Block suchen...">
+                    <div class="icon-grid" id="iconGrid">
+                        <p class="icon-grid-state" id="iconGridState" data-i18n="icon_loading">Icons werden geladen...</p>
+                    </div>
+                    <div class="icon-source-row">
+                        <button type="button" class="btn btn-secondary btn-small" id="iconUploadBtn"><i class="fas fa-upload"></i> <span data-i18n="icon_upload">Eigenes Bild</span></button>
+                        <button type="button" class="btn btn-secondary btn-small" id="iconUrlBtn"><i class="fas fa-link"></i> <span data-i18n="icon_url">Bild-URL</span></button>
+                        <button type="button" class="btn btn-secondary btn-small" id="iconClearBtn"><i class="fas fa-eraser"></i> <span data-i18n="icon_clear">Kein Icon</span></button>
+                    </div>
+                    <input type="file" id="iconFile" accept="image/*" hidden>
+
+                    <div class="color-settings" id="colorSettings">
+                        <label class="color-toggle" for="customColorsToggle">
+                            <input type="checkbox" id="customColorsToggle">
+                            <span data-i18n="custom_colors_toggle">Eigene Farben nutzen</span>
+                        </label>
+                        <div class="color-grid" id="customColorsGrid">
+                            <div class="color-item">
+                                <label for="colorLine1" data-i18n="color_line1">Zeile 1</label>
+                                <input type="color" id="colorLine1" value="#54fc54">
+                            </div>
+                            <div class="color-item">
+                                <label for="colorLine2" data-i18n="color_line2">Zeile 2</label>
+                                <input type="color" id="colorLine2" value="#ffffff">
+                            </div>
+                            <div class="color-item">
+                                <label for="colorLine3" data-i18n="color_line3">Zeile 3</label>
+                                <input type="color" id="colorLine3" value="#aaaaaa">
+                            </div>
+                            <div class="color-item">
+                                <label for="colorLine4" data-i18n="color_line4">Zeile 4</label>
+                                <input type="color" id="colorLine4" value="#817e7e">
+                            </div>
+                            <div class="color-item">
+                                <label for="colorFill" data-i18n="color_fill">Box-Füllung</label>
+                                <input type="color" id="colorFill" value="#212121">
+                            </div>
+                            <div class="color-item">
+                                <label for="colorBorder" data-i18n="color_border">Box-Rahmen</label>
+                                <input type="color" id="colorBorder" value="#555555">
+                            </div>
+                            <div class="color-item">
+                                <label for="colorOutline" data-i18n="color_outline">Außenlinie</label>
+                                <input type="color" id="colorOutline" value="#000000">
+                            </div>
+                            <div class="color-item">
+                                <label for="colorBgA" data-i18n="color_bg_a">Hintergrund</label>
+                                <input type="color" id="colorBgA" value="#0f2a16">
+                            </div>
+                            <div class="color-item">
+                                <label for="colorBgB" data-i18n="color_bg_b">Verlauf-Farbe</label>
+                                <input type="color" id="colorBgB" value="#050b08">
+                            </div>
+                        </div>
+                        <button id="resetColorsBtn" class="btn btn-secondary color-reset-btn" type="button" data-i18n="btn_reset_colors">Farben zurücksetzen</button>
+                    </div>
+
+                    <div class="input-row">
+                        <div>
+                            <label for="bgSelect" data-i18n="bg_label">Bild-Hintergrund</label>
+                            <select id="bgSelect">
+                                <option value="transparent" data-i18n="bg_transparent">Transparent</option>
+                                <option value="solid" data-i18n="bg_solid">Einfarbig</option>
+                                <option value="gradient" data-i18n="bg_gradient">Verlauf</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="scaleSelect" data-i18n="scale_label">Auflösung</label>
+                            <select id="scaleSelect">
+                                <option value="2">2x</option>
+                                <option value="4" selected>4x</option>
+                                <option value="6">6x</option>
+                                <option value="8">8x</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="input-row">
+                        <div>
+                            <label for="widthSelect" data-i18n="width_label">Box-Breite</label>
+                            <select id="widthSelect">
+                                <option value="200" selected data-i18n="width_fixed">Fest (200 px)</option>
+                                <option value="160" data-i18n="width_vanilla">Vanilla (160 px)</option>
+                                <option value="auto" data-i18n="width_auto">Automatisch</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="paddingSelect" data-i18n="padding_label">Rand um die Box</label>
+                            <select id="paddingSelect">
+                                <option value="0" selected>0 px</option>
+                                <option value="4">4 px</option>
+                                <option value="8">8 px</option>
+                                <option value="16">16 px</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <label class="color-toggle switch-row" for="shadowToggle">
+                        <input type="checkbox" id="shadowToggle" checked>
+                        <span data-i18n="shadow_toggle">Textschatten wie in Minecraft</span>
+                    </label>
+
+                    <div class="preset-row">
+                        <button class="preset-btn" data-line2="Getting an Upgrade" data-i18n="preset_upgrade">Getting an Upgrade</button>
+                        <button class="preset-btn" data-line2="When Pigs Fly">When Pigs Fly</button>
+                        <button class="preset-btn" data-line2="Stone Age">Stone Age</button>
+                        <button class="preset-btn" data-line2="Willkommen auf dem Server!" data-i18n="preset_welcome">Willkommen!</button>
+                    </div>
+
+                </div>
+
+                <div class="panel preview-panel">
+                    <div class="panel-head">
+                        <h2><i class="fas fa-image"></i> <span data-i18n="preview_title">Vorschau</span></h2>
+                        <div class="panel-actions">
+                            <button id="copyBtn" class="btn btn-secondary btn-small"><i class="fas fa-copy"></i> <span data-i18n="btn_copy">Bild kopieren</span></button>
+                            <button id="downloadBtn" class="btn btn-primary btn-small"><i class="fas fa-download"></i> <span data-i18n="btn_download">PNG herunterladen</span></button>
+                        </div>
+                    </div>
+                    <div class="preview-stage" id="previewStage">
+                        <canvas id="advCanvas" width="800" height="128"></canvas>
+                    </div>
+                    <p class="hint" id="sizeInfo">–</p>
+                    <p class="hint" data-i18n="preview_hint">Tipp: Die Box wächst automatisch mit deinem Text mit. Für Thumbnails 4x oder 8x nehmen.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-grid">
+                    <div class="footer-col">
+                        <div class="footer-logo">
+                            <div class="logo-icon"></div>
+                            <span class="logo-text" data-i18n="site_title_short">MC-Craft</span>
+                        </div>
+                        <p class="footer-description" data-i18n="footer_description">Kostenlose Minecraft-Tools für die Community. Entwickelt von Spielern für Spieler.</p>
+                        <div class="social-links">
+                            <a href="https://github.com/Blexilein" class="social-link" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                            <a href="https://discord.gg/eVVpQD75w4" class="social-link"><i class="fab fa-discord"></i></a>
+                            <a href="https://x.com/Blexi_1" class="social-link" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        </div>
+                    </div>
+                    <div class="footer-col">
+                        <h4 class="footer-title" data-i18n="footer_tools">Tools</h4>
+                        <ul class="footer-links">
+                            <li><a href="/blog/text-converter.html" data-i18n="nav_text_converter">Text Konverter</a></li>
+                            <li><a href="/blog/color-text.html" data-i18n="nav_color_text">Farbtext-Konverter</a></li>
+                            <li><a href="/blog/items.html" data-i18n="nav_items">Items Datenbank</a></li>
+                            <li><a href="/blog/mobs.html" data-i18n="nav_mobs">Mobs Datenbank</a></li>
+                            <li><a href="/blog/day-night-cycle.html" data-i18n="nav_day_night_cycle">Tag-Nacht-Zyklus</a></li>
+                            <li><a href="/blog/beacon-color-mixer.html" data-i18n="nav_beacon_mixer">Beacon Color Mixer</a></li>
+                            <li><a href="/blog/qr-generator.html">QR Generator</a></li>
+                            <li><a href="/blog/advancement-generator.html" data-i18n="nav_advancement">Advancement Generator</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4 class="footer-title" data-i18n="footer_more_tools">Mehr Tools</h4>
+                        <ul class="footer-links">
+                            <li><a href="/blog/server-status.html" data-i18n="nav_server_status">Server Status</a></li>
+                            <li><a href="/blog/minecraft-api-status.html">Minecraft API Status</a></li>
+                            <li><a href="/blog/skin-lookup.html" data-i18n="nav_skin_lookup">Skin Lookup</a></li>
+                            <li><a href="/blog/skin-editor.html" data-i18n="nav_skin_editor">Skin Editor</a></li>
+                            <li><a href="/blog/minecraft-skins.html" data-i18n="skins_library_title">Skin Galerie</a></li>
+                            <li><a href="/blog/minecraft-capes.html" data-i18n="capes_db_title">Cape Galerie</a></li>
+                            <li><a href="/blog/minecraft-versions.html">Minecraft Versionen</a></li>
+                            <li><a href="/blog/end_poem.html" data-i18n="nav_end_poem">End Poem</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4 class="footer-title" data-i18n="footer_legal">Rechtliches</h4>
+                        <ul class="footer-links">
+                            <li><a href="/blog/impressum.html" data-i18n="footer_impressum">Impressum</a></li>
+                            <li><a href="/blog/datenschutz.html" data-i18n="footer_privacy">Datenschutz</a></li>
+                            <li><a href="/blog/nutzungsbedingungen.html" data-i18n="footer_terms">Nutzungsbedingungen</a></li>
+                            <li><a href="/blog/copyright.html" data-i18n="footer_copyright">Copyright</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4 class="footer-title" data-i18n="footer_about">Über Uns</h4>
+                        <ul class="footer-links">
+                            <li><a href="/blog/history.html" data-i18n="footer_history">MC-Craft Geschichte</a></li>
+                            <li><a href="/blog/team.html" data-i18n="footer_team">Unser Team</a></li>
+                            <li><a href="/blog/about.html" data-i18n="footer_about_us">Über uns</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4 class="footer-title" data-i18n="footer_support">Support</h4>
+                        <ul class="footer-links">
+                            <li><a href="/blog/faq.html" data-i18n="footer_faq">FAQ & Hilfe</a></li>
+                            <li><a href="/blog/bug-report.html" data-i18n="footer_bug">Bug melden</a></li>
+                            <li><a href="/blog/support.html" data-i18n="footer_support_contact">Support Kontakt</a></li>
+                            <li><a href="/blog/e-mails.html">E-mails</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <div class="copyright">
+                        <p>&copy; <span id="currentYear">2026</span> MC-Craft. <span data-i18n="footer_rights">Alle Rechte vorbehalten.</span></p>
+                        <p class="disclaimer" data-i18n="footer_disclaimer">Minecraft ist eine Marke von Mojang Studios. Diese Seite ist nicht offiziell mit Mojang oder Microsoft verbunden.</p>
+                    </div>
+                    <div class="footer-meta">
+                        <span class="version" data-i18n="footer_version">Version 1.0.0</span>
+                        <a href="/blog/changelog.html" class="changelog active" data-i18n="footer_changelog">Changelog</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <button class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <div class="toast-container" id="toastContainer"></div>
+
+    <script src="/assets/JS/modules/mc-preferences.js"></script>
+
+    <script src="/assets/JS/modules/advancement-generator.js?v=20260814a"></script>
+</body>
+</html>

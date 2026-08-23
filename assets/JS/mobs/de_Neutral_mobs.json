@@ -1,0 +1,3318 @@
+[
+  {
+    "id": "minecraft:bee",
+    "name": "Biene",
+    "numeric_id": "( Nur Bedrock ) 122",
+    "type": "neutral",
+    "category": "Neutraler Mob",
+    "icon": "/assets/img/mobs/neutral/Bee.webp",
+    "description": "Neutrales Insekt • Wird aggressiv wenn Nest zerstört • Bestäubt Pflanzen • Sammelt Honig",
+    "biome": "Biomabhängig an natürlich erzeugten Bienennestern, besonders Ebenen, Sonnenblumenebenen und Blumenwälder",
+    "structure": "Natürlich erzeugtes Bienennest",
+    "dimension": "Overworld",
+    "movement_speed": 0.3,
+    "size": {
+      "width": "Breite: 0.7",
+      "height": "Höhe: 0.6"
+    },
+    "aliases": [
+      "Honigbiene"
+    ],
+    "introduced_date": "2019-12-10",
+    "removed_date": null,
+    "gallery": [],
+    "model": "Minecraft-Entity-Modell",
+    "animation": [],
+    "source": "",
+    "updated_at": "2026-08-22",
+    "notes": "Bienen lassen beim Tod keine Gegenstände fallen; insbesondere gibt es keinen Stachel als sammelbares Item.",
+    "version": "Java Edition 1.15 / Bedrock Edition 1.14.0",
+    "edition": "Java Edition, Bedrock Edition",
+    "effects": [
+      {
+        "name": "Gift",
+        "type": "verursacht",
+        "level": "I",
+        "duration": "Normal: 10 Sekunden; Schwer: 18 Sekunden",
+        "chance": "Bei erfolgreichem Stich",
+        "condition": "Nicht auf Friedlich; auf Einfach kein Gift",
+        "description": "Nach dem Stich verliert die Biene ihren Stachel und stirbt nach kurzer Zeit."
+      }
+    ],
+    "effect_immunities": [],
+    "status": "Verfügbar",
+    "tags": [
+      "Neutral",
+      "Overworld",
+      "Neutral / Gliederfüßer"
+    ],
+    "related_entries": [
+      "minecraft:bee_nest",
+      "minecraft:beehive",
+      "minecraft:honey_bottle",
+      "minecraft:honeycomb"
+    ],
+    "command": "/summon minecraft:bee",
+    "version_history": [
+      {
+        "version": "Java Edition 1.15 / Bedrock Edition 1.14.0",
+        "change": "Biene wurde in der angegebenen Version hinzugefügt.",
+        "type": "added",
+        "date": "2019-12-10"
+      }
+    ],
+    "texture": [
+      {
+        "name": "Bee Bee Angry Baby",
+        "category": "Baby",
+        "description": "Variante: Bee Bee Angry Baby.",
+        "file": "/assets/img/texture/mobs/bee/bee_angry_baby.png"
+      },
+      {
+        "name": "Bee Bee Angry Nectar Baby",
+        "category": "Baby",
+        "description": "Variante: Bee Bee Angry Nectar Baby.",
+        "file": "/assets/img/texture/mobs/bee/bee_angry_nectar_baby.png"
+      },
+      {
+        "name": "Bee Bee Angry Nectar",
+        "category": "Standardtextur",
+        "description": "Variante: Bee Bee Angry Nectar.",
+        "file": "/assets/img/texture/mobs/bee/bee_angry_nectar.png"
+      },
+      {
+        "name": "Bee Bee Angry",
+        "category": "Standardtextur",
+        "description": "Variante: Bee Bee Angry.",
+        "file": "/assets/img/texture/mobs/bee/bee_angry.png"
+      },
+      {
+        "name": "Bee Bee Baby",
+        "category": "Baby",
+        "description": "Variante: Bee Bee Baby.",
+        "file": "/assets/img/texture/mobs/bee/bee_baby.png"
+      },
+      {
+        "name": "Bee Bee Nectar Baby",
+        "category": "Baby",
+        "description": "Variante: Bee Bee Nectar Baby.",
+        "file": "/assets/img/texture/mobs/bee/bee_nectar_baby.png"
+      },
+      {
+        "name": "Bee Bee Nectar",
+        "category": "Standardtextur",
+        "description": "Variante: Bee Bee Nectar.",
+        "file": "/assets/img/texture/mobs/bee/bee_nectar.png"
+      },
+      {
+        "name": "Bee Bee Stinger",
+        "category": "Standardtextur",
+        "description": "Variante: Bee Bee Stinger.",
+        "file": "/assets/img/texture/mobs/bee/bee_stinger.png"
+      },
+      {
+        "name": "Bee Bee",
+        "category": "Standardtextur",
+        "description": "Variante: Bee Bee.",
+        "file": "/assets/img/texture/mobs/bee/bee.png"
+      }
+    ],
+    "sounds": [],
+    "health": 10,
+    "damage": "2 durch den Stich, zusätzlich Gift (Dauer abhängig vom Schwierigkeitsgrad)",
+    "armor": 0,
+    "experience": "1–3 beim Töten eines erwachsenen Tiers; 1–7 beim Züchten",
+    "spawn": {
+      "light_level": [
+        "Nicht lichtabhängig; entsteht zusammen mit natürlich erzeugten Bienennestern"
+      ],
+      "biome": "Biomabhängig an Bäumen mit Bienennestern",
+      "structure": "Bienennest"
+    },
+    "light_level": [
+      "Nicht lichtabhängig; entsteht zusammen mit natürlich erzeugten Bienennestern"
+    ],
+    "classification": "Neutral / Gliederfüßer",
+    "renewable": "Ja",
+    "can_despawn": "Nein",
+    "tameable": "Nein",
+    "breedable": "Ja",
+    "duplicable": "Nein",
+    "duplication_item": "Keines",
+    "leashable": "Ja",
+    "rideable": "Nein",
+    "baby_variant": "Ja",
+    "drops": [],
+    "abilities": [
+      "Bestäubt Pflanzen",
+      "Sammelt Nektar und bringt ihn zum Nest",
+      "Verteidigt Nest und Schwarm",
+      "Stirbt nach einem erfolgreichen Stich"
+    ],
+    "fun_fact": "Nach einem erfolgreichen Stich verliert die Biene ihren Stachel und stirbt nach kurzer Zeit.",
+    "attack_type": "Keiner",
+    "targets": [],
+    "enemy_mobs": [],
+    "follows": [
+      "Blumen",
+      "Blühende Azalee",
+      "Blühende Azaleenblätter",
+      "Mangrovenkeimling",
+      "Fackellilie",
+      "Kannenpflanze"
+    ],
+    "healing_item": [
+      "Blumen und andere züchtbare Blütenpflanzen"
+    ],
+    "fire_immune": "Nein",
+    "undead": "Nein",
+    "boss_bar": "Nein",
+    "knockback_resistance": 0,
+    "loot_table": "minecraft:entities/bee",
+    "java_entity_id": "minecraft:bee",
+    "bedrock_entity_id": "minecraft:bee"
+  },
+  {
+    "id": "minecraft:cave_spider",
+    "name": "Höhlenspinne",
+    "numeric_id": "( Nur Bedrock ) 40",
+    "type": "neutral",
+    "category": "Neutraler Mob",
+    "icon": "/assets/img/mobs/neutral/Cave_Spider.webp",
+    "description": "Giftige Spinne • Kleinere Hitbox • Spawnt in Minen • Verursacht Gift-Effekt",
+    "biome": "Keine natürliche Biom-Bindung",
+    "structure": "Minenschacht mit Höhlenspinnen-Spawner",
+    "dimension": "Overworld",
+    "movement_speed": 0.3,
+    "size": {
+      "width": "Breite: 0.7",
+      "height": "Höhe: 0.5"
+    },
+    "aliases": [
+      "Giftspinne"
+    ],
+    "introduced_date": "2011-09-14",
+    "removed_date": null,
+    "gallery": [],
+    "model": "Minecraft-Entity-Modell",
+    "animation": [],
+    "source": "",
+    "updated_at": "2026-08-22",
+    "notes": "Giftige Spinne • Kleinere Hitbox • Spawnt in Minen • Verursacht Gift-Effekt",
+    "version": "Java Edition Beta 1.8 / Bedrock Edition 0.11.0",
+    "edition": "Java Edition, Bedrock Edition",
+    "effects": [
+      {
+        "name": "Gift",
+        "type": "verursacht",
+        "level": "I",
+        "duration": "Normal: 7 Sekunden; Schwer: 15 Sekunden",
+        "chance": "Bei erfolgreichem Angriff",
+        "condition": "Java: nicht auf Einfach; Bedrock-Dauer kann abweichen",
+        "description": "Gift kann das Ziel nicht direkt unter 1 Lebenspunkt bringen."
+      }
+    ],
+    "effect_immunities": [
+      "Gift"
+    ],
+    "status": "Verfügbar",
+    "tags": [
+      "Neutral",
+      "Overworld",
+      "Neutral bei ausreichend hellem Umgebungslicht, sonst feindlich / Gliederfüßer"
+    ],
+    "related_entries": [
+      "minecraft:spider",
+      "minecraft:spider_eye",
+      "minecraft:string"
+    ],
+    "command": "/summon minecraft:cave_spider",
+    "version_history": [
+      {
+        "version": "Java Edition Beta 1.8 / Bedrock Edition 0.11.0",
+        "change": "Höhlenspinne wurde in der angegebenen Version hinzugefügt.",
+        "type": "added",
+        "date": "2011-09-14"
+      }
+    ],
+    "texture": [
+      {
+        "name": "Spider Cave Spider",
+        "category": "Standardtextur",
+        "description": "Variante: Spider Cave Spider.",
+        "file": "/assets/img/texture/mobs/spider/cave_spider.png"
+      },
+      {
+        "name": "Spider Spider Eyes",
+        "category": "Standardtextur",
+        "description": "Variante: Spider Spider Eyes.",
+        "file": "/assets/img/texture/mobs/spider/spider_eyes.png"
+      }
+    ],
+    "sounds": [],
+    "health": 12,
+    "damage": "Nahkampf: Einfach 2, Normal 2, Schwer 3; zusätzlich Gift auf Normal und Schwer",
+    "armor": 0,
+    "experience": "5 beim Töten durch Spieler oder gezähmten Wolf",
+    "spawn": {
+      "light_level": [
+        "Aus einem Spawner bei geeigneter Dunkelheit"
+      ],
+      "biome": "Keine feste Biom-Bindung",
+      "structure": "Minenschacht"
+    },
+    "light_level": [
+      "Aus einem Spawner bei geeigneter Dunkelheit"
+    ],
+    "classification": "Neutral bei ausreichend hellem Umgebungslicht, sonst feindlich / Gliederfüßer",
+    "renewable": "Ja",
+    "can_despawn": "Ja, sofern nicht dauerhaft gemacht",
+    "tameable": "Nein",
+    "breedable": "Nein",
+    "duplicable": "Nein",
+    "duplication_item": "Keines",
+    "leashable": "Nein",
+    "rideable": "Nein",
+    "baby_variant": "Nein",
+    "drops": [
+      {
+        "item": "minecraft:string",
+        "chance": "100 %",
+        "amount": "0–2 (+0–1 je Plünderungsstufe)"
+      },
+      {
+        "item": "minecraft:spider_eye",
+        "chance": "33,3 %",
+        "amount": "1",
+        "condition": "Nur bei Tod durch Spieler oder gezähmten Wolf; +1 Prozentpunkt je Plünderungsstufe"
+      }
+    ],
+    "abilities": [
+      "Klettert an Wänden",
+      "Passt durch eine 1 × 1 große Öffnung",
+      "Ist gegen Gift immun"
+    ],
+    "fun_fact": "Höhlenspinnen sind kleiner als normale Spinnen und passen durch 1x1 Löcher!",
+    "attack_type": "Nahkampf und Gift",
+    "targets": [
+      "Spieler",
+      "Eisengolem"
+    ],
+    "enemy_mobs": [],
+    "follows": [],
+    "healing_item": [],
+    "fire_immune": "Nein",
+    "undead": "Nein",
+    "boss_bar": "Nein",
+    "knockback_resistance": 0,
+    "loot_table": "minecraft:entities/cave_spider",
+    "java_entity_id": "minecraft:cave_spider",
+    "bedrock_entity_id": "minecraft:cave_spider"
+  },
+  {
+    "id": "minecraft:dolphin",
+    "name": "Delfin",
+    "numeric_id": "( Nur Bedrock ) 31",
+    "type": "neutral",
+    "category": "Neutraler Mob",
+    "icon": "/assets/img/mobs/neutral/Dolphin.webp",
+    "description": "Freundlicher Meeressäuger • Hilft Spielern • Gibt Geschwindigkeits-Bonus • Spielt mit Items",
+    "biome": "Alle Ozeanbiome außer gefrorenen Ozeanen",
+    "structure": "Keine",
+    "dimension": "Overworld",
+    "movement_speed": 1.2,
+    "size": {
+      "width": "Breite: 0.9",
+      "height": "Höhe: 0.6"
+    },
+    "aliases": [],
+    "introduced_date": "2018-07-18",
+    "removed_date": null,
+    "gallery": [],
+    "model": "Minecraft-Entity-Modell",
+    "animation": [],
+    "source": "",
+    "updated_at": "2026-08-22",
+    "notes": "Freundlicher Meeressäuger • Hilft Spielern • Gibt Geschwindigkeits-Bonus • Spielt mit Items",
+    "version": "Java Edition 1.13 / Bedrock Edition 1.4.0",
+    "edition": "Java Edition, Bedrock Edition",
+    "effects": [
+      {
+        "name": "Anmut des Delfins",
+        "type": "gibt",
+        "level": "I",
+        "duration": "Wird in der Nähe regelmäßig erneuert",
+        "chance": "100 %",
+        "condition": "Spieler schwimmt innerhalb der Reichweite",
+        "description": "Erhöht die Schwimmgeschwindigkeit; Bedrock nutzt ein vergleichbares internes Verhalten."
+      }
+    ],
+    "effect_immunities": [],
+    "status": "Verfügbar",
+    "tags": [
+      "Neutral",
+      "Overworld",
+      "Neutral / Wassertier"
+    ],
+    "related_entries": [
+      "minecraft:cod",
+      "minecraft:salmon",
+      "minecraft:buried_treasure_map"
+    ],
+    "command": "/summon minecraft:dolphin",
+    "version_history": [
+      {
+        "version": "Java Edition 1.13 / Bedrock Edition 1.4.0",
+        "change": "Delfin wurde in der angegebenen Version hinzugefügt.",
+        "type": "added",
+        "date": "2018-07-18"
+      }
+    ],
+    "texture": [
+      {
+        "name": "Dolphin Baby Dolphin",
+        "category": "Baby",
+        "description": "Variante: Dolphin Baby Dolphin.",
+        "file": "/assets/img/texture/mobs/dolphin/baby_dolphin.png"
+      },
+      {
+        "name": "Dolphin Dolphin",
+        "category": "Standardtextur",
+        "description": "Variante: Dolphin Dolphin.",
+        "file": "/assets/img/texture/mobs/dolphin/dolphin.png"
+      }
+    ],
+    "sounds": [],
+    "health": 10,
+    "damage": "Einfach 2, Normal 3, Schwer 4",
+    "armor": 0,
+    "experience": "1–3 beim Töten durch Spieler oder gezähmten Wolf",
+    "spawn": {
+      "light_level": [
+        "Beliebig"
+      ],
+      "biome": "Nicht gefrorene Ozeanbiome",
+      "structure": "Keine",
+      "spawn_group": "3–5"
+    },
+    "light_level": [
+      "Beliebig"
+    ],
+    "classification": "Neutral / Wassertier",
+    "renewable": "Ja",
+    "can_despawn": "Ja, sofern nicht dauerhaft gemacht",
+    "tameable": "Nein",
+    "breedable": "Nein",
+    "duplicable": "Nein",
+    "duplication_item": "Keines",
+    "leashable": "Ja",
+    "rideable": "Nein",
+    "baby_variant": "Java: Nein; Bedrock: Ja",
+    "drops": [
+      {
+        "item": "minecraft:cod",
+        "chance": "100 %",
+        "amount": "0–1"
+      }
+    ],
+    "abilities": [
+      "Beschleunigt schwimmende Spieler",
+      "Führt nach dem Füttern zu nahen Schiffswracks, Ozeanruinen oder vergrabenen Schätzen",
+      "Spielt mit fallengelassenen Gegenständen",
+      "Muss regelmäßig Luft holen"
+    ],
+    "fun_fact": "Delfine führen Spieler zu Schätzen wenn sie mit Fisch gefüttert werden!",
+    "attack_type": "Nahkampf, wenn provoziert",
+    "targets": [
+      "Angreifer des Delfins"
+    ],
+    "enemy_mobs": [
+      "Wächter",
+      "Älterer Wächter",
+      "Ertrunkener"
+    ],
+    "follows": [],
+    "healing_item": [
+      "Roher Kabeljau",
+      "Roher Lachs"
+    ],
+    "fire_immune": "Nein",
+    "undead": "Nein",
+    "boss_bar": "Nein",
+    "knockback_resistance": 0,
+    "loot_table": "minecraft:entities/dolphin",
+    "java_entity_id": "minecraft:dolphin",
+    "bedrock_entity_id": "minecraft:dolphin"
+  },
+  {
+    "id": "minecraft:drowned",
+    "name": "Ertrunkener",
+    "numeric_id": "( Nur Bedrock ) 110",
+    "type": "neutral",
+    "category": "Neutraler Mob",
+    "icon": "/assets/img/mobs/neutral/Drowned.webp",
+    "description": "Untoter Wasser-Mob • Trägt manchmal Dreizack • Spawnt in Gewässern • Greift an Land an",
+    "biome": "Flüsse, Ozeanbiome und wassergefüllte Tropfsteinhöhlen; Regeln unterscheiden sich zwischen Java und Bedrock",
+    "structure": "Ozeanruinen; außerdem natürliche Gewässer",
+    "dimension": "Overworld",
+    "movement_speed": 0.23,
+    "size": {
+      "width": "Breite: 0.6",
+      "height": "Höhe: 1.95",
+      "baby": {
+        "width": "Breite: 0.3",
+        "height": "Höhe: 0.975"
+      }
+    },
+    "aliases": [
+      "Ertrunkener Zombie"
+    ],
+    "introduced_date": "2018-07-18",
+    "removed_date": null,
+    "gallery": [],
+    "model": "Minecraft-Entity-Modell",
+    "animation": [],
+    "source": "",
+    "updated_at": "2026-08-22",
+    "notes": "Der Ertrunkene ist spielmechanisch ein feindlicher Mob, nicht neutral.",
+    "version": "Java Edition 1.13 / Bedrock Edition 1.4.0",
+    "edition": "Java Edition, Bedrock Edition",
+    "effects": [],
+    "effect_immunities": [
+      "Gift",
+      "Regeneration"
+    ],
+    "status": "Verfügbar",
+    "tags": [
+      "Neutral",
+      "Overworld",
+      "Feindlich / untot – befindet sich nur wegen der bestehenden Dateistruktur in dieser Liste"
+    ],
+    "related_entries": [
+      "minecraft:trident",
+      "minecraft:copper_ingot",
+      "minecraft:nautilus_shell"
+    ],
+    "command": "/summon minecraft:drowned",
+    "version_history": [
+      {
+        "version": "Java Edition 1.13 / Bedrock Edition 1.4.0",
+        "change": "Ertrunkener wurde in der angegebenen Version hinzugefügt.",
+        "type": "added",
+        "date": "2018-07-18"
+      }
+    ],
+    "texture": [
+      {
+        "name": "Drowned Drowned Baby",
+        "category": "Baby",
+        "description": "Variante: Drowned Drowned Baby.",
+        "file": "/assets/img/texture/mobs/drowned/drowned_baby.png"
+      },
+      {
+        "name": "Drowned Drowned Outer Layer Baby",
+        "category": "Baby",
+        "description": "Variante: Drowned Drowned Outer Layer Baby.",
+        "file": "/assets/img/texture/mobs/drowned/drowned_outer_layer_baby.png"
+      },
+      {
+        "name": "Drowned Drowned Outer Layer",
+        "category": "Standardtextur",
+        "description": "Variante: Drowned Drowned Outer Layer.",
+        "file": "/assets/img/texture/mobs/drowned/drowned_outer_layer.png"
+      },
+      {
+        "name": "Drowned Drowned",
+        "category": "Standardtextur",
+        "description": "Variante: Drowned Drowned.",
+        "file": "/assets/img/texture/mobs/drowned/drowned.png"
+      }
+    ],
+    "sounds": [],
+    "health": 20,
+    "damage": "Nahkampf ohne Dreizack: Einfach 2,5, Normal 3, Schwer 4,5; geworfener Dreizack: Einfach 5, Normal 8, Schwer 12",
+    "armor": 2,
+    "experience": "5 (Baby: 12) plus 1–3 je natürlich erzeugtem Ausrüstungsteil",
+    "spawn": {
+      "light_level": [
+        "Blocklicht 0"
+      ],
+      "biome": "Flüsse, Ozeane und geeignete Wasserbereiche",
+      "structure": "Ozeanruinen möglich"
+    },
+    "light_level": [
+      "Blocklicht 0"
+    ],
+    "classification": "Feindlich / untot – befindet sich nur wegen der bestehenden Dateistruktur in dieser Liste",
+    "renewable": "Ja",
+    "can_despawn": "Ja, sofern nicht dauerhaft gemacht",
+    "tameable": "Nein",
+    "breedable": "Nein",
+    "duplicable": "Nein",
+    "duplication_item": "Keines",
+    "leashable": "Nein",
+    "rideable": "Nein",
+    "baby_variant": "Ja",
+    "drops": [
+      {
+        "item": "minecraft:rotten_flesh",
+        "chance": "100 %",
+        "amount": "0–2 (+0–1 je Plünderungsstufe)"
+      },
+      {
+        "item": "minecraft:copper_ingot",
+        "chance": "11 %",
+        "amount": "1",
+        "condition": "Nur bei Tod durch Spieler oder gezähmten Wolf; steigt mit Plünderung"
+      },
+      {
+        "item": "Natürlich erzeugter Dreizack",
+        "chance": "Editionsabhängig",
+        "amount": "1",
+        "condition": "Nur wenn der Ertrunkene mit Dreizack gespawnt ist und durch Spieler/gezähmten Wolf stirbt"
+      },
+      {
+        "item": "Gehaltene Nautilusschale",
+        "chance": "100 %",
+        "amount": "1",
+        "condition": "Nur wenn natürlich in der Nebenhand erzeugt"
+      }
+    ],
+    "abilities": [
+      "Atmet unter Wasser",
+      "Kann mit Dreizack angreifen",
+      "Ein Zombie verwandelt sich nach längerem Untertauchen in einen Ertrunkenen"
+    ],
+    "fun_fact": "Der Ertrunkene ist spielmechanisch ein feindlicher Mob, nicht neutral.",
+    "attack_type": "Nahkampf oder Dreizack-Fernkampf",
+    "targets": [
+      "Spieler",
+      "Dorfbewohner",
+      "Eisengolem",
+      "Schildkröteneier"
+    ],
+    "enemy_mobs": [],
+    "follows": [],
+    "healing_item": [],
+    "fire_immune": "Nein",
+    "undead": "Ja",
+    "boss_bar": "Nein",
+    "knockback_resistance": 0,
+    "loot_table": "minecraft:entities/drowned",
+    "java_entity_id": "minecraft:drowned",
+    "bedrock_entity_id": "minecraft:drowned"
+  },
+  {
+    "id": "minecraft:enderman",
+    "name": "Enderman",
+    "numeric_id": "( Nur Bedrock ) 38",
+    "type": "neutral",
+    "category": "Neutraler Mob",
+    "icon": "/assets/img/mobs/neutral/Enderman.webp",
+    "description": "Hoher schwarzer Mob • Wird aggressiv wenn angeschaut • Teleportiert sich • Trägt Blöcke",
+    "biome": "Alle drei Dimensionen; besonders häufig in Wirrwäldern und im Ende",
+    "structure": "Endstädte möglich",
+    "dimension": "Overworld, Nether, The End",
+    "movement_speed": 0.3,
+    "size": {
+      "width": "Breite: 0.6",
+      "height": "Höhe: 2.9"
+    },
+    "aliases": [
+      "Endermann"
+    ],
+    "introduced_date": "2011-09-14",
+    "removed_date": null,
+    "gallery": [],
+    "model": "Minecraft-Entity-Modell",
+    "animation": [],
+    "source": "",
+    "updated_at": "2026-08-22",
+    "notes": "Wasser und Regen verursachen Schaden. Ein geschnitzter Kürbis verhindert das Provozieren durch Blickkontakt.",
+    "version": "Java Edition Beta 1.8 / Bedrock Edition 0.9.0",
+    "edition": "Java Edition, Bedrock Edition",
+    "effects": [],
+    "effect_immunities": [],
+    "status": "Verfügbar",
+    "tags": [
+      "Neutral",
+      "Overworld, Nether, The End",
+      "Neutral, bis er angegriffen oder direkt angesehen wird"
+    ],
+    "related_entries": [
+      "minecraft:ender_pearl",
+      "minecraft:endermite",
+      "minecraft:end_crystal"
+    ],
+    "command": "/summon minecraft:enderman",
+    "version_history": [
+      {
+        "version": "Java Edition Beta 1.8 / Bedrock Edition 0.9.0",
+        "change": "Enderman wurde in der angegebenen Version hinzugefügt.",
+        "type": "added",
+        "date": "2011-09-14"
+      }
+    ],
+    "texture": [
+      {
+        "name": "Enderman Enderman Eyes",
+        "category": "Standardtextur",
+        "description": "Variante: Enderman Enderman Eyes.",
+        "file": "/assets/img/texture/mobs/enderman/enderman_eyes.png"
+      },
+      {
+        "name": "Enderman Enderman",
+        "category": "Standardtextur",
+        "description": "Variante: Enderman Enderman.",
+        "file": "/assets/img/texture/mobs/enderman/enderman.png"
+      }
+    ],
+    "sounds": [],
+    "health": 40,
+    "damage": "Java: Einfach 4,5, Normal 7, Schwer 10,5; Bedrock: Einfach 4, Normal 7, Schwer 10",
+    "armor": 0,
+    "experience": "5 beim Töten durch Spieler oder gezähmten Wolf",
+    "spawn": {
+      "light_level": [
+        "Overworld und Ende: Blocklicht 0",
+        "Nether: Lichtstufe 7 oder niedriger"
+      ],
+      "biome": "Fast alle geeigneten Biome in allen drei Dimensionen",
+      "structure": "Keine zwingende Struktur"
+    },
+    "light_level": [
+      "Overworld und Ende: Blocklicht 0",
+      "Nether: Lichtstufe 7 oder niedriger"
+    ],
+    "classification": "Neutral, bis er angegriffen oder direkt angesehen wird",
+    "renewable": "Ja",
+    "can_despawn": "Ja, sofern nicht dauerhaft gemacht",
+    "tameable": "Nein",
+    "breedable": "Nein",
+    "duplicable": "Nein",
+    "duplication_item": "Keines",
+    "leashable": "Nein",
+    "rideable": "Nein",
+    "baby_variant": "Nein",
+    "drops": [
+      {
+        "item": "minecraft:ender_pearl",
+        "chance": "50 %",
+        "amount": "0–1 (+0–1 je Plünderungsstufe)"
+      },
+      {
+        "item": "Getragener Block",
+        "chance": "100 %",
+        "amount": "1",
+        "condition": "Nur wenn der Enderman beim Tod einen Block trägt"
+      }
+    ],
+    "abilities": [
+      "Teleportiert sich",
+      "Weicht den meisten Projektilen durch Teleportation aus",
+      "Hebt bestimmte Blöcke auf und setzt sie ab"
+    ],
+    "fun_fact": "Wasser und Regen verursachen Schaden. Ein geschnitzter Kürbis verhindert das Provozieren durch Blickkontakt.",
+    "attack_type": "Nahkampf",
+    "targets": [
+      "Spieler, die ihn angreifen oder in sein Gesicht sehen",
+      "Endermiten unter bestimmten Bedingungen"
+    ],
+    "enemy_mobs": [],
+    "follows": [],
+    "healing_item": [],
+    "fire_immune": "Nein",
+    "undead": "Nein",
+    "boss_bar": "Nein",
+    "knockback_resistance": 0,
+    "loot_table": "minecraft:entities/enderman",
+    "java_entity_id": "minecraft:enderman",
+    "bedrock_entity_id": "minecraft:enderman"
+  },
+  {
+    "id": "minecraft:fox",
+    "name": "Fuchs",
+    "numeric_id": "( Nur Bedrock ) 121",
+    "type": "neutral",
+    "category": "Neutraler Mob",
+    "icon": "/assets/img/mobs/neutral/Fox.webp",
+    "description": "Scheues Nacht-Tier • Stiehlt Items • Schläft tagsüber • Zwei Varianten: Rot/Schnee",
+    "biome": "Taiga, verschneite Taiga, Altwuchs-Kiefern- und Altwuchs-Fichtentaiga sowie Hain",
+    "structure": "Taigadorf möglich",
+    "dimension": "Overworld",
+    "movement_speed": 0.3,
+    "size": {
+      "width": "Breite: 0.6",
+      "height": "Höhe: 0.7",
+      "baby": {
+        "width": "Breite: 0.3",
+        "height": "Höhe: 0.35"
+      }
+    },
+    "aliases": [],
+    "introduced_date": "2019-04-23",
+    "removed_date": null,
+    "gallery": [],
+    "model": "Minecraft-Entity-Modell",
+    "animation": [],
+    "source": "",
+    "updated_at": "2026-08-22",
+    "notes": "Süßbeeren und Erfahrungskugeln sind keine Item-Drops des Fuchses.",
+    "version": "Java Edition 1.14 / Bedrock Edition 1.13.0",
+    "edition": "Java Edition, Bedrock Edition",
+    "effects": [],
+    "effect_immunities": [],
+    "status": "Verfügbar",
+    "tags": [
+      "Neutral",
+      "Overworld",
+      "Neutral gegenüber Spielern / Tier"
+    ],
+    "related_entries": [
+      "minecraft:sweet_berries",
+      "minecraft:glow_berries"
+    ],
+    "command": "/summon minecraft:fox",
+    "version_history": [
+      {
+        "version": "Java Edition 1.14 / Bedrock Edition 1.13.0",
+        "change": "Fuchs wurde in der angegebenen Version hinzugefügt.",
+        "type": "added",
+        "date": "2019-04-23"
+      }
+    ],
+    "texture": [
+      {
+        "name": "Fox Fox Baby",
+        "category": "Baby",
+        "description": "Variante: Fox Fox Baby.",
+        "file": "/assets/img/texture/mobs/fox/fox_baby.png"
+      },
+      {
+        "name": "Fox Fox Sleep Baby",
+        "category": "Baby",
+        "description": "Variante: Fox Fox Sleep Baby.",
+        "file": "/assets/img/texture/mobs/fox/fox_sleep_baby.png"
+      },
+      {
+        "name": "Fox Fox Sleep",
+        "category": "Standardtextur",
+        "description": "Variante: Fox Fox Sleep.",
+        "file": "/assets/img/texture/mobs/fox/fox_sleep.png"
+      },
+      {
+        "name": "Fox Fox Snow Baby",
+        "category": "Baby",
+        "description": "Variante: Fox Fox Snow Baby.",
+        "file": "/assets/img/texture/mobs/fox/fox_snow_baby.png"
+      },
+      {
+        "name": "Fox Fox Snow Sleep Baby",
+        "category": "Baby",
+        "description": "Variante: Fox Fox Snow Sleep Baby.",
+        "file": "/assets/img/texture/mobs/fox/fox_snow_sleep_baby.png"
+      },
+      {
+        "name": "Fox Fox Snow Sleep",
+        "category": "Standardtextur",
+        "description": "Variante: Fox Fox Snow Sleep.",
+        "file": "/assets/img/texture/mobs/fox/fox_snow_sleep.png"
+      },
+      {
+        "name": "Fox Fox Snow",
+        "category": "Standardtextur",
+        "description": "Variante: Fox Fox Snow.",
+        "file": "/assets/img/texture/mobs/fox/fox_snow.png"
+      },
+      {
+        "name": "Fox Fox",
+        "category": "Standardtextur",
+        "description": "Variante: Fox Fox.",
+        "file": "/assets/img/texture/mobs/fox/fox.png"
+      }
+    ],
+    "sounds": [],
+    "health": 10,
+    "damage": "Java: 2; Bedrock: 3",
+    "armor": 0,
+    "experience": "Java: 1–2; Bedrock: 1–3 beim Töten eines Erwachsenen; 1–7 beim Züchten",
+    "spawn": {
+      "light_level": [
+        "Oberflächenlicht 9 oder höher"
+      ],
+      "biome": "Taiga- und Hain-Biome",
+      "structure": "Taigadorf möglich",
+      "spawn_group": "2–4"
+    },
+    "light_level": [
+      "Oberflächenlicht 9 oder höher"
+    ],
+    "classification": "Neutral gegenüber Spielern / Tier",
+    "renewable": "Ja",
+    "can_despawn": "Nein",
+    "tameable": "Nein; durch Zucht entstandene Jungtiere vertrauen dem Spieler",
+    "breedable": "Ja",
+    "duplicable": "Nein",
+    "duplication_item": "Keines",
+    "leashable": "Ja",
+    "rideable": "Nein",
+    "baby_variant": "Ja",
+    "drops": [
+      {
+        "item": "Gehaltenes Item",
+        "chance": "100 %",
+        "amount": "1",
+        "condition": "Nur wenn der Fuchs beim Tod einen Gegenstand im Maul hält"
+      }
+    ],
+    "abilities": [
+      "Trägt und benutzt Gegenstände im Maul",
+      "Schläft tagsüber an geschützten Orten",
+      "Springt kopfüber auf Beute",
+      "Läuft ohne Schaden durch Süßbeerenbüsche"
+    ],
+    "fun_fact": "Süßbeeren und Erfahrungskugeln sind keine Item-Drops des Fuchses.",
+    "attack_type": "Sprung- und Bissangriff",
+    "targets": [
+      "Hühner",
+      "Kaninchen",
+      "Kabeljau",
+      "Lachs",
+      "Tropenfische",
+      "Baby-Schildkröten"
+    ],
+    "enemy_mobs": [],
+    "follows": [
+      "Süßbeeren",
+      "Leuchtbeeren"
+    ],
+    "healing_item": [
+      "Süßbeeren",
+      "Leuchtbeeren"
+    ],
+    "fire_immune": "Nein",
+    "undead": "Nein",
+    "boss_bar": "Nein",
+    "knockback_resistance": 0,
+    "loot_table": "minecraft:entities/fox",
+    "java_entity_id": "minecraft:fox",
+    "bedrock_entity_id": "minecraft:fox"
+  },
+  {
+    "id": "minecraft:goat",
+    "name": "Ziege",
+    "numeric_id": "( Nur Bedrock ) 128",
+    "type": "neutral",
+    "category": "Neutraler Mob",
+    "icon": "/assets/img/mobs/neutral/Goat.webp",
+    "description": "Bergbewohner • Springt hoch • Stößt Spieler weg • Gibt Milch • Zwei Hörner-Varianten",
+    "biome": "Schneehänge, zerklüftete Gipfel und gefrorene Gipfel",
+    "structure": "Keine",
+    "dimension": "Overworld",
+    "movement_speed": 0.2,
+    "size": {
+      "width": "Breite: 0.9",
+      "height": "Höhe: 1.3",
+      "baby": {
+        "width": "Breite: 0.45",
+        "height": "Höhe: 0.65"
+      }
+    },
+    "aliases": [],
+    "introduced_date": "2021-06-08",
+    "removed_date": null,
+    "gallery": [],
+    "model": "Minecraft-Entity-Modell",
+    "animation": [],
+    "source": "",
+    "updated_at": "2026-08-22",
+    "notes": "Ziegenhörner sind keine Todesdrops. Sie entstehen nur, wenn eine erwachsene Ziege bestimmte natürliche harte Blöcke rammt.",
+    "version": "Java Edition 1.17 / Bedrock Edition 1.17.0",
+    "edition": "Java Edition, Bedrock Edition",
+    "effects": [],
+    "effect_immunities": [],
+    "status": "Verfügbar",
+    "tags": [
+      "Neutral",
+      "Overworld",
+      "Neutral / Tier"
+    ],
+    "related_entries": [
+      "minecraft:goat_horn",
+      "minecraft:wheat",
+      "minecraft:milk_bucket"
+    ],
+    "command": "/summon minecraft:goat",
+    "version_history": [
+      {
+        "version": "Java Edition 1.17 / Bedrock Edition 1.17.0",
+        "change": "Ziege wurde in der angegebenen Version hinzugefügt.",
+        "type": "added",
+        "date": "2021-06-08"
+      }
+    ],
+    "texture": [
+      {
+        "name": "Goat Goat Baby",
+        "category": "Baby",
+        "description": "Variante: Goat Goat Baby.",
+        "file": "/assets/img/texture/mobs/goat/goat_baby.png"
+      },
+      {
+        "name": "Goat Goat",
+        "category": "Standardtextur",
+        "description": "Variante: Goat Goat.",
+        "file": "/assets/img/texture/mobs/goat/goat.png"
+      }
+    ],
+    "sounds": [],
+    "health": 10,
+    "damage": "Rammschaden hängt von Schwierigkeit, Edition und normaler/schreiender Variante ab",
+    "armor": 0,
+    "experience": "1–3 beim Töten eines Erwachsenen; 1–7 beim Züchten",
+    "spawn": {
+      "light_level": [
+        "7 oder höher"
+      ],
+      "biome": "Schneehänge, zerklüftete Gipfel, gefrorene Gipfel",
+      "structure": "Keine",
+      "spawn_group": "2–3"
+    },
+    "light_level": [
+      "7 oder höher"
+    ],
+    "classification": "Neutral / Tier",
+    "renewable": "Ja",
+    "can_despawn": "Nein",
+    "tameable": "Nein",
+    "breedable": "Ja",
+    "duplicable": "Nein",
+    "duplication_item": "Keines",
+    "leashable": "Ja",
+    "rideable": "Nein",
+    "baby_variant": "Ja",
+    "drops": [],
+    "abilities": [
+      "Springt bis zu 10 Blöcke weit und 5 Blöcke hoch",
+      "Nimmt stark verminderten Fallschaden",
+      "Kann bis zu zwei Hörner durch Rammen geeigneter natürlich erzeugter Blöcke verlieren",
+      "Kann mit einem Eimer gemolken werden"
+    ],
+    "fun_fact": "Ziegenhörner sind keine Todesdrops. Sie entstehen nur, wenn eine erwachsene Ziege bestimmte natürliche harte Blöcke rammt.",
+    "attack_type": "Rammangriff",
+    "targets": [
+      "Spieler und viele stehende Mobs, wenn zufällig zum Rammen ausgewählt"
+    ],
+    "enemy_mobs": [],
+    "follows": [
+      "Weizen"
+    ],
+    "healing_item": [
+      "Weizen"
+    ],
+    "fire_immune": "Nein",
+    "undead": "Nein",
+    "boss_bar": "Nein",
+    "knockback_resistance": 0,
+    "loot_table": "minecraft:entities/goat",
+    "java_entity_id": "minecraft:goat",
+    "bedrock_entity_id": "minecraft:goat"
+  },
+  {
+    "id": "minecraft:iron_golem",
+    "name": "Eisengolem",
+    "numeric_id": "( Nur Bedrock ) 20",
+    "type": "neutral",
+    "category": "Neutraler Mob",
+    "icon": "/assets/img/mobs/neutral/Iron_Golem.webp",
+    "description": "Dorf-Beschützer • Hohe Lebenspunkte • Wirft Feinde hoch • Wird von Dorfbewohnern gebaut",
+    "biome": "Dörfer; außerdem unabhängig vom Biom vom Spieler baubar",
+    "structure": "Dorf, Käfig bei Plünderer-Außenposten; vom Spieler baubar",
+    "dimension": "Overworld",
+    "movement_speed": 0.25,
+    "size": {
+      "width": "Breite: 1.4",
+      "height": "Höhe: 2.7"
+    },
+    "aliases": [
+      "Eisengolem"
+    ],
+    "introduced_date": "2012-03-01",
+    "removed_date": null,
+    "gallery": [],
+    "model": "Minecraft-Entity-Modell",
+    "animation": [],
+    "source": "",
+    "updated_at": "2026-08-22",
+    "notes": "Ein vom Spieler gebauter Eisengolem greift seinen Erbauer nicht absichtlich an.",
+    "version": "Java Edition 1.2.1 / Bedrock Edition 0.12.1",
+    "edition": "Java Edition, Bedrock Edition",
+    "effects": [],
+    "effect_immunities": [],
+    "status": "Verfügbar",
+    "tags": [
+      "Neutral",
+      "Overworld",
+      "Neutral / Golem"
+    ],
+    "related_entries": [
+      "minecraft:iron_ingot",
+      "minecraft:poppy",
+      "minecraft:carved_pumpkin"
+    ],
+    "command": "/summon minecraft:iron_golem",
+    "version_history": [
+      {
+        "version": "Java Edition 1.2.1 / Bedrock Edition 0.12.1",
+        "change": "Eisengolem wurde in der angegebenen Version hinzugefügt.",
+        "type": "added",
+        "date": "2012-03-01"
+      }
+    ],
+    "texture": [
+      {
+        "name": "Iron Golem Iron Golem Crackiness High",
+        "category": "Standardtextur",
+        "description": "Variante: Iron Golem Iron Golem Crackiness High.",
+        "file": "/assets/img/texture/mobs/iron_golem/iron_golem_crackiness_high.png"
+      },
+      {
+        "name": "Iron Golem Iron Golem Crackiness Low",
+        "category": "Standardtextur",
+        "description": "Variante: Iron Golem Iron Golem Crackiness Low.",
+        "file": "/assets/img/texture/mobs/iron_golem/iron_golem_crackiness_low.png"
+      },
+      {
+        "name": "Iron Golem Iron Golem Crackiness Medium",
+        "category": "Standardtextur",
+        "description": "Variante: Iron Golem Iron Golem Crackiness Medium.",
+        "file": "/assets/img/texture/mobs/iron_golem/iron_golem_crackiness_medium.png"
+      },
+      {
+        "name": "Iron Golem Iron Golem",
+        "category": "Standardtextur",
+        "description": "Variante: Iron Golem Iron Golem.",
+        "file": "/assets/img/texture/mobs/iron_golem/iron_golem.png"
+      }
+    ],
+    "sounds": [],
+    "health": 100,
+    "damage": "Java: Einfach 4,75–11,75, Normal 7,5–21,5, Schwer 11,25–32,25; Bedrock-Werte weichen ab",
+    "armor": 0,
+    "experience": "0",
+    "spawn": {
+      "light_level": [
+        "Nicht direkt lichtabhängig"
+      ],
+      "biome": "Dörfer mit erfüllten Golem-Bedingungen",
+      "structure": "Dorf, Plünderer-Außenposten oder Spielerbau"
+    },
+    "light_level": [
+      "Nicht direkt lichtabhängig"
+    ],
+    "classification": "Neutral / Golem",
+    "renewable": "Ja",
+    "can_despawn": "Nein",
+    "tameable": "Nein",
+    "breedable": "Nein",
+    "duplicable": "Nein",
+    "duplication_item": "Keines",
+    "leashable": "Ja",
+    "rideable": "Nein",
+    "baby_variant": "Nein",
+    "drops": [
+      {
+        "item": "minecraft:iron_ingot",
+        "chance": "100 %",
+        "amount": "3–5",
+        "condition": "Nicht von Plünderung beeinflusst"
+      },
+      {
+        "item": "minecraft:poppy",
+        "chance": "100 %",
+        "amount": "0–2",
+        "condition": "Nicht von Plünderung beeinflusst"
+      }
+    ],
+    "abilities": [
+      "Beschützt Dörfer",
+      "Schleudert Gegner in die Luft",
+      "Kann mit Eisenbarren repariert werden",
+      "Kann vom Spieler aus Eisenblöcken und geschnitztem Kürbis/Kürbislaterne gebaut werden"
+    ],
+    "fun_fact": "Ein vom Spieler gebauter Eisengolem greift seinen Erbauer nicht absichtlich an.",
+    "attack_type": "Nahkampf; schleudert Ziele hoch",
+    "targets": [
+      "Viele feindliche Mobs",
+      "Spieler bei schlechtem Dorfruf oder Angriff"
+    ],
+    "enemy_mobs": [],
+    "follows": [],
+    "healing_item": [
+      "Eisenbarren (heilt 25 Lebenspunkte)"
+    ],
+    "fire_immune": "Nein",
+    "undead": "Nein",
+    "boss_bar": "Nein",
+    "knockback_resistance": 1,
+    "loot_table": "minecraft:entities/iron_golem",
+    "java_entity_id": "minecraft:iron_golem",
+    "bedrock_entity_id": "minecraft:iron_golem"
+  },
+  {
+    "id": "minecraft:llama",
+    "name": "Lama",
+    "numeric_id": "( Nur Bedrock ) 29",
+    "type": "neutral",
+    "category": "Neutraler Mob",
+    "icon": "/assets/img/mobs/neutral/Llama.webp",
+    "description": "Neutrales Packtier • Spuckt bei Provokation • Kann Truhen tragen • Verschiedene Fellfarben",
+    "biome": "Windige Hügel, windiger Wald, windige Kieshügel sowie Savannenplateau",
+    "structure": "Keine",
+    "dimension": "Overworld",
+    "movement_speed": 0.175,
+    "size": {
+      "width": "Breite: 0.9",
+      "height": "Höhe: 1.87",
+      "baby": {
+        "width": "Breite: 0.45",
+        "height": "Höhe: 0.935"
+      }
+    },
+    "aliases": [],
+    "introduced_date": "2016-11-14",
+    "removed_date": null,
+    "gallery": [],
+    "model": "Minecraft-Entity-Modell",
+    "animation": [],
+    "source": "",
+    "updated_at": "2026-08-22",
+    "notes": "Neutrales Packtier • Spuckt bei Provokation • Kann Truhen tragen • Verschiedene Fellfarben",
+    "version": "Java Edition 1.11 / Bedrock Edition 1.1.0",
+    "edition": "Java Edition, Bedrock Edition",
+    "effects": [],
+    "effect_immunities": [],
+    "status": "Verfügbar",
+    "tags": [
+      "Neutral",
+      "Overworld",
+      "Neutral / Tier"
+    ],
+    "related_entries": [
+      "minecraft:lead",
+      "minecraft:chest",
+      "minecraft:hay_block"
+    ],
+    "command": "/summon minecraft:llama",
+    "version_history": [
+      {
+        "version": "Java Edition 1.11 / Bedrock Edition 1.1.0",
+        "change": "Lama wurde in der angegebenen Version hinzugefügt.",
+        "type": "added",
+        "date": "2016-11-14"
+      }
+    ],
+    "texture": [
+      {
+        "name": "Llama Llama Brown Baby",
+        "category": "Baby",
+        "description": "Variante: Llama Llama Brown Baby.",
+        "file": "/assets/img/texture/mobs/llama/llama_brown_baby.png"
+      },
+      {
+        "name": "Llama Llama Brown",
+        "category": "Standardtextur",
+        "description": "Variante: Llama Llama Brown.",
+        "file": "/assets/img/texture/mobs/llama/llama_brown.png"
+      },
+      {
+        "name": "Llama Llama Creamy Baby",
+        "category": "Baby",
+        "description": "Variante: Llama Llama Creamy Baby.",
+        "file": "/assets/img/texture/mobs/llama/llama_creamy_baby.png"
+      },
+      {
+        "name": "Llama Llama Creamy",
+        "category": "Standardtextur",
+        "description": "Variante: Llama Llama Creamy.",
+        "file": "/assets/img/texture/mobs/llama/llama_creamy.png"
+      },
+      {
+        "name": "Llama Llama Gray Baby",
+        "category": "Baby",
+        "description": "Variante: Llama Llama Gray Baby.",
+        "file": "/assets/img/texture/mobs/llama/llama_gray_baby.png"
+      },
+      {
+        "name": "Llama Llama Gray",
+        "category": "Standardtextur",
+        "description": "Variante: Llama Llama Gray.",
+        "file": "/assets/img/texture/mobs/llama/llama_gray.png"
+      },
+      {
+        "name": "Llama Llama Spit",
+        "category": "Standardtextur",
+        "description": "Variante: Llama Llama Spit.",
+        "file": "/assets/img/texture/mobs/llama/llama_spit.png"
+      },
+      {
+        "name": "Llama Llama White Baby",
+        "category": "Baby",
+        "description": "Variante: Llama Llama White Baby.",
+        "file": "/assets/img/texture/mobs/llama/llama_white_baby.png"
+      },
+      {
+        "name": "Llama Llama White",
+        "category": "Standardtextur",
+        "description": "Variante: Llama Llama White.",
+        "file": "/assets/img/texture/mobs/llama/llama_white.png"
+      },
+      {
+        "name": "Equipment Llama Body Black",
+        "category": "Ausrüstung",
+        "description": "Variante: Equipment Llama Body Black.",
+        "file": "/assets/img/texture/mobs/equipment/llama_body/black.png"
+      },
+      {
+        "name": "Equipment Llama Body Blue",
+        "category": "Ausrüstung",
+        "description": "Variante: Equipment Llama Body Blue.",
+        "file": "/assets/img/texture/mobs/equipment/llama_body/blue.png"
+      },
+      {
+        "name": "Equipment Llama Body Brown",
+        "category": "Ausrüstung",
+        "description": "Variante: Equipment Llama Body Brown.",
+        "file": "/assets/img/texture/mobs/equipment/llama_body/brown.png"
+      },
+      {
+        "name": "Equipment Llama Body Cyan",
+        "category": "Ausrüstung",
+        "description": "Variante: Equipment Llama Body Cyan.",
+        "file": "/assets/img/texture/mobs/equipment/llama_body/cyan.png"
+      },
+      {
+        "name": "Equipment Llama Body Gray",
+        "category": "Ausrüstung",
+        "description": "Variante: Equipment Llama Body Gray.",
+        "file": "/assets/img/texture/mobs/equipment/llama_body/gray.png"
+      },
+      {
+        "name": "Equipment Llama Body Green",
+        "category": "Ausrüstung",
+        "description": "Variante: Equipment Llama Body Green.",
+        "file": "/assets/img/texture/mobs/equipment/llama_body/green.png"
+      },
+      {
+        "name": "Equipment Llama Body Light Blue",
+        "category": "Ausrüstung",
+        "description": "Variante: Equipment Llama Body Light Blue.",
+        "file": "/assets/img/texture/mobs/equipment/llama_body/light_blue.png"
+      },
+      {
+        "name": "Equipment Llama Body Light Gray",
+        "category": "Ausrüstung",
+        "description": "Variante: Equipment Llama Body Light Gray.",
+        "file": "/assets/img/texture/mobs/equipment/llama_body/light_gray.png"
+      },
+      {
+        "name": "Equipment Llama Body Lime",
+        "category": "Ausrüstung",
+        "description": "Variante: Equipment Llama Body Lime.",
+        "file": "/assets/img/texture/mobs/equipment/llama_body/lime.png"
+      },
+      {
+        "name": "Equipment Llama Body Magenta",
+        "category": "Ausrüstung",
+        "description": "Variante: Equipment Llama Body Magenta.",
+        "file": "/assets/img/texture/mobs/equipment/llama_body/magenta.png"
+      },
+      {
+        "name": "Equipment Llama Body Orange",
+        "category": "Ausrüstung",
+        "description": "Variante: Equipment Llama Body Orange.",
+        "file": "/assets/img/texture/mobs/equipment/llama_body/orange.png"
+      },
+      {
+        "name": "Equipment Llama Body Pink",
+        "category": "Ausrüstung",
+        "description": "Variante: Equipment Llama Body Pink.",
+        "file": "/assets/img/texture/mobs/equipment/llama_body/pink.png"
+      },
+      {
+        "name": "Equipment Llama Body Purple",
+        "category": "Ausrüstung",
+        "description": "Variante: Equipment Llama Body Purple.",
+        "file": "/assets/img/texture/mobs/equipment/llama_body/purple.png"
+      },
+      {
+        "name": "Equipment Llama Body Red",
+        "category": "Ausrüstung",
+        "description": "Variante: Equipment Llama Body Red.",
+        "file": "/assets/img/texture/mobs/equipment/llama_body/red.png"
+      },
+      {
+        "name": "Equipment Llama Body White",
+        "category": "Ausrüstung",
+        "description": "Variante: Equipment Llama Body White.",
+        "file": "/assets/img/texture/mobs/equipment/llama_body/white.png"
+      },
+      {
+        "name": "Equipment Llama Body Yellow",
+        "category": "Ausrüstung",
+        "description": "Variante: Equipment Llama Body Yellow.",
+        "file": "/assets/img/texture/mobs/equipment/llama_body/yellow.png"
+      }
+    ],
+    "sounds": [],
+    "health": "15–30",
+    "damage": 1,
+    "armor": 0,
+    "experience": "1–3 beim Töten eines Erwachsenen; 1–7 beim Züchten",
+    "spawn": {
+      "light_level": [
+        "7 oder höher"
+      ],
+      "biome": "Windige Hügelvarianten und Savannenplateau",
+      "structure": "Keine",
+      "spawn_group": "4–6"
+    },
+    "light_level": [
+      "7 oder höher"
+    ],
+    "classification": "Neutral / Tier",
+    "renewable": "Ja",
+    "can_despawn": "Nein",
+    "tameable": "Ja, durch wiederholtes Aufsitzen",
+    "breedable": "Ja, nur gezähmt",
+    "duplicable": "Nein",
+    "duplication_item": "Keines",
+    "leashable": "Ja",
+    "rideable": "Aufsitzen möglich, aber nicht direkt steuerbar",
+    "baby_variant": "Ja",
+    "drops": [
+      {
+        "item": "minecraft:leather",
+        "chance": "100 %",
+        "amount": "0–2 (+0–1 je Plünderungsstufe)"
+      },
+      {
+        "item": "Ausgerüstete Truhe, Teppich und Inhalt",
+        "chance": "100 %",
+        "amount": "Vorhandene Menge",
+        "condition": "Nur wenn ausgerüstet"
+      }
+    ],
+    "abilities": [
+      "Bildet Karawanen",
+      "Kann eine Truhe mit 3–15 Plätzen tragen",
+      "Teppiche verändern das Aussehen",
+      "Spuckt zur Verteidigung"
+    ],
+    "fun_fact": "Lamas spucken auf Wölfe und können in Karawanen angebunden werden!",
+    "attack_type": "Spuckangriff",
+    "targets": [
+      "Angreifer",
+      "Wölfe"
+    ],
+    "enemy_mobs": [],
+    "follows": [
+      "Heuballen"
+    ],
+    "healing_item": [
+      "Weizen",
+      "Heuballen"
+    ],
+    "fire_immune": "Nein",
+    "undead": "Nein",
+    "boss_bar": "Nein",
+    "knockback_resistance": 0,
+    "loot_table": "minecraft:entities/llama",
+    "java_entity_id": "minecraft:llama",
+    "bedrock_entity_id": "minecraft:llama"
+  },
+  {
+    "id": "minecraft:panda",
+    "name": "Panda",
+    "numeric_id": "( Nur Bedrock ) 113",
+    "type": "neutral",
+    "category": "Neutraler Mob",
+    "icon": "/assets/img/mobs/neutral/Panda.webp",
+    "description": "Seltenes neutrales Tier • Verschiedene Persönlichkeiten • Isst Bambus • Rollt sich bei Niesen",
+    "biome": "Dschungel, besonders Bambusdschungel",
+    "structure": "Keine",
+    "dimension": "Overworld",
+    "movement_speed": 0.15,
+    "size": {
+      "width": "Breite: 1.3",
+      "height": "Höhe: 1.25",
+      "baby": {
+        "width": "Breite: 0.65",
+        "height": "Höhe: 0.625"
+      }
+    },
+    "aliases": [],
+    "introduced_date": "2019-04-23",
+    "removed_date": null,
+    "gallery": [],
+    "model": "Minecraft-Entity-Modell",
+    "animation": [],
+    "source": "",
+    "updated_at": "2026-08-22",
+    "notes": "Seltenes neutrales Tier • Verschiedene Persönlichkeiten • Isst Bambus • Rollt sich bei Niesen",
+    "version": "Java Edition 1.14 / Bedrock Edition 1.8.0",
+    "edition": "Java Edition, Bedrock Edition",
+    "effects": [],
+    "effect_immunities": [],
+    "status": "Verfügbar",
+    "tags": [
+      "Neutral",
+      "Overworld",
+      "Neutral / Tier"
+    ],
+    "related_entries": [
+      "minecraft:bamboo"
+    ],
+    "command": "/summon minecraft:panda",
+    "version_history": [
+      {
+        "version": "Java Edition 1.14 / Bedrock Edition 1.8.0",
+        "change": "Panda wurde in der angegebenen Version hinzugefügt.",
+        "type": "added",
+        "date": "2019-04-23"
+      }
+    ],
+    "texture": [
+      {
+        "name": "Panda Aggressive Panda Baby",
+        "category": "Baby",
+        "description": "Variante: Panda Aggressive Panda Baby.",
+        "file": "/assets/img/texture/mobs/panda/aggressive_panda_baby.png"
+      },
+      {
+        "name": "Panda Brown Panda Baby",
+        "category": "Baby",
+        "description": "Variante: Panda Brown Panda Baby.",
+        "file": "/assets/img/texture/mobs/panda/brown_panda_baby.png"
+      },
+      {
+        "name": "Panda Lazy Panda Baby",
+        "category": "Baby",
+        "description": "Variante: Panda Lazy Panda Baby.",
+        "file": "/assets/img/texture/mobs/panda/lazy_panda_baby.png"
+      },
+      {
+        "name": "Panda Panda Aggressive",
+        "category": "Standardtextur",
+        "description": "Variante: Panda Panda Aggressive.",
+        "file": "/assets/img/texture/mobs/panda/panda_aggressive.png"
+      },
+      {
+        "name": "Panda Panda Baby",
+        "category": "Baby",
+        "description": "Variante: Panda Panda Baby.",
+        "file": "/assets/img/texture/mobs/panda/panda_baby.png"
+      },
+      {
+        "name": "Panda Panda Brown",
+        "category": "Standardtextur",
+        "description": "Variante: Panda Panda Brown.",
+        "file": "/assets/img/texture/mobs/panda/panda_brown.png"
+      },
+      {
+        "name": "Panda Panda Lazy",
+        "category": "Standardtextur",
+        "description": "Variante: Panda Panda Lazy.",
+        "file": "/assets/img/texture/mobs/panda/panda_lazy.png"
+      },
+      {
+        "name": "Panda Panda Playful",
+        "category": "Standardtextur",
+        "description": "Variante: Panda Panda Playful.",
+        "file": "/assets/img/texture/mobs/panda/panda_playful.png"
+      },
+      {
+        "name": "Panda Panda Weak",
+        "category": "Standardtextur",
+        "description": "Variante: Panda Panda Weak.",
+        "file": "/assets/img/texture/mobs/panda/panda_weak.png"
+      },
+      {
+        "name": "Panda Panda Worried",
+        "category": "Standardtextur",
+        "description": "Variante: Panda Panda Worried.",
+        "file": "/assets/img/texture/mobs/panda/panda_worried.png"
+      },
+      {
+        "name": "Panda Panda",
+        "category": "Standardtextur",
+        "description": "Variante: Panda Panda.",
+        "file": "/assets/img/texture/mobs/panda/panda.png"
+      },
+      {
+        "name": "Panda Playful Panda Baby",
+        "category": "Baby",
+        "description": "Variante: Panda Playful Panda Baby.",
+        "file": "/assets/img/texture/mobs/panda/playful_panda_baby.png"
+      },
+      {
+        "name": "Panda Weak Panda Baby",
+        "category": "Baby",
+        "description": "Variante: Panda Weak Panda Baby.",
+        "file": "/assets/img/texture/mobs/panda/weak_panda_baby.png"
+      },
+      {
+        "name": "Panda Worried Panda Baby",
+        "category": "Baby",
+        "description": "Variante: Panda Worried Panda Baby.",
+        "file": "/assets/img/texture/mobs/panda/worried_panda_baby.png"
+      }
+    ],
+    "sounds": [],
+    "health": "20; schwache Persönlichkeit: 10",
+    "damage": "Einfach 4, Normal 6, Schwer 9",
+    "armor": 0,
+    "experience": "1–3 beim Töten eines Erwachsenen; 1–7 beim Züchten",
+    "spawn": {
+      "light_level": [
+        "9 oder höher"
+      ],
+      "biome": "Dschungelbiome mit mindestens zwei freien Blöcken über Gras",
+      "structure": "Keine",
+      "spawn_group": "1–2"
+    },
+    "light_level": [
+      "9 oder höher"
+    ],
+    "classification": "Neutral / Tier",
+    "renewable": "Ja",
+    "can_despawn": "Nein",
+    "tameable": "Nein",
+    "breedable": "Ja, wenn genug Bambus in der Umgebung steht",
+    "duplicable": "Nein",
+    "duplication_item": "Keines",
+    "leashable": "Ja",
+    "rideable": "Nein",
+    "baby_variant": "Ja",
+    "drops": [
+      {
+        "item": "minecraft:bamboo",
+        "chance": "100 %",
+        "amount": "1 (+0–1 je Plünderungsstufe)"
+      }
+    ],
+    "abilities": [
+      "Besitzt vererbte Persönlichkeitsgene",
+      "Kann rollen, sitzen, Bambus essen und niesen",
+      "Braune Variante entsteht durch rezessive Gene"
+    ],
+    "fun_fact": "Pandas haben verschiedene Persönlichkeiten wie aggressiv, faul oder verspielt!",
+    "attack_type": "Nahkampf, wenn provoziert oder aggressiv",
+    "targets": [],
+    "enemy_mobs": [],
+    "follows": [
+      "Bambus"
+    ],
+    "healing_item": [
+      "Bambus"
+    ],
+    "fire_immune": "Nein",
+    "undead": "Nein",
+    "boss_bar": "Nein",
+    "knockback_resistance": 0,
+    "loot_table": "minecraft:entities/panda",
+    "java_entity_id": "minecraft:panda",
+    "bedrock_entity_id": "minecraft:panda"
+  },
+  {
+    "id": "minecraft:piglin",
+    "name": "Piglin",
+    "numeric_id": "( Nur Bedrock ) 123",
+    "type": "neutral",
+    "category": "Neutraler Mob",
+    "icon": "/assets/img/mobs/neutral/Piglin.webp",
+    "description": "Nether-Bewohner • Wird aggressiv ohne Goldrüstung • Handelt mit Spielern • Sammelt Gold",
+    "biome": "Netheröde und Karmesinwald",
+    "structure": "Bastionsruine",
+    "dimension": "Nether",
+    "movement_speed": 0.35,
+    "size": {
+      "width": "Breite: 0.6",
+      "height": "Höhe: 1.95",
+      "baby": {
+        "width": "Breite: 0.3",
+        "height": "Höhe: 0.975"
+      }
+    },
+    "aliases": [],
+    "introduced_date": "2020-06-23",
+    "removed_date": null,
+    "gallery": [],
+    "model": "Minecraft-Entity-Modell",
+    "animation": [],
+    "source": "",
+    "updated_at": "2026-08-22",
+    "notes": "Piglins können nicht gezüchtet werden und lassen nicht automatisch Goldnuggets oder Goldbarren fallen.",
+    "version": "Java Edition 1.16 / Bedrock Edition 1.16.0",
+    "edition": "Java Edition, Bedrock Edition",
+    "effects": [],
+    "effect_immunities": [],
+    "status": "Verfügbar",
+    "tags": [
+      "Neutral",
+      "Nether",
+      "Neutral bei Goldrüstung; sonst feindlich / Piglin"
+    ],
+    "related_entries": [
+      "minecraft:gold_ingot",
+      "minecraft:bastion_remnant"
+    ],
+    "command": "/summon minecraft:piglin",
+    "version_history": [
+      {
+        "version": "Java Edition 1.16 / Bedrock Edition 1.16.0",
+        "change": "Piglin wurde in der angegebenen Version hinzugefügt.",
+        "type": "added",
+        "date": "2020-06-23"
+      }
+    ],
+    "texture": [
+      {
+        "name": "Piglin Piglin Baby",
+        "category": "Baby",
+        "description": "Variante: Piglin Piglin Baby.",
+        "file": "/assets/img/texture/mobs/piglin/piglin_baby.png"
+      },
+      {
+        "name": "Piglin Piglin",
+        "category": "Standardtextur",
+        "description": "Variante: Piglin Piglin.",
+        "file": "/assets/img/texture/mobs/piglin/piglin.png"
+      }
+    ],
+    "sounds": [],
+    "health": 16,
+    "damage": "Waffenabhängig; mit Goldschwert oder Armbrust und abhängig vom Schwierigkeitsgrad",
+    "armor": 0,
+    "experience": "5 plus 1–3 je natürlich erzeugtem Ausrüstungsteil, nur bei Tod durch Spieler/gezähmten Wolf",
+    "spawn": {
+      "light_level": [
+        "Java: 11 oder niedriger; Bedrock-Regeln weichen ab"
+      ],
+      "biome": "Netheröde, Karmesinwald",
+      "structure": "Bastionsruine"
+    },
+    "light_level": [
+      "Java: 11 oder niedriger; Bedrock-Regeln weichen ab"
+    ],
+    "classification": "Neutral bei Goldrüstung; sonst feindlich / Piglin",
+    "renewable": "Ja",
+    "can_despawn": "Ja, sofern nicht dauerhaft gemacht",
+    "tameable": "Nein",
+    "breedable": "Nein",
+    "duplicable": "Nein",
+    "duplication_item": "Keines",
+    "leashable": "Nein",
+    "rideable": "Nein",
+    "baby_variant": "Ja",
+    "drops": [
+      {
+        "item": "Natürlich erzeugte Ausrüstung",
+        "chance": "8,5 % (+1 Prozentpunkt je Plünderungsstufe)",
+        "amount": "1 je Ausrüstungsteil",
+        "condition": "Nur natürlich erzeugte Waffen/Rüstung; aufgesammelte Gegenstände werden sicher fallen gelassen"
+      }
+    ],
+    "abilities": [
+      "Tauscht Gegenstände gegen Goldbarren",
+      "Öffnet Truhen",
+      "Wird durch das Öffnen bestimmter Behälter oder Goldabbau provoziert",
+      "Verwandelt sich außerhalb des Nethers nach 15 Sekunden in einen zombifizierten Piglin"
+    ],
+    "fun_fact": "Piglins können nicht gezüchtet werden und lassen nicht automatisch Goldnuggets oder Goldbarren fallen.",
+    "attack_type": "Nahkampf oder Armbrust-Fernkampf",
+    "targets": [
+      "Spieler ohne Goldrüstung",
+      "Hoglins",
+      "Witherskelette",
+      "Wither"
+    ],
+    "enemy_mobs": [
+      "Witherskelett",
+      "Wither",
+      "Zoglin"
+    ],
+    "follows": [
+      "Goldgegenstände werden aufgenommen; Goldbarren lösen Tauschhandel aus"
+    ],
+    "healing_item": [],
+    "fire_immune": "Nein",
+    "undead": "Nein",
+    "boss_bar": "Nein",
+    "knockback_resistance": 0,
+    "loot_table": "minecraft:entities/piglin",
+    "java_entity_id": "minecraft:piglin",
+    "bedrock_entity_id": "minecraft:piglin"
+  },
+  {
+    "id": "minecraft:polar_bear",
+    "name": "Eisbär",
+    "numeric_id": "( Nur Bedrock ) 28",
+    "type": "neutral",
+    "category": "Neutraler Mob",
+    "icon": "/assets/img/mobs/neutral/Polar_Bear.webp",
+    "description": "Großer Arktis-Bewohner • Wird aggressiv wenn Jungtier bedroht • Schwimmt im Wasser",
+    "biome": "Verschneite Ebenen, Eiszapfen, gefrorene Ozeane und tiefgefrorene Ozeane",
+    "structure": "Keine",
+    "dimension": "Overworld",
+    "movement_speed": 0.25,
+    "size": {
+      "width": "Breite: 1.4",
+      "height": "Höhe: 1.4",
+      "baby": {
+        "width": "Breite: 0.7",
+        "height": "Höhe: 0.7"
+      }
+    },
+    "aliases": [],
+    "introduced_date": "2016-06-08",
+    "removed_date": null,
+    "gallery": [],
+    "model": "Minecraft-Entity-Modell",
+    "animation": [],
+    "source": "",
+    "updated_at": "2026-08-22",
+    "notes": "Großer Arktis-Bewohner • Wird aggressiv wenn Jungtier bedroht • Schwimmt im Wasser",
+    "version": "Java Edition 1.10 / Bedrock Edition 1.0.0",
+    "edition": "Java Edition, Bedrock Edition",
+    "effects": [],
+    "effect_immunities": [],
+    "status": "Verfügbar",
+    "tags": [
+      "Neutral",
+      "Overworld",
+      "Neutral; Erwachsene mit Jungtier sind feindlich"
+    ],
+    "related_entries": [
+      "minecraft:cod",
+      "minecraft:salmon"
+    ],
+    "command": "/summon minecraft:polar_bear",
+    "version_history": [
+      {
+        "version": "Java Edition 1.10 / Bedrock Edition 1.0.0",
+        "change": "Eisbär wurde in der angegebenen Version hinzugefügt.",
+        "type": "added",
+        "date": "2016-06-08"
+      }
+    ],
+    "texture": [
+      {
+        "name": "Bear Polarbear Baby",
+        "category": "Baby",
+        "description": "Variante: Bear Polarbear Baby.",
+        "file": "/assets/img/texture/mobs/bear/polarbear_baby.png"
+      },
+      {
+        "name": "Bear Polarbear",
+        "category": "Standardtextur",
+        "description": "Variante: Bear Polarbear.",
+        "file": "/assets/img/texture/mobs/bear/polarbear.png"
+      }
+    ],
+    "sounds": [],
+    "health": 30,
+    "damage": "Java: Einfach 4, Normal 6, Schwer 9; Bedrock kann abweichen",
+    "armor": 0,
+    "experience": "1–3 beim Töten eines Erwachsenen",
+    "spawn": {
+      "light_level": [
+        "7 oder höher"
+      ],
+      "biome": "Verschneite Ebenen und gefrorene Ozeanbiome",
+      "structure": "Keine",
+      "spawn_group": "Bis zu 2"
+    },
+    "light_level": [
+      "7 oder höher"
+    ],
+    "classification": "Neutral; Erwachsene mit Jungtier sind feindlich",
+    "renewable": "Ja",
+    "can_despawn": "Nein",
+    "tameable": "Nein",
+    "breedable": "Nein",
+    "duplicable": "Nein",
+    "duplication_item": "Keines",
+    "leashable": "Ja",
+    "rideable": "Nein",
+    "baby_variant": "Ja",
+    "drops": [
+      {
+        "item": "minecraft:cod",
+        "chance": "75 % der erfolgreichen Fischdrops",
+        "amount": "0–2"
+      },
+      {
+        "item": "minecraft:salmon",
+        "chance": "25 % der erfolgreichen Fischdrops",
+        "amount": "0–2"
+      }
+    ],
+    "abilities": [
+      "Schwimmt schnell",
+      "Erwachsene verteidigen Jungtiere"
+    ],
+    "fun_fact": "Erwachsene Eisbären greifen an, wenn sie provoziert werden; Tiere in einer Gruppe mit einem Jungtier sind gegenüber Spielern besonders gefährlich.",
+    "attack_type": "Nahkampf",
+    "targets": [
+      "Angreifer",
+      "Spieler in der Nähe eines Jungtiers",
+      "Füchse unter bestimmten Bedingungen"
+    ],
+    "enemy_mobs": [],
+    "follows": [],
+    "healing_item": [],
+    "fire_immune": "Nein",
+    "undead": "Nein",
+    "boss_bar": "Nein",
+    "knockback_resistance": 0,
+    "loot_table": "minecraft:entities/polar_bear",
+    "java_entity_id": "minecraft:polar_bear",
+    "bedrock_entity_id": "minecraft:polar_bear"
+  },
+  {
+    "id": "minecraft:pufferfish",
+    "name": "Kugelfisch",
+    "numeric_id": "( Nur Bedrock ) 108",
+    "type": "neutral",
+    "category": "Neutraler Mob",
+    "icon": "/assets/img/mobs/neutral/Pufferfish.webp",
+    "description": "Giftiger Fisch • Bläht sich bei Gefahr auf • Verursacht Gift-Effekt • Schwimmt im Wasser",
+    "biome": "Warmer Ozean und lauwarmer Ozean",
+    "structure": "Keine",
+    "dimension": "Overworld",
+    "movement_speed": 0.7,
+    "size": {
+      "width": "Breite: 0.7",
+      "height": "Höhe: 0.7"
+    },
+    "aliases": [],
+    "introduced_date": "2018-07-18",
+    "removed_date": null,
+    "gallery": [],
+    "model": "Minecraft-Entity-Modell",
+    "animation": [],
+    "source": "",
+    "updated_at": "2026-08-22",
+    "notes": "Giftiger Fisch • Bläht sich bei Gefahr auf • Verursacht Gift-Effekt • Schwimmt im Wasser",
+    "version": "Java Edition 1.13 / Bedrock Edition 1.4.0",
+    "edition": "Java Edition, Bedrock Edition",
+    "effects": [
+      {
+        "name": "Gift",
+        "type": "verursacht",
+        "level": "I/II",
+        "duration": "Abhängig von Aufblähstufe und Edition",
+        "chance": "Bei Berührung eines aufgeblähten Kugelfischs",
+        "condition": "Spieler oder bestimmte Mobs kommen zu nahe",
+        "description": "Je stärker aufgebläht, desto stärker sind Schaden und Giftwirkung."
+      }
+    ],
+    "effect_immunities": [
+      "Gift"
+    ],
+    "status": "Verfügbar",
+    "tags": [
+      "Neutral",
+      "Overworld",
+      "Neutral / Wassertier"
+    ],
+    "related_entries": [
+      "minecraft:pufferfish_bucket"
+    ],
+    "command": "/summon minecraft:pufferfish",
+    "version_history": [
+      {
+        "version": "Java Edition 1.13 / Bedrock Edition 1.4.0",
+        "change": "Kugelfisch wurde in der angegebenen Version hinzugefügt.",
+        "type": "added",
+        "date": "2018-07-18"
+      }
+    ],
+    "texture": [
+      {
+        "name": "Pufferfish Pufferfish",
+        "category": "Standardtextur",
+        "description": "Variante: Pufferfish Pufferfish.",
+        "file": "/assets/img/texture/mobs/pufferfish/pufferfish.png"
+      }
+    ],
+    "sounds": [],
+    "health": 3,
+    "damage": "Kontakt: 2–4 je Aufblähstufe, zusätzlich Gift; genaue Werte sind editionsabhängig",
+    "armor": 0,
+    "experience": "1–3 beim Töten durch Spieler oder gezähmten Wolf",
+    "spawn": {
+      "light_level": [
+        "Beliebig"
+      ],
+      "biome": "Warmer und lauwarmer Ozean",
+      "structure": "Keine",
+      "spawn_group": "1–3"
+    },
+    "light_level": [
+      "Beliebig"
+    ],
+    "classification": "Neutral / Wassertier",
+    "renewable": "Ja",
+    "can_despawn": "Ja, sofern nicht dauerhaft gemacht",
+    "tameable": "Nein",
+    "breedable": "Nein",
+    "duplicable": "Nein",
+    "duplication_item": "Keines",
+    "leashable": "Nein",
+    "rideable": "Nein",
+    "baby_variant": "Nein; die drei Größen sind Aufblähstufen",
+    "drops": [
+      {
+        "item": "minecraft:pufferfish",
+        "chance": "100 %",
+        "amount": "1"
+      },
+      {
+        "item": "minecraft:bone_meal",
+        "chance": "5 % (Java)",
+        "amount": "1"
+      },
+      {
+        "item": "minecraft:bone",
+        "chance": "25 % (Bedrock)",
+        "amount": "1–2"
+      }
+    ],
+    "abilities": [
+      "Bläht sich in zwei Schritten auf",
+      "Vergiftet nahe Spieler und bestimmte Mobs",
+      "Kann in einem Wassereimer aufgenommen werden"
+    ],
+    "fun_fact": "Kugelfische blähen sich zu drei verschiedenen Größen auf wenn sie bedroht werden!",
+    "attack_type": "Defensiver Kontaktangriff",
+    "targets": [],
+    "enemy_mobs": [],
+    "follows": [],
+    "healing_item": [],
+    "fire_immune": "Nein",
+    "undead": "Nein",
+    "boss_bar": "Nein",
+    "knockback_resistance": 0,
+    "loot_table": "minecraft:entities/pufferfish",
+    "java_entity_id": "minecraft:pufferfish",
+    "bedrock_entity_id": "minecraft:pufferfish"
+  },
+  {
+    "id": "minecraft:spider",
+    "name": "Spinne",
+    "numeric_id": "( Nur Bedrock ) 35",
+    "type": "neutral",
+    "category": "Neutraler Mob",
+    "icon": "/assets/img/mobs/neutral/Spider.webp",
+    "description": "Nachaktiver Mob • Klettert an Wänden • Wird bei Dunkelheit aggressiv • Große Hitbox",
+    "biome": "Fast alle geeigneten Oberweltbiome",
+    "structure": "Dungeons und Waldanwesen können Spawner enthalten; Spinnenreiter möglich",
+    "dimension": "Overworld",
+    "movement_speed": 0.3,
+    "size": {
+      "width": "Breite: 1.4",
+      "height": "Höhe: 0.9"
+    },
+    "aliases": [],
+    "introduced_date": "2009-10-24",
+    "removed_date": null,
+    "gallery": [],
+    "model": "Minecraft-Entity-Modell",
+    "animation": [],
+    "source": "",
+    "updated_at": "2026-08-22",
+    "notes": "Nachaktiver Mob • Klettert an Wänden • Wird bei Dunkelheit aggressiv • Große Hitbox",
+    "version": "Java Edition Classic 0.26 SURVIVAL TEST / Bedrock Edition 0.3.3",
+    "edition": "Java Edition, Bedrock Edition",
+    "effects": [],
+    "effect_immunities": [],
+    "status": "Verfügbar",
+    "tags": [
+      "Neutral",
+      "Overworld",
+      "Neutral bei hellem Umgebungslicht, sonst feindlich / Gliederfüßer"
+    ],
+    "related_entries": [
+      "minecraft:string",
+      "minecraft:spider_eye",
+      "minecraft:cave_spider"
+    ],
+    "command": "/summon minecraft:spider",
+    "version_history": [
+      {
+        "version": "Java Edition Classic 0.26 SURVIVAL TEST / Bedrock Edition 0.3.3",
+        "change": "Spinne wurde in der angegebenen Version hinzugefügt.",
+        "type": "added",
+        "date": "2009-10-24"
+      }
+    ],
+    "texture": [
+      {
+        "name": "Spider Spider",
+        "category": "Standardtextur",
+        "description": "Variante: Spider Spider.",
+        "file": "/assets/img/texture/mobs/spider/spider.png"
+      },
+      {
+        "name": "Spider Spider Eyes",
+        "category": "Standardtextur",
+        "description": "Variante: Spider Spider Eyes.",
+        "file": "/assets/img/texture/mobs/spider/spider_eyes.png"
+      }
+    ],
+    "sounds": [],
+    "health": 16,
+    "damage": "Einfach 2, Normal 2, Schwer 3",
+    "armor": 0,
+    "experience": "5 beim Töten durch Spieler oder gezähmten Wolf",
+    "spawn": {
+      "light_level": [
+        "Blocklicht 0"
+      ],
+      "biome": "Fast alle geeigneten Oberweltbiome",
+      "structure": "Keine zwingende Struktur"
+    },
+    "light_level": [
+      "Blocklicht 0"
+    ],
+    "classification": "Neutral bei hellem Umgebungslicht, sonst feindlich / Gliederfüßer",
+    "renewable": "Ja",
+    "can_despawn": "Ja, sofern nicht dauerhaft gemacht",
+    "tameable": "Nein",
+    "breedable": "Nein",
+    "duplicable": "Nein",
+    "duplication_item": "Keines",
+    "leashable": "Nein",
+    "rideable": "Nein",
+    "baby_variant": "Nein",
+    "drops": [
+      {
+        "item": "minecraft:string",
+        "chance": "100 %",
+        "amount": "0–2 (+0–1 je Plünderungsstufe)"
+      },
+      {
+        "item": "minecraft:spider_eye",
+        "chance": "33,3 %",
+        "amount": "1",
+        "condition": "Nur bei Tod durch Spieler oder gezähmten Wolf; steigt mit Plünderung"
+      }
+    ],
+    "abilities": [
+      "Klettert senkrechte Flächen",
+      "Kann auf Schwer selten mit einem dauerhaften Statuseffekt erscheinen",
+      "Kann als Spinnenreiter mit Skelett erscheinen"
+    ],
+    "fun_fact": "Spinnen sind nur 0,9 Blöcke hoch, benötigen wegen ihrer Breite aber eine mindestens zwei Blöcke breite Öffnung.",
+    "attack_type": "Sprung-Nahkampf",
+    "targets": [
+      "Spieler",
+      "Eisengolem"
+    ],
+    "enemy_mobs": [],
+    "follows": [],
+    "healing_item": [],
+    "fire_immune": "Nein",
+    "undead": "Nein",
+    "boss_bar": "Nein",
+    "knockback_resistance": 0,
+    "loot_table": "minecraft:entities/spider",
+    "java_entity_id": "minecraft:spider",
+    "bedrock_entity_id": "minecraft:spider"
+  },
+  {
+    "id": "minecraft:trader_llama",
+    "name": "Händler-Lama",
+    "numeric_id": "( Nur Bedrock ) 157",
+    "type": "neutral",
+    "category": "Neutraler Mob",
+    "icon": "/assets/img/mobs/neutral/Trader_Llama.webp",
+    "description": "Wanderhändler-Begleiter • Spuckt bei Provokation • Verschiedene Fellfarben • Despawnt mit Händler",
+    "biome": "Erscheint zusammen mit dem Fahrenden Händler nahe Spielern",
+    "structure": "Keine",
+    "dimension": "Overworld",
+    "movement_speed": 0.175,
+    "size": {
+      "width": "Breite: 0.9",
+      "height": "Höhe: 1.87",
+      "baby": {
+        "width": "Breite: 0.45",
+        "height": "Höhe: 0.935"
+      }
+    },
+    "aliases": [
+      "Händlerlama"
+    ],
+    "introduced_date": "2019-04-23",
+    "removed_date": null,
+    "gallery": [],
+    "model": "Minecraft-Entity-Modell",
+    "animation": [],
+    "source": "",
+    "updated_at": "2026-08-22",
+    "notes": "Wanderhändler-Begleiter • Spuckt bei Provokation • Verschiedene Fellfarben • Despawnt mit Händler",
+    "version": "Java Edition 1.14 / Bedrock Edition 1.10.0",
+    "edition": "Java Edition, Bedrock Edition",
+    "effects": [],
+    "effect_immunities": [],
+    "status": "Verfügbar",
+    "tags": [
+      "Neutral",
+      "Overworld",
+      "Neutral / Tier"
+    ],
+    "related_entries": [
+      "minecraft:wandering_trader",
+      "minecraft:lead",
+      "minecraft:llama"
+    ],
+    "command": "/summon minecraft:trader_llama",
+    "version_history": [
+      {
+        "version": "Java Edition 1.14 / Bedrock Edition 1.10.0",
+        "change": "Händler-Lama wurde in der angegebenen Version hinzugefügt.",
+        "type": "added",
+        "date": "2019-04-23"
+      }
+    ],
+    "texture": [
+      {
+        "name": "Llama Llama Brown Baby",
+        "category": "Baby",
+        "description": "Variante: Llama Llama Brown Baby.",
+        "file": "/assets/img/texture/mobs/llama/llama_brown_baby.png"
+      },
+      {
+        "name": "Llama Llama Brown",
+        "category": "Standardtextur",
+        "description": "Variante: Llama Llama Brown.",
+        "file": "/assets/img/texture/mobs/llama/llama_brown.png"
+      },
+      {
+        "name": "Llama Llama Creamy Baby",
+        "category": "Baby",
+        "description": "Variante: Llama Llama Creamy Baby.",
+        "file": "/assets/img/texture/mobs/llama/llama_creamy_baby.png"
+      },
+      {
+        "name": "Llama Llama Creamy",
+        "category": "Standardtextur",
+        "description": "Variante: Llama Llama Creamy.",
+        "file": "/assets/img/texture/mobs/llama/llama_creamy.png"
+      },
+      {
+        "name": "Llama Llama Gray Baby",
+        "category": "Baby",
+        "description": "Variante: Llama Llama Gray Baby.",
+        "file": "/assets/img/texture/mobs/llama/llama_gray_baby.png"
+      },
+      {
+        "name": "Llama Llama Gray",
+        "category": "Standardtextur",
+        "description": "Variante: Llama Llama Gray.",
+        "file": "/assets/img/texture/mobs/llama/llama_gray.png"
+      },
+      {
+        "name": "Llama Llama Spit",
+        "category": "Standardtextur",
+        "description": "Variante: Llama Llama Spit.",
+        "file": "/assets/img/texture/mobs/llama/llama_spit.png"
+      },
+      {
+        "name": "Llama Llama White Baby",
+        "category": "Baby",
+        "description": "Variante: Llama Llama White Baby.",
+        "file": "/assets/img/texture/mobs/llama/llama_white_baby.png"
+      },
+      {
+        "name": "Llama Llama White",
+        "category": "Standardtextur",
+        "description": "Variante: Llama Llama White.",
+        "file": "/assets/img/texture/mobs/llama/llama_white.png"
+      },
+      {
+        "name": "Equipment Llama Body Trader Llama Baby",
+        "category": "Ausrüstung",
+        "description": "Variante: Equipment Llama Body Trader Llama Baby.",
+        "file": "/assets/img/texture/mobs/equipment/llama_body/trader_llama_baby.png"
+      },
+      {
+        "name": "Equipment Llama Body Trader Llama",
+        "category": "Ausrüstung",
+        "description": "Variante: Equipment Llama Body Trader Llama.",
+        "file": "/assets/img/texture/mobs/equipment/llama_body/trader_llama.png"
+      }
+    ],
+    "sounds": [],
+    "health": "15–30",
+    "damage": 1,
+    "armor": 0,
+    "experience": "1–3 beim Töten eines Erwachsenen; 1–7 beim Züchten",
+    "spawn": {
+      "light_level": [
+        "Nicht direkt lichtabhängig"
+      ],
+      "biome": "Nahe dem Spawnpunkt eines Fahrenden Händlers",
+      "structure": "Keine",
+      "spawn_group": "2 mit einem Fahrenden Händler"
+    },
+    "light_level": [
+      "Nicht direkt lichtabhängig"
+    ],
+    "classification": "Neutral / Tier",
+    "renewable": "Ja",
+    "can_despawn": "Ja, solange es an den Fahrenden Händler gebunden ist; nach Zähmung dauerhaft",
+    "tameable": "Ja, nachdem die Leine getrennt wurde",
+    "breedable": "Ja, wenn gezähmt",
+    "duplicable": "Nein",
+    "duplication_item": "Keines",
+    "leashable": "Ja",
+    "rideable": "Aufsitzen möglich, aber nicht direkt steuerbar",
+    "baby_variant": "Ja, nicht beim natürlichen Händler-Spawn",
+    "drops": [
+      {
+        "item": "minecraft:leather",
+        "chance": "100 %",
+        "amount": "0–2 (+0–1 je Plünderungsstufe)"
+      },
+      {
+        "item": "Ausgerüstete Truhe, Teppich und Inhalt",
+        "chance": "100 %",
+        "amount": "Vorhandene Menge",
+        "condition": "Nur wenn ausgerüstet"
+      }
+    ],
+    "abilities": [
+      "Verteidigt den Fahrenden Händler",
+      "Kann nach dem Trennen der Leine gezähmt werden",
+      "Kann wie ein normales Lama eine Truhe tragen"
+    ],
+    "fun_fact": "Natürlich erzeugte Händlerlamas erscheinen paarweise mit einem Fahrenden Händler; gezähmte Händlerlamas verschwinden nicht.",
+    "attack_type": "Spuckangriff",
+    "targets": [
+      "Angreifer des Händlers oder Lamas",
+      "Feindliche Mobs, die den Händler angreifen"
+    ],
+    "enemy_mobs": [],
+    "follows": [
+      "Fahrender Händler, solange angeleint",
+      "Heuballen"
+    ],
+    "healing_item": [
+      "Weizen",
+      "Heuballen"
+    ],
+    "fire_immune": "Nein",
+    "undead": "Nein",
+    "boss_bar": "Nein",
+    "knockback_resistance": 0,
+    "loot_table": "minecraft:entities/trader_llama",
+    "java_entity_id": "minecraft:trader_llama",
+    "bedrock_entity_id": "minecraft:trader_llama"
+  },
+  {
+    "id": "minecraft:wolf",
+    "name": "Wolf",
+    "numeric_id": "( Nur Bedrock ) 14",
+    "type": "neutral",
+    "category": "Neutraler Mob",
+    "icon": "/assets/img/mobs/neutral/Wolf.webp",
+    "description": "Wilder Hund • Wird bei Angriff aggressiv • Kann mit Knochen gezähmt werden • Tame: Beschützt Spieler",
+    "biome": "Variantenabhängig: Wald-, Taiga-, Savannen-, Badlands-, Dschungel- und Hainbiome",
+    "structure": "Keine",
+    "dimension": "Overworld",
+    "movement_speed": 0.3,
+    "size": {
+      "width": "Breite: 0.6",
+      "height": "Höhe: 0.85",
+      "baby": {
+        "width": "Breite: 0.3",
+        "height": "Höhe: 0.425"
+      }
+    },
+    "aliases": [],
+    "introduced_date": "2011-03-31",
+    "removed_date": null,
+    "gallery": [],
+    "model": "Minecraft-Entity-Modell",
+    "animation": [],
+    "source": "",
+    "updated_at": "2026-08-22",
+    "notes": "Wölfe lassen beim Tod keine Knochen oder anderen Gegenstände fallen.",
+    "version": "Java Edition Beta 1.4 / Bedrock Edition 0.9.0",
+    "edition": "Java Edition, Bedrock Edition",
+    "effects": [],
+    "effect_immunities": [],
+    "status": "Verfügbar",
+    "tags": [
+      "Neutral",
+      "Overworld",
+      "Neutral wild; gezähmt / Tier"
+    ],
+    "related_entries": [
+      "minecraft:bone",
+      "minecraft:wolf_armor",
+      "minecraft:armadillo_scute"
+    ],
+    "command": "/summon minecraft:wolf",
+    "version_history": [
+      {
+        "version": "Java Edition Beta 1.4 / Bedrock Edition 0.9.0",
+        "change": "Wolf wurde in der angegebenen Version hinzugefügt.",
+        "type": "added",
+        "date": "2011-03-31"
+      }
+    ],
+    "texture": [
+      {
+        "name": "Wolf Wolf Angry Baby",
+        "category": "Baby",
+        "description": "Variante: Wolf Wolf Angry Baby.",
+        "file": "/assets/img/texture/mobs/wolf/wolf_angry_baby.png"
+      },
+      {
+        "name": "Wolf Wolf Angry",
+        "category": "Standardtextur",
+        "description": "Variante: Wolf Wolf Angry.",
+        "file": "/assets/img/texture/mobs/wolf/wolf_angry.png"
+      },
+      {
+        "name": "Wolf Wolf Armor Crackiness High",
+        "category": "Standardtextur",
+        "description": "Variante: Wolf Wolf Armor Crackiness High.",
+        "file": "/assets/img/texture/mobs/wolf/wolf_armor_crackiness_high.png"
+      },
+      {
+        "name": "Wolf Wolf Armor Crackiness Low",
+        "category": "Standardtextur",
+        "description": "Variante: Wolf Wolf Armor Crackiness Low.",
+        "file": "/assets/img/texture/mobs/wolf/wolf_armor_crackiness_low.png"
+      },
+      {
+        "name": "Wolf Wolf Armor Crackiness Medium",
+        "category": "Standardtextur",
+        "description": "Variante: Wolf Wolf Armor Crackiness Medium.",
+        "file": "/assets/img/texture/mobs/wolf/wolf_armor_crackiness_medium.png"
+      },
+      {
+        "name": "Wolf Wolf Ashen Angry Baby",
+        "category": "Baby",
+        "description": "Variante: Wolf Wolf Ashen Angry Baby.",
+        "file": "/assets/img/texture/mobs/wolf/wolf_ashen_angry_baby.png"
+      },
+      {
+        "name": "Wolf Wolf Ashen Angry",
+        "category": "Standardtextur",
+        "description": "Variante: Wolf Wolf Ashen Angry.",
+        "file": "/assets/img/texture/mobs/wolf/wolf_ashen_angry.png"
+      },
+      {
+        "name": "Wolf Wolf Ashen Baby",
+        "category": "Baby",
+        "description": "Variante: Wolf Wolf Ashen Baby.",
+        "file": "/assets/img/texture/mobs/wolf/wolf_ashen_baby.png"
+      },
+      {
+        "name": "Wolf Wolf Ashen Tame Baby",
+        "category": "Baby",
+        "description": "Variante: Wolf Wolf Ashen Tame Baby.",
+        "file": "/assets/img/texture/mobs/wolf/wolf_ashen_tame_baby.png"
+      },
+      {
+        "name": "Wolf Wolf Ashen Tame",
+        "category": "Standardtextur",
+        "description": "Variante: Wolf Wolf Ashen Tame.",
+        "file": "/assets/img/texture/mobs/wolf/wolf_ashen_tame.png"
+      },
+      {
+        "name": "Wolf Wolf Ashen",
+        "category": "Standardtextur",
+        "description": "Variante: Wolf Wolf Ashen.",
+        "file": "/assets/img/texture/mobs/wolf/wolf_ashen.png"
+      },
+      {
+        "name": "Wolf Wolf Baby",
+        "category": "Baby",
+        "description": "Variante: Wolf Wolf Baby.",
+        "file": "/assets/img/texture/mobs/wolf/wolf_baby.png"
+      },
+      {
+        "name": "Wolf Wolf Black Angry Baby",
+        "category": "Baby",
+        "description": "Variante: Wolf Wolf Black Angry Baby.",
+        "file": "/assets/img/texture/mobs/wolf/wolf_black_angry_baby.png"
+      },
+      {
+        "name": "Wolf Wolf Black Angry",
+        "category": "Standardtextur",
+        "description": "Variante: Wolf Wolf Black Angry.",
+        "file": "/assets/img/texture/mobs/wolf/wolf_black_angry.png"
+      },
+      {
+        "name": "Wolf Wolf Black Baby",
+        "category": "Baby",
+        "description": "Variante: Wolf Wolf Black Baby.",
+        "file": "/assets/img/texture/mobs/wolf/wolf_black_baby.png"
+      },
+      {
+        "name": "Wolf Wolf Black Tame Baby",
+        "category": "Baby",
+        "description": "Variante: Wolf Wolf Black Tame Baby.",
+        "file": "/assets/img/texture/mobs/wolf/wolf_black_tame_baby.png"
+      },
+      {
+        "name": "Wolf Wolf Black Tame",
+        "category": "Standardtextur",
+        "description": "Variante: Wolf Wolf Black Tame.",
+        "file": "/assets/img/texture/mobs/wolf/wolf_black_tame.png"
+      },
+      {
+        "name": "Wolf Wolf Black",
+        "category": "Standardtextur",
+        "description": "Variante: Wolf Wolf Black.",
+        "file": "/assets/img/texture/mobs/wolf/wolf_black.png"
+      },
+      {
+        "name": "Wolf Wolf Chestnut Angry Baby",
+        "category": "Baby",
+        "description": "Variante: Wolf Wolf Chestnut Angry Baby.",
+        "file": "/assets/img/texture/mobs/wolf/wolf_chestnut_angry_baby.png"
+      },
+      {
+        "name": "Wolf Wolf Chestnut Angry",
+        "category": "Standardtextur",
+        "description": "Variante: Wolf Wolf Chestnut Angry.",
+        "file": "/assets/img/texture/mobs/wolf/wolf_chestnut_angry.png"
+      },
+      {
+        "name": "Wolf Wolf Chestnut Baby",
+        "category": "Baby",
+        "description": "Variante: Wolf Wolf Chestnut Baby.",
+        "file": "/assets/img/texture/mobs/wolf/wolf_chestnut_baby.png"
+      },
+      {
+        "name": "Wolf Wolf Chestnut Tame Baby",
+        "category": "Baby",
+        "description": "Variante: Wolf Wolf Chestnut Tame Baby.",
+        "file": "/assets/img/texture/mobs/wolf/wolf_chestnut_tame_baby.png"
+      },
+      {
+        "name": "Wolf Wolf Chestnut Tame",
+        "category": "Standardtextur",
+        "description": "Variante: Wolf Wolf Chestnut Tame.",
+        "file": "/assets/img/texture/mobs/wolf/wolf_chestnut_tame.png"
+      },
+      {
+        "name": "Wolf Wolf Chestnut",
+        "category": "Standardtextur",
+        "description": "Variante: Wolf Wolf Chestnut.",
+        "file": "/assets/img/texture/mobs/wolf/wolf_chestnut.png"
+      },
+      {
+        "name": "Wolf Wolf Collar Baby",
+        "category": "Baby",
+        "description": "Variante: Wolf Wolf Collar Baby.",
+        "file": "/assets/img/texture/mobs/wolf/wolf_collar_baby.png"
+      },
+      {
+        "name": "Wolf Wolf Collar",
+        "category": "Standardtextur",
+        "description": "Variante: Wolf Wolf Collar.",
+        "file": "/assets/img/texture/mobs/wolf/wolf_collar.png"
+      },
+      {
+        "name": "Wolf Wolf Rusty Angry Baby",
+        "category": "Baby",
+        "description": "Variante: Wolf Wolf Rusty Angry Baby.",
+        "file": "/assets/img/texture/mobs/wolf/wolf_rusty_angry_baby.png"
+      },
+      {
+        "name": "Wolf Wolf Rusty Angry",
+        "category": "Standardtextur",
+        "description": "Variante: Wolf Wolf Rusty Angry.",
+        "file": "/assets/img/texture/mobs/wolf/wolf_rusty_angry.png"
+      },
+      {
+        "name": "Wolf Wolf Rusty Baby",
+        "category": "Baby",
+        "description": "Variante: Wolf Wolf Rusty Baby.",
+        "file": "/assets/img/texture/mobs/wolf/wolf_rusty_baby.png"
+      },
+      {
+        "name": "Wolf Wolf Rusty Tame Baby",
+        "category": "Baby",
+        "description": "Variante: Wolf Wolf Rusty Tame Baby.",
+        "file": "/assets/img/texture/mobs/wolf/wolf_rusty_tame_baby.png"
+      },
+      {
+        "name": "Wolf Wolf Rusty Tame",
+        "category": "Standardtextur",
+        "description": "Variante: Wolf Wolf Rusty Tame.",
+        "file": "/assets/img/texture/mobs/wolf/wolf_rusty_tame.png"
+      },
+      {
+        "name": "Wolf Wolf Rusty",
+        "category": "Standardtextur",
+        "description": "Variante: Wolf Wolf Rusty.",
+        "file": "/assets/img/texture/mobs/wolf/wolf_rusty.png"
+      },
+      {
+        "name": "Wolf Wolf Snowy Angry Baby",
+        "category": "Baby",
+        "description": "Variante: Wolf Wolf Snowy Angry Baby.",
+        "file": "/assets/img/texture/mobs/wolf/wolf_snowy_angry_baby.png"
+      },
+      {
+        "name": "Wolf Wolf Snowy Angry",
+        "category": "Standardtextur",
+        "description": "Variante: Wolf Wolf Snowy Angry.",
+        "file": "/assets/img/texture/mobs/wolf/wolf_snowy_angry.png"
+      },
+      {
+        "name": "Wolf Wolf Snowy Baby",
+        "category": "Baby",
+        "description": "Variante: Wolf Wolf Snowy Baby.",
+        "file": "/assets/img/texture/mobs/wolf/wolf_snowy_baby.png"
+      },
+      {
+        "name": "Wolf Wolf Snowy Tame Baby",
+        "category": "Baby",
+        "description": "Variante: Wolf Wolf Snowy Tame Baby.",
+        "file": "/assets/img/texture/mobs/wolf/wolf_snowy_tame_baby.png"
+      },
+      {
+        "name": "Wolf Wolf Snowy Tame",
+        "category": "Standardtextur",
+        "description": "Variante: Wolf Wolf Snowy Tame.",
+        "file": "/assets/img/texture/mobs/wolf/wolf_snowy_tame.png"
+      },
+      {
+        "name": "Wolf Wolf Snowy",
+        "category": "Standardtextur",
+        "description": "Variante: Wolf Wolf Snowy.",
+        "file": "/assets/img/texture/mobs/wolf/wolf_snowy.png"
+      },
+      {
+        "name": "Wolf Wolf Spotted Angry Baby",
+        "category": "Baby",
+        "description": "Variante: Wolf Wolf Spotted Angry Baby.",
+        "file": "/assets/img/texture/mobs/wolf/wolf_spotted_angry_baby.png"
+      },
+      {
+        "name": "Wolf Wolf Spotted Angry",
+        "category": "Standardtextur",
+        "description": "Variante: Wolf Wolf Spotted Angry.",
+        "file": "/assets/img/texture/mobs/wolf/wolf_spotted_angry.png"
+      },
+      {
+        "name": "Wolf Wolf Spotted Baby",
+        "category": "Baby",
+        "description": "Variante: Wolf Wolf Spotted Baby.",
+        "file": "/assets/img/texture/mobs/wolf/wolf_spotted_baby.png"
+      },
+      {
+        "name": "Wolf Wolf Spotted Tame Baby",
+        "category": "Baby",
+        "description": "Variante: Wolf Wolf Spotted Tame Baby.",
+        "file": "/assets/img/texture/mobs/wolf/wolf_spotted_tame_baby.png"
+      },
+      {
+        "name": "Wolf Wolf Spotted Tame",
+        "category": "Standardtextur",
+        "description": "Variante: Wolf Wolf Spotted Tame.",
+        "file": "/assets/img/texture/mobs/wolf/wolf_spotted_tame.png"
+      },
+      {
+        "name": "Wolf Wolf Spotted",
+        "category": "Standardtextur",
+        "description": "Variante: Wolf Wolf Spotted.",
+        "file": "/assets/img/texture/mobs/wolf/wolf_spotted.png"
+      },
+      {
+        "name": "Wolf Wolf Striped Angry Baby",
+        "category": "Baby",
+        "description": "Variante: Wolf Wolf Striped Angry Baby.",
+        "file": "/assets/img/texture/mobs/wolf/wolf_striped_angry_baby.png"
+      },
+      {
+        "name": "Wolf Wolf Striped Angry",
+        "category": "Standardtextur",
+        "description": "Variante: Wolf Wolf Striped Angry.",
+        "file": "/assets/img/texture/mobs/wolf/wolf_striped_angry.png"
+      },
+      {
+        "name": "Wolf Wolf Striped Baby",
+        "category": "Baby",
+        "description": "Variante: Wolf Wolf Striped Baby.",
+        "file": "/assets/img/texture/mobs/wolf/wolf_striped_baby.png"
+      },
+      {
+        "name": "Wolf Wolf Striped Tame Baby",
+        "category": "Baby",
+        "description": "Variante: Wolf Wolf Striped Tame Baby.",
+        "file": "/assets/img/texture/mobs/wolf/wolf_striped_tame_baby.png"
+      },
+      {
+        "name": "Wolf Wolf Striped Tame",
+        "category": "Standardtextur",
+        "description": "Variante: Wolf Wolf Striped Tame.",
+        "file": "/assets/img/texture/mobs/wolf/wolf_striped_tame.png"
+      },
+      {
+        "name": "Wolf Wolf Striped",
+        "category": "Standardtextur",
+        "description": "Variante: Wolf Wolf Striped.",
+        "file": "/assets/img/texture/mobs/wolf/wolf_striped.png"
+      },
+      {
+        "name": "Wolf Wolf Tame Baby",
+        "category": "Baby",
+        "description": "Variante: Wolf Wolf Tame Baby.",
+        "file": "/assets/img/texture/mobs/wolf/wolf_tame_baby.png"
+      },
+      {
+        "name": "Wolf Wolf Tame",
+        "category": "Standardtextur",
+        "description": "Variante: Wolf Wolf Tame.",
+        "file": "/assets/img/texture/mobs/wolf/wolf_tame.png"
+      },
+      {
+        "name": "Wolf Wolf Woods Angry Baby",
+        "category": "Baby",
+        "description": "Variante: Wolf Wolf Woods Angry Baby.",
+        "file": "/assets/img/texture/mobs/wolf/wolf_woods_angry_baby.png"
+      },
+      {
+        "name": "Wolf Wolf Woods Angry",
+        "category": "Standardtextur",
+        "description": "Variante: Wolf Wolf Woods Angry.",
+        "file": "/assets/img/texture/mobs/wolf/wolf_woods_angry.png"
+      },
+      {
+        "name": "Wolf Wolf Woods Baby",
+        "category": "Baby",
+        "description": "Variante: Wolf Wolf Woods Baby.",
+        "file": "/assets/img/texture/mobs/wolf/wolf_woods_baby.png"
+      },
+      {
+        "name": "Wolf Wolf Woods Tame Baby",
+        "category": "Baby",
+        "description": "Variante: Wolf Wolf Woods Tame Baby.",
+        "file": "/assets/img/texture/mobs/wolf/wolf_woods_tame_baby.png"
+      },
+      {
+        "name": "Wolf Wolf Woods Tame",
+        "category": "Standardtextur",
+        "description": "Variante: Wolf Wolf Woods Tame.",
+        "file": "/assets/img/texture/mobs/wolf/wolf_woods_tame.png"
+      },
+      {
+        "name": "Wolf Wolf Woods",
+        "category": "Standardtextur",
+        "description": "Variante: Wolf Wolf Woods.",
+        "file": "/assets/img/texture/mobs/wolf/wolf_woods.png"
+      },
+      {
+        "name": "Wolf Wolf",
+        "category": "Standardtextur",
+        "description": "Variante: Wolf Wolf.",
+        "file": "/assets/img/texture/mobs/wolf/wolf.png"
+      },
+      {
+        "name": "Equipment Wolf Body Armadillo Scute Overlay",
+        "category": "Ausrüstung",
+        "description": "Variante: Equipment Wolf Body Armadillo Scute Overlay.",
+        "file": "/assets/img/texture/mobs/equipment/wolf_body/armadillo_scute_overlay.png"
+      },
+      {
+        "name": "Equipment Wolf Body Armadillo Scute",
+        "category": "Ausrüstung",
+        "description": "Variante: Equipment Wolf Body Armadillo Scute.",
+        "file": "/assets/img/texture/mobs/equipment/wolf_body/armadillo_scute.png"
+      }
+    ],
+    "sounds": [],
+    "health": "Wild: 8; gezähmt: 40",
+    "damage": 4,
+    "armor": 0,
+    "experience": "1–3 beim Töten eines Erwachsenen; 1–7 beim Züchten",
+    "spawn": {
+      "light_level": [
+        "Natürliche Tier-Spawnregeln"
+      ],
+      "biome": "Abhängig von einer der neun Wolfsvarianten",
+      "structure": "Keine",
+      "spawn_group": "Variantenabhängig"
+    },
+    "light_level": [
+      "Natürliche Tier-Spawnregeln"
+    ],
+    "classification": "Neutral wild; gezähmt / Tier",
+    "renewable": "Ja",
+    "can_despawn": "Nein",
+    "tameable": "Ja, mit Knochen",
+    "breedable": "Ja, gezähmt mit geeignetem Fleisch",
+    "duplicable": "Nein",
+    "duplication_item": "Keines",
+    "leashable": "Ja",
+    "rideable": "Nein",
+    "baby_variant": "Ja",
+    "drops": [],
+    "abilities": [
+      "Kann gezähmt werden",
+      "Teleportiert sich zum entfernten Besitzer",
+      "Greift für seinen Besitzer an",
+      "Kann Wolfsrüstung tragen, die Schaden absorbiert"
+    ],
+    "fun_fact": "Wölfe lassen beim Tod keine Knochen oder anderen Gegenstände fallen.",
+    "attack_type": "Nahkampf",
+    "targets": [
+      "Vom Besitzer angegriffene Ziele",
+      "Angreifer des Besitzers",
+      "Schafe",
+      "Kaninchen",
+      "Füchse",
+      "Skelette"
+    ],
+    "enemy_mobs": [
+      "Lama"
+    ],
+    "follows": [
+      "Geeignetes Fleisch bei gezähmten Wölfen"
+    ],
+    "healing_item": [
+      "Fleisch und Fisch; verdorbenes Fleisch ist ebenfalls möglich"
+    ],
+    "fire_immune": "Nein",
+    "undead": "Nein",
+    "boss_bar": "Nein",
+    "knockback_resistance": 0,
+    "loot_table": "minecraft:entities/wolf",
+    "java_entity_id": "minecraft:wolf",
+    "bedrock_entity_id": "minecraft:wolf"
+  },
+  {
+    "id": "minecraft:zombified_piglin",
+    "name": "Zombifizierter Piglin",
+    "numeric_id": "( Nur Bedrock ) 36",
+    "type": "neutral",
+    "category": "Neutraler Mob",
+    "icon": "/assets/img/mobs/neutral/Zombified_Piglin.webp",
+    "description": "Untoter Nether-Bewohner • Wird aggressiv wenn angegriffen • Teleportiert im Nether",
+    "biome": "Netheröde, Karmesinwald und weitere passende Nether-Spawnplätze",
+    "structure": "Netherfestung möglich; aktive Netherportale in der Oberwelt",
+    "dimension": "Nether; außerdem nahe aktiven Netherportalen in der Oberwelt",
+    "movement_speed": 0.23,
+    "size": {
+      "width": "Breite: 0.6",
+      "height": "Höhe: 1.95",
+      "baby": {
+        "width": "Breite: 0.3",
+        "height": "Höhe: 0.975"
+      }
+    },
+    "aliases": [
+      "Zombie Pigman",
+      "Zombie Piglin",
+      "Zombifizierter Schweine-Piglin"
+    ],
+    "introduced_date": "2010-10-30",
+    "removed_date": null,
+    "gallery": [],
+    "model": "Minecraft-Entity-Modell",
+    "animation": [],
+    "source": "",
+    "updated_at": "2026-08-22",
+    "notes": "Der korrekte deutsche Name ist Zombifizierter Piglin. Er kann sich nicht teleportieren.",
+    "version": "Entity seit Java Alpha v1.2.0; Name und Modell seit Java 1.16 / Bedrock 1.16.0",
+    "edition": "Java Edition, Bedrock Edition",
+    "effects": [],
+    "effect_immunities": [
+      "Gift",
+      "Regeneration"
+    ],
+    "status": "Verfügbar",
+    "tags": [
+      "Neutral",
+      "Nether; außerdem nahe aktiven Netherportalen in der Oberwelt",
+      "Neutral / untot; Gruppen werden bei Angriff gemeinsam feindlich"
+    ],
+    "related_entries": [
+      "minecraft:piglin",
+      "minecraft:gold_nugget",
+      "minecraft:golden_sword"
+    ],
+    "command": "/summon minecraft:zombified_piglin",
+    "version_history": [
+      {
+        "version": "Java Edition Alpha v1.2.0",
+        "change": "Der Zombie Pigman wurde hinzugefügt.",
+        "type": "added",
+        "date": "2010-10-30"
+      },
+      {
+        "version": "Java Edition 1.16 / Bedrock Edition 1.16.0",
+        "change": "Der Mob wurde zu Zombifizierter Piglin umbenannt und überarbeitet.",
+        "type": "changed",
+        "date": "2020-06-23"
+      }
+    ],
+    "texture": [
+      {
+        "name": "Zombified Piglin Zombified Piglin Baby",
+        "category": "Baby",
+        "description": "Variante: Zombified Piglin Zombified Piglin Baby.",
+        "file": "/assets/img/texture/mobs/zombified_piglin/zombified_piglin_baby.png"
+      },
+      {
+        "name": "Zombified Piglin Zombified Piglin",
+        "category": "Standardtextur",
+        "description": "Variante: Zombified Piglin Zombified Piglin.",
+        "file": "/assets/img/texture/mobs/zombified_piglin/zombified_piglin.png"
+      }
+    ],
+    "sounds": [],
+    "health": 20,
+    "damage": "Mit Goldschwert – Java: Einfach 5, Normal 8, Schwer 12; Bedrock-Werte können abweichen",
+    "armor": 2,
+    "experience": "Erwachsen: 5; Baby: 12, plus Ausrüstungsbonus bei Tod durch Spieler/gezähmten Wolf",
+    "spawn": {
+      "light_level": [
+        "Java: 11 oder niedriger im Nether; Portalspawn lichtunabhängig"
+      ],
+      "biome": "Vor allem Netheröde und Karmesinwald",
+      "structure": "Netherfestung oder Netherportal möglich"
+    },
+    "light_level": [
+      "Java: 11 oder niedriger im Nether; Portalspawn lichtunabhängig"
+    ],
+    "classification": "Neutral / untot; Gruppen werden bei Angriff gemeinsam feindlich",
+    "renewable": "Ja",
+    "can_despawn": "Ja, sofern nicht dauerhaft gemacht",
+    "tameable": "Nein",
+    "breedable": "Nein",
+    "duplicable": "Nein",
+    "duplication_item": "Keines",
+    "leashable": "Nein",
+    "rideable": "Nein",
+    "baby_variant": "Ja",
+    "drops": [
+      {
+        "item": "minecraft:rotten_flesh",
+        "chance": "100 %",
+        "amount": "0–1 (+0–1 je Plünderungsstufe)"
+      },
+      {
+        "item": "minecraft:gold_nugget",
+        "chance": "100 %",
+        "amount": "0–1 (+0–1 je Plünderungsstufe)"
+      },
+      {
+        "item": "minecraft:gold_ingot",
+        "chance": "2,5 %",
+        "amount": "1",
+        "condition": "Nur bei Tod durch Spieler/gezähmten Wolf; steigt mit Plünderung"
+      },
+      {
+        "item": "Natürlich erzeugtes Goldschwert",
+        "chance": "8,5 %",
+        "amount": "1",
+        "condition": "Steigt mit Plünderung"
+      }
+    ],
+    "abilities": [
+      "Ist immun gegen Feuer und Lava",
+      "Alarmiert nahe zombifizierte Piglins",
+      "Babyvarianten bewegen sich schneller"
+    ],
+    "fun_fact": "Der korrekte deutsche Name ist Zombifizierter Piglin. Er kann sich nicht teleportieren.",
+    "attack_type": "Nahkampf",
+    "targets": [
+      "Angreifer; Alarm kann nahe zombifizierte Piglins erfassen"
+    ],
+    "enemy_mobs": [],
+    "follows": [],
+    "healing_item": [],
+    "fire_immune": "Ja",
+    "undead": "Ja",
+    "boss_bar": "Nein",
+    "knockback_resistance": 0,
+    "loot_table": "minecraft:entities/zombified_piglin",
+    "java_entity_id": "minecraft:zombified_piglin",
+    "bedrock_entity_id": "minecraft:zombified_piglin"
+  },
+  {
+    "id": "minecraft:nautilus",
+    "name": "Nautilus",
+    "numeric_id": "( Nur Bedrock ) 149",
+    "type": "neutral",
+    "category": "Neutraler Mob",
+    "icon": "/assets/img/mobs/neutral/Nautilus_Breathe.gif",
+    "description": "Uralter Kopffüßer • Kann mit Kugelfisch gezähmt werden • Trägt Nautilus-Rüstung • Kann mit Sattel geritten werden",
+    "biome": "Alle Ozeanbiome",
+    "structure": "Keine",
+    "dimension": "Overworld",
+    "movement_speed": 1,
+    "size": {
+      "width": "Breite: 0.95",
+      "height": "Höhe: 0.875",
+      "baby": {
+        "width": "Breite: 0.475",
+        "height": "Höhe: 0.4375"
+      }
+    },
+    "aliases": [],
+    "introduced_date": "2025-12-09",
+    "removed_date": null,
+    "gallery": [],
+    "model": "Minecraft-Entity-Modell",
+    "animation": [],
+    "source": "",
+    "updated_at": "2026-08-22",
+    "notes": "Der Nautilus ist seit 1.21.11 veröffentlicht. Eine Nautilusschale ist nur ein seltener Drop, nicht garantiert.",
+    "version": "Java Edition 1.21.11 / Bedrock Edition 1.21.130",
+    "edition": "Java Edition, Bedrock Edition",
+    "effects": [
+      {
+        "name": "Atem des Nautilus",
+        "type": "gibt",
+        "level": "I",
+        "duration": "Während des Reitens laufend erneuert",
+        "chance": "100 %",
+        "condition": "Spieler reitet einen gesattelten Nautilus",
+        "description": "Pausiert den Sauerstoffverbrauch, füllt die Luftleiste aber nicht wieder auf."
+      }
+    ],
+    "effect_immunities": [],
+    "status": "Verfügbar",
+    "tags": [
+      "Neutral",
+      "Overworld",
+      "Neutral / Wassertier"
+    ],
+    "related_entries": [
+      "minecraft:saddle",
+      "minecraft:nautilus_shell",
+      "minecraft:pufferfish"
+    ],
+    "command": "/summon minecraft:nautilus",
+    "version_history": [
+      {
+        "version": "Java Edition 1.21.11 / Bedrock Edition 1.21.130",
+        "change": "Nautilus wurde in der angegebenen Version hinzugefügt.",
+        "type": "added",
+        "date": "2025-12-09"
+      }
+    ],
+    "texture": [
+      {
+        "name": "Nautilus Nautilus Baby",
+        "category": "Baby",
+        "description": "Variante: Nautilus Nautilus Baby.",
+        "file": "/assets/img/texture/mobs/nautilus/nautilus_baby.png"
+      },
+      {
+        "name": "Nautilus Nautilus",
+        "category": "Standardtextur",
+        "description": "Variante: Nautilus Nautilus.",
+        "file": "/assets/img/texture/mobs/nautilus/nautilus.png"
+      },
+      {
+        "name": "Equipment Nautilus Body Copper",
+        "category": "Ausrüstung",
+        "description": "Variante: Equipment Nautilus Body Copper.",
+        "file": "/assets/img/texture/mobs/equipment/nautilus_body/copper.png"
+      },
+      {
+        "name": "Equipment Nautilus Body Diamond",
+        "category": "Ausrüstung",
+        "description": "Variante: Equipment Nautilus Body Diamond.",
+        "file": "/assets/img/texture/mobs/equipment/nautilus_body/diamond.png"
+      },
+      {
+        "name": "Equipment Nautilus Body Gold",
+        "category": "Ausrüstung",
+        "description": "Variante: Equipment Nautilus Body Gold.",
+        "file": "/assets/img/texture/mobs/equipment/nautilus_body/gold.png"
+      },
+      {
+        "name": "Equipment Nautilus Body Iron",
+        "category": "Ausrüstung",
+        "description": "Variante: Equipment Nautilus Body Iron.",
+        "file": "/assets/img/texture/mobs/equipment/nautilus_body/iron.png"
+      },
+      {
+        "name": "Equipment Nautilus Body Netherite",
+        "category": "Ausrüstung",
+        "description": "Variante: Equipment Nautilus Body Netherite.",
+        "file": "/assets/img/texture/mobs/equipment/nautilus_body/netherite.png"
+      },
+      {
+        "name": "Equipment Nautilus Saddle Saddle",
+        "category": "Ausrüstung",
+        "description": "Variante: Equipment Nautilus Saddle Saddle.",
+        "file": "/assets/img/texture/mobs/equipment/nautilus_saddle/saddle.png"
+      }
+    ],
+    "sounds": [],
+    "health": 16,
+    "damage": "Dash-Nahkampfangriff, wenn provoziert; Schaden hängt von Bewegung und Edition ab",
+    "armor": 0,
+    "experience": "1–3 beim Töten; 1–7 beim Züchten",
+    "spawn": {
+      "light_level": [
+        "Beliebig"
+      ],
+      "biome": "Alle Ozeanbiome",
+      "structure": "Keine"
+    },
+    "light_level": [
+      "Beliebig"
+    ],
+    "classification": "Neutral / Wassertier",
+    "renewable": "Ja",
+    "can_despawn": "Ja, bis ein Spieler mit ihm interagiert; danach dauerhaft",
+    "tameable": "Ja, mit Kugelfisch oder Kugelfischeimer",
+    "breedable": "Ja, mit Kugelfisch oder Kugelfischeimer",
+    "duplicable": "Nein",
+    "duplication_item": "Keines",
+    "leashable": "Ja",
+    "rideable": "Ja, gezähmt und mit Sattel",
+    "baby_variant": "Ja",
+    "drops": [
+      {
+        "item": "minecraft:nautilus_shell",
+        "chance": "5 % Basiswahrscheinlichkeit",
+        "amount": "0–1",
+        "condition": "Steigt mit Plünderung"
+      },
+      {
+        "item": "Ausgerüsteter Sattel und Nautilusrüstung",
+        "chance": "100 %",
+        "amount": "Vorhandene Menge",
+        "condition": "Nur wenn ausgerüstet"
+      }
+    ],
+    "abilities": [
+      "Kann gezähmt, gezüchtet und geritten werden",
+      "Besitzt einen aufladbaren Dash",
+      "Kann Nautilusrüstung tragen",
+      "Erstickt an Land",
+      "Verleiht dem Reiter Atem des Nautilus"
+    ],
+    "fun_fact": "Der Nautilus ist seit 1.21.11 veröffentlicht. Eine Nautilusschale ist nur ein seltener Drop, nicht garantiert.",
+    "attack_type": "Dash-Angriff",
+    "targets": [
+      "Angreifer",
+      "Gelegentlich Kugelfische"
+    ],
+    "enemy_mobs": [],
+    "follows": [
+      "Kugelfisch",
+      "Kugelfischeimer"
+    ],
+    "healing_item": [
+      "Fisch und Fischeimer entsprechend den Nautilus-Futter-Tags"
+    ],
+    "fire_immune": "Nein",
+    "undead": "Nein",
+    "boss_bar": "Nein",
+    "knockback_resistance": 0,
+    "loot_table": "minecraft:entities/nautilus",
+    "java_entity_id": "minecraft:nautilus",
+    "bedrock_entity_id": "minecraft:nautilus"
+  },
+  {
+    "id": "minecraft:zombie_nautilus",
+    "name": "Zombie-Nautilus",
+    "numeric_id": "( Nur Bedrock ) 150",
+    "type": "neutral",
+    "category": "Neutraler Mob",
+    "icon": "/assets/img/mobs/neutral/Zombie_Nautilus.gif",
+    "description": "Untote Nautilus-Variante • Kann mit Kugelfisch gezähmt werden • Schneller als normaler Nautilus • Spawnt auch in Tropfsteinhöhlen",
+    "biome": "Ozeanbiome; Korallenvariante im warmen Ozean",
+    "structure": "Keine",
+    "dimension": "Overworld",
+    "movement_speed": 1.1,
+    "size": {
+      "width": "Breite: 0.875",
+      "height": "Höhe: 0.95"
+    },
+    "aliases": [
+      "Untoter Nautilus"
+    ],
+    "introduced_date": "2025-12-09",
+    "removed_date": null,
+    "gallery": [],
+    "model": "Minecraft-Entity-Modell",
+    "animation": [],
+    "source": "",
+    "updated_at": "2026-08-22",
+    "notes": "Seit 1.21.11 veröffentlicht. Der Zombie-Nautilus lässt keine Nautilusschale fallen und besitzt keine Babyvariante.",
+    "version": "Java Edition 1.21.11 / Bedrock Edition 1.21.130",
+    "edition": "Java Edition, Bedrock Edition",
+    "effects": [
+      {
+        "name": "Atem des Nautilus",
+        "type": "gibt",
+        "level": "I",
+        "duration": "Während des Reitens laufend erneuert",
+        "chance": "100 %",
+        "condition": "Spieler reitet einen gesattelten Zombie-Nautilus",
+        "description": "Pausiert den Sauerstoffverbrauch, füllt die Luftleiste aber nicht wieder auf."
+      }
+    ],
+    "effect_immunities": [
+      "Gift",
+      "Regeneration"
+    ],
+    "status": "Verfügbar",
+    "tags": [
+      "Neutral",
+      "Overworld",
+      "Neutral ohne feindlichen Reiter / untotes Wassertier"
+    ],
+    "related_entries": [
+      "minecraft:nautilus",
+      "minecraft:drowned",
+      "minecraft:rotten_flesh"
+    ],
+    "command": "/summon minecraft:zombie_nautilus",
+    "version_history": [
+      {
+        "version": "Java Edition 1.21.11 / Bedrock Edition 1.21.130",
+        "change": "Zombie-Nautilus wurde in der angegebenen Version hinzugefügt.",
+        "type": "added",
+        "date": "2025-12-09"
+      }
+    ],
+    "texture": [
+      {
+        "name": "Zombie Nautilus Zombie Nautilus Coral",
+        "category": "Standardtextur",
+        "description": "Variante: Zombie Nautilus Zombie Nautilus Coral.",
+        "file": "/assets/img/texture/mobs/zombie_nautilus/zombie_nautilus_coral.png"
+      },
+      {
+        "name": "Zombie Nautilus Zombie Nautilus",
+        "category": "Standardtextur",
+        "description": "Variante: Zombie Nautilus Zombie Nautilus.",
+        "file": "/assets/img/texture/mobs/zombie_nautilus/zombie_nautilus.png"
+      },
+      {
+        "name": "Equipment Nautilus Body Copper",
+        "category": "Ausrüstung",
+        "description": "Variante: Equipment Nautilus Body Copper.",
+        "file": "/assets/img/texture/mobs/equipment/nautilus_body/copper.png"
+      },
+      {
+        "name": "Equipment Nautilus Body Diamond",
+        "category": "Ausrüstung",
+        "description": "Variante: Equipment Nautilus Body Diamond.",
+        "file": "/assets/img/texture/mobs/equipment/nautilus_body/diamond.png"
+      },
+      {
+        "name": "Equipment Nautilus Body Gold",
+        "category": "Ausrüstung",
+        "description": "Variante: Equipment Nautilus Body Gold.",
+        "file": "/assets/img/texture/mobs/equipment/nautilus_body/gold.png"
+      },
+      {
+        "name": "Equipment Nautilus Body Iron",
+        "category": "Ausrüstung",
+        "description": "Variante: Equipment Nautilus Body Iron.",
+        "file": "/assets/img/texture/mobs/equipment/nautilus_body/iron.png"
+      },
+      {
+        "name": "Equipment Nautilus Body Netherite",
+        "category": "Ausrüstung",
+        "description": "Variante: Equipment Nautilus Body Netherite.",
+        "file": "/assets/img/texture/mobs/equipment/nautilus_body/netherite.png"
+      },
+      {
+        "name": "Equipment Nautilus Saddle Saddle",
+        "category": "Ausrüstung",
+        "description": "Variante: Equipment Nautilus Saddle Saddle.",
+        "file": "/assets/img/texture/mobs/equipment/nautilus_saddle/saddle.png"
+      }
+    ],
+    "sounds": [],
+    "health": 15,
+    "damage": "Dash-Nahkampfangriff, wenn provoziert; die Gefahr des natürlichen Jockeys stammt zusätzlich vom Dreizack des Ertrunkenen",
+    "armor": 0,
+    "experience": "1–3 beim Töten",
+    "spawn": {
+      "light_level": [
+        "Dunkle Unterwasser-Spawnbedingungen des Jockeys"
+      ],
+      "biome": "Ozeanbiome; Korallenvariante im warmen Ozean",
+      "structure": "Keine",
+      "rider": "Ertrunkener mit Dreizack"
+    },
+    "light_level": [
+      "Dunkle Unterwasser-Spawnbedingungen des Jockeys"
+    ],
+    "classification": "Neutral ohne feindlichen Reiter / untotes Wassertier",
+    "renewable": "Ja",
+    "can_despawn": "Ja, bis ein Spieler mit ihm interagiert; danach dauerhaft",
+    "tameable": "Ja, nach Entfernen des Reiters mit Kugelfisch oder Kugelfischeimer",
+    "breedable": "Nein",
+    "duplicable": "Nein",
+    "duplication_item": "Keines",
+    "leashable": "Ja, nach Entfernen des Reiters",
+    "rideable": "Ja, gezähmt und mit Sattel",
+    "baby_variant": "Nein",
+    "drops": [
+      {
+        "item": "minecraft:rotten_flesh",
+        "chance": "100 %",
+        "amount": "0–3 (+0–1 je Plünderungsstufe)"
+      },
+      {
+        "item": "Ausgerüsteter Sattel und Nautilusrüstung",
+        "chance": "100 %",
+        "amount": "Vorhandene Menge",
+        "condition": "Nur wenn ausgerüstet"
+      }
+    ],
+    "abilities": [
+      "Überlebt an Land",
+      "Kann nach Entfernen des Reiters gezähmt und geritten werden",
+      "Kann Nautilusrüstung tragen",
+      "Verleiht dem Reiter Atem des Nautilus",
+      "Besitzt eine Korallenvariante im warmen Ozean"
+    ],
+    "fun_fact": "Seit 1.21.11 veröffentlicht. Der Zombie-Nautilus lässt keine Nautilusschale fallen und besitzt keine Babyvariante.",
+    "attack_type": "Dash-Angriff; natürlicher Reiter nutzt Dreizack",
+    "targets": [
+      "Angreifer; mit feindlichem Reiter dessen Ziel"
+    ],
+    "enemy_mobs": [],
+    "follows": [
+      "Kugelfisch",
+      "Kugelfischeimer"
+    ],
+    "healing_item": [
+      "Fisch und Fischeimer entsprechend den Nautilus-Futter-Tags"
+    ],
+    "fire_immune": "Nein",
+    "undead": "Ja",
+    "boss_bar": "Nein",
+    "knockback_resistance": 0,
+    "loot_table": "minecraft:entities/zombie_nautilus",
+    "java_entity_id": "minecraft:zombie_nautilus",
+    "bedrock_entity_id": "minecraft:zombie_nautilus"
+  }
+]

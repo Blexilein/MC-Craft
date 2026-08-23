@@ -1,0 +1,888 @@
+[
+  {
+    "id": "minecraft:bee",
+    "name": "Bee",
+    "type": "neutral",
+    "icon": "/assets/img/mobs/neutral/Bee.webp",
+    "health": 10,
+    "damage": 2,
+    "description": "Neutral insect • Becomes aggressive if nest is destroyed • Pollinates plants • Collects honey",
+    "version": "1.15",
+    "dimension": "Overworld",
+    "movement_speed": 0.3,
+    "size": {
+      "width": 0.7,
+      "height": 0.6
+    },
+    "spawn": {
+      "light_level": [
+        "9-15"
+      ],
+      "biome": "Flower Forest, Sunflower Plains, Plains with beehives",
+      "structure": "None"
+    },
+    "light_level": [
+      "0-15"
+    ],
+    "fun_fact": "Bees die after stinging and leave their stinger behind!",
+    "abilities": [
+      "Pollinates flowers and plants",
+      "Becomes aggressive when nest is destroyed",
+      "Sting inflicts poison effect",
+      "Returns to hive with pollen"
+    ],
+    "drops": [
+      {
+        "item": "minecraft:stinger",
+        "chance": "100%",
+        "amount": "1"
+      }
+    ]
+  },
+  {
+    "id": "minecraft:cave_spider",
+    "name": "Cave Spider",
+    "type": "neutral",
+    "icon": "/assets/img/mobs/neutral/Cave_Spider.webp",
+    "health": 12,
+    "damage": 2,
+    "description": "Poisonous spider • Smaller hitbox • Spawns in mines • Inflicts poison effect",
+    "version": "1.0.0",
+    "dimension": "Overworld",
+    "movement_speed": 0.3,
+    "size": {
+      "width": 0.7,
+      "height": 0.5
+    },
+    "spawn": {
+      "light_level": [
+        "0-15"
+      ],
+      "biome": "Mineshafts, Dark caves",
+      "structure": "Mineshaft"
+    },
+    "light_level": [
+      "0-15"
+    ],
+    "fun_fact": "Cave spiders are smaller than normal spiders and can fit through 1x1 holes!",
+    "abilities": [
+      "Poisonous bite",
+      "Can fit through small gaps",
+      "Hostile in darkness",
+      "Climbs walls"
+    ],
+    "drops": [
+      {
+        "item": "minecraft:string",
+        "chance": "100%",
+        "amount": "0-2"
+      },
+      {
+        "item": "minecraft:spider_eye",
+        "chance": "33%",
+        "amount": "1"
+      }
+    ]
+  },
+  {
+    "id": "minecraft:dolphin",
+    "name": "Dolphin",
+    "type": "neutral",
+    "icon": "/assets/img/mobs/neutral/Dolphin.webp",
+    "health": 10,
+    "damage": 0,
+    "description": "Friendly marine mammal • Helps players • Gives speed boost • Plays with items",
+    "version": "1.13",
+    "dimension": "Overworld",
+    "movement_speed": 1.2,
+    "size": {
+      "width": 0.9,
+      "height": 0.6
+    },
+    "spawn": {
+      "light_level": [
+        "0-15"
+      ],
+      "biome": "Ocean, Deep Ocean, Lukewarm Ocean",
+      "structure": "None"
+    },
+    "light_level": [
+      "0-15"
+    ],
+    "fun_fact": "Dolphins lead players to treasure when fed fish!",
+    "abilities": [
+      "Gives swimming speed boost",
+      "Leads to buried treasure",
+      "Jumps out of water",
+      "Plays with dropped items"
+    ],
+    "drops": [
+      {
+        "item": "minecraft:cod",
+        "chance": "100%",
+        "amount": "0-1"
+      }
+    ]
+  },
+  {
+    "id": "minecraft:drowned",
+    "name": "Drowned",
+    "type": "neutral",
+    "icon": "/assets/img/mobs/neutral/Drowned.webp",
+    "health": 20,
+    "damage": 2,
+    "description": "Undead water mob • Sometimes carries trident • Spawns in water bodies • Attacks on land",
+    "version": "1.13",
+    "dimension": "Overworld",
+    "movement_speed": 0.23,
+    "size": {
+      "width": 0.6,
+      "height": 1.95,
+      "baby": {
+        "width": 0.3,
+        "height": 0.975
+      }
+    },
+    "spawn": {
+      "light_level": [
+        "0-15"
+      ],
+      "biome": "Rivers, Oceans, Underwater",
+      "structure": "None"
+    },
+    "light_level": [
+      "0-15"
+    ],
+    "fun_fact": "Drowned can throw tridents and have a chance to drop gold!",
+    "abilities": [
+      "Can throw tridents",
+      "Swims underwater",
+      "Zombies drown in water to become drowned",
+      "Sometimes wears gold"
+    ],
+    "drops": [
+      {
+        "item": "minecraft:rotten_flesh",
+        "chance": "100%",
+        "amount": "0-2"
+      },
+      {
+        "item": "minecraft:gold_ingot",
+        "chance": "11%",
+        "amount": "1"
+      },
+      {
+        "item": "minecraft:trident",
+        "chance": "6.25%",
+        "amount": "1"
+      }
+    ]
+  },
+  {
+    "id": "minecraft:enderman",
+    "name": "Enderman",
+    "type": "neutral",
+    "icon": "/assets/img/mobs/neutral/Enderman.webp",
+    "health": 40,
+    "damage": 7,
+    "description": "Tall black mob • Becomes aggressive when looked at • Teleports • Carries blocks",
+    "version": "1.0.0",
+    "dimension": "Overworld, End",
+    "movement_speed": 0.3,
+    "size": {
+      "width": 0.6,
+      "height": 2.9
+    },
+    "spawn": {
+      "light_level": [
+        "0-15"
+      ],
+      "biome": "All biomes (at night), The End",
+      "structure": "None"
+    },
+    "light_level": [
+      "0-15"
+    ],
+    "fun_fact": "Endermen take damage from water and can pick up and carry blocks!",
+    "abilities": [
+      "Teleports when damaged",
+      "Becomes hostile when looked at",
+      "Can pick up and place blocks",
+      "Immune to projectiles"
+    ],
+    "drops": [
+      {
+        "item": "minecraft:ender_pearl",
+        "chance": "100%",
+        "amount": "0-1"
+      }
+    ]
+  },
+  {
+    "id": "minecraft:fox",
+    "name": "Fox",
+    "type": "neutral",
+    "icon": "/assets/img/mobs/neutral/Fox.webp",
+    "health": 10,
+    "damage": 2,
+    "description": "Shy nocturnal animal • Steals items • Sleeps during day • Two variants: red/snow",
+    "version": "1.14",
+    "dimension": "Overworld",
+    "movement_speed": 0.3,
+    "size": {
+      "width": 0.6,
+      "height": 0.7,
+      "baby": {
+        "width": 0.3,
+        "height": 0.35
+      }
+    },
+    "spawn": {
+      "light_level": [
+        "0-15"
+      ],
+      "biome": "Taiga, Giant Tree Taiga, Snowy Taiga",
+      "structure": "None"
+    },
+    "light_level": [
+      "0-15"
+    ],
+    "fun_fact": "Foxes can be bred with berries and carry items in their mouth!",
+    "abilities": [
+      "Steals and carries items in mouth",
+      "Jumps over fences",
+      "Sleeps during day",
+      "Hunts small animals"
+    ],
+    "drops": [
+      {
+        "item": "minecraft:sweet_berries",
+        "chance": "100%",
+        "amount": "1-2"
+      },
+      {
+        "item": "minecraft:experience_orb",
+        "chance": "100%",
+        "amount": "1-3"
+      }
+    ]
+  },
+  {
+    "id": "minecraft:goat",
+    "name": "Goat",
+    "type": "neutral",
+    "icon": "/assets/img/mobs/neutral/Goat.webp",
+    "health": 10,
+    "damage": 1,
+    "description": "Mountain dweller • Jumps high • Rams players • Gives milk • Two horn variants",
+    "version": "1.17",
+    "dimension": "Overworld",
+    "movement_speed": 0.2,
+    "size": {
+      "width": 0.9,
+      "height": 1.3,
+      "baby": {
+        "width": 0.45,
+        "height": 0.65
+      }
+    },
+    "spawn": {
+      "light_level": [
+        "7-15"
+      ],
+      "biome": "Mountains, Snowy Slopes",
+      "structure": "None"
+    },
+    "light_level": [
+      "0-15"
+    ],
+    "fun_fact": "Goats can jump extremely high and sometimes have only one horn!",
+    "abilities": [
+      "High jumps",
+      "Ram attack against players",
+      "Can be bred with wheat",
+      "Lands on feet without fall damage"
+    ],
+    "drops": [
+      {
+        "item": "minecraft:goat_horn",
+        "chance": "100%",
+        "amount": "1-2"
+      }
+    ]
+  },
+  {
+    "id": "minecraft:iron_golem",
+    "name": "Iron Golem",
+    "type": "neutral",
+    "icon": "/assets/img/mobs/neutral/Iron_Golem.webp",
+    "health": 100,
+    "damage": 7,
+    "description": "Village protector • High health • Throws enemies into air • Built by villagers",
+    "version": "1.0.0",
+    "dimension": "Overworld",
+    "movement_speed": 0.25,
+    "size": {
+      "width": 1.4,
+      "height": 2.7
+    },
+    "spawn": {
+      "light_level": [
+        "0-15"
+      ],
+      "biome": "Villages",
+      "structure": "Village"
+    },
+    "light_level": [
+      "0-15"
+    ],
+    "fun_fact": "Iron golems sometimes give poppies to villagers!",
+    "abilities": [
+      "High health and damage",
+      "Throws enemies into the air",
+      "Protects villagers",
+      "Can be built by player"
+    ],
+    "drops": [
+      {
+        "item": "minecraft:iron_ingot",
+        "chance": "100%",
+        "amount": "3-5"
+      },
+      {
+        "item": "minecraft:poppy",
+        "chance": "100%",
+        "amount": "0-2"
+      }
+    ]
+  },
+  {
+    "id": "minecraft:llama",
+    "name": "Llama",
+    "type": "neutral",
+    "icon": "/assets/img/mobs/neutral/Llama.webp",
+    "health": 15,
+    "damage": 1,
+    "description": "Neutral pack animal • Spits when provoked • Can carry chests • Various coat colors",
+    "version": "1.11",
+    "dimension": "Overworld",
+    "movement_speed": 0.175,
+    "size": {
+      "width": 0.9,
+      "height": 1.87,
+      "baby": {
+        "width": 0.45,
+        "height": 0.935
+      }
+    },
+    "spawn": {
+      "light_level": [
+        "7-15"
+      ],
+      "biome": "Savanna, Windswept Savanna",
+      "structure": "None"
+    },
+    "light_level": [
+      "0-15"
+    ],
+    "fun_fact": "Llamas spit at wolves and can form caravans when leashed!",
+    "abilities": [
+      "Spits when provoked",
+      "Can carry chests (3-15 slots)",
+      "Forms caravans with leads",
+      "Strength varies by coat color"
+    ],
+    "drops": [
+      {
+        "item": "minecraft:leather",
+        "chance": "100%",
+        "amount": "0-2"
+      }
+    ]
+  },
+  {
+    "id": "minecraft:panda",
+    "name": "Panda",
+    "type": "neutral",
+    "icon": "/assets/img/mobs/neutral/Panda.webp",
+    "health": 20,
+    "damage": 1,
+    "description": "Rare neutral animal • Various personalities • Eats bamboo • Rolls when sneezing",
+    "version": "1.14",
+    "dimension": "Overworld",
+    "movement_speed": 0.15,
+    "size": {
+      "width": 1.3,
+      "height": 1.25,
+      "baby": {
+        "width": 0.65,
+        "height": 0.625
+      }
+    },
+    "spawn": {
+      "light_level": [
+        "9-15"
+      ],
+      "biome": "Bamboo Jungle",
+      "structure": "None"
+    },
+    "light_level": [
+      "0-15"
+    ],
+    "fun_fact": "Pandas have different personalities like aggressive, lazy, or playful!",
+    "abilities": [
+      "Eats and breeds with bamboo",
+      "Sneezes and rolls sometimes",
+      "Various personalities",
+      "Baby pandas bounce on adults"
+    ],
+    "drops": [
+      {
+        "item": "minecraft:bamboo",
+        "chance": "100%",
+        "amount": "0-2"
+      }
+    ]
+  },
+  {
+    "id": "minecraft:piglin",
+    "name": "Piglin",
+    "type": "neutral",
+    "icon": "/assets/img/mobs/neutral/Piglin.webp",
+    "health": 16,
+    "damage": 5,
+    "description": "Nether inhabitant • Becomes hostile without gold armor • Trades with players • Collects gold",
+    "version": "1.16",
+    "dimension": "Nether",
+    "movement_speed": 0.35,
+    "size": {
+      "width": 0.6,
+      "height": 1.95,
+      "baby": {
+        "width": 0.3,
+        "height": 0.975
+      }
+    },
+    "spawn": {
+      "light_level": [
+        "0-15"
+      ],
+      "biome": "Nether Wastes, Crimson Forest",
+      "structure": "Bastion"
+    },
+    "light_level": [
+      "0-15"
+    ],
+    "fun_fact": "Piglins become immediately hostile if you mine gold without wearing gold armor!",
+    "abilities": [
+      "Barters gold for items",
+      "Becomes hostile without gold armor",
+      "Hunts and collects gold items",
+      "Can be bred with gold ingots"
+    ],
+    "drops": [
+      {
+        "item": "minecraft:gold_nugget",
+        "chance": "100%",
+        "amount": "0-1"
+      },
+      {
+        "item": "minecraft:gold_ingot",
+        "chance": "8.5%",
+        "amount": "1"
+      }
+    ]
+  },
+  {
+    "id": "minecraft:polar_bear",
+    "name": "Polar Bear",
+    "type": "neutral",
+    "icon": "/assets/img/mobs/neutral/Polar_Bear.webp",
+    "health": 30,
+    "damage": 6,
+    "description": "Large arctic dweller • Becomes aggressive if cub is threatened • Swims in water",
+    "version": "1.10",
+    "dimension": "Overworld",
+    "movement_speed": 0.25,
+    "size": {
+      "width": 1.4,
+      "height": 1.4,
+      "baby": {
+        "width": 0.7,
+        "height": 0.7
+      }
+    },
+    "spawn": {
+      "light_level": [
+        "7-15"
+      ],
+      "biome": "Snow biomes, Frozen Oceans",
+      "structure": "None"
+    },
+    "light_level": [
+      "0-15"
+    ],
+    "fun_fact": "Polar bears only become aggressive if you come near their cubs!",
+    "abilities": [
+      "Becomes aggressive when cub is threatened",
+      "Swims well in water",
+      "High health",
+      "Slow but strong attacks"
+    ],
+    "drops": [
+      {
+        "item": "minecraft:cod",
+        "chance": "75%",
+        "amount": "0-2"
+      },
+      {
+        "item": "minecraft:salmon",
+        "chance": "25%",
+        "amount": "0-2"
+      }
+    ]
+  },
+  {
+    "id": "minecraft:pufferfish",
+    "name": "Pufferfish",
+    "type": "neutral",
+    "icon": "/assets/img/mobs/neutral/Pufferfish.webp",
+    "health": 3,
+    "damage": 2,
+    "description": "Poisonous fish • Inflates when threatened • Inflicts poison effect • Swims in water",
+    "version": "1.13",
+    "dimension": "Overworld",
+    "movement_speed": 0.7,
+    "size": {
+      "width": 0.7,
+      "height": 0.7
+    },
+    "spawn": {
+      "light_level": [
+        "0-15"
+      ],
+      "biome": "Warm Ocean, Lukewarm Ocean",
+      "structure": "None"
+    },
+    "light_level": [
+      "0-15"
+    ],
+    "fun_fact": "Pufferfish inflate to three different sizes when threatened!",
+    "abilities": [
+      "Inflates when threatened",
+      "Poison spines on contact",
+      "Inflicts poison effect",
+      "Can be caught with water bucket"
+    ],
+    "drops": [
+      {
+        "item": "minecraft:pufferfish",
+        "chance": "100%",
+        "amount": "1"
+      },
+      {
+        "item": "minecraft:bone_meal",
+        "chance": "5%",
+        "amount": "1-2"
+      }
+    ]
+  },
+  {
+    "id": "minecraft:spider",
+    "name": "Spider",
+    "type": "neutral",
+    "icon": "/assets/img/mobs/neutral/Spider.webp",
+    "health": 16,
+    "damage": 2,
+    "description": "Nocturnal mob • Climbs walls • Becomes hostile in darkness • Large hitbox",
+    "version": "1.0.0",
+    "dimension": "Overworld",
+    "movement_speed": 0.3,
+    "size": {
+      "width": 1.4,
+      "height": 0.9
+    },
+    "spawn": {
+      "light_level": [
+        "0-15"
+      ],
+      "biome": "All Overworld biomes",
+      "structure": "None"
+    },
+    "light_level": [
+      "0-15"
+    ],
+    "fun_fact": "Spiders can climb through 1x1 gaps and become neutral in daylight!",
+    "abilities": [
+      "Climbs walls and ceilings",
+      "Hostile at night",
+      "Jumps on player",
+      "Can spawn with status effects"
+    ],
+    "drops": [
+      {
+        "item": "minecraft:string",
+        "chance": "100%",
+        "amount": "0-2"
+      },
+      {
+        "item": "minecraft:spider_eye",
+        "chance": "33%",
+        "amount": "1"
+      }
+    ]
+  },
+  {
+    "id": "minecraft:trader_llama",
+    "name": "Trader Llama",
+    "type": "neutral",
+    "icon": "/assets/img/mobs/neutral/Trader_Llama.webp",
+    "health": 15,
+    "damage": 1,
+    "description": "Wandering trader companion • Spits when provoked • Various coat colors • Despawns with trader",
+    "version": "1.14",
+    "dimension": "Overworld",
+    "movement_speed": 0.175,
+    "size": {
+      "width": 0.9,
+      "height": 1.87,
+      "baby": {
+        "width": 0.45,
+        "height": 0.935
+      }
+    },
+    "spawn": {
+      "light_level": [
+        "0-15"
+      ],
+      "biome": "All biomes (with wandering trader)",
+      "structure": "None"
+    },
+    "light_level": [
+      "0-15"
+    ],
+    "fun_fact": "Trader llamas always spawn with the wandering trader and despawn with him!",
+    "abilities": [
+      "Spits when provoked",
+      "Follows wandering trader",
+      "Can carry chests",
+      "Forms caravans"
+    ],
+    "texture": [
+      {
+        "name": "Trader Llama Default Texture",
+        "description": "Trader Llama default texture.",
+        "file": "/assets/img/texture/mobs/llama/trader_llama.png"
+      }
+    ],
+    "drops": [
+      {
+        "item": "minecraft:leather",
+        "chance": "100%",
+        "amount": "0-2"
+      }
+    ]
+  },
+  {
+    "id": "minecraft:wolf",
+    "name": "Wolf",
+    "type": "neutral",
+    "icon": "/assets/img/mobs/neutral/Wolf.webp",
+    "health": 8,
+    "damage": 3,
+    "description": "Wild dog • Becomes hostile when attacked • Can be tamed with bones • Tamed: protects player",
+    "version": "1.0.0",
+    "dimension": "Overworld",
+    "movement_speed": 0.3,
+    "size": {
+      "width": 0.6,
+      "height": 0.85,
+      "baby": {
+        "width": 0.3,
+        "height": 0.425
+      }
+    },
+    "spawn": {
+      "light_level": [
+        "7-15"
+      ],
+      "biome": "Forest, Taiga, Giant Tree Taiga",
+      "structure": "None"
+    },
+    "light_level": [
+      "0-15"
+    ],
+    "fun_fact": "Tamed wolves get red hearts when hurt and can be healed with meat!",
+    "abilities": [
+      "Can be tamed with bones",
+      "Attacks when provoked",
+      "Tamed: follows and protects player",
+      "Can be made to sit"
+    ],
+    "drops": [
+      {
+        "item": "minecraft:bone",
+        "chance": "33%",
+        "amount": "0-1"
+      },
+      {
+        "item": "minecraft:experience_orb",
+        "chance": "100%",
+        "amount": "1-3"
+      }
+    ]
+  },
+  {
+    "id": "minecraft:zombified_piglin",
+    "name": "Zombified Piglin",
+    "type": "neutral",
+    "icon": "/assets/img/mobs/neutral/Zombified_Piglin.webp",
+    "health": 20,
+    "damage": 5,
+    "description": "Undead Nether inhabitant • Becomes hostile when attacked • Teleports in Nether",
+    "version": "1.16",
+    "dimension": "Nether",
+    "movement_speed": 0.23,
+    "size": {
+      "width": 0.6,
+      "height": 1.95,
+      "baby": {
+        "width": 0.3,
+        "height": 0.975
+      }
+    },
+    "spawn": {
+      "light_level": [
+        "0-15"
+      ],
+      "biome": "Nether Wastes, Soul Sand Valley",
+      "structure": "None"
+    },
+    "light_level": [
+      "0-15"
+    ],
+    "fun_fact": "Zombified piglins can spawn naturally in the Nether or be created by lightning!",
+    "abilities": [
+      "Becomes hostile when attacked",
+      "Teleports in the Nether",
+      "Can carry gold swords",
+      "Baby version is faster"
+    ],
+    "drops": [
+      {
+        "item": "minecraft:rotten_flesh",
+        "chance": "100%",
+        "amount": "0-1"
+      },
+      {
+        "item": "minecraft:gold_nugget",
+        "chance": "8.5%",
+        "amount": "1"
+      },
+      {
+        "item": "minecraft:gold_ingot",
+        "chance": "2.5%",
+        "amount": "1"
+      }
+    ]
+  },
+  {
+    "id": "minecraft:nautilus",
+    "name": "Nautilus",
+    "type": "neutral",
+    "icon": "/assets/img/mobs/neutral/Nautilus_Breathe.gif",
+    "health": 15,
+    "damage": 3,
+    "description": "Ancient cephalopod • Can be tamed with pufferfish • Wears nautilus armor • Rideable with saddle",
+    "version": "1.21.11",
+    "dimension": "Overworld",
+    "movement_speed": 1,
+    "size": {
+      "width": 0.95,
+      "height": 0.875,
+      "baby": {
+        "width": 0.475,
+        "height": 0.4375
+      }
+    },
+    "spawn": {
+      "light_level": [
+        "0-15"
+      ],
+      "biome": "Cold Ocean, Deep Cold Ocean, Lukewarm Ocean, Deep Lukewarm Ocean, Ocean, Deep Ocean, Frozen Ocean, Deep Frozen Ocean, Warm Ocean",
+      "structure": "None"
+    },
+    "light_level": [
+      "0-15"
+    ],
+    "fun_fact": "The nautilus is one of the oldest living animal species and is often called a living fossil!",
+    "abilities": [
+      "Can be tamed with pufferfish",
+      "Rideable with saddle",
+      "Swims in all ocean biomes",
+      "Can wear nautilus armor"
+    ],
+    "drops": [
+      {
+        "item": "minecraft:nautilus_shell",
+        "chance": "100%",
+        "amount": "1"
+      },
+      {
+        "item": "XP 1-3",
+        "chance": "100%",
+        "amount": "1"
+      }
+    ]
+  },
+  {
+    "id": "minecraft:zombie_nautilus",
+    "name": "Zombie Nautilus",
+    "type": "neutral",
+    "icon": "/assets/img/mobs/neutral/Zombie_Nautilus.gif",
+    "health": 15,
+    "damage": 3,
+    "description": "Undead nautilus variant • Can be tamed with pufferfish • Faster than normal nautilus • Also spawns in dripstone caves",
+    "version": "Upcoming",
+    "dimension": "Overworld",
+    "movement_speed": 1.1,
+    "size": {
+      "width": 0.875,
+      "height": 0.95
+    },
+    "spawn": {
+      "light_level": [
+        "0-15"
+      ],
+      "biome": "Cold Ocean, Deep Cold Ocean, Lukewarm Ocean, Deep Lukewarm Ocean, Ocean, Deep Ocean, Frozen Ocean, Deep Frozen Ocean, Warm Ocean, Dripstone Caves",
+      "structure": "None"
+    },
+    "light_level": [
+      "0-15"
+    ],
+    "fun_fact": "Zombie nautiluses are faster than normal nautiluses and can spawn in dripstone caves. Occasionally, they spawn with a drowned riding a trident on their back, making them hostile.",
+    "abilities": [
+      "Can be tamed with pufferfish",
+      "Faster movement than normal nautilus",
+      "Rideable with saddle",
+      "Can wear nautilus armor"
+    ],
+    "drops": [
+      {
+        "item": "minecraft:nautilus_shell",
+        "chance": "75%",
+        "amount": "1"
+      },
+      {
+        "item": "minecraft:rotten_flesh",
+        "chance": "50%",
+        "amount": "0-1"
+      },
+      {
+        "item": "XP 1-3",
+        "chance": "100%",
+        "amount": "1"
+      }
+    ]
+  }
+]

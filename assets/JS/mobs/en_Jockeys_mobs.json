@@ -1,0 +1,397 @@
+[
+  {
+    "id": "minecraft:camel_husk_jockey",
+    "name": "Camel Husk Jockey",
+    "type": "hostile",
+    "icon": "/assets/img/mobs/hostile/Camel_Husk_Jockey.png",
+    "health": 32,
+    "damage": "Varies (Husk: 2.5–4.5, Parched: 2–4)",
+    "description": "A rare jockey where a Husk and a Parched ride a camel together. The Husk attacks up close, while the Parched fires arrows from a distance.",
+    "version": "1.20",
+    "numeric_id": "–",
+    "dimension": "Overworld (Desert Biomes)",
+    "movement_speed": 0.25,
+    "size": {
+      "width": "Width: 1.4",
+      "height": "Height: 2.0"
+    },
+    "spawn": {
+      "light_level": [
+        "7–15"
+      ],
+      "biome": "Desert, Badlands",
+      "structure": "Desert Temples, Villages",
+      "note": "Spawns only at night in desert biomes"
+    },
+    "equipment": {
+      "husk": "Iron Spear (may be enchanted), Armor (rarely)",
+      "parched": "Bow (may be enchanted), Armor (rarely)"
+    },
+    "light_level": [
+      "7–15"
+    ],
+    "fun_fact": "The Parched is an undead variant of the Husk that only appears in this combination.",
+    "abilities": [
+      "Husk attacks with spear in melee",
+      "Parched shoots arrows from range",
+      "Camel moves faster than normal Husks"
+    ],
+    "drops": [
+      {
+        "item": "Rotten Flesh",
+        "chance": "100% (Husk)"
+      },
+      {
+        "item": "Iron Spear",
+        "chance": "8.5% (Husk)"
+      },
+      {
+        "item": "Bow",
+        "chance": "8.5% (Parched)"
+      },
+      {
+        "item": "Experience",
+        "chance": "5–10"
+      }
+    ],
+    "xp": "5–10"
+  },
+  {
+    "id": "minecraft:zombie_horseman",
+    "name": "Zombie Horseman",
+    "type": "hostile",
+    "icon": "/assets/img/mobs/hostile/Zombie_Horseman.png",
+    "health": 25,
+    "damage": 3,
+    "description": "A zombie riding a zombie horse. Both attack the player; the zombie uses a spear or fists, while the horse kicks.",
+    "version": "1.14",
+    "numeric_id": "–",
+    "dimension": "Overworld",
+    "movement_speed": 0.25,
+    "size": {
+      "width": "Width: 1.4",
+      "height": "Height: 2.0"
+    },
+    "spawn": {
+      "light_level": [
+        "7–15"
+      ],
+      "biome": "All Overworld biomes",
+      "structure": "None",
+      "note": "Rare spawn event at night"
+    },
+    "equipment": {
+      "zombie": "Iron Spear (may be enchanted), Armor (rarely)"
+    },
+    "light_level": [
+      "7–15"
+    ],
+    "fun_fact": "The zombie horse is an undead horse variant and cannot be tamed.",
+    "abilities": [
+      "Zombie attacks with spear or fists"
+    ],
+    "drops": [
+      {
+        "item": "Rotten Flesh",
+        "chance": "100% (Zombie)"
+      },
+      {
+        "item": "Iron Spear",
+        "chance": "8.5% (Zombie)"
+      },
+      {
+        "item": "Experience",
+        "chance": "5–10"
+      }
+    ],
+    "xp": "5–10"
+  },
+  {
+    "id": "minecraft:zombie_nautilus_jockey",
+    "name": "Zombie Nautilus Jockey",
+    "type": "hostile",
+    "icon": "/assets/img/mobs/hostile/Zombie_Nautilus_Jockey.png",
+    "health": 15,
+    "damage": 4,
+    "description": "A drowned zombie riding a zombie nautilus. The drowned throws tridents, while the nautilus attacks with tentacles.",
+    "version": "1.19",
+    "numeric_id": "–",
+    "dimension": "Ocean, Rivers",
+    "movement_speed": 0.2,
+    "size": {
+      "width": "Width: 1.0",
+      "height": "Height: 1.5"
+    },
+    "spawn": {
+      "light_level": [
+        "0–7 (underwater)"
+      ],
+      "biome": "Ocean, River, Swamp",
+      "structure": "Underwater Ruins, Shipwrecks",
+      "note": "Spawns only underwater"
+    },
+    "equipment": {
+      "drowned": "Trident (may be enchanted)"
+    },
+    "light_level": [
+      "0–7"
+    ],
+    "fun_fact": "The zombie nautilus is a living nautilus shell that exists only in this combination.",
+    "abilities": [
+      "Drowned throws tridents (also melee with hands)"
+    ],
+    "drops": [
+      {
+        "item": "Rotten Flesh",
+        "chance": "100% (Drowned)"
+      },
+      {
+        "item": "Trident",
+        "chance": "8.5% (Drowned)"
+      },
+      {
+        "item": "Nautilus Shell",
+        "chance": "10% (Nautilus)"
+      },
+      {
+        "item": "Experience",
+        "chance": "5–10"
+      }
+    ],
+    "xp": "5–10"
+  },
+  {
+    "id": "minecraft:skeleton_horseman",
+    "name": "Skeleton Horseman",
+    "type": "hostile",
+    "icon": "/assets/img/mobs/hostile/Skeleton_Horseman.png",
+    "health": 15,
+    "damage": 3,
+    "description": "A skeleton riding a skeleton horse. It appears when the player triggers a skeleton trap. The skeleton shoots arrows, and the horse can also kick.",
+    "version": "1.9",
+    "numeric_id": "–",
+    "dimension": "Overworld",
+    "movement_speed": 0.3,
+    "size": {
+      "width": "Width: 1.4",
+      "height": "Height: 2.0"
+    },
+    "spawn": {
+      "light_level": [
+        "Only triggered by skeleton trap"
+      ],
+      "biome": "All",
+      "structure": "None",
+      "note": "Appears only during thunderstorms when a player is nearby."
+    },
+    "equipment": {
+      "skeleton": "Bow (enchanted), Iron Helmet (enchanted), Armor (rarely)"
+    },
+    "light_level": [
+      "–"
+    ],
+    "fun_fact": "The Skeleton Horseman is the only way to obtain a skeleton horse (it can later be tamed).",
+    "abilities": [
+      "Skeleton shoots arrows"
+    ],
+    "drops": [
+      {
+        "item": "Bone",
+        "chance": "100% (Skeleton)"
+      },
+      {
+        "item": "Bow",
+        "chance": "8.5% (Skeleton)"
+      },
+      {
+        "item": "Iron Helmet",
+        "chance": "8.5% (Skeleton)"
+      },
+      {
+        "item": "Experience",
+        "chance": "5–10"
+      }
+    ],
+    "xp": "5–10"
+  },
+  {
+    "id": "minecraft:chicken_jockey",
+    "name": "Chicken Jockey",
+    "type": "hostile",
+    "icon": "/assets/img/mobs/hostile/Chicken_Jockey.png",
+    "health": 20,
+    "damage": 3,
+    "description": "A baby zombie (or variant) riding a chicken. It moves quickly and is hard to hit.",
+    "version": "1.8",
+    "numeric_id": "–",
+    "dimension": "Overworld",
+    "movement_speed": 0.25,
+    "size": {
+      "width": "Width: 0.6",
+      "height": "Height: 1.0"
+    },
+    "spawn": {
+      "light_level": [
+        "7–15"
+      ],
+      "biome": "All Overworld biomes",
+      "structure": "None",
+      "note": "Very rare; baby zombie spawns with a 5% chance on a chicken."
+    },
+    "equipment": {
+      "zombie": "Iron Spear (may be enchanted), Armor (rarely)"
+    },
+    "light_level": [
+      "7–15"
+    ],
+    "fun_fact": "The chicken continues to lay eggs after the jockey dies and can be tamed.",
+    "abilities": [
+      "Baby zombie attacks",
+      "Chicken moves fast and drops Eggs"
+    ],
+    "drops": [
+      {
+        "item": "Rotten Flesh",
+        "chance": "100% (Zombie)"
+      },
+      {
+        "item": "Iron Spear",
+        "chance": "8.5% (Zombie)"
+      },
+      {
+        "item": "Raw Chicken",
+        "chance": "100% (Chicken)"
+      },
+      {
+        "item": "Experience",
+        "chance": "5–10"
+      }
+    ],
+    "xp": "5–10"
+  },
+  {
+    "id": "minecraft:spider_jockey",
+    "name": "Spider Jockey",
+    "type": "hostile",
+    "icon": "/assets/img/mobs/hostile/Spider_Jockey.png",
+    "health": 16,
+    "damage": 3,
+    "description": "A skeleton (or Bogged/Wither Skeleton) riding a spider. The rider shoots arrows, and the spider leaps and attacks with its legs.",
+    "version": "Alpha",
+    "numeric_id": "–",
+    "dimension": "Overworld (Spiders) / Nether (Wither Skeleton)",
+    "movement_speed": 0.3,
+    "size": {
+      "width": "Width: 1.4",
+      "height": "Height: 1.0"
+    },
+    "spawn": {
+      "light_level": [
+        "7–15 (Overworld)"
+      ],
+      "biome": "All Overworld biomes (Spider); Wither Skeleton only in Nether",
+      "structure": "Nether Fortress",
+      "note": "Very rare; 1% of spiders spawn with a skeleton rider."
+    },
+    "equipment": {
+      "skeleton": "Bow (may be enchanted), Armor (rarely)",
+      "bogged": "Bow (may be enchanted), Armor (rarely)",
+      "wither_skeleton": "Stone Sword"
+    },
+    "light_level": [
+      "7–15"
+    ],
+    "fun_fact": "In Nether Fortresses, a Wither Skeleton can also ride a spider.",
+    "abilities": [
+      "Rider shoots arrows or attacks with sword",
+      "Spider jumps and climbs walls"
+    ],
+    "drops": [
+      {
+        "item": "Bone",
+        "chance": "100% (Skeleton)"
+      },
+      {
+        "item": "Bow",
+        "chance": "8.5% (Skeleton)"
+      },
+      {
+        "item": "Stone Sword",
+        "chance": "8.5% (Wither Skeleton)"
+      },
+      {
+        "item": "Spider Eye",
+        "chance": "33% (Spider)"
+      },
+      {
+        "item": "Experience",
+        "chance": "5–10"
+      }
+    ],
+    "xp": "5–10"
+  },
+  {
+    "id": "minecraft:cave_spider_jockey",
+    "name": "Cave Spider Jockey",
+    "type": "hostile",
+    "icon": "/assets/img/mobs/hostile/Cave_Spider_Jockey.png",
+    "health": 12,
+    "damage": 2,
+    "description": "A skeleton (or variant) riding a cave spider. The cave spider poisons, and the rider shoots arrows or attacks with a sword.",
+    "version": "1.8",
+    "numeric_id": "–",
+    "dimension": "Overworld (Mines, Dungeons)",
+    "movement_speed": 0.3,
+    "size": {
+      "width": "Width: 0.7",
+      "height": "Height: 0.5"
+    },
+    "spawn": {
+      "light_level": [
+        "7–15"
+      ],
+      "biome": "All (mainly in mines and dungeons)",
+      "structure": "Mines, Dungeons, Strongholds",
+      "note": "Very rare; 1% of cave spiders spawn with a rider."
+    },
+    "equipment": {
+      "skeleton": "Bow (may be enchanted), Armor (rarely)",
+      "stray": "Bow (may be enchanted), Armor (rarely)",
+      "bogged": "Bow (may be enchanted), Armor (rarely)",
+      "parched": "Bow (may be enchanted), Armor (rarely)",
+      "wither_skeleton": "Stone Sword"
+    },
+    "light_level": [
+      "7–15"
+    ],
+    "fun_fact": "The cave spider is smaller than normal spiders and inflicts poison (for 7 seconds on Normal).",
+    "abilities": [
+      "Rider shoots arrows or attacks with sword",
+      "Cave spider attacks and poisons",
+      "Can pass through narrow spaces"
+    ],
+    "drops": [
+      {
+        "item": "Bone",
+        "chance": "100% (Skeleton)"
+      },
+      {
+        "item": "Bow",
+        "chance": "8.5% (Skeleton)"
+      },
+      {
+        "item": "Stone Sword",
+        "chance": "8.5% (Wither Skeleton)"
+      },
+      {
+        "item": "Spider Eye",
+        "chance": "33% (Cave Spider)"
+      },
+      {
+        "item": "Experience",
+        "chance": "5–10"
+      }
+    ],
+    "xp": "5–10"
+  }
+]

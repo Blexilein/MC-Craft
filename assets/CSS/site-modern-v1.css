@@ -1,0 +1,1099 @@
+/* Shared UI refinements for MC-Craft v1.0.0 */
+/* Self-hosted (no request to Google's servers, see assets/fonts/fonts.css) */
+@import url('/assets/fonts/fonts.css');
+
+:root {
+    --ui-font: 'Space Grotesk', 'Segoe UI', sans-serif;
+    --title-font: 'Chakra Petch', 'Minecraft', sans-serif;
+    --surface-glass: color-mix(in srgb, var(--bg-secondary) 84%, #ffffff 16%);
+    --ring: color-mix(in srgb, var(--primary) 75%, #ffffff 25%);
+    --container-max: min(1280px, 92vw);
+    --hero-title-fluid: clamp(1.8rem, 4.2vw, 4.2rem);
+    --section-title-fluid: clamp(1.35rem, 2.8vw, 2.8rem);
+    --soft-border: 1px solid color-mix(in srgb, var(--border-color) 65%, var(--primary) 35%);
+    --chroma-a: #00d084;
+    --chroma-b: #48a8ff;
+    --chroma-c: #ff8a3d;
+    --heading-gradient: linear-gradient(52deg, var(--chroma-a), var(--chroma-b), var(--chroma-c));
+}
+
+[data-theme="nether"] {
+    --chroma-a: #ff6a3d;
+    --chroma-b: #ffb02e;
+    --chroma-c: #ff3d6e;
+}
+
+[data-theme="end"] {
+    --chroma-a: #a671ff;
+    --chroma-b: #57d2ff;
+    --chroma-c: #f39cff;
+}
+
+html {
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+    overflow-x: hidden;
+    width: 100%;
+}
+
+body {
+    font-family: var(--ui-font);
+    background:
+        radial-gradient(1000px 600px at 15% -10%, color-mix(in srgb, var(--primary) 20%, transparent), transparent 70%),
+        radial-gradient(900px 500px at 100% 0%, color-mix(in srgb, var(--secondary, #3b82f6) 22%, transparent), transparent 68%),
+        var(--bg-primary);
+    overflow-x: hidden;
+    width: 100%;
+    max-width: 100vw;
+}
+
+/* Global typography lock so all pages look consistent.
+   Some page-specific stylesheets still set font-family: 'Minecraft' (loaded from
+   the unreliable third-party fonts.cdnfonts.com CDN) on scattered elements, which
+   made text look different from page to page whenever that CDN font failed to
+   load. This lock forces every text element site-wide onto the two fonts below,
+   regardless of what any individual page CSS says. Icon glyphs (Font Awesome,
+   rendered via <i class="fa..."> tags) are intentionally left untouched below so
+   icons keep rendering as icons instead of as their fallback letters. */
+body,
+button,
+input,
+textarea,
+select,
+p,
+span,
+div,
+a,
+li,
+td,
+th,
+label,
+small,
+strong,
+em,
+b,
+blockquote,
+code,
+pre,
+figcaption,
+caption,
+legend,
+dt,
+dd {
+    font-family: var(--ui-font) !important;
+}
+
+h1, h2, h3, h4, h5, h6, .hero-title, .section-title, .logo-text, .tool-title, .cta-title, .footer-title {
+    font-family: var(--title-font) !important;
+    letter-spacing: 0.02em;
+}
+
+h1,
+h2,
+.hero-title,
+.section-title,
+.cta-title {
+    background: var(--heading-gradient);
+    background-size: 220% 220%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: var(--text-primary);
+    text-shadow: 0 0 26px color-mix(in srgb, var(--chroma-a) 30%, transparent);
+    animation: heroTitleSpectrum 5.2s ease-in-out infinite;
+}
+
+h3,
+h4,
+h5,
+h6,
+.tool-title,
+.footer-title {
+    color: color-mix(in srgb, var(--text-primary) 78%, var(--chroma-b) 22%);
+}
+
+.container {
+    max-width: var(--container-max);
+    padding-inline: clamp(14px, 2.6vw, 28px);
+}
+
+.hero-title {
+    font-size: var(--hero-title-fluid);
+    line-height: 1.08;
+}
+
+.hero .hero-title,
+section .hero-title {
+    background: var(--heading-gradient);
+    background-size: 220% 220%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0 0 30px color-mix(in srgb, var(--chroma-a) 35%, transparent);
+    animation: heroTitleSpectrum 5.2s ease-in-out infinite;
+}
+
+.hero .hero-title .highlight,
+section .hero-title .highlight {
+    color: inherit;
+    background: none;
+    -webkit-text-fill-color: inherit;
+}
+
+.section-title {
+    font-size: var(--section-title-fluid);
+}
+
+.header {
+    border-bottom: var(--soft-border);
+    background:
+        linear-gradient(120deg, color-mix(in srgb, var(--chroma-a) 18%, transparent), transparent 35%),
+        linear-gradient(240deg, color-mix(in srgb, var(--chroma-b) 14%, transparent), transparent 45%),
+        color-mix(in srgb, var(--bg-primary) 92%, #000 8%);
+    position: relative;
+    overflow: visible;
+    z-index: 1200;
+}
+
+.header.scrolled {
+    background:
+        linear-gradient(120deg, color-mix(in srgb, var(--chroma-a) 20%, transparent), transparent 34%),
+        linear-gradient(240deg, color-mix(in srgb, var(--chroma-b) 16%, transparent), transparent 46%),
+        color-mix(in srgb, var(--bg-primary) 90%, #000 10%);
+    border-bottom: 1px solid color-mix(in srgb, var(--chroma-b) 40%, var(--border-color) 60%);
+}
+
+.header::before {
+    content: "";
+    position: absolute;
+    inset: auto -10% 0;
+    height: 2px;
+    background: linear-gradient(90deg, var(--chroma-a), var(--chroma-b), var(--chroma-c), var(--chroma-a));
+    background-size: 200% 100%;
+    opacity: 0.85;
+    animation: chromaLine 8s linear infinite;
+    pointer-events: none;
+}
+
+.header::after {
+    content: "";
+    position: absolute;
+    top: -120%;
+    left: -30%;
+    width: 60%;
+    height: 260%;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.06), transparent);
+    transform: rotate(14deg);
+    animation: none;
+    pointer-events: none;
+    display: none;
+}
+
+.header-content {
+    min-height: 76px;
+    gap: clamp(8px, 1.2vw, 16px);
+    position: relative;
+    z-index: 1;
+}
+
+.logo-text {
+    background: linear-gradient(90deg, var(--chroma-a), var(--chroma-b));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.nav-link,
+.dropdown-btn.nav-link {
+    color: color-mix(in srgb, var(--text-primary) 78%, var(--chroma-b) 22%);
+}
+
+.nav-link:hover,
+.dropdown-btn.nav-link:hover {
+    background-color: color-mix(in srgb, var(--bg-surface) 62%, var(--chroma-a) 38%);
+    color: #fff;
+}
+
+.nav-link.active,
+.dropdown-btn.nav-link.active {
+    background: linear-gradient(135deg, color-mix(in srgb, var(--chroma-a) 46%, transparent), color-mix(in srgb, var(--chroma-b) 42%, transparent));
+    color: #fff;
+}
+
+.nav-link.active::after,
+.dropdown-btn.nav-link.active::after {
+    background: var(--chroma-c);
+}
+
+.theme-btn,
+.sound-btn,
+.lang-btn,
+.mobile-menu-btn,
+.close-btn {
+    border: 1px solid color-mix(in srgb, var(--chroma-b) 36%, var(--border-color) 64%);
+    background:
+        linear-gradient(145deg, color-mix(in srgb, var(--chroma-a) 16%, transparent), transparent 55%),
+        color-mix(in srgb, var(--bg-surface) 88%, #000 12%);
+}
+
+.theme-btn:hover,
+.sound-btn:hover,
+.lang-btn:hover,
+.mobile-menu-btn:hover,
+.close-btn:hover {
+    border-color: color-mix(in srgb, var(--chroma-c) 52%, var(--border-color) 48%);
+    transform: translateY(-1px);
+}
+
+.theme-dropdown,
+.dropdown-menu,
+.mobile-nav,
+.version-card,
+.category,
+.tool-card,
+.content-card,
+.info-card,
+.section-card,
+.item-card,
+.mob-card {
+    border: var(--soft-border);
+    backdrop-filter: blur(10px);
+}
+
+.dropdown-menu,
+.theme-dropdown {
+    z-index: 1300;
+}
+
+.mobile-nav {
+    z-index: 1400;
+}
+
+.footer-col {
+    backdrop-filter: blur(10px);
+}
+
+.btn,
+.theme-btn,
+.lang-btn,
+.sound-btn,
+.mobile-menu-btn,
+.close-btn,
+.back-to-top {
+    min-height: 44px;
+    min-width: 44px;
+}
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 11px 22px;
+    border-radius: 12px;
+    font-weight: 600;
+    text-decoration: none;
+    cursor: pointer;
+    border: 2px solid transparent !important;
+    transition: transform 180ms ease, box-shadow 180ms ease, filter 180ms ease;
+}
+
+.btn:hover {
+    transform: translateY(-1px);
+    filter: brightness(1.06);
+}
+
+/* Verbindliche Grundfarben fuer alle drei Button-Varianten, damit sie auf
+   jeder Seite gleich aussehen - manche Seiten-CSS-Dateien (z.B. coming-soon.css)
+   definieren .btn-primary/.btn-outline gar nicht, andere (z.B.
+   advancement-generator.css) ueberschreiben nur den Rahmen und lassen den
+   Rest unstyled zurueck. !important auf den entscheidenden Eigenschaften,
+   damit das nicht mehr passieren kann, egal was eine einzelne Seite sonst
+   noch an .btn-Regeln mitbringt. */
+.btn-primary {
+    background: var(--primary-gradient, var(--primary, #00A86B)) !important;
+    color: #fff !important;
+    border-color: transparent !important;
+}
+
+.btn-outline {
+    background: transparent !important;
+    color: var(--primary, #00A86B) !important;
+    border-color: var(--primary, #00A86B) !important;
+}
+
+.btn-secondary {
+    background-color: var(--bg-surface) !important;
+    color: var(--text-primary) !important;
+    border-color: var(--border-color) !important;
+}
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible {
+    outline: 2px solid var(--ring);
+    outline-offset: 2px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.loading-progress {
+    width: min(320px, 78vw);
+    height: 6px;
+    border-radius: 999px;
+    background: color-mix(in srgb, var(--bg-surface) 88%, #000 12%);
+    overflow: hidden;
+    position: relative;
+}
+
+/* Ersetzt die alte, endlose Lade-Animation der einzelnen Seiten-CSS-Dateien */
+.loading-progress::after {
+    content: none;
+}
+
+.loading-progress-bar {
+    position: absolute;
+    inset: 0;
+    width: 0%;
+    border-radius: inherit;
+    background: linear-gradient(90deg, var(--chroma-a), var(--chroma-b), var(--chroma-c));
+    transition: width 0.15s ease-out;
+}
+
+.loading-percent {
+    display: block;
+    margin-top: 8px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--text-secondary, #94A3B8);
+    font-variant-numeric: tabular-nums;
+    letter-spacing: 0.02em;
+    text-align: center;
+}
+
+.main {
+    overflow-x: clip;
+}
+
+html {
+    scroll-padding-top: 96px;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.container > * {
+    min-width: 0;
+}
+
+section[id],
+.hero[id] {
+    scroll-margin-top: 96px;
+}
+
+.footer-grid {
+    gap: clamp(14px, 1.8vw, 22px);
+}
+
+.footer {
+    background:
+        linear-gradient(180deg, color-mix(in srgb, var(--bg-secondary) 86%, transparent), var(--bg-primary)),
+        var(--bg-primary);
+}
+
+.footer-content {
+    border-top: var(--soft-border);
+    padding-top: clamp(16px, 2vw, 24px);
+}
+
+.footer-grid {
+    grid-template-columns: repeat(3, minmax(200px, 1fr));
+    align-items: start;
+}
+
+.footer-title {
+    font-family: var(--title-font);
+    letter-spacing: 0.03em;
+    margin-bottom: 0.8rem;
+}
+
+.footer-links a {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 2px 0;
+    color: color-mix(in srgb, var(--text-secondary) 92%, #ffffff 8%);
+}
+
+.footer-links a:hover {
+    color: var(--primary);
+    transform: translateX(2px);
+}
+
+.footer-bottom {
+    margin-top: clamp(10px, 2vw, 20px);
+    padding-top: clamp(12px, 1.8vw, 18px);
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: center;
+ /* padding-top: var(--spacing-lg); */
+    border-top: 1px solid var(--border-color);
+    gap: var(--spacing-md);
+    align-items: center;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+.copyright {
+    color: var(--text-muted);
+    font-size: var(--text-sm);
+    text-align: center;
+}
+
+.copyright p {
+    margin: 0;
+    font-size: 1.1rem;
+}
+
+.copyright p + p {
+    margin-top: 6px;
+}
+
+.footer-meta {
+    gap: 10px;
+}
+
+.version,
+.changelog.active {
+    text-align: center;
+    border: var(--soft-border);
+    border-radius: 999px;
+    padding: 6px 12px;
+}
+
+/* Shared animation system across all pages */
+body {
+    animation: pageFadeIn 560ms ease-out both;
+}
+
+.hero-content,
+.hero-image,
+.section-header,
+.tool-card,
+.support-card,
+.email-card,
+.faq-item,
+.timeline-item,
+.version-card,
+.feature-item,
+.stat-item,
+.team-card {
+    animation: riseFadeIn 680ms cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+.hero-image {
+    animation-delay: 120ms;
+}
+
+.section-header {
+    animation-delay: 80ms;
+}
+
+.mobile-nav-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: var(--spacing-md);
+    border-bottom: 1px solid var(--border-color);
+}
+
+.mobile-nav {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 280px;
+    height: 100vh;
+    background-color: var(--bg-primary);
+    border-right: 1px solid var(--border-color);
+    z-index: 1001;
+    transition: left var(--transition-normal);
+    overflow-y: auto;
+}
+
+.mobile-nav {
+    z-index: 1400;
+}
+
+.mobile-nav.show {
+    left: 0;
+}
+
+.tool-card:nth-child(1),
+.feature-item:nth-child(1),
+.faq-item:nth-child(1),
+.timeline-item:nth-child(1) { animation-delay: 40ms; }
+.tool-card:nth-child(2),
+.feature-item:nth-child(2),
+.faq-item:nth-child(2),
+.timeline-item:nth-child(2) { animation-delay: 80ms; }
+.tool-card:nth-child(3),
+.feature-item:nth-child(3),
+.faq-item:nth-child(3),
+.timeline-item:nth-child(3) { animation-delay: 120ms; }
+.tool-card:nth-child(4),
+.feature-item:nth-child(4),
+.faq-item:nth-child(4),
+.timeline-item:nth-child(4) { animation-delay: 160ms; }
+
+.hero-bg-grid {
+    position: relative;
+    isolation: isolate;
+}
+
+.hero-bg-grid::before,
+.hero-bg-grid::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    z-index: -1;
+}
+
+.hero-bg-grid::before {
+    background: radial-gradient(320px 180px at 22% 35%, color-mix(in srgb, var(--primary) 26%, transparent), transparent 70%);
+    animation: ambientShift 8s ease-in-out infinite;
+}
+
+.hero-bg-grid::after {
+    background: radial-gradient(360px 240px at 78% 66%, color-mix(in srgb, var(--secondary, #60a5fa) 22%, transparent), transparent 72%);
+    animation: ambientShift 10s ease-in-out infinite reverse;
+}
+
+.btn,
+.tool-card,
+.support-card,
+.email-card,
+.feature-item,
+.grid-item,
+.version-card,
+.faq-item {
+    transition: transform 220ms ease, box-shadow 220ms ease, border-color 220ms ease, filter 220ms ease;
+}
+
+.btn:hover,
+.tool-card:hover,
+.support-card:hover,
+.email-card:hover,
+.feature-item:hover,
+.grid-item:hover,
+.version-card:hover,
+.faq-item:hover {
+    filter: saturate(1.06);
+}
+
+.back-to-top.show {
+    animation: backTopPop 300ms cubic-bezier(0.34, 1.56, 0.64, 1) both;
+}
+
+.toast.show {
+    animation: toastSlideIn 340ms cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+@keyframes pageFadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes riseFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(24px) scale(0.985);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+@keyframes ambientShift {
+    0%, 100% { transform: translate3d(0, 0, 0) scale(1); }
+    50% { transform: translate3d(8px, -8px, 0) scale(1.04); }
+}
+
+@keyframes backTopPop {
+    from {
+        opacity: 0;
+        transform: translateY(20px) scale(0.8);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+@keyframes toastSlideIn {
+    from {
+        opacity: 0;
+        transform: translateX(18px) scale(0.98);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0) scale(1);
+    }
+}
+
+@keyframes chromaLine {
+    from { background-position: 0% 50%; }
+    to { background-position: 200% 50%; }
+}
+
+@keyframes headerSheen {
+    from { transform: translateX(-20%) rotate(14deg); }
+    to { transform: translateX(220%) rotate(14deg); }
+}
+
+@keyframes heroTitleSpectrum {
+    0%, 100% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+}
+
+@media (max-width: 1024px) {
+    .header-content {
+        min-height: 72px;
+    }
+
+    .navigation,
+    .sound-toggle,
+    .lang-switcher,
+    .theme-switcher {
+        display: none;
+    }
+
+    .mobile-menu-btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .hero-content,
+    .hero-image {
+        width: 100%;
+        padding-top: 60px;
+    }
+
+    .hero .container {
+        grid-template-columns: 1fr;
+/*      gap: clamp(16px, 3vw, 28px);*/
+        text-align: center;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero-buttons,
+    .cta-buttons,
+    .error-actions,
+    .picker-controls {
+        display: flex;
+        grid-template-columns: 1fr;
+        width: 100%;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .btn {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .footer-grid {
+        grid-template-columns: repeat(2, minmax(220px, 1fr));
+    }
+}
+
+@media (max-width: 768px) {
+    .header-content {
+        min-height: 68px;
+    }
+
+    .footer-bottom {
+        gap: 10px;
+        text-align: left;
+    }
+
+    .footer-meta {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding-inline: 12px;
+    }
+
+    .header-content {
+        min-height: 64px;
+        gap: 8px;
+    }
+
+    .logo-icon {
+        width: 30px;
+        height: 30px;
+    }
+
+    .logo-text {
+        font-size: 1rem;
+    }
+
+    .mobile-nav-list {
+        padding: 10px;
+    }
+
+    .mobile-nav-link {
+        padding: 10px;
+        margin-bottom: 4px;
+    }
+
+    .mobile-theme-switcher {
+        padding: 10px;
+    }
+
+    .hero,
+    .changelog-section,
+    .version-history,
+    .future-updates,
+    .cta-section,
+    .error-section,
+    section {
+        padding-block: clamp(42px, 10vw, 72px);
+    }
+
+    .hero-description,
+    .section-subtitle,
+    .footer-description,
+    p,
+    li {
+        font-size: 0.96rem;
+    }
+
+    .footer-col {
+        text-align: left;
+        align-items: flex-start;
+    }
+
+    .footer-links,
+    .social-links {
+        justify-content: flex-start;
+        text-align: left;
+    }
+
+    .footer-bottom {
+        text-align: left;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+/* ===== Datenschutz-Hinweis (zentriertes Modal) =====
+   pointer-events: none auf dem Overlay + auto auf dem Panel: der abgedunkelte
+   Hintergrund blockiert bewusst NICHTS - Header (Sprache/Theme/Sound) bleibt
+   klickbar, auch solange der Hinweis offen ist. Nur die Karte selbst reagiert
+   auf Klicks. */
+.mc-pref-overlay {
+    position: fixed;
+    inset: 0;
+    z-index: 2000;
+    background: rgba(6, 10, 20, 0.72);
+    backdrop-filter: blur(3px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: clamp(14px, 3vw, 28px);
+    animation: pageFadeIn 220ms ease-out both;
+    pointer-events: none;
+}
+
+.mc-pref-panel {
+    position: relative;
+    pointer-events: auto;
+    text-align: center;
+    width: min(560px, 100%);
+    max-height: min(88vh, 720px);
+    overflow-y: auto;
+    background: color-mix(in srgb, var(--bg-primary) 97%, #000 3%);
+    border: var(--soft-border);
+    border-radius: 18px;
+    box-shadow: 0 24px 60px rgba(0, 0, 0, 0.45);
+    padding: clamp(20px, 3vw, 32px);
+    animation: riseFadeIn 280ms cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+.mc-pref-close-btn {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: var(--soft-border);
+    border-radius: 50%;
+    background: color-mix(in srgb, var(--bg-surface) 88%, #000 12%);
+    color: var(--text-secondary, #94A3B8);
+    font-size: 1.3rem;
+    line-height: 1;
+    cursor: pointer;
+    transition: transform 180ms ease, color 180ms ease;
+}
+
+.mc-pref-close-btn:hover {
+    color: var(--text-primary);
+    transform: scale(1.08);
+}
+
+.mc-pref-title {
+    font-family: var(--title-font);
+    font-size: 1.4rem;
+    margin: 0 0 10px;
+    color: var(--text-primary);
+}
+
+.mc-pref-intro {
+    margin: 0 0 18px;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: var(--text-secondary, #94A3B8);
+}
+
+.mc-pref-row {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    padding: 14px;
+    border-radius: 12px;
+    border: var(--soft-border);
+    margin-bottom: 12px;
+}
+
+.mc-pref-row i {
+    font-size: 1.2rem;
+    margin-top: 2px;
+    flex-shrink: 0;
+}
+
+.mc-pref-row-ok i {
+    color: var(--chroma-a);
+}
+
+.mc-pref-row-opt i {
+    color: var(--chroma-b);
+}
+
+.mc-pref-row strong {
+    display: block;
+    font-size: 0.95rem;
+    color: var(--text-primary);
+    margin-bottom: 4px;
+}
+
+.mc-pref-row p {
+    margin: 0;
+    font-size: 0.86rem;
+    line-height: 1.55;
+    color: var(--text-secondary, #94A3B8);
+}
+
+.mc-pref-details-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    margin: 2px 0 4px;
+    padding: 8px 14px;
+    font-size: 0.85rem;
+    color: var(--text-primary);
+    background: color-mix(in srgb, var(--bg-surface) 88%, #000 12%);
+    border: var(--soft-border);
+    border-radius: 999px;
+    cursor: pointer;
+    transition: transform 180ms ease, border-color 180ms ease;
+}
+
+.mc-pref-details-btn:hover {
+    transform: translateY(-1px);
+    border-color: color-mix(in srgb, var(--chroma-b) 45%, var(--border-color) 55%);
+}
+
+.mc-pref-table-wrap {
+    margin: 14px 0;
+    overflow-x: auto;
+    border: var(--soft-border);
+    border-radius: 12px;
+}
+
+.mc-pref-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.8rem;
+}
+
+.mc-pref-table th,
+.mc-pref-table td {
+    padding: 10px 12px;
+    text-align: left;
+    border-bottom: 1px solid var(--border-color);
+    vertical-align: top;
+}
+
+.mc-pref-table thead th {
+    background: color-mix(in srgb, var(--bg-surface) 90%, #000 10%);
+    color: var(--text-primary);
+    white-space: nowrap;
+}
+
+.mc-pref-table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+.mc-pref-table code {
+    font-size: 0.78rem;
+    white-space: nowrap;
+}
+
+.mc-pref-type-necessary,
+.mc-pref-type-optional {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 999px;
+    font-size: 0.72rem;
+    white-space: nowrap;
+}
+
+.mc-pref-type-necessary {
+    background: color-mix(in srgb, var(--chroma-a) 22%, transparent);
+    color: var(--chroma-a);
+}
+
+.mc-pref-type-optional {
+    background: color-mix(in srgb, var(--chroma-b) 22%, transparent);
+    color: var(--chroma-b);
+}
+
+.mc-pref-link {
+    margin: 4px 0 20px;
+    font-size: 0.86rem;
+    color: var(--text-secondary, #94A3B8);
+}
+
+.mc-pref-link a {
+    color: var(--primary);
+    text-decoration: underline;
+}
+
+.mc-pref-reject-note {
+    margin: 0 0 18px;
+    font-size: 0.8rem;
+    line-height: 1.5;
+    color: color-mix(in srgb, var(--text-secondary, #94A3B8) 85%, var(--chroma-c) 15%);
+}
+
+.mc-pref-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+.mc-pref-actions .btn {
+    white-space: nowrap;
+}
+
+/* Steht als Badge im Footer neben Version/Changelog, kein schwebender Button */
+.mc-pref-toggle-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    border: var(--soft-border);
+    border-radius: 999px;
+    padding: 6px 12px;
+    background: transparent;
+    color: var(--text-secondary, #94A3B8);
+    font-size: 0.85rem;
+    line-height: 1;
+    cursor: pointer;
+    transition: border-color 180ms ease, color 180ms ease;
+}
+
+.mc-pref-toggle-btn:hover {
+    color: var(--text-primary);
+    border-color: color-mix(in srgb, var(--chroma-b) 45%, var(--border-color) 55%);
+}
+
+/* Fallback-Toast, nur falls eine Seite kein eigenes .toast-System hat */
+.mc-pref-fallback-toast {
+    position: fixed;
+    right: 16px;
+    bottom: 16px;
+    z-index: 2100;
+    max-width: min(320px, calc(100vw - 32px));
+    background: color-mix(in srgb, var(--bg-primary) 96%, #000 4%);
+    border: var(--soft-border);
+    border-radius: 12px;
+    padding: 14px 16px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.35);
+    opacity: 0;
+    transform: translateY(12px);
+    transition: opacity 220ms ease, transform 220ms ease;
+}
+
+.mc-pref-fallback-toast.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.mc-pref-fallback-toast strong {
+    display: block;
+    color: var(--text-primary);
+    margin-bottom: 4px;
+    font-size: 0.9rem;
+}
+
+.mc-pref-fallback-toast p {
+    margin: 0;
+    font-size: 0.82rem;
+    color: var(--text-secondary, #94A3B8);
+}
+
+@media (max-width: 640px) {
+    .mc-pref-actions {
+        justify-content: stretch;
+    }
+
+    .mc-pref-actions .btn {
+        flex: 1 1 100%;
+        justify-content: center;
+    }
+}

@@ -1,0 +1,786 @@
+[
+  {
+    "id": "minecraft:camel_husk_jockey",
+    "name": "Kamelhüllen-Jockey",
+    "numeric_id": "–",
+    "type": "hostile",
+    "category": "Jockeys",
+    "icon": "/assets/img/mobs/hostile/Camel_Husk_Jockey.png",
+    "description": "Kamelhüllen-Jockey ist feindliche reiter auf untotem reittier; keine eigene entity.",
+    "biome": "Wüste",
+    "aliases": [
+      "Camel Husk Jockey"
+    ],
+    "introduced_date": "2025-12-09",
+    "removed_date": "",
+    "gallery": [],
+    "model": "",
+    "animation": [],
+    "source": "",
+    "updated_at": "2026-08-22",
+    "notes": "Kein einzelnes Wesen: Lebenspunkte, Drops und Erfahrung werden für jede Komponente getrennt berechnet.",
+    "version": "Java Edition 1.21.11 / Bedrock Edition 1.21.130",
+    "edition": "Java Edition, Bedrock Edition",
+    "effects": [],
+    "effect_immunities": [],
+    "status": "Verfügbar",
+    "tags": [
+      "Jockeys",
+      "Feindliche Reiter auf untotem Reittier; keine eigene Entity"
+    ],
+    "related_entries": [],
+    "command": "/summon minecraft:camel_husk ~ ~ ~ {Passengers:[{id:\"minecraft:husk\",Passengers:[{id:\"minecraft:parched\"}]}]}",
+    "version_history": [
+      {
+        "version": "Java Edition 1.21.11 / Bedrock Edition 1.21.130",
+        "change": "Hinzugefügt.",
+        "type": "added",
+        "date": "2025-12-09"
+      }
+    ],
+    "texture": [],
+    "sounds": [],
+    "health": {
+      "camel_husk": 32,
+      "husk": 20,
+      "parched": 16
+    },
+    "damage": "Getrennt nach Reiter: Hülle im Nahkampf, Ausgedörrter mit Bogen; abhängig von Schwierigkeit und Ausrüstung",
+    "armor": {
+      "camel_husk": 0,
+      "husk": 2,
+      "parched": 2
+    },
+    "experience": "Komponenten geben ihre Erfahrung getrennt ab",
+    "dimension": "Overworld",
+    "movement_speed": 0.25,
+    "size": {
+      "width": "Breite: 1.4",
+      "height": "Höhe: 2.0"
+    },
+    "spawn": {
+      "light_level": [
+        "Blocklicht 0 für die feindlichen Reiter"
+      ],
+      "biome": "Wüste",
+      "structure": "Keine",
+      "condition": "Seltene natürliche Kombination aus Kamelhülle, Hülle und Ausgedörrtem"
+    },
+    "light_level": [
+      "Blocklicht 0 für die feindlichen Reiter"
+    ],
+    "classification": "Feindliche Reiter auf untotem Reittier; keine eigene Entity",
+    "renewable": "Ja",
+    "can_despawn": "Ja, sofern die normalen Despawn-Regeln gelten",
+    "tameable": "Kamelhülle: Ja, nachdem die Reiter entfernt wurden",
+    "breedable": "Nein",
+    "duplicable": "Nein",
+    "duplication_item": "",
+    "leashable": "Nein",
+    "rideable": "Die Kamelhülle kann nach Entfernen der Reiter gezähmt und geritten werden",
+    "baby_variant": "Nein",
+    "drops": [
+      {
+        "item": "Drops der Kamelhülle, Hülle und des Ausgedörrten",
+        "chance": "Jeweils nach eigener Loot-Tabelle",
+        "amount": "Getrennt je Komponente"
+      },
+      {
+        "item": "Natürlich ausgerüstete Waffen und Rüstung",
+        "chance": "Normale Ausrüstungs-Dropchance",
+        "condition": "Falls die jeweilige Komponente die Ausrüstung fallen lässt"
+      }
+    ],
+    "abilities": [
+      "Drei getrennte Kreaturen mit getrennten Lebenspunkten",
+      "Die Hülle greift mit dem Speer an",
+      "Der Ausgedörrte greift mit dem Bogen an",
+      "Die Kamelhülle bleibt nach dem Tod der Reiter bestehen"
+    ],
+    "fun_fact": "Kein einzelnes Wesen: Lebenspunkte, Drops und Erfahrung werden für jede Komponente getrennt berechnet.",
+    "attack_type": "Nah- und Fernkampf",
+    "targets": [
+      "Spieler",
+      "Eisengolem"
+    ],
+    "enemy_mobs": [],
+    "follows": [],
+    "healing_item": "",
+    "fire_immune": "Nein",
+    "undead": "Alle drei Komponenten sind untot",
+    "boss_bar": "Nein",
+    "knockback_resistance": "",
+    "loot_table": "Loot-Tabellen der einzelnen Komponenten",
+    "java_entity_id": "Keine eigene Entity-ID",
+    "bedrock_entity_id": "Keine eigene Entity-ID"
+  },
+  {
+    "id": "minecraft:zombie_horseman",
+    "name": "Zombie-Reiter",
+    "numeric_id": "–",
+    "type": "hostile",
+    "category": "Jockeys",
+    "icon": "/assets/img/mobs/hostile/Zombie_Horseman.png",
+    "description": "Zombie-Reiter ist feindlicher reiter; keine eigene entity.",
+    "biome": "Ebenen und Savannen",
+    "aliases": [
+      "Zombie Horseman"
+    ],
+    "introduced_date": "2025-12-09",
+    "removed_date": "",
+    "gallery": [],
+    "model": "",
+    "animation": [],
+    "source": "",
+    "updated_at": "2026-08-22",
+    "notes": "Der Reiter ist eine Kombination aus minecraft:zombie und minecraft:zombie_horse, keine eigene Entity.",
+    "version": "Java Edition 1.21.11 / Bedrock Edition 1.21.130",
+    "edition": "Java Edition, Bedrock Edition",
+    "effects": [],
+    "effect_immunities": [],
+    "status": "Verfügbar",
+    "tags": [
+      "Jockeys",
+      "Feindlicher Reiter; keine eigene Entity",
+      "Untot"
+    ],
+    "related_entries": [],
+    "command": "/summon minecraft:zombie_horse ~ ~ ~ {Passengers:[{id:\"minecraft:zombie\"}]}",
+    "version_history": [
+      {
+        "version": "Java Edition 1.21.11 / Bedrock Edition 1.21.130",
+        "change": "Hinzugefügt.",
+        "type": "added",
+        "date": "2025-12-09"
+      }
+    ],
+    "texture": [],
+    "sounds": [],
+    "health": {
+      "zombie_horse": 25,
+      "zombie": 20
+    },
+    "damage": "Zombie: abhängig von Schwierigkeit und Speer/Ausrüstung; Zombiepferd greift nicht selbst an",
+    "armor": {
+      "zombie_horse": 0,
+      "zombie": 2
+    },
+    "experience": "Zombie: 5 plus Ausrüstungsboni; Zombiepferd: eigene Komponentenerfahrung",
+    "dimension": "Overworld",
+    "movement_speed": 0.25,
+    "size": {
+      "width": "Breite: 1.4",
+      "height": "Höhe: 2.0"
+    },
+    "spawn": {
+      "light_level": [
+        "Blocklicht 0 für den Zombie"
+      ],
+      "biome": "Ebenen und Savannen",
+      "structure": "Keine",
+      "condition": "Seltene natürliche Kombination eines Zombies mit Eisenspeer auf einem Zombiepferd"
+    },
+    "light_level": [
+      "Blocklicht 0 für den Zombie"
+    ],
+    "classification": "Feindlicher Reiter; keine eigene Entity",
+    "renewable": "Ja",
+    "can_despawn": "Ja, sofern die normalen Despawn-Regeln gelten",
+    "tameable": "Zombiepferd: Ja",
+    "breedable": "Nein",
+    "duplicable": "Nein",
+    "duplication_item": "",
+    "leashable": "Nein",
+    "rideable": "Zombiepferd: Ja, nachdem der Reiter entfernt und das Pferd gezähmt wurde",
+    "baby_variant": "Nein",
+    "drops": [
+      {
+        "item": "Drops von Zombie und Zombiepferd",
+        "chance": "Nach den jeweiligen Loot-Tabellen",
+        "amount": "Getrennt je Komponente"
+      },
+      {
+        "item": "Eisenspeer und sonstige Ausrüstung",
+        "chance": "Normale Ausrüstungs-Dropchance"
+      }
+    ],
+    "abilities": [
+      "Zombie kämpft mit einem Eisenspeer",
+      "Zombie und Pferd haben getrennte Lebenspunkte",
+      "Das Zombiepferd kann nach dem Entfernen des Reiters übernommen werden"
+    ],
+    "fun_fact": "Der Reiter ist eine Kombination aus minecraft:zombie und minecraft:zombie_horse, keine eigene Entity.",
+    "attack_type": "Speer-Nah- und Fernkampf",
+    "targets": [
+      "Spieler",
+      "Dorfbewohner",
+      "Eisengolem"
+    ],
+    "enemy_mobs": [],
+    "follows": [
+      "Roter Pilz"
+    ],
+    "healing_item": "Roter Pilz",
+    "fire_immune": "Nein; viele Untote verbrennen im Sonnenlicht, sofern nicht geschützt",
+    "undead": "Ja",
+    "boss_bar": "Nein",
+    "knockback_resistance": "",
+    "loot_table": "Loot-Tabellen der einzelnen Komponenten",
+    "java_entity_id": "Keine eigene Entity-ID",
+    "bedrock_entity_id": "Keine eigene Entity-ID"
+  },
+  {
+    "id": "minecraft:zombie_nautilus_jockey",
+    "name": "Zombie-Nautilus-Jockey",
+    "numeric_id": "–",
+    "type": "hostile",
+    "category": "Jockeys",
+    "icon": "/assets/img/mobs/hostile/Zombie_Nautilus_Jockey.png",
+    "description": "Zombie-Nautilus-Jockey ist feindlicher wasser-jockey; keine eigene entity.",
+    "biome": "Ozeane; Korallenvariante in warmen Ozeanen",
+    "aliases": [
+      "Zombie Nautilus Jockey"
+    ],
+    "introduced_date": "2025-12-09",
+    "removed_date": "",
+    "gallery": [],
+    "model": "",
+    "animation": [],
+    "source": "",
+    "updated_at": "2026-08-22",
+    "notes": "Kein eigener Entity-Typ; der Nautilus lässt keine Nautilusschale als normalen Drop fallen.",
+    "version": "Java Edition 1.21.11 / Bedrock Edition 1.21.130",
+    "edition": "Java Edition, Bedrock Edition",
+    "effects": [],
+    "effect_immunities": [],
+    "status": "Verfügbar",
+    "tags": [
+      "Jockeys",
+      "Feindlicher Wasser-Jockey; keine eigene Entity",
+      "Untot"
+    ],
+    "related_entries": [],
+    "command": "/summon minecraft:zombie_nautilus ~ ~ ~ {Passengers:[{id:\"minecraft:drowned\"}]}",
+    "version_history": [
+      {
+        "version": "Java Edition 1.21.11 / Bedrock Edition 1.21.130",
+        "change": "Hinzugefügt.",
+        "type": "added",
+        "date": "2025-12-09"
+      }
+    ],
+    "texture": [],
+    "sounds": [],
+    "health": {
+      "zombie_nautilus": 15,
+      "drowned": 20
+    },
+    "damage": "Ertrunkener: abhängig von Schwierigkeit und Dreizack; Zombie-Nautilus greift nur mit Reiter feindlich an",
+    "armor": {
+      "zombie_nautilus": 0,
+      "drowned": 2
+    },
+    "experience": "Komponenten geben Erfahrung getrennt ab",
+    "dimension": "Overworld",
+    "movement_speed": 0.2,
+    "size": {
+      "width": "Breite: 1.0",
+      "height": "Höhe: 1.5"
+    },
+    "spawn": {
+      "light_level": [
+        "Wasser- und Dunkelheitsbedingungen des Ertrunkenen"
+      ],
+      "biome": "Ozean",
+      "structure": "Keine",
+      "condition": "Natürliche Kombination aus Ertrunkenem mit Dreizack und Zombie-Nautilus"
+    },
+    "light_level": [
+      "Wasser- und Dunkelheitsbedingungen des Ertrunkenen"
+    ],
+    "classification": "Feindlicher Wasser-Jockey; keine eigene Entity",
+    "renewable": "Ja",
+    "can_despawn": "Ja, sofern die normalen Despawn-Regeln gelten",
+    "tameable": "Zombie-Nautilus: Ja",
+    "breedable": "Nein",
+    "duplicable": "Nein",
+    "duplication_item": "",
+    "leashable": "Nein",
+    "rideable": "Zombie-Nautilus: nach Entfernen des Reiters und Zähmen",
+    "baby_variant": "Nein",
+    "drops": [
+      {
+        "item": "minecraft:rotten_flesh",
+        "chance": "100 %",
+        "amount": "Zombie-Nautilus: 0–3; Ertrunkener separat"
+      },
+      {
+        "item": "Ausrüstung des Ertrunkenen",
+        "chance": "Normale Ausrüstungs-Dropchance"
+      }
+    ],
+    "abilities": [
+      "Bewegt sich schnell unter Wasser",
+      "Der Ertrunkene wirft einen Dreizack",
+      "Reittier und Reiter besitzen getrennte Lebenspunkte",
+      "Warme Ozeane können die Korallenvariante hervorbringen"
+    ],
+    "fun_fact": "Kein eigener Entity-Typ; der Nautilus lässt keine Nautilusschale als normalen Drop fallen.",
+    "attack_type": "Dreizack-Fern- und Nahkampf",
+    "targets": [
+      "Spieler",
+      "Dorfbewohner",
+      "Eisengolem"
+    ],
+    "enemy_mobs": [],
+    "follows": [],
+    "healing_item": "",
+    "fire_immune": "Nein; viele Untote verbrennen im Sonnenlicht, sofern nicht geschützt",
+    "undead": "Ja",
+    "boss_bar": "Nein",
+    "knockback_resistance": "",
+    "loot_table": "Loot-Tabellen der einzelnen Komponenten",
+    "java_entity_id": "Keine eigene Entity-ID",
+    "bedrock_entity_id": "Keine eigene Entity-ID"
+  },
+  {
+    "id": "minecraft:skeleton_horseman",
+    "name": "Skelettreiter",
+    "numeric_id": "–",
+    "type": "hostile",
+    "category": "Jockeys",
+    "icon": "/assets/img/mobs/hostile/Skeleton_Horseman.png",
+    "description": "Skelettreiter ist feindlicher reiter; keine eigene entity.",
+    "biome": "Geeignete Oberweltbiome",
+    "aliases": [
+      "Skeleton Horseman",
+      "Skelettfalle"
+    ],
+    "introduced_date": "2016-02-29",
+    "removed_date": "",
+    "gallery": [],
+    "model": "",
+    "animation": [],
+    "source": "",
+    "updated_at": "2026-08-22",
+    "notes": "",
+    "version": "Java Edition 1.9 / Bedrock Edition 0.15.0",
+    "edition": "Java Edition, Bedrock Edition",
+    "effects": [],
+    "effect_immunities": [],
+    "status": "Verfügbar",
+    "tags": [
+      "Jockeys",
+      "Feindlicher Reiter; keine eigene Entity",
+      "Untot"
+    ],
+    "related_entries": [],
+    "command": "/summon minecraft:skeleton_horse ~ ~ ~ {Tame:1b,Passengers:[{id:\"minecraft:skeleton\"}]}",
+    "version_history": [
+      {
+        "version": "Java Edition 1.9 / Bedrock Edition 0.15.0",
+        "change": "Hinzugefügt.",
+        "type": "added",
+        "date": "2016-02-29"
+      }
+    ],
+    "texture": [],
+    "sounds": [],
+    "health": {
+      "skeleton_horse": 15,
+      "skeleton": 20
+    },
+    "damage": "Skelettbogen abhängig von Schwierigkeit; Skelettpferd greift nicht selbst an",
+    "armor": {
+      "skeleton_horse": 0,
+      "skeleton": 0
+    },
+    "experience": "Skelett und Skelettpferd getrennt",
+    "dimension": "Overworld",
+    "movement_speed": 0.3,
+    "size": {
+      "width": "Breite: 1.4",
+      "height": "Höhe: 2.0"
+    },
+    "spawn": {
+      "light_level": [
+        "Lichtunabhängig während Gewitter"
+      ],
+      "biome": "Geeignete Oberweltbiome",
+      "structure": "Keine",
+      "condition": "Ein Skelettfallen-Pferd wird bei Annäherung während eines Gewitters vom Blitz getroffen und erzeugt insgesamt vier Skelettreiter"
+    },
+    "light_level": [
+      "Lichtunabhängig während Gewitter"
+    ],
+    "classification": "Feindlicher Reiter; keine eigene Entity",
+    "renewable": "Ja",
+    "can_despawn": "Ja, sofern die normalen Despawn-Regeln gelten",
+    "tameable": "Das erzeugte Skelettpferd ist gezähmt",
+    "breedable": "Nein",
+    "duplicable": "Nein",
+    "duplication_item": "",
+    "leashable": "Nein",
+    "rideable": "Skelettpferd: Ja, nach Entfernen des Reiters",
+    "baby_variant": "Nein",
+    "drops": [
+      {
+        "item": "Knochen, Pfeile und eventuell Bogen/Ausrüstung",
+        "chance": "Loot des Skeletts"
+      },
+      {
+        "item": "Knochen",
+        "chance": "Loot des Skelettpferds"
+      }
+    ],
+    "abilities": [
+      "Entsteht als Gruppe von vier Reitern aus einer ausgelösten Skelettfalle",
+      "Skelett trägt verzauberten Eisenhelm und verzauberten Bogen",
+      "Skelettpferd kann nach dem Kampf geritten werden",
+      "Skelettpferde können unter Wasser geritten werden"
+    ],
+    "fun_fact": "",
+    "attack_type": "Bogen-Fernkampf",
+    "targets": [
+      "Spieler",
+      "Eisengolem"
+    ],
+    "enemy_mobs": [],
+    "follows": [],
+    "healing_item": "",
+    "fire_immune": "Nein",
+    "undead": "Ja",
+    "boss_bar": "Nein",
+    "knockback_resistance": "",
+    "loot_table": "Loot-Tabellen der einzelnen Komponenten",
+    "java_entity_id": "Keine eigene Entity-ID",
+    "bedrock_entity_id": "Keine eigene Entity-ID"
+  },
+  {
+    "id": "minecraft:chicken_jockey",
+    "name": "Hühnerreiter",
+    "numeric_id": "–",
+    "type": "hostile",
+    "category": "Jockeys",
+    "icon": "/assets/img/mobs/hostile/Chicken_Jockey.png",
+    "description": "Hühnerreiter ist feindlicher reiter; keine eigene entity.",
+    "biome": "Je nach Reitervariante",
+    "aliases": [
+      "Chicken Jockey"
+    ],
+    "introduced_date": "2013-12-10",
+    "removed_date": "",
+    "gallery": [],
+    "model": "",
+    "animation": [],
+    "source": "",
+    "updated_at": "2026-08-22",
+    "notes": "",
+    "version": "Java Edition 1.7.4 / Bedrock Edition 0.11.0",
+    "edition": "Java Edition, Bedrock Edition",
+    "effects": [],
+    "effect_immunities": [],
+    "status": "Verfügbar",
+    "tags": [
+      "Jockeys",
+      "Feindlicher Reiter; keine eigene Entity"
+    ],
+    "related_entries": [],
+    "command": "/summon minecraft:chicken ~ ~ ~ {IsChickenJockey:1b,Passengers:[{id:\"minecraft:zombie\",IsBaby:1b}]}",
+    "version_history": [
+      {
+        "version": "Java Edition 1.7.4 / Bedrock Edition 0.11.0",
+        "change": "Hinzugefügt.",
+        "type": "added",
+        "date": "2013-12-10"
+      }
+    ],
+    "texture": [],
+    "sounds": [],
+    "health": {
+      "chicken": 4,
+      "baby_zombie": 20
+    },
+    "damage": "Baby-Zombie: abhängig von Schwierigkeit und Ausrüstung; Huhn verursacht keinen Angriffsschaden",
+    "armor": {
+      "chicken": 0,
+      "baby_zombie": 2
+    },
+    "experience": "Baby-Zombie: 12 plus Ausrüstungsboni; Huhn separat",
+    "dimension": "Overworld und je nach Baby-Zombie-Variante weitere Orte",
+    "movement_speed": 0.25,
+    "size": {
+      "width": "Breite: 0.6",
+      "height": "Höhe: 1.0"
+    },
+    "spawn": {
+      "light_level": [
+        "Nach Spawnregeln der Baby-Zombie-Variante"
+      ],
+      "biome": "Je nach Reitervariante",
+      "structure": "Keine",
+      "condition": "Seltene Chance, wenn eine Baby-Zombie-Variante erscheint; vorhandene Hühner können verwendet werden"
+    },
+    "light_level": [
+      "Nach Spawnregeln der Baby-Zombie-Variante"
+    ],
+    "classification": "Feindlicher Reiter; keine eigene Entity",
+    "renewable": "Ja",
+    "can_despawn": "Ja, sofern die normalen Despawn-Regeln gelten",
+    "tameable": "Nein",
+    "breedable": "Huhn grundsätzlich ja; der Jockey-Zustand ist keine Zuchtvariante",
+    "duplicable": "Nein",
+    "duplication_item": "",
+    "leashable": "Nein",
+    "rideable": "Nein",
+    "baby_variant": "Der Reiter ist immer eine Baby-Zombie-Variante",
+    "drops": [
+      {
+        "item": "Drops der jeweiligen Baby-Zombie-Variante",
+        "chance": "Nach deren Loot-Tabelle"
+      },
+      {
+        "item": "Rohes Huhn und Federn",
+        "chance": "Nach der Huhn-Loot-Tabelle"
+      }
+    ],
+    "abilities": [
+      "Ist schneller und passt durch kleinere Öffnungen als erwachsene Zombies",
+      "Das Huhn verhindert Fallschaden des Reiters",
+      "In Java legt ein als Jockey markiertes Huhn keine Eier"
+    ],
+    "fun_fact": "",
+    "attack_type": "Schneller Nahkampf",
+    "targets": [
+      "Spieler",
+      "Dorfbewohner",
+      "Eisengolem"
+    ],
+    "enemy_mobs": [],
+    "follows": [],
+    "healing_item": "",
+    "fire_immune": "Nein",
+    "undead": "Nur der Reiter",
+    "boss_bar": "Nein",
+    "knockback_resistance": "",
+    "loot_table": "Loot-Tabellen der einzelnen Komponenten",
+    "java_entity_id": "Keine eigene Entity-ID",
+    "bedrock_entity_id": "Keine eigene Entity-ID"
+  },
+  {
+    "id": "minecraft:spider_jockey",
+    "name": "Spinnenreiter",
+    "numeric_id": "–",
+    "type": "hostile",
+    "category": "Jockeys",
+    "icon": "/assets/img/mobs/hostile/Spider_Jockey.png",
+    "description": "Spinnenreiter ist feindlicher reiter; keine eigene entity.",
+    "biome": "Biom der Spinne; Reitervariante kann editionsabhängig variieren",
+    "aliases": [
+      "Spider Jockey"
+    ],
+    "introduced_date": "2010-08-20",
+    "removed_date": "",
+    "gallery": [],
+    "model": "",
+    "animation": [],
+    "source": "",
+    "updated_at": "2026-08-22",
+    "notes": "",
+    "version": "Java Edition Alpha v1.0.17 / Bedrock Edition 0.11.0",
+    "edition": "Java Edition, Bedrock Edition",
+    "effects": [],
+    "effect_immunities": [],
+    "status": "Verfügbar",
+    "tags": [
+      "Jockeys",
+      "Feindlicher Reiter; keine eigene Entity"
+    ],
+    "related_entries": [],
+    "command": "/summon minecraft:spider ~ ~ ~ {Passengers:[{id:\"minecraft:skeleton\"}]}",
+    "version_history": [
+      {
+        "version": "Java Edition Alpha v1.0.17 / Bedrock Edition 0.11.0",
+        "change": "Hinzugefügt.",
+        "type": "added",
+        "date": "2010-08-20"
+      }
+    ],
+    "texture": [],
+    "sounds": [],
+    "health": {
+      "spider": 16,
+      "skeleton": 20
+    },
+    "damage": "Spinne: Einfach 2, Normal 2, Schwer 3; Skelettpfeile abhängig von Schwierigkeit",
+    "armor": {
+      "spider": 0,
+      "skeleton": 0
+    },
+    "experience": "Spinne und Reiter getrennt",
+    "dimension": "Overworld",
+    "movement_speed": 0.3,
+    "size": {
+      "width": "Breite: 1.4",
+      "height": "Höhe: 1.0"
+    },
+    "spawn": {
+      "light_level": [
+        "Nach den Spawnregeln der Spinne"
+      ],
+      "biome": "Geeignete Oberweltbiome",
+      "structure": "Keine",
+      "condition": "1 % Chance, dass eine natürlich erscheinende Spinne mit einem Skelettreiter erzeugt wird"
+    },
+    "light_level": [
+      "Nach den Spawnregeln der Spinne"
+    ],
+    "classification": "Feindlicher Reiter; keine eigene Entity",
+    "renewable": "Ja",
+    "can_despawn": "Ja, sofern die normalen Despawn-Regeln gelten",
+    "tameable": "Nein",
+    "breedable": "Nein",
+    "duplicable": "Nein",
+    "duplication_item": "",
+    "leashable": "Nein",
+    "rideable": "Nein",
+    "baby_variant": "Nein",
+    "drops": [
+      {
+        "item": "Drops der Spinne",
+        "chance": "Nach Spinnen-Loot-Tabelle"
+      },
+      {
+        "item": "Drops des Skeletts",
+        "chance": "Nach Skelett-Loot-Tabelle"
+      }
+    ],
+    "abilities": [
+      "Spinne klettert Wände",
+      "Reiter schießt unabhängig vom Sprung der Spinne",
+      "Beide Komponenten können unterschiedliche Ziele wählen",
+      "Beide besitzen getrennte Lebenspunkte"
+    ],
+    "fun_fact": "",
+    "attack_type": "Nahkampf der Spinne und Fernkampf des Skeletts",
+    "targets": [
+      "Spieler",
+      "Eisengolem"
+    ],
+    "enemy_mobs": [],
+    "follows": [],
+    "healing_item": "",
+    "fire_immune": "Nein",
+    "undead": "Nur der Reiter",
+    "boss_bar": "Nein",
+    "knockback_resistance": "",
+    "loot_table": "Loot-Tabellen der einzelnen Komponenten",
+    "java_entity_id": "Keine eigene Entity-ID",
+    "bedrock_entity_id": "Keine eigene Entity-ID"
+  },
+  {
+    "id": "minecraft:cave_spider_jockey",
+    "name": "Höhlenspinnenreiter",
+    "numeric_id": "–",
+    "type": "hostile",
+    "category": "Jockeys",
+    "icon": "/assets/img/mobs/hostile/Cave_Spider_Jockey.png",
+    "description": "Höhlenspinnenreiter ist befehlskombination; keine eigene entity.",
+    "biome": "Keine reguläre natürliche Biom-Zuordnung",
+    "aliases": [
+      "Cave Spider Jockey"
+    ],
+    "introduced_date": "2011-09-14",
+    "removed_date": "",
+    "gallery": [],
+    "model": "",
+    "animation": [],
+    "source": "",
+    "updated_at": "2026-08-22",
+    "notes": "Anders als der normale Spinnenreiter ist diese Kombination in Java kein regulärer natürlicher Spawn.",
+    "version": "Komponenten seit Java Edition Beta 1.8 verfügbar",
+    "edition": "Java Edition, Bedrock Edition",
+    "effects": [],
+    "effect_immunities": [],
+    "status": "Nur per Befehl/angepasster Erzeugung",
+    "tags": [
+      "Jockeys",
+      "Befehlskombination; keine eigene Entity"
+    ],
+    "related_entries": [],
+    "command": "/summon minecraft:cave_spider ~ ~ ~ {Passengers:[{id:\"minecraft:skeleton\"}]}",
+    "version_history": [
+      {
+        "version": "Komponenten seit Java Edition Beta 1.8 verfügbar",
+        "change": "Hinzugefügt.",
+        "type": "added",
+        "date": "2011-09-14"
+      }
+    ],
+    "texture": [],
+    "sounds": [],
+    "health": {
+      "cave_spider": 12,
+      "rider": 20
+    },
+    "damage": "Höhlenspinne: Nahkampf plus Gift auf Normal/Schwer; Reiter abhängig von Typ und Ausrüstung",
+    "armor": {
+      "cave_spider": 0,
+      "rider": "Variiert"
+    },
+    "experience": "Reittier und Reiter getrennt",
+    "dimension": "Overworld",
+    "movement_speed": 0.3,
+    "size": {
+      "width": "Breite: 0.7",
+      "height": "Höhe: 0.5"
+    },
+    "spawn": {
+      "light_level": [
+        "Nicht als regulärer natürlicher Jockey"
+      ],
+      "biome": "Keine",
+      "structure": "Keine reguläre natürliche Entstehung",
+      "condition": "Per Befehl oder angepassten Datenpaketen erzeugbar"
+    },
+    "light_level": [
+      "Nicht als regulärer natürlicher Jockey"
+    ],
+    "classification": "Befehlskombination; keine eigene Entity",
+    "renewable": "Ja",
+    "can_despawn": "Ja, sofern die normalen Despawn-Regeln gelten",
+    "tameable": "Nein",
+    "breedable": "Nein",
+    "duplicable": "Nein",
+    "duplication_item": "",
+    "leashable": "Nein",
+    "rideable": "Nein",
+    "baby_variant": "Nein",
+    "drops": [
+      {
+        "item": "Drops der Höhlenspinne und des gewählten Reiters",
+        "chance": "Jeweils nach eigener Loot-Tabelle"
+      }
+    ],
+    "abilities": [
+      "Höhlenspinne passt durch sehr kleine Öffnungen",
+      "Vergiftet auf Normal und Schwer",
+      "Reiter und Reittier besitzen getrennte Lebenspunkte"
+    ],
+    "fun_fact": "Anders als der normale Spinnenreiter ist diese Kombination in Java kein regulärer natürlicher Spawn.",
+    "attack_type": "Gift-Nahkampf und Angriff des Reiters",
+    "targets": [
+      "Spieler"
+    ],
+    "enemy_mobs": [],
+    "follows": [],
+    "healing_item": "",
+    "fire_immune": "Nein",
+    "undead": "Nur bei untotem Reiter",
+    "boss_bar": "Nein",
+    "knockback_resistance": "",
+    "loot_table": "Loot-Tabellen der einzelnen Komponenten",
+    "java_entity_id": "Keine eigene Entity-ID",
+    "bedrock_entity_id": "Keine eigene Entity-ID"
+  }
+]

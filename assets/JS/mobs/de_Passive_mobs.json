@@ -1,0 +1,5442 @@
+[
+  {
+    "id": "minecraft:allay",
+    "name": "Allay",
+    "numeric_id": "( Nur Bedrock ) 134",
+    "type": "passive",
+    "category": "Passiver Mob",
+    "icon": "/assets/img/mobs/passive/Allay.webp",
+    "description": "Sammelt Items für Spieler, wenn man ihr eines zeigt.",
+    "biome": "Keine natürliche Biom-Bindung",
+    "structure": "Plünderer-Außenposten (Käfige), Waldanwesen (Gefängnisräume)",
+    "dimension": "overworld",
+    "movement_speed": 0.4,
+    "size": {
+      "width": "Breite: 0.35",
+      "height": "Höhe: 0.6"
+    },
+    "aliases": [
+      "Hilfsgeist"
+    ],
+    "introduced_date": "2022-06-07",
+    "removed_date": null,
+    "gallery": [],
+    "model": "Minecraft-Entity-Modell",
+    "animation": [],
+    "source": "",
+    "updated_at": "2026-08-22",
+    "notes": "Sammelt Items für Spieler, wenn man ihr eines zeigt.",
+    "version": "Java Edition 1.19 / Bedrock Edition 1.19.0",
+    "edition": "Java Edition, Bedrock Edition",
+    "effects": [],
+    "effect_immunities": [],
+    "status": "Verfügbar",
+    "tags": [
+      "Passiv",
+      "overworld"
+    ],
+    "related_entries": [
+      "minecraft:amethyst_shard",
+      "minecraft:note_block",
+      "minecraft:jukebox"
+    ],
+    "command": "/summon minecraft:allay",
+    "version_history": [
+      {
+        "version": "Java Edition 1.19 / Bedrock Edition 1.19.0",
+        "change": "Allay: erstmals in der angegebenen Version verfügbar.",
+        "type": "added",
+        "date": "2022-06-07"
+      }
+    ],
+    "texture": [
+      {
+        "name": "Allay Allay",
+        "category": "Standardtextur",
+        "description": "Variante: Allay Allay.",
+        "file": "/assets/img/texture/mobs/allay/allay.png"
+      }
+    ],
+    "sounds": [
+      {
+        "name": "Allay Sucht",
+        "category": "idle",
+        "description": "Zufällig beim Halten eines Gegenstands (1)",
+        "file": "/assets/sounds/mobs/allay/Allay_idle_with_item1.ogg",
+        "duration": 0.2,
+        "url": "/assets/sounds/mobs/allay/Allay_idle_with_item1.ogg"
+      },
+      {
+        "name": "Allay Sucht",
+        "category": "idle",
+        "description": "Zufällig beim Halten eines Gegenstands (2)",
+        "file": "/assets/sounds/mobs/allay/Allay_idle_with_item2.ogg",
+        "duration": 0.2,
+        "url": "/assets/sounds/mobs/allay/Allay_idle_with_item2.ogg"
+      }
+    ],
+    "health": 20,
+    "damage": 0,
+    "armor": 0,
+    "experience": "0",
+    "spawn": {
+      "light_level": [
+        "Beliebig"
+      ],
+      "biome": "Keine natürliche Biom-Bindung",
+      "structure": "Plünderer-Außenposten und Waldanwesen"
+    },
+    "light_level": [
+      "0-15"
+    ],
+    "classification": "Passiv",
+    "renewable": "Ja",
+    "can_despawn": "Nein",
+    "tameable": "Nein (bindet sich über ein gehaltenes Item an den Spieler)",
+    "breedable": "Nein",
+    "duplicable": "Ja",
+    "duplication_item": "minecraft:amethyst_shard",
+    "leashable": "Ja",
+    "rideable": "Nein",
+    "baby_variant": "Nein",
+    "drops": [
+      {
+        "item": "Gehaltenes Item",
+        "chance": "100 %",
+        "amount": "1",
+        "condition": "Nur wenn der Allay ein Item hält"
+      }
+    ],
+    "abilities": [
+      "Fliegt",
+      "Sammelt Items"
+    ],
+    "fun_fact": "Gewann den Mob-Vote 2021! Tanzt zu Musik und sammelt Items. Wenn ein Hilfsgeist getötet wird, - während er ein Totem der Unsterblichkeit hält, fällt dieser Gegenstand nicht, sondern wird konsumiert, um den Hilfsgeist wiederzubeleben.",
+    "attack_type": "Keiner",
+    "targets": [],
+    "enemy_mobs": [],
+    "follows": [
+      "Spieler, der ihm ein Item gegeben hat",
+      "Aktiver Notenblock"
+    ],
+    "healing_item": [],
+    "fire_immune": "Nein",
+    "undead": "Nein",
+    "boss_bar": "Nein",
+    "knockback_resistance": 0,
+    "loot_table": "minecraft:entities/allay",
+    "java_entity_id": "minecraft:allay",
+    "bedrock_entity_id": "minecraft:allay"
+  },
+  {
+    "id": "minecraft:armadillo",
+    "name": "Gürteltier",
+    "numeric_id": "( Nur Bedrock ) 142",
+    "type": "passive",
+    "category": "Passiver Mob",
+    "icon": "/assets/img/mobs/passive/Armadillo.gif",
+    "description": "Rollt sich bei Gefahr ein. Droppt Gürteltier-Schuppen.",
+    "biome": "Savanne, Savannenhochland, windige Savanne; Badlands-Varianten",
+    "structure": "Keine",
+    "dimension": "overworld",
+    "movement_speed": 0.14,
+    "size": {
+      "width": "Breite: 0.65",
+      "height": "Höhe: 0.7"
+    },
+    "aliases": [],
+    "introduced_date": "2024-04-23",
+    "removed_date": null,
+    "gallery": [],
+    "model": "Minecraft-Entity-Modell",
+    "animation": [],
+    "source": "",
+    "updated_at": "2026-08-22",
+    "notes": "Gürteltier-Schuppen fallen regelmäßig ab oder werden mit einem Pinsel gewonnen; sie sind kein garantierter Todesdrop.",
+    "version": "Java Edition 1.20.5 / Bedrock Edition 1.20.80",
+    "edition": "Java Edition, Bedrock Edition",
+    "effects": [],
+    "effect_immunities": [],
+    "status": "Verfügbar",
+    "tags": [
+      "Passiv",
+      "overworld"
+    ],
+    "related_entries": [
+      "minecraft:armadillo_scute",
+      "minecraft:wolf_armor",
+      "minecraft:spider_eye"
+    ],
+    "command": "/summon minecraft:armadillo",
+    "version_history": [
+      {
+        "version": "Java Edition 1.20.5 / Bedrock Edition 1.20.80",
+        "change": "Gürteltier: erstmals in der angegebenen Version verfügbar.",
+        "type": "added",
+        "date": "2024-04-23"
+      }
+    ],
+    "texture": [
+      {
+        "name": "Armadillo Armadillo Baby",
+        "category": "Baby",
+        "description": "Variante: Armadillo Armadillo Baby.",
+        "file": "/assets/img/texture/mobs/armadillo/armadillo_baby.png"
+      },
+      {
+        "name": "Armadillo Armadillo",
+        "category": "Standardtextur",
+        "description": "Variante: Armadillo Armadillo.",
+        "file": "/assets/img/texture/mobs/armadillo/armadillo.png"
+      }
+    ],
+    "sounds": [],
+    "health": 12,
+    "damage": 0,
+    "armor": 0,
+    "experience": "1–3 beim Töten eines erwachsenen Tiers; 1–7 beim Züchten",
+    "spawn": {
+      "light_level": "7+",
+      "biome": "Savanna",
+      "structure": "Keine"
+    },
+    "light_level": [
+      "7+"
+    ],
+    "classification": "Passiv / Tier",
+    "renewable": "Ja",
+    "can_despawn": "Nein",
+    "tameable": "Nein",
+    "breedable": "Ja",
+    "duplicable": "Nein",
+    "duplication_item": "Keines",
+    "leashable": "Ja",
+    "rideable": "Nein",
+    "baby_variant": "Ja",
+    "drops": [],
+    "abilities": [
+      "Keine"
+    ],
+    "fun_fact": "Rollt sich bei Gefahr ein, liefert Schuppen für Wolf-Rüstungen.",
+    "attack_type": "Keiner",
+    "targets": [],
+    "enemy_mobs": [],
+    "follows": [
+      "Spinnenauge"
+    ],
+    "healing_item": [
+      "Spinnenauge"
+    ],
+    "fire_immune": "Nein",
+    "undead": "Nein",
+    "boss_bar": "Nein",
+    "knockback_resistance": 0,
+    "loot_table": "minecraft:entities/armadillo",
+    "java_entity_id": "minecraft:armadillo",
+    "bedrock_entity_id": "minecraft:armadillo"
+  },
+  {
+    "id": "minecraft:axolotl",
+    "name": "Axolotl",
+    "numeric_id": "( Nur Bedrock ) 130",
+    "type": "passive",
+    "category": "Passiver Mob",
+    "icon": "/assets/img/mobs/passive/Axolotl.gif",
+    "description": "Kämpft gegen Unterwasser-Mobs und regeneriert sich.",
+    "biome": "Üppige Höhle",
+    "structure": "Keine; natürlicher Spawn in Wasser über Ton",
+    "dimension": "overworld",
+    "movement_speed": 1,
+    "size": {
+      "java": {
+        "width": 1.3,
+        "height": 0.6
+      },
+      "bedrock": {
+        "width": 0.75,
+        "height": 0.42
+      }
+    },
+    "aliases": [],
+    "introduced_date": "2021-06-08",
+    "removed_date": null,
+    "gallery": [],
+    "model": "Minecraft-Entity-Modell",
+    "animation": [],
+    "source": "",
+    "updated_at": "2026-08-22",
+    "notes": "Kämpft gegen Unterwasser-Mobs und regeneriert sich.",
+    "version": "Java Edition 1.17 / Bedrock Edition 1.17.0",
+    "edition": "Java Edition, Bedrock Edition",
+    "effects": [
+      {
+        "name": "Regeneration",
+        "type": "gibt",
+        "level": "I",
+        "duration": "5 Sekunden",
+        "chance": "100 %",
+        "condition": "Nach einem gemeinsamen Kampf mit einem Wasser-Mob",
+        "description": "Der Spieler erhält Regeneration; gleichzeitig wird Bergbauermüdung entfernt."
+      }
+    ],
+    "effect_immunities": [],
+    "status": "Verfügbar",
+    "tags": [
+      "Passiv",
+      "overworld"
+    ],
+    "related_entries": [
+      "minecraft:axolotl_bucket",
+      "minecraft:tropical_fish_bucket"
+    ],
+    "command": "/summon minecraft:axolotl",
+    "version_history": [
+      {
+        "version": "Java Edition 1.17 / Bedrock Edition 1.17.0",
+        "change": "Axolotl: erstmals in der angegebenen Version verfügbar.",
+        "type": "added",
+        "date": "2021-06-08"
+      }
+    ],
+    "texture": [
+      {
+        "name": "Axolotl Axolotl Blue Baby",
+        "category": "Baby",
+        "description": "Variante: Axolotl Axolotl Blue Baby.",
+        "file": "/assets/img/texture/mobs/axolotl/axolotl_blue_baby.png"
+      },
+      {
+        "name": "Axolotl Axolotl Blue",
+        "category": "Standardtextur",
+        "description": "Variante: Axolotl Axolotl Blue.",
+        "file": "/assets/img/texture/mobs/axolotl/axolotl_blue.png"
+      },
+      {
+        "name": "Axolotl Axolotl Cyan Baby",
+        "category": "Baby",
+        "description": "Variante: Axolotl Axolotl Cyan Baby.",
+        "file": "/assets/img/texture/mobs/axolotl/axolotl_cyan_baby.png"
+      },
+      {
+        "name": "Axolotl Axolotl Cyan",
+        "category": "Standardtextur",
+        "description": "Variante: Axolotl Axolotl Cyan.",
+        "file": "/assets/img/texture/mobs/axolotl/axolotl_cyan.png"
+      },
+      {
+        "name": "Axolotl Axolotl Gold Baby",
+        "category": "Baby",
+        "description": "Variante: Axolotl Axolotl Gold Baby.",
+        "file": "/assets/img/texture/mobs/axolotl/axolotl_gold_baby.png"
+      },
+      {
+        "name": "Axolotl Axolotl Gold",
+        "category": "Standardtextur",
+        "description": "Variante: Axolotl Axolotl Gold.",
+        "file": "/assets/img/texture/mobs/axolotl/axolotl_gold.png"
+      },
+      {
+        "name": "Axolotl Axolotl Lucy Baby",
+        "category": "Baby",
+        "description": "Variante: Axolotl Axolotl Lucy Baby.",
+        "file": "/assets/img/texture/mobs/axolotl/axolotl_lucy_baby.png"
+      },
+      {
+        "name": "Axolotl Axolotl Lucy",
+        "category": "Standardtextur",
+        "description": "Variante: Axolotl Axolotl Lucy.",
+        "file": "/assets/img/texture/mobs/axolotl/axolotl_lucy.png"
+      },
+      {
+        "name": "Axolotl Axolotl Wild Baby",
+        "category": "Baby",
+        "description": "Variante: Axolotl Axolotl Wild Baby.",
+        "file": "/assets/img/texture/mobs/axolotl/axolotl_wild_baby.png"
+      },
+      {
+        "name": "Axolotl Axolotl Wild",
+        "category": "Standardtextur",
+        "description": "Variante: Axolotl Axolotl Wild.",
+        "file": "/assets/img/texture/mobs/axolotl/axolotl_wild.png"
+      }
+    ],
+    "sounds": [],
+    "health": 14,
+    "damage": 2,
+    "armor": 0,
+    "experience": "1–3 beim Töten; 1–7 beim Züchten",
+    "spawn": {
+      "light_level": [
+        "Beliebig"
+      ],
+      "biome": "Üppige Höhle",
+      "structure": "Keine; Tonblock höchstens 5 Blöcke unter dem Spawnplatz"
+    },
+    "light_level": [
+      "any"
+    ],
+    "classification": "Passiv gegenüber Spielern / aquatisch",
+    "renewable": "Ja",
+    "can_despawn": "Nein",
+    "tameable": "Nein",
+    "breedable": "Ja",
+    "duplicable": "Nein",
+    "duplication_item": "Keines",
+    "leashable": "Ja",
+    "rideable": "Nein",
+    "baby_variant": "Ja",
+    "drops": [],
+    "abilities": [
+      "Axolotl sind passiv gegenüber Spielern, können befestigt werden an führt, und folgen Sie den Spielern, die eine halten Eimer mit tropischen Fischen entweder auf der Haupthand oder der Nebenhand.",
+      "Axolotl greifen die folgenden Mobs an und handeln mit 2HP ❤️ Schadenspunkte pro Angriff:",
+      "Kabeljau, Lachs, Kugelfisch, Tropischer Fisch, Kaulquappe, Tintenfisch",
+      "Leuchtender Tintenfisch, Ertrunken, Wächter, Älterer Wächter"
+    ],
+    "fun_fact": "Kann tot stellen, um sich zu heilen  – basiert auf einem echten Salamander.",
+    "attack_type": "Nahkampf",
+    "targets": [
+      "Fische",
+      "Tintenfisch",
+      "Leuchttintenfisch",
+      "Kaulquappe",
+      "Ertrunkener",
+      "Wächter",
+      "Älterer Wächter"
+    ],
+    "enemy_mobs": [],
+    "follows": [
+      "Eimer mit Tropenfisch"
+    ],
+    "healing_item": [
+      "Eimer mit Tropenfisch"
+    ],
+    "fire_immune": "Nein",
+    "undead": "Nein",
+    "boss_bar": "Nein",
+    "knockback_resistance": 0,
+    "loot_table": "minecraft:entities/axolotl",
+    "java_entity_id": "minecraft:axolotl",
+    "bedrock_entity_id": "minecraft:axolotl"
+  },
+  {
+    "id": "minecraft:bat",
+    "name": "Fledermaus",
+    "numeric_id": "( Nur Bedrock ) 19",
+    "type": "passive",
+    "category": "Passiver Mob",
+    "icon": "/assets/img/mobs/passive/Bat.webp",
+    "description": "Fliegt ziellos und ignoriert Spieler.",
+    "biome": "Unterirdische Bereiche der Oberwelt",
+    "structure": "Keine",
+    "dimension": "overworld",
+    "movement_speed": 0.7,
+    "size": {
+      "width": "Breite: 0.5",
+      "height": "Höhe: 0.9"
+    },
+    "aliases": [],
+    "introduced_date": "2012-10-25",
+    "removed_date": null,
+    "gallery": [],
+    "model": "Minecraft-Entity-Modell",
+    "animation": [],
+    "source": "",
+    "updated_at": "2026-08-22",
+    "notes": "Fliegt ziellos und ignoriert Spieler.",
+    "version": "Java Edition 1.4.2 / Bedrock Edition 1.10.0",
+    "edition": "Java Edition, Bedrock Edition",
+    "effects": [],
+    "effect_immunities": [],
+    "status": "Verfügbar",
+    "tags": [
+      "Passiv",
+      "overworld"
+    ],
+    "related_entries": [],
+    "command": "/summon minecraft:bat",
+    "version_history": [
+      {
+        "version": "Java Edition 1.4.2 / Bedrock Edition 1.10.0",
+        "change": "Fledermaus: erstmals in der angegebenen Version verfügbar.",
+        "type": "added",
+        "date": "2012-10-25"
+      }
+    ],
+    "texture": [
+      {
+        "name": "Bat Bat",
+        "category": "Standardtextur",
+        "description": "Variante: Bat Bat.",
+        "file": "/assets/img/texture/mobs/bat/bat.png"
+      }
+    ],
+    "sounds": [],
+    "health": 6,
+    "damage": 0,
+    "armor": 0,
+    "experience": "0",
+    "spawn": {
+      "light_level": [
+        "3+",
+        "Von October 20 – November 3 6+ (JE Only)"
+      ],
+      "biome": "Caves",
+      "structure": "Keine"
+    },
+    "light_level": [
+      "3+",
+      "Von October 20 – November 3 6+ (JE Only)"
+    ],
+    "classification": "Passiv / Umgebung",
+    "renewable": "Ja",
+    "can_despawn": "Ja",
+    "tameable": "Nein",
+    "breedable": "Nein",
+    "duplicable": "Nein",
+    "duplication_item": "Keines",
+    "leashable": "Nein",
+    "rideable": "Nein",
+    "baby_variant": "Nein",
+    "drops": [],
+    "abilities": [
+      "Fliegt",
+      "Einziger Mob, der kopfüber schlafen kann."
+    ],
+    "fun_fact": "Einziger Mob, der kopfüber schlafen kann.",
+    "attack_type": "Keiner",
+    "targets": [],
+    "enemy_mobs": [],
+    "follows": [],
+    "healing_item": [],
+    "fire_immune": "Nein",
+    "undead": "Nein",
+    "boss_bar": "Nein",
+    "knockback_resistance": 0,
+    "loot_table": "minecraft:entities/bat",
+    "java_entity_id": "minecraft:bat",
+    "bedrock_entity_id": "minecraft:bat"
+  },
+  {
+    "id": "minecraft:camel",
+    "name": "Kamel",
+    "numeric_id": "( Nur Bedrock ) 138",
+    "type": "passive",
+    "category": "Passiver Mob",
+    "icon": "/assets/img/mobs/passive/Camel.webp",
+    "description": "Kann Spieler tragen und hohe Sprünge machen.",
+    "biome": "Wüste",
+    "structure": "Wüstendorf; zusätzlich seltener natürlicher Wüstenspawn",
+    "dimension": "overworld",
+    "movement_speed": 0.17,
+    "size": {
+      "width": "Breite: 1.7",
+      "height": "Höhe: 2.375"
+    },
+    "aliases": [],
+    "introduced_date": "2023-06-07",
+    "removed_date": null,
+    "gallery": [],
+    "model": "Minecraft-Entity-Modell",
+    "animation": [],
+    "source": "",
+    "updated_at": "2026-08-22",
+    "notes": "Kamele lassen kein Leder fallen.",
+    "version": "Java Edition 1.20 / Bedrock Edition 1.20.0",
+    "edition": "Java Edition, Bedrock Edition",
+    "effects": [],
+    "effect_immunities": [],
+    "status": "Verfügbar",
+    "tags": [
+      "Passiv",
+      "overworld"
+    ],
+    "related_entries": [
+      "minecraft:cactus",
+      "minecraft:saddle"
+    ],
+    "command": "/summon minecraft:camel",
+    "version_history": [
+      {
+        "version": "Java Edition 1.20 / Bedrock Edition 1.20.0",
+        "change": "Kamel: erstmals in der angegebenen Version verfügbar.",
+        "type": "added",
+        "date": "2023-06-07"
+      }
+    ],
+    "texture": [
+      {
+        "name": "Camel Camel Baby",
+        "category": "Baby",
+        "description": "Variante: Camel Camel Baby.",
+        "file": "/assets/img/texture/mobs/camel/camel_baby.png"
+      },
+      {
+        "name": "Camel Camel",
+        "category": "Standardtextur",
+        "description": "Variante: Camel Camel.",
+        "file": "/assets/img/texture/mobs/camel/camel.png"
+      },
+      {
+        "name": "Equipment Camel Saddle Saddle",
+        "category": "Ausrüstung",
+        "description": "Variante: Equipment Camel Saddle Saddle.",
+        "file": "/assets/img/texture/mobs/equipment/camel_saddle/saddle.png"
+      }
+    ],
+    "sounds": [],
+    "health": 32,
+    "damage": 0,
+    "armor": 0,
+    "experience": "1–3 beim Töten; 1–7 beim Züchten",
+    "spawn": {
+      "light_level": "7+",
+      "biome": "Desert, Desert village",
+      "structure": "Desert Villages"
+    },
+    "light_level": [
+      "7+"
+    ],
+    "classification": "Passiv / Tier",
+    "renewable": "Ja",
+    "can_despawn": "Nein",
+    "tameable": "Nicht nötig",
+    "breedable": "Ja",
+    "duplicable": "Nein",
+    "duplication_item": "Keines",
+    "leashable": "Ja",
+    "rideable": "Ja, mit Sattel; bis zu zwei Spieler",
+    "baby_variant": "Ja",
+    "drops": [
+      {
+        "item": "minecraft:saddle",
+        "chance": "100 %",
+        "amount": "1",
+        "condition": "Nur wenn ausgerüstet"
+      }
+    ],
+    "abilities": [
+      "kann bis zu 2 Spieler tragen."
+    ],
+    "fun_fact": "Kann höher springen als jedes andere Reittier perfekt für Wüsten!",
+    "attack_type": "Keiner",
+    "targets": [],
+    "enemy_mobs": [],
+    "follows": [
+      "Kaktus"
+    ],
+    "healing_item": [
+      "Kaktus"
+    ],
+    "fire_immune": "Nein",
+    "undead": "Nein",
+    "boss_bar": "Nein",
+    "knockback_resistance": 0,
+    "loot_table": "minecraft:entities/camel",
+    "java_entity_id": "minecraft:camel",
+    "bedrock_entity_id": "minecraft:camel"
+  },
+  {
+    "id": "minecraft:camel_husk",
+    "name": "Zombiedromedar",
+    "numeric_id": "( Nur Bedrock ) 152",
+    "type": "passive",
+    "category": "Passiver Mob",
+    "icon": "/assets/img/mobs/passive/Camel_Husk.png",
+    "description": "Untote Kamel-Variante • Spawnt in Wüsten • Kann geritten werden • Spawnt ab und zu mit einem Wüstenzombie und Wüstenwanderer auf dem Rücken.",
+    "biome": "Wüste",
+    "structure": "Keine; 10-%-Chance als Reittier eines spawnenden Husks, zusätzlich mit Parched als zweitem Reiter",
+    "dimension": "Overworld",
+    "movement_speed": 0.2,
+    "size": {
+      "width": "Breite: 1.7",
+      "height": "Höhe: 2.375",
+      "sitting": {
+        "width": "Breite: 1.7",
+        "height": "Höhe: 0.945"
+      }
+    },
+    "aliases": [
+      "Untotes Kamel"
+    ],
+    "introduced_date": "2025-12-09",
+    "removed_date": null,
+    "gallery": [],
+    "model": "Minecraft-Entity-Modell",
+    "animation": [],
+    "source": "",
+    "updated_at": "2026-08-22",
+    "notes": "Untote Kamel-Variante • Spawnt in Wüsten • Kann geritten werden • Spawnt ab und zu mit einem Wüstenzombie und Wüstenwanderer auf dem Rücken.",
+    "version": "Java Edition 1.21.11 / Bedrock Edition 1.21.130",
+    "edition": "Java Edition, Bedrock Edition",
+    "effects": [],
+    "effect_immunities": [
+      "Gift",
+      "Regeneration"
+    ],
+    "status": "Verfügbar",
+    "tags": [
+      "Passiv",
+      "Overworld"
+    ],
+    "related_entries": [
+      "minecraft:rabbit_foot",
+      "minecraft:saddle"
+    ],
+    "command": "/summon minecraft:camel_husk",
+    "version_history": [
+      {
+        "version": "Java Edition 1.21.11 / Bedrock Edition 1.21.130",
+        "change": "Zombiedromedar: erstmals in der angegebenen Version verfügbar.",
+        "type": "added",
+        "date": "2025-12-09"
+      }
+    ],
+    "texture": [
+      {
+        "name": "Camel Husk Camel Husk",
+        "category": "Standardtextur",
+        "description": "Variante: Camel Husk Camel Husk.",
+        "file": "/assets/img/texture/mobs/camel_husk/camel_husk.png"
+      },
+      {
+        "name": "Equipment Camel Husk Saddle Saddle",
+        "category": "Ausrüstung",
+        "description": "Variante: Equipment Camel Husk Saddle Saddle.",
+        "file": "/assets/img/texture/mobs/equipment/camel_husk_saddle/saddle.png"
+      }
+    ],
+    "sounds": [],
+    "health": 32,
+    "damage": 0,
+    "armor": 0,
+    "experience": "1–3 beim Töten",
+    "spawn": {
+      "light_level": [
+        "0-15"
+      ],
+      "biome": "Wüste",
+      "structure": "Keine"
+    },
+    "light_level": [
+      "0-15"
+    ],
+    "classification": "Untot; selbst passiv, Begegnung durch feindliche Reiter gefährlich",
+    "renewable": "Ja",
+    "can_despawn": "Ja",
+    "tameable": "Nein; nach Entfernen der Reiter direkt nutzbar",
+    "breedable": "Nein",
+    "duplicable": "Nein",
+    "duplication_item": "Keines",
+    "leashable": "Ja",
+    "rideable": "Ja, nach Entfernen der Reiter mit Sattel; bis zu zwei Spieler",
+    "baby_variant": "Nein (seit Java 26.1 entfernt)",
+    "drops": [
+      {
+        "item": "minecraft:rotten_flesh",
+        "chance": "100 %",
+        "amount": "2–3 (+0–1 je Plünderungsstufe)"
+      },
+      {
+        "item": "minecraft:saddle",
+        "chance": "100 %",
+        "amount": "1",
+        "condition": "Nur wenn ausgerüstet"
+      }
+    ],
+    "abilities": [
+      "Kann gesattelt und geritten werden",
+      "Spawnt bei Nacht und Gewittern",
+      "kann bis zu 2 Spieler tragen.",
+      "Untote Kamel-Variante"
+    ],
+    "fun_fact": "Zombiedromedar Spawnt ab und zu mit einem Wüstenzombie und Wüstenwanderer auf dem Rücken.",
+    "attack_type": "Keiner",
+    "targets": [],
+    "enemy_mobs": [],
+    "follows": [
+      "Hasenpfote"
+    ],
+    "healing_item": [
+      "Hasenpfote"
+    ],
+    "fire_immune": "Nein; brennt jedoch nicht im Sonnenlicht",
+    "undead": "Ja",
+    "boss_bar": "Nein",
+    "knockback_resistance": 0,
+    "loot_table": "minecraft:entities/camel_husk",
+    "java_entity_id": "minecraft:camel_husk",
+    "bedrock_entity_id": "minecraft:camel_husk"
+  },
+  {
+    "id": "minecraft:cat",
+    "name": "Katze",
+    "numeric_id": "( Nur Bedrock ) 75",
+    "type": "passive",
+    "category": "Passiver Mob",
+    "icon": "/assets/img/mobs/passive/Cat.gif",
+    "description": "Hilft gegen Phantome und folgt Spielern.",
+    "biome": "Dörfer; schwarze Katze auch in Sumpfhütten",
+    "structure": "Dorf, Sumpfhütte",
+    "dimension": "overworld",
+    "movement_speed": 0.3,
+    "size": {
+      "width": "Breite:  0.6",
+      "height": "Höhe: 0.7"
+    },
+    "aliases": [],
+    "introduced_date": "2012-03-01",
+    "removed_date": null,
+    "gallery": [],
+    "model": "Minecraft-Entity-Modell",
+    "animation": [],
+    "source": "",
+    "updated_at": "2026-08-22",
+    "notes": "Hilft gegen Phantome und folgt Spielern.",
+    "version": "Seit Java 1.14 eigener Mob; Katzen existieren seit Java 1.2.1",
+    "edition": "Java Edition, Bedrock Edition",
+    "effects": [],
+    "effect_immunities": [],
+    "status": "Verfügbar",
+    "tags": [
+      "Passiv",
+      "overworld"
+    ],
+    "related_entries": [
+      "minecraft:cod",
+      "minecraft:salmon"
+    ],
+    "command": "/summon minecraft:cat",
+    "version_history": [
+      {
+        "version": "Java Edition 1.2.1",
+        "change": "Katzen erschienen zunächst als gezähmte Form des Ozelots.",
+        "type": "added",
+        "date": "2012-03-01"
+      },
+      {
+        "version": "Java Edition 1.14",
+        "change": "Die Katze wurde vom Ozelot getrennt und als eigene Entity eingeführt.",
+        "type": "changed",
+        "date": "2019-04-23"
+      }
+    ],
+    "texture": [
+      {
+        "name": "Cat Cat All Black Baby",
+        "category": "Baby",
+        "description": "Variante: Cat Cat All Black Baby.",
+        "file": "/assets/img/texture/mobs/cat/cat_all_black_baby.png"
+      },
+      {
+        "name": "Cat Cat All Black",
+        "category": "Standardtextur",
+        "description": "Variante: Cat Cat All Black.",
+        "file": "/assets/img/texture/mobs/cat/cat_all_black.png"
+      },
+      {
+        "name": "Cat Cat Black Baby",
+        "category": "Baby",
+        "description": "Variante: Cat Cat Black Baby.",
+        "file": "/assets/img/texture/mobs/cat/cat_black_baby.png"
+      },
+      {
+        "name": "Cat Cat Black",
+        "category": "Standardtextur",
+        "description": "Variante: Cat Cat Black.",
+        "file": "/assets/img/texture/mobs/cat/cat_black.png"
+      },
+      {
+        "name": "Cat Cat British Shorthair Baby",
+        "category": "Baby",
+        "description": "Variante: Cat Cat British Shorthair Baby.",
+        "file": "/assets/img/texture/mobs/cat/cat_british_shorthair_baby.png"
+      },
+      {
+        "name": "Cat Cat British Shorthair",
+        "category": "Standardtextur",
+        "description": "Variante: Cat Cat British Shorthair.",
+        "file": "/assets/img/texture/mobs/cat/cat_british_shorthair.png"
+      },
+      {
+        "name": "Cat Cat Calico Baby",
+        "category": "Baby",
+        "description": "Variante: Cat Cat Calico Baby.",
+        "file": "/assets/img/texture/mobs/cat/cat_calico_baby.png"
+      },
+      {
+        "name": "Cat Cat Calico",
+        "category": "Standardtextur",
+        "description": "Variante: Cat Cat Calico.",
+        "file": "/assets/img/texture/mobs/cat/cat_calico.png"
+      },
+      {
+        "name": "Cat Cat Collar Baby",
+        "category": "Baby",
+        "description": "Variante: Cat Cat Collar Baby.",
+        "file": "/assets/img/texture/mobs/cat/cat_collar_baby.png"
+      },
+      {
+        "name": "Cat Cat Collar",
+        "category": "Standardtextur",
+        "description": "Variante: Cat Cat Collar.",
+        "file": "/assets/img/texture/mobs/cat/cat_collar.png"
+      },
+      {
+        "name": "Cat Cat Jellie Baby",
+        "category": "Baby",
+        "description": "Variante: Cat Cat Jellie Baby.",
+        "file": "/assets/img/texture/mobs/cat/cat_jellie_baby.png"
+      },
+      {
+        "name": "Cat Cat Jellie",
+        "category": "Standardtextur",
+        "description": "Variante: Cat Cat Jellie.",
+        "file": "/assets/img/texture/mobs/cat/cat_jellie.png"
+      },
+      {
+        "name": "Cat Cat Persian Baby",
+        "category": "Baby",
+        "description": "Variante: Cat Cat Persian Baby.",
+        "file": "/assets/img/texture/mobs/cat/cat_persian_baby.png"
+      },
+      {
+        "name": "Cat Cat Persian",
+        "category": "Standardtextur",
+        "description": "Variante: Cat Cat Persian.",
+        "file": "/assets/img/texture/mobs/cat/cat_persian.png"
+      },
+      {
+        "name": "Cat Cat Ragdoll Baby",
+        "category": "Baby",
+        "description": "Variante: Cat Cat Ragdoll Baby.",
+        "file": "/assets/img/texture/mobs/cat/cat_ragdoll_baby.png"
+      },
+      {
+        "name": "Cat Cat Ragdoll",
+        "category": "Standardtextur",
+        "description": "Variante: Cat Cat Ragdoll.",
+        "file": "/assets/img/texture/mobs/cat/cat_ragdoll.png"
+      },
+      {
+        "name": "Cat Cat Red Baby",
+        "category": "Baby",
+        "description": "Variante: Cat Cat Red Baby.",
+        "file": "/assets/img/texture/mobs/cat/cat_red_baby.png"
+      },
+      {
+        "name": "Cat Cat Red",
+        "category": "Standardtextur",
+        "description": "Variante: Cat Cat Red.",
+        "file": "/assets/img/texture/mobs/cat/cat_red.png"
+      },
+      {
+        "name": "Cat Cat Siamese Baby",
+        "category": "Baby",
+        "description": "Variante: Cat Cat Siamese Baby.",
+        "file": "/assets/img/texture/mobs/cat/cat_siamese_baby.png"
+      },
+      {
+        "name": "Cat Cat Siamese",
+        "category": "Standardtextur",
+        "description": "Variante: Cat Cat Siamese.",
+        "file": "/assets/img/texture/mobs/cat/cat_siamese.png"
+      },
+      {
+        "name": "Cat Cat Tabby Baby",
+        "category": "Baby",
+        "description": "Variante: Cat Cat Tabby Baby.",
+        "file": "/assets/img/texture/mobs/cat/cat_tabby_baby.png"
+      },
+      {
+        "name": "Cat Cat Tabby",
+        "category": "Standardtextur",
+        "description": "Variante: Cat Cat Tabby.",
+        "file": "/assets/img/texture/mobs/cat/cat_tabby.png"
+      },
+      {
+        "name": "Cat Cat White Baby",
+        "category": "Baby",
+        "description": "Variante: Cat Cat White Baby.",
+        "file": "/assets/img/texture/mobs/cat/cat_white_baby.png"
+      },
+      {
+        "name": "Cat Cat White",
+        "category": "Standardtextur",
+        "description": "Variante: Cat Cat White.",
+        "file": "/assets/img/texture/mobs/cat/cat_white.png"
+      }
+    ],
+    "sounds": [],
+    "health": 10,
+    "damage": 3,
+    "armor": 0,
+    "experience": "1–3 beim Töten; 1–7 beim Züchten",
+    "spawn": {
+      "light_level": "7+",
+      "biome": "Villages, Swamp huts (Nur schwarze Katzen)",
+      "structure": "Keine"
+    },
+    "light_level": [
+      "7+"
+    ],
+    "classification": "Passiv / Tier",
+    "renewable": "Ja",
+    "can_despawn": "Nein",
+    "tameable": "Ja",
+    "breedable": "Ja (nur gezähmte Katzen)",
+    "duplicable": "Nein",
+    "duplication_item": "Keines",
+    "leashable": "Ja",
+    "rideable": "Nein",
+    "baby_variant": "Ja",
+    "drops": [
+      {
+        "item": "minecraft:string",
+        "chance": "100 %",
+        "amount": "0–2"
+      }
+    ],
+    "abilities": [
+      "katzen greifen die folgenden Mobs an und handeln mit 3HP ❤️ Schadenspunkte pro Angriff:",
+      "Kaninchen, Baby-Schildkröten"
+    ],
+    "fun_fact": "Schützt dich vor Phantomen, wenn du sie fütterst!",
+    "attack_type": "Nahkampf",
+    "targets": [
+      "Kaninchen",
+      "Baby-Schildkröten"
+    ],
+    "enemy_mobs": [],
+    "follows": [
+      "Roher Kabeljau",
+      "Roher Lachs"
+    ],
+    "healing_item": [
+      "Roher Kabeljau",
+      "Roher Lachs"
+    ],
+    "fire_immune": "Nein",
+    "undead": "Nein",
+    "boss_bar": "Nein",
+    "knockback_resistance": 0,
+    "loot_table": "minecraft:entities/cat",
+    "java_entity_id": "minecraft:cat",
+    "bedrock_entity_id": "minecraft:cat"
+  },
+  {
+    "id": "minecraft:chicken",
+    "name": "Huhn",
+    "numeric_id": "( Nur Bedrock ) 10",
+    "type": "passive",
+    "category": "Passiver Mob",
+    "icon": "/assets/img/mobs/passive/Chicken.png",
+    "description": "Passives Nutztier • Legt alle 5-10 Minuten Eier • Kann mit Samen gezüchtet werden • Flattert beim Fallen • Küken wachsen in 20 Minuten aus",
+    "biome": "Alle Overworld-Biome (außer Ozeane, Wüsten)",
+    "structure": "Keine",
+    "dimension": "Overworld",
+    "movement_speed": 0.25,
+    "size": {
+      "width": "Breite: 0.4",
+      "height": "Höhe: 0.7",
+      "baby": {
+        "width": "Breite: 0.2",
+        "height": "Höhe: 0.35"
+      }
+    },
+    "aliases": [],
+    "introduced_date": "2010-07-30",
+    "removed_date": null,
+    "gallery": [],
+    "model": "Minecraft-Entity-Modell",
+    "animation": [],
+    "source": "",
+    "updated_at": "2026-08-22",
+    "notes": "Eier werden alle 5–10 Minuten gelegt und sind kein Todesdrop.",
+    "version": "Java Edition Alpha v1.0.14",
+    "edition": "Java Edition, Bedrock Edition",
+    "effects": [],
+    "effect_immunities": [],
+    "status": "Verfügbar",
+    "tags": [
+      "Passiv",
+      "Overworld"
+    ],
+    "related_entries": [
+      "minecraft:egg",
+      "minecraft:feather",
+      "minecraft:chicken"
+    ],
+    "command": "/summon minecraft:chicken",
+    "version_history": [
+      {
+        "version": "Java Edition Alpha v1.0.14",
+        "change": "Huhn: erstmals in der angegebenen Version verfügbar.",
+        "type": "added",
+        "date": "2010-07-30"
+      }
+    ],
+    "texture": [
+      {
+        "name": "Chicken Chicken Cold Baby",
+        "category": "Baby",
+        "description": "Variante: Chicken Chicken Cold Baby.",
+        "file": "/assets/img/texture/mobs/chicken/chicken_cold_baby.png"
+      },
+      {
+        "name": "Chicken Chicken Cold",
+        "category": "Standardtextur",
+        "description": "Variante: Chicken Chicken Cold.",
+        "file": "/assets/img/texture/mobs/chicken/chicken_cold.png"
+      },
+      {
+        "name": "Chicken Chicken Temperate Baby",
+        "category": "Baby",
+        "description": "Variante: Chicken Chicken Temperate Baby.",
+        "file": "/assets/img/texture/mobs/chicken/chicken_temperate_baby.png"
+      },
+      {
+        "name": "Chicken Chicken Temperate",
+        "category": "Standardtextur",
+        "description": "Variante: Chicken Chicken Temperate.",
+        "file": "/assets/img/texture/mobs/chicken/chicken_temperate.png"
+      },
+      {
+        "name": "Chicken Chicken Warm Baby",
+        "category": "Baby",
+        "description": "Variante: Chicken Chicken Warm Baby.",
+        "file": "/assets/img/texture/mobs/chicken/chicken_warm_baby.png"
+      },
+      {
+        "name": "Chicken Chicken Warm",
+        "category": "Standardtextur",
+        "description": "Variante: Chicken Chicken Warm.",
+        "file": "/assets/img/texture/mobs/chicken/chicken_warm.png"
+      }
+    ],
+    "sounds": [],
+    "health": 4,
+    "damage": 0,
+    "armor": 0,
+    "experience": "1–3 beim Töten; 1–7 beim Züchten",
+    "spawn": {
+      "light_level": [
+        "9-15"
+      ],
+      "biome": "Alle Overworld-Biome (außer Ozeane, Wüsten)",
+      "structure": "Keine"
+    },
+    "light_level": [
+      "0-15"
+    ],
+    "classification": "Passiv / Tier",
+    "renewable": "Ja",
+    "can_despawn": "Nein",
+    "tameable": "Nein",
+    "breedable": "Ja",
+    "duplicable": "Nein",
+    "duplication_item": "Keines",
+    "leashable": "Ja",
+    "rideable": "Nein",
+    "baby_variant": "Ja",
+    "drops": [
+      {
+        "item": "minecraft:feather",
+        "chance": "100 %",
+        "amount": "0–2"
+      },
+      {
+        "item": "minecraft:chicken",
+        "chance": "100 %",
+        "amount": "1",
+        "condition": "Gekocht, wenn es brennend stirbt"
+      }
+    ],
+    "abilities": [
+      "Eier legen: Alle 5-10 Minuten wird ein Ei gelegt",
+      "Züchtung: Mit Samen vermehrbar",
+      "Fallsicher: Reduziert Fallschaden durch Flattern",
+      "Küken-Spawn: Geworfene Eier haben 1-8 Chance für Küken"
+    ],
+    "fun_fact": "Hühner nehmen keinen Fallschaden, wenn sie vor dem Aufprall flattern!",
+    "attack_type": "Keiner",
+    "targets": [],
+    "enemy_mobs": [],
+    "follows": [
+      "Weizensamen",
+      "Kürbiskerne",
+      "Melonenkerne",
+      "Rote-Bete-Samen",
+      "Fackelliliensamen",
+      "Kannenpflanze"
+    ],
+    "healing_item": [],
+    "fire_immune": "Nein",
+    "undead": "Nein",
+    "boss_bar": "Nein",
+    "knockback_resistance": 0,
+    "loot_table": "minecraft:entities/chicken",
+    "java_entity_id": "minecraft:chicken",
+    "bedrock_entity_id": "minecraft:chicken"
+  },
+  {
+    "id": "minecraft:cod",
+    "name": "Kabeljau",
+    "numeric_id": "( Nur Bedrock ) 112",
+    "type": "passive",
+    "category": "Passiver Mob",
+    "icon": "/assets/img/mobs/passive/Cod.gif",
+    "description": "Passiver Fisch • Schwimmt im Wasser • Kann mit Eimer gefangen werden",
+    "biome": "Kalter Ozean, Kalte Tiefsee, Lauwarmer Ozean, Lauwarme Tiefsee, Ozean, Tiefsee, Vereister Ozean[BE], Vereiste Tiefsee[BE]",
+    "structure": "Keine",
+    "dimension": "Overworld",
+    "movement_speed": 0.7,
+    "size": {
+      "width": "Breite: 0.5",
+      "height": "Höhe: 0.3"
+    },
+    "aliases": [],
+    "introduced_date": "2018-07-18",
+    "removed_date": null,
+    "gallery": [],
+    "model": "Minecraft-Entity-Modell",
+    "animation": [],
+    "source": "",
+    "updated_at": "2026-08-22",
+    "notes": "Passiver Fisch • Schwimmt im Wasser • Kann mit Eimer gefangen werden",
+    "version": "Java Edition 1.13 / Bedrock Edition 1.4.0",
+    "edition": "Java Edition, Bedrock Edition",
+    "effects": [],
+    "effect_immunities": [],
+    "status": "Verfügbar",
+    "tags": [
+      "Passiv",
+      "Overworld"
+    ],
+    "related_entries": [
+      "minecraft:cod",
+      "minecraft:cod_bucket",
+      "minecraft:bone_meal"
+    ],
+    "command": "/summon minecraft:cod",
+    "version_history": [
+      {
+        "version": "Java Edition 1.13 / Bedrock Edition 1.4.0",
+        "change": "Kabeljau: erstmals in der angegebenen Version verfügbar.",
+        "type": "added",
+        "date": "2018-07-18"
+      }
+    ],
+    "texture": [
+      {
+        "name": "Fish Cod",
+        "category": "Standardtextur",
+        "description": "Variante: Fish Cod.",
+        "file": "/assets/img/texture/mobs/fish/cod.png"
+      }
+    ],
+    "sounds": [],
+    "health": 3,
+    "damage": 0,
+    "armor": 0,
+    "experience": "1–3 beim Töten",
+    "spawn": {
+      "light_level": [
+        "0-15"
+      ],
+      "biome": "Kalter Ozean, Kalte Tiefsee, Lauwarmer Ozean, Lauwarme Tiefsee, Ozean, Tiefsee, Vereister Ozean[BE], Vereiste Tiefsee[BE]",
+      "structure": "Keine"
+    },
+    "light_level": [
+      "0-15"
+    ],
+    "classification": "Passiv / Wassertier",
+    "renewable": "Ja",
+    "can_despawn": "Nein",
+    "tameable": "Nein",
+    "breedable": "Nein",
+    "duplicable": "Nein",
+    "duplication_item": "Keines",
+    "leashable": "Nein",
+    "rideable": "Nein",
+    "baby_variant": "Nein",
+    "drops": [
+      {
+        "item": "minecraft:cod",
+        "chance": "100 %",
+        "amount": "1",
+        "condition": "Gekocht, wenn es brennend stirbt"
+      },
+      {
+        "item": "minecraft:bone_meal",
+        "chance": "5 % (Java)",
+        "amount": "1"
+      },
+      {
+        "item": "minecraft:bone",
+        "chance": "25 % (Bedrock)",
+        "amount": "1–2 je nach Fischgröße"
+      }
+    ],
+    "abilities": [
+      "Schwimmen",
+      "Mit Wassereimer fangbar"
+    ],
+    "fun_fact": "Kabeljaue können nur im Wasser überleben!",
+    "attack_type": "Keiner",
+    "targets": [],
+    "enemy_mobs": [],
+    "follows": [],
+    "healing_item": [],
+    "fire_immune": "Nein",
+    "undead": "Nein",
+    "boss_bar": "Nein",
+    "knockback_resistance": 0,
+    "loot_table": "minecraft:entities/cod",
+    "java_entity_id": "minecraft:cod",
+    "bedrock_entity_id": "minecraft:cod"
+  },
+  {
+    "id": "minecraft:copper_golem",
+    "name": "Kupfergolem",
+    "numeric_id": "( Nur Bedrock ) 148",
+    "type": "passive",
+    "category": "Passiver Mob",
+    "icon": "/assets/img/mobs/passive/Copper_golem.gif",
+    "description": "Vom Spieler gebauter Mob • Drückt zufällig Kupferknöpfe • Oxidiert mit der Zeit • Kann gewachst werden",
+    "biome": "Keine natürliche Biom-Bindung",
+    "structure": "Vom Spieler gebaut: Kupferblock + geschnitzter Kürbis/Kürbislaterne",
+    "dimension": "Overworld",
+    "movement_speed": 0.25,
+    "size": {
+      "width": 0.6,
+      "height": 1
+    },
+    "aliases": [],
+    "introduced_date": "2025-09-30",
+    "removed_date": null,
+    "gallery": [],
+    "model": "Minecraft-Entity-Modell",
+    "animation": [],
+    "source": "",
+    "updated_at": "2026-08-22",
+    "notes": "Sortiert Gegenstände aus Kupfertruhen in passende normale Truhen; oxidiert ohne Wachs und wird schließlich zur Statue.",
+    "version": "Java Edition 1.21.9 / Bedrock Edition 1.21.111",
+    "edition": "Java Edition, Bedrock Edition",
+    "effects": [],
+    "effect_immunities": [],
+    "status": "Verfügbar",
+    "tags": [
+      "Passiv",
+      "Overworld"
+    ],
+    "related_entries": [
+      "minecraft:copper_chest",
+      "minecraft:carved_pumpkin",
+      "minecraft:copper_block",
+      "minecraft:copper_ingot",
+      "minecraft:oxidized_copper"
+    ],
+    "command": "/summon minecraft:copper_golem",
+    "version_history": [
+      {
+        "version": "Java Edition 1.21.9 / Bedrock Edition 1.21.111",
+        "change": "Der Kupfergolem wurde mit The Copper Age veröffentlicht.",
+        "type": "added",
+        "date": "2025-09-30"
+      }
+    ],
+    "texture": [
+      {
+        "name": "Copper Golem Copper Golem Exposed",
+        "category": "Standardtextur",
+        "description": "Variante: Copper Golem Copper Golem Exposed.",
+        "file": "/assets/img/texture/mobs/copper_golem/copper_golem_exposed.png"
+      },
+      {
+        "name": "Copper Golem Copper Golem Eyes Exposed",
+        "category": "Standardtextur",
+        "description": "Variante: Copper Golem Copper Golem Eyes Exposed.",
+        "file": "/assets/img/texture/mobs/copper_golem/copper_golem_eyes_exposed.png"
+      },
+      {
+        "name": "Copper Golem Copper Golem Eyes Oxidized",
+        "category": "Standardtextur",
+        "description": "Variante: Copper Golem Copper Golem Eyes Oxidized.",
+        "file": "/assets/img/texture/mobs/copper_golem/copper_golem_eyes_oxidized.png"
+      },
+      {
+        "name": "Copper Golem Copper Golem Eyes Weathered",
+        "category": "Standardtextur",
+        "description": "Variante: Copper Golem Copper Golem Eyes Weathered.",
+        "file": "/assets/img/texture/mobs/copper_golem/copper_golem_eyes_weathered.png"
+      },
+      {
+        "name": "Copper Golem Copper Golem Eyes",
+        "category": "Standardtextur",
+        "description": "Variante: Copper Golem Copper Golem Eyes.",
+        "file": "/assets/img/texture/mobs/copper_golem/copper_golem_eyes.png"
+      },
+      {
+        "name": "Copper Golem Copper Golem Oxidized",
+        "category": "Standardtextur",
+        "description": "Variante: Copper Golem Copper Golem Oxidized.",
+        "file": "/assets/img/texture/mobs/copper_golem/copper_golem_oxidized.png"
+      },
+      {
+        "name": "Copper Golem Copper Golem Weathered",
+        "category": "Standardtextur",
+        "description": "Variante: Copper Golem Copper Golem Weathered.",
+        "file": "/assets/img/texture/mobs/copper_golem/copper_golem_weathered.png"
+      },
+      {
+        "name": "Copper Golem Copper Golem",
+        "category": "Standardtextur",
+        "description": "Variante: Copper Golem Copper Golem.",
+        "file": "/assets/img/texture/mobs/copper_golem/copper_golem.png"
+      }
+    ],
+    "sounds": [],
+    "health": 12,
+    "damage": 0,
+    "armor": 0,
+    "experience": "0",
+    "spawn": {
+      "light_level": [
+        "0-15"
+      ],
+      "biome": "Alle",
+      "structure": "Wird Vom Spieler gebaut"
+    },
+    "light_level": [
+      "0-15"
+    ],
+    "classification": "Passiv / Golem",
+    "renewable": "Ja",
+    "can_despawn": "Nein",
+    "tameable": "Nein",
+    "breedable": "Nein",
+    "duplicable": "Nein",
+    "duplication_item": "Keines",
+    "leashable": "Ja",
+    "rideable": "Nein",
+    "baby_variant": "Nein",
+    "drops": [
+      {
+        "item": "minecraft:copper_ingot",
+        "chance": "100 %",
+        "amount": "1–3",
+        "condition": "Nicht von Plünderung beeinflusst"
+      }
+    ],
+    "abilities": [
+      "Kupferknöpfe drücken",
+      "Zufällige Aktivierung",
+      "Oxidiert über Zeit",
+      "Kann gewachst werden"
+    ],
+    "fun_fact": "Der Kupfergolem oxidiert wie normale Kupferblöcke und kann mit Axt oder Honigwachs behandelt werden!",
+    "attack_type": "Keiner",
+    "targets": [],
+    "enemy_mobs": [],
+    "follows": [],
+    "healing_item": [],
+    "fire_immune": "Nein",
+    "undead": "Nein",
+    "boss_bar": "Nein",
+    "knockback_resistance": 0,
+    "loot_table": "minecraft:entities/copper_golem",
+    "java_entity_id": "minecraft:copper_golem",
+    "bedrock_entity_id": "minecraft:copper_golem"
+  },
+  {
+    "id": "minecraft:cow",
+    "name": "Kuh",
+    "numeric_id": "( Nur Bedrock ) 11",
+    "type": "passive",
+    "category": "Passiver Mob",
+    "icon": "/assets/img/mobs/passive/Cow.png",
+    "description": "Passives Nutztier • Kann mit Weizen gezüchtet werden • Gibt Milch mit Eimer • Leder und Fleisch Drop",
+    "biome": "Meiste Overworld-Biome (Grasblöcke mit 2 Blöcken Platz)",
+    "structure": "Keine",
+    "dimension": "Overworld",
+    "movement_speed": 0.2,
+    "size": {
+      "width": "Breite: 0.9",
+      "height": "Höhe: 1.4",
+      "baby": {
+        "width": "Breite: 0.45",
+        "height": "Höhe: 0.7"
+      }
+    },
+    "aliases": [],
+    "introduced_date": "2010-07-19",
+    "removed_date": null,
+    "gallery": [],
+    "model": "Minecraft-Entity-Modell",
+    "animation": [],
+    "source": "",
+    "updated_at": "2026-08-22",
+    "notes": "Passives Nutztier • Kann mit Weizen gezüchtet werden • Gibt Milch mit Eimer • Leder und Fleisch Drop",
+    "version": "Java Edition Alpha v1.0.8",
+    "edition": "Java Edition, Bedrock Edition",
+    "effects": [],
+    "effect_immunities": [],
+    "status": "Verfügbar",
+    "tags": [
+      "Passiv",
+      "Overworld"
+    ],
+    "related_entries": [
+      "minecraft:leather",
+      "minecraft:beef",
+      "minecraft:milk_bucket"
+    ],
+    "command": "/summon minecraft:cow",
+    "version_history": [
+      {
+        "version": "Java Edition Alpha v1.0.8",
+        "change": "Kuh: erstmals in der angegebenen Version verfügbar.",
+        "type": "added",
+        "date": "2010-07-19"
+      }
+    ],
+    "texture": [
+      {
+        "name": "Cow Cow Cold Baby",
+        "category": "Baby",
+        "description": "Variante: Cow Cow Cold Baby.",
+        "file": "/assets/img/texture/mobs/cow/cow_cold_baby.png"
+      },
+      {
+        "name": "Cow Cow Cold",
+        "category": "Standardtextur",
+        "description": "Variante: Cow Cow Cold.",
+        "file": "/assets/img/texture/mobs/cow/cow_cold.png"
+      },
+      {
+        "name": "Cow Cow Temperate Baby",
+        "category": "Baby",
+        "description": "Variante: Cow Cow Temperate Baby.",
+        "file": "/assets/img/texture/mobs/cow/cow_temperate_baby.png"
+      },
+      {
+        "name": "Cow Cow Temperate",
+        "category": "Standardtextur",
+        "description": "Variante: Cow Cow Temperate.",
+        "file": "/assets/img/texture/mobs/cow/cow_temperate.png"
+      },
+      {
+        "name": "Cow Cow Warm Baby",
+        "category": "Baby",
+        "description": "Variante: Cow Cow Warm Baby.",
+        "file": "/assets/img/texture/mobs/cow/cow_warm_baby.png"
+      },
+      {
+        "name": "Cow Cow Warm",
+        "category": "Standardtextur",
+        "description": "Variante: Cow Cow Warm.",
+        "file": "/assets/img/texture/mobs/cow/cow_warm.png"
+      }
+    ],
+    "sounds": [],
+    "health": 10,
+    "damage": 0,
+    "armor": 0,
+    "experience": "1–3 beim Töten; 1–7 beim Züchten",
+    "spawn": {
+      "light_level": [
+        "9-15"
+      ],
+      "biome": "Meiste Overworld-Biome (Grasblöcke mit 2 Blöcken Platz)",
+      "structure": "Keine"
+    },
+    "light_level": [
+      "9-15"
+    ],
+    "classification": "Passiv / Tier",
+    "renewable": "Ja",
+    "can_despawn": "Nein",
+    "tameable": "Nein",
+    "breedable": "Ja",
+    "duplicable": "Nein",
+    "duplication_item": "Keines",
+    "leashable": "Ja",
+    "rideable": "Nein",
+    "baby_variant": "Ja",
+    "drops": [
+      {
+        "item": "minecraft:leather",
+        "chance": "100 %",
+        "amount": "0–2"
+      },
+      {
+        "item": "minecraft:beef",
+        "chance": "100 %",
+        "amount": "1–3",
+        "condition": "Gekocht, wenn sie brennend stirbt"
+      }
+    ],
+    "abilities": [
+      "Milch geben mit Eimer",
+      "Mit Weizen züchtbar",
+      "Kalb wächst in 20 Minuten"
+    ],
+    "fun_fact": "Kühe können nach dem Scheren von Mooshrooms spawnen!",
+    "attack_type": "Keiner",
+    "targets": [],
+    "enemy_mobs": [],
+    "follows": [
+      "Weizen"
+    ],
+    "healing_item": [],
+    "fire_immune": "Nein",
+    "undead": "Nein",
+    "boss_bar": "Nein",
+    "knockback_resistance": 0,
+    "loot_table": "minecraft:entities/cow",
+    "java_entity_id": "minecraft:cow",
+    "bedrock_entity_id": "minecraft:cow"
+  },
+  {
+    "id": "minecraft:donkey",
+    "name": "Esel",
+    "numeric_id": "( Nur Bedrock ) 24",
+    "type": "passive",
+    "category": "Passiver Mob",
+    "icon": "/assets/img/mobs/passive/Donkey.webp",
+    "description": "Passives Reittier • Kann gezähmt und geritten werden • Tragt Truhen mit Inventar • Kann mit anderen Pferden gezüchtet werden",
+    "biome": "Wiese, Ebene, Sonnenblumen-Ebene, Savanne, Savannen-Hochland, Windige Savanne",
+    "structure": "Keine",
+    "dimension": "Overworld",
+    "movement_speed": 0.175,
+    "size": {
+      "width": "Breite: 1.3965",
+      "height": "Höhe: 1.5",
+      "baby": {
+        "width": "Breite: 0.6982",
+        "height": "Höhe: 0.75"
+      }
+    },
+    "aliases": [],
+    "introduced_date": "2013-07-01",
+    "removed_date": null,
+    "gallery": [],
+    "model": "Minecraft-Entity-Modell",
+    "animation": [],
+    "source": "",
+    "updated_at": "2026-08-22",
+    "notes": "Passives Reittier • Kann gezähmt und geritten werden • Tragt Truhen mit Inventar • Kann mit anderen Pferden gezüchtet werden",
+    "version": "Java Edition 1.6.1 / Bedrock Edition 0.15.0",
+    "edition": "Java Edition, Bedrock Edition",
+    "effects": [],
+    "effect_immunities": [],
+    "status": "Verfügbar",
+    "tags": [
+      "Passiv",
+      "Overworld"
+    ],
+    "related_entries": [
+      "minecraft:chest",
+      "minecraft:saddle",
+      "minecraft:leather"
+    ],
+    "command": "/summon minecraft:donkey",
+    "version_history": [
+      {
+        "version": "Java Edition 1.6.1 / Bedrock Edition 0.15.0",
+        "change": "Esel: erstmals in der angegebenen Version verfügbar.",
+        "type": "added",
+        "date": "2013-07-01"
+      }
+    ],
+    "texture": [
+      {
+        "name": "Horse Donkey Baby",
+        "category": "Baby",
+        "description": "Variante: Horse Donkey Baby.",
+        "file": "/assets/img/texture/mobs/horse/donkey_baby.png"
+      },
+      {
+        "name": "Horse Donkey",
+        "category": "Standardtextur",
+        "description": "Variante: Horse Donkey.",
+        "file": "/assets/img/texture/mobs/horse/donkey.png"
+      },
+      {
+        "name": "Equipment Donkey Saddle Saddle",
+        "category": "Ausrüstung",
+        "description": "Variante: Equipment Donkey Saddle Saddle.",
+        "file": "/assets/img/texture/mobs/equipment/donkey_saddle/saddle.png"
+      }
+    ],
+    "sounds": [],
+    "health": "15–30",
+    "damage": 0,
+    "armor": 0,
+    "experience": "1–3 beim Töten; 1–7 beim Züchten",
+    "spawn": {
+      "light_level": [
+        "9-15"
+      ],
+      "biome": "Wiese, Ebene, Sonnenblumen-Ebene, Savanne, Savannen-Hochland, Windige Savanne",
+      "structure": "Keine"
+    },
+    "light_level": [
+      "0-15"
+    ],
+    "classification": "Passiv / Tier",
+    "renewable": "Ja",
+    "can_despawn": "Nein",
+    "tameable": "Ja",
+    "breedable": "Ja",
+    "duplicable": "Nein",
+    "duplication_item": "Keines",
+    "leashable": "Ja",
+    "rideable": "Ja, gezähmt und mit Sattel",
+    "baby_variant": "Ja",
+    "drops": [
+      {
+        "item": "minecraft:leather",
+        "chance": "100 %",
+        "amount": "0–2"
+      },
+      {
+        "item": "Ausgerüsteter Sattel, Truhe und deren Inhalt",
+        "chance": "100 %",
+        "amount": "Vorhandene Menge"
+      }
+    ],
+    "abilities": [
+      "Truhe tragen (15 Slots)",
+      "Zähmbar und reitbar",
+      "Mit Zucker, Weizen, Äpfel, Karotten züchtbar",
+      "Kann gesattelt werden"
+    ],
+    "fun_fact": "Esel können Truhen tragen und haben 15 Inventar-Plätze!",
+    "attack_type": "Keiner",
+    "targets": [],
+    "enemy_mobs": [],
+    "follows": [
+      "Goldene Karotte",
+      "Goldener Apfel",
+      "Verzauberter goldener Apfel"
+    ],
+    "healing_item": [
+      "Zucker",
+      "Weizen",
+      "Apfel",
+      "Goldene Karotte",
+      "Goldener Apfel",
+      "Heuballen"
+    ],
+    "fire_immune": "Nein",
+    "undead": "Nein",
+    "boss_bar": "Nein",
+    "knockback_resistance": 0,
+    "loot_table": "minecraft:entities/donkey",
+    "java_entity_id": "minecraft:donkey",
+    "bedrock_entity_id": "minecraft:donkey"
+  },
+  {
+    "id": "minecraft:frog",
+    "name": "Frosch",
+    "numeric_id": "( Nur Bedrock ) 132",
+    "type": "passive",
+    "category": "Passiver Mob",
+    "icon": "/assets/img/mobs/passive/Cold_Frog.webp",
+    "description": "Passives Tier • Frisst kleine Schleime und Magmawürfel • Springt umher • Wandelt sich aus Kaulquappe",
+    "biome": "Sumpf, Mangrovensumpf",
+    "structure": "Keine",
+    "dimension": "Overworld",
+    "movement_speed": 1,
+    "size": {
+      "width": "Breite: 0.5",
+      "height": "Höhe: 0.5"
+    },
+    "aliases": [],
+    "introduced_date": "2022-06-07",
+    "removed_date": null,
+    "gallery": [],
+    "model": "Minecraft-Entity-Modell",
+    "animation": [],
+    "source": "",
+    "updated_at": "2026-08-22",
+    "notes": "Beim Fressen kleiner Schleime entsteht ein Schleimball; beim Fressen kleiner Magmawürfel entsteht ein Froschlicht. Das sind keine Todesdrops des Frosches.",
+    "version": "Java Edition 1.19 / Bedrock Edition 1.19.0",
+    "edition": "Java Edition, Bedrock Edition",
+    "effects": [],
+    "effect_immunities": [],
+    "status": "Verfügbar",
+    "tags": [
+      "Passiv",
+      "Overworld"
+    ],
+    "related_entries": [
+      "minecraft:froglight",
+      "minecraft:slime_ball"
+    ],
+    "command": "/summon minecraft:frog",
+    "version_history": [
+      {
+        "version": "Java Edition 1.19 / Bedrock Edition 1.19.0",
+        "change": "Frosch: erstmals in der angegebenen Version verfügbar.",
+        "type": "added",
+        "date": "2022-06-07"
+      }
+    ],
+    "texture": [
+      {
+        "name": "Frog Frog Cold",
+        "category": "Standardtextur",
+        "description": "Variante: Frog Frog Cold.",
+        "file": "/assets/img/texture/mobs/frog/frog_cold.png"
+      },
+      {
+        "name": "Frog Frog Temperate",
+        "category": "Standardtextur",
+        "description": "Variante: Frog Frog Temperate.",
+        "file": "/assets/img/texture/mobs/frog/frog_temperate.png"
+      },
+      {
+        "name": "Frog Frog Warm",
+        "category": "Standardtextur",
+        "description": "Variante: Frog Frog Warm.",
+        "file": "/assets/img/texture/mobs/frog/frog_warm.png"
+      }
+    ],
+    "sounds": [],
+    "health": 10,
+    "damage": "10 gegen kleine Schleime und kleine Magmawürfel",
+    "armor": 0,
+    "experience": "1–3 beim Töten; 1–7 beim Züchten",
+    "spawn": {
+      "light_level": [
+        "0-15"
+      ],
+      "biome": "Sumpf, Mangrovensumpf",
+      "structure": "Keine"
+    },
+    "light_level": [
+      "0-15"
+    ],
+    "classification": "Passiv / Tier",
+    "renewable": "Ja",
+    "can_despawn": "Nein",
+    "tameable": "Nein",
+    "breedable": "Ja",
+    "duplicable": "Nein",
+    "duplication_item": "Keines",
+    "leashable": "Ja",
+    "rideable": "Nein",
+    "baby_variant": "Nein; die Jugendform ist der eigenständige Mob Kaulquappe",
+    "drops": [],
+    "abilities": [
+      "Kann kleine Schleime und Magmawürfel sofort fressen",
+      "Springt umher",
+      "Kann mit Schleimball gezüchtet werden",
+      "Wandelt sich aus Kaulquappe"
+    ],
+    "fun_fact": "Frösche lassen beim Fressen von Magmawürfeln Froglights fallen!",
+    "attack_type": "Zungenangriff nur gegen Beute",
+    "targets": [
+      "Kleine Schleime",
+      "Kleine Magmawürfel"
+    ],
+    "enemy_mobs": [],
+    "follows": [
+      "Schleimball"
+    ],
+    "healing_item": [],
+    "fire_immune": "Nein",
+    "undead": "Nein",
+    "boss_bar": "Nein",
+    "knockback_resistance": 0,
+    "loot_table": "minecraft:entities/frog",
+    "java_entity_id": "minecraft:frog",
+    "bedrock_entity_id": "minecraft:frog"
+  },
+  {
+    "id": "minecraft:glow_squid",
+    "name": "Leuchttintenfisch",
+    "numeric_id": "( Nur Bedrock ) 129",
+    "type": "passive",
+    "category": "Passiver Mob",
+    "icon": "/assets/img/mobs/passive/Glow_Squid.webp",
+    "description": "Passiver aquatischer Mob • Leuchtet im Wasser • Schwimmt in Tiefsee-Biomen",
+    "biome": "Tiefsee, Kalte Tiefsee, Lauwarme Tiefsee",
+    "structure": "Keine",
+    "dimension": "Overworld",
+    "movement_speed": 0.7,
+    "size": {
+      "width": "Breite: 0.8",
+      "height": "Höhe: 0.8",
+      "baby": {
+        "width": "Breite: 0.4",
+        "height": "Höhe: 0.4"
+      }
+    },
+    "aliases": [],
+    "introduced_date": "2021-06-08",
+    "removed_date": null,
+    "gallery": [],
+    "model": "Minecraft-Entity-Modell",
+    "animation": [],
+    "source": "",
+    "updated_at": "2026-08-22",
+    "notes": "Passiver aquatischer Mob • Leuchtet im Wasser • Schwimmt in Tiefsee-Biomen",
+    "version": "Java Edition 1.17 / Bedrock Edition 1.17.0",
+    "edition": "Java Edition, Bedrock Edition",
+    "effects": [],
+    "effect_immunities": [],
+    "status": "Verfügbar",
+    "tags": [
+      "Passiv",
+      "Overworld"
+    ],
+    "related_entries": [
+      "minecraft:glow_ink_sac"
+    ],
+    "command": "/summon minecraft:glow_squid",
+    "version_history": [
+      {
+        "version": "Java Edition 1.17 / Bedrock Edition 1.17.0",
+        "change": "Leuchttintenfisch: erstmals in der angegebenen Version verfügbar.",
+        "type": "added",
+        "date": "2021-06-08"
+      }
+    ],
+    "texture": [
+      {
+        "name": "Glow Squid Glow Squid Baby",
+        "category": "Baby",
+        "description": "Variante: Glow Squid Glow Squid Baby.",
+        "file": "/assets/img/texture/mobs/glow_squid/glow_squid_baby.png"
+      },
+      {
+        "name": "Glow Squid Glow Squid",
+        "category": "Standardtextur",
+        "description": "Variante: Glow Squid Glow Squid.",
+        "file": "/assets/img/texture/mobs/glow_squid/glow_squid.png"
+      }
+    ],
+    "sounds": [],
+    "health": 10,
+    "damage": 0,
+    "armor": 0,
+    "experience": "1–3 beim Töten",
+    "spawn": {
+      "light_level": [
+        "0-15"
+      ],
+      "biome": "Tiefsee, Kalte Tiefsee, Lauwarme Tiefsee",
+      "structure": "Keine"
+    },
+    "light_level": [
+      "0-15"
+    ],
+    "classification": "Passiv / Wassertier",
+    "renewable": "Ja",
+    "can_despawn": "Nein",
+    "tameable": "Nein",
+    "breedable": "Nein",
+    "duplicable": "Nein",
+    "duplication_item": "Keines",
+    "leashable": "Ja",
+    "rideable": "Nein",
+    "baby_variant": "Nur Bedrock Edition: Ja; Java Edition: Nein",
+    "drops": [
+      {
+        "item": "minecraft:glow_ink_sac",
+        "chance": "100 %",
+        "amount": "1–3"
+      }
+    ],
+    "abilities": [
+      "Schwimmen",
+      "Unterwasser-Leuchten",
+      "Tinten-Abwehr"
+    ],
+    "fun_fact": "Leuchttintenfische leuchten tatsächlich unter Wasser!",
+    "attack_type": "Keiner",
+    "targets": [],
+    "enemy_mobs": [],
+    "follows": [],
+    "healing_item": [],
+    "fire_immune": "Nein",
+    "undead": "Nein",
+    "boss_bar": "Nein",
+    "knockback_resistance": 0,
+    "loot_table": "minecraft:entities/glow_squid",
+    "java_entity_id": "minecraft:glow_squid",
+    "bedrock_entity_id": "minecraft:glow_squid"
+  },
+  {
+    "id": "minecraft:happy_ghast",
+    "name": "Happy Ghast",
+    "numeric_id": "( Nur Bedrock ) 147",
+    "type": "passive",
+    "category": "Passiver Mob",
+    "icon": "/assets/img/mobs/passive/Happy_Ghast.webp",
+    "description": "Passiver fliegender Mob • Wird aus getrocknetem Ghast gezüchtet • Folgt Spielern und Tieren",
+    "biome": "Keine natürliche Biom-Bindung",
+    "structure": "Entsteht durch 20-minütiges Wässern eines getrockneten Ghasts und anschließendes Heranwachsen des Ghastlings",
+    "dimension": "Overworld",
+    "movement_speed": 0.05,
+    "size": {
+      "adult": {
+        "width": 4,
+        "height": 4
+      },
+      "ghastling": {
+        "width": 0.95,
+        "height": 0.95
+      }
+    },
+    "aliases": [],
+    "introduced_date": "2025-06-17",
+    "removed_date": null,
+    "gallery": [],
+    "model": "Minecraft-Entity-Modell",
+    "animation": [],
+    "source": "",
+    "updated_at": "2026-08-22",
+    "notes": "Lässt keine Ghastträne und kein Schwarzpulver fallen. Regeneriert Gesundheit langsam; schneller bei Regen, Schnee oder auf Wolkenhöhe.",
+    "version": "Java Edition 1.21.6 / Bedrock Edition 1.21.90",
+    "edition": "Java Edition, Bedrock Edition",
+    "effects": [],
+    "effect_immunities": [],
+    "status": "Verfügbar",
+    "tags": [
+      "Passiv",
+      "Overworld"
+    ],
+    "related_entries": [
+      "minecraft:dried_ghast",
+      "minecraft:harness",
+      "minecraft:ghast_tear",
+      "minecraft:gunpowder"
+    ],
+    "command": "/summon minecraft:happy_ghast",
+    "version_history": [
+      {
+        "version": "Java Edition 1.21.6 / Bedrock Edition 1.21.90",
+        "change": "Happy Ghast: erstmals in der angegebenen Version verfügbar.",
+        "type": "added",
+        "date": "2025-06-17"
+      }
+    ],
+    "texture": [
+      {
+        "name": "Happy Ghast Happy Ghast Baby",
+        "category": "Baby",
+        "description": "Variante: Happy Ghast Happy Ghast Baby.",
+        "file": "/assets/img/texture/mobs/happy_ghast/happy_ghast_baby.png"
+      },
+      {
+        "name": "Happy Ghast Happy Ghast Ropes",
+        "category": "Standardtextur",
+        "description": "Variante: Happy Ghast Happy Ghast Ropes.",
+        "file": "/assets/img/texture/mobs/happy_ghast/happy_ghast_ropes.png"
+      },
+      {
+        "name": "Happy Ghast Happy Ghast",
+        "category": "Standardtextur",
+        "description": "Variante: Happy Ghast Happy Ghast.",
+        "file": "/assets/img/texture/mobs/happy_ghast/happy_ghast.png"
+      },
+      {
+        "name": "Equipment Happy Ghast Body Black Harness",
+        "category": "Ausrüstung",
+        "description": "Variante: Equipment Happy Ghast Body Black Harness.",
+        "file": "/assets/img/texture/mobs/equipment/happy_ghast_body/black_harness.png"
+      },
+      {
+        "name": "Equipment Happy Ghast Body Blue Harness",
+        "category": "Ausrüstung",
+        "description": "Variante: Equipment Happy Ghast Body Blue Harness.",
+        "file": "/assets/img/texture/mobs/equipment/happy_ghast_body/blue_harness.png"
+      },
+      {
+        "name": "Equipment Happy Ghast Body Brown Harness",
+        "category": "Ausrüstung",
+        "description": "Variante: Equipment Happy Ghast Body Brown Harness.",
+        "file": "/assets/img/texture/mobs/equipment/happy_ghast_body/brown_harness.png"
+      },
+      {
+        "name": "Equipment Happy Ghast Body Cyan Harness",
+        "category": "Ausrüstung",
+        "description": "Variante: Equipment Happy Ghast Body Cyan Harness.",
+        "file": "/assets/img/texture/mobs/equipment/happy_ghast_body/cyan_harness.png"
+      },
+      {
+        "name": "Equipment Happy Ghast Body Gray Harness",
+        "category": "Ausrüstung",
+        "description": "Variante: Equipment Happy Ghast Body Gray Harness.",
+        "file": "/assets/img/texture/mobs/equipment/happy_ghast_body/gray_harness.png"
+      },
+      {
+        "name": "Equipment Happy Ghast Body Green Harness",
+        "category": "Ausrüstung",
+        "description": "Variante: Equipment Happy Ghast Body Green Harness.",
+        "file": "/assets/img/texture/mobs/equipment/happy_ghast_body/green_harness.png"
+      },
+      {
+        "name": "Equipment Happy Ghast Body Light Blue Harness",
+        "category": "Ausrüstung",
+        "description": "Variante: Equipment Happy Ghast Body Light Blue Harness.",
+        "file": "/assets/img/texture/mobs/equipment/happy_ghast_body/light_blue_harness.png"
+      },
+      {
+        "name": "Equipment Happy Ghast Body Light Gray Harness",
+        "category": "Ausrüstung",
+        "description": "Variante: Equipment Happy Ghast Body Light Gray Harness.",
+        "file": "/assets/img/texture/mobs/equipment/happy_ghast_body/light_gray_harness.png"
+      },
+      {
+        "name": "Equipment Happy Ghast Body Lime Harness",
+        "category": "Ausrüstung",
+        "description": "Variante: Equipment Happy Ghast Body Lime Harness.",
+        "file": "/assets/img/texture/mobs/equipment/happy_ghast_body/lime_harness.png"
+      },
+      {
+        "name": "Equipment Happy Ghast Body Magenta Harness",
+        "category": "Ausrüstung",
+        "description": "Variante: Equipment Happy Ghast Body Magenta Harness.",
+        "file": "/assets/img/texture/mobs/equipment/happy_ghast_body/magenta_harness.png"
+      },
+      {
+        "name": "Equipment Happy Ghast Body Orange Harness",
+        "category": "Ausrüstung",
+        "description": "Variante: Equipment Happy Ghast Body Orange Harness.",
+        "file": "/assets/img/texture/mobs/equipment/happy_ghast_body/orange_harness.png"
+      },
+      {
+        "name": "Equipment Happy Ghast Body Pink Harness",
+        "category": "Ausrüstung",
+        "description": "Variante: Equipment Happy Ghast Body Pink Harness.",
+        "file": "/assets/img/texture/mobs/equipment/happy_ghast_body/pink_harness.png"
+      },
+      {
+        "name": "Equipment Happy Ghast Body Purple Harness",
+        "category": "Ausrüstung",
+        "description": "Variante: Equipment Happy Ghast Body Purple Harness.",
+        "file": "/assets/img/texture/mobs/equipment/happy_ghast_body/purple_harness.png"
+      },
+      {
+        "name": "Equipment Happy Ghast Body Red Harness",
+        "category": "Ausrüstung",
+        "description": "Variante: Equipment Happy Ghast Body Red Harness.",
+        "file": "/assets/img/texture/mobs/equipment/happy_ghast_body/red_harness.png"
+      },
+      {
+        "name": "Equipment Happy Ghast Body White Harness",
+        "category": "Ausrüstung",
+        "description": "Variante: Equipment Happy Ghast Body White Harness.",
+        "file": "/assets/img/texture/mobs/equipment/happy_ghast_body/white_harness.png"
+      },
+      {
+        "name": "Equipment Happy Ghast Body Yellow Harness",
+        "category": "Ausrüstung",
+        "description": "Variante: Equipment Happy Ghast Body Yellow Harness.",
+        "file": "/assets/img/texture/mobs/equipment/happy_ghast_body/yellow_harness.png"
+      }
+    ],
+    "sounds": [],
+    "health": 20,
+    "damage": 0,
+    "armor": 0,
+    "experience": "1–3 beim Töten eines Erwachsenen",
+    "spawn": {
+      "light_level": [
+        "0-15"
+      ],
+      "biome": "Durch Rehydrierung von getrocknetem Ghast",
+      "structure": ""
+    },
+    "light_level": [
+      "0-15"
+    ],
+    "classification": "Passiv / fliegendes Reittier",
+    "renewable": "Ja",
+    "can_despawn": "Nein",
+    "tameable": "Nein",
+    "breedable": "Nein",
+    "duplicable": "Nein",
+    "duplication_item": "Keines",
+    "leashable": "Ja",
+    "rideable": "Ja, mit Geschirr; bis zu vier Spieler",
+    "baby_variant": "Ja: Ghastling",
+    "drops": [],
+    "abilities": [
+      "Fliegen",
+      "Spielern und Tieren folgen",
+      "Kann mit Geschirr ausgerüstet werden"
+    ],
+    "fun_fact": "Ghastlinge wachsen schneller, wenn man sie mit Schneebällen füttert!",
+    "attack_type": "Keiner",
+    "targets": [],
+    "enemy_mobs": [],
+    "follows": [
+      "Schneeball",
+      "Geschirr (nur erwachsener, ungeschirrter Happy Ghast)"
+    ],
+    "healing_item": [],
+    "fire_immune": "Nein",
+    "undead": "Nein",
+    "boss_bar": "Nein",
+    "knockback_resistance": 0,
+    "loot_table": "minecraft:entities/happy_ghast",
+    "java_entity_id": "minecraft:happy_ghast",
+    "bedrock_entity_id": "minecraft:happy_ghast"
+  },
+  {
+    "id": "minecraft:horse",
+    "name": "Pferd",
+    "numeric_id": "( Nur Bedrock ) 23",
+    "type": "passive",
+    "category": "Passiver Mob",
+    "icon": "/assets/img/mobs/passive/Horse.webp",
+    "description": "Passives Reittier • Unterschiedliche Fellfarben • Kann gezähmt und geritten werden • Verschiedene Geschwindigkeiten und Sprunghöhen",
+    "biome": "Ebene, Sonnenblumen-Ebene, Savanne, Savannen-Hochland, Windige Savanne, Dörfer",
+    "structure": "Keine",
+    "dimension": "Overworld",
+    "movement_speed": 0.1125,
+    "size": {
+      "width": "Breite: 1.3965",
+      "height": "Höhe: 1.6",
+      "baby": {
+        "width": "Breite: 0.6982",
+        "height": "Höhe: 0.8"
+      }
+    },
+    "aliases": [],
+    "introduced_date": "2013-07-01",
+    "removed_date": null,
+    "gallery": [],
+    "model": "Minecraft-Entity-Modell",
+    "animation": [],
+    "source": "",
+    "updated_at": "2026-08-22",
+    "notes": "Passives Reittier • Unterschiedliche Fellfarben • Kann gezähmt und geritten werden • Verschiedene Geschwindigkeiten und Sprunghöhen",
+    "version": "Java Edition 1.6.1 / Bedrock Edition 0.15.0",
+    "edition": "Java Edition, Bedrock Edition",
+    "effects": [],
+    "effect_immunities": [],
+    "status": "Verfügbar",
+    "tags": [
+      "Passiv",
+      "Overworld"
+    ],
+    "related_entries": [
+      "minecraft:saddle",
+      "minecraft:horse_armor",
+      "minecraft:leather"
+    ],
+    "command": "/summon minecraft:horse",
+    "version_history": [
+      {
+        "version": "Java Edition 1.6.1 / Bedrock Edition 0.15.0",
+        "change": "Pferd: erstmals in der angegebenen Version verfügbar.",
+        "type": "added",
+        "date": "2013-07-01"
+      }
+    ],
+    "texture": [
+      {
+        "name": "Horse Horse Black Baby",
+        "category": "Baby",
+        "description": "Variante: Horse Horse Black Baby.",
+        "file": "/assets/img/texture/mobs/horse/horse_black_baby.png"
+      },
+      {
+        "name": "Horse Horse Black",
+        "category": "Standardtextur",
+        "description": "Variante: Horse Horse Black.",
+        "file": "/assets/img/texture/mobs/horse/horse_black.png"
+      },
+      {
+        "name": "Horse Horse Brown Baby",
+        "category": "Baby",
+        "description": "Variante: Horse Horse Brown Baby.",
+        "file": "/assets/img/texture/mobs/horse/horse_brown_baby.png"
+      },
+      {
+        "name": "Horse Horse Brown",
+        "category": "Standardtextur",
+        "description": "Variante: Horse Horse Brown.",
+        "file": "/assets/img/texture/mobs/horse/horse_brown.png"
+      },
+      {
+        "name": "Horse Horse Chestnut Baby",
+        "category": "Baby",
+        "description": "Variante: Horse Horse Chestnut Baby.",
+        "file": "/assets/img/texture/mobs/horse/horse_chestnut_baby.png"
+      },
+      {
+        "name": "Horse Horse Chestnut",
+        "category": "Standardtextur",
+        "description": "Variante: Horse Horse Chestnut.",
+        "file": "/assets/img/texture/mobs/horse/horse_chestnut.png"
+      },
+      {
+        "name": "Horse Horse Creamy Baby",
+        "category": "Baby",
+        "description": "Variante: Horse Horse Creamy Baby.",
+        "file": "/assets/img/texture/mobs/horse/horse_creamy_baby.png"
+      },
+      {
+        "name": "Horse Horse Creamy",
+        "category": "Standardtextur",
+        "description": "Variante: Horse Horse Creamy.",
+        "file": "/assets/img/texture/mobs/horse/horse_creamy.png"
+      },
+      {
+        "name": "Horse Horse Darkbrown Baby",
+        "category": "Baby",
+        "description": "Variante: Horse Horse Darkbrown Baby.",
+        "file": "/assets/img/texture/mobs/horse/horse_darkbrown_baby.png"
+      },
+      {
+        "name": "Horse Horse Darkbrown",
+        "category": "Standardtextur",
+        "description": "Variante: Horse Horse Darkbrown.",
+        "file": "/assets/img/texture/mobs/horse/horse_darkbrown.png"
+      },
+      {
+        "name": "Horse Horse Gray Baby",
+        "category": "Baby",
+        "description": "Variante: Horse Horse Gray Baby.",
+        "file": "/assets/img/texture/mobs/horse/horse_gray_baby.png"
+      },
+      {
+        "name": "Horse Horse Gray",
+        "category": "Standardtextur",
+        "description": "Variante: Horse Horse Gray.",
+        "file": "/assets/img/texture/mobs/horse/horse_gray.png"
+      },
+      {
+        "name": "Horse Horse Markings Blackdots Baby",
+        "category": "Baby",
+        "description": "Variante: Horse Horse Markings Blackdots Baby.",
+        "file": "/assets/img/texture/mobs/horse/horse_markings_blackdots_baby.png"
+      },
+      {
+        "name": "Horse Horse Markings Blackdots",
+        "category": "Standardtextur",
+        "description": "Variante: Horse Horse Markings Blackdots.",
+        "file": "/assets/img/texture/mobs/horse/horse_markings_blackdots.png"
+      },
+      {
+        "name": "Horse Horse Markings White Baby",
+        "category": "Baby",
+        "description": "Variante: Horse Horse Markings White Baby.",
+        "file": "/assets/img/texture/mobs/horse/horse_markings_white_baby.png"
+      },
+      {
+        "name": "Horse Horse Markings White",
+        "category": "Standardtextur",
+        "description": "Variante: Horse Horse Markings White.",
+        "file": "/assets/img/texture/mobs/horse/horse_markings_white.png"
+      },
+      {
+        "name": "Horse Horse Markings Whitedots Baby",
+        "category": "Baby",
+        "description": "Variante: Horse Horse Markings Whitedots Baby.",
+        "file": "/assets/img/texture/mobs/horse/horse_markings_whitedots_baby.png"
+      },
+      {
+        "name": "Horse Horse Markings Whitedots",
+        "category": "Standardtextur",
+        "description": "Variante: Horse Horse Markings Whitedots.",
+        "file": "/assets/img/texture/mobs/horse/horse_markings_whitedots.png"
+      },
+      {
+        "name": "Horse Horse Markings Whitefield Baby",
+        "category": "Baby",
+        "description": "Variante: Horse Horse Markings Whitefield Baby.",
+        "file": "/assets/img/texture/mobs/horse/horse_markings_whitefield_baby.png"
+      },
+      {
+        "name": "Horse Horse Markings Whitefield",
+        "category": "Standardtextur",
+        "description": "Variante: Horse Horse Markings Whitefield.",
+        "file": "/assets/img/texture/mobs/horse/horse_markings_whitefield.png"
+      },
+      {
+        "name": "Horse Horse White Baby",
+        "category": "Baby",
+        "description": "Variante: Horse Horse White Baby.",
+        "file": "/assets/img/texture/mobs/horse/horse_white_baby.png"
+      },
+      {
+        "name": "Horse Horse White",
+        "category": "Standardtextur",
+        "description": "Variante: Horse Horse White.",
+        "file": "/assets/img/texture/mobs/horse/horse_white.png"
+      },
+      {
+        "name": "Equipment Horse Body Copper",
+        "category": "Ausrüstung",
+        "description": "Variante: Equipment Horse Body Copper.",
+        "file": "/assets/img/texture/mobs/equipment/horse_body/copper.png"
+      },
+      {
+        "name": "Equipment Horse Body Diamond",
+        "category": "Ausrüstung",
+        "description": "Variante: Equipment Horse Body Diamond.",
+        "file": "/assets/img/texture/mobs/equipment/horse_body/diamond.png"
+      },
+      {
+        "name": "Equipment Horse Body Gold",
+        "category": "Ausrüstung",
+        "description": "Variante: Equipment Horse Body Gold.",
+        "file": "/assets/img/texture/mobs/equipment/horse_body/gold.png"
+      },
+      {
+        "name": "Equipment Horse Body Iron",
+        "category": "Ausrüstung",
+        "description": "Variante: Equipment Horse Body Iron.",
+        "file": "/assets/img/texture/mobs/equipment/horse_body/iron.png"
+      },
+      {
+        "name": "Equipment Horse Body Leather Overlay",
+        "category": "Ausrüstung",
+        "description": "Variante: Equipment Horse Body Leather Overlay.",
+        "file": "/assets/img/texture/mobs/equipment/horse_body/leather_overlay.png"
+      },
+      {
+        "name": "Equipment Horse Body Leather",
+        "category": "Ausrüstung",
+        "description": "Variante: Equipment Horse Body Leather.",
+        "file": "/assets/img/texture/mobs/equipment/horse_body/leather.png"
+      },
+      {
+        "name": "Equipment Horse Body Netherite",
+        "category": "Ausrüstung",
+        "description": "Variante: Equipment Horse Body Netherite.",
+        "file": "/assets/img/texture/mobs/equipment/horse_body/netherite.png"
+      },
+      {
+        "name": "Equipment Horse Saddle Saddle",
+        "category": "Ausrüstung",
+        "description": "Variante: Equipment Horse Saddle Saddle.",
+        "file": "/assets/img/texture/mobs/equipment/horse_saddle/saddle.png"
+      }
+    ],
+    "sounds": [],
+    "health": "15–30",
+    "damage": 0,
+    "armor": "0 ohne Pferderüstung; abhängig von der ausgerüsteten Pferderüstung",
+    "experience": "1–3 beim Töten; 1–7 beim Züchten",
+    "spawn": {
+      "light_level": [
+        "9-15"
+      ],
+      "biome": "Ebene, Sonnenblumen-Ebene, Savanne, Savannen-Hochland, Windige Savanne, Dörfer",
+      "structure": "Keine"
+    },
+    "light_level": [
+      "0-15"
+    ],
+    "classification": "Passiv / Tier",
+    "renewable": "Ja",
+    "can_despawn": "Nein",
+    "tameable": "Ja",
+    "breedable": "Ja",
+    "duplicable": "Nein",
+    "duplication_item": "Keines",
+    "leashable": "Ja",
+    "rideable": "Ja, gezähmt und mit Sattel",
+    "baby_variant": "Ja",
+    "drops": [
+      {
+        "item": "minecraft:leather",
+        "chance": "100 %",
+        "amount": "0–2"
+      },
+      {
+        "item": "Ausgerüsteter Sattel und Pferderüstung",
+        "chance": "100 %",
+        "amount": "Vorhandene Menge"
+      }
+    ],
+    "abilities": [
+      "Zähmbar und reitbar",
+      "Kann mit Sattel und Pferderüstung ausgerüstet werden",
+      "Mit Zucker, Weizen, Äpfel, Karotten züchtbar",
+      "Unterschiedliche Bewegungswerte pro Pferd"
+    ],
+    "fun_fact": "Pferde haben zufällige Werte für Geschwindigkeit, Sprunghöhe und Lebenspunkte!",
+    "attack_type": "Keiner",
+    "targets": [],
+    "enemy_mobs": [],
+    "follows": [
+      "Goldene Karotte",
+      "Goldener Apfel",
+      "Verzauberter goldener Apfel"
+    ],
+    "healing_item": [
+      "Zucker",
+      "Weizen",
+      "Apfel",
+      "Karotte",
+      "Goldene Karotte",
+      "Goldener Apfel",
+      "Verzauberter goldener Apfel",
+      "Heuballen"
+    ],
+    "fire_immune": "Nein",
+    "undead": "Nein",
+    "boss_bar": "Nein",
+    "knockback_resistance": 0,
+    "loot_table": "minecraft:entities/horse",
+    "java_entity_id": "minecraft:horse",
+    "bedrock_entity_id": "minecraft:horse"
+  },
+  {
+    "id": "minecraft:mooshroom",
+    "name": "Pilzkuh",
+    "numeric_id": "( Nur Bedrock ) 16",
+    "type": "passive",
+    "category": "Passiver Mob",
+    "icon": "/assets/img/mobs/passive/Mooshroom.png",
+    "description": "Passives Nutztier • Spawnt nur im Pilzland-Biom • Kann mit Schüssel Pilzsuppe geben • Mit Schere zu normaler Kuh",
+    "biome": "Pilzfelder",
+    "structure": "Keine",
+    "dimension": "Overworld",
+    "movement_speed": 0.2,
+    "size": {
+      "width": "Breite: 0.9",
+      "height": "Höhe: 1.4",
+      "baby": {
+        "width": "Breite: 0.45",
+        "height": "Höhe: 0.7"
+      }
+    },
+    "aliases": [
+      "Mooshroom"
+    ],
+    "introduced_date": "2011-11-18",
+    "removed_date": null,
+    "gallery": [],
+    "model": "Minecraft-Entity-Modell",
+    "animation": [],
+    "source": "",
+    "updated_at": "2026-08-22",
+    "notes": "Fünf Pilze erhält man beim Scheren; sie sind kein Todesdrop.",
+    "version": "Java Edition 1.0.0 / Bedrock Edition 0.9.0",
+    "edition": "Java Edition, Bedrock Edition",
+    "effects": [],
+    "effect_immunities": [],
+    "status": "Verfügbar",
+    "tags": [
+      "Passiv",
+      "Overworld"
+    ],
+    "related_entries": [
+      "minecraft:mushroom_stew",
+      "minecraft:red_mushroom",
+      "minecraft:brown_mushroom",
+      "minecraft:leather",
+      "minecraft:beef"
+    ],
+    "command": "/summon minecraft:mooshroom",
+    "version_history": [
+      {
+        "version": "Java Edition 1.0.0 / Bedrock Edition 0.9.0",
+        "change": "Pilzkuh: erstmals in der angegebenen Version verfügbar.",
+        "type": "added",
+        "date": "2011-11-18"
+      }
+    ],
+    "texture": [
+      {
+        "name": "Mooshroom Mooshroom Brown Baby",
+        "category": "Baby",
+        "description": "Variante: Mooshroom Mooshroom Brown Baby.",
+        "file": "/assets/img/texture/mobs/mooshroom/mooshroom_brown_baby.png"
+      },
+      {
+        "name": "Mooshroom Mooshroom Brown",
+        "category": "Standardtextur",
+        "description": "Variante: Mooshroom Mooshroom Brown.",
+        "file": "/assets/img/texture/mobs/mooshroom/mooshroom_brown.png"
+      },
+      {
+        "name": "Mooshroom Mooshroom Red Baby",
+        "category": "Baby",
+        "description": "Variante: Mooshroom Mooshroom Red Baby.",
+        "file": "/assets/img/texture/mobs/mooshroom/mooshroom_red_baby.png"
+      },
+      {
+        "name": "Mooshroom Mooshroom Red",
+        "category": "Standardtextur",
+        "description": "Variante: Mooshroom Mooshroom Red.",
+        "file": "/assets/img/texture/mobs/mooshroom/mooshroom_red.png"
+      }
+    ],
+    "sounds": [],
+    "health": 10,
+    "damage": 0,
+    "armor": 0,
+    "experience": "1–3 beim Töten; 1–7 beim Züchten",
+    "spawn": {
+      "light_level": [
+        "9-15"
+      ],
+      "biome": "Pilzland",
+      "structure": "Keine"
+    },
+    "light_level": [
+      "0-15"
+    ],
+    "classification": "Passiv / Tier",
+    "renewable": "Ja",
+    "can_despawn": "Nein",
+    "tameable": "Nein",
+    "breedable": "Ja",
+    "duplicable": "Nein",
+    "duplication_item": "Keines",
+    "leashable": "Ja",
+    "rideable": "Nein",
+    "baby_variant": "Ja",
+    "drops": [
+      {
+        "item": "minecraft:leather",
+        "chance": "100 %",
+        "amount": "0–2"
+      },
+      {
+        "item": "minecraft:beef",
+        "chance": "100 %",
+        "amount": "1–3",
+        "condition": "Gekocht, wenn sie brennend stirbt"
+      }
+    ],
+    "abilities": [
+      "Pilzsuppe mit Schüssel geben",
+      "Mit Weizen züchtbar",
+      "Kann mit Schere zu normaler Kuh werden",
+      "Mit Eimer melkbar"
+    ],
+    "fun_fact": "Pilzkühe können mit Blumen ihre Pilzart wechseln!",
+    "attack_type": "Keiner",
+    "targets": [],
+    "enemy_mobs": [],
+    "follows": [
+      "Weizen"
+    ],
+    "healing_item": [],
+    "fire_immune": "Nein",
+    "undead": "Nein",
+    "boss_bar": "Nein",
+    "knockback_resistance": 0,
+    "loot_table": "minecraft:entities/mooshroom",
+    "java_entity_id": "minecraft:mooshroom",
+    "bedrock_entity_id": "minecraft:mooshroom"
+  },
+  {
+    "id": "minecraft:mule",
+    "name": "Maultier",
+    "numeric_id": "( Nur Bedrock ) 25",
+    "type": "passive",
+    "category": "Passiver Mob",
+    "icon": "/assets/img/mobs/passive/Mule.webp",
+    "description": "Passives Reittier • Kreuzung aus Pferd und Esel • Kann Truhen tragen • Unfruchtbar • Zähmbar",
+    "biome": "Keine natürliche Biom-Bindung",
+    "structure": "Entsteht durch Zucht eines Pferdes mit einem Esel",
+    "dimension": "Overworld",
+    "movement_speed": 0.175,
+    "size": {
+      "width": "Breite: 1.3965",
+      "height": "Höhe: 1.6",
+      "baby": {
+        "width": "Breite: 0.6982",
+        "height": "Höhe: 0.8"
+      }
+    },
+    "aliases": [],
+    "introduced_date": "2013-07-01",
+    "removed_date": null,
+    "gallery": [],
+    "model": "Minecraft-Entity-Modell",
+    "animation": [],
+    "source": "",
+    "updated_at": "2026-08-22",
+    "notes": "Passives Reittier • Kreuzung aus Pferd und Esel • Kann Truhen tragen • Unfruchtbar • Zähmbar",
+    "version": "Java Edition 1.6.1 / Bedrock Edition 0.15.0",
+    "edition": "Java Edition, Bedrock Edition",
+    "effects": [],
+    "effect_immunities": [],
+    "status": "Verfügbar",
+    "tags": [
+      "Passiv",
+      "Overworld"
+    ],
+    "related_entries": [
+      "minecraft:chest",
+      "minecraft:saddle",
+      "minecraft:leather"
+    ],
+    "command": "/summon minecraft:mule",
+    "version_history": [
+      {
+        "version": "Java Edition 1.6.1 / Bedrock Edition 0.15.0",
+        "change": "Maultier: erstmals in der angegebenen Version verfügbar.",
+        "type": "added",
+        "date": "2013-07-01"
+      }
+    ],
+    "texture": [
+      {
+        "name": "Horse Mule Baby",
+        "category": "Baby",
+        "description": "Variante: Horse Mule Baby.",
+        "file": "/assets/img/texture/mobs/horse/mule_baby.png"
+      },
+      {
+        "name": "Horse Mule",
+        "category": "Standardtextur",
+        "description": "Variante: Horse Mule.",
+        "file": "/assets/img/texture/mobs/horse/mule.png"
+      },
+      {
+        "name": "Equipment Mule Saddle Saddle",
+        "category": "Ausrüstung",
+        "description": "Variante: Equipment Mule Saddle Saddle.",
+        "file": "/assets/img/texture/mobs/equipment/mule_saddle/saddle.png"
+      }
+    ],
+    "sounds": [],
+    "health": "15–30",
+    "damage": 0,
+    "armor": 0,
+    "experience": "1–3 beim Töten",
+    "spawn": {
+      "light_level": [
+        ""
+      ],
+      "biome": "Durch Zucht von Pferd und Esel",
+      "structure": ""
+    },
+    "light_level": [
+      "0-15"
+    ],
+    "classification": "Passiv / Tier",
+    "renewable": "Ja",
+    "can_despawn": "Nein",
+    "tameable": "Ja",
+    "breedable": "Nein; entsteht ausschließlich aus Pferd × Esel",
+    "duplicable": "Nein",
+    "duplication_item": "Keines",
+    "leashable": "Ja",
+    "rideable": "Ja, gezähmt und mit Sattel",
+    "baby_variant": "Ja",
+    "drops": [
+      {
+        "item": "minecraft:leather",
+        "chance": "100 %",
+        "amount": "0–2"
+      },
+      {
+        "item": "Ausgerüsteter Sattel, Truhe und deren Inhalt",
+        "chance": "100 %",
+        "amount": "Vorhandene Menge"
+      }
+    ],
+    "abilities": [
+      "Truhe tragen (15 Slots)",
+      "Zähmbar und reitbar",
+      "Kann gesattelt werden",
+      "Mit verschiedenen Nahrungsmitteln heilbar"
+    ],
+    "fun_fact": "Maultiere sind unfruchtbar und können sich nicht vermehren!",
+    "attack_type": "Keiner",
+    "targets": [],
+    "enemy_mobs": [],
+    "follows": [],
+    "healing_item": [
+      "Zucker",
+      "Weizen",
+      "Apfel",
+      "Goldene Karotte",
+      "Goldener Apfel",
+      "Heuballen"
+    ],
+    "fire_immune": "Nein",
+    "undead": "Nein",
+    "boss_bar": "Nein",
+    "knockback_resistance": 0,
+    "loot_table": "minecraft:entities/mule",
+    "java_entity_id": "minecraft:mule",
+    "bedrock_entity_id": "minecraft:mule"
+  },
+  {
+    "id": "minecraft:ocelot",
+    "name": "Ozelot",
+    "numeric_id": "( Nur Bedrock ) 22",
+    "type": "passive",
+    "category": "Passiver Mob",
+    "icon": "/assets/img/mobs/passive/Ocelot.webp",
+    "description": "Passive Wildkatze • Spawnt im Dschungel • Kann mit rohem Fisch gezähmt werden • Vertreibt Creepers",
+    "biome": "Dschungel (Editionsunterschiede bei Unterbiomen)",
+    "structure": "Keine",
+    "dimension": "Overworld",
+    "movement_speed": 0.3,
+    "size": {
+      "width": "Breite: 0.6",
+      "height": "Höhe: 0.7",
+      "baby": {
+        "width": "Breite: 0.3",
+        "height": "Höhe: 0.35"
+      }
+    },
+    "aliases": [],
+    "introduced_date": "2012-03-01",
+    "removed_date": null,
+    "gallery": [],
+    "model": "Minecraft-Entity-Modell",
+    "animation": [],
+    "source": "",
+    "updated_at": "2026-08-22",
+    "notes": "Passive Wildkatze • Spawnt im Dschungel • Kann mit rohem Fisch gezähmt werden • Vertreibt Creepers",
+    "version": "Java Edition 1.2.1 / Bedrock Edition 0.12.1",
+    "edition": "Java Edition, Bedrock Edition",
+    "effects": [],
+    "effect_immunities": [],
+    "status": "Verfügbar",
+    "tags": [
+      "Passiv",
+      "Overworld"
+    ],
+    "related_entries": [
+      "minecraft:cod",
+      "minecraft:salmon",
+      "minecraft:experience_orb"
+    ],
+    "command": "/summon minecraft:ocelot",
+    "version_history": [
+      {
+        "version": "Java Edition 1.2.1 / Bedrock Edition 0.12.1",
+        "change": "Ozelot: erstmals in der angegebenen Version verfügbar.",
+        "type": "added",
+        "date": "2012-03-01"
+      }
+    ],
+    "texture": [
+      {
+        "name": "Ocelot Ocelot Baby",
+        "category": "Baby",
+        "description": "Variante: Ocelot Ocelot Baby.",
+        "file": "/assets/img/texture/mobs/ocelot/ocelot_baby.png"
+      },
+      {
+        "name": "Ocelot Ocelot",
+        "category": "Standardtextur",
+        "description": "Variante: Ocelot Ocelot.",
+        "file": "/assets/img/texture/mobs/ocelot/ocelot.png"
+      }
+    ],
+    "sounds": [],
+    "health": 10,
+    "damage": 3,
+    "armor": 0,
+    "experience": "1–3 beim Töten; 1–7 beim Züchten",
+    "spawn": {
+      "light_level": [
+        "9-15"
+      ],
+      "biome": "Dschungel, Bambusdschungel[BE], Lichter Dschungel[BE]",
+      "structure": "Keine"
+    },
+    "light_level": [
+      "0-15"
+    ],
+    "classification": "Passiv / Tier",
+    "renewable": "Ja",
+    "can_despawn": "Nein",
+    "tameable": "Nein; kann dem Spieler vertrauen",
+    "breedable": "Ja",
+    "duplicable": "Nein",
+    "duplication_item": "Keines",
+    "leashable": "Ja",
+    "rideable": "Nein",
+    "baby_variant": "Ja",
+    "drops": [],
+    "abilities": [
+      "Kann mit rohem Fisch gezähmt werden",
+      "Jagt Hühner und Baby-Schildkröten",
+      "Vertreibt Creepers in der Nähe",
+      "Schneller und agiler Bewegungsstil"
+    ],
+    "fun_fact": "Gezähmte Ozelots werden zu Hauskatzen und vertreiben Creepers!",
+    "attack_type": "Nahkampf",
+    "targets": [
+      "Hühner",
+      "Baby-Schildkröten"
+    ],
+    "enemy_mobs": [],
+    "follows": [
+      "Roher Kabeljau",
+      "Roher Lachs"
+    ],
+    "healing_item": [],
+    "fire_immune": "Nein",
+    "undead": "Nein",
+    "boss_bar": "Nein",
+    "knockback_resistance": 0,
+    "loot_table": "minecraft:entities/ocelot",
+    "java_entity_id": "minecraft:ocelot",
+    "bedrock_entity_id": "minecraft:ocelot"
+  },
+  {
+    "id": "minecraft:parrot",
+    "name": "Papagei",
+    "numeric_id": "( Nur Bedrock ) 30",
+    "type": "passive",
+    "category": "Passiver Mob",
+    "icon": "/assets/img/mobs/passive/parrot.gif",
+    "description": "Passiver Vogel • Kann andere Laute imitieren • Wird durch Kekse vergiftet • Kann auf Schulter sitzen",
+    "biome": "Dschungel, Bambusdschungel; Editionsunterschiede bei lichten Dschungeln",
+    "structure": "Keine",
+    "dimension": "Overworld",
+    "movement_speed": 0.2,
+    "size": {
+      "width": "Breite: 0.5",
+      "height": "Höhe: 0.9"
+    },
+    "aliases": [],
+    "introduced_date": "2017-06-07",
+    "removed_date": null,
+    "gallery": [],
+    "model": "Minecraft-Entity-Modell",
+    "animation": [],
+    "source": "",
+    "updated_at": "2026-08-22",
+    "notes": "Passiver Vogel • Kann andere Laute imitieren • Wird durch Kekse vergiftet • Kann auf Schulter sitzen",
+    "version": "Java Edition 1.12 / Bedrock Edition 1.2.0",
+    "edition": "Java Edition, Bedrock Edition",
+    "effects": [],
+    "effect_immunities": [],
+    "status": "Verfügbar",
+    "tags": [
+      "Passiv",
+      "Overworld"
+    ],
+    "related_entries": [
+      "minecraft:wheat_seeds",
+      "minecraft:cookie",
+      "minecraft:feather"
+    ],
+    "command": "/summon minecraft:parrot",
+    "version_history": [
+      {
+        "version": "Java Edition 1.12 / Bedrock Edition 1.2.0",
+        "change": "Papagei: erstmals in der angegebenen Version verfügbar.",
+        "type": "added",
+        "date": "2017-06-07"
+      }
+    ],
+    "texture": [
+      {
+        "name": "Parrot Parrot Blue",
+        "category": "Standardtextur",
+        "description": "Variante: Parrot Parrot Blue.",
+        "file": "/assets/img/texture/mobs/parrot/parrot_blue.png"
+      },
+      {
+        "name": "Parrot Parrot Green",
+        "category": "Standardtextur",
+        "description": "Variante: Parrot Parrot Green.",
+        "file": "/assets/img/texture/mobs/parrot/parrot_green.png"
+      },
+      {
+        "name": "Parrot Parrot Grey",
+        "category": "Standardtextur",
+        "description": "Variante: Parrot Parrot Grey.",
+        "file": "/assets/img/texture/mobs/parrot/parrot_grey.png"
+      },
+      {
+        "name": "Parrot Parrot Red Blue",
+        "category": "Standardtextur",
+        "description": "Variante: Parrot Parrot Red Blue.",
+        "file": "/assets/img/texture/mobs/parrot/parrot_red_blue.png"
+      },
+      {
+        "name": "Parrot Parrot Yellow Blue",
+        "category": "Standardtextur",
+        "description": "Variante: Parrot Parrot Yellow Blue.",
+        "file": "/assets/img/texture/mobs/parrot/parrot_yellow_blue.png"
+      }
+    ],
+    "sounds": [],
+    "health": 6,
+    "damage": 0,
+    "armor": 0,
+    "experience": "1–3 beim Töten",
+    "spawn": {
+      "light_level": [
+        "9-15"
+      ],
+      "biome": "Dschungel, Bambusdschungel, Lichter Dschungel[BE]",
+      "structure": "Keine"
+    },
+    "light_level": [
+      "0-15"
+    ],
+    "classification": "Passiv / Tier",
+    "renewable": "Ja",
+    "can_despawn": "Nein",
+    "tameable": "Ja",
+    "breedable": "Nein",
+    "duplicable": "Nein",
+    "duplication_item": "Keines",
+    "leashable": "Ja",
+    "rideable": "Nein",
+    "baby_variant": "Nein",
+    "drops": [
+      {
+        "item": "minecraft:feather",
+        "chance": "100 %",
+        "amount": "1–2"
+      }
+    ],
+    "abilities": [
+      "Kann auf Schulter sitzen",
+      "Imitiert Laute anderer Mobs",
+      "Tanzt bei Musik",
+      "Kann mit Samen gezähmt werden"
+    ],
+    "fun_fact": "Papageien tanzen, wenn eine Musikscheibe abgespielt wird!",
+    "attack_type": "Keiner",
+    "targets": [],
+    "enemy_mobs": [],
+    "follows": [
+      "Weizensamen",
+      "Kürbiskerne",
+      "Melonenkerne",
+      "Rote-Bete-Samen",
+      "Fackelliliensamen",
+      "Kannenpflanze"
+    ],
+    "healing_item": [],
+    "fire_immune": "Nein",
+    "undead": "Nein",
+    "boss_bar": "Nein",
+    "knockback_resistance": 0,
+    "loot_table": "minecraft:entities/parrot",
+    "java_entity_id": "minecraft:parrot",
+    "bedrock_entity_id": "minecraft:parrot"
+  },
+  {
+    "id": "minecraft:pig",
+    "name": "Schwein",
+    "numeric_id": "( Nur Bedrock ) 12",
+    "type": "passive",
+    "category": "Passiver Mob",
+    "icon": "/assets/img/mobs/passive/pig.png",
+    "description": "Passives Nutztier • Kann mit Sattel geritten werden • Mit Karotte am Stock lenkbar • Liefert Schweinefleisch",
+    "biome": "Meiste Overworld-Biome (Grasblöcke mit 2 Blöcken Platz)",
+    "structure": "Keine",
+    "dimension": "Overworld",
+    "movement_speed": 0.25,
+    "size": {
+      "width": "Breite: 0.9",
+      "height": "Höhe: 0.9",
+      "baby": {
+        "width": "Breite: 0.45",
+        "height": "Höhe: 0.45"
+      }
+    },
+    "aliases": [],
+    "introduced_date": "2009-09",
+    "removed_date": null,
+    "gallery": [],
+    "model": "Minecraft-Entity-Modell",
+    "animation": [],
+    "source": "",
+    "updated_at": "2026-08-22",
+    "notes": "Passives Nutztier • Kann mit Sattel geritten werden • Mit Karotte am Stock lenkbar • Liefert Schweinefleisch",
+    "version": "Java Edition Survival Test 0.24",
+    "edition": "Java Edition, Bedrock Edition",
+    "effects": [],
+    "effect_immunities": [],
+    "status": "Verfügbar",
+    "tags": [
+      "Passiv",
+      "Overworld"
+    ],
+    "related_entries": [
+      "minecraft:carrot",
+      "minecraft:saddle",
+      "minecraft:carrot_on_a_stick",
+      "minecraft:porkchop"
+    ],
+    "command": "/summon minecraft:pig",
+    "version_history": [
+      {
+        "version": "Java Edition Survival Test 0.24",
+        "change": "Schwein: erstmals in der angegebenen Version verfügbar.",
+        "type": "added",
+        "date": "2009-09"
+      }
+    ],
+    "texture": [
+      {
+        "name": "Pig Pig Cold Baby",
+        "category": "Baby",
+        "description": "Variante: Pig Pig Cold Baby.",
+        "file": "/assets/img/texture/mobs/pig/pig_cold_baby.png"
+      },
+      {
+        "name": "Pig Pig Cold",
+        "category": "Standardtextur",
+        "description": "Variante: Pig Pig Cold.",
+        "file": "/assets/img/texture/mobs/pig/pig_cold.png"
+      },
+      {
+        "name": "Pig Pig Temperate Baby",
+        "category": "Baby",
+        "description": "Variante: Pig Pig Temperate Baby.",
+        "file": "/assets/img/texture/mobs/pig/pig_temperate_baby.png"
+      },
+      {
+        "name": "Pig Pig Temperate",
+        "category": "Standardtextur",
+        "description": "Variante: Pig Pig Temperate.",
+        "file": "/assets/img/texture/mobs/pig/pig_temperate.png"
+      },
+      {
+        "name": "Pig Pig Warm Baby",
+        "category": "Baby",
+        "description": "Variante: Pig Pig Warm Baby.",
+        "file": "/assets/img/texture/mobs/pig/pig_warm_baby.png"
+      },
+      {
+        "name": "Pig Pig Warm",
+        "category": "Standardtextur",
+        "description": "Variante: Pig Pig Warm.",
+        "file": "/assets/img/texture/mobs/pig/pig_warm.png"
+      },
+      {
+        "name": "Equipment Pig Saddle Saddle",
+        "category": "Ausrüstung",
+        "description": "Variante: Equipment Pig Saddle Saddle.",
+        "file": "/assets/img/texture/mobs/equipment/pig_saddle/saddle.png"
+      }
+    ],
+    "sounds": [],
+    "health": 10,
+    "damage": 0,
+    "armor": 0,
+    "experience": "1–3 beim Töten; 1–7 beim Züchten",
+    "spawn": {
+      "light_level": [
+        "9-15"
+      ],
+      "biome": "Meiste Overworld-Biome (Grasblöcke mit 2 Blöcken Platz)",
+      "structure": "Keine"
+    },
+    "light_level": [
+      "0-15"
+    ],
+    "classification": "Passiv / Tier",
+    "renewable": "Ja",
+    "can_despawn": "Nein",
+    "tameable": "Nein",
+    "breedable": "Ja",
+    "duplicable": "Nein",
+    "duplication_item": "Keines",
+    "leashable": "Ja",
+    "rideable": "Ja, mit Sattel; steuerbar mit Karottenrute",
+    "baby_variant": "Ja",
+    "drops": [
+      {
+        "item": "minecraft:porkchop",
+        "chance": "100 %",
+        "amount": "1–3",
+        "condition": "Gekocht, wenn es brennend stirbt"
+      },
+      {
+        "item": "minecraft:saddle",
+        "chance": "100 %",
+        "amount": "1",
+        "condition": "Nur wenn ausgerüstet"
+      }
+    ],
+    "abilities": [
+      "Kann mit Sattel geritten werden",
+      "Mit Karotte am Stock lenkbar",
+      "Mit Karotten, Kartoffeln, Rüben züchtbar",
+      "Wird durch Blitzeinschlag in Zombie-Schwein verwandelt"
+    ],
+    "fun_fact": "Schweine können mit einem Sattel geritten und mit einer Karotte am Stock gelenkt werden!",
+    "attack_type": "Keiner",
+    "targets": [],
+    "enemy_mobs": [],
+    "follows": [
+      "Karotte",
+      "Kartoffel",
+      "Rote Bete"
+    ],
+    "healing_item": [],
+    "fire_immune": "Nein",
+    "undead": "Nein",
+    "boss_bar": "Nein",
+    "knockback_resistance": 0,
+    "loot_table": "minecraft:entities/pig",
+    "java_entity_id": "minecraft:pig",
+    "bedrock_entity_id": "minecraft:pig"
+  },
+  {
+    "id": "minecraft:rabbit",
+    "name": "Hase",
+    "numeric_id": "( Nur Bedrock ) 18",
+    "type": "passive",
+    "category": "Passiver Mob",
+    "icon": "/assets/img/mobs/passive/Rabbit.gif",
+    "description": "Passives Tier • Springt umher • Unterschiedliche Fellfarben je Biom • Seltene Killer-Bunny-Variante",
+    "biome": "Schneefelder, Wüste, Taiga, Blumenwald, Wiese, Kirschhain, Gebirge",
+    "structure": "Keine",
+    "dimension": "Overworld",
+    "movement_speed": 0.3,
+    "size": {
+      "width": "Breite: 0.4",
+      "height": "Höhe: 0.5",
+      "baby": {
+        "width": "Breite: 0.2",
+        "height": "Höhe: 0.25"
+      }
+    },
+    "aliases": [],
+    "introduced_date": "2014-09-02",
+    "removed_date": null,
+    "gallery": [],
+    "model": "Minecraft-Entity-Modell",
+    "animation": [],
+    "source": "",
+    "updated_at": "2026-08-22",
+    "notes": "Passives Tier • Springt umher • Unterschiedliche Fellfarben je Biom • Seltene Killer-Bunny-Variante",
+    "version": "Java Edition 1.8 / Bedrock Edition 0.13.0",
+    "edition": "Java Edition, Bedrock Edition",
+    "effects": [],
+    "effect_immunities": [],
+    "status": "Verfügbar",
+    "tags": [
+      "Passiv",
+      "Overworld"
+    ],
+    "related_entries": [
+      "minecraft:rabbit_foot",
+      "minecraft:rabbit_hide",
+      "minecraft:rabbit"
+    ],
+    "command": "/summon minecraft:rabbit",
+    "version_history": [
+      {
+        "version": "Java Edition 1.8 / Bedrock Edition 0.13.0",
+        "change": "Hase: erstmals in der angegebenen Version verfügbar.",
+        "type": "added",
+        "date": "2014-09-02"
+      }
+    ],
+    "texture": [
+      {
+        "name": "Rabbit Rabbit Black Baby",
+        "category": "Baby",
+        "description": "Variante: Rabbit Rabbit Black Baby.",
+        "file": "/assets/img/texture/mobs/rabbit/rabbit_black_baby.png"
+      },
+      {
+        "name": "Rabbit Rabbit Black",
+        "category": "Standardtextur",
+        "description": "Variante: Rabbit Rabbit Black.",
+        "file": "/assets/img/texture/mobs/rabbit/rabbit_black.png"
+      },
+      {
+        "name": "Rabbit Rabbit Brown Baby",
+        "category": "Baby",
+        "description": "Variante: Rabbit Rabbit Brown Baby.",
+        "file": "/assets/img/texture/mobs/rabbit/rabbit_brown_baby.png"
+      },
+      {
+        "name": "Rabbit Rabbit Brown",
+        "category": "Standardtextur",
+        "description": "Variante: Rabbit Rabbit Brown.",
+        "file": "/assets/img/texture/mobs/rabbit/rabbit_brown.png"
+      },
+      {
+        "name": "Rabbit Rabbit Caerbannog Baby",
+        "category": "Baby",
+        "description": "Variante: Rabbit Rabbit Caerbannog Baby.",
+        "file": "/assets/img/texture/mobs/rabbit/rabbit_caerbannog_baby.png"
+      },
+      {
+        "name": "Rabbit Rabbit Caerbannog",
+        "category": "Standardtextur",
+        "description": "Variante: Rabbit Rabbit Caerbannog.",
+        "file": "/assets/img/texture/mobs/rabbit/rabbit_caerbannog.png"
+      },
+      {
+        "name": "Rabbit Rabbit Gold Baby",
+        "category": "Baby",
+        "description": "Variante: Rabbit Rabbit Gold Baby.",
+        "file": "/assets/img/texture/mobs/rabbit/rabbit_gold_baby.png"
+      },
+      {
+        "name": "Rabbit Rabbit Gold",
+        "category": "Standardtextur",
+        "description": "Variante: Rabbit Rabbit Gold.",
+        "file": "/assets/img/texture/mobs/rabbit/rabbit_gold.png"
+      },
+      {
+        "name": "Rabbit Rabbit Salt Baby",
+        "category": "Baby",
+        "description": "Variante: Rabbit Rabbit Salt Baby.",
+        "file": "/assets/img/texture/mobs/rabbit/rabbit_salt_baby.png"
+      },
+      {
+        "name": "Rabbit Rabbit Salt",
+        "category": "Standardtextur",
+        "description": "Variante: Rabbit Rabbit Salt.",
+        "file": "/assets/img/texture/mobs/rabbit/rabbit_salt.png"
+      },
+      {
+        "name": "Rabbit Rabbit Toast Baby",
+        "category": "Baby",
+        "description": "Variante: Rabbit Rabbit Toast Baby.",
+        "file": "/assets/img/texture/mobs/rabbit/rabbit_toast_baby.png"
+      },
+      {
+        "name": "Rabbit Rabbit Toast",
+        "category": "Standardtextur",
+        "description": "Variante: Rabbit Rabbit Toast.",
+        "file": "/assets/img/texture/mobs/rabbit/rabbit_toast.png"
+      },
+      {
+        "name": "Rabbit Rabbit White Baby",
+        "category": "Baby",
+        "description": "Variante: Rabbit Rabbit White Baby.",
+        "file": "/assets/img/texture/mobs/rabbit/rabbit_white_baby.png"
+      },
+      {
+        "name": "Rabbit Rabbit White Splotched Baby",
+        "category": "Baby",
+        "description": "Variante: Rabbit Rabbit White Splotched Baby.",
+        "file": "/assets/img/texture/mobs/rabbit/rabbit_white_splotched_baby.png"
+      },
+      {
+        "name": "Rabbit Rabbit White Splotched",
+        "category": "Standardtextur",
+        "description": "Variante: Rabbit Rabbit White Splotched.",
+        "file": "/assets/img/texture/mobs/rabbit/rabbit_white_splotched.png"
+      },
+      {
+        "name": "Rabbit Rabbit White",
+        "category": "Standardtextur",
+        "description": "Variante: Rabbit Rabbit White.",
+        "file": "/assets/img/texture/mobs/rabbit/rabbit_white.png"
+      }
+    ],
+    "sounds": [],
+    "health": 3,
+    "damage": "0; Killerkaninchen (nur per Befehl, Java): 5/8/12 je Schwierigkeit",
+    "armor": 0,
+    "experience": "1–3 beim Töten; 1–7 beim Züchten",
+    "spawn": {
+      "light_level": [
+        "9-15"
+      ],
+      "biome": "Schneefelder, Wüste, Taiga, Blumenwald, Wiese, Kirschhain, Gebirge",
+      "structure": "Keine"
+    },
+    "light_level": [
+      "0-15"
+    ],
+    "classification": "Passiv / Tier",
+    "renewable": "Ja",
+    "can_despawn": "Nein",
+    "tameable": "Nein",
+    "breedable": "Ja",
+    "duplicable": "Nein",
+    "duplication_item": "Keines",
+    "leashable": "Ja",
+    "rideable": "Nein",
+    "baby_variant": "Ja",
+    "drops": [
+      {
+        "item": "minecraft:rabbit_hide",
+        "chance": "100 %",
+        "amount": "0–1"
+      },
+      {
+        "item": "minecraft:rabbit",
+        "chance": "100 %",
+        "amount": "0–1",
+        "condition": "Gekocht, wenn es brennend stirbt"
+      },
+      {
+        "item": "minecraft:rabbit_foot",
+        "chance": "10 % (+3 Prozentpunkte je Plünderungsstufe)",
+        "amount": "1"
+      }
+    ],
+    "abilities": [
+      "Schnelles Springen",
+      "Kann mit Löwenzahn und Karotten gezüchtet werden",
+      "Unterschiedliche Fellfarben pro Biom",
+      "Seltene Killer-Bunny-Variante[JE]"
+    ],
+    "fun_fact": "Es gibt eine extrem seltene Killer-Bunny-Variante die angreift!",
+    "attack_type": "Keiner",
+    "targets": [],
+    "enemy_mobs": [],
+    "follows": [
+      "Karotte",
+      "Goldene Karotte",
+      "Löwenzahn"
+    ],
+    "healing_item": [],
+    "fire_immune": "Nein",
+    "undead": "Nein",
+    "boss_bar": "Nein",
+    "knockback_resistance": 0,
+    "loot_table": "minecraft:entities/rabbit",
+    "java_entity_id": "minecraft:rabbit",
+    "bedrock_entity_id": "minecraft:rabbit"
+  },
+  {
+    "id": "minecraft:salmon",
+    "name": "Lachs",
+    "numeric_id": "( Nur Bedrock ) 109",
+    "type": "passive",
+    "category": "Passiver Mob",
+    "icon": "/assets/img/mobs/passive/Salmon.webp",
+    "description": "Passiver Fisch • Schwimmt im Wasser • Drei verschiedene Größen • Kann mit Wassereimer gefangen werden",
+    "biome": "Fluss, Gefrorener Fluss, Kalter Ozean, Tiefkalter Ozean, Gefrorener Ozean, Tiefgefrorener Ozean",
+    "structure": "Keine",
+    "dimension": "Overworld",
+    "movement_speed": 0.7,
+    "size": {
+      "java": {
+        "width": 0.7,
+        "height": 0.4
+      },
+      "bedrock": {
+        "small": "0.25 × 0.25",
+        "medium": "0.5 × 0.5",
+        "large": "0.75 × 0.75"
+      }
+    },
+    "aliases": [],
+    "introduced_date": "2018-07-18",
+    "removed_date": null,
+    "gallery": [],
+    "model": "Minecraft-Entity-Modell",
+    "animation": [],
+    "source": "",
+    "updated_at": "2026-08-22",
+    "notes": "Passiver Fisch • Schwimmt im Wasser • Drei verschiedene Größen • Kann mit Wassereimer gefangen werden",
+    "version": "Java Edition 1.13 / Bedrock Edition 1.4.0",
+    "edition": "Java Edition, Bedrock Edition",
+    "effects": [],
+    "effect_immunities": [],
+    "status": "Verfügbar",
+    "tags": [
+      "Passiv",
+      "Overworld"
+    ],
+    "related_entries": [
+      "minecraft:salmon",
+      "minecraft:salmon_bucket",
+      "minecraft:bone_meal"
+    ],
+    "command": "/summon minecraft:salmon",
+    "version_history": [
+      {
+        "version": "Java Edition 1.13 / Bedrock Edition 1.4.0",
+        "change": "Lachs: erstmals in der angegebenen Version verfügbar.",
+        "type": "added",
+        "date": "2018-07-18"
+      }
+    ],
+    "texture": [
+      {
+        "name": "Fish Salmon",
+        "category": "Standardtextur",
+        "description": "Variante: Fish Salmon.",
+        "file": "/assets/img/texture/mobs/fish/salmon.png"
+      }
+    ],
+    "sounds": [],
+    "health": {
+      "java": 3,
+      "bedrock": 6
+    },
+    "damage": 0,
+    "armor": 0,
+    "experience": "1–3 beim Töten",
+    "spawn": {
+      "light_level": [
+        "0-15"
+      ],
+      "biome": "Fluss, Gefrorener Fluss, Kalter Ozean, Tiefkalter Ozean, Gefrorener Ozean, Tiefgefrorener Ozean",
+      "structure": "Keine"
+    },
+    "light_level": [
+      "0-15"
+    ],
+    "classification": "Passiv / Wassertier",
+    "renewable": "Ja",
+    "can_despawn": "Nein",
+    "tameable": "Nein",
+    "breedable": "Nein",
+    "duplicable": "Nein",
+    "duplication_item": "Keines",
+    "leashable": "Nein",
+    "rideable": "Nein",
+    "baby_variant": "Nein",
+    "drops": [
+      {
+        "item": "minecraft:salmon",
+        "chance": "100 %",
+        "amount": "1",
+        "condition": "Gekocht, wenn er brennend stirbt"
+      },
+      {
+        "item": "minecraft:bone_meal",
+        "chance": "5 % (Java)",
+        "amount": "1"
+      },
+      {
+        "item": "minecraft:bone",
+        "chance": "25 % (Bedrock)",
+        "amount": "1–2 je nach Größe"
+      }
+    ],
+    "abilities": [
+      "Schwimmen",
+      "Mit Wassereimer fangbar",
+      "Springt aus dem Wasser"
+    ],
+    "fun_fact": "Lachse gibt es in drei verschiedenen Größen - klein, mittel und groß!",
+    "attack_type": "Keiner",
+    "targets": [],
+    "enemy_mobs": [],
+    "follows": [],
+    "healing_item": [],
+    "fire_immune": "Nein",
+    "undead": "Nein",
+    "boss_bar": "Nein",
+    "knockback_resistance": 0,
+    "loot_table": "minecraft:entities/salmon",
+    "java_entity_id": "minecraft:salmon",
+    "bedrock_entity_id": "minecraft:salmon"
+  },
+  {
+    "id": "minecraft:sheep",
+    "name": "Schaf",
+    "numeric_id": "( Nur Bedrock ) 13",
+    "type": "passive",
+    "category": "Passiver Mob",
+    "icon": "/assets/img/mobs/passive/sheep.gif",
+    "description": "Passives Nutztier • Kann geschoren werden • Wolle wächst nach • Kann mit Farbe gefärbt werden",
+    "biome": "Meiste Overworld-Biome (Grasblöcke mit 2 Blöcken Platz)",
+    "structure": "Keine",
+    "dimension": "Overworld",
+    "movement_speed": 0.23,
+    "size": {
+      "width": "Breite: 0.9",
+      "height": "Höhe: 1.3",
+      "baby": {
+        "width": "Breite: 0.45",
+        "height": "Höhe: 0.65"
+      }
+    },
+    "aliases": [],
+    "introduced_date": "2009-06",
+    "removed_date": null,
+    "gallery": [],
+    "model": "Minecraft-Entity-Modell",
+    "animation": [],
+    "source": "",
+    "updated_at": "2026-08-22",
+    "notes": "Passives Nutztier • Kann geschoren werden • Wolle wächst nach • Kann mit Farbe gefärbt werden",
+    "version": "Java Edition Classic 0.0.20a",
+    "edition": "Java Edition, Bedrock Edition",
+    "effects": [],
+    "effect_immunities": [],
+    "status": "Verfügbar",
+    "tags": [
+      "Passiv",
+      "Overworld"
+    ],
+    "related_entries": [
+      "minecraft:wool",
+      "minecraft:mutton",
+      "minecraft:shears"
+    ],
+    "command": "/summon minecraft:sheep",
+    "version_history": [
+      {
+        "version": "Java Edition Classic 0.0.20a",
+        "change": "Schaf: erstmals in der angegebenen Version verfügbar.",
+        "type": "added",
+        "date": "2009-06"
+      }
+    ],
+    "texture": [
+      {
+        "name": "Sheep Sheep Baby",
+        "category": "Baby",
+        "description": "Variante: Sheep Sheep Baby.",
+        "file": "/assets/img/texture/mobs/sheep/sheep_baby.png"
+      },
+      {
+        "name": "Sheep Sheep Wool Baby",
+        "category": "Baby",
+        "description": "Variante: Sheep Sheep Wool Baby.",
+        "file": "/assets/img/texture/mobs/sheep/sheep_wool_baby.png"
+      },
+      {
+        "name": "Sheep Sheep Wool Undercoat",
+        "category": "Standardtextur",
+        "description": "Variante: Sheep Sheep Wool Undercoat.",
+        "file": "/assets/img/texture/mobs/sheep/sheep_wool_undercoat.png"
+      },
+      {
+        "name": "Sheep Sheep Wool",
+        "category": "Standardtextur",
+        "description": "Variante: Sheep Sheep Wool.",
+        "file": "/assets/img/texture/mobs/sheep/sheep_wool.png"
+      },
+      {
+        "name": "Sheep Sheep",
+        "category": "Standardtextur",
+        "description": "Variante: Sheep Sheep.",
+        "file": "/assets/img/texture/mobs/sheep/sheep.png"
+      }
+    ],
+    "sounds": [],
+    "health": 8,
+    "damage": 0,
+    "armor": 0,
+    "experience": "1–3 beim Töten; 1–7 beim Züchten",
+    "spawn": {
+      "light_level": [
+        "9-15"
+      ],
+      "biome": "Meiste Overworld-Biome (Grasblöcke mit 2 Blöcken Platz)",
+      "structure": "Keine"
+    },
+    "light_level": [
+      "0-15"
+    ],
+    "classification": "Passiv / Tier",
+    "renewable": "Ja",
+    "can_despawn": "Nein",
+    "tameable": "Nein",
+    "breedable": "Ja",
+    "duplicable": "Nein",
+    "duplication_item": "Keines",
+    "leashable": "Ja",
+    "rideable": "Nein",
+    "baby_variant": "Ja",
+    "drops": [
+      {
+        "item": "minecraft:wool",
+        "chance": "100 %",
+        "amount": "1",
+        "condition": "Nur ungeschoren; Farbe entspricht dem Schaf"
+      },
+      {
+        "item": "minecraft:mutton",
+        "chance": "100 %",
+        "amount": "1–2",
+        "condition": "Gekocht, wenn es brennend stirbt"
+      }
+    ],
+    "abilities": [
+      "Wolle durch Scheren erhalten",
+      "Wolle wächst nach (Gras fressen)",
+      "Mit Farbe färbbar",
+      "Mit Weizen züchtbar"
+    ],
+    "fun_fact": "Schafe mit dem Namen 'jeb_' wechseln ständig ihre Farben wie ein Regenbogen!",
+    "attack_type": "Keiner",
+    "targets": [],
+    "enemy_mobs": [],
+    "follows": [
+      "Weizen"
+    ],
+    "healing_item": [],
+    "fire_immune": "Nein",
+    "undead": "Nein",
+    "boss_bar": "Nein",
+    "knockback_resistance": 0,
+    "loot_table": "minecraft:entities/sheep",
+    "java_entity_id": "minecraft:sheep",
+    "bedrock_entity_id": "minecraft:sheep"
+  },
+  {
+    "id": "minecraft:skeleton_horse",
+    "name": "Skelettpferd",
+    "numeric_id": "( Nur Bedrock ) 26",
+    "type": "passive",
+    "category": "Passiver Mob",
+    "icon": "/assets/img/mobs/passive/Skeleton_Horse.webp",
+    "description": "Untotes Reittier • Spawnt durch Skelett-Fallen • Kann ohne Zähmung geritten werden • Unterwasser-Atmung",
+    "biome": "Keine feste Biom-Bindung",
+    "structure": "Entsteht durch Skelettpferdfallen bei Gewitter",
+    "dimension": "Overworld",
+    "movement_speed": 0.2,
+    "size": {
+      "width": "Breite: 1.3965",
+      "height": "Höhe: 1.6",
+      "baby": {
+        "width": "Breite: 0.6982",
+        "height": "Höhe: 0.8"
+      }
+    },
+    "aliases": [],
+    "introduced_date": "2013-07-01",
+    "removed_date": null,
+    "gallery": [],
+    "model": "Minecraft-Entity-Modell",
+    "animation": [],
+    "source": "",
+    "updated_at": "2026-08-22",
+    "notes": "Untotes Reittier • Spawnt durch Skelett-Fallen • Kann ohne Zähmung geritten werden • Unterwasser-Atmung",
+    "version": "Java Edition 1.6.1 / Bedrock Edition 0.15.0",
+    "edition": "Java Edition, Bedrock Edition",
+    "effects": [],
+    "effect_immunities": [
+      "Gift",
+      "Regeneration"
+    ],
+    "status": "Verfügbar",
+    "tags": [
+      "Passiv",
+      "Overworld"
+    ],
+    "related_entries": [
+      "minecraft:saddle",
+      "minecraft:bone"
+    ],
+    "command": "/summon minecraft:skeleton_horse",
+    "version_history": [
+      {
+        "version": "Java Edition 1.6.1 / Bedrock Edition 0.15.0",
+        "change": "Skelettpferd: erstmals in der angegebenen Version verfügbar.",
+        "type": "added",
+        "date": "2013-07-01"
+      }
+    ],
+    "texture": [
+      {
+        "name": "Skelet Horse Horse Skeleton Baby",
+        "category": "Baby",
+        "description": "Variante: Skelet Horse Horse Skeleton Baby.",
+        "file": "/assets/img/texture/mobs/skelet_horse/horse_skeleton_baby.png"
+      },
+      {
+        "name": "Skelet Horse Horse Skeleton",
+        "category": "Standardtextur",
+        "description": "Variante: Skelet Horse Horse Skeleton.",
+        "file": "/assets/img/texture/mobs/skelet_horse/horse_skeleton.png"
+      },
+      {
+        "name": "Equipment Skeleton Horse Saddle Saddle",
+        "category": "Ausrüstung",
+        "description": "Variante: Equipment Skeleton Horse Saddle Saddle.",
+        "file": "/assets/img/texture/mobs/equipment/skeleton_horse_saddle/saddle.png"
+      }
+    ],
+    "sounds": [],
+    "health": 15,
+    "damage": 0,
+    "armor": 0,
+    "experience": "1–3 beim Töten",
+    "spawn": {
+      "light_level": [
+        "0-15"
+      ],
+      "biome": "",
+      "structure": "Keine"
+    },
+    "light_level": [
+      "0-15"
+    ],
+    "classification": "Passiv / untot",
+    "renewable": "Ja",
+    "can_despawn": "Nein",
+    "tameable": "Nach Auslösen und Besiegen der Skelettpferdfalle nutzbar",
+    "breedable": "Nein",
+    "duplicable": "Nein",
+    "duplication_item": "Keines",
+    "leashable": "Ja",
+    "rideable": "Ja, mit Sattel",
+    "baby_variant": "Ja, aber nicht durch Zucht",
+    "drops": [
+      {
+        "item": "minecraft:bone",
+        "chance": "100 %",
+        "amount": "0–2"
+      },
+      {
+        "item": "minecraft:saddle",
+        "chance": "100 %",
+        "amount": "1",
+        "condition": "Nur wenn ausgerüstet"
+      }
+    ],
+    "abilities": [
+      "Kann sofort geritten werden",
+      "Kein Sauerstoffverlust unter Wasser",
+      "Immun gegen Ertrinken",
+      "Kann durch Skelett-Fallen erscheinen"
+    ],
+    "fun_fact": "Skelettpferde können ohne Zähmung geritten werden und ertrinken nicht!",
+    "attack_type": "Keiner",
+    "targets": [],
+    "enemy_mobs": [],
+    "follows": [],
+    "healing_item": [],
+    "fire_immune": "Nein",
+    "undead": "Ja",
+    "boss_bar": "Nein",
+    "knockback_resistance": 0,
+    "loot_table": "minecraft:entities/skeleton_horse",
+    "java_entity_id": "minecraft:skeleton_horse",
+    "bedrock_entity_id": "minecraft:skeleton_horse"
+  },
+  {
+    "id": "minecraft:sulfur_cube",
+    "name": "Schwefelwürfel",
+    "numeric_id": "Keine numerische Java-ID; für Bedrock wird keine stabile numerische ID verwendet",
+    "type": "passive",
+    "category": "Passiver Mob",
+    "icon": "/assets/img/mobs/passive/Sulfur_Cube.png",
+    "description": "Ein passiver, würfelförmiger Mob, der in Schwefelhöhlen lebt. Kann Blöcke absorbieren und mit der Schere zurückgewinnen. Je nach absorbiertem Block verändert sich seine Physik: Eis macht ihn rutschig, Holz gibt ihm Sprungkraft, Wolle macht ihn leicht, Eisen schwer und Stein lässt ihn tief bleiben.",
+    "biome": "Schwefelhöhle",
+    "structure": "Keine",
+    "dimension": "Overworld (Schwefelhöhlen)",
+    "movement_speed": "Abhängig vom aufgenommenen Block/Archetyp",
+    "size": {
+      "medium": {
+        "width": 0.98,
+        "height": 0.98
+      },
+      "small": {
+        "width": 0.49,
+        "height": 0.49
+      }
+    },
+    "aliases": [],
+    "introduced_date": "2026-06-16",
+    "removed_date": null,
+    "gallery": [],
+    "model": "Minecraft-Entity-Modell",
+    "animation": [],
+    "source": "",
+    "updated_at": "2026-08-22",
+    "notes": "Ein passiver, würfelförmiger Mob, der in Schwefelhöhlen lebt. Kann Blöcke absorbieren und mit der Schere zurückgewinnen. Je nach absorbiertem Block verändert sich seine Physik: Eis macht ihn rutschig, Holz gibt ihm Sprungkraft, Wolle macht ihn leicht, Eisen schwer und Stein lässt ihn tief bleiben.",
+    "version": "Java Edition 26.2 / Bedrock Edition 26.30",
+    "edition": "Java Edition, Bedrock Edition",
+    "effects": [],
+    "effect_immunities": [],
+    "status": "Verfügbar",
+    "tags": [
+      "Passiv",
+      "Overworld (Schwefelhöhlen)"
+    ],
+    "related_entries": [
+      "minecraft:honeycomb",
+      "minecraft:sulfur_dust",
+      "minecraft:experience_orb"
+    ],
+    "command": "/summon minecraft:sulfur_cube",
+    "version_history": [
+      {
+        "version": "Java Edition 26.2 / Bedrock Edition 26.30",
+        "change": "Der Schwefelwürfel wurde mit Chaos Cubed veröffentlicht.",
+        "type": "added",
+        "date": "2026-06-16"
+      }
+    ],
+    "texture": [
+      {
+        "name": "Small Sulfur Cube Small Sulfur Cube",
+        "category": "Standardtextur",
+        "description": "Variante: Small Sulfur Cube Small Sulfur Cube.",
+        "file": "/assets/img/texture/mobs/small_sulfur_cube/Small_Sulfur_Cube.png"
+      },
+      {
+        "name": "Small Sulfur Cube Sulfur Cube",
+        "category": "Standardtextur",
+        "description": "Variante: Small Sulfur Cube Sulfur Cube.",
+        "file": "/assets/img/texture/mobs/small_sulfur_cube/Sulfur_Cube.png"
+      },
+      {
+        "name": "Small Sulfur Cube Sulfur Cube1",
+        "category": "Standardtextur",
+        "description": "Variante: Small Sulfur Cube Sulfur Cube1.",
+        "file": "/assets/img/texture/mobs/small_sulfur_cube/Sulfur_Cube1.png"
+      }
+    ],
+    "sounds": [],
+    "health": {
+      "medium": 8,
+      "small": 4
+    },
+    "damage": 0,
+    "armor": 0,
+    "experience": "Mittlere Form: 1–2; kleine Form: 0",
+    "spawn": {
+      "light_level": [
+        "0"
+      ],
+      "biome": "Schwefelhöhle",
+      "structure": "Keine",
+      "group": "2–4"
+    },
+    "light_level": [
+      "0"
+    ],
+    "classification": "Passiv; verwendet technisch den Monster-Mobcap",
+    "renewable": "Ja",
+    "can_despawn": "Ja",
+    "tameable": "Nein",
+    "breedable": "Nein",
+    "duplicable": "Nein",
+    "duplication_item": "Keines",
+    "leashable": "Ja, wenn ein Block aufgenommen wurde",
+    "rideable": "Nein",
+    "baby_variant": "Ja: kleine Schwefelwürfel wachsen nach 20 Minuten",
+    "drops": [
+      {
+        "item": "Aufgenommener Block",
+        "chance": "100 %",
+        "amount": "1",
+        "condition": "Nur mittlere Form mit aufgenommenem Block"
+      }
+    ],
+    "abilities": [
+      "Nimmt geeignete Vollblöcke auf",
+      "Physik und Bewegung ändern sich je nach Block-Archetyp",
+      "Mittlere Form teilt sich beim Tod in genau zwei kleine Formen",
+      "Kann mit einem leeren Eimer aufgenommen werden"
+    ],
+    "fun_fact": "Kann Blöcke absorbieren und erscheint dann mit dem Aussehen des aufgenommenen Blocks. Mit einer Schere kann der Block wieder entfernt werden. Der absorbierte Block beeinflusst seine Bewegungseigenschaften.",
+    "attack_type": "Keiner",
+    "targets": [],
+    "enemy_mobs": [],
+    "follows": [
+      "Aufnehmbare Vollblöcke (mittlere Form)",
+      "Schleimball (kleine Form)"
+    ],
+    "healing_item": [
+      "Schleimball beschleunigt das Wachstum der kleinen Form"
+    ],
+    "fire_immune": "Nein",
+    "undead": "Nein",
+    "boss_bar": "Nein",
+    "knockback_resistance": {
+      "Rubber Ball": -2,
+      "Football": -1,
+      "Medicine Ball": 0.7,
+      "Golf Ball": -2,
+      "Beach Ball": -1,
+      "Hockey Puck": 0.5,
+      "Curling Stone": 0.8,
+      "Sticky": -2,
+      "High Resistance": 0.7
+    },
+    "loot_table": "minecraft:entities/sulfur_cube",
+    "java_entity_id": "minecraft:sulfur_cube",
+    "bedrock_entity_id": "minecraft:sulfur_cube"
+  },
+  {
+    "id": "minecraft:sniffer",
+    "name": "Schnüffler",
+    "numeric_id": "( Nur Bedrock ) 139",
+    "type": "passive",
+    "category": "Passiver Mob",
+    "icon": "/assets/img/mobs/passive/Sniffer.webp",
+    "description": "Passiver Urzeit-Dinosaurier • Kann uralte Samen ausgraben • Wächst aus Eiern • Größter passiver Mob",
+    "biome": "Keine natürliche Biom-Bindung",
+    "structure": "Schnüffler-Eier aus verdächtigem Sand in warmen Ozeanruinen",
+    "dimension": "Overworld",
+    "movement_speed": 0.1,
+    "size": {
+      "width": "Breite: 1.9",
+      "height": "Höhe: 1.75",
+      "baby": {
+        "width": "Breite: 0.95",
+        "height": "Höhe: 0.875"
+      }
+    },
+    "aliases": [
+      "Schnüffler"
+    ],
+    "introduced_date": "2023-06-07",
+    "removed_date": null,
+    "gallery": [],
+    "model": "Minecraft-Entity-Modell",
+    "animation": [],
+    "source": "",
+    "updated_at": "2026-08-22",
+    "notes": "Fackelliliensamen und Kannenpflanzenkapseln werden ausgegraben und sind keine Todesdrops.",
+    "version": "Java Edition 1.20 / Bedrock Edition 1.20.0",
+    "edition": "Java Edition, Bedrock Edition",
+    "effects": [],
+    "effect_immunities": [],
+    "status": "Verfügbar",
+    "tags": [
+      "Passiv",
+      "Overworld"
+    ],
+    "related_entries": [
+      "minecraft:torchflower_seeds",
+      "minecraft:pitcher_pod"
+    ],
+    "command": "/summon minecraft:sniffer",
+    "version_history": [
+      {
+        "version": "Java Edition 1.20 / Bedrock Edition 1.20.0",
+        "change": "Schnüffler: erstmals in der angegebenen Version verfügbar.",
+        "type": "added",
+        "date": "2023-06-07"
+      }
+    ],
+    "texture": [
+      {
+        "name": "Sniffer Sniffer",
+        "category": "Standardtextur",
+        "description": "Variante: Sniffer Sniffer.",
+        "file": "/assets/img/texture/mobs/sniffer/sniffer.png"
+      },
+      {
+        "name": "Sniffer Snifflet",
+        "category": "Standardtextur",
+        "description": "Variante: Sniffer Snifflet.",
+        "file": "/assets/img/texture/mobs/sniffer/snifflet.png"
+      }
+    ],
+    "sounds": [],
+    "health": 14,
+    "damage": 0,
+    "armor": 0,
+    "experience": "1–3 beim Töten; 1–7 beim Züchten",
+    "spawn": {
+      "light_level": [
+        "0-15"
+      ],
+      "biome": "Durch Schnüffler-Eier aus Brutverdächtigen Trümmern",
+      "structure": "Keine"
+    },
+    "light_level": [
+      "0-15"
+    ],
+    "classification": "Passiv / Tier",
+    "renewable": "Ja",
+    "can_despawn": "Nein",
+    "tameable": "Nein",
+    "breedable": "Ja; legt ein Schnüffler-Ei",
+    "duplicable": "Nein",
+    "duplication_item": "Keines",
+    "leashable": "Ja",
+    "rideable": "Nein",
+    "baby_variant": "Ja: Schnüfflerjunges (Snifflet)",
+    "drops": [],
+    "abilities": [
+      "Uralte Samen ausgraben",
+      "Langsame aber starke Bewegung",
+      "Kann nicht gezähmt aber geführt werden",
+      "Besonderer Geräusch-Effekt beim Schnüffeln"
+    ],
+    "fun_fact": "Schnüffler können uralte Samen wie Fackellilien und Krügenpflanzen ausgraben!",
+    "attack_type": "Keiner",
+    "targets": [],
+    "enemy_mobs": [],
+    "follows": [
+      "Fackelliliensamen"
+    ],
+    "healing_item": [
+      "Fackelliliensamen"
+    ],
+    "fire_immune": "Nein",
+    "undead": "Nein",
+    "boss_bar": "Nein",
+    "knockback_resistance": 0,
+    "loot_table": "minecraft:entities/sniffer",
+    "java_entity_id": "minecraft:sniffer",
+    "bedrock_entity_id": "minecraft:sniffer"
+  },
+  {
+    "id": "minecraft:snow_golem",
+    "name": "Schneegolem",
+    "numeric_id": "( Nur Bedrock ) 21",
+    "type": "passive",
+    "category": "Passiver Mob",
+    "icon": "/assets/img/mobs/passive/Snow_Golem.png",
+    "description": "Passiver Konstruktionsmob • Wirft Schneebälle auf Feinde • Hinterlässt Schneespur • Schmilzt in warmen Biomen",
+    "biome": "Keine natürliche Biom-Bindung",
+    "structure": "Vom Spieler gebaut: zwei Schneeblöcke + geschnitzter Kürbis/Kürbislaterne",
+    "dimension": "Overworld",
+    "movement_speed": 0.2,
+    "size": {
+      "width": "Breite: 0.7",
+      "height": "Höhe: 1.9"
+    },
+    "aliases": [],
+    "introduced_date": "2011-11-18",
+    "removed_date": null,
+    "gallery": [],
+    "model": "Minecraft-Entity-Modell",
+    "animation": [],
+    "source": "",
+    "updated_at": "2026-08-22",
+    "notes": "Passiver Konstruktionsmob • Wirft Schneebälle auf Feinde • Hinterlässt Schneespur • Schmilzt in warmen Biomen",
+    "version": "Java Edition 1.0.0 / Bedrock Edition 0.12.1",
+    "edition": "Java Edition, Bedrock Edition",
+    "effects": [
+      {
+        "name": "Nässe",
+        "type": "verursacht",
+        "level": "—",
+        "duration": "Kurz",
+        "chance": "100 %",
+        "condition": "Schneeball trifft einen Blaze",
+        "description": "Der Schneeball fügt Blazes Schaden zu."
+      }
+    ],
+    "effect_immunities": [],
+    "status": "Verfügbar",
+    "tags": [
+      "Passiv",
+      "Overworld"
+    ],
+    "related_entries": [
+      "minecraft:snowball",
+      "minecraft:carved_pumpkin"
+    ],
+    "command": "/summon minecraft:snow_golem",
+    "version_history": [
+      {
+        "version": "Java Edition 1.0.0 / Bedrock Edition 0.12.1",
+        "change": "Schneegolem: erstmals in der angegebenen Version verfügbar.",
+        "type": "added",
+        "date": "2011-11-18"
+      }
+    ],
+    "texture": [
+      {
+        "name": "Snow Golem Snow Golem",
+        "category": "Standardtextur",
+        "description": "Variante: Snow Golem Snow Golem.",
+        "file": "/assets/img/texture/mobs/snow_golem/snow_golem.png"
+      }
+    ],
+    "sounds": [],
+    "health": 4,
+    "damage": "0 gegen die meisten Ziele; 3 gegen Lohen",
+    "armor": 0,
+    "experience": "0",
+    "spawn": {
+      "light_level": [
+        "0-15"
+      ],
+      "biome": "Vom Spieler gebaut (2 Schneeblöcke + Kürbis)",
+      "structure": "Keine"
+    },
+    "light_level": [
+      "0-15"
+    ],
+    "classification": "Passiv gegenüber Spielern / Golem",
+    "renewable": "Ja",
+    "can_despawn": "Nein",
+    "tameable": "Nein",
+    "breedable": "Nein",
+    "duplicable": "Nein",
+    "duplication_item": "Keines",
+    "leashable": "Ja",
+    "rideable": "Nein",
+    "baby_variant": "Nein",
+    "drops": [
+      {
+        "item": "minecraft:snowball",
+        "chance": "100 %",
+        "amount": "0–15"
+      }
+    ],
+    "abilities": [
+      "Wirft Schneebälle auf feindliche Mobs",
+      "Hinterlässt Schneespur auf Blöcken",
+      "Schmilzt in Wüsten, Nether und bei Regen",
+      "Kann mit Shears dekorieren entfernt werden"
+    ],
+    "fun_fact": "Schneegolems können Endermen provozieren, wenn sie sie mit Schneebällen treffen!",
+    "attack_type": "Fernkampf mit Schneebällen",
+    "targets": [
+      "Die meisten feindlichen Mobs"
+    ],
+    "enemy_mobs": [],
+    "follows": [],
+    "healing_item": [],
+    "fire_immune": "Nein",
+    "undead": "Nein",
+    "boss_bar": "Nein",
+    "knockback_resistance": 0,
+    "loot_table": "minecraft:entities/snow_golem",
+    "java_entity_id": "minecraft:snow_golem",
+    "bedrock_entity_id": "minecraft:snow_golem"
+  },
+  {
+    "id": "minecraft:squid",
+    "name": "Tintenfisch",
+    "numeric_id": "( Nur Bedrock ) 17",
+    "type": "passive",
+    "category": "Passiver Mob",
+    "icon": "/assets/img/mobs/passive/Squid.webp",
+    "description": "Passiver Wassertier • Schwimmt in Ozeanen und Flüssen • Lässt Tintenwolken bei Schaden • Ältester Fisch-Mob",
+    "biome": "Flüsse und Ozeane; Java: Y 50 bis Meereshöhe",
+    "structure": "Keine",
+    "dimension": "Overworld",
+    "movement_speed": 0.7,
+    "size": {
+      "java": {
+        "adult": "0.8 × 0.8",
+        "baby": "0.4 × 0.4"
+      },
+      "bedrock": {
+        "adult": "0.95 × 0.95",
+        "baby": "0.475 × 0.475"
+      }
+    },
+    "aliases": [],
+    "introduced_date": "2011-01-13",
+    "removed_date": null,
+    "gallery": [],
+    "model": "Minecraft-Entity-Modell",
+    "animation": [],
+    "source": "",
+    "updated_at": "2026-08-22",
+    "notes": "Passiver Wassertier • Schwimmt in Ozeanen und Flüssen • Lässt Tintenwolken bei Schaden • Ältester Fisch-Mob",
+    "version": "Java Edition Beta 1.2 / Bedrock Edition 0.11.0",
+    "edition": "Java Edition, Bedrock Edition",
+    "effects": [],
+    "effect_immunities": [],
+    "status": "Verfügbar",
+    "tags": [
+      "Passiv",
+      "Overworld"
+    ],
+    "related_entries": [
+      "minecraft:ink_sac"
+    ],
+    "command": "/summon minecraft:squid",
+    "version_history": [
+      {
+        "version": "Java Edition Beta 1.2 / Bedrock Edition 0.11.0",
+        "change": "Tintenfisch: erstmals in der angegebenen Version verfügbar.",
+        "type": "added",
+        "date": "2011-01-13"
+      }
+    ],
+    "texture": [
+      {
+        "name": "Squid Squid Baby",
+        "category": "Baby",
+        "description": "Variante: Squid Squid Baby.",
+        "file": "/assets/img/texture/mobs/squid/squid_baby.png"
+      },
+      {
+        "name": "Squid Squid",
+        "category": "Standardtextur",
+        "description": "Variante: Squid Squid.",
+        "file": "/assets/img/texture/mobs/squid/squid.png"
+      }
+    ],
+    "sounds": [],
+    "health": 10,
+    "damage": 0,
+    "armor": 0,
+    "experience": "1–3 beim Töten",
+    "spawn": {
+      "light_level": [
+        "0-15"
+      ],
+      "biome": "Ozean, Tiefsee, Fluss, Untergrund-Gewässer",
+      "structure": ""
+    },
+    "light_level": [
+      "0-15"
+    ],
+    "classification": "Passiv / Wassertier",
+    "renewable": "Ja",
+    "can_despawn": "Nein",
+    "tameable": "Nein",
+    "breedable": "Nein",
+    "duplicable": "Nein",
+    "duplication_item": "Keines",
+    "leashable": "Ja",
+    "rideable": "Nein",
+    "baby_variant": "Nur Bedrock Edition: Ja; Java Edition: Nein",
+    "drops": [
+      {
+        "item": "minecraft:ink_sac",
+        "chance": "100 %",
+        "amount": "1–3"
+      }
+    ],
+    "abilities": [
+      "Schwimmen",
+      "Tintenwolke bei Schaden",
+      "Kann nur unter Wasser überleben"
+    ],
+    "fun_fact": "Tintenfische waren der erste Wasser-Mob in Minecraft und existieren seit der Alpha!",
+    "attack_type": "Keiner",
+    "targets": [],
+    "enemy_mobs": [],
+    "follows": [],
+    "healing_item": [],
+    "fire_immune": "Nein",
+    "undead": "Nein",
+    "boss_bar": "Nein",
+    "knockback_resistance": 0,
+    "loot_table": "minecraft:entities/squid",
+    "java_entity_id": "minecraft:squid",
+    "bedrock_entity_id": "minecraft:squid"
+  },
+  {
+    "id": "minecraft:strider",
+    "name": "Schreiter",
+    "numeric_id": "( Nur Bedrock ) 125",
+    "type": "passive",
+    "category": "Passiver Mob",
+    "icon": "/assets/img/mobs/passive/Strider.webp",
+    "description": "Passiver Nether-Mob • Läuft auf Lava • Kann mit Sattel geritten werden • Mit verzerrten Pilzen lenkbar",
+    "biome": "Alle Nether-Biome; Spawn auf Lava",
+    "structure": "Keine",
+    "dimension": "Nether",
+    "movement_speed": 0.1,
+    "size": {
+      "width": "Breite: 0.9",
+      "height": "Höhe: 1.7",
+      "baby": {
+        "width": "Breite: 0.45",
+        "height": "Höhe: 0.85"
+      }
+    },
+    "aliases": [],
+    "introduced_date": "2020-06-23",
+    "removed_date": null,
+    "gallery": [],
+    "model": "Minecraft-Entity-Modell",
+    "animation": [],
+    "source": "",
+    "updated_at": "2026-08-22",
+    "notes": "Passiver Nether-Mob • Läuft auf Lava • Kann mit Sattel geritten werden • Mit verzerrten Pilzen lenkbar",
+    "version": "Java Edition 1.16 / Bedrock Edition 1.16.0",
+    "edition": "Java Edition, Bedrock Edition",
+    "effects": [],
+    "effect_immunities": [],
+    "status": "Verfügbar",
+    "tags": [
+      "Passiv",
+      "Nether"
+    ],
+    "related_entries": [
+      "minecraft:warped_fungus",
+      "minecraft:saddle",
+      "minecraft:string"
+    ],
+    "command": "/summon minecraft:strider",
+    "version_history": [
+      {
+        "version": "Java Edition 1.16 / Bedrock Edition 1.16.0",
+        "change": "Schreiter: erstmals in der angegebenen Version verfügbar.",
+        "type": "added",
+        "date": "2020-06-23"
+      }
+    ],
+    "texture": [
+      {
+        "name": "Strider Strider Baby",
+        "category": "Baby",
+        "description": "Variante: Strider Strider Baby.",
+        "file": "/assets/img/texture/mobs/strider/strider_baby.png"
+      },
+      {
+        "name": "Strider Strider Cold Baby",
+        "category": "Baby",
+        "description": "Variante: Strider Strider Cold Baby.",
+        "file": "/assets/img/texture/mobs/strider/strider_cold_baby.png"
+      },
+      {
+        "name": "Strider Strider Cold",
+        "category": "Standardtextur",
+        "description": "Variante: Strider Strider Cold.",
+        "file": "/assets/img/texture/mobs/strider/strider_cold.png"
+      },
+      {
+        "name": "Strider Strider",
+        "category": "Standardtextur",
+        "description": "Variante: Strider Strider.",
+        "file": "/assets/img/texture/mobs/strider/strider.png"
+      },
+      {
+        "name": "Equipment Strider Saddle Saddle",
+        "category": "Ausrüstung",
+        "description": "Variante: Equipment Strider Saddle Saddle.",
+        "file": "/assets/img/texture/mobs/equipment/strider_saddle/saddle.png"
+      }
+    ],
+    "sounds": [],
+    "health": 20,
+    "damage": 0,
+    "armor": 0,
+    "experience": "Java: 1–2; Bedrock: 1–3 beim Töten",
+    "spawn": {
+      "light_level": [
+        "0-15"
+      ],
+      "biome": "Nethergewächs, Seelensandebene",
+      "structure": "Keine"
+    },
+    "light_level": [
+      "0-15"
+    ],
+    "classification": "Passiv / Tier",
+    "renewable": "Ja",
+    "can_despawn": "Nein",
+    "tameable": "Nein",
+    "breedable": "Ja",
+    "duplicable": "Nein",
+    "duplication_item": "Keines",
+    "leashable": "Ja",
+    "rideable": "Ja, mit Sattel; steuerbar mit Wirrpilzrute",
+    "baby_variant": "Ja",
+    "drops": [
+      {
+        "item": "minecraft:string",
+        "chance": "100 %",
+        "amount": "2–5"
+      },
+      {
+        "item": "minecraft:saddle",
+        "chance": "100 %",
+        "amount": "1",
+        "condition": "Nur wenn ausgerüstet"
+      }
+    ],
+    "abilities": [
+      "Immun gegen Lava-Schaden",
+      "Kann mit Sattel geritten werden",
+      "Mit verzerrtem Pilz lenkbar",
+      "Züchtbar mit verzerrten Pilzen"
+    ],
+    "fun_fact": "Schreiter können auf Lava laufen und werden im Wasser geschädigt!",
+    "attack_type": "Keiner",
+    "targets": [],
+    "enemy_mobs": [],
+    "follows": [
+      "Wirrpilz"
+    ],
+    "healing_item": [
+      "Wirrpilz"
+    ],
+    "fire_immune": "Ja; nimmt Schaden durch Wasser und Regen",
+    "undead": "Nein",
+    "boss_bar": "Nein",
+    "knockback_resistance": 0,
+    "loot_table": "minecraft:entities/strider",
+    "java_entity_id": "minecraft:strider",
+    "bedrock_entity_id": "minecraft:strider"
+  },
+  {
+    "id": "minecraft:tadpole",
+    "name": "Kaulquappe",
+    "numeric_id": "( Nur Bedrock ) 133",
+    "type": "passive",
+    "category": "Passiver Mob",
+    "icon": "/assets/img/mobs/passive/Tadpole.webp",
+    "description": "Baby-Version des Frosches • Schwimmt im Wasser • Wächst zu Frosch heran • Kann mit Wassereimer aufgenommen werden",
+    "biome": "Keine feste Biom-Bindung; entsteht aus Froschlaich",
+    "structure": "Keine",
+    "dimension": "Overworld",
+    "movement_speed": 1,
+    "size": {
+      "java": {
+        "width": 0.4,
+        "height": 0.3
+      },
+      "bedrock": {
+        "width": 0.8,
+        "height": 0.6
+      }
+    },
+    "aliases": [],
+    "introduced_date": "2022-06-07",
+    "removed_date": null,
+    "gallery": [],
+    "model": "Minecraft-Entity-Modell",
+    "animation": [],
+    "source": "",
+    "updated_at": "2026-08-22",
+    "notes": "Baby-Version des Frosches • Schwimmt im Wasser • Wächst zu Frosch heran • Kann mit Wassereimer aufgenommen werden",
+    "version": "Java Edition 1.19 / Bedrock Edition 1.19.0",
+    "edition": "Java Edition, Bedrock Edition",
+    "effects": [],
+    "effect_immunities": [],
+    "status": "Verfügbar",
+    "tags": [
+      "Passiv",
+      "Overworld"
+    ],
+    "related_entries": [
+      "minecraft:tadpole_bucket",
+      "minecraft:frog",
+      "minecraft:slime_ball",
+      "minecraft:experience_orb"
+    ],
+    "command": "/summon minecraft:tadpole",
+    "version_history": [
+      {
+        "version": "Java Edition 1.19 / Bedrock Edition 1.19.0",
+        "change": "Kaulquappe: erstmals in der angegebenen Version verfügbar.",
+        "type": "added",
+        "date": "2022-06-07"
+      }
+    ],
+    "texture": [
+      {
+        "name": "Tadpole Tadpole",
+        "category": "Standardtextur",
+        "description": "Variante: Tadpole Tadpole.",
+        "file": "/assets/img/texture/mobs/tadpole/tadpole.png"
+      }
+    ],
+    "sounds": [],
+    "health": 6,
+    "damage": 0,
+    "armor": 0,
+    "experience": "0",
+    "spawn": {
+      "light_level": [
+        "Beliebig"
+      ],
+      "biome": "Keine feste Biom-Bindung",
+      "structure": "Schlüpft nach 3–10 Minuten in Gruppen von 2–5 aus Froschlaich"
+    },
+    "light_level": [
+      "0-15"
+    ],
+    "classification": "Passiv / Wassertier; Jugendstadium eines Frosches",
+    "renewable": "Ja",
+    "can_despawn": "Nein",
+    "tameable": "Nein",
+    "breedable": "Nein",
+    "duplicable": "Nein",
+    "duplication_item": "Keines",
+    "leashable": "Nein",
+    "rideable": "Nein",
+    "baby_variant": "Die Kaulquappe ist selbst das Jugendstadium",
+    "drops": [],
+    "abilities": [
+      "Schwimmen",
+      "Mit Wassereimer fangbar",
+      "Wächst in 20 Minuten zum Frosch",
+      "Kann an Land springen"
+    ],
+    "fun_fact": "Kaulquappen wachsen je nach Biom zu unterschiedlichen Frosch-Farbvarianten heran!",
+    "attack_type": "Keiner",
+    "targets": [],
+    "enemy_mobs": [
+      "Axolotl"
+    ],
+    "follows": [
+      "Schleimball"
+    ],
+    "healing_item": [
+      "Schleimball beschleunigt das Wachstum"
+    ],
+    "fire_immune": "Nein",
+    "undead": "Nein",
+    "boss_bar": "Nein",
+    "knockback_resistance": 0,
+    "loot_table": "minecraft:entities/tadpole",
+    "java_entity_id": "minecraft:tadpole",
+    "bedrock_entity_id": "minecraft:tadpole"
+  },
+  {
+    "id": "minecraft:tropical_fish",
+    "name": "Tropenfisch",
+    "numeric_id": "( Nur Bedrock ) 111",
+    "type": "passive",
+    "category": "Passiver Mob",
+    "icon": "/assets/img/mobs/passive/Clownfish.webp",
+    "description": "Passiver Zierfisch • Viele Farbvarianten • Schwimmt in warmen Ozeanen • Kann mit Wassereimer gefangen werden",
+    "biome": "Warmer Ozean, Tieferwarmer Ozean, Lauwarmer Ozean, Tieflauwarmer Ozean",
+    "structure": "Keine",
+    "dimension": "Overworld",
+    "movement_speed": 0.7,
+    "size": {
+      "width": "Breite: 0.5",
+      "height": "Höhe: 0.4"
+    },
+    "aliases": [],
+    "introduced_date": "2018-07-18",
+    "removed_date": null,
+    "gallery": [],
+    "model": "Minecraft-Entity-Modell",
+    "animation": [],
+    "source": "",
+    "updated_at": "2026-08-22",
+    "notes": "Passiver Zierfisch • Viele Farbvarianten • Schwimmt in warmen Ozeanen • Kann mit Wassereimer gefangen werden",
+    "version": "Java Edition 1.13 / Bedrock Edition 1.4.0",
+    "edition": "Java Edition, Bedrock Edition",
+    "effects": [],
+    "effect_immunities": [],
+    "status": "Verfügbar",
+    "tags": [
+      "Passiv",
+      "Overworld"
+    ],
+    "related_entries": [
+      "minecraft:tropical_fish",
+      "minecraft:tropical_fish_bucket",
+      "minecraft:bone_meal"
+    ],
+    "command": "/summon minecraft:tropical_fish",
+    "version_history": [
+      {
+        "version": "Java Edition 1.13 / Bedrock Edition 1.4.0",
+        "change": "Tropenfisch: erstmals in der angegebenen Version verfügbar.",
+        "type": "added",
+        "date": "2018-07-18"
+      }
+    ],
+    "texture": [
+      {
+        "name": "Fish Tropical A Pattern 1",
+        "category": "Standardtextur",
+        "description": "Variante: Fish Tropical A Pattern 1.",
+        "file": "/assets/img/texture/mobs/fish/tropical_a_pattern_1.png"
+      },
+      {
+        "name": "Fish Tropical A Pattern 2",
+        "category": "Standardtextur",
+        "description": "Variante: Fish Tropical A Pattern 2.",
+        "file": "/assets/img/texture/mobs/fish/tropical_a_pattern_2.png"
+      },
+      {
+        "name": "Fish Tropical A Pattern 3",
+        "category": "Standardtextur",
+        "description": "Variante: Fish Tropical A Pattern 3.",
+        "file": "/assets/img/texture/mobs/fish/tropical_a_pattern_3.png"
+      },
+      {
+        "name": "Fish Tropical A Pattern 4",
+        "category": "Standardtextur",
+        "description": "Variante: Fish Tropical A Pattern 4.",
+        "file": "/assets/img/texture/mobs/fish/tropical_a_pattern_4.png"
+      },
+      {
+        "name": "Fish Tropical A Pattern 5",
+        "category": "Standardtextur",
+        "description": "Variante: Fish Tropical A Pattern 5.",
+        "file": "/assets/img/texture/mobs/fish/tropical_a_pattern_5.png"
+      },
+      {
+        "name": "Fish Tropical A Pattern 6",
+        "category": "Standardtextur",
+        "description": "Variante: Fish Tropical A Pattern 6.",
+        "file": "/assets/img/texture/mobs/fish/tropical_a_pattern_6.png"
+      },
+      {
+        "name": "Fish Tropical A",
+        "category": "Standardtextur",
+        "description": "Variante: Fish Tropical A.",
+        "file": "/assets/img/texture/mobs/fish/tropical_a.png"
+      },
+      {
+        "name": "Fish Tropical B Pattern 1",
+        "category": "Standardtextur",
+        "description": "Variante: Fish Tropical B Pattern 1.",
+        "file": "/assets/img/texture/mobs/fish/tropical_b_pattern_1.png"
+      },
+      {
+        "name": "Fish Tropical B Pattern 2",
+        "category": "Standardtextur",
+        "description": "Variante: Fish Tropical B Pattern 2.",
+        "file": "/assets/img/texture/mobs/fish/tropical_b_pattern_2.png"
+      },
+      {
+        "name": "Fish Tropical B Pattern 3",
+        "category": "Standardtextur",
+        "description": "Variante: Fish Tropical B Pattern 3.",
+        "file": "/assets/img/texture/mobs/fish/tropical_b_pattern_3.png"
+      },
+      {
+        "name": "Fish Tropical B Pattern 4",
+        "category": "Standardtextur",
+        "description": "Variante: Fish Tropical B Pattern 4.",
+        "file": "/assets/img/texture/mobs/fish/tropical_b_pattern_4.png"
+      },
+      {
+        "name": "Fish Tropical B Pattern 5",
+        "category": "Standardtextur",
+        "description": "Variante: Fish Tropical B Pattern 5.",
+        "file": "/assets/img/texture/mobs/fish/tropical_b_pattern_5.png"
+      },
+      {
+        "name": "Fish Tropical B Pattern 6",
+        "category": "Standardtextur",
+        "description": "Variante: Fish Tropical B Pattern 6.",
+        "file": "/assets/img/texture/mobs/fish/tropical_b_pattern_6.png"
+      },
+      {
+        "name": "Fish Tropical B",
+        "category": "Standardtextur",
+        "description": "Variante: Fish Tropical B.",
+        "file": "/assets/img/texture/mobs/fish/tropical_b.png"
+      }
+    ],
+    "sounds": [],
+    "health": 3,
+    "damage": 0,
+    "armor": 0,
+    "experience": "1–3 beim Töten",
+    "spawn": {
+      "light_level": [
+        "0-15"
+      ],
+      "biome": "Warmer Ozean, Tieferwarmer Ozean, Lauwarmer Ozean, Tieflauwarmer Ozean",
+      "structure": "Keine"
+    },
+    "light_level": [
+      "0-15"
+    ],
+    "classification": "Passiv / Wassertier",
+    "renewable": "Ja",
+    "can_despawn": "Nein",
+    "tameable": "Nein",
+    "breedable": "Nein",
+    "duplicable": "Nein",
+    "duplication_item": "Keines",
+    "leashable": "Nein",
+    "rideable": "Nein",
+    "baby_variant": "Nein",
+    "drops": [
+      {
+        "item": "minecraft:tropical_fish",
+        "chance": "100 %",
+        "amount": "1"
+      },
+      {
+        "item": "minecraft:bone_meal",
+        "chance": "5 % (Java)",
+        "amount": "1"
+      },
+      {
+        "item": "minecraft:bone",
+        "chance": "25 % (Bedrock)",
+        "amount": "1–2"
+      }
+    ],
+    "abilities": [
+      "Schwimmen",
+      "Mit Wassereimer fangbar",
+      "Viele Farbmuster und Formen"
+    ],
+    "fun_fact": "Es gibt über 2.700 verschiedene natürliche Varianten von Tropenfischen!",
+    "attack_type": "Keiner",
+    "targets": [],
+    "enemy_mobs": [],
+    "follows": [],
+    "healing_item": [],
+    "fire_immune": "Nein",
+    "undead": "Nein",
+    "boss_bar": "Nein",
+    "knockback_resistance": 0,
+    "loot_table": "minecraft:entities/tropical_fish",
+    "java_entity_id": "minecraft:tropical_fish",
+    "bedrock_entity_id": "minecraft:tropical_fish"
+  },
+  {
+    "id": "minecraft:turtle",
+    "name": "Schildkröte",
+    "numeric_id": "( Nur Bedrock ) 74",
+    "type": "passive",
+    "category": "Passiver Mob",
+    "icon": "/assets/img/mobs/passive/Turtle.webp",
+    "description": "Passives Tier • Legt Eier am Heimatstrand • Babys wachsen langsam heran • Liefert Schildkrötenpanzer",
+    "biome": "Sandstrände der Oberwelt; nicht an verschneiten oder steinigen Küsten",
+    "structure": "Keine",
+    "dimension": "Overworld",
+    "movement_speed": 0.16,
+    "size": {
+      "width": "Breite: 1.2",
+      "height": "Höhe: 0.4",
+      "baby": {
+        "width": "Breite: 0.6",
+        "height": "Höhe: 0.2"
+      }
+    },
+    "aliases": [],
+    "introduced_date": "2018-07-18",
+    "removed_date": null,
+    "gallery": [],
+    "model": "Minecraft-Entity-Modell",
+    "animation": [],
+    "source": "",
+    "updated_at": "2026-08-22",
+    "notes": "Eine Schildkrötenschuppe fällt einmalig beim Heranwachsen eines Babys zum Erwachsenen; sie ist kein Todesdrop.",
+    "version": "Java Edition 1.13 / Bedrock Edition 1.5.0",
+    "edition": "Java Edition, Bedrock Edition",
+    "effects": [],
+    "effect_immunities": [],
+    "status": "Verfügbar",
+    "tags": [
+      "Passiv",
+      "Overworld"
+    ],
+    "related_entries": [
+      "minecraft:scute",
+      "minecraft:turtle_helmet",
+      "minecraft:seagrass"
+    ],
+    "command": "/summon minecraft:turtle",
+    "version_history": [
+      {
+        "version": "Java Edition 1.13 / Bedrock Edition 1.5.0",
+        "change": "Schildkröte: erstmals in der angegebenen Version verfügbar.",
+        "type": "added",
+        "date": "2018-07-18"
+      }
+    ],
+    "texture": [
+      {
+        "name": "Turtle Turtle Baby",
+        "category": "Baby",
+        "description": "Variante: Turtle Turtle Baby.",
+        "file": "/assets/img/texture/mobs/turtle/turtle_baby.png"
+      },
+      {
+        "name": "Turtle Turtle",
+        "category": "Standardtextur",
+        "description": "Variante: Turtle Turtle.",
+        "file": "/assets/img/texture/mobs/turtle/turtle.png"
+      }
+    ],
+    "sounds": [],
+    "health": 30,
+    "damage": 0,
+    "armor": 0,
+    "experience": "1–3 beim Töten; 1–7 beim Züchten",
+    "spawn": {
+      "light_level": [
+        "9-15"
+      ],
+      "biome": "Strand, Warme Strände",
+      "structure": "Keine"
+    },
+    "light_level": [
+      "0-15"
+    ],
+    "classification": "Passiv / Tier",
+    "renewable": "Ja",
+    "can_despawn": "Nein",
+    "tameable": "Nein",
+    "breedable": "Ja; legt Eier am Heimatstrand",
+    "duplicable": "Nein",
+    "duplication_item": "Keines",
+    "leashable": "Ja",
+    "rideable": "Nein",
+    "baby_variant": "Ja",
+    "drops": [
+      {
+        "item": "minecraft:seagrass",
+        "chance": "100 %",
+        "amount": "0–2"
+      }
+    ],
+    "abilities": [
+      "Eier legen am Heimatstrand",
+      "Kann mit Seegras gezüchtet werden",
+      "Zieht Kopf bei Gefahr ein",
+      "Langsame Bewegung an Land und im Wasser"
+    ],
+    "fun_fact": "Aus Schildkröten-Schuppen kann ein Schildkrötenhelm hergestellt werden, der Unterwasser-Atmung gibt!",
+    "attack_type": "Keiner",
+    "targets": [],
+    "enemy_mobs": [],
+    "follows": [
+      "Seegras"
+    ],
+    "healing_item": [
+      "Seegras"
+    ],
+    "fire_immune": "Nein",
+    "undead": "Nein",
+    "boss_bar": "Nein",
+    "knockback_resistance": 0,
+    "loot_table": "minecraft:entities/turtle",
+    "java_entity_id": "minecraft:turtle",
+    "bedrock_entity_id": "minecraft:turtle"
+  },
+  {
+    "id": "minecraft:villager",
+    "name": "Dorfbewohner",
+    "numeric_id": "( Nur Bedrock ) (Alt 15) Neu 115",
+    "type": "passive",
+    "category": "Passiver Mob",
+    "icon": "/assets/img/mobs/passive/Villager.gif",
+    "description": "Passiver NPC • Bietet Handel an • Hat verschiedene Berufe • Kann gezüchtet werden • Wohnt in Dörfern",
+    "biome": "Dörfer verschiedener Biome; außerdem durch Zucht oder Heilung eines Zombiedorfbewohners",
+    "structure": "Dorf, Iglu-Keller (einzelner Dorfbewohner)",
+    "dimension": "Overworld",
+    "movement_speed": 0.5,
+    "size": {
+      "width": "Breite: 0.6",
+      "height": "Höhe: 1.95",
+      "baby": {
+        "width": "Breite: 0.3",
+        "height": "Höhe: 0.975"
+      }
+    },
+    "aliases": [],
+    "introduced_date": "2011-09-22",
+    "removed_date": null,
+    "gallery": [],
+    "model": "Minecraft-Entity-Modell",
+    "animation": [],
+    "source": "",
+    "updated_at": "2026-08-22",
+    "notes": "Passiver NPC • Bietet Handel an • Hat verschiedene Berufe • Kann gezüchtet werden • Wohnt in Dörfern",
+    "version": "Java Edition Beta 1.9 Prerelease / Bedrock Edition 0.9.0",
+    "edition": "Java Edition, Bedrock Edition",
+    "effects": [],
+    "effect_immunities": [],
+    "status": "Verfügbar",
+    "tags": [
+      "Passiv",
+      "Overworld"
+    ],
+    "related_entries": [
+      "minecraft:emerald",
+      "minecraft:bell",
+      "minecraft:experience_orb"
+    ],
+    "command": "/summon minecraft:villager",
+    "version_history": [
+      {
+        "version": "Java Edition Beta 1.9 Prerelease / Bedrock Edition 0.9.0",
+        "change": "Dorfbewohner: erstmals in der angegebenen Version verfügbar.",
+        "type": "added",
+        "date": "2011-09-22"
+      }
+    ],
+    "texture": [
+      {
+        "name": "Villager Baby Desert",
+        "category": "Baby",
+        "description": "Variante: Villager Baby Desert.",
+        "file": "/assets/img/texture/mobs/villager/baby/desert.png"
+      },
+      {
+        "name": "Villager Baby Jungle",
+        "category": "Baby",
+        "description": "Variante: Villager Baby Jungle.",
+        "file": "/assets/img/texture/mobs/villager/baby/jungle.png"
+      },
+      {
+        "name": "Villager Baby Plains",
+        "category": "Baby",
+        "description": "Variante: Villager Baby Plains.",
+        "file": "/assets/img/texture/mobs/villager/baby/plains.png"
+      },
+      {
+        "name": "Villager Baby Savanna",
+        "category": "Baby",
+        "description": "Variante: Villager Baby Savanna.",
+        "file": "/assets/img/texture/mobs/villager/baby/savanna.png"
+      },
+      {
+        "name": "Villager Baby Snow",
+        "category": "Baby",
+        "description": "Variante: Villager Baby Snow.",
+        "file": "/assets/img/texture/mobs/villager/baby/snow.png"
+      },
+      {
+        "name": "Villager Baby Swamp",
+        "category": "Baby",
+        "description": "Variante: Villager Baby Swamp.",
+        "file": "/assets/img/texture/mobs/villager/baby/swamp.png"
+      },
+      {
+        "name": "Villager Baby Taiga",
+        "category": "Baby",
+        "description": "Variante: Villager Baby Taiga.",
+        "file": "/assets/img/texture/mobs/villager/baby/taiga.png"
+      },
+      {
+        "name": "Villager Profession Level Diamond",
+        "category": "Standardtextur",
+        "description": "Variante: Villager Profession Level Diamond.",
+        "file": "/assets/img/texture/mobs/villager/profession_level/diamond.png"
+      },
+      {
+        "name": "Villager Profession Level Emerald",
+        "category": "Standardtextur",
+        "description": "Variante: Villager Profession Level Emerald.",
+        "file": "/assets/img/texture/mobs/villager/profession_level/emerald.png"
+      },
+      {
+        "name": "Villager Profession Level Gold",
+        "category": "Standardtextur",
+        "description": "Variante: Villager Profession Level Gold.",
+        "file": "/assets/img/texture/mobs/villager/profession_level/gold.png"
+      },
+      {
+        "name": "Villager Profession Level Iron",
+        "category": "Standardtextur",
+        "description": "Variante: Villager Profession Level Iron.",
+        "file": "/assets/img/texture/mobs/villager/profession_level/iron.png"
+      },
+      {
+        "name": "Villager Profession Level Stone",
+        "category": "Standardtextur",
+        "description": "Variante: Villager Profession Level Stone.",
+        "file": "/assets/img/texture/mobs/villager/profession_level/stone.png"
+      },
+      {
+        "name": "Villager Profession Armorer",
+        "category": "Standardtextur",
+        "description": "Variante: Villager Profession Armorer.",
+        "file": "/assets/img/texture/mobs/villager/profession/armorer.png"
+      },
+      {
+        "name": "Villager Profession Butcher",
+        "category": "Standardtextur",
+        "description": "Variante: Villager Profession Butcher.",
+        "file": "/assets/img/texture/mobs/villager/profession/butcher.png"
+      },
+      {
+        "name": "Villager Profession Cartographer",
+        "category": "Standardtextur",
+        "description": "Variante: Villager Profession Cartographer.",
+        "file": "/assets/img/texture/mobs/villager/profession/cartographer.png"
+      },
+      {
+        "name": "Villager Profession Cleric",
+        "category": "Standardtextur",
+        "description": "Variante: Villager Profession Cleric.",
+        "file": "/assets/img/texture/mobs/villager/profession/cleric.png"
+      },
+      {
+        "name": "Villager Profession Farmer",
+        "category": "Standardtextur",
+        "description": "Variante: Villager Profession Farmer.",
+        "file": "/assets/img/texture/mobs/villager/profession/farmer.png"
+      },
+      {
+        "name": "Villager Profession Fisherman",
+        "category": "Standardtextur",
+        "description": "Variante: Villager Profession Fisherman.",
+        "file": "/assets/img/texture/mobs/villager/profession/fisherman.png"
+      },
+      {
+        "name": "Villager Profession Fletcher",
+        "category": "Standardtextur",
+        "description": "Variante: Villager Profession Fletcher.",
+        "file": "/assets/img/texture/mobs/villager/profession/fletcher.png"
+      },
+      {
+        "name": "Villager Profession Leatherworker",
+        "category": "Standardtextur",
+        "description": "Variante: Villager Profession Leatherworker.",
+        "file": "/assets/img/texture/mobs/villager/profession/leatherworker.png"
+      },
+      {
+        "name": "Villager Profession Librarian",
+        "category": "Standardtextur",
+        "description": "Variante: Villager Profession Librarian.",
+        "file": "/assets/img/texture/mobs/villager/profession/librarian.png"
+      },
+      {
+        "name": "Villager Profession Mason",
+        "category": "Standardtextur",
+        "description": "Variante: Villager Profession Mason.",
+        "file": "/assets/img/texture/mobs/villager/profession/mason.png"
+      },
+      {
+        "name": "Villager Profession Nitwit",
+        "category": "Standardtextur",
+        "description": "Variante: Villager Profession Nitwit.",
+        "file": "/assets/img/texture/mobs/villager/profession/nitwit.png"
+      },
+      {
+        "name": "Villager Profession Shepherd",
+        "category": "Standardtextur",
+        "description": "Variante: Villager Profession Shepherd.",
+        "file": "/assets/img/texture/mobs/villager/profession/shepherd.png"
+      },
+      {
+        "name": "Villager Profession Toolsmith",
+        "category": "Standardtextur",
+        "description": "Variante: Villager Profession Toolsmith.",
+        "file": "/assets/img/texture/mobs/villager/profession/toolsmith.png"
+      },
+      {
+        "name": "Villager Profession Weaponsmith",
+        "category": "Standardtextur",
+        "description": "Variante: Villager Profession Weaponsmith.",
+        "file": "/assets/img/texture/mobs/villager/profession/weaponsmith.png"
+      },
+      {
+        "name": "Villager Type Desert",
+        "category": "Standardtextur",
+        "description": "Variante: Villager Type Desert.",
+        "file": "/assets/img/texture/mobs/villager/type/desert.png"
+      },
+      {
+        "name": "Villager Type Jungle",
+        "category": "Standardtextur",
+        "description": "Variante: Villager Type Jungle.",
+        "file": "/assets/img/texture/mobs/villager/type/jungle.png"
+      },
+      {
+        "name": "Villager Type Plains",
+        "category": "Standardtextur",
+        "description": "Variante: Villager Type Plains.",
+        "file": "/assets/img/texture/mobs/villager/type/plains.png"
+      },
+      {
+        "name": "Villager Type Savanna",
+        "category": "Standardtextur",
+        "description": "Variante: Villager Type Savanna.",
+        "file": "/assets/img/texture/mobs/villager/type/savanna.png"
+      },
+      {
+        "name": "Villager Type Snow",
+        "category": "Standardtextur",
+        "description": "Variante: Villager Type Snow.",
+        "file": "/assets/img/texture/mobs/villager/type/snow.png"
+      },
+      {
+        "name": "Villager Type Swamp",
+        "category": "Standardtextur",
+        "description": "Variante: Villager Type Swamp.",
+        "file": "/assets/img/texture/mobs/villager/type/swamp.png"
+      },
+      {
+        "name": "Villager Type Taiga",
+        "category": "Standardtextur",
+        "description": "Variante: Villager Type Taiga.",
+        "file": "/assets/img/texture/mobs/villager/type/taiga.png"
+      },
+      {
+        "name": "Villager Villager Baby",
+        "category": "Baby",
+        "description": "Variante: Villager Villager Baby.",
+        "file": "/assets/img/texture/mobs/villager/villager_baby.png"
+      },
+      {
+        "name": "Villager Villager",
+        "category": "Standardtextur",
+        "description": "Variante: Villager Villager.",
+        "file": "/assets/img/texture/mobs/villager/villager.png"
+      }
+    ],
+    "sounds": [],
+    "health": 20,
+    "damage": 0,
+    "armor": 0,
+    "experience": "0 beim Töten; Erfahrung entsteht unter anderem durch Handel",
+    "spawn": {
+      "light_level": [
+        "9-15"
+      ],
+      "biome": "Dörfer in verschiedenen Biomen",
+      "structure": "Dorf"
+    },
+    "light_level": [
+      "0-15"
+    ],
+    "classification": "Passiv / Dorfbewohner",
+    "renewable": "Ja",
+    "can_despawn": "Nein",
+    "tameable": "Nein",
+    "breedable": "Ja, bei Bereitschaft und verfügbarem Bett",
+    "duplicable": "Nein",
+    "duplication_item": "Keines",
+    "leashable": "Nein",
+    "rideable": "Nein",
+    "baby_variant": "Ja",
+    "drops": [],
+    "abilities": [
+      "Handel mit verschiedenen Gegenständen",
+      "Berufe durch Arbeitsblöcke annehmen",
+      "Züchtung mit Nahrungsmitteln",
+      "Handelslevel-Aufstieg durch Handel"
+    ],
+    "fun_fact": "Dorfbewohner können durch Handel auf höhere Level aufsteigen und bessere Angebote machen!",
+    "attack_type": "Keiner",
+    "targets": [],
+    "enemy_mobs": [],
+    "follows": [],
+    "healing_item": [],
+    "fire_immune": "Nein",
+    "undead": "Nein",
+    "boss_bar": "Nein",
+    "knockback_resistance": 0,
+    "loot_table": "minecraft:entities/villager",
+    "java_entity_id": "minecraft:villager",
+    "bedrock_entity_id": "minecraft:villager"
+  },
+  {
+    "id": "minecraft:wandering_trader",
+    "name": "Wanderhändler",
+    "numeric_id": "( Nur Bedrock ) 118",
+    "type": "passive",
+    "category": "Passiver Mob",
+    "icon": "/assets/img/mobs/passive/Wandering_Trader.webp",
+    "description": "Besonderer Händler-Mob • Erscheint zufällig • Bietet exotische Waren an • Hat zwei Lama-Begleiter • Despawnt nach Zeit",
+    "biome": "Nahe dem Spieler in der Oberwelt; Bedrock zusätzlich nahe einer beanspruchten Dorfglocke",
+    "structure": "Keine",
+    "dimension": "Overworld",
+    "movement_speed": 0.5,
+    "size": {
+      "width": "Breite: 0.6",
+      "height": "Höhe: 1.95"
+    },
+    "aliases": [],
+    "introduced_date": "2019-04-23",
+    "removed_date": null,
+    "gallery": [],
+    "model": "Minecraft-Entity-Modell",
+    "animation": [],
+    "source": "",
+    "updated_at": "2026-08-22",
+    "notes": "Die zwei Leinen stammen von den Händlerlamas, wenn die Verbindung getrennt wird; sie sind kein regulärer Todesdrop des Händlers.",
+    "version": "Java Edition 1.14 / Bedrock Edition 1.10.0",
+    "edition": "Java Edition, Bedrock Edition",
+    "effects": [],
+    "effect_immunities": [],
+    "status": "Verfügbar",
+    "tags": [
+      "Passiv",
+      "Overworld"
+    ],
+    "related_entries": [
+      "minecraft:emerald",
+      "minecraft:lead"
+    ],
+    "command": "/summon minecraft:wandering_trader",
+    "version_history": [
+      {
+        "version": "Java Edition 1.14 / Bedrock Edition 1.10.0",
+        "change": "Wanderhändler: erstmals in der angegebenen Version verfügbar.",
+        "type": "added",
+        "date": "2019-04-23"
+      }
+    ],
+    "texture": [
+      {
+        "name": "Wandering Trader Wandering Trader",
+        "category": "Standardtextur",
+        "description": "Variante: Wandering Trader Wandering Trader.",
+        "file": "/assets/img/texture/mobs/wandering_trader/wandering_trader.png"
+      }
+    ],
+    "sounds": [],
+    "health": 20,
+    "damage": 0,
+    "armor": 0,
+    "experience": "0",
+    "spawn": {
+      "light_level": [
+        "0-15"
+      ],
+      "biome": "Alle Overworld-Biome",
+      "structure": "Alle Overworld-Biome"
+    },
+    "light_level": [
+      "0-15"
+    ],
+    "classification": "Passiv / Händler",
+    "renewable": "Ja",
+    "can_despawn": "Ja, normalerweise nach 48.000 Ticks (40 Minuten geladener Zeit)",
+    "tameable": "Nein",
+    "breedable": "Nein",
+    "duplicable": "Nein",
+    "duplication_item": "Keines",
+    "leashable": "Nein",
+    "rideable": "Nein",
+    "baby_variant": "Nein",
+    "drops": [],
+    "abilities": [
+      "Handel mit seltenen Items",
+      "Spawnt mit zwei angebundenen Lamas",
+      "Tränke des Unsichtbarkeit bei Gefahr",
+      "Kann Türen nicht öffnen"
+    ],
+    "fun_fact": "Wanderhändler erscheinen nur bei Spielern und verschwinden nach 2-3 Minecraft-Tagen wieder!",
+    "attack_type": "Keiner",
+    "targets": [],
+    "enemy_mobs": [],
+    "follows": [],
+    "healing_item": [],
+    "fire_immune": "Nein",
+    "undead": "Nein",
+    "boss_bar": "Nein",
+    "knockback_resistance": 0,
+    "loot_table": "minecraft:entities/wandering_trader",
+    "java_entity_id": "minecraft:wandering_trader",
+    "bedrock_entity_id": "minecraft:wandering_trader"
+  },
+  {
+    "id": "minecraft:zombie_horse",
+    "name": "Zombie-Pferd",
+    "numeric_id": "( Nur Bedrock ) 27",
+    "type": "passive",
+    "category": "Passiver Mob",
+    "icon": "/assets/img/mobs/passive/Zombie_Horse.png",
+    "description": "Untote Pferde-Variante • Kann ohne Zähmung geritten werden • Immun gegen Ertrinken • Nur per Befehl spawnbar von V 1.6.1 Bis 1.21.10 • Ab 1.21.11 Spawnt er mit einen Zombie auf dem Rücken",
+    "biome": "Ebenen- und Savannen-Biomtypen bei Nacht",
+    "structure": "Spawnt seit Mounts of Mayhem natürlich mit Zombie-Reiter und eiserner Lanze",
+    "dimension": "Overworld",
+    "movement_speed": 0.2,
+    "size": {
+      "width": "Breite: 1.3965",
+      "height": "Höhe: 1.6",
+      "baby": {
+        "width": "Breite: 0.6982",
+        "height": "Höhe: 0.8"
+      }
+    },
+    "aliases": [],
+    "introduced_date": "2013-07-01",
+    "removed_date": null,
+    "gallery": [],
+    "model": "Minecraft-Entity-Modell",
+    "animation": [],
+    "source": "",
+    "updated_at": "2026-08-22",
+    "notes": "Seit Java 1.21.11 / Bedrock 1.21.130 natürlicher Survival-Spawn; die Entity existiert bereits seit 1.6.1.",
+    "version": "Entity seit Java 1.6.1; natürlicher Spawn seit Java 1.21.11 / Bedrock 1.21.130",
+    "edition": "Java Edition, Bedrock Edition",
+    "effects": [],
+    "effect_immunities": [
+      "Gift",
+      "Regeneration"
+    ],
+    "status": "Verfügbar",
+    "tags": [
+      "Passiv",
+      "Overworld"
+    ],
+    "related_entries": [
+      "minecraft:rotten_flesh",
+      "minecraft:saddle"
+    ],
+    "command": "/summon minecraft:zombie_horse",
+    "version_history": [
+      {
+        "version": "Java Edition 1.6.1",
+        "change": "Die Zombiepferd-Entity wurde hinzugefügt.",
+        "type": "added",
+        "date": "2013-07-01"
+      },
+      {
+        "version": "Java Edition 1.21.11 / Bedrock Edition 1.21.130",
+        "change": "Natürlicher Survival-Spawn mit Zombie-Reiter wurde hinzugefügt.",
+        "type": "changed",
+        "date": "2025-12-09"
+      }
+    ],
+    "texture": [
+      {
+        "name": "Zombie Horse Horse Zombie Baby",
+        "category": "Baby",
+        "description": "Variante: Zombie Horse Horse Zombie Baby.",
+        "file": "/assets/img/texture/mobs/zombie_horse/horse_zombie_baby.png"
+      },
+      {
+        "name": "Zombie Horse Horse Zombie",
+        "category": "Standardtextur",
+        "description": "Variante: Zombie Horse Horse Zombie.",
+        "file": "/assets/img/texture/mobs/zombie_horse/horse_zombie.png"
+      },
+      {
+        "name": "Equipment Zombie Horse Saddle Saddle",
+        "category": "Ausrüstung",
+        "description": "Variante: Equipment Zombie Horse Saddle Saddle.",
+        "file": "/assets/img/texture/mobs/equipment/zombie_horse_saddle/saddle.png"
+      }
+    ],
+    "sounds": [],
+    "health": 15,
+    "damage": 0,
+    "armor": 0,
+    "experience": "1–3 beim Töten",
+    "spawn": {
+      "light_level": [
+        ""
+      ],
+      "biome": "Von V 1.6.1 Bis V 1.21.10 Nur per Befehl spawnbar Ab 1.21.11 Spawnt er mit einen Zombie auf dem Rücken ",
+      "structure": ""
+    },
+    "light_level": [
+      "0-15"
+    ],
+    "classification": "Passiv ohne feindlichen Reiter / untot",
+    "renewable": "Ja",
+    "can_despawn": "Nein",
+    "tameable": "Ja",
+    "breedable": "Nein",
+    "duplicable": "Nein",
+    "duplication_item": "Keines",
+    "leashable": "Ja",
+    "rideable": "Ja, gezähmt und mit Sattel",
+    "baby_variant": "Ja, aber nicht durch Zucht",
+    "drops": [
+      {
+        "item": "minecraft:rotten_flesh",
+        "chance": "100 %",
+        "amount": "2–3 (+0–1 je Plünderungsstufe)"
+      },
+      {
+        "item": "Ausgerüsteter Sattel und Pferderüstung",
+        "chance": "100 %",
+        "amount": "Vorhandene Menge"
+      }
+    ],
+    "abilities": [
+      "Kann sofort geritten werden",
+      "Immun gegen Ertrinken",
+      "Keine Zähmung erforderlich",
+      "Kann mit Sattel ausgerüstet werden"
+    ],
+    "fun_fact": "Zombie-Pferde können ohne Zähmung geritten werden und ertrinken nicht im Wasser!",
+    "attack_type": "Keiner",
+    "targets": [],
+    "enemy_mobs": [],
+    "follows": [
+      "Roter Pilz"
+    ],
+    "healing_item": [
+      "Roter Pilz"
+    ],
+    "fire_immune": "Nein",
+    "undead": "Ja",
+    "boss_bar": "Nein",
+    "knockback_resistance": 0,
+    "loot_table": "minecraft:entities/zombie_horse",
+    "java_entity_id": "minecraft:zombie_horse",
+    "bedrock_entity_id": "minecraft:zombie_horse"
+  }
+]

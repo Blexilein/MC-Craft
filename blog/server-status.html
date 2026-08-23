@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="de" data-theme="overworld">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Mohamad Laith AKA 'Blexilein'">
+    <meta name="robots" content="index, follow">
+    <meta name="description" content="Prüfe in Echtzeit den Online-Status von Minecraft-Servern für Java Edition und Bedrock Edition - einfach IP eingeben und Status abrufen.">
+    <meta name="keywords" content="Minecraft, Server Status, Server Check, Java Edition, Bedrock Edition, Online Checker">
+    <link rel="canonical" href="https://mc-craft.com/blog/server-status.html">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="MC-Craft | Server Status">
+    <meta property="og:description" content="Prüfe in Echtzeit den Online-Status von Minecraft-Servern für Java Edition und Bedrock Edition - einfach IP eingeben und Status abrufen.">
+    <meta property="og:url" content="https://mc-craft.com/blog/server-status.html">
+    <meta property="og:image" content="https://mc-craft.com/assets/img/favicon/mc-craft.png">
+    <meta property="og:image:alt" content="MC-Craft Logo">
+    <meta property="og:site_name" content="MC-Craft">
+    <meta property="og:locale" content="de_DE">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="MC-Craft | Server Status">
+    <meta name="twitter:description" content="Prüfe in Echtzeit den Online-Status von Minecraft-Servern für Java Edition und Bedrock Edition - einfach IP eingeben und Status abrufen.">
+    <meta name="twitter:image" content="https://mc-craft.com/assets/img/favicon/mc-craft.png">
+    <meta name="theme-color" content="#148200">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicon/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon/favicon-32x32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/assets/img/favicon/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="/assets/img/favicon/android-chrome-512x512.png">
+    <link rel="icon" href="/assets/img/favicon/favicon.ico">
+    <link rel="manifest" href="/site.webmanifest">
+        <link rel="stylesheet" href="/assets/fontawesome/all.min.css">
+    <link rel="stylesheet" href="/assets/CSS/server-status.css">
+    <link rel="stylesheet" href="/assets/CSS/site-modern-v1.css">
+    <title data-i18n="site_title_serverstatus">MC-Craft | Server Status</title>
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div class="loader" id="loader">
+        <div class="loader-content">
+            <div class="loading-spinner">
+                <div class="spinner"></div>
+            </div>
+            <p class="loading-text" data-i18n="loader_text1_serverstatus">MC-Craft Server Status wird geladen...</p>
+            <div class="loading-progress"></div>
+        </div>
+    </div>
+
+        <!-- Header -->
+     <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <a href="/index.html" class="logo">
+                    <div class="logo-icon"></div>
+                    <span class="logo-text" data-i18n="site_title_short">MC-Craft</span>
+                </a>
+                <nav class="navigation">
+                    <ul class="nav-list">
+                        <li><a href="/index.html" class="nav-link" data-i18n="nav_home">Home</a></li>
+                        <li class="dropdown">
+                            <button class="dropdown-btn nav-link" data-i18n="tools_dropdown">Werkzeuge</button>
+                            <ul class="dropdown-menu">
+                                <li><a href="/blog/text-converter.html" data-i18n="nav_text_converter">Text Konverter</a></li>
+                                <li><a href="/blog/color-text.html" data-i18n="nav_color_text">Farbtext</a></li>
+                                <li><a href="/blog/items.html" data-i18n="nav_items">Items Datenbank</a></li>
+                                <li><a href="/blog/mobs.html" data-i18n="nav_mobs">Mobs Datenbank</a></li>
+                                <li><a href="/blog/server-status.html" data-i18n="nav_server_status">Server Status</a></li>
+                                <li><a href="/blog/minecraft-api-status.html">Minecraft API Status</a></li>
+                                <li><a href="/blog/skin-lookup.html" data-i18n="nav_skin_lookup">Skin Lookup</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <button class="dropdown-btn nav-link" data-i18n="discover_dropdown">Entdecken</button>
+                            <ul class="dropdown-menu">
+                                <li><a href="/blog/skin-editor.html" data-i18n="nav_skin_editor">Skin Editor</a></li>
+                               <li><a href="/blog/day-night-cycle.html" data-i18n="nav_day_night_cycle">Tag-Nacht-Zyklus</a></li>
+                                <li><a href="/blog/end_poem.html" data-i18n="nav_end_poem">End Poem</a></li>
+                                <li><a href="/blog/minecraft-capes.html" data-i18n="nav_capes">Cape-Datenbank</a></li>
+                                <li><a href="/blog/minecraft-versions.html">Minecraft Versionen</a></li>
+                                <li><a href="/blog/minecraft-skins.html" data-i18n="nav_skins">Skin-Bibliothek</a></li>
+                                <li><a href="/blog/beacon-color-mixer.html" data-i18n="nav_beacon_mixer">Beacon Color Mixer</a></li>
+                                <li><a href="/blog/qr-generator.html">QR Generator</a></li>
+                                <li><a href="/blog/advancement-generator.html">Advancement Generator</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="sound-toggle">
+                    <button class="sound-btn" id="soundBtn" aria-label="Sound ein/aus">
+                        <img src="/assets/img/backgrounds/sound-on.svg" alt="Sound an" class="sound-icon" id="soundIcon">
+                    </button>
+                </div>
+                <div class="lang-switcher">
+                    <button class="lang-btn" id="langBtn" aria-label="Sprache umschalten">
+                        <img src="/assets/img/backgrounds/de.svg" alt="Deutsch" class="flag-icon" id="langFlag">
+                    </button>
+                </div>
+                <div class="theme-switcher">
+                    <button class="theme-btn" id="themeBtn">
+                        <i class="fa-solid fa-palette"></i>
+                    </button>
+                    <div class="theme-dropdown" id="themeDropdown">
+                        <button class="theme-option" data-theme="overworld">
+                            <i class="fas fa-cube"></i>
+                            <span data-i18n="theme_overworld">Overworld</span>
+                        </button>
+                        <button class="theme-option" data-theme="nether">
+                            <i class="fas fa-fire"></i>
+                            <span data-i18n="theme_nether">Nether</span>
+                        </button>
+                        <button class="theme-option" data-theme="end">
+                            <i class="fas fa-moon"></i>
+                            <span data-i18n="theme_end">The End</span>
+                        </button>
+                    </div>
+                </div>
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Navigation -->
+    <div class="mobile-nav" id="mobileNav">
+        <div class="mobile-nav-header">
+            <div class="logo">
+                <div class="logo-icon"></div>
+                <span class="logo-text" data-i18n="site_title_short">MC-Craft</span>
+            </div>
+            <button class="close-btn" id="closeBtn">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <ul class="mobile-nav-list">
+            <li><a href="/index.html" class="mobile-nav-link" data-i18n="nav_home">Home</a></li>
+            <li><a href="/blog/text-converter.html" class="mobile-nav-link" data-i18n="nav_text_converter">Text Konverter</a></li>
+            <li><a href="/blog/color-text.html" class="mobile-nav-link" data-i18n="nav_color_text">Farbtext</a></li>
+            <li><a href="/blog/items.html" class="mobile-nav-link" data-i18n="nav_items">Items Datenbank</a></li>
+            <li><a href="/blog/mobs.html" class="mobile-nav-link" data-i18n="nav_mobs">Mobs Datenbank</a></li>
+            <li><a href="/blog/server-status.html" class="mobile-nav-link" data-i18n="nav_server_status">Server Status</a></li>
+            <li><a href="/blog/minecraft-api-status.html" class="mobile-nav-link">Minecraft API Status</a></li>
+            <li><a href="/blog/skin-lookup.html" class="mobile-nav-link" data-i18n="nav_skin_lookup">Skin Lookup</a></li>
+            <li><a href="/blog/skin-editor.html" class="mobile-nav-link" data-i18n="nav_skin_editor">Skin Editor</a></li>
+            <li><a href="/blog/day-night-cycle.html" class="mobile-nav-link" data-i18n="nav_day_night_cycle">Tag-Nacht-Zyklus</a></li>
+            <li><a href="/blog/end_poem.html" class="mobile-nav-link" data-i18n="nav_end_poem">End Poem</a></li>
+            <li><a href="/blog/minecraft-capes.html" class="mobile-nav-link" data-i18n="nav_capes">Cape-Datenbank</a></li>
+            <li><a href="/blog/minecraft-versions.html" class="mobile-nav-link">Minecraft Versionen</a></li>
+            <li><a href="/blog/minecraft-skins.html" class="mobile-nav-link" data-i18n="nav_skins">Skin-Bibliothek</a></li>
+            <li><a href="/blog/beacon-color-mixer.html" class="mobile-nav-link" data-i18n="nav_beacon_mixer">Beacon Color Mixer</a></li>
+            <li><a href="/blog/qr-generator.html" class="mobile-nav-link">QR Generator</a></li>
+            <li><a href="/blog/advancement-generator.html" class="mobile-nav-link">Advancement Generator</a></li>
+        </ul>
+        <div class="mobile-theme-switcher">
+            <h4 data-i18n="theme_select">Theme auswählen:</h4>
+            <div class="theme-options">
+                <button class="theme-option-btn" data-theme="overworld">
+                    <i class="fas fa-cube"></i> <span data-i18n="theme_overworld">Overworld</span>
+                </button>
+                <button class="theme-option-btn" data-theme="nether">
+                    <i class="fas fa-fire"></i> <span data-i18n="theme_nether">Nether</span>
+                </button>
+                <button class="theme-option-btn" data-theme="end">
+                    <i class="fas fa-moon"></i> <span data-i18n="theme_end">The End</span>
+                </button>
+            </div>
+            <div class="mobile-sound-lang">
+                <button class="mobile-sound-btn" id="mobileSoundBtn">
+                    <img src="/assets/img/backgrounds/sound-on.svg" alt="Sound an" class="sound-icon" id="mobileSoundIcon">
+                    <span data-i18n="sound_toggle">Sound</span>
+                </button>
+                <button class="mobile-lang-btn" id="mobileLangBtn">
+                    <img src="/assets/img/backgrounds/de.svg" alt="Deutsch" class="flag-icon" id="mobileLangFlag">
+                    <span data-i18n="language">Sprache</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+
+    <main class="main">
+        <!-- Hero Section -->
+        <section class="hero" id="home">
+            <div class="hero-bg-grid"></div>
+            <div class="container">
+                <div class="hero-content">
+                <div class="hero-badge" data-i18n="hero_badge">
+                        <span class="hero-badge-dot"></span>
+                        V 1.0.0 IST DA
+                    </div>
+                    <h1 class="hero-title" data-i18n="serverstatus_hero_title">Minecraft <span class="highlight">Server Status</span></h1>
+                    <p class="hero-description" data-i18n="serverstatus_hero_desc">
+                        Prüfe den Status von Java- und Bedrock-Servern in Echtzeit. 
+                        Sieh dir Spieleranzahl, MOTD, Version und mehr an – alles in einem modernen Design.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#server-check" class="btn btn-primary" data-i18n="serverstatus_btn_check">
+                            <i class="fas fa-search"></i> Server prüfen
+                        </a>
+                        <a href="#examples" class="btn btn-secondary" data-i18n="serverstatus_btn_examples">
+                            <i class="fas fa-list"></i> Beispiel-Server
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="hero-grid-staggered">
+                        <div class="hero-stagger-col hero-stagger-left">
+                            <div class="grid-item">
+                            <i class="fas fa-server"></i>
+                            <span data-i18n="serverstatus_grid_java_bedrock">Java & Bedrock</span>
+                        </div>
+                        <div class="grid-item">
+                            <i class="fas fa-bolt"></i>
+                            <span data-i18n="serverstatus_grid_realtime">Echtzeit</span>
+                        </div>
+                        </div>
+                        <div class="hero-stagger-col hero-stagger-right">
+                        <div class="grid-item">
+                            <i class="fas fa-users"></i>
+                            <span data-i18n="serverstatus_grid_players">Spieler-Info</span>
+                        </div>
+                        <div class="grid-item">
+                            <i class="fas fa-chart-bar"></i>
+                            <span data-i18n="serverstatus_grid_stats">Detaillierte Stats</span>
+                        </div>
+                    </div>
+                        <div class="floating-cube floating-cube-1"></div>
+                        <div class="floating-cube floating-cube-2"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Server Status Section -->
+        <section class="server-section" id="server-check">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title" data-i18n="serverstatus_section_title">Server <span class="highlight">Status prüfen</span></h2>
+                    <p class="section-subtitle" data-i18n="serverstatus_section_subtitle">Gib eine Server-IP ein oder wähle einen Beispiel-Server</p>
+                </div>
+                
+                <div class="server-tabs">
+                    <button class="server-tab active" id="javaTab" data-type="java">
+                        <i class="fab fa-java"></i> <span data-i18n="serverstatus_tab_java">Java Edition</span>
+                    </button>
+                    <button class="server-tab" id="bedrockTab" data-type="bedrock">
+                        <i class="fas fa-mobile-alt"></i> <span data-i18n="serverstatus_tab_bedrock">Bedrock Edition</span>
+                    </button>
+                </div>
+                
+                <div class="server-search">
+                    <div class="search-box">
+                        <input type="text" id="serverIp" class="search-input" 
+                               data-i18n-placeholder="serverstatus_input_placeholder" placeholder="z.B. mc.craft.net">
+                        <button id="checkBtn" class="search-btn">
+                            <i class="fas fa-search"></i> <span data-i18n="serverstatus_btn_status">Status prüfen</span>
+                        </button>
+                    </div>
+                    
+                    <div class="loading-indicator" id="loadingIndicator">
+                        <!-- Wird dynamisch befüllt -->
+                    </div>
+                    
+                    <div class="error-message" id="errorMessage"></div>
+                    
+                    <div id="exampleServers" class="example-servers">
+                        <div class="example-server" data-ip="mc.craft.net">
+                            <strong data-i18n="serverstatus_example_mccraft">MC Craft</strong>
+                            <div>mc.craft.net</div>
+                        </div>
+                        <div class="example-server" data-ip="mc.hypixel.net">
+                            <strong>Hypixel</strong>
+                            <div>mc.hypixel.net</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Status Card -->
+                <div class="status-card" id="statusCard">
+                    <div class="server-header">
+                        <img id="serverIcon" class="server-icon" src="" alt="Server Icon">
+                        <div class="server-title">
+                            <div id="serverName" class="server-name">-</div>
+                            <div id="serverMotd" class="server-motd">-</div>
+                        </div>
+                        <div id="serverStatusBadge" class="server-status status-online">Online</div>
+                    </div>
+                    
+                    <div class="info-grid" id="serverInfo">
+                        <!-- Server information will be inserted here by JavaScript -->
+                    </div>
+                    
+                    <div class="players-section" id="playersSection">
+                        <div class="players-title">
+                            <i class="fas fa-users"></i> <span data-i18n="serverstatus_players">Spieler:</span> <span id="playersCount" class="players-count">0/0</span>
+                        </div>
+                        <div class="players-list" id="playersList">
+                            <!-- Player list will be inserted here by JavaScript -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta">
+            <div class="container">
+                <div class="cta-content">
+                    <h2 class="cta-title" data-i18n="serverstatus_cta_title">Mehr Minecraft <span class="highlight">Tools</span> entdecken?</h2>
+                    <p class="cta-description" data-i18n="serverstatus_cta_desc">
+                        MC-Craft bietet dir viele weitere nützliche Tools für dein Minecraft-Abenteuer.
+                    </p>
+                    <div class="cta-buttons">
+                        <a href="/blog/text-converter.html" class="btn btn-primary btn-large" data-i18n="serverstatus_cta_btn_text">
+                            <i class="fas fa-font"></i> Text Konverter
+                        </a>
+                        <a href="/index.html#tools" class="btn btn-outline" data-i18n="serverstatus_cta_btn_all">
+                            <i class="fas fa-eye"></i> Alle Tools ansehen
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+        <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-grid">
+                    <!-- Column 1 -->
+                    <div class="footer-col">
+                        <div class="footer-logo">
+                            <div class="logo-icon"></div>
+                            <span class="logo-text" data-i18n="site_title_short">MC-Craft</span>
+                        </div>
+                        <p class="footer-description" data-i18n="footer_description">Kostenlose Minecraft-Tools für die Community. Entwickelt von Spielern für Spieler.</p>
+                        <div class="social-links">
+                           <a href="https://github.com/Blexilein" class="social-link" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                            <a href="https://discord.gg/eVVpQD75w4" class="social-link"><i class="fab fa-discord"></i></a>
+                            <a href="https://x.com/Blexi_1" class="social-link" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        </div>
+                    </div>
+                    <!-- Column 2 -->
+                    <div class="footer-col">
+                        <h4 class="footer-title" data-i18n="footer_tools">Tools</h4>
+                        <ul class="footer-links">
+                            <li><a href="/blog/text-converter.html" data-i18n="nav_text_converter">Text Konverter</a></li>
+                            <li><a href="/blog/color-text.html" data-i18n="nav_color_text">Farbtext-Konverter</a></li>
+                            <li><a href="/blog/items.html" data-i18n="nav_items">Items Datenbank</a></li>
+                            <li><a href="/blog/mobs.html" data-i18n="nav_mobs">Mobs Datenbank</a></li>
+                            <li><a href="/blog/day-night-cycle.html" data-i18n="nav_day_night_cycle">Tag-Nacht-Zyklus</a></li>
+                            <li><a href="/blog/beacon-color-mixer.html" data-i18n="nav_beacon_mixer">Beacon Color Mixer</a></li>
+                                <li><a href="/blog/qr-generator.html">QR Generator</a></li>
+                                <li><a href="/blog/advancement-generator.html">Advancement Generator</a></li>
+                        </ul>
+                    </div>
+                    <!-- Column 3 -->
+                    <div class="footer-col">
+                        <h4 class="footer-title" data-i18n="footer_more_tools">Mehr Tools</h4>
+                        <ul class="footer-links">
+                            <li><a href="/blog/server-status.html" data-i18n="nav_server_status">Server Status</a></li>
+                                <li><a href="/blog/minecraft-api-status.html">Minecraft API Status</a></li>
+                            <li><a href="/blog/skin-lookup.html" data-i18n="nav_skin_lookup">Skin Lookup</a></li>
+                            <li><a href="/blog/skin-editor.html" data-i18n="nav_skin_editor">Skin Editor</a></li>
+                            <li><a href="/blog/minecraft-skins.html" data-i18n="skins_library_title">Skin Galerie</a></li>
+                            <li><a href="/blog/minecraft-capes.html" data-i18n="capes_db_title">Cape Galerie</a></li>
+                            <li><a href="/blog/minecraft-versions.html">Minecraft Versionen</a></li>
+                            <li><a href="/blog/end_poem.html" data-i18n="nav_end_poem">End Poem</a></li>
+                        </ul>
+                    </div>
+                    <!-- Column 4 -->
+                    <div class="footer-col">
+                        <h4 class="footer-title" data-i18n="footer_legal">Rechtliches</h4>
+                        <ul class="footer-links">
+                            <li><a href="/blog/impressum.html" data-i18n="footer_impressum">Impressum</a></li>
+                            <li><a href="/blog/datenschutz.html" data-i18n="footer_privacy">Datenschutz</a></li>
+                            <li><a href="/blog/nutzungsbedingungen.html" data-i18n="footer_terms">Nutzungsbedingungen</a></li>
+                            <li><a href="/blog/copyright.html" data-i18n="footer_copyright">Copyright</a></li>
+                        </ul>
+                    </div>
+                    <!-- Column 5 -->
+                    <div class="footer-col">
+                        <h4 class="footer-title" data-i18n="footer_about">Über Uns</h4>
+                        <ul class="footer-links">
+                            <li><a href="/blog/history.html" data-i18n="footer_history">MC-Craft Geschichte</a></li>
+                            <li><a href="/blog/team.html" data-i18n="footer_team">Unser Team</a></li>
+                            <li><a href="/blog/about.html" data-i18n="footer_about_us">Über uns</a></li>
+                        </ul>
+                    </div>
+                    <!-- Column 6 -->
+                    <div class="footer-col">
+                        <h4 class="footer-title" data-i18n="footer_support">Support</h4>
+                        <ul class="footer-links">
+                            <li><a href="/blog/faq.html" data-i18n="footer_faq">FAQ & Hilfe</a></li>
+                            <li><a href="/blog/bug-report.html" data-i18n="footer_bug">Bug melden</a></li>
+                            <li><a href="/blog/support.html" data-i18n="footer_support_contact">Support Kontakt</a></li>
+                            <li><a href="/blog/e-mails.html">E-mails</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <div class="copyright">
+                        <p>&copy; <span id="currentYear">2026</span> MC-Craft. <span data-i18n="footer_rights">Alle Rechte vorbehalten.</span></p>
+                        <p class="disclaimer" data-i18n="footer_disclaimer">Minecraft ist eine Marke von Mojang Studios. Diese Seite ist nicht offiziell mit Mojang oder Microsoft verbunden.</p>
+                    </div>
+                    <div class="footer-meta">
+                        <span class="version" data-i18n="footer_version">Version 1.0.0</span>
+                        <a href="/blog/changelog.html" class="changelog active" data-i18n="footer_changelog">Changelog</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+
+    <button class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Notification Toast -->
+    <div class="toast-container" id="toastContainer"></div>
+
+    <!-- JavaScript -->
+    <script src="/assets/JS/modules/mc-preferences.js"></script>
+    <script src="/assets/JS/modules/server-status.js"></script>
+</body>
+</html>

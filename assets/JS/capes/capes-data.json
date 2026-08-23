@@ -1,0 +1,2173 @@
+{
+  "account": [
+    {
+      "id": "pan-cape",
+      "name_de": "Pan Cape",
+      "name_en": "Pan Cape",
+      "year": "2025",
+      "type": "Account Related",
+      "category": "account",
+      "description_de": "Wurde ursprünglich an Spieler verliehen, die die \"Pocket Edition\" noch im Beta-Stadium gekauft haben. Am 8. Mai 2025 wurde der Umhang für Spieler, die ihn zuvor in der Bedrock Edition angelegt hatten, auch in der Java Edition freigeschaltet.",
+      "description_en": "Was originally awarded to players who bought the \"Pocket Edition\" while it was still in beta. On May 8, 2025, the cape was also made available in the Java Edition for players who had previously worn it in the Bedrock Edition.",
+      "tags_de": [
+        "Alle Spieler",
+        "Java Edition / Bedrock Edition"
+      ],
+      "tags_en": [
+        "All players",
+        "Java Edition / Bedrock Edition"
+      ],
+      "capeUrl": "/assets/img/capes/account/PanCape_texture.png",
+      "thumbnailUrl": "/assets/img/capes/account/Pan_Cape.png",
+      "featured": false
+    },
+    {
+      "id": "migrator-cape",
+      "name_de": "Migrator Cape",
+      "name_en": "Migrator Cape",
+      "year": "2021",
+      "type": "Migration",
+      "category": "account",
+      "description_de": "Das Migrator-Cape wurde von Mojang bei der Ankündigung der Kontomigration den Spielern versprochen, die ihr Mojang-Konto zu einem Microsoft-Konto migrieren.",
+      "description_en": "The Migrator Cape was promised by Mojang when announcing account migration to players who migrate their Mojang account to a Microsoft account.",
+      "tags_de": [
+        "Migration",
+        "Microsoft",
+        "Java Edition"
+      ],
+      "tags_en": [
+        "Migration",
+        "Microsoft",
+        "Java Edition"
+      ],
+      "capeUrl": "/assets/img/capes/account/Migrator_texture.png",
+      "thumbnailUrl": "/assets/img/capes/account/Migrator_Cape.png",
+      "featured": true
+    },
+    {
+      "id": "vanilla-cape",
+      "name_de": "Vanilla Cape",
+      "name_en": "Vanilla Cape",
+      "year": "2022",
+      "type": "Account Related",
+      "category": "account",
+      "description_de": "Dieser Umhang wird an Spieler vergeben, die sowohl die Java Edition als auch die Bedrock Edition für Windows vor dem 6. Juni 2022 gekauft haben.",
+      "description_en": "This cape is awarded to players who purchased both the Java Edition and the Bedrock Edition for Windows before June 6, 2022.",
+      "tags_de": [
+        "Vanilla",
+        "Classic",
+        "Java Edition / Bedrock Edition"
+      ],
+      "tags_en": [
+        "Vanilla",
+        "Classic",
+        "Java Edition / Bedrock Edition"
+      ],
+      "capeUrl": "/assets/img/capes/account/Vanilla_texture.png",
+      "thumbnailUrl": "/assets/img/capes/account/Vanilla_Cape.png",
+      "featured": false
+    },
+    {
+      "id": "common-cape",
+      "name_de": "Common Cape",
+      "name_en": "Common Cape",
+      "year": "2025",
+      "type": "Account Related",
+      "category": "account",
+      "description_de": "Der gewöhnliche Umhang wurde an alle Spieler vergeben, die sich zwischen dem 6. Mai 2025 und dem 5. Mai 2026 mit ihrem Microsoft-Konto bei der Bedrock Edition anmeldeten.",
+      "description_en": "The Common Cape was awarded to all players who signed in to the Bedrock Edition with their Microsoft account between May 6, 2025 and May 5, 2026.",
+      "tags_de": [
+        "Common",
+        "Allgemein",
+        "Java Edition / Bedrock Edition"
+      ],
+      "tags_en": [
+        "Common",
+        "General",
+        "Java Edition / Bedrock Edition"
+      ],
+      "capeUrl": "/assets/img/capes/account/Common_texture.png",
+      "thumbnailUrl": "/assets/img/capes/account/Common_Cape.png",
+      "featured": false
+    }
+  ],
+  "mojang": [
+    {
+      "id": "mojang-classic-cape",
+      "name_de": "Mojang Classic Cape",
+      "name_en": "Mojang Classic Cape",
+      "year": "2010-2015",
+      "type": "Mojang Mitarbeiter",
+      "category": "mojang",
+      "description_de": "Der klassische Mojang-Umhang, der von Mojang Studios Mitarbeitern getragen wurde. Dieses Aussehen wurde vom 20. Dezember 2010 bis 7. Oktober 2015 verwendet. Exklusiv für Java Edition.",
+      "description_en": "The classic Mojang cape worn by Mojang Studios employees. This appearance was used from December 20, 2010 to October 7, 2015. Exclusive to Java Edition.",
+      "tags_de": [
+        "Mojang",
+        "Klassisch",
+        "Mitarbeiter",
+        "Java Edition",
+        "Exklusiv",
+        "Historisch"
+      ],
+      "tags_en": [
+        "Mojang",
+        "Classic",
+        "Employee",
+        "Java Edition",
+        "Exclusive",
+        "Historic"
+      ],
+      "capeUrl": "/assets/img/capes/mojang/Mojang_Old_texture.png",
+      "thumbnailUrl": "/assets/img/capes/mojang/Mojang_Old.png",
+      "featured": true
+    },
+    {
+      "id": "microsoft-xbox-cape",
+      "name_de": "Microsoft Xbox Cape",
+      "name_en": "Microsoft Xbox Cape",
+      "year": "2013",
+      "type": "Microsoft Mitarbeiter",
+      "category": "mojang",
+      "description_de": "Dieser Umhang wurde in der Xbox 360 Edition an Microsoft-Mitarbeiter gegeben, zusammen mit der Möglichkeit, die Sichtbarkeit des Umhangs umzuschalten. Die Textur ist eine Nachbildung des Mojang-Umhangs.",
+      "description_en": "This cape was given to Microsoft employees in the Xbox 360 Edition, along with the ability to toggle the cape's visibility. The texture is a replica of the Mojang cape.",
+      "tags_de": [
+        "Microsoft",
+        "Xbox 360",
+        "Mitarbeiter",
+        "Bedrock",
+        "Nachbildung"
+      ],
+      "tags_en": [
+        "Microsoft",
+        "Xbox 360",
+        "Employee",
+        "Bedrock",
+        "Replica"
+      ],
+      "capeUrl": "/assets/img/capes/mojang/Xbox_texture.png",
+      "thumbnailUrl": "/assets/img/capes/mojang/Xbox_cape.png",
+      "featured": false
+    },
+    {
+      "id": "4j-studios-cape",
+      "name_de": "4J Studios Cape",
+      "name_en": "4J Studios Cape",
+      "year": "2012",
+      "type": "Microsoft Mitarbeiter",
+      "category": "mojang",
+      "description_de": "Dieser Umhang wurde vermutlich an die Entwickler von 4J Studios verteilt Xbox 360 Edition über die Entwicklerfunktion „Titel verwalteter Speicher“. Es kann sich jedoch einfach um einen ungenutzten Vermögenswert handeln, da außerhalb des Datendumps, der ihn aufgedeckt hat, keine zuverlässigen Quellen den Umhang anerkannt haben.",
+      "description_en": "This cape was presumably given out to 4J Studios developers on Xbox 360 Edition through the \"Title Managed Storage\" developer feature. However, it may simply be an unused asset, as no reliable sources have acknowledged the cape outside of the data dump that revealed it.",
+      "tags_de": [
+        "Microsoft",
+        "Xbox 360",
+        "Mitarbeiter",
+        "4J Studios",
+        "Nachbildung"
+      ],
+      "tags_en": [
+        "Microsoft",
+        "Xbox 360",
+        "Employee",
+        "4J Studios",
+        "Replica"
+      ],
+      "capeUrl": "/assets/img/capes/mojang/4JStudios.png",
+      "thumbnailUrl": "/assets/img/capes/mojang/4jstudio.png",
+      "featured": false
+    },
+    {
+      "id": "mojang-cape",
+      "name_de": "Mojang Cape",
+      "name_en": "Mojang Cape",
+      "year": "2015-2021",
+      "type": "Mojang Mitarbeiter",
+      "category": "mojang",
+      "description_de": "Ein Teil der Mojang Studios Mitarbeiter besitzt diesen Umhang. Dieses Aussehen wurde vom 7. Oktober 2015 bis 25. Juli 2021 verwendet. Exklusiv für Java Edition.",
+      "description_en": "Some Mojang Studios employees have this cape. This appearance was used from October 7, 2015 to July 25, 2021. Exclusive to Java Edition.",
+      "tags_de": [
+        "Mojang",
+        "Mitarbeiter",
+        "Java Edition",
+        "Exklusiv",
+        "2015-2021"
+      ],
+      "tags_en": [
+        "Mojang",
+        "Employee",
+        "Java Edition",
+        "Exclusive",
+        "2015-2021"
+      ],
+      "capeUrl": "/assets/img/capes/mojang/Mojang_texture.png",
+      "thumbnailUrl": "/assets/img/capes/mojang/Mojang_Cape.png",
+      "featured": true
+    },
+    {
+      "id": "mojang-studios-cape",
+      "name_de": "Mojang Studios Cape",
+      "name_en": "Mojang Studios Cape",
+      "year": "2021",
+      "type": "Mojang Studios Mitarbeiter",
+      "category": "mojang",
+      "description_de": "Ein Teil der Mojang Studios Mitarbeiter besitzt diesen Umhang. Dieses Aussehen wird seit 25. Juli 2021 verwendet. Es wurde von Johan Aronson erstellt und repräsentiert \"Mojang\" oder die \"Helferlein\", welche das Mojang Studios Logo ausmachen. Verfügbar in Java Edition und Bedrock Edition.",
+      "description_en": "Some Mojang Studios employees have this cape. This appearance has been used since July 25, 2021. It was created by Johan Aronson and represents \"Mojang\" or the \"helpers\" that make up the Mojang Studios logo. Available in Java Edition and Bedrock Edition.",
+      "tags_de": [
+        "Mojang Studios",
+        "Mitarbeiter",
+        "Helferlein",
+        "Logo",
+        "Johan Aronson",
+        "Java Edition",
+        "Bedrock Edition"
+      ],
+      "tags_en": [
+        "Mojang Studios",
+        "Employee",
+        "Helpers",
+        "Logo",
+        "Johan Aronson",
+        "Java Edition",
+        "Bedrock Edition"
+      ],
+      "capeUrl": "/assets/img/capes/mojang/Mojang_New_texture.png",
+      "thumbnailUrl": "/assets/img/capes/mojang/Mojang_New.png",
+      "featured": true
+    }
+  ],
+  "physical": [
+    {
+      "id": "minecraft-experience-cape",
+      "name_de": "Minecraft Experience Cape",
+      "name_en": "Minecraft Experience Cape",
+      "year": "2024",
+      "type": "Physisches Event",
+      "category": "physical",
+      "description_de": "Dieser Umhang ist die Belohnung für den Besuch des Minecraft Experience: Villager Rescue Events. Nachdem das Ticket vor Ort gescannt wurde, erhält man per E-Mail einen Code zum Einlösen des Umhangs auf der offiziellen Minecraft-Webseite. Der Umhang wurde zuerst nur für die Bedrock Edition angekündigt, aufgrund von Community-Feedback jedoch später auch für die Java Edition bestätigt.",
+      "description_en": "This cape is the reward for attending the Minecraft Experience: Villager Rescue event. After scanning the ticket on site, you receive an email with a code to redeem the cape on the official Minecraft website. The cape was first announced only for the Bedrock Edition, but later confirmed for the Java Edition due to community feedback.",
+      "tags_de": [
+        "Event Cape",
+        "Einlösecode",
+        "Villager Rescue",
+        "Physisches Event",
+        "Bedrock Edition",
+        "Java Edition"
+      ],
+      "tags_en": [
+        "Event Cape",
+        "Redeem code",
+        "Villager Rescue",
+        "Physical Event",
+        "Bedrock Edition",
+        "Java Edition"
+      ],
+      "thumbnailUrl": "/assets/img/capes/physical_event/VillagerRescue.png",
+      "capeUrl": "/assets/img/capes/physical_event/VillagerRescue_texture.png",
+      "featured": true
+    },
+    {
+      "id": "moonlight-trail-cape",
+      "name_de": "Moonlight Trail Cape",
+      "name_en": "Moonlight Trail Cape",
+      "year": "2026",
+      "type": "Physisches Event",
+      "category": "physical",
+      "description_de": "Der Moonlight Trail Cape wird an Teilnehmer von Minecraft Experience: Moonlight Trail vergeben. Nach erfolgreicher Teilnahme erhalten Spieler einen Einlösecode per E-Mail.",
+      "description_en": "The Moonlight Trail Cape is awarded to attendees of Minecraft Experience: Moonlight Trail. After completing the experience, players receive a redemption code by email.",
+      "tags_de": [
+        "Moonlight Trail",
+        "Minecraft Experience",
+        "Physisches Event",
+        "Einlösecode",
+        "2026"
+      ],
+      "tags_en": [
+        "Moonlight Trail",
+        "Minecraft Experience",
+        "Physical Event",
+        "Redeem code",
+        "2026"
+      ],
+      "thumbnailUrl": "/assets/img/capes/physical_event/Moonlight_Trail.png",
+      "capeUrl": "/assets/img/capes/physical_event/Moonlight_Trail_texture.png",
+      "featured": true
+    }
+  ],
+  "virtual": [
+    {
+      "id": "mojang-office-cape",
+      "name_de": "Mojang Office Cape",
+      "name_en": "Mojang Office Cape",
+      "year": "2025",
+      "type": "Virtuelles Event",
+      "category": "virtual",
+      "description_de": "Dieser exklusive Umhang war als Belohnung für den Kauf eines Creeper Capes im offiziellen Shop im Gespräch, wurde dann aber über den \"Eerie Mojang Office Party\"-Eventserver in der Bedrock Edition verteilt. Spieler mussten zwischen dem 9. und 20. Dezember 2025 fünf tägliche Herausforderungen auf dem Server abschließen. Der Umhang ist auch für die Java Edition verfügbar.",
+      "description_en": "This exclusive cape was initially planned as a reward for purchasing a Creeper Cape in the official shop, but was then distributed via the \"Eerie Mojang Office Party\" event server in the Bedrock Edition. Players had to complete five daily challenges on the server between December 9 and 20, 2025. The cape is also available for the Java Edition.",
+      "tags_de": [
+        "Event-Server",
+        "Tägliche Herausforderungen",
+        "Bedrock Edition",
+        "Java Edition",
+        "Exklusiv"
+      ],
+      "tags_en": [
+        "Event Server",
+        "Daily challenges",
+        "Bedrock Edition",
+        "Java Edition",
+        "Exclusive"
+      ],
+      "capeUrl": "/assets/img/capes/virtual_event/Augenblüten_texture.png",
+      "thumbnailUrl": "/assets/img/capes/virtual_event/Augenblüten.png",
+      "featured": true
+    },
+    {
+      "id": "menace-cape",
+      "name_de": "Menace Cape",
+      "name_en": "Menace Cape",
+      "year": "2025",
+      "type": "Virtuelles Event",
+      "category": "virtual",
+      "description_de": "Der erste Umhang zur Bewerbung des \"Minecraft\"-Films. Spieler konnten einen Freischaltcode erhalten, indem sie im März 2025 mindestens drei Minuten lang einen offiziellen Minecraft-Livestream auf der Plattform TikTok verfolgten.",
+      "description_en": "The first cape to promote the \"Minecraft\" movie. Players could get an unlock code by watching an official Minecraft livestream on the TikTok platform for at least three minutes in March 2025.",
+      "tags_de": [
+        "Minecraft Film",
+        "TikTok",
+        "Livestream",
+        "Promotion",
+        "Social Media"
+      ],
+      "tags_en": [
+        "Minecraft Movie",
+        "TikTok",
+        "Livestream",
+        "Promotion",
+        "Social Media"
+      ],
+      "capeUrl": "/assets/img/capes/virtual_event/Menace_texture.png",
+      "thumbnailUrl": "/assets/img/capes/virtual_event/Menace.png",
+      "featured": false
+    },
+    {
+      "id": "home-cape",
+      "name_de": "Home Cape",
+      "name_en": "Home Cape",
+      "year": "2025",
+      "type": "Virtuelles Event",
+      "category": "virtual",
+      "description_de": "Der zweite Umhang zur Bewerbung des \"Minecraft\"-Films. Dieser wurde als Twitch Drop verteilt. Spieler mussten im März 2025 mindestens drei Minuten lang einem Minecraft-Streamer mit aktivierten Drops zusehen, um den Code zu erhalten.",
+      "description_en": "The second cape to promote the \"Minecraft\" movie. It was distributed as a Twitch Drop. Players had to watch a Minecraft streamer with drops enabled for at least three minutes in March 2025 to get the code.",
+      "tags_de": [
+        "Minecraft Film",
+        "Twitch",
+        "Drops",
+        "Livestream",
+        "Promotion"
+      ],
+      "tags_en": [
+        "Minecraft Movie",
+        "Twitch",
+        "Drops",
+        "Livestream",
+        "Promotion"
+      ],
+      "capeUrl": "/assets/img/capes/virtual_event/Home_texture.png",
+      "thumbnailUrl": "/assets/img/capes/virtual_event/Home.png",
+      "featured": false
+    },
+    {
+      "id": "yearn-cape",
+      "name_de": "Yearn Cape",
+      "name_en": "Yearn Cape",
+      "year": "2025",
+      "type": "Virtuelles Event",
+      "category": "virtual",
+      "description_de": "Der dritte Umhang zur Bewerbung des \"Minecraft\"-Films. Er war die Belohnung für die Teilnahme am \"A Minecraft Movie Live Event Server\". Spieler mussten zwischen dem 25. März und 7. April 2025 sechs verschiedene Herausforderungen auf dem Server meistern, um den Umhang freizuschalten.",
+      "description_en": "The third cape to promote the \"Minecraft\" movie. It was the reward for participating in the \"A Minecraft Movie Live Event Server\". Players had to master six different challenges on the server between March 25 and April 7, 2025 to unlock the cape.",
+      "tags_de": [
+        "Minecraft Film",
+        "Event-Server",
+        "Herausforderungen",
+        "Promotion"
+      ],
+      "tags_en": [
+        "Minecraft Movie",
+        "Event Server",
+        "Challenges",
+        "Promotion"
+      ],
+      "capeUrl": "/assets/img/capes/virtual_event/Yearn_texture.png",
+      "thumbnailUrl": "/assets/img/capes/virtual_event/Yearn.png",
+      "featured": false
+    },
+    {
+      "id": "copper-cape",
+      "name_de": "Copper Cape",
+      "name_en": "Copper Cape",
+      "year": "2025",
+      "type": "Virtuelles Event",
+      "category": "virtual",
+      "description_de": "Dieser Umhang konnte im Oktober und November 2025 auf mehreren Wegen erlangt werden: entweder durch das Platzieren eines Kupfergolems in der Bedrock Edition oder durch die Teilnahme an speziellen Minecraft-Livestreams auf Twitch (5 Minuten) oder TikTok (3 Minuten).",
+      "description_en": "This cape could be obtained in October and November 2025 in several ways: either by placing a Copper Golem in the Bedrock Edition or by participating in special Minecraft livestreams on Twitch (5 minutes) or TikTok (3 minutes).",
+      "tags_de": [
+        "Kupfergolem",
+        "Twitch",
+        "TikTok",
+        "Livestream",
+        "Gameplay"
+      ],
+      "tags_en": [
+        "Copper Golem",
+        "Twitch",
+        "TikTok",
+        "Livestream",
+        "Gameplay"
+      ],
+      "capeUrl": "/assets/img/capes/virtual_event/Copper_texture.png",
+      "thumbnailUrl": "/assets/img/capes/virtual_event/Copper.png",
+      "featured": false
+    },
+    {
+      "id": "zombie-horse-cape",
+      "name_de": "Zombie Horse Cape",
+      "name_en": "Zombie Horse Cape",
+      "year": "2025",
+      "type": "Virtuelles Event",
+      "category": "virtual",
+      "description_de": "Ein exklusiver Umhang, der im Dezember 2025 an Spieler der Bedrock Edition vergeben wurde. Die Voraussetzung war, fünf Kreaturen mit einem Speer zu besiegen. Der Umhang thematisiert das seltene Zombiepferd.",
+      "description_en": "An exclusive cape awarded to Bedrock Edition players in December 2025. The requirement was to defeat five creatures with a spear. The cape features the rare zombie horse theme.",
+      "tags_de": [
+        "Zombiepferd",
+        "Bedrock Edition",
+        "Gameplay",
+        "Speer",
+        "Jahreszeitlich"
+      ],
+      "tags_en": [
+        "Zombie Horse",
+        "Bedrock Edition",
+        "Gameplay",
+        "Spear",
+        "Seasonal"
+      ],
+      "capeUrl": "/assets/img/capes/virtual_event/Zombiepferd_texture.png",
+      "thumbnailUrl": "/assets/img/capes/virtual_event/Zombiepferd.png",
+      "featured": false
+    },
+    {
+      "id": "progress-pride-cape",
+      "name_de": "Progress Pride Cape",
+      "name_en": "Progress Pride Cape",
+      "year": "2023",
+      "type": "Virtuelles Event",
+      "category": "virtual",
+      "description_de": "Dieser Cape mit den Farben der Progress-Pride-Flagge wurde am 1. August 2023 kostenlos im Minecraft Marketplace als Teil eines Pride-Verkaufs veröffentlicht. Die Textur wurde mehrfach überarbeitet. Die Verfügbarkeit ist auf bestimmte Regionen beschränkt.",
+      "description_en": "This cape featuring the colors of the Progress Pride flag was released for free on the Minecraft Marketplace on August 1, 2023 as part of a Pride sale. The texture has been revised several times. Availability is limited to certain regions.",
+      "tags_de": [
+        "Pride",
+        "Marketplace",
+        "Kostenlos",
+        "Regionale Verfügbarkeit"
+      ],
+      "tags_en": [
+        "Pride",
+        "Marketplace",
+        "Free",
+        "Regional availability"
+      ],
+      "capeUrl": "/assets/img/capes/virtual_event/Pride_texture.png",
+      "thumbnailUrl": "/assets/img/capes/virtual_event/Pride.png",
+      "featured": false
+    },
+    {
+      "id": "cherry-blossom-cape",
+      "name_de": "Cherry Blossom Cape",
+      "name_en": "Cherry Blossom Cape",
+      "year": "2023",
+      "type": "Virtuelles Event",
+      "category": "virtual",
+      "description_de": "Dieser Kirschblüten-Umhang war die Belohnung für die Teilnahme an der Kreaturen-Abstimmung während der Minecraft Live 2023. Spieler konnten durch Beitritt zum Event-Server, über minecraft.net oder den Minecraft Launcher abstimmen.",
+      "description_en": "This cherry blossom cape was the reward for participating in the mob vote during Minecraft Live 2023. Players could vote by joining the event server, via minecraft.net or the Minecraft Launcher.",
+      "tags_de": [
+        "Minecraft Live",
+        "Abstimmung",
+        "Kirschblüten",
+        "Event"
+      ],
+      "tags_en": [
+        "Minecraft Live",
+        "Vote",
+        "Cherry Blossom",
+        "Event"
+      ],
+      "capeUrl": "/assets/img/capes/virtual_event/Cherry_Blossom_texture.png",
+      "thumbnailUrl": "/assets/img/capes/virtual_event/Cherry_Blossom.png",
+      "featured": true
+    },
+    {
+      "id": "15th-anniversary-cape",
+      "name_de": "15th Anniversary Cape",
+      "name_en": "15th Anniversary Cape",
+      "year": "2024",
+      "type": "Virtuelles Event",
+      "category": "virtual",
+      "description_de": "Der offizielle Umhang zum 15-jährigen Jubiläum von Minecraft. Er konnte vom 17. Mai bis 21. Juni 2024 einfach durch einen Klick auf eine Schaltfläche auf der Jubiläumsseite auf minecraft.net beansprucht werden. Einer der am weitesten verbreiteten Umhänge.",
+      "description_en": "The official cape for the 15th anniversary of Minecraft. It could be claimed from May 17 to June 21, 2024 by simply clicking a button on the anniversary page on minecraft.net. One of the most widely distributed capes.",
+      "tags_de": [
+        "15. Jubiläum",
+        "minecraft.net",
+        "Kostenlos",
+        "Grusel-Umhang"
+      ],
+      "tags_en": [
+        "15th Anniversary",
+        "minecraft.net",
+        "Free",
+        "Spooky Cape"
+      ],
+      "capeUrl": "/assets/img/capes/virtual_event/15th_Anniversary_texture.png",
+      "thumbnailUrl": "/assets/img/capes/virtual_event/15th_Anniversary.png",
+      "featured": true
+    },
+    {
+      "id": "purple-heart-cape",
+      "name_de": "Purple Heart Cape",
+      "name_en": "Purple Heart Cape",
+      "year": "2024",
+      "type": "Virtuelles Event",
+      "category": "virtual",
+      "description_de": "Ein im Twitch-Stil gehaltener Umhang, der während der 15-Tage-Jubiläumsfeier als Twitch Drop verteilt wurde. Zwischen dem 15. und 31. Mai 2024 mussten Spieler mindestens 15 Minuten einen Minecraft-Stream auf Twitch mit aktivierten Drops schauen, um einen Einlösecode zu erhalten.",
+      "description_en": "A Twitch-themed cape distributed as a Twitch Drop during the 15-day anniversary celebration. Between May 15 and 31, 2024, players had to watch a Minecraft stream on Twitch with drops enabled for at least 15 minutes to get a redeem code.",
+      "tags_de": [
+        "Twitch",
+        "Drops",
+        "15. Jubiläum",
+        "Livestream"
+      ],
+      "tags_en": [
+        "Twitch",
+        "Drops",
+        "15th Anniversary",
+        "Livestream"
+      ],
+      "capeUrl": "/assets/img/capes/virtual_event/Twitch_texture.png",
+      "thumbnailUrl": "/assets/img/capes/virtual_event/Twitch.png",
+      "featured": false
+    },
+    {
+      "id": "followers-cape",
+      "name_de": "Follower's Cape",
+      "name_en": "Follower's Cape",
+      "year": "2024",
+      "type": "Virtuelles Event",
+      "category": "virtual",
+      "description_de": "Ein TikTok-thematisierter Umhang, der während der 15-tägigen Jubiläumsfeier verteilt wurde. Zwischen dem 18. Mai und 18. Juni 2024 konnten Spieler einen Code erhalten, indem sie entweder 3 Minuten einen Minecraft-Livestream auf TikTok ansahen oder das Wort \"Minecraft\" in den Chat eines solchen Streams schrieben.",
+      "description_en": "A TikTok-themed cape distributed during the 15-day anniversary celebration. Between May 18 and June 18, 2024, players could get a code by either watching a Minecraft livestream on TikTok for 3 minutes or writing the word \"Minecraft\" in the chat of such a stream.",
+      "tags_de": [
+        "TikTok",
+        "Social Media",
+        "15. Jubiläum",
+        "Livestream",
+        "Kommentar"
+      ],
+      "tags_en": [
+        "TikTok",
+        "Social Media",
+        "15th Anniversary",
+        "Livestream",
+        "Comment"
+      ],
+      "capeUrl": "/assets/img/capes/virtual_event/TikTok_texture.png",
+      "thumbnailUrl": "/assets/img/capes/virtual_event/TikTok.png",
+      "featured": false
+    },
+    {
+      "id": "mcc-15th-year-cape",
+      "name_de": "MCC 15th Year Cape",
+      "name_en": "MCC 15th Year Cape",
+      "year": "2024",
+      "type": "Virtuelles Event",
+      "category": "virtual",
+      "description_de": "Ein exklusiver Umhang zur Feier des 15. Minecraft-Jubiläums in Zusammenarbeit mit dem MC Championship (MCC). Er wurde an Spieler verteilt, die zwischen dem 22. Juli und 5. August 2024 alle 15 Herausforderungen auf dem speziellen MCC-Eventserver in der Bedrock Edition abschlossen. Später wurde er auch für die Java Edition freigeschaltet.",
+      "description_en": "An exclusive cape celebrating the 15th Minecraft anniversary in collaboration with the MC Championship (MCC). It was given to players who completed all 15 challenges on the special MCC event server in the Bedrock Edition between July 22 and August 5, 2024. Later it was also unlocked for the Java Edition.",
+      "tags_de": [
+        "MC Championship",
+        "MCC",
+        "Event-Server",
+        "15. Jubiläum",
+        "15 Herausforderungen"
+      ],
+      "tags_en": [
+        "MC Championship",
+        "MCC",
+        "Event Server",
+        "15th Anniversary",
+        "15 challenges"
+      ],
+      "capeUrl": "/assets/img/capes/virtual_event/15year_texture.png",
+      "thumbnailUrl": "/assets/img/capes/virtual_event/15year.png",
+      "featured": true
+    },
+    {
+      "id": "builder-cape",
+      "name_de": "Builder Cape",
+      "name_en": "Builder Cape",
+      "year": "2026",
+      "type": "Virtuelles Event",
+      "category": "virtual",
+      "description_de": "Der Builder Cape war Teil einer zeitlich begrenzten Promotion rund um TwitchCon 2026 und die Minecraft Movie Build Challenge. Codes konnten u. a. über Twitch- und TikTok-Livestreams erhalten werden.",
+      "description_en": "The Builder Cape was part of a limited-time promotion around TwitchCon 2026 and the Minecraft Movie Build Challenge. Codes could be obtained via Twitch and TikTok livestream campaigns.",
+      "tags_de": [
+        "Builder",
+        "TwitchCon 2026",
+        "TikTok",
+        "Twitch",
+        "Virtuelles Event"
+      ],
+      "tags_en": [
+        "Builder",
+        "TwitchCon 2026",
+        "TikTok",
+        "Twitch",
+        "Virtual Event"
+      ],
+      "capeUrl": "/assets/img/capes/virtual_event/Builder_texture.webp",
+      "thumbnailUrl": "/assets/img/capes/virtual_event/Builder.png",
+      "featured": true
+    }
+  ],
+  "minecon": [
+    {
+      "id": "minecon-2011-cape",
+      "name_de": "MINECON 2011 Cape",
+      "name_en": "MINECON 2011 Cape",
+      "year": "2011",
+      "type": "MINECON Teilnehmer",
+      "category": "minecon",
+      "description_de": "Der Umhang wurde bei allen MINECON 2011-Teilnehmern mit registriertem Account hinzugefügt.",
+      "description_en": "The cape was added to all MINECON 2011 attendees with a registered account.",
+      "tags_de": [
+        "MINECON 2011",
+        "Event",
+        "Teilnehmer",
+        "Exklusiv",
+        "Java Edition"
+      ],
+      "tags_en": [
+        "MINECON 2011",
+        "Event",
+        "Attendee",
+        "Exclusive",
+        "Java Edition"
+      ],
+      "capeUrl": "/assets/img/capes/minecon/MineCon_2011_texture.png",
+      "thumbnailUrl": "/assets/img/capes/minecon/MineCon_2011.png",
+      "featured": true
+    },
+    {
+      "id": "minecon-2012-cape",
+      "name_de": "MINECON 2012 Cape",
+      "name_en": "MINECON 2012 Cape",
+      "year": "2012",
+      "type": "MINECON Teilnehmer",
+      "category": "minecon",
+      "description_de": "Ein Einlöselink für diesen Umhang wurde per E-Mail an alle Teilnehmer der MINECON 2012 mit registriertem Account gesendet.",
+      "description_en": "A redemption link for this cape was sent by email to all MINECON 2012 attendees with a registered account.",
+      "tags_de": [
+        "MINECON 2012",
+        "Event",
+        "Teilnehmer",
+        "Exklusiv",
+        "E-Mail Link"
+      ],
+      "tags_en": [
+        "MINECON 2012",
+        "Event",
+        "Attendee",
+        "Exclusive",
+        "Email link"
+      ],
+      "capeUrl": "/assets/img/capes/minecon/MineCon_2012_texture.png",
+      "thumbnailUrl": "/assets/img/capes/minecon/MineCon_2012.png",
+      "featured": true
+    },
+    {
+      "id": "minecon-2013-cape",
+      "name_de": "MINECON 2013 Cape",
+      "name_en": "MINECON 2013 Cape",
+      "year": "2013",
+      "type": "MINECON Teilnehmer",
+      "category": "minecon",
+      "description_de": "Am 30. Oktober 2013 teilte der Mojang Mitarbeiter Tobias Mollstam ein Bild vom MINECON 2013 Umhang. Ein Einlöselink für diesen Umhang wurde allen registrierten MINECON 2013-Teilnehmern zugesandt.",
+      "description_en": "On October 30, 2013, Mojang employee Tobias Mollstam shared an image of the MINECON 2013 cape. A redemption link for this cape was sent to all registered MINECON 2013 attendees.",
+      "tags_de": [
+        "MINECON 2013",
+        "Event",
+        "Teilnehmer",
+        "Exklusiv",
+        "Tobias Mollstam"
+      ],
+      "tags_en": [
+        "MINECON 2013",
+        "Event",
+        "Attendee",
+        "Exclusive",
+        "Tobias Mollstam"
+      ],
+      "capeUrl": "/assets/img/capes/minecon/MineCon_2013_texture.png",
+      "thumbnailUrl": "/assets/img/capes/minecon/MineCon_2013.png",
+      "featured": true
+    },
+    {
+      "id": "minecon-2015-cape",
+      "name_de": "MINECON 2015 Cape",
+      "name_en": "MINECON 2015 Cape",
+      "year": "2015",
+      "type": "MINECON Teilnehmer",
+      "category": "minecon",
+      "description_de": "Im Gegensatz zum vorherigen Event war dieser Umhang vom 1. – 15. Juli in der Konsolenedition verfügbar. Ein Einlöselink wurde allen MINECON 2015-Teilnehmern zugesandt, die das Ticket am 4. Juli 2015 am Eingang gescannt hatten.",
+      "description_en": "Unlike the previous event, this cape was available in the console edition from July 1-15. A redemption link was sent to all MINECON 2015 attendees who had their ticket scanned at the entrance on July 4, 2015.",
+      "tags_de": [
+        "MINECON 2015",
+        "Event",
+        "Teilnehmer",
+        "Konsolenedition",
+        "Ticket Scan"
+      ],
+      "tags_en": [
+        "MINECON 2015",
+        "Event",
+        "Attendee",
+        "Console Edition",
+        "Ticket scan"
+      ],
+      "capeUrl": "/assets/img/capes/minecon/MineCon_2015_texture.png",
+      "thumbnailUrl": "/assets/img/capes/minecon/MineCon_2015.png",
+      "featured": true
+    },
+    {
+      "id": "minecon-2016-cape",
+      "name_de": "MINECON 2016 Cape",
+      "name_en": "MINECON 2016 Cape",
+      "year": "2016",
+      "type": "MINECON Teilnehmer",
+      "category": "minecon",
+      "description_de": "Der Umhang wurde allen Spielern vergeben, die an der MINECON 2016 teilgenommen haben. Ein Einlöselink wurde allen MINECON 2016-Teilnehmern zugesandt, die das Ticket am 24. September 2016 am Eingang gescannt hatten.",
+      "description_en": "The cape was awarded to all players who attended MINECON 2016. A redemption link was sent to all MINECON 2016 attendees who had their ticket scanned at the entrance on September 24, 2016.",
+      "tags_de": [
+        "MINECON 2016",
+        "Event",
+        "Teilnehmer",
+        "Exklusiv",
+        "Ticket Scan"
+      ],
+      "tags_en": [
+        "MINECON 2016",
+        "Event",
+        "Attendee",
+        "Exclusive",
+        "Ticket scan"
+      ],
+      "capeUrl": "/assets/img/capes/minecon/MineCon_2016_texture.png",
+      "thumbnailUrl": "/assets/img/capes/minecon/MineCon_2016.png",
+      "featured": true
+    },
+    {
+      "id": "founders-cape",
+      "name_de": "Founder's Cape",
+      "name_en": "Founder's Cape",
+      "year": "2019",
+      "type": "Gründerumhang",
+      "category": "minecon",
+      "description_de": "Dieser Umhang wurde während der MINECON Live 2019 über den Minecraft Marketplace an Spieler der Bedrock Edition verteilt, um den neuen Charaktereditor zu bewerben. Am 8. Mai 2025 wurde der Umhang für Spieler, die ihn zuvor in der Bedrock Edition besaßen, auch in der Java Edition freigeschaltet.",
+      "description_en": "This cape was distributed during MINECON Live 2019 via the Minecraft Marketplace to Bedrock Edition players to promote the new character editor. On May 8, 2025, the cape was also unlocked in the Java Edition for players who previously owned it in the Bedrock Edition.",
+      "tags_de": [
+        "MINECON Live 2019",
+        "Marketplace",
+        "Gründer",
+        "Bedrock Edition",
+        "Java Edition",
+        "Charaktereditor"
+      ],
+      "tags_en": [
+        "MINECON Live 2019",
+        "Marketplace",
+        "Founder",
+        "Bedrock Edition",
+        "Java Edition",
+        "Character editor"
+      ],
+      "capeUrl": "/assets/img/capes/minecon/MineCon_2019_texture.png",
+      "thumbnailUrl": "/assets/img/capes/minecon/MineCon_2019.png",
+      "featured": true
+    },
+    {
+      "id": "minecraft-crafter-cape",
+      "name_de": "Minecraft Crafter Cape",
+      "name_en": "Minecraft Crafter Cape",
+      "year": "2026",
+      "type": "MINECON Event",
+      "category": "minecon",
+      "description_de": "Der Crafter Cape wurde 2026 bei einem Live-Event vergeben und ist in dieser Datenbank in der Minecon-Kategorie einsortiert. Er teilt sich das Grunddesign mit dem Builder Cape, unterscheidet sich aber in der Ausrichtung der Spitzhacke.",
+      "description_en": "The Crafter Cape was distributed in 2026 during a live event and is listed in the minecon category in this database. It shares the core design with the Builder Cape but differs in the pickaxe orientation.",
+      "tags_de": [
+        "Crafter",
+        "Minecon",
+        "Live Event",
+        "2026",
+        "Event Cape"
+      ],
+      "tags_en": [
+        "Crafter",
+        "Minecon",
+        "Live Event",
+        "2026",
+        "Event Cape"
+      ],
+      "capeUrl": "/assets/img/capes/minecon/Minecraft_Crafter_texture.webp",
+      "thumbnailUrl": "/assets/img/capes/minecon/Minecraft_Crafter.png",
+      "featured": true
+    }
+  ],
+  "personal": [
+    {
+      "id": "bacon-cape",
+      "name_de": "Bacon Cape",
+      "name_en": "Bacon Cape",
+      "year": "2010",
+      "type": "Persönlicher Umhang",
+      "category": "personal",
+      "description_de": "Dieser Umhang wurde Miclee von Notch für die Idee des Schweinezombies vergeben. Der Umhang wurde später wieder entfernt, da andere Nutzer nach personalisierten Umhängen fragten. Die Umhangtextur wurde von Miclee erstellt.",
+      "description_en": "This cape was given to Miclee by Notch for the idea of the zombie pigman. The cape was later removed because other users asked for personalized capes. The cape texture was created by Miclee.",
+      "tags_de": [
+        "Notch",
+        "Miclee",
+        "Schweinezombie",
+        "Ideen-Cape",
+        "Entfernt",
+        "Persönlich"
+      ],
+      "tags_en": [
+        "Notch",
+        "Miclee",
+        "Zombie Pigman",
+        "Idea cape",
+        "Removed",
+        "Personal"
+      ],
+      "capeUrl": "/assets/img/capes/Personal/Bacon_texture.png",
+      "thumbnailUrl": "/assets/img/capes/Personal/Bacon.png",
+      "featured": true
+    },
+    {
+      "id": "millionth-customer-cape",
+      "name_de": "Millionster Kunde Cape",
+      "name_en": "Millionth Customer Cape",
+      "year": "2011",
+      "type": "Persönlicher Umhang",
+      "category": "personal",
+      "description_de": "Dieser Umhang wurde an akronman1 vergeben, da dieser die 1.000.000 Kopie von Minecraft gekauft hatte. Dieser Umhang wurde von kinten erstellt.",
+      "description_en": "This cape was given to akronman1 for purchasing the 1,000,000th copy of Minecraft. This cape was created by kinten.",
+      "tags_de": [
+        "Millionster Kunde",
+        "akronman1",
+        "Verkaufsmeilenstein",
+        "Exklusiv",
+        "1.000.000"
+      ],
+      "tags_en": [
+        "Millionth customer",
+        "akronman1",
+        "Sales milestone",
+        "Exclusive",
+        "1,000,000"
+      ],
+      "capeUrl": "/assets/img/capes/Personal/1_Million_texture.png",
+      "thumbnailUrl": "/assets/img/capes/Personal/1_Million.png",
+      "featured": true
+    },
+    {
+      "id": "dannybstyle-cape",
+      "name_de": "dannyBstyle's Cape",
+      "name_en": "dannyBstyle's Cape",
+      "year": "2012",
+      "type": "Persönlicher Umhang",
+      "category": "personal",
+      "description_de": "Dieser Umhang wurde an dannyBstyle vergeben, welcher Musik für Videospiele erstellt, da Notch ein Fan seiner Musik war.",
+      "description_en": "This cape was given to dannyBstyle, who creates music for video games, because Notch was a fan of his music.",
+      "tags_de": [
+        "dannyBstyle",
+        "Musiker",
+        "Notch",
+        "Musik-Fan",
+        "Künstler"
+      ],
+      "tags_en": [
+        "dannyBstyle",
+        "Musician",
+        "Notch",
+        "Music fan",
+        "Artist"
+      ],
+      "capeUrl": "/assets/img/capes/Personal/DB_texture.png",
+      "thumbnailUrl": "/assets/img/capes/Personal/DB.png",
+      "featured": true
+    },
+    {
+      "id": "julianclark-cape",
+      "name_de": "JulianClark's Cape",
+      "name_en": "JulianClark's Cape",
+      "year": "2012",
+      "type": "Persönlicher Umhang",
+      "category": "personal",
+      "description_de": "Dieser Umhang wurde an JulianClark vergeben, da er Notch zum TV-Moderator und Schauspieler Ray Cokes brachte.",
+      "description_en": "This cape was given to JulianClark for introducing Notch to TV presenter and actor Ray Cokes.",
+      "tags_de": [
+        "JulianClark",
+        "Notch",
+        "Ray Cokes",
+        "TV-Moderator",
+        "Vermittlung"
+      ],
+      "tags_en": [
+        "JulianClark",
+        "Notch",
+        "Ray Cokes",
+        "TV presenter",
+        "Introduction"
+      ],
+      "capeUrl": "/assets/img/capes/Personal/JC_texture.png",
+      "thumbnailUrl": "/assets/img/capes/Personal/JC.png",
+      "featured": false
+    },
+    {
+      "id": "cheapshot-cape",
+      "name_de": "cheapsh0t's Cape",
+      "name_en": "cheapsh0t's Cape",
+      "year": "2013",
+      "type": "Persönlicher Umhang",
+      "category": "personal",
+      "description_de": "Dieser Umhang wurde an cheapsh0t im Oktober 2013 vergeben, da er das Mojang Team in Tokyo geholfen hatte. Dieser Umhang ist gleich mit dem Übersetzer Umhang, mit dem einzigen Unterschied der Japanischen Flagge auf der Unterseite.",
+      "description_en": "This cape was given to cheapsh0t in October 2013 for helping the Mojang team in Tokyo. This cape is identical to the Translator Cape, with the only difference being the Japanese flag on the underside.",
+      "tags_de": [
+        "cheapsh0t",
+        "Tokyo-Hilfe",
+        "Mojang",
+        "Japanische Flagge",
+        "Übersetzer"
+      ],
+      "tags_en": [
+        "cheapsh0t",
+        "Tokyo help",
+        "Mojang",
+        "Japanese flag",
+        "Translator"
+      ],
+      "capeUrl": "/assets/img/capes/Personal/Cheapsh0ts_texture.png",
+      "thumbnailUrl": "/assets/img/capes/Personal/Cheapsh0ts.png",
+      "featured": true
+    },
+    {
+      "id": "mrmessiah-cape",
+      "name_de": "MrMessiah's Cape",
+      "name_en": "MrMessiah's Cape",
+      "year": "2015",
+      "type": "Persönlicher Umhang",
+      "category": "personal",
+      "description_de": "Dieser Umhang wurde an MrMessiah als \"Dankeschön\" für das erstellen der BetterLight Modifikation erstellt, welche für Minecraft's Licht und Grasfunktion verantwortlich ist. Dieser Umhang wurde 2011 beschlossen, aber erst 2015 vergeben.",
+      "description_en": "This cape was given to MrMessiah as a \"thank you\" for creating the BetterLight mod, which is responsible for Minecraft's lighting and grass function. This cape was decided in 2011 but only awarded in 2015.",
+      "tags_de": [
+        "MrMessiah",
+        "BetterLight Mod",
+        "Mod-Entwickler",
+        "Licht-Engine",
+        "Grasfunktion",
+        "Jeb"
+      ],
+      "tags_en": [
+        "MrMessiah",
+        "BetterLight mod",
+        "Mod developer",
+        "Light engine",
+        "Grass function",
+        "Jeb"
+      ],
+      "capeUrl": "/assets/img/capes/Personal/MM_texture.png",
+      "thumbnailUrl": "/assets/img/capes/Personal/MM.png",
+      "featured": true
+    },
+    {
+      "id": "prismarine-cape",
+      "name_de": "Prismarin Cape",
+      "name_en": "Prismarine Cape",
+      "year": "2015",
+      "type": "Persönlicher Umhang",
+      "category": "personal",
+      "description_de": "Dieser Umhang wurde an Drullkus vergeben, da er die Prismarinblock Textur für seinen Chiselmod nachgemacht hat, anstelle diese von Mojang zu kopieren. Jeb hat diesen Umhang erstellt bevor er mit Drullkus in Kontakt getreten ist.",
+      "description_en": "This cape was given to Drullkus for recreating the prismarine block texture for his Chisel mod instead of copying it from Mojang. Jeb created this cape before contacting Drullkus.",
+      "tags_de": [
+        "Drullkus",
+        "Prismarin",
+        "Chiselmod",
+        "Texture-Nachbau",
+        "Jeb",
+        "Respekt"
+      ],
+      "tags_en": [
+        "Drullkus",
+        "Prismarine",
+        "Chisel mod",
+        "Texture recreation",
+        "Jeb",
+        "Respect"
+      ],
+      "capeUrl": "/assets/img/capes/Personal/KJ_texture.png",
+      "thumbnailUrl": "/assets/img/capes/Personal/KJ.png",
+      "featured": true
+    },
+    {
+      "id": "turtle-cape",
+      "name_de": "Schildkröten Cape",
+      "name_en": "Turtle Cape",
+      "year": "2018",
+      "type": "Persönlicher Umhang",
+      "category": "personal",
+      "description_de": "Diesen Umhang erhielt der Spieler billyK_ im Februar 2018 für seine Idee, Schildkröten ins Spiel einzufügen. Stand Mai 2024 ist er neben billyK_ auch im Besitz zweier weiterer Spieler.",
+      "description_en": "This cape was given to player billyK_ in February 2018 for his idea to add turtles to the game. As of May 2024, besides billyK_, it is also owned by two other players.",
+      "tags_de": [
+        "billyK_",
+        "Schildkröten",
+        "Ideen-Cape",
+        "Mob-Vorschlag",
+        "3 Spieler",
+        "Exklusiv"
+      ],
+      "tags_en": [
+        "billyK_",
+        "Turtles",
+        "Idea cape",
+        "Mob suggestion",
+        "3 players",
+        "Exclusive"
+      ],
+      "capeUrl": "/assets/img/capes/Personal/billyK_texture.png",
+      "thumbnailUrl": "/assets/img/capes/Personal/billyK.png",
+      "featured": true
+    },
+    {
+      "id": "birthday-cape",
+      "name_de": "Geburtstags Cape",
+      "name_en": "Birthday Cape",
+      "year": "Unbekannt",
+      "type": "Persönlicher Umhang",
+      "category": "personal",
+      "description_de": "Dieser Umhang wurde an Gr8_Escape vergeben. Dieser Account ist in Besitz eines Mojang Mitarbeiters, welcher an der minecraft.net Webseite arbeitet.",
+      "description_en": "This cape was given to Gr8_Escape. This account is owned by a Mojang employee who works on the minecraft.net website.",
+      "tags_de": [
+        "Gr8_Escape",
+        "Geburtstag",
+        "Mojang Mitarbeiter",
+        "minecraft.net",
+        "Webseite"
+      ],
+      "tags_en": [
+        "Gr8_Escape",
+        "Birthday",
+        "Mojang employee",
+        "minecraft.net",
+        "Website"
+      ],
+      "capeUrl": "/assets/img/capes/Personal/Gr8_texture.png",
+      "thumbnailUrl": "/assets/img/capes/Personal/Gr8.png",
+      "featured": false
+    },
+    {
+      "id": "valentine-cape",
+      "name_de": "Valentins Cape",
+      "name_en": "Valentine's Cape",
+      "year": "Unbekannt",
+      "type": "Persönlicher Umhang",
+      "category": "personal",
+      "description_de": "Dieser Umhang wurde von einem Mojang Mitarbeiter an LolFoxy2 gegeben, nachdem dieser LolFoxy2's Probleme beim Wechsel vom Mojang- zum Microsoft-Konto behoben hatte. Der Umhang wurde später entfernt, nachdem der Mitarbeiter die Seltenheit des Umhangs bemerkte.",
+      "description_en": "This cape was given by a Mojang employee to LolFoxy2 after they fixed LolFoxy2's issues when migrating from a Mojang to a Microsoft account. The cape was later removed after the employee realized the cape's rarity.",
+      "tags_de": [
+        "LolFoxy2",
+        "Valentinstag",
+        "Account-Hilfe",
+        "Entfernt",
+        "Selten",
+        "2 Spieler"
+      ],
+      "tags_en": [
+        "LolFoxy2",
+        "Valentine's Day",
+        "Account help",
+        "Removed",
+        "Rare",
+        "2 players"
+      ],
+      "capeUrl": "/assets/img/capes/Personal/Valentine_texture.png",
+      "thumbnailUrl": "/assets/img/capes/Personal/Valentine.png",
+      "featured": false
+    },
+    {
+      "id": "oxeye-cape",
+      "name_de": "Oxeye Cape",
+      "name_en": "Oxeye Cape",
+      "year": "Unbekannt",
+      "type": "Persönlicher Umhang",
+      "category": "personal",
+      "description_de": "Der Oxeye-Umhang war ein persönlicher Umhang, das auf Oxeye Game Studio basierte, einer Spieleentwicklungsfirma, die von Jens Bergensten und den Autoren von Spielen wie Cobalt gegründet wurde. Seine Existenz wurde bekannt, als er zufällig an einen Spieler vergeben wurde.",
+      "description_en": "The Oxeye cape was a personal cape based on Oxeye Game Studio, a game development company founded by Jens Bergensten and the authors of games like Cobalt. Its existence became known when it was accidentally given to a player.",
+      "tags_de": [
+        "Oxeye Studio",
+        "Jens Bergensten",
+        "Cobalt",
+        "Spieleentwickler",
+        "Zufällig vergeben"
+      ],
+      "tags_en": [
+        "Oxeye Studio",
+        "Jens Bergensten",
+        "Cobalt",
+        "Game developer",
+        "Randomly awarded"
+      ],
+      "capeUrl": "/assets/img/capes/Personal/Oxeye_texture.png",
+      "thumbnailUrl": "/assets/img/capes/Personal/Oxeye.png",
+      "featured": false
+    },
+    {
+      "id": "blueprint-cape",
+      "name_de": "Bauplan Cape",
+      "name_en": "Blueprint Cape",
+      "year": "Unbekannt",
+      "type": "Persönlicher Umhang",
+      "category": "personal",
+      "description_de": "Der Bauplan-Umhang ist ein persönlicher Umhang, der SupaCookiebrat aus unbekannten Gründen gegeben wurde.",
+      "description_en": "The Blueprint cape is a personal cape given to SupaCookiebrat for unknown reasons.",
+      "tags_de": [
+        "SupaCookiebrat",
+        "Unbekannt",
+        "Geheimnisvoll",
+        "Persönlich",
+        "Rätselhaft"
+      ],
+      "tags_en": [
+        "SupaCookiebrat",
+        "Unknown",
+        "Mysterious",
+        "Personal",
+        "Enigmatic"
+      ],
+      "capeUrl": "/assets/img/capes/Personal/Bauplan_texture.png",
+      "thumbnailUrl": "/assets/img/capes/Personal/Bauplan.png",
+      "featured": false
+    }
+  ],
+  "competition": [
+    {
+      "id": "scrolls-champion-cape",
+      "name_de": "Scrolls Champion Cape",
+      "name_en": "Scrolls Champion Cape",
+      "year": "2014",
+      "type": "Wettbewerbsgewinner",
+      "category": "competition",
+      "description_de": "Anlässlich der Fertigstellung der Vollversion 1.0 von Mojangs anderem Spiel Scrolls erhielten alle Minecraft-Spieler am 11. und 12. Dezember 2014 diesen Umhang. Um den Umhang permanent zu erhalten, muss man in Scrolls am Ende fünf verschiedener Wochen den ersten Platz in der Rangliste innehaben.",
+      "description_en": "On the occasion of the completion of version 1.0 of Mojang's other game Scrolls, all Minecraft players received this cape on December 11-12, 2014. To permanently obtain the cape, you must be first in the rankings at the end of five different weeks in Scrolls.",
+      "tags_de": [
+        "Scrolls",
+        "Champion",
+        "Platz 1",
+        "Rangliste",
+        "Spiel"
+      ],
+      "tags_en": [
+        "Scrolls",
+        "Champion",
+        "1st place",
+        "Rankings",
+        "Game"
+      ],
+      "capeUrl": "/assets/img/capes/competition/Scrolls_texture.png",
+      "thumbnailUrl": "/assets/img/capes/competition/Scrolls.png",
+      "featured": true
+    },
+    {
+      "id": "cobalt-league-cape",
+      "name_de": "Cobalt League Cape",
+      "name_en": "Cobalt League Cape",
+      "year": "2016",
+      "type": "Wettbewerbsgewinner",
+      "category": "competition",
+      "description_de": "Mojang verkauft auch ein Spiel namens Cobalt. Wer an der Cobalt-Liga teilnimmt, kann seit 10. Februar 2016 diesen Minecraft-Umhang gewinnen. Bis Mai 2016 waren das 16 Spieler.",
+      "description_en": "Mojang also sells a game called Cobalt. Those who participate in the Cobalt League can win this Minecraft cape since February 10, 2016. As of May 2016, that was 16 players.",
+      "tags_de": [
+        "Cobalt",
+        "Liga",
+        "Gewinner",
+        "Exklusiv"
+      ],
+      "tags_en": [
+        "Cobalt",
+        "League",
+        "Winner",
+        "Exclusive"
+      ],
+      "capeUrl": "/assets/img/capes/competition/Cobalt_texture.png",
+      "thumbnailUrl": "/assets/img/capes/competition/Cobalt.png",
+      "featured": true
+    }
+  ],
+  "volunteer": [
+    {
+      "id": "crowdin-translator-cape",
+      "name_de": "Crowdin Translator Cape",
+      "name_en": "Crowdin Translator Cape",
+      "year": "2014",
+      "type": "Freiwilligenarbeit",
+      "category": "volunteer",
+      "description_de": "Diesen Umhang erhielt eine per Zufall ermittelte Auswahl von 29 Übersetzern des Minecraft-Übersetzungsprojektes bei Crowdin. Von Zeit zu Zeit werden weitere Übersetzer mit diesem Umhang belohnt. Ein Beispiel für die Anerkennung von Community-Beiträgen zur Lokalisierung des Spiels.",
+      "description_en": "This cape was given to a randomly selected group of 29 translators of the Minecraft translation project on Crowdin. From time to time, more translators are rewarded with this cape. An example of recognizing community contributions to game localization.",
+      "tags_de": [
+        "Übersetzer",
+        "Crowdin",
+        "Lokalisierung",
+        "Community",
+        "Sprachen",
+        "Freiwillige"
+      ],
+      "tags_en": [
+        "Translator",
+        "Crowdin",
+        "Localization",
+        "Community",
+        "Languages",
+        "Volunteer"
+      ],
+      "capeUrl": "/assets/img/capes/volunteer/Translator_texture.png",
+      "thumbnailUrl": "/assets/img/capes/volunteer/Translator.png",
+      "featured": true
+    },
+    {
+      "id": "chinese-translator-cape",
+      "name_de": "Chinese Translator Cape",
+      "name_en": "Chinese Translator Cape",
+      "year": "2015",
+      "type": "Freiwilligenarbeit",
+      "category": "volunteer",
+      "description_de": "Am 4. Juni 2015 erhielten Powup333, Craft_Lawrence und sjjklh diesen speziellen Umhang für ihr außergewöhnliches Engagement bei der Übersetzung von Minecraft ins Chinesische auf Crowdin. Der Umhang ist identisch mit dem Crowdin-Umhang, hat aber eine chinesische Flagge auf der Rückseite.",
+      "description_en": "On June 4, 2015, Powup333, Craft_Lawrence, and sjjklh received this special cape for their outstanding contributions to translating Minecraft into Chinese on Crowdin. The cape is identical to the Crowdin cape but has a Chinese flag on the back.",
+      "tags_de": [
+        "Chinesisch",
+        "Übersetzer",
+        "Spezial-Cape",
+        "Flagge",
+        "Crowdin",
+        "3 Spieler"
+      ],
+      "tags_en": [
+        "Chinese",
+        "Translator",
+        "Special cape",
+        "Flag",
+        "Crowdin",
+        "3 players"
+      ],
+      "capeUrl": "/assets/img/capes/volunteer/Translator-Chinese_texture.png",
+      "thumbnailUrl": "/assets/img/capes/volunteer/Translator-Chinese.png",
+      "featured": true
+    },
+    {
+      "id": "mojira-moderator-cape",
+      "name_de": "Mojira Moderator Cape",
+      "name_en": "Mojira Moderator Cape",
+      "year": "2014",
+      "type": "Freiwilligenarbeit",
+      "category": "volunteer",
+      "description_de": "Dieser Umhang wurde am 25. Dezember 2014 als Weihnachtsgeschenk an alle Bugtracker-Moderatoren von Mojira (dem offiziellen Minecraft Bugtracker) vergeben. Eine Anerkennung für die wichtige Arbeit bei der Verwaltung und Organisation von Bug-Reports.",
+      "description_en": "This cape was given as a Christmas gift on December 25, 2014 to all Mojira bug tracker moderators (the official Minecraft bug tracker). A recognition for the important work in managing and organizing bug reports.",
+      "tags_de": [
+        "Moderator",
+        "Bugtracker",
+        "Mojira",
+        "Weihnachtsgeschenk",
+        "Qualitätssicherung"
+      ],
+      "tags_en": [
+        "Moderator",
+        "Bug tracker",
+        "Mojira",
+        "Christmas gift",
+        "Quality assurance"
+      ],
+      "capeUrl": "/assets/img/capes/volunteer/Bugtracker_texture.png",
+      "thumbnailUrl": "/assets/img/capes/volunteer/Bugtracker.png",
+      "featured": true
+    },
+    {
+      "id": "realms-mapmaker-cape",
+      "name_de": "Realms Mapmaker's Cape",
+      "name_en": "Realms Mapmaker's Cape",
+      "year": "2015",
+      "type": "Freiwilligenarbeit",
+      "category": "volunteer",
+      "description_de": "Seit dem 14. Dezember 2015 erhalten Spieler diesen Umhang, wenn sie zwei Abenteuerwelten oder Minispiele ODER vier Spawnbereiche erstellt haben, die in Minecraft Realms aufgenommen wurden. Eine Belohnung für talentierte Kartenbauer, die zum Realms-Angebot beitragen.",
+      "description_en": "Since December 14, 2015, players receive this cape if they have created two adventure maps or mini-games OR four spawn areas that have been included in Minecraft Realms. A reward for talented mapmakers who contribute to the Realms offering.",
+      "tags_de": [
+        "Mapmaker",
+        "Realms",
+        "Kartenbauer",
+        "Minispiele",
+        "Abenteuerwelten",
+        "Kreativität"
+      ],
+      "tags_en": [
+        "Mapmaker",
+        "Realms",
+        "Map builder",
+        "Minigames",
+        "Adventure maps",
+        "Creativity"
+      ],
+      "capeUrl": "/assets/img/capes/volunteer/Mapmaker_texture.png",
+      "thumbnailUrl": "/assets/img/capes/volunteer/Mapmaker.png",
+      "featured": true
+    }
+  ],
+  "temporary": [
+    {
+      "id": "christmas-2010-cape",
+      "name_de": "The Christmas Cape 2010",
+      "name_en": "The Christmas Cape 2010",
+      "year": "2010",
+      "type": "Temporärer Event",
+      "category": "temporary",
+      "description_de": "Dieser Weihnachtsumhang wurde am 24. und 25. Dezember 2010 automatisch allen Spielern in der Java Edition angezeigt. Wichtig: Der Umhang wurde den Spielerkonten nicht dauerhaft hinzugefügt, sondern erschien nur während dieser zwei Tage.",
+      "description_en": "This Christmas cape was automatically displayed to all players in the Java Edition on December 24-25, 2010. Important: The cape was not permanently added to player accounts, but only appeared during those two days.",
+      "tags_de": [
+        "Weihnachten",
+        "Temporär",
+        "Automatisch",
+        "Java Edition",
+        "2 Tage",
+        "Feiertag"
+      ],
+      "tags_en": [
+        "Christmas",
+        "Temporary",
+        "Automatic",
+        "Java Edition",
+        "2 days",
+        "Holiday"
+      ],
+      "capeUrl": "/assets/img/capes/temporary/Weihnachten_2010_texture.png",
+      "thumbnailUrl": "/assets/img/capes/temporary/Weihnachten_2010.png",
+      "featured": false
+    },
+    {
+      "id": "new-year-2010-cape",
+      "name_de": "The New Year's Cape",
+      "name_en": "The New Year's Cape",
+      "year": "2010",
+      "type": "Temporärer Event",
+      "category": "temporary",
+      "description_de": "Dieser Neujahrsumhang wurde am 31. Dezember 2010 automatisch allen Spielern in der Java Edition angezeigt. Wie der Weihnachtsumhang wurde auch dieser nur temporär angezeigt und nicht dauerhaft den Konten hinzugefügt.",
+      "description_en": "This New Year's cape was automatically displayed to all players in the Java Edition on December 31, 2010. Like the Christmas cape, this was only temporary and not permanently added to accounts.",
+      "tags_de": [
+        "Neujahr",
+        "Silvester",
+        "Temporär",
+        "Automatisch",
+        "Java Edition",
+        "1 Tag",
+        "Feiertag"
+      ],
+      "tags_en": [
+        "New Year",
+        "New Year's Eve",
+        "Temporary",
+        "Automatic",
+        "Java Edition",
+        "1 day",
+        "Holiday"
+      ],
+      "capeUrl": "/assets/img/capes/temporary/Neujahr_2011_texture.png",
+      "thumbnailUrl": "/assets/img/capes/temporary/Neujahr_2011.png",
+      "featured": false
+    },
+    {
+      "id": "xbox-1st-birthday-cape",
+      "name_de": "1st Birthday Xbox Cape",
+      "name_en": "1st Birthday Xbox Cape",
+      "year": "2013",
+      "type": "Temporärer Event",
+      "category": "temporary",
+      "description_de": "Zum ersten Geburtstag der Xbox 360 Edition trugen alle Xbox-Spieler zwischen dem 9. und 13. Mai 2013 diesen Umhang automatisch. Ausnahme: Spieler, die bereits einen anderen (dauerhaften) Umhang besaßen, behielten diesen.",
+      "description_en": "For the first birthday of the Xbox 360 Edition, all Xbox players automatically wore this cape between May 9-13, 2013. Exception: players who already owned another (permanent) cape kept that one.",
+      "tags_de": [
+        "Xbox 360",
+        "Geburtstag",
+        "Temporär",
+        "Automatisch",
+        "Xbox Edition",
+        "5 Tage",
+        "Jubiläum"
+      ],
+      "tags_en": [
+        "Xbox 360",
+        "Birthday",
+        "Temporary",
+        "Automatic",
+        "Xbox Edition",
+        "5 days",
+        "Anniversary"
+      ],
+      "capeUrl": "/assets/img/capes/temporary/Xbox_Geburtstag_texture.png",
+      "thumbnailUrl": "/assets/img/capes/temporary/Xbox_Geburtstag.png",
+      "featured": false
+    }
+  ],
+  "api": [
+    {
+      "id": "size-m-cape",
+      "name_de": "Size-m Cape",
+      "name_en": "Size-m Cape",
+      "year": "2023",
+      "type": "API Test",
+      "category": "api",
+      "description_de": "Ein Umhang mit einer ähnlichen Farbpalette wie der Schnüffler wurde auf Mojangs Staging-Texturserver und auf Mojangs Produktionstexturserver gefunden. Es wurde am 10. Oktober 2023 zu Mojangs Staging-Texturserver und 7 Tage später, am 17. Oktober 2023, zu Mojangs Produktionstexturserver hinzugefügt. Der Umhang wurde erstmals auf dem Konto des Softwareentwicklers Dat Trieu (etanaratsastaja) und einem weiteren Konto in Mojangs Staging-Server-Datenbank gesehen.",
+      "description_en": "A cape with a similar color palette to the Sniffer was found on Mojang's staging texture server and on Mojang's production texture server. It was added to Mojang's staging texture server on October 10, 2023 and 7 days later, on October 17, 2023, to Mojang's production texture server. The cape was first seen on the account of software developer Dat Trieu (etanaratsastaja) and another account in Mojang's staging server database.",
+      "tags_de": [
+        "API",
+        "Test",
+        "Staging",
+        "Produktion",
+        "Entwickler",
+        "Bug"
+      ],
+      "tags_en": [
+        "API",
+        "Test",
+        "Staging",
+        "Production",
+        "Developer",
+        "Bug"
+      ],
+      "capeUrl": "/assets/img/capes/cape_api/Test_texture.png",
+      "thumbnailUrl": "/assets/img/capes/cape_api/Test.png",
+      "featured": true
+    },
+    {
+      "id": "snail-cape",
+      "name_de": "Snail Cape",
+      "name_en": "Snail Cape",
+      "year": "2024",
+      "type": "API Test",
+      "category": "api",
+      "description_de": "Dieser Umhang mit einem Design, das einer Schnecke ähnelt, und einer Elytra, die Weinreben ähnelt, wurde am 17. April 2024 gegen 9:00 Uhr EST von einem Mojang-Mitarbeiter, der zu diesem Zeitpunkt an der Umhang-API arbeitete, auf einen Mojang-Staging-Server hochgeladen. Sein Design ist höchstwahrscheinlich vom Schneckenstatuenmodell des Mitarbeiters inspiriert.",
+      "description_en": "This cape with a design resembling a snail, and an elytra resembling vines, was uploaded to a Mojang staging server on April 17, 2024 around 9:00 AM EST by a Mojang employee working on the cape API at the time. Its design is most likely inspired by the employee's snail statue model.",
+      "tags_de": [
+        "API",
+        "Test",
+        "Schnecke",
+        "Staging",
+        "Mitarbeiter",
+        "Inspiration"
+      ],
+      "tags_en": [
+        "API",
+        "Test",
+        "Snail",
+        "Staging",
+        "Employee",
+        "Inspiration"
+      ],
+      "capeUrl": "/assets/img/capes/cape_api/Snail_texture.png",
+      "thumbnailUrl": "/assets/img/capes/cape_api/Snail.png",
+      "featured": true
+    },
+    {
+      "id": "icu-cape-1",
+      "name_de": "ICU Cape #1",
+      "name_en": "ICU Cape #1",
+      "year": "2024",
+      "type": "API Test",
+      "category": "api",
+      "description_de": "Dieser Umhang wurde am 17. April 2024 von demselben Mojang-Mitarbeiter erstellt und dem Spielerprofil hinzugefügt, der an der Umhang-API arbeitete und diese überwachte. Am 17. April 2024, kurz vor 17, wurde er vom Schneckenumhang-Design in dieses ICU-Design geändert:00 EST als Antwort darauf, dass die Entdecker (Personen, die den Schneckenumhang und die Intensivumhänge gefunden haben) API-Anfragen an dasselbe Spielerprofil gesendet haben, das den Schneckenumhang hatte.",
+      "description_en": "This cape was created and added to the player profile on April 17, 2024 by the same Mojang employee working on and monitoring the cape API. On April 17, 2024, shortly before 5:00 PM EST, it was changed from the snail cape design to this ICU design in response to discoverers (people who found the snail cape and ICU capes) sending API requests to the same player profile that had the snail cape.",
+      "tags_de": [
+        "API",
+        "Test",
+        "ICU",
+        "Staging",
+        "Mitarbeiter",
+        "Reaktion"
+      ],
+      "tags_en": [
+        "API",
+        "Test",
+        "ICU",
+        "Staging",
+        "Employee",
+        "Response"
+      ],
+      "capeUrl": "/assets/img/capes/cape_api/ICU1_texture.png",
+      "thumbnailUrl": "/assets/img/capes/cape_api/ICU1_texture.png",
+      "featured": true
+    },
+    {
+      "id": "icu-cape-2",
+      "name_de": "ICU Cape #2",
+      "name_en": "ICU Cape #2",
+      "year": "2024",
+      "type": "API Test",
+      "category": "api",
+      "description_de": "Dieses Design wurde am 17. April 2024 von demselben Mojang-Mitarbeiter erstellt und dem Spielerprofil hinzugefügt, der an der Cape-API arbeitet und diese überwacht. Wenige Minuten später wurde das Design des ICU-Umhangs Nr. 1 in das vom Mojang-Mitarbeiter erstellte Spielerprofil hochgeladen und in dieses Design geändert.",
+      "description_en": "This design was created and added to the player profile on April 17, 2024 by the same Mojang employee working on and monitoring the cape API. A few minutes later, the ICU Cape #1 design was uploaded to the player profile created by the Mojang employee and changed to this design.",
+      "tags_de": [
+        "API",
+        "Test",
+        "ICU",
+        "Staging",
+        "Mitarbeiter",
+        "Update"
+      ],
+      "tags_en": [
+        "API",
+        "Test",
+        "ICU",
+        "Staging",
+        "Employee",
+        "Update"
+      ],
+      "capeUrl": "/assets/img/capes/cape_api/ICU2_texture.png",
+      "thumbnailUrl": "/assets/img/capes/cape_api/ICU2_texture.png",
+      "featured": true
+    },
+    {
+      "id": "frog-cape",
+      "name_de": "Frog Cape",
+      "name_en": "Frog Cape",
+      "year": "Unbekannt",
+      "type": "API Test",
+      "category": "api",
+      "description_de": "Dieses Design wurde höchstwahrscheinlich von den Entwicklern inspiriert, die Froschbilder veröffentlichten, bevor sie mittwochs Schnappschüsse ankündigten, oder von den Froschstatuenmodellen des Designers. Dieser Umhang wurde von demselben Mojang-Mitarbeiter hergestellt, der auch den Schneckenumhang hergestellt hat. Dieser Umhang wurde erstmals als beschnittener Screenshot auf X gezeigt.",
+      "description_en": "This design was most likely inspired by developers posting frog images before announcing Wednesday snapshots, or by the designer's frog statue models. This cape was made by the same Mojang employee who made the snail cape. This cape was first shown as a cropped screenshot on X.",
+      "tags_de": [
+        "API",
+        "Test",
+        "Frosch",
+        "Staging",
+        "Mitarbeiter",
+        "Inspiration"
+      ],
+      "tags_en": [
+        "API",
+        "Test",
+        "Frog",
+        "Staging",
+        "Employee",
+        "Inspiration"
+      ],
+      "capeUrl": "/assets/img/capes/cape_api/FrogAPI_texture.png",
+      "thumbnailUrl": "/assets/img/capes/cape_api/Frog.png",
+      "featured": true
+    }
+  ],
+  "unused": [
+    {
+      "id": "unused-minecon-2011-1",
+      "name_de": "Ungenutzter MINECON 2011-1 Umhang",
+      "name_en": "Unused MINECON 2011-1 Cape",
+      "year": "2011",
+      "type": "Ungenutztes Design",
+      "category": "unused",
+      "description_de": "Dieser Umhang war einer von drei Vorschlägen für die MINECON 2011, über die in einer Community-Umfrage abgestimmt werden konnte. Der Entwurf mit dem roten Creepergesicht wurde letztlich für die MINECON 2011 gewählt, dieser hier blieb ungenutzt.",
+      "description_en": "This cape was one of three proposals for MINECON 2011 that were voted on in a community poll. The design with the red creeper face was ultimately chosen for MINECON 2011, this one remained unused.",
+      "tags_de": [
+        "MINECON 2011",
+        "Ungenutzt",
+        "Entwurf",
+        "Umfrage",
+        "Konzept",
+        "Nicht verwendet"
+      ],
+      "tags_en": [
+        "MINECON 2011",
+        "Unused",
+        "Draft",
+        "Poll",
+        "Concept",
+        "Not used"
+      ],
+      "capeUrl": "/assets/img/capes/unused/Minecon_2011_1_texture.png",
+      "thumbnailUrl": "/assets/img/capes/unused/Minecon_2011_1.png",
+      "featured": false
+    },
+    {
+      "id": "unused-minecon-2011-2",
+      "name_de": "Ungenutzter MINECON 2011-2 Umhang",
+      "name_en": "Unused MINECON 2011-2 Cape",
+      "year": "2011",
+      "type": "Ungenutztes Design",
+      "category": "unused",
+      "description_de": "Zweiter Entwurf für die MINECON 2011, der in der Umfrage zur Wahl stand. Der Entwurf mit der goldenen Spitzhacke wurde später für die MINECON 2012 verwendet, dieser spezielle Vorschlag blieb jedoch ungenutzt.",
+      "description_en": "Second draft for MINECON 2011 that was up for vote in the poll. The design with the golden pickaxe was later used for MINECON 2012, but this particular proposal remained unused.",
+      "tags_de": [
+        "MINECON 2011",
+        "Ungenutzt",
+        "Entwurf",
+        "Umfrage",
+        "Konzept",
+        "Nicht verwendet"
+      ],
+      "tags_en": [
+        "MINECON 2011",
+        "Unused",
+        "Draft",
+        "Poll",
+        "Concept",
+        "Not used"
+      ],
+      "capeUrl": "/assets/img/capes/unused/Minecon_2011_2_texture.png",
+      "thumbnailUrl": "/assets/img/capes/unused/Minecon_2011_2.png",
+      "featured": false
+    },
+    {
+      "id": "unused-minecon-2011-3",
+      "name_de": "Ungenutzter MINECON 2011-3 Umhang",
+      "name_en": "Unused MINECON 2011-3 Cape",
+      "year": "2011",
+      "type": "Ungenutztes Design",
+      "category": "unused",
+      "description_de": "Dritter und letzter Vorschlag für die MINECON 2011-Umfrage. Von den drei Entwürfen wurden zwei später verwendet (Creepergesicht für MINECON 2011, goldene Spitzhacke für MINECON 2012), dieser blieb als einziges Design komplett ungenutzt.",
+      "description_en": "Third and final proposal for the MINECON 2011 poll. Of the three designs, two were later used (creeper face for MINECON 2011, golden pickaxe for MINECON 2012), this one remained completely unused as the only design.",
+      "tags_de": [
+        "MINECON 2011",
+        "Ungenutzt",
+        "Entwurf",
+        "Umfrage",
+        "Konzept",
+        "Nicht verwendet"
+      ],
+      "tags_en": [
+        "MINECON 2011",
+        "Unused",
+        "Draft",
+        "Poll",
+        "Concept",
+        "Not used"
+      ],
+      "capeUrl": "/assets/img/capes/unused/Minecon_2011_3_texture.png",
+      "thumbnailUrl": "/assets/img/capes/unused/Minecon_2011_3.png",
+      "featured": false
+    },
+    {
+      "id": "minecon-2011-twom-1",
+      "name_de": "Minecon_2011_TWoM 1",
+      "name_en": "Minecon_2011_TWoM 1",
+      "year": "2011",
+      "type": "Ungenutztes Design",
+      "category": "unused",
+      "description_de": "Erster Entwurf aus der \"Minecon_2011_TWoM\" Serie von ungenutzten Cape-Designs. Die Bedeutung von \"TWoM\" ist unbekannt, könnte sich aber auf \"The World of Minecraft\" oder ähnliches beziehen.",
+      "description_en": "First design from the \"Minecon_2011_TWoM\" series of unused cape concepts. The meaning of \"TWoM\" is unknown, could refer to \"The World of Minecraft\" or similar.",
+      "tags_de": [
+        "Minecon_2011_TWoM",
+        "Serie",
+        "Ungenutzt",
+        "Entwurf",
+        "Konzept",
+        "Nicht verwendet"
+      ],
+      "tags_en": [
+        "Minecon_2011_TWoM",
+        "Series",
+        "Unused",
+        "Draft",
+        "Concept",
+        "Not used"
+      ],
+      "capeUrl": "/assets/img/capes/unused/Minecon_2011_TWoM_1_texture.png",
+      "thumbnailUrl": "/assets/img/capes/unused/Minecon_2011_TWoM_1.png",
+      "featured": false
+    },
+    {
+      "id": "minecon-2011-twom-2",
+      "name_de": "Minecon_2011_TWoM 2",
+      "name_en": "Minecon_2011_TWoM 2",
+      "year": "2011",
+      "type": "Ungenutztes Design",
+      "category": "unused",
+      "description_de": "Zweiter Entwurf aus der \"Minecon_2011_TWoM\" Serie. Diese Designs wurden wahrscheinlich für interne Überlegungen oder frühe Konzeptphasen erstellt, aber nie öffentlich verwendet.",
+      "description_en": "Second design from the \"Minecon_2011_TWoM\" series. These designs were likely created for internal consideration or early concept phases, but never publicly used.",
+      "tags_de": [
+        "Minecon_2011_TWoM",
+        "Serie",
+        "Ungenutzt",
+        "Entwurf",
+        "Konzept",
+        "Nicht verwendet"
+      ],
+      "tags_en": [
+        "Minecon_2011_TWoM",
+        "Series",
+        "Unused",
+        "Draft",
+        "Concept",
+        "Not used"
+      ],
+      "capeUrl": "/assets/img/capes/unused/Minecon_2011_TWoM_2_texture.png",
+      "thumbnailUrl": "/assets/img/capes/unused/Minecon_2011_TWoM_2.png",
+      "featured": false
+    },
+    {
+      "id": "minecon-2011-twom-3",
+      "name_de": "Minecon_2011_TWoM 3",
+      "name_en": "Minecon_2011_TWoM 3",
+      "year": "2011",
+      "type": "Ungenutztes Design",
+      "category": "unused",
+      "description_de": "Dritter Entwurf aus der \"Minecon_2011_TWoM\" Serie. Diese Designs wurden wahrscheinlich für interne Überlegungen oder frühe Konzeptphasen erstellt, aber nie öffentlich verwendet.",
+      "description_en": "Third design from the \"Minecon_2011_TWoM\" series. These designs were likely created for internal consideration or early concept phases, but never publicly used.",
+      "tags_de": [
+        "Minecon_2011_TWoM",
+        "Serie",
+        "Ungenutzt",
+        "Entwurf",
+        "Konzept",
+        "Nicht verwendet"
+      ],
+      "tags_en": [
+        "Minecon_2011_TWoM",
+        "Series",
+        "Unused",
+        "Draft",
+        "Concept",
+        "Not used"
+      ],
+      "capeUrl": "/assets/img/capes/unused/Minecon_2011_TWoM_3_texture.png",
+      "thumbnailUrl": "/assets/img/capes/unused/Minecon_2011_TWoM_3.png",
+      "featured": false
+    },
+    {
+      "id": "minecon-2011-twom-4",
+      "name_de": "Minecon_2011_TWoM 4",
+      "name_en": "Minecon_2011_TWoM 4",
+      "year": "2011",
+      "type": "Ungenutztes Design",
+      "category": "unused",
+      "description_de": "Vierter Entwurf aus der \"Minecon_2011_TWoM\" Serie. Diese Designs wurden wahrscheinlich für interne Überlegungen oder frühe Konzeptphasen erstellt, aber nie öffentlich verwendet.",
+      "description_en": "Fourth design from the \"Minecon_2011_TWoM\" series. These designs were likely created for internal consideration or early concept phases, but never publicly used.",
+      "tags_de": [
+        "Minecon_2011_TWoM",
+        "Serie",
+        "Ungenutzt",
+        "Entwurf",
+        "Konzept",
+        "Nicht verwendet"
+      ],
+      "tags_en": [
+        "Minecon_2011_TWoM",
+        "Series",
+        "Unused",
+        "Draft",
+        "Concept",
+        "Not used"
+      ],
+      "capeUrl": "/assets/img/capes/unused/Minecon_2011_TWoM_4_texture.png",
+      "thumbnailUrl": "/assets/img/capes/unused/Minecon_2011_TWoM_4.png",
+      "featured": false
+    },
+    {
+      "id": "minecon-2011-twom-5",
+      "name_de": "Minecon_2011_TWoM 5",
+      "name_en": "Minecon_2011_TWoM 5",
+      "year": "2011",
+      "type": "Ungenutztes Design",
+      "category": "unused",
+      "description_de": "Fünfter Entwurf aus der \"Minecon_2011_TWoM\" Serie. Diese Designs wurden wahrscheinlich für interne Überlegungen oder frühe Konzeptphasen erstellt, aber nie öffentlich verwendet.",
+      "description_en": "Fifth design from the \"Minecon_2011_TWoM\" series. These designs were likely created for internal consideration or early concept phases, but never publicly used.",
+      "tags_de": [
+        "Minecon_2011_TWoM",
+        "Serie",
+        "Ungenutzt",
+        "Entwurf",
+        "Konzept",
+        "Nicht verwendet"
+      ],
+      "tags_en": [
+        "Minecon_2011_TWoM",
+        "Series",
+        "Unused",
+        "Draft",
+        "Concept",
+        "Not used"
+      ],
+      "capeUrl": "/assets/img/capes/unused/Minecon_2011_TWoM_5_texture.png",
+      "thumbnailUrl": "/assets/img/capes/unused/Minecon_2011_TWoM_5.png",
+      "featured": false
+    },
+    {
+      "id": "minecon-2011-twom-6",
+      "name_de": "Minecon_2011_TWoM 6",
+      "name_en": "Minecon_2011_TWoM 6",
+      "year": "2011",
+      "type": "Ungenutztes Design",
+      "category": "unused",
+      "description_de": "Sechster Entwurf aus der \"Minecon_2011_TWoM\" Serie. Diese Designs wurden wahrscheinlich für interne Überlegungen oder frühe Konzeptphasen erstellt, aber nie öffentlich verwendet.",
+      "description_en": "Sixth design from the \"Minecon_2011_TWoM\" series. These designs were likely created for internal consideration or early concept phases, but never publicly used.",
+      "tags_de": [
+        "Minecon_2011_TWoM",
+        "Serie",
+        "Ungenutzt",
+        "Entwurf",
+        "Konzept",
+        "Nicht verwendet"
+      ],
+      "tags_en": [
+        "Minecon_2011_TWoM",
+        "Series",
+        "Unused",
+        "Draft",
+        "Concept",
+        "Not used"
+      ],
+      "capeUrl": "/assets/img/capes/unused/Minecon_2011_TWoM_6_texture.png",
+      "thumbnailUrl": "/assets/img/capes/unused/Minecon_2011_TWoM_6.png",
+      "featured": false
+    },
+    {
+      "id": "minecon-2011-twom-7",
+      "name_de": "Minecon_2011_TWoM 7",
+      "name_en": "Minecon_2011_TWoM 7",
+      "year": "2011",
+      "type": "Ungenutztes Design",
+      "category": "unused",
+      "description_de": "Siebter Entwurf aus der \"Minecon_2011_TWoM\" Serie. Diese Designs wurden wahrscheinlich für interne Überlegungen oder frühe Konzeptphasen erstellt, aber nie öffentlich verwendet.",
+      "description_en": "Seventh design from the \"Minecon_2011_TWoM\" series. These designs were likely created for internal consideration or early concept phases, but never publicly used.",
+      "tags_de": [
+        "Minecon_2011_TWoM",
+        "Serie",
+        "Ungenutzt",
+        "Entwurf",
+        "Konzept",
+        "Nicht verwendet"
+      ],
+      "tags_en": [
+        "Minecon_2011_TWoM",
+        "Series",
+        "Unused",
+        "Draft",
+        "Concept",
+        "Not used"
+      ],
+      "capeUrl": "/assets/img/capes/unused/Minecon_2011_TWoM_7_texture.png",
+      "thumbnailUrl": "/assets/img/capes/unused/Minecon_2011_TWoM_7.png",
+      "featured": false
+    },
+    {
+      "id": "minecon-2011-twom-8",
+      "name_de": "Minecon_2011_TWoM 8",
+      "name_en": "Minecon_2011_TWoM 8",
+      "year": "2011",
+      "type": "Ungenutztes Design",
+      "category": "unused",
+      "description_de": "Achter Entwurf aus der \"Minecon_2011_TWoM\" Serie. Diese Designs wurden wahrscheinlich für interne Überlegungen oder frühe Konzeptphasen erstellt, aber nie öffentlich verwendet.",
+      "description_en": "Eighth design from the \"Minecon_2011_TWoM\" series. These designs were likely created for internal consideration or early concept phases, but never publicly used.",
+      "tags_de": [
+        "Minecon_2011_TWoM",
+        "Serie",
+        "Ungenutzt",
+        "Entwurf",
+        "Konzept",
+        "Nicht verwendet"
+      ],
+      "tags_en": [
+        "Minecon_2011_TWoM",
+        "Series",
+        "Unused",
+        "Draft",
+        "Concept",
+        "Not used"
+      ],
+      "capeUrl": "/assets/img/capes/unused/Minecon_2011_TWoM_8_texture.png",
+      "thumbnailUrl": "/assets/img/capes/unused/Minecon_2011_TWoM_8.png",
+      "featured": false
+    },
+    {
+      "id": "minecon-2011-twom-9",
+      "name_de": "Minecon_2011_TWoM 9",
+      "name_en": "Minecon_2011_TWoM 9",
+      "year": "2011",
+      "type": "Ungenutztes Design",
+      "category": "unused",
+      "description_de": "Neunter Entwurf aus der \"Minecon_2011_TWoM\" Serie. Diese Designs wurden wahrscheinlich für interne Überlegungen oder frühe Konzeptphasen erstellt, aber nie öffentlich verwendet.",
+      "description_en": "Ninth design from the \"Minecon_2011_TWoM\" series. These designs were likely created for internal consideration or early concept phases, but never publicly used.",
+      "tags_de": [
+        "Minecon_2011_TWoM",
+        "Serie",
+        "Ungenutzt",
+        "Entwurf",
+        "Konzept",
+        "Nicht verwendet"
+      ],
+      "tags_en": [
+        "Minecon_2011_TWoM",
+        "Series",
+        "Unused",
+        "Draft",
+        "Concept",
+        "Not used"
+      ],
+      "capeUrl": "/assets/img/capes/unused/Minecon_2011_TWoM_9_texture.png",
+      "thumbnailUrl": "/assets/img/capes/unused/Minecon_2011_TWoM_9.png",
+      "featured": false
+    },
+    {
+      "id": "minecon-2011-twom-10",
+      "name_de": "Minecon_2011_TWoM 10",
+      "name_en": "Minecon_2011_TWoM 10",
+      "year": "2011",
+      "type": "Ungenutztes Design",
+      "category": "unused",
+      "description_de": "Zehnter Entwurf aus der \"Minecon_2011_TWoM\" Serie. Diese Designs wurden wahrscheinlich für interne Überlegungen oder frühe Konzeptphasen erstellt, aber nie öffentlich verwendet.",
+      "description_en": "Tenth design from the \"Minecon_2011_TWoM\" series. These designs were likely created for internal consideration or early concept phases, but never publicly used.",
+      "tags_de": [
+        "Minecon_2011_TWoM",
+        "Serie",
+        "Ungenutzt",
+        "Entwurf",
+        "Konzept",
+        "Nicht verwendet"
+      ],
+      "tags_en": [
+        "Minecon_2011_TWoM",
+        "Series",
+        "Unused",
+        "Draft",
+        "Concept",
+        "Not used"
+      ],
+      "capeUrl": "/assets/img/capes/unused/Minecon_2011_TWoM_10_texture.png",
+      "thumbnailUrl": "/assets/img/capes/unused/Minecon_2011_TWoM_10.png",
+      "featured": false
+    },
+    {
+      "id": "minecon-2011-twom-11",
+      "name_de": "Minecon_2011_TWoM 11",
+      "name_en": "Minecon_2011_TWoM 11",
+      "year": "2011",
+      "type": "Ungenutztes Design",
+      "category": "unused",
+      "description_de": "Elfter und letzter Entwurf aus der \"Minecon_2011_TWoM\" Serie. Diese Designs wurden wahrscheinlich für interne Überlegungen oder frühe Konzeptphasen erstellt, aber nie öffentlich verwendet.",
+      "description_en": "Eleventh and final design from the \"Minecon_2011_TWoM\" series. These designs were likely created for internal consideration or early concept phases, but never publicly used.",
+      "tags_de": [
+        "Minecon_2011_TWoM",
+        "Serie",
+        "Ungenutzt",
+        "Entwurf",
+        "Konzept",
+        "Nicht verwendet"
+      ],
+      "tags_en": [
+        "Minecon_2011_TWoM",
+        "Series",
+        "Unused",
+        "Draft",
+        "Concept",
+        "Not used"
+      ],
+      "capeUrl": "/assets/img/capes/unused/Minecon_2011_TWoM_11_texture.png",
+      "thumbnailUrl": "/assets/img/capes/unused/Minecon_2011_TWoM_11.png",
+      "featured": false
+    }
+  ],
+  "joke": [
+    {
+      "id": "awesom-caep",
+      "name_de": "Awesom caep",
+      "name_en": "Awesom caep",
+      "year": "2023",
+      "type": "April Fools",
+      "category": "joke",
+      "description_de": "Ein April-Fools-Cape aus dem Snapshot 23w13a_or_b. Die Textur basiert auf dem Blonk caep, einem bearbeiteten Mojang Cape, bei dem das Logo übermalt und grün eingefärbt wurde. Das Wort \"Cape\" ist absichtlich als \"caep\" falsch geschrieben.",
+      "description_en": "An April Fools cape from snapshot 23w13a_or_b. The texture is based on the Blonk caep, an edited Mojang cape with the logo painted over and colored green. The word \"Cape\" is intentionally misspelled as \"caep\".",
+      "tags_de": [
+        "April Fools",
+        "23w13a_or_b",
+        "Snapshot",
+        "Caep",
+        "Vote Update",
+        "Witz"
+      ],
+      "tags_en": [
+        "April Fools",
+        "23w13a_or_b",
+        "Snapshot",
+        "Caep",
+        "Vote Update",
+        "Joke"
+      ],
+      "capeUrl": "/assets/img/capes/joke/Awesom_texture.png",
+      "thumbnailUrl": "/assets/img/capes/joke/Awesom.png",
+      "featured": false
+    },
+    {
+      "id": "blonk-caep",
+      "name_de": "Blonk caep",
+      "name_en": "Blonk caep",
+      "year": "2023",
+      "type": "April Fools",
+      "category": "joke",
+      "description_de": "Das Original-Caep: Ein bearbeitetes Mojang Cape mit übermaltem, rot eingefärbtem Logo. Interessant: Dieses Cape kann im Spiel nicht tatsächlich erhalten werden, da das Wählen der \"blonk\"-Option lediglich die Cape-Regel aufhebt.",
+      "description_en": "The original Caep: An edited Mojang cape with the logo painted over in red. Interestingly, this cape cannot actually be obtained in the game, as choosing the \"blonk\" option merely overrides the cape rule.",
+      "tags_de": [
+        "April Fools",
+        "23w13a_or_b",
+        "Snapshot",
+        "Caep",
+        "Original",
+        "Nicht erhältlich",
+        "Witz"
+      ],
+      "tags_en": [
+        "April Fools",
+        "23w13a_or_b",
+        "Snapshot",
+        "Caep",
+        "Original",
+        "Not obtainable",
+        "Joke"
+      ],
+      "capeUrl": "/assets/img/capes/joke/Blonk_texture.png",
+      "thumbnailUrl": "/assets/img/capes/joke/Blonk.png",
+      "featured": false
+    },
+    {
+      "id": "no-circle-caep",
+      "name_de": "No-Circle caep",
+      "name_en": "No-Circle caep",
+      "year": "2023",
+      "type": "April Fools",
+      "category": "joke",
+      "description_de": "Basierend auf dem Blonk caep, mit türkiser Einfärbung (wie Steves Hemd). Ein kreisförmiges Muster ist auf dem Cape aufgebracht, durchzogen von einer roten Linie. Ein typischer April-Fools-Witz mit absurden Designelementen.",
+      "description_en": "Based on the Blonk caep, with turquoise coloring (like Steve's shirt). A circular pattern is applied to the cape, crossed by a red line. A typical April Fools joke with absurd design elements.",
+      "tags_de": [
+        "April Fools",
+        "23w13a_or_b",
+        "Snapshot",
+        "Caep",
+        "Steve",
+        "Türkis",
+        "Witz"
+      ],
+      "tags_en": [
+        "April Fools",
+        "23w13a_or_b",
+        "Snapshot",
+        "Caep",
+        "Steve",
+        "Turquoise",
+        "Joke"
+      ],
+      "capeUrl": "/assets/img/capes/joke/No_circle_texture.png",
+      "thumbnailUrl": "/assets/img/capes/joke/No_circle.png",
+      "featured": false
+    },
+    {
+      "id": "nyan-caep",
+      "name_de": "Nyan caep",
+      "name_en": "Nyan caep",
+      "year": "2023",
+      "type": "April Fools",
+      "category": "joke",
+      "description_de": "Eine Hommage an das berühmte Nyan Cat Internet-Phänomen. Dieses Cape zeigt das ikonische Regenbogen-Pop-Tart-Katzen-Design – ein perfektes April-Fools-Cape voller Internetkultur-Referenzen.",
+      "description_en": "A tribute to the famous Nyan Cat internet phenomenon. This cape features the iconic rainbow pop-tart cat design – a perfect April Fools cape full of internet culture references.",
+      "tags_de": [
+        "April Fools",
+        "23w13a_or_b",
+        "Snapshot",
+        "Caep",
+        "Nyan Cat",
+        "Internet-Meme",
+        "Regenbogen",
+        "Witz"
+      ],
+      "tags_en": [
+        "April Fools",
+        "23w13a_or_b",
+        "Snapshot",
+        "Caep",
+        "Nyan Cat",
+        "Internet meme",
+        "Rainbow",
+        "Joke"
+      ],
+      "capeUrl": "/assets/img/capes/joke/Nyan_texture.png",
+      "thumbnailUrl": "/assets/img/capes/joke/Nyan.png",
+      "featured": true
+    },
+    {
+      "id": "squid-caep",
+      "name_de": "Squid caep",
+      "name_en": "Squid caep",
+      "year": "2023",
+      "type": "April Fools",
+      "category": "joke",
+      "description_de": "Wieder basierend auf dem Blonk caep, diesmal in hellblau übermalt. Ein weiteres Beispiel für die absurde Humor-Reihe der April-Fools-Capes mit absichtlich \"falsch\" geschriebenem Namen.",
+      "description_en": "Again based on the Blonk caep, this time painted over in light blue. Another example of the absurd humor series of April Fools capes with intentionally misspelled names.",
+      "tags_de": [
+        "April Fools",
+        "23w13a_or_b",
+        "Snapshot",
+        "Caep",
+        "Hellblau",
+        "Tintenfisch",
+        "Witz"
+      ],
+      "tags_en": [
+        "April Fools",
+        "23w13a_or_b",
+        "Snapshot",
+        "Caep",
+        "Light blue",
+        "Squid",
+        "Joke"
+      ],
+      "capeUrl": "/assets/img/capes/joke/Squid_texture.png",
+      "thumbnailUrl": "/assets/img/capes/joke/squid.png",
+      "featured": false
+    },
+    {
+      "id": "veterinarian-caep",
+      "name_de": "Veterinarian caep",
+      "name_en": "Veterinarian caep",
+      "year": "2023",
+      "type": "April Fools",
+      "category": "joke",
+      "description_de": "Das \"Tierarzt\"-Caep in hellviolett. Wie alle anderen in dieser Reihe basiert es auf dem bearbeiteten Mojang Cape. Der Name ist eine weitere absichtliche Falschschreibung für den April-Fools-Witz.",
+      "description_en": "The \"Veterinarian\" caep in light purple. Like all others in this series, it is based on the edited Mojang cape. The name is another intentional misspelling for the April Fools joke.",
+      "tags_de": [
+        "April Fools",
+        "23w13a_or_b",
+        "Snapshot",
+        "Caep",
+        "Hellviolett",
+        "Tierarzt",
+        "Witz"
+      ],
+      "tags_en": [
+        "April Fools",
+        "23w13a_or_b",
+        "Snapshot",
+        "Caep",
+        "Light purple",
+        "Veterinarian",
+        "Joke"
+      ],
+      "capeUrl": "/assets/img/capes/joke/Veterinarian_texture.png",
+      "thumbnailUrl": "/assets/img/capes/joke/Veterinarian.png",
+      "featured": false
+    }
+  ]
+}

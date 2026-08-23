@@ -1,0 +1,1446 @@
+[
+  {
+    "id": "minecraft:blaze",
+    "name": "Blaze",
+    "type": "hostile",
+    "icon": "/assets/img/mobs/hostile/Blaze.webp",
+    "health": 20,
+    "damage": 6,
+    "description": "Nether fire mob • Shoots fireballs • Swims in lava • Drips particles",
+    "version": "1.0.0",
+    "dimension": "Nether",
+    "movement_speed": 0.23,
+    "size": {
+      "width": 0.6,
+      "height": 1.8
+    },
+    "spawn": {
+      "light_level": [
+        "0-15"
+      ],
+      "biome": "Nether Fortress",
+      "structure": "Nether Fortress"
+    },
+    "light_level": [
+      "0-15"
+    ],
+    "fun_fact": "Blazes take damage from water buckets and snowballs!",
+    "abilities": [
+      "Fireball attacks",
+      "Immune to fire and lava",
+      "Flies and hovers",
+      "Drips smoke particles"
+    ],
+    "drops": [
+      {
+        "item": "minecraft:blaze_rod",
+        "chance": "50%",
+        "amount": "0-1"
+      }
+    ]
+  },
+  {
+    "id": "minecraft:bogged",
+    "name": "Bogged",
+    "type": "hostile",
+    "icon": "/assets/img/mobs/hostile/Bogged.webp",
+    "health": 20,
+    "damage": 2,
+    "description": "Mushroom-covered skeleton • Shoots poison arrows • Spawns in swamp biomes",
+    "version": "1.21",
+    "dimension": "Overworld",
+    "movement_speed": 0.25,
+    "size": {
+      "width": 0.6,
+      "height": 1.99
+    },
+    "spawn": {
+      "light_level": [
+        "0-15"
+      ],
+      "biome": "Swamp, Mangrove Swamp",
+      "structure": "None"
+    },
+    "light_level": [
+      "0-15"
+    ],
+    "fun_fact": "Bogged shoot poison arrows instead of normal arrows!",
+    "abilities": [
+      "Shoots poison arrows",
+      "Burns in sunlight",
+      "Mushroom-covered appearance",
+      "Ranged bow attacks"
+    ],
+    "drops": [
+      {
+        "item": "minecraft:arrow",
+        "chance": "100%",
+        "amount": "0-2"
+      },
+      {
+        "item": "minecraft:bone",
+        "chance": "100%",
+        "amount": "0-2"
+      },
+      {
+        "item": "minecraft:tipped_arrow",
+        "chance": "50%",
+        "amount": "0-1"
+      }
+    ]
+  },
+  {
+    "id": "minecraft:breeze",
+    "name": "Breeze",
+    "type": "hostile",
+    "icon": "/assets/img/mobs/hostile/Breeze.webp",
+    "health": 30,
+    "damage": 4,
+    "description": "Wind energy mob • Shoots wind attacks • Jumps off walls • Trial chamber guardian",
+    "version": "1.21",
+    "dimension": "Overworld",
+    "movement_speed": 0.35,
+    "size": {
+      "width": 0.6,
+      "height": 1.77
+    },
+    "spawn": {
+      "light_level": [
+        "0-15"
+      ],
+      "biome": "Trial Chambers",
+      "structure": "Trial Chambers"
+    },
+    "light_level": [
+      "0-15"
+    ],
+    "fun_fact": "Breezes can activate buttons and levers with their wind attacks!",
+    "abilities": [
+      "Shoots wind attacks",
+      "Bounces off walls",
+      "Can activate buttons",
+      "Energy-based appearance"
+    ],
+    "drops": [
+      {
+        "item": "minecraft:breeze_rod",
+        "chance": "100%",
+        "amount": "1-2"
+      }
+    ]
+  },
+  {
+    "id": "minecraft:creeper",
+    "name": "Creeper",
+    "type": "hostile",
+    "icon": "/assets/img/mobs/hostile/Creeper.png",
+    "health": 20,
+    "damage": 49,
+    "description": "Explosive green mob • Sneaks up quietly • Explodes near players • Hisses before explosion",
+    "version": "1.0.0",
+    "dimension": "Overworld",
+    "movement_speed": 0.2,
+    "size": {
+      "width": 0.6,
+      "height": 1.7
+    },
+    "spawn": {
+      "light_level": [
+        "0-15"
+      ],
+      "biome": "All Overworld biomes",
+      "structure": "None"
+    },
+    "light_level": [
+      "0-15"
+    ],
+    "fun_fact": "Creepers were originally a failed pig model!",
+    "abilities": [
+      "Explodes when near player",
+      "Sneaks up quietly",
+      "Hisses before explosion",
+      "Can be charged by lightning"
+    ],
+    "drops": [
+      {
+        "item": "minecraft:gunpowder",
+        "chance": "100%",
+        "amount": "1-2"
+      }
+    ]
+  },
+  {
+    "id": "minecraft:creeper",
+    "name": "Charged Creeper",
+    "type": "hostile",
+    "icon": "/assets/img/mobs/hostile/Charged_Creeper.webp",
+    "health": 20,
+    "damage": 97,
+    "description": "Lightning-charged creeper variant • Enhanced explosion • Drops mob heads • Rare natural phenomenon",
+    "version": "1.4.2",
+    "dimension": "Overworld",
+    "movement_speed": 0.2,
+    "size": {
+      "width": 0.6,
+      "height": 1.7
+    },
+    "spawn": {
+      "light_level": [
+        "0-15"
+      ],
+      "biome": "All Overworld biomes (by lightning strike on a normal creeper)",
+      "structure": "None"
+    },
+    "light_level": [
+      "0-15"
+    ],
+    "fun_fact": "Charged creepers can drop mob heads when they explode!",
+    "abilities": [
+      "Enhanced explosion power",
+      "Can drop mob heads on explosion",
+      "Lightning effect around body",
+      "Created by lightning strike on a normal creeper"
+    ],
+    "drops": [
+      {
+        "item": "minecraft:gunpowder",
+        "chance": "100%",
+        "amount": "1-2"
+      }
+    ]
+  },
+  {
+    "id": "minecraft:elder_guardian",
+    "name": "Elder Guardian",
+    "type": "hostile",
+    "icon": "/assets/img/mobs/hostile/Elder_Guardian.webp",
+    "health": 80,
+    "damage": 8,
+    "description": "Boss-like ocean guardian • Inflicts Mining Fatigue • Shoots laser • Rare spawn",
+    "version": "1.8",
+    "dimension": "Overworld",
+    "movement_speed": 0.3,
+    "size": {
+      "width": 1.9975,
+      "height": 1.9975
+    },
+    "spawn": {
+      "light_level": [
+        "0-15"
+      ],
+      "biome": "Deep Ocean, Monument",
+      "structure": "Ocean Monument"
+    },
+    "light_level": [
+      "0-15"
+    ],
+    "fun_fact": "Elder guardians give players the Mining Fatigue effect from afar!",
+    "abilities": [
+      "Laser attacks",
+      "Mining Fatigue effect",
+      "Protection spell for other guardians",
+      "Swims in ocean monument"
+    ],
+    "drops": [
+      {
+        "item": "minecraft:prismarine_shard",
+        "chance": "100%",
+        "amount": "0-2"
+      },
+      {
+        "item": "minecraft:prismarine_crystals",
+        "chance": "50%",
+        "amount": "0-2"
+      },
+      {
+        "item": "minecraft:wet_sponge",
+        "chance": "100%",
+        "amount": "1"
+      },
+      {
+        "item": "minecraft:fish",
+        "chance": "25%",
+        "amount": "1"
+      }
+    ]
+  },
+  {
+    "id": "minecraft:endermite",
+    "name": "Endermite",
+    "type": "hostile",
+    "icon": "/assets/img/mobs/hostile/Endermite.gif",
+    "health": 8,
+    "damage": 2,
+    "description": "Small end parasites • Spawns after enderman teleport • Fast and annoying",
+    "version": "1.8",
+    "dimension": "End",
+    "movement_speed": 0.25,
+    "size": {
+      "width": 0.4,
+      "height": 0.3
+    },
+    "spawn": {
+      "light_level": [
+        "0-15"
+      ],
+      "biome": "The End",
+      "structure": "None"
+    },
+    "light_level": [
+      "0-15"
+    ],
+    "fun_fact": "Endermites have a 15% chance to spawn when an enderman teleports!",
+    "abilities": [
+      "Fast movement",
+      "Spawns when enderman teleports",
+      "Small hitbox",
+      "Aggressively chases player"
+    ],
+    "drops": [
+      {
+        "item": "minecraft:experience_orb",
+        "chance": "100%",
+        "amount": "3"
+      }
+    ]
+  },
+  {
+    "id": "minecraft:evoker",
+    "name": "Evoker",
+    "type": "hostile",
+    "icon": "/assets/img/mobs/hostile/Evoker.webp",
+    "health": 24,
+    "damage": 6,
+    "description": "Illager wizard • Summons vexes • Creates fangs • Woodland mansion inhabitant",
+    "version": "1.11",
+    "dimension": "Overworld",
+    "movement_speed": 0.5,
+    "size": {
+      "width": 0.6,
+      "height": 1.95
+    },
+    "spawn": {
+      "light_level": [
+        "0-15"
+      ],
+      "biome": "Woodland Mansion, Raid",
+      "structure": "Woodland Mansion"
+    },
+    "light_level": [
+      "0-15"
+    ],
+    "fun_fact": "Evokers can cast the 'kill sheep' spell and summon vexes!",
+    "abilities": [
+      "Summons vexes",
+      "Fang attacks",
+      "Kill sheep spell",
+      "Illager wizard"
+    ],
+    "drops": [
+      {
+        "item": "minecraft:emerald",
+        "chance": "50%",
+        "amount": "0-1"
+      },
+      {
+        "item": "minecraft:totem_of_undying",
+        "chance": "100%",
+        "amount": "1"
+      }
+    ]
+  },
+  {
+    "id": "minecraft:ghast",
+    "name": "Ghast",
+    "type": "hostile",
+    "icon": "/assets/img/mobs/hostile/Ghast.webp",
+    "health": 10,
+    "damage": 6,
+    "description": "Large Nether ghost • Shoots fireballs • Flies high • Makes sad sounds",
+    "version": "1.0.0",
+    "dimension": "Nether",
+    "movement_speed": 0.03,
+    "size": {
+      "width": 4,
+      "height": 4
+    },
+    "spawn": {
+      "light_level": [
+        "0-15"
+      ],
+      "biome": "Nether",
+      "structure": "None"
+    },
+    "light_level": [
+      "0-15"
+    ],
+    "fun_fact": "Ghast fireballs can be deflected back!",
+    "abilities": [
+      "Fireball attacks",
+      "Flies in the Nether",
+      "Large hitbox",
+      "Cries when shooting"
+    ],
+    "drops": [
+      {
+        "item": "minecraft:ghast_tear",
+        "chance": "30%",
+        "amount": "0-1"
+      },
+      {
+        "item": "minecraft:gunpowder",
+        "chance": "100%",
+        "amount": "0-2"
+      }
+    ]
+  },
+  {
+    "id": "minecraft:guardian",
+    "name": "Guardian",
+    "type": "hostile",
+    "icon": "/assets/img/mobs/hostile/Guardian.webp",
+    "health": 30,
+    "damage": 6,
+    "description": "Ocean monument guardian • Shoots laser • Spike defense • Swims fast",
+    "version": "1.8",
+    "dimension": "Overworld",
+    "movement_speed": 0.5,
+    "size": {
+      "width": 0.85,
+      "height": 0.85
+    },
+    "spawn": {
+      "light_level": [
+        "0-15"
+      ],
+      "biome": "Deep Ocean, Monument",
+      "structure": "Ocean Monument"
+    },
+    "light_level": [
+      "0-15"
+    ],
+    "fun_fact": "Guardians can extend their spikes and reflect melee damage!",
+    "abilities": [
+      "Laser attacks",
+      "Spike defense when attacked in melee",
+      "Fast swimming",
+      "Monument defender"
+    ],
+    "drops": [
+      {
+        "item": "minecraft:prismarine_shard",
+        "chance": "40%",
+        "amount": "0-2"
+      },
+      {
+        "item": "minecraft:prismarine_crystals",
+        "chance": "40%",
+        "amount": "0-2"
+      },
+      {
+        "item": "minecraft:fish",
+        "chance": "40%",
+        "amount": "0-1"
+      }
+    ]
+  },
+  {
+    "id": "minecraft:hoglin",
+    "name": "Hoglin",
+    "type": "hostile",
+    "icon": "/assets/img/mobs/hostile/Hoglin.webp",
+    "health": 40,
+    "damage": 7,
+    "description": "Nether pig beast • Strong melee attacks • Becomes scared in the Overworld",
+    "version": "1.16",
+    "dimension": "Nether",
+    "movement_speed": 0.3,
+    "size": {
+      "width": 0.9,
+      "height": 0.9,
+      "baby": {
+        "width": 0.45,
+        "height": 0.45
+      }
+    },
+    "spawn": {
+      "light_level": [
+        "0-15"
+      ],
+      "biome": "Crimson Forest",
+      "structure": "None"
+    },
+    "light_level": [
+      "0-15"
+    ],
+    "fun_fact": "Hoglins turn into Zoglins after 15 seconds in the Overworld!",
+    "abilities": [
+      "Strong ram attacks",
+      "Becomes scared in Overworld",
+      "Cannot swim",
+      "Transforms into Zoglin"
+    ],
+    "drops": [
+      {
+        "item": "minecraft:porkchop",
+        "chance": "100%",
+        "amount": "2-4"
+      },
+      {
+        "item": "minecraft:leather",
+        "chance": "100%",
+        "amount": "0-1"
+      }
+    ]
+  },
+  {
+    "id": "minecraft:husk",
+    "name": "Husk",
+    "type": "hostile",
+    "icon": "/assets/img/mobs/hostile/Husk.webp",
+    "health": 20,
+    "damage": 3,
+    "description": "Desert zombie • Inflicts hunger • Does not burn in sun • Spawns in deserts",
+    "version": "1.10",
+    "dimension": "Overworld",
+    "movement_speed": 0.23,
+    "size": {
+      "width": 0.6,
+      "height": 1.95
+    },
+    "spawn": {
+      "light_level": [
+        "0-15"
+      ],
+      "biome": "Desert",
+      "structure": "None"
+    },
+    "light_level": [
+      "0-15"
+    ],
+    "fun_fact": "Husks don't burn in sunlight and inflict the hunger effect!",
+    "abilities": [
+      "Hunger effect on hit",
+      "Immune to sunlight",
+      "Slow movement",
+      "Can spawn baby variant"
+    ],
+    "drops": [
+      {
+        "item": "minecraft:rotten_flesh",
+        "chance": "100%",
+        "amount": "0-2"
+      },
+      {
+        "item": "minecraft:carrot",
+        "chance": "12.5%",
+        "amount": "1"
+      },
+      {
+        "item": "minecraft:potato",
+        "chance": "12.5%",
+        "amount": "1"
+      }
+    ]
+  },
+  {
+    "id": "minecraft:magma_cube",
+    "name": "Magma Cube",
+    "type": "hostile",
+    "icon": "/assets/img/mobs/hostile/Magma_Cube.webp",
+    "health": 16,
+    "damage": 4,
+    "description": "Nether slime • Jumps on player • Leaves fire trail • Splits on death",
+    "version": "1.0.0",
+    "dimension": "Nether",
+    "movement_speed": 0.4,
+    "size": {
+      "width": 2.04,
+      "height": 2.04
+    },
+    "spawn": {
+      "light_level": [
+        "0-15"
+      ],
+      "biome": "Nether",
+      "structure": "Nether Fortress"
+    },
+    "light_level": [
+      "0-15"
+    ],
+    "fun_fact": "Magma cubes leave a fire trail when they jump!",
+    "abilities": [
+      "Jumps on player",
+      "Splits into smaller cubes",
+      "Leaves fire trails",
+      "Immune to fire and lava"
+    ],
+    "drops": [
+      {
+        "item": "minecraft:magma_cream",
+        "chance": "100%",
+        "amount": "0-1"
+      }
+    ]
+  },
+  {
+    "id": "minecraft:phantom",
+    "name": "Phantom",
+    "type": "hostile",
+    "icon": "/assets/img/mobs/hostile/Phantom.webp",
+    "health": 20,
+    "damage": 6,
+    "description": "Flying night mob • Attacks sleepless players • Can be scared away by cats",
+    "version": "1.13",
+    "dimension": "Overworld",
+    "movement_speed": 0.7,
+    "size": {
+      "width": 0.9,
+      "height": 0.5
+    },
+    "spawn": {
+      "light_level": [
+        "0-15"
+      ],
+      "biome": "All biomes (at night)",
+      "structure": "None"
+    },
+    "light_level": [
+      "0-15"
+    ],
+    "fun_fact": "Phantoms only spawn if players haven't slept for several days!",
+    "abilities": [
+      "Flies and dives from above",
+      "Spawns from insomnia",
+      "Scared away by cats",
+      "Active at night"
+    ],
+    "drops": [
+      {
+        "item": "minecraft:phantom_membrane",
+        "chance": "100%",
+        "amount": "0-1"
+      }
+    ]
+  },
+  {
+    "id": "minecraft:piglin_brute",
+    "name": "Piglin Brute",
+    "type": "hostile",
+    "icon": "/assets/img/mobs/hostile/Piglin_Brute.webp",
+    "health": 50,
+    "damage": 7,
+    "description": "Strong piglin warrior • Always hostile • Wields golden axe • Bastion guardian",
+    "version": "1.16",
+    "dimension": "Nether",
+    "movement_speed": 0.35,
+    "size": {
+      "width": 0.6,
+      "height": 1.95
+    },
+    "spawn": {
+      "light_level": [
+        "0-15"
+      ],
+      "biome": "Bastion",
+      "structure": "Bastion"
+    },
+    "light_level": [
+      "0-15"
+    ],
+    "fun_fact": "Piglin brutes are always hostile and cannot be appeased!",
+    "abilities": [
+      "Always hostile",
+      "Wields golden axe",
+      "Strong melee attacks",
+      "Bastion defender"
+    ],
+    "drops": [
+      {
+        "item": "minecraft:golden_axe",
+        "chance": "8.5%",
+        "amount": "1"
+      }
+    ]
+  },
+  {
+    "id": "minecraft:pillager",
+    "name": "Pillager",
+    "type": "hostile",
+    "icon": "/assets/img/mobs/hostile/Pillager.webp",
+    "health": 24,
+    "damage": 3,
+    "description": "Illager archer • Wields crossbow • Starts raids • Outpost inhabitant",
+    "version": "1.14",
+    "dimension": "Overworld",
+    "movement_speed": 0.35,
+    "size": {
+      "width": 0.6,
+      "height": 1.95
+    },
+    "spawn": {
+      "light_level": [
+        "0-15"
+      ],
+      "biome": "Pillager Outpost, Raid",
+      "structure": "Pillager Outpost"
+    },
+    "light_level": [
+      "0-15"
+    ],
+    "fun_fact": "Pillagers with banners start village raids!",
+    "abilities": [
+      "Crossbow attacks",
+      "Starts village raids",
+      "Sometimes rides ravagers",
+      "Illager archer"
+    ],
+    "drops": [
+      {
+        "item": "minecraft:arrow",
+        "chance": "100%",
+        "amount": "0-2"
+      },
+      {
+        "item": "minecraft:crossbow",
+        "chance": "8.5%",
+        "amount": "1"
+      },
+      {
+        "item": "minecraft:emerald",
+        "chance": "50%",
+        "amount": "0-1"
+      }
+    ]
+  },
+  {
+    "id": "minecraft:ravager",
+    "name": "Ravager",
+    "type": "hostile",
+    "icon": "/assets/img/mobs/hostile/Ravager.webp",
+    "health": 100,
+    "damage": 12,
+    "description": "Huge beast • Destroys blocks • Carries pillagers • Raid boss",
+    "version": "1.14",
+    "dimension": "Overworld",
+    "movement_speed": 0.3,
+    "size": {
+      "width": 1.2,
+      "height": 2.2
+    },
+    "spawn": {
+      "light_level": [
+        "0-15"
+      ],
+      "biome": "Raid",
+      "structure": "None"
+    },
+    "light_level": [
+      "0-15"
+    ],
+    "fun_fact": "Ravagers can destroy blocks like crops and leaves while walking!",
+    "abilities": [
+      "Destroys blocks while walking",
+      "Strong ram attack",
+      "Carries pillager riders",
+      "Immune to knockback"
+    ],
+    "drops": [
+      {
+        "item": "minecraft:saddle",
+        "chance": "100%",
+        "amount": "1"
+      }
+    ]
+  },
+  {
+    "id": "minecraft:shulker",
+    "name": "Shulker",
+    "type": "hostile",
+    "icon": "/assets/img/mobs/hostile/shulker.gif",
+    "health": 30,
+    "damage": 4,
+    "description": "End city defender • Shoots shulker bullets • Teleports • Hides in shells",
+    "version": "1.9",
+    "dimension": "End",
+    "movement_speed": 0,
+    "size": {
+      "width": 1,
+      "height": 1
+    },
+    "spawn": {
+      "light_level": [
+        "0-15"
+      ],
+      "biome": "End City",
+      "structure": "End City"
+    },
+    "light_level": [
+      "0-15"
+    ],
+    "fun_fact": "Shulker bullets give the Levitation effect, making players float!",
+    "abilities": [
+      "Shulker bullet attacks",
+      "Levitation effect",
+      "Teleports when damaged",
+      "Hides in shell"
+    ],
+    "drops": [
+      {
+        "item": "minecraft:shulker_shell",
+        "chance": "50%",
+        "amount": "0-1"
+      }
+    ]
+  },
+  {
+    "id": "minecraft:silverfish",
+    "name": "Silverfish",
+    "type": "hostile",
+    "icon": "/assets/img/mobs/hostile/Silverfish.webp",
+    "health": 8,
+    "damage": 1,
+    "description": "Small stone parasites • Hide in blocks • Call reinforcements • Fast and annoying",
+    "version": "1.0.0",
+    "dimension": "Overworld",
+    "movement_speed": 0.25,
+    "size": {
+      "width": 0.4,
+      "height": 0.3
+    },
+    "spawn": {
+      "light_level": [
+        "0-15"
+      ],
+      "biome": "Stronghold, Mountains",
+      "structure": "Stronghold"
+    },
+    "light_level": [
+      "0-15"
+    ],
+    "fun_fact": "Silverfish can spawn from infested stone and call for help!",
+    "abilities": [
+      "Hides in stone blocks",
+      "Calls other silverfish",
+      "Fast movement",
+      "Small hitbox"
+    ],
+    "drops": [
+      {
+        "item": "minecraft:experience_orb",
+        "chance": "100%",
+        "amount": "5"
+      }
+    ]
+  },
+  {
+    "id": "minecraft:skeleton",
+    "name": "Skeleton",
+    "type": "hostile",
+    "icon": "/assets/img/mobs/hostile/Skeleton.webp",
+    "health": 20,
+    "damage": 2,
+    "description": "Archer skeleton • Shoots arrows • Burns in sun • Various variants",
+    "version": "1.0.0",
+    "dimension": "Overworld",
+    "movement_speed": 0.25,
+    "size": {
+      "width": 0.6,
+      "height": 1.99
+    },
+    "spawn": {
+      "light_level": [
+        "0-15"
+      ],
+      "biome": "All Overworld biomes",
+      "structure": "None"
+    },
+    "light_level": [
+      "0-15"
+    ],
+    "fun_fact": "Skeletons burn to ashes in sunlight!",
+    "abilities": [
+      "Ranged bow attacks",
+      "Burns in sunlight",
+      "Can wear armor",
+      "Accurate shots"
+    ],
+    "drops": [
+      {
+        "item": "minecraft:arrow",
+        "chance": "100%",
+        "amount": "0-2"
+      },
+      {
+        "item": "minecraft:bone",
+        "chance": "100%",
+        "amount": "0-2"
+      },
+      {
+        "item": "minecraft:bow",
+        "chance": "8.5%",
+        "amount": "1"
+      }
+    ]
+  },
+  {
+    "id": "minecraft:slime",
+    "name": "Slime",
+    "type": "hostile",
+    "icon": "/assets/img/mobs/hostile/Slime.webp",
+    "health": 16,
+    "damage": 4,
+    "description": "Bouncing slime • Splits on death • Spawns in swamps • Various sizes",
+    "version": "1.0.0",
+    "dimension": "Overworld",
+    "movement_speed": 0.4,
+    "size": {
+      "width": 2.04,
+      "height": 2.04
+    },
+    "spawn": {
+      "light_level": [
+        "0-15"
+      ],
+      "biome": "Swamp, Underground",
+      "structure": "Slime Chunks"
+    },
+    "light_level": [
+      "0-15"
+    ],
+    "fun_fact": "Slimes only spawn in specific chunks and in swamps during moonlight!",
+    "abilities": [
+      "Jumps on player",
+      "Splits into smaller slimes",
+      "Various sizes",
+      "Bouncy movement"
+    ],
+    "drops": [
+      {
+        "item": "minecraft:slime_ball",
+        "chance": "100%",
+        "amount": "0-2"
+      }
+    ]
+  },
+  {
+    "id": "minecraft:stray",
+    "name": "Stray",
+    "type": "hostile",
+    "icon": "/assets/img/mobs/hostile/Stray.webp",
+    "health": 20,
+    "damage": 2,
+    "description": "Ice biome skeleton • Shoots slowness arrows • Does not burn in sun • Cold variant",
+    "version": "1.10",
+    "dimension": "Overworld",
+    "movement_speed": 0.25,
+    "size": {
+      "width": 0.6,
+      "height": 1.99
+    },
+    "spawn": {
+      "light_level": [
+        "0-15"
+      ],
+      "biome": "Snow biomes, Icy mountains",
+      "structure": "None"
+    },
+    "light_level": [
+      "0-15"
+    ],
+    "fun_fact": "Strays shoot arrows that inflict slowness!",
+    "abilities": [
+      "Slowness arrows",
+      "Immune to sunlight in snow",
+      "Ranged bow attacks",
+      "Spawns in cold biomes"
+    ],
+    "drops": [
+      {
+        "item": "minecraft:arrow",
+        "chance": "100%",
+        "amount": "0-2"
+      },
+      {
+        "item": "minecraft:bone",
+        "chance": "100%",
+        "amount": "0-2"
+      },
+      {
+        "item": "minecraft:tipped_arrow",
+        "chance": "50%",
+        "amount": "0-1"
+      }
+    ]
+  },
+  {
+    "id": "minecraft:vex",
+    "name": "Vex",
+    "type": "hostile",
+    "icon": "/assets/img/mobs/hostile/Angry_Vex.webp",
+    "health": 14,
+    "damage": 5,
+    "description": "Small flying ghosts • Phase through blocks • Summoned by evokers • Limited lifespan",
+    "version": "1.11",
+    "dimension": "Overworld",
+    "movement_speed": 0.9,
+    "size": {
+      "width": 0.4,
+      "height": 0.8
+    },
+    "spawn": {
+      "light_level": [
+        "0-15"
+      ],
+      "biome": "Summoned by evoker",
+      "structure": "None"
+    },
+    "light_level": [
+      "0-15"
+    ],
+    "fun_fact": "Vexes can fly through walls and have a limited lifespan!",
+    "abilities": [
+      "Flies through blocks",
+      "Fast attacks",
+      "Summoned by evokers",
+      "Limited lifespan"
+    ],
+    "drops": [
+      {
+        "item": "minecraft:experience_orb",
+        "chance": "100%",
+        "amount": "5"
+      }
+    ]
+  },
+  {
+    "id": "minecraft:vindicator",
+    "name": "Vindicator",
+    "type": "hostile",
+    "icon": "/assets/img/mobs/hostile/Diener.png",
+    "health": 24,
+    "damage": 8,
+    "description": "Melee illager • Wields iron axe • Woodland mansion inhabitant • Raid participant",
+    "version": "1.11",
+    "dimension": "Overworld",
+    "movement_speed": 0.35,
+    "size": {
+      "width": 0.6,
+      "height": 1.95
+    },
+    "spawn": {
+      "light_level": [
+        "0-15"
+      ],
+      "biome": "Woodland Mansion, Raid",
+      "structure": "Woodland Mansion"
+    },
+    "light_level": [
+      "0-15"
+    ],
+    "fun_fact": "Vindicators have a chance to drop their iron axe!",
+    "abilities": [
+      "Strong axe attacks",
+      "Melee fighter",
+      "Illager warrior",
+      "Fast movement"
+    ],
+    "drops": [
+      {
+        "item": "minecraft:emerald",
+        "chance": "50%",
+        "amount": "0-1"
+      },
+      {
+        "item": "minecraft:iron_axe",
+        "chance": "8.5%",
+        "amount": "1"
+      }
+    ]
+  },
+  {
+    "id": "minecraft:warden",
+    "name": "Warden",
+    "type": "hostile",
+    "icon": "/assets/img/mobs/hostile/Warden.webp",
+    "health": 500,
+    "damage": 16,
+    "description": "Blind deep dark boss • Detects vibrations • Extremely strong • Ancient city guardian",
+    "version": "1.19",
+    "dimension": "Overworld",
+    "movement_speed": 0.3,
+    "size": {
+      "width": 0.9,
+      "height": 2.9
+    },
+    "spawn": {
+      "light_level": [
+        "0-15"
+      ],
+      "biome": "Deep Dark",
+      "structure": "Ancient City"
+    },
+    "light_level": [
+      "0-15"
+    ],
+    "fun_fact": "The warden is the strongest mob in Minecraft and can even hear through walls!",
+    "abilities": [
+      "Detects vibrations and sounds",
+      "Extremely high health",
+      "Sonic boom ranged attack",
+      "Blind but sensory"
+    ],
+    "drops": [
+      {
+        "item": "minecraft:sculk_catalyst",
+        "chance": "100%",
+        "amount": "1"
+      }
+    ]
+  },
+  {
+    "id": "minecraft:witch",
+    "name": "Witch",
+    "type": "hostile",
+    "icon": "/assets/img/mobs/hostile/Witch.webp",
+    "health": 26,
+    "damage": 0,
+    "description": "Potion-throwing witch • Heals herself • Negative effects • Hut dweller",
+    "version": "1.4",
+    "dimension": "Overworld",
+    "movement_speed": 0.25,
+    "size": {
+      "width": 0.6,
+      "height": 1.95
+    },
+    "spawn": {
+      "light_level": [
+        "0-15"
+      ],
+      "biome": "Witch Huts, Raid",
+      "structure": "Witch Hut"
+    },
+    "light_level": [
+      "0-15"
+    ],
+    "fun_fact": "Witches drink healing potions when damaged and throw harming potions!",
+    "abilities": [
+      "Throws harming potions",
+      "Heals herself with potions",
+      "Inflicts negative effects",
+      "Potion-based combat"
+    ],
+    "drops": [
+      {
+        "item": "minecraft:glowstone_dust",
+        "chance": "12.5%",
+        "amount": "0-2"
+      },
+      {
+        "item": "minecraft:sugar",
+        "chance": "12.5%",
+        "amount": "0-2"
+      },
+      {
+        "item": "minecraft:redstone",
+        "chance": "12.5%",
+        "amount": "0-2"
+      },
+      {
+        "item": "minecraft:spider_eye",
+        "chance": "12.5%",
+        "amount": "0-2"
+      },
+      {
+        "item": "minecraft:glass_bottle",
+        "chance": "12.5%",
+        "amount": "0-2"
+      },
+      {
+        "item": "minecraft:gunpowder",
+        "chance": "12.5%",
+        "amount": "0-2"
+      },
+      {
+        "item": "minecraft:stick",
+        "chance": "25%",
+        "amount": "0-2"
+      }
+    ]
+  },
+  {
+    "id": "minecraft:wither_skeleton",
+    "name": "Wither Skeleton",
+    "type": "hostile",
+    "icon": "/assets/img/mobs/hostile/Wither_Skeleton.webp",
+    "health": 20,
+    "damage": 4,
+    "description": "Nether fortress skeleton • Inflicts wither effect • Wields stone sword • Black skeleton",
+    "version": "1.0.0",
+    "dimension": "Nether",
+    "movement_speed": 0.25,
+    "size": {
+      "width": 0.7,
+      "height": 2.4
+    },
+    "spawn": {
+      "light_level": [
+        "0-15"
+      ],
+      "biome": "Nether Fortress",
+      "structure": "Nether Fortress"
+    },
+    "light_level": [
+      "0-15"
+    ],
+    "fun_fact": "Wither skeletons inflict the wither effect, reducing health over time!",
+    "abilities": [
+      "Wither effect on hit",
+      "Wields stone sword",
+      "Does not burn in lava",
+      "Taller than normal skeletons"
+    ],
+    "drops": [
+      {
+        "item": "minecraft:coal",
+        "chance": "33%",
+        "amount": "0-1"
+      },
+      {
+        "item": "minecraft:bone",
+        "chance": "33%",
+        "amount": "0-2"
+      },
+      {
+        "item": "minecraft:wither_skeleton_skull",
+        "chance": "2.5%",
+        "amount": "1"
+      }
+    ]
+  },
+  {
+    "id": "minecraft:parched",
+    "name": "Parched",
+    "type": "hostile",
+    "icon": "/assets/img/mobs/hostile/Parched.png",
+    "health": 16,
+    "damage": 3,
+    "description": "Undead desert archer • Shoots weakness arrows • Spawns at night and during thunderstorms • Does not burn in sunlight • Halloween pumpkin costume",
+    "version": "1.21.11",
+    "dimension": "Overworld",
+    "movement_speed": 0.25,
+    "size": {
+      "width": 0.6,
+      "height": 1.99
+    },
+    "spawn": {
+      "light_level": [
+        "0-15"
+      ],
+      "biome": "Desert",
+      "structure": "None"
+    },
+    "light_level": [
+      "0-15"
+    ],
+    "fun_fact": "Parched do not burn in sunlight - unlike most undead mobs! Parched can spawn with pumpkin heads on Halloween and shoot weakness arrows!",
+    "abilities": [
+      "Ranged bow attacks",
+      "Weakness arrows cause 30 seconds of Weakness effect",
+      "Melee attacks",
+      "Can spawn with armor and pumpkins",
+      "Immune to sunlight"
+    ],
+    "drops": [
+      {
+        "item": "minecraft:arrow",
+        "chance": "100%",
+        "amount": "0-2"
+      },
+      {
+        "item": "minecraft:bone",
+        "chance": "100%",
+        "amount": "0-2"
+      },
+      {
+        "item": "minecraft:bow",
+        "chance": "8.5%",
+        "amount": "1"
+      },
+      {
+        "item": "minecraft:carved_pumpkin",
+        "chance": "2.25%",
+        "amount": "1"
+      }
+    ]
+  },
+  {
+    "id": "minecraft:zoglin",
+    "name": "Zoglin",
+    "type": "hostile",
+    "icon": "/assets/img/mobs/hostile/Zoglin.webp",
+    "health": 40,
+    "damage": 7,
+    "description": "Undead hoglin variant • Always hostile • Attacks all living things • Overworld beast",
+    "version": "1.16",
+    "dimension": "Overworld",
+    "movement_speed": 0.3,
+    "size": {
+      "width": 0.9,
+      "height": 0.9,
+      "baby": {
+        "width": 0.45,
+        "height": 0.45
+      }
+    },
+    "spawn": {
+      "light_level": [
+        "0-15"
+      ],
+      "biome": "By hoglin transformation",
+      "structure": "None"
+    },
+    "light_level": [
+      "0-15"
+    ],
+    "fun_fact": "Zoglins are created when hoglins leave the Nether and are always hostile!",
+    "abilities": [
+      "Always hostile",
+      "Attacks all living beings",
+      "Strong ram attacks",
+      "Cannot be tamed"
+    ],
+    "drops": [
+      {
+        "item": "minecraft:rotten_flesh",
+        "chance": "100%",
+        "amount": "1-3"
+      },
+      {
+        "item": "minecraft:leather",
+        "chance": "50%",
+        "amount": "0-1"
+      }
+    ]
+  },
+  {
+    "id": "minecraft:zombie",
+    "name": "Zombie",
+    "type": "hostile",
+    "icon": "/assets/img/mobs/hostile/Zombie.webp",
+    "health": 20,
+    "damage": 3,
+    "description": "Classic undead • Slow movement • Burns in sun • Calls reinforcements",
+    "version": "1.0.0",
+    "dimension": "Overworld",
+    "movement_speed": 0.23,
+    "size": {
+      "width": 0.6,
+      "height": 1.95,
+      "baby": {
+        "width": 0.3,
+        "height": 0.975
+      }
+    },
+    "spawn": {
+      "light_level": [
+        "0-15"
+      ],
+      "biome": "All Overworld biomes",
+      "structure": "None"
+    },
+    "light_level": [
+      "0-15"
+    ],
+    "fun_fact": "Zombies can break down doors and call reinforcements when attacked!",
+    "abilities": [
+      "Burns in sunlight",
+      "Calls other zombies",
+      "Can break doors",
+      "Baby zombies are faster"
+    ],
+    "drops": [
+      {
+        "item": "minecraft:rotten_flesh",
+        "chance": "100%",
+        "amount": "0-2"
+      },
+      {
+        "item": "minecraft:carrot",
+        "chance": "12.5%",
+        "amount": "1"
+      },
+      {
+        "item": "minecraft:potato",
+        "chance": "12.5%",
+        "amount": "1"
+      },
+      {
+        "item": "minecraft:iron_ingot",
+        "chance": "2.5%",
+        "amount": "1"
+      }
+    ]
+  },
+  {
+    "id": "minecraft:zombie_villager",
+    "name": "Zombie Villager",
+    "type": "hostile",
+    "icon": "/assets/img/mobs/hostile/Zombie_Villager.webp",
+    "health": 20,
+    "damage": 3,
+    "description": "Infected villager • Can be cured • Various professions • Slow movement",
+    "version": "1.0.0",
+    "dimension": "Overworld",
+    "movement_speed": 0.23,
+    "size": {
+      "width": 0.6,
+      "height": 1.95,
+      "baby": {
+        "width": 0.3,
+        "height": 0.975
+      }
+    },
+    "spawn": {
+      "light_level": [
+        "0-15"
+      ],
+      "biome": "All Overworld biomes",
+      "structure": "None"
+    },
+    "light_level": [
+      "0-15"
+    ],
+    "fun_fact": "Zombie villagers can be cured with a golden apple and a weakness potion!",
+    "abilities": [
+      "Can be cured into normal villager",
+      "Burns in sunlight",
+      "Retains villager profession",
+      "Slow movement"
+    ],
+    "texture": [
+      {
+        "name": "Zombie Villager Default Texture",
+        "description": "Zombie Villager default texture.",
+        "file": "/assets/img/texture/mobs/zombie_villager/zombie_villager.png"
+      }
+    ],
+    "drops": [
+      {
+        "item": "minecraft:rotten_flesh",
+        "chance": "100%",
+        "amount": "0-2"
+      },
+      {
+        "item": "minecraft:carrot",
+        "chance": "12.5%",
+        "amount": "1"
+      },
+      {
+        "item": "minecraft:potato",
+        "chance": "12.5%",
+        "amount": "1"
+      }
+    ]
+  }
+]

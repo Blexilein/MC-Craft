@@ -1,0 +1,278 @@
+    {
+        id: "minecraft:",
+        name: "",
+        type: "passive",
+        icon: "/assets/img/mobs/passive/",
+        health: ,
+        damage: ,
+        description:"",
+        version: "",
+        dimension: "",
+        movement_speed: ,
+        size: { "width": 0.0 , "height": 0.0 },
+      	spawn: {
+        light_level:[ ""],
+        "biome": "",
+        "structure": ""
+        },
+        light_level:[""],
+        fun_fact: "",
+        abilities: [
+            ""
+        ],
+        drops: [
+            { item: "minecraft:", chance: "100%", amount: "0" }
+        ],
+        sounds: [
+            {
+                name: "Muhen",
+                category: "idle",
+                description: "Das typische Kuh-Geräusch",
+                file: "cow_idle.ogg",
+                duration: 1.2,
+                url: "/assets/audio/mobs/cow/idle.ogg"
+            },
+            {
+                name: "Verletzt",
+                category: "hurt",
+                description: "Geräusch wenn die Kuh verletzt wird",
+                file: "cow_hurt.ogg",
+                duration: 0.8,
+                url: "/assets/audio/mobs/cow/hurt.ogg"
+            },
+            {
+                name: "Sterben",
+                category: "death",
+                description: "Sterbe-Geräusch der Kuh",
+                file: "cow_death.ogg",
+                duration: 1.5,
+                url: "/assets/audio/mobs/cow/death.ogg"
+            },
+            {
+                name: "Schritte",
+                category: "step",
+                description: "Schrittgeräusche auf verschiedenen Untergründen",
+                file: "cow_step.ogg",
+                duration: 0.6,
+                url: "/assets/audio/mobs/cow/step.ogg"
+            },
+            {
+                name: "Milch geben",
+                category: "special",
+                description: "Geräusch beim Melken",
+                file: "cow_milk.ogg",
+                duration: 0.9,
+                url: "/assets/audio/mobs/cow/milk.ogg"
+            }
+        ]
+},
+
+sounds: [
+    {
+        name: "Allay Sucht",
+        category: "idle",
+        description: "Zufällig beim Halten eines Gegenstands ()",
+        file: "allay_ambient_with_item.ogg",
+        duration:,
+        url: "/assets/audio/mobs/allay/"
+    },
+]
+
+
+
+// Allgemein
+id
+name
+numeric_id
+type
+category
+icon
+description
+biome
+structure
+dimension
+movement_speed
+size
+aliases
+introduced_date
+removed_date
+gallery
+model
+animation
+source
+updated_at
+notes
+version
+edition
+effects
+effect_immunities
+status
+tags
+related_entries
+command
+
+version_history: [
+    {
+        version,
+        change,
+        type,
+        date
+    }
+]
+
+texture: [
+    {
+        name,
+        category,
+        description,
+        file
+    }
+]
+
+sounds: [
+    {
+        name,
+        category,
+        description,
+        file,
+        duration,
+        url
+    }
+]
+
+effects: [
+    {
+        name,
+        type,
+        level,
+        duration,
+        chance,
+        condition,
+        description
+    }
+]
+
+effect_immunities: [
+    {
+        name,
+        type,
+        level,
+        duration,
+        chance,
+        condition,
+        description
+    }
+]
+
+// Mobs
+health
+damage
+armor
+experience
+dimension
+biome
+movement_speed
+size
+spawn
+light_level
+classification
+renewable
+can_despawn
+tameable
+breedable
+duplicable
+duplication_item
+leashable
+rideable
+baby_variant
+drops
+abilities
+fun_fact
+attack_type
+targets
+enemy_mobs
+follows
+healing_item
+fire_immune
+undead
+boss_bar
+knockback_resistance
+loot_table
+java_entity_id
+bedrock_entity_id
+
+
+// Items
+rarity
+renewable
+stackable
+used_as
+durability
+damage
+attack_speed
+attack_reach
+damage_per_second
+enchantable
+enchantability
+obtain
+crafting_recipe
+repair_material
+upgrade
+enchantments
+incompatible_enchantments
+effects
+hunger
+saturation
+fuel_time
+cooldown
+use_duration
+dispenser_behavior
+compost_chance
+smelting_result
+smelting_time
+trade_info
+container_item
+java_item_id
+bedrock_item_id
+
+
+// Blöcke
+renewable
+stackable
+tool
+best_tool
+requires_correct_tool
+mining_time
+hardness
+blast_resistance
+emits_light
+transparent
+solid
+full_block
+flammable
+lava_flammable
+waterloggable
+gravity
+map_color
+found_in
+drops
+piston_reaction
+mob_spawn
+collision_box
+placement
+interaction
+container_size
+fluid
+instrument
+redstone
+redstone_signal
+signal_strength
+redstone_function
+comparator_output
+block_states
+loot_table
+is_slab
+is_stairs
+is_wall
+java_block_id
+bedrock_block_id

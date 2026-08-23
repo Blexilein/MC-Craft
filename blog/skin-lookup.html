@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html lang="de" data-theme="overworld">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Mohamad Laith AKA 'Blexilein'">
+    <meta name="robots" content="index, follow">
+    <meta name="description" content="Minecraft Skin Lookup - Finde und betrachte Minecraft Java Edition Spieler-Skins.">
+    <meta name="keywords" content="minecraft, skin, lookup, java edition, spieler">
+    <link rel="canonical" href="https://mc-craft.com/blog/skin-lookup.html">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="MC-Craft | Skin Lookup Java Edition">
+    <meta property="og:description" content="Minecraft Skin Lookup - Finde und betrachte Minecraft Java Edition Spieler-Skins.">
+    <meta property="og:url" content="https://mc-craft.com/blog/skin-lookup.html">
+    <meta property="og:image" content="https://mc-craft.com/assets/img/favicon/mc-craft.png">
+    <meta property="og:image:alt" content="MC-Craft Logo">
+    <meta property="og:site_name" content="MC-Craft">
+    <meta property="og:locale" content="de_DE">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="MC-Craft | Skin Lookup Java Edition">
+    <meta name="twitter:description" content="Minecraft Skin Lookup - Finde und betrachte Minecraft Java Edition Spieler-Skins.">
+    <meta name="twitter:image" content="https://mc-craft.com/assets/img/favicon/mc-craft.png">
+    <meta name="theme-color" content="#148200">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicon/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon/favicon-32x32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/assets/img/favicon/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="/assets/img/favicon/android-chrome-512x512.png">
+    <link rel="icon" href="/assets/img/favicon/favicon.ico">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="stylesheet" href="/assets/fontawesome/all.min.css">
+        <link rel="stylesheet" href="/assets/CSS/skin-lookup.css">
+    <link rel="stylesheet" href="/assets/CSS/site-modern-v1.css">
+    <script src="/assets/JS/vendor/skinview3d.bundle.js" defer></script>
+    <title data-i18n="site_title_skinlookup">MC-Craft | Skin Lookup Java Edition</title>
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div class="loader" id="loader">
+        <div class="loader-content">
+            <div class="loading-spinner">
+                <div class="spinner"></div>
+            </div>
+            <p class="loading-text" data-i18n="loader_text1_skinlookup">MC-Craft Skin Lookup wird geladen...</p>
+            <div class="loading-progress"></div>
+        </div>
+    </div>
+
+        <!-- Header -->
+     <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <a href="/index.html" class="logo">
+                    <div class="logo-icon"></div>
+                    <span class="logo-text" data-i18n="site_title_short">MC-Craft</span>
+                </a>
+                <nav class="navigation">
+                    <ul class="nav-list">
+                        <li><a href="/index.html" class="nav-link" data-i18n="nav_home">Home</a></li>
+                        <li class="dropdown">
+                            <button class="dropdown-btn nav-link" data-i18n="tools_dropdown">Werkzeuge</button>
+                            <ul class="dropdown-menu">
+                                <li><a href="/blog/text-converter.html" data-i18n="nav_text_converter">Text Konverter</a></li>
+                                <li><a href="/blog/color-text.html" data-i18n="nav_color_text">Farbtext</a></li>
+                                <li><a href="/blog/items.html" data-i18n="nav_items">Items Datenbank</a></li>
+                                <li><a href="/blog/mobs.html" data-i18n="nav_mobs">Mobs Datenbank</a></li>
+                                <li><a href="/blog/server-status.html" data-i18n="nav_server_status">Server Status</a></li>
+                                <li><a href="/blog/minecraft-api-status.html">Minecraft API Status</a></li>
+                                <li><a href="/blog/skin-lookup.html" data-i18n="nav_skin_lookup">Skin Lookup</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <button class="dropdown-btn nav-link" data-i18n="discover_dropdown">Entdecken</button>
+                            <ul class="dropdown-menu">
+                                <li><a href="/blog/skin-editor.html" data-i18n="nav_skin_editor">Skin Editor</a></li>
+                               <li><a href="/blog/day-night-cycle.html" data-i18n="nav_day_night_cycle">Tag-Nacht-Zyklus</a></li>
+                                <li><a href="/blog/end_poem.html" data-i18n="nav_end_poem">End Poem</a></li>
+                                <li><a href="/blog/minecraft-capes.html" data-i18n="nav_capes">Cape-Datenbank</a></li>
+                                <li><a href="/blog/minecraft-versions.html">Minecraft Versionen</a></li>
+                                <li><a href="/blog/minecraft-skins.html" data-i18n="nav_skins">Skin-Bibliothek</a></li>
+                                <li><a href="/blog/beacon-color-mixer.html" data-i18n="nav_beacon_mixer">Beacon Color Mixer</a></li>
+                                <li><a href="/blog/qr-generator.html">QR Generator</a></li>
+                                <li><a href="/blog/advancement-generator.html">Advancement Generator</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="sound-toggle">
+                    <button class="sound-btn" id="soundBtn" aria-label="Sound ein/aus">
+                        <img src="/assets/img/backgrounds/sound-on.svg" alt="Sound an" class="sound-icon" id="soundIcon">
+                    </button>
+                </div>
+                <div class="lang-switcher">
+                    <button class="lang-btn" id="langBtn" aria-label="Sprache umschalten">
+                        <img src="/assets/img/backgrounds/de.svg" alt="Deutsch" class="flag-icon" id="langFlag">
+                    </button>
+                </div>
+                <div class="theme-switcher">
+                    <button class="theme-btn" id="themeBtn">
+                        <i class="fa-solid fa-palette"></i>
+                    </button>
+                    <div class="theme-dropdown" id="themeDropdown">
+                        <button class="theme-option" data-theme="overworld">
+                            <i class="fas fa-cube"></i>
+                            <span data-i18n="theme_overworld">Overworld</span>
+                        </button>
+                        <button class="theme-option" data-theme="nether">
+                            <i class="fas fa-fire"></i>
+                            <span data-i18n="theme_nether">Nether</span>
+                        </button>
+                        <button class="theme-option" data-theme="end">
+                            <i class="fas fa-moon"></i>
+                            <span data-i18n="theme_end">The End</span>
+                        </button>
+                    </div>
+                </div>
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Navigation -->
+    <div class="mobile-nav" id="mobileNav">
+        <div class="mobile-nav-header">
+            <div class="logo">
+                <div class="logo-icon"></div>
+                <span class="logo-text" data-i18n="site_title_short">MC-Craft</span>
+            </div>
+            <button class="close-btn" id="closeBtn">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <ul class="mobile-nav-list">
+            <li><a href="/index.html" class="mobile-nav-link" data-i18n="nav_home">Home</a></li>
+            <li><a href="/blog/text-converter.html" class="mobile-nav-link" data-i18n="nav_text_converter">Text Konverter</a></li>
+            <li><a href="/blog/color-text.html" class="mobile-nav-link" data-i18n="nav_color_text">Farbtext</a></li>
+            <li><a href="/blog/items.html" class="mobile-nav-link" data-i18n="nav_items">Items Datenbank</a></li>
+            <li><a href="/blog/mobs.html" class="mobile-nav-link" data-i18n="nav_mobs">Mobs Datenbank</a></li>
+            <li><a href="/blog/server-status.html" class="mobile-nav-link" data-i18n="nav_server_status">Server Status</a></li>
+            <li><a href="/blog/minecraft-api-status.html" class="mobile-nav-link">Minecraft API Status</a></li>
+            <li><a href="/blog/skin-lookup.html" class="mobile-nav-link" data-i18n="nav_skin_lookup">Skin Lookup</a></li>
+            <li><a href="/blog/skin-editor.html" class="mobile-nav-link" data-i18n="nav_skin_editor">Skin Editor</a></li>
+            <li><a href="/blog/day-night-cycle.html" class="mobile-nav-link" data-i18n="nav_day_night_cycle">Tag-Nacht-Zyklus</a></li>
+            <li><a href="/blog/end_poem.html" class="mobile-nav-link" data-i18n="nav_end_poem">End Poem</a></li>
+            <li><a href="/blog/minecraft-capes.html" class="mobile-nav-link" data-i18n="nav_capes">Cape-Datenbank</a></li>
+            <li><a href="/blog/minecraft-versions.html" class="mobile-nav-link">Minecraft Versionen</a></li>
+            <li><a href="/blog/minecraft-skins.html" class="mobile-nav-link" data-i18n="nav_skins">Skin-Bibliothek</a></li>
+            <li><a href="/blog/beacon-color-mixer.html" class="mobile-nav-link" data-i18n="nav_beacon_mixer">Beacon Color Mixer</a></li>
+            <li><a href="/blog/qr-generator.html" class="mobile-nav-link">QR Generator</a></li>
+            <li><a href="/blog/advancement-generator.html" class="mobile-nav-link">Advancement Generator</a></li>
+        </ul>
+        <div class="mobile-theme-switcher">
+            <h4 data-i18n="theme_select">Theme auswählen:</h4>
+            <div class="theme-options">
+                <button class="theme-option-btn" data-theme="overworld">
+                    <i class="fas fa-cube"></i> <span data-i18n="theme_overworld">Overworld</span>
+                </button>
+                <button class="theme-option-btn" data-theme="nether">
+                    <i class="fas fa-fire"></i> <span data-i18n="theme_nether">Nether</span>
+                </button>
+                <button class="theme-option-btn" data-theme="end">
+                    <i class="fas fa-moon"></i> <span data-i18n="theme_end">The End</span>
+                </button>
+            </div>
+            <div class="mobile-sound-lang">
+                <button class="mobile-sound-btn" id="mobileSoundBtn">
+                    <img src="/assets/img/backgrounds/sound-on.svg" alt="Sound an" class="sound-icon" id="mobileSoundIcon">
+                    <span data-i18n="sound_toggle">Sound</span>
+                </button>
+                <button class="mobile-lang-btn" id="mobileLangBtn">
+                    <img src="/assets/img/backgrounds/de.svg" alt="Deutsch" class="flag-icon" id="mobileLangFlag">
+                    <span data-i18n="language">Sprache</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+
+    <main class="main">
+        <!-- Hero Section -->
+        <section class="hero" id="home">
+            <div class="hero-bg-grid"></div>
+            <div class="container">
+                <div class="hero-content">
+                <div class="hero-badge" data-i18n="hero_badge">
+                        <span class="hero-badge-dot"></span>
+                        V 1.0.0 IST DA
+                    </div>
+                    <h1 class="hero-title" data-i18n="skinlookup_hero_title">Minecraft <span class="highlight">Skin Lookup</span></h1>
+                    <p class="hero-description" data-i18n="skinlookup_hero_desc">
+                        Finde und betrachte Minecraft Java Edition Spieler-Skins in 3D. Perfekt für Serverbesitzer, 
+                        Content Creator und Spieler, die Skins erkunden möchten.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#lookup" class="btn btn-primary" data-i18n="skinlookup_btn_search">
+                            <i class="fas fa-search"></i> Skin suchen
+                        </a>
+                        <a href="#info" class="btn btn-secondary" data-i18n="skinlookup_btn_info">
+                            <i class="fas fa-info-circle"></i> Informationen
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="hero-grid-staggered">
+                        <div class="hero-stagger-col hero-stagger-left">
+                        <div class="grid-item">
+                            <i class="fas fa-user"></i>
+                            <span data-i18n="skinlookup_grid_3d">3D Skin Viewer</span>
+                        </div>
+                        <div class="grid-item">
+                            <i class="fas fa-rotate"></i>
+                            <span data-i18n="skinlookup_grid_rotate">Interaktiv drehbar</span>
+                        </div>
+                        </div>
+                        <div class="hero-stagger-col hero-stagger-right">
+                        <div class="grid-item">
+                            <i class="fas fa-download"></i>
+                            <span data-i18n="skinlookup_grid_download">Skin Download</span>
+                        </div>
+                        <div class="grid-item">
+                            <i class="fas fa-code"></i>
+                            <span data-i18n="skinlookup_grid_commands">Kopf-Befehle</span>
+                        </div>
+                    </div>
+                        <div class="floating-cube floating-cube-1"></div>
+                        <div class="floating-cube floating-cube-2"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skin Lookup Section -->
+        <section class="skin-lookup-section" id="lookup">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title" data-i18n="skinlookup_section_title">Skin <span class="highlight">Suchen</span></h2>
+                    <p class="section-subtitle" data-i18n="skinlookup_section_subtitle">Gib einen Minecraft-Spielernamen oder UUID ein, um den Skin zu laden</p>
+                </div>
+                
+                <div class="search-container">
+                    <div class="search-box">
+                        <div class="search-input-group">
+                            <i class="fas fa-search search-icon"></i>
+                            <input type="text" id="playerName" class="search-input" data-i18n-placeholder="skinlookup_placeholder" placeholder="Minecraft Spielername oder UUID... (z.B. Blexilein, Notch)">
+                        </div>
+                        <div class="search-buttons">
+                            <button class="btn btn-primary" id="loadButton">
+                                <i class="fas fa-search"></i> <span data-i18n="skinlookup_btn_load">Skin laden</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skin-viewer-container">
+                    <div class="skin-viewer-wrapper">
+                        <!-- 3D Skin Viewer -->
+                        <div class="skin-viewer">
+                            <canvas id="skin_container" class="skin-canvas"></canvas>
+                            <div class="viewer-controls">
+                                <i class="fas fa-mouse-pointer"></i> <span data-i18n="skinlookup_controls_drag">Ziehen zum Rotieren</span> • <i class="fas fa-mouse"></i> <span data-i18n="skinlookup_controls_scroll">Scrollen zum Zoomen</span>
+                            </div>
+                        </div>
+                        
+                        <!-- Player Info -->
+                        <div class="player-info">
+                            <div class="player-info-header">
+                                <h3><i class="fas fa-info-circle"></i> <span data-i18n="skinlookup_playerinfo_title">Spieler Informationen</span></h3>
+                            </div>
+                            <div class="info-grid">
+                                <div class="info-item">
+                                    <div class="info-label">
+                                        <i class="fas fa-user"></i> <span data-i18n="skinlookup_label_username">Spieler Name</span>
+                                    </div>
+                                    <div class="info-value" id="username">-</div>
+                                </div>
+                                <div class="info-item">
+                                    <div class="info-label">
+                                        <i class="fas fa-fingerprint"></i> UUID
+                                    </div>
+                                    <div class="info-value" id="uuid">-</div>
+                                </div>
+                                <div class="info-item">
+                                    <div class="info-label">
+                                        <i class="fas fa-id-card"></i> <span data-i18n="skinlookup_label_trimmed">Trimmed UUID</span>
+                                    </div>
+                                    <div class="info-value" id="fullUuid">-</div>
+                                </div>
+                                <div class="info-item">
+                                    <div class="info-label">
+                                        <i class="fas fa-paint-brush"></i> <span data-i18n="skinlookup_label_custom">Custom Skin</span>
+                                    </div>
+                                    <div class="info-value" id="customSkin">-</div>
+                                </div>
+                                <div class="info-item">
+                                    <div class="info-label">
+                                        <i class="fas fa-vector-square"></i> <span data-i18n="skinlookup_label_model">Skin Modell</span>
+                                    </div>
+                                    <div class="info-value" id="slimModel">-</div>
+                                </div>
+                                <div class="info-item">
+                                    <div class="info-label">
+                                        <i class="fas fa-history"></i> <span data-i18n="skinlookup_label_history">Name History</span>
+                                    </div>
+                                    <div class="info-value" id="nameHistory" data-i18n="skinlookup_namehistory">Mojang hat die Name History API am 13. September 2022 deaktiviert</div>
+                                </div>
+                            </div>
+
+                            <div class="animation-mode-row">
+                                <label for="animationModeSelect" class="animation-mode-label">
+                                    <i class="fas fa-person-running"></i> <span data-i18n="skinlookup_anim_mode_label">Bewegung</span>
+                                </label>
+                                <select id="animationModeSelect" class="animation-mode-select">
+                                    <option value="walk" data-i18n="skinlookup_anim_walk">Laufen</option>
+                                    <option value="run" data-i18n="skinlookup_anim_run">Rennen</option>
+                                    <option value="fly" data-i18n="skinlookup_anim_fly">Fliegen</option>
+                                    <option value="swim" data-i18n="skinlookup_anim_swim">Schwimmen</option>
+                                    <option value="sneak" data-i18n="skinlookup_anim_sneak">Schleichen</option>
+                                </select>
+                            </div>
+
+                            <div class="viewer-action-buttons">
+                                <button class="btn btn-secondary" id="toggleAnimButton">
+                                    <i class="fas fa-pause"></i> <span data-i18n="skinlookup_btn_pause">Animation pausieren</span>
+                                </button>
+                                <button class="btn btn-secondary" id="rotateBtn">
+                                    <span data-i18n="skinlookup_btn_rotate">Drehung:</span> <span id="rotateStatus" data-i18n="skinlookup_rotate_on">An</span>
+                                    <i class="fas fa-sync"></i>
+                                </button>
+                                <button class="btn btn-outline" id="toggleLayerBtn">
+                                    <i class="fas fa-layer-group"></i> <span data-i18n="skinlookup_btn_layer">2. Layer:</span> <span id="layerStatus" data-i18n="skinlookup_rotate_on">An</span>
+                                </button>
+                            </div>
+                            
+                            <div class="action-buttons">
+                                <button class="btn btn-outline" data-target="username">
+                                    <i class="fas fa-copy"></i> <span data-i18n="skinlookup_copy_username">Name kopieren</span>
+                                </button>
+                                <button class="btn btn-outline" data-target="uuid">
+                                    <i class="fas fa-copy"></i> UUID kopieren
+                                </button>
+                                <button class="btn btn-outline" data-target="fullUuid">
+                                    <i class="fas fa-copy"></i> <span data-i18n="skinlookup_copy_trimmed">Trimmed UUID kopieren</span>
+                                </button>
+                                <button class="btn btn-primary" id="downloadSkinBtn">
+                                    <i class="fas fa-download"></i> <span data-i18n="skinlookup_download">Skin downloaden</span>
+                                </button>
+                                <button class="btn btn-outline" id="downloadCapeBtn" style="display:none;">
+                                    <i class="fas fa-download"></i> <span data-i18n="toast_download_cape">Cape downloaden</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Command Block Section -->
+                    <div class="command-block-section">
+                        <div class="command-block-header">
+                            <h3><i class="fas fa-code"></i> <span data-i18n="skinlookup_command_title">Kopf-Befehl Generator</span></h3>
+                            <p class="section-subtitle" data-i18n="skinlookup_command_subtitle">Erstelle einen Befehl für den Spielerkopf</p>
+                        </div>
+                        
+                        <div class="command-box">
+                            <div class="command-display">
+                                <code id="commandOutput">/give @p minecraft:player_head{SkullOwner:""}</code>
+                            </div>
+                            <div class="command-actions">
+                                <button class="btn btn-outline" data-target="commandOutput">
+                                    <i class="fas fa-copy"></i> <span data-i18n="skinlookup_copy_command">Befehl kopieren</span>
+                                </button>
+                            </div>
+                        </div>
+                        
+                        <div class="version-selector">
+                            <label for="mcVersion" data-i18n="skinlookup_version_label">Minecraft Version:</label>
+                            <select id="mcVersion" class="version-select">
+                                <option value="1.8-1.12" data-i18n="skinlookup_version_1812">1.8 - 1.12</option>
+                                <option value="1.13-1.20.4" data-i18n="skinlookup_version_113204">1.13 - 1.20.4</option>
+                                <option value="1.20.5+" selected data-i18n="skinlookup_version_205plus">1.20.5 - 1.21 +</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tips Section -->
+                <div class="tips">
+                    <h4><i class="fas fa-lightbulb"></i> <span data-i18n="skinlookup_tips_title">Tipps & Tricks</span></h4>
+                    <ul>
+                        <li data-i18n="skinlookup_tip1">Du kannst entweder den Spielernamen oder die UUID eingeben</li>
+                        <li data-i18n="skinlookup_tip2">Skins werden in Echtzeit von den offiziellen Minecraft-Servern geladen</li>
+                        <li data-i18n="skinlookup_tip3">Nutze die generierten Befehle für Spielerköpfe in deinen Welten</li>
+                        <li data-i18n="skinlookup_tip4">Pro-Tipp: Lade deinen eigenen Skin herunter, um ihn zu bearbeiten</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="info-section" id="info">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title" data-i18n="skinlookup_info_title">Über <span class="highlight">Skin Lookup</span></h2>
+                    <p class="section-subtitle" data-i18n="skinlookup_info_subtitle">Wie unsere Technologie funktioniert</p>
+                </div>
+                
+                <div class="info-grid-container">
+                    <div class="info-card">
+                        <div class="info-card-icon">
+                            <i class="fas fa-question-circle"></i>
+                        </div>
+                        <h4 data-i18n="skinlookup_info_card1_title">Was sind Minecraft Skins?</h4>
+                        <p data-i18n="skinlookup_info_card1_desc">Skins sind Texturen, die das Aussehen deines Minecraft-Charakters verändern. Jeder Spieler kann seinen eigenen Skin hochladen und anpassen.</p>
+                    </div>
+                    
+                    <div class="info-card">
+                        <div class="info-card-icon">
+                            <i class="fas fa-user-check"></i>
+                        </div>
+                        <h4 data-i18n="skinlookup_info_card2_title">Steve vs. Alex Modell</h4>
+                        <p data-i18n="skinlookup_info_card2_desc">Es gibt zwei Grundmodelle: Steve (breite Arme) und Alex (schlanke Arme). Unser Viewer erkennt automatisch, welches Modell verwendet wird.</p>
+                    </div>
+                    
+                    <div class="info-card">
+                        <div class="info-card-icon">
+                            <i class="fas fa-database"></i>
+                        </div>
+                        <h4 data-i18n="skinlookup_info_card3_title">PlayerDB API</h4>
+                        <p><span data-i18n="skinlookup_info_card3_desc1">Wir verwenden</span> <a href="https://playerdb.co" target="_blank" style="color: var(--primary);">PlayerDB</a> <span data-i18n="skinlookup_info_card3_desc2">als CORS-kompatiblen Proxy, der UUID, Spielername und Skin-Texturdaten von den offiziellen Mojang-Servern abruft.</span></p>
+                    </div>
+                    
+                    <div class="info-card">
+                        <div class="info-card-icon">
+                            <i class="fas fa-images"></i>
+                        </div>
+                        <h4 data-i18n="skinlookup_info_card4_title">Mojang Textur-CDN</h4>
+                        <p><span data-i18n="skinlookup_info_card4_desc1">Die eigentliche Skin-Datei kommt direkt von</span> <a href="https://textures.minecraft.net" target="_blank" style="color: var(--primary);">textures.minecraft.net</a><span data-i18n="skinlookup_info_card4_desc2"> – Mojangs offiziellem Textur-Server.</span></p>
+                    </div>
+                    
+                    <div class="info-card">
+                        <div class="info-card-icon">
+                            <i class="fas fa-cube"></i>
+                        </div>
+                        <h4 data-i18n="skinlookup_info_card5_title">SkinView3D Renderer</h4>
+                        <p><span data-i18n="skinlookup_info_card5_desc1">Der 3D-Viewer basiert auf</span> <a href="https://github.com/bs-community/skinview3d" target="_blank" style="color: var(--primary);">SkinView3D</a>, <span data-i18n="skinlookup_info_card5_desc2">einer WebGL-Bibliothek, die Skins in Echtzeit rendert.</span></p>
+                    </div>
+                    
+                    <div class="info-card">
+                        <div class="info-card-icon">
+                            <i class="fas fa-server"></i>
+                        </div>
+                        <h4 data-i18n="skinlookup_info_card6_title">Mojang Daten, Browser-kompatibel</h4>
+                        <p><span data-i18n="skinlookup_info_card6_desc1">Da Browser den Mojang Session Server nicht direkt aufrufen dürfen (CORS), nutzen wir</span> <a href="https://playerdb.co" target="_blank" style="color: var(--primary);">PlayerDB</a> <span data-i18n="skinlookup_info_card6_desc2">als Mittelsmann – die Skin-Daten stammen trotzdem ausschließlich von Mojang.</span></p>
+                    </div>
+                    <div class="info-card">
+                        <div class="info-card-icon">
+                            <i class="fas fa-head-side-mask"></i>
+                        </div>
+                        <h4 data-i18n="skinlookup_info_card7_title">Spielerköpfe</h4>
+                        <p data-i18n="skinlookup_info_card7_desc">Mit den generierten Befehlen kannst du Spielerköpfe in deiner Welt platzieren. Perfekt für Galerien oder Dekoration.</p>
+                    </div>
+                </div>
+
+                <!-- API Tabelle -->
+                <div class="api-table-container" style="margin-top: 3rem;">
+                    <h3 style="text-align: center; margin-bottom: 2rem; color: var(--text-primary);" data-i18n="skinlookup_api_table_title">Verwendete APIs im Detail</h3>
+                    <div class="table-responsive" style="overflow-x: auto;">
+                        <table style="width: 100%; border-collapse: collapse; background-color: var(--bg-card); border-radius: var(--radius-md); overflow: hidden;">
+                            <thead>
+                                <tr style="background-color: var(--primary); color: white;">
+                                    <th style="padding: 1rem; text-align: left;" data-i18n="skinlookup_api_service">Service</th>
+                                    <th style="padding: 1rem; text-align: left;" data-i18n="skinlookup_api_url">URL</th>
+                                    <th style="padding: 1rem; text-align: left;" data-i18n="skinlookup_api_usage">Verwendung</th>
+                                    <th style="padding: 1rem; text-align: left;" data-i18n="skinlookup_api_example">Beispiel</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr style="border-bottom: 1px solid var(--border-color);">
+                                    <td style="padding: 1rem; color: var(--text-primary);">PlayerDB API</td>
+                                    <td style="padding: 1rem;">
+                                        <code style="background-color: var(--bg-surface); padding: 0.25rem 0.5rem; border-radius: var(--radius-sm); font-size: 0.875rem;">
+                                            https://playerdb.co/api/player/minecraft/
+                                        </code>
+                                    </td>
+                                    <td style="padding: 1rem; color: var(--text-secondary);" data-i18n="skinlookup_api_playerdata">Spielerdaten abrufen</td>
+                                    <td style="padding: 1rem;">
+                                        <code style="background-color: var(--bg-surface); padding: 0.25rem 0.5rem; border-radius: var(--radius-sm); font-size: 0.875rem;">
+                                            /api/player/minecraft/Notch
+                                        </code>
+                                    </td>
+                                </tr>
+                                <tr style="border-bottom: 1px solid var(--border-color);">
+                                    <td style="padding: 1rem; color: var(--text-primary);">Mojang Textur-CDN</td>
+                                    <td style="padding: 1rem;">
+                                        <code style="background-color: var(--bg-surface); padding: 0.25rem 0.5rem; border-radius: var(--radius-sm); font-size: 0.875rem;">
+                                            https://textures.minecraft.net/
+                                        </code>
+                                    </td>
+                                    <td style="padding: 1rem; color: var(--text-secondary);" data-i18n="skinlookup_api_skin">Skin-Textur abrufen</td>
+                                    <td style="padding: 1rem;">
+                                        <code style="background-color: var(--bg-surface); padding: 0.25rem 0.5rem; border-radius: var(--radius-sm); font-size: 0.875rem;">
+                                            /texture/{hash}
+                                        </code>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 1rem; color: var(--text-primary);">SkinView3D</td>
+                                    <td style="padding: 1rem;">
+                                        <code style="background-color: var(--bg-surface); padding: 0.25rem 0.5rem; border-radius: var(--radius-sm); font-size: 0.875rem;">
+                                            /assets/JS/vendor/skinview3d.bundle.js
+                                        </code>
+                                    </td>
+                                    <td style="padding: 1rem; color: var(--text-secondary);" data-i18n="skinlookup_api_3d">3D-Rendering</td>
+                                    <td style="padding: 1rem;">
+                                        <span style="color: var(--text-secondary); font-size: 0.875rem;" data-i18n="skinlookup_api_selfhosted">Lokal gehostet, keine externe Anfrage</span>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                        
+                <!-- Funktionsweise-Diagramm -->
+                <div class="workflow-diagram" style="margin-top: 3rem; padding: 2rem; background-color: var(--bg-card); border-radius: var(--radius-lg); border: 1px solid var(--border-color);">
+                    <h3 style="text-align: center; margin-bottom: 2rem; color: var(--text-primary);" data-i18n="skinlookup_workflow_title">So funktioniert unser System</h3>
+                    <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 1rem; position: relative;">
+                        
+                        <!-- Schritt 1 -->
+                        <div style="flex: 1; min-width: 200px; text-align: center;">
+                            <div style="width: 60px; height: 60px; background-color: var(--primary); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem; color: white; font-weight: bold; font-size: 1.25rem;">1</div>
+                            <h4 style="color: var(--text-primary); margin-bottom: 0.5rem;" data-i18n="skinlookup_step1_title">Eingabe</h4>
+                            <p style="color: var(--text-secondary); font-size: 0.875rem;" data-i18n="skinlookup_step1_desc">Spielername wird eingegeben</p>
+                        </div>
+                        
+                        <!-- Pfeil -->
+                        <div style="flex: 0 0 auto; color: var(--primary); font-size: 1.5rem;">
+                            <i class="fas fa-arrow-right"></i>
+                        </div>
+                        
+                        <!-- Schritt 2 -->
+                        <div style="flex: 1; min-width: 200px; text-align: center;">
+                            <div style="width: 60px; height: 60px; background-color: var(--primary); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem; color: white; font-weight: bold; font-size: 1.25rem;">2</div>
+                            <h4 style="color: var(--text-primary); margin-bottom: 0.5rem;" data-i18n="skinlookup_step2_title">API-Abfrage</h4>
+                            <p style="color: var(--text-secondary); font-size: 0.875rem;" data-i18n="skinlookup_step2_desc">Mojang API liefert UUID & Textur</p>
+                        </div>
+                        
+                        <!-- Pfeil -->
+                        <div style="flex: 0 0 auto; color: var(--primary); font-size: 1.5rem;">
+                            <i class="fas fa-arrow-right"></i>
+                        </div>
+                        
+                        <!-- Schritt 3 -->
+                        <div style="flex: 1; min-width: 200px; text-align: center;">
+                            <div style="width: 60px; height: 60px; background-color: var(--primary); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem; color: white; font-weight: bold; font-size: 1.25rem;">3</div>
+                            <h4 style="color: var(--text-primary); margin-bottom: 0.5rem;" data-i18n="skinlookup_step3_title">Skin-Abruf</h4>
+                            <p style="color: var(--text-secondary); font-size: 0.875rem;" data-i18n="skinlookup_step3_desc">Mojang CDN liefert Skin direkt</p>
+                        </div>
+                        
+                        <!-- Pfeil -->
+                        <div style="flex: 0 0 auto; color: var(--primary); font-size: 1.5rem;">
+                            <i class="fas fa-arrow-right"></i>
+                        </div>
+                        
+                        <!-- Schritt 4 -->
+                        <div style="flex: 1; min-width: 200px; text-align: center;">
+                            <div style="width: 60px; height: 60px; background-color: var(--primary); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem; color: white; font-weight: bold; font-size: 1.25rem;">4</div>
+                            <h4 style="color: var(--text-primary); margin-bottom: 0.5rem;" data-i18n="skinlookup_step4_title">3D-Rendering</h4>
+                            <p style="color: var(--text-secondary); font-size: 0.875rem;" data-i18n="skinlookup_step4_desc">SkinView3D zeigt Skin in 3D</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta">
+            <div class="container">
+                <div class="cta-content">
+                    <h2 class="cta-title" data-i18n="skinlookup_cta_title">Mehr Minecraft <span class="highlight">Tools</span> entdecken?</h2>
+                    <p class="cta-description" data-i18n="skinlookup_cta_desc">
+                        MC-Craft bietet dir viele weitere nützliche Tools für dein Minecraft-Abenteuer.
+                    </p>
+                    <div class="cta-buttons">
+                        <a href="/blog/skin-editor.html" class="btn btn-primary btn-large" data-i18n="skinlookup_cta_btn_editor">
+                            <i class="fas fa-edit"></i> Skin Editor
+                        </a>
+                        <a href="/index.html#tools" class="btn btn-outline" data-i18n="skinlookup_cta_btn_all">
+                            <i class="fas fa-eye"></i> Alle Tools ansehen
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+        <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-grid">
+                    <!-- Column 1 -->
+                    <div class="footer-col">
+                        <div class="footer-logo">
+                            <div class="logo-icon"></div>
+                            <span class="logo-text" data-i18n="site_title_short">MC-Craft</span>
+                        </div>
+                        <p class="footer-description" data-i18n="footer_description">Kostenlose Minecraft-Tools für die Community. Entwickelt von Spielern für Spieler.</p>
+                        <div class="social-links">
+                           <a href="https://github.com/Blexilein" class="social-link" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                            <a href="https://discord.gg/eVVpQD75w4" class="social-link"><i class="fab fa-discord"></i></a>
+                            <a href="https://x.com/Blexi_1" class="social-link" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        </div>
+                    </div>
+                    <!-- Column 2 -->
+                    <div class="footer-col">
+                        <h4 class="footer-title" data-i18n="footer_tools">Tools</h4>
+                        <ul class="footer-links">
+                            <li><a href="/blog/text-converter.html" data-i18n="nav_text_converter">Text Konverter</a></li>
+                            <li><a href="/blog/color-text.html" data-i18n="nav_color_text">Farbtext-Konverter</a></li>
+                            <li><a href="/blog/items.html" data-i18n="nav_items">Items Datenbank</a></li>
+                            <li><a href="/blog/mobs.html" data-i18n="nav_mobs">Mobs Datenbank</a></li>
+                            <li><a href="/blog/day-night-cycle.html" data-i18n="nav_day_night_cycle">Tag-Nacht-Zyklus</a></li>
+                            <li><a href="/blog/beacon-color-mixer.html" data-i18n="nav_beacon_mixer">Beacon Color Mixer</a></li>
+                                <li><a href="/blog/qr-generator.html">QR Generator</a></li>
+                                <li><a href="/blog/advancement-generator.html">Advancement Generator</a></li>
+                        </ul>
+                    </div>
+                    <!-- Column 3 -->
+                    <div class="footer-col">
+                        <h4 class="footer-title" data-i18n="footer_more_tools">Mehr Tools</h4>
+                        <ul class="footer-links">
+                            <li><a href="/blog/server-status.html" data-i18n="nav_server_status">Server Status</a></li>
+                                <li><a href="/blog/minecraft-api-status.html">Minecraft API Status</a></li>
+                            <li><a href="/blog/skin-lookup.html" data-i18n="nav_skin_lookup">Skin Lookup</a></li>
+                            <li><a href="/blog/skin-editor.html" data-i18n="nav_skin_editor">Skin Editor</a></li>
+                            <li><a href="/blog/minecraft-skins.html" data-i18n="skins_library_title">Skin Galerie</a></li>
+                            <li><a href="/blog/minecraft-capes.html" data-i18n="capes_db_title">Cape Galerie</a></li>
+                            <li><a href="/blog/minecraft-versions.html">Minecraft Versionen</a></li>
+                            <li><a href="/blog/end_poem.html" data-i18n="nav_end_poem">End Poem</a></li>
+                        </ul>
+                    </div>
+                    <!-- Column 4 -->
+                    <div class="footer-col">
+                        <h4 class="footer-title" data-i18n="footer_legal">Rechtliches</h4>
+                        <ul class="footer-links">
+                            <li><a href="/blog/impressum.html" data-i18n="footer_impressum">Impressum</a></li>
+                            <li><a href="/blog/datenschutz.html" data-i18n="footer_privacy">Datenschutz</a></li>
+                            <li><a href="/blog/nutzungsbedingungen.html" data-i18n="footer_terms">Nutzungsbedingungen</a></li>
+                            <li><a href="/blog/copyright.html" data-i18n="footer_copyright">Copyright</a></li>
+                        </ul>
+                    </div>
+                    <!-- Column 5 -->
+                    <div class="footer-col">
+                        <h4 class="footer-title" data-i18n="footer_about">Über Uns</h4>
+                        <ul class="footer-links">
+                            <li><a href="/blog/history.html" data-i18n="footer_history">MC-Craft Geschichte</a></li>
+                            <li><a href="/blog/team.html" data-i18n="footer_team">Unser Team</a></li>
+                            <li><a href="/blog/about.html" data-i18n="footer_about_us">Über uns</a></li>
+                        </ul>
+                    </div>
+                    <!-- Column 6 -->
+                    <div class="footer-col">
+                        <h4 class="footer-title" data-i18n="footer_support">Support</h4>
+                        <ul class="footer-links">
+                            <li><a href="/blog/faq.html" data-i18n="footer_faq">FAQ & Hilfe</a></li>
+                            <li><a href="/blog/bug-report.html" data-i18n="footer_bug">Bug melden</a></li>
+                            <li><a href="/blog/support.html" data-i18n="footer_support_contact">Support Kontakt</a></li>
+                            <li><a href="/blog/e-mails.html">E-mails</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <div class="copyright">
+                        <p>&copy; <span id="currentYear">2026</span> MC-Craft. <span data-i18n="footer_rights">Alle Rechte vorbehalten.</span></p>
+                        <p class="disclaimer" data-i18n="footer_disclaimer">Minecraft ist eine Marke von Mojang Studios. Diese Seite ist nicht offiziell mit Mojang oder Microsoft verbunden.</p>
+                    </div>
+                    <div class="footer-meta">
+                        <span class="version" data-i18n="footer_version">Version 1.0.0</span>
+                        <a href="/blog/changelog.html" class="changelog active" data-i18n="footer_changelog">Changelog</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+
+    <button class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Notification Toast -->
+    <div class="toast-container" id="toastContainer"></div>
+
+    <!-- JavaScript -->
+    <script src="/assets/JS/modules/mc-preferences.js"></script>
+    <script src="/assets/JS/modules/skin-lookup.js" defer></script>
+</body>
+</html>

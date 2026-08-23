@@ -1,0 +1,370 @@
+[
+  {
+    "id": "steve",
+    "name_de": "Steve",
+    "name_en": "Steve",
+    "description_de": "Das Original – Steve, der klassische Minecraft-Charakter.",
+    "description_en": "The original – Steve, the classic Minecraft character.",
+    "type": "character",
+    "category": "character",
+    "model": "Steve",
+    "tags_de": [
+      "Klassisch",
+      "Standard",
+      "Original"
+    ],
+    "tags_en": [
+      "Classic",
+      "Default",
+      "Original"
+    ],
+    "thumbnailUrl": "/assets/img/skins/Steve_skin.png",
+    "skinUrl": "/assets/img/skins/Steve_classic_texture.png",
+    "featured": true
+  },
+  {
+    "id": "alex",
+    "name_de": "Alex",
+    "name_en": "Alex",
+    "description_de": "Die Abenteurerin mit schlankem Arm-Modell.",
+    "description_en": "The adventurer with the slim arm model.",
+    "type": "character",
+    "category": "character",
+    "model": "Slim",
+    "tags_de": [
+      "Klassisch",
+      "Standard",
+      "Abenteurer"
+    ],
+    "tags_en": [
+      "Classic",
+      "Default",
+      "Adventurer"
+    ],
+    "thumbnailUrl": "/assets/img/skins/Alex_skin.png",
+    "skinUrl": "/assets/img/skins/Alex_slim_texture.png",
+    "featured": true
+  },
+  {
+    "id": "ari",
+    "name_de": "Ari",
+    "name_en": "Ari",
+    "description_de": "Ari – ein moderner Charakter mit einem einzigartigen Stil.",
+    "description_en": "Ari – a modern character with a unique style.",
+    "type": "character",
+    "category": "character",
+    "model": "Slim",
+    "tags_de": [
+      "Modern",
+      "Einzigartig"
+    ],
+    "tags_en": [
+      "Modern",
+      "Unique"
+    ],
+    "thumbnailUrl": "/assets/img/skins/Ari_skin.png",
+    "skinUrl": "/assets/img/skins/Ari_slim_texture.png",
+    "featured": false
+  },
+  {
+    "id": "efe",
+    "name_de": "Efe",
+    "name_en": "Efe",
+    "description_de": "Efe – ein cooler Look mit farbenfrohen Akzenten.",
+    "description_en": "Efe – a cool look with colorful accents.",
+    "type": "character",
+    "category": "character",
+    "model": "Slim",
+    "tags_de": [
+      "Farbenfroh",
+      "Cool"
+    ],
+    "tags_en": [
+      "Colorful",
+      "Cool"
+    ],
+    "thumbnailUrl": "/assets/img/skins/Efe_skin.png",
+    "skinUrl": "/assets/img/skins/Efe_slim_texture.png",
+    "featured": false
+  },
+  {
+    "id": "kai",
+    "name_de": "Kai",
+    "name_en": "Kai",
+    "description_de": "Kai – ein dynamischer Charakter mit sportlichem Design.",
+    "description_en": "Kai – a dynamic character with a sporty design.",
+    "type": "character",
+    "category": "character",
+    "model": "Slim",
+    "tags_de": [
+      "Sportlich",
+      "Dynamisch"
+    ],
+    "tags_en": [
+      "Sporty",
+      "Dynamic"
+    ],
+    "thumbnailUrl": "/assets/img/skins/Kai_skin.png",
+    "skinUrl": "/assets/img/skins/Kai_slim_texture.png",
+    "featured": false
+  },
+  {
+    "id": "makena",
+    "name_de": "Makena",
+    "name_en": "Makena",
+    "description_de": "Makena – selbstbewusst und mit einem stylischen Outfit.",
+    "description_en": "Makena – confident and with a stylish outfit.",
+    "type": "character",
+    "category": "character",
+    "model": "Slim",
+    "tags_de": [
+      "Stilvoll",
+      "Selbstbewusst"
+    ],
+    "tags_en": [
+      "Stylish",
+      "Confident"
+    ],
+    "thumbnailUrl": "/assets/img/skins/Makena_skin.png",
+    "skinUrl": "/assets/img/skins/Makena_slim_texture.png",
+    "featured": false
+  },
+  {
+    "id": "noor",
+    "name_de": "Noor",
+    "name_en": "Noor",
+    "description_de": "Noor – ein eleganter Charakter mit warmen Farben.",
+    "description_en": "Noor – an elegant character with warm colors.",
+    "type": "character",
+    "category": "character",
+    "model": "Slim",
+    "tags_de": [
+      "Elegant",
+      "Warm"
+    ],
+    "tags_en": [
+      "Elegant",
+      "Warm"
+    ],
+    "thumbnailUrl": "/assets/img/skins/Noor_skin.png",
+    "skinUrl": "/assets/img/skins/Noor_slim_texture.png",
+    "featured": false
+  },
+  {
+    "id": "sunny",
+    "name_de": "Sunny",
+    "name_en": "Sunny",
+    "description_de": "Sunny – fröhlich und voller Energie mit einem sonnigen Look.",
+    "description_en": "Sunny – cheerful and full of energy with a sunny look.",
+    "type": "character",
+    "category": "character",
+    "model": "Slim",
+    "tags_de": [
+      "Fröhlich",
+      "Energiegeladen"
+    ],
+    "tags_en": [
+      "Cheerful",
+      "Energetic"
+    ],
+    "thumbnailUrl": "/assets/img/skins/Sunny_skin.png",
+    "skinUrl": "/assets/img/skins/Sunny_slim_texture.png",
+    "featured": false
+  },
+  {
+    "id": "zuri",
+    "name_de": "Zuri",
+    "name_en": "Zuri",
+    "description_de": "Zuri – modern und kreativ mit einem einzigartigen Stil.",
+    "description_en": "Zuri – modern and creative with a unique style.",
+    "type": "character",
+    "category": "character",
+    "model": "Slim",
+    "tags_de": [
+      "Kreativ",
+      "Modern"
+    ],
+    "tags_en": [
+      "Creative",
+      "Modern"
+    ],
+    "thumbnailUrl": "/assets/img/skins/Zuri_skin.png",
+    "skinUrl": "/assets/img/skins/Zuri_slim_texture.png",
+    "featured": false
+  },
+  {
+    "id": "copper-chemist",
+    "name_de": "Copper Chemist",
+    "name_en": "Copper Chemist",
+    "description_de": "Ein wissenschaftlicher Skin mit Kupfer-Details und Labor-Design.",
+    "description_en": "A scientific skin with copper details and laboratory design.",
+    "type": "steampunk",
+    "category": "steampunk",
+    "model": "Steve",
+    "tags_de": [
+      "Chemie",
+      "Wissenschaft",
+      "Labor",
+      "Steampunk"
+    ],
+    "tags_en": [
+      "Chemistry",
+      "Science",
+      "Laboratory",
+      "Steampunk"
+    ],
+    "thumbnailUrl": "/assets/img/skins/Copper_Chemist_skin.png",
+    "skinUrl": "/assets/img/skins/Copper_Chemist.png",
+    "featured": true
+  },
+  {
+    "id": "copper-chemist-variant",
+    "name_de": "Copper Chemist Variant",
+    "name_en": "Copper Chemist Variant",
+    "description_de": "Alternative Version des Copper Chemist Skins.",
+    "description_en": "Alternative version of the Copper Chemist skin.",
+    "type": "steampunk",
+    "category": "steampunk",
+    "model": "Steve",
+    "tags_de": [
+      "Chemie",
+      "Wissenschaft",
+      "Labor",
+      "Steampunk"
+    ],
+    "tags_en": [
+      "Chemistry",
+      "Science",
+      "Laboratory",
+      "Steampunk"
+    ],
+    "thumbnailUrl": "/assets/img/skins/Copper_Chemist_2_skin.png",
+    "skinUrl": "/assets/img/skins/Copper_Chemist_2.png",
+    "featured": false
+  },
+  {
+    "id": "creaking",
+    "name_de": "Creaking",
+    "name_en": "Creaking",
+    "description_de": "Ein geheimnisvoller Skin mit knarrenden Holzelementen.",
+    "description_en": "A mysterious skin with creaking wooden elements.",
+    "type": "fantasy",
+    "category": "fantasy",
+    "model": "Steve",
+    "tags_de": [
+      "Mystisch",
+      "Wald",
+      "Natur",
+      "Geheimnis"
+    ],
+    "tags_en": [
+      "Mystic",
+      "Forest",
+      "Nature",
+      "Secret"
+    ],
+    "thumbnailUrl": "/assets/img/skins/Creaking_skin.png",
+    "skinUrl": "/assets/img/skins/Creaking.png",
+    "featured": false
+  },
+  {
+    "id": "ghastriding-swimmer",
+    "name_de": "Ghastriding Swimmer",
+    "name_en": "Ghastriding Swimmer",
+    "description_de": "Ein einzigartiger Skin der einen Ghast-reitenden Schwimmer zeigt.",
+    "description_en": "A unique skin showing a Ghast-riding swimmer.",
+    "type": "fantasy",
+    "category": "fantasy",
+    "model": "Steve",
+    "tags_de": [
+      "Ghast",
+      "Nether",
+      "Schwimmer",
+      "Kreativ"
+    ],
+    "tags_en": [
+      "Ghast",
+      "Nether",
+      "Swimmer",
+      "Creative"
+    ],
+    "thumbnailUrl": "/assets/img/skins/Ghastriding_Swimmer_skin.png",
+    "skinUrl": "/assets/img/skins/Ghastriding_Swimmer.png",
+    "featured": true
+  },
+  {
+    "id": "happy-ghast",
+    "name_de": "Happy Ghast",
+    "name_en": "Happy Ghast",
+    "description_de": "Ein fröhlicher Ghast-Skin mit freundlichem Design.",
+    "description_en": "A cheerful Ghast skin with a friendly design.",
+    "type": "fantasy",
+    "category": "fantasy",
+    "model": "Steve",
+    "tags_de": [
+      "Ghast",
+      "Glücklich",
+      "Nether",
+      "Niedlich"
+    ],
+    "tags_en": [
+      "Ghast",
+      "Happy",
+      "Nether",
+      "Cute"
+    ],
+    "thumbnailUrl": "/assets/img/skins/Happy_Ghast_skin.png",
+    "skinUrl": "/assets/img/skins/Happy_Ghast.png",
+    "featured": false
+  },
+  {
+    "id": "lumberjack",
+    "name_de": "Lumberjack",
+    "name_en": "Lumberjack",
+    "description_de": "Ein klassischer Holzfäller-Skin mit Flanellhemd und Bart.",
+    "description_en": "A classic lumberjack skin with flannel shirt and beard.",
+    "type": "profession",
+    "category": "profession",
+    "model": "Steve",
+    "tags_de": [
+      "Holzfäller",
+      "Wald",
+      "Arbeit",
+      "Tradition"
+    ],
+    "tags_en": [
+      "Lumberjack",
+      "Forest",
+      "Work",
+      "Tradition"
+    ],
+    "thumbnailUrl": "/assets/img/skins/Lumberjack_skin.png",
+    "skinUrl": "/assets/img/skins/Lumberjack.png",
+    "featured": false
+  },
+  {
+    "id": "zombie-horse",
+    "name_de": "Zombie Horse",
+    "name_en": "Zombie Horse",
+    "description_de": "Ein gruseliger Skin basierend auf einem Zombie-Pferd.",
+    "description_en": "A spooky skin based on a zombie horse.",
+    "type": "fantasy",
+    "category": "fantasy",
+    "model": "Steve",
+    "tags_de": [
+      "Zombie",
+      "Pferd",
+      "Untot",
+      "Gruselig"
+    ],
+    "tags_en": [
+      "Zombie",
+      "Horse",
+      "Undead",
+      "Spooky"
+    ],
+    "thumbnailUrl": "/assets/img/skins/Zombie_Horse_skin.png",
+    "skinUrl": "/assets/img/skins/Zombie_Horse.png",
+    "featured": false
+  }
+]

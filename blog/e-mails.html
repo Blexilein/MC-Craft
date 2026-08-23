@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="de" data-theme="overworld">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Mohamad Laith AKA 'Blexilein'">
+    <meta name="robots" content="index, follow">
+    <meta name="description" content="MC-Craft E-Mail Support - direkter Kontakt für Anfragen und Bugreports.">
+    <meta name="keywords" content="MC-Craft, E-Mail, Kontakt, Support, Bugreport, Business Anfragen">
+    <link rel="canonical" href="https://mc-craft.com/blog/e-mails.html">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="MC-Craft | E-Mails">
+    <meta property="og:description" content="MC-Craft E-Mail Support - direkter Kontakt für Anfragen und Bugreports.">
+    <meta property="og:url" content="https://mc-craft.com/blog/e-mails.html">
+    <meta property="og:image" content="https://mc-craft.com/assets/img/favicon/mc-craft.png">
+    <meta property="og:image:alt" content="MC-Craft Logo">
+    <meta property="og:site_name" content="MC-Craft">
+    <meta property="og:locale" content="de_DE">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="MC-Craft | E-Mails">
+    <meta name="twitter:description" content="MC-Craft E-Mail Support - direkter Kontakt für Anfragen und Bugreports.">
+    <meta name="twitter:image" content="https://mc-craft.com/assets/img/favicon/mc-craft.png">
+    <meta name="theme-color" content="#148200">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicon/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon/favicon-32x32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/assets/img/favicon/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="/assets/img/favicon/android-chrome-512x512.png">
+    <link rel="icon" href="/assets/img/favicon/favicon.ico">
+    <link rel="manifest" href="/site.webmanifest">
+        <link rel="stylesheet" href="/assets/fontawesome/all.min.css">
+    <link rel="stylesheet" href="/assets/CSS/support.css">
+    <link rel="stylesheet" href="/assets/CSS/site-modern-v1.css">
+    <title data-i18n="site_title_support_email">MC-Craft | E-Mails</title>
+</head>
+<body>
+    <div class="loader" id="loader">
+        <div class="loader-content">
+            <div class="loading-spinner"><div class="spinner"></div></div>
+            <p class="loading-text" data-i18n="loader_text1_support">MC-Craft Support wird geladen...</p>
+            <div class="loading-progress"></div>
+        </div>
+    </div>
+
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <a href="/index.html" class="logo">
+                    <div class="logo-icon"></div>
+                    <span class="logo-text" data-i18n="site_title_short">MC-Craft</span>
+                </a>
+                <nav class="navigation">
+                    <ul class="nav-list">
+                        <li><a href="/index.html" class="nav-link" data-i18n="nav_home">Home</a></li>
+                        <li class="dropdown">
+                            <button class="dropdown-btn nav-link" data-i18n="tools_dropdown">Werkzeuge</button>
+                            <ul class="dropdown-menu">
+                                <li><a href="/blog/text-converter.html" data-i18n="nav_text_converter">Text Konverter</a></li>
+                                <li><a href="/blog/color-text.html" data-i18n="nav_color_text">Farbtext</a></li>
+                                <li><a href="/blog/items.html" data-i18n="nav_items">Items Datenbank</a></li>
+                                <li><a href="/blog/mobs.html" data-i18n="nav_mobs">Mobs Datenbank</a></li>
+                                <li><a href="/blog/server-status.html" data-i18n="nav_server_status">Server Status</a></li>
+                                <li><a href="/blog/minecraft-api-status.html">Minecraft API Status</a></li>
+                                <li><a href="/blog/skin-lookup.html" data-i18n="nav_skin_lookup">Skin Lookup</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <button class="dropdown-btn nav-link" data-i18n="discover_dropdown">Entdecken</button>
+                            <ul class="dropdown-menu">
+                                <li><a href="/blog/skin-editor.html" data-i18n="nav_skin_editor">Skin Editor</a></li>
+                                <li><a href="/blog/day-night-cycle.html" data-i18n="nav_day_night_cycle">Tag-Nacht-Zyklus</a></li>
+                                <li><a href="/blog/end_poem.html" data-i18n="nav_end_poem">End Poem</a></li>
+                                <li><a href="/blog/minecraft-capes.html" data-i18n="nav_capes">Cape-Datenbank</a></li>
+                                <li><a href="/blog/minecraft-versions.html">Minecraft Versionen</a></li>
+                                <li><a href="/blog/minecraft-skins.html" data-i18n="nav_skins">Skin-Bibliothek</a></li>
+                                <li><a href="/blog/beacon-color-mixer.html" data-i18n="nav_beacon_mixer">Beacon Color Mixer</a></li>
+                                <li><a href="/blog/qr-generator.html">QR Generator</a></li>
+                                <li><a href="/blog/advancement-generator.html">Advancement Generator</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="sound-toggle">
+                    <button class="sound-btn" id="soundBtn" aria-label="Sound ein/aus">
+                        <img src="/assets/img/backgrounds/sound-on.svg" alt="Sound an" class="sound-icon" id="soundIcon">
+                    </button>
+                </div>
+                <div class="lang-switcher">
+                    <button class="lang-btn" id="langBtn" aria-label="Sprache umschalten">
+                        <img src="/assets/img/backgrounds/de.svg" alt="Deutsch" class="flag-icon" id="langFlag">
+                    </button>
+                </div>
+                <div class="theme-switcher">
+                    <button class="theme-btn" id="themeBtn"><i class="fa-solid fa-palette"></i></button>
+                    <div class="theme-dropdown" id="themeDropdown">
+                        <button class="theme-option" data-theme="overworld"><i class="fas fa-cube"></i><span data-i18n="theme_overworld">Overworld</span></button>
+                        <button class="theme-option" data-theme="nether"><i class="fas fa-fire"></i><span data-i18n="theme_nether">Nether</span></button>
+                        <button class="theme-option" data-theme="end"><i class="fas fa-moon"></i><span data-i18n="theme_end">The End</span></button>
+                    </div>
+                </div>
+                <button class="mobile-menu-btn" id="mobileMenuBtn"><i class="fas fa-bars"></i></button>
+            </div>
+        </div>
+    </header>
+
+    <div class="mobile-nav" id="mobileNav">
+        <div class="mobile-nav-header">
+            <div class="logo"><div class="logo-icon"></div><span class="logo-text" data-i18n="site_title_short">MC-Craft</span></div>
+            <button class="close-btn" id="closeBtn"><i class="fas fa-times"></i></button>
+        </div>
+        <ul class="mobile-nav-list">
+            <li><a href="/index.html" class="mobile-nav-link" data-i18n="nav_home">Home</a></li>
+            <li><a href="/blog/text-converter.html" class="mobile-nav-link" data-i18n="nav_text_converter">Text Konverter</a></li>
+            <li><a href="/blog/color-text.html" class="mobile-nav-link" data-i18n="nav_color_text">Farbtext</a></li>
+            <li><a href="/blog/items.html" class="mobile-nav-link" data-i18n="nav_items">Items Datenbank</a></li>
+            <li><a href="/blog/mobs.html" class="mobile-nav-link" data-i18n="nav_mobs">Mobs Datenbank</a></li>
+            <li><a href="/blog/server-status.html" class="mobile-nav-link" data-i18n="nav_server_status">Server Status</a></li>
+            <li><a href="/blog/minecraft-api-status.html" class="mobile-nav-link">Minecraft API Status</a></li>
+            <li><a href="/blog/skin-lookup.html" class="mobile-nav-link" data-i18n="nav_skin_lookup">Skin Lookup</a></li>
+            <li><a href="/blog/skin-editor.html" class="mobile-nav-link" data-i18n="nav_skin_editor">Skin Editor</a></li>
+            <li><a href="/blog/day-night-cycle.html" class="mobile-nav-link" data-i18n="nav_day_night_cycle">Tag-Nacht-Zyklus</a></li>
+            <li><a href="/blog/end_poem.html" class="mobile-nav-link" data-i18n="nav_end_poem">End Poem</a></li>
+            <li><a href="/blog/minecraft-capes.html" class="mobile-nav-link" data-i18n="nav_capes">Cape-Datenbank</a></li>
+            <li><a href="/blog/minecraft-versions.html" class="mobile-nav-link">Minecraft Versionen</a></li>
+            <li><a href="/blog/minecraft-skins.html" class="mobile-nav-link" data-i18n="nav_skins">Skin-Bibliothek</a></li>
+            <li><a href="/blog/beacon-color-mixer.html" class="mobile-nav-link" data-i18n="nav_beacon_mixer">Beacon Color Mixer</a></li>
+            <li><a href="/blog/qr-generator.html" class="mobile-nav-link">QR Generator</a></li>
+            <li><a href="/blog/advancement-generator.html" class="mobile-nav-link">Advancement Generator</a></li>
+        </ul>
+        <div class="mobile-theme-switcher">
+            <h4 data-i18n="theme_select">Theme auswählen:</h4>
+            <div class="theme-options">
+                <button class="theme-option-btn" data-theme="overworld"><i class="fas fa-cube"></i> <span data-i18n="theme_overworld">Overworld</span></button>
+                <button class="theme-option-btn" data-theme="nether"><i class="fas fa-fire"></i> <span data-i18n="theme_nether">Nether</span></button>
+                <button class="theme-option-btn" data-theme="end"><i class="fas fa-moon"></i> <span data-i18n="theme_end">The End</span></button>
+            </div>
+            <div class="mobile-sound-lang">
+                <button class="mobile-sound-btn" id="mobileSoundBtn">
+                    <img src="/assets/img/backgrounds/sound-on.svg" alt="Sound an" class="sound-icon" id="mobileSoundIcon">
+                    <span data-i18n="sound_toggle">Sound</span>
+                </button>
+                <button class="mobile-lang-btn" id="mobileLangBtn">
+                    <img src="/assets/img/backgrounds/de.svg" alt="Deutsch" class="flag-icon" id="mobileLangFlag">
+                    <span data-i18n="language">Sprache</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <main class="main">
+        <section class="hero" id="home">
+            <div class="hero-bg-grid"></div>
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-badge" data-i18n="hero_badge"><span class="hero-badge-dot"></span>V 1.0.0 IST DA</div>
+                    <h1 class="hero-title" data-i18n="email_page_title">E-Mail <span class="highlight">Support</span></h1>
+                    <p class="hero-description" data-i18n="email_page_desc">Nutze den direkten E-Mail-Kontakt für Bugreports, geschäftliche Anfragen und ausführliche Support-Nachrichten.</p>
+                    <div class="hero-buttons">
+                        <a href="#discord" class="btn btn-primary" data-i18n="support_hero_btn_discord"><i class="fab fa-discord"></i> Discord Support</a>
+                        <a href="#email-contact" class="btn btn-secondary" data-i18n="email_page_btn_contact"><i class="fas fa-envelope"></i> Kontakt anzeigen</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="hero-grid-staggered">
+                        <div class="hero-stagger-col hero-stagger-left">
+                            <div class="grid-item"><i class="fas fa-paper-plane"></i><span data-i18n="email_page_grid1">Anfragen</span></div>
+                            <div class="grid-item"><i class="fas fa-bug"></i><span data-i18n="email_page_grid2">Bugreports</span></div>
+                        </div>
+                        <div class="hero-stagger-col hero-stagger-right">
+                            <div class="grid-item"><i class="fas fa-briefcase"></i><span data-i18n="email_page_grid3">Business</span></div>
+                            <div class="grid-item"><i class="fas fa-clock"></i><span data-i18n="email_page_grid4">Antwortzeit</span></div>
+                        </div>
+                        <div class="floating-cube floating-cube-1"></div>
+                        <div class="floating-cube floating-cube-2"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="support-section" id="discord">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title" data-i18n="support_discord_title">Discord <span class="highlight">Support</span></h2>
+                    <p class="section-subtitle" data-i18n="support_discord_subtitle">Schnelle Hilfe und Community-Support über unseren Discord-Server</p>
+                </div>
+
+                <div class="support-container">
+                    <div class="discord-widget">
+                        <div class="widget-header">
+                            <i class="fab fa-discord"></i>
+                            <h3 data-i18n="support_discord_widget_title">MC-Craft Community Discord</h3>
+                        </div>
+                        <div class="widget-content">
+                            <iframe
+                                src="https://discord.com/widget?id=1408532818388320356&theme=dark"
+                                width="100%"
+                                height="400"
+                                allowtransparency="true"
+                                frameborder="0"
+                                sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts">
+                            </iframe>
+                        </div>
+                        <div class="widget-footer">
+                            <a href="https://discord.gg/eVVpQD75w4" target="_blank" class="btn btn-primary" data-i18n="support_discord_btn">
+                                <i class="fab fa-discord"></i> Discord beitreten
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="support-info">
+                        <div class="support-card">
+                            <div class="support-icon"><i class="fas fa-bolt"></i></div>
+                            <div class="support-content">
+                                <h3 class="support-title" data-i18n="support_card1_title">Schnelle Hilfe</h3>
+                                <p class="support-description" data-i18n="support_card1_desc">Erhalte sofortige Hilfe von unserer Community und dem Support-Team. Durchschnittliche Antwortzeit: 15 Minuten.</p>
+                            </div>
+                        </div>
+                        <div class="support-card">
+                            <div class="support-icon"><i class="fas fa-users"></i></div>
+                            <div class="support-content">
+                                <h3 class="support-title" data-i18n="support_card2_title">Aktive Community</h3>
+                                <p class="support-description" data-i18n="support_card2_desc">Über 1.000 aktive Mitglieder helfen sich gegenseitig bei Fragen zu Minecraft und unseren Tools.</p>
+                            </div>
+                        </div>
+                        <div class="support-card">
+                            <div class="support-icon"><i class="fas fa-code"></i></div>
+                            <div class="support-content">
+                                <h3 class="support-title" data-i18n="support_card3_title">Entwickler-Kontakt</h3>
+                                <p class="support-description" data-i18n="support_card3_desc">Sprich direkt mit den Entwicklern von MC-Craft und gib Feedback zu neuen Features.</p>
+                            </div>
+                        </div>
+                        <div class="support-card">
+                            <div class="support-icon"><i class="fas fa-newspaper"></i></div>
+                            <div class="support-content">
+                                <h3 class="support-title" data-i18n="support_card4_title">Updates & News</h3>
+                                <p class="support-description" data-i18n="support_card4_desc">Bleibe über alle Updates, neue Tools und kommende Features informiert.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="email-section centered-email" id="email-contact">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title" data-i18n="support_email_title">E-Mail <span class="highlight">Support</span></h2>
+                    <p class="section-subtitle" data-i18n="support_email_subtitle">Formeller Support für komplexe Anfragen</p>
+                </div>
+                <div class="email-container">
+                    <div class="email-info email-info-wide">
+                        <div class="email-multi-grid">
+                            <article class="email-card email-card-role">
+                                <div class="email-icon"><i class="fas fa-circle-info"></i></div>
+                                <div class="email-content">
+                                    <h3 class="email-title" data-i18n="email_info_title">Allgemeine Anfragen</h3>
+                                    <p class="email-description" data-i18n="email_info_desc">Allgemeine Fragen zu MC-Craft, Rückmeldungen und erste Kontaktaufnahmen.</p>
+                                    <div class="email-address"><i class="fas fa-at"></i><span>info@mc-craft.com</span></div>
+                                    <a href="mailto:info@mc-craft.com?subject=MC-Craft%20Allgemeine%20Anfrage" class="btn btn-primary" data-i18n="support_email_btn"><i class="fas fa-paper-plane"></i> E-Mail senden</a>
+                                </div>
+                            </article>
+
+                            <article class="email-card email-card-role">
+                                <div class="email-icon"><i class="fas fa-address-book"></i></div>
+                                <div class="email-content">
+                                    <h3 class="email-title" data-i18n="email_contact_title">Kontakt</h3>
+                                    <p class="email-description" data-i18n="email_contact_desc">Allgemeine Kontaktanfragen rund um MC-Craft, Rückmeldungen und Hinweise.</p>
+                                    <div class="email-address"><i class="fas fa-at"></i><span>contact@mc-craft.com</span></div>
+                                    <a href="mailto:contact@mc-craft.com?subject=MC-Craft%20Kontakt" class="btn btn-primary" data-i18n="support_email_btn"><i class="fas fa-paper-plane"></i> E-Mail senden</a>
+                                </div>
+                            </article>
+
+                            <article class="email-card email-card-role">
+                                <div class="email-icon"><i class="fas fa-headset"></i></div>
+                                <div class="email-content">
+                                    <h3 class="email-title" data-i18n="email_support_title">Support</h3>
+                                    <p class="email-description" data-i18n="email_support_desc">Fragen zur Nutzung, Hilfe bei Tools und technische Unterstützung.</p>
+                                    <div class="email-address"><i class="fas fa-at"></i><span>support@mc-craft.com</span></div>
+                                    <a href="mailto:support@mc-craft.com?subject=MC-Craft%20Support" class="btn btn-primary" data-i18n="support_email_btn"><i class="fas fa-paper-plane"></i> E-Mail senden</a>
+                                </div>
+                            </article>
+
+                            <article class="email-card email-card-role">
+                                <div class="email-icon"><i class="fas fa-bug"></i></div>
+                                <div class="email-content">
+                                    <h3 class="email-title" data-i18n="email_bug_title">Bug Reports</h3>
+                                    <p class="email-description" data-i18n="email_bug_desc">Fehler, Darstellungsprobleme oder unerwartetes Verhalten der Website.</p>
+                                    <div class="email-address"><i class="fas fa-at"></i><span>bugs@mc-craft.com</span></div>
+                                    <a href="mailto:bugs@mc-craft.com?subject=MC-Craft%20Bugreport" class="btn btn-primary" data-i18n="support_email_btn"><i class="fas fa-paper-plane"></i> E-Mail senden</a>
+                                </div>
+                            </article>
+
+                            <article class="email-card email-card-role">
+                                <div class="email-icon"><i class="fas fa-briefcase"></i></div>
+                                <div class="email-content">
+                                    <h3 class="email-title" data-i18n="email_business_title">Business & Kooperation</h3>
+                                    <p class="email-description" data-i18n="email_business_desc">Kooperationen, Partnerschaften, Presse oder geschäftliche Anfragen.</p>
+                                    <div class="email-address"><i class="fas fa-at"></i><span>business@mc-craft.com</span></div>
+                                    <a href="mailto:business@mc-craft.com?subject=MC-Craft%20Business" class="btn btn-primary" data-i18n="support_email_btn"><i class="fas fa-paper-plane"></i> E-Mail senden</a>
+                                </div>
+                            </article>
+
+                            <article class="email-card email-card-role">
+                                <div class="email-icon"><i class="fas fa-user-shield"></i></div>
+                                <div class="email-content">
+                                    <h3 class="email-title" data-i18n="email_privacy_title">Datenschutz</h3>
+                                    <p class="email-description" data-i18n="email_privacy_desc">Anfragen zu Datenschutz, personenbezogenen Daten oder Auskunftsersuchen.</p>
+                                    <div class="email-address"><i class="fas fa-at"></i><span>privacy@mc-craft.com</span></div>
+                                    <a href="mailto:privacy@mc-craft.com?subject=MC-Craft%20Datenschutz" class="btn btn-primary" data-i18n="support_email_btn"><i class="fas fa-paper-plane"></i> E-Mail senden</a>
+                                </div>
+                            </article>
+
+                            <article class="email-card email-card-role">
+                                <div class="email-icon"><i class="fas fa-shield-halved"></i></div>
+                                <div class="email-content">
+                                    <h3 class="email-title" data-i18n="email_security_title">Security</h3>
+                                    <p class="email-description" data-i18n="email_security_desc">Meldung von Sicherheitslücken oder sensiblen technischen Problemen.</p>
+                                    <div class="email-address"><i class="fas fa-at"></i><span>security@mc-craft.com</span></div>
+                                    <a href="mailto:security@mc-craft.com?subject=MC-Craft%20Security" class="btn btn-primary" data-i18n="support_email_btn"><i class="fas fa-paper-plane"></i> E-Mail senden</a>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+                <div class="future-cta" style="margin-top: 2rem; text-align: center;">
+                    <p class="future-message" data-i18n="email_page_note">Wenn es dringend ist, nutze zusätzlich unseren Discord-Support für schnellere Rückmeldungen.</p>
+                    <a href="https://discord.gg/eVVpQD75w4" class="btn btn-outline" data-i18n="email_page_btn_discord"><i class="fab fa-discord"></i> Discord öffnen</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="faq-section" id="faq">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title" data-i18n="support_faq_title">Häufige <span class="highlight">Fragen</span></h2>
+                    <p class="section-subtitle" data-i18n="support_faq_subtitle">Antworten auf häufig gestellte Fragen</p>
+                </div>
+
+                <div class="faq-container">
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h4 data-i18n="support_faq_q1">Wie schnell erhalte ich Hilfe über Discord?</h4>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p data-i18n="support_faq_a1">Unser Support-Team ist werktags von 10:00 bis 18:00 Uhr aktiv. Die durchschnittliche Antwortzeit beträgt 15-30 Minuten.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h4 data-i18n="support_faq_q2">Kann ich auch auf Englisch um Hilfe bitten?</h4>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p data-i18n="support_faq_a2">Ja, unser Team spricht sowohl Deutsch als auch Englisch. Du kannst deine Anfrage in beiden Sprachen stellen.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h4 data-i18n="support_faq_q3">Wie melde ich einen Bug?</h4>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p data-i18n="support_faq_a3">Bugs kannst du entweder über Discord im #bug-reports Channel oder über E-Mail an support@mc-craft.com melden. Bitte beschreibe den Bug so detailliert wie möglich.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h4 data-i18n="support_faq_q4">Kann ich neue Features vorschlagen?</h4>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p data-i18n="support_faq_a4">Ja! Wir freuen uns über Feature-Vorschläge. Nutze dafür den #suggestions Channel auf Discord oder schreibe uns eine E-Mail.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-cta">
+                    <p data-i18n="support_faq_cta">Weitere Fragen? Besuche unsere <a href="/blog/faq.html">FAQ-Seite</a> oder kontaktiere uns direkt.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-grid">
+                    <div class="footer-col">
+                        <div class="footer-logo"><div class="logo-icon"></div><span class="logo-text" data-i18n="site_title_short">MC-Craft</span></div>
+                        <p class="footer-description" data-i18n="footer_description">Kostenlose Minecraft-Tools für die Community. Entwickelt von Spielern für Spieler.</p>
+                        <div class="social-links">
+                           <a href="https://github.com/Blexilein" class="social-link" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                            <a href="https://discord.gg/eVVpQD75w4" class="social-link"><i class="fab fa-discord"></i></a>
+                            <a href="https://x.com/Blexi_1" class="social-link" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        </div>
+                    </div>
+                    <div class="footer-col">
+                        <h4 class="footer-title" data-i18n="footer_tools">Tools</h4>
+                        <ul class="footer-links">
+                            <li><a href="/blog/text-converter.html" data-i18n="nav_text_converter">Text Konverter</a></li>
+                            <li><a href="/blog/color-text.html" data-i18n="nav_color_text">Farbtext-Konverter</a></li>
+                            <li><a href="/blog/items.html" data-i18n="nav_items">Items Datenbank</a></li>
+                            <li><a href="/blog/mobs.html" data-i18n="nav_mobs">Mobs Datenbank</a></li>
+                            <li><a href="/blog/day-night-cycle.html" data-i18n="nav_day_night_cycle">Tag-Nacht-Zyklus</a></li>
+                            <li><a href="/blog/beacon-color-mixer.html" data-i18n="nav_beacon_mixer">Beacon Color Mixer</a></li>
+                                <li><a href="/blog/qr-generator.html">QR Generator</a></li>
+                                <li><a href="/blog/advancement-generator.html">Advancement Generator</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4 class="footer-title" data-i18n="footer_more_tools">Mehr Tools</h4>
+                        <ul class="footer-links">
+                            <li><a href="/blog/server-status.html" data-i18n="nav_server_status">Server Status</a></li>
+                                <li><a href="/blog/minecraft-api-status.html">Minecraft API Status</a></li>
+                            <li><a href="/blog/skin-lookup.html" data-i18n="nav_skin_lookup">Skin Lookup</a></li>
+                            <li><a href="/blog/skin-editor.html" data-i18n="nav_skin_editor">Skin Editor</a></li>
+                            <li><a href="/blog/minecraft-skins.html" data-i18n="skins_library_title">Skin Galerie</a></li>
+                            <li><a href="/blog/minecraft-capes.html" data-i18n="capes_db_title">Cape Galerie</a></li>
+                            <li><a href="/blog/minecraft-versions.html">Minecraft Versionen</a></li>
+                            <li><a href="/blog/end_poem.html" data-i18n="nav_end_poem">End Poem</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4 class="footer-title" data-i18n="footer_legal">Rechtliches</h4>
+                        <ul class="footer-links">
+                            <li><a href="/blog/impressum.html" data-i18n="footer_impressum">Impressum</a></li>
+                            <li><a href="/blog/datenschutz.html" data-i18n="footer_privacy">Datenschutz</a></li>
+                            <li><a href="/blog/nutzungsbedingungen.html" data-i18n="footer_terms">Nutzungsbedingungen</a></li>
+                            <li><a href="/blog/copyright.html" data-i18n="footer_copyright">Copyright</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4 class="footer-title" data-i18n="footer_about">Über Uns</h4>
+                        <ul class="footer-links">
+                            <li><a href="/blog/history.html" data-i18n="footer_history">MC-Craft Geschichte</a></li>
+                            <li><a href="/blog/team.html" data-i18n="footer_team">Unser Team</a></li>
+                            <li><a href="/blog/about.html" data-i18n="footer_about_us">Über uns</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4 class="footer-title" data-i18n="footer_support">Support</h4>
+                        <ul class="footer-links">
+                            <li><a href="/blog/faq.html" data-i18n="footer_faq">FAQ & Hilfe</a></li>
+                            <li><a href="/blog/bug-report.html" data-i18n="footer_bug">Bug melden</a></li>
+                            <li><a href="/blog/support.html" data-i18n="footer_support_contact">Support Kontakt</a></li>
+                            <li><a href="/blog/e-mails.html">E-mails</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <div class="copyright">
+                        <p>&copy; <span id="currentYear">2026</span> MC-Craft. <span data-i18n="footer_rights">Alle Rechte vorbehalten.</span></p>
+                        <p class="disclaimer" data-i18n="footer_disclaimer">Minecraft ist eine Marke von Mojang Studios. Diese Seite ist nicht offiziell mit Mojang oder Microsoft verbunden.</p>
+                    </div>
+                    <div class="footer-meta">
+                        <span class="version" data-i18n="footer_version">Version 1.0.0</span>
+                        <a href="/blog/changelog.html" class="changelog active" data-i18n="footer_changelog">Changelog</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <button class="back-to-top" id="backToTop"><i class="fas fa-arrow-up"></i></button>
+    <div class="toast-container" id="toastContainer"></div>
+
+    <script src="/assets/JS/modules/mc-preferences.js"></script>
+
+    <script src="/assets/JS/modules/support.js"></script>
+</body>
+</html>

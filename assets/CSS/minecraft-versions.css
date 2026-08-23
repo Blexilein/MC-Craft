@@ -1,0 +1,263 @@
+/* MC-Craft Minecraft Versions */
+
+:root {
+    --versions-bg-1: rgba(17, 24, 39, 0.9);
+    --versions-bg-2: rgba(15, 23, 42, 0.85);
+    --versions-glow: rgba(20, 130, 0, 0.25);
+    --versions-border: rgba(148, 163, 184, 0.25);
+    --versions-text-muted: #b8c3d4;
+}
+
+.main {
+    min-height: 100vh;
+}
+
+.versions-hero {
+    position: relative;
+    padding: 8.5rem 0 4rem;
+    overflow: hidden;
+}
+
+.versions-hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background:
+        radial-gradient(circle at 15% 20%, rgba(34, 197, 94, 0.24), transparent 45%),
+        radial-gradient(circle at 85% 0%, rgba(14, 165, 233, 0.2), transparent 38%),
+        linear-gradient(125deg, rgba(15, 23, 42, 0.9), rgba(17, 24, 39, 0.78));
+    z-index: -2;
+}
+
+.versions-hero::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px), linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+    background-size: 44px 44px;
+    z-index: -1;
+}
+
+.versions-badge {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.55rem;
+    padding: 0.5rem 1rem;
+    width: fit-content;
+    border-radius: 999px;
+    background: rgba(20, 130, 0, 0.2);
+    border: 1px solid rgba(34, 197, 94, 0.45);
+    color: #dcfce7;
+    font-size: 0.82rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    margin-inline: auto;
+    margin-bottom: 1rem;
+}
+
+.versions-badge-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #4ade80;
+    box-shadow: 0 0 10px #4ade80;
+}
+
+.versions-title {
+    font-size: clamp(2rem, 4.4vw, 3.5rem);
+    line-height: 1.1;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 0.2em;
+}
+
+.versions-title .highlight {
+    color: var(--primary);
+    text-shadow: 0 0 20px rgba(20, 130, 0, 0.35);
+}
+
+.versions-description {
+    max-width: 65ch;
+    margin-inline: auto;
+    text-align: center;
+    color: var(--versions-text-muted);
+    line-height: 1.7;
+}
+
+.latest-strip {
+    margin-top: 1.5rem;
+    margin-inline: auto;
+    padding: 0.95rem 1rem;
+    border-radius: 14px;
+    border: 1px solid var(--versions-border);
+    background: rgba(2, 6, 23, 0.45);
+    width: fit-content;
+    max-width: 100%;
+    color: #e2e8f0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.8rem 1.2rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.latest-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: rgba(30, 41, 59, 0.75);
+    border: 1px solid rgba(148, 163, 184, 0.35);
+    border-radius: 999px;
+    padding: 0.3rem 0.8rem;
+    font-size: 0.85rem;
+}
+
+.versions-controls {
+    margin-top: 2rem;
+    margin-inline: auto;
+    max-width: 860px;
+    display: grid;
+    grid-template-columns: 1.2fr auto;
+    gap: 0.85rem;
+}
+
+.versions-search,
+.versions-select {
+    width: 100%;
+    border: 1px solid var(--versions-border);
+    border-radius: 12px;
+    padding: 0.82rem 0.95rem;
+    background: rgba(2, 6, 23, 0.55);
+    color: #e2e8f0;
+    font-size: 0.95rem;
+}
+
+.versions-search:focus,
+.versions-select:focus {
+    outline: 2px solid rgba(34, 197, 94, 0.45);
+    outline-offset: 1px;
+}
+
+.versions-sections {
+    padding: 2.3rem 0 4.5rem;
+}
+
+.versions-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1rem;
+}
+
+.version-card {
+    border-radius: 16px;
+    border: 1px solid var(--versions-border);
+    background: linear-gradient(180deg, var(--versions-bg-1), var(--versions-bg-2));
+    overflow: hidden;
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.04), 0 12px 30px rgba(2, 6, 23, 0.35);
+}
+
+.version-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem 1rem 0.8rem;
+    border-bottom: 1px solid rgba(100, 116, 139, 0.25);
+}
+
+.version-card-title {
+    margin: 0;
+    font-size: 1.05rem;
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+}
+
+.version-card-title i {
+    color: #22c55e;
+}
+
+.version-count {
+    min-width: 2.4rem;
+    text-align: center;
+    border-radius: 999px;
+    padding: 0.2rem 0.7rem;
+    font-weight: 700;
+    font-size: 0.82rem;
+    background: rgba(34, 197, 94, 0.2);
+    color: #dcfce7;
+}
+
+.version-list {
+    max-height: 430px;
+    overflow: auto;
+    padding: 0.65rem 0;
+}
+
+.version-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.8rem;
+    padding: 0.78rem 1rem;
+    border-left: 3px solid transparent;
+    transition: background-color 0.18s ease, border-color 0.18s ease;
+}
+
+.version-item:hover {
+    background: rgba(30, 41, 59, 0.5);
+    border-left-color: #22c55e;
+}
+
+.version-name {
+    font-weight: 700;
+    letter-spacing: 0.01em;
+}
+
+.version-date {
+    font-size: 0.84rem;
+    color: var(--versions-text-muted);
+    white-space: nowrap;
+}
+
+.section-empty,
+.section-loading,
+.section-error {
+    padding: 1rem;
+    color: var(--versions-text-muted);
+}
+
+.section-error {
+    color: #fca5a5;
+}
+
+.version-list::-webkit-scrollbar {
+    width: 8px;
+}
+
+.version-list::-webkit-scrollbar-thumb {
+    background: rgba(100, 116, 139, 0.7);
+    border-radius: 999px;
+}
+
+.version-list::-webkit-scrollbar-track {
+    background: rgba(2, 6, 23, 0.3);
+}
+
+@media (max-width: 940px) {
+    .versions-controls {
+        grid-template-columns: 1fr;
+    }
+
+    .versions-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .version-list {
+        max-height: 360px;
+    }
+}

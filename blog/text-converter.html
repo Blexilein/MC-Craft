@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="de" data-theme="overworld">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+    <meta name="author" content="Mohamad Laith AKA 'Blexilein'">
+    <meta name="robots" content="index, follow">
+    <meta name="description" content="MC-Craft - Konvertiere Text in das Minecraft-Standard-Galakti-Alphabet und zurück.">
+    <meta name="keywords" content="minecraft, text konverter, galakti alphabet, minecraft schrift, standard galaktisch alphabet">
+    <link rel="canonical" href="https://mc-craft.com/blog/text-converter.html">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="MC-Craft | Text Konverter">
+    <meta property="og:description" content="MC-Craft - Konvertiere Text in das Minecraft-Standard-Galakti-Alphabet und zurück.">
+    <meta property="og:url" content="https://mc-craft.com/blog/text-converter.html">
+    <meta property="og:image" content="https://mc-craft.com/assets/img/favicon/mc-craft.png">
+    <meta property="og:image:alt" content="MC-Craft Logo">
+    <meta property="og:site_name" content="MC-Craft">
+    <meta property="og:locale" content="de_DE">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="MC-Craft | Text Konverter">
+    <meta name="twitter:description" content="MC-Craft - Konvertiere Text in das Minecraft-Standard-Galakti-Alphabet und zurück.">
+    <meta name="twitter:image" content="https://mc-craft.com/assets/img/favicon/mc-craft.png">
+    <meta name="theme-color" content="#148200">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicon/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon/favicon-32x32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/assets/img/favicon/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="/assets/img/favicon/android-chrome-512x512.png">
+    <link rel="icon" href="/assets/img/favicon/favicon.ico">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="stylesheet" href="/assets/fontawesome/all.min.css">
+        <link rel="stylesheet" href="/assets/CSS/text-converter.css">
+    <link rel="stylesheet" href="/assets/CSS/site-modern-v1.css">
+    <title data-i18n="site_title_textconverter">MC-Craft | Text Konverter</title>
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div class="loader" id="loader">
+        <div class="loader-content">
+            <div class="loading-spinner">
+                <div class="spinner"></div>
+            </div>
+            <p class="loading-text" data-i18n="loader_text1_textconverter">Text Konverter wird geladen...</p>
+            <div class="loading-progress"></div>
+        </div>
+    </div>
+
+        <!-- Header -->
+     <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <a href="/index.html" class="logo">
+                    <div class="logo-icon"></div>
+                    <span class="logo-text" data-i18n="site_title_short">MC-Craft</span>
+                </a>
+                <nav class="navigation">
+                    <ul class="nav-list">
+                        <li><a href="/index.html" class="nav-link" data-i18n="nav_home">Home</a></li>
+                        <li class="dropdown">
+                            <button class="dropdown-btn nav-link" data-i18n="tools_dropdown">Werkzeuge</button>
+                            <ul class="dropdown-menu">
+                                <li><a href="/blog/text-converter.html" data-i18n="nav_text_converter">Text Konverter</a></li>
+                                <li><a href="/blog/color-text.html" data-i18n="nav_color_text">Farbtext</a></li>
+                                <li><a href="/blog/items.html" data-i18n="nav_items">Items Datenbank</a></li>
+                                <li><a href="/blog/mobs.html" data-i18n="nav_mobs">Mobs Datenbank</a></li>
+                                <li><a href="/blog/server-status.html" data-i18n="nav_server_status">Server Status</a></li>
+                                <li><a href="/blog/minecraft-api-status.html">Minecraft API Status</a></li>
+                                <li><a href="/blog/skin-lookup.html" data-i18n="nav_skin_lookup">Skin Lookup</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <button class="dropdown-btn nav-link" data-i18n="discover_dropdown">Entdecken</button>
+                            <ul class="dropdown-menu">
+                                <li><a href="/blog/skin-editor.html" data-i18n="nav_skin_editor">Skin Editor</a></li>
+                               <li><a href="/blog/day-night-cycle.html" data-i18n="nav_day_night_cycle">Tag-Nacht-Zyklus</a></li>
+                                <li><a href="/blog/end_poem.html" data-i18n="nav_end_poem">End Poem</a></li>
+                                <li><a href="/blog/minecraft-capes.html" data-i18n="nav_capes">Cape-Datenbank</a></li>
+                                <li><a href="/blog/minecraft-versions.html">Minecraft Versionen</a></li>
+                                <li><a href="/blog/minecraft-skins.html" data-i18n="nav_skins">Skin-Bibliothek</a></li>
+                                <li><a href="/blog/beacon-color-mixer.html" data-i18n="nav_beacon_mixer">Beacon Color Mixer</a></li>
+                                <li><a href="/blog/qr-generator.html">QR Generator</a></li>
+                                <li><a href="/blog/advancement-generator.html">Advancement Generator</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="sound-toggle">
+                    <button class="sound-btn" id="soundBtn" aria-label="Sound ein/aus">
+                        <img src="/assets/img/backgrounds/sound-on.svg" alt="Sound an" class="sound-icon" id="soundIcon">
+                    </button>
+                </div>
+                <div class="lang-switcher">
+                    <button class="lang-btn" id="langBtn" aria-label="Sprache umschalten">
+                        <img src="/assets/img/backgrounds/de.svg" alt="Deutsch" class="flag-icon" id="langFlag">
+                    </button>
+                </div>
+                <div class="theme-switcher">
+                    <button class="theme-btn" id="themeBtn">
+                        <i class="fa-solid fa-palette"></i>
+                    </button>
+                    <div class="theme-dropdown" id="themeDropdown">
+                        <button class="theme-option" data-theme="overworld">
+                            <i class="fas fa-cube"></i>
+                            <span data-i18n="theme_overworld">Overworld</span>
+                        </button>
+                        <button class="theme-option" data-theme="nether">
+                            <i class="fas fa-fire"></i>
+                            <span data-i18n="theme_nether">Nether</span>
+                        </button>
+                        <button class="theme-option" data-theme="end">
+                            <i class="fas fa-moon"></i>
+                            <span data-i18n="theme_end">The End</span>
+                        </button>
+                    </div>
+                </div>
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Navigation -->
+    <div class="mobile-nav" id="mobileNav">
+        <div class="mobile-nav-header">
+            <div class="logo">
+                <div class="logo-icon"></div>
+                <span class="logo-text" data-i18n="site_title_short">MC-Craft</span>
+            </div>
+            <button class="close-btn" id="closeBtn">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <ul class="mobile-nav-list">
+            <li><a href="/index.html" class="mobile-nav-link" data-i18n="nav_home">Home</a></li>
+            <li><a href="/blog/text-converter.html" class="mobile-nav-link" data-i18n="nav_text_converter">Text Konverter</a></li>
+            <li><a href="/blog/color-text.html" class="mobile-nav-link" data-i18n="nav_color_text">Farbtext</a></li>
+            <li><a href="/blog/items.html" class="mobile-nav-link" data-i18n="nav_items">Items Datenbank</a></li>
+            <li><a href="/blog/mobs.html" class="mobile-nav-link" data-i18n="nav_mobs">Mobs Datenbank</a></li>
+            <li><a href="/blog/server-status.html" class="mobile-nav-link" data-i18n="nav_server_status">Server Status</a></li>
+            <li><a href="/blog/minecraft-api-status.html" class="mobile-nav-link">Minecraft API Status</a></li>
+            <li><a href="/blog/skin-lookup.html" class="mobile-nav-link" data-i18n="nav_skin_lookup">Skin Lookup</a></li>
+            <li><a href="/blog/skin-editor.html" class="mobile-nav-link" data-i18n="nav_skin_editor">Skin Editor</a></li>
+            <li><a href="/blog/day-night-cycle.html" class="mobile-nav-link" data-i18n="nav_day_night_cycle">Tag-Nacht-Zyklus</a></li>
+            <li><a href="/blog/end_poem.html" class="mobile-nav-link" data-i18n="nav_end_poem">End Poem</a></li>
+            <li><a href="/blog/minecraft-capes.html" class="mobile-nav-link" data-i18n="nav_capes">Cape-Datenbank</a></li>
+            <li><a href="/blog/minecraft-versions.html" class="mobile-nav-link">Minecraft Versionen</a></li>
+            <li><a href="/blog/minecraft-skins.html" class="mobile-nav-link" data-i18n="nav_skins">Skin-Bibliothek</a></li>
+            <li><a href="/blog/beacon-color-mixer.html" class="mobile-nav-link" data-i18n="nav_beacon_mixer">Beacon Color Mixer</a></li>
+            <li><a href="/blog/qr-generator.html" class="mobile-nav-link">QR Generator</a></li>
+            <li><a href="/blog/advancement-generator.html" class="mobile-nav-link">Advancement Generator</a></li>
+        </ul>
+        <div class="mobile-theme-switcher">
+            <h4 data-i18n="theme_select">Theme auswählen:</h4>
+            <div class="theme-options">
+                <button class="theme-option-btn" data-theme="overworld">
+                    <i class="fas fa-cube"></i> <span data-i18n="theme_overworld">Overworld</span>
+                </button>
+                <button class="theme-option-btn" data-theme="nether">
+                    <i class="fas fa-fire"></i> <span data-i18n="theme_nether">Nether</span>
+                </button>
+                <button class="theme-option-btn" data-theme="end">
+                    <i class="fas fa-moon"></i> <span data-i18n="theme_end">The End</span>
+                </button>
+            </div>
+            <div class="mobile-sound-lang">
+                <button class="mobile-sound-btn" id="mobileSoundBtn">
+                    <img src="/assets/img/backgrounds/sound-on.svg" alt="Sound an" class="sound-icon" id="mobileSoundIcon">
+                    <span data-i18n="sound_toggle">Sound</span>
+                </button>
+                <button class="mobile-lang-btn" id="mobileLangBtn">
+                    <img src="/assets/img/backgrounds/de.svg" alt="Deutsch" class="flag-icon" id="mobileLangFlag">
+                    <span data-i18n="language">Sprache</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+
+    <main class="main">
+        <!-- Hero Section -->
+        <section class="hero" id="home">
+            <div class="hero-bg-grid"></div>
+            <div class="container">
+                <div class="hero-content">
+                <div class="hero-badge" data-i18n="hero_badge">
+                        <span class="hero-badge-dot"></span>
+                        V 1.0.0 IST DA
+                    </div>
+                    <h1 class="hero-title" data-i18n="textconverter_hero_title">Minecraft <span class="highlight">Text Konverter</span></h1>
+                    <p class="hero-description" data-i18n="textconverter_hero_desc">
+                        Konvertiere zwischen normalem Text und dem Minecraft-Standard-Galakti-Alphabet für deine Projekte.
+                        Perfekt für deine Minecraft-Server, Builds und Kreativprojekte.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#converter" class="btn btn-primary" data-i18n="textconverter_hero_btn_converter">
+                            <i class="fas fa-magic"></i> Zum Konverter
+                        </a>
+                        <a href="/blog/color-text.html" class="btn btn-secondary" data-i18n="textconverter_hero_btn_color">
+                            <i class="fas fa-palette"></i> Farbtext-Konverter
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="hero-grid-staggered">
+                        <div class="hero-stagger-col hero-stagger-left">
+                        <div class="grid-item">
+                            <i class="fas fa-font"></i>
+                            <span data-i18n="textconverter_grid1">Text Konvertierung</span>
+                        </div>
+                        <div class="grid-item">
+                            <i class="fas fa-exchange-alt"></i>
+                            <span data-i18n="textconverter_grid2">Bidirektional</span>
+                        </div>
+                        </div>
+                        <div class="hero-stagger-col hero-stagger-right">
+                        <div class="grid-item">
+                            <i class="fas fa-bolt"></i>
+                            <span data-i18n="textconverter_grid3">Echtzeit</span>
+                        </div>
+                        <div class="grid-item">
+                            <i class="fas fa-code"></i>
+                            <span data-i18n="textconverter_grid4">Alphabet-Tabelle</span>
+                        </div>
+                    </div>
+                        <div class="floating-cube floating-cube-1"></div>
+                        <div class="floating-cube floating-cube-2"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Converter Section -->
+        <section class="converter-section" id="converter">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title" data-i18n="textconverter_section_title">Text <span class="highlight">Konverter</span></h2>
+                    <p class="section-subtitle" data-i18n="textconverter_section_subtitle">Wandle deinen Text in das Minecraft-Alphabet um und zurück</p>
+                </div>
+                
+                <div class="converter-container">
+                    <div class="converter-row">
+                        <label for="normal-text" class="converter-label">
+                            <i class="fas fa-font"></i> <span data-i18n="textconverter_label_normal">Normaler Text</span>
+                        </label>
+                        <textarea id="normal-text" class="converter-textarea" placeholder='Normalen Text eingeben...' data-i18n-placeholder="textconverter_placeholder_normal"></textarea>
+                    </div>
+                    
+                    <div class="converter-controls">
+                        <button class="btn btn-primary" onclick="convertToMinecraft()">
+                            <i class="fas fa-arrow-down"></i> <span data-i18n="textconverter_btn_to_minecraft">Zu Minecraft konvertieren</span>
+                        </button>
+                        <button class="btn btn-secondary" onclick="convertToNormal()">
+                            <i class="fas fa-arrow-up"></i> <span data-i18n="textconverter_btn_to_normal">Zu Normaltext konvertieren</span>
+                        </button>
+                        <button class="btn btn-outline" onclick="clearText()">
+                            <i class="fas fa-eraser"></i> <span data-i18n="textconverter_btn_clear">Löschen</span>
+                        </button>
+                    </div>
+                    
+                    <div class="converter-row">
+                        <label for="minecraft-text" class="converter-label">
+                            <i class="fas fa-gamepad"></i> <span data-i18n="textconverter_label_minecraft">Minecraft Text</span>
+                        </label>
+                        <textarea id="minecraft-text" class="converter-textarea" placeholder='Minecraft-Text erscheint hier...' data-i18n-placeholder="textconverter_placeholder_minecraft"></textarea>
+                    </div>
+                    
+                    <div class="converter-actions">
+                        <button class="btn btn-outline" onclick="copyMinecraftText()">
+                            <i class="fas fa-copy"></i> <span data-i18n="textconverter_btn_copy_minecraft">Minecraft Text kopieren</span>
+                        </button>
+                        <button class="btn btn-outline" onclick="copyNormalText()">
+                            <i class="fas fa-copy"></i> <span data-i18n="textconverter_btn_copy_normal">Normaltext kopieren</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Banner Selection -->
+
+                <div class="banner-selector">
+                    <label for="bannerSelect" class="converter-label">
+                        <i class="fas fa-paint-roller"></i> <span data-i18n="banner_style">Banner Stil</span>
+                    </label>
+                        <select id="bannerSelect" class="banner-select"></select>
+                </div>
+
+                <!-- Alphabet Referenz -->
+                <div class="alphabet-reference">
+                    <div class="section-header">
+                        <h3 class="section-title"><i class="fas fa-info-circle"></i> <span data-i18n="textconverter_ref_title">Minecraft Alphabet</span> <span class="highlight" data-i18n="textconverter_ref_highlight">Referenz</span></h3>
+                        <p class="section-subtitle" data-i18n="textconverter_ref_subtitle">Standard-Galakti-Alphabet aus Minecraft</p>
+                    </div>
+                    
+                    <div class="alphabet-table-container">
+                        <table class="alphabet-table">
+                            <thead>
+                                <tr>
+                                    <th data-i18n="textconverter_table_normal">Normal</th>
+                                    <th data-i18n="textconverter_table_minecraft">Minecraft</th>
+                                    <th data-i18n="textconverter_table_normal">Normal</th>
+                                    <th data-i18n="textconverter_table_minecraft">Minecraft</th>
+                                    <th data-i18n="textconverter_table_normal">Normal</th>
+                                    <th data-i18n="textconverter_table_minecraft">Minecraft</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr><td>A</td><td>ᔑ</td><td>J</td><td>⋮</td><td>S</td><td>ᓭ</td></tr>
+                                <tr><td>B</td><td>ʖ</td><td>K</td><td>ꖌ</td><td>T</td><td>ℸ</td></tr>
+                                <tr><td>C</td><td>ᓵ</td><td>L</td><td>ꖎ</td><td>U</td><td>⚍</td></tr>
+                                <tr><td>D</td><td>↸</td><td>M</td><td>ᒲ</td><td>V</td><td>⍊</td></tr>
+                                <tr><td>E</td><td>ᒷ</td><td>N</td><td>リ</td><td>W</td><td>∴</td></tr>
+                                <tr><td>F</td><td>⎓</td><td>O</td><td>𝙹</td><td>X</td><td>⁠̇/</td></tr>
+                                <tr><td>G</td><td>⊣</td><td>P</td><td>!¡</td><td>Y</td><td>॥</td></tr>
+                                <tr><td>H</td><td>⍑</td><td>Q</td><td>ᑑ</td><td>Z</td><td>⨅</td></tr>
+                                <tr><td>I</td><td>╎</td><td>R</td><td>∷</td><td></td><td></td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    
+                    <div class="tips">
+                        <h4><i class="fas fa-lightbulb"></i> <span data-i18n="textconverter_tips_title">Tipps & Tricks</span></h4>
+                        <ul>
+                            <li data-i18n="textconverter_tip1">Der Konverter arbeitet nur mit Großbuchstaben (A-Z)</li>
+                            <li data-i18n="textconverter_tip2">Sonderzeichen und Zahlen bleiben unverändert</li>
+                            <li data-i18n="textconverter_tip3">Für farbigen Text nutze den <a href="/blog/color-text.html">Farbtext-Konverter</a></li>
+                            <li data-i18n="textconverter_tip4">Kopiere den Minecraft-Text für deine Server-MOTDs, Schilder oder Chat-Nachrichten</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta">
+            <div class="container">
+                <div class="cta-content">
+                    <h2 class="cta-title" data-i18n="textconverter_cta_title">Mehr Minecraft <span class="highlight">Tools</span> entdecken?</h2>
+                    <p class="cta-description" data-i18n="textconverter_cta_desc">MC-Craft bietet dir viele weitere nützliche Tools für dein Minecraft-Abenteuer.</p>
+                    <div class="cta-buttons">
+                        <a href="/blog/color-text.html" class="btn btn-primary btn-large" data-i18n="textconverter_cta_btn_color">
+                            <i class="fas fa-palette"></i> Farbtext-Konverter
+                        </a>
+                        <a href="/index.html#tools" class="btn btn-outline" data-i18n="textconverter_cta_btn_all">
+                            <i class="fas fa-eye"></i> Alle Tools ansehen
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+        <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-grid">
+                    <!-- Column 1 -->
+                    <div class="footer-col">
+                        <div class="footer-logo">
+                            <div class="logo-icon"></div>
+                            <span class="logo-text" data-i18n="site_title_short">MC-Craft</span>
+                        </div>
+                        <p class="footer-description" data-i18n="footer_description">Kostenlose Minecraft-Tools für die Community. Entwickelt von Spielern für Spieler.</p>
+                        <div class="social-links">
+                           <a href="https://github.com/Blexilein" class="social-link" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                            <a href="https://discord.gg/eVVpQD75w4" class="social-link"><i class="fab fa-discord"></i></a>
+                            <a href="https://x.com/Blexi_1" class="social-link" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        </div>
+                    </div>
+                    <!-- Column 2 -->
+                    <div class="footer-col">
+                        <h4 class="footer-title" data-i18n="footer_tools">Tools</h4>
+                        <ul class="footer-links">
+                            <li><a href="/blog/text-converter.html" data-i18n="nav_text_converter">Text Konverter</a></li>
+                            <li><a href="/blog/color-text.html" data-i18n="nav_color_text">Farbtext-Konverter</a></li>
+                            <li><a href="/blog/items.html" data-i18n="nav_items">Items Datenbank</a></li>
+                            <li><a href="/blog/mobs.html" data-i18n="nav_mobs">Mobs Datenbank</a></li>
+                            <li><a href="/blog/day-night-cycle.html" data-i18n="nav_day_night_cycle">Tag-Nacht-Zyklus</a></li>
+                            <li><a href="/blog/beacon-color-mixer.html" data-i18n="nav_beacon_mixer">Beacon Color Mixer</a></li>
+                                <li><a href="/blog/qr-generator.html">QR Generator</a></li>
+                                <li><a href="/blog/advancement-generator.html">Advancement Generator</a></li>
+                        </ul>
+                    </div>
+                    <!-- Column 3 -->
+                    <div class="footer-col">
+                        <h4 class="footer-title" data-i18n="footer_more_tools">Mehr Tools</h4>
+                        <ul class="footer-links">
+                            <li><a href="/blog/server-status.html" data-i18n="nav_server_status">Server Status</a></li>
+                                <li><a href="/blog/minecraft-api-status.html">Minecraft API Status</a></li>
+                            <li><a href="/blog/skin-lookup.html" data-i18n="nav_skin_lookup">Skin Lookup</a></li>
+                            <li><a href="/blog/skin-editor.html" data-i18n="nav_skin_editor">Skin Editor</a></li>
+                            <li><a href="/blog/minecraft-skins.html" data-i18n="skins_library_title">Skin Galerie</a></li>
+                            <li><a href="/blog/minecraft-capes.html" data-i18n="capes_db_title">Cape Galerie</a></li>
+                            <li><a href="/blog/minecraft-versions.html">Minecraft Versionen</a></li>
+                            <li><a href="/blog/end_poem.html" data-i18n="nav_end_poem">End Poem</a></li>
+                        </ul>
+                    </div>
+                    <!-- Column 4 -->
+                    <div class="footer-col">
+                        <h4 class="footer-title" data-i18n="footer_legal">Rechtliches</h4>
+                        <ul class="footer-links">
+                            <li><a href="/blog/impressum.html" data-i18n="footer_impressum">Impressum</a></li>
+                            <li><a href="/blog/datenschutz.html" data-i18n="footer_privacy">Datenschutz</a></li>
+                            <li><a href="/blog/nutzungsbedingungen.html" data-i18n="footer_terms">Nutzungsbedingungen</a></li>
+                            <li><a href="/blog/copyright.html" data-i18n="footer_copyright">Copyright</a></li>
+                        </ul>
+                    </div>
+                    <!-- Column 5 -->
+                    <div class="footer-col">
+                        <h4 class="footer-title" data-i18n="footer_about">Über Uns</h4>
+                        <ul class="footer-links">
+                            <li><a href="/blog/history.html" data-i18n="footer_history">MC-Craft Geschichte</a></li>
+                            <li><a href="/blog/team.html" data-i18n="footer_team">Unser Team</a></li>
+                            <li><a href="/blog/about.html" data-i18n="footer_about_us">Über uns</a></li>
+                        </ul>
+                    </div>
+                    <!-- Column 6 -->
+                    <div class="footer-col">
+                        <h4 class="footer-title" data-i18n="footer_support">Support</h4>
+                        <ul class="footer-links">
+                            <li><a href="/blog/faq.html" data-i18n="footer_faq">FAQ & Hilfe</a></li>
+                            <li><a href="/blog/bug-report.html" data-i18n="footer_bug">Bug melden</a></li>
+                            <li><a href="/blog/support.html" data-i18n="footer_support_contact">Support Kontakt</a></li>
+                            <li><a href="/blog/e-mails.html">E-mails</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <div class="copyright">
+                        <p>&copy; <span id="currentYear">2026</span> MC-Craft. <span data-i18n="footer_rights">Alle Rechte vorbehalten.</span></p>
+                        <p class="disclaimer" data-i18n="footer_disclaimer">Minecraft ist eine Marke von Mojang Studios. Diese Seite ist nicht offiziell mit Mojang oder Microsoft verbunden.</p>
+                    </div>
+                    <div class="footer-meta">
+                        <span class="version" data-i18n="footer_version">Version 1.0.0</span>
+                        <a href="/blog/changelog.html" class="changelog active" data-i18n="footer_changelog">Changelog</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+
+    <button class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Notification Toast -->
+    <div class="toast-container" id="toastContainer"></div>
+
+    <!-- JavaScript -->
+    <script src="/assets/JS/modules/mc-preferences.js"></script>
+    <script src="/assets/JS/modules/text-converter.js"></script>
+</body>
+</html>

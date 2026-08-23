@@ -1,0 +1,129 @@
+[
+  {
+    "id": "minecraft:ender_dragon",
+    "name": "Ender Dragon",
+    "type": "boss",
+    "icon": "/assets/img/mobs/boss/Ender_Dragon.webp",
+    "health": 200,
+    "mob_type": "Monster",
+    "damage": {
+      "melee": {
+        "peaceful": 0,
+        "easy": 6,
+        "normal": 10,
+        "hard": 15
+      },
+      "wings": {
+        "peaceful": 0,
+        "easy": 3.5,
+        "normal": 5,
+        "hard": 7.5
+      },
+      "dragon_breath": 3,
+      "dragon_fireball": 6
+    },
+    "description": "Final boss of the game. Can be weakened by destroying end crystals. Respawnable with end crystals.",
+    "version": "1.9 (Combat Update)",
+    "numeric_id": "( Bedrock only ) dragon: 53 ender_crystal: 79",
+    "dimension": "End",
+    "movement_speed": 0.7,
+    "size": {
+      "width": 16,
+      "height": 8
+    },
+    "dragon_fireball": {
+      "size": {
+        "width": 1,
+        "height": 1
+      }
+    },
+    "spawn": {
+      "light_level": "any",
+      "biome": "End",
+      "structure": "End City"
+    },
+    "fun_fact": "Originally pink, later redesigned.",
+    "abilities": [
+      "Flight",
+      "Dragon breath (lingering potion effects)",
+      "Destroys blocks",
+      "Regeneration through end crystals"
+    ],
+    "drops": [
+      {
+        "item": "minecraft:dragon_egg",
+        "chance": "100%",
+        "amount": "1"
+      },
+      {
+        "item": "experience: 12000",
+        "chance": "100%",
+        "amount": "1"
+      }
+    ]
+  },
+  {
+    "id": "minecraft:wither",
+    "name": "Wither",
+    "type": "boss",
+    "icon": "/assets/img/mobs/boss/Wither.webp",
+    "health": 300,
+    "mob_type": "Undead, Monster",
+    "damage": {
+      "birth_explosion": {
+        "peaceful": 0,
+        "easy": 35.5,
+        "normal": 69,
+        "hard": 103.5
+      },
+      "wither_skull": {
+        "peaceful": 0,
+        "easy": 5,
+        "normal": 8,
+        "hard": 12
+      },
+      "wither_skull_explosion": 5,
+      "wither_effect": {
+        "peaceful": "unknown",
+        "easy": "unknown",
+        "normal": "Wither II for 10 sec (1 per sec)",
+        "hard": "Wither II for 40 sec (1 per sec)"
+      }
+    },
+    "description": "Summoned by placing 4 soul sand and 3 wither skeleton skulls.",
+    "version": "1.4.2 (Pretty Scary Update)",
+    "numeric_id": "( Bedrock only ) wither: 52 wither_skull: 89 (wither_skull dangerous: 91)",
+    "dimension": "all",
+    "movement_speed": 0.6,
+    "size": {
+      "width": 0.9,
+      "height": 3.5
+    },
+    "wither_skull": {
+      "size": {
+        "width": 0.3125,
+        "height": 0.3125
+      }
+    },
+    "spawn": {
+      "light_level": "any",
+      "biome": "all",
+      "structure": "built by player",
+      "spawn_delay": "11 seconds"
+    },
+    "fun_fact": "Its spawn lightning was a bug that became a feature!",
+    "abilities": [
+      "Flight",
+      "Explosive Projectiles",
+      "Wither Effect",
+      "Healing when destroying blocks"
+    ],
+    "drops": [
+      {
+        "item": "minecraft:nether_star",
+        "chance": "100%",
+        "amount": "1"
+      }
+    ]
+  }
+]

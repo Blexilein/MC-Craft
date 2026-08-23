@@ -1,0 +1,286 @@
+[
+  {
+    "id": "minecraft:ender_dragon",
+    "name": "Enderdrache",
+    "numeric_id": "( Nur Bedrock ) Drache: 53 Enderkrone: 79",
+    "type": "boss",
+    "category": "Bosse",
+    "icon": "/assets/img/mobs/boss/Ender_Dragon.webp",
+    "description": "Enderdrache ist boss.",
+    "biome": "Das Ende",
+    "aliases": [],
+    "introduced_date": "2011-11-18",
+    "removed_date": "",
+    "gallery": [],
+    "model": "",
+    "animation": [],
+    "source": "",
+    "updated_at": "2026-08-22",
+    "notes": "Der Enderdrache entsteht an der zentralen Endinsel, nicht in einer Endstadt.",
+    "version": "Java Edition 1.0.0 / Bedrock Edition 1.0.0",
+    "edition": "Java Edition, Bedrock Edition",
+    "effects": [],
+    "effect_immunities": [
+      "Fast alle Statuseffekte"
+    ],
+    "status": "Verfügbar",
+    "tags": [
+      "Bosse",
+      "Boss"
+    ],
+    "related_entries": [],
+    "command": "/summon minecraft:ender_dragon",
+    "version_history": [
+      {
+        "version": "Java Edition 1.0.0 / Bedrock Edition 1.0.0",
+        "change": "Hinzugefügt.",
+        "type": "added",
+        "date": "2011-11-18"
+      }
+    ],
+    "texture": [
+      {
+        "name": "Enderdragon Dragon Exploding",
+        "category": "standard",
+        "description": "Variante: Enderdragon Dragon Exploding.",
+        "file": "/assets/img/texture/mobs/enderdragon/dragon_exploding.png"
+      },
+      {
+        "name": "Enderdragon Dragon Eyes",
+        "category": "eyes",
+        "description": "Variante: Enderdragon Dragon Eyes.",
+        "file": "/assets/img/texture/mobs/enderdragon/dragon_eyes.png"
+      },
+      {
+        "name": "Enderdragon Dragon Fireball",
+        "category": "standard",
+        "description": "Variante: Enderdragon Dragon Fireball.",
+        "file": "/assets/img/texture/mobs/enderdragon/dragon_fireball.png"
+      },
+      {
+        "name": "Enderdragon Dragon",
+        "category": "standard",
+        "description": "Variante: Enderdragon Dragon.",
+        "file": "/assets/img/texture/mobs/enderdragon/dragon.png"
+      }
+    ],
+    "sounds": [],
+    "health": 200,
+    "damage": {
+      "kopf": {
+        "friedlich": 0,
+        "einfach": 6,
+        "normal": 10,
+        "schwer": 15
+      },
+      "fluegel": {
+        "friedlich": 0,
+        "einfach": 3.5,
+        "normal": 5,
+        "schwer": 7.5
+      },
+      "drachenatem_pro_halbe_sekunde": 3,
+      "feuerball_direkttreffer": 6
+    },
+    "armor": 0,
+    "experience": "Erster Sieg: 12.000; spätere Beschwörungen: 500",
+    "dimension": "The End",
+    "movement_speed": 0.7,
+    "size": {
+      "width": "Breite: 16.0",
+      "height": "Höhe: 8.0"
+    },
+    "spawn": {
+      "light_level": [
+        "Beliebig"
+      ],
+      "biome": "Das Ende",
+      "structure": "Bei erster Endreise automatisch; erneut durch vier Endkristalle am Ausgangsportal"
+    },
+    "light_level": [
+      "Beliebig"
+    ],
+    "classification": "Boss",
+    "renewable": "Ja, erneut beschwörbar; Drachenei nur einmal",
+    "can_despawn": "Nein",
+    "tameable": "Nein",
+    "breedable": "Nein",
+    "duplicable": "Nein",
+    "duplication_item": "",
+    "leashable": "Nein",
+    "rideable": "Nein",
+    "baby_variant": "Nein",
+    "drops": [
+      {
+        "item": "minecraft:dragon_egg",
+        "chance": "100 %",
+        "amount": "1",
+        "condition": "Nur nach dem allerersten Sieg in dieser Welt; erscheint auf dem Ausgangsportal"
+      }
+    ],
+    "abilities": [
+      "Fliegt",
+      "Zerstört viele durchflogene Blöcke",
+      "Wird von Endkristallen geheilt",
+      "Erzeugt Drachenatem-Wolken",
+      "Öffnet nach dem ersten Tod das Ausgangsportal und ein Endtransitportal"
+    ],
+    "fun_fact": "Der Enderdrache entsteht an der zentralen Endinsel, nicht in einer Endstadt.",
+    "attack_type": "Kopf-/Flügelkontakt, Drachenatem und Drachenfeuerball",
+    "targets": [
+      "Spieler"
+    ],
+    "enemy_mobs": [],
+    "follows": [],
+    "healing_item": "",
+    "fire_immune": "Ja",
+    "undead": "Nein",
+    "boss_bar": "Ja",
+    "knockback_resistance": 1,
+    "loot_table": "minecraft:entities/ender_dragon",
+    "java_entity_id": "minecraft:ender_dragon",
+    "bedrock_entity_id": "minecraft:ender_dragon"
+  },
+  {
+    "id": "minecraft:wither",
+    "name": "Wither",
+    "numeric_id": "( Nur Bedrock ) wither: 52 wither_skull: 89 (wither_skull dangerous: 91)",
+    "type": "boss",
+    "category": "Bosse",
+    "icon": "/assets/img/mobs/boss/Wither.webp",
+    "description": "Wither ist boss / untot.",
+    "biome": "Keine feste Biom-Bindung",
+    "aliases": [],
+    "introduced_date": "2012-10-25",
+    "removed_date": "",
+    "gallery": [],
+    "model": "",
+    "animation": [],
+    "source": "",
+    "updated_at": "2026-08-22",
+    "notes": "Der Wither heilt nicht durch zerstörte Blöcke, sondern regeneriert passiv und heilt zusätzlich, wenn seine Geschosse Ziele töten.",
+    "version": "Java Edition 1.4.2 / Bedrock Edition 0.16.0",
+    "edition": "Java Edition, Bedrock Edition",
+    "effects": [],
+    "effect_immunities": [
+      "Gift",
+      "Regeneration",
+      "Wither",
+      "Feuer",
+      "Ertrinken",
+      "Ersticken"
+    ],
+    "status": "Verfügbar",
+    "tags": [
+      "Bosse",
+      "Boss / untot",
+      "Untot"
+    ],
+    "related_entries": [],
+    "command": "/summon minecraft:wither",
+    "version_history": [
+      {
+        "version": "Java Edition 1.4.2 / Bedrock Edition 0.16.0",
+        "change": "Hinzugefügt.",
+        "type": "added",
+        "date": "2012-10-25"
+      }
+    ],
+    "texture": [
+      {
+        "name": "Wither Wither Armor",
+        "category": "armor",
+        "description": "Variante: Wither Wither Armor.",
+        "file": "/assets/img/texture/mobs/wither/wither_armor.png"
+      },
+      {
+        "name": "Wither Wither Invulnerable",
+        "category": "invulnerable",
+        "description": "Variante: Wither Wither Invulnerable.",
+        "file": "/assets/img/texture/mobs/wither/wither_invulnerable.png"
+      },
+      {
+        "name": "Wither Wither",
+        "category": "standard",
+        "description": "Variante: Wither Wither.",
+        "file": "/assets/img/texture/mobs/wither/wither.png"
+      }
+    ],
+    "sounds": [],
+    "health": {
+      "java": 300,
+      "bedrock_einfach": 300,
+      "bedrock_normal": 450,
+      "bedrock_schwer": 600
+    },
+    "damage": {
+      "geburtsexplosion": "Sehr hohe Explosionsstärke 7; Schaden entfernungs- und schwierigkeitsabhängig",
+      "witherschaedel": {
+        "einfach": 5,
+        "normal": 8,
+        "schwer": 12
+      },
+      "blauer_schaedel": "Gleicher Direktschaden, stärkere Blockzerstörung",
+      "wither_effekt": "Normal Wither II 10 Sekunden; Schwer Wither II 40 Sekunden; Editionsunterschiede möglich"
+    },
+    "armor": 4,
+    "experience": "50",
+    "dimension": "Alle",
+    "movement_speed": 0.6,
+    "size": {
+      "width": "Breite: 0.9",
+      "height": "Höhe: 3.5"
+    },
+    "spawn": {
+      "light_level": [
+        "Beliebig"
+      ],
+      "biome": "Alle",
+      "structure": "Spielerkonstruktion",
+      "spawn_delay": "10 Sekunden Aufladephase; Explosion nach 11 Sekunden"
+    },
+    "light_level": [
+      "Beliebig"
+    ],
+    "classification": "Boss / untot",
+    "renewable": "Ja",
+    "can_despawn": "Nein",
+    "tameable": "Nein",
+    "breedable": "Nein",
+    "duplicable": "Nein",
+    "duplication_item": "",
+    "leashable": "Nein",
+    "rideable": "Nein",
+    "baby_variant": "Nein",
+    "drops": [
+      {
+        "item": "minecraft:nether_star",
+        "chance": "100 %",
+        "amount": "1",
+        "condition": "Nicht von Plünderung beeinflusst; explodiert nicht und despawnt langsamer"
+      }
+    ],
+    "abilities": [
+      "Fliegt",
+      "Schießt schwarze und selten blaue Witherschädel",
+      "Regeneriert passiv Lebenspunkte",
+      "Erhält bei halber Gesundheit Witherrüstung und wird gegen Pfeile immun",
+      "Zerstört Blöcke bei Schaden und Bewegung; Bedrock besitzt zusätzliche Angriffsphasen"
+    ],
+    "fun_fact": "Der Wither heilt nicht durch zerstörte Blöcke, sondern regeneriert passiv und heilt zusätzlich, wenn seine Geschosse Ziele töten.",
+    "attack_type": "Explosive Witherschädel, Geburtenexplosion und Rammangriff in Bedrock",
+    "targets": [
+      "Fast alle nicht-untoten Lebewesen; Verhalten unterscheidet sich nach Edition"
+    ],
+    "enemy_mobs": [],
+    "follows": [],
+    "healing_item": "",
+    "fire_immune": "Ja",
+    "undead": "Ja",
+    "boss_bar": "Ja",
+    "knockback_resistance": 1,
+    "loot_table": "minecraft:entities/wither",
+    "java_entity_id": "minecraft:wither",
+    "bedrock_entity_id": "minecraft:wither"
+  }
+]

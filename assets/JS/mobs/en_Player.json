@@ -1,0 +1,53 @@
+[
+  {
+    "id": "minecraft:player",
+    "name": "Steve",
+    "type": "player",
+    "icon": "/assets/img/mobs/player/Steve.png",
+    "health": 20,
+    "damage": 0,
+    "description": "The default player character in Minecraft. Steve can walk through the world, gather resources, build, and fight monsters.",
+    "version": "Cave game tech test",
+    "dimension": "All",
+    "movement_speed": 0.1,
+    "size": {
+      "width": 0.6,
+      "height": 1.8,
+      "sneaking": {
+        "width": 0.6,
+        "height": 1.5
+      },
+      "gliding_swimming": {
+        "width": 0.6,
+        "height": 0.6
+      },
+      "sleeping": {
+        "width": 0.2,
+        "height": 0.2
+      }
+    },
+    "spawn": {
+      "light_level": [
+        "All"
+      ],
+      "biome": "All",
+      "structure": "None",
+      "note": "At player spawn point (if set with bed, respawn anchor, or commands) or at world spawn"
+    },
+    "armor": "0-20 (depending on armor)",
+    "attack_strength": {
+      "fist": "1HP (until JE Combat Tests), 2HP (future JE Combat Tests)",
+      "items": "Varies"
+    },
+    "light_level": [
+      "All"
+    ],
+    "fun_fact": "Steve was originally meant as a placeholder name but became the official name. His female counterpart is Alex.",
+    "abilities": [
+      "Can use all types of tools and weapons",
+      "Can wear armor (0-20 armor points)",
+      "Can sprint (0.3 speed), sneak, swim, and fly",
+      "Can interact with and place blocks"
+    ]
+  }
+]
