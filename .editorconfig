@@ -1,6 +1,4 @@
-# EditorConfig hilft, dass alle Dateien (egal wer sie in welchem Editor
-# bearbeitet) dieselbe Einrueckung/Zeilenenden verwenden. VS Code liest
-# das automatisch, ohne Extension. https://editorconfig.org
+
 root = true
 
 [*]
