@@ -1,22 +1,12 @@
-# Betriebssystem-eigene Dateien
-.DS_Store
+
 Thumbs.db
 desktop.ini
 
-# Editor-eigene Dateien (persoenliche Einstellungen, nicht projektweit)
-.vscode/*
-!.vscode/settings.json
-!.vscode/extensions.json
-*.swp
-
-# Falls spaeter mal Node-Tooling dazukommt (z.B. fuer einen Build-Schritt)
 node_modules/
 npm-debug.log*
 
-# Lokale Umgebungsvariablen/Secrets, falls es die je gibt
 .env
 .env.local
 
-# Lokale VS-Code / Claude Einstellungen
 .vscode/
 .claude/
