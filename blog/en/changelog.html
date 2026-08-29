@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="overworld">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Mohamad Laith AKA 'Blexilein'">
+    <meta name="robots" content="index, follow">
+    <meta name="description" content="MC-Craft Changelog - all updates and changes at a glance.">
+    <meta name="keywords" content="Minecraft, Changelog, Updates, Versions, Changes">
+    <link rel="canonical" href="https://mc-craft.com/blog/en/changelog.html">
+    <link rel="alternate" hreflang="de" href="https://mc-craft.com/blog/de/changelog.html">
+    <link rel="alternate" hreflang="en" href="https://mc-craft.com/blog/en/changelog.html">
+    <link rel="alternate" hreflang="x-default" href="https://mc-craft.com/blog/de/changelog.html">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="MC-Craft | Changelog">
+    <meta property="og:description" content="MC-Craft Changelog - all updates and changes at a glance.">
+    <meta property="og:url" content="https://mc-craft.com/blog/en/changelog.html">
+    <meta property="og:image" content="https://mc-craft.com/assets/img/favicon/mc-craft.png">
+    <meta property="og:image:alt" content="MC-Craft Logo">
+    <meta property="og:site_name" content="MC-Craft">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:locale:alternate" content="de_DE">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="MC-Craft | Changelog">
+    <meta name="twitter:description" content="MC-Craft Changelog - all updates and changes at a glance.">
+    <meta name="twitter:image" content="https://mc-craft.com/assets/img/favicon/mc-craft.png">
+    <meta name="theme-color" content="#148200">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicon/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon/favicon-32x32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/assets/img/favicon/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="/assets/img/favicon/android-chrome-512x512.png">
+    <link rel="icon" href="/assets/img/favicon/favicon.ico">
+    <link rel="manifest" href="/site.webmanifest">
+        <link rel="stylesheet" href="/assets/fontawesome/all.min.css">
+    <link rel="stylesheet" href="/assets/CSS/changelog.css">
+    <link rel="stylesheet" href="/assets/CSS/site-modern-v1.css">
+    <title>MC-Craft | Changelog</title>
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div class="loader" id="loader">
+        <div class="loader-content">
+            <div class="loading-spinner">
+                <div class="spinner"></div>
+            </div>
+            <p class="loading-text">Changelog is loading...</p>
+            <div class="loading-progress"></div>
+        </div>
+    </div>
+
+        <!-- Header -->
+     <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <a href="/en/index.html" class="logo">
+                    <div class="logo-icon"></div>
+                    <span class="logo-text">MC-Craft</span>
+                </a>
+                <nav class="navigation">
+                    <ul class="nav-list">
+                        <li><a href="/en/index.html" class="nav-link">Home</a></li>
+                        <li class="dropdown">
+                            <button class="dropdown-btn nav-link">Tools</button>
+                            <ul class="dropdown-menu">
+                                <li><a href="/blog/en/text-converter.html">Text Converter</a></li>
+                                <li><a href="/blog/en/color-text.html">Color Text</a></li>
+                                <li><a href="/blog/en/structure-converter.html">Structure Converter</a></li>
+                                <li><a href="/blog/en/map-art-generator.html">Map Art Generator</a></li>
+                                <li><a href="/blog/en/items.html">Items Database</a></li>
+                                <li><a href="/blog/en/mobs.html">Mobs Database</a></li>
+                                <li><a href="/blog/en/server-status.html">Server Status</a></li>
+                                <li><a href="/blog/en/minecraft-api-status.html">Minecraft API Status</a></li>
+                                <li><a href="/blog/en/skin-lookup.html">Skin Lookup</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <button class="dropdown-btn nav-link">Discover</button>
+                            <ul class="dropdown-menu">
+                                <li><a href="/blog/en/skin-editor.html">Skin Editor</a></li>
+                               <li><a href="/blog/en/day-night-cycle.html">Day-Night Cycle</a></li>
+                                <li><a href="/blog/en/end_poem.html">End Poem</a></li>
+                                <li><a href="/blog/en/minecraft-capes.html">Capes Database</a></li>
+                                <li><a href="/blog/en/minecraft-versions.html">Minecraft Versionen</a></li>
+                                <li><a href="/blog/en/minecraft-skins.html">Skin Library</a></li>
+                                <li><a href="/blog/en/beacon-color-mixer.html">Beacon Color Mixer</a></li>
+                                <li><a href="/blog/en/qr-generator.html">QR Generator</a></li>
+                                <li><a href="/blog/en/advancement-generator.html">Advancement Generator</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="sound-toggle">
+                    <button class="sound-btn" id="soundBtn" aria-label="Sound ein/aus">
+                        <img src="/assets/img/backgrounds/sound-on.svg" alt="Sound on" class="sound-icon" id="soundIcon">
+                    </button>
+                </div>
+                <div class="lang-switcher">
+                    <a class="lang-btn" id="langBtn" href="/blog/de/changelog.html" aria-label="Zu Deutsch wechseln">
+                        <img src="/assets/img/backgrounds/en.svg" alt="English" class="flag-icon" id="langFlag">
+                    </a>
+                </div>
+                <div class="theme-switcher">
+                    <button class="theme-btn" id="themeBtn">
+                        <i class="fa-solid fa-palette"></i>
+                    </button>
+                    <div class="theme-dropdown" id="themeDropdown">
+                        <button class="theme-option" data-theme="overworld">
+                            <i class="fas fa-cube"></i>
+                            <span>Overworld</span>
+                        </button>
+                        <button class="theme-option" data-theme="nether">
+                            <i class="fas fa-fire"></i>
+                            <span>Nether</span>
+                        </button>
+                        <button class="theme-option" data-theme="end">
+                            <i class="fas fa-moon"></i>
+                            <span>The End</span>
+                        </button>
+                    </div>
+                </div>
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Navigation -->
+    <div class="mobile-nav" id="mobileNav">
+        <div class="mobile-nav-header">
+            <div class="logo">
+                <div class="logo-icon"></div>
+                <span class="logo-text">MC-Craft</span>
+            </div>
+            <button class="close-btn" id="closeBtn">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <ul class="mobile-nav-list">
+            <li><a href="/en/index.html" class="mobile-nav-link">Home</a></li>
+            <li><a href="/blog/en/text-converter.html" class="mobile-nav-link">Text Converter</a></li>
+            <li><a href="/blog/en/color-text.html" class="mobile-nav-link">Color Text</a></li>
+            <li><a href="/blog/en/structure-converter.html" class="mobile-nav-link">Structure Converter</a></li>
+            <li><a href="/blog/en/map-art-generator.html" class="mobile-nav-link">Map Art Generator</a></li>
+            <li><a href="/blog/en/items.html" class="mobile-nav-link">Items Database</a></li>
+            <li><a href="/blog/en/mobs.html" class="mobile-nav-link">Mobs Database</a></li>
+            <li><a href="/blog/en/server-status.html" class="mobile-nav-link">Server Status</a></li>
+            <li><a href="/blog/en/minecraft-api-status.html" class="mobile-nav-link">Minecraft API Status</a></li>
+            <li><a href="/blog/en/skin-lookup.html" class="mobile-nav-link">Skin Lookup</a></li>
+            <li><a href="/blog/en/skin-editor.html" class="mobile-nav-link">Skin Editor</a></li>
+            <li><a href="/blog/en/day-night-cycle.html" class="mobile-nav-link">Day-Night Cycle</a></li>
+            <li><a href="/blog/en/end_poem.html" class="mobile-nav-link">End Poem</a></li>
+            <li><a href="/blog/en/minecraft-capes.html" class="mobile-nav-link">Capes Database</a></li>
+            <li><a href="/blog/en/minecraft-versions.html" class="mobile-nav-link">Minecraft Versionen</a></li>
+            <li><a href="/blog/en/minecraft-skins.html" class="mobile-nav-link">Skin Library</a></li>
+            <li><a href="/blog/en/beacon-color-mixer.html" class="mobile-nav-link">Beacon Color Mixer</a></li>
+            <li><a href="/blog/en/qr-generator.html" class="mobile-nav-link">QR Generator</a></li>
+            <li><a href="/blog/en/advancement-generator.html" class="mobile-nav-link">Advancement Generator</a></li>
+        </ul>
+        <div class="mobile-theme-switcher">
+            <h4>Choose Theme:</h4>
+            <div class="theme-options">
+                <button class="theme-option-btn" data-theme="overworld">
+                    <i class="fas fa-cube"></i> <span>Overworld</span>
+                </button>
+                <button class="theme-option-btn" data-theme="nether">
+                    <i class="fas fa-fire"></i> <span>Nether</span>
+                </button>
+                <button class="theme-option-btn" data-theme="end">
+                    <i class="fas fa-moon"></i> <span>The End</span>
+                </button>
+            </div>
+            <div class="mobile-sound-lang">
+                <button class="mobile-sound-btn" id="mobileSoundBtn">
+                    <img src="/assets/img/backgrounds/sound-on.svg" alt="Sound on" class="sound-icon" id="mobileSoundIcon">
+                    <span>Sound</span>
+                </button>
+                <a class="mobile-lang-btn" id="mobileLangBtn" href="/blog/de/changelog.html">
+                    <img src="/assets/img/backgrounds/en.svg" alt="English" class="flag-icon" id="mobileLangFlag">
+                    <span>Language</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+
+    <main class="main">
+        <!-- Hero Section -->
+        <section class="hero" id="home">
+            <div class="hero-bg-grid"></div>
+            <div class="container">
+                <div class="hero-content">
+                <div class="hero-badge">
+                        <span class="hero-badge-dot"></span>
+                        V 1.1.1 IS HERE
+                    </div><br><br><br>
+                    <h1 class="hero-title">MC-Craft <span class="highlight">Changelog</span></h1>
+                    <p class="hero-description">
+                        All updates, changes and new features of MC-Craft. Here you can find all versions and what has changed.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#latest" class="btn btn-primary">
+                            <i class="fas fa-rocket"></i> View Version 1.1.1
+                        </a>
+                        <a href="#cta" class="btn btn-secondary">
+                            <i class="fas fa-info-circle"></i> Learn More
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="hero-grid-staggered">
+                        <div class="hero-stagger-col hero-stagger-left">
+                            <div class="grid-item">
+                            <i class="fas fa-code-branch"></i>
+                            <span>Updates</span>
+                        </div>
+                        <div class="grid-item">
+                            <i class="fas fa-bug"></i>
+                            <span>Bugfixes</span>
+                        </div>
+                    </div>
+                        <div class="hero-stagger-col hero-stagger-right">
+                        <div class="grid-item">
+                            <i class="fas fa-plus-circle"></i>
+                            <span>New Features</span>
+                        </div>
+                        <div class="grid-item">
+                            <i class="fas fa-wrench"></i>
+                            <span>Improvements</span>
+                        </div>
+                    </div>
+                        <div class="floating-cube floating-cube-1"></div>
+                        <div class="floating-cube floating-cube-2"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Latest Version -->
+        <section class="changelog-section" id="latest">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Current <span class="highlight">Version</span></h2>
+                    <p class="section-subtitle">All final changes for the official 1.1.1 release</p>
+                </div>
+                
+                <div class="version-card featured">
+                    <div class="version-badge">
+                        <span class="version-number">v1.1.1</span>
+                        <span class="version-date">August 29, 2026</span>
+                    </div>
+                    <div class="version-content">
+                        <h3 class="version-title">Release 1.1.1: Custom Cursor, End Poem Infobox & API Status Cleanup</h3>
+
+                        <div class="changelog-categories">
+                            <!-- New Features -->
+                            <div class="category">
+                                <h4 class="category-title">
+                                    <i class="fas fa-plus-circle"></i>
+                                    <span>New Features</span>
+                                </h4>
+                                <ul class="changelog-list">
+                                    <li>
+                                        <span class="change-type new">NEW</span>
+                                        <span>Custom diamond sword cursor across the whole site</span>
+                                    </li>
+                                    <li>
+                                        <span class="change-type new">NEW</span>
+                                        <span>Info box with background facts (author, language, release date, publisher) on the End Poem page</span>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <!-- Improvements -->
+                            <div class="category">
+                                <h4 class="category-title">
+                                    <i class="fas fa-wrench"></i>
+                                    <span>Improvements</span>
+                                </h4>
+                                <ul class="changelog-list">
+                                    <li>
+                                        <span class="change-type improved">IMPROVED</span>
+                                        <span>Animated End Portal backdrop in the End Poem viewer (drifting, pulsing effect instead of a static image)</span>
+                                    </li>
+                                    <li>
+                                        <span class="change-type improved">IMPROVED</span>
+                                        <span>Minecraft API Status: removed 4 permanently retired Mojang endpoints that would have shown "Unknown" forever</span>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <!-- Bugfixes -->
+                            <div class="category">
+                                <h4 class="category-title">
+                                    <i class="fas fa-bug"></i>
+                                    <span>Bugfixes</span>
+                                </h4>
+                                <ul class="changelog-list">
+                                    <li>
+                                        <span class="change-type fixed">FIXED</span>
+                                        <span>End Poem page: broken nested links in the hero section fixed, which had been shifting the whole page sideways</span>
+                                    </li>
+                                    <li>
+                                        <span class="change-type fixed">FIXED</span>
+                                        <span>End Poem page: cleaned up mixed German/English text on the speed buttons</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="version-footer">
+                            <div class="version-notes">
+                                <h4><i class="fas fa-sticky-note"></i> <span>Notes</span></h4>
+                                <p>Version 1.1.1 is a smaller polish release (custom cursor, End Poem infobox) plus cleanup work (API status, End Poem layout bug).</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Version History -->
+        <section class="version-history" id="history">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Version <span class="highlight">History</span></h2>
+                    <p class="section-subtitle">All previous versions of MC-Craft</p>
+                </div>
+
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-marker"><i class="fas fa-map"></i></div>
+                        <div class="timeline-content">
+                            <h3>v1.1.0 – Map Art Generator Expansion &amp; Loading Animation <span class="version-date">August 29, 2026</span></h3>
+                            <ul class="changelog-list">
+                                <li><span class="change-type new">NEW</span><span>Structure Converter – converts structures between .schematic, .schem, .litematic, and .nbt directly in the browser</span></li>
+                                <li><span class="change-type new">NEW</span><span>map.dat export in the Map Art Generator – produces a real Minecraft map file instead of a structure</span></li>
+                                <li><span class="change-type new">NEW</span><span>Free map size (up to 50×50 maps) and ZIP export with individual maps for large builds</span></li>
+                                <li><span class="change-type new">NEW</span><span>Contrast control and dithering for better image quality on logos, text, and photos</span></li>
+                                <li><span class="change-type new">NEW</span><span>Searchable tables of every block color and the 62 official Minecraft map colors</span></li>
+                                <li><span class="change-type new">NEW</span><span>New loading animation on page load, with a progress readout and the current version</span></li>
+                                <li><span class="change-type improved">IMPROVED</span><span>More accurate color matching in the Map Art Generator via perceptually weighted color distance</span></li>
+                                <li><span class="change-type improved">IMPROVED</span><span>Preview now shows the original and result side by side for comparison</span></li>
+                                <li><span class="change-type improved">IMPROVED</span><span>Block selection grouped by material category, filterable and toggleable per category</span></li>
+                                <li><span class="change-type improved">IMPROVED</span><span>Skin Editor promoted from Alpha to Beta</span></li>
+                                <li><span class="change-type fixed">FIXED</span><span>Target format in the Map Art Generator incorrectly reset to .litematic on every re-generation</span></li>
+                                <li><span class="change-type fixed">FIXED</span><span>Preview image in the Map Art Generator sometimes rendered too large or stretched</span></li>
+                                <li><span class="change-type fixed">FIXED</span><span>Red tones were sometimes incorrectly matched to orange blocks in color search</span></li>
+                            </ul>
+                            <p class="version-notes-inline">Version 1.1.0 significantly expanded the Map Art Generator (map.dat, ZIP export, image quality) and introduced a new loading animation.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-marker"><i class="fas fa-rocket"></i></div>
+                        <div class="timeline-content">
+                            <h3>v1.0.0 – Modern Rework &amp; Stable Launch <span class="version-date">August 22, 2026</span></h3>
+                            <ul class="changelog-list">
+                                <li><span class="change-type new">NEW</span><span>A unified modern design system across all pages</span></li>
+                                <li><span class="change-type new">NEW</span><span>Fully responsive layout for smartphones, tablets, and desktops</span></li>
+                                <li><span class="change-type new">NEW</span><span>Improved navigation with consistent paths and controls</span></li>
+                                <li><span class="change-type new">NEW</span><span>Refined German and English UI copy</span></li>
+                                <li><span class="change-type improved">IMPROVED</span><span>Better spacing, typography, and contrast for readability</span></li>
+                                <li><span class="change-type improved">IMPROVED</span><span>Improved touch targets and focus states</span></li>
+                                <li><span class="change-type improved">IMPROVED</span><span>Optimized image and content behavior on small screens</span></li>
+                                <li><span class="change-type fixed">FIXED</span><span>Fixed inconsistent links to the Skin Editor</span></li>
+                                <li><span class="change-type fixed">FIXED</span><span>Standardized version labels on all pages</span></li>
+                                <li><span class="change-type fixed">FIXED</span><span>Hardened baseline mobile navigation behavior</span></li>
+                            </ul>
+                            <p class="version-notes-inline">Version 1.0.0 was MC-Craft's consolidated modern baseline: responsive, consistent, stable, and clearly structured.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Upcoming Features -->
+        <section class="future-updates" id="upcoming">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Planned <span class="highlight">Updates</span></h2>
+                    <p class="section-subtitle">What's coming next?</p>
+                </div>
+
+                <div class="upcoming-grid">
+                    <article class="upcoming-card">
+                        <div class="upcoming-icon"><i class="fas fa-robot"></i></div>
+                        <h3>AI Integration</h3>
+                        <p>AI-powered tools for Minecraft builders</p>
+                        <span class="upcoming-status">Planning</span>
+                    </article>
+
+                    <article class="upcoming-card">
+                        <div class="upcoming-icon"><i class="fas fa-users"></i></div>
+                        <h3>Community Features</h3>
+                        <p>User accounts and community area</p>
+                        <span class="upcoming-status">Planned</span>
+                    </article>
+
+                    <article class="upcoming-card">
+                        <div class="upcoming-icon"><i class="fas fa-mobile-screen-button"></i></div>
+                        <h3>Mobile App</h3>
+                        <p>Native iOS & Android App</p>
+                        <span class="upcoming-status">Planned</span>
+                    </article>
+
+                    <article class="upcoming-card">
+                        <div class="upcoming-icon"><i class="fas fa-language"></i></div>
+                        <h3>Multilingualism</h3>
+                        <p>Support for English & other languages</p>
+                        <span class="upcoming-status">In progress</span>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta-section" id="cta">
+            <div class="container">
+                <div class="cta-content">
+                    <h2 class="cta-title">Stay up to date!</h2>
+                    <p class="cta-description">
+                        Don't miss any updates! Follow us for the latest news and upcoming features.
+                    </p>
+                    <div class="cta-buttons">
+                        <a href="https://discord.gg/eVVpQD75w4" class="btn btn-primary">
+                            <i class="fab fa-discord"></i> Discord Community
+                        </a>
+                        <a href="/en/index.html" class="btn btn-outline">
+                            <i class="fas fa-home"></i> Back to homepage
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+        <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-grid">
+                    <!-- Column 1 -->
+                    <div class="footer-col">
+                        <div class="footer-logo">
+                            <div class="logo-icon"></div>
+                            <span class="logo-text">MC-Craft</span>
+                        </div>
+                        <p class="footer-description">Free Minecraft tools for the community. Developed by players for players.</p>
+                        <div class="social-links">
+                           <a href="https://github.com/Blexilein" class="social-link" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                            <a href="https://discord.gg/eVVpQD75w4" class="social-link"><i class="fab fa-discord"></i></a>
+                            <a href="https://x.com/Blexi_1" class="social-link" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        </div>
+                    </div>
+                    <!-- Column 2 -->
+                    <div class="footer-col">
+                        <h4 class="footer-title">Tools</h4>
+                        <ul class="footer-links">
+                            <li><a href="/blog/en/text-converter.html">Text Converter</a></li>
+                            <li><a href="/blog/en/color-text.html">Color Text-Konverter</a></li>
+                            <li><a href="/blog/en/structure-converter.html">Structure Converter</a></li>
+                            <li><a href="/blog/en/map-art-generator.html">Map Art Generator</a></li>
+                            <li><a href="/blog/en/items.html">Items Database</a></li>
+                            <li><a href="/blog/en/mobs.html">Mobs Database</a></li>
+                            <li><a href="/blog/en/day-night-cycle.html">Day-Night Cycle</a></li>
+                            <li><a href="/blog/en/beacon-color-mixer.html">Beacon Color Mixer</a></li>
+                                <li><a href="/blog/en/qr-generator.html">QR Generator</a></li>
+                                <li><a href="/blog/en/advancement-generator.html">Advancement Generator</a></li>
+                        </ul>
+                    </div>
+                    <!-- Column 3 -->
+                    <div class="footer-col">
+                        <h4 class="footer-title">More Tools</h4>
+                        <ul class="footer-links">
+                            <li><a href="/blog/en/server-status.html">Server Status</a></li>
+                                <li><a href="/blog/en/minecraft-api-status.html">Minecraft API Status</a></li>
+                            <li><a href="/blog/en/skin-lookup.html">Skin Lookup</a></li>
+                            <li><a href="/blog/en/skin-editor.html">Skin Editor</a></li>
+                            <li><a href="/blog/en/minecraft-skins.html">Skin Galerie</a></li>
+                            <li><a href="/blog/en/minecraft-capes.html">Cape Galerie</a></li>
+                            <li><a href="/blog/en/minecraft-versions.html">Minecraft Versionen</a></li>
+                            <li><a href="/blog/en/end_poem.html">End Poem</a></li>
+                        </ul>
+                    </div>
+                    <!-- Column 4 -->
+                    <div class="footer-col">
+                        <h4 class="footer-title">Legal</h4>
+                        <ul class="footer-links">
+                            <li><a href="/blog/en/impressum.html">Imprint</a></li>
+                            <li><a href="/blog/en/datenschutz.html">Privacy Policy</a></li>
+                            <li><a href="/blog/en/nutzungsbedingungen.html">Terms of Use</a></li>
+                            <li><a href="/blog/en/copyright.html">Copyright</a></li>
+                        </ul>
+                    </div>
+                    <!-- Column 5 -->
+                    <div class="footer-col">
+                        <h4 class="footer-title">About Us</h4>
+                        <ul class="footer-links">
+                            <li><a href="/blog/en/history.html">MC-Craft History</a></li>
+                            <li><a href="/blog/en/team.html">Our Team</a></li>
+                            <li><a href="/blog/en/about.html">About us</a></li>
+                        </ul>
+                    </div>
+                    <!-- Column 6 -->
+                    <div class="footer-col">
+                        <h4 class="footer-title">Support</h4>
+                        <ul class="footer-links">
+                            <li><a href="/blog/en/faq.html">FAQ & Help</a></li>
+                            <li><a href="/blog/en/bug-report.html">Report Bug</a></li>
+                            <li><a href="/blog/en/support.html">Support Contact</a></li>
+                            <li><a href="/blog/en/e-mails.html">E-mails</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <div class="copyright">
+                        <p>&copy; <span id="currentYear">2026</span> MC-Craft. <span>All rights reserved.</span></p>
+                        <p class="disclaimer">Minecraft is a trademark of Mojang Studios. This site is not officially affiliated with Mojang or Microsoft.</p>
+                    </div>
+                    <div class="footer-meta">
+                        <span class="version">Version 1.1.1</span>
+                        <a href="/blog/en/changelog.html" class="changelog active">Changelog</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+
+    <button class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Notification Toast -->
+    <div class="toast-container" id="toastContainer"></div>
+
+    <!-- JavaScript -->
+    <script src="/assets/JS/modules/mc-preferences.js"></script>
+    <script src="/assets/JS/modules/en/changelog.js"></script>
+</body>
+</html>

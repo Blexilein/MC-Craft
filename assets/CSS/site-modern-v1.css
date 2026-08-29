@@ -2,6 +2,20 @@
 /* Self-hosted (no request to Google's servers, see assets/fonts/fonts.css) */
 @import url('/assets/fonts/fonts.css');
 
+/* Site-wide custom cursor: the Diamond Sword item icon, cropped to its native
+   16x16 pixel-art grid and scaled 2x (32x32) with nearest-neighbor resampling
+   so it stays crisp/blocky instead of blurry. Hotspot (28,2) sits right at the
+   blade tip, matching how a normal arrow cursor's hotspot sits at its tip.
+   !important + the universal selector because dozens of page-specific
+   stylesheets set their own `cursor: pointer` on buttons/links, and this file
+   loads last but many of those rules match with equal specificity — without
+   overriding them, the sword would only ever show over plain backgrounds.
+   Real text inputs keep the native text-beam cursor since a static sword
+   there would make it hard to see where the caret will land. */
+*:not(input[type="text"]):not(input[type="search"]):not(input[type="email"]):not(input[type="number"]):not(input[type="url"]):not(input[type="password"]):not(textarea):not([contenteditable="true"]) {
+    cursor: url('/assets/img/cursor/sword-cursor.png') 28 2, auto !important;
+}
+
 :root {
     --ui-font: 'Space Grotesk', 'Segoe UI', sans-serif;
     --title-font: 'Chakra Petch', 'Minecraft', sans-serif;

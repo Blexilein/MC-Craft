@@ -1,6 +1,6 @@
 # MC-Craft – Deine Minecraft-Tools / MC-Craft – Your Minecraft Tools
 
-![Version](https://img.shields.io/badge/version-1.0.0-brightgreen)
+![Version](https://img.shields.io/badge/version-1.1.1-brightgreen)
 ![License](https://img.shields.io/badge/license-MIT-blue)
 ![Made with](https://img.shields.io/badge/made%20with-HTML%2FCSS%2FJS-orange)
 
@@ -18,7 +18,7 @@
 
 MC-Craft ist eine **kostenlose Sammlung von Minecraft-Tools**, die von einem leidenschaftlichen Spieler für die Community entwickelt wurde. Das Projekt entstand aus dem Wunsch heraus, nützliche Hilfsmittel anzubieten, die im Alltag eines Minecraft-Spielers fehlen – sei es beim Bauen, beim Erkunden von Items und Mobs oder beim Verwalten von Servern. Alle Tools laufen direkt im Browser, benötigen keine Installation und sind **werbefrei, schnell und sicher**.
 
-Die Plattform umfasst derzeit **16 verschiedene Werkzeuge** sowie zahlreiche Informations- und Support-Seiten, darunter:
+Die Plattform umfasst derzeit **18 verschiedene Werkzeuge** sowie zahlreiche Informations- und Support-Seiten, darunter:
 - Text- und Farbkonverter für Chat-Nachrichten und Server-MOTDs
 - Umfangreiche Datenbanken zu Items (2.000+) und Mobs (100+) der Java Edition
 - Live-Status-Checks für Minecraft-Server und offizielle Mojang-APIs
@@ -32,7 +32,7 @@ Dazu kommen rechtliche Informationen (Impressum, Datenschutz, Nutzungsbedingunge
 
 MC-Craft is a **free collection of Minecraft tools** developed by a passionate player for the community. The project was born out of the desire to provide useful utilities that Minecraft players often miss – whether it's for building, exploring items and mobs, or managing servers. All tools run directly in the browser, require no installation, and are **ad-free, fast, and secure**.
 
-The platform currently offers **16 different tools** plus numerous information and support pages, including:
+The platform currently offers **18 different tools** plus numerous information and support pages, including:
 - Text and color converters for chat messages and server MOTDs
 - Extensive item (2,000+) and mob (100+) databases for the Java Edition
 - Live status checks for Minecraft servers and the official Mojang APIs
@@ -59,6 +59,8 @@ In addition, there are legal pages (imprint, privacy policy, terms of use, copyr
 | **Beacon Color Mixer** | Finde die perfekte Glas-Kombination für Beacons | Find the perfect glass combination for beacons |
 | **QR-Code-Generator** | Erstelle QR-Codes, z. B. für Server-IPs | Create QR codes, e.g. for server IPs |
 | **Advancement Generator** | Gestalte eigene Fortschritts-Benachrichtigungen | Design your own advancement notifications |
+| **Struktur-Konverter** | Konvertiere Bauwerke zwischen .schematic, .schem, .litematic & .nbt | Convert structures between .schematic, .schem, .litematic & .nbt |
+| **Map-Art-Generator** | Verwandle ein Bild in Minecraft-Bau-Blöcke oder eine echte map.dat-Karte, mit Staircasing, Dithering, Kontrast-Regler, freier Kartengröße und ZIP-Export | Turn an image into Minecraft building blocks or a real map.dat map, with staircasing, dithering, a contrast control, free map size, and ZIP export |
 
 ---
 
@@ -137,7 +139,7 @@ MC-Craft verwendet **keine** Tracking- oder Analyse-Tools (z. B. Google Analytic
 - **Selbst gehostet statt CDN:** Font Awesome, Google Fonts (Chakra Petch & Space Grotesk), three.js und SkinView3D liegen alle im eigenen `assets/`-Ordner – keine Anfragen an Drittanbieter beim Laden der Seite
 - **three.js + SkinView3D** für die 3D-Skin-Vorschau im Skin Editor und Skin Lookup
 - **Offizielle Mojang-/Minecraft-APIs** für Server-Status, Skin-Abfragen und Versionsdaten – Anfragen laufen direkt vom Browser der Nutzer:innen zu Mojang, nicht über einen eigenen Server
-- **Mehrsprachig (DE/EN)** über ein eigenes, leichtgewichtiges `data-i18n`-System (kein i18n-Framework)
+- **Mehrsprachig (DE/EN)** über getrennte statische Seiten pro Sprache (`/blog/de/…` und `/blog/en/…`), kein clientseitiges i18n-Framework
 
 **🇬🇧 English:** MC-Craft is a pure frontend application with no backend, database, or build step – every page is static HTML5/CSS3/vanilla JavaScript.
 
@@ -145,7 +147,7 @@ MC-Craft verwendet **keine** Tracking- oder Analyse-Tools (z. B. Google Analytic
 - **Self-hosted instead of CDN:** Font Awesome, Google Fonts (Chakra Petch & Space Grotesk), three.js, and SkinView3D all live in the project's own `assets/` folder – no third-party requests when the page loads
 - **three.js + SkinView3D** for the 3D skin preview in the Skin Editor and Skin Lookup
 - **Official Mojang/Minecraft APIs** for server status, skin lookups, and version data – requests go directly from the visitor's browser to Mojang, not through a server of ours
-- **Bilingual (DE/EN)** via a lightweight custom `data-i18n` system (no i18n framework)
+- **Bilingual (DE/EN)** via separate static pages per language (`/blog/de/…` and `/blog/en/…`), no client-side i18n framework
 
 ---
 
