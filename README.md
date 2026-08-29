@@ -2,7 +2,7 @@
 
 ![Version](https://img.shields.io/badge/version-1.1.1-brightgreen)
 ![License](https://img.shields.io/badge/license-MIT-blue)
-![Made with](https://img.shields.io/badge/made%20with-HTML%2FCSS%2FJS-orange)
+![Made with](https://img.shields.io/badge/made%20with-HTML%2FCSS%2FJS%2fPython-orange)
 
 ## 🌐 Links
 
