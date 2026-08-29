@@ -1,64 +1,30 @@
-# ============================================================
-# .htaccess fuer MC-Craft (Apache-Webserver)
-#
-# Diese Datei gehoert in das Wurzelverzeichnis, in dem auch index.html
-# liegt. Sie wird NUR von Apache-Servern gelesen (das trifft auf die
-# meisten deutschen Hoster zu: IONOS, Strato, ALL-INKL, Hetzner
-# Webhosting, ...). Falls dein Hosting stattdessen Nginx, Netlify,
-# Vercel oder GitHub Pages ist, wird diese Datei ignoriert und du
-# brauchst dort eine andere, plattformspezifische Konfiguration.
-#
-# Lokal beim Testen mit dem VS-Code "Live Server" hat diese Datei
-# keinerlei Wirkung (Live Server ist kein Apache und liest .htaccess
-# nicht) - sie greift ausschliesslich auf dem echten Server.
-# ============================================================
 
-# --- 1) Eigene 404-Seite ---
-# Ohne diese Zeile zeigt Apache seine eigene, generische Fehlerseite an,
-# wenn eine URL nicht existiert (z.B. Tippfehler in der Adresse).
-# Stattdessen wird jetzt deine eigene 404.html mit passendem Design
-# angezeigt.
 ErrorDocument 404 /404.html
 
-# --- 2) HTTPS erzwingen ---
-# AKTUELL DEAKTIVIERT: mc-craft.com war zum Zeitpunkt dieser Aenderung
-# noch nicht erreichbar (DNS zeigt auf nichts), daher konnte nicht
-# geprueft werden, ob auf dem Zielserver bereits ein gueltiges
-# SSL-Zertifikat aktiv ist. Die drei "#" vor RewriteEngine/Cond/Rule
-# entfernen, SOBALD https://mc-craft.com im Browser ohne
-# Zertifikatswarnung erreichbar ist - vorher wuerde das eine
-# Redirect-Schleife bzw. einen Fehler fuer alle Besucher verursachen.
+# Redirect-Schleife bzw. einen Fehler für alle Besucher verursachen.
 # <IfModule mod_rewrite.c>
 # RewriteEngine On
 # RewriteCond %{HTTPS} off
 # RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 # </IfModule>
 
-# --- 3) www vereinheitlichen (www.mc-craft.com -> mc-craft.com) ---
-# Verhindert doppelten Inhalt unter zwei verschiedenen Adressen
-# (wichtig fuer SEO, passt zu den canonical-Tags, die bereits ohne
-# "www" gesetzt sind). Greift nur, falls jemand ueber www zugreift.
 <IfModule mod_rewrite.c>
 RewriteEngine On
 RewriteCond %{HTTP_HOST} ^www\.mc-craft\.com$ [NC]
 RewriteRule ^ https://mc-craft.com%{REQUEST_URI} [L,R=301]
 </IfModule>
 
-# --- 4) /index.html auf die Startseite "/" umleiten ---
-# Verhindert, dass Suchmaschinen /index.html und / als zwei
-# verschiedene Seiten mit exakt demselben Inhalt werten.
 <IfModule mod_rewrite.c>
 RewriteEngine On
 RewriteCond %{THE_REQUEST} /index\.html [NC]
 RewriteRule ^index\.html$ / [L,R=301]
 </IfModule>
 
-# --- 5) Kompression aktivieren (schnellere Ladezeiten) ---
+# Kompression aktivieren (schnellere Ladezeiten) ---
 <IfModule mod_deflate.c>
 AddOutputFilterByType DEFLATE text/html text/css text/javascript application/javascript application/json image/svg+xml
 </IfModule>
 
-# --- 6) Browser-Caching fuer statische Dateien ---
 <IfModule mod_expires.c>
 ExpiresActive On
 ExpiresByType text/css "access plus 1 month"
@@ -70,7 +36,4 @@ ExpiresByType image/x-icon "access plus 1 year"
 ExpiresByType font/woff2 "access plus 1 year"
 </IfModule>
 
-# --- 7) Verzeichnis-Auflistung verhindern ---
-# Ohne dies koennte z.B. /assets/img/ eine Dateiliste anzeigen,
-# falls dort zufaellig keine index.html liegt.
 Options -Indexes
