@@ -1,0 +1,218 @@
+:root {
+    --accent: #10b981;
+    --accent-2: #22d3ee;
+    --card: rgba(15, 23, 42, 0.84);
+    --card-border: rgba(148, 163, 184, 0.25);
+    --warn: #f59e0b;
+}
+
+.main {
+    padding-top: 0;
+    padding-bottom: 56px;
+}
+
+.hero {
+    margin-bottom: 22px;
+    padding: 140px 0 80px;
+}
+
+.hero-badge {
+    margin-bottom: 14px;
+}
+
+.sc-grid {
+    display: grid;
+    grid-template-columns: minmax(320px, 460px) minmax(420px, 1fr);
+    gap: 18px;
+    align-items: start;
+}
+
+.panel {
+    background: var(--card);
+    border: 1px solid var(--card-border);
+    border-radius: 18px;
+    padding: 20px;
+    box-shadow: 0 16px 40px rgba(2, 6, 23, 0.35);
+}
+
+.panel h2 {
+    display: flex;
+    margin-top: 0;
+    margin-bottom: 14px;
+    font-size: 1.1rem;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.preview-panel {
+    position: sticky;
+    top: 96px;
+}
+
+label {
+    display: block;
+    text-align: center;
+    margin: 12px 0 8px;
+    color: #cbd5e1;
+    font-weight: 600;
+}
+
+select {
+    width: 100%;
+    border: 1px solid rgba(148, 163, 184, 0.35);
+    background: rgba(2, 6, 23, 0.72);
+    color: #f8fafc;
+    border-radius: 12px;
+    margin-top: 8px;
+    padding: 12px;
+    font-family: 'Minecraft', monospace;
+    font-size: 0.95rem;
+}
+select:focus {
+    outline: none;
+    border-color: var(--accent);
+    box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.22);
+}
+select:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+/* ---- Upload area (matches assets/CSS/skins.css conventions) ---- */
+.upload-area {
+    background-color: var(--bg-card);
+    border: 2px dashed var(--border-color);
+    border-radius: var(--radius-xl);
+    padding: var(--spacing-2xl);
+    text-align: center;
+    transition: all var(--transition-normal);
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 220px;
+}
+.upload-area:hover,
+.upload-area.dragover {
+    border-color: var(--accent);
+    background-color: rgba(16, 185, 129, 0.06);
+}
+.upload-icon {
+    width: 72px;
+    height: 72px;
+    background: var(--primary-gradient);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: var(--spacing-lg);
+    color: white;
+    font-size: 28px;
+}
+.upload-area h3 {
+    font-size: var(--text-xl);
+    margin-bottom: var(--spacing-sm);
+}
+.upload-area p {
+    color: var(--text-secondary);
+    margin-bottom: 0;
+}
+.upload-filename {
+    margin-top: 10px;
+    font-family: 'Minecraft', monospace;
+    font-size: 0.85rem;
+    color: var(--accent-2);
+    word-break: break-all;
+}
+
+/* ---- Detected-file info card ---- */
+.sc-detected {
+    margin-top: 16px;
+    padding: 14px;
+    border-radius: 12px;
+    background: rgba(2, 6, 23, 0.55);
+    border: 1px solid var(--card-border);
+    display: none;
+}
+.sc-detected.show { display: block; }
+.sc-detected-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 4px 0;
+    font-size: 0.9rem;
+    border-bottom: 1px dashed rgba(148, 163, 184, 0.18);
+}
+.sc-detected-row:last-child { border-bottom: none; }
+.sc-detected-row span:first-child { color: #94a3b8; }
+.sc-detected-row span:last-child { color: #f8fafc; font-weight: 600; }
+
+.sc-actions {
+    display: flex;
+    gap: 10px;
+    margin-top: 18px;
+}
+.sc-actions .btn { flex: 1; }
+
+/* ---- Status / results panel ---- */
+.sc-status {
+    padding: 14px;
+    border-radius: 12px;
+    background: rgba(2, 6, 23, 0.45);
+    color: #94a3b8;
+    text-align: center;
+    font-size: 0.95rem;
+}
+
+.sc-warning-banner {
+    margin-top: 16px;
+    padding: 14px 16px;
+    border-radius: 12px;
+    background: rgba(245, 158, 11, 0.1);
+    border: 1px solid rgba(245, 158, 11, 0.4);
+    display: none;
+}
+.sc-warning-banner.show { display: block; }
+.sc-warning-banner-head {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--warn);
+    font-weight: 700;
+    cursor: pointer;
+}
+.sc-warning-banner-head i.fa-chevron-down { margin-left: auto; transition: transform 0.2s; }
+.sc-warning-banner.expanded .fa-chevron-down { transform: rotate(180deg); }
+.sc-warning-details {
+    display: none;
+    margin-top: 10px;
+    padding-top: 10px;
+    border-top: 1px solid rgba(245, 158, 11, 0.25);
+    font-size: 0.85rem;
+    color: #fcd9a6;
+}
+.sc-warning-banner.expanded .sc-warning-details { display: block; }
+.sc-warning-details ul { margin: 6px 0 0; padding-left: 18px; }
+
+.sc-facts {
+    text-align: center;
+    margin-top: 18px;
+    padding: 14px 16px;
+    border-radius: 12px;
+    background: rgba(2, 6, 23, 0.45);
+    font-size: 0.85rem;
+    color: #cbd5e1;
+    line-height: 1.6;
+}
+.sc-facts strong { color: #f8fafc; }
+
+/* ---- extra toast variant (base .toast/.error-toast live in homepage.css) ---- */
+.toast.warning-toast {
+    border-left-color: var(--warn);
+}
+
+@media (max-width: 900px) {
+    .sc-grid { grid-template-columns: 1fr; }
+    .preview-panel { position: static; }
+}

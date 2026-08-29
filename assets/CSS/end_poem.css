@@ -1341,6 +1341,68 @@ h1, h2, h3, h4, h5, h6 {
     margin: 0;
 }
 
+/* ===== INFO BOX (wiki-style facts card) ===== */
+.info-box-section {
+    padding: 40px 0 0;
+}
+
+.info-box {
+    max-width: 420px;
+    margin: 0 auto;
+    background-color: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: var(--shadow-md);
+}
+
+.info-box-title {
+    margin: 0;
+    padding: 16px 20px;
+    text-align: center;
+    font-size: 1.05rem;
+    color: var(--text-primary);
+    background-color: var(--bg-surface);
+    border-bottom: 1px solid var(--border-color);
+}
+
+.info-box-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.info-box-table tr {
+    border-bottom: 1px solid var(--border-color);
+}
+
+.info-box-table tr:last-child {
+    border-bottom: none;
+}
+
+.info-box-table th,
+.info-box-table td {
+    padding: 12px 20px;
+    text-align: left;
+    font-size: 0.9rem;
+    vertical-align: top;
+}
+
+.info-box-table th {
+    color: var(--text-primary);
+    font-weight: 600;
+    width: 40%;
+    white-space: nowrap;
+}
+
+.info-box-table td {
+    color: var(--text-secondary);
+}
+
+.info-box-table td a,
+.info-box-table td.info-box-link {
+    color: var(--secondary-light);
+}
+
 /* ===== MINECRAFT LOGO SECTION ===== */
 .minecraft-logo-section {
     text-align: center;
@@ -1376,10 +1438,41 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* ===== endtransitportal SECTION ===== */
+/* Fills the poem box as a drifting, pulsing backdrop instead of a static
+   image, echoing the real End Portal's shifting void-of-stars look. */
+.endtransitportal {
+    position: absolute;
+    inset: 0;
+    overflow: hidden;
+    z-index: 0;
+    pointer-events: none;
+}
+
 .endtransitportal img {
-    width: 100%;
-    height: auto;
-    filter: drop-shadow(0 0 20px rgba(0, 168, 107, 0.3));
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 145%;
+    height: 145%;
+    max-width: none;
+    object-fit: cover;
+    transform: translate(-50%, -50%) scale(1) rotate(0deg);
+    filter: drop-shadow(0 0 20px rgba(0, 168, 107, 0.3)) brightness(1);
+    animation: endPortalDrift 26s ease-in-out infinite, endPortalPulse 4.5s ease-in-out infinite;
+}
+
+@keyframes endPortalDrift {
+    0%, 100% { transform: translate(-50%, -50%) scale(1) rotate(0deg); }
+    50% { transform: translate(-50%, -50%) scale(1.12) rotate(4deg); }
+}
+
+@keyframes endPortalPulse {
+    0%, 100% { opacity: 0.85; filter: drop-shadow(0 0 20px rgba(0, 168, 107, 0.3)) brightness(1); }
+    50% { opacity: 1; filter: drop-shadow(0 0 32px rgba(0, 168, 107, 0.5)) brightness(1.3); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .endtransitportal img { animation: none; }
 }
 
 /* ===== POEM SECTION ===== */
@@ -1411,6 +1504,7 @@ h1, h2, h3, h4, h5, h6 {
     width: 100%;
     height: auto;
     padding: 40px;
+    z-index: 1;
     transform: translateY(100%);
     transition: transform 0.1s linear;
     will-change: transform;

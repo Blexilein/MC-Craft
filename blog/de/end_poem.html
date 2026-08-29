@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="de" data-theme="overworld">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+    <meta name="author" content="Mohamad Laith AKA 'Blexilein'">
+    <meta name="robots" content="index, follow">
+    <meta name="description" content="Minecraft End Poem - Erlebe das Endgedicht interaktiv.">
+    <meta name="keywords" content="Minecraft, End Poem, Endgedicht">
+    <link rel="canonical" href="https://mc-craft.com/blog/de/end_poem.html">
+    <link rel="alternate" hreflang="de" href="https://mc-craft.com/blog/de/end_poem.html">
+    <link rel="alternate" hreflang="en" href="https://mc-craft.com/blog/en/end_poem.html">
+    <link rel="alternate" hreflang="x-default" href="https://mc-craft.com/blog/de/end_poem.html">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="MC-Craft | End Poem">
+    <meta property="og:description" content="Minecraft End Poem - Erlebe das Endgedicht interaktiv.">
+    <meta property="og:url" content="https://mc-craft.com/blog/de/end_poem.html">
+    <meta property="og:image" content="https://mc-craft.com/assets/img/favicon/mc-craft.png">
+    <meta property="og:image:alt" content="MC-Craft Logo">
+    <meta property="og:site_name" content="MC-Craft">
+    <meta property="og:locale" content="de_DE">
+    <meta property="og:locale:alternate" content="en_US">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="MC-Craft | End Poem">
+    <meta name="twitter:description" content="Minecraft End Poem - Erlebe das Endgedicht interaktiv.">
+    <meta name="twitter:image" content="https://mc-craft.com/assets/img/favicon/mc-craft.png">
+    <meta name="theme-color" content="#148200">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicon/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon/favicon-32x32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/assets/img/favicon/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="/assets/img/favicon/android-chrome-512x512.png">
+    <link rel="icon" href="/assets/img/favicon/favicon.ico">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="stylesheet" href="/assets/fontawesome/all.min.css">
+        <link rel="stylesheet" href="/assets/CSS/end_poem.css">
+    <link rel="stylesheet" href="/assets/CSS/site-modern-v1.css">
+    <title>MC-Craft | End Poem</title>
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div class="loader" id="loader">
+        <div class="loader-content">
+            <div class="loading-spinner">
+                <div class="spinner"></div>
+            </div>
+            <p class="loading-text">End-Poem wird geladen...</p>
+            <div class="loading-progress"></div>
+        </div>
+    </div>
+
+    <!-- Header -->
+     <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <a href="/index.html" class="logo">
+                    <div class="logo-icon"></div>
+                    <span class="logo-text">MC-Craft</span>
+                </a>
+                <nav class="navigation">
+                    <ul class="nav-list">
+                        <li><a href="/index.html" class="nav-link">Home</a></li>
+                        <li class="dropdown">
+                            <button class="dropdown-btn nav-link">Werkzeuge</button>
+                            <ul class="dropdown-menu">
+                                <li><a href="/blog/de/text-converter.html">Text Konverter</a></li>
+                                <li><a href="/blog/de/color-text.html">Farbtext</a></li>
+                                <li><a href="/blog/de/structure-converter.html">Struktur-Konverter</a></li>
+                                <li><a href="/blog/de/map-art-generator.html">Map-Art-Generator</a></li>
+                                <li><a href="/blog/de/items.html">Items Datenbank</a></li>
+                                <li><a href="/blog/de/mobs.html">Mobs Datenbank</a></li>
+                                <li><a href="/blog/de/server-status.html">Server Status</a></li>
+                                <li><a href="/blog/de/minecraft-api-status.html">Minecraft API Status</a></li>
+                                <li><a href="/blog/de/skin-lookup.html">Skin Lookup</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <button class="dropdown-btn nav-link">Entdecken</button>
+                            <ul class="dropdown-menu">
+                                <li><a href="/blog/de/skin-editor.html">Skin Editor</a></li>
+                               <li><a href="/blog/de/day-night-cycle.html">Tag-Nacht-Zyklus</a></li>
+                                <li><a href="/blog/de/end_poem.html">End Poem</a></li>
+                                <li><a href="/blog/de/minecraft-capes.html">Cape-Datenbank</a></li>
+                                <li><a href="/blog/de/minecraft-versions.html">Minecraft Versionen</a></li>
+                                <li><a href="/blog/de/minecraft-skins.html">Skin-Bibliothek</a></li>
+                                <li><a href="/blog/de/beacon-color-mixer.html">Beacon Color Mixer</a></li>
+                                <li><a href="/blog/de/qr-generator.html">QR Generator</a></li>
+                                <li><a href="/blog/de/advancement-generator.html">Advancement Generator</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="sound-toggle">
+                    <button class="sound-btn" id="soundBtn" aria-label="Sound ein/aus">
+                        <img src="/assets/img/backgrounds/sound-on.svg" alt="Sound an" class="sound-icon" id="soundIcon">
+                    </button>
+                </div>
+                <div class="lang-switcher">
+                    <a class="lang-btn" id="langBtn" href="/blog/en/end_poem.html" aria-label="Switch to English">
+                        <img src="/assets/img/backgrounds/de.svg" alt="Deutsch" class="flag-icon" id="langFlag">
+                    </a>
+                </div>
+                <div class="theme-switcher">
+                    <button class="theme-btn" id="themeBtn">
+                        <i class="fa-solid fa-palette"></i>
+                    </button>
+                    <div class="theme-dropdown" id="themeDropdown">
+                        <button class="theme-option" data-theme="overworld">
+                            <i class="fas fa-cube"></i>
+                            <span>Overworld</span>
+                        </button>
+                        <button class="theme-option" data-theme="nether">
+                            <i class="fas fa-fire"></i>
+                            <span>Nether</span>
+                        </button>
+                        <button class="theme-option" data-theme="end">
+                            <i class="fas fa-moon"></i>
+                            <span>The End</span>
+                        </button>
+                    </div>
+                </div>
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Navigation -->
+    <div class="mobile-nav" id="mobileNav">
+        <div class="mobile-nav-header">
+            <div class="logo">
+                <div class="logo-icon"></div>
+                <span class="logo-text">MC-Craft</span>
+            </div>
+            <button class="close-btn" id="closeBtn">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <ul class="mobile-nav-list">
+            <li><a href="/index.html" class="mobile-nav-link">Home</a></li>
+            <li><a href="/blog/de/text-converter.html" class="mobile-nav-link">Text Konverter</a></li>
+            <li><a href="/blog/de/color-text.html" class="mobile-nav-link">Farbtext</a></li>
+            <li><a href="/blog/de/structure-converter.html" class="mobile-nav-link">Struktur-Konverter</a></li>
+            <li><a href="/blog/de/map-art-generator.html" class="mobile-nav-link">Map-Art-Generator</a></li>
+            <li><a href="/blog/de/items.html" class="mobile-nav-link">Items Datenbank</a></li>
+            <li><a href="/blog/de/mobs.html" class="mobile-nav-link">Mobs Datenbank</a></li>
+            <li><a href="/blog/de/server-status.html" class="mobile-nav-link">Server Status</a></li>
+            <li><a href="/blog/de/minecraft-api-status.html" class="mobile-nav-link">Minecraft API Status</a></li>
+            <li><a href="/blog/de/skin-lookup.html" class="mobile-nav-link">Skin Lookup</a></li>
+            <li><a href="/blog/de/skin-editor.html" class="mobile-nav-link">Skin Editor</a></li>
+            <li><a href="/blog/de/day-night-cycle.html" class="mobile-nav-link">Tag-Nacht-Zyklus</a></li>
+            <li><a href="/blog/de/end_poem.html" class="mobile-nav-link">End Poem</a></li>
+            <li><a href="/blog/de/minecraft-capes.html" class="mobile-nav-link">Cape-Datenbank</a></li>
+            <li><a href="/blog/de/minecraft-versions.html" class="mobile-nav-link">Minecraft Versionen</a></li>
+            <li><a href="/blog/de/minecraft-skins.html" class="mobile-nav-link">Skin-Bibliothek</a></li>
+            <li><a href="/blog/de/beacon-color-mixer.html" class="mobile-nav-link">Beacon Color Mixer</a></li>
+            <li><a href="/blog/de/qr-generator.html" class="mobile-nav-link">QR Generator</a></li>
+            <li><a href="/blog/de/advancement-generator.html" class="mobile-nav-link">Advancement Generator</a></li>
+        </ul>
+        <div class="mobile-theme-switcher">
+            <h4>Theme auswählen:</h4>
+            <div class="theme-options">
+                <button class="theme-option-btn" data-theme="overworld">
+                    <i class="fas fa-cube"></i> <span>Overworld</span>
+                </button>
+                <button class="theme-option-btn" data-theme="nether">
+                    <i class="fas fa-fire"></i> <span>Nether</span>
+                </button>
+                <button class="theme-option-btn" data-theme="end">
+                    <i class="fas fa-moon"></i> <span>The End</span>
+                </button>
+            </div>
+            <div class="mobile-sound-lang">
+                <button class="mobile-sound-btn" id="mobileSoundBtn">
+                    <img src="/assets/img/backgrounds/sound-on.svg" alt="Sound an" class="sound-icon" id="mobileSoundIcon">
+                    <span>Sound</span>
+                </button>
+                <a class="mobile-lang-btn" id="mobileLangBtn" href="/blog/en/end_poem.html">
+                    <img src="/assets/img/backgrounds/de.svg" alt="Deutsch" class="flag-icon" id="mobileLangFlag">
+                    <span>Sprache</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content (End Poem spezifisch) -->
+    <main class="main">
+        <!-- Hero Section -->
+        <section class="hero" id="home">
+            <div class="hero-bg-grid"></div>
+            <div class="container">
+                <div class="hero-content">
+                <div class="hero-badge">
+                        <span class="hero-badge-dot"></span>
+                        V 1.0.0 IST DA
+                    </div>
+                    <h1 class="hero-title">Minecraft <span class="highlight">End Poem</span></h1>
+                    <p class="hero-description">
+                        Erlebe das berühmte End Poem aus Minecraft interaktiv. 
+                        Das Gedicht erscheint nach dem Besiegen des Enderdrachen. 
+                        Gib deinen Namen ein und sieh zu, wie das Gedicht lebendig wird.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#start" class="btn btn-primary">
+                            <i class="fas fa-play"></i> <span>Gedicht starten</span>
+                        </a>
+                        <a href="#poem" class="btn btn-secondary">
+                            <i class="fas fa-eye"></i> <span>Direkt zum Poem</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="hero-grid-staggered">
+                        <div class="hero-stagger-col hero-stagger-left">
+                            <div class="grid-item">
+                            <i class="fas fa-scroll"></i>
+                            <span>Vollständiges Gedicht</span>
+                        </div>
+                        <div class="grid-item">
+                            <i class="fas fa-user-edit"></i>
+                            <span>Name anpassen</span>
+                        </div>
+                        </div>
+                        <div class="hero-stagger-col hero-stagger-right">
+                        <div class="grid-item">
+                            <i class="fas fa-film"></i>
+                            <span>Scroll-Animation</span>
+                        </div>
+                        <div class="grid-item">
+                            <i class="fas fa-redo"></i>
+                            <span>Wiederholbar</span>
+                        </div>
+                    </div>
+                        <div class="floating-cube floating-cube-1"></div>
+                        <div class="floating-cube floating-cube-2"></div>
+                </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Info Box -->
+        <section class="info-box-section">
+            <div class="container">
+                <div class="info-box">
+                    <h3 class="info-box-title">Minecraft End Poem</h3>
+                    <table class="info-box-table">
+                        <tr><th>Autor(en)</th><td>Julian Gough</td></tr>
+                        <tr><th>Sprache</th><td>Englisch</td></tr>
+                        <tr><th>Genre(s)</th><td>Erzählendes Gedicht</td></tr>
+                        <tr><th>Einstellen in</th><td><em>Minecraft</em></td></tr>
+                        <tr><th>Herausgeber</th><td>Mojang Studios</td></tr>
+                        <tr><th>Erscheinungsdatum</th><td>11. November 2011</td></tr>
+                        <tr><th>Medientyp</th><td>Digital</td></tr>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Highlights -->
+        <section class="experience-section" aria-label="End Poem Highlights">
+            <div class="container">
+                <div class="experience-grid">
+                    <article class="experience-card">
+                        <div class="experience-icon"><i class="fas fa-magic"></i></div>
+                        <h3>Atmosphärisch & immersiv</h3>
+                        <p>Das Gedicht wird in einer ruhigen Scroll-Animation präsentiert, damit es sich wie ein echtes Minecraft-Erlebnis anfühlt.</p>
+                    </article>
+                    <article class="experience-card">
+                        <div class="experience-icon"><i class="fas fa-user-edit"></i></div>
+                        <h3>Persönlicher Name</h3>
+                        <p>Gib deinen eigenen Namen ein und lass das End Poem direkt für dich lebendig werden.</p>
+                    </article>
+                    <article class="experience-card">
+                        <div class="experience-icon"><i class="fas fa-sliders-h"></i></div>
+                        <h3>Flexible Steuerung</h3>
+                        <p>Wähle die Geschwindigkeit, pausiere oder starte das Gedicht jederzeit neu – ganz nach deinem Tempo.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Start Section -->
+        <section class="start-section" id="start">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Gedicht <span class="highlight">starten</span></h2>
+                    <p class="section-subtitle">Gib deinen Minecraft-Namen ein und starte die interaktive Erfahrung</p>
+                </div>
+                
+                <div class="input-container">
+                    <div class="input-card">
+                        <div class="input-icon">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <h3>Dein Spielername</h3>
+                        <p>Gib deinen Minecraft-Namen ein.</p>
+                        
+                        <div class="input-group">
+                            <input type="text" class="name-input" id="playerName" placeholder="z.B. Blexilein" value="">
+                            <button class="btn btn-primary" id="startBtn">
+                                <i class="fas fa-play"></i> <span>Gedicht starten</span>
+                            </button>
+                        </div>
+                        
+                        <div class="name-suggestions">
+                            <p>Schnellauswahl:</p>
+                            <div class="name-tags">
+                                <span class="name-tag" data-name="Blexilein">Blexilein</span>
+                                <span class="name-tag" data-name="Notch">Notch</span>
+                                <span class="name-tag" data-name="Herobrine">Herobrine</span>
+                                <span class="name-tag" data-name="Steve">Steve</span>
+                                <span class="name-tag" data-name="Alex">Alex</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Minecraft Logo Section -->
+        <section class="minecraft-logo-section">
+            <div class="container">
+                <div class="minecraft-logo">
+                    <img src="/assets/img/backgrounds/Minecraft_logo.svg" alt="Minecraft Logo">
+                </div>
+            </div>
+        </section>
+
+        <!-- Poem Section -->
+        <section class="poem-section" id="poem">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">End Poem <span class="highlight">Viewer</span></h2>
+                    <p class="section-subtitle">Das komplette Minecraft End Gedicht - Scrollt automatisch von unten nach oben</p>
+                </div>
+
+                <div class="poem-info spoiler">
+                    <i class="fa-solid fa-triangle-exclamation"></i>
+                    <p>Spoiler-Warnung!</p>
+                    <p>Dieser Abschnitt enthält detaillierte Informationen zum Text des Schlussgedichts, die dir den Spaß daran verderben könnten. Lesen auf eigene Gefahr!</p>
+                </div>
+                <br>
+                <div class="poem-container">
+                    <div class="poem-display" id="poemDisplay">
+                        <div class="endtransitportal">
+                            <img src="/assets/img/backgrounds/Endtransitportal.png" alt="Endtransitportal">
+                        </div>
+                        <div class="poem-scroll" id="poemScroll">
+                            <div class="poem-text" id="poemText"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="poem-info">
+                        <i class="fas fa-info-circle"></i>
+                        <p>Das Gedicht scrollt automatisch mit der eingestellten Geschwindigkeit. Verwende die Steuerung unten um zu pausieren oder neu zu starten.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Controls Section -->
+        <section class="controls-section" id="controls">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Steue<span class="highlight">rungs</span></h2>
+                    <p class="section-subtitle">Kontrolliere die Wiedergabe des End Poems</p>
+                </div>
+                
+                <div class="controls-grid">
+                    <!-- Speed Control -->
+                    <div class="control-card">
+                        <div class="control-icon">
+                            <i class="fas fa-tachometer-alt"></i>
+                        </div>
+                        <h3>Geschwindigkeit</h3>
+                        <p>Wähle die Scroll-Geschwindigkeit des Gedichts.</p>
+                        <div class="speed-controls">
+                            <button class="speed-btn active" data-speed="30"><i class="fas fa-turtle"></i> <span>Langsam</span></button>
+                            <button class="speed-btn" data-speed="50"><i class="fas fa-walking"></i> <span>Normal</span></button>
+                            <button class="speed-btn" data-speed="80"><i class="fas fa-running"></i> <span>Schnell</span></button>
+                        </div>
+                    </div>
+                    
+                    <!-- Playback Control -->
+                    <div class="control-card">
+                        <div class="control-icon">
+                            <i class="fas fa-play-circle"></i>
+                        </div>
+                        <h3>Wiedergabe</h3>
+                        <p>Kontrolliere die Wiedergabe des Gedichts.</p>
+                        <div class="playback-controls">
+                            <button class="btn control-btn" id="pauseBtn"><i class="fas fa-pause"></i> <span>Pause</span></button>
+                            <button class="btn control-btn" id="restartBtn"><i class="fas fa-redo"></i> <span>Neustart</span></button>
+                        </div>
+                    </div>
+                    
+                    <!-- Settings -->
+                    <div class="control-card">
+                        <div class="control-icon">
+                            <i class="fas fa-cog"></i>
+                        </div>
+                        <h3>Einstellungen</h3>
+                        <p>Passe die Darstellung an.</p>
+                        <div class="settings-controls">
+                            <button class="btn control-btn-outline" id="changeNameBtn"><i class="fas fa-user-edit"></i> <span>Namen ändern</span></button>
+                            <button class="btn control-btn-outline" id="resetBtn"><i class="fas fa-undo"></i> <span>Zurücksetzen</span></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Repeat Section -->
+        <section class="repeat-section hidden" id="repeatSection">
+            <div class="container">
+                <div class="repeat-content">
+                    <h2 class="section-title">Gedicht <span class="highlight">beendet</span></h2>
+                    <p class="section-subtitle">Das End Poem ist zu Ende. Möchtest du es erneut erleben?</p>
+                    <div class="repeat-buttons">
+                        <button class="btn btn-primary btn-large" id="repeatBtn"><i class="fas fa-redo"></i> <span>Erneut abspielen</span></button>
+                        <button class="btn btn-secondary" id="newNameBtn"><i class="fas fa-user-edit"></i> <span>Mit neuem Namen</span></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-grid">
+                    <!-- Column 1 -->
+                    <div class="footer-col">
+                        <div class="footer-logo">
+                            <div class="logo-icon"></div>
+                            <span class="logo-text">MC-Craft</span>
+                        </div>
+                        <p class="footer-description">Kostenlose Minecraft-Tools für die Community. Entwickelt von Spielern für Spieler.</p>
+                        <div class="social-links">
+                           <a href="https://github.com/Blexilein" class="social-link" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                            <a href="https://discord.gg/eVVpQD75w4" class="social-link"><i class="fab fa-discord"></i></a>
+                            <a href="https://x.com/Blexi_1" class="social-link" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        </div>
+                    </div>
+                    <!-- Column 2 -->
+                    <div class="footer-col">
+                        <h4 class="footer-title">Tools</h4>
+                        <ul class="footer-links">
+                            <li><a href="/blog/de/text-converter.html">Text Konverter</a></li>
+                            <li><a href="/blog/de/color-text.html">Farbtext-Konverter</a></li>
+                            <li><a href="/blog/de/structure-converter.html">Struktur-Konverter</a></li>
+                            <li><a href="/blog/de/map-art-generator.html">Map-Art-Generator</a></li>
+                            <li><a href="/blog/de/items.html">Items Datenbank</a></li>
+                            <li><a href="/blog/de/mobs.html">Mobs Datenbank</a></li>
+                            <li><a href="/blog/de/day-night-cycle.html">Tag-Nacht-Zyklus</a></li>
+                            <li><a href="/blog/de/beacon-color-mixer.html">Beacon Color Mixer</a></li>
+                                <li><a href="/blog/de/qr-generator.html">QR Generator</a></li>
+                                <li><a href="/blog/de/advancement-generator.html">Advancement Generator</a></li>
+                        </ul>
+                    </div>
+                    <!-- Column 3 -->
+                    <div class="footer-col">
+                        <h4 class="footer-title">Mehr Tools</h4>
+                        <ul class="footer-links">
+                            <li><a href="/blog/de/server-status.html">Server Status</a></li>
+                                <li><a href="/blog/de/minecraft-api-status.html">Minecraft API Status</a></li>
+                            <li><a href="/blog/de/skin-lookup.html">Skin Lookup</a></li>
+                            <li><a href="/blog/de/skin-editor.html">Skin Editor</a></li>
+                            <li><a href="/blog/de/minecraft-skins.html">Skin Galerie</a></li>
+                            <li><a href="/blog/de/minecraft-capes.html">Cape Galerie</a></li>
+                            <li><a href="/blog/de/minecraft-versions.html">Minecraft Versionen</a></li>
+                            <li><a href="/blog/de/end_poem.html">End Poem</a></li>
+                        </ul>
+                    </div>
+                    <!-- Column 4 -->
+                    <div class="footer-col">
+                        <h4 class="footer-title">Rechtliches</h4>
+                        <ul class="footer-links">
+                            <li><a href="/blog/de/impressum.html">Impressum</a></li>
+                            <li><a href="/blog/de/datenschutz.html">Datenschutz</a></li>
+                            <li><a href="/blog/de/nutzungsbedingungen.html">Nutzungsbedingungen</a></li>
+                            <li><a href="/blog/de/copyright.html">Copyright</a></li>
+                        </ul>
+                    </div>
+                    <!-- Column 5 -->
+                    <div class="footer-col">
+                        <h4 class="footer-title">Über Uns</h4>
+                        <ul class="footer-links">
+                            <li><a href="/blog/de/history.html">MC-Craft Geschichte</a></li>
+                            <li><a href="/blog/de/team.html">Unser Team</a></li>
+                            <li><a href="/blog/de/about.html">Über uns</a></li>
+                        </ul>
+                    </div>
+                    <!-- Column 6 -->
+                    <div class="footer-col">
+                        <h4 class="footer-title">Support</h4>
+                        <ul class="footer-links">
+                            <li><a href="/blog/de/faq.html">FAQ & Hilfe</a></li>
+                            <li><a href="/blog/de/bug-report.html">Bug melden</a></li>
+                            <li><a href="/blog/de/support.html">Support Kontakt</a></li>
+                            <li><a href="/blog/de/e-mails.html">E-mails</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <div class="copyright">
+                        <p>&copy; <span id="currentYear">2026</span> MC-Craft. <span>Alle Rechte vorbehalten.</span></p>
+                        <p class="disclaimer">Minecraft ist eine Marke von Mojang Studios. Diese Seite ist nicht offiziell mit Mojang oder Microsoft verbunden.</p>
+                    </div>
+                    <div class="footer-meta">
+                        <span class="version">Version 1.0.0</span>
+                        <a href="/blog/de/changelog.html" class="changelog active">Changelog</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <button class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Toast Container -->
+    <div class="toast-container" id="toastContainer"></div>
+
+    <script src="/assets/JS/modules/mc-preferences.js"></script>
+
+    <script src="/assets/JS/modules/de/end_poem.js"></script>
+</body>
+</html>

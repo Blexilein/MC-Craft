@@ -5886,7 +5886,7 @@
     "numeric_id": "No numeric ID in current versions",
     "type": "Item",
     "category": "Tools & Utilities",
-    "icon": "/assets/img/textures/programmer_art/textures/item/writable_book.png",
+    "icon": "/assets/img/items/Book_and_Quill.png",
     "description": "Book and Quill is an item in Minecraft. Its properties are listed below.",
     "biome": "Not applicable",
     "aliases": [],

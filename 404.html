@@ -32,7 +32,7 @@
     <link rel="stylesheet" href="/assets/fontawesome/all.min.css">
     <link rel="stylesheet" href="/assets/CSS/404.css">
     <link rel="stylesheet" href="/assets/CSS/site-modern-v1.css">
-    <title data-i18n="t404">MC-Craft | Seite nicht gefunden</title>
+    <title>MC-Craft | Seite nicht gefunden</title>
 </head>
 <body>
     <div class="bg-grid"></div>
@@ -43,35 +43,37 @@
             <div class="header-content">
                 <a href="/index.html" class="logo">
                     <div class="logo-icon"></div>
-                    <span class="logo-text" data-i18n="site_title_short">MC-Craft</span>
+                    <span class="logo-text">MC-Craft</span>
                 </a>
                 <nav class="navigation">
                     <ul class="nav-list">
-                        <li><a href="/index.html" class="nav-link" data-i18n="nav_home">Home</a></li>
+                        <li><a href="/index.html" class="nav-link">Home</a></li>
                         <li class="dropdown">
-                            <button class="dropdown-btn nav-link" data-i18n="tools_dropdown">Werkzeuge</button>
+                            <button class="dropdown-btn nav-link">Werkzeuge</button>
                             <ul class="dropdown-menu">
-                                <li><a href="/blog/text-converter.html" data-i18n="nav_text_converter">Text Konverter</a></li>
-                                <li><a href="/blog/color-text.html" data-i18n="nav_color_text">Farbtext</a></li>
-                                <li><a href="/blog/items.html" data-i18n="nav_items">Items Datenbank</a></li>
-                                <li><a href="/blog/mobs.html" data-i18n="nav_mobs">Mobs Datenbank</a></li>
-                                <li><a href="/blog/server-status.html" data-i18n="nav_server_status">Server Status</a></li>
-                                <li><a href="/blog/minecraft-api-status.html">Minecraft API Status</a></li>
-                                <li><a href="/blog/skin-lookup.html" data-i18n="nav_skin_lookup">Skin Lookup</a></li>
+                                <li><a href="/blog/de/text-converter.html">Text Konverter</a></li>
+                                <li><a href="/blog/de/color-text.html">Farbtext</a></li>
+                                <li><a href="/blog/de/structure-converter.html">Struktur-Konverter</a></li>
+                                <li><a href="/blog/de/map-art-generator.html">Map-Art-Generator</a></li>
+                                <li><a href="/blog/de/items.html">Items Datenbank</a></li>
+                                <li><a href="/blog/de/mobs.html">Mobs Datenbank</a></li>
+                                <li><a href="/blog/de/server-status.html">Server Status</a></li>
+                                <li><a href="/blog/de/minecraft-api-status.html">Minecraft API Status</a></li>
+                                <li><a href="/blog/de/skin-lookup.html">Skin Lookup</a></li>
                             </ul>
                         </li>
                         <li class="dropdown">
-                            <button class="dropdown-btn nav-link" data-i18n="discover_dropdown">Entdecken</button>
+                            <button class="dropdown-btn nav-link">Entdecken</button>
                             <ul class="dropdown-menu">
-                                <li><a href="/blog/skin-editor.html" data-i18n="nav_skin_editor">Skin Editor</a></li>
-                               <li><a href="/blog/day-night-cycle.html" data-i18n="nav_day_night_cycle">Tag-Nacht-Zyklus</a></li>
-                                <li><a href="/blog/end_poem.html" data-i18n="nav_end_poem">End Poem</a></li>
-                                <li><a href="/blog/minecraft-capes.html" data-i18n="nav_capes">Cape-Datenbank</a></li>
-                                <li><a href="/blog/minecraft-versions.html">Minecraft Versionen</a></li>
-                                <li><a href="/blog/minecraft-skins.html" data-i18n="nav_skins">Skin-Bibliothek</a></li>
-                                <li><a href="/blog/beacon-color-mixer.html" data-i18n="nav_beacon_mixer">Beacon Color Mixer</a></li>
-                                <li><a href="/blog/qr-generator.html">QR Generator</a></li>
-                                <li><a href="/blog/advancement-generator.html">Advancement Generator</a></li>
+                                <li><a href="/blog/de/skin-editor.html">Skin Editor</a></li>
+                               <li><a href="/blog/de/day-night-cycle.html">Tag-Nacht-Zyklus</a></li>
+                                <li><a href="/blog/de/end_poem.html">End Poem</a></li>
+                                <li><a href="/blog/de/minecraft-capes.html">Cape-Datenbank</a></li>
+                                <li><a href="/blog/de/minecraft-versions.html">Minecraft Versionen</a></li>
+                                <li><a href="/blog/de/minecraft-skins.html">Skin-Bibliothek</a></li>
+                                <li><a href="/blog/de/beacon-color-mixer.html">Beacon Color Mixer</a></li>
+                                <li><a href="/blog/de/qr-generator.html">QR Generator</a></li>
+                                <li><a href="/blog/de/advancement-generator.html">Advancement Generator</a></li>
                             </ul>
                         </li>
                     </ul>
@@ -82,9 +84,9 @@
                     </button>
                 </div>
                 <div class="lang-switcher">
-                    <button class="lang-btn" id="langBtn" aria-label="Sprache umschalten">
+                    <a class="lang-btn" id="langBtn" href="/en/404.html" aria-label="Switch to English">
                         <img src="/assets/img/backgrounds/de.svg" alt="Deutsch" class="flag-icon" id="langFlag">
-                    </button>
+                    </a>
                 </div>
                 <div class="theme-switcher">
                     <button class="theme-btn" id="themeBtn">
@@ -93,15 +95,15 @@
                     <div class="theme-dropdown" id="themeDropdown">
                         <button class="theme-option" data-theme="overworld">
                             <i class="fas fa-cube"></i>
-                            <span data-i18n="theme_overworld">Overworld</span>
+                            <span>Overworld</span>
                         </button>
                         <button class="theme-option" data-theme="nether">
                             <i class="fas fa-fire"></i>
-                            <span data-i18n="theme_nether">Nether</span>
+                            <span>Nether</span>
                         </button>
                         <button class="theme-option" data-theme="end">
                             <i class="fas fa-moon"></i>
-                            <span data-i18n="theme_end">The End</span>
+                            <span>The End</span>
                         </button>
                     </div>
                 </div>
@@ -117,53 +119,55 @@
         <div class="mobile-nav-header">
             <div class="logo">
                 <div class="logo-icon"></div>
-                <span class="logo-text" data-i18n="site_title_short">MC-Craft</span>
+                <span class="logo-text">MC-Craft</span>
             </div>
             <button class="close-btn" id="closeBtn">
                 <i class="fas fa-times"></i>
             </button>
         </div>
         <ul class="mobile-nav-list">
-            <li><a href="/index.html" class="mobile-nav-link" data-i18n="nav_home">Home</a></li>
-            <li><a href="/blog/text-converter.html" class="mobile-nav-link" data-i18n="nav_text_converter">Text Konverter</a></li>
-            <li><a href="/blog/color-text.html" class="mobile-nav-link" data-i18n="nav_color_text">Farbtext</a></li>
-            <li><a href="/blog/items.html" class="mobile-nav-link" data-i18n="nav_items">Items Datenbank</a></li>
-            <li><a href="/blog/mobs.html" class="mobile-nav-link" data-i18n="nav_mobs">Mobs Datenbank</a></li>
-            <li><a href="/blog/server-status.html" class="mobile-nav-link" data-i18n="nav_server_status">Server Status</a></li>
-            <li><a href="/blog/minecraft-api-status.html" class="mobile-nav-link">Minecraft API Status</a></li>
-            <li><a href="/blog/skin-lookup.html" class="mobile-nav-link" data-i18n="nav_skin_lookup">Skin Lookup</a></li>
-            <li><a href="/blog/skin-editor.html" class="mobile-nav-link" data-i18n="nav_skin_editor">Skin Editor</a></li>
-            <li><a href="/blog/day-night-cycle.html" class="mobile-nav-link" data-i18n="nav_day_night_cycle">Tag-Nacht-Zyklus</a></li>
-            <li><a href="/blog/end_poem.html" class="mobile-nav-link" data-i18n="nav_end_poem">End Poem</a></li>
-            <li><a href="/blog/minecraft-capes.html" class="mobile-nav-link" data-i18n="nav_capes">Cape-Datenbank</a></li>
-            <li><a href="/blog/minecraft-versions.html" class="mobile-nav-link">Minecraft Versionen</a></li>
-            <li><a href="/blog/minecraft-skins.html" class="mobile-nav-link" data-i18n="nav_skins">Skin-Bibliothek</a></li>
-            <li><a href="/blog/beacon-color-mixer.html" class="mobile-nav-link" data-i18n="nav_beacon_mixer">Beacon Color Mixer</a></li>
-            <li><a href="/blog/qr-generator.html" class="mobile-nav-link">QR Generator</a></li>
-            <li><a href="/blog/advancement-generator.html" class="mobile-nav-link">Advancement Generator</a></li>
+            <li><a href="/index.html" class="mobile-nav-link">Home</a></li>
+            <li><a href="/blog/de/text-converter.html" class="mobile-nav-link">Text Konverter</a></li>
+            <li><a href="/blog/de/color-text.html" class="mobile-nav-link">Farbtext</a></li>
+            <li><a href="/blog/de/structure-converter.html" class="mobile-nav-link">Struktur-Konverter</a></li>
+            <li><a href="/blog/de/map-art-generator.html" class="mobile-nav-link">Map-Art-Generator</a></li>
+            <li><a href="/blog/de/items.html" class="mobile-nav-link">Items Datenbank</a></li>
+            <li><a href="/blog/de/mobs.html" class="mobile-nav-link">Mobs Datenbank</a></li>
+            <li><a href="/blog/de/server-status.html" class="mobile-nav-link">Server Status</a></li>
+            <li><a href="/blog/de/minecraft-api-status.html" class="mobile-nav-link">Minecraft API Status</a></li>
+            <li><a href="/blog/de/skin-lookup.html" class="mobile-nav-link">Skin Lookup</a></li>
+            <li><a href="/blog/de/skin-editor.html" class="mobile-nav-link">Skin Editor</a></li>
+            <li><a href="/blog/de/day-night-cycle.html" class="mobile-nav-link">Tag-Nacht-Zyklus</a></li>
+            <li><a href="/blog/de/end_poem.html" class="mobile-nav-link">End Poem</a></li>
+            <li><a href="/blog/de/minecraft-capes.html" class="mobile-nav-link">Cape-Datenbank</a></li>
+            <li><a href="/blog/de/minecraft-versions.html" class="mobile-nav-link">Minecraft Versionen</a></li>
+            <li><a href="/blog/de/minecraft-skins.html" class="mobile-nav-link">Skin-Bibliothek</a></li>
+            <li><a href="/blog/de/beacon-color-mixer.html" class="mobile-nav-link">Beacon Color Mixer</a></li>
+            <li><a href="/blog/de/qr-generator.html" class="mobile-nav-link">QR Generator</a></li>
+            <li><a href="/blog/de/advancement-generator.html" class="mobile-nav-link">Advancement Generator</a></li>
         </ul>
         <div class="mobile-theme-switcher">
-            <h4 data-i18n="theme_select">Theme auswählen:</h4>
+            <h4>Theme auswählen:</h4>
             <div class="theme-options">
                 <button class="theme-option-btn" data-theme="overworld">
-                    <i class="fas fa-cube"></i> <span data-i18n="theme_overworld">Overworld</span>
+                    <i class="fas fa-cube"></i> <span>Overworld</span>
                 </button>
                 <button class="theme-option-btn" data-theme="nether">
-                    <i class="fas fa-fire"></i> <span data-i18n="theme_nether">Nether</span>
+                    <i class="fas fa-fire"></i> <span>Nether</span>
                 </button>
                 <button class="theme-option-btn" data-theme="end">
-                    <i class="fas fa-moon"></i> <span data-i18n="theme_end">The End</span>
+                    <i class="fas fa-moon"></i> <span>The End</span>
                 </button>
             </div>
             <div class="mobile-sound-lang">
                 <button class="mobile-sound-btn" id="mobileSoundBtn">
                     <img src="/assets/img/backgrounds/sound-on.svg" alt="Sound an" class="sound-icon" id="mobileSoundIcon">
-                    <span data-i18n="sound_toggle">Sound</span>
+                    <span>Sound</span>
                 </button>
-                <button class="mobile-lang-btn" id="mobileLangBtn">
+                <a class="mobile-lang-btn" id="mobileLangBtn" href="/en/404.html">
                     <img src="/assets/img/backgrounds/de.svg" alt="Deutsch" class="flag-icon" id="mobileLangFlag">
-                    <span data-i18n="language">Sprache</span>
-                </button>
+                    <span>Sprache</span>
+                </a>
             </div>
         </div>
     </div>
@@ -176,14 +180,14 @@
                     <div class="error-icon">
                         <i class="fas fa-bomb"></i>
                     </div>
-                    <h1 class="error-title" data-i18n="e404_title">404 – Seite nicht gefunden</h1>
-                    <p class="error-message" data-i18n="e404_message">
+                    <h1 class="error-title">404 – Seite nicht gefunden</h1>
+                    <p class="error-message">
                         Hoppla! Diese Seite existiert nicht – vielleicht wurde sie vom Creeper gesprengt.<br>
                         Aber keine Sorge, wir bringen dich zurück zur Oberwelt.
                     </p>
                     <div class="error-actions">
-                        <a href="/index.html" class="btn btn-primary" data-i18n="e404_home">Zur Startseite</a>
-                        <a href="javascript:history.back()" class="btn btn-outline" data-i18n="e404_back">← Zurück</a>
+                        <a href="/index.html" class="btn btn-primary">Zur Startseite</a>
+                        <a href="javascript:history.back()" class="btn btn-outline">← Zurück</a>
                     </div>
                 </div>
             </div>
@@ -199,9 +203,9 @@
                     <div class="footer-col">
                         <div class="footer-logo">
                             <div class="logo-icon"></div>
-                            <span class="logo-text" data-i18n="site_title_short">MC-Craft</span>
+                            <span class="logo-text">MC-Craft</span>
                         </div>
-                        <p class="footer-description" data-i18n="footer_description">Kostenlose Minecraft-Tools für die Community. Entwickelt von Spielern für Spieler.</p>
+                        <p class="footer-description">Kostenlose Minecraft-Tools für die Community. Entwickelt von Spielern für Spieler.</p>
                         <div class="social-links">
                            <a href="https://github.com/Blexilein" class="social-link" aria-label="GitHub"><i class="fab fa-github"></i></a>
                             <a href="https://discord.gg/eVVpQD75w4" class="social-link"><i class="fab fa-discord"></i></a>
@@ -210,70 +214,72 @@
                     </div>
                     <!-- Column 2 -->
                     <div class="footer-col">
-                        <h4 class="footer-title" data-i18n="footer_tools">Tools</h4>
+                        <h4 class="footer-title">Tools</h4>
                         <ul class="footer-links">
-                            <li><a href="/blog/text-converter.html" data-i18n="nav_text_converter">Text Konverter</a></li>
-                            <li><a href="/blog/color-text.html" data-i18n="nav_color_text">Farbtext-Konverter</a></li>
-                            <li><a href="/blog/items.html" data-i18n="nav_items">Items Datenbank</a></li>
-                            <li><a href="/blog/mobs.html" data-i18n="nav_mobs">Mobs Datenbank</a></li>
-                            <li><a href="/blog/day-night-cycle.html" data-i18n="nav_day_night_cycle">Tag-Nacht-Zyklus</a></li>
-                            <li><a href="/blog/beacon-color-mixer.html" data-i18n="nav_beacon_mixer">Beacon Color Mixer</a></li>
-                                <li><a href="/blog/qr-generator.html">QR Generator</a></li>
-                                <li><a href="/blog/advancement-generator.html">Advancement Generator</a></li>
+                            <li><a href="/blog/de/text-converter.html">Text Konverter</a></li>
+                            <li><a href="/blog/de/color-text.html">Farbtext-Konverter</a></li>
+                            <li><a href="/blog/de/structure-converter.html">Struktur-Konverter</a></li>
+                            <li><a href="/blog/de/map-art-generator.html">Map-Art-Generator</a></li>
+                            <li><a href="/blog/de/items.html">Items Datenbank</a></li>
+                            <li><a href="/blog/de/mobs.html">Mobs Datenbank</a></li>
+                            <li><a href="/blog/de/day-night-cycle.html">Tag-Nacht-Zyklus</a></li>
+                            <li><a href="/blog/de/beacon-color-mixer.html">Beacon Color Mixer</a></li>
+                                <li><a href="/blog/de/qr-generator.html">QR Generator</a></li>
+                                <li><a href="/blog/de/advancement-generator.html">Advancement Generator</a></li>
                         </ul>
                     </div>
                     <!-- Column 3 -->
                     <div class="footer-col">
-                        <h4 class="footer-title" data-i18n="footer_more_tools">Mehr Tools</h4>
+                        <h4 class="footer-title">Mehr Tools</h4>
                         <ul class="footer-links">
-                            <li><a href="/blog/server-status.html" data-i18n="nav_server_status">Server Status</a></li>
-                            <li><a href="/blog/minecraft-api-status.html">Minecraft API Status</a></li>
-                            <li><a href="/blog/skin-lookup.html" data-i18n="nav_skin_lookup">Skin Lookup</a></li>
-                            <li><a href="/blog/skin-editor.html" data-i18n="nav_skin_editor">Skin Editor</a></li>
-                            <li><a href="/blog/minecraft-skins.html" data-i18n="skins_library_title">Skin Galerie</a></li>
-                            <li><a href="/blog/minecraft-capes.html" data-i18n="capes_db_title">Cape Galerie</a></li>
-                            <li><a href="/blog/minecraft-versions.html">Minecraft Versionen</a></li>
-                            <li><a href="/blog/end_poem.html" data-i18n="nav_end_poem">End Poem</a></li>
+                            <li><a href="/blog/de/server-status.html">Server Status</a></li>
+                            <li><a href="/blog/de/minecraft-api-status.html">Minecraft API Status</a></li>
+                            <li><a href="/blog/de/skin-lookup.html">Skin Lookup</a></li>
+                            <li><a href="/blog/de/skin-editor.html">Skin Editor</a></li>
+                            <li><a href="/blog/de/minecraft-skins.html">Skin Galerie</a></li>
+                            <li><a href="/blog/de/minecraft-capes.html">Cape Galerie</a></li>
+                            <li><a href="/blog/de/minecraft-versions.html">Minecraft Versionen</a></li>
+                            <li><a href="/blog/de/end_poem.html">End Poem</a></li>
                         </ul>
                     </div>
                     <!-- Column 4 -->
                     <div class="footer-col">
-                        <h4 class="footer-title" data-i18n="footer_legal">Rechtliches</h4>
+                        <h4 class="footer-title">Rechtliches</h4>
                         <ul class="footer-links">
-                            <li><a href="/blog/impressum.html" data-i18n="footer_impressum">Impressum</a></li>
-                            <li><a href="/blog/datenschutz.html" data-i18n="footer_privacy">Datenschutz</a></li>
-                            <li><a href="/blog/nutzungsbedingungen.html" data-i18n="footer_terms">Nutzungsbedingungen</a></li>
-                            <li><a href="/blog/copyright.html" data-i18n="footer_copyright">Copyright</a></li>
+                            <li><a href="/blog/de/impressum.html">Impressum</a></li>
+                            <li><a href="/blog/de/datenschutz.html">Datenschutz</a></li>
+                            <li><a href="/blog/de/nutzungsbedingungen.html">Nutzungsbedingungen</a></li>
+                            <li><a href="/blog/de/copyright.html">Copyright</a></li>
                         </ul>
                     </div>
                     <!-- Column 5 -->
                     <div class="footer-col">
-                        <h4 class="footer-title" data-i18n="footer_about">Über Uns</h4>
+                        <h4 class="footer-title">Über Uns</h4>
                         <ul class="footer-links">
-                            <li><a href="/blog/history.html" data-i18n="footer_history">MC-Craft Geschichte</a></li>
-                            <li><a href="/blog/team.html" data-i18n="footer_team">Unser Team</a></li>
-                            <li><a href="/blog/about.html" data-i18n="footer_about_us">Über uns</a></li>
+                            <li><a href="/blog/de/history.html">MC-Craft Geschichte</a></li>
+                            <li><a href="/blog/de/team.html">Unser Team</a></li>
+                            <li><a href="/blog/de/about.html">Über uns</a></li>
                         </ul>
                     </div>
                     <!-- Column 6 -->
                     <div class="footer-col">
-                        <h4 class="footer-title" data-i18n="footer_support">Support</h4>
+                        <h4 class="footer-title">Support</h4>
                         <ul class="footer-links">
-                            <li><a href="/blog/faq.html" data-i18n="footer_faq">FAQ & Hilfe</a></li>
-                            <li><a href="/blog/bug-report.html" data-i18n="footer_bug">Bug melden</a></li>
-                            <li><a href="/blog/support.html" data-i18n="footer_support_contact">Support Kontakt</a></li>
-                            <li><a href="/blog/e-mails.html">E-mails</a></li>
+                            <li><a href="/blog/de/faq.html">FAQ & Hilfe</a></li>
+                            <li><a href="/blog/de/bug-report.html">Bug melden</a></li>
+                            <li><a href="/blog/de/support.html">Support Kontakt</a></li>
+                            <li><a href="/blog/de/e-mails.html">E-mails</a></li>
                         </ul>
                     </div>
                 </div>
                 <div class="footer-bottom">
                     <div class="copyright">
-                        <p>&copy; <span id="currentYear">2026</span> MC-Craft. <span data-i18n="footer_rights">Alle Rechte vorbehalten.</span></p>
-                        <p class="disclaimer" data-i18n="footer_disclaimer">Minecraft ist eine Marke von Mojang Studios. Diese Seite ist nicht offiziell mit Mojang oder Microsoft verbunden.</p>
+                        <p>&copy; <span id="currentYear">2026</span> MC-Craft. <span>Alle Rechte vorbehalten.</span></p>
+                        <p class="disclaimer">Minecraft ist eine Marke von Mojang Studios. Diese Seite ist nicht offiziell mit Mojang oder Microsoft verbunden.</p>
                     </div>
                     <div class="footer-meta">
-                        <span class="version" data-i18n="footer_version">Version 1.0.0</span>
-                        <a href="/blog/changelog.html" class="changelog active" data-i18n="footer_changelog">Changelog</a>
+                        <span class="version">Version 1.0.0</span>
+                        <a href="/blog/de/changelog.html" class="changelog active">Changelog</a>
                     </div>
                 </div>
             </div>
@@ -288,6 +294,6 @@
 
     <script src="/assets/JS/modules/mc-preferences.js"></script>
 
-    <script src="/assets/JS/modules/404.js"></script>
+    <script src="/assets/JS/modules/de/404.js"></script>
 </body>
 </html>

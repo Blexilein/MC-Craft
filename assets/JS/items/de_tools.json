@@ -5886,7 +5886,7 @@
     "numeric_id": "Keine numerische ID in aktuellen Versionen",
     "type": "Item",
     "category": "Werkzeuge & Hilfsmittel",
-    "icon": "/assets/img/textures/programmer_art/textures/item/writable_book.png",
+    "icon": "/assets/img/items/Book_and_Quill.png",
     "description": "Kann beschrieben werden. Nach dem Schreiben wird es zu 'Geschriebenes Buch'.",
     "biome": "Nicht zutreffend",
     "aliases": [],

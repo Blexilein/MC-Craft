@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="de" data-theme="overworld">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Mohamad Laith AKA 'Blexilein'">
+    <meta name="robots" content="index, follow">
+    <meta name="description" content="Konvertiere Text in das Minecraft-Standard-Galakti-Alphabet und zurück.">
+    <meta name="keywords" content="minecraft, text konverter, galakti alphabet, minecraft schrift">
+    <link rel="canonical" href="https://mc-craft.com/blog/de/color-text.html">
+    <link rel="alternate" hreflang="de" href="https://mc-craft.com/blog/de/color-text.html">
+    <link rel="alternate" hreflang="en" href="https://mc-craft.com/blog/en/color-text.html">
+    <link rel="alternate" hreflang="x-default" href="https://mc-craft.com/blog/de/color-text.html">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="MC-Craft | Farbtext-Konverter">
+    <meta property="og:description" content="Konvertiere Text in das Minecraft-Standard-Galakti-Alphabet und zurück.">
+    <meta property="og:url" content="https://mc-craft.com/blog/de/color-text.html">
+    <meta property="og:image" content="https://mc-craft.com/assets/img/favicon/mc-craft.png">
+    <meta property="og:image:alt" content="MC-Craft Logo">
+    <meta property="og:site_name" content="MC-Craft">
+    <meta property="og:locale" content="de_DE">
+    <meta property="og:locale:alternate" content="en_US">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="MC-Craft | Farbtext-Konverter">
+    <meta name="twitter:description" content="Konvertiere Text in das Minecraft-Standard-Galakti-Alphabet und zurück.">
+    <meta name="twitter:image" content="https://mc-craft.com/assets/img/favicon/mc-craft.png">
+    <meta name="theme-color" content="#148200">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicon/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon/favicon-32x32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/assets/img/favicon/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="/assets/img/favicon/android-chrome-512x512.png">
+    <link rel="icon" href="/assets/img/favicon/favicon.ico">
+    <link rel="manifest" href="/site.webmanifest">
+        <link rel="stylesheet" href="/assets/fontawesome/all.min.css">
+    <link rel="stylesheet" href="/assets/CSS/color-text.css">
+    <link rel="stylesheet" href="/assets/CSS/site-modern-v1.css">
+    <title>MC-Craft | Farbtext-Konverter</title>
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div class="loader" id="loader">
+        <div class="loader-content">
+            <div class="loading-spinner">
+                <div class="spinner"></div>
+            </div>
+            <p class="loading-text">Farbtext-Konverter wird geladen...</p>
+            <div class="loading-progress"></div>
+        </div>
+    </div>
+
+        <!-- Header -->
+     <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <a href="/index.html" class="logo">
+                    <div class="logo-icon"></div>
+                    <span class="logo-text">MC-Craft</span>
+                </a>
+                <nav class="navigation">
+                    <ul class="nav-list">
+                        <li><a href="/index.html" class="nav-link">Home</a></li>
+                        <li class="dropdown">
+                            <button class="dropdown-btn nav-link">Werkzeuge</button>
+                            <ul class="dropdown-menu">
+                                <li><a href="/blog/de/text-converter.html">Text Konverter</a></li>
+                                <li><a href="/blog/de/color-text.html">Farbtext</a></li>
+                                <li><a href="/blog/de/structure-converter.html">Struktur-Konverter</a></li>
+                                <li><a href="/blog/de/map-art-generator.html">Map-Art-Generator</a></li>
+                                <li><a href="/blog/de/items.html">Items Datenbank</a></li>
+                                <li><a href="/blog/de/mobs.html">Mobs Datenbank</a></li>
+                                <li><a href="/blog/de/server-status.html">Server Status</a></li>
+                                <li><a href="/blog/de/minecraft-api-status.html">Minecraft API Status</a></li>
+                                <li><a href="/blog/de/skin-lookup.html">Skin Lookup</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <button class="dropdown-btn nav-link">Entdecken</button>
+                            <ul class="dropdown-menu">
+                                <li><a href="/blog/de/skin-editor.html">Skin Editor</a></li>
+                               <li><a href="/blog/de/day-night-cycle.html">Tag-Nacht-Zyklus</a></li>
+                                <li><a href="/blog/de/end_poem.html">End Poem</a></li>
+                                <li><a href="/blog/de/minecraft-capes.html">Cape-Datenbank</a></li>
+                                <li><a href="/blog/de/minecraft-versions.html">Minecraft Versionen</a></li>
+                                <li><a href="/blog/de/minecraft-skins.html">Skin-Bibliothek</a></li>
+                                <li><a href="/blog/de/beacon-color-mixer.html">Beacon Color Mixer</a></li>
+                                <li><a href="/blog/de/qr-generator.html">QR Generator</a></li>
+                                <li><a href="/blog/de/advancement-generator.html">Advancement Generator</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="sound-toggle">
+                    <button class="sound-btn" id="soundBtn" aria-label="Sound ein/aus">
+                        <img src="/assets/img/backgrounds/sound-on.svg" alt="Sound an" class="sound-icon" id="soundIcon">
+                    </button>
+                </div>
+                <div class="lang-switcher">
+                    <a class="lang-btn" id="langBtn" href="/blog/en/color-text.html" aria-label="Switch to English">
+                        <img src="/assets/img/backgrounds/de.svg" alt="Deutsch" class="flag-icon" id="langFlag">
+                    </a>
+                </div>
+                <div class="theme-switcher">
+                    <button class="theme-btn" id="themeBtn">
+                        <i class="fa-solid fa-palette"></i>
+                    </button>
+                    <div class="theme-dropdown" id="themeDropdown">
+                        <button class="theme-option" data-theme="overworld">
+                            <i class="fas fa-cube"></i>
+                            <span>Overworld</span>
+                        </button>
+                        <button class="theme-option" data-theme="nether">
+                            <i class="fas fa-fire"></i>
+                            <span>Nether</span>
+                        </button>
+                        <button class="theme-option" data-theme="end">
+                            <i class="fas fa-moon"></i>
+                            <span>The End</span>
+                        </button>
+                    </div>
+                </div>
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Navigation -->
+    <div class="mobile-nav" id="mobileNav">
+        <div class="mobile-nav-header">
+            <div class="logo">
+                <div class="logo-icon"></div>
+                <span class="logo-text">MC-Craft</span>
+            </div>
+            <button class="close-btn" id="closeBtn">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <ul class="mobile-nav-list">
+            <li><a href="/index.html" class="mobile-nav-link">Home</a></li>
+            <li><a href="/blog/de/text-converter.html" class="mobile-nav-link">Text Konverter</a></li>
+            <li><a href="/blog/de/color-text.html" class="mobile-nav-link">Farbtext</a></li>
+            <li><a href="/blog/de/structure-converter.html" class="mobile-nav-link">Struktur-Konverter</a></li>
+            <li><a href="/blog/de/map-art-generator.html" class="mobile-nav-link">Map-Art-Generator</a></li>
+            <li><a href="/blog/de/items.html" class="mobile-nav-link">Items Datenbank</a></li>
+            <li><a href="/blog/de/mobs.html" class="mobile-nav-link">Mobs Datenbank</a></li>
+            <li><a href="/blog/de/server-status.html" class="mobile-nav-link">Server Status</a></li>
+            <li><a href="/blog/de/minecraft-api-status.html" class="mobile-nav-link">Minecraft API Status</a></li>
+            <li><a href="/blog/de/skin-lookup.html" class="mobile-nav-link">Skin Lookup</a></li>
+            <li><a href="/blog/de/skin-editor.html" class="mobile-nav-link">Skin Editor</a></li>
+            <li><a href="/blog/de/day-night-cycle.html" class="mobile-nav-link">Tag-Nacht-Zyklus</a></li>
+            <li><a href="/blog/de/end_poem.html" class="mobile-nav-link">End Poem</a></li>
+            <li><a href="/blog/de/minecraft-capes.html" class="mobile-nav-link">Cape-Datenbank</a></li>
+            <li><a href="/blog/de/minecraft-versions.html" class="mobile-nav-link">Minecraft Versionen</a></li>
+            <li><a href="/blog/de/minecraft-skins.html" class="mobile-nav-link">Skin-Bibliothek</a></li>
+            <li><a href="/blog/de/beacon-color-mixer.html" class="mobile-nav-link">Beacon Color Mixer</a></li>
+            <li><a href="/blog/de/qr-generator.html" class="mobile-nav-link">QR Generator</a></li>
+            <li><a href="/blog/de/advancement-generator.html" class="mobile-nav-link">Advancement Generator</a></li>
+        </ul>
+        <div class="mobile-theme-switcher">
+            <h4>Theme auswählen:</h4>
+            <div class="theme-options">
+                <button class="theme-option-btn" data-theme="overworld">
+                    <i class="fas fa-cube"></i> <span>Overworld</span>
+                </button>
+                <button class="theme-option-btn" data-theme="nether">
+                    <i class="fas fa-fire"></i> <span>Nether</span>
+                </button>
+                <button class="theme-option-btn" data-theme="end">
+                    <i class="fas fa-moon"></i> <span>The End</span>
+                </button>
+            </div>
+            <div class="mobile-sound-lang">
+                <button class="mobile-sound-btn" id="mobileSoundBtn">
+                    <img src="/assets/img/backgrounds/sound-on.svg" alt="Sound an" class="sound-icon" id="mobileSoundIcon">
+                    <span>Sound</span>
+                </button>
+                <a class="mobile-lang-btn" id="mobileLangBtn" href="/blog/en/color-text.html">
+                    <img src="/assets/img/backgrounds/de.svg" alt="Deutsch" class="flag-icon" id="mobileLangFlag">
+                    <span>Sprache</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+
+    <main class="main">
+        <!-- Hero Section -->
+        <section class="hero" id="home">
+            <div class="hero-bg-grid"></div>
+            <div class="container">
+                <div class="hero-content">
+                <div class="hero-badge">
+                        <span class="hero-badge-dot"></span>
+                        V 1.0.0 IST DA
+                    </div>
+                    <h1 class="hero-title">Minecraft <span class="highlight">Color Text</span> Konverter</h1>
+                    <p class="hero-description">
+                        Erstelle farbige und formatierte Texte für Minecraft mit einfachen Klicks.
+                        Perfekt für deine Server-MOTDs, Schilder, Chat-Nachrichten und vieles mehr.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#converter" class="btn btn-primary">
+                            <i class="fas fa-palette"></i> Zum Konverter
+                        </a>
+                        <a href="/blog/de/text-converter.html" class="btn btn-secondary">
+                            <i class="fas fa-font"></i> Text Konverter
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="hero-grid-staggered">
+                        <div class="hero-stagger-col hero-stagger-left">
+                            <div class="grid-item">
+                            <i class="fas fa-palette"></i>
+                            <span>16 Farben</span>
+                        </div>
+                        <div class="grid-item">
+                            <i class="fas fa-text-height"></i>
+                            <span>6 Formatierungen</span>
+                        </div>
+                    </div>
+                        <div class="hero-stagger-col hero-stagger-right">
+                        <div class="grid-item">
+                            <i class="fas fa-eye"></i>
+                            <span>Live Vorschau</span>
+                        </div>
+                        <div class="grid-item">
+                            <i class="fas fa-icons"></i>
+                            <span>40+ Symbole</span>
+                        </div>
+                    </div>
+                        <div class="floating-cube floating-cube-1"></div>
+                        <div class="floating-cube floating-cube-2"></div>
+                </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Converter Section -->
+        <section class="converter-section" id="converter">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Color Text <span class="highlight">Konverter</span></h2>
+                    <p class="section-subtitle">Wähle Farben und Formatierungen für deinen Minecraft Text</p>
+                </div>
+                
+                <div class="converter-container">
+                    <div class="edition-switch" aria-label="Edition Switch">
+                        <span class="edition-switch-label">Vorschau-Version</span>
+                        <div class="edition-switch-buttons">
+                            <button type="button" class="edition-switch-btn active" data-edition="je"><span>JE</span></button>
+                            <button type="button" class="edition-switch-btn" data-edition="be"><span>BE</span></button>
+                        </div>
+                    </div>
+
+                    <!-- Farbauswahl -->
+                    <div class="color-picker-container">
+                        <h3 class="color-picker-title"><i class="fas fa-fill-drip"></i> <span>Farben</span></h3>
+                        <div class="color-grid" id="color-grid">
+                            <!-- Farben werden via JavaScript geladen -->
+                        </div>
+                    </div>
+
+                    <!-- Formatierungen -->
+                    <div class="format-picker-container">
+                        <h3 class="format-picker-title"><i class="fas fa-text-height"></i> <span>Formatierungen</span></h3>
+                        <div class="format-grid" id="format-grid">
+                            <!-- Formatierungen werden via JavaScript geladen -->
+                        </div>
+                    </div>
+
+                    <!-- Text Eingabe und Vorschau -->
+                    <div class="converter-row">
+                        <label for="color-text-input" class="converter-label">
+                            <i class="fas fa-font"></i> <span>Dein Text</span>
+                        </label>
+                        <textarea id="color-text-input" class="converter-textarea" placeholder='Gib hier deinen Text ein...'></textarea>
+                        <div class="char-counter">
+                            <span id="charCount">0</span> <span>Zeichen</span>
+                        </div>
+                    </div>
+                    
+                    <div class="converter-controls">
+                        <button class="btn btn-primary" id="applyFormatting">
+                            <i class="fas fa-magic"></i> <span>Formatierung anwenden</span>
+                        </button>
+                        <button class="btn btn-secondary" id="clearAll">
+                            <i class="fas fa-eraser"></i> <span>Alles löschen</span>
+                        </button>
+                        <button class="btn btn-outline" id="insertExample">
+                            <i class="fas fa-lightbulb"></i> <span>Beispiel einfügen</span>
+                        </button>
+                    </div>
+                    
+                    <div class="converter-row">
+                        <label class="converter-label">
+                            <i class="fas fa-eye"></i> <span>Live Vorschau</span>
+                        </label>
+                        <div id="color-preview" class="color-preview-box">
+                            Deine Vorschau erscheint hier...
+                        </div>
+                    </div>
+
+                    <div class="motd-preview-section">
+                        <div class="section-header motd-section-header">
+                            <h3 class="section-title"><i class="fas fa-server"></i> <span>MOTD Server Vorschau</span></h3>
+                            <p class="section-subtitle">So sieht dein Text in typischen Server-Konfigurationen aus</p>
+                        </div>
+
+                        <label class="motd-toggle-row" for="motdCenterLines">
+                            <input type="checkbox" id="motdCenterLines">
+                            <span>Zeilen zentrieren</span>
+                        </label>
+
+                        <div class="motd-block motd-preview-grid">
+                            <div class="motd-preview-panel motd-preview-panel-je">
+                                <label class="motd-label" for="motdLivePreviewJe">Live Server Vorschau (JE)</label>
+                                <div id="motdLivePreviewJe" class="motd-live-box">Deine Vorschau erscheint hier...</div>
+                            </div>
+                            <div class="motd-preview-panel motd-preview-panel-be">
+                                <label class="motd-label" for="motdLivePreviewBe">Live Server Vorschau (BE)</label>
+                                <div id="motdLivePreviewBe" class="motd-live-box">Deine Vorschau erscheint hier...</div>
+                            </div>
+                            <p class="motd-note">Minecraft kann die MOTD leicht anders rendern. Bitte auf deinem Server testen.</p>
+                        </div>
+
+                        <div class="motd-block">
+                            <div class="motd-label-row">
+                                <label class="motd-label" for="motdVanilla">Für official/vanilla server.properties Datei:</label>
+                                <button type="button" class="motd-copy-btn" data-copy-target="motdVanilla">Kopieren</button>
+                            </div>
+                            <input id="motdVanilla" class="motd-output" type="text" readonly>
+                        </div>
+
+                        <div class="motd-block">
+                            <div class="motd-label-row">
+                                <label class="motd-label" for="motdSpigot">Für Spigot server.properties Datei:</label>
+                                <button type="button" class="motd-copy-btn" data-copy-target="motdSpigot">Kopieren</button>
+                            </div>
+                            <input id="motdSpigot" class="motd-output" type="text" readonly>
+                        </div>
+
+                        <div class="motd-block">
+                            <div class="motd-label-row">
+                                <label class="motd-label" for="motdBungee">Für BungeeCord config.yml Datei:</label>
+                                <button type="button" class="motd-copy-btn" data-copy-target="motdBungee">Kopieren</button>
+                            </div>
+                            <input id="motdBungee" class="motd-output" type="text" readonly>
+                        </div>
+
+                        <div class="motd-block">
+                            <div class="motd-label-row">
+                                <label class="motd-label" for="motdServerListPlus">Für ServerListPlus serverListPlus.yml Datei:</label>
+                                <button type="button" class="motd-copy-btn" data-copy-target="motdServerListPlus">Kopieren</button>
+                            </div>
+                            <textarea id="motdServerListPlus" class="motd-output motd-output-multiline" readonly></textarea>
+                        </div>
+
+                        <div class="motd-block">
+                            <div class="motd-label-row">
+                                <label class="motd-label" for="motdBedrock">Für Bedrock server.properties Datei (motd):</label>
+                                <button type="button" class="motd-copy-btn" data-copy-target="motdBedrock">Kopieren</button>
+                            </div>
+                            <input id="motdBedrock" class="motd-output" type="text" readonly>
+                        </div>
+
+                    </div>
+                    
+                    <div class="converter-actions">
+                        <button class="btn btn-success" id="copyFormatted">
+                            <i class="fas fa-copy"></i> <span>Formatierten Text kopieren</span>
+                        </button>
+                        <button class="btn btn-info" id="copyCodes">
+                            <i class="fas fa-code"></i> <span>Farbcodes kopieren (&)</span>
+                        </button>
+                        <button class="btn btn-warning" id="copyMinecraftCodes">
+                            <i class="fas fa-gamepad"></i> <span>Minecraft Codes kopieren (§)</span>
+                        </button>
+                    </div>
+
+                    <div class="banner-selector">
+                        <label for="bannerSelect" class="converter-label">
+                            <i class="fas fa-paint-roller"></i> <span>Banner Stil</span>
+                        </label>
+                        <select id="bannerSelect" class="banner-select"></select>
+                    </div>
+                </div>
+
+                <!-- Symbole Section -->
+                <div class="symbols-section">
+                    <div class="section-header">
+                        <h3 class="section-title"><i class="fas fa-icons"></i> <span>Besondere</span> <span class="highlight">Symbole</span></h3>
+                        <p class="section-subtitle">Symbole für deine Minecraft-Texte</p>
+                    </div>
+                    
+                    <!-- Symbol Filter -->
+                <div class="symbol-filters">
+                    <button class="symbol-filter-btn active" data-category="all">Alle</button>
+                    <button class="symbol-filter-btn" data-category="smileys">😊 Smileys</button>
+                    <button class="symbol-filter-btn" data-category="people">👤 Menschen</button>
+                    <button class="symbol-filter-btn" data-category="animals">🐶 Tiere & Natur</button>
+                    <button class="symbol-filter-btn" data-category="food">🍕 Essen & Trinken</button>
+                    <button class="symbol-filter-btn" data-category="activity">⚽ Aktivitäten & Sport</button>
+                    <button class="symbol-filter-btn" data-category="travel">✈️ Reisen & Orte</button>
+                    <button class="symbol-filter-btn" data-category="objects">📱 Gegenstände</button>
+                    <button class="symbol-filter-btn" data-category="symbols">❤️ Symbole & Abstraktes</button>
+                    <button class="symbol-filter-btn" data-category="flags">🏳️ Flaggen</button>
+                    <button class="symbol-filter-btn" data-category="decorative">✨ Dekoration</button>
+                    <button class="symbol-filter-btn" data-category="arrows">➡️ Pfeile</button>
+                    <button class="symbol-filter-btn" data-category="shapes">🔷 Formen</button>
+                    <button class="symbol-filter-btn" data-category="special">✨ Besondere</button>
+                </div>
+                    
+                    <!-- Symbole Grid -->
+                    <div class="symbols-grid" id="symbols-grid">
+                        <!-- Symbole werden via JavaScript geladen -->
+                    </div>
+
+                    <div class="color-reference-section">
+                        <h4><i class="fas fa-table"></i> <span>Farbcode Referenz (JE + BE)</span></h4>
+                        <p>Liste mit Code, Name, HEX und Version aus der Minecraft Farbcode-Tabelle</p>
+                        <div class="color-reference-table-wrap">
+                            <table class="color-reference-table">
+                                <thead>
+                                    <tr>
+                                        <th>Code</th>
+                                        <th>Name</th>
+                                        <th>FG Hex</th>
+                                        <th>BG Hex</th>
+                                        <th>ANSI</th>
+                                        <th>Version</th>
+                                        <th>Hinweis</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="colorReferenceBody"></tbody>
+                            </table>
+                        </div>
+                    </div>
+                    
+                    <!-- Erklärungen -->
+                    <div class="tips">
+                        <h4><i class="fas fa-info-circle"></i> <span>Formatierung erklärt</span></h4>
+                        <div class="tips-grid">
+                            <div class="tip-card">
+                                <div class="tip-icon"><i class="fas fa-eye-slash"></i></div>
+                                <div class="tip-content">
+                                    <h5>Verschleierung (&k)</h5>
+                                    <p>Text wird in Minecraft mit zufälligen Zeichen animiert dargestellt</p>
+                                </div>
+                            </div>
+                            <div class="tip-card">
+                                <div class="tip-icon"><i class="fas fa-eraser"></i></div>
+                                <div class="tip-content">
+                                    <h5>Zurücksetzen (&r)</h5>
+                                    <p>Setzt alle Formatierungen auf Standard zurück</p>
+                                </div>
+                            </div>
+                            <div class="tip-card">
+                                <div class="tip-icon"><i class="fas fa-random"></i></div>
+                                <div class="tip-content">
+                                    <h5>Kombinationen</h5>
+                                    <p>Kombiniere Farben und Formatierungen für coole Effekte</p>
+                                </div>
+                            </div>
+                            <div class="tip-card">
+                                <div class="tip-icon"><i class="fas fa-check-circle"></i></div>
+                                <div class="tip-content">
+                                    <h5>Kompatibilität</h5>
+                                    <p>Funktioniert in Chat, Schildern, Büchern und Server-MOTDs</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quick Examples Section -->
+        <section class="examples-section">
+            <div class="container">
+                <div class="section-header">
+                    <h3 class="section-title"><i class="fas fa-rocket"></i> <span>Schnelle</span> <span class="highlight">Beispiele</span></h3>
+                    <p class="section-subtitle">Klicke auf ein Beispiel, um es in den Konverter zu laden</p>
+                </div>
+                
+                <div class="examples-grid">
+                    <div class="example-card" data-example="welcome">
+                        <div class="example-preview">§c❤ §6Willkommen §eauf §aunserem §bServer! §d❤</div>
+                        <div class="example-info">
+                            <h4>Willkommensnachricht</h4>
+                            <p>Perfekt für Server-MOTDs</p>
+                        </div>
+                    </div>
+                    <div class="example-card" data-example="warning">
+                        <div class="example-preview">§4⚠ §cWarnung: §6§lKein §e§lGriefing §a§lerlaubt!</div>
+                        <div class="example-info">
+                            <h4>Warnung</h4>
+                            <p>Wichtige Regeln hervorheben</p>
+                        </div>
+                    </div>
+                    <div class="example-card" data-example="rainbow">
+                        <div class="example-preview">§4R §6A §eI §aN §bB §dO §5W</div>
+                        <div class="example-info">
+                            <h4>Regenbogen Text</h4>
+                            <p>Farbiger Text für alle Buchstaben</p>
+                        </div>
+                    </div>
+                    <div class="example-card" data-example="secret">
+                        <div class="example-preview">§kGeheime §rNachricht §khier!</div>
+                        <div class="example-info">
+                            <h4>Geheime Nachricht</h4>
+                            <p>Mit Verschleierungseffekt</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta">
+            <div class="container">
+                <div class="cta-content">
+                    <h2 class="cta-title">Mehr Minecraft <span class="highlight">Tools</span> entdecken?</h2>
+                    <p class="cta-description">MC-Craft bietet dir viele weitere nützliche Tools für dein Minecraft-Abenteuer.</p>
+                    <div class="cta-buttons">
+                        <a href="/blog/de/text-converter.html" class="btn btn-primary btn-large">
+                            <i class="fas fa-font"></i> Text Konverter
+                        </a>
+                        <a href="/index.html#tools" class="btn btn-outline">
+                            <i class="fas fa-eye"></i> Alle Tools ansehen
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+        <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-grid">
+                    <!-- Column 1 -->
+                    <div class="footer-col">
+                        <div class="footer-logo">
+                            <div class="logo-icon"></div>
+                            <span class="logo-text">MC-Craft</span>
+                        </div>
+                        <p class="footer-description">Kostenlose Minecraft-Tools für die Community. Entwickelt von Spielern für Spieler.</p>
+                        <div class="social-links">
+                           <a href="https://github.com/Blexilein" class="social-link" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                            <a href="https://discord.gg/eVVpQD75w4" class="social-link"><i class="fab fa-discord"></i></a>
+                            <a href="https://x.com/Blexi_1" class="social-link" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        </div>
+                    </div>
+                    <!-- Column 2 -->
+                    <div class="footer-col">
+                        <h4 class="footer-title">Tools</h4>
+                        <ul class="footer-links">
+                            <li><a href="/blog/de/text-converter.html">Text Konverter</a></li>
+                            <li><a href="/blog/de/color-text.html">Farbtext-Konverter</a></li>
+                            <li><a href="/blog/de/structure-converter.html">Struktur-Konverter</a></li>
+                            <li><a href="/blog/de/map-art-generator.html">Map-Art-Generator</a></li>
+                            <li><a href="/blog/de/items.html">Items Datenbank</a></li>
+                            <li><a href="/blog/de/mobs.html">Mobs Datenbank</a></li>
+                            <li><a href="/blog/de/day-night-cycle.html">Tag-Nacht-Zyklus</a></li>
+                            <li><a href="/blog/de/beacon-color-mixer.html">Beacon Color Mixer</a></li>
+                                <li><a href="/blog/de/qr-generator.html">QR Generator</a></li>
+                                <li><a href="/blog/de/advancement-generator.html">Advancement Generator</a></li>
+                        </ul>
+                    </div>
+                    <!-- Column 3 -->
+                    <div class="footer-col">
+                        <h4 class="footer-title">Mehr Tools</h4>
+                        <ul class="footer-links">
+                            <li><a href="/blog/de/server-status.html">Server Status</a></li>
+                                <li><a href="/blog/de/minecraft-api-status.html">Minecraft API Status</a></li>
+                            <li><a href="/blog/de/skin-lookup.html">Skin Lookup</a></li>
+                            <li><a href="/blog/de/skin-editor.html">Skin Editor</a></li>
+                            <li><a href="/blog/de/minecraft-skins.html">Skin Galerie</a></li>
+                            <li><a href="/blog/de/minecraft-capes.html">Cape Galerie</a></li>
+                            <li><a href="/blog/de/minecraft-versions.html">Minecraft Versionen</a></li>
+                            <li><a href="/blog/de/end_poem.html">End Poem</a></li>
+                        </ul>
+                    </div>
+                    <!-- Column 4 -->
+                    <div class="footer-col">
+                        <h4 class="footer-title">Rechtliches</h4>
+                        <ul class="footer-links">
+                            <li><a href="/blog/de/impressum.html">Impressum</a></li>
+                            <li><a href="/blog/de/datenschutz.html">Datenschutz</a></li>
+                            <li><a href="/blog/de/nutzungsbedingungen.html">Nutzungsbedingungen</a></li>
+                            <li><a href="/blog/de/copyright.html">Copyright</a></li>
+                        </ul>
+                    </div>
+                    <!-- Column 5 -->
+                    <div class="footer-col">
+                        <h4 class="footer-title">Über Uns</h4>
+                        <ul class="footer-links">
+                            <li><a href="/blog/de/history.html">MC-Craft Geschichte</a></li>
+                            <li><a href="/blog/de/team.html">Unser Team</a></li>
+                            <li><a href="/blog/de/about.html">Über uns</a></li>
+                        </ul>
+                    </div>
+                    <!-- Column 6 -->
+                    <div class="footer-col">
+                        <h4 class="footer-title">Support</h4>
+                        <ul class="footer-links">
+                            <li><a href="/blog/de/faq.html">FAQ & Hilfe</a></li>
+                            <li><a href="/blog/de/bug-report.html">Bug melden</a></li>
+                            <li><a href="/blog/de/support.html">Support Kontakt</a></li>
+                            <li><a href="/blog/de/e-mails.html">E-mails</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <div class="copyright">
+                        <p>&copy; <span id="currentYear">2026</span> MC-Craft. <span>Alle Rechte vorbehalten.</span></p>
+                        <p class="disclaimer">Minecraft ist eine Marke von Mojang Studios. Diese Seite ist nicht offiziell mit Mojang oder Microsoft verbunden.</p>
+                    </div>
+                    <div class="footer-meta">
+                        <span class="version">Version 1.0.0</span>
+                        <a href="/blog/de/changelog.html" class="changelog active">Changelog</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+
+    <button class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Notification Toast -->
+    <div class="toast-container" id="toastContainer"></div>
+
+    <!-- JavaScript -->
+    <script src="/assets/JS/modules/mc-preferences.js"></script>
+    <script src="/assets/JS/modules/de/color-text.js?v=20260801"></script>
+</body>
+</html>

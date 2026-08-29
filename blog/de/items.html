@@ -1,0 +1,755 @@
+<!DOCTYPE html>
+<html lang="de" data-theme="overworld">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Mohamad Laith AKA 'Blexilein'">
+    <meta name="robots" content="index, follow">
+    <meta name="description" content="Minecraft Items Datenbank mit detaillierten Eigenschaften und Befehlen.">
+    <meta name="keywords" content="Minecraft, Items, Blöcke, Werkzeuge, Befehle">
+    <link rel="canonical" href="https://mc-craft.com/blog/de/items.html">
+    <link rel="alternate" hreflang="de" href="https://mc-craft.com/blog/de/items.html">
+    <link rel="alternate" hreflang="en" href="https://mc-craft.com/blog/en/items.html">
+    <link rel="alternate" hreflang="x-default" href="https://mc-craft.com/blog/de/items.html">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="MC-Craft | Items Datenbank">
+    <meta property="og:description" content="Minecraft Items Datenbank mit detaillierten Eigenschaften und Befehlen.">
+    <meta property="og:url" content="https://mc-craft.com/blog/de/items.html">
+    <meta property="og:image" content="https://mc-craft.com/assets/img/favicon/mc-craft.png">
+    <meta property="og:image:alt" content="MC-Craft Logo">
+    <meta property="og:site_name" content="MC-Craft">
+    <meta property="og:locale" content="de_DE">
+    <meta property="og:locale:alternate" content="en_US">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="MC-Craft | Items Datenbank">
+    <meta name="twitter:description" content="Minecraft Items Datenbank mit detaillierten Eigenschaften und Befehlen.">
+    <meta name="twitter:image" content="https://mc-craft.com/assets/img/favicon/mc-craft.png">
+    <meta name="theme-color" content="#148200">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicon/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon/favicon-32x32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/assets/img/favicon/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="/assets/img/favicon/android-chrome-512x512.png">
+    <link rel="icon" href="/assets/img/favicon/favicon.ico">
+    <link rel="manifest" href="/site.webmanifest">
+        <link rel="stylesheet" href="/assets/fontawesome/all.min.css">
+    <link rel="stylesheet" href="/assets/CSS/items.css">
+    <link rel="stylesheet" href="/assets/CSS/site-modern-v1.css">
+    <title>MC-Craft | Items Datenbank</title>
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div class="loader" id="loader">
+        <div class="loader-content">
+            <div class="loading-spinner">
+                <div class="spinner"></div>
+            </div>
+            <p class="loading-text">Items Datenbank wird geladen...</p>
+            <div class="loading-progress"></div>
+        </div>
+    </div>
+
+        <!-- Header -->
+     <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <a href="/index.html" class="logo">
+                    <div class="logo-icon"></div>
+                    <span class="logo-text">MC-Craft</span>
+                </a>
+                <nav class="navigation">
+                    <ul class="nav-list">
+                        <li><a href="/index.html" class="nav-link">Home</a></li>
+                        <li class="dropdown">
+                            <button class="dropdown-btn nav-link">Werkzeuge</button>
+                            <ul class="dropdown-menu">
+                                <li><a href="/blog/de/text-converter.html">Text Konverter</a></li>
+                                <li><a href="/blog/de/color-text.html">Farbtext</a></li>
+                                <li><a href="/blog/de/structure-converter.html">Struktur-Konverter</a></li>
+                                <li><a href="/blog/de/map-art-generator.html">Map-Art-Generator</a></li>
+                                <li><a href="/blog/de/items.html">Items Datenbank</a></li>
+                                <li><a href="/blog/de/mobs.html">Mobs Datenbank</a></li>
+                                <li><a href="/blog/de/server-status.html">Server Status</a></li>
+                                <li><a href="/blog/de/minecraft-api-status.html">Minecraft API Status</a></li>
+                                <li><a href="/blog/de/skin-lookup.html">Skin Lookup</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <button class="dropdown-btn nav-link">Entdecken</button>
+                            <ul class="dropdown-menu">
+                                <li><a href="/blog/de/skin-editor.html">Skin Editor</a></li>
+                               <li><a href="/blog/de/day-night-cycle.html">Tag-Nacht-Zyklus</a></li>
+                                <li><a href="/blog/de/end_poem.html">End Poem</a></li>
+                                <li><a href="/blog/de/minecraft-capes.html">Cape-Datenbank</a></li>
+                                <li><a href="/blog/de/minecraft-versions.html">Minecraft Versionen</a></li>
+                                <li><a href="/blog/de/minecraft-skins.html">Skin-Bibliothek</a></li>
+                                <li><a href="/blog/de/beacon-color-mixer.html">Beacon Color Mixer</a></li>
+                                <li><a href="/blog/de/qr-generator.html">QR Generator</a></li>
+                                <li><a href="/blog/de/advancement-generator.html">Advancement Generator</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="sound-toggle">
+                    <button class="sound-btn" id="soundBtn" aria-label="Sound ein/aus">
+                        <img src="/assets/img/backgrounds/sound-on.svg" alt="Sound an" class="sound-icon" id="soundIcon">
+                    </button>
+                </div>
+                <div class="lang-switcher">
+                    <a class="lang-btn" id="langBtn" href="/blog/en/items.html" aria-label="Switch to English">
+                        <img src="/assets/img/backgrounds/de.svg" alt="Deutsch" class="flag-icon" id="langFlag">
+                    </a>
+                </div>
+                <div class="theme-switcher">
+                    <button class="theme-btn" id="themeBtn">
+                        <i class="fa-solid fa-palette"></i>
+                    </button>
+                    <div class="theme-dropdown" id="themeDropdown">
+                        <button class="theme-option" data-theme="overworld">
+                            <i class="fas fa-cube"></i>
+                            <span>Overworld</span>
+                        </button>
+                        <button class="theme-option" data-theme="nether">
+                            <i class="fas fa-fire"></i>
+                            <span>Nether</span>
+                        </button>
+                        <button class="theme-option" data-theme="end">
+                            <i class="fas fa-moon"></i>
+                            <span>The End</span>
+                        </button>
+                    </div>
+                </div>
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Navigation -->
+    <div class="mobile-nav" id="mobileNav">
+        <div class="mobile-nav-header">
+            <div class="logo">
+                <div class="logo-icon"></div>
+                <span class="logo-text">MC-Craft</span>
+            </div>
+            <button class="close-btn" id="closeBtn">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <ul class="mobile-nav-list">
+            <li><a href="/index.html" class="mobile-nav-link">Home</a></li>
+            <li><a href="/blog/de/text-converter.html" class="mobile-nav-link">Text Konverter</a></li>
+            <li><a href="/blog/de/color-text.html" class="mobile-nav-link">Farbtext</a></li>
+            <li><a href="/blog/de/structure-converter.html" class="mobile-nav-link">Struktur-Konverter</a></li>
+            <li><a href="/blog/de/map-art-generator.html" class="mobile-nav-link">Map-Art-Generator</a></li>
+            <li><a href="/blog/de/items.html" class="mobile-nav-link">Items Datenbank</a></li>
+            <li><a href="/blog/de/mobs.html" class="mobile-nav-link">Mobs Datenbank</a></li>
+            <li><a href="/blog/de/server-status.html" class="mobile-nav-link">Server Status</a></li>
+            <li><a href="/blog/de/minecraft-api-status.html" class="mobile-nav-link">Minecraft API Status</a></li>
+            <li><a href="/blog/de/skin-lookup.html" class="mobile-nav-link">Skin Lookup</a></li>
+            <li><a href="/blog/de/skin-editor.html" class="mobile-nav-link">Skin Editor</a></li>
+            <li><a href="/blog/de/day-night-cycle.html" class="mobile-nav-link">Tag-Nacht-Zyklus</a></li>
+            <li><a href="/blog/de/end_poem.html" class="mobile-nav-link">End Poem</a></li>
+            <li><a href="/blog/de/minecraft-capes.html" class="mobile-nav-link">Cape-Datenbank</a></li>
+            <li><a href="/blog/de/minecraft-versions.html" class="mobile-nav-link">Minecraft Versionen</a></li>
+            <li><a href="/blog/de/minecraft-skins.html" class="mobile-nav-link">Skin-Bibliothek</a></li>
+            <li><a href="/blog/de/beacon-color-mixer.html" class="mobile-nav-link">Beacon Color Mixer</a></li>
+            <li><a href="/blog/de/qr-generator.html" class="mobile-nav-link">QR Generator</a></li>
+            <li><a href="/blog/de/advancement-generator.html" class="mobile-nav-link">Advancement Generator</a></li>
+        </ul>
+        <div class="mobile-theme-switcher">
+            <h4>Theme auswählen:</h4>
+            <div class="theme-options">
+                <button class="theme-option-btn" data-theme="overworld">
+                    <i class="fas fa-cube"></i> <span>Overworld</span>
+                </button>
+                <button class="theme-option-btn" data-theme="nether">
+                    <i class="fas fa-fire"></i> <span>Nether</span>
+                </button>
+                <button class="theme-option-btn" data-theme="end">
+                    <i class="fas fa-moon"></i> <span>The End</span>
+                </button>
+            </div>
+            <div class="mobile-sound-lang">
+                <button class="mobile-sound-btn" id="mobileSoundBtn">
+                    <img src="/assets/img/backgrounds/sound-on.svg" alt="Sound an" class="sound-icon" id="mobileSoundIcon">
+                    <span>Sound</span>
+                </button>
+                <a class="mobile-lang-btn" id="mobileLangBtn" href="/blog/en/items.html">
+                    <img src="/assets/img/backgrounds/de.svg" alt="Deutsch" class="flag-icon" id="mobileLangFlag">
+                    <span>Sprache</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+
+    <main class="main">
+        <!-- Hero Section -->
+        <section class="hero" id="home">
+            <div class="hero-bg-grid"></div>
+            <div class="container">
+                <div class="hero-content">
+                <div class="hero-badge">
+                        <span class="hero-badge-dot"></span>
+                        V 1.0.0 IST DA
+                    </div>
+                    <h1 class="hero-title">Minecraft <span class="highlight">Items Katalog</span></h1>
+                    <p class="hero-description">
+                        Entdecke alle Blöcke, Gegenstände und Werkzeuge aus der Minecraft-Welt.
+                        Finde detaillierte Informationen, Eigenschaften und Befehle für jedes Item.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#inventory" class="btn btn-primary">
+                            <i class="fas fa-cube"></i> Items Entdecken
+                        </a>
+                        <a href="#copyright" class="btn btn-outline">
+                            <i class="fas fa-info-circle"></i> Copyright Info
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="hero-grid-staggered">
+                        <div class="hero-stagger-col hero-stagger-left">
+                            <div class="grid-item">
+                            <i class="fas fa-cube"></i>
+                            <span>500+ Items</span>
+                        </div>
+                        <div class="grid-item">
+                            <i class="fas fa-terminal"></i>
+                            <span>Befehle</span>
+                        </div>
+                        </div>
+                        <div class="hero-stagger-col hero-stagger-right">
+                        <div class="grid-item">
+                            <i class="fas fa-search"></i>
+                            <span>Live-Suche</span>
+                        </div>
+                        <div class="grid-item">
+                            <i class="fas fa-info-circle"></i>
+                            <span>Detaillierte Infos</span>
+                        </div>
+                    </div>
+                        <div class="floating-cube floating-cube-1"></div>
+                        <div class="floating-cube floating-cube-2"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Inventory Section -->
+        <section class="inventory-section" id="inventory">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Minecraft <span class="highlight">Items</span></h2>
+                    <p class="section-subtitle">Durchsuche alle Items nach Kategorie oder nutze die Live-Suche</p>
+                </div>
+                
+                <!-- Categories Filter -->
+                <div class="categories-filter" id="categories">
+                    <div class="filter-tabs" id="categoryTabs">
+                        <button class="filter-tab active" data-category="all">
+                            <i class="fas fa-layer-group"></i> Alle
+                        </button>
+                        <button class="filter-tab" data-category="building">
+                            <i class="fas fa-home"></i> Baublöcke
+                        </button>
+                        <button class="filter-tab" data-category="color">
+                            <i class="fas fa-palette"></i> Farbige Blöcke
+                        </button>
+                        <button class="filter-tab" data-category="nature">
+                            <i class="fas fa-leaf"></i> Naturblöcke
+                        </button>
+                        <button class="filter-tab" data-category="utility">
+                            <i class="fas fa-wrench"></i> Gebrauchsblöcke
+                        </button>
+                        <button class="filter-tab" data-category="redstone">
+                            <i class="fas fa-bolt"></i> Redstone
+                        </button>
+                        <button class="filter-tab" data-category="tools">
+                            <i class="fas fa-hammer"></i> Werkzeuge
+                        </button>
+                        <button class="filter-tab" data-category="combat">
+                            <i class="fas fa-shield-alt"></i> Kampf
+                        </button>
+                        <button class="filter-tab" data-category="food">
+                            <i class="fas fa-apple-alt"></i> Nahrung
+                        </button>
+                        <button class="filter-tab" data-category="materials">
+                            <i class="fas fa-gem"></i> Wertstoffe
+                        </button>
+                        <button class="filter-tab" data-category="spawn">
+                            <i class="fas fa-egg"></i> Spawner Eier
+                        </button>
+                        <button class="filter-tab" data-category="gamemod">
+                            <i class="fas fa-gamepad"></i> Gamemod
+                        </button>
+                    </div>
+                    
+                    <!-- Search Box -->
+                    <div class="search-container">
+                        <div class="search-box">
+                            <i class="fas fa-search"></i>
+                            <input type="text" 
+                                   id="itemSearch" 
+                                   placeholder="Items durchsuchen..." 
+                                   autocomplete="off">
+                        </div>
+                        <div class="search-stats">
+                            <span id="itemCount">0 Items</span>
+                            <span id="activeCategory">Alle Kategorien</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Items Grid -->
+                <div class="items-grid" id="itemsGrid">
+                    <!-- Items werden hier geladen -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Copyright Information Section -->
+        <section class="copyright-section" id="copyright">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title"><span class="highlight">Copyright Information</span></h2>
+                    <p class="section-subtitle">Rechtliche Hinweise zu Minecraft-Inhalten</p>
+                </div>
+                
+                <div class="copyright-card">
+                    <div class="copyright-icon">
+                        <i class="fas fa-copyright"></i>
+                    </div>
+                    <div class="copyright-content">
+                        <h3>Minecraft ist ein eingetragenes Markenzeichen</h3>
+                        <p>
+                            Diese Website steht in keiner Verbindung zu Mojang Studios oder Microsoft. 
+                            Minecraft ist eine eingetragene Marke von Mojang Studios. Alle Rechte an den 
+                            Spielinhalten, einschließlich Sounds, Grafiken und Texten, liegen bei Mojang Studios.
+                        </p>
+                        
+                        <div class="copyright-notice">
+                            <h4><i class="fas fa-exclamation-triangle"></i> <span>Wichtiger Hinweis:</span></h4>
+                            <p>
+                                Aufgrund von Urheberrechtsbestimmungen können wir keine Minecraft-Sounds 
+                                direkt auf unserer Website zum Download anbieten.
+                            </p>
+                        </div>
+                        
+                        <div class="resource-item">
+                            <i class="fas fa-link"></i>
+                            <div class="resource-info">
+                                <strong>Offizielle Minecraft Website:</strong>
+                                <a href="https://www.minecraft.net" target="_blank" rel="noopener">
+                                    https://www.minecraft.net
+                                </a>
+                                <p class="resource-description">
+                                    Die offizielle Minecraft Website von Mojang Studios.
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <div class="legal-info">
+                            <h4><i class="fas fa-gavel"></i> <span>Rechtliche Informationen:</span></h4>
+                            <p>
+                                Die Nutzung von Minecraft-Inhalten unterliegt den 
+                                <a href="https://www.minecraft.net/terms" target="_blank" rel="noopener">Minecraft-Nutzungsbedingungen</a>.
+                                Bei Fragen zur Nutzung der Inhalte wenden Sie sich bitte direkt an Mojang Studios.
+                            </p>
+                            <p class="disclaimer">
+                                <i class="fas fa-info-circle"></i>
+                                Diese Seite dient ausschließlich Informationszwecken und erhebt keinen Anspruch auf Vollständigkeit oder Richtigkeit.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Item Detail Modal -->
+        <div class="item-modal" id="itemModal">
+            <div class="modal-overlay" id="modalOverlay"></div>
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title" id="modalItemName">Item Name</h3>
+                    <button class="modal-close" id="modalClose" aria-label="Modal schließen">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+                
+                <div class="modal-body">
+                    <div class="item-preview">
+                        <div class="item-icon-large" id="modalItemIcon"></div>
+                        <div class="item-meta">
+                            <div class="item-id" id="modalItemId">minecraft:item_id</div>
+                            <div class="item-stack">
+                                <i class="fas fa-layer-group"></i>
+                                <span id="modalItemStack">64</span> <span>pro Stack</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="item-tabs">
+                        <button class="item-tab active" data-tab="properties">
+                            <i class="fas fa-info-circle"></i> Eigenschaften
+                        </button>
+                        <button class="item-tab" data-tab="extended">
+                            <i class="fas fa-star"></i> Weitere Infos
+                        </button>
+                        <button class="item-tab" data-tab="commands">
+                            <i class="fas fa-terminal"></i> Befehle
+                        </button>
+                        <button class="item-tab" data-tab="texture">
+                            <i class="fas fa-image"></i> Textur
+                        </button>
+                        <button class="item-tab" data-tab="sounds">
+                            <i class="fas fa-music"></i> Sounds
+                        </button>
+                        <button class="item-tab" data-tab="copyright">
+                            <i class="fas fa-copyright"></i> Copyright
+                        </button>
+                    </div>
+
+                    <!-- Properties Tab -->
+                    <div class="tab-content active" id="propertiesTab">
+                        <div class="properties-grid">
+                            <div class="property">
+                                <div class="property-label">Typ</div>
+                                <div class="property-value" id="modalItemType">Block</div>
+                            </div>
+                            <div class="property">
+                                <div class="property-label">Härte</div>
+                                <div class="property-value" id="modalItemHardness">1.5</div>
+                            </div>
+                            <div class="property">
+                                <div class="property-label">Haltbarkeit</div>
+                                <div class="property-value" id="modalItemDurability">-</div>
+                            </div>
+                            <div class="property">
+                                <div class="property-label">Brennbarkeit</div>
+                                <div class="property-value" id="modalItemFlammable">Nein</div>
+                            </div>
+                            <div class="property">
+                                <div class="property-label">Transparenz</div>
+                                <div class="property-value" id="modalItemTransparent">Nein</div>
+                            </div>
+                            <div class="property">
+                                <div class="property-label">Kategorie</div>
+                                <div class="property-value" id="modalItemCategory">Baublöcke</div>
+                            </div>
+                        </div>
+                        
+                        <div class="item-description">
+                            <h4><i class="fas fa-align-left"></i> <span>Beschreibung</span></h4>
+                            <p id="modalItemDescription">Beschreibung des Items wird hier angezeigt.</p>
+                        </div>
+
+                        <div class="item-description" id="modalItemDropsContainer">
+                            <h4><i class="fas fa-gem"></i> <span>Beute</span></h4>
+                            <p id="modalItemDrops"></p>
+                        </div>
+                    </div>
+
+                    <!-- Extended Properties Tab -->
+                    <div class="tab-content" id="extendedTab">
+                        <div class="properties-grid">
+                            <div class="property">
+                                <div class="property-label">Version</div>
+                                <div class="property-value" id="modalItemVersion">1.0.0</div>
+                            </div>
+                            <div class="property">
+                                <div class="property-label">Numeric ID</div>
+                                <div class="property-value" id="modalItemNumericID">1</div>
+                            </div>
+                            <div class="property">
+                                <div class="property-label">Edition</div>
+                                <div class="property-value" id="modalItemEdition">—</div>
+                            </div>
+                            <div class="property">
+                                <div class="property-label">Status</div>
+                                <div class="property-value" id="modalItemStatus">—</div>
+                            </div>
+                            <div class="property">
+                                <div class="property-label">Seltenheit</div>
+                                <div class="property-value" id="modalItemRarity">—</div>
+                            </div>
+                            <div class="property">
+                                <div class="property-label">Variante</div>
+                                <div class="property-value" id="modalItemVariant">—</div>
+                            </div>
+                            <div class="property">
+                                <div class="property-label">Erstveröffentlichung</div>
+                                <div class="property-value" id="modalItemIntroduced">—</div>
+                            </div>
+                            <div class="property">
+                                <div class="property-label">Entfernt am</div>
+                                <div class="property-value" id="modalItemRemoved">—</div>
+                            </div>
+                            <div class="property">
+                                <div class="property-label">Zuletzt aktualisiert</div>
+                                <div class="property-value" id="modalItemUpdated">—</div>
+                            </div>
+                        </div>
+
+                        <div id="extraPropertiesContainer">
+                            <h4 class="subsection-title"><i class="fas fa-sliders"></i> <span>Technische Details</span></h4>
+                            <div class="properties-grid" id="modalItemExtraGrid"></div>
+                        </div>
+
+                        <div class="item-description" id="modalItemAbilitiesContainer">
+                            <h4><i class="fas fa-bolt"></i> <span>Fähigkeiten</span></h4>
+                            <ul id="modalItemAbilitiesList"></ul>
+                        </div>
+
+                        <div class="item-description" id="modalItemEffectsContainer">
+                            <h4><i class="fas fa-flask"></i> <span>Statuseffekte</span></h4>
+                            <div id="modalItemEffectsContent"></div>
+                        </div>
+
+                        <div class="item-description" id="modalItemMiscContainer">
+                            <h4><i class="fas fa-circle-info"></i> <span>Zusätzliche Informationen</span></h4>
+                            <div id="modalItemMiscContent"></div>
+                        </div>
+
+                        <div class="item-description" id="modalItemHistoryContainer">
+                            <h4><i class="fas fa-clock-rotate-left"></i> <span>Versionsverlauf</span></h4>
+                            <ul id="modalItemHistoryList"></ul>
+                        </div>
+
+                        <div class="item-description" id="modalItemNotesContainer">
+                            <h4><i class="fas fa-note-sticky"></i> <span>Notizen</span></h4>
+                            <p id="modalItemNotes"></p>
+                        </div>
+
+                        <div class="item-description" id="modalItemFunFactContainer">
+                            <h4><i class="fas fa-lightbulb"></i> <span>Fun Fact</span></h4>
+                            <p id="modalItemFunFact"></p>
+                        </div>
+                    </div>
+                    
+                    <!-- Commands Tab -->
+                    <div class="tab-content" id="commandsTab">
+                        <div class="command-section">
+                            <h4><i class="fas fa-gift"></i> <span>/give Befehl</span></h4>
+                            <div class="command-box">
+                                <code id="modalGiveCommand">/give @p minecraft:stone 1</code>
+                                <button class="copy-btn" data-copy="give" aria-label="Befehl kopieren">
+                                    <i class="fas fa-copy"></i>
+                                </button>
+                            </div>
+                        </div>
+                        
+                        <div class="command-section">
+                            <h4><i class="fas fa-cube"></i> <span>/setblock Befehl</span></h4>
+                            <div class="command-box">
+                                <code id="modalSetblockCommand">/setblock ~ ~ ~ minecraft:stone</code>
+                                <button class="copy-btn" data-copy="setblock" aria-label="Befehl kopieren">
+                                    <i class="fas fa-copy"></i>
+                                </button>
+                            </div>
+                        </div>
+                        
+                        <div class="command-section">
+                            <h4><i class="fas fa-box"></i> <span>/summon Befehl (Item)</span></h4>
+                            <div class="command-box">
+                                <code id="modalSummonCommand">/summon item ~ ~ ~ {Item:{id:"minecraft:stone",Count:1b}}</code>
+                                <button class="copy-btn" data-copy="summon" aria-label="Befehl kopieren">
+                                    <i class="fas fa-copy"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Texture Tab -->
+                    <div class="tab-content" id="textureTab">
+                        <div class="texture-preview">
+                            <h4><i class="fas fa-eye"></i> <span>Textur-Vorschau</span></h4>
+                            <div class="texture-icon-large" id="modalItemTextureIcon"></div>
+                        </div>
+                        <div class="texture-container" id="modalItemTexturesContainer">
+                            <p class="no-texture-message">Keine Textur für dieses Item verfügbar.</p>
+                        </div>
+                    </div>
+
+                    <!-- Sounds Tab -->
+                    <div class="tab-content" id="soundsTab">
+                        <div class="sounds-header">
+                            <h4><i class="fas fa-volume-up"></i> <span>Item Sounds</span></h4><br>
+                            <div class="sound-controls">
+                                <button class="btn btn-outline btn-sm" id="playAllSounds">
+                                    <i class="fas fa-play-circle"></i> <span>Alle abspielen</span>
+                                </button>
+                                <button class="btn btn-outline btn-sm" id="stopAllSounds">
+                                    <i class="fas fa-stop-circle"></i> <span>Alle stoppen</span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="sounds-container" id="modalItemSoundsContainer">
+                            <p class="no-sounds">Keine Sounds verfügbar für dieses Item.</p>
+                        </div>
+                        <div class="sound-info">
+                            <p><i class="fas fa-info-circle"></i> <span>Klicke auf einen Sound, um ihn abzuspielen. Halte die Maustaste gedrückt, um den Sound in einer Schleife abzuspielen.</span></p>
+                        </div>
+                    </div>
+                    
+                    <!-- Copyright Tab -->
+                    <div class="tab-content" id="copyrightTab">
+                        <div class="copyright-info-modal">
+                            <div class="copyright-notice-modal">
+                                <div class="notice-icon">
+                                    <i class="fas fa-copyright"></i>
+                                </div>
+                                <div class="notice-content">
+                                    <h5>Urheberrechtlicher Hinweis</h5>
+                                    <p>
+                                        Die Sounds dienen ausschließlich als kurze Hörbeispiele zur Erklärung der jeweiligen
+                                        Minecraft-Kreatur. Alle Sounds und Texturen sind Eigentum von <strong>Mojang Studios und Microsoft</strong>.
+                                    </p>
+                                </div>
+                            </div>
+                            
+                            <div class="legal-disclaimer">
+                                <h5><i class="fas fa-gavel"></i> <span>Rechtlicher Hinweis:</span></h5>
+                                <p>
+                                    Diese Webseite bietet keine Resourcepacks oder vollständigen Spieldateien zum Download an.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- CTA Section -->
+        <section class="cta-section">
+            <div class="container">
+                <div class="cta-content">
+                    <h2 class="cta-title">Fehlt ein Item?</h2>
+                    <p class="cta-description">
+                        Wir erweitern ständig unsere Datenbank. Melde uns, wenn ein Item fehlt oder Informationen unvollständig sind.
+                    </p>
+                    <div class="cta-buttons">
+                        <a href="https://discord.gg/eVVpQD75w4" class="btn btn-primary" target="_blank" rel="noopener">
+                            <i class="fab fa-discord"></i> Item melden
+                        </a>
+                        <a href="/blog/de/support.html" class="btn btn-outline">
+                            <i class="fas fa-question-circle"></i> Hilfe & Support
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+        <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-grid">
+                    <!-- Column 1 -->
+                    <div class="footer-col">
+                        <div class="footer-logo">
+                            <div class="logo-icon"></div>
+                            <span class="logo-text">MC-Craft</span>
+                        </div>
+                        <p class="footer-description">Kostenlose Minecraft-Tools für die Community. Entwickelt von Spielern für Spieler.</p>
+                        <div class="social-links">
+                           <a href="https://github.com/Blexilein" class="social-link" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                            <a href="https://discord.gg/eVVpQD75w4" class="social-link"><i class="fab fa-discord"></i></a>
+                            <a href="https://x.com/Blexi_1" class="social-link" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        </div>
+                    </div>
+                    <!-- Column 2 -->
+                    <div class="footer-col">
+                        <h4 class="footer-title">Tools</h4>
+                        <ul class="footer-links">
+                            <li><a href="/blog/de/text-converter.html">Text Konverter</a></li>
+                            <li><a href="/blog/de/color-text.html">Farbtext-Konverter</a></li>
+                            <li><a href="/blog/de/structure-converter.html">Struktur-Konverter</a></li>
+                            <li><a href="/blog/de/map-art-generator.html">Map-Art-Generator</a></li>
+                            <li><a href="/blog/de/items.html">Items Datenbank</a></li>
+                            <li><a href="/blog/de/mobs.html">Mobs Datenbank</a></li>
+                            <li><a href="/blog/de/day-night-cycle.html">Tag-Nacht-Zyklus</a></li>
+                            <li><a href="/blog/de/beacon-color-mixer.html">Beacon Color Mixer</a></li>
+                                <li><a href="/blog/de/qr-generator.html">QR Generator</a></li>
+                                <li><a href="/blog/de/advancement-generator.html">Advancement Generator</a></li>
+                        </ul>
+                    </div>
+                    <!-- Column 3 -->
+                    <div class="footer-col">
+                        <h4 class="footer-title">Mehr Tools</h4>
+                        <ul class="footer-links">
+                            <li><a href="/blog/de/server-status.html">Server Status</a></li>
+                                <li><a href="/blog/de/minecraft-api-status.html">Minecraft API Status</a></li>
+                            <li><a href="/blog/de/skin-lookup.html">Skin Lookup</a></li>
+                            <li><a href="/blog/de/skin-editor.html">Skin Editor</a></li>
+                            <li><a href="/blog/de/minecraft-skins.html">Skin Galerie</a></li>
+                            <li><a href="/blog/de/minecraft-capes.html">Cape Galerie</a></li>
+                            <li><a href="/blog/de/minecraft-versions.html">Minecraft Versionen</a></li>
+                            <li><a href="/blog/de/end_poem.html">End Poem</a></li>
+                        </ul>
+                    </div>
+                    <!-- Column 4 -->
+                    <div class="footer-col">
+                        <h4 class="footer-title">Rechtliches</h4>
+                        <ul class="footer-links">
+                            <li><a href="/blog/de/impressum.html">Impressum</a></li>
+                            <li><a href="/blog/de/datenschutz.html">Datenschutz</a></li>
+                            <li><a href="/blog/de/nutzungsbedingungen.html">Nutzungsbedingungen</a></li>
+                            <li><a href="/blog/de/copyright.html">Copyright</a></li>
+                        </ul>
+                    </div>
+                    <!-- Column 5 -->
+                    <div class="footer-col">
+                        <h4 class="footer-title">Über Uns</h4>
+                        <ul class="footer-links">
+                            <li><a href="/blog/de/history.html">MC-Craft Geschichte</a></li>
+                            <li><a href="/blog/de/team.html">Unser Team</a></li>
+                            <li><a href="/blog/de/about.html">Über uns</a></li>
+                        </ul>
+                    </div>
+                    <!-- Column 6 -->
+                    <div class="footer-col">
+                        <h4 class="footer-title">Support</h4>
+                        <ul class="footer-links">
+                            <li><a href="/blog/de/faq.html">FAQ & Hilfe</a></li>
+                            <li><a href="/blog/de/bug-report.html">Bug melden</a></li>
+                            <li><a href="/blog/de/support.html">Support Kontakt</a></li>
+                            <li><a href="/blog/de/e-mails.html">E-mails</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <div class="copyright">
+                        <p>&copy; <span id="currentYear">2026</span> MC-Craft. <span>Alle Rechte vorbehalten.</span></p>
+                        <p class="disclaimer">Minecraft ist eine Marke von Mojang Studios. Diese Seite ist nicht offiziell mit Mojang oder Microsoft verbunden.</p>
+                    </div>
+                    <div class="footer-meta">
+                        <span class="version">Version 1.0.0</span>
+                        <a href="/blog/de/changelog.html" class="changelog active">Changelog</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+
+    <button class="back-to-top" id="backToTop" aria-label="Nach oben">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Notification Toast -->
+    <div class="toast-container" id="toastContainer"></div>
+
+    <!-- Main Items JavaScript -->
+    <script src="/assets/JS/modules/mc-preferences.js"></script>
+    <script src="/assets/JS/modules/de/items.js"></script>
+</body>
+</html>

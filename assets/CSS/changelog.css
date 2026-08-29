@@ -1310,6 +1310,38 @@ h1, h2, h3, h4, h5, h6 {
     padding-top: 10px;
 }
 
+.timeline-content h3 {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: var(--spacing-sm);
+    font-size: var(--text-xl);
+    color: var(--text-primary);
+    margin-bottom: var(--spacing-md);
+}
+
+.timeline-content h3 .version-date {
+    font-size: var(--text-sm);
+    font-weight: 400;
+}
+
+.timeline-content .changelog-list {
+    background-color: var(--bg-surface);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-md);
+    padding: var(--spacing-sm) var(--spacing-lg);
+}
+
+.version-notes-inline {
+    margin-top: var(--spacing-md);
+    background: rgba(0, 168, 107, 0.1);
+    border-left: 4px solid var(--primary);
+    padding: var(--spacing-md) var(--spacing-lg);
+    border-radius: 0 var(--radius-md) var(--radius-md) 0;
+    color: var(--text-secondary);
+    line-height: 1.6;
+}
+
 /* ===== FUTURE UPDATES ===== */
 .future-updates {
     padding: var(--spacing-2xl) 0;

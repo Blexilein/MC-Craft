@@ -1,0 +1,810 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="overworld">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Mohamad Laith AKA 'Blexilein'">
+    <meta name="robots" content="index, follow">
+    <meta name="description" content="Frequently asked questions about MC-Craft - your Minecraft tools.">
+    <meta name="keywords" content="Minecraft, FAQ, Questions, Help, Tools, Text Converter, Skin Lookup">
+    <link rel="canonical" href="https://mc-craft.com/blog/en/faq.html">
+    <link rel="alternate" hreflang="de" href="https://mc-craft.com/blog/de/faq.html">
+    <link rel="alternate" hreflang="en" href="https://mc-craft.com/blog/en/faq.html">
+    <link rel="alternate" hreflang="x-default" href="https://mc-craft.com/blog/de/faq.html">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="MC-Craft | Frequently Asked Questions">
+    <meta property="og:description" content="Frequently asked questions about MC-Craft - your Minecraft tools.">
+    <meta property="og:url" content="https://mc-craft.com/blog/en/faq.html">
+    <meta property="og:image" content="https://mc-craft.com/assets/img/favicon/mc-craft.png">
+    <meta property="og:image:alt" content="MC-Craft Logo">
+    <meta property="og:site_name" content="MC-Craft">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:locale:alternate" content="de_DE">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="MC-Craft | Frequently Asked Questions">
+    <meta name="twitter:description" content="Frequently asked questions about MC-Craft - your Minecraft tools.">
+    <meta name="twitter:image" content="https://mc-craft.com/assets/img/favicon/mc-craft.png">
+    <meta name="theme-color" content="#148200">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicon/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon/favicon-32x32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/assets/img/favicon/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="/assets/img/favicon/android-chrome-512x512.png">
+    <link rel="icon" href="/assets/img/favicon/favicon.ico">
+    <link rel="manifest" href="/site.webmanifest">
+        <link rel="stylesheet" href="/assets/fontawesome/all.min.css">
+    <link rel="stylesheet" href="/assets/CSS/faq.css">
+    <link rel="stylesheet" href="/assets/CSS/site-modern-v1.css">
+    <title>MC-Craft | Frequently Asked Questions</title>
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div class="loader" id="loader">
+        <div class="loader-content">
+            <div class="loading-spinner">
+                <div class="spinner"></div>
+            </div>
+            <p class="loading-text">MC-Craft FAQ is loading...</p>
+            <div class="loading-progress"></div>
+        </div>
+    </div>
+
+        <!-- Header -->
+     <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <a href="/en/index.html" class="logo">
+                    <div class="logo-icon"></div>
+                    <span class="logo-text">MC-Craft</span>
+                </a>
+                <nav class="navigation">
+                    <ul class="nav-list">
+                        <li><a href="/en/index.html" class="nav-link">Home</a></li>
+                        <li class="dropdown">
+                            <button class="dropdown-btn nav-link">Tools</button>
+                            <ul class="dropdown-menu">
+                                <li><a href="/blog/en/text-converter.html">Text Converter</a></li>
+                                <li><a href="/blog/en/color-text.html">Color Text</a></li>
+                                <li><a href="/blog/en/structure-converter.html">Structure Converter</a></li>
+                                <li><a href="/blog/en/map-art-generator.html">Map Art Generator</a></li>
+                                <li><a href="/blog/en/items.html">Items Database</a></li>
+                                <li><a href="/blog/en/mobs.html">Mobs Database</a></li>
+                                <li><a href="/blog/en/server-status.html">Server Status</a></li>
+                                <li><a href="/blog/en/minecraft-api-status.html">Minecraft API Status</a></li>
+                                <li><a href="/blog/en/skin-lookup.html">Skin Lookup</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <button class="dropdown-btn nav-link">Discover</button>
+                            <ul class="dropdown-menu">
+                                <li><a href="/blog/en/skin-editor.html">Skin Editor</a></li>
+                               <li><a href="/blog/en/day-night-cycle.html">Day-Night Cycle</a></li>
+                                <li><a href="/blog/en/end_poem.html">End Poem</a></li>
+                                <li><a href="/blog/en/minecraft-capes.html">Capes Database</a></li>
+                                <li><a href="/blog/en/minecraft-versions.html">Minecraft Versionen</a></li>
+                                <li><a href="/blog/en/minecraft-skins.html">Skin Library</a></li>
+                                <li><a href="/blog/en/beacon-color-mixer.html">Beacon Color Mixer</a></li>
+                                <li><a href="/blog/en/qr-generator.html">QR Generator</a></li>
+                                <li><a href="/blog/en/advancement-generator.html">Advancement Generator</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="sound-toggle">
+                    <button class="sound-btn" id="soundBtn" aria-label="Sound ein/aus">
+                        <img src="/assets/img/backgrounds/sound-on.svg" alt="Sound on" class="sound-icon" id="soundIcon">
+                    </button>
+                </div>
+                <div class="lang-switcher">
+                    <a class="lang-btn" id="langBtn" href="/blog/de/faq.html" aria-label="Zu Deutsch wechseln">
+                        <img src="/assets/img/backgrounds/en.svg" alt="English" class="flag-icon" id="langFlag">
+                    </a>
+                </div>
+                <div class="theme-switcher">
+                    <button class="theme-btn" id="themeBtn">
+                        <i class="fa-solid fa-palette"></i>
+                    </button>
+                    <div class="theme-dropdown" id="themeDropdown">
+                        <button class="theme-option" data-theme="overworld">
+                            <i class="fas fa-cube"></i>
+                            <span>Overworld</span>
+                        </button>
+                        <button class="theme-option" data-theme="nether">
+                            <i class="fas fa-fire"></i>
+                            <span>Nether</span>
+                        </button>
+                        <button class="theme-option" data-theme="end">
+                            <i class="fas fa-moon"></i>
+                            <span>The End</span>
+                        </button>
+                    </div>
+                </div>
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Navigation -->
+    <div class="mobile-nav" id="mobileNav">
+        <div class="mobile-nav-header">
+            <div class="logo">
+                <div class="logo-icon"></div>
+                <span class="logo-text">MC-Craft</span>
+            </div>
+            <button class="close-btn" id="closeBtn">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <ul class="mobile-nav-list">
+            <li><a href="/en/index.html" class="mobile-nav-link">Home</a></li>
+            <li><a href="/blog/en/text-converter.html" class="mobile-nav-link">Text Converter</a></li>
+            <li><a href="/blog/en/color-text.html" class="mobile-nav-link">Color Text</a></li>
+            <li><a href="/blog/en/structure-converter.html" class="mobile-nav-link">Structure Converter</a></li>
+            <li><a href="/blog/en/map-art-generator.html" class="mobile-nav-link">Map Art Generator</a></li>
+            <li><a href="/blog/en/items.html" class="mobile-nav-link">Items Database</a></li>
+            <li><a href="/blog/en/mobs.html" class="mobile-nav-link">Mobs Database</a></li>
+            <li><a href="/blog/en/server-status.html" class="mobile-nav-link">Server Status</a></li>
+            <li><a href="/blog/en/minecraft-api-status.html" class="mobile-nav-link">Minecraft API Status</a></li>
+            <li><a href="/blog/en/skin-lookup.html" class="mobile-nav-link">Skin Lookup</a></li>
+            <li><a href="/blog/en/skin-editor.html" class="mobile-nav-link">Skin Editor</a></li>
+            <li><a href="/blog/en/day-night-cycle.html" class="mobile-nav-link">Day-Night Cycle</a></li>
+            <li><a href="/blog/en/end_poem.html" class="mobile-nav-link">End Poem</a></li>
+            <li><a href="/blog/en/minecraft-capes.html" class="mobile-nav-link">Capes Database</a></li>
+            <li><a href="/blog/en/minecraft-versions.html" class="mobile-nav-link">Minecraft Versionen</a></li>
+            <li><a href="/blog/en/minecraft-skins.html" class="mobile-nav-link">Skin Library</a></li>
+            <li><a href="/blog/en/beacon-color-mixer.html" class="mobile-nav-link">Beacon Color Mixer</a></li>
+            <li><a href="/blog/en/qr-generator.html" class="mobile-nav-link">QR Generator</a></li>
+            <li><a href="/blog/en/advancement-generator.html" class="mobile-nav-link">Advancement Generator</a></li>
+        </ul>
+        <div class="mobile-theme-switcher">
+            <h4>Choose Theme:</h4>
+            <div class="theme-options">
+                <button class="theme-option-btn" data-theme="overworld">
+                    <i class="fas fa-cube"></i> <span>Overworld</span>
+                </button>
+                <button class="theme-option-btn" data-theme="nether">
+                    <i class="fas fa-fire"></i> <span>Nether</span>
+                </button>
+                <button class="theme-option-btn" data-theme="end">
+                    <i class="fas fa-moon"></i> <span>The End</span>
+                </button>
+            </div>
+            <div class="mobile-sound-lang">
+                <button class="mobile-sound-btn" id="mobileSoundBtn">
+                    <img src="/assets/img/backgrounds/sound-on.svg" alt="Sound on" class="sound-icon" id="mobileSoundIcon">
+                    <span>Sound</span>
+                </button>
+                <a class="mobile-lang-btn" id="mobileLangBtn" href="/blog/de/faq.html">
+                    <img src="/assets/img/backgrounds/en.svg" alt="English" class="flag-icon" id="mobileLangFlag">
+                    <span>Language</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+
+    <main class="main">
+        <!-- Hero Section -->
+        <section class="hero" id="home">
+            <div class="hero-bg-grid"></div>
+            <div class="container">
+                <div class="hero-content">
+                <div class="hero-badge">
+                        <span class="hero-badge-dot"></span>
+                        V 1.0.0 IS HERE
+                    </div>
+                    <h1 class="hero-title">Frequently Asked <span class="highlight">Questions</span></h1>
+                    <p class="hero-description">
+                        Quickly find answers to your questions about MC-Craft. Our comprehensive FAQ collection helps you with all topics related to our tools.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#faq" class="btn btn-primary">
+                            <i class="fas fa-question-circle"></i> Discover FAQ
+                        </a>
+                        <a href="/blog/en/e-mails.html" class="btn btn-secondary">
+                            <i class="fas fa-envelope"></i> Contact Us
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="hero-grid-staggered">
+                        <div class="hero-stagger-col hero-stagger-left">
+                            <div class="grid-item">
+                            <i class="fas fa-question-circle"></i>
+                            <span>FAQ</span>
+                        </div>
+                        <div class="grid-item">
+                            <i class="fas fa-lightbulb"></i>
+                            <span>Tips</span>
+                        </div>
+                        </div>
+                        <div class="hero-stagger-col hero-stagger-right">
+                        <div class="grid-item">
+                            <i class="fas fa-headset"></i>
+                            <span>Support</span>
+                        </div>
+                        <div class="grid-item">
+                            <i class="fas fa-book"></i>
+                            <span>Guides</span>
+                        </div>
+                    </div>
+                        <div class="floating-cube floating-cube-1"></div>
+                        <div class="floating-cube floating-cube-2"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="faq-section" id="faq">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title"><span class="highlight">FAQ</span> - Frequently Asked Questions</h2>
+                    <p class="section-subtitle">Answers to the most frequently asked questions about MC-Craft</p>
+                </div>
+                
+                <!-- Search Bar -->
+                <div class="faq-search">
+                    <div class="search-container">
+                        <i class="fas fa-search search-icon"></i>
+                        <input type="text" id="faqSearch" placeholder="Ask your question or search for a term...">
+                        <button class="search-btn" id="searchBtn">
+                            <i class="fas fa-search"></i> Search
+                        </button>
+                    </div>
+                    <p class="search-hint">
+                        <i class="fas fa-info-circle"></i> <span>Tip: Enter a keyword or click on a question for the answer</span>
+                    </p>
+                </div>
+
+                <!-- FAQ Categories -->
+                <div class="faq-categories">
+                    <div class="category-buttons">
+                        <button class="category-btn active" data-category="all">All Questions</button>
+                        <button class="category-btn" data-category="general">General</button>
+                        <button class="category-btn" data-category="tools">Tools</button>
+                        <button class="category-btn" data-category="technical">Technical</button>
+                    </div>
+                </div>
+
+                <!-- FAQ Container -->
+                <div class="faq-container">
+                    <!-- General Category -->
+                    <div class="faq-category" id="category-general">
+                        <h3 class="category-title">General Questions</h3>
+                        
+                        <div class="faq-item" data-category="general">
+                            <div class="faq-question">
+                                <div class="question-icon">
+                                    <i class="fas fa-question-circle"></i>
+                                </div>
+                                <div class="question-content">
+                                    <h4>What is MC-Craft?</h4>
+                                    <p>All about our platform and its goals</p>
+                                </div>
+                                <div class="question-toggle">
+                                    <i class="fas fa-chevron-down"></i>
+                                </div>
+                            </div>
+                            <div class="faq-answer">
+                                <p>MC-Craft is a comprehensive platform for Minecraft players offering various tools and information. These include text converters for Minecraft formatting, detailed information on items and mobs, skin lookup functions, and server status checks. Our platform is completely free and continuously expanded.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item" data-category="general">
+                            <div class="faq-question">
+                                <div class="question-icon">
+                                    <i class="fas fa-euro-sign"></i>
+                                </div>
+                                <div class="question-content">
+                                    <h4>Is MC-Craft free?</h4>
+                                    <p>Information about costs and usage</p>
+                                </div>
+                                <div class="question-toggle">
+                                    <i class="fas fa-chevron-down"></i>
+                                </div>
+                            </div>
+                            <div class="faq-answer">
+                                <p>Yes, MC-Craft is completely free! We believe all Minecraft players should have access to useful tools and information without having to pay. There are no hidden costs or subscriptions.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item" data-category="general">
+                            <div class="faq-question">
+                                <div class="question-icon">
+                                    <i class="fas fa-user"></i>
+                                </div>
+                                <div class="question-content">
+                                    <h4>Do I need an account to use MC-Craft?</h4>
+                                    <p>Information about registration</p>
+                                </div>
+                                <div class="question-toggle">
+                                    <i class="fas fa-chevron-down"></i>
+                                </div>
+                            </div>
+                            <div class="faq-answer">
+                                <p>No, you do not need a user account for most functions of MC-Craft. All tools can be used immediately without registration. We do not store any personal data unless you use certain functions that require it.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Tools Category -->
+                    <div class="faq-category" id="category-tools">
+                        <h3 class="category-title">Tools & Features</h3>
+                        
+                        <div class="faq-item" data-category="tools">
+                            <div class="faq-question">
+                                <div class="question-icon">
+                                    <i class="fas fa-font"></i>
+                                </div>
+                                <div class="question-content">
+                                    <h4>How does the Text Converter work?</h4>
+                                    <p>Instructions for using the Text Converter</p>
+                                </div>
+                                <div class="question-toggle">
+                                    <i class="fas fa-chevron-down"></i>
+                                </div>
+                            </div>
+                            <div class="faq-answer">
+                                <p>The Text Converter converts normal text into the Minecraft Standard Galactic Alphabet. Simply enter your desired text into the input field, and the converter immediately generates the corresponding Minecraft formatting.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item" data-category="tools">
+                            <div class="faq-question">
+                                <div class="question-icon">
+                                    <i class="fas fa-palette"></i>
+                                </div>
+                                <div class="question-content">
+                                    <h4>Can I create colored text with the converter?</h4>
+                                    <p>Color text and formatting options</p>
+                                </div>
+                                <div class="question-toggle">
+                                    <i class="fas fa-chevron-down"></i>
+                                </div>
+                            </div>
+                            <div class="faq-answer">
+                                <p>Yes, our Color Text Converter allows you to create colored text for Minecraft. You can select different color codes and formatting options (bold, italic, strikethrough) to customize your text.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item" data-category="tools">
+                            <div class="faq-question">
+                                <div class="question-icon">
+                                    <i class="fas fa-user-circle"></i>
+                                </div>
+                                <div class="question-content">
+                                    <h4>How can I look up a Minecraft skin?</h4>
+                                    <p>Skin Lookup functionality</p>
+                                </div>
+                                <div class="question-toggle">
+                                    <i class="fas fa-chevron-down"></i>
+                                </div>
+                            </div>
+                            <div class="faq-answer">
+                                <p>To look up a skin, simply enter the player's username into the search field on the Skin Lookup page. The tool then searches the Minecraft database for the skin, UUID, and any available capes.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item" data-category="tools">
+                            <div class="faq-question">
+                                <div class="question-icon">
+                                    <i class="fas fa-cubes"></i>
+                                </div>
+                                <div class="question-content">
+                                    <h4>What can I find in the Items Database?</h4>
+                                    <p>Look up item info and properties</p>
+                                </div>
+                                <div class="question-toggle">
+                                    <i class="fas fa-chevron-down"></i>
+                                </div>
+                            </div>
+                            <div class="faq-answer">
+                                <p>The Items Database lists every Minecraft item by category (building materials, tools, food, redstone, and more) with an image, ID, properties, and description. Use the search or category filters to quickly find the item you're looking for.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item" data-category="tools">
+                            <div class="faq-question">
+                                <div class="question-icon">
+                                    <i class="fas fa-spider"></i>
+                                </div>
+                                <div class="question-content">
+                                    <h4>What does the Mobs Database show me?</h4>
+                                    <p>Creatures, stats, and drops</p>
+                                </div>
+                                <div class="question-toggle">
+                                    <i class="fas fa-chevron-down"></i>
+                                </div>
+                            </div>
+                            <div class="faq-answer">
+                                <p>The Mobs Database lists every Minecraft creature with health points, behavior, spawn conditions, and drops – sorted into categories like Passive, Neutral, Hostile, and Boss mobs.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item" data-category="tools">
+                            <div class="faq-question">
+                                <div class="question-icon">
+                                    <i class="fas fa-server"></i>
+                                </div>
+                                <div class="question-content">
+                                    <h4>How does the Server Status check work?</h4>
+                                    <p>Check a Minecraft server live</p>
+                                </div>
+                                <div class="question-toggle">
+                                    <i class="fas fa-chevron-down"></i>
+                                </div>
+                            </div>
+                            <div class="faq-answer">
+                                <p>Enter a Minecraft server's address and the tool shows you in real time whether the server is online, how many players are currently active, the current version, and more.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item" data-category="tools">
+                            <div class="faq-question">
+                                <div class="question-icon">
+                                    <i class="fas fa-satellite-dish"></i>
+                                </div>
+                                <div class="question-content">
+                                    <h4>What does the Minecraft API Status page show?</h4>
+                                    <p>Availability of the official Mojang services</p>
+                                </div>
+                                <div class="question-toggle">
+                                    <i class="fas fa-chevron-down"></i>
+                                </div>
+                            </div>
+                            <div class="faq-answer">
+                                <p>This page checks the live status of the most important official Mojang/Microsoft services (e.g. login server, session server, Minecraft.net) and instantly shows you whether there are any current issues or outages.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item" data-category="tools">
+                            <div class="faq-question">
+                                <div class="question-icon">
+                                    <i class="fas fa-paintbrush"></i>
+                                </div>
+                                <div class="question-content">
+                                    <h4>How does the Skin Editor work?</h4>
+                                    <p>Edit Minecraft skins directly in your browser</p>
+                                </div>
+                                <div class="question-toggle">
+                                    <i class="fas fa-chevron-down"></i>
+                                </div>
+                            </div>
+                            <div class="faq-answer">
+                                <p>With the Skin Editor you can load an existing skin or start a new template and edit it pixel by pixel directly in your browser with a 3D preview – no extra software needed.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item" data-category="tools">
+                            <div class="faq-question">
+                                <div class="question-icon">
+                                    <i class="fas fa-cloud-sun"></i>
+                                </div>
+                                <div class="question-content">
+                                    <h4>What does the Day-Night Cycle simulator do?</h4>
+                                    <p>Visualize Minecraft's time of day</p>
+                                </div>
+                                <div class="question-toggle">
+                                    <i class="fas fa-chevron-down"></i>
+                                </div>
+                            </div>
+                            <div class="faq-answer">
+                                <p>This tool visually simulates Minecraft's day-night cycle, so you can see, for example, when monsters can spawn or how long an in-game day takes in real time.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item" data-category="tools">
+                            <div class="faq-question">
+                                <div class="question-icon">
+                                    <i class="fas fa-scroll"></i>
+                                </div>
+                                <div class="question-content">
+                                    <h4>What is the End Poem page?</h4>
+                                    <p>Minecraft's ending credits text</p>
+                                </div>
+                                <div class="question-toggle">
+                                    <i class="fas fa-chevron-down"></i>
+                                </div>
+                            </div>
+                            <div class="faq-answer">
+                                <p>Here you can find the famous "End Poem" – the text that appears in the credits after defeating the Ender Dragon – to read at your own pace.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item" data-category="tools">
+                            <div class="faq-question">
+                                <div class="question-icon">
+                                    <i class="fas fa-shirt"></i>
+                                </div>
+                                <div class="question-content">
+                                    <h4>What is the Capes Database?</h4>
+                                    <p>All Minecraft capes at a glance</p>
+                                </div>
+                                <div class="question-toggle">
+                                    <i class="fas fa-chevron-down"></i>
+                                </div>
+                            </div>
+                            <div class="faq-answer">
+                                <p>The Cape Gallery shows you every known Minecraft cape – from official Mojang capes to event capes and special community capes – including an image and its origin.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item" data-category="tools">
+                            <div class="faq-question">
+                                <div class="question-icon">
+                                    <i class="fas fa-code-branch"></i>
+                                </div>
+                                <div class="question-content">
+                                    <h4>What does the Minecraft version overview offer?</h4>
+                                    <p>All releases at a glance</p>
+                                </div>
+                                <div class="question-toggle">
+                                    <i class="fas fa-chevron-down"></i>
+                                </div>
+                            </div>
+                            <div class="faq-answer">
+                                <p>This page lists every Minecraft version from the earliest Alpha builds to the current release, including release date and version type (Release, Snapshot, Beta).</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item" data-category="tools">
+                            <div class="faq-question">
+                                <div class="question-icon">
+                                    <i class="fas fa-images"></i>
+                                </div>
+                                <div class="question-content">
+                                    <h4>What is the Skin Library?</h4>
+                                    <p>Browse skins for inspiration</p>
+                                </div>
+                                <div class="question-toggle">
+                                    <i class="fas fa-chevron-down"></i>
+                                </div>
+                            </div>
+                            <div class="faq-answer">
+                                <p>The Skin Gallery contains a collection of well-known and popular Minecraft skins to browse and use as inspiration for your own skin.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item" data-category="tools">
+                            <div class="faq-question">
+                                <div class="question-icon">
+                                    <i class="fas fa-fill-drip"></i>
+                                </div>
+                                <div class="question-content">
+                                    <h4>What is the Beacon Color Mixer for?</h4>
+                                    <p>Calculate beacon colors</p>
+                                </div>
+                                <div class="question-toggle">
+                                    <i class="fas fa-chevron-down"></i>
+                                </div>
+                            </div>
+                            <div class="faq-answer">
+                                <p>The Beacon Color Mixer calculates which combination of stained glass you need to stack above a beacon to get exactly the light color you want.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item" data-category="tools">
+                            <div class="faq-question">
+                                <div class="question-icon">
+                                    <i class="fas fa-qrcode"></i>
+                                </div>
+                                <div class="question-content">
+                                    <h4>How does the QR Code Generator work?</h4>
+                                    <p>Create QR codes e.g. for server IPs</p>
+                                </div>
+                                <div class="question-toggle">
+                                    <i class="fas fa-chevron-down"></i>
+                                </div>
+                            </div>
+                            <div class="faq-answer">
+                                <p>Enter any text or link (e.g. your server IP) and the tool instantly generates a QR code you can download – handy for quickly sharing with friends.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item" data-category="tools">
+                            <div class="faq-question">
+                                <div class="question-icon">
+                                    <i class="fas fa-trophy"></i>
+                                </div>
+                                <div class="question-content">
+                                    <h4>What does the Advancement Generator do?</h4>
+                                    <p>Create your own advancement notifications</p>
+                                </div>
+                                <div class="question-toggle">
+                                    <i class="fas fa-chevron-down"></i>
+                                </div>
+                            </div>
+                            <div class="faq-answer">
+                                <p>With the Advancement Generator you can design your own custom Minecraft advancement toast notifications and download them as an image – e.g. for videos or thumbnails.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Technical Category -->
+                    <div class="faq-category" id="category-technical">
+                        <h3 class="category-title">Technical Questions</h3>
+                        
+                        <div class="faq-item" data-category="technical">
+                            <div class="faq-question">
+                                <div class="question-icon">
+                                    <i class="fas fa-mobile-alt"></i>
+                                </div>
+                                <div class="question-content">
+                                    <h4>Does MC-Craft work on mobile devices?</h4>
+                                    <p>Responsive design and mobile usage</p>
+                                </div>
+                                <div class="question-toggle">
+                                    <i class="fas fa-chevron-down"></i>
+                                </div>
+                            </div>
+                            <div class="faq-answer">
+                                <p>Yes, MC-Craft is fully responsive and works on smartphones, tablets, and desktop computers. The interface automatically adapts to the screen size, so you can use all functions on the go.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item" data-category="technical">
+                            <div class="faq-question">
+                                <div class="question-icon">
+                                    <i class="fas fa-globe"></i>
+                                </div>
+                                <div class="question-content">
+                                    <h4>Which browsers are supported?</h4>
+                                    <p>Browser compatibility</p>
+                                </div>
+                                <div class="question-toggle">
+                                    <i class="fas fa-chevron-down"></i>
+                                </div>
+                            </div>
+                            <div class="faq-answer">
+                                <p>MC-Craft supports all modern browsers, including Chrome (recommended), Brave, Firefox, Safari, and Edge. For older browsers (Internet Explorer), MC-Craft may not function correctly.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- No Results Message -->
+                <div class="no-results" id="noResults">
+                    <div class="no-results-icon">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <h3>No results found</h3>
+                    <p>Try different search terms or ask us your question directly.</p>
+                    <a href="/blog/en/e-mails.html" class="btn btn-outline">
+                        <i class="fas fa-envelope"></i> Ask a question
+                    </a>
+                </div>
+
+                <!-- CTA Section -->
+                <div class="faq-cta">
+                    <div class="cta-content">
+                        <h3 class="cta-title">Question not found?</h3>
+                        <p class="cta-description">
+                            Do you have a specific question that isn't answered here? Contact our support team directly - we'll be happy to help!
+                        </p>
+                        <div class="cta-buttons">
+                            <a href="/blog/en/e-mails.html" class="btn btn-primary">
+                                <i class="fas fa-envelope"></i> Contact Us
+                            </a>
+                            <a href="/blog/en/support.html" class="btn btn-secondary">
+                                <i class="fas fa-headset"></i> Contact Support
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+        <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-grid">
+                    <!-- Column 1 -->
+                    <div class="footer-col">
+                        <div class="footer-logo">
+                            <div class="logo-icon"></div>
+                            <span class="logo-text">MC-Craft</span>
+                        </div>
+                        <p class="footer-description">Free Minecraft tools for the community. Developed by players for players.</p>
+                        <div class="social-links">
+                           <a href="https://github.com/Blexilein" class="social-link" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                            <a href="https://discord.gg/eVVpQD75w4" class="social-link"><i class="fab fa-discord"></i></a>
+                            <a href="https://x.com/Blexi_1" class="social-link" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        </div>
+                    </div>
+                    <!-- Column 2 -->
+                    <div class="footer-col">
+                        <h4 class="footer-title">Tools</h4>
+                        <ul class="footer-links">
+                            <li><a href="/blog/en/text-converter.html">Text Converter</a></li>
+                            <li><a href="/blog/en/color-text.html">Color Text-Konverter</a></li>
+                            <li><a href="/blog/en/structure-converter.html">Structure Converter</a></li>
+                            <li><a href="/blog/en/map-art-generator.html">Map Art Generator</a></li>
+                            <li><a href="/blog/en/items.html">Items Database</a></li>
+                            <li><a href="/blog/en/mobs.html">Mobs Database</a></li>
+                            <li><a href="/blog/en/day-night-cycle.html">Day-Night Cycle</a></li>
+                            <li><a href="/blog/en/beacon-color-mixer.html">Beacon Color Mixer</a></li>
+                                <li><a href="/blog/en/qr-generator.html">QR Generator</a></li>
+                                <li><a href="/blog/en/advancement-generator.html">Advancement Generator</a></li>
+                        </ul>
+                    </div>
+                    <!-- Column 3 -->
+                    <div class="footer-col">
+                        <h4 class="footer-title">More Tools</h4>
+                        <ul class="footer-links">
+                            <li><a href="/blog/en/server-status.html">Server Status</a></li>
+                                <li><a href="/blog/en/minecraft-api-status.html">Minecraft API Status</a></li>
+                            <li><a href="/blog/en/skin-lookup.html">Skin Lookup</a></li>
+                            <li><a href="/blog/en/skin-editor.html">Skin Editor</a></li>
+                            <li><a href="/blog/en/minecraft-skins.html">Skin Galerie</a></li>
+                            <li><a href="/blog/en/minecraft-capes.html">Cape Galerie</a></li>
+                            <li><a href="/blog/en/minecraft-versions.html">Minecraft Versionen</a></li>
+                            <li><a href="/blog/en/end_poem.html">End Poem</a></li>
+                        </ul>
+                    </div>
+                    <!-- Column 4 -->
+                    <div class="footer-col">
+                        <h4 class="footer-title">Legal</h4>
+                        <ul class="footer-links">
+                            <li><a href="/blog/en/impressum.html">Imprint</a></li>
+                            <li><a href="/blog/en/datenschutz.html">Privacy Policy</a></li>
+                            <li><a href="/blog/en/nutzungsbedingungen.html">Terms of Use</a></li>
+                            <li><a href="/blog/en/copyright.html">Copyright</a></li>
+                        </ul>
+                    </div>
+                    <!-- Column 5 -->
+                    <div class="footer-col">
+                        <h4 class="footer-title">About Us</h4>
+                        <ul class="footer-links">
+                            <li><a href="/blog/en/history.html">MC-Craft History</a></li>
+                            <li><a href="/blog/en/team.html">Our Team</a></li>
+                            <li><a href="/blog/en/about.html">About us</a></li>
+                        </ul>
+                    </div>
+                    <!-- Column 6 -->
+                    <div class="footer-col">
+                        <h4 class="footer-title">Support</h4>
+                        <ul class="footer-links">
+                            <li><a href="/blog/en/faq.html">FAQ & Help</a></li>
+                            <li><a href="/blog/en/bug-report.html">Report Bug</a></li>
+                            <li><a href="/blog/en/support.html">Support Contact</a></li>
+                            <li><a href="/blog/en/e-mails.html">E-mails</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <div class="copyright">
+                        <p>&copy; <span id="currentYear">2026</span> MC-Craft. <span>All rights reserved.</span></p>
+                        <p class="disclaimer">Minecraft is a trademark of Mojang Studios. This site is not officially affiliated with Mojang or Microsoft.</p>
+                    </div>
+                    <div class="footer-meta">
+                        <span class="version">Version 1.0.0</span>
+                        <a href="/blog/en/changelog.html" class="changelog active">Changelog</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+
+    <button class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Notification Toast -->
+    <div class="toast-container" id="toastContainer"></div>
+
+    <!-- JavaScript -->
+    <script src="/assets/JS/modules/mc-preferences.js"></script>
+    <script src="/assets/JS/modules/en/faq.js"></script>
+</body>
+</html>

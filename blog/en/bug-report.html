@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="overworld">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Mohamad Laith AKA 'Blexilein'">
+    <meta name="robots" content="index, follow">
+    <meta name="description" content="MC-Craft Bug Report - Report bugs directly via Discord.">
+    <meta name="keywords" content="Minecraft, Bug, Issue, Error, Discord, Support">
+    <link rel="canonical" href="https://mc-craft.com/blog/en/bug-report.html">
+    <link rel="alternate" hreflang="de" href="https://mc-craft.com/blog/de/bug-report.html">
+    <link rel="alternate" hreflang="en" href="https://mc-craft.com/blog/en/bug-report.html">
+    <link rel="alternate" hreflang="x-default" href="https://mc-craft.com/blog/de/bug-report.html">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="MC-Craft | Bug Report via Discord">
+    <meta property="og:description" content="MC-Craft Bug Report - Report bugs directly via Discord.">
+    <meta property="og:url" content="https://mc-craft.com/blog/en/bug-report.html">
+    <meta property="og:image" content="https://mc-craft.com/assets/img/favicon/mc-craft.png">
+    <meta property="og:image:alt" content="MC-Craft Logo">
+    <meta property="og:site_name" content="MC-Craft">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:locale:alternate" content="de_DE">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="MC-Craft | Bug Report via Discord">
+    <meta name="twitter:description" content="MC-Craft Bug Report - Report bugs directly via Discord.">
+    <meta name="twitter:image" content="https://mc-craft.com/assets/img/favicon/mc-craft.png">
+    <meta name="theme-color" content="#148200">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicon/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon/favicon-32x32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/assets/img/favicon/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="/assets/img/favicon/android-chrome-512x512.png">
+    <link rel="icon" href="/assets/img/favicon/favicon.ico">
+    <link rel="manifest" href="/site.webmanifest">
+        <link rel="stylesheet" href="/assets/fontawesome/all.min.css">
+    <link rel="stylesheet" href="/assets/CSS/report.css">
+    <link rel="stylesheet" href="/assets/CSS/site-modern-v1.css">
+    <title>MC-Craft | Bug Report via Discord</title>
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div class="loader" id="loader">
+        <div class="loader-content">
+            <div class="loading-spinner">
+                <div class="spinner"></div>
+            </div>
+            <p class="loading-text">Bug Report is loading...</p>
+            <div class="loading-progress"></div>
+        </div>
+    </div>
+
+        <!-- Header -->
+     <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <a href="/en/index.html" class="logo">
+                    <div class="logo-icon"></div>
+                    <span class="logo-text">MC-Craft</span>
+                </a>
+                <nav class="navigation">
+                    <ul class="nav-list">
+                        <li><a href="/en/index.html" class="nav-link">Home</a></li>
+                        <li class="dropdown">
+                            <button class="dropdown-btn nav-link">Tools</button>
+                            <ul class="dropdown-menu">
+                                <li><a href="/blog/en/text-converter.html">Text Converter</a></li>
+                                <li><a href="/blog/en/color-text.html">Color Text</a></li>
+                                <li><a href="/blog/en/structure-converter.html">Structure Converter</a></li>
+                                <li><a href="/blog/en/map-art-generator.html">Map Art Generator</a></li>
+                                <li><a href="/blog/en/items.html">Items Database</a></li>
+                                <li><a href="/blog/en/mobs.html">Mobs Database</a></li>
+                                <li><a href="/blog/en/server-status.html">Server Status</a></li>
+                                <li><a href="/blog/en/minecraft-api-status.html">Minecraft API Status</a></li>
+                                <li><a href="/blog/en/skin-lookup.html">Skin Lookup</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <button class="dropdown-btn nav-link">Discover</button>
+                            <ul class="dropdown-menu">
+                                <li><a href="/blog/en/skin-editor.html">Skin Editor</a></li>
+                               <li><a href="/blog/en/day-night-cycle.html">Day-Night Cycle</a></li>
+                                <li><a href="/blog/en/end_poem.html">End Poem</a></li>
+                                <li><a href="/blog/en/minecraft-capes.html">Capes Database</a></li>
+                                <li><a href="/blog/en/minecraft-versions.html">Minecraft Versionen</a></li>
+                                <li><a href="/blog/en/minecraft-skins.html">Skin Library</a></li>
+                                <li><a href="/blog/en/beacon-color-mixer.html">Beacon Color Mixer</a></li>
+                                <li><a href="/blog/en/qr-generator.html">QR Generator</a></li>
+                                <li><a href="/blog/en/advancement-generator.html">Advancement Generator</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="sound-toggle">
+                    <button class="sound-btn" id="soundBtn" aria-label="Sound ein/aus">
+                        <img src="/assets/img/backgrounds/sound-on.svg" alt="Sound on" class="sound-icon" id="soundIcon">
+                    </button>
+                </div>
+                <div class="lang-switcher">
+                    <a class="lang-btn" id="langBtn" href="/blog/de/bug-report.html" aria-label="Zu Deutsch wechseln">
+                        <img src="/assets/img/backgrounds/en.svg" alt="English" class="flag-icon" id="langFlag">
+                    </a>
+                </div>
+                <div class="theme-switcher">
+                    <button class="theme-btn" id="themeBtn">
+                        <i class="fa-solid fa-palette"></i>
+                    </button>
+                    <div class="theme-dropdown" id="themeDropdown">
+                        <button class="theme-option" data-theme="overworld">
+                            <i class="fas fa-cube"></i>
+                            <span>Overworld</span>
+                        </button>
+                        <button class="theme-option" data-theme="nether">
+                            <i class="fas fa-fire"></i>
+                            <span>Nether</span>
+                        </button>
+                        <button class="theme-option" data-theme="end">
+                            <i class="fas fa-moon"></i>
+                            <span>The End</span>
+                        </button>
+                    </div>
+                </div>
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Navigation -->
+    <div class="mobile-nav" id="mobileNav">
+        <div class="mobile-nav-header">
+            <div class="logo">
+                <div class="logo-icon"></div>
+                <span class="logo-text">MC-Craft</span>
+            </div>
+            <button class="close-btn" id="closeBtn">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <ul class="mobile-nav-list">
+            <li><a href="/en/index.html" class="mobile-nav-link">Home</a></li>
+            <li><a href="/blog/en/text-converter.html" class="mobile-nav-link">Text Converter</a></li>
+            <li><a href="/blog/en/color-text.html" class="mobile-nav-link">Color Text</a></li>
+            <li><a href="/blog/en/structure-converter.html" class="mobile-nav-link">Structure Converter</a></li>
+            <li><a href="/blog/en/map-art-generator.html" class="mobile-nav-link">Map Art Generator</a></li>
+            <li><a href="/blog/en/items.html" class="mobile-nav-link">Items Database</a></li>
+            <li><a href="/blog/en/mobs.html" class="mobile-nav-link">Mobs Database</a></li>
+            <li><a href="/blog/en/server-status.html" class="mobile-nav-link">Server Status</a></li>
+            <li><a href="/blog/en/minecraft-api-status.html" class="mobile-nav-link">Minecraft API Status</a></li>
+            <li><a href="/blog/en/skin-lookup.html" class="mobile-nav-link">Skin Lookup</a></li>
+            <li><a href="/blog/en/skin-editor.html" class="mobile-nav-link">Skin Editor</a></li>
+            <li><a href="/blog/en/day-night-cycle.html" class="mobile-nav-link">Day-Night Cycle</a></li>
+            <li><a href="/blog/en/end_poem.html" class="mobile-nav-link">End Poem</a></li>
+            <li><a href="/blog/en/minecraft-capes.html" class="mobile-nav-link">Capes Database</a></li>
+            <li><a href="/blog/en/minecraft-versions.html" class="mobile-nav-link">Minecraft Versionen</a></li>
+            <li><a href="/blog/en/minecraft-skins.html" class="mobile-nav-link">Skin Library</a></li>
+            <li><a href="/blog/en/beacon-color-mixer.html" class="mobile-nav-link">Beacon Color Mixer</a></li>
+            <li><a href="/blog/en/qr-generator.html" class="mobile-nav-link">QR Generator</a></li>
+            <li><a href="/blog/en/advancement-generator.html" class="mobile-nav-link">Advancement Generator</a></li>
+        </ul>
+        <div class="mobile-theme-switcher">
+            <h4>Choose Theme:</h4>
+            <div class="theme-options">
+                <button class="theme-option-btn" data-theme="overworld">
+                    <i class="fas fa-cube"></i> <span>Overworld</span>
+                </button>
+                <button class="theme-option-btn" data-theme="nether">
+                    <i class="fas fa-fire"></i> <span>Nether</span>
+                </button>
+                <button class="theme-option-btn" data-theme="end">
+                    <i class="fas fa-moon"></i> <span>The End</span>
+                </button>
+            </div>
+            <div class="mobile-sound-lang">
+                <button class="mobile-sound-btn" id="mobileSoundBtn">
+                    <img src="/assets/img/backgrounds/sound-on.svg" alt="Sound on" class="sound-icon" id="mobileSoundIcon">
+                    <span>Sound</span>
+                </button>
+                <a class="mobile-lang-btn" id="mobileLangBtn" href="/blog/de/bug-report.html">
+                    <img src="/assets/img/backgrounds/en.svg" alt="English" class="flag-icon" id="mobileLangFlag">
+                    <span>Language</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+
+    <main class="main">
+        <!-- Hero Section -->
+        <section class="hero" id="home">
+            <div class="hero-bg-grid"></div>
+            <div class="container">
+                <div class="hero-content">
+                <div class="hero-badge">
+                        <span class="hero-badge-dot"></span>
+                        V 1.0.0 IS HERE
+                    </div>
+                    <h1 class="hero-title">Bug <span class="highlight">Report</span></h1>
+                    <p class="hero-description">
+                        Did you find a bug? Report it directly on our Discord server! This way you get the fastest help from our community and developers.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#discord" class="btn btn-primary">
+                            <i class="fab fa-discord"></i> Open Discord
+                        </a>
+                        <a href="/blog/en/support.html" class="btn btn-outline">
+                            <i class="fas fa-question-circle"></i> General Support
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="hero-grid-staggered">
+                        <div class="hero-stagger-col hero-stagger-left">
+                            <div class="grid-item">
+                            <i class="fab fa-discord"></i>
+                            <span>Fast Help</span>
+                        </div>
+                        <div class="grid-item">
+                            <i class="fas fa-bug"></i>
+                            <span>Report Bug</span>
+                        </div>
+                    </div>
+                        <div class="hero-stagger-col hero-stagger-right">
+                        <div class="grid-item">
+                            <i class="fas fa-clock"></i>
+                            <span>Immediate Response</span>
+                        </div>
+                        <div class="grid-item">
+                            <i class="fas fa-users"></i>
+                            <span>Community Support</span>
+                        </div>
+                    </div>
+                        <div class="floating-cube floating-cube-1"></div>
+                        <div class="floating-cube floating-cube-2"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Discord Support Section -->
+        <section class="support-section" id="discord">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Bug Report on <span class="highlight">Discord</span></h2>
+                    <p class="section-subtitle">Join our server and report your bug in the #bug-report channel</p>
+                </div>
+                
+                <div class="support-container">
+                    <!-- Discord Widget -->
+                    <div class="discord-widget">
+                        <div class="widget-header">
+                            <i class="fab fa-discord"></i>
+                            <h3>MC-Craft Bug Report Discord</h3>
+                        </div>
+                        <div class="widget-content">
+                            <iframe 
+                                src="https://discord.com/widget?id=1408532818388320356&theme=dark" 
+                                width="100%" 
+                                height="400" 
+                                allowtransparency="true" 
+                                frameborder="0" 
+                                sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts">
+                            </iframe>
+                        </div>
+                        <div class="widget-footer">
+                            <a href="https://discord.gg/eVVpQD75w4" target="_blank" class="btn btn-primary">
+                                <i class="fab fa-discord"></i> Join Discord Server
+                            </a>
+                            <p style="margin-top: var(--spacing-sm); font-size: var(--text-sm); color: var(--text-secondary);">
+                                <i class="fas fa-info-circle"></i> <span>After joining, go to channel #bug-report</span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Discord Info -->
+                    <div class="support-info">
+                        <div class="support-card">
+                            <div class="support-icon">
+                                <i class="fas fa-bolt"></i>
+                            </div>
+                            <div class="support-content">
+                                <h3 class="support-title">Fast Help</h3>
+                                <p class="support-description">
+                                    Our team usually responds within 15-30 minutes. Perfect for critical bugs and urgent problems.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="support-card">
+                            <div class="support-icon">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <div class="support-content">
+                                <h3 class="support-title">Community Support</h3>
+                                <p class="support-description">
+                                    Other users can confirm if they have the same issue and help with the error description.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="support-card">
+                            <div class="support-icon">
+                                <i class="fas fa-code"></i>
+                            </div>
+                            <div class="support-content">
+                                <h3 class="support-title">Direct Contact</h3>
+                                <p class="support-description">
+                                    Talk directly to the developers. We can discuss screenshots immediately and find solutions.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="support-card">
+                            <div class="support-icon">
+                                <i class="fas fa-history"></i>
+                            </div>
+                            <div class="support-content">
+                                <h3 class="support-title">Live Updates</h3>
+                                <p class="support-description">
+                                    Track the progress of your bug report in real time and get immediate feedback on your issue.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bug Report Features -->
+                <div class="features-section">
+                    <div class="section-header">
+                        <h2 class="section-title">How to report <span class="highlight">a bug</span></h2>
+                        <p class="section-subtitle">4 simple steps to the perfect bug report</p>
+                    </div>
+                    
+                    <div class="features-grid">
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-sign-in-alt"></i>
+                            </div>
+                            <h4>1. Join Discord</h4>
+                            <p>Click on "Join Discord Server" and join our server</p>
+                        </div>
+                        
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-hashtag"></i>
+                            </div>
+                            <h4>2. Find channel</h4>
+                            <p>Navigate to channel <strong>#bug-report</strong> or <strong>#support</strong></p>
+                        </div>
+                        
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-comment-alt"></i>
+                            </div>
+                            <h4>3. Describe bug</h4>
+                            <p>Post a detailed description of your problem</p>
+                        </div>
+                        
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-camera"></i>
+                            </div>
+                            <h4>4. Share screenshots</h4>
+                            <p>Upload screenshots that clearly show the bug</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Email Section for formal bug reports -->
+        <section class="email-section centered-email" id="email">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Formal <span class="highlight">Bug Report</span></h2>
+                    <p class="section-subtitle">For detailed bug descriptions and screenshots</p>
+                </div>
+                
+                <div class="email-container">
+                    <div class="email-info">
+                        <div class="email-card">
+                            <div class="email-icon">
+                                <i class="fas fa-bug"></i>
+                            </div>
+                            <div class="email-content">
+                                <h3 class="email-title">Email Bug Report</h3>
+                                <p class="email-description">
+                                    For complex bugs with many screenshots or detailed instructions, you can also send us an email.
+                                </p>
+                                <div class="email-address">
+                                    <i class="fas fa-at"></i>
+                                    <span>bugs@mc-craft.com</span>
+                                </div>
+                                <a href="mailto:bugs@mc-craft.com" class="btn btn-primary">
+                                    <i class="fas fa-paper-plane"></i> Send Email
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="faq-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Frequently Asked <span class="highlight">Questions</span></h2>
+                    <p class="section-subtitle">Everything you need to know about bug reports</p>
+                </div>
+                
+                <div class="faq-container">
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h4>How long does a response on Discord take?</h4>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Usually within <strong>15-60 minutes</strong> during our support hours (Mon-Fri 10:00-18:00). On weekends it may take a little longer.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h4>What happens after I report a bug?</h4>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>1. Our team checks your report<br>
+                            2. Bug is categorized and prioritized<br>
+                            3. Development to fix begins<br>
+                            4. You receive updates in the Discord channel</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h4>Can I report multiple bugs at once?</h4>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>It's best to report each bug in a separate message. This helps us track and fix them faster.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h4>What information should I have ready?</h4>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>• Which tool is affected<br>
+                            • Detailed error description<br>
+                            • Screenshots or videos<br>
+                            • Browser and operating system<br>
+                            • Steps to reproduce</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="faq-cta">
+                    <p>Got more questions? Visit our <a href="/blog/en/faq.html">FAQ page</a> or contact us directly.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Support CTA -->
+        <section class="support-cta">
+            <div class="container">
+                <div class="cta-content">
+                    <h3 class="cta-title">Ready to report your bug?</h3>
+                    <p class="cta-description">
+                        The sooner you report, the sooner we can help! Use Discord for immediate support.
+                    </p>
+                    <div class="cta-buttons">
+                        <a href="#discord" class="btn btn-primary btn-large">
+                            <i class="fab fa-discord"></i> Join Discord
+                        </a>
+                        <a href="#email" class="btn btn-outline">
+                            <i class="fas fa-envelope"></i> Report via Email
+                        </a>
+                    </div>
+                    <p style="margin-top: var(--spacing-md); color: rgba(255,255,255,0.8); font-size: var(--text-sm);">
+                        <i class="fas fa-lightbulb"></i> 
+                        <strong>Tip:</strong> <span>Take screenshots before reporting the bug!</span>
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+        <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-grid">
+                    <!-- Column 1 -->
+                    <div class="footer-col">
+                        <div class="footer-logo">
+                            <div class="logo-icon"></div>
+                            <span class="logo-text">MC-Craft</span>
+                        </div>
+                        <p class="footer-description">Free Minecraft tools for the community. Developed by players for players.</p>
+                        <div class="social-links">
+                           <a href="https://github.com/Blexilein" class="social-link" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                            <a href="https://discord.gg/eVVpQD75w4" class="social-link"><i class="fab fa-discord"></i></a>
+                            <a href="https://x.com/Blexi_1" class="social-link" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        </div>
+                    </div>
+                    <!-- Column 2 -->
+                    <div class="footer-col">
+                        <h4 class="footer-title">Tools</h4>
+                        <ul class="footer-links">
+                            <li><a href="/blog/en/text-converter.html">Text Converter</a></li>
+                            <li><a href="/blog/en/color-text.html">Color Text-Konverter</a></li>
+                            <li><a href="/blog/en/structure-converter.html">Structure Converter</a></li>
+                            <li><a href="/blog/en/map-art-generator.html">Map Art Generator</a></li>
+                            <li><a href="/blog/en/items.html">Items Database</a></li>
+                            <li><a href="/blog/en/mobs.html">Mobs Database</a></li>
+                            <li><a href="/blog/en/day-night-cycle.html">Day-Night Cycle</a></li>
+                            <li><a href="/blog/en/beacon-color-mixer.html">Beacon Color Mixer</a></li>
+                                <li><a href="/blog/en/qr-generator.html">QR Generator</a></li>
+                                <li><a href="/blog/en/advancement-generator.html">Advancement Generator</a></li>
+                        </ul>
+                    </div>
+                    <!-- Column 3 -->
+                    <div class="footer-col">
+                        <h4 class="footer-title">More Tools</h4>
+                        <ul class="footer-links">
+                            <li><a href="/blog/en/server-status.html">Server Status</a></li>
+                                <li><a href="/blog/en/minecraft-api-status.html">Minecraft API Status</a></li>
+                            <li><a href="/blog/en/skin-lookup.html">Skin Lookup</a></li>
+                            <li><a href="/blog/en/skin-editor.html">Skin Editor</a></li>
+                            <li><a href="/blog/en/minecraft-skins.html">Skin Galerie</a></li>
+                            <li><a href="/blog/en/minecraft-capes.html">Cape Galerie</a></li>
+                            <li><a href="/blog/en/minecraft-versions.html">Minecraft Versionen</a></li>
+                            <li><a href="/blog/en/end_poem.html">End Poem</a></li>
+                        </ul>
+                    </div>
+                    <!-- Column 4 -->
+                    <div class="footer-col">
+                        <h4 class="footer-title">Legal</h4>
+                        <ul class="footer-links">
+                            <li><a href="/blog/en/impressum.html">Imprint</a></li>
+                            <li><a href="/blog/en/datenschutz.html">Privacy Policy</a></li>
+                            <li><a href="/blog/en/nutzungsbedingungen.html">Terms of Use</a></li>
+                            <li><a href="/blog/en/copyright.html">Copyright</a></li>
+                        </ul>
+                    </div>
+                    <!-- Column 5 -->
+                    <div class="footer-col">
+                        <h4 class="footer-title">About Us</h4>
+                        <ul class="footer-links">
+                            <li><a href="/blog/en/history.html">MC-Craft History</a></li>
+                            <li><a href="/blog/en/team.html">Our Team</a></li>
+                            <li><a href="/blog/en/about.html">About us</a></li>
+                        </ul>
+                    </div>
+                    <!-- Column 6 -->
+                    <div class="footer-col">
+                        <h4 class="footer-title">Support</h4>
+                        <ul class="footer-links">
+                            <li><a href="/blog/en/faq.html">FAQ & Help</a></li>
+                            <li><a href="/blog/en/bug-report.html">Report Bug</a></li>
+                            <li><a href="/blog/en/support.html">Support Contact</a></li>
+                            <li><a href="/blog/en/e-mails.html">E-mails</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <div class="copyright">
+                        <p>&copy; <span id="currentYear">2026</span> MC-Craft. <span>All rights reserved.</span></p>
+                        <p class="disclaimer">Minecraft is a trademark of Mojang Studios. This site is not officially affiliated with Mojang or Microsoft.</p>
+                    </div>
+                    <div class="footer-meta">
+                        <span class="version">Version 1.0.0</span>
+                        <a href="/blog/en/changelog.html" class="changelog active">Changelog</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+
+    <button class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Notification Toast -->
+    <div class="toast-container" id="toastContainer"></div>
+
+    <!-- JavaScript -->
+    <script src="/assets/JS/modules/mc-preferences.js"></script>
+    <script src="/assets/JS/modules/en/report.js"></script>
+</body>
+</html>

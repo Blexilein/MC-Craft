@@ -4,12 +4,13 @@
     const qrMobImageBasePath = '/assets/img/qrcode/mobs';
 
     window.mobQrThemeMeta = {
-        categoryOrder: ['passive', 'neutral', 'hostile', 'boss', 'summonable', 'player'],
+        categoryOrder: ['passive', 'neutral', 'hostile', 'boss', 'jockeys', 'summonable', 'player'],
         orderedMobKeysByCategory: {
             passive: ['allay', 'armadillo', 'axolotl', 'bat', 'camel', 'camel_husk', 'cat', 'chicken', 'cod', 'copper_golem', 'cow', 'donkey', 'frog', 'glow_squid', 'happy_ghast', 'horse', 'mooshroom', 'mule', 'ocelot', 'parrot', 'pig', 'rabbit', 'salmon', 'sheep', 'skeleton_horse', 'sulfur_cube', 'sniffer', 'snow_golem', 'squid', 'strider', 'tadpole', 'tropical_fish', 'turtle', 'villager', 'wandering_trader', 'zombie_horse'],
             neutral: ['bee', 'cave_spider', 'dolphin', 'drowned', 'enderman', 'fox', 'goat', 'iron_golem', 'llama', 'panda', 'piglin', 'polar_bear', 'pufferfish', 'spider', 'trader_llama', 'wolf', 'zombified_piglin', 'nautilus', 'zombie_nautilus'],
             hostile: ['blaze', 'bogged', 'breeze', 'creeper', 'elder_guardian', 'endermite', 'evoker', 'ghast', 'guardian', 'hoglin', 'husk', 'magma_cube', 'phantom', 'piglin_brute', 'pillager', 'ravager', 'shulker', 'silverfish', 'skeleton', 'slime', 'stray', 'vex', 'vindicator', 'warden', 'witch', 'wither_skeleton', 'parched', 'zoglin', 'zombie', 'zombie_villager'],
             boss: ['ender_dragon', 'wither'],
+            jockeys: ['camel_husk_jockey', 'cave_spider_jockey', 'chicken_jockey', 'skeleton_horseman', 'spider_jockey', 'zombie_horseman', 'zombie_nautilus_jockey', 'zombified_piglin_chicken_jockey'],
             summonable: ['elder_guardian_ghost', 'giant', 'illusioner'],
             player: ['player'],
         }

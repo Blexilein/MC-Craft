@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="overworld">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+    <meta name="author" content="Mohamad Laith AKA 'Blexilein'">
+    <meta name="robots" content="index, follow">
+    <meta name="description" content="Free Minecraft tools: text converter, items and mobs database, skin lookup, server status and more - fast, low-ad and no sign-up required.">
+    <meta name="keywords" content="Minecraft Tools, Minecraft Text Converter, Minecraft Items Database, Minecraft Mobs, Skin Lookup, Server Status, Minecraft Community">
+    <link rel="canonical" href="https://mc-craft.com/en/index.html">
+    <link rel="alternate" hreflang="de" href="https://mc-craft.com/">
+    <link rel="alternate" hreflang="en" href="https://mc-craft.com/en/index.html">
+    <link rel="alternate" hreflang="x-default" href="https://mc-craft.com/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="MC-Craft | Minecraft Tools">
+    <meta property="og:description" content="Free Minecraft tools: text converter, items and mobs database, skin lookup, server status and more - fast, low-ad and no sign-up required.">
+    <meta property="og:url" content="https://mc-craft.com/en/index.html">
+    <meta property="og:image" content="https://mc-craft.com/assets/img/favicon/mc-craft.png">
+    <meta property="og:image:alt" content="MC-Craft Logo">
+    <meta property="og:site_name" content="MC-Craft">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:locale:alternate" content="de_DE">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="MC-Craft | Minecraft Tools">
+    <meta name="twitter:description" content="Free Minecraft tools: text converter, items and mobs database, skin lookup, server status and more - fast, low-ad and no sign-up required.">
+    <meta name="twitter:image" content="https://mc-craft.com/assets/img/favicon/mc-craft.png">
+    <meta name="theme-color" content="#148200">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicon/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon/favicon-32x32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/assets/img/favicon/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="/assets/img/favicon/android-chrome-512x512.png">
+    <link rel="icon" href="/assets/img/favicon/favicon.ico">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="stylesheet" href="/assets/fontawesome/all.min.css">
+    <link rel="stylesheet" href="/assets/CSS/homepage.css">
+    <link rel="stylesheet" href="/assets/CSS/site-modern-v1.css">
+    <title>MC-Craft | Minecraft Tools</title>
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div class="loader" id="loader">
+        <div class="loader-content">
+            <div class="loading-spinner">
+                <div class="spinner"></div>
+            </div>
+            <p class="loading-text">MC-Craft is loading...</p>
+            <div class="loading-progress"></div>
+        </div>
+    </div>
+
+        <!-- Header -->
+     <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <a href="/en/index.html" class="logo">
+                    <div class="logo-icon"></div>
+                    <span class="logo-text">MC-Craft</span>
+                </a>
+                <nav class="navigation">
+                    <ul class="nav-list">
+                    <!-- <li><a href="/en/index.html" class="nav-link">Home</a></li> -->
+                        <li class="dropdown">
+                            <button class="dropdown-btn nav-link">Tools</button>
+                            <ul class="dropdown-menu">
+                                <li><a href="/blog/en/text-converter.html">Text Converter</a></li>
+                                <li><a href="/blog/en/color-text.html">Color Text</a></li>
+                                <li><a href="/blog/en/structure-converter.html">Structure Converter</a></li>
+                                <li><a href="/blog/en/map-art-generator.html">Map Art Generator</a></li>
+                                <li><a href="/blog/en/items.html">Items Database</a></li>
+                                <li><a href="/blog/en/mobs.html">Mobs Database</a></li>
+                                <li><a href="/blog/en/server-status.html">Server Status</a></li>
+                                <li><a href="/blog/en/minecraft-api-status.html">Minecraft API Status</a></li>
+                                <li><a href="/blog/en/skin-lookup.html">Skin Lookup</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <button class="dropdown-btn nav-link">Explore</button>
+                            <ul class="dropdown-menu">
+                                <li><a href="/blog/en/skin-editor.html">Skin Editor</a></li>
+                               <li><a href="/blog/en/day-night-cycle.html">Day-Night Cycle</a></li>
+                                <li><a href="/blog/en/end_poem.html">End Poem</a></li>
+                                <li><a href="/blog/en/minecraft-capes.html">Capes Database</a></li>
+                                <li><a href="/blog/en/minecraft-versions.html">Minecraft Versions</a></li>
+                                <li><a href="/blog/en/minecraft-skins.html">Skin Library</a></li>
+                                <li><a href="/blog/en/beacon-color-mixer.html">Beacon Color Mixer</a></li>
+                                <li><a href="/blog/en/qr-generator.html">QR Generator</a></li>
+                                <li><a href="/blog/en/advancement-generator.html">Advancement Generator</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="sound-toggle">
+                    <button class="sound-btn" id="soundBtn" aria-label="Sound on/off">
+                        <img src="/assets/img/backgrounds/sound-on.svg" alt="Sound on" class="sound-icon" id="soundIcon">
+                    </button>
+                </div>
+                <div class="lang-switcher">
+                    <a class="lang-btn" id="langBtn" href="/index.html" aria-label="Zu Deutsch wechseln">
+                        <img src="/assets/img/backgrounds/en.svg" alt="English" class="flag-icon" id="langFlag">
+                    </a>
+                </div>
+                <div class="theme-switcher">
+                    <button class="theme-btn" id="themeBtn">
+                        <i class="fa-solid fa-palette"></i>
+                    </button>
+                    <div class="theme-dropdown" id="themeDropdown">
+                        <button class="theme-option" data-theme="overworld">
+                            <i class="fas fa-cube"></i>
+                            <span>Overworld</span>
+                        </button>
+                        <button class="theme-option" data-theme="nether">
+                            <i class="fas fa-fire"></i>
+                            <span>Nether</span>
+                        </button>
+                        <button class="theme-option" data-theme="end">
+                            <i class="fas fa-moon"></i>
+                            <span>The End</span>
+                        </button>
+                    </div>
+                </div>
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Navigation -->
+    <div class="mobile-nav" id="mobileNav">
+        <div class="mobile-nav-header">
+            <div class="logo">
+                <div class="logo-icon"></div>
+                <span class="logo-text">MC-Craft</span>
+            </div>
+            <button class="close-btn" id="closeBtn">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <ul class="mobile-nav-list">
+            <!-- <li><a href="/en/index.html" class="mobile-nav-link">Home</a></li> -->
+            <li><a href="/blog/en/text-converter.html" class="mobile-nav-link">Text Converter</a></li>
+            <li><a href="/blog/en/color-text.html" class="mobile-nav-link">Color Text</a></li>
+            <li><a href="/blog/en/structure-converter.html" class="mobile-nav-link">Structure Converter</a></li>
+            <li><a href="/blog/en/map-art-generator.html" class="mobile-nav-link">Map Art Generator</a></li>
+            <li><a href="/blog/en/items.html" class="mobile-nav-link">Items Database</a></li>
+            <li><a href="/blog/en/mobs.html" class="mobile-nav-link">Mobs Database</a></li>
+            <li><a href="/blog/en/server-status.html" class="mobile-nav-link">Server Status</a></li>
+            <li><a href="/blog/en/minecraft-api-status.html" class="mobile-nav-link">Minecraft API Status</a></li>
+            <li><a href="/blog/en/skin-lookup.html" class="mobile-nav-link">Skin Lookup</a></li>
+            <li><a href="/blog/en/skin-editor.html" class="mobile-nav-link">Skin Editor</a></li>
+            <li><a href="/blog/en/day-night-cycle.html" class="mobile-nav-link">Day-Night Cycle</a></li>
+            <li><a href="/blog/en/end_poem.html" class="mobile-nav-link">End Poem</a></li>
+            <li><a href="/blog/en/minecraft-capes.html" class="mobile-nav-link">Capes Database</a></li>
+            <li><a href="/blog/en/minecraft-versions.html" class="mobile-nav-link">Minecraft Versions</a></li>
+            <li><a href="/blog/en/minecraft-skins.html" class="mobile-nav-link">Skin Library</a></li>
+            <li><a href="/blog/en/beacon-color-mixer.html" class="mobile-nav-link">Beacon Color Mixer</a></li>
+            <li><a href="/blog/en/qr-generator.html" class="mobile-nav-link">QR Generator</a></li>
+            <li><a href="/blog/en/advancement-generator.html" class="mobile-nav-link">Advancement Generator</a></li>
+        </ul>
+        <div class="mobile-theme-switcher">
+            <h4>Choose Theme:</h4>
+            <div class="theme-options">
+                <button class="theme-option-btn" data-theme="overworld">
+                    <i class="fas fa-cube"></i> <span>Overworld</span>
+                </button>
+                <button class="theme-option-btn" data-theme="nether">
+                    <i class="fas fa-fire"></i> <span>Nether</span>
+                </button>
+                <button class="theme-option-btn" data-theme="end">
+                    <i class="fas fa-moon"></i> <span>The End</span>
+                </button>
+            </div>
+            <div class="mobile-sound-lang">
+                <button class="mobile-sound-btn" id="mobileSoundBtn">
+                    <img src="/assets/img/backgrounds/sound-on.svg" alt="Sound on" class="sound-icon" id="mobileSoundIcon">
+                    <span>Sound</span>
+                </button>
+                <a class="mobile-lang-btn" id="mobileLangBtn" href="/index.html">
+                    <img src="/assets/img/backgrounds/en.svg" alt="English" class="flag-icon" id="mobileLangFlag">
+                    <span>Language</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+
+    <main class="main">
+        <!-- Hero Section -->
+        <section class="hero" id="home">
+            <div class="hero-bg-grid"></div>
+            <div class="container">
+                <div class="hero-content">
+                <div class="hero-badge">
+                        <span class="hero-badge-dot"></span>
+                        V 1.0.0 IS HERE
+                    </div>
+                    <h1 class="hero-title">
+                        YOUR <span class="highlight">MINECRAFT</span> <span class="highlight">TOOLS</span><br>
+                        PLATFORM
+                    </h1>
+                    <p class="hero-description">
+                        Everything you need for your next adventure. Free, fast and always available.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="/blog/en/text-converter.html" class="btn btn-primary">
+                            <i class="fas fa-magic"></i> Text Converter
+                        </a>
+                        <a href="#tools" class="btn btn-secondary">
+                            <i class="fas fa-tools"></i> All Tools
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="hero-grid-staggered">
+                        <div class="hero-stagger-col hero-stagger-left">
+                            <div class="grid-item">
+                                <i class="fas fa-cube"></i>
+                                <span>ITEMS DB</span>
+                            </div>
+                            <div class="grid-item">
+                                <i class="fas fa-font"></i>
+                                <span>TEXT TOOLS</span>
+                            </div>
+                        </div>
+                        <div class="hero-stagger-col hero-stagger-right">
+                            <div class="grid-item">
+                                <i class="fas fa-user"></i>
+                                <span>SKIN FINDER</span>
+                            </div>
+                            <div class="grid-item">
+                                <i class="fas fa-server"></i>
+                                <span>SERVER CHECK</span>
+                            </div>
+                        </div>
+                        <div class="floating-cube floating-cube-1"></div>
+                        <div class="floating-cube floating-cube-2"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section (Tools) -->
+        <section class="features" id="tools">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Our <span class="highlight">Tools</span></h2>
+                    <p class="section-subtitle">Everything you need for your Minecraft adventure</p>
+                </div>
+
+                <div class="tools-grid">
+                    <!-- Tool 1: Text Converter -->
+                    <div class="tool-card">
+                        <div class="tool-icon"><i class="fas fa-font"></i></div>
+                        <h3 class="tool-title">Text Converter</h3>
+                        <p class="tool-description">Convert normal text into Minecraft's Standard Galactic Alphabet for your projects.</p>
+                        <a href="/blog/en/text-converter.html" class="tool-link"><span>Open Tool</span> <i class="fas fa-arrow-right"></i></a>
+                    </div>
+
+                    <!-- Tool 2: Color Text Converter -->
+                    <div class="tool-card">
+                        <div class="tool-icon"><i class="fas fa-palette"></i></div>
+                        <h3 class="tool-title">Color Text Converter</h3>
+                        <p class="tool-description">Create colored text for your server MOTD or chat using simple color codes.</p>
+                        <a href="/blog/en/color-text.html" class="tool-link"><span>Open Tool</span> <i class="fas fa-arrow-right"></i></a>
+                    </div>
+
+                    <!-- Tool 3: Beacon Color Mixer -->
+                    <div class="tool-card">
+                        <div class="tool-icon"><i class="fas fa-palette"></i></div>
+                        <h3 class="tool-title">Beacon Color Mixer</h3>
+                        <p class="tool-description">Pick a target color and get the right glass combination for your beacon beam.</p>
+                        <a href="/blog/en/beacon-color-mixer.html" class="tool-link"><span>Open Tool</span> <i class="fas fa-arrow-right"></i></a>
+                    </div>
+
+                    <!-- Tool 4: QR Generator -->
+                    <div class="tool-card">
+                        <div class="tool-icon"><i class="fas fa-qrcode"></i></div>
+                        <h3 class="tool-title">QR Generator</h3>
+                        <p class="tool-description">Create scannable QR codes with Minecraft faces, full mob bodies, items or blocks.</p>
+                        <a href="/blog/en/qr-generator.html" class="tool-link"><span>Open Tool</span> <i class="fas fa-arrow-right"></i></a>
+                    </div>
+
+                    <!-- Tool 5: Advancement Generator -->
+                    <div class="tool-card">
+                        <div class="tool-icon"><i class="fas fa-trophy"></i></div>
+                        <h3 class="tool-title">Advancement Generator</h3>
+                        <p class="tool-description">Create your own achievement and advancement images with icon, two text lines and custom colors as PNG.</p>
+                        <a href="/blog/en/advancement-generator.html" class="tool-link"><span>Open Tool</span> <i class="fas fa-arrow-right"></i></a>
+                    </div>
+
+                    <!-- Tool 6: Items Database -->
+                    <div class="tool-card">
+                        <div class="tool-icon"><i class="fas fa-cube"></i></div>
+                        <h3 class="tool-title">Items Database</h3>
+                        <p class="tool-description">Find all Minecraft items with detailed information (Java Edition only).</p>
+                        <a href="/blog/en/items.html" class="tool-link"><span>Open Tool</span> <i class="fas fa-arrow-right"></i></a>
+                    </div>
+
+                    <!-- Tool 7: Mobs Guide -->
+                    <div class="tool-card">
+                        <div class="tool-icon"><i class="fas fa-dragon"></i></div>
+                        <h3 class="tool-title">Mobs Guide</h3>
+                        <p class="tool-description">All Minecraft mobs with properties, behavior and drops at a glance (Java Edition only).</p>
+                        <a href="/blog/en/mobs.html" class="tool-link"><span>Open Tool</span> <i class="fas fa-arrow-right"></i></a>
+                    </div>
+
+                    <!-- Tool 8: Day-Night Cycle -->
+                    <div class="tool-card">
+                        <div class="tool-icon"><i class="fas fa-sun"></i></div>
+                        <h3 class="tool-title">Day-Night Cycle</h3>
+                        <p class="tool-description">Set the Minecraft time and understand the day-night cycle and how it affects your gameplay.</p>
+                        <a href="/blog/en/day-night-cycle.html" class="tool-link"><span>Open Tool</span> <i class="fas fa-arrow-right"></i></a>
+                    </div>
+
+                    <!-- Tool 9: Server Status -->
+                    <div class="tool-card">
+                        <div class="tool-icon"><i class="fas fa-server"></i></div>
+                        <h3 class="tool-title">Server Status</h3>
+                        <p class="tool-description">Check the status of Minecraft servers (Java & Bedrock Edition) in real time.</p>
+                        <a href="/blog/en/server-status.html" class="tool-link"><span>Open Tool</span> <i class="fas fa-arrow-right"></i></a>
+                    </div>
+
+                    <!-- Tool 10: Skin Lookup -->
+                    <div class="tool-card">
+                        <div class="tool-icon"><i class="fas fa-user"></i></div>
+                        <h3 class="tool-title">Skin Lookup</h3>
+                        <p class="tool-description">Find Minecraft skins, UUIDs and cape information of players (Java Edition only).</p>
+                        <a href="/blog/en/skin-lookup.html" class="tool-link"><span>Open Tool</span> <i class="fas fa-arrow-right"></i></a>
+                    </div>
+
+                    <!-- Tool 11: Skin Editor (Beta) -->
+                    <div class="tool-card">
+                        <div class="tool-icon"><i class="fas fa-edit"></i></div>
+                        <h3 class="tool-title">Skin Editor (Beta V 0.8.0)</h3>
+                        <p class="tool-description">Edit and create your own Minecraft skins in the browser (Java Edition only).</p>
+                        <a href="/blog/en/skin-editor.html" class="tool-link"><span>Open Tool</span> <i class="fas fa-arrow-right"></i></a>
+                    </div>
+
+                    <!-- Tool 12: Minecraft Versions -->
+                    <div class="tool-card">
+                        <div class="tool-icon"><i class="fas fa-code-branch"></i></div>
+                        <h3 class="tool-title">Minecraft Versions</h3>
+                        <p class="tool-description">Browse stable releases, snapshot preview, beta, and alpha in one view without download labels.</p>
+                        <a href="/blog/en/minecraft-versions.html" class="tool-link"><span>Open Tool</span> <i class="fas fa-arrow-right"></i></a>
+                    </div>
+
+                    <!-- Tool 13: Minecraft API Status -->
+                    <div class="tool-card">
+                    <div class="tool-icon"> <i class="fas fa-network-wired"></i> </div>
+                        <h3 class="tool-title">Minecraft API Status</h3>
+                        <p class="tool-description">Check the current status of the official Minecraft and Mojang services.</p>
+                        <a href="/blog/en/minecraft-api-status.html" class="tool-link"><span>Open Tool</span><i class="fas fa-arrow-right"></i></a>
+                    </div>
+
+                    <!-- Tool 14: Structure Converter -->
+                    <div class="tool-card">
+                        <div class="tool-icon"><i class="fas fa-cubes"></i></div>
+                        <h3 class="tool-title">Structure Converter</h3>
+                        <p class="tool-description">Convert Minecraft structures between .schematic, .schem, .litematic, and .nbt – entirely in your browser.</p>
+                        <a href="/blog/en/structure-converter.html" class="tool-link"><span>Open Tool</span> <i class="fas fa-arrow-right"></i></a>
+                    </div>
+
+                    <!-- Tool 15: Map Art Generator -->
+                    <div class="tool-card">
+                        <div class="tool-icon"><i class="fas fa-image"></i></div>
+                        <h3 class="tool-title">Map Art Generator</h3>
+                        <p class="tool-description">Turn an image into real Minecraft building blocks, with staircasing for more colors – direct .litematic download.</p>
+                        <a href="/blog/en/map-art-generator.html" class="tool-link"><span>Open Tool</span> <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Minecraft Capes & Skins & End Poem Section -->
+        <section class="features" id="capes-skins">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Minecraft <span class="highlight">Capes & Skins & End Poem</span></h2>
+                    <p class="section-subtitle">Official Minecraft capes and skin collections</p>
+                </div>
+
+                <div class="tools-grid">
+                    <!-- Cape Database -->
+                    <div class="tool-card">
+                        <div class="tool-icon"><i class="fas fa-crown"></i></div>
+                        <h3 class="tool-title">Capes Database</h3>
+                        <p class="tool-description">All official Minecraft capes: Minecon, Migrator, Realms & more with details.</p>
+                        <a href="/blog/en/minecraft-capes.html" class="tool-link"><span>Discover Capes</span> <i class="fas fa-arrow-right"></i></a>
+                    </div>
+
+                    <!-- Skin Library -->
+                    <div class="tool-card">
+                        <div class="tool-icon"><i class="fas fa-user-astronaut"></i></div>
+                        <h3 class="tool-title">Skin Library</h3>
+                        <p class="tool-description">All official Minecraft skins.</p>
+                        <a href="/blog/en/minecraft-skins.html" class="tool-link"><span>Discover Skins</span> <i class="fas fa-arrow-right"></i></a>
+                    </div>
+
+                    <!-- End Poem -->
+                    <div class="tool-card">
+                        <div class="tool-icon"><i class="fas fa-crown"></i></div>
+                        <h3 class="tool-title">End Poem</h3>
+                        <p class="tool-description">Experience the famous End Poem from Minecraft interactively. The poem appears after defeating the Ender Dragon.</p>
+                        <a href="/blog/en/end_poem.html" class="tool-link"><span>Discover End Poem</span> <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Compact Coming Soon Preview -->
+        <section class="roadmap-preview" aria-labelledby="roadmap-preview-title">
+            <div class="container">
+                <div class="roadmap-preview-panel">
+                    <div class="roadmap-preview-header">
+                        <div class="roadmap-preview-copy">
+                            <span class="roadmap-eyebrow">
+                                <span class="roadmap-pulse" aria-hidden="true"></span>
+                                <span>Coming soon to MC-Craft</span>
+                            </span>
+                            <h2 class="roadmap-preview-title" id="roadmap-preview-title">New tools are on the way</h2>
+                            <p class="roadmap-preview-description">These features are already planned for future updates.</p>
+                        </div>
+
+                        <a href="/blog/en/coming-soon.html" class="btn btn-primary roadmap-preview-link">
+                            <span>View all planned features</span>
+                            <i class="fas fa-arrow-right" aria-hidden="true"></i>
+                        </a>
+                    </div>
+
+                    <div class="roadmap-preview-grid">
+                        <article class="roadmap-preview-item">
+                            <span class="roadmap-preview-icon"><i class="fas fa-hat-wizard" aria-hidden="true"></i></span>
+                            <div>
+                                <h3>Enchantment Planner</h3>
+                                <span>Planned</span>
+                            </div>
+                        </article>
+
+                        <article class="roadmap-preview-item">
+                            <span class="roadmap-preview-icon"><i class="fas fa-calculator" aria-hidden="true"></i></span>
+                            <div>
+                                <h3>Nether Coordinate Calculator</h3>
+                                <span>Planned</span>
+                            </div>
+                        </article>
+
+                        <article class="roadmap-preview-item">
+                            <span class="roadmap-preview-icon"><i class="fas fa-cubes" aria-hidden="true"></i></span>
+                            <div>
+                                <h3>Stack Calculator</h3>
+                                <span>Planned</span>
+                            </div>
+                        </article>
+
+                        <article class="roadmap-preview-item">
+                            <span class="roadmap-preview-icon"><i class="fas fa-terminal" aria-hidden="true"></i></span>
+                            <div>
+                                <h3>Command Generator</h3>
+                                <span>Planned</span>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Stats Section -->
+        <section class="stats">
+            <div class="container">
+                <div class="stats-grid">
+                    <div class="stat-item">
+                        <div class="stat-number" data-count="1000">0</div>
+                        <div class="stat-label">Items in database</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" data-count="90">0</div>
+                        <div class="stat-label">Different mobs in database</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" data-count="100">100</div>
+                        <div class="stat-label">Free</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" data-count="24/7">24/7</div>
+                        <div class="stat-label">Online</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta">
+            <div class="container">
+                <div class="cta-content">
+                    <h2 class="cta-title">Ready for your next adventure?</h2>
+                    <p class="cta-description">Start now with our tools and enhance your Minecraft experience.</p>
+                    <div class="cta-buttons">
+                        <a href="/blog/en/text-converter.html" class="btn btn-primary btn-large">
+                            <i class="fas fa-rocket"></i> Start now
+                        </a>
+                        <a href="#tools" class="btn btn-outline">
+                            <i class="fas fa-eye"></i> View all tools
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+        <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-grid">
+                    <!-- Column 1 -->
+                    <div class="footer-col">
+                        <div class="footer-logo">
+                            <div class="logo-icon"></div>
+                            <span class="logo-text">MC-Craft</span>
+                        </div>
+                        <p class="footer-description">Free Minecraft tools for the community. Developed by players for players.</p>
+                        <div class="social-links">
+                           <a href="https://github.com/Blexilein" class="social-link" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                            <a href="https://discord.gg/eVVpQD75w4" class="social-link"><i class="fab fa-discord"></i></a>
+                            <a href="https://x.com/Blexi_1" class="social-link" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        </div>
+                    </div>
+                    <!-- Column 2 -->
+                    <div class="footer-col">
+                        <h4 class="footer-title">Tools</h4>
+                        <ul class="footer-links">
+                            <li><a href="/blog/en/text-converter.html">Text Converter</a></li>
+                            <li><a href="/blog/en/color-text.html">Color Text Converter</a></li>
+                            <li><a href="/blog/en/structure-converter.html">Structure Converter</a></li>
+                            <li><a href="/blog/en/map-art-generator.html">Map Art Generator</a></li>
+                            <li><a href="/blog/en/items.html">Items Database</a></li>
+                            <li><a href="/blog/en/mobs.html">Mobs Database</a></li>
+                            <li><a href="/blog/en/day-night-cycle.html">Day-Night Cycle</a></li>
+                            <li><a href="/blog/en/beacon-color-mixer.html">Beacon Color Mixer</a></li>
+                            <li><a href="/blog/en/qr-generator.html">QR Generator</a></li>
+                            <li><a href="/blog/en/advancement-generator.html">Advancement Generator</a></li>
+                        </ul>
+                    </div>
+                    <!-- Column 3 -->
+                    <div class="footer-col">
+                        <h4 class="footer-title">More Tools</h4>
+                        <ul class="footer-links">
+                            <li><a href="/blog/en/server-status.html">Server Status</a></li>
+                            <li><a href="/blog/en/minecraft-api-status.html">Minecraft API Status</a></li>
+                            <li><a href="/blog/en/skin-lookup.html">Skin Lookup</a></li>
+                            <li><a href="/blog/en/skin-editor.html">Skin Editor</a></li>
+                            <li><a href="/blog/en/minecraft-skins.html">Skin Gallery</a></li>
+                            <li><a href="/blog/en/minecraft-capes.html">Cape Gallery</a></li>
+                            <li><a href="/blog/en/minecraft-versions.html">Minecraft Versions</a></li>
+                            <li><a href="/blog/en/end_poem.html">End Poem</a></li>
+                        </ul>
+                    </div>
+                    <!-- Column 4 -->
+                    <div class="footer-col">
+                        <h4 class="footer-title">Legal</h4>
+                        <ul class="footer-links">
+                            <li><a href="/blog/en/impressum.html">Imprint</a></li>
+                            <li><a href="/blog/en/datenschutz.html">Privacy Policy</a></li>
+                            <li><a href="/blog/en/nutzungsbedingungen.html">Terms of Use</a></li>
+                            <li><a href="/blog/en/copyright.html">Copyright</a></li>
+                        </ul>
+                    </div>
+                    <!-- Column 5 -->
+                    <div class="footer-col">
+                        <h4 class="footer-title">About Us</h4>
+                        <ul class="footer-links">
+                            <li><a href="/blog/en/history.html">MC-Craft History</a></li>
+                            <li><a href="/blog/en/team.html">Our Team</a></li>
+                            <li><a href="/blog/en/about.html">About us</a></li>
+                        </ul>
+                    </div>
+                    <!-- Column 6 -->
+                    <div class="footer-col">
+                        <h4 class="footer-title">Support</h4>
+                        <ul class="footer-links">
+                            <li><a href="/blog/en/faq.html">FAQ & Help</a></li>
+                            <li><a href="/blog/en/bug-report.html">Report Bug</a></li>
+                            <li><a href="/blog/en/support.html">Support Contact</a></li>
+                            <li><a href="/blog/en/e-mails.html">E-mails</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <div class="copyright">
+                        <p>&copy; <span id="currentYear">2026</span> MC-Craft. <span>All rights reserved.</span></p>
+                        <p class="disclaimer">Minecraft is a trademark of Mojang Studios. This site is not officially affiliated with Mojang or Microsoft.</p>
+                    </div>
+                    <div class="footer-meta">
+                        <span class="version">Version 1.0.0</span>
+                        <a href="/blog/en/changelog.html" class="changelog active">Changelog</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+
+    <button class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Notification Toast -->
+    <div class="toast-container" id="toastContainer"></div>
+
+    <!-- JavaScript -->
+    <script src="/assets/JS/modules/mc-preferences.js"></script>
+    <script src="/assets/JS/modules/en/homepage.js"></script>
+</body>
+</html>
