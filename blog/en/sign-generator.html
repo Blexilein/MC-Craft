@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="overworld">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Mohamad Laith AKA 'Blexilein'">
+    <meta name="robots" content="index, follow">
+    <meta name="description" content="Minecraft sign generator: write on signs and hanging signs of every wood type with colours, formatting and glowing text – with a preview, PNG export and /setblock, /give and /data commands.">
+    <meta name="keywords" content="Minecraft, Sign Generator, Hanging Sign, Sign Command, setblock sign, Minecraft sign text">
+    <link rel="canonical" href="https://mc-craft.com/blog/en/sign-generator.html">
+    <link rel="alternate" hreflang="de" href="https://mc-craft.com/blog/de/schild-generator.html">
+    <link rel="alternate" hreflang="en" href="https://mc-craft.com/blog/en/sign-generator.html">
+    <link rel="alternate" hreflang="x-default" href="https://mc-craft.com/blog/de/schild-generator.html">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="MC-Craft | Sign Generator">
+    <meta property="og:description" content="Minecraft sign generator: write on signs and hanging signs of every wood type with colours, formatting and glowing text – with a preview, PNG export and /setblock, /give and /data commands.">
+    <meta property="og:url" content="https://mc-craft.com/blog/en/sign-generator.html">
+    <meta property="og:image" content="https://mc-craft.com/assets/img/favicon/overworld/mc-craft-overworld.png">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="1254">
+    <meta property="og:image:height" content="1254">
+    <meta property="og:image:alt" content="MC-Craft Logo">
+    <meta property="og:site_name" content="MC-Craft">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:locale:alternate" content="de_DE">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="MC-Craft | Sign Generator">
+    <meta name="twitter:description" content="Minecraft sign generator: write on signs and hanging signs of every wood type with colours, formatting and glowing text – with a preview, PNG export and /setblock, /give and /data commands.">
+    <meta name="twitter:image" content="https://mc-craft.com/assets/img/favicon/overworld/mc-craft-overworld.png">
+    <meta name="theme-color" content="#148200">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicon/overworld/favicon-16x16.png?v=20260910v121c" data-theme-icon="favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon/overworld/favicon-32x32.png?v=20260910v121c" data-theme-icon="favicon-32x32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/favicon/overworld/apple-touch-icon.png?v=20260910v121c" data-theme-icon="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/assets/img/favicon/overworld/android-chrome-192x192.png?v=20260910v121c" data-theme-icon="android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="/assets/img/favicon/overworld/android-chrome-512x512.png?v=20260910v121c" data-theme-icon="android-chrome-512x512.png">
+    <link rel="icon" href="/assets/img/favicon/overworld/favicon.ico?v=20260910v121c" data-theme-icon="favicon.ico">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="stylesheet" href="/assets/fontawesome/all.min.css?v=20260910v121c">
+    <link rel="stylesheet" href="/assets/CSS/sign-generator.css?v=20260917a">
+    <link rel="stylesheet" href="/assets/CSS/site-modern-v1.css?v=20260917b">
+    <title>MC-Craft | Sign Generator</title>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Organization",
+          "@id": "https://mc-craft.com/#organization",
+          "name": "MC-Craft",
+          "url": "https://mc-craft.com/",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://mc-craft.com/assets/img/favicon/overworld/mc-craft-overworld.png",
+            "width": 1254,
+            "height": 1254
+          },
+          "sameAs": [
+            "https://github.com/Blexilein",
+            "https://discord.gg/eVVpQD75w4",
+            "https://x.com/Blexi_1"
+          ]
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://mc-craft.com/#website",
+          "name": "MC-Craft",
+          "url": "https://mc-craft.com/",
+          "inLanguage": "en-US",
+          "publisher": {
+            "@id": "https://mc-craft.com/#organization"
+          }
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://mc-craft.com/blog/en/sign-generator.html#webpage",
+          "url": "https://mc-craft.com/blog/en/sign-generator.html",
+          "name": "MC-Craft | Sign Generator",
+          "description": "Minecraft sign generator: write on signs and hanging signs of every wood type with colours, formatting and glowing text – with a preview, PNG export and /setblock, /give and /data commands.",
+          "inLanguage": "en-US",
+          "isPartOf": {
+            "@id": "https://mc-craft.com/#website"
+          },
+          "breadcrumb": {
+            "@id": "https://mc-craft.com/blog/en/sign-generator.html#breadcrumb"
+          }
+        },
+        {
+          "@type": "BreadcrumbList",
+          "@id": "https://mc-craft.com/blog/en/sign-generator.html#breadcrumb",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://mc-craft.com/en/index.html"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Sign Generator"
+            }
+          ]
+        }
+      ]
+    }
+    </script>
+</head>
+<body>
+    <a class="skip-link" href="#main">Skip to main content</a>
+
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <a href="/en/index.html" class="logo">
+                    <div class="logo-icon"></div>
+                    <span class="logo-text">MC-Craft</span>
+                </a>
+                <nav class="navigation">
+                    <ul class="nav-list">
+                        <li><a href="/en/index.html" class="nav-link">Home</a></li>
+                        <li class="dropdown">
+                            <button class="dropdown-btn nav-link">Tools</button>
+                            <ul class="dropdown-menu">
+                                <li><a href="/blog/en/text-converter.html">Text Converter</a></li>
+                                <li><a href="/blog/en/color-text.html">Color Text</a></li>
+                                <li><a href="/blog/en/structure-converter.html">Structure Converter</a></li>
+                                <li><a href="/blog/en/schematic-viewer.html">Schematic Viewer</a></li>
+                                <li><a href="/blog/en/map-art-generator.html">Map Art Generator</a></li>
+                                <li><a href="/blog/en/nether-coordinate-calculator.html">Nether Coordinate Calculator</a></li>
+                                <li><a href="/blog/en/minecraft-command-generator.html">Minecraft Command Generator</a></li>
+                                <li><a href="/blog/en/items.html">Items Database</a></li>
+                                <li><a href="/blog/en/mobs.html">Mobs Database</a></li>
+                                <li><a href="/blog/en/server-status.html">Server Status</a></li>
+                                <li><a href="/blog/en/minecraft-api-status.html">Minecraft API Status</a></li>
+                                <li><a href="/blog/en/api-documentation.html">API Documentation</a></li>
+                                <li><a href="/blog/en/skin-lookup.html">Skin Lookup</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <button class="dropdown-btn nav-link">Discover</button>
+                            <ul class="dropdown-menu">
+                                <li><a href="/blog/en/skin-editor.html">Skin Editor</a></li>
+                                <li><a href="/blog/en/skin-poser.html">Skin Poser</a></li>
+                                <li><a href="/blog/en/chibi-skin-maker.html">Chibi Skin Maker</a></li>
+                                <li><a href="/blog/en/day-night-cycle.html">Day-Night Cycle</a></li>
+                                <li><a href="/blog/en/end_poem.html">End Poem</a></li>
+                                <li><a href="/blog/en/minecraft-capes.html">Cape Database</a></li>
+                                <li><a href="/blog/en/minecraft-heads.html">Heads Database</a></li>
+                                <li><a href="/blog/en/head-texture-generator.html">Head Texture Generator</a></li>
+                                <li><a href="/blog/en/minecraft-versions.html">Minecraft Versions</a></li>
+                                <li><a href="/blog/en/minecraft-skins.html">Skin Library</a></li>
+                                <li><a href="/blog/en/beacon-color-mixer.html">Beacon Color Mixer</a></li>
+                                <li><a href="/blog/en/qr-generator.html">QR Generator</a></li>
+                                <li><a href="/blog/en/advancement-generator.html">Advancement Generator</a></li>
+                                <li><a href="/blog/en/sign-generator.html" class="active">Sign Generator</a></li>
+                                <li><a href="/blog/en/crafting-recipes.html">Crafting Recipes</a></li>
+                                <li><a href="/blog/en/armor-trim-generator.html">Armor Trim Generator</a></li>
+                                <li><a href="/blog/en/firework-generator.html">Firework Generator</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="sound-toggle">
+                    <button class="sound-btn" id="soundBtn" aria-label="Sound on/off">
+                        <img src="/assets/img/backgrounds/sound-on.svg?v=20260910v121c" alt="Sound on" class="sound-icon" id="soundIcon">
+                    </button>
+                </div>
+                <div class="lang-switcher">
+                    <a class="lang-btn" id="langBtn" href="/blog/de/schild-generator.html" aria-label="Zu Deutsch wechseln">
+                        <img src="/assets/img/backgrounds/en.svg?v=20260910v121c" alt="English" class="flag-icon" id="langFlag">
+                    </a>
+                </div>
+                <div class="theme-switcher">
+                    <button class="theme-btn" id="themeBtn">
+                        <i class="fa-solid fa-palette"></i>
+                    </button>
+                    <div class="theme-dropdown" id="themeDropdown">
+                        <button class="theme-option" data-theme="overworld">
+                            <i class="fas fa-cube"></i>
+                            <span>Overworld</span>
+                        </button>
+                        <button class="theme-option" data-theme="nether">
+                            <i class="fas fa-fire"></i>
+                            <span>Nether</span>
+                        </button>
+                        <button class="theme-option" data-theme="end">
+                            <i class="fas fa-moon"></i>
+                            <span>The End</span>
+                        </button>
+                    </div>
+                </div>
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <div class="mobile-nav" id="mobileNav">
+        <div class="mobile-nav-header">
+            <div class="logo">
+                <div class="logo-icon"></div>
+                <span class="logo-text">MC-Craft</span>
+            </div>
+            <button class="close-btn" id="closeBtn">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <ul class="mobile-nav-list">
+            <li><a href="/en/index.html" class="mobile-nav-link">Home</a></li>
+            <li><a href="/blog/en/text-converter.html" class="mobile-nav-link">Text Converter</a></li>
+            <li><a href="/blog/en/color-text.html" class="mobile-nav-link">Color Text</a></li>
+            <li><a href="/blog/en/structure-converter.html" class="mobile-nav-link">Structure Converter</a></li>
+            <li><a href="/blog/en/schematic-viewer.html" class="mobile-nav-link">Schematic Viewer</a></li>
+            <li><a href="/blog/en/map-art-generator.html" class="mobile-nav-link">Map Art Generator</a></li>
+            <li><a href="/blog/en/nether-coordinate-calculator.html" class="mobile-nav-link">Nether Coordinate Calculator</a></li>
+            <li><a href="/blog/en/minecraft-command-generator.html" class="mobile-nav-link">Minecraft Command Generator</a></li>
+            <li><a href="/blog/en/items.html" class="mobile-nav-link">Items Database</a></li>
+            <li><a href="/blog/en/mobs.html" class="mobile-nav-link">Mobs Database</a></li>
+            <li><a href="/blog/en/server-status.html" class="mobile-nav-link">Server Status</a></li>
+            <li><a href="/blog/en/minecraft-api-status.html" class="mobile-nav-link">Minecraft API Status</a></li>
+            <li><a href="/blog/en/api-documentation.html" class="mobile-nav-link">API Documentation</a></li>
+            <li><a href="/blog/en/skin-lookup.html" class="mobile-nav-link">Skin Lookup</a></li>
+            <li><a href="/blog/en/skin-editor.html" class="mobile-nav-link">Skin Editor</a></li>
+            <li><a href="/blog/en/skin-poser.html" class="mobile-nav-link">Skin Poser</a></li>
+            <li><a href="/blog/en/chibi-skin-maker.html" class="mobile-nav-link">Chibi Skin Maker</a></li>
+            <li><a href="/blog/en/day-night-cycle.html" class="mobile-nav-link">Day-Night Cycle</a></li>
+            <li><a href="/blog/en/end_poem.html" class="mobile-nav-link">End Poem</a></li>
+            <li><a href="/blog/en/minecraft-capes.html" class="mobile-nav-link">Cape Database</a></li>
+            <li><a href="/blog/en/minecraft-heads.html" class="mobile-nav-link">Heads Database</a></li>
+            <li><a href="/blog/en/head-texture-generator.html" class="mobile-nav-link">Head Texture Generator</a></li>
+            <li><a href="/blog/en/minecraft-versions.html" class="mobile-nav-link">Minecraft Versions</a></li>
+            <li><a href="/blog/en/minecraft-skins.html" class="mobile-nav-link">Skin Library</a></li>
+            <li><a href="/blog/en/beacon-color-mixer.html" class="mobile-nav-link">Beacon Color Mixer</a></li>
+            <li><a href="/blog/en/qr-generator.html" class="mobile-nav-link">QR Generator</a></li>
+            <li><a href="/blog/en/advancement-generator.html" class="mobile-nav-link">Advancement Generator</a></li>
+            <li><a href="/blog/en/sign-generator.html" class="mobile-nav-link">Sign Generator</a></li>
+            <li><a href="/blog/en/crafting-recipes.html" class="mobile-nav-link">Crafting Recipes</a></li>
+            <li><a href="/blog/en/armor-trim-generator.html" class="mobile-nav-link">Armor Trim Generator</a></li>
+            <li><a href="/blog/en/firework-generator.html" class="mobile-nav-link">Firework Generator</a></li>
+        </ul>
+        <div class="mobile-theme-switcher">
+            <h4>Choose theme:</h4>
+            <div class="theme-options">
+                <button class="theme-option-btn" data-theme="overworld">
+                    <i class="fas fa-cube"></i> <span>Overworld</span>
+                </button>
+                <button class="theme-option-btn" data-theme="nether">
+                    <i class="fas fa-fire"></i> <span>Nether</span>
+                </button>
+                <button class="theme-option-btn" data-theme="end">
+                    <i class="fas fa-moon"></i> <span>The End</span>
+                </button>
+            </div>
+            <div class="mobile-sound-lang">
+                <button class="mobile-sound-btn" id="mobileSoundBtn">
+                    <img src="/assets/img/backgrounds/sound-on.svg?v=20260910v121c" alt="Sound on" class="sound-icon" id="mobileSoundIcon">
+                    <span>Sound</span>
+                </button>
+                <a class="mobile-lang-btn" id="mobileLangBtn" href="/blog/de/schild-generator.html">
+                    <img src="/assets/img/backgrounds/en.svg?v=20260910v121c" alt="English" class="flag-icon" id="mobileLangFlag">
+                    <span>Language</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <main class="main" id="main" tabindex="-1">
+        <section class="hero" id="home">
+            <div class="hero-bg-grid"></div>
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-badge"><span class="hero-badge-dot"></span> V 1.0.0 IS HERE</div>
+                    <h1 class="hero-title">YOUR <span class="highlight">SIGN</span> GENERATOR</h1>
+                    <p class="hero-description">Write on Minecraft signs and hanging signs of every wood type – with colours, formatting and glowing text. The preview shows the sign as in the game, and at the end you get a PNG or a ready-made command.</p>
+                    <div class="hero-buttons">
+                        <a href="#generator" class="btn btn-primary"><i class="fas fa-signs-post"></i> <span>Open generator</span></a>
+                        <a href="/en/index.html#tools" class="btn btn-secondary"><i class="fas fa-tools"></i> <span>All tools</span></a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="hero-grid-staggered">
+                        <div class="hero-stagger-col hero-stagger-left">
+                            <div class="grid-item">
+                                <i class="fas fa-tree"></i>
+                                <span>ALL WOOD TYPES</span>
+                            </div>
+                            <div class="grid-item">
+                                <i class="fas fa-download"></i>
+                                <span>PNG EXPORT</span>
+                            </div>
+                        </div>
+                        <div class="hero-stagger-col hero-stagger-right">
+                            <div class="grid-item">
+                                <i class="fas fa-signs-post"></i>
+                                <span>4 SIGN TYPES</span>
+                            </div>
+                            <div class="grid-item">
+                                <i class="fas fa-terminal"></i>
+                                <span>3 COMMANDS</span>
+                            </div>
+                        </div>
+                        <div class="floating-cube floating-cube-1"></div>
+                        <div class="floating-cube floating-cube-2"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="generator-section" id="generator">
+            <div class="container sign-grid">
+                <div class="sign-panel controls-panel">
+                    <h2><i class="fas fa-sliders-h"></i> <span>Settings</span></h2>
+
+                    <label id="kindLabel">Sign type</label>
+                    <div class="kind-grid" id="kindGrid" role="group" aria-labelledby="kindLabel">
+                        <button type="button" class="kind-btn active" data-kind="standing" aria-pressed="true">
+                            <span class="kind-btn-title">Standing sign</span>
+                            <span class="kind-btn-hint">On the ground</span>
+                        </button>
+                        <button type="button" class="kind-btn" data-kind="wall" aria-pressed="false">
+                            <span class="kind-btn-title">Wall sign</span>
+                            <span class="kind-btn-hint">On a wall</span>
+                        </button>
+                        <button type="button" class="kind-btn" data-kind="hanging" aria-pressed="false">
+                            <span class="kind-btn-title">Hanging sign</span>
+                            <span class="kind-btn-hint">Under a ceiling</span>
+                        </button>
+                        <button type="button" class="kind-btn" data-kind="wall_hanging" aria-pressed="false">
+                            <span class="kind-btn-title">Wall hanging sign</span>
+                            <span class="kind-btn-hint">On a wall bracket</span>
+                        </button>
+                    </div>
+
+                    <label id="woodLabel">Wood type</label>
+                    <div class="wood-grid" id="woodGrid" role="group" aria-labelledby="woodLabel"></div>
+
+                    <h3 class="sign-subtitle"><i class="fas fa-pen-to-square"></i> <span>Text</span></h3>
+                    <div class="side-tabs" id="sideTabs" role="group" aria-label="Side of the sign">
+                        <button type="button" class="side-tab active" data-side="front" aria-pressed="true">Front</button>
+                        <button type="button" class="side-tab" data-side="back" aria-pressed="false">Back</button>
+                    </div>
+                    <div class="lines-editor" id="linesEditor"></div>
+
+                    <label id="dyeLabel">Dye for this side</label>
+                    <div class="dye-grid" id="dyeGrid" role="group" aria-labelledby="dyeLabel"></div>
+                    <p class="field-hint">Lines without their own colour use the dye colour – slightly darker without glow ink, just like in the game.</p>
+                    <label class="toggle-row" for="glowToggle">
+                        <input type="checkbox" id="glowToggle">
+                        <span>Glowing text (glow ink sac)</span>
+                    </label>
+                    <div class="side-actions">
+                        <button type="button" class="btn btn-secondary btn-small" id="exampleBtn"><i class="fas fa-wand-magic-sparkles"></i> <span>Example text</span></button>
+                        <button type="button" class="btn btn-secondary btn-small" id="clearSideBtn"><i class="fas fa-eraser"></i> <span>Clear side</span></button>
+                    </div>
+
+                    <h3 class="sign-subtitle"><i class="fas fa-compass"></i> <span>Placement</span></h3>
+                    <div id="rotationField">
+                        <label for="rotationSelect">Rotation</label>
+                        <select id="rotationSelect"></select>
+                    </div>
+                    <div id="facingField" hidden>
+                        <label for="facingSelect">Facing</label>
+                        <select id="facingSelect"></select>
+                    </div>
+                    <label class="toggle-row" for="attachedToggle" id="attachedRow" hidden>
+                        <input type="checkbox" id="attachedToggle">
+                        <span>On a V-shaped chain</span>
+                    </label>
+                    <label class="toggle-row" for="waxedToggle">
+                        <input type="checkbox" id="waxedToggle">
+                        <span>Waxed – can no longer be edited in the game</span>
+                    </label>
+                    <p class="field-hint">Needed for click commands: Minecraft only runs them on waxed signs.</p>
+                </div>
+
+                <div class="sign-panel preview-panel">
+                    <div class="panel-head">
+                        <h2><i class="fas fa-image"></i> <span>Preview</span></h2>
+                        <div class="panel-actions">
+                            <button type="button" id="copyImageBtn" class="btn btn-secondary btn-small"><i class="fas fa-copy"></i> <span>Copy image</span></button>
+                            <button type="button" id="downloadBtn" class="btn btn-primary btn-small"><i class="fas fa-download"></i> <span>Download PNG</span></button>
+                        </div>
+                    </div>
+                    <div class="preview-stage">
+                        <canvas id="signCanvas" width="384" height="416" role="img" aria-label="Sign preview"></canvas>
+                    </div>
+                    <div class="input-row">
+                        <div>
+                            <label for="viewSelect">Preview &amp; PNG</label>
+                            <select id="viewSelect">
+                                <option value="side">Selected side</option>
+                                <option value="both">Both sides</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="scaleSelect">Resolution</label>
+                            <select id="scaleSelect">
+                                <option value="2">2x</option>
+                                <option value="4" selected>4x</option>
+                                <option value="6">6x</option>
+                                <option value="8">8x</option>
+                            </select>
+                        </div>
+                    </div>
+                    <p class="hint" id="sizeInfo">–</p>
+                    <p class="hint">Font, colours and line width follow Minecraft's rules: whatever does not fit on the sign is cut off by the game.</p>
+                </div>
+
+                <div class="sign-panel commands-panel">
+                    <h2><i class="fas fa-terminal"></i> <span>Commands</span></h2>
+                    <div class="commands-settings">
+                        <div>
+                            <label for="versionSelect">Minecraft version (Java)</label>
+                            <select id="versionSelect">
+                                <option value="v263">26.3 and newer</option>
+                                <option value="modern">1.21.5 to 26.2</option>
+                                <option value="components">1.20.5 to 1.21.4</option>
+                                <option value="legacy">1.20 to 1.20.4</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="posInput">Coordinates</label>
+                            <input type="text" id="posInput" value="~ ~ ~" spellcheck="false" autocomplete="off">
+                            <div class="pos-presets" role="group" aria-label="Coordinate presets">
+                                <button type="button" class="pos-preset" data-pos="~ ~ ~" aria-pressed="false">Here <code>~ ~ ~</code></button>
+                                <button type="button" class="pos-preset" data-pos="~ ~1 ~" aria-pressed="false">Above the command block <code>~ ~1 ~</code></button>
+                            </div>
+                        </div>
+                        <div>
+                            <label for="targetInput">Player for /give</label>
+                            <input type="text" id="targetInput" value="@p" spellcheck="false" autocomplete="off">
+                        </div>
+                    </div>
+                    <p class="version-notice" id="versionNotice" hidden></p>
+                    <div class="cmd-grid">
+                        <div class="cmd-block">
+                            <h3><i class="fas fa-cube"></i> <span>/setblock</span></h3>
+                            <p class="cmd-desc">Places the finished sign at the coordinates.</p>
+                            <div class="command-box">
+                                <code id="cmdSetblock"></code>
+                                <button type="button" class="copy-btn" data-copy-cmd="setblock" aria-label="Copy /setblock command"><i class="fas fa-copy"></i></button>
+                            </div>
+                            <p class="field-hint" id="cmdSetblockInfo"></p>
+                        </div>
+                        <div class="cmd-block">
+                            <h3><i class="fas fa-gift"></i> <span>/give</span></h3>
+                            <p class="cmd-desc">Gives the written sign as an item. Click commands – and before 26.3 the text as well – are only kept when an operator in Creative mode places it.</p>
+                            <div class="command-box">
+                                <code id="cmdGive"></code>
+                                <button type="button" class="copy-btn" data-copy-cmd="give" aria-label="Copy /give command"><i class="fas fa-copy"></i></button>
+                            </div>
+                            <p class="field-hint" id="cmdGiveInfo"></p>
+                        </div>
+                        <div class="cmd-block">
+                            <h3><i class="fas fa-pen-to-square"></i> <span>/data</span></h3>
+                            <p class="cmd-desc">Replaces text, colours and wax of a sign that is already placed.</p>
+                            <div class="command-box">
+                                <code id="cmdData"></code>
+                                <button type="button" class="copy-btn" data-copy-cmd="data" aria-label="Copy /data command"><i class="fas fa-copy"></i></button>
+                            </div>
+                            <p class="field-hint" id="cmdDataInfo"></p>
+                        </div>
+                    </div>
+                    <details class="cmdblock-guide" id="cmdblockGuide">
+                        <summary><i class="fas fa-circle-info"></i> <span>Command too long or not working? Use a command block</span></summary>
+                        <ol>
+                            <li>The chat only accepts 256 characters. Longer commands are cut off when pasted and therefore fail.</li>
+                            <li>Get a command block (Creative mode, cheats on): <code>/give @s command_block</code></li>
+                            <li>Choose “Above the command block” (<code>~ ~1 ~</code>) under <strong>Coordinates</strong>. In a command block, <code>~ ~ ~</code> means the command block itself.</li>
+                            <li>Place the command block, open it with a right click, paste the copied command and click “Done”.</li>
+                            <li>Power it with a button or lever. The sign appears right above the command block; for <code>/data</code> a sign must already be there.</li>
+                            <li>Front and back are both in the same command – one command covers both sides.</li>
+                        </ol>
+                    </details>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-grid">
+                    <div class="footer-col">
+                        <a href="/en/index.html" class="footer-logo">
+                            <div class="logo-icon"></div>
+                            <span class="logo-text">MC-Craft</span>
+                        </a>
+                        <p class="footer-description">Free Minecraft tools for the community. Made by players for players.</p>
+                        <div class="social-links">
+                            <a href="https://github.com/Blexilein" class="social-link" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                            <a href="https://discord.gg/eVVpQD75w4" class="social-link"><i class="fab fa-discord"></i></a>
+                            <a href="https://x.com/Blexi_1" class="social-link" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        </div>
+                    </div>
+                    <div class="footer-col">
+                        <h4 class="footer-title">Tools</h4>
+                        <ul class="footer-links">
+                            <li><a href="/blog/en/text-converter.html">Text Converter</a></li>
+                            <li><a href="/blog/en/color-text.html">Color Text</a></li>
+                            <li><a href="/blog/en/structure-converter.html">Structure Converter</a></li>
+                            <li><a href="/blog/en/schematic-viewer.html">Schematic Viewer</a></li>
+                            <li><a href="/blog/en/map-art-generator.html">Map Art Generator</a></li>
+                            <li><a href="/blog/en/nether-coordinate-calculator.html">Nether Coordinate Calculator</a></li>
+                            <li><a href="/blog/en/minecraft-command-generator.html">Minecraft Command Generator</a></li>
+                            <li><a href="/blog/en/items.html">Items Database</a></li>
+                            <li><a href="/blog/en/mobs.html">Mobs Database</a></li>
+                            <li><a href="/blog/en/day-night-cycle.html">Day-Night Cycle</a></li>
+                            <li><a href="/blog/en/beacon-color-mixer.html">Beacon Color Mixer</a></li>
+                            <li><a href="/blog/en/qr-generator.html">QR Generator</a></li>
+                            <li><a href="/blog/en/advancement-generator.html">Advancement Generator</a></li>
+                            <li><a href="/blog/en/sign-generator.html">Sign Generator</a></li>
+                            <li><a href="/blog/en/crafting-recipes.html">Crafting Recipes</a></li>
+                            <li><a href="/blog/en/armor-trim-generator.html">Armor Trim Generator</a></li>
+                            <li><a href="/blog/en/firework-generator.html">Firework Generator</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4 class="footer-title">More tools</h4>
+                        <ul class="footer-links">
+                            <li><a href="/blog/en/server-status.html">Server Status</a></li>
+                            <li><a href="/blog/en/minecraft-api-status.html">Minecraft API Status</a></li>
+                            <li><a href="/blog/en/api-documentation.html">API Documentation</a></li>
+                            <li><a href="/blog/en/skin-lookup.html">Skin Lookup</a></li>
+                            <li><a href="/blog/en/skin-editor.html">Skin Editor</a></li>
+                            <li><a href="/blog/en/skin-poser.html">Skin Poser</a></li>
+                            <li><a href="/blog/en/chibi-skin-maker.html">Chibi Skin Maker</a></li>
+                            <li><a href="/blog/en/minecraft-skins.html">Skin gallery</a></li>
+                            <li><a href="/blog/en/minecraft-capes.html">Cape gallery</a></li>
+                            <li><a href="/blog/en/minecraft-heads.html">Heads Database</a></li>
+                            <li><a href="/blog/en/head-texture-generator.html">Head Texture Generator</a></li>
+                            <li><a href="/blog/en/minecraft-versions.html">Minecraft Versions</a></li>
+                            <li><a href="/blog/en/end_poem.html">End Poem</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4 class="footer-title">Legal</h4>
+                        <ul class="footer-links">
+                            <li><a href="/blog/en/imprint.html">Imprint</a></li>
+                            <li><a href="/blog/en/privacy-policy.html">Privacy</a></li>
+                            <li><a href="/blog/en/terms-of-use.html">Terms of use</a></li>
+                            <li><a href="/blog/en/copyright.html">Copyright</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4 class="footer-title">About us</h4>
+                        <ul class="footer-links">
+                            <li><a href="/blog/en/history.html">MC-Craft history</a></li>
+                            <li><a href="/blog/en/team.html">Our team</a></li>
+                            <li><a href="/blog/en/about.html">About us</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4 class="footer-title">Support</h4>
+                        <ul class="footer-links">
+                            <li><a href="/blog/en/faq.html">FAQ & help</a></li>
+                            <li><a href="/blog/en/bug-report.html">Report a bug</a></li>
+                            <li><a href="/blog/en/support.html">Support contact</a></li>
+                            <li><a href="/blog/en/e-mails.html">E-mails</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <div class="copyright">
+                        <p>&copy; <span id="currentYear">2026</span> MC-Craft. <span>All rights reserved.</span></p>
+                        <p class="disclaimer">Minecraft is a trademark of Mojang Studios. This site is not affiliated with Mojang or Microsoft.</p>
+                    </div>
+                    <div class="footer-meta">
+                        <span class="version">Version 1.2.0</span>
+                        <a href="/blog/en/changelog.html" class="changelog active">Changelog</a>
+                        <a href="/blog/en/api-documentation.html" class="api-docs"><i class="fas fa-book-open" aria-hidden="true"></i> API Docs</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <button class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <div class="toast-container" id="toastContainer"></div>
+
+    <script src="/assets/JS/modules/mc-preferences.js?v=20260917b"></script>
+    <script src="/assets/JS/main.js?v=20260917a"></script>
+
+    <script src="/assets/JS/modules/sign-generator.js?v=20260916f"></script>
+</body>
+</html>

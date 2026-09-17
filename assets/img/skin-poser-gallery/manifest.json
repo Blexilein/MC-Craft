@@ -1,0 +1,29 @@
+{
+    "images": [
+        {
+            "file": "example-tpose.png",
+            "caption_de": "T-Pose",
+            "caption_en": "T-Pose"
+        },
+        {
+            "file": "example-sitting.png",
+            "caption_de": "Sitzen",
+            "caption_en": "Sitting"
+        },
+        {
+            "file": "example-salute.png",
+            "caption_de": "Salutieren",
+            "caption_en": "Salute"
+        },
+        {
+            "file": "example-jump.png",
+            "caption_de": "Sprung",
+            "caption_en": "Jump"
+        },
+        {
+            "file": "example-portrait.png",
+            "caption_de": "Porträt",
+            "caption_en": "Portrait"
+        }
+    ]
+}

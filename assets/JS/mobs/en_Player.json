@@ -2,52 +2,536 @@
   {
     "id": "minecraft:player",
     "name": "Steve",
+    "numeric_id": "Bedrock only: 63",
     "type": "player",
+    "category": "Players",
     "icon": "/assets/img/mobs/player/Steve.png",
-    "health": 20,
-    "damage": 0,
-    "description": "The default player character in Minecraft. Steve can walk through the world, gather resources, build, and fight monsters.",
-    "version": "Cave game tech test",
-    "dimension": "All",
-    "movement_speed": 0.1,
+    "description": "The player character controlled by a human. Steve, Alex, Ari, Efe, Kai, Makena, Noor, Sunny and Zuri are default skin characters, not different mobs.",
+    "biome": "All biomes",
+    "structure": "No fixed structure",
+    "dimension": "Overworld, Nether and The End",
+    "movement_speed": {
+      "attribute": 0.1,
+      "walking": "approx. 4.317 blocks/second",
+      "sprinting": "approx. 5.612 blocks/second",
+      "sneaking": "approx. 1.295 blocks/second",
+      "note": "Ground, effects, enchantments and actions change the speed."
+    },
     "size": {
-      "width": 0.6,
-      "height": 1.8,
+      "width": "Width: 0.6",
+      "height": "Height: 1.8",
       "sneaking": {
-        "width": 0.6,
-        "height": 1.5
+        "width": "Width: 0.6",
+        "height": "Height: 1.5"
       },
       "gliding_swimming": {
-        "width": 0.6,
-        "height": 0.6
+        "width": "Width: 0.6",
+        "height": "Height: 0.6"
       },
       "sleeping": {
-        "width": 0.2,
-        "height": 0.2
+        "width": "Width: 0.2",
+        "height": "Height: 0.2"
       }
     },
+    "aliases": [
+      "Steve",
+      "Alex",
+      "Ari",
+      "Efe",
+      "Kai",
+      "Makena",
+      "Noor",
+      "Sunny",
+      "Zuri"
+    ],
+    "introduced_date": "2009-05-13",
+    "removed_date": null,
+    "gallery": [],
+    "model": "Wide or slim player model",
+    "animation": [
+      "Walking",
+      "Sprinting",
+      "Sneaking",
+      "Swimming",
+      "Crawling",
+      "Flying",
+      "Elytra gliding",
+      "Sleeping",
+      "Attacking",
+      "Using"
+    ],
+    "source": "",
+    "updated_at": "2026-08-22",
+    "notes": "The player is technically an entity but not a mob. It cannot be created with /summon and has no normal mob loot table.",
+    "version": "Java Edition Pre-Classic rd-132328; Bedrock predecessor Pocket Edition Alpha v0.1.0",
+    "edition": "Java Edition, Bedrock Edition",
+    "effects": [],
+    "effect_immunities": [],
+    "status": "Available",
+    "tags": [
+      "Players",
+      "Entity",
+      "Wide",
+      "Slim",
+      "Default skins"
+    ],
+    "related_entries": [
+      "minecraft:player_head",
+      "minecraft:bed",
+      "minecraft:respawn_anchor",
+      "minecraft:elytra",
+      "minecraft:armor"
+    ],
+    "command": "Cannot be summoned with /summon; players are created when joining the world",
+    "version_history": [
+      {
+        "version": "Java Edition Pre-Classic rd-132328",
+        "change": "Humans, or rather the early player character, were added.",
+        "type": "added",
+        "date": "2009-05-13"
+      },
+      {
+        "version": "Java Edition 1.8",
+        "change": "Alex and the slim arm model were added as a default option.",
+        "type": "changed",
+        "date": "2014-09-02"
+      },
+      {
+        "version": "Bedrock Edition 1.19.50",
+        "change": "Ari, Efe, Kai, Makena, Noor, Sunny and Zuri were added as additional default characters.",
+        "type": "changed",
+        "date": "2022-11-29"
+      },
+      {
+        "version": "Java Edition 1.19.3",
+        "change": "The seven additional default characters also became available in Java Edition.",
+        "type": "changed",
+        "date": "2022-12-07"
+      }
+    ],
+    "texture": [
+      {
+        "name": "Player Slim Alex",
+        "category": "Slim player model",
+        "description": "Variant: Player Slim Alex.",
+        "file": "/assets/img/texture/mobs/player/slim/alex.png"
+      },
+      {
+        "name": "Player Slim Ari",
+        "category": "Slim player model",
+        "description": "Variant: Player Slim Ari.",
+        "file": "/assets/img/texture/mobs/player/slim/ari.png"
+      },
+      {
+        "name": "Player Slim Efe",
+        "category": "Slim player model",
+        "description": "Variant: Player Slim Efe.",
+        "file": "/assets/img/texture/mobs/player/slim/efe.png"
+      },
+      {
+        "name": "Player Slim Kai",
+        "category": "Slim player model",
+        "description": "Variant: Player Slim Kai.",
+        "file": "/assets/img/texture/mobs/player/slim/kai.png"
+      },
+      {
+        "name": "Player Slim Makena",
+        "category": "Slim player model",
+        "description": "Variant: Player Slim Makena.",
+        "file": "/assets/img/texture/mobs/player/slim/makena.png"
+      },
+      {
+        "name": "Player Slim Noor",
+        "category": "Slim player model",
+        "description": "Variant: Player Slim Noor.",
+        "file": "/assets/img/texture/mobs/player/slim/noor.png"
+      },
+      {
+        "name": "Player Slim Steve",
+        "category": "Slim player model",
+        "description": "Variant: Player Slim Steve.",
+        "file": "/assets/img/texture/mobs/player/slim/steve.png"
+      },
+      {
+        "name": "Player Slim Sunny",
+        "category": "Slim player model",
+        "description": "Variant: Player Slim Sunny.",
+        "file": "/assets/img/texture/mobs/player/slim/sunny.png"
+      },
+      {
+        "name": "Player Slim Zuri",
+        "category": "Slim player model",
+        "description": "Variant: Player Slim Zuri.",
+        "file": "/assets/img/texture/mobs/player/slim/zuri.png"
+      },
+      {
+        "name": "Player Wide Alex",
+        "category": "Wide player model",
+        "description": "Variant: Player Wide Alex.",
+        "file": "/assets/img/texture/mobs/player/wide/alex.png"
+      },
+      {
+        "name": "Player Wide Ari",
+        "category": "Wide player model",
+        "description": "Variant: Player Wide Ari.",
+        "file": "/assets/img/texture/mobs/player/wide/ari.png"
+      },
+      {
+        "name": "Player Wide Efe",
+        "category": "Wide player model",
+        "description": "Variant: Player Wide Efe.",
+        "file": "/assets/img/texture/mobs/player/wide/efe.png"
+      },
+      {
+        "name": "Player Wide Kai",
+        "category": "Wide player model",
+        "description": "Variant: Player Wide Kai.",
+        "file": "/assets/img/texture/mobs/player/wide/kai.png"
+      },
+      {
+        "name": "Player Wide Makena",
+        "category": "Wide player model",
+        "description": "Variant: Player Wide Makena.",
+        "file": "/assets/img/texture/mobs/player/wide/makena.png"
+      },
+      {
+        "name": "Player Wide Noor",
+        "category": "Wide player model",
+        "description": "Variant: Player Wide Noor.",
+        "file": "/assets/img/texture/mobs/player/wide/noor.png"
+      },
+      {
+        "name": "Player Wide Steve",
+        "category": "Wide player model",
+        "description": "Variant: Player Wide Steve.",
+        "file": "/assets/img/texture/mobs/player/wide/steve.png"
+      },
+      {
+        "name": "Player Wide Sunny",
+        "category": "Wide player model",
+        "description": "Variant: Player Wide Sunny.",
+        "file": "/assets/img/texture/mobs/player/wide/sunny.png"
+      },
+      {
+        "name": "Player Wide Zuri",
+        "category": "Wide player model",
+        "description": "Variant: Player Wide Zuri.",
+        "file": "/assets/img/texture/mobs/player/wide/zuri.png"
+      },
+      {
+        "name": "Equipment Wings Elytra",
+        "category": "Equipment",
+        "description": "Variant: Equipment Wings Elytra.",
+        "file": "/assets/img/texture/mobs/equipment/wings/elytra.png"
+      }
+    ],
+    "sounds": [
+      {
+        "name": "Critical attack",
+        "event": "entity.player.attack.crit",
+        "files": [
+          "/assets/sounds/entity/player/attack/crit1.ogg",
+          "/assets/sounds/entity/player/attack/crit2.ogg",
+          "/assets/sounds/entity/player/attack/crit3.ogg"
+        ]
+      },
+      {
+        "name": "Knockback attack",
+        "event": "entity.player.attack.knockback",
+        "files": [
+          "/assets/sounds/entity/player/attack/knockback1.ogg",
+          "/assets/sounds/entity/player/attack/knockback2.ogg",
+          "/assets/sounds/entity/player/attack/knockback3.ogg",
+          "/assets/sounds/entity/player/attack/knockback4.ogg"
+        ]
+      },
+      {
+        "name": "Weak attack",
+        "event": "entity.player.attack.nodamage",
+        "files": [
+          "/assets/sounds/entity/player/attack/weak1.ogg",
+          "/assets/sounds/entity/player/attack/weak2.ogg",
+          "/assets/sounds/entity/player/attack/weak3.ogg",
+          "/assets/sounds/entity/player/attack/weak4.ogg"
+        ]
+      },
+      {
+        "name": "Strong attack",
+        "event": "entity.player.attack.strong",
+        "files": [
+          "/assets/sounds/entity/player/attack/strong1.ogg",
+          "/assets/sounds/entity/player/attack/strong2.ogg",
+          "/assets/sounds/entity/player/attack/strong3.ogg",
+          "/assets/sounds/entity/player/attack/strong4.ogg",
+          "/assets/sounds/entity/player/attack/strong5.ogg",
+          "/assets/sounds/entity/player/attack/strong6.ogg"
+        ]
+      },
+      {
+        "name": "Sweeping attack",
+        "event": "entity.player.attack.sweep",
+        "files": [
+          "/assets/sounds/entity/player/attack/sweep1.ogg",
+          "/assets/sounds/entity/player/attack/sweep2.ogg",
+          "/assets/sounds/entity/player/attack/sweep3.ogg",
+          "/assets/sounds/entity/player/attack/sweep4.ogg",
+          "/assets/sounds/entity/player/attack/sweep5.ogg",
+          "/assets/sounds/entity/player/attack/sweep6.ogg",
+          "/assets/sounds/entity/player/attack/sweep7.ogg"
+        ]
+      },
+      {
+        "name": "Weak attack",
+        "event": "entity.player.attack.weak",
+        "files": [
+          "/assets/sounds/entity/player/attack/weak1.ogg",
+          "/assets/sounds/entity/player/attack/weak2.ogg",
+          "/assets/sounds/entity/player/attack/weak3.ogg",
+          "/assets/sounds/entity/player/attack/weak4.ogg"
+        ]
+      },
+      {
+        "name": "Something fell",
+        "event": "entity.player.big_fall",
+        "files": [
+          "/assets/sounds/damage/fallbig.ogg"
+        ]
+      },
+      {
+        "event": "entity.player.breath",
+        "files": [
+          "/assets/sounds/random/breath.ogg"
+        ]
+      },
+      {
+        "name": "Burp",
+        "event": "entity.player.burp",
+        "files": [
+          "/assets/sounds/random/burp.ogg"
+        ]
+      },
+      {
+        "name": "Player dies",
+        "event": "entity.player.death",
+        "files": [
+          "/assets/sounds/damage/hit1.ogg",
+          "/assets/sounds/damage/hit2.ogg",
+          "/assets/sounds/damage/hit3.ogg"
+        ]
+      },
+      {
+        "name": "Player hurts",
+        "event": "entity.player.hurt",
+        "files": [
+          "/assets/sounds/damage/hit1.ogg",
+          "/assets/sounds/damage/hit2.ogg",
+          "/assets/sounds/damage/hit3.ogg"
+        ]
+      },
+      {
+        "name": "Player drowning",
+        "event": "entity.player.hurt_drown",
+        "files": [
+          "/assets/sounds/entity/player/hurt/drown1.ogg",
+          "/assets/sounds/entity/player/hurt/drown2.ogg",
+          "/assets/sounds/entity/player/hurt/drown3.ogg",
+          "/assets/sounds/entity/player/hurt/drown4.ogg"
+        ]
+      },
+      {
+        "name": "Player freezes",
+        "event": "entity.player.hurt_freeze",
+        "files": [
+          "/assets/sounds/entity/player/hurt/freeze_hurt1.ogg",
+          "/assets/sounds/entity/player/hurt/freeze_hurt2.ogg",
+          "/assets/sounds/entity/player/hurt/freeze_hurt3.ogg",
+          "/assets/sounds/entity/player/hurt/freeze_hurt4.ogg",
+          "/assets/sounds/entity/player/hurt/freeze_hurt5.ogg"
+        ]
+      },
+      {
+        "name": "Player burns",
+        "event": "entity.player.hurt_on_fire",
+        "files": [
+          "/assets/sounds/entity/player/hurt/fire_hurt1.ogg",
+          "/assets/sounds/entity/player/hurt/fire_hurt2.ogg",
+          "/assets/sounds/entity/player/hurt/fire_hurt3.ogg"
+        ]
+      },
+      {
+        "name": "Player hurts",
+        "event": "entity.player.hurt_sweet_berry_bush",
+        "files": [
+          "/assets/sounds/entity/player/hurt/berrybush_hurt1.ogg",
+          "/assets/sounds/entity/player/hurt/berrybush_hurt2.ogg"
+        ]
+      },
+      {
+        "name": "Player dings",
+        "event": "entity.player.levelup",
+        "files": [
+          "/assets/sounds/random/levelup.ogg"
+        ]
+      },
+      {
+        "name": "Something trips",
+        "event": "entity.player.small_fall",
+        "files": [
+          "/assets/sounds/damage/fallsmall.ogg"
+        ]
+      },
+      {
+        "name": "Splashing",
+        "event": "entity.player.splash",
+        "files": [
+          "/assets/sounds/liquid/splash.ogg",
+          "/assets/sounds/liquid/splash2.ogg"
+        ]
+      },
+      {
+        "name": "Splashing",
+        "event": "entity.player.splash.high_speed",
+        "files": [
+          "/assets/sounds/liquid/heavy_splash.ogg"
+        ]
+      },
+      {
+        "name": "Swimming",
+        "event": "entity.player.swim",
+        "files": [
+          "/assets/sounds/liquid/swim5.ogg",
+          "/assets/sounds/liquid/swim6.ogg",
+          "/assets/sounds/liquid/swim7.ogg",
+          "/assets/sounds/liquid/swim8.ogg",
+          "/assets/sounds/liquid/swim9.ogg",
+          "/assets/sounds/liquid/swim10.ogg",
+          "/assets/sounds/liquid/swim11.ogg",
+          "/assets/sounds/liquid/swim12.ogg",
+          "/assets/sounds/liquid/swim13.ogg",
+          "/assets/sounds/liquid/swim14.ogg",
+          "/assets/sounds/liquid/swim15.ogg",
+          "/assets/sounds/liquid/swim16.ogg",
+          "/assets/sounds/liquid/swim17.ogg",
+          "/assets/sounds/liquid/swim18.ogg"
+        ]
+      },
+      {
+        "name": "Player teleports",
+        "event": "entity.player.teleport",
+        "files": [
+          "/assets/sounds/mob/endermen/portal.ogg",
+          "/assets/sounds/mob/endermen/portal2.ogg"
+        ]
+      }
+    ],
+    "health": "Default: 20; can be changed with attributes and commands",
+    "damage": "Unarmed: 1; with items depends on weapon, enchantments, attack strength and edition",
+    "armor": "0–20 armor points; armor toughness and enchantments also possible",
+    "experience": "On death: 7 × experience level, at most 100 experience points; not with keepInventory",
     "spawn": {
       "light_level": [
-        "All"
+        "Any"
       ],
       "biome": "All",
       "structure": "None",
-      "note": "At player spawn point (if set with bed, respawn anchor, or commands) or at world spawn"
-    },
-    "armor": "0-20 (depending on armor)",
-    "attack_strength": {
-      "fist": "1HP (until JE Combat Tests), 2HP (future JE Combat Tests)",
-      "items": "Varies"
+      "method": "World spawn or a respawn point set by a bed, respawn anchor or command"
     },
     "light_level": [
-      "All"
+      "Any"
     ],
-    "fun_fact": "Steve was originally meant as a placeholder name but became the official name. His female counterpart is Alex.",
+    "classification": "Player; not a mob",
+    "renewable": "Not applicable",
+    "can_despawn": "No; is unloaded from the world when leaving the game",
+    "tameable": "No",
+    "breedable": "No",
+    "duplicable": "No",
+    "duplication_item": "None",
+    "leashable": "No",
+    "rideable": "Can ride other rideable entities; not a normal mount itself",
+    "baby_variant": "No",
+    "drops": [
+      {
+        "item": "Inventory contents",
+        "chance": "100 %",
+        "amount": "Amount held",
+        "condition": "Not with keepInventory; items with Curse of Vanishing disappear"
+      },
+      {
+        "item": "Experience orbs",
+        "chance": "100 %",
+        "amount": "7 × level, at most 100 XP",
+        "condition": "Not with keepInventory"
+      }
+    ],
     "abilities": [
-      "Can use all types of tools and weapons",
-      "Can wear armor (0-20 armor points)",
-      "Can sprint (0.3 speed), sneak, swim, and fly",
-      "Can interact with and place blocks"
-    ]
+      "Builds and destroys blocks",
+      "Uses tools, weapons and items",
+      "Wears armor and elytra",
+      "Walks, sprints, jumps, sneaks, swims, crawls and glides",
+      "Can fly, be invulnerable or pass through blocks depending on the game mode",
+      "Has an inventory, hunger, experience and respawn mechanics"
+    ],
+    "fun_fact": "Steve and Alex are not a male and female mob variant, but two of several selectable default skins.",
+    "attack_type": "Player-controlled: melee, ranged, effects, explosions and other mechanics",
+    "targets": [],
+    "enemy_mobs": [
+      "Depends on behavior and game mode"
+    ],
+    "follows": [],
+    "healing_item": [
+      "Food via natural regeneration",
+      "Potions of healing",
+      "Potions of regeneration",
+      "Golden apple",
+      "Enchanted golden apple",
+      "Totem of Undying"
+    ],
+    "fire_immune": "No; usually protected from damage in Creative and Spectator mode",
+    "undead": "No",
+    "boss_bar": "No",
+    "knockback_resistance": "Default 0; can be changed by attributes/equipment",
+    "loot_table": "No mob loot table",
+    "java_entity_id": "minecraft:player (internal; cannot be summoned with /summon)",
+    "bedrock_entity_id": "minecraft:player",
+    "attack_strength": {
+      "fist": "1 damage",
+      "items": "Depends on item and edition",
+      "java_cooldown": "Since Java 1.9, attack strength affects the damage dealt"
+    },
+    "game": {
+      "version": "26.3",
+      "attributes": [
+        {
+          "id": "max_health",
+          "name": "Max Health",
+          "value": 20.0
+        },
+        {
+          "id": "attack_damage",
+          "name": "Attack Damage",
+          "value": 1.0
+        },
+        {
+          "id": "movement_speed",
+          "name": "Speed",
+          "value": 0.1
+        }
+      ],
+      "damage": {
+        "easy": 1.0,
+        "normal": 1.0,
+        "hard": 1.5
+      },
+      "size": {
+        "width": 0.6,
+        "height": 1.8,
+        "eye_height": 1.62
+      },
+      "category": {
+        "id": "misc",
+        "name": "Misc"
+      },
+      "fire_immune": false
+    }
   }
 ]

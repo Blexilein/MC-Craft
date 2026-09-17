@@ -40,31 +40,88 @@
     ],
     "texture": [
       {
-        "name": "Enderdragon Dragon Exploding",
-        "category": "standard",
-        "description": "Variante: Enderdragon Dragon Exploding.",
+        "name": "Enderdrache – explodierend",
+        "category": "Standardtextur",
+        "description": "Variante: Enderdrache – explodierend.",
         "file": "/assets/img/texture/mobs/enderdragon/dragon_exploding.png"
       },
       {
-        "name": "Enderdragon Dragon Eyes",
-        "category": "eyes",
-        "description": "Variante: Enderdragon Dragon Eyes.",
+        "name": "Enderdrache – Augen",
+        "category": "Augen",
+        "description": "Variante: Enderdrache – Augen.",
         "file": "/assets/img/texture/mobs/enderdragon/dragon_eyes.png"
       },
       {
-        "name": "Enderdragon Dragon Fireball",
-        "category": "standard",
-        "description": "Variante: Enderdragon Dragon Fireball.",
+        "name": "Enderdrache – Feuerball",
+        "category": "Standardtextur",
+        "description": "Variante: Enderdrache – Feuerball.",
         "file": "/assets/img/texture/mobs/enderdragon/dragon_fireball.png"
       },
       {
-        "name": "Enderdragon Dragon",
-        "category": "standard",
-        "description": "Variante: Enderdragon Dragon.",
+        "name": "Enderdrache",
+        "category": "Standardtextur",
+        "description": "Variante: Enderdrache.",
         "file": "/assets/img/texture/mobs/enderdragon/dragon.png"
       }
     ],
-    "sounds": [],
+    "sounds": [
+      {
+        "name": "Drache brüllt",
+        "event": "entity.ender_dragon.ambient",
+        "files": [
+          "/assets/sounds/mob/enderdragon/growl1.ogg",
+          "/assets/sounds/mob/enderdragon/growl2.ogg",
+          "/assets/sounds/mob/enderdragon/growl3.ogg",
+          "/assets/sounds/mob/enderdragon/growl4.ogg"
+        ]
+      },
+      {
+        "name": "Drache stirbt",
+        "event": "entity.ender_dragon.death",
+        "files": [
+          "/assets/sounds/mob/enderdragon/end.ogg"
+        ]
+      },
+      {
+        "name": "Drache flattert",
+        "event": "entity.ender_dragon.flap",
+        "files": [
+          "/assets/sounds/mob/enderdragon/wings1.ogg",
+          "/assets/sounds/mob/enderdragon/wings2.ogg",
+          "/assets/sounds/mob/enderdragon/wings3.ogg",
+          "/assets/sounds/mob/enderdragon/wings4.ogg",
+          "/assets/sounds/mob/enderdragon/wings5.ogg",
+          "/assets/sounds/mob/enderdragon/wings6.ogg"
+        ]
+      },
+      {
+        "name": "Drache faucht",
+        "event": "entity.ender_dragon.growl",
+        "files": [
+          "/assets/sounds/mob/enderdragon/growl1.ogg",
+          "/assets/sounds/mob/enderdragon/growl2.ogg",
+          "/assets/sounds/mob/enderdragon/growl3.ogg",
+          "/assets/sounds/mob/enderdragon/growl4.ogg"
+        ]
+      },
+      {
+        "name": "Drache nimmt Schaden",
+        "event": "entity.ender_dragon.hurt",
+        "files": [
+          "/assets/sounds/mob/enderdragon/hit1.ogg",
+          "/assets/sounds/mob/enderdragon/hit2.ogg",
+          "/assets/sounds/mob/enderdragon/hit3.ogg",
+          "/assets/sounds/mob/enderdragon/hit4.ogg"
+        ]
+      },
+      {
+        "name": "Drache schießt",
+        "event": "entity.ender_dragon.shoot",
+        "files": [
+          "/assets/sounds/mob/ghast/fireball4.ogg"
+        ]
+      }
+    ],
     "health": 200,
     "damage": {
       "kopf": {
@@ -84,7 +141,7 @@
     },
     "armor": 0,
     "experience": "Erster Sieg: 12.000; spätere Beschwörungen: 500",
-    "dimension": "The End",
+    "dimension": "Das Ende",
     "movement_speed": 0.7,
     "size": {
       "width": "Breite: 16.0",
@@ -139,7 +196,36 @@
     "knockback_resistance": 1,
     "loot_table": "minecraft:entities/ender_dragon",
     "java_entity_id": "minecraft:ender_dragon",
-    "bedrock_entity_id": "minecraft:ender_dragon"
+    "bedrock_entity_id": "minecraft:ender_dragon",
+    "game": {
+      "version": "26.3",
+      "attributes": [
+        {
+          "id": "max_health",
+          "name": "Maximale Gesundheit",
+          "value": 200.0
+        },
+        {
+          "id": "movement_speed",
+          "name": "Geschwindigkeit",
+          "value": 0.7
+        },
+        {
+          "id": "follow_range",
+          "name": "Kreaturen‐Verfolgedistanz",
+          "value": 16.0
+        }
+      ],
+      "size": {
+        "width": 16.0,
+        "height": 8.0
+      },
+      "category": {
+        "id": "monster",
+        "name": "Monster"
+      },
+      "fire_immune": true
+    }
   },
   {
     "id": "minecraft:wither",
@@ -188,25 +274,74 @@
     ],
     "texture": [
       {
-        "name": "Wither Wither Armor",
-        "category": "armor",
-        "description": "Variante: Wither Wither Armor.",
+        "name": "Wither – Rüstung",
+        "category": "Rüstung",
+        "description": "Variante: Wither – Rüstung.",
         "file": "/assets/img/texture/mobs/wither/wither_armor.png"
       },
       {
-        "name": "Wither Wither Invulnerable",
-        "category": "invulnerable",
-        "description": "Variante: Wither Wither Invulnerable.",
+        "name": "Wither – unverwundbar",
+        "category": "Unverwundbar",
+        "description": "Variante: Wither – unverwundbar.",
         "file": "/assets/img/texture/mobs/wither/wither_invulnerable.png"
       },
       {
-        "name": "Wither Wither",
-        "category": "standard",
-        "description": "Variante: Wither Wither.",
+        "name": "Wither",
+        "category": "Standardtextur",
+        "description": "Variante: Wither.",
         "file": "/assets/img/texture/mobs/wither/wither.png"
       }
     ],
-    "sounds": [],
+    "sounds": [
+      {
+        "name": "Wither erzürnt",
+        "event": "entity.wither.ambient",
+        "files": [
+          "/assets/sounds/mob/wither/idle1.ogg",
+          "/assets/sounds/mob/wither/idle2.ogg",
+          "/assets/sounds/mob/wither/idle3.ogg",
+          "/assets/sounds/mob/wither/idle4.ogg"
+        ]
+      },
+      {
+        "name": "Wither greift an",
+        "event": "entity.wither.break_block",
+        "files": [
+          "/assets/sounds/mob/zombie/woodbreak.ogg"
+        ]
+      },
+      {
+        "name": "Wither stirbt",
+        "event": "entity.wither.death",
+        "files": [
+          "/assets/sounds/mob/wither/death.ogg"
+        ]
+      },
+      {
+        "name": "Wither nimmt Schaden",
+        "event": "entity.wither.hurt",
+        "files": [
+          "/assets/sounds/mob/wither/hurt1.ogg",
+          "/assets/sounds/mob/wither/hurt2.ogg",
+          "/assets/sounds/mob/wither/hurt3.ogg",
+          "/assets/sounds/mob/wither/hurt4.ogg"
+        ]
+      },
+      {
+        "name": "Wither greift an",
+        "event": "entity.wither.shoot",
+        "files": [
+          "/assets/sounds/mob/wither/shoot.ogg"
+        ]
+      },
+      {
+        "name": "Wither entfesselt",
+        "event": "entity.wither.spawn",
+        "files": [
+          "/assets/sounds/mob/wither/spawn.ogg"
+        ]
+      }
+    ],
     "health": {
       "java": 300,
       "bedrock_einfach": 300,
@@ -281,6 +416,55 @@
     "knockback_resistance": 1,
     "loot_table": "minecraft:entities/wither",
     "java_entity_id": "minecraft:wither",
-    "bedrock_entity_id": "minecraft:wither"
+    "bedrock_entity_id": "minecraft:wither",
+    "game": {
+      "version": "26.3",
+      "attributes": [
+        {
+          "id": "max_health",
+          "name": "Maximale Gesundheit",
+          "value": 300.0
+        },
+        {
+          "id": "attack_damage",
+          "name": "Angriffsschaden",
+          "value": 2.0
+        },
+        {
+          "id": "movement_speed",
+          "name": "Geschwindigkeit",
+          "value": 0.6
+        },
+        {
+          "id": "follow_range",
+          "name": "Kreaturen‐Verfolgedistanz",
+          "value": 40.0
+        },
+        {
+          "id": "armor",
+          "name": "Rüstung",
+          "value": 4.0
+        },
+        {
+          "id": "flying_speed",
+          "name": "Fluggeschwindigkeit",
+          "value": 0.6
+        }
+      ],
+      "damage": {
+        "easy": 2.0,
+        "normal": 2.0,
+        "hard": 3.0
+      },
+      "size": {
+        "width": 0.9,
+        "height": 3.5
+      },
+      "category": {
+        "id": "monster",
+        "name": "Monster"
+      },
+      "fire_immune": true
+    }
   }
 ]

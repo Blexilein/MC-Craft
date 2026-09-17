@@ -1,0 +1,472 @@
+{
+ "version": "26.3",
+ "dyes": [
+  {
+   "id": "white",
+   "item": "white_dye",
+   "color": "#F0F0F0",
+   "name": [
+    "Weiß",
+    "White"
+   ]
+  },
+  {
+   "id": "orange",
+   "item": "orange_dye",
+   "color": "#EB8844",
+   "name": [
+    "Orange",
+    "Orange"
+   ]
+  },
+  {
+   "id": "magenta",
+   "item": "magenta_dye",
+   "color": "#C354CD",
+   "name": [
+    "Magenta",
+    "Magenta"
+   ]
+  },
+  {
+   "id": "light_blue",
+   "item": "light_blue_dye",
+   "color": "#6689D3",
+   "name": [
+    "Hellblau",
+    "Light Blue"
+   ]
+  },
+  {
+   "id": "yellow",
+   "item": "yellow_dye",
+   "color": "#DECF2A",
+   "name": [
+    "Gelb",
+    "Yellow"
+   ]
+  },
+  {
+   "id": "lime",
+   "item": "lime_dye",
+   "color": "#41CD34",
+   "name": [
+    "Hellgrün",
+    "Lime"
+   ]
+  },
+  {
+   "id": "pink",
+   "item": "pink_dye",
+   "color": "#D88198",
+   "name": [
+    "Rosa",
+    "Pink"
+   ]
+  },
+  {
+   "id": "gray",
+   "item": "gray_dye",
+   "color": "#434343",
+   "name": [
+    "Grau",
+    "Gray"
+   ]
+  },
+  {
+   "id": "light_gray",
+   "item": "light_gray_dye",
+   "color": "#ABABAB",
+   "name": [
+    "Hellgrau",
+    "Light Gray"
+   ]
+  },
+  {
+   "id": "cyan",
+   "item": "cyan_dye",
+   "color": "#287697",
+   "name": [
+    "Türkis",
+    "Cyan"
+   ]
+  },
+  {
+   "id": "purple",
+   "item": "purple_dye",
+   "color": "#7B2FBE",
+   "name": [
+    "Violett",
+    "Purple"
+   ]
+  },
+  {
+   "id": "blue",
+   "item": "blue_dye",
+   "color": "#253192",
+   "name": [
+    "Blau",
+    "Blue"
+   ]
+  },
+  {
+   "id": "brown",
+   "item": "brown_dye",
+   "color": "#51301A",
+   "name": [
+    "Braun",
+    "Brown"
+   ]
+  },
+  {
+   "id": "green",
+   "item": "green_dye",
+   "color": "#3B511A",
+   "name": [
+    "Grün",
+    "Green"
+   ]
+  },
+  {
+   "id": "red",
+   "item": "red_dye",
+   "color": "#B3312C",
+   "name": [
+    "Rot",
+    "Red"
+   ]
+  },
+  {
+   "id": "black",
+   "item": "black_dye",
+   "color": "#1E1B1B",
+   "name": [
+    "Schwarz",
+    "Black"
+   ]
+  }
+ ],
+ "shapes": [
+  {
+   "id": "small_ball",
+   "type": 0,
+   "name": [
+    "Kleine Kugel",
+    "Small Ball"
+   ],
+   "item": null
+  },
+  {
+   "id": "large_ball",
+   "type": 1,
+   "name": [
+    "Große Kugel",
+    "Large Ball"
+   ],
+   "item": "fire_charge"
+  },
+  {
+   "id": "star",
+   "type": 2,
+   "name": [
+    "Sternförmig",
+    "Star-shaped"
+   ],
+   "item": "gold_nugget"
+  },
+  {
+   "id": "creeper",
+   "type": 3,
+   "name": [
+    "Creeperförmig",
+    "Creeper-shaped"
+   ],
+   "item": "creeper_head",
+   "options": [
+    "player_head",
+    "creeper_head",
+    "zombie_head",
+    "skeleton_skull",
+    "wither_skeleton_skull",
+    "dragon_head",
+    "piglin_head"
+   ]
+  },
+  {
+   "id": "burst",
+   "type": 4,
+   "name": [
+    "Explosion",
+    "Burst"
+   ],
+   "item": "feather"
+  }
+ ],
+ "recipe": {
+  "fuel": "gunpowder",
+  "trail": "diamond",
+  "twinkle": "glowstone_dust",
+  "star": "firework_star",
+  "shell": "paper",
+  "fade_target": "firework_star",
+  "rocket": "firework_rocket",
+  "rocket_count": 3,
+  "max_fuel": 3,
+  "grid": 9
+ },
+ "limits": {
+  "flight": 255,
+  "explosions": 256
+ },
+ "texts": {
+  "flight": [
+   "Flugdauer: %s",
+   "Flight Duration: %s"
+  ],
+  "multiple": [
+   "%s× %s",
+   "%s x %s"
+  ],
+  "fade_to": [
+   "Übergang zu",
+   "Fade to"
+  ],
+  "trail": [
+   "Schweif",
+   "Trail"
+  ],
+  "twinkle": [
+   "Funkeln",
+   "Twinkle"
+  ],
+  "custom": [
+   "Benutzerdefiniert",
+   "Custom"
+  ],
+  "crafting_table": [
+   "Werkbank",
+   "Crafting Table"
+  ],
+  "sub_launch": [
+   "Feuerwerk zündet",
+   "Firework launches"
+  ],
+  "sub_blast": [
+   "Feuerwerk explodiert",
+   "Firework blasts"
+  ],
+  "sub_twinkle": [
+   "Feuerwerk funkelt",
+   "Firework twinkles"
+  ]
+ },
+ "items": {
+  "white_dye": [
+   "Weißer Farbstoff",
+   "White Dye",
+   "/assets/img/textures/item/white_dye.png"
+  ],
+  "orange_dye": [
+   "Oranger Farbstoff",
+   "Orange Dye",
+   "/assets/img/textures/item/orange_dye.png"
+  ],
+  "magenta_dye": [
+   "Magenta Farbstoff",
+   "Magenta Dye",
+   "/assets/img/textures/item/magenta_dye.png"
+  ],
+  "light_blue_dye": [
+   "Hellblauer Farbstoff",
+   "Light Blue Dye",
+   "/assets/img/textures/item/light_blue_dye.png"
+  ],
+  "yellow_dye": [
+   "Gelber Farbstoff",
+   "Yellow Dye",
+   "/assets/img/textures/item/yellow_dye.png"
+  ],
+  "lime_dye": [
+   "Hellgrüner Farbstoff",
+   "Lime Dye",
+   "/assets/img/textures/item/lime_dye.png"
+  ],
+  "pink_dye": [
+   "Rosa Farbstoff",
+   "Pink Dye",
+   "/assets/img/textures/item/pink_dye.png"
+  ],
+  "gray_dye": [
+   "Grauer Farbstoff",
+   "Gray Dye",
+   "/assets/img/textures/item/gray_dye.png"
+  ],
+  "light_gray_dye": [
+   "Hellgrauer Farbstoff",
+   "Light Gray Dye",
+   "/assets/img/textures/item/light_gray_dye.png"
+  ],
+  "cyan_dye": [
+   "Türkiser Farbstoff",
+   "Cyan Dye",
+   "/assets/img/textures/item/cyan_dye.png"
+  ],
+  "purple_dye": [
+   "Violetter Farbstoff",
+   "Purple Dye",
+   "/assets/img/textures/item/purple_dye.png"
+  ],
+  "blue_dye": [
+   "Blauer Farbstoff",
+   "Blue Dye",
+   "/assets/img/textures/item/blue_dye.png"
+  ],
+  "brown_dye": [
+   "Brauner Farbstoff",
+   "Brown Dye",
+   "/assets/img/textures/item/brown_dye.png"
+  ],
+  "green_dye": [
+   "Grüner Farbstoff",
+   "Green Dye",
+   "/assets/img/textures/item/green_dye.png"
+  ],
+  "red_dye": [
+   "Roter Farbstoff",
+   "Red Dye",
+   "/assets/img/textures/item/red_dye.png"
+  ],
+  "black_dye": [
+   "Schwarzer Farbstoff",
+   "Black Dye",
+   "/assets/img/textures/item/black_dye.png"
+  ],
+  "fire_charge": [
+   "Feuerkugel",
+   "Fire Charge",
+   "/assets/img/textures/item/fire_charge.png"
+  ],
+  "gold_nugget": [
+   "Goldklumpen",
+   "Gold Nugget",
+   "/assets/img/textures/item/gold_nugget.png"
+  ],
+  "creeper_head": [
+   "Creeperkopf",
+   "Creeper Head",
+   "/assets/img/blocks/Creeper_Head.png"
+  ],
+  "player_head": [
+   "Spielerkopf",
+   "Player Head",
+   "/assets/img/blocks/Player_Head.png"
+  ],
+  "zombie_head": [
+   "Zombiekopf",
+   "Zombie Head",
+   "/assets/img/blocks/Zombie_Head.png"
+  ],
+  "skeleton_skull": [
+   "Skelettschädel",
+   "Skeleton Skull",
+   "/assets/img/blocks/Skeleton_Skull.png"
+  ],
+  "wither_skeleton_skull": [
+   "Wither-Skelettschädel",
+   "Wither Skeleton Skull",
+   "/assets/img/blocks/Wither_Skeleton_Skull.png"
+  ],
+  "dragon_head": [
+   "Drachenkopf",
+   "Dragon Head",
+   "/assets/img/blocks/Dragon_Head.png"
+  ],
+  "piglin_head": [
+   "Piglinkopf",
+   "Piglin Head",
+   "/assets/img/blocks/Piglin_Head.png"
+  ],
+  "feather": [
+   "Feder",
+   "Feather",
+   "/assets/img/textures/item/feather.png"
+  ],
+  "gunpowder": [
+   "Schwarzpulver",
+   "Gunpowder",
+   "/assets/img/textures/item/gunpowder.png"
+  ],
+  "diamond": [
+   "Diamant",
+   "Diamond",
+   "/assets/img/textures/item/diamond.png"
+  ],
+  "glowstone_dust": [
+   "Leuchtsteinstaub",
+   "Glowstone Dust",
+   "/assets/img/textures/item/glowstone_dust.png"
+  ],
+  "firework_star": [
+   "Feuerwerksstern",
+   "Firework Star",
+   "/assets/img/items/Firework_Star.png"
+  ],
+  "paper": [
+   "Papier",
+   "Paper",
+   "/assets/img/textures/item/paper.png"
+  ],
+  "firework_rocket": [
+   "Feuerwerksrakete",
+   "Firework Rocket",
+   "/assets/img/textures/item/firework_rocket.png"
+  ],
+  "crafting_table": [
+   "Werkbank",
+   "Crafting Table",
+   "/assets/img/blocks/Crafting_Table.png"
+  ]
+ },
+ "textures": {
+  "particles": "/assets/img/fireworks/particles.png",
+  "spark_order": [
+   7,
+   6,
+   5,
+   4,
+   3,
+   2,
+   1,
+   0
+  ],
+  "ground": "/assets/img/fireworks/ground.png",
+  "moon": "/assets/img/textures/environment/celestial/moon/full_moon.png",
+  "rocket": "/assets/img/textures/item/firework_rocket.png",
+  "star": "/assets/img/textures/item/firework_star.png",
+  "star_overlay": "/assets/img/textures/item/firework_star_overlay.png",
+  "star_default": "#8A8A8A"
+ },
+ "sounds": {
+  "launch": [
+   "/assets/sounds/fireworks/launch1.ogg"
+  ],
+  "blast": [
+   "/assets/sounds/fireworks/blast1.ogg"
+  ],
+  "blast_far": [
+   "/assets/sounds/fireworks/blast_far1.ogg"
+  ],
+  "large_blast": [
+   "/assets/sounds/fireworks/largeblast1.ogg"
+  ],
+  "large_blast_far": [
+   "/assets/sounds/fireworks/largeblast_far1.ogg"
+  ],
+  "twinkle": [
+   "/assets/sounds/fireworks/twinkle1.ogg"
+  ],
+  "twinkle_far": [
+   "/assets/sounds/fireworks/twinkle_far1.ogg"
+  ]
+ }
+}

@@ -18,36 +18,36 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://mc-craft.com/"/>
   </url>
   <url>
-    <loc>https://mc-craft.com/blog/de/text-converter.html</loc>
+    <loc>https://mc-craft.com/blog/de/text-konverter.html</loc>
     <lastmod>2026-08-28</lastmod>
     <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="de" href="https://mc-craft.com/blog/de/text-converter.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://mc-craft.com/blog/de/text-konverter.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://mc-craft.com/blog/en/text-converter.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://mc-craft.com/blog/de/text-converter.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mc-craft.com/blog/de/text-konverter.html"/>
   </url>
   <url>
     <loc>https://mc-craft.com/blog/en/text-converter.html</loc>
     <lastmod>2026-08-28</lastmod>
     <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="de" href="https://mc-craft.com/blog/de/text-converter.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://mc-craft.com/blog/de/text-konverter.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://mc-craft.com/blog/en/text-converter.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://mc-craft.com/blog/de/text-converter.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mc-craft.com/blog/de/text-konverter.html"/>
   </url>
   <url>
-    <loc>https://mc-craft.com/blog/de/structure-converter.html</loc>
+    <loc>https://mc-craft.com/blog/de/struktur-konverter.html</loc>
     <lastmod>2026-08-28</lastmod>
     <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="de" href="https://mc-craft.com/blog/de/structure-converter.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://mc-craft.com/blog/de/struktur-konverter.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://mc-craft.com/blog/en/structure-converter.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://mc-craft.com/blog/de/structure-converter.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mc-craft.com/blog/de/struktur-konverter.html"/>
   </url>
   <url>
     <loc>https://mc-craft.com/blog/en/structure-converter.html</loc>
     <lastmod>2026-08-28</lastmod>
     <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="de" href="https://mc-craft.com/blog/de/structure-converter.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://mc-craft.com/blog/de/struktur-konverter.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://mc-craft.com/blog/en/structure-converter.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://mc-craft.com/blog/de/structure-converter.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mc-craft.com/blog/de/struktur-konverter.html"/>
   </url>
   <url>
     <loc>https://mc-craft.com/blog/de/map-art-generator.html</loc>
@@ -66,20 +66,52 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://mc-craft.com/blog/de/map-art-generator.html"/>
   </url>
   <url>
-    <loc>https://mc-craft.com/blog/de/color-text.html</loc>
+    <loc>https://mc-craft.com/blog/de/nether-koordinaten-rechner.html</loc>
+    <lastmod>2026-09-11</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://mc-craft.com/blog/de/nether-koordinaten-rechner.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mc-craft.com/blog/en/nether-coordinate-calculator.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mc-craft.com/blog/de/nether-koordinaten-rechner.html"/>
+  </url>
+  <url>
+    <loc>https://mc-craft.com/blog/en/nether-coordinate-calculator.html</loc>
+    <lastmod>2026-09-11</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://mc-craft.com/blog/de/nether-koordinaten-rechner.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mc-craft.com/blog/en/nether-coordinate-calculator.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mc-craft.com/blog/de/nether-koordinaten-rechner.html"/>
+  </url>
+  <url>
+    <loc>https://mc-craft.com/blog/de/minecraft-befehl-generator.html</loc>
+    <lastmod>2026-09-11</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://mc-craft.com/blog/de/minecraft-befehl-generator.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mc-craft.com/blog/en/minecraft-command-generator.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mc-craft.com/blog/de/minecraft-befehl-generator.html"/>
+  </url>
+  <url>
+    <loc>https://mc-craft.com/blog/en/minecraft-command-generator.html</loc>
+    <lastmod>2026-09-11</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://mc-craft.com/blog/de/minecraft-befehl-generator.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mc-craft.com/blog/en/minecraft-command-generator.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mc-craft.com/blog/de/minecraft-befehl-generator.html"/>
+  </url>
+  <url>
+    <loc>https://mc-craft.com/blog/de/farbtext.html</loc>
     <lastmod>2026-08-28</lastmod>
     <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="de" href="https://mc-craft.com/blog/de/color-text.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://mc-craft.com/blog/de/farbtext.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://mc-craft.com/blog/en/color-text.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://mc-craft.com/blog/de/color-text.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mc-craft.com/blog/de/farbtext.html"/>
   </url>
   <url>
     <loc>https://mc-craft.com/blog/en/color-text.html</loc>
     <lastmod>2026-08-28</lastmod>
     <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="de" href="https://mc-craft.com/blog/de/color-text.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://mc-craft.com/blog/de/farbtext.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://mc-craft.com/blog/en/color-text.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://mc-craft.com/blog/de/color-text.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mc-craft.com/blog/de/farbtext.html"/>
   </url>
   <url>
     <loc>https://mc-craft.com/blog/de/items.html</loc>
@@ -114,20 +146,20 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://mc-craft.com/blog/de/mobs.html"/>
   </url>
   <url>
-    <loc>https://mc-craft.com/blog/de/server-status.html</loc>
+    <loc>https://mc-craft.com/blog/de/serverstatus.html</loc>
     <lastmod>2026-08-28</lastmod>
     <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="de" href="https://mc-craft.com/blog/de/server-status.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://mc-craft.com/blog/de/serverstatus.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://mc-craft.com/blog/en/server-status.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://mc-craft.com/blog/de/server-status.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mc-craft.com/blog/de/serverstatus.html"/>
   </url>
   <url>
     <loc>https://mc-craft.com/blog/en/server-status.html</loc>
     <lastmod>2026-08-28</lastmod>
     <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="de" href="https://mc-craft.com/blog/de/server-status.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://mc-craft.com/blog/de/serverstatus.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://mc-craft.com/blog/en/server-status.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://mc-craft.com/blog/de/server-status.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mc-craft.com/blog/de/serverstatus.html"/>
   </url>
   <url>
     <loc>https://mc-craft.com/blog/de/minecraft-api-status.html</loc>
@@ -146,20 +178,36 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://mc-craft.com/blog/de/minecraft-api-status.html"/>
   </url>
   <url>
-    <loc>https://mc-craft.com/blog/de/skin-lookup.html</loc>
+    <loc>https://mc-craft.com/blog/de/api-dokumentation.html</loc>
+    <lastmod>2026-09-06</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://mc-craft.com/blog/de/api-dokumentation.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mc-craft.com/blog/en/api-documentation.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mc-craft.com/blog/de/api-dokumentation.html"/>
+  </url>
+  <url>
+    <loc>https://mc-craft.com/blog/en/api-documentation.html</loc>
+    <lastmod>2026-09-06</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://mc-craft.com/blog/de/api-dokumentation.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mc-craft.com/blog/en/api-documentation.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mc-craft.com/blog/de/api-dokumentation.html"/>
+  </url>
+  <url>
+    <loc>https://mc-craft.com/blog/de/skin-suche.html</loc>
     <lastmod>2026-08-28</lastmod>
     <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="de" href="https://mc-craft.com/blog/de/skin-lookup.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://mc-craft.com/blog/de/skin-suche.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://mc-craft.com/blog/en/skin-lookup.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://mc-craft.com/blog/de/skin-lookup.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mc-craft.com/blog/de/skin-suche.html"/>
   </url>
   <url>
     <loc>https://mc-craft.com/blog/en/skin-lookup.html</loc>
     <lastmod>2026-08-28</lastmod>
     <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="de" href="https://mc-craft.com/blog/de/skin-lookup.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://mc-craft.com/blog/de/skin-suche.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://mc-craft.com/blog/en/skin-lookup.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://mc-craft.com/blog/de/skin-lookup.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mc-craft.com/blog/de/skin-suche.html"/>
   </url>
   <url>
     <loc>https://mc-craft.com/blog/de/skin-editor.html</loc>
@@ -178,20 +226,20 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://mc-craft.com/blog/de/skin-editor.html"/>
   </url>
   <url>
-    <loc>https://mc-craft.com/blog/de/day-night-cycle.html</loc>
+    <loc>https://mc-craft.com/blog/de/tag-nacht-zyklus.html</loc>
     <lastmod>2026-08-28</lastmod>
     <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="de" href="https://mc-craft.com/blog/de/day-night-cycle.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://mc-craft.com/blog/de/tag-nacht-zyklus.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://mc-craft.com/blog/en/day-night-cycle.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://mc-craft.com/blog/de/day-night-cycle.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mc-craft.com/blog/de/tag-nacht-zyklus.html"/>
   </url>
   <url>
     <loc>https://mc-craft.com/blog/en/day-night-cycle.html</loc>
     <lastmod>2026-08-28</lastmod>
     <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="de" href="https://mc-craft.com/blog/de/day-night-cycle.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://mc-craft.com/blog/de/tag-nacht-zyklus.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://mc-craft.com/blog/en/day-night-cycle.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://mc-craft.com/blog/de/day-night-cycle.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mc-craft.com/blog/de/tag-nacht-zyklus.html"/>
   </url>
   <url>
     <loc>https://mc-craft.com/blog/de/end_poem.html</loc>
@@ -210,68 +258,132 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://mc-craft.com/blog/de/end_poem.html"/>
   </url>
   <url>
-    <loc>https://mc-craft.com/blog/de/minecraft-capes.html</loc>
+    <loc>https://mc-craft.com/blog/de/cape-datenbank.html</loc>
     <lastmod>2026-08-28</lastmod>
     <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="de" href="https://mc-craft.com/blog/de/minecraft-capes.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://mc-craft.com/blog/de/cape-datenbank.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://mc-craft.com/blog/en/minecraft-capes.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://mc-craft.com/blog/de/minecraft-capes.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mc-craft.com/blog/de/cape-datenbank.html"/>
   </url>
   <url>
     <loc>https://mc-craft.com/blog/en/minecraft-capes.html</loc>
     <lastmod>2026-08-28</lastmod>
     <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="de" href="https://mc-craft.com/blog/de/minecraft-capes.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://mc-craft.com/blog/de/cape-datenbank.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://mc-craft.com/blog/en/minecraft-capes.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://mc-craft.com/blog/de/minecraft-capes.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mc-craft.com/blog/de/cape-datenbank.html"/>
   </url>
   <url>
-    <loc>https://mc-craft.com/blog/de/minecraft-versions.html</loc>
+    <loc>https://mc-craft.com/blog/de/kopf-datenbank.html</loc>
+    <lastmod>2026-08-29</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://mc-craft.com/blog/de/kopf-datenbank.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mc-craft.com/blog/en/minecraft-heads.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mc-craft.com/blog/de/kopf-datenbank.html"/>
+  </url>
+  <url>
+    <loc>https://mc-craft.com/blog/en/minecraft-heads.html</loc>
+    <lastmod>2026-08-29</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://mc-craft.com/blog/de/kopf-datenbank.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mc-craft.com/blog/en/minecraft-heads.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mc-craft.com/blog/de/kopf-datenbank.html"/>
+  </url>
+  <url>
+    <loc>https://mc-craft.com/blog/de/kopf-textur-generator.html</loc>
+    <lastmod>2026-09-10</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://mc-craft.com/blog/de/kopf-textur-generator.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mc-craft.com/blog/en/head-texture-generator.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mc-craft.com/blog/de/kopf-textur-generator.html"/>
+  </url>
+  <url>
+    <loc>https://mc-craft.com/blog/en/head-texture-generator.html</loc>
+    <lastmod>2026-09-10</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://mc-craft.com/blog/de/kopf-textur-generator.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mc-craft.com/blog/en/head-texture-generator.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mc-craft.com/blog/de/kopf-textur-generator.html"/>
+  </url>
+  <url>
+    <loc>https://mc-craft.com/blog/de/skin-posierer.html</loc>
+    <lastmod>2026-08-30</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://mc-craft.com/blog/de/skin-posierer.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mc-craft.com/blog/en/skin-poser.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mc-craft.com/blog/de/skin-posierer.html"/>
+  </url>
+  <url>
+    <loc>https://mc-craft.com/blog/en/skin-poser.html</loc>
+    <lastmod>2026-08-30</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://mc-craft.com/blog/de/skin-posierer.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mc-craft.com/blog/en/skin-poser.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mc-craft.com/blog/de/skin-posierer.html"/>
+  </url>
+  <url>
+    <loc>https://mc-craft.com/blog/de/chibi-skin-ersteller.html</loc>
+    <lastmod>2026-08-30</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://mc-craft.com/blog/de/chibi-skin-ersteller.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mc-craft.com/blog/en/chibi-skin-maker.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mc-craft.com/blog/de/chibi-skin-ersteller.html"/>
+  </url>
+  <url>
+    <loc>https://mc-craft.com/blog/en/chibi-skin-maker.html</loc>
+    <lastmod>2026-08-30</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://mc-craft.com/blog/de/chibi-skin-ersteller.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mc-craft.com/blog/en/chibi-skin-maker.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mc-craft.com/blog/de/chibi-skin-ersteller.html"/>
+  </url>
+  <url>
+    <loc>https://mc-craft.com/blog/de/minecraft-versionen.html</loc>
     <lastmod>2026-08-28</lastmod>
     <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="de" href="https://mc-craft.com/blog/de/minecraft-versions.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://mc-craft.com/blog/de/minecraft-versionen.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://mc-craft.com/blog/en/minecraft-versions.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://mc-craft.com/blog/de/minecraft-versions.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mc-craft.com/blog/de/minecraft-versionen.html"/>
   </url>
   <url>
     <loc>https://mc-craft.com/blog/en/minecraft-versions.html</loc>
     <lastmod>2026-08-28</lastmod>
     <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="de" href="https://mc-craft.com/blog/de/minecraft-versions.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://mc-craft.com/blog/de/minecraft-versionen.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://mc-craft.com/blog/en/minecraft-versions.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://mc-craft.com/blog/de/minecraft-versions.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mc-craft.com/blog/de/minecraft-versionen.html"/>
   </url>
   <url>
-    <loc>https://mc-craft.com/blog/de/minecraft-skins.html</loc>
+    <loc>https://mc-craft.com/blog/de/skin-bibliothek.html</loc>
     <lastmod>2026-08-28</lastmod>
     <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="de" href="https://mc-craft.com/blog/de/minecraft-skins.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://mc-craft.com/blog/de/skin-bibliothek.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://mc-craft.com/blog/en/minecraft-skins.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://mc-craft.com/blog/de/minecraft-skins.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mc-craft.com/blog/de/skin-bibliothek.html"/>
   </url>
   <url>
     <loc>https://mc-craft.com/blog/en/minecraft-skins.html</loc>
     <lastmod>2026-08-28</lastmod>
     <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="de" href="https://mc-craft.com/blog/de/minecraft-skins.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://mc-craft.com/blog/de/skin-bibliothek.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://mc-craft.com/blog/en/minecraft-skins.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://mc-craft.com/blog/de/minecraft-skins.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mc-craft.com/blog/de/skin-bibliothek.html"/>
   </url>
   <url>
-    <loc>https://mc-craft.com/blog/de/beacon-color-mixer.html</loc>
+    <loc>https://mc-craft.com/blog/de/beacon-farbmischer.html</loc>
     <lastmod>2026-08-28</lastmod>
     <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="de" href="https://mc-craft.com/blog/de/beacon-color-mixer.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://mc-craft.com/blog/de/beacon-farbmischer.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://mc-craft.com/blog/en/beacon-color-mixer.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://mc-craft.com/blog/de/beacon-color-mixer.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mc-craft.com/blog/de/beacon-farbmischer.html"/>
   </url>
   <url>
     <loc>https://mc-craft.com/blog/en/beacon-color-mixer.html</loc>
     <lastmod>2026-08-28</lastmod>
     <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="de" href="https://mc-craft.com/blog/de/beacon-color-mixer.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://mc-craft.com/blog/de/beacon-farbmischer.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://mc-craft.com/blog/en/beacon-color-mixer.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://mc-craft.com/blog/de/beacon-color-mixer.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mc-craft.com/blog/de/beacon-farbmischer.html"/>
   </url>
   <url>
     <loc>https://mc-craft.com/blog/de/qr-generator.html</loc>
@@ -290,52 +402,132 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://mc-craft.com/blog/de/qr-generator.html"/>
   </url>
   <url>
-    <loc>https://mc-craft.com/blog/de/advancement-generator.html</loc>
+    <loc>https://mc-craft.com/blog/de/erfolge-generator.html</loc>
     <lastmod>2026-08-28</lastmod>
     <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="de" href="https://mc-craft.com/blog/de/advancement-generator.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://mc-craft.com/blog/de/erfolge-generator.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://mc-craft.com/blog/en/advancement-generator.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://mc-craft.com/blog/de/advancement-generator.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mc-craft.com/blog/de/erfolge-generator.html"/>
   </url>
   <url>
     <loc>https://mc-craft.com/blog/en/advancement-generator.html</loc>
     <lastmod>2026-08-28</lastmod>
     <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="de" href="https://mc-craft.com/blog/de/advancement-generator.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://mc-craft.com/blog/de/erfolge-generator.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://mc-craft.com/blog/en/advancement-generator.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://mc-craft.com/blog/de/advancement-generator.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mc-craft.com/blog/de/erfolge-generator.html"/>
   </url>
   <url>
-    <loc>https://mc-craft.com/blog/de/about.html</loc>
+    <loc>https://mc-craft.com/blog/de/schild-generator.html</loc>
+    <lastmod>2026-09-16</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://mc-craft.com/blog/de/schild-generator.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mc-craft.com/blog/en/sign-generator.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mc-craft.com/blog/de/schild-generator.html"/>
+  </url>
+  <url>
+    <loc>https://mc-craft.com/blog/en/sign-generator.html</loc>
+    <lastmod>2026-09-16</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://mc-craft.com/blog/de/schild-generator.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mc-craft.com/blog/en/sign-generator.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mc-craft.com/blog/de/schild-generator.html"/>
+  </url>
+  <url>
+    <loc>https://mc-craft.com/blog/de/crafting-rezepte.html</loc>
+    <lastmod>2026-09-16</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://mc-craft.com/blog/de/crafting-rezepte.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mc-craft.com/blog/en/crafting-recipes.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mc-craft.com/blog/de/crafting-rezepte.html"/>
+  </url>
+  <url>
+    <loc>https://mc-craft.com/blog/en/crafting-recipes.html</loc>
+    <lastmod>2026-09-16</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://mc-craft.com/blog/de/crafting-rezepte.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mc-craft.com/blog/en/crafting-recipes.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mc-craft.com/blog/de/crafting-rezepte.html"/>
+  </url>
+  <url>
+    <loc>https://mc-craft.com/blog/de/schematic-viewer.html</loc>
+    <lastmod>2026-09-16</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://mc-craft.com/blog/de/schematic-viewer.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mc-craft.com/blog/en/schematic-viewer.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mc-craft.com/blog/de/schematic-viewer.html"/>
+  </url>
+  <url>
+    <loc>https://mc-craft.com/blog/en/schematic-viewer.html</loc>
+    <lastmod>2026-09-16</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://mc-craft.com/blog/de/schematic-viewer.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mc-craft.com/blog/en/schematic-viewer.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mc-craft.com/blog/de/schematic-viewer.html"/>
+  </url>
+  <url>
+    <loc>https://mc-craft.com/blog/de/ruestungsbesatz-generator.html</loc>
+    <lastmod>2026-09-16</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://mc-craft.com/blog/de/ruestungsbesatz-generator.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mc-craft.com/blog/en/armor-trim-generator.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mc-craft.com/blog/de/ruestungsbesatz-generator.html"/>
+  </url>
+  <url>
+    <loc>https://mc-craft.com/blog/en/armor-trim-generator.html</loc>
+    <lastmod>2026-09-16</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://mc-craft.com/blog/de/ruestungsbesatz-generator.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mc-craft.com/blog/en/armor-trim-generator.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mc-craft.com/blog/de/ruestungsbesatz-generator.html"/>
+  </url>
+  <url>
+    <loc>https://mc-craft.com/blog/de/feuerwerk-generator.html</loc>
+    <lastmod>2026-09-17</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://mc-craft.com/blog/de/feuerwerk-generator.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mc-craft.com/blog/en/firework-generator.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mc-craft.com/blog/de/feuerwerk-generator.html"/>
+  </url>
+  <url>
+    <loc>https://mc-craft.com/blog/en/firework-generator.html</loc>
+    <lastmod>2026-09-17</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://mc-craft.com/blog/de/feuerwerk-generator.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mc-craft.com/blog/en/firework-generator.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mc-craft.com/blog/de/feuerwerk-generator.html"/>
+  </url>
+  <url>
+    <loc>https://mc-craft.com/blog/de/über-uns.html</loc>
     <lastmod>2026-08-28</lastmod>
     <priority>0.6</priority>
-    <xhtml:link rel="alternate" hreflang="de" href="https://mc-craft.com/blog/de/about.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://mc-craft.com/blog/de/über-uns.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://mc-craft.com/blog/en/about.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://mc-craft.com/blog/de/about.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mc-craft.com/blog/de/über-uns.html"/>
   </url>
   <url>
     <loc>https://mc-craft.com/blog/en/about.html</loc>
     <lastmod>2026-08-28</lastmod>
     <priority>0.6</priority>
-    <xhtml:link rel="alternate" hreflang="de" href="https://mc-craft.com/blog/de/about.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://mc-craft.com/blog/de/über-uns.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://mc-craft.com/blog/en/about.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://mc-craft.com/blog/de/about.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mc-craft.com/blog/de/über-uns.html"/>
   </url>
   <url>
-    <loc>https://mc-craft.com/blog/de/history.html</loc>
+    <loc>https://mc-craft.com/blog/de/geschichte.html</loc>
     <lastmod>2026-08-28</lastmod>
     <priority>0.6</priority>
-    <xhtml:link rel="alternate" hreflang="de" href="https://mc-craft.com/blog/de/history.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://mc-craft.com/blog/de/geschichte.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://mc-craft.com/blog/en/history.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://mc-craft.com/blog/de/history.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mc-craft.com/blog/de/geschichte.html"/>
   </url>
   <url>
     <loc>https://mc-craft.com/blog/en/history.html</loc>
     <lastmod>2026-08-28</lastmod>
     <priority>0.6</priority>
-    <xhtml:link rel="alternate" hreflang="de" href="https://mc-craft.com/blog/de/history.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://mc-craft.com/blog/de/geschichte.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://mc-craft.com/blog/en/history.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://mc-craft.com/blog/de/history.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mc-craft.com/blog/de/geschichte.html"/>
   </url>
   <url>
     <loc>https://mc-craft.com/blog/de/team.html</loc>
@@ -370,20 +562,20 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://mc-craft.com/blog/de/changelog.html"/>
   </url>
   <url>
-    <loc>https://mc-craft.com/blog/de/coming-soon.html</loc>
+    <loc>https://mc-craft.com/blog/de/in-kuerze.html</loc>
     <lastmod>2026-08-28</lastmod>
     <priority>0.6</priority>
-    <xhtml:link rel="alternate" hreflang="de" href="https://mc-craft.com/blog/de/coming-soon.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://mc-craft.com/blog/de/in-kuerze.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://mc-craft.com/blog/en/coming-soon.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://mc-craft.com/blog/de/coming-soon.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mc-craft.com/blog/de/in-kuerze.html"/>
   </url>
   <url>
     <loc>https://mc-craft.com/blog/en/coming-soon.html</loc>
     <lastmod>2026-08-28</lastmod>
     <priority>0.6</priority>
-    <xhtml:link rel="alternate" hreflang="de" href="https://mc-craft.com/blog/de/coming-soon.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://mc-craft.com/blog/de/in-kuerze.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://mc-craft.com/blog/en/coming-soon.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://mc-craft.com/blog/de/coming-soon.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mc-craft.com/blog/de/in-kuerze.html"/>
   </url>
   <url>
     <loc>https://mc-craft.com/blog/de/faq.html</loc>
@@ -418,20 +610,20 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://mc-craft.com/blog/de/support.html"/>
   </url>
   <url>
-    <loc>https://mc-craft.com/blog/de/bug-report.html</loc>
+    <loc>https://mc-craft.com/blog/de/bug-melden.html</loc>
     <lastmod>2026-08-28</lastmod>
     <priority>0.5</priority>
-    <xhtml:link rel="alternate" hreflang="de" href="https://mc-craft.com/blog/de/bug-report.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://mc-craft.com/blog/de/bug-melden.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://mc-craft.com/blog/en/bug-report.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://mc-craft.com/blog/de/bug-report.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mc-craft.com/blog/de/bug-melden.html"/>
   </url>
   <url>
     <loc>https://mc-craft.com/blog/en/bug-report.html</loc>
     <lastmod>2026-08-28</lastmod>
     <priority>0.5</priority>
-    <xhtml:link rel="alternate" hreflang="de" href="https://mc-craft.com/blog/de/bug-report.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://mc-craft.com/blog/de/bug-melden.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://mc-craft.com/blog/en/bug-report.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://mc-craft.com/blog/de/bug-report.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mc-craft.com/blog/de/bug-melden.html"/>
   </url>
   <url>
     <loc>https://mc-craft.com/blog/de/e-mails.html</loc>
@@ -454,15 +646,15 @@
     <lastmod>2026-08-28</lastmod>
     <priority>0.3</priority>
     <xhtml:link rel="alternate" hreflang="de" href="https://mc-craft.com/blog/de/impressum.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://mc-craft.com/blog/en/impressum.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mc-craft.com/blog/en/imprint.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://mc-craft.com/blog/de/impressum.html"/>
   </url>
   <url>
-    <loc>https://mc-craft.com/blog/en/impressum.html</loc>
+    <loc>https://mc-craft.com/blog/en/imprint.html</loc>
     <lastmod>2026-08-28</lastmod>
     <priority>0.3</priority>
     <xhtml:link rel="alternate" hreflang="de" href="https://mc-craft.com/blog/de/impressum.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://mc-craft.com/blog/en/impressum.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mc-craft.com/blog/en/imprint.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://mc-craft.com/blog/de/impressum.html"/>
   </url>
   <url>
@@ -470,15 +662,15 @@
     <lastmod>2026-08-28</lastmod>
     <priority>0.3</priority>
     <xhtml:link rel="alternate" hreflang="de" href="https://mc-craft.com/blog/de/datenschutz.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://mc-craft.com/blog/en/datenschutz.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mc-craft.com/blog/en/privacy-policy.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://mc-craft.com/blog/de/datenschutz.html"/>
   </url>
   <url>
-    <loc>https://mc-craft.com/blog/en/datenschutz.html</loc>
+    <loc>https://mc-craft.com/blog/en/privacy-policy.html</loc>
     <lastmod>2026-08-28</lastmod>
     <priority>0.3</priority>
     <xhtml:link rel="alternate" hreflang="de" href="https://mc-craft.com/blog/de/datenschutz.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://mc-craft.com/blog/en/datenschutz.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mc-craft.com/blog/en/privacy-policy.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://mc-craft.com/blog/de/datenschutz.html"/>
   </url>
   <url>
@@ -486,15 +678,15 @@
     <lastmod>2026-08-28</lastmod>
     <priority>0.3</priority>
     <xhtml:link rel="alternate" hreflang="de" href="https://mc-craft.com/blog/de/nutzungsbedingungen.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://mc-craft.com/blog/en/nutzungsbedingungen.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mc-craft.com/blog/en/terms-of-use.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://mc-craft.com/blog/de/nutzungsbedingungen.html"/>
   </url>
   <url>
-    <loc>https://mc-craft.com/blog/en/nutzungsbedingungen.html</loc>
+    <loc>https://mc-craft.com/blog/en/terms-of-use.html</loc>
     <lastmod>2026-08-28</lastmod>
     <priority>0.3</priority>
     <xhtml:link rel="alternate" hreflang="de" href="https://mc-craft.com/blog/de/nutzungsbedingungen.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://mc-craft.com/blog/en/nutzungsbedingungen.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mc-craft.com/blog/en/terms-of-use.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://mc-craft.com/blog/de/nutzungsbedingungen.html"/>
   </url>
   <url>

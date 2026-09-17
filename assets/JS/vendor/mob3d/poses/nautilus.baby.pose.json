@@ -1,0 +1,1 @@
+{"animations":{"animation.nautilus.look_at_target":{"loop":true,"animation_length":1,"bones":{"head":{"rotation":[0,"variable.yHeadRot",0]},"body":{"rotation":["variable.xHeadRot",0,0]}}}}}

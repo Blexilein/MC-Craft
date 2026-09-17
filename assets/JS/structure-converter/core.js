@@ -4,7 +4,9 @@
 // language strings — every error is a plain StructureConverterError with a
 // stable .code that the per-language UI layer translates.
 
-const DEFAULT_DATA_VERSION = 5015;
+const DEFAULT_DATA_VERSION = 5023; // Minecraft 26.3
+// From this data version on, block states are stored as {id, properties} instead of {Name, Properties}.
+const BLOCK_STATE_FIELDS_VERSION = 5006;
 
 (function () {
     'use strict';
@@ -308,6 +310,13 @@ const DEFAULT_DATA_VERSION = 5015;
     }
 
     // ===== BLOCK-STATE STRINGS ("minecraft:oak_stairs[facing=east,...]") =====
+    // Block state name in either field spelling (see BLOCK_STATE_FIELDS_VERSION).
+    function stateName(map) {
+        const name = cVal(map, 'Name') ?? cVal(map, 'id');
+        if (name === undefined) throw new StructureConverterError('NBT_PARSE_FAILED', { reason: 'missing required field: Name' });
+        return name;
+    }
+
     function parseBlockStateString(s) {
         s = String(s).trim();
         const open = s.indexOf('[');
@@ -578,8 +587,8 @@ const DEFAULT_DATA_VERSION = 5015;
 
             const paletteItems = cReq(rmap, 'BlockStatePalette').items;
             const palette = paletteItems.map(entryMap => {
-                const nm = cReq(entryMap, 'Name');
-                const propsTag = entryMap.get('Properties');
+                const nm = stateName(entryMap);
+                const propsTag = entryMap.get('Properties') || entryMap.get('properties');
                 const properties = {};
                 if (propsTag) for (const [k, v] of propsTag.value) properties[k] = v.value;
                 return { name: nm, properties };
@@ -871,8 +880,8 @@ const DEFAULT_DATA_VERSION = 5015;
         if (!paletteList) throw new StructureConverterError('MISSING_BLOCKS_DATA', { reason: 'missing palette' });
 
         const palette = paletteList.items.map(m => {
-            const name = cReq(m, 'Name');
-            const propsTag = m.get('Properties');
+            const name = stateName(m);
+            const propsTag = m.get('Properties') || m.get('properties');
             const properties = {};
             if (propsTag) for (const [k, t] of propsTag.value) properties[k] = t.value;
             return { name, properties };
@@ -881,6 +890,7 @@ const DEFAULT_DATA_VERSION = 5015;
 
         const blocksList = cReq(rootMap, 'blocks');
         const blocksWide = new Uint32Array(volume);
+        const listed = new Uint8Array(volume);
         const blockEntities = [];
         for (const m of blocksList.items) {
             const pos = cReq(m, 'pos').items;
@@ -888,6 +898,7 @@ const DEFAULT_DATA_VERSION = 5015;
             if (x < 0 || x >= width || y < 0 || y >= height || z < 0 || z >= length) continue;
             const idx = x + z * width + y * width * length;
             blocksWide[idx] = cReq(m, 'state');
+            listed[idx] = 1;
             const nbtTag = m.get('nbt');
             if (nbtTag && nbtTag.type === TAG.Compound) {
                 const nbtMap = nbtTag.value;
@@ -896,6 +907,7 @@ const DEFAULT_DATA_VERSION = 5015;
                 blockEntities.push({ x, y, z, id: cVal(nbtMap, 'id') || null, extra });
             }
         }
+        fillUnlisted(palette, blocksWide, listed);
         const blocks = pickPaletteArray(volume, palette.length);
         blocks.set(blocksWide);
 
@@ -907,13 +919,42 @@ const DEFAULT_DATA_VERSION = 5015;
         };
     }
 
+    // Positions a structure file does not list are left untouched when placed: structure void.
+    const STRUCTURE_VOID = 'minecraft:structure_void';
+
+    function fillUnlisted(palette, blocksWide, listed) {
+        if (listed.every(v => v)) return;
+        let voidIdx = palette.findIndex(b => b.name === STRUCTURE_VOID);
+        if (voidIdx < 0) {
+            voidIdx = palette.length;
+            palette.push({ name: STRUCTURE_VOID, properties: {} });
+        }
+        for (let i = 0; i < listed.length; i++) if (!listed[i]) blocksWide[i] = voidIdx;
+    }
+
+    // Formats without "leave as is" get air there instead (WorldEdit/Litematica can skip air when pasting).
+    function voidAsAir(model) {
+        const voidIdx = model.palette.findIndex(b => b.name === STRUCTURE_VOID);
+        if (voidIdx < 0) return model;
+        const airIdx = model.palette.findIndex(b => b.name === 'minecraft:air');
+        if (airIdx < 0) {
+            const palette = model.palette.map((b, i) => (i === voidIdx ? { name: 'minecraft:air', properties: {} } : b));
+            return Object.assign({}, model, { palette });
+        }
+        const blocks = model.blocks.slice();
+        for (let i = 0; i < blocks.length; i++) if (blocks[i] === voidIdx) blocks[i] = airIdx;
+        return Object.assign({}, model, { blocks });
+    }
+
     function writeNbtStructure(model) {
         const { width, height, length } = model;
+        const dataVersion = (model.metadata && model.metadata.dataVersion) || DEFAULT_DATA_VERSION;
+        const [nameKey, propsKey] = dataVersion >= BLOCK_STATE_FIELDS_VERSION ? ['id', 'properties'] : ['Name', 'Properties'];
         const paletteItems = model.palette.map(block => {
-            const entries = [['Name', T_String(block.name)]];
+            const entries = [[nameKey, T_String(block.name)]];
             const propKeys = Object.keys(block.properties || {});
             if (propKeys.length > 0) {
-                entries.push(['Properties', T_Compound(propKeys.map(k => [k, T_String(String(block.properties[k]))]))]);
+                entries.push([propsKey, T_Compound(propKeys.map(k => [k, T_String(String(block.properties[k]))]))]);
             }
             return T_Compound(entries).value;
         });
@@ -926,6 +967,7 @@ const DEFAULT_DATA_VERSION = 5015;
             for (let z = 0; z < length; z++) {
                 for (let x = 0; x < width; x++) {
                     const idx = x + z * width + y * width * length;
+                    if (model.palette[model.blocks[idx]].name === STRUCTURE_VOID) continue;
                     const entries = [
                         ['state', T_Int(model.blocks[idx])],
                         ['pos', T_List(TAG.Int, [x, y, z])]
@@ -943,7 +985,7 @@ const DEFAULT_DATA_VERSION = 5015;
         }
 
         const entries = [
-            ['DataVersion', T_Int((model.metadata && model.metadata.dataVersion) || DEFAULT_DATA_VERSION)],
+            ['DataVersion', T_Int(dataVersion)],
             ['size', T_List(TAG.Int, [width, height, length])],
             ['entities', T_List(TAG.Compound, [])],
             ['blocks', T_List(TAG.Compound, blockItems)],
@@ -995,6 +1037,7 @@ const DEFAULT_DATA_VERSION = 5015;
 
     async function write(model, targetFormat) {
         let doc, warnings;
+        if (targetFormat !== 'nbt') model = voidAsAir(model);
         if (targetFormat === 'schem') {
             doc = writeSchem(model);
         } else if (targetFormat === 'litematic') {

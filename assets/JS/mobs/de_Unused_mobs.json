@@ -4,9 +4,9 @@
     "name": "Geist des Großen Wächters",
     "numeric_id": "Nur Bedrock: 120",
     "type": "summonable",
-    "category": "Unbenutzte Bedrock-Entity",
+    "category": "Unbenutzte Bedrock-Entität",
     "icon": "/assets/img/mobs/unused/elder_guardian_ghost.gif",
-    "description": "Eine unbenutzte Bedrock-Entity für die geisterhafte Darstellung des Großen Wächters. Sie erscheint nicht natürlich und besitzt keine reguläre Kampf-KI.",
+    "description": "Eine unbenutzte Bedrock-Entität für die geisterhafte Darstellung des Großen Wächters. Sie erscheint nicht natürlich und besitzt keine reguläre Kampf-KI.",
     "biome": "Keine natürliche Biom-Bindung",
     "structure": "Keine; die bekannte Geisterdarstellung hängt mit dem Effekt eines Großen Wächters zusammen",
     "dimension": "Alle per Befehl; keine natürliche Dimension",
@@ -26,7 +26,7 @@
     "animation": [],
     "source": "",
     "updated_at": "2026-08-22",
-    "notes": "Nur in der Bedrock Edition vorhanden. Die Entity selbst greift nicht mit Laser an und verursacht keine Abbaulähmung; diese Behauptungen aus der alten Datei waren falsch.",
+    "notes": "Nur in der Bedrock Edition vorhanden. Die Entität selbst greift nicht mit Laser an und verursacht keine Abbaulähmung; diese Behauptungen aus der alten Datei waren falsch.",
     "version": "Bedrock Edition Beta 1.13.0.4",
     "edition": "Nur Bedrock Edition",
     "effects": [],
@@ -47,16 +47,16 @@
     "version_history": [
       {
         "version": "Bedrock Edition Beta 1.13.0.4",
-        "change": "Die unbenutzte Entity Geist des Großen Wächters wurde hinzugefügt.",
+        "change": "Die unbenutzte Entität Geist des Großen Wächters wurde hinzugefügt.",
         "type": "added",
         "date": "2019-07-26"
       }
     ],
     "texture": [
       {
-        "name": "Guardian Guardian Elder",
+        "name": "Geist des Großen Wächters",
         "category": "Standardtextur",
-        "description": "Variante: Guardian Guardian Elder.",
+        "description": "Variante: Geist des Großen Wächters.",
         "file": "/assets/img/texture/mobs/guardian/guardian_elder.png"
       }
     ],
@@ -76,7 +76,7 @@
     "light_level": [
       "Nicht anwendbar"
     ],
-    "classification": "Unbenutzte interne Entity; kein regulärer Mob",
+    "classification": "Unbenutzte interne Entität; kein regulärer Mob",
     "renewable": "Nicht anwendbar",
     "can_despawn": "Kein normales Spawn-/Despawn-Verhalten",
     "tameable": "Nein",
@@ -92,7 +92,7 @@
       "Steigt außerhalb von Wasser und sinkt in Wasser",
       "Besitzt keine reguläre Angriffs- oder Wegfindungs-KI"
     ],
-    "fun_fact": "Die Entity ist nicht der eigentliche Große Wächter und erscheint niemals als normaler Gegner.",
+    "fun_fact": "Die Entität ist nicht der eigentliche Große Wächter und erscheint niemals als normaler Gegner.",
     "attack_type": "Keiner",
     "targets": [],
     "enemy_mobs": [],
@@ -164,9 +164,9 @@
     ],
     "texture": [
       {
-        "name": "Gaint Gaint",
+        "name": "Riese – Riese",
         "category": "Standardtextur",
-        "description": "Variante: Gaint Gaint.",
+        "description": "Variante: Riese – Riese.",
         "file": "/assets/img/texture/mobs/gaint/gaint.png"
       }
     ],
@@ -212,9 +212,49 @@
     "undead": "Ja",
     "boss_bar": "Nein",
     "knockback_resistance": 0,
-    "loot_table": "Keine regulären Item-Drops",
+    "loot_table": "Keine reguläre Beute",
     "java_entity_id": "minecraft:giant",
-    "bedrock_entity_id": "Nicht vorhanden"
+    "bedrock_entity_id": "Nicht vorhanden",
+    "game": {
+      "version": "26.3",
+      "attributes": [
+        {
+          "id": "max_health",
+          "name": "Maximale Gesundheit",
+          "value": 100.0
+        },
+        {
+          "id": "attack_damage",
+          "name": "Angriffsschaden",
+          "value": 50.0
+        },
+        {
+          "id": "movement_speed",
+          "name": "Geschwindigkeit",
+          "value": 0.5
+        },
+        {
+          "id": "follow_range",
+          "name": "Kreaturen‐Verfolgedistanz",
+          "value": 16.0
+        }
+      ],
+      "damage": {
+        "easy": 26.0,
+        "normal": 50.0,
+        "hard": 75.0
+      },
+      "size": {
+        "width": 3.6,
+        "height": 12.0,
+        "eye_height": 10.44
+      },
+      "category": {
+        "id": "monster",
+        "name": "Monster"
+      },
+      "fire_immune": false
+    }
   },
   {
     "id": "minecraft:illusioner",
@@ -246,7 +286,7 @@
     ],
     "source": "",
     "updated_at": "2026-08-22",
-    "notes": "Der Illusionist wurde in Snapshot 17w16a hinzugefügt, jedoch nie in den normalen Survival-Spawn integriert.",
+    "notes": "Der Illusionist wurde in Snapshot 17w16a hinzugefügt, jedoch nie in den normalen Spawn im Überlebensmodus integriert.",
     "version": "Java Edition 17w16a (Entwicklung von 1.12)",
     "edition": "Nur Java Edition",
     "effects": [
@@ -301,13 +341,71 @@
     ],
     "texture": [
       {
-        "name": "Illusioner Illusioner",
+        "name": "Illusionist",
         "category": "Standardtextur",
-        "description": "Variante: Illusioner Illusioner.",
+        "description": "Variante: Illusionist.",
         "file": "/assets/img/texture/mobs/Illusioner/Illusioner.png"
       }
     ],
-    "sounds": [],
+    "sounds": [
+      {
+        "name": "Illusionist murmelt",
+        "event": "entity.illusioner.ambient",
+        "files": [
+          "/assets/sounds/mob/illusion_illager/idle1.ogg",
+          "/assets/sounds/mob/illusion_illager/idle2.ogg",
+          "/assets/sounds/mob/illusion_illager/idle3.ogg",
+          "/assets/sounds/mob/illusion_illager/idle4.ogg"
+        ]
+      },
+      {
+        "name": "Illusionist zaubert",
+        "event": "entity.illusioner.cast_spell",
+        "files": [
+          "/assets/sounds/mob/evocation_illager/cast1.ogg",
+          "/assets/sounds/mob/evocation_illager/cast2.ogg"
+        ]
+      },
+      {
+        "name": "Illusionist stirbt",
+        "event": "entity.illusioner.death",
+        "files": [
+          "/assets/sounds/mob/illusion_illager/death1.ogg",
+          "/assets/sounds/mob/illusion_illager/death2.ogg"
+        ]
+      },
+      {
+        "name": "Illusionist nimmt Schaden",
+        "event": "entity.illusioner.hurt",
+        "files": [
+          "/assets/sounds/mob/illusion_illager/hurt1.ogg",
+          "/assets/sounds/mob/illusion_illager/hurt2.ogg",
+          "/assets/sounds/mob/illusion_illager/hurt3.ogg"
+        ]
+      },
+      {
+        "name": "Illusionist projiziert Doppelgänger",
+        "event": "entity.illusioner.mirror_move",
+        "files": [
+          "/assets/sounds/mob/illusion_illager/mirror_move1.ogg",
+          "/assets/sounds/mob/illusion_illager/mirror_move2.ogg"
+        ]
+      },
+      {
+        "name": "Illusionist bereitet Blindheit vor",
+        "event": "entity.illusioner.prepare_blindness",
+        "files": [
+          "/assets/sounds/mob/illusion_illager/prepare_blind.ogg"
+        ]
+      },
+      {
+        "name": "Illusionist bereitet Projektion vor",
+        "event": "entity.illusioner.prepare_mirror",
+        "files": [
+          "/assets/sounds/mob/illusion_illager/prepare_mirror.ogg"
+        ]
+      }
+    ],
     "health": 32,
     "damage": "Bogenpfeile; Schaden abhängig von Schwierigkeit, Entfernung und Pfeiltreffer",
     "armor": 0,
@@ -373,6 +471,45 @@
     "knockback_resistance": 0,
     "loot_table": "minecraft:entities/illusioner",
     "java_entity_id": "minecraft:illusioner",
-    "bedrock_entity_id": "Nicht vorhanden"
+    "bedrock_entity_id": "Nicht vorhanden",
+    "game": {
+      "version": "26.3",
+      "attributes": [
+        {
+          "id": "max_health",
+          "name": "Maximale Gesundheit",
+          "value": 32.0
+        },
+        {
+          "id": "attack_damage",
+          "name": "Angriffsschaden",
+          "value": 2.0
+        },
+        {
+          "id": "movement_speed",
+          "name": "Geschwindigkeit",
+          "value": 0.5
+        },
+        {
+          "id": "follow_range",
+          "name": "Kreaturen‐Verfolgedistanz",
+          "value": 18.0
+        }
+      ],
+      "damage": {
+        "easy": 2.0,
+        "normal": 2.0,
+        "hard": 3.0
+      },
+      "size": {
+        "width": 0.6,
+        "height": 1.95
+      },
+      "category": {
+        "id": "monster",
+        "name": "Monster"
+      },
+      "fire_immune": false
+    }
   }
 ]

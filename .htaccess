@@ -36,4 +36,46 @@ ExpiresByType image/x-icon "access plus 1 year"
 ExpiresByType font/woff2 "access plus 1 year"
 </IfModule>
 
+# Deutsche Tool-Seiten wurden auf deutsche URL-Slugs umbenannt.
+# Alte englische URLs bleiben per 301 erreichbar (Lesezeichen, externe Links, SEO).
+Redirect 301 /blog/de/about.html /blog/de/über-uns.html
+Redirect 301 /blog/de/ueber-uns.html /blog/de/über-uns.html
+Redirect 301 /blog/de/advancement-generator.html /blog/de/erfolge-generator.html
+Redirect 301 /blog/de/beacon-color-mixer.html /blog/de/beacon-farbmischer.html
+Redirect 301 /blog/de/bug-report.html /blog/de/bug-melden.html
+Redirect 301 /blog/de/chibi-skin-maker.html /blog/de/chibi-skin-ersteller.html
+Redirect 301 /blog/de/coming-soon.html /blog/de/in-kuerze.html
+Redirect 301 /blog/de/color-text.html /blog/de/farbtext.html
+Redirect 301 /blog/de/day-night-cycle.html /blog/de/tag-nacht-zyklus.html
+Redirect 301 /blog/de/history.html /blog/de/geschichte.html
+Redirect 301 /blog/de/minecraft-capes.html /blog/de/cape-datenbank.html
+Redirect 301 /blog/de/minecraft-heads.html /blog/de/kopf-datenbank.html
+Redirect 301 /blog/de/minecraft-skins.html /blog/de/skin-bibliothek.html
+Redirect 301 /blog/de/minecraft-versions.html /blog/de/minecraft-versionen.html
+Redirect 301 /blog/de/mojavatar-maker.html /blog/de/skin-posierer.html
+Redirect 301 /blog/de/mojavatar-ersteller.html /blog/de/skin-posierer.html
+Redirect 301 /blog/en/mojavatar-maker.html /blog/en/skin-poser.html
+Redirect 301 /blog/de/server-status.html /blog/de/serverstatus.html
+Redirect 301 /blog/de/skin-lookup.html /blog/de/skin-suche.html
+Redirect 301 /blog/de/skin-poser.html /blog/de/skin-posierer.html
+Redirect 301 /blog/de/structure-converter.html /blog/de/struktur-konverter.html
+Redirect 301 /blog/de/text-converter.html /blog/de/text-konverter.html
+
+# Englische Rechts-Seiten wurden auf englische URL-Slugs umbenannt.
+Redirect 301 /blog/en/impressum.html /blog/en/imprint.html
+Redirect 301 /blog/en/datenschutz.html /blog/en/privacy-policy.html
+Redirect 301 /blog/en/nutzungsbedingungen.html /blog/en/terms-of-use.html
+
+# Versteckte Dateien (.htaccess, .gitignore, .env, ...) nicht öffentlich ausliefern.
+# Matched nur den Dateinamen, nicht den Pfad - /.well-known/security.txt bleibt erreichbar.
+<FilesMatch "^\.">
+    <IfModule mod_authz_core.c>
+        Require all denied
+    </IfModule>
+    <IfModule !mod_authz_core.c>
+        Order allow,deny
+        Deny from all
+    </IfModule>
+</FilesMatch>
+
 Options -Indexes

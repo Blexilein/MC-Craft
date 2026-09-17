@@ -42,9 +42,70 @@
         "category": "Block",
         "description": "Block texture for Monster Spawner.",
         "file": "/assets/img/blocks/Monster_Spawner.png"
+      },
+      {
+        "name": "spawner",
+        "category": "Block",
+        "description": "block/spawner.png",
+        "file": "/assets/img/textures/block/spawner.png",
+        "path": "block/spawner"
       }
     ],
-    "sounds": [],
+    "sounds": [
+      {
+        "name": "Block broken",
+        "event": "block.spawner.break",
+        "files": [
+          "/assets/sounds/block/spawner/break1.ogg",
+          "/assets/sounds/block/spawner/break2.ogg",
+          "/assets/sounds/block/spawner/break3.ogg",
+          "/assets/sounds/block/spawner/break4.ogg"
+        ]
+      },
+      {
+        "name": "Something falls on a block",
+        "event": "block.spawner.fall",
+        "files": [
+          "/assets/sounds/block/spawner/step1.ogg",
+          "/assets/sounds/block/spawner/step2.ogg",
+          "/assets/sounds/block/spawner/step3.ogg",
+          "/assets/sounds/block/spawner/step4.ogg",
+          "/assets/sounds/block/spawner/step5.ogg"
+        ]
+      },
+      {
+        "name": "Block breaking",
+        "event": "block.spawner.hit",
+        "files": [
+          "/assets/sounds/block/spawner/step1.ogg",
+          "/assets/sounds/block/spawner/step2.ogg",
+          "/assets/sounds/block/spawner/step3.ogg",
+          "/assets/sounds/block/spawner/step4.ogg",
+          "/assets/sounds/block/spawner/step5.ogg"
+        ]
+      },
+      {
+        "name": "Block placed",
+        "event": "block.spawner.place",
+        "files": [
+          "/assets/sounds/block/spawner/break1.ogg",
+          "/assets/sounds/block/spawner/break2.ogg",
+          "/assets/sounds/block/spawner/break3.ogg",
+          "/assets/sounds/block/spawner/break4.ogg"
+        ]
+      },
+      {
+        "name": "Footsteps",
+        "event": "block.spawner.step",
+        "files": [
+          "/assets/sounds/block/spawner/step1.ogg",
+          "/assets/sounds/block/spawner/step2.ogg",
+          "/assets/sounds/block/spawner/step3.ogg",
+          "/assets/sounds/block/spawner/step4.ogg",
+          "/assets/sounds/block/spawner/step5.ogg"
+        ]
+      }
+    ],
     "command": "/give @p minecraft:spawner 1",
     "effects": [],
     "rarity": "Common",
@@ -164,9 +225,232 @@
         "category": "Block",
         "description": "Block texture for Trial Spawner.",
         "file": "/assets/img/blocks/Trial_Spawner.png"
+      },
+      {
+        "name": "trial_spawner_side_inactive",
+        "category": "Block",
+        "description": "block/trial_spawner_side_inactive.png",
+        "file": "/assets/img/textures/block/trial_spawner_side_inactive.png",
+        "path": "block/trial_spawner_side_inactive"
+      },
+      {
+        "name": "trial_spawner_top_inactive",
+        "category": "Block",
+        "description": "block/trial_spawner_top_inactive.png",
+        "file": "/assets/img/textures/block/trial_spawner_top_inactive.png",
+        "path": "block/trial_spawner_top_inactive"
+      },
+      {
+        "name": "trial_spawner_bottom",
+        "category": "Block",
+        "description": "block/trial_spawner_bottom.png",
+        "file": "/assets/img/textures/block/trial_spawner_bottom.png",
+        "path": "block/trial_spawner_bottom"
+      },
+      {
+        "name": "trial_spawner_side_active",
+        "category": "Block",
+        "description": "block/trial_spawner_side_active.png",
+        "file": "/assets/img/textures/block/trial_spawner_side_active.png",
+        "path": "block/trial_spawner_side_active"
+      },
+      {
+        "name": "trial_spawner_top_active",
+        "category": "Block",
+        "description": "block/trial_spawner_top_active.png",
+        "file": "/assets/img/textures/block/trial_spawner_top_active.png",
+        "path": "block/trial_spawner_top_active"
+      },
+      {
+        "name": "trial_spawner_top_ejecting_reward",
+        "category": "Block",
+        "description": "block/trial_spawner_top_ejecting_reward.png",
+        "file": "/assets/img/textures/block/trial_spawner_top_ejecting_reward.png",
+        "path": "block/trial_spawner_top_ejecting_reward"
+      },
+      {
+        "name": "trial_spawner_side_active_ominous",
+        "category": "Block",
+        "description": "block/trial_spawner_side_active_ominous.png",
+        "file": "/assets/img/textures/block/trial_spawner_side_active_ominous.png",
+        "path": "block/trial_spawner_side_active_ominous"
+      },
+      {
+        "name": "trial_spawner_top_active_ominous",
+        "category": "Block",
+        "description": "block/trial_spawner_top_active_ominous.png",
+        "file": "/assets/img/textures/block/trial_spawner_top_active_ominous.png",
+        "path": "block/trial_spawner_top_active_ominous"
+      },
+      {
+        "name": "trial_spawner_side_inactive_ominous",
+        "category": "Block",
+        "description": "block/trial_spawner_side_inactive_ominous.png",
+        "file": "/assets/img/textures/block/trial_spawner_side_inactive_ominous.png",
+        "path": "block/trial_spawner_side_inactive_ominous"
+      },
+      {
+        "name": "trial_spawner_top_inactive_ominous",
+        "category": "Block",
+        "description": "block/trial_spawner_top_inactive_ominous.png",
+        "file": "/assets/img/textures/block/trial_spawner_top_inactive_ominous.png",
+        "path": "block/trial_spawner_top_inactive_ominous"
+      },
+      {
+        "name": "trial_spawner_top_ejecting_reward_ominous",
+        "category": "Block",
+        "description": "block/trial_spawner_top_ejecting_reward_ominous.png",
+        "file": "/assets/img/textures/block/trial_spawner_top_ejecting_reward_ominous.png",
+        "path": "block/trial_spawner_top_ejecting_reward_ominous"
       }
     ],
-    "sounds": [],
+    "sounds": [
+      {
+        "name": "Ominous item prepares",
+        "event": "block.trial_spawner.about_to_spawn_item",
+        "files": [
+          "/assets/sounds/block/trial_spawner/about_to_spawn_item.ogg"
+        ]
+      },
+      {
+        "name": "Trial Spawner crackles",
+        "event": "block.trial_spawner.ambient",
+        "files": [
+          "/assets/sounds/block/trial_spawner/ambient1.ogg",
+          "/assets/sounds/block/trial_spawner/ambient2.ogg",
+          "/assets/sounds/block/trial_spawner/ambient3.ogg",
+          "/assets/sounds/block/trial_spawner/ambient4.ogg",
+          "/assets/sounds/block/trial_spawner/ambient5.ogg"
+        ]
+      },
+      {
+        "name": "Ominous crackling",
+        "event": "block.trial_spawner.ambient_ominous",
+        "files": [
+          "/assets/sounds/block/trial_spawner/ambient_ominous1.ogg",
+          "/assets/sounds/block/trial_spawner/ambient_ominous2.ogg",
+          "/assets/sounds/block/trial_spawner/ambient_ominous3.ogg",
+          "/assets/sounds/block/trial_spawner/ambient_ominous4.ogg",
+          "/assets/sounds/block/trial_spawner/ambient_ominous5.ogg"
+        ]
+      },
+      {
+        "name": "Block broken",
+        "event": "block.trial_spawner.break",
+        "files": [
+          "/assets/sounds/block/trial_spawner/break1.ogg",
+          "/assets/sounds/block/trial_spawner/break2.ogg",
+          "/assets/sounds/block/trial_spawner/break3.ogg"
+        ]
+      },
+      {
+        "name": "Trial Spawner closes",
+        "event": "block.trial_spawner.close_shutter",
+        "files": [
+          "/assets/sounds/block/trial_spawner/close_shutter.ogg"
+        ]
+      },
+      {
+        "name": "Trial Spawner charges up",
+        "event": "block.trial_spawner.detect_player",
+        "files": [
+          "/assets/sounds/block/trial_spawner/detect_player1.ogg",
+          "/assets/sounds/block/trial_spawner/detect_player2.ogg",
+          "/assets/sounds/block/trial_spawner/detect_player3.ogg"
+        ]
+      },
+      {
+        "name": "Trial Spawner ejects items",
+        "event": "block.trial_spawner.eject_item",
+        "files": [
+          "/assets/sounds/block/trial_spawner/eject_item1.ogg"
+        ]
+      },
+      {
+        "name": "Something falls on a block",
+        "event": "block.trial_spawner.fall",
+        "files": [
+          "/assets/sounds/block/trial_spawner/step1.ogg",
+          "/assets/sounds/block/trial_spawner/step2.ogg",
+          "/assets/sounds/block/trial_spawner/step3.ogg",
+          "/assets/sounds/block/trial_spawner/step4.ogg",
+          "/assets/sounds/block/trial_spawner/step5.ogg"
+        ]
+      },
+      {
+        "name": "Block breaking",
+        "event": "block.trial_spawner.hit",
+        "files": [
+          "/assets/sounds/block/trial_spawner/step1.ogg",
+          "/assets/sounds/block/trial_spawner/step2.ogg",
+          "/assets/sounds/block/trial_spawner/step3.ogg",
+          "/assets/sounds/block/trial_spawner/step4.ogg",
+          "/assets/sounds/block/trial_spawner/step5.ogg"
+        ]
+      },
+      {
+        "name": "Omen engulfs Trial Spawner",
+        "event": "block.trial_spawner.ominous_activate",
+        "files": [
+          "/assets/sounds/block/trial_spawner/ominous_activate.ogg"
+        ]
+      },
+      {
+        "name": "Trial Spawner opens",
+        "event": "block.trial_spawner.open_shutter",
+        "files": [
+          "/assets/sounds/block/trial_spawner/open_shutter.ogg"
+        ]
+      },
+      {
+        "name": "Block placed",
+        "event": "block.trial_spawner.place",
+        "files": [
+          "/assets/sounds/block/trial_spawner/place1.ogg",
+          "/assets/sounds/block/trial_spawner/place2.ogg",
+          "/assets/sounds/block/trial_spawner/place3.ogg"
+        ]
+      },
+      {
+        "name": "Ominous item drops",
+        "event": "block.trial_spawner.spawn_item",
+        "files": [
+          "/assets/sounds/block/trial_spawner/spawn_item1.ogg",
+          "/assets/sounds/block/trial_spawner/spawn_item2.ogg",
+          "/assets/sounds/block/trial_spawner/spawn_item3.ogg"
+        ]
+      },
+      {
+        "name": "Ominous item appears",
+        "event": "block.trial_spawner.spawn_item_begin",
+        "files": [
+          "/assets/sounds/block/trial_spawner/spawn_item_begin1.ogg",
+          "/assets/sounds/block/trial_spawner/spawn_item_begin2.ogg",
+          "/assets/sounds/block/trial_spawner/spawn_item_begin3.ogg"
+        ]
+      },
+      {
+        "name": "Trial Spawner spawns a mob",
+        "event": "block.trial_spawner.spawn_mob",
+        "files": [
+          "/assets/sounds/block/trial_spawner/spawn1.ogg",
+          "/assets/sounds/block/trial_spawner/spawn2.ogg",
+          "/assets/sounds/block/trial_spawner/spawn3.ogg",
+          "/assets/sounds/block/trial_spawner/spawn4.ogg"
+        ]
+      },
+      {
+        "name": "Footsteps",
+        "event": "block.trial_spawner.step",
+        "files": [
+          "/assets/sounds/block/trial_spawner/step1.ogg",
+          "/assets/sounds/block/trial_spawner/step2.ogg",
+          "/assets/sounds/block/trial_spawner/step3.ogg",
+          "/assets/sounds/block/trial_spawner/step4.ogg",
+          "/assets/sounds/block/trial_spawner/step5.ogg"
+        ]
+      }
+    ],
     "command": "/give @p minecraft:trial_spawner 1",
     "effects": [],
     "rarity": "Rare",
@@ -286,9 +570,146 @@
         "category": "Block",
         "description": "Block texture for Creaking Heart.",
         "file": "/assets/img/blocks/Creaking_Heart.png"
+      },
+      {
+        "name": "creaking_heart_top",
+        "category": "Block",
+        "description": "block/creaking_heart_top.png",
+        "file": "/assets/img/textures/block/creaking_heart_top.png",
+        "path": "block/creaking_heart_top"
+      },
+      {
+        "name": "creaking_heart",
+        "category": "Block",
+        "description": "block/creaking_heart.png",
+        "file": "/assets/img/textures/block/creaking_heart.png",
+        "path": "block/creaking_heart"
+      },
+      {
+        "name": "creaking_heart_top_awake",
+        "category": "Block",
+        "description": "block/creaking_heart_top_awake.png",
+        "file": "/assets/img/textures/block/creaking_heart_top_awake.png",
+        "path": "block/creaking_heart_top_awake"
+      },
+      {
+        "name": "creaking_heart_awake",
+        "category": "Block",
+        "description": "block/creaking_heart_awake.png",
+        "file": "/assets/img/textures/block/creaking_heart_awake.png",
+        "path": "block/creaking_heart_awake"
+      },
+      {
+        "name": "creaking_heart_top_dormant",
+        "category": "Block",
+        "description": "block/creaking_heart_top_dormant.png",
+        "file": "/assets/img/textures/block/creaking_heart_top_dormant.png",
+        "path": "block/creaking_heart_top_dormant"
+      },
+      {
+        "name": "creaking_heart_dormant",
+        "category": "Block",
+        "description": "block/creaking_heart_dormant.png",
+        "file": "/assets/img/textures/block/creaking_heart_dormant.png",
+        "path": "block/creaking_heart_dormant"
       }
     ],
-    "sounds": [],
+    "sounds": [
+      {
+        "name": "Creaking Heart grumbles",
+        "event": "block.creaking_heart.hurt",
+        "files": [
+          "/assets/sounds/block/creaking_heart/hurt/trail1.ogg",
+          "/assets/sounds/block/creaking_heart/hurt/trail2.ogg",
+          "/assets/sounds/block/creaking_heart/hurt/trail3.ogg",
+          "/assets/sounds/block/creaking_heart/hurt/trail4.ogg",
+          "/assets/sounds/block/creaking_heart/hurt/trail5.ogg",
+          "/assets/sounds/block/creaking_heart/hurt/trail6.ogg",
+          "/assets/sounds/block/creaking_heart/hurt/trail7.ogg"
+        ]
+      },
+      {
+        "name": "Creaking manifests",
+        "event": "entity.creaking.spawn",
+        "files": [
+          "/assets/sounds/mob/creaking/creaking_spawn.ogg"
+        ]
+      },
+      {
+        "name": "Creaking Heart awakens",
+        "event": "block.creaking_heart.spawn",
+        "files": [
+          "/assets/sounds/block/creaking_heart/spawnmob/creaking_heart_spawnmob.ogg"
+        ]
+      },
+      {
+        "name": "Block placed",
+        "event": "block.resin.place",
+        "files": [
+          "/assets/sounds/block/resin/resin_place1.ogg",
+          "/assets/sounds/block/resin/resin_place2.ogg",
+          "/assets/sounds/block/resin/resin_place3.ogg",
+          "/assets/sounds/block/resin/resin_place4.ogg"
+        ]
+      },
+      {
+        "name": "Eerie noise",
+        "event": "block.creaking_heart.idle",
+        "files": [
+          "/assets/sounds/block/creaking_heart/idle/creaking_heart_idle1.ogg",
+          "/assets/sounds/block/creaking_heart/idle/creaking_heart_idle2.ogg",
+          "/assets/sounds/block/creaking_heart/idle/creaking_heart_idle3.ogg",
+          "/assets/sounds/block/creaking_heart/idle/creaking_heart_idle4.ogg"
+        ]
+      },
+      {
+        "name": "Block broken",
+        "event": "block.creaking_heart.break",
+        "files": [
+          "/assets/sounds/block/creaking_heart/break/creaking_heart_break.ogg"
+        ]
+      },
+      {
+        "name": "Something falls on a block",
+        "event": "block.creaking_heart.fall",
+        "files": [
+          "/assets/sounds/block/creaking_heart/fall/creaking_heart_fall.ogg"
+        ]
+      },
+      {
+        "name": "Block breaking",
+        "event": "block.creaking_heart.hit",
+        "files": [
+          "/assets/sounds/block/creaking_heart/hit/creaking_heart_hit1.ogg",
+          "/assets/sounds/block/creaking_heart/hit/creaking_heart_hit2.ogg",
+          "/assets/sounds/block/creaking_heart/hit/creaking_heart_hit3.ogg",
+          "/assets/sounds/block/creaking_heart/hit/creaking_heart_hit4.ogg",
+          "/assets/sounds/block/creaking_heart/hit/creaking_heart_hit5.ogg"
+        ]
+      },
+      {
+        "name": "Block placed",
+        "event": "block.creaking_heart.place",
+        "files": [
+          "/assets/sounds/block/creaking_heart/place/creaking_heart_place1.ogg",
+          "/assets/sounds/block/creaking_heart/place/creaking_heart_place2.ogg",
+          "/assets/sounds/block/creaking_heart/place/creaking_heart_place3.ogg",
+          "/assets/sounds/block/creaking_heart/place/creaking_heart_place4.ogg"
+        ]
+      },
+      {
+        "name": "Footsteps",
+        "event": "block.creaking_heart.step",
+        "files": [
+          "/assets/sounds/block/creaking_heart/step/creaking_heart_step1.ogg",
+          "/assets/sounds/block/creaking_heart/step/creaking_heart_step2.ogg",
+          "/assets/sounds/block/creaking_heart/step/creaking_heart_step3.ogg",
+          "/assets/sounds/block/creaking_heart/step/creaking_heart_step4.ogg",
+          "/assets/sounds/block/creaking_heart/step/creaking_heart_step5.ogg",
+          "/assets/sounds/block/creaking_heart/step/creaking_heart_step6.ogg"
+        ]
+      }
+    ],
     "command": "/give @p minecraft:creaking_heart 1",
     "effects": [],
     "rarity": "Common",
@@ -410,6 +831,13 @@
         "category": "Item",
         "description": "Item texture for Chicken Spawn Egg.",
         "file": "/assets/img/items/Chicken_Spawn_Egg.png"
+      },
+      {
+        "name": "chicken_spawn_egg",
+        "category": "Item",
+        "description": "item/chicken_spawn_egg.png",
+        "file": "/assets/img/textures/item/chicken_spawn_egg.png",
+        "path": "item/chicken_spawn_egg"
       }
     ],
     "sounds": [],
@@ -501,6 +929,13 @@
         "category": "Item",
         "description": "Item texture for Cow Spawn Egg.",
         "file": "/assets/img/items/Cow_Spawn_Egg.png"
+      },
+      {
+        "name": "cow_spawn_egg",
+        "category": "Item",
+        "description": "item/cow_spawn_egg.png",
+        "file": "/assets/img/textures/item/cow_spawn_egg.png",
+        "path": "item/cow_spawn_egg"
       }
     ],
     "sounds": [],
@@ -592,6 +1027,13 @@
         "category": "Item",
         "description": "Item texture for Pig Spawn Egg.",
         "file": "/assets/img/items/Pig_Spawn_Egg.png"
+      },
+      {
+        "name": "pig_spawn_egg",
+        "category": "Item",
+        "description": "item/pig_spawn_egg.png",
+        "file": "/assets/img/textures/item/pig_spawn_egg.png",
+        "path": "item/pig_spawn_egg"
       }
     ],
     "sounds": [],
@@ -683,6 +1125,13 @@
         "category": "Item",
         "description": "Item texture for Sheep Spawn Egg.",
         "file": "/assets/img/items/Sheep_Spawn_Egg.png"
+      },
+      {
+        "name": "sheep_spawn_egg",
+        "category": "Item",
+        "description": "item/sheep_spawn_egg.png",
+        "file": "/assets/img/textures/item/sheep_spawn_egg.png",
+        "path": "item/sheep_spawn_egg"
       }
     ],
     "sounds": [],
@@ -774,6 +1223,13 @@
         "category": "Item",
         "description": "Item texture for Camel Spawn Egg.",
         "file": "/assets/img/items/Camel_Spawn_Egg.png"
+      },
+      {
+        "name": "camel_spawn_egg",
+        "category": "Item",
+        "description": "item/camel_spawn_egg.png",
+        "file": "/assets/img/textures/item/camel_spawn_egg.png",
+        "path": "item/camel_spawn_egg"
       }
     ],
     "sounds": [],
@@ -865,6 +1321,13 @@
         "category": "Item",
         "description": "Item texture for Donkey Spawn Egg.",
         "file": "/assets/img/items/Donkey_Spawn_Egg.png"
+      },
+      {
+        "name": "donkey_spawn_egg",
+        "category": "Item",
+        "description": "item/donkey_spawn_egg.png",
+        "file": "/assets/img/textures/item/donkey_spawn_egg.png",
+        "path": "item/donkey_spawn_egg"
       }
     ],
     "sounds": [],
@@ -956,6 +1419,13 @@
         "category": "Item",
         "description": "Item texture for Horse Spawn Egg.",
         "file": "/assets/img/items/Horse_Spawn_Egg.png"
+      },
+      {
+        "name": "horse_spawn_egg",
+        "category": "Item",
+        "description": "item/horse_spawn_egg.png",
+        "file": "/assets/img/textures/item/horse_spawn_egg.png",
+        "path": "item/horse_spawn_egg"
       }
     ],
     "sounds": [],
@@ -1047,6 +1517,13 @@
         "category": "Item",
         "description": "Item texture for Mule Spawn Egg.",
         "file": "/assets/img/items/Mule_Spawn_Egg.png"
+      },
+      {
+        "name": "mule_spawn_egg",
+        "category": "Item",
+        "description": "item/mule_spawn_egg.png",
+        "file": "/assets/img/textures/item/mule_spawn_egg.png",
+        "path": "item/mule_spawn_egg"
       }
     ],
     "sounds": [],
@@ -1138,6 +1615,13 @@
         "category": "Item",
         "description": "Item texture for Cat Spawn Egg.",
         "file": "/assets/img/items/Cat_Spawn_Egg.png"
+      },
+      {
+        "name": "cat_spawn_egg",
+        "category": "Item",
+        "description": "item/cat_spawn_egg.png",
+        "file": "/assets/img/textures/item/cat_spawn_egg.png",
+        "path": "item/cat_spawn_egg"
       }
     ],
     "sounds": [],
@@ -1229,6 +1713,13 @@
         "category": "Item",
         "description": "Item texture for Parrot Spawn Egg.",
         "file": "/assets/img/items/Parrot_Spawn_Egg.png"
+      },
+      {
+        "name": "parrot_spawn_egg",
+        "category": "Item",
+        "description": "item/parrot_spawn_egg.png",
+        "file": "/assets/img/textures/item/parrot_spawn_egg.png",
+        "path": "item/parrot_spawn_egg"
       }
     ],
     "sounds": [],
@@ -1320,6 +1811,13 @@
         "category": "Item",
         "description": "Item texture for Wolf Spawn Egg.",
         "file": "/assets/img/items/Wolf_Spawn_Egg.png"
+      },
+      {
+        "name": "wolf_spawn_egg",
+        "category": "Item",
+        "description": "item/wolf_spawn_egg.png",
+        "file": "/assets/img/textures/item/wolf_spawn_egg.png",
+        "path": "item/wolf_spawn_egg"
       }
     ],
     "sounds": [],
@@ -1411,6 +1909,13 @@
         "category": "Item",
         "description": "Item texture for Armadillo Spawn Egg.",
         "file": "/assets/img/items/Armadillo_Spawn_Egg.png"
+      },
+      {
+        "name": "armadillo_spawn_egg",
+        "category": "Item",
+        "description": "item/armadillo_spawn_egg.png",
+        "file": "/assets/img/textures/item/armadillo_spawn_egg.png",
+        "path": "item/armadillo_spawn_egg"
       }
     ],
     "sounds": [],
@@ -1502,6 +2007,13 @@
         "category": "Item",
         "description": "Item texture for Bat Spawn Egg.",
         "file": "/assets/img/items/Bat_Spawn_Egg.png"
+      },
+      {
+        "name": "bat_spawn_egg",
+        "category": "Item",
+        "description": "item/bat_spawn_egg.png",
+        "file": "/assets/img/textures/item/bat_spawn_egg.png",
+        "path": "item/bat_spawn_egg"
       }
     ],
     "sounds": [],
@@ -1593,6 +2105,13 @@
         "category": "Item",
         "description": "Item texture for Bee Spawn Egg.",
         "file": "/assets/img/items/Bee_Spawn_Egg.png"
+      },
+      {
+        "name": "bee_spawn_egg",
+        "category": "Item",
+        "description": "item/bee_spawn_egg.png",
+        "file": "/assets/img/textures/item/bee_spawn_egg.png",
+        "path": "item/bee_spawn_egg"
       }
     ],
     "sounds": [],
@@ -1684,6 +2203,13 @@
         "category": "Item",
         "description": "Item texture for Fox Spawn Egg.",
         "file": "/assets/img/items/Fox_Spawn_Egg.png"
+      },
+      {
+        "name": "fox_spawn_egg",
+        "category": "Item",
+        "description": "item/fox_spawn_egg.png",
+        "file": "/assets/img/textures/item/fox_spawn_egg.png",
+        "path": "item/fox_spawn_egg"
       }
     ],
     "sounds": [],
@@ -1775,6 +2301,13 @@
         "category": "Item",
         "description": "Item texture for Goat Spawn Egg.",
         "file": "/assets/img/items/Goat_Spawn_Egg.png"
+      },
+      {
+        "name": "goat_spawn_egg",
+        "category": "Item",
+        "description": "item/goat_spawn_egg.png",
+        "file": "/assets/img/textures/item/goat_spawn_egg.png",
+        "path": "item/goat_spawn_egg"
       }
     ],
     "sounds": [],
@@ -1866,6 +2399,13 @@
         "category": "Item",
         "description": "Item texture for Llama Spawn Egg.",
         "file": "/assets/img/items/Llama_Spawn_Egg.png"
+      },
+      {
+        "name": "llama_spawn_egg",
+        "category": "Item",
+        "description": "item/llama_spawn_egg.png",
+        "file": "/assets/img/textures/item/llama_spawn_egg.png",
+        "path": "item/llama_spawn_egg"
       }
     ],
     "sounds": [],
@@ -1957,6 +2497,13 @@
         "category": "Item",
         "description": "Item texture for Ocelot Spawn Egg.",
         "file": "/assets/img/items/Ocelot_Spawn_Egg.png"
+      },
+      {
+        "name": "ocelot_spawn_egg",
+        "category": "Item",
+        "description": "item/ocelot_spawn_egg.png",
+        "file": "/assets/img/textures/item/ocelot_spawn_egg.png",
+        "path": "item/ocelot_spawn_egg"
       }
     ],
     "sounds": [],
@@ -2048,6 +2595,13 @@
         "category": "Item",
         "description": "Item texture for Panda Spawn Egg.",
         "file": "/assets/img/items/Panda_Spawn_Egg.png"
+      },
+      {
+        "name": "panda_spawn_egg",
+        "category": "Item",
+        "description": "item/panda_spawn_egg.png",
+        "file": "/assets/img/textures/item/panda_spawn_egg.png",
+        "path": "item/panda_spawn_egg"
       }
     ],
     "sounds": [],
@@ -2139,6 +2693,13 @@
         "category": "Item",
         "description": "Item texture for Polar Bear Spawn Egg.",
         "file": "/assets/img/items/Polar_Bear_Spawn_Egg.png"
+      },
+      {
+        "name": "polar_bear_spawn_egg",
+        "category": "Item",
+        "description": "item/polar_bear_spawn_egg.png",
+        "file": "/assets/img/textures/item/polar_bear_spawn_egg.png",
+        "path": "item/polar_bear_spawn_egg"
       }
     ],
     "sounds": [],
@@ -2230,6 +2791,13 @@
         "category": "Item",
         "description": "Item texture for Rabbit Spawn Egg.",
         "file": "/assets/img/items/Rabbit_Spawn_Egg.png"
+      },
+      {
+        "name": "rabbit_spawn_egg",
+        "category": "Item",
+        "description": "item/rabbit_spawn_egg.png",
+        "file": "/assets/img/textures/item/rabbit_spawn_egg.png",
+        "path": "item/rabbit_spawn_egg"
       }
     ],
     "sounds": [],
@@ -2321,6 +2889,13 @@
         "category": "Item",
         "description": "Item texture for Axolotl Spawn Egg.",
         "file": "/assets/img/items/Axolotl_Spawn_Egg.png"
+      },
+      {
+        "name": "axolotl_spawn_egg",
+        "category": "Item",
+        "description": "item/axolotl_spawn_egg.png",
+        "file": "/assets/img/textures/item/axolotl_spawn_egg.png",
+        "path": "item/axolotl_spawn_egg"
       }
     ],
     "sounds": [],
@@ -2412,6 +2987,13 @@
         "category": "Item",
         "description": "Item texture for Cod Spawn Egg.",
         "file": "/assets/img/items/Cod_Spawn_Egg.png"
+      },
+      {
+        "name": "cod_spawn_egg",
+        "category": "Item",
+        "description": "item/cod_spawn_egg.png",
+        "file": "/assets/img/textures/item/cod_spawn_egg.png",
+        "path": "item/cod_spawn_egg"
       }
     ],
     "sounds": [],
@@ -2503,6 +3085,13 @@
         "category": "Item",
         "description": "Item texture for Dolphin Spawn Egg.",
         "file": "/assets/img/items/Dolphin_Spawn_Egg.png"
+      },
+      {
+        "name": "dolphin_spawn_egg",
+        "category": "Item",
+        "description": "item/dolphin_spawn_egg.png",
+        "file": "/assets/img/textures/item/dolphin_spawn_egg.png",
+        "path": "item/dolphin_spawn_egg"
       }
     ],
     "sounds": [],
@@ -2594,6 +3183,13 @@
         "category": "Item",
         "description": "Item texture for Frog Spawn Egg.",
         "file": "/assets/img/items/Frog_Spawn_Egg.png"
+      },
+      {
+        "name": "frog_spawn_egg",
+        "category": "Item",
+        "description": "item/frog_spawn_egg.png",
+        "file": "/assets/img/textures/item/frog_spawn_egg.png",
+        "path": "item/frog_spawn_egg"
       }
     ],
     "sounds": [],
@@ -2685,6 +3281,13 @@
         "category": "Item",
         "description": "Item texture for Glow Squid Spawn Egg.",
         "file": "/assets/img/items/Glow_Squid_Spawn_Egg.png"
+      },
+      {
+        "name": "glow_squid_spawn_egg",
+        "category": "Item",
+        "description": "item/glow_squid_spawn_egg.png",
+        "file": "/assets/img/textures/item/glow_squid_spawn_egg.png",
+        "path": "item/glow_squid_spawn_egg"
       }
     ],
     "sounds": [],
@@ -2776,6 +3379,13 @@
         "category": "Item",
         "description": "Item texture for Nautilus Spawn Egg.",
         "file": "/assets/img/items/Nautilus_Spawn_Egg.png"
+      },
+      {
+        "name": "nautilus_spawn_egg",
+        "category": "Item",
+        "description": "item/nautilus_spawn_egg.png",
+        "file": "/assets/img/textures/item/nautilus_spawn_egg.png",
+        "path": "item/nautilus_spawn_egg"
       }
     ],
     "sounds": [],
@@ -2867,6 +3477,13 @@
         "category": "Item",
         "description": "Item texture for Pufferfish Spawn Egg.",
         "file": "/assets/img/items/Pufferfish_Spawn_Egg.png"
+      },
+      {
+        "name": "pufferfish_spawn_egg",
+        "category": "Item",
+        "description": "item/pufferfish_spawn_egg.png",
+        "file": "/assets/img/textures/item/pufferfish_spawn_egg.png",
+        "path": "item/pufferfish_spawn_egg"
       }
     ],
     "sounds": [],
@@ -2958,6 +3575,13 @@
         "category": "Item",
         "description": "Item texture for Salmon Spawn Egg.",
         "file": "/assets/img/items/Salmon_Spawn_Egg.png"
+      },
+      {
+        "name": "salmon_spawn_egg",
+        "category": "Item",
+        "description": "item/salmon_spawn_egg.png",
+        "file": "/assets/img/textures/item/salmon_spawn_egg.png",
+        "path": "item/salmon_spawn_egg"
       }
     ],
     "sounds": [],
@@ -3049,6 +3673,13 @@
         "category": "Item",
         "description": "Item texture for Squid Spawn Egg.",
         "file": "/assets/img/items/Squid_Spawn_Egg.png"
+      },
+      {
+        "name": "squid_spawn_egg",
+        "category": "Item",
+        "description": "item/squid_spawn_egg.png",
+        "file": "/assets/img/textures/item/squid_spawn_egg.png",
+        "path": "item/squid_spawn_egg"
       }
     ],
     "sounds": [],
@@ -3140,6 +3771,13 @@
         "category": "Item",
         "description": "Item texture for Tadpole Spawn Egg.",
         "file": "/assets/img/items/Tadpole_Spawn_Egg.png"
+      },
+      {
+        "name": "tadpole_spawn_egg",
+        "category": "Item",
+        "description": "item/tadpole_spawn_egg.png",
+        "file": "/assets/img/textures/item/tadpole_spawn_egg.png",
+        "path": "item/tadpole_spawn_egg"
       }
     ],
     "sounds": [],
@@ -3231,6 +3869,13 @@
         "category": "Item",
         "description": "Item texture for Tropical Fish Spawn Egg.",
         "file": "/assets/img/items/Tropical_Fish_Spawn_Egg.png"
+      },
+      {
+        "name": "tropical_fish_spawn_egg",
+        "category": "Item",
+        "description": "item/tropical_fish_spawn_egg.png",
+        "file": "/assets/img/textures/item/tropical_fish_spawn_egg.png",
+        "path": "item/tropical_fish_spawn_egg"
       }
     ],
     "sounds": [],
@@ -3322,6 +3967,13 @@
         "category": "Item",
         "description": "Item texture for Turtle Spawn Egg.",
         "file": "/assets/img/items/Turtle_Spawn_Egg.png"
+      },
+      {
+        "name": "turtle_spawn_egg",
+        "category": "Item",
+        "description": "item/turtle_spawn_egg.png",
+        "file": "/assets/img/textures/item/turtle_spawn_egg.png",
+        "path": "item/turtle_spawn_egg"
       }
     ],
     "sounds": [],
@@ -3413,6 +4065,13 @@
         "category": "Item",
         "description": "Item texture for Allay Spawn Egg.",
         "file": "/assets/img/items/Allay_Spawn_Egg.png"
+      },
+      {
+        "name": "allay_spawn_egg",
+        "category": "Item",
+        "description": "item/allay_spawn_egg.png",
+        "file": "/assets/img/textures/item/allay_spawn_egg.png",
+        "path": "item/allay_spawn_egg"
       }
     ],
     "sounds": [],
@@ -3504,6 +4163,13 @@
         "category": "Item",
         "description": "Item texture for Mooshroom Spawn Egg.",
         "file": "/assets/img/items/Mooshroom_Spawn_Egg.png"
+      },
+      {
+        "name": "mooshroom_spawn_egg",
+        "category": "Item",
+        "description": "item/mooshroom_spawn_egg.png",
+        "file": "/assets/img/textures/item/mooshroom_spawn_egg.png",
+        "path": "item/mooshroom_spawn_egg"
       }
     ],
     "sounds": [],
@@ -3595,6 +4261,13 @@
         "category": "Item",
         "description": "Item texture for Sniffer Spawn Egg.",
         "file": "/assets/img/items/Sniffer_Spawn_Egg.png"
+      },
+      {
+        "name": "sniffer_spawn_egg",
+        "category": "Item",
+        "description": "item/sniffer_spawn_egg.png",
+        "file": "/assets/img/textures/item/sniffer_spawn_egg.png",
+        "path": "item/sniffer_spawn_egg"
       }
     ],
     "sounds": [],
@@ -3686,6 +4359,13 @@
         "category": "Item",
         "description": "Item texture for Sulfur Cube Spawn Egg.",
         "file": "/assets/img/items/Sulfur_Cube_Spawn_Egg.png"
+      },
+      {
+        "name": "sulfur_cube_spawn_egg",
+        "category": "Item",
+        "description": "item/sulfur_cube_spawn_egg.png",
+        "file": "/assets/img/textures/item/sulfur_cube_spawn_egg.png",
+        "path": "item/sulfur_cube_spawn_egg"
       }
     ],
     "sounds": [],
@@ -3777,6 +4457,13 @@
         "category": "Item",
         "description": "Item texture for Copper Golem Spawn Egg.",
         "file": "/assets/img/items/Copper_Golem_Spawn_Egg.png"
+      },
+      {
+        "name": "copper_golem_spawn_egg",
+        "category": "Item",
+        "description": "item/copper_golem_spawn_egg.png",
+        "file": "/assets/img/textures/item/copper_golem_spawn_egg.png",
+        "path": "item/copper_golem_spawn_egg"
       }
     ],
     "sounds": [],
@@ -3868,6 +4555,13 @@
         "category": "Item",
         "description": "Item texture for Iron Golem Spawn Egg.",
         "file": "/assets/img/items/Iron_Golem_Spawn_Egg.png"
+      },
+      {
+        "name": "iron_golem_spawn_egg",
+        "category": "Item",
+        "description": "item/iron_golem_spawn_egg.png",
+        "file": "/assets/img/textures/item/iron_golem_spawn_egg.png",
+        "path": "item/iron_golem_spawn_egg"
       }
     ],
     "sounds": [],
@@ -3959,6 +4653,13 @@
         "category": "Item",
         "description": "Item texture for Snow Golem Spawn Egg.",
         "file": "/assets/img/items/Snow_Golem_Spawn_Egg.png"
+      },
+      {
+        "name": "snow_golem_spawn_egg",
+        "category": "Item",
+        "description": "item/snow_golem_spawn_egg.png",
+        "file": "/assets/img/textures/item/snow_golem_spawn_egg.png",
+        "path": "item/snow_golem_spawn_egg"
       }
     ],
     "sounds": [],
@@ -4050,6 +4751,13 @@
         "category": "Item",
         "description": "Item texture for Trader Llama Spawn Egg.",
         "file": "/assets/img/items/Trader_Llama_Spawn_Egg.png"
+      },
+      {
+        "name": "trader_llama_spawn_egg",
+        "category": "Item",
+        "description": "item/trader_llama_spawn_egg.png",
+        "file": "/assets/img/textures/item/trader_llama_spawn_egg.png",
+        "path": "item/trader_llama_spawn_egg"
       }
     ],
     "sounds": [],
@@ -4141,6 +4849,13 @@
         "category": "Item",
         "description": "Item texture for Villager Spawn Egg.",
         "file": "/assets/img/items/Villager_Spawn_Egg.png"
+      },
+      {
+        "name": "villager_spawn_egg",
+        "category": "Item",
+        "description": "item/villager_spawn_egg.png",
+        "file": "/assets/img/textures/item/villager_spawn_egg.png",
+        "path": "item/villager_spawn_egg"
       }
     ],
     "sounds": [],
@@ -4232,6 +4947,13 @@
         "category": "Item",
         "description": "Item texture for Wandering Trader Spawn Egg.",
         "file": "/assets/img/items/Wandering_Trader_Spawn_Egg.png"
+      },
+      {
+        "name": "wandering_trader_spawn_egg",
+        "category": "Item",
+        "description": "item/wandering_trader_spawn_egg.png",
+        "file": "/assets/img/textures/item/wandering_trader_spawn_egg.png",
+        "path": "item/wandering_trader_spawn_egg"
       }
     ],
     "sounds": [],
@@ -4323,6 +5045,13 @@
         "category": "Item",
         "description": "Item texture for Bogged Spawn Egg.",
         "file": "/assets/img/items/Bogged_Spawn_Egg.png"
+      },
+      {
+        "name": "bogged_spawn_egg",
+        "category": "Item",
+        "description": "item/bogged_spawn_egg.png",
+        "file": "/assets/img/textures/item/bogged_spawn_egg.png",
+        "path": "item/bogged_spawn_egg"
       }
     ],
     "sounds": [],
@@ -4414,6 +5143,13 @@
         "category": "Item",
         "description": "Item texture for Camel Husk Spawn Egg.",
         "file": "/assets/img/items/Camel_Husk_Spawn_Egg.png"
+      },
+      {
+        "name": "camel_husk_spawn_egg",
+        "category": "Item",
+        "description": "item/camel_husk_spawn_egg.png",
+        "file": "/assets/img/textures/item/camel_husk_spawn_egg.png",
+        "path": "item/camel_husk_spawn_egg"
       }
     ],
     "sounds": [],
@@ -4505,6 +5241,13 @@
         "category": "Item",
         "description": "Item texture for Drowned Spawn Egg.",
         "file": "/assets/img/items/Drowned_Spawn_Egg.png"
+      },
+      {
+        "name": "drowned_spawn_egg",
+        "category": "Item",
+        "description": "item/drowned_spawn_egg.png",
+        "file": "/assets/img/textures/item/drowned_spawn_egg.png",
+        "path": "item/drowned_spawn_egg"
       }
     ],
     "sounds": [],
@@ -4596,6 +5339,13 @@
         "category": "Item",
         "description": "Item texture for Husk Spawn Egg.",
         "file": "/assets/img/items/Husk_Spawn_Egg.png"
+      },
+      {
+        "name": "husk_spawn_egg",
+        "category": "Item",
+        "description": "item/husk_spawn_egg.png",
+        "file": "/assets/img/textures/item/husk_spawn_egg.png",
+        "path": "item/husk_spawn_egg"
       }
     ],
     "sounds": [],
@@ -4687,6 +5437,13 @@
         "category": "Item",
         "description": "Item texture for Parched Spawn Egg.",
         "file": "/assets/img/items/Parched_Spawn_Egg.png"
+      },
+      {
+        "name": "parched_spawn_egg",
+        "category": "Item",
+        "description": "item/parched_spawn_egg.png",
+        "file": "/assets/img/textures/item/parched_spawn_egg.png",
+        "path": "item/parched_spawn_egg"
       }
     ],
     "sounds": [],
@@ -4778,6 +5535,13 @@
         "category": "Item",
         "description": "Item texture for Skeleton Spawn Egg.",
         "file": "/assets/img/items/Skeleton_Spawn_Egg.png"
+      },
+      {
+        "name": "skeleton_spawn_egg",
+        "category": "Item",
+        "description": "item/skeleton_spawn_egg.png",
+        "file": "/assets/img/textures/item/skeleton_spawn_egg.png",
+        "path": "item/skeleton_spawn_egg"
       }
     ],
     "sounds": [],
@@ -4869,6 +5633,13 @@
         "category": "Item",
         "description": "Item texture for Skeleton Horse Spawn Egg.",
         "file": "/assets/img/items/Skeleton_Horse_Spawn_Egg.png"
+      },
+      {
+        "name": "skeleton_horse_spawn_egg",
+        "category": "Item",
+        "description": "item/skeleton_horse_spawn_egg.png",
+        "file": "/assets/img/textures/item/skeleton_horse_spawn_egg.png",
+        "path": "item/skeleton_horse_spawn_egg"
       }
     ],
     "sounds": [],
@@ -4960,6 +5731,13 @@
         "category": "Item",
         "description": "Item texture for Stray Spawn Egg.",
         "file": "/assets/img/items/Stray_Spawn_Egg.png"
+      },
+      {
+        "name": "stray_spawn_egg",
+        "category": "Item",
+        "description": "item/stray_spawn_egg.png",
+        "file": "/assets/img/textures/item/stray_spawn_egg.png",
+        "path": "item/stray_spawn_egg"
       }
     ],
     "sounds": [],
@@ -5051,6 +5829,13 @@
         "category": "Item",
         "description": "Item texture for Zombie Spawn Egg.",
         "file": "/assets/img/items/Zombie_Spawn_Egg.png"
+      },
+      {
+        "name": "zombie_spawn_egg",
+        "category": "Item",
+        "description": "item/zombie_spawn_egg.png",
+        "file": "/assets/img/textures/item/zombie_spawn_egg.png",
+        "path": "item/zombie_spawn_egg"
       }
     ],
     "sounds": [],
@@ -5142,6 +5927,13 @@
         "category": "Item",
         "description": "Item texture for Zombie Horse Spawn Egg.",
         "file": "/assets/img/items/Zombie_Horse_Spawn_Egg.png"
+      },
+      {
+        "name": "zombie_horse_spawn_egg",
+        "category": "Item",
+        "description": "item/zombie_horse_spawn_egg.png",
+        "file": "/assets/img/textures/item/zombie_horse_spawn_egg.png",
+        "path": "item/zombie_horse_spawn_egg"
       }
     ],
     "sounds": [],
@@ -5233,6 +6025,13 @@
         "category": "Item",
         "description": "Item texture for Zombie Nautilus Spawn Egg.",
         "file": "/assets/img/items/Zombie_Nautilus_Spawn_Egg.png"
+      },
+      {
+        "name": "zombie_nautilus_spawn_egg",
+        "category": "Item",
+        "description": "item/zombie_nautilus_spawn_egg.png",
+        "file": "/assets/img/textures/item/zombie_nautilus_spawn_egg.png",
+        "path": "item/zombie_nautilus_spawn_egg"
       }
     ],
     "sounds": [],
@@ -5324,6 +6123,13 @@
         "category": "Item",
         "description": "Item texture for Zombie Villager Spawn Egg.",
         "file": "/assets/img/items/Zombie_Villager_Spawn_Egg.png"
+      },
+      {
+        "name": "zombie_villager_spawn_egg",
+        "category": "Item",
+        "description": "item/zombie_villager_spawn_egg.png",
+        "file": "/assets/img/textures/item/zombie_villager_spawn_egg.png",
+        "path": "item/zombie_villager_spawn_egg"
       }
     ],
     "sounds": [],
@@ -5415,6 +6221,13 @@
         "category": "Item",
         "description": "Item texture for Cave Spider Spawn Egg.",
         "file": "/assets/img/items/Cave_Spider_Spawn_Egg.png"
+      },
+      {
+        "name": "cave_spider_spawn_egg",
+        "category": "Item",
+        "description": "item/cave_spider_spawn_egg.png",
+        "file": "/assets/img/textures/item/cave_spider_spawn_egg.png",
+        "path": "item/cave_spider_spawn_egg"
       }
     ],
     "sounds": [],
@@ -5506,6 +6319,13 @@
         "category": "Item",
         "description": "Item texture for Spider Spawn Egg.",
         "file": "/assets/img/items/Spider_Spawn_Egg.png"
+      },
+      {
+        "name": "spider_spawn_egg",
+        "category": "Item",
+        "description": "item/spider_spawn_egg.png",
+        "file": "/assets/img/textures/item/spider_spawn_egg.png",
+        "path": "item/spider_spawn_egg"
       }
     ],
     "sounds": [],
@@ -5597,6 +6417,13 @@
         "category": "Item",
         "description": "Item texture for Breeze Spawn Egg.",
         "file": "/assets/img/items/Breeze_Spawn_Egg.png"
+      },
+      {
+        "name": "breeze_spawn_egg",
+        "category": "Item",
+        "description": "item/breeze_spawn_egg.png",
+        "file": "/assets/img/textures/item/breeze_spawn_egg.png",
+        "path": "item/breeze_spawn_egg"
       }
     ],
     "sounds": [],
@@ -5688,6 +6515,13 @@
         "category": "Item",
         "description": "Item texture for Creaking Spawn Egg.",
         "file": "/assets/img/items/Creaking_Spawn_Egg.png"
+      },
+      {
+        "name": "creaking_spawn_egg",
+        "category": "Item",
+        "description": "item/creaking_spawn_egg.png",
+        "file": "/assets/img/textures/item/creaking_spawn_egg.png",
+        "path": "item/creaking_spawn_egg"
       }
     ],
     "sounds": [],
@@ -5779,6 +6613,13 @@
         "category": "Item",
         "description": "Item texture for Creeper Spawn Egg.",
         "file": "/assets/img/items/Creeper_Spawn_Egg.png"
+      },
+      {
+        "name": "creeper_spawn_egg",
+        "category": "Item",
+        "description": "item/creeper_spawn_egg.png",
+        "file": "/assets/img/textures/item/creeper_spawn_egg.png",
+        "path": "item/creeper_spawn_egg"
       }
     ],
     "sounds": [],
@@ -5870,6 +6711,13 @@
         "category": "Item",
         "description": "Item texture for Elder Guardian Spawn Egg.",
         "file": "/assets/img/items/Elder_Guardian_Spawn_Egg.png"
+      },
+      {
+        "name": "elder_guardian_spawn_egg",
+        "category": "Item",
+        "description": "item/elder_guardian_spawn_egg.png",
+        "file": "/assets/img/textures/item/elder_guardian_spawn_egg.png",
+        "path": "item/elder_guardian_spawn_egg"
       }
     ],
     "sounds": [],
@@ -5961,6 +6809,13 @@
         "category": "Item",
         "description": "Item texture for Guardian Spawn Egg.",
         "file": "/assets/img/items/Guardian_Spawn_Egg.png"
+      },
+      {
+        "name": "guardian_spawn_egg",
+        "category": "Item",
+        "description": "item/guardian_spawn_egg.png",
+        "file": "/assets/img/textures/item/guardian_spawn_egg.png",
+        "path": "item/guardian_spawn_egg"
       }
     ],
     "sounds": [],
@@ -6052,6 +6907,13 @@
         "category": "Item",
         "description": "Item texture for Phantom Spawn Egg.",
         "file": "/assets/img/items/Phantom_Spawn_Egg.png"
+      },
+      {
+        "name": "phantom_spawn_egg",
+        "category": "Item",
+        "description": "item/phantom_spawn_egg.png",
+        "file": "/assets/img/textures/item/phantom_spawn_egg.png",
+        "path": "item/phantom_spawn_egg"
       }
     ],
     "sounds": [],
@@ -6143,6 +7005,13 @@
         "category": "Item",
         "description": "Item texture for Silverfish Spawn Egg.",
         "file": "/assets/img/items/Silverfish_Spawn_Egg.png"
+      },
+      {
+        "name": "silverfish_spawn_egg",
+        "category": "Item",
+        "description": "item/silverfish_spawn_egg.png",
+        "file": "/assets/img/textures/item/silverfish_spawn_egg.png",
+        "path": "item/silverfish_spawn_egg"
       }
     ],
     "sounds": [],
@@ -6234,6 +7103,13 @@
         "category": "Item",
         "description": "Item texture for Slime Spawn Egg.",
         "file": "/assets/img/items/Slime_Spawn_Egg.png"
+      },
+      {
+        "name": "slime_spawn_egg",
+        "category": "Item",
+        "description": "item/slime_spawn_egg.png",
+        "file": "/assets/img/textures/item/slime_spawn_egg.png",
+        "path": "item/slime_spawn_egg"
       }
     ],
     "sounds": [],
@@ -6325,6 +7201,13 @@
         "category": "Item",
         "description": "Item texture for Warden Spawn Egg.",
         "file": "/assets/img/items/Warden_Spawn_Egg.png"
+      },
+      {
+        "name": "warden_spawn_egg",
+        "category": "Item",
+        "description": "item/warden_spawn_egg.png",
+        "file": "/assets/img/textures/item/warden_spawn_egg.png",
+        "path": "item/warden_spawn_egg"
       }
     ],
     "sounds": [],
@@ -6416,6 +7299,13 @@
         "category": "Item",
         "description": "Item texture for Witch Spawn Egg.",
         "file": "/assets/img/items/Witch_Spawn_Egg.png"
+      },
+      {
+        "name": "witch_spawn_egg",
+        "category": "Item",
+        "description": "item/witch_spawn_egg.png",
+        "file": "/assets/img/textures/item/witch_spawn_egg.png",
+        "path": "item/witch_spawn_egg"
       }
     ],
     "sounds": [],
@@ -6507,6 +7397,13 @@
         "category": "Item",
         "description": "Item texture for Evoker Spawn Egg.",
         "file": "/assets/img/items/Evoker_Spawn_Egg.png"
+      },
+      {
+        "name": "evoker_spawn_egg",
+        "category": "Item",
+        "description": "item/evoker_spawn_egg.png",
+        "file": "/assets/img/textures/item/evoker_spawn_egg.png",
+        "path": "item/evoker_spawn_egg"
       }
     ],
     "sounds": [],
@@ -6598,6 +7495,13 @@
         "category": "Item",
         "description": "Item texture for Pillager Spawn Egg.",
         "file": "/assets/img/items/Pillager_Spawn_Egg.png"
+      },
+      {
+        "name": "pillager_spawn_egg",
+        "category": "Item",
+        "description": "item/pillager_spawn_egg.png",
+        "file": "/assets/img/textures/item/pillager_spawn_egg.png",
+        "path": "item/pillager_spawn_egg"
       }
     ],
     "sounds": [],
@@ -6689,6 +7593,13 @@
         "category": "Item",
         "description": "Item texture for Ravager Spawn Egg.",
         "file": "/assets/img/items/Ravager_Spawn_Egg.png"
+      },
+      {
+        "name": "ravager_spawn_egg",
+        "category": "Item",
+        "description": "item/ravager_spawn_egg.png",
+        "file": "/assets/img/textures/item/ravager_spawn_egg.png",
+        "path": "item/ravager_spawn_egg"
       }
     ],
     "sounds": [],
@@ -6780,6 +7691,13 @@
         "category": "Item",
         "description": "Item texture for Vex Spawn Egg.",
         "file": "/assets/img/items/Vex_Spawn_Egg.png"
+      },
+      {
+        "name": "vex_spawn_egg",
+        "category": "Item",
+        "description": "item/vex_spawn_egg.png",
+        "file": "/assets/img/textures/item/vex_spawn_egg.png",
+        "path": "item/vex_spawn_egg"
       }
     ],
     "sounds": [],
@@ -6871,6 +7789,13 @@
         "category": "Item",
         "description": "Item texture for Vindicator Spawn Egg.",
         "file": "/assets/img/items/Vindicator_Spawn_Egg.png"
+      },
+      {
+        "name": "vindicator_spawn_egg",
+        "category": "Item",
+        "description": "item/vindicator_spawn_egg.png",
+        "file": "/assets/img/textures/item/vindicator_spawn_egg.png",
+        "path": "item/vindicator_spawn_egg"
       }
     ],
     "sounds": [],
@@ -6962,6 +7887,13 @@
         "category": "Item",
         "description": "Item texture for Blaze Spawn Egg.",
         "file": "/assets/img/items/Blaze_Spawn_Egg.png"
+      },
+      {
+        "name": "blaze_spawn_egg",
+        "category": "Item",
+        "description": "item/blaze_spawn_egg.png",
+        "file": "/assets/img/textures/item/blaze_spawn_egg.png",
+        "path": "item/blaze_spawn_egg"
       }
     ],
     "sounds": [],
@@ -7053,6 +7985,13 @@
         "category": "Item",
         "description": "Item texture for Ghast Spawn Egg.",
         "file": "/assets/img/items/Ghast_Spawn_Egg.png"
+      },
+      {
+        "name": "ghast_spawn_egg",
+        "category": "Item",
+        "description": "item/ghast_spawn_egg.png",
+        "file": "/assets/img/textures/item/ghast_spawn_egg.png",
+        "path": "item/ghast_spawn_egg"
       }
     ],
     "sounds": [],
@@ -7144,6 +8083,13 @@
         "category": "Item",
         "description": "Item texture for Happy Ghast Spawn Egg.",
         "file": "/assets/img/items/Happy_Ghast_Spawn_Egg.png"
+      },
+      {
+        "name": "happy_ghast_spawn_egg",
+        "category": "Item",
+        "description": "item/happy_ghast_spawn_egg.png",
+        "file": "/assets/img/textures/item/happy_ghast_spawn_egg.png",
+        "path": "item/happy_ghast_spawn_egg"
       }
     ],
     "sounds": [],
@@ -7235,6 +8181,13 @@
         "category": "Item",
         "description": "Item texture for Hoglin Spawn Egg.",
         "file": "/assets/img/items/Hoglin_Spawn_Egg.png"
+      },
+      {
+        "name": "hoglin_spawn_egg",
+        "category": "Item",
+        "description": "item/hoglin_spawn_egg.png",
+        "file": "/assets/img/textures/item/hoglin_spawn_egg.png",
+        "path": "item/hoglin_spawn_egg"
       }
     ],
     "sounds": [],
@@ -7326,6 +8279,13 @@
         "category": "Item",
         "description": "Item texture for Magma Cube Spawn Egg.",
         "file": "/assets/img/items/Magma_Cube_Spawn_Egg.png"
+      },
+      {
+        "name": "magma_cube_spawn_egg",
+        "category": "Item",
+        "description": "item/magma_cube_spawn_egg.png",
+        "file": "/assets/img/textures/item/magma_cube_spawn_egg.png",
+        "path": "item/magma_cube_spawn_egg"
       }
     ],
     "sounds": [],
@@ -7417,6 +8377,13 @@
         "category": "Item",
         "description": "Item texture for Piglin Spawn Egg.",
         "file": "/assets/img/items/Piglin_Spawn_Egg.png"
+      },
+      {
+        "name": "piglin_spawn_egg",
+        "category": "Item",
+        "description": "item/piglin_spawn_egg.png",
+        "file": "/assets/img/textures/item/piglin_spawn_egg.png",
+        "path": "item/piglin_spawn_egg"
       }
     ],
     "sounds": [],
@@ -7508,6 +8475,13 @@
         "category": "Item",
         "description": "Item texture for Piglin Brute Spawn Egg.",
         "file": "/assets/img/items/Piglin_Brute_Spawn_Egg.png"
+      },
+      {
+        "name": "piglin_brute_spawn_egg",
+        "category": "Item",
+        "description": "item/piglin_brute_spawn_egg.png",
+        "file": "/assets/img/textures/item/piglin_brute_spawn_egg.png",
+        "path": "item/piglin_brute_spawn_egg"
       }
     ],
     "sounds": [],
@@ -7599,6 +8573,13 @@
         "category": "Item",
         "description": "Item texture for Strider Spawn Egg.",
         "file": "/assets/img/items/Strider_Spawn_Egg.png"
+      },
+      {
+        "name": "strider_spawn_egg",
+        "category": "Item",
+        "description": "item/strider_spawn_egg.png",
+        "file": "/assets/img/textures/item/strider_spawn_egg.png",
+        "path": "item/strider_spawn_egg"
       }
     ],
     "sounds": [],
@@ -7690,6 +8671,13 @@
         "category": "Item",
         "description": "Item texture for Wither Skeleton Spawn Egg.",
         "file": "/assets/img/items/Wither_Skeleton_Spawn_Egg.png"
+      },
+      {
+        "name": "wither_skeleton_spawn_egg",
+        "category": "Item",
+        "description": "item/wither_skeleton_spawn_egg.png",
+        "file": "/assets/img/textures/item/wither_skeleton_spawn_egg.png",
+        "path": "item/wither_skeleton_spawn_egg"
       }
     ],
     "sounds": [],
@@ -7781,6 +8769,13 @@
         "category": "Item",
         "description": "Item texture for Zoglin Spawn Egg.",
         "file": "/assets/img/items/Zoglin_Spawn_Egg.png"
+      },
+      {
+        "name": "zoglin_spawn_egg",
+        "category": "Item",
+        "description": "item/zoglin_spawn_egg.png",
+        "file": "/assets/img/textures/item/zoglin_spawn_egg.png",
+        "path": "item/zoglin_spawn_egg"
       }
     ],
     "sounds": [],
@@ -7872,6 +8867,13 @@
         "category": "Item",
         "description": "Item texture for Zombified Piglin Spawn Egg.",
         "file": "/assets/img/items/Zombified_Piglin_Spawn_Egg.png"
+      },
+      {
+        "name": "zombified_piglin_spawn_egg",
+        "category": "Item",
+        "description": "item/zombified_piglin_spawn_egg.png",
+        "file": "/assets/img/textures/item/zombified_piglin_spawn_egg.png",
+        "path": "item/zombified_piglin_spawn_egg"
       }
     ],
     "sounds": [],
@@ -7963,6 +8965,13 @@
         "category": "Item",
         "description": "Item texture for Enderman Spawn Egg.",
         "file": "/assets/img/items/Enderman_Spawn_Egg.png"
+      },
+      {
+        "name": "enderman_spawn_egg",
+        "category": "Item",
+        "description": "item/enderman_spawn_egg.png",
+        "file": "/assets/img/textures/item/enderman_spawn_egg.png",
+        "path": "item/enderman_spawn_egg"
       }
     ],
     "sounds": [],
@@ -8054,6 +9063,13 @@
         "category": "Item",
         "description": "Item texture for Endermite Spawn Egg.",
         "file": "/assets/img/items/Endermite_Spawn_Egg.png"
+      },
+      {
+        "name": "endermite_spawn_egg",
+        "category": "Item",
+        "description": "item/endermite_spawn_egg.png",
+        "file": "/assets/img/textures/item/endermite_spawn_egg.png",
+        "path": "item/endermite_spawn_egg"
       }
     ],
     "sounds": [],
@@ -8145,6 +9161,13 @@
         "category": "Item",
         "description": "Item texture for Shulker Spawn Egg.",
         "file": "/assets/img/items/Shulker_Spawn_Egg.png"
+      },
+      {
+        "name": "shulker_spawn_egg",
+        "category": "Item",
+        "description": "item/shulker_spawn_egg.png",
+        "file": "/assets/img/textures/item/shulker_spawn_egg.png",
+        "path": "item/shulker_spawn_egg"
       }
     ],
     "sounds": [],

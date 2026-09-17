@@ -2,131 +2,526 @@
   {
     "id": "minecraft:elder_guardian_ghost",
     "name": "Ghostly Elder Guardian",
+    "numeric_id": "Bedrock only: 120",
     "type": "summonable",
+    "category": "Unused Bedrock entity",
     "icon": "/assets/img/mobs/unused/elder_guardian_ghost.gif",
-    "health": 80,
-    "damage": 8,
-    "description": "Removed ghost version • Transparent appearance • Same abilities as normal elder guardian",
-    "version": "Removed",
-    "dimension": "Overworld",
-    "movement_speed": 0.3,
+    "description": "An unused Bedrock entity for the ghostly appearance of the elder guardian. It does not appear naturally and has no regular combat AI.",
+    "biome": "No natural biome",
+    "structure": "None; the well-known ghost appearance comes from an elder guardian's effect",
+    "dimension": "All via commands; no natural dimension",
+    "movement_speed": "No normal pathfinding AI",
     "size": {
       "width": 1.9975,
       "height": 1.9975
     },
+    "aliases": [
+      "Elder Guardian Ghost",
+      "Ghostly elder guardian"
+    ],
+    "introduced_date": "2019-07-26",
+    "removed_date": null,
+    "gallery": [],
+    "model": "Elder guardian model",
+    "animation": [],
+    "source": "",
+    "updated_at": "2026-08-22",
+    "notes": "Only present in Bedrock Edition. The entity itself does not attack with a laser and does not cause Mining Fatigue; these claims from the old file were incorrect.",
+    "version": "Bedrock Edition Beta 1.13.0.4",
+    "edition": "Bedrock Edition only",
+    "effects": [],
+    "effect_immunities": [],
+    "status": "Unused; only obtainable via commands",
+    "tags": [
+      "Unused",
+      "Bedrock Edition",
+      "Command entity",
+      "Guardian"
+    ],
+    "related_entries": [
+      "minecraft:elder_guardian",
+      "minecraft:guardian",
+      "minecraft:mining_fatigue"
+    ],
+    "command": "/summon elder_guardian_ghost ~ ~ ~",
+    "version_history": [
+      {
+        "version": "Bedrock Edition Beta 1.13.0.4",
+        "change": "The unused Elder Guardian Ghost entity was added.",
+        "type": "added",
+        "date": "2019-07-26"
+      }
+    ],
+    "texture": [
+      {
+        "name": "Guardian Guardian Elder",
+        "category": "Default texture",
+        "description": "Variant: Guardian Guardian Elder.",
+        "file": "/assets/img/texture/mobs/guardian/guardian_elder.png"
+      }
+    ],
+    "sounds": [],
+    "health": 80,
+    "damage": 0,
+    "armor": 0,
+    "experience": "0",
     "spawn": {
       "light_level": [
-        "Unknown"
+        "Not applicable"
       ],
-      "biome": "Not implemented in game",
-      "structure": "None"
+      "biome": "None",
+      "structure": "None",
+      "method": "Only via the Bedrock command /summon elder_guardian_ghost"
     },
     "light_level": [
-      "Unknown"
+      "Not applicable"
     ],
-    "fun_fact": "This ghost version was never officially released in the game!",
-    "abilities": [
-      "Laser attacks",
-      "Mining Fatigue effect",
-      "Transparent appearance",
-      "Ghostly movement"
-    ],
+    "classification": "Unused internal entity; not a regular mob",
+    "renewable": "Not applicable",
+    "can_despawn": "No normal spawn/despawn behavior",
+    "tameable": "No",
+    "breedable": "No",
+    "duplicable": "No",
+    "duplication_item": "None",
+    "leashable": "No",
+    "rideable": "No",
+    "baby_variant": "No",
     "drops": [
       {
         "item": "minecraft:prismarine_shard",
         "chance": "100%",
         "amount": "0-2"
       }
-    ]
+    ],
+    "abilities": [
+      "Serves as a standalone ghostly guardian appearance",
+      "Rises outside of water and sinks in water",
+      "Has no regular attack or pathfinding AI"
+    ],
+    "fun_fact": "This entity is not the actual elder guardian and never appears as a normal enemy.",
+    "attack_type": "None",
+    "targets": [],
+    "enemy_mobs": [],
+    "follows": [],
+    "healing_item": [],
+    "fire_immune": "No",
+    "undead": "No",
+    "boss_bar": "No",
+    "knockback_resistance": 0,
+    "loot_table": "No regular loot table",
+    "java_entity_id": "Not present",
+    "bedrock_entity_id": "minecraft:elder_guardian_ghost"
   },
   {
     "id": "minecraft:giant",
     "name": "Giant",
+    "numeric_id": "No numeric ID",
     "type": "summonable",
+    "category": "Unused Java mob",
     "icon": "/assets/img/mobs/unused/Zombie.webp",
-    "health": 100,
-    "damage": 50,
-    "description": "Giant zombie variant • 6x larger than normal • No AI in game • Only spawnable by command",
-    "version": "Beta 1.8",
-    "dimension": "Overworld",
-    "movement_speed": 0.5,
+    "description": "A zombie figure enlarged six times, without active AI. The giant does not appear naturally and is only obtainable in Java Edition via commands or data packs.",
+    "biome": "No natural biome",
+    "structure": "None",
+    "dimension": "All via commands; no natural dimension",
+    "movement_speed": "Attribute 0.5; does not move without added AI",
     "size": {
       "width": 3.6,
-      "height": 10.8
+      "height": 12
     },
+    "aliases": [
+      "Giant",
+      "Giant zombie"
+    ],
+    "introduced_date": "2010-02-05",
+    "removed_date": null,
+    "gallery": [],
+    "model": "Zombie model scaled six times",
+    "animation": [],
+    "source": "",
+    "updated_at": "2026-08-22",
+    "notes": "The giant does have an attack damage attribute, but it cannot pursue or attack a target without artificially added AI.",
+    "version": "Java Edition Indev 0.31 20100205",
+    "edition": "Java Edition only",
+    "effects": [],
+    "effect_immunities": [
+      "Poison",
+      "Regeneration"
+    ],
+    "status": "Unused; only obtainable via commands or data packs",
+    "tags": [
+      "Unused",
+      "Java Edition",
+      "Command mob",
+      "Undead"
+    ],
+    "related_entries": [
+      "minecraft:zombie",
+      "minecraft:husk",
+      "minecraft:drowned"
+    ],
+    "command": "/summon minecraft:giant",
+    "version_history": [
+      {
+        "version": "Java Edition Indev 0.31 20100205",
+        "change": "The giant was added but received no natural spawn.",
+        "type": "added",
+        "date": "2010-02-05"
+      }
+    ],
+    "texture": [
+      {
+        "name": "Gaint Gaint",
+        "category": "Default texture",
+        "description": "Variant: Gaint Gaint.",
+        "file": "/assets/img/texture/mobs/gaint/gaint.png"
+      }
+    ],
+    "sounds": [],
+    "health": 100,
+    "damage": "Attack damage attribute 50; no actual attack without added AI",
+    "armor": 0,
+    "experience": "5 when killed by a player or tamed wolf",
     "spawn": {
       "light_level": [
-        "Unknown"
+        "Not applicable"
       ],
-      "biome": "Only spawnable by command",
-      "structure": "None"
+      "biome": "None",
+      "structure": "None",
+      "method": "Only via the Java command /summon minecraft:giant or a data pack"
     },
     "light_level": [
-      "Unknown"
+      "Not applicable"
     ],
-    "fun_fact": "Giants have no movement AI and do not move unless given commands!",
-    "abilities": [
-      "Extremely large size",
-      "No natural movement",
-      "Only spawnable by command",
-      "Huge damage"
-    ],
+    "classification": "Unused hostile mob / undead",
+    "renewable": "Only repeatedly via commands",
+    "can_despawn": "Can despawn under monster rules without PersistenceRequired",
+    "tameable": "No",
+    "breedable": "No",
+    "duplicable": "No",
+    "duplication_item": "None",
+    "leashable": "No",
+    "rideable": "No",
+    "baby_variant": "No",
     "drops": [
       {
         "item": "minecraft:rotten_flesh",
         "chance": "100%",
         "amount": "0-5"
       }
-    ]
+    ],
+    "abilities": [
+      "Extremely large model and large hitbox",
+      "Has no active movement or attack AI",
+      "Can be used with custom behavior via commands"
+    ],
+    "fun_fact": "The giant was added back in 2010 in Indev – well before Beta 1.8.",
+    "attack_type": "None without AI",
+    "targets": [],
+    "enemy_mobs": [],
+    "follows": [],
+    "healing_item": [],
+    "fire_immune": "No",
+    "undead": "Yes",
+    "boss_bar": "No",
+    "knockback_resistance": 0,
+    "loot_table": "No regular item drops",
+    "java_entity_id": "minecraft:giant",
+    "bedrock_entity_id": "Not present",
+    "game": {
+      "version": "26.3",
+      "attributes": [
+        {
+          "id": "max_health",
+          "name": "Max Health",
+          "value": 100.0
+        },
+        {
+          "id": "attack_damage",
+          "name": "Attack Damage",
+          "value": 50.0
+        },
+        {
+          "id": "movement_speed",
+          "name": "Speed",
+          "value": 0.5
+        },
+        {
+          "id": "follow_range",
+          "name": "Mob Follow Range",
+          "value": 16.0
+        }
+      ],
+      "damage": {
+        "easy": 26.0,
+        "normal": 50.0,
+        "hard": 75.0
+      },
+      "size": {
+        "width": 3.6,
+        "height": 12.0,
+        "eye_height": 10.44
+      },
+      "category": {
+        "id": "monster",
+        "name": "Monster"
+      },
+      "fire_immune": false
+    }
   },
   {
     "id": "minecraft:illusioner",
     "name": "Illusioner",
+    "numeric_id": "No numeric ID",
     "type": "summonable",
+    "category": "Unused Java mob",
     "icon": "/assets/img/mobs/unused/Illusioner.webp",
-    "health": 32,
-    "damage": 4,
-    "description": "Illager wizard • Creates illusions • Blinds players • Only spawnable by command",
-    "version": "1.12",
-    "dimension": "Overworld",
-    "movement_speed": 0.35,
+    "description": "A fully functional but unused illager spellcaster. It attacks with a bow, blinds players and creates four illusions.",
+    "biome": "No natural biome",
+    "structure": "None; does not appear in woodland mansions, outposts, patrols or raids",
+    "dimension": "All via commands; no natural dimension",
+    "movement_speed": 0.5,
     "size": {
       "width": 0.6,
       "height": 1.95
     },
+    "aliases": [
+      "Illusioner",
+      "Illusion mage"
+    ],
+    "introduced_date": "2017-04-20",
+    "removed_date": null,
+    "gallery": [],
+    "model": "Illager model",
+    "animation": [
+      "Spellcasting animation",
+      "Bow animation"
+    ],
+    "source": "",
+    "updated_at": "2026-08-22",
+    "notes": "The illusioner was added in snapshot 17w16a but never integrated into normal Survival spawning.",
+    "version": "Java Edition 17w16a (development of 1.12)",
+    "edition": "Java Edition only",
+    "effects": [
+      {
+        "name": "Blindness",
+        "type": "causes",
+        "level": "I",
+        "duration": "20 seconds",
+        "chance": "On the first attack on a new player if the regional difficulty is above 2",
+        "condition": "Only against players",
+        "description": "The illusioner blinds the targeted player."
+      },
+      {
+        "name": "Invisibility",
+        "type": "receives",
+        "level": "I",
+        "duration": "60 seconds, renewed in combat",
+        "chance": "100% in combat",
+        "condition": "During the mirror spell",
+        "description": "The real illusioner turns invisible and four illusions appear."
+      }
+    ],
+    "effect_immunities": [],
+    "status": "Unused; only obtainable via commands or data packs",
+    "tags": [
+      "Unused",
+      "Java Edition",
+      "Illager",
+      "Spellcaster",
+      "Command mob"
+    ],
+    "related_entries": [
+      "minecraft:evoker",
+      "minecraft:pillager",
+      "minecraft:vindicator",
+      "minecraft:bow"
+    ],
+    "command": "/summon minecraft:illusioner",
+    "version_history": [
+      {
+        "version": "Java Edition 17w16a",
+        "change": "The illusioner was added as an unused mob.",
+        "type": "added",
+        "date": "2017-04-20"
+      },
+      {
+        "version": "Java Edition 1.12",
+        "change": "The illusioner remained in the release but received no natural spawn.",
+        "type": "changed",
+        "date": "2017-06-07"
+      }
+    ],
+    "texture": [
+      {
+        "name": "Illusioner Illusioner",
+        "category": "Default texture",
+        "description": "Variant: Illusioner Illusioner.",
+        "file": "/assets/img/texture/mobs/Illusioner/Illusioner.png"
+      }
+    ],
+    "sounds": [
+      {
+        "name": "Illusioner murmurs",
+        "event": "entity.illusioner.ambient",
+        "files": [
+          "/assets/sounds/mob/illusion_illager/idle1.ogg",
+          "/assets/sounds/mob/illusion_illager/idle2.ogg",
+          "/assets/sounds/mob/illusion_illager/idle3.ogg",
+          "/assets/sounds/mob/illusion_illager/idle4.ogg"
+        ]
+      },
+      {
+        "name": "Illusioner casts spell",
+        "event": "entity.illusioner.cast_spell",
+        "files": [
+          "/assets/sounds/mob/evocation_illager/cast1.ogg",
+          "/assets/sounds/mob/evocation_illager/cast2.ogg"
+        ]
+      },
+      {
+        "name": "Illusioner dies",
+        "event": "entity.illusioner.death",
+        "files": [
+          "/assets/sounds/mob/illusion_illager/death1.ogg",
+          "/assets/sounds/mob/illusion_illager/death2.ogg"
+        ]
+      },
+      {
+        "name": "Illusioner hurts",
+        "event": "entity.illusioner.hurt",
+        "files": [
+          "/assets/sounds/mob/illusion_illager/hurt1.ogg",
+          "/assets/sounds/mob/illusion_illager/hurt2.ogg",
+          "/assets/sounds/mob/illusion_illager/hurt3.ogg"
+        ]
+      },
+      {
+        "name": "Illusioner displaces",
+        "event": "entity.illusioner.mirror_move",
+        "files": [
+          "/assets/sounds/mob/illusion_illager/mirror_move1.ogg",
+          "/assets/sounds/mob/illusion_illager/mirror_move2.ogg"
+        ]
+      },
+      {
+        "name": "Illusioner prepares blindness",
+        "event": "entity.illusioner.prepare_blindness",
+        "files": [
+          "/assets/sounds/mob/illusion_illager/prepare_blind.ogg"
+        ]
+      },
+      {
+        "name": "Illusioner prepares mirror image",
+        "event": "entity.illusioner.prepare_mirror",
+        "files": [
+          "/assets/sounds/mob/illusion_illager/prepare_mirror.ogg"
+        ]
+      }
+    ],
+    "health": 32,
+    "damage": "Bow arrows; damage depends on difficulty, distance and arrow hit",
+    "armor": 0,
+    "experience": "5 when killed by a player or tamed wolf",
     "spawn": {
       "light_level": [
-        "Unknown"
+        "Not applicable"
       ],
-      "biome": "Only spawnable by command",
-      "structure": "None"
+      "biome": "None",
+      "structure": "None",
+      "method": "Only via the Java command /summon minecraft:illusioner or a data pack"
     },
     "light_level": [
-      "Unknown"
+      "Not applicable"
     ],
-    "fun_fact": "The Illusioner was announced in 2017 but never naturally implemented in the game!",
-    "abilities": [
-      "Creates copies of itself",
-      "Temporarily blinds players",
-      "Bow attacks",
-      "Illager wizard"
-    ],
+    "classification": "Hostile / illager",
+    "renewable": "Only repeatedly via commands or data packs",
+    "can_despawn": "Can despawn under monster rules without PersistenceRequired",
+    "tameable": "No",
+    "breedable": "No",
+    "duplicable": "No",
+    "duplication_item": "None",
+    "leashable": "No",
+    "rideable": "No",
+    "baby_variant": "No",
     "drops": [
       {
-        "item": "minecraft:emerald",
-        "chance": "50%",
-        "amount": "0-1"
+        "item": "Naturally generated bow",
+        "chance": "8.5% (+1 percentage point per Looting level)",
+        "amount": "1",
+        "condition": "Only when killed by a player or tamed wolf"
       },
       {
-        "item": "minecraft:arrow",
-        "chance": "100%",
-        "amount": "0-2"
-      },
-      {
-        "item": "minecraft:bow",
-        "chance": "8.5%",
-        "amount": "1"
+        "item": "Ominous banner",
+        "chance": "100 %",
+        "amount": "1",
+        "condition": "Only if the illusioner was set as a patrol/raid captain"
       }
-    ]
+    ],
+    "abilities": [
+      "Creates four purely visual illusions",
+      "Makes its real body invisible",
+      "Can blind players for 20 seconds",
+      "Sees its target through blocks",
+      "Attacks with a bow"
+    ],
+    "fun_fact": "The four copies have no hitboxes of their own; only the invisible real illusioner can be hit.",
+    "attack_type": "Bow ranged attacks and spells",
+    "targets": [
+      "Players",
+      "Adult villagers",
+      "Wandering traders",
+      "Iron golems"
+    ],
+    "enemy_mobs": [
+      "Iron golem"
+    ],
+    "follows": [],
+    "healing_item": [],
+    "fire_immune": "No",
+    "undead": "No",
+    "boss_bar": "No",
+    "knockback_resistance": 0,
+    "loot_table": "minecraft:entities/illusioner",
+    "java_entity_id": "minecraft:illusioner",
+    "bedrock_entity_id": "Not present",
+    "game": {
+      "version": "26.3",
+      "attributes": [
+        {
+          "id": "max_health",
+          "name": "Max Health",
+          "value": 32.0
+        },
+        {
+          "id": "attack_damage",
+          "name": "Attack Damage",
+          "value": 2.0
+        },
+        {
+          "id": "movement_speed",
+          "name": "Speed",
+          "value": 0.5
+        },
+        {
+          "id": "follow_range",
+          "name": "Mob Follow Range",
+          "value": 18.0
+        }
+      ],
+      "damage": {
+        "easy": 2.0,
+        "normal": 2.0,
+        "hard": 3.0
+      },
+      "size": {
+        "width": 0.6,
+        "height": 1.95
+      },
+      "category": {
+        "id": "monster",
+        "name": "Monster"
+      },
+      "fire_immune": false
+    }
   }
 ]

@@ -16,10 +16,6 @@
     padding: 140px 0 80px;
 }
 
-.hero-badge {
-    margin-bottom: 14px;
-}
-
 .sc-grid {
     display: grid;
     grid-template-columns: minmax(320px, 460px) minmax(420px, 1fr);
@@ -98,26 +94,6 @@ select:disabled {
 .upload-area.dragover {
     border-color: var(--accent);
     background-color: rgba(16, 185, 129, 0.06);
-}
-.upload-icon {
-    width: 72px;
-    height: 72px;
-    background: var(--primary-gradient);
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: var(--spacing-lg);
-    color: white;
-    font-size: 28px;
-}
-.upload-area h3 {
-    font-size: var(--text-xl);
-    margin-bottom: var(--spacing-sm);
-}
-.upload-area p {
-    color: var(--text-secondary);
-    margin-bottom: 0;
 }
 .upload-filename {
     margin-top: 10px;

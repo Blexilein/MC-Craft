@@ -1,0 +1,970 @@
+<!DOCTYPE html>
+<html lang="de" data-theme="overworld">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Mohamad Laith AKA 'Blexilein'">
+    <meta name="robots" content="index, follow">
+    <meta name="description" content="3D Skin-Poser für Minecraft: Skin per Upload oder Spielername laden, live in 3D drehen, Körperteile einzeln posieren und als Bild herunterladen.">
+    <meta name="keywords" content="minecraft, skin poser, 3d skin viewer, skin renderer, skin bust, minecraft avatar, skin pose, cape viewer">
+    <link rel="canonical" href="https://mc-craft.com/blog/de/skin-posierer.html">
+    <link rel="alternate" hreflang="de" href="https://mc-craft.com/blog/de/skin-posierer.html">
+    <link rel="alternate" hreflang="en" href="https://mc-craft.com/blog/en/skin-poser.html">
+    <link rel="alternate" hreflang="x-default" href="https://mc-craft.com/blog/de/skin-posierer.html">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="MC-Craft | 3D Skin-Poser">
+    <meta property="og:description" content="3D Skin-Poser für Minecraft: Skin per Upload oder Spielername laden, live in 3D drehen, Körperteile einzeln posieren und als Bild herunterladen.">
+    <meta property="og:url" content="https://mc-craft.com/blog/de/skin-posierer.html">
+    <meta property="og:image" content="https://mc-craft.com/assets/img/favicon/overworld/mc-craft-overworld.png">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="1254">
+    <meta property="og:image:height" content="1254">
+    <meta property="og:image:alt" content="MC-Craft Logo">
+    <meta property="og:site_name" content="MC-Craft">
+    <meta property="og:locale" content="de_DE">
+    <meta property="og:locale:alternate" content="en_US">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="MC-Craft | 3D Skin-Poser">
+    <meta name="twitter:description" content="3D Skin-Poser für Minecraft: Skin per Upload oder Spielername laden, live in 3D drehen, Körperteile einzeln posieren und als Bild herunterladen.">
+    <meta name="twitter:image" content="https://mc-craft.com/assets/img/favicon/overworld/mc-craft-overworld.png">
+    <meta name="theme-color" content="#148200">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicon/overworld/favicon-16x16.png?v=20260910v121c" data-theme-icon="favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon/overworld/favicon-32x32.png?v=20260910v121c" data-theme-icon="favicon-32x32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/favicon/overworld/apple-touch-icon.png?v=20260910v121c" data-theme-icon="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/assets/img/favicon/overworld/android-chrome-192x192.png?v=20260910v121c" data-theme-icon="android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="/assets/img/favicon/overworld/android-chrome-512x512.png?v=20260910v121c" data-theme-icon="android-chrome-512x512.png">
+    <link rel="icon" href="/assets/img/favicon/overworld/favicon.ico?v=20260910v121c" data-theme-icon="favicon.ico">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="stylesheet" href="/assets/fontawesome/all.min.css?v=20260910v121c">
+    <link rel="stylesheet" href="/assets/CSS/skin-poser.css?v=20260910v121c">
+    <link rel="stylesheet" href="/assets/CSS/site-modern-v1.css?v=20260917b">
+    <script src="/assets/JS/vendor/skinview3d.bundle.js?v=20260908" defer></script>
+    <title>MC-Craft | 3D Skin-Poser</title>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Organization",
+          "@id": "https://mc-craft.com/#organization",
+          "name": "MC-Craft",
+          "url": "https://mc-craft.com/",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://mc-craft.com/assets/img/favicon/overworld/mc-craft-overworld.png",
+            "width": 1254,
+            "height": 1254
+          },
+          "sameAs": [
+            "https://github.com/Blexilein",
+            "https://discord.gg/eVVpQD75w4",
+            "https://x.com/Blexi_1"
+          ]
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://mc-craft.com/#website",
+          "name": "MC-Craft",
+          "url": "https://mc-craft.com/",
+          "inLanguage": "de-DE",
+          "publisher": {
+            "@id": "https://mc-craft.com/#organization"
+          }
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://mc-craft.com/blog/de/skin-posierer.html#webpage",
+          "url": "https://mc-craft.com/blog/de/skin-posierer.html",
+          "name": "MC-Craft | 3D Skin-Poser",
+          "description": "3D Skin-Poser für Minecraft: Skin per Upload oder Spielername laden, live in 3D drehen, Körperteile einzeln posieren und als Bild herunterladen.",
+          "inLanguage": "de-DE",
+          "isPartOf": {
+            "@id": "https://mc-craft.com/#website"
+          },
+          "breadcrumb": {
+            "@id": "https://mc-craft.com/blog/de/skin-posierer.html#breadcrumb"
+          }
+        },
+        {
+          "@type": "BreadcrumbList",
+          "@id": "https://mc-craft.com/blog/de/skin-posierer.html#breadcrumb",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Startseite",
+              "item": "https://mc-craft.com/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "3D Skin-Poser"
+            }
+          ]
+        }
+      ]
+    }
+    </script>
+</head>
+<body>
+    <a class="skip-link" href="#main">Zum Hauptinhalt springen</a>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <a href="/index.html" class="logo">
+                    <div class="logo-icon"></div>
+                    <span class="logo-text">MC-Craft</span>
+                </a>
+                <nav class="navigation">
+                    <ul class="nav-list">
+                        <li><a href="/index.html" class="nav-link">Home</a></li>
+                        <li class="dropdown">
+                            <button class="dropdown-btn nav-link">Werkzeuge</button>
+                            <ul class="dropdown-menu">
+                                <li><a href="/blog/de/text-konverter.html">Text Konverter</a></li>
+                                <li><a href="/blog/de/farbtext.html">Farbtext</a></li>
+                                <li><a href="/blog/de/struktur-konverter.html">Struktur-Konverter</a></li>
+                                <li><a href="/blog/de/schematic-viewer.html">Schematic-Viewer</a></li>
+                                <li><a href="/blog/de/map-art-generator.html">Map-Art-Generator</a></li>
+                                <li><a href="/blog/de/nether-koordinaten-rechner.html">Nether Koordinaten Rechner</a></li>
+                                <li><a href="/blog/de/minecraft-befehl-generator.html">Minecraft Befehl Generator</a></li>
+                                <li><a href="/blog/de/items.html">Items Datenbank</a></li>
+                                <li><a href="/blog/de/mobs.html">Mobs Datenbank</a></li>
+                                <li><a href="/blog/de/serverstatus.html">Server Status</a></li>
+                                <li><a href="/blog/de/minecraft-api-status.html">Minecraft API Status</a></li>
+                                <li><a href="/blog/de/api-dokumentation.html">API-Dokumentation</a></li>
+                                <li><a href="/blog/de/skin-suche.html">Skin Lookup</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <button class="dropdown-btn nav-link">Entdecken</button>
+                            <ul class="dropdown-menu">
+                                <li><a href="/blog/de/skin-editor.html">Skin Editor</a></li>
+                                <li><a href="/blog/de/skin-posierer.html">Skin-Poser</a></li>
+                                <li><a href="/blog/de/chibi-skin-ersteller.html">Chibi Skin Maker</a></li>
+                                <li><a href="/blog/de/tag-nacht-zyklus.html">Tag-Nacht-Zyklus</a></li>
+                                <li><a href="/blog/de/end_poem.html">End Poem</a></li>
+                                <li><a href="/blog/de/cape-datenbank.html">Cape-Datenbank</a></li>
+                                <li><a href="/blog/de/kopf-datenbank.html">Kopf-Datenbank</a></li>
+                                <li><a href="/blog/de/kopf-textur-generator.html">Head Texture Generator</a></li>
+                                <li><a href="/blog/de/minecraft-versionen.html">Minecraft Versionen</a></li>
+                                <li><a href="/blog/de/skin-bibliothek.html">Skin-Bibliothek</a></li>
+                                <li><a href="/blog/de/beacon-farbmischer.html">Beacon Color Mixer</a></li>
+                                <li><a href="/blog/de/qr-generator.html">QR Generator</a></li>
+                                <li><a href="/blog/de/erfolge-generator.html">Advancement Generator</a></li>
+                                <li><a href="/blog/de/schild-generator.html">Schild-Generator</a></li>
+                                <li><a href="/blog/de/crafting-rezepte.html">Crafting-Rezepte</a></li>
+                                <li><a href="/blog/de/ruestungsbesatz-generator.html">Rüstungsbesatz-Generator</a></li>
+                                <li><a href="/blog/de/feuerwerk-generator.html">Feuerwerk-Generator</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="sound-toggle">
+                    <button class="sound-btn" id="soundBtn" aria-label="Sound ein/aus">
+                        <img src="/assets/img/backgrounds/sound-on.svg?v=20260910v121c" alt="Sound an" class="sound-icon" id="soundIcon">
+                    </button>
+                </div>
+                <div class="lang-switcher">
+                    <a class="lang-btn" id="langBtn" href="/blog/en/skin-poser.html" aria-label="Switch to English">
+                        <img src="/assets/img/backgrounds/de.svg?v=20260910v121c" alt="Deutsch" class="flag-icon" id="langFlag">
+                    </a>
+                </div>
+                <div class="theme-switcher">
+                    <button class="theme-btn" id="themeBtn">
+                        <i class="fa-solid fa-palette"></i>
+                    </button>
+                    <div class="theme-dropdown" id="themeDropdown">
+                        <button class="theme-option" data-theme="overworld">
+                            <i class="fas fa-cube"></i>
+                            <span>Overworld</span>
+                        </button>
+                        <button class="theme-option" data-theme="nether">
+                            <i class="fas fa-fire"></i>
+                            <span>Nether</span>
+                        </button>
+                        <button class="theme-option" data-theme="end">
+                            <i class="fas fa-moon"></i>
+                            <span>The End</span>
+                        </button>
+                    </div>
+                </div>
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Navigation -->
+    <div class="mobile-nav" id="mobileNav">
+        <div class="mobile-nav-header">
+            <div class="logo">
+                <div class="logo-icon"></div>
+                <span class="logo-text">MC-Craft</span>
+            </div>
+            <button class="close-btn" id="closeBtn">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <ul class="mobile-nav-list">
+            <li><a href="/index.html" class="mobile-nav-link">Home</a></li>
+            <li><a href="/blog/de/text-konverter.html" class="mobile-nav-link">Text Konverter</a></li>
+            <li><a href="/blog/de/farbtext.html" class="mobile-nav-link">Farbtext</a></li>
+            <li><a href="/blog/de/struktur-konverter.html" class="mobile-nav-link">Struktur-Konverter</a></li>
+            <li><a href="/blog/de/schematic-viewer.html" class="mobile-nav-link">Schematic-Viewer</a></li>
+            <li><a href="/blog/de/map-art-generator.html" class="mobile-nav-link">Map-Art-Generator</a></li>
+            <li><a href="/blog/de/nether-koordinaten-rechner.html" class="mobile-nav-link">Nether Koordinaten Rechner</a></li>
+            <li><a href="/blog/de/minecraft-befehl-generator.html" class="mobile-nav-link">Minecraft Befehl Generator</a></li>
+            <li><a href="/blog/de/items.html" class="mobile-nav-link">Items Datenbank</a></li>
+            <li><a href="/blog/de/mobs.html" class="mobile-nav-link">Mobs Datenbank</a></li>
+            <li><a href="/blog/de/serverstatus.html" class="mobile-nav-link">Server Status</a></li>
+            <li><a href="/blog/de/minecraft-api-status.html" class="mobile-nav-link">Minecraft API Status</a></li>
+            <li><a href="/blog/de/api-dokumentation.html" class="mobile-nav-link">API-Dokumentation</a></li>
+            <li><a href="/blog/de/skin-suche.html" class="mobile-nav-link">Skin Lookup</a></li>
+            <li><a href="/blog/de/skin-editor.html" class="mobile-nav-link">Skin Editor</a></li>
+            <li><a href="/blog/de/skin-posierer.html" class="mobile-nav-link">Skin-Poser</a></li>
+            <li><a href="/blog/de/chibi-skin-ersteller.html" class="mobile-nav-link">Chibi Skin Maker</a></li>
+            <li><a href="/blog/de/tag-nacht-zyklus.html" class="mobile-nav-link">Tag-Nacht-Zyklus</a></li>
+            <li><a href="/blog/de/end_poem.html" class="mobile-nav-link">End Poem</a></li>
+            <li><a href="/blog/de/cape-datenbank.html" class="mobile-nav-link">Cape-Datenbank</a></li>
+            <li><a href="/blog/de/kopf-datenbank.html" class="mobile-nav-link">Kopf-Datenbank</a></li>
+            <li><a href="/blog/de/kopf-textur-generator.html" class="mobile-nav-link">Head Texture Generator</a></li>
+            <li><a href="/blog/de/minecraft-versionen.html" class="mobile-nav-link">Minecraft Versionen</a></li>
+            <li><a href="/blog/de/skin-bibliothek.html" class="mobile-nav-link">Skin-Bibliothek</a></li>
+            <li><a href="/blog/de/beacon-farbmischer.html" class="mobile-nav-link">Beacon Color Mixer</a></li>
+            <li><a href="/blog/de/qr-generator.html" class="mobile-nav-link">QR Generator</a></li>
+            <li><a href="/blog/de/erfolge-generator.html" class="mobile-nav-link">Advancement Generator</a></li>
+            <li><a href="/blog/de/schild-generator.html" class="mobile-nav-link">Schild-Generator</a></li>
+            <li><a href="/blog/de/crafting-rezepte.html" class="mobile-nav-link">Crafting-Rezepte</a></li>
+            <li><a href="/blog/de/ruestungsbesatz-generator.html" class="mobile-nav-link">Rüstungsbesatz-Generator</a></li>
+            <li><a href="/blog/de/feuerwerk-generator.html" class="mobile-nav-link">Feuerwerk-Generator</a></li>
+        </ul>
+        <div class="mobile-theme-switcher">
+            <h4>Theme auswählen:</h4>
+            <div class="theme-options">
+                <button class="theme-option-btn" data-theme="overworld">
+                    <i class="fas fa-cube"></i> <span>Overworld</span>
+                </button>
+                <button class="theme-option-btn" data-theme="nether">
+                    <i class="fas fa-fire"></i> <span>Nether</span>
+                </button>
+                <button class="theme-option-btn" data-theme="end">
+                    <i class="fas fa-moon"></i> <span>The End</span>
+                </button>
+            </div>
+            <div class="mobile-sound-lang">
+                <button class="mobile-sound-btn" id="mobileSoundBtn">
+                    <img src="/assets/img/backgrounds/sound-on.svg?v=20260910v121c" alt="Sound an" class="sound-icon" id="mobileSoundIcon">
+                    <span>Sound</span>
+                </button>
+                <a class="mobile-lang-btn" id="mobileLangBtn" href="/blog/en/skin-poser.html">
+                    <img src="/assets/img/backgrounds/de.svg?v=20260910v121c" alt="Deutsch" class="flag-icon" id="mobileLangFlag">
+                    <span>Sprache</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <main class="main" id="main" tabindex="-1">
+        <!-- Hero Section -->
+        <section class="hero" id="home">
+            <div class="hero-bg-grid"></div>
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-badge">
+                        <span class="hero-badge-dot"></span>
+                        V 1.2.0 ist da
+                    </div>
+                    <h1 class="hero-title">3D <span class="highlight">Skin-Poser</span></h1>
+                    <p class="hero-description">
+                        Lade einen Minecraft-Skin per Datei oder Spielername, drehe ihn frei in 3D, posiere Kopf, Körper, Arme und Beine einzeln
+                        und lade das Ergebnis als Bild herunter – inklusive Cape/Elytra, Ebenen-Steuerung und Mehrfachansicht.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#poser" class="btn btn-primary">
+                            <i class="fas fa-cube"></i> Jetzt posieren
+                        </a>
+                        <a href="#poser-export" class="btn btn-secondary">
+                            <i class="fas fa-download"></i> Export ansehen
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="hero-grid-staggered">
+                        <div class="hero-stagger-col hero-stagger-left">
+                            <div class="grid-item">
+                                <i class="fas fa-arrows-spin"></i>
+                                <span>Live 3D-Ansicht</span>
+                            </div>
+                            <div class="grid-item">
+                                <i class="fas fa-child-reaching"></i>
+                                <span>Freies Posieren</span>
+                            </div>
+                        </div>
+                        <div class="hero-stagger-col hero-stagger-right">
+                            <div class="grid-item">
+                                <i class="fas fa-image"></i>
+                                <span>Bild-Export</span>
+                            </div>
+                            <div class="grid-item">
+                                <i class="fas fa-user-astronaut"></i>
+                                <span>Cape &amp; Elytra</span>
+                            </div>
+                        </div>
+                        <div class="floating-cube floating-cube-1"></div>
+                        <div class="floating-cube floating-cube-2"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Poser Section -->
+        <section class="poser-section" id="poser">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Skin <span class="highlight">Poser</span></h2>
+                    <p class="section-subtitle">Skin laden, in 3D drehen und posieren – ziehe im Bild, um die Kamera zu drehen</p>
+                </div>
+
+                <div class="poser-layout">
+                    <!-- Viewer -->
+                    <div class="poser-viewer-col">
+                        <div class="skin-viewer">
+                            <div class="poser-canvas-wrapper" id="poserCanvasWrapper">
+                                <canvas id="poserCanvas" class="skin-canvas"></canvas>
+                                <div class="poser-vignette-overlay" id="poserVignetteOverlay"></div>
+                            </div>
+                            <div class="viewer-controls"><i class="fas fa-arrows-rotate"></i> Ziehen zum Drehen &middot; Scrollen zum Zoomen</div>
+
+                            <div class="viewer-toggle-row">
+                                <button class="btn btn-outline" id="autoRotateBtn">Auto-Rotation: Aus</button>
+                                <button class="btn btn-outline" id="headOnlyBtn">Nur Kopf: Aus</button>
+                                <button class="btn btn-primary" id="layerToggleBtn">2. Ebene: An</button>
+                                <button class="btn btn-outline" id="earsToggleBtn">Ears: Aus</button>
+                                <button class="btn btn-outline" id="lockRotationBtn">Rotation sperren</button>
+                                <label class="zoom-control">
+                                    <i class="fas fa-magnifying-glass"></i>
+                                    <input type="range" id="zoomRange" min="0.5" max="2" step="0.05" value="1">
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Controls -->
+                    <div class="poser-controls-col">
+                        <div class="poser-settings">
+                            <div class="poser-settings-tabs" id="settingsTabRow">
+                                <button class="poser-settings-tab active" type="button" data-panel="skin"><i class="fas fa-upload"></i> Skin</button>
+                                <button class="poser-settings-tab" type="button" data-panel="pose"><i class="fas fa-child-reaching"></i> Posen</button>
+                                <button class="poser-settings-tab" type="button" data-panel="look"><i class="fas fa-cube"></i> Look</button>
+                                <button class="poser-settings-tab" type="button" data-panel="lighting"><i class="fas fa-sun"></i> Licht</button>
+                                <button class="poser-settings-tab" type="button" data-panel="camera"><i class="fas fa-video"></i> Kamera</button>
+                                <button class="poser-settings-tab" type="button" data-panel="parts"><i class="fas fa-layer-group"></i> Teile</button>
+                            </div>
+
+                            <div class="poser-settings-panel" data-panel="skin">
+                                <div class="poser-card">
+                                    <h3><i class="fas fa-upload"></i> Skin laden</h3>
+
+                                    <div class="upload-dropzone" id="skinDropzone">
+                                        <i class="fas fa-file-image"></i>
+                                        Skin-PNG hierher ziehen oder klicken
+                                    </div>
+                                    <input type="file" id="skinFileInput" accept="image/png" hidden>
+
+                                    <div class="poser-field">
+                                        <label for="usernameInput">Oder per Spielername laden</label>
+                                        <div class="poser-inline-row">
+                                            <input type="text" id="usernameInput" placeholder="z. B. Notch" autocomplete="off">
+                                            <button class="btn btn-primary" id="lookupBtn"><i class="fas fa-search"></i> Laden</button>
+                                        </div>
+                                    </div>
+
+                                    <div class="poser-field">
+                                        <label for="modelSelect">Modell-Typ</label>
+                                        <select id="modelSelect">
+                                            <option value="auto-detect">Automatisch erkennen</option>
+                                            <option value="default">Classic (Steve)</option>
+                                            <option value="slim">Slim (Alex)</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="poser-field">
+                                        <label>Cape</label>
+                                        <div class="upload-dropzone upload-dropzone-compact" id="capeDropzone">
+                                            <i class="fas fa-flag"></i>
+                                            Cape-PNG hierher ziehen oder klicken
+                                        </div>
+                                        <input type="file" id="capeFileInput" accept="image/png" hidden>
+                                        <div class="poser-inline-row" style="margin-top: var(--spacing-sm);">
+                                            <input type="url" id="capeUrlInput" placeholder="Oder Cape-URL einfügen">
+                                            <button class="btn btn-outline" id="capeLoadBtn">Laden</button>
+                                        </div>
+                                        <div class="poser-toggle-row" id="backEquipmentToggle" style="margin-top: var(--spacing-sm);">
+                                            <button class="btn btn-primary active" data-mode="cape">Cape</button>
+                                            <button class="btn btn-outline" data-mode="elytra">Elytra</button>
+                                        </div>
+                                        <button class="btn btn-primary" id="capeVisibleBtn" style="margin-top: var(--spacing-sm); width: 100%;">Cape: An</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="poser-settings-panel" data-panel="pose" hidden>
+                                <div class="poser-card poser-pose-card">
+                                    <h3><i class="fas fa-child-reaching"></i> Posen</h3>
+                                    <div class="pose-presets" id="posePresetRow">
+                                        <span class="pose-group-label">Posen</span>
+                                        <button class="btn btn-outline" data-pose="tpose">T-Pose</button>
+                                        <button class="btn btn-outline" data-pose="sitting">Sitzen</button>
+                                        <button class="btn btn-outline" data-pose="salute">Salutieren</button>
+                                        <button class="btn btn-outline" data-pose="armsback">Arme hinterm Rücken</button>
+                                        <button class="btn btn-outline" data-pose="jump">Sprung</button>
+                                        <button class="btn btn-outline" data-pose="zombie">Zombie</button>
+                                        <button class="btn btn-outline" data-pose="aiming">Zielen</button>
+                                        <button class="btn btn-outline" data-pose="cheering">Jubeln</button>
+                                        <button class="btn btn-outline" data-pose="mining">Abbauen</button>
+                                        <span class="pose-group-label">Animationen</span>
+                                        <button class="btn btn-outline active" data-pose="idle">Idle</button>
+                                        <button class="btn btn-outline" data-pose="walk">Gehen</button>
+                                        <button class="btn btn-outline" data-pose="run">Rennen</button>
+                                        <button class="btn btn-outline" data-pose="crouch">Ducken</button>
+                                        <button class="btn btn-outline" data-pose="swim">Schwimmen</button>
+                                        <button class="btn btn-outline" data-pose="wave">Winken</button>
+                                        <button class="btn btn-outline" data-pose="fly">Fliegen</button>
+                                        <button class="btn btn-secondary" id="resetPoseBtn"><i class="fas fa-rotate-left"></i> Zurücksetzen</button>
+                                    </div>
+                                    <p class="viewer-controls" style="margin-top: -8px; margin-bottom: var(--spacing-md);">Feinjustierung: Regler pro Körperteil verschieben, um die Pose per Hand anzupassen (überschreibt die Preset-Animation)</p>
+                                    <div class="limb-sliders-grid" id="limbSlidersGrid"></div>
+                                </div>
+                            </div>
+
+                            <div class="poser-settings-panel" data-panel="look" hidden>
+                                <div class="poser-card">
+                                    <h3><i class="fas fa-cube"></i> Look</h3>
+
+                                    <div class="poser-field">
+                                        <label for="lookSelect">Material</label>
+                                        <select id="lookSelect">
+                                            <option value="soft">Soft Toy</option>
+                                            <option value="glossy">Glossy Toy</option>
+                                            <option value="clay">Clay</option>
+                                            <option value="plastic">Plastic</option>
+                                            <option value="matte">Matte</option>
+                                            <option value="metallic">Metallic</option>
+                                            <option value="embossed">Embossed</option>
+                                            <option value="flat">Flat / Unlit</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="poser-field">
+                                        <label for="outlineWidthRange">Umrandungsstärke</label>
+                                        <div class="poser-range-row">
+                                            <input type="range" id="outlineWidthRange" min="0" max="10" step="1" value="0">
+                                            <span class="poser-range-value" id="outlineWidthValue">0</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="poser-field poser-checkbox-field">
+                                        <label class="poser-checkbox-label">
+                                            <input type="checkbox" id="lookTransparentCheckbox">
+                                            Transparent
+                                        </label>
+                                        <label class="poser-checkbox-label">
+                                            <input type="checkbox" id="lookVignetteCheckbox">
+                                            Vignette
+                                        </label>
+                                    </div>
+
+                                    <div class="poser-field">
+                                        <label>Hintergrund (Farbverlauf)</label>
+                                        <div class="poser-color-row">
+                                            <input type="color" id="bgColorInput" value="#2b2b3a">
+                                            <input type="color" id="bgColor2Input" value="#0f0f18">
+                                            <button class="btn btn-outline" id="bgTransparentBtn">Transparent</button>
+                                        </div>
+                                    </div>
+
+                                    <div class="poser-field">
+                                        <label>Hintergrund-Galerie</label>
+                                        <div class="bg-preset-grid" id="bgPresetGrid"></div>
+                                    </div>
+
+                                    <div class="poser-field">
+                                        <label>Eigenes Panorama-Bild (optional)</label>
+                                        <div class="upload-dropzone upload-dropzone-compact" id="panoramaDropzone">
+                                            <i class="fas fa-image"></i>
+                                            Bild hierher ziehen oder klicken
+                                        </div>
+                                        <input type="file" id="panoramaFileInput" accept="image/png,image/jpeg" hidden>
+                                    </div>
+
+                                    <div class="poser-field">
+                                        <label for="nametagInput">Namensschild über dem Skin (optional)</label>
+                                        <input type="text" id="nametagInput" placeholder="z. B. Steve" maxlength="16">
+                                    </div>
+
+                                    <div class="poser-field">
+                                        <label>Ohrenfarbe (bei aktivierten Ears)</label>
+                                        <div class="poser-color-row">
+                                            <input type="color" id="earsColorInput" value="#ffffff">
+                                            <button class="btn btn-outline" id="earsColorResetBtn">Zurücksetzen</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="poser-settings-panel" data-panel="lighting" hidden>
+                                <div class="poser-card">
+                                    <h3><i class="fas fa-sun"></i> Licht</h3>
+
+                                    <div class="poser-field">
+                                        <label>Schatten</label>
+                                        <div class="poser-checkbox-field">
+                                            <label class="poser-checkbox-label">
+                                                <input type="checkbox" id="shadingCheckbox" checked>
+                                                Eigenschatten
+                                            </label>
+                                            <label class="poser-checkbox-label">
+                                                <input type="checkbox" id="groundShadowCheckbox">
+                                                Bodenschatten
+                                            </label>
+                                            <label class="poser-checkbox-label">
+                                                <input type="checkbox" id="dissolveEdgesCheckbox">
+                                                Kanten auflösen
+                                            </label>
+                                        </div>
+                                    </div>
+
+                                    <div class="poser-field">
+                                        <label for="shadowIntensityRange">Schattenstärke</label>
+                                        <div class="poser-range-row">
+                                            <input type="range" id="shadowIntensityRange" min="0" max="100" step="1" value="50">
+                                            <span class="poser-range-value" id="shadowIntensityValue">50%</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="poser-field">
+                                        <label for="lightIntensityRange">Lichtstärke (Umgebung)</label>
+                                        <div class="poser-range-row">
+                                            <input type="range" id="lightIntensityRange" min="0" max="300" step="1" value="100">
+                                            <span class="poser-range-value" id="lightIntensityValue">100%</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="poser-field">
+                                        <label for="lightIntensity2Range">Lichtstärke (gerichtet)</label>
+                                        <div class="poser-range-row">
+                                            <input type="range" id="lightIntensity2Range" min="0" max="300" step="1" value="100">
+                                            <span class="poser-range-value" id="lightIntensity2Value">100%</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="poser-field">
+                                        <label>Lichtfarbe</label>
+                                        <div class="poser-color-row">
+                                            <input type="color" id="lightColorInput" value="#ffffff">
+                                        </div>
+                                    </div>
+
+                                    <div class="poser-field">
+                                        <label>Sonnenposition (im Feld ziehen)</label>
+                                        <div class="sun-position-pad" id="sunPositionPad">
+                                            <div class="sun-position-dot" id="sunPositionDot"></div>
+                                        </div>
+                                    </div>
+
+                                    <div class="poser-field">
+                                        <label for="lightHeightRange">Lichthöhe</label>
+                                        <div class="poser-range-row">
+                                            <input type="range" id="lightHeightRange" min="0" max="300" step="1" value="100">
+                                            <span class="poser-range-value" id="lightHeightValue">100%</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="poser-settings-panel" data-panel="camera" hidden>
+                                <div class="poser-card">
+                                    <h3><i class="fas fa-video"></i> Kamera</h3>
+
+                                    <div class="poser-field">
+                                        <label>Winkel</label>
+                                        <div class="angle-preset-row" id="anglePresetRow">
+                                            <button class="btn btn-outline" data-angle="front">Vorne</button>
+                                            <button class="btn btn-outline" data-angle="threequarter">3/4 rechts</button>
+                                            <button class="btn btn-outline" data-angle="side">Seite rechts</button>
+                                            <button class="btn btn-outline" data-angle="threequarterBack">3/4 hinten rechts</button>
+                                            <button class="btn btn-outline" data-angle="back">Hinten</button>
+                                            <button class="btn btn-outline" data-angle="threequarterBackLeft">3/4 hinten links</button>
+                                            <button class="btn btn-outline" data-angle="sideLeft">Seite links</button>
+                                            <button class="btn btn-outline" data-angle="threequarterLeft">3/4 links</button>
+                                            <button class="btn btn-outline" data-angle="face">Gesicht</button>
+                                            <button class="btn btn-outline" data-angle="top">Oben</button>
+                                            <button class="btn btn-outline" data-angle="bottom">Unten</button>
+                                        </div>
+                                    </div>
+
+                                    <div class="poser-field">
+                                        <label>Bildausschnitt</label>
+                                        <div class="angle-preset-row" id="framingPresetRow">
+                                            <button class="btn btn-outline active" data-framing="full">Ganzkörper</button>
+                                            <button class="btn btn-outline" data-framing="half">Halbkörper</button>
+                                            <button class="btn btn-outline" data-framing="portrait">Porträt</button>
+                                            <button class="btn btn-outline" data-framing="head">Kopf</button>
+                                        </div>
+                                    </div>
+
+                                    <p class="camera-readout" id="cameraReadout">Azimut 180.0° &middot; Polar 90.0°</p>
+                                </div>
+                            </div>
+
+                            <div class="poser-settings-panel" data-panel="parts" hidden>
+                                <div class="poser-card poser-parts-card">
+                                    <h3><i class="fas fa-layer-group"></i> Teile</h3>
+                                    <div class="mv-parts" id="poserPartsList">
+                                        <div class="vp-part">
+                                            <svg class="mv-layer-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg>
+                                            <span class="vp-part-name">Kopf</span>
+                                            <label class="vp-eye" title="Kopf ein-/ausblenden">
+                                                <input type="checkbox" checked data-part="head" aria-label="Kopf ein-/ausblenden">
+                                                <svg class="eye-on" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M1 12s4-7 11-7 11 7 11 7-4 7-11 7-11-7-11-7z"/><circle cx="12" cy="12" r="3"/></svg><svg class="eye-off" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M17.94 17.94A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.5 18.5 0 0 1-2.16 3.19m-6.72-1.07a3 3 0 1 1-4.24-4.24"/><line x1="1" y1="1" x2="23" y2="23"/></svg>
+                                            </label>
+                                        </div>
+                                        <div class="vp-part vp-part-sub">
+                                            <svg class="mv-layer-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/></svg>
+                                            <span class="vp-part-name">Hut-Schicht</span>
+                                            <label class="vp-eye" title="Hut-Schicht ein-/ausblenden">
+                                                <input type="checkbox" checked data-part="head-layer" aria-label="Hut-Schicht ein-/ausblenden">
+                                                <svg class="eye-on" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M1 12s4-7 11-7 11 7 11 7-4 7-11 7-11-7-11-7z"/><circle cx="12" cy="12" r="3"/></svg><svg class="eye-off" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M17.94 17.94A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.5 18.5 0 0 1-2.16 3.19m-6.72-1.07a3 3 0 1 1-4.24-4.24"/><line x1="1" y1="1" x2="23" y2="23"/></svg>
+                                            </label>
+                                        </div>
+                                        <div class="vp-part">
+                                            <svg class="mv-layer-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg>
+                                            <span class="vp-part-name">Körper</span>
+                                            <label class="vp-eye" title="Körper ein-/ausblenden">
+                                                <input type="checkbox" checked data-part="body" aria-label="Körper ein-/ausblenden">
+                                                <svg class="eye-on" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M1 12s4-7 11-7 11 7 11 7-4 7-11 7-11-7-11-7z"/><circle cx="12" cy="12" r="3"/></svg><svg class="eye-off" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M17.94 17.94A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.5 18.5 0 0 1-2.16 3.19m-6.72-1.07a3 3 0 1 1-4.24-4.24"/><line x1="1" y1="1" x2="23" y2="23"/></svg>
+                                            </label>
+                                        </div>
+                                        <div class="vp-part vp-part-sub">
+                                            <svg class="mv-layer-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/></svg>
+                                            <span class="vp-part-name">Körper-Schicht</span>
+                                            <label class="vp-eye" title="Körper-Schicht ein-/ausblenden">
+                                                <input type="checkbox" checked data-part="body-layer" aria-label="Körper-Schicht ein-/ausblenden">
+                                                <svg class="eye-on" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M1 12s4-7 11-7 11 7 11 7-4 7-11 7-11-7-11-7z"/><circle cx="12" cy="12" r="3"/></svg><svg class="eye-off" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M17.94 17.94A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.5 18.5 0 0 1-2.16 3.19m-6.72-1.07a3 3 0 1 1-4.24-4.24"/><line x1="1" y1="1" x2="23" y2="23"/></svg>
+                                            </label>
+                                        </div>
+                                        <div class="vp-part">
+                                            <svg class="mv-layer-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg>
+                                            <span class="vp-part-name">Rechter Arm</span>
+                                            <label class="vp-eye" title="Rechten Arm ein-/ausblenden">
+                                                <input type="checkbox" checked data-part="rightArm" aria-label="Rechten Arm ein-/ausblenden">
+                                                <svg class="eye-on" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M1 12s4-7 11-7 11 7 11 7-4 7-11 7-11-7-11-7z"/><circle cx="12" cy="12" r="3"/></svg><svg class="eye-off" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M17.94 17.94A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.5 18.5 0 0 1-2.16 3.19m-6.72-1.07a3 3 0 1 1-4.24-4.24"/><line x1="1" y1="1" x2="23" y2="23"/></svg>
+                                            </label>
+                                        </div>
+                                        <div class="vp-part vp-part-sub">
+                                            <svg class="mv-layer-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/></svg>
+                                            <span class="vp-part-name">Rechter Arm Schicht</span>
+                                            <label class="vp-eye" title="Rechte Arm-Schicht ein-/ausblenden">
+                                                <input type="checkbox" checked data-part="rightArm-layer" aria-label="Rechte Arm-Schicht ein-/ausblenden">
+                                                <svg class="eye-on" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M1 12s4-7 11-7 11 7 11 7-4 7-11 7-11-7-11-7z"/><circle cx="12" cy="12" r="3"/></svg><svg class="eye-off" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M17.94 17.94A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.5 18.5 0 0 1-2.16 3.19m-6.72-1.07a3 3 0 1 1-4.24-4.24"/><line x1="1" y1="1" x2="23" y2="23"/></svg>
+                                            </label>
+                                        </div>
+                                        <div class="vp-part">
+                                            <svg class="mv-layer-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg>
+                                            <span class="vp-part-name">Linker Arm</span>
+                                            <label class="vp-eye" title="Linken Arm ein-/ausblenden">
+                                                <input type="checkbox" checked data-part="leftArm" aria-label="Linken Arm ein-/ausblenden">
+                                                <svg class="eye-on" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M1 12s4-7 11-7 11 7 11 7-4 7-11 7-11-7-11-7z"/><circle cx="12" cy="12" r="3"/></svg><svg class="eye-off" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M17.94 17.94A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.5 18.5 0 0 1-2.16 3.19m-6.72-1.07a3 3 0 1 1-4.24-4.24"/><line x1="1" y1="1" x2="23" y2="23"/></svg>
+                                            </label>
+                                        </div>
+                                        <div class="vp-part vp-part-sub">
+                                            <svg class="mv-layer-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/></svg>
+                                            <span class="vp-part-name">Linker Arm Schicht</span>
+                                            <label class="vp-eye" title="Linke Arm-Schicht ein-/ausblenden">
+                                                <input type="checkbox" checked data-part="leftArm-layer" aria-label="Linke Arm-Schicht ein-/ausblenden">
+                                                <svg class="eye-on" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M1 12s4-7 11-7 11 7 11 7-4 7-11 7-11-7-11-7z"/><circle cx="12" cy="12" r="3"/></svg><svg class="eye-off" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M17.94 17.94A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.5 18.5 0 0 1-2.16 3.19m-6.72-1.07a3 3 0 1 1-4.24-4.24"/><line x1="1" y1="1" x2="23" y2="23"/></svg>
+                                            </label>
+                                        </div>
+                                        <div class="vp-part">
+                                            <svg class="mv-layer-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg>
+                                            <span class="vp-part-name">Rechtes Bein</span>
+                                            <label class="vp-eye" title="Rechtes Bein ein-/ausblenden">
+                                                <input type="checkbox" checked data-part="rightLeg" aria-label="Rechtes Bein ein-/ausblenden">
+                                                <svg class="eye-on" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M1 12s4-7 11-7 11 7 11 7-4 7-11 7-11-7-11-7z"/><circle cx="12" cy="12" r="3"/></svg><svg class="eye-off" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M17.94 17.94A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.5 18.5 0 0 1-2.16 3.19m-6.72-1.07a3 3 0 1 1-4.24-4.24"/><line x1="1" y1="1" x2="23" y2="23"/></svg>
+                                            </label>
+                                        </div>
+                                        <div class="vp-part vp-part-sub">
+                                            <svg class="mv-layer-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/></svg>
+                                            <span class="vp-part-name">Rechtes Bein Schicht</span>
+                                            <label class="vp-eye" title="Rechte Bein-Schicht ein-/ausblenden">
+                                                <input type="checkbox" checked data-part="rightLeg-layer" aria-label="Rechte Bein-Schicht ein-/ausblenden">
+                                                <svg class="eye-on" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M1 12s4-7 11-7 11 7 11 7-4 7-11 7-11-7-11-7z"/><circle cx="12" cy="12" r="3"/></svg><svg class="eye-off" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M17.94 17.94A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.5 18.5 0 0 1-2.16 3.19m-6.72-1.07a3 3 0 1 1-4.24-4.24"/><line x1="1" y1="1" x2="23" y2="23"/></svg>
+                                            </label>
+                                        </div>
+                                        <div class="vp-part">
+                                            <svg class="mv-layer-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg>
+                                            <span class="vp-part-name">Linkes Bein</span>
+                                            <label class="vp-eye" title="Linkes Bein ein-/ausblenden">
+                                                <input type="checkbox" checked data-part="leftLeg" aria-label="Linkes Bein ein-/ausblenden">
+                                                <svg class="eye-on" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M1 12s4-7 11-7 11 7 11 7-4 7-11 7-11-7-11-7z"/><circle cx="12" cy="12" r="3"/></svg><svg class="eye-off" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M17.94 17.94A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.5 18.5 0 0 1-2.16 3.19m-6.72-1.07a3 3 0 1 1-4.24-4.24"/><line x1="1" y1="1" x2="23" y2="23"/></svg>
+                                            </label>
+                                        </div>
+                                        <div class="vp-part vp-part-sub">
+                                            <svg class="mv-layer-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/></svg>
+                                            <span class="vp-part-name">Linkes Bein Schicht</span>
+                                            <label class="vp-eye" title="Linke Bein-Schicht ein-/ausblenden">
+                                                <input type="checkbox" checked data-part="leftLeg-layer" aria-label="Linke Bein-Schicht ein-/ausblenden">
+                                                <svg class="eye-on" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M1 12s4-7 11-7 11 7 11 7-4 7-11 7-11-7-11-7z"/><circle cx="12" cy="12" r="3"/></svg><svg class="eye-off" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M17.94 17.94A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.5 18.5 0 0 1-2.16 3.19m-6.72-1.07a3 3 0 1 1-4.24-4.24"/><line x1="1" y1="1" x2="23" y2="23"/></svg>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <button class="btn btn-outline mv-showall" type="button" id="showAllPartsBtn">Alle Teile anzeigen</button>
+                                    <p class="mv-parts-hint">Das Auge blendet ein Teil ein/aus; Schichten werden unabhängig von ihrem Basisteil umgeschaltet. Der Schalter „2. Ebene“ unter der Vorschau blendet alle Schichten auf einmal aus.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <br>
+                        <!-- Export -->
+                        <div class="poser-card poser-pose-card" id="poser-export">
+                            <h3><i class="fas fa-download"></i> Exportieren</h3>
+                            <div class="export-actions">
+                                <button class="btn btn-primary" id="downloadViewBtn"><i class="fas fa-camera"></i> Aktuelle Ansicht herunterladen</button>
+                                <button class="btn btn-outline" id="saveViewBtn"><i class="fas fa-bookmark"></i> In Meine Renders speichern</button>
+                                <button class="btn btn-outline" id="downloadSheetBtn"><i class="fas fa-table-cells"></i> Mehrfachansicht (4 Winkel)</button>
+                                <button class="btn btn-outline" id="downloadGifBtn"><i class="fas fa-film"></i> Als GIF exportieren</button>
+                                <button class="btn btn-outline" id="downloadSkinBtn"><i class="fas fa-shirt"></i> Skin-Textur herunterladen</button>
+                                <button class="btn btn-outline" id="downloadCapeBtn" style="display:none;"><i class="fas fa-flag"></i> Cape-Textur herunterladen</button>
+                            </div>
+                        </div>
+
+                        <!-- My Renders -->
+                        <div class="poser-card poser-pose-card" id="myRendersCard">
+                            <h3><i class="fas fa-images"></i> Meine Renders</h3>
+                            <p class="viewer-controls" style="margin-top: -8px; margin-bottom: var(--spacing-md);">Jeder heruntergeladene Render wird zusätzlich hier gespeichert – nur in diesem Browser, zum späteren Wiederfinden.</p>
+                            <div class="my-renders-grid" id="myRendersGrid"></div>
+                            <p class="my-renders-empty" id="myRendersEmpty">Noch keine Renders gespeichert.</p>
+                            <div style="display:flex; gap: var(--spacing-sm); margin-top: var(--spacing-md); flex-wrap: wrap;">
+                                <button class="btn btn-outline" id="downloadAllRendersBtn"><i class="fas fa-download"></i> Alle herunterladen</button>
+                                <button class="btn btn-outline" id="clearRendersBtn"><i class="fas fa-trash"></i> Alle löschen</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Example Gallery -->
+        <section class="gallery-section" id="gallery">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Beispiel-<span class="highlight">Galerie</span></h2>
+                    <p class="section-subtitle">Fertige Renders zur Inspiration</p>
+                </div>
+                <div class="example-gallery-grid" id="exampleGalleryGrid"></div>
+                <p class="example-gallery-empty" id="exampleGalleryEmpty">Noch keine Beispiele vorhanden.</p>
+            </div>
+        </section>
+
+        <!-- Info Section -->
+        <section class="info-section" id="info">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">So <span class="highlight">funktioniert's</span></h2>
+                    <p class="section-subtitle">Alles läuft direkt im Browser – kein Upload an einen Server nötig</p>
+                </div>
+
+                <div class="info-grid-container">
+                    <div class="info-card">
+                        <div class="info-card-icon">
+                            <i class="fas fa-file-import"></i>
+                        </div>
+                        <h4>Skin laden</h4>
+                        <p>Ziehe eine Skin-PNG-Datei in das Feld oder gib einen Minecraft-Spielernamen ein – die Textur wird direkt von den offiziellen Mojang-Servern geladen.</p>
+                    </div>
+
+                    <div class="info-card">
+                        <div class="info-card-icon">
+                            <i class="fas fa-hand-pointer"></i>
+                        </div>
+                        <h4>Frei posieren</h4>
+                        <p>Nutze die Preset-Posen oder stelle Kopf, Körper, Arme und Beine über die X/Y/Z-Regler einzeln ein – perfekt für eigene Screenshots und Renderings.</p>
+                    </div>
+
+                    <div class="info-card">
+                        <div class="info-card-icon">
+                            <i class="fas fa-camera-retro"></i>
+                        </div>
+                        <h4>Bild exportieren</h4>
+                        <p>Lade die aktuelle Ansicht als PNG herunter – auch mit transparentem Hintergrund – oder erstelle mit einem Klick ein Raster aus vier Blickwinkeln.</p>
+                    </div>
+
+                    <div class="info-card">
+                        <div class="info-card-icon">
+                            <i class="fas fa-shield-halved"></i>
+                        </div>
+                        <h4>Datenschutz</h4>
+                        <p>Der 3D-Renderer läuft komplett clientseitig (self-hosted, keine Drittanbieter-CDNs). Hochgeladene Dateien verlassen deinen Browser nicht.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta">
+            <div class="container">
+                <div class="cta-content">
+                    <h2 class="cta-title">Mehr Minecraft <span class="highlight">Tools</span> entdecken?</h2>
+                    <p class="cta-description">
+                        MC-Craft bietet dir viele weitere nützliche Tools für dein Minecraft-Abenteuer.
+                    </p>
+                    <div class="cta-buttons">
+                        <a href="/blog/de/skin-bibliothek.html" class="btn btn-primary btn-large">
+                            <i class="fas fa-user-astronaut"></i> Skin-Bibliothek
+                        </a>
+                        <a href="/index.html#tools" class="btn btn-outline">
+                            <i class="fas fa-eye"></i> Alle Tools ansehen
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-grid">
+                    <!-- Column 1 -->
+                    <div class="footer-col">
+                        <a href="/index.html" class="footer-logo">
+                            <div class="logo-icon"></div>
+                            <span class="logo-text">MC-Craft</span>
+                        </a>
+                        <p class="footer-description">Kostenlose Minecraft-Tools für die Community. Entwickelt von Spielern für Spieler.</p>
+                        <div class="social-links">
+                            <a href="https://github.com/Blexilein" class="social-link" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                            <a href="https://discord.gg/eVVpQD75w4" class="social-link"><i class="fab fa-discord"></i></a>
+                            <a href="https://x.com/Blexi_1" class="social-link" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        </div>
+                    </div>
+                    <!-- Column 2 -->
+                    <div class="footer-col">
+                        <h4 class="footer-title">Tools</h4>
+                        <ul class="footer-links">
+                            <li><a href="/blog/de/text-konverter.html">Text Konverter</a></li>
+                            <li><a href="/blog/de/farbtext.html">Farbtext-Konverter</a></li>
+                            <li><a href="/blog/de/struktur-konverter.html">Struktur-Konverter</a></li>
+                            <li><a href="/blog/de/schematic-viewer.html">Schematic-Viewer</a></li>
+                            <li><a href="/blog/de/map-art-generator.html">Map-Art-Generator</a></li>
+                            <li><a href="/blog/de/nether-koordinaten-rechner.html">Nether Koordinaten Rechner</a></li>
+                            <li><a href="/blog/de/minecraft-befehl-generator.html">Minecraft Befehl Generator</a></li>
+                            <li><a href="/blog/de/items.html">Items Datenbank</a></li>
+                            <li><a href="/blog/de/mobs.html">Mobs Datenbank</a></li>
+                            <li><a href="/blog/de/tag-nacht-zyklus.html">Tag-Nacht-Zyklus</a></li>
+                            <li><a href="/blog/de/beacon-farbmischer.html">Beacon Color Mixer</a></li>
+                            <li><a href="/blog/de/qr-generator.html">QR Generator</a></li>
+                            <li><a href="/blog/de/erfolge-generator.html">Advancement Generator</a></li>
+                            <li><a href="/blog/de/schild-generator.html">Schild-Generator</a></li>
+                            <li><a href="/blog/de/crafting-rezepte.html">Crafting-Rezepte</a></li>
+                            <li><a href="/blog/de/ruestungsbesatz-generator.html">Rüstungsbesatz-Generator</a></li>
+                            <li><a href="/blog/de/feuerwerk-generator.html">Feuerwerk-Generator</a></li>
+                        </ul>
+                    </div>
+                    <!-- Column 3 -->
+                    <div class="footer-col">
+                        <h4 class="footer-title">Mehr Tools</h4>
+                        <ul class="footer-links">
+                            <li><a href="/blog/de/serverstatus.html">Server Status</a></li>
+                            <li><a href="/blog/de/minecraft-api-status.html">Minecraft API Status</a></li>
+                            <li><a href="/blog/de/api-dokumentation.html">API-Dokumentation</a></li>
+                            <li><a href="/blog/de/skin-suche.html">Skin Lookup</a></li>
+                            <li><a href="/blog/de/skin-editor.html">Skin Editor</a></li>
+                            <li><a href="/blog/de/skin-posierer.html">Skin-Poser</a></li>
+                            <li><a href="/blog/de/chibi-skin-ersteller.html">Chibi Skin Maker</a></li>
+                            <li><a href="/blog/de/skin-bibliothek.html">Skin Galerie</a></li>
+                            <li><a href="/blog/de/cape-datenbank.html">Cape Galerie</a></li>
+                            <li><a href="/blog/de/kopf-datenbank.html">Kopf-Datenbank</a></li>
+                            <li><a href="/blog/de/kopf-textur-generator.html">Head Texture Generator</a></li>
+                            <li><a href="/blog/de/minecraft-versionen.html">Minecraft Versionen</a></li>
+                            <li><a href="/blog/de/end_poem.html">End Poem</a></li>
+                        </ul>
+                    </div>
+                    <!-- Column 4 -->
+                    <div class="footer-col">
+                        <h4 class="footer-title">Rechtliches</h4>
+                        <ul class="footer-links">
+                            <li><a href="/blog/de/impressum.html">Impressum</a></li>
+                            <li><a href="/blog/de/datenschutz.html">Datenschutz</a></li>
+                            <li><a href="/blog/de/nutzungsbedingungen.html">Nutzungsbedingungen</a></li>
+                            <li><a href="/blog/de/copyright.html">Copyright</a></li>
+                        </ul>
+                    </div>
+                    <!-- Column 5 -->
+                    <div class="footer-col">
+                        <h4 class="footer-title">Über Uns</h4>
+                        <ul class="footer-links">
+                            <li><a href="/blog/de/geschichte.html">MC-Craft Geschichte</a></li>
+                            <li><a href="/blog/de/team.html">Unser Team</a></li>
+                            <li><a href="/blog/de/über-uns.html">Über uns</a></li>
+                        </ul>
+                    </div>
+                    <!-- Column 6 -->
+                    <div class="footer-col">
+                        <h4 class="footer-title">Support</h4>
+                        <ul class="footer-links">
+                            <li><a href="/blog/de/faq.html">FAQ &amp; Hilfe</a></li>
+                            <li><a href="/blog/de/bug-melden.html">Bug melden</a></li>
+                            <li><a href="/blog/de/support.html">Support Kontakt</a></li>
+                            <li><a href="/blog/de/e-mails.html">E-mails</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <div class="copyright">
+                        <p>&copy; <span id="currentYear">2026</span> MC-Craft. <span>Alle Rechte vorbehalten.</span></p>
+                        <p class="disclaimer">Minecraft ist eine Marke von Mojang Studios. Diese Seite ist nicht offiziell mit Mojang oder Microsoft verbunden.</p>
+                    </div>
+                    <div class="footer-meta">
+                        <span class="version">Version 1.2.0</span>
+                        <a href="/blog/de/changelog.html" class="changelog active">Changelog</a>
+                        <a href="/blog/de/api-dokumentation.html" class="api-docs"><i class="fas fa-book-open" aria-hidden="true"></i> API-Doku</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop" aria-label="Nach oben">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Notification Toast -->
+    <div class="toast-container" id="toastContainer"></div>
+
+    <!-- JavaScript -->
+    <script src="/assets/JS/modules/mc-preferences.js?v=20260917b"></script>
+    <script src="/assets/JS/main.js?v=20260917a"></script>
+    <script src="/assets/JS/vendor/gif/gif.js?v=20260908" defer></script>
+    <script src="/assets/JS/api/api.js?v=20260910v121c" defer></script>
+    <script src="/assets/JS/modules/skin-poser.js?v=20260916b" defer></script>
+    <script type="importmap">
+    {
+        "imports": {
+            "three": "/assets/JS/vendor/three.module.min.js",
+            "three/addons/": "/assets/JS/vendor/three-addons/"
+        }
+    }
+    </script>
+    <script type="module" src="/assets/JS/modules/skin-poser-pbr.js?v=20260910v121c"></script>
+</body>
+</html>

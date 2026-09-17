@@ -1,0 +1,5736 @@
+{
+  "minecraft:allay": {
+    "asset": "allay__allay",
+    "geoFile": "allay.geo.json",
+    "geoId": "geometry.allay"
+  },
+  "minecraft:armadillo": {
+    "asset": "armadillo__armadillo",
+    "geoFile": "armadillo.geo.json",
+    "geoId": "geometry.armadillo",
+    "variants": [
+      {
+        "asset": "armadillo__armadillo",
+        "geoFile": "armadillo.geo.json",
+        "geoId": "geometry.armadillo",
+        "key": "default",
+        "label": "Default"
+      },
+      {
+        "asset": "armadillo_baby__armadillo_baby",
+        "baby": true,
+        "geoFile": "baby_armadillo.geo.json",
+        "geoId": "geometry.armadillo.baby",
+        "key": "baby",
+        "label": "Baby",
+        "pose": ""
+      }
+    ],
+    "visibility": [
+      [
+        "body",
+        true
+      ],
+      [
+        "tail",
+        true
+      ],
+      [
+        "left_hind_leg",
+        true
+      ],
+      [
+        "right_hind_leg",
+        true
+      ],
+      [
+        "body_rolled_up",
+        false
+      ]
+    ]
+  },
+  "minecraft:axolotl": {
+    "asset": "axolotl__axolotl_lucy",
+    "geoFile": "axolotl.geo.json",
+    "geoId": "geometry.axolotl",
+    "variants": [
+      {
+        "asset": "axolotl__axolotl_blue",
+        "geoFile": "axolotl.geo.json",
+        "geoId": "geometry.axolotl",
+        "key": "blue",
+        "label": "Blue"
+      },
+      {
+        "asset": "axolotl__axolotl_cyan",
+        "geoFile": "axolotl.geo.json",
+        "geoId": "geometry.axolotl",
+        "key": "cyan",
+        "label": "Cyan"
+      },
+      {
+        "asset": "axolotl__axolotl_gold",
+        "geoFile": "axolotl.geo.json",
+        "geoId": "geometry.axolotl",
+        "key": "gold",
+        "label": "Gold"
+      },
+      {
+        "asset": "axolotl__axolotl_lucy",
+        "geoFile": "axolotl.geo.json",
+        "geoId": "geometry.axolotl",
+        "key": "lucy",
+        "label": "Lucy"
+      },
+      {
+        "asset": "axolotl__axolotl_wild",
+        "geoFile": "axolotl.geo.json",
+        "geoId": "geometry.axolotl",
+        "key": "wild",
+        "label": "Wild"
+      },
+      {
+        "asset": "axolotl_baby__axolotl_blue_baby",
+        "baby": true,
+        "geoFile": "baby_axolotl.geo.json",
+        "geoId": "geometry.axolotl.baby",
+        "key": "baby_blue",
+        "label": "Baby Blue",
+        "pose": ""
+      },
+      {
+        "asset": "axolotl_baby__axolotl_cyan_baby",
+        "baby": true,
+        "geoFile": "baby_axolotl.geo.json",
+        "geoId": "geometry.axolotl.baby",
+        "key": "baby_cyan",
+        "label": "Baby Cyan",
+        "pose": ""
+      },
+      {
+        "asset": "axolotl_baby__axolotl_gold_baby",
+        "baby": true,
+        "geoFile": "baby_axolotl.geo.json",
+        "geoId": "geometry.axolotl.baby",
+        "key": "baby_gold",
+        "label": "Baby Gold",
+        "pose": ""
+      },
+      {
+        "asset": "axolotl_baby__axolotl_lucy_baby",
+        "baby": true,
+        "geoFile": "baby_axolotl.geo.json",
+        "geoId": "geometry.axolotl.baby",
+        "key": "baby_lucy",
+        "label": "Baby Lucy",
+        "pose": ""
+      },
+      {
+        "asset": "axolotl_baby__axolotl_wild_baby",
+        "baby": true,
+        "geoFile": "baby_axolotl.geo.json",
+        "geoId": "geometry.axolotl.baby",
+        "key": "baby_wild",
+        "label": "Baby Wild",
+        "pose": ""
+      }
+    ]
+  },
+  "minecraft:bat": {
+    "asset": "bat_v2__bat_v2",
+    "geoFile": "bat_v2.geo.json",
+    "geoId": "geometry.bat_v2"
+  },
+  "minecraft:bee": {
+    "asset": "bee__bee",
+    "geoFile": "bee.geo.json",
+    "geoId": "geometry.bee",
+    "pose": "bee",
+    "variants": [
+      {
+        "asset": "bee__bee",
+        "geoFile": "bee.geo.json",
+        "geoId": "geometry.bee",
+        "key": "default",
+        "label": "Default"
+      },
+      {
+        "asset": "bee__bee_angry",
+        "geoFile": "bee.geo.json",
+        "geoId": "geometry.bee",
+        "key": "angry",
+        "label": "Angry"
+      },
+      {
+        "asset": "bee__bee_nectar",
+        "geoFile": "bee.geo.json",
+        "geoId": "geometry.bee",
+        "key": "nectar",
+        "label": "Nectar"
+      },
+      {
+        "asset": "bee__bee_angry_nectar",
+        "geoFile": "bee.geo.json",
+        "geoId": "geometry.bee",
+        "key": "angry_nectar",
+        "label": "Angry Nectar"
+      },
+      {
+        "asset": "bee_baby__bee_baby",
+        "baby": true,
+        "geoFile": "baby_bee.geo.json",
+        "geoId": "geometry.bee.baby",
+        "key": "baby_default",
+        "label": "Baby Default",
+        "pose": "bee.baby"
+      },
+      {
+        "asset": "bee_baby__bee_angry_baby",
+        "baby": true,
+        "geoFile": "baby_bee.geo.json",
+        "geoId": "geometry.bee.baby",
+        "key": "baby_angry",
+        "label": "Baby Angry",
+        "pose": "bee.baby"
+      },
+      {
+        "asset": "bee_baby__bee_nectar_baby",
+        "baby": true,
+        "geoFile": "baby_bee.geo.json",
+        "geoId": "geometry.bee.baby",
+        "key": "baby_nectar",
+        "label": "Baby Nectar",
+        "pose": "bee.baby"
+      },
+      {
+        "asset": "bee_baby__bee_angry_nectar_baby",
+        "baby": true,
+        "geoFile": "baby_bee.geo.json",
+        "geoId": "geometry.bee.baby",
+        "key": "baby_angry_nectar",
+        "label": "Baby Angry Nectar",
+        "pose": "bee.baby"
+      }
+    ]
+  },
+  "minecraft:blaze": {
+    "asset": "blaze__blaze",
+    "emissiveAlpha": true,
+    "geoFile": "blaze.geo.json",
+    "geoId": "geometry.blaze",
+    "pose": "blaze"
+  },
+  "minecraft:bogged": {
+    "asset": "skeleton_bogged__bogged",
+    "geoFile": "bogged.geo.json",
+    "geoId": "geometry.skeleton.bogged",
+    "pose": "bogged",
+    "variants": [
+      {
+        "asset": "skeleton_bogged__bogged",
+        "geoFile": "bogged.geo.json",
+        "geoId": "geometry.skeleton.bogged",
+        "key": "default",
+        "label": "Default"
+      },
+      {
+        "asset": "skeleton_bogged__bogged_clothes",
+        "geoFile": "bogged.geo.json",
+        "geoId": "geometry.skeleton.bogged",
+        "key": "overlay",
+        "label": "Overlay"
+      }
+    ]
+  },
+  "minecraft:breeze": {
+    "asset": "breeze__breeze",
+    "geoFile": "breeze.geo.json",
+    "geoId": "geometry.breeze",
+    "pose": "breeze",
+    "variants": [
+      {
+        "asset": "breeze__breeze",
+        "geoFile": "breeze.geo.json",
+        "geoId": "geometry.breeze",
+        "key": "default",
+        "label": "Default"
+      },
+      {
+        "asset": "breeze__breeze_wind",
+        "geoFile": "breeze.geo.json",
+        "geoId": "geometry.breeze",
+        "key": "breeze_wind",
+        "label": "Breeze Wind"
+      },
+      {
+        "asset": "breeze__breeze_eyes",
+        "geoFile": "breeze.geo.json",
+        "geoId": "geometry.breeze",
+        "key": "breeze_eyes",
+        "label": "Breeze Eyes"
+      }
+    ]
+  },
+  "minecraft:camel": {
+    "asset": "camel__camel",
+    "geoFile": "camel.geo.json",
+    "geoId": "geometry.camel",
+    "variants": [
+      {
+        "asset": "camel__camel",
+        "geoFile": "camel.geo.json",
+        "geoId": "geometry.camel",
+        "key": "default",
+        "label": "Default"
+      },
+      {
+        "asset": "camel_baby__camel_baby",
+        "baby": true,
+        "geoFile": "baby_camel.geo.json",
+        "geoId": "geometry.camel.baby",
+        "key": "baby",
+        "label": "Baby",
+        "pose": ""
+      }
+    ],
+    "visibility": [
+      [
+        "saddle",
+        false
+      ],
+      [
+        "bridle",
+        false
+      ],
+      [
+        "reins*",
+        false
+      ]
+    ]
+  },
+  "minecraft:camel_husk": {
+    "asset": "camel_husk__camel_husk",
+    "geoFile": "camel_husk.geo.json",
+    "geoId": "geometry.camel_husk",
+    "visibility": [
+      [
+        "saddle",
+        false
+      ],
+      [
+        "bridle",
+        false
+      ],
+      [
+        "reins*",
+        false
+      ]
+    ]
+  },
+  "minecraft:camel_husk_jockey": {
+    "asset": "camel_husk__camel_husk",
+    "geoFile": "camel_husk.geo.json",
+    "geoId": "geometry.camel_husk",
+    "reason": "jockey_mount",
+    "substitute": "minecraft:camel_husk",
+    "visibility": [
+      [
+        "saddle",
+        false
+      ],
+      [
+        "bridle",
+        false
+      ],
+      [
+        "reins*",
+        false
+      ]
+    ]
+  },
+  "minecraft:cat": {
+    "asset": "cat__tabby",
+    "bindFix": {
+      "body": [
+        90,
+        0,
+        0
+      ],
+      "tail1": [
+        90,
+        0,
+        0
+      ],
+      "tail2": [
+        90,
+        0,
+        0
+      ]
+    },
+    "geoFile": "cat.geo.json",
+    "geoId": "geometry.cat",
+    "pose": "cat",
+    "variants": [
+      {
+        "asset": "cat__white",
+        "bindFix": {
+          "body": [
+            90,
+            0,
+            0
+          ],
+          "tail1": [
+            90,
+            0,
+            0
+          ],
+          "tail2": [
+            90,
+            0,
+            0
+          ]
+        },
+        "geoFile": "cat.geo.json",
+        "geoId": "geometry.cat",
+        "key": "white",
+        "label": "White"
+      },
+      {
+        "asset": "cat__tuxedo",
+        "bindFix": {
+          "body": [
+            90,
+            0,
+            0
+          ],
+          "tail1": [
+            90,
+            0,
+            0
+          ],
+          "tail2": [
+            90,
+            0,
+            0
+          ]
+        },
+        "geoFile": "cat.geo.json",
+        "geoId": "geometry.cat",
+        "key": "black",
+        "label": "Black"
+      },
+      {
+        "asset": "cat__redtabby",
+        "bindFix": {
+          "body": [
+            90,
+            0,
+            0
+          ],
+          "tail1": [
+            90,
+            0,
+            0
+          ],
+          "tail2": [
+            90,
+            0,
+            0
+          ]
+        },
+        "geoFile": "cat.geo.json",
+        "geoId": "geometry.cat",
+        "key": "red",
+        "label": "Red"
+      },
+      {
+        "asset": "cat__siamesecat",
+        "bindFix": {
+          "body": [
+            90,
+            0,
+            0
+          ],
+          "tail1": [
+            90,
+            0,
+            0
+          ],
+          "tail2": [
+            90,
+            0,
+            0
+          ]
+        },
+        "geoFile": "cat.geo.json",
+        "geoId": "geometry.cat",
+        "key": "siamese",
+        "label": "Siamese"
+      },
+      {
+        "asset": "cat__britishshorthair",
+        "bindFix": {
+          "body": [
+            90,
+            0,
+            0
+          ],
+          "tail1": [
+            90,
+            0,
+            0
+          ],
+          "tail2": [
+            90,
+            0,
+            0
+          ]
+        },
+        "geoFile": "cat.geo.json",
+        "geoId": "geometry.cat",
+        "key": "british",
+        "label": "British"
+      },
+      {
+        "asset": "cat__calico",
+        "bindFix": {
+          "body": [
+            90,
+            0,
+            0
+          ],
+          "tail1": [
+            90,
+            0,
+            0
+          ],
+          "tail2": [
+            90,
+            0,
+            0
+          ]
+        },
+        "geoFile": "cat.geo.json",
+        "geoId": "geometry.cat",
+        "key": "calico",
+        "label": "Calico"
+      },
+      {
+        "asset": "cat__persian",
+        "bindFix": {
+          "body": [
+            90,
+            0,
+            0
+          ],
+          "tail1": [
+            90,
+            0,
+            0
+          ],
+          "tail2": [
+            90,
+            0,
+            0
+          ]
+        },
+        "geoFile": "cat.geo.json",
+        "geoId": "geometry.cat",
+        "key": "persian",
+        "label": "Persian"
+      },
+      {
+        "asset": "cat__ragdoll",
+        "bindFix": {
+          "body": [
+            90,
+            0,
+            0
+          ],
+          "tail1": [
+            90,
+            0,
+            0
+          ],
+          "tail2": [
+            90,
+            0,
+            0
+          ]
+        },
+        "geoFile": "cat.geo.json",
+        "geoId": "geometry.cat",
+        "key": "ragdoll",
+        "label": "Ragdoll"
+      },
+      {
+        "asset": "cat__tabby",
+        "bindFix": {
+          "body": [
+            90,
+            0,
+            0
+          ],
+          "tail1": [
+            90,
+            0,
+            0
+          ],
+          "tail2": [
+            90,
+            0,
+            0
+          ]
+        },
+        "geoFile": "cat.geo.json",
+        "geoId": "geometry.cat",
+        "key": "tabby",
+        "label": "Tabby"
+      },
+      {
+        "asset": "cat__jellie",
+        "bindFix": {
+          "body": [
+            90,
+            0,
+            0
+          ],
+          "tail1": [
+            90,
+            0,
+            0
+          ],
+          "tail2": [
+            90,
+            0,
+            0
+          ]
+        },
+        "geoFile": "cat.geo.json",
+        "geoId": "geometry.cat",
+        "key": "jellie",
+        "label": "Jellie"
+      },
+      {
+        "asset": "cat__allblackcat",
+        "bindFix": {
+          "body": [
+            90,
+            0,
+            0
+          ],
+          "tail1": [
+            90,
+            0,
+            0
+          ],
+          "tail2": [
+            90,
+            0,
+            0
+          ]
+        },
+        "geoFile": "cat.geo.json",
+        "geoId": "geometry.cat",
+        "key": "all_black",
+        "label": "All Black"
+      },
+      {
+        "asset": "cat__white_tame",
+        "bindFix": {
+          "body": [
+            90,
+            0,
+            0
+          ],
+          "tail1": [
+            90,
+            0,
+            0
+          ],
+          "tail2": [
+            90,
+            0,
+            0
+          ]
+        },
+        "geoFile": "cat.geo.json",
+        "geoId": "geometry.cat",
+        "key": "white_tame",
+        "label": "White Tame"
+      },
+      {
+        "asset": "cat__tuxedo_tame",
+        "bindFix": {
+          "body": [
+            90,
+            0,
+            0
+          ],
+          "tail1": [
+            90,
+            0,
+            0
+          ],
+          "tail2": [
+            90,
+            0,
+            0
+          ]
+        },
+        "geoFile": "cat.geo.json",
+        "geoId": "geometry.cat",
+        "key": "black_tame",
+        "label": "Black Tame"
+      },
+      {
+        "asset": "cat__redtabby_tame",
+        "bindFix": {
+          "body": [
+            90,
+            0,
+            0
+          ],
+          "tail1": [
+            90,
+            0,
+            0
+          ],
+          "tail2": [
+            90,
+            0,
+            0
+          ]
+        },
+        "geoFile": "cat.geo.json",
+        "geoId": "geometry.cat",
+        "key": "red_tame",
+        "label": "Red Tame"
+      },
+      {
+        "asset": "cat__siamesecat_tame",
+        "bindFix": {
+          "body": [
+            90,
+            0,
+            0
+          ],
+          "tail1": [
+            90,
+            0,
+            0
+          ],
+          "tail2": [
+            90,
+            0,
+            0
+          ]
+        },
+        "geoFile": "cat.geo.json",
+        "geoId": "geometry.cat",
+        "key": "siamese_tame",
+        "label": "Siamese Tame"
+      },
+      {
+        "asset": "cat__britishshorthair_tame",
+        "bindFix": {
+          "body": [
+            90,
+            0,
+            0
+          ],
+          "tail1": [
+            90,
+            0,
+            0
+          ],
+          "tail2": [
+            90,
+            0,
+            0
+          ]
+        },
+        "geoFile": "cat.geo.json",
+        "geoId": "geometry.cat",
+        "key": "british_tame",
+        "label": "British Tame"
+      },
+      {
+        "asset": "cat__calico_tame",
+        "bindFix": {
+          "body": [
+            90,
+            0,
+            0
+          ],
+          "tail1": [
+            90,
+            0,
+            0
+          ],
+          "tail2": [
+            90,
+            0,
+            0
+          ]
+        },
+        "geoFile": "cat.geo.json",
+        "geoId": "geometry.cat",
+        "key": "calico_tame",
+        "label": "Calico Tame"
+      },
+      {
+        "asset": "cat__persian_tame",
+        "bindFix": {
+          "body": [
+            90,
+            0,
+            0
+          ],
+          "tail1": [
+            90,
+            0,
+            0
+          ],
+          "tail2": [
+            90,
+            0,
+            0
+          ]
+        },
+        "geoFile": "cat.geo.json",
+        "geoId": "geometry.cat",
+        "key": "persian_tame",
+        "label": "Persian Tame"
+      },
+      {
+        "asset": "cat__ragdoll_tame",
+        "bindFix": {
+          "body": [
+            90,
+            0,
+            0
+          ],
+          "tail1": [
+            90,
+            0,
+            0
+          ],
+          "tail2": [
+            90,
+            0,
+            0
+          ]
+        },
+        "geoFile": "cat.geo.json",
+        "geoId": "geometry.cat",
+        "key": "ragdoll_tame",
+        "label": "Ragdoll Tame"
+      },
+      {
+        "asset": "cat__tabby_tame",
+        "bindFix": {
+          "body": [
+            90,
+            0,
+            0
+          ],
+          "tail1": [
+            90,
+            0,
+            0
+          ],
+          "tail2": [
+            90,
+            0,
+            0
+          ]
+        },
+        "geoFile": "cat.geo.json",
+        "geoId": "geometry.cat",
+        "key": "tabby_tame",
+        "label": "Tabby Tame"
+      },
+      {
+        "asset": "cat__allblackcat_tame",
+        "bindFix": {
+          "body": [
+            90,
+            0,
+            0
+          ],
+          "tail1": [
+            90,
+            0,
+            0
+          ],
+          "tail2": [
+            90,
+            0,
+            0
+          ]
+        },
+        "geoFile": "cat.geo.json",
+        "geoId": "geometry.cat",
+        "key": "all_black_tame",
+        "label": "All Black Tame"
+      },
+      {
+        "asset": "cat__jellie_tame",
+        "bindFix": {
+          "body": [
+            90,
+            0,
+            0
+          ],
+          "tail1": [
+            90,
+            0,
+            0
+          ],
+          "tail2": [
+            90,
+            0,
+            0
+          ]
+        },
+        "geoFile": "cat.geo.json",
+        "geoId": "geometry.cat",
+        "key": "jellie_tame",
+        "label": "Jellie Tame"
+      },
+      {
+        "asset": "cat_baby__white_baby",
+        "baby": true,
+        "geoFile": "baby_cat.geo.json",
+        "geoId": "geometry.cat.baby",
+        "key": "baby_white",
+        "label": "Baby White",
+        "pose": "cat.baby"
+      },
+      {
+        "asset": "cat_baby__tuxedo_baby",
+        "baby": true,
+        "geoFile": "baby_cat.geo.json",
+        "geoId": "geometry.cat.baby",
+        "key": "baby_black",
+        "label": "Baby Black",
+        "pose": "cat.baby"
+      },
+      {
+        "asset": "cat_baby__redtabby_baby",
+        "baby": true,
+        "geoFile": "baby_cat.geo.json",
+        "geoId": "geometry.cat.baby",
+        "key": "baby_red",
+        "label": "Baby Red",
+        "pose": "cat.baby"
+      },
+      {
+        "asset": "cat_baby__siamese_baby",
+        "baby": true,
+        "geoFile": "baby_cat.geo.json",
+        "geoId": "geometry.cat.baby",
+        "key": "baby_siamese",
+        "label": "Baby Siamese",
+        "pose": "cat.baby"
+      },
+      {
+        "asset": "cat_baby__britishshorthair_baby",
+        "baby": true,
+        "geoFile": "baby_cat.geo.json",
+        "geoId": "geometry.cat.baby",
+        "key": "baby_british",
+        "label": "Baby British",
+        "pose": "cat.baby"
+      },
+      {
+        "asset": "cat_baby__calico_baby",
+        "baby": true,
+        "geoFile": "baby_cat.geo.json",
+        "geoId": "geometry.cat.baby",
+        "key": "baby_calico",
+        "label": "Baby Calico",
+        "pose": "cat.baby"
+      },
+      {
+        "asset": "cat_baby__persian_baby",
+        "baby": true,
+        "geoFile": "baby_cat.geo.json",
+        "geoId": "geometry.cat.baby",
+        "key": "baby_persian",
+        "label": "Baby Persian",
+        "pose": "cat.baby"
+      },
+      {
+        "asset": "cat_baby__ragdoll_baby",
+        "baby": true,
+        "geoFile": "baby_cat.geo.json",
+        "geoId": "geometry.cat.baby",
+        "key": "baby_ragdoll",
+        "label": "Baby Ragdoll",
+        "pose": "cat.baby"
+      },
+      {
+        "asset": "cat_baby__tabby_baby",
+        "baby": true,
+        "geoFile": "baby_cat.geo.json",
+        "geoId": "geometry.cat.baby",
+        "key": "baby_tabby",
+        "label": "Baby Tabby",
+        "pose": "cat.baby"
+      },
+      {
+        "asset": "cat_baby__jellie_baby",
+        "baby": true,
+        "geoFile": "baby_cat.geo.json",
+        "geoId": "geometry.cat.baby",
+        "key": "baby_jellie",
+        "label": "Baby Jellie",
+        "pose": "cat.baby"
+      },
+      {
+        "asset": "cat_baby__allblackcat_baby",
+        "baby": true,
+        "geoFile": "baby_cat.geo.json",
+        "geoId": "geometry.cat.baby",
+        "key": "baby_all_black",
+        "label": "Baby All Black",
+        "pose": "cat.baby"
+      },
+      {
+        "asset": "cat_baby__white_tame_baby",
+        "baby": true,
+        "geoFile": "baby_cat.geo.json",
+        "geoId": "geometry.cat.baby",
+        "key": "baby_white_tame",
+        "label": "Baby White Tame",
+        "pose": "cat.baby"
+      },
+      {
+        "asset": "cat_baby__tuxedo_tame_baby",
+        "baby": true,
+        "geoFile": "baby_cat.geo.json",
+        "geoId": "geometry.cat.baby",
+        "key": "baby_black_tame",
+        "label": "Baby Black Tame",
+        "pose": "cat.baby"
+      },
+      {
+        "asset": "cat_baby__redtabby_tame_baby",
+        "baby": true,
+        "geoFile": "baby_cat.geo.json",
+        "geoId": "geometry.cat.baby",
+        "key": "baby_red_tame",
+        "label": "Baby Red Tame",
+        "pose": "cat.baby"
+      },
+      {
+        "asset": "cat_baby__siamese_tame_baby",
+        "baby": true,
+        "geoFile": "baby_cat.geo.json",
+        "geoId": "geometry.cat.baby",
+        "key": "baby_siamese_tame",
+        "label": "Baby Siamese Tame",
+        "pose": "cat.baby"
+      },
+      {
+        "asset": "cat_baby__britishshorthair_tame_baby",
+        "baby": true,
+        "geoFile": "baby_cat.geo.json",
+        "geoId": "geometry.cat.baby",
+        "key": "baby_british_tame",
+        "label": "Baby British Tame",
+        "pose": "cat.baby"
+      },
+      {
+        "asset": "cat_baby__calico_tame_baby",
+        "baby": true,
+        "geoFile": "baby_cat.geo.json",
+        "geoId": "geometry.cat.baby",
+        "key": "baby_calico_tame",
+        "label": "Baby Calico Tame",
+        "pose": "cat.baby"
+      },
+      {
+        "asset": "cat_baby__persian_tame_baby",
+        "baby": true,
+        "geoFile": "baby_cat.geo.json",
+        "geoId": "geometry.cat.baby",
+        "key": "baby_persian_tame",
+        "label": "Baby Persian Tame",
+        "pose": "cat.baby"
+      },
+      {
+        "asset": "cat_baby__ragdoll_tame_baby",
+        "baby": true,
+        "geoFile": "baby_cat.geo.json",
+        "geoId": "geometry.cat.baby",
+        "key": "baby_ragdoll_tame",
+        "label": "Baby Ragdoll Tame",
+        "pose": "cat.baby"
+      },
+      {
+        "asset": "cat_baby__tabby_tame_baby",
+        "baby": true,
+        "geoFile": "baby_cat.geo.json",
+        "geoId": "geometry.cat.baby",
+        "key": "baby_tabby_tame",
+        "label": "Baby Tabby Tame",
+        "pose": "cat.baby"
+      },
+      {
+        "asset": "cat_baby__allblackcat_tame_baby",
+        "baby": true,
+        "geoFile": "baby_cat.geo.json",
+        "geoId": "geometry.cat.baby",
+        "key": "baby_all_black_tame",
+        "label": "Baby All Black Tame",
+        "pose": "cat.baby"
+      },
+      {
+        "asset": "cat_baby__jellie_tame_baby",
+        "baby": true,
+        "geoFile": "baby_cat.geo.json",
+        "geoId": "geometry.cat.baby",
+        "key": "baby_jellie_tame",
+        "label": "Baby Jellie Tame",
+        "pose": "cat.baby"
+      }
+    ]
+  },
+  "minecraft:cave_spider": {
+    "asset": "spider_v1_8__cave_spider",
+    "emissiveAlpha": true,
+    "geoFile": "spider.geo.json",
+    "geoId": "geometry.spider.v1.8",
+    "pose": "cave_spider"
+  },
+  "minecraft:cave_spider_jockey": {
+    "asset": "spider_v1_8__cave_spider",
+    "emissiveAlpha": true,
+    "geoFile": "spider.geo.json",
+    "geoId": "geometry.spider.v1.8",
+    "pose": "cave_spider_jockey",
+    "reason": "jockey_mount",
+    "substitute": "minecraft:cave_spider"
+  },
+  "minecraft:chicken": {
+    "asset": "chicken_v1_12__chicken",
+    "geoFile": "chicken.geo.json",
+    "geoId": "geometry.chicken.v1.12",
+    "pose": "chicken",
+    "variants": [
+      {
+        "asset": "chicken_v1_12__chicken",
+        "geoFile": "chicken.geo.json",
+        "geoId": "geometry.chicken.v1.12",
+        "key": "default",
+        "label": "Default"
+      },
+      {
+        "asset": "chicken_v1_12__chicken_warm",
+        "geoFile": "chicken.geo.json",
+        "geoId": "geometry.chicken.v1.12",
+        "key": "warm",
+        "label": "Warm"
+      },
+      {
+        "asset": "chicken_v1_12__chicken_cold",
+        "geoFile": "chicken.geo.json",
+        "geoId": "geometry.chicken.v1.12",
+        "key": "cold",
+        "label": "Cold"
+      },
+      {
+        "asset": "chicken_baby__chicken_temperate_baby",
+        "baby": true,
+        "geoFile": "baby_chicken.geo.json",
+        "geoId": "geometry.chicken.baby",
+        "key": "baby_default",
+        "label": "Baby Default",
+        "pose": "chicken.baby"
+      },
+      {
+        "asset": "chicken_baby__chicken_warm_baby",
+        "baby": true,
+        "geoFile": "baby_chicken.geo.json",
+        "geoId": "geometry.chicken.baby",
+        "key": "baby_warm",
+        "label": "Baby Warm",
+        "pose": "chicken.baby"
+      },
+      {
+        "asset": "chicken_baby__chicken_cold_baby",
+        "baby": true,
+        "geoFile": "baby_chicken.geo.json",
+        "geoId": "geometry.chicken.baby",
+        "key": "baby_cold",
+        "label": "Baby Cold",
+        "pose": "chicken.baby"
+      }
+    ]
+  },
+  "minecraft:chicken_jockey": {
+    "asset": "chicken_v1_12__chicken",
+    "geoFile": "chicken.geo.json",
+    "geoId": "geometry.chicken.v1.12",
+    "pose": "chicken_jockey",
+    "reason": "jockey_mount",
+    "substitute": "minecraft:chicken",
+    "variants": [
+      {
+        "asset": "chicken_v1_12__chicken",
+        "geoFile": "chicken.geo.json",
+        "geoId": "geometry.chicken.v1.12",
+        "key": "default",
+        "label": "Default"
+      },
+      {
+        "asset": "chicken_v1_12__chicken_warm",
+        "geoFile": "chicken.geo.json",
+        "geoId": "geometry.chicken.v1.12",
+        "key": "warm",
+        "label": "Warm"
+      },
+      {
+        "asset": "chicken_v1_12__chicken_cold",
+        "geoFile": "chicken.geo.json",
+        "geoId": "geometry.chicken.v1.12",
+        "key": "cold",
+        "label": "Cold"
+      },
+      {
+        "asset": "chicken_baby__chicken_temperate_baby",
+        "baby": true,
+        "geoFile": "baby_chicken.geo.json",
+        "geoId": "geometry.chicken.baby",
+        "key": "baby_default",
+        "label": "Baby Default",
+        "pose": "chicken_jockey.baby"
+      },
+      {
+        "asset": "chicken_baby__chicken_warm_baby",
+        "baby": true,
+        "geoFile": "baby_chicken.geo.json",
+        "geoId": "geometry.chicken.baby",
+        "key": "baby_warm",
+        "label": "Baby Warm",
+        "pose": "chicken_jockey.baby"
+      },
+      {
+        "asset": "chicken_baby__chicken_cold_baby",
+        "baby": true,
+        "geoFile": "baby_chicken.geo.json",
+        "geoId": "geometry.chicken.baby",
+        "key": "baby_cold",
+        "label": "Baby Cold",
+        "pose": "chicken_jockey.baby"
+      }
+    ]
+  },
+  "minecraft:cod": {
+    "asset": "cod__cod",
+    "geoFile": "cod.geo.json",
+    "geoId": "geometry.cod",
+    "pose": "cod"
+  },
+  "minecraft:copper_golem": {
+    "asset": "copper_golem__copper_golem+copper_golem__copper_golem_eyes",
+    "geoFile": "copper_golem.geo.json",
+    "geoId": "geometry.copper_golem",
+    "layers": [
+      {
+        "asset": "copper_golem__copper_golem"
+      },
+      {
+        "asset": "copper_golem__copper_golem_eyes",
+        "emissive": true
+      }
+    ],
+    "variants": [
+      {
+        "asset": "copper_golem__copper_golem+copper_golem__copper_golem_eyes",
+        "geoFile": "copper_golem.geo.json",
+        "geoId": "geometry.copper_golem",
+        "key": "default",
+        "label": "Default",
+        "layers": [
+          {
+            "asset": "copper_golem__copper_golem"
+          },
+          {
+            "asset": "copper_golem__copper_golem_eyes",
+            "emissive": true
+          }
+        ]
+      },
+      {
+        "asset": "copper_golem__copper_golem_exposed+copper_golem__copper_golem_eyes_exposed",
+        "geoFile": "copper_golem.geo.json",
+        "geoId": "geometry.copper_golem",
+        "key": "exposed",
+        "label": "Exposed",
+        "layers": [
+          {
+            "asset": "copper_golem__copper_golem_exposed"
+          },
+          {
+            "asset": "copper_golem__copper_golem_eyes_exposed",
+            "emissive": true
+          }
+        ]
+      },
+      {
+        "asset": "copper_golem__copper_golem_weathered+copper_golem__copper_golem_eyes_weathered",
+        "geoFile": "copper_golem.geo.json",
+        "geoId": "geometry.copper_golem",
+        "key": "weathered",
+        "label": "Weathered",
+        "layers": [
+          {
+            "asset": "copper_golem__copper_golem_weathered"
+          },
+          {
+            "asset": "copper_golem__copper_golem_eyes_weathered",
+            "emissive": true
+          }
+        ]
+      },
+      {
+        "asset": "copper_golem__copper_golem_oxidized+copper_golem__copper_golem_eyes_oxidized",
+        "geoFile": "copper_golem.geo.json",
+        "geoId": "geometry.copper_golem",
+        "key": "oxidized",
+        "label": "Oxidized",
+        "layers": [
+          {
+            "asset": "copper_golem__copper_golem_oxidized"
+          },
+          {
+            "asset": "copper_golem__copper_golem_eyes_oxidized",
+            "emissive": true
+          }
+        ]
+      }
+    ]
+  },
+  "minecraft:cow": {
+    "asset": "cow_v2__cow_v2",
+    "geoFile": "cow.v2.geo.json",
+    "geoId": "geometry.cow.v2",
+    "pose": "cow",
+    "variants": [
+      {
+        "asset": "cow_v2__cow_v2",
+        "geoFile": "cow.v2.geo.json",
+        "geoId": "geometry.cow.v2",
+        "key": "default",
+        "label": "Default"
+      },
+      {
+        "asset": "cow_v2__cow_warm",
+        "geoFile": "cow.v2.geo.json",
+        "geoId": "geometry.cow.v2",
+        "key": "warm",
+        "label": "Warm"
+      },
+      {
+        "asset": "cow_v2__cow_cold",
+        "geoFile": "cow.v2.geo.json",
+        "geoId": "geometry.cow.v2",
+        "key": "cold",
+        "label": "Cold"
+      },
+      {
+        "asset": "cow_baby__cow_temperate_baby",
+        "baby": true,
+        "geoFile": "baby_cow.geo.json",
+        "geoId": "geometry.cow.baby",
+        "key": "baby_default",
+        "label": "Baby Default",
+        "pose": "cow.baby"
+      },
+      {
+        "asset": "cow_baby__cow_cold_baby",
+        "baby": true,
+        "geoFile": "baby_cow.geo.json",
+        "geoId": "geometry.cow.baby",
+        "key": "baby_cold",
+        "label": "Baby Cold",
+        "pose": "cow.baby"
+      },
+      {
+        "asset": "cow_baby__cow_warm_baby",
+        "baby": true,
+        "geoFile": "baby_cow.geo.json",
+        "geoId": "geometry.cow.baby",
+        "key": "baby_warm",
+        "label": "Baby Warm",
+        "pose": "cow.baby"
+      }
+    ]
+  },
+  "minecraft:creaking": {
+    "asset": "creaking__creaking",
+    "geoFile": "creaking.geo.json",
+    "geoId": "geometry.creaking",
+    "variants": [
+      {
+        "asset": "creaking__creaking",
+        "geoFile": "creaking.geo.json",
+        "geoId": "geometry.creaking",
+        "key": "default",
+        "label": "Default"
+      },
+      {
+        "asset": "creaking__creaking_eyes",
+        "geoFile": "creaking.geo.json",
+        "geoId": "geometry.creaking",
+        "key": "eyes",
+        "label": "Eyes"
+      }
+    ]
+  },
+  "minecraft:creeper": {
+    "asset": "creeper_v1_8__creeper",
+    "geoFile": "creeper.geo.json",
+    "geoId": "geometry.creeper.v1.8",
+    "pose": "creeper",
+    "variants": [
+      {
+        "asset": "creeper_v1_8__creeper",
+        "geoFile": "creeper.geo.json",
+        "geoId": "geometry.creeper.v1.8",
+        "key": "default",
+        "label": "Default"
+      },
+      {
+        "asset": "creeper_v1_8__creeper_armor",
+        "geoFile": "creeper.geo.json",
+        "geoId": "geometry.creeper.v1.8",
+        "key": "charged",
+        "label": "Charged"
+      }
+    ]
+  },
+  "minecraft:dolphin": {
+    "asset": "dolphin__dolphin",
+    "geoFile": "dolphin.geo.json",
+    "geoId": "geometry.dolphin",
+    "pose": "dolphin",
+    "variants": [
+      {
+        "asset": "dolphin__dolphin",
+        "geoFile": "dolphin.geo.json",
+        "geoId": "geometry.dolphin",
+        "key": "default",
+        "label": "Default"
+      },
+      {
+        "asset": "dolphin_baby__dolphin_baby",
+        "baby": true,
+        "geoFile": "baby_dolphin.geo.json",
+        "geoId": "geometry.dolphin.baby",
+        "key": "baby",
+        "label": "Baby",
+        "pose": "dolphin.baby"
+      }
+    ]
+  },
+  "minecraft:donkey": {
+    "asset": "horse_v3__donkey",
+    "geoFile": "horse_v3.geo.json",
+    "geoId": "geometry.horse.v3",
+    "pose": "donkey",
+    "variants": [
+      {
+        "asset": "horse_v3__donkey",
+        "geoFile": "horse_v3.geo.json",
+        "geoId": "geometry.horse.v3",
+        "key": "donkey",
+        "label": "Donkey"
+      },
+      {
+        "asset": "horse_v3__horse_markings_none",
+        "geoFile": "horse_v3.geo.json",
+        "geoId": "geometry.horse.v3",
+        "key": "markings_none",
+        "label": "Markings None"
+      },
+      {
+        "asset": "horse_v3__horse_armor_none",
+        "geoFile": "horse_v3.geo.json",
+        "geoId": "geometry.horse.v3",
+        "key": "armor_none",
+        "label": "Armor None"
+      },
+      {
+        "asset": "donkeymule_baby__donkey_baby",
+        "baby": true,
+        "geoFile": "baby_donkey_mule.geo.json",
+        "geoId": "geometry.donkeymule.baby",
+        "key": "baby_donkey",
+        "label": "Baby Donkey",
+        "pose": "donkey.baby"
+      }
+    ],
+    "visibility": [
+      [
+        "Saddle",
+        false
+      ],
+      [
+        "Bit*",
+        false
+      ],
+      [
+        "Bridle",
+        false
+      ],
+      [
+        "Reins*",
+        false
+      ],
+      [
+        "Bag*",
+        false
+      ],
+      [
+        "Ear*",
+        false
+      ]
+    ]
+  },
+  "minecraft:drowned": {
+    "asset": "zombie_drowned_v1_16__drowned",
+    "geoFile": "drowned.geo.json",
+    "geoId": "geometry.zombie.drowned.v1.16",
+    "pose": "drowned",
+    "variants": [
+      {
+        "asset": "zombie_drowned_v1_16__drowned",
+        "geoFile": "drowned.geo.json",
+        "geoId": "geometry.zombie.drowned.v1.16",
+        "key": "default",
+        "label": "Default"
+      },
+      {
+        "asset": "zombie_baby__drowned_baby",
+        "baby": true,
+        "geoFile": "baby_zombie.geo.json",
+        "geoId": "geometry.zombie.baby",
+        "key": "baby",
+        "label": "Baby",
+        "pose": "drowned.baby"
+      }
+    ]
+  },
+  "minecraft:elder_guardian": {
+    "asset": "guardian_v1_8__guardian",
+    "geoFile": "guardian.geo.json",
+    "geoId": "geometry.guardian.v1.8",
+    "pose": "elder_guardian",
+    "variants": [
+      {
+        "asset": "guardian_v1_8__guardian",
+        "geoFile": "guardian.geo.json",
+        "geoId": "geometry.guardian.v1.8",
+        "key": "default",
+        "label": "Default"
+      },
+      {
+        "asset": "guardian_v1_8__guardian_elder",
+        "geoFile": "guardian.geo.json",
+        "geoId": "geometry.guardian.v1.8",
+        "key": "elder",
+        "label": "Elder"
+      },
+      {
+        "asset": "guardian_v1_8__guardian_beam",
+        "geoFile": "guardian.geo.json",
+        "geoId": "geometry.guardian.v1.8",
+        "key": "beam",
+        "label": "Beam"
+      }
+    ]
+  },
+  "minecraft:elder_guardian_ghost": {
+    "asset": null,
+    "reason": "debug-only variant, no standalone asset"
+  },
+  "minecraft:ender_dragon": {
+    "asset": "dragon__dragon",
+    "geoFile": "ender_dragon.geo.json",
+    "geoId": "geometry.dragon",
+    "variants": [
+      {
+        "asset": "dragon__dragon",
+        "geoFile": "ender_dragon.geo.json",
+        "geoId": "geometry.dragon",
+        "key": "default",
+        "label": "Default"
+      },
+      {
+        "asset": "dragon__dragon_exploding",
+        "geoFile": "ender_dragon.geo.json",
+        "geoId": "geometry.dragon",
+        "key": "exploding",
+        "label": "Exploding"
+      },
+      {
+        "asset": "dragon__endercrystal_beam",
+        "geoFile": "ender_dragon.geo.json",
+        "geoId": "geometry.dragon",
+        "key": "beam",
+        "label": "Beam"
+      }
+    ]
+  },
+  "minecraft:enderman": {
+    "asset": "enderman_v1_8__enderman",
+    "emissiveAlpha": true,
+    "geoFile": "enderman.geo.json",
+    "geoId": "geometry.enderman.v1.8",
+    "pose": "enderman"
+  },
+  "minecraft:endermite": {
+    "asset": "endermite__endermite",
+    "geoFile": "endermite.geo.json",
+    "geoId": "geometry.endermite",
+    "pose": "endermite"
+  },
+  "minecraft:evoker": {
+    "asset": "evoker_v1_8__evoker",
+    "geoFile": "evoker.geo.json",
+    "geoId": "geometry.evoker.v1.8",
+    "pose": "evoker",
+    "visibility": [
+      [
+        "*",
+        true
+      ],
+      [
+        "arms",
+        true
+      ],
+      [
+        "leftarm",
+        false
+      ],
+      [
+        "rightarm",
+        false
+      ]
+    ]
+  },
+  "minecraft:fox": {
+    "asset": "fox__fox",
+    "bindFix": {
+      "body": [
+        90,
+        0,
+        0
+      ],
+      "tail": [
+        90,
+        0,
+        0
+      ]
+    },
+    "geoFile": "fox.geo.json",
+    "geoId": "geometry.fox",
+    "pose": "fox",
+    "variants": [
+      {
+        "asset": "fox__fox",
+        "bindFix": {
+          "body": [
+            90,
+            0,
+            0
+          ],
+          "tail": [
+            90,
+            0,
+            0
+          ]
+        },
+        "geoFile": "fox.geo.json",
+        "geoId": "geometry.fox",
+        "key": "red",
+        "label": "Red"
+      },
+      {
+        "asset": "fox__arctic_fox",
+        "bindFix": {
+          "body": [
+            90,
+            0,
+            0
+          ],
+          "tail": [
+            90,
+            0,
+            0
+          ]
+        },
+        "geoFile": "fox.geo.json",
+        "geoId": "geometry.fox",
+        "key": "arctic",
+        "label": "Arctic"
+      },
+      {
+        "asset": "fox_baby__fox_baby",
+        "baby": true,
+        "geoFile": "baby_fox.geo.json",
+        "geoId": "geometry.fox.baby",
+        "key": "baby_red",
+        "label": "Baby Red",
+        "pose": "fox.baby"
+      },
+      {
+        "asset": "fox_baby__fox_snow_baby",
+        "baby": true,
+        "geoFile": "baby_fox.geo.json",
+        "geoId": "geometry.fox.baby",
+        "key": "baby_arctic",
+        "label": "Baby Arctic",
+        "pose": "fox.baby"
+      },
+      {
+        "asset": "fox_baby__fox_sleep_baby",
+        "baby": true,
+        "geoFile": "baby_fox.geo.json",
+        "geoId": "geometry.fox.baby",
+        "key": "baby_sleep_red",
+        "label": "Baby Sleep Red",
+        "pose": "fox.baby"
+      },
+      {
+        "asset": "fox_baby__fox_snow_sleep_baby",
+        "baby": true,
+        "geoFile": "baby_fox.geo.json",
+        "geoId": "geometry.fox.baby",
+        "key": "baby_sleep_arctic",
+        "label": "Baby Sleep Arctic",
+        "pose": "fox.baby"
+      }
+    ],
+    "visibility": [
+      [
+        "leg*",
+        true
+      ],
+      [
+        "head",
+        true
+      ],
+      [
+        "head_sleeping",
+        false
+      ]
+    ]
+  },
+  "minecraft:frog": {
+    "asset": "frog__temperate_frog",
+    "geoFile": "frog.geo.json",
+    "geoId": "geometry.frog",
+    "variants": [
+      {
+        "asset": "frog__temperate_frog",
+        "geoFile": "frog.geo.json",
+        "geoId": "geometry.frog",
+        "key": "temperate",
+        "label": "Temperate"
+      },
+      {
+        "asset": "frog__cold_frog",
+        "geoFile": "frog.geo.json",
+        "geoId": "geometry.frog",
+        "key": "cold",
+        "label": "Cold"
+      },
+      {
+        "asset": "frog__warm_frog",
+        "geoFile": "frog.geo.json",
+        "geoId": "geometry.frog",
+        "key": "warm",
+        "label": "Warm"
+      }
+    ]
+  },
+  "minecraft:ghast": {
+    "asset": "ghast__ghast",
+    "geoFile": "ghast.geo.json",
+    "geoId": "geometry.ghast",
+    "pose": "ghast",
+    "variants": [
+      {
+        "asset": "ghast__ghast",
+        "geoFile": "ghast.geo.json",
+        "geoId": "geometry.ghast",
+        "key": "default",
+        "label": "Default"
+      },
+      {
+        "asset": "ghast__ghast_shooting",
+        "geoFile": "ghast.geo.json",
+        "geoId": "geometry.ghast",
+        "key": "shooting",
+        "label": "Shooting"
+      }
+    ]
+  },
+  "minecraft:giant": {
+    "asset": "zombie_v1_8__zombie",
+    "geoFile": "zombie.geo.json",
+    "geoId": "geometry.zombie.v1.8",
+    "pose": "giant",
+    "reason": "giant_substitute",
+    "substitute": "minecraft:zombie",
+    "variants": [
+      {
+        "asset": "zombie_v1_8__zombie",
+        "geoFile": "zombie.geo.json",
+        "geoId": "geometry.zombie.v1.8",
+        "key": "default",
+        "label": "Default"
+      },
+      {
+        "asset": "zombie_baby__zombie_baby",
+        "baby": true,
+        "geoFile": "baby_zombie.geo.json",
+        "geoId": "geometry.zombie.baby",
+        "key": "baby",
+        "label": "Baby",
+        "pose": "giant.baby"
+      }
+    ]
+  },
+  "minecraft:glow_squid": {
+    "asset": "squid__glow_squid",
+    "emissiveAlpha": true,
+    "geoFile": "squid.geo.json",
+    "geoId": "geometry.squid",
+    "pose": "glow_squid",
+    "variants": [
+      {
+        "asset": "squid__glow_squid",
+        "geoFile": "squid.geo.json",
+        "geoId": "geometry.squid",
+        "key": "default",
+        "label": "Default"
+      },
+      {
+        "asset": "squid_baby__glow_squid_baby",
+        "baby": true,
+        "geoFile": "baby_squid.geo.json",
+        "geoId": "geometry.squid.baby",
+        "key": "baby",
+        "label": "Baby",
+        "pose": "glow_squid.baby"
+      }
+    ]
+  },
+  "minecraft:goat": {
+    "asset": "goat__goat",
+    "geoFile": "goat.geo.json",
+    "geoId": "geometry.goat",
+    "pose": "goat",
+    "variants": [
+      {
+        "asset": "goat__goat",
+        "geoFile": "goat.geo.json",
+        "geoId": "geometry.goat",
+        "key": "default",
+        "label": "Default"
+      },
+      {
+        "asset": "goat_baby__goat_baby",
+        "baby": true,
+        "geoFile": "baby_goat.geo.json",
+        "geoId": "geometry.goat.baby",
+        "key": "baby",
+        "label": "Baby",
+        "pose": "goat.baby"
+      }
+    ],
+    "visibility": [
+      [
+        "right_horn",
+        false
+      ],
+      [
+        "left_horn",
+        false
+      ]
+    ]
+  },
+  "minecraft:guardian": {
+    "asset": "guardian_v1_8__guardian",
+    "geoFile": "guardian.geo.json",
+    "geoId": "geometry.guardian.v1.8",
+    "pose": "guardian",
+    "variants": [
+      {
+        "asset": "guardian_v1_8__guardian",
+        "geoFile": "guardian.geo.json",
+        "geoId": "geometry.guardian.v1.8",
+        "key": "default",
+        "label": "Default"
+      },
+      {
+        "asset": "guardian_v1_8__guardian_elder",
+        "geoFile": "guardian.geo.json",
+        "geoId": "geometry.guardian.v1.8",
+        "key": "elder",
+        "label": "Elder"
+      },
+      {
+        "asset": "guardian_v1_8__guardian_beam",
+        "geoFile": "guardian.geo.json",
+        "geoId": "geometry.guardian.v1.8",
+        "key": "beam",
+        "label": "Beam"
+      }
+    ]
+  },
+  "minecraft:happy_ghast": {
+    "asset": "happy_ghast__happy_ghast",
+    "geoFile": "happy_ghast.geo.json",
+    "geoId": "geometry.happy_ghast",
+    "pose": "happy_ghast",
+    "variants": [
+      {
+        "asset": "happy_ghast__ghastling",
+        "geoFile": "happy_ghast.geo.json",
+        "geoId": "geometry.happy_ghast",
+        "key": "ghastling",
+        "label": "Ghastling"
+      },
+      {
+        "asset": "happy_ghast__happy_ghast",
+        "geoFile": "happy_ghast.geo.json",
+        "geoId": "geometry.happy_ghast",
+        "key": "happy_ghast",
+        "label": "Happy Ghast"
+      },
+      {
+        "asset": "happy_ghast__happy_ghast_ropes",
+        "geoFile": "happy_ghast.geo.json",
+        "geoId": "geometry.happy_ghast",
+        "key": "ropes",
+        "label": "Ropes"
+      }
+    ]
+  },
+  "minecraft:hoglin": {
+    "asset": "hoglin__hoglin",
+    "geoFile": "hoglin.geo.json",
+    "geoId": "geometry.hoglin",
+    "pose": "hoglin",
+    "variants": [
+      {
+        "asset": "hoglin__hoglin",
+        "geoFile": "hoglin.geo.json",
+        "geoId": "geometry.hoglin",
+        "key": "default",
+        "label": "Default"
+      },
+      {
+        "asset": "hoglin_baby__hoglin_baby",
+        "baby": true,
+        "geoFile": "baby_hoglin.geo.json",
+        "geoId": "geometry.hoglin.baby",
+        "key": "baby",
+        "label": "Baby",
+        "pose": "hoglin.baby"
+      }
+    ]
+  },
+  "minecraft:horse": {
+    "asset": "horse_v3__horse_brown",
+    "geoFile": "horse_v3.geo.json",
+    "geoId": "geometry.horse.v3",
+    "pose": "horse",
+    "variants": [
+      {
+        "asset": "horse_v3__horse_brown",
+        "geoFile": "horse_v3.geo.json",
+        "geoId": "geometry.horse.v3",
+        "key": "base_brown",
+        "label": "Base Brown"
+      },
+      {
+        "asset": "horse_v3__horse_white",
+        "geoFile": "horse_v3.geo.json",
+        "geoId": "geometry.horse.v3",
+        "key": "base_white",
+        "label": "Base White"
+      },
+      {
+        "asset": "horse_v3__horse_creamy",
+        "geoFile": "horse_v3.geo.json",
+        "geoId": "geometry.horse.v3",
+        "key": "base_creamy",
+        "label": "Base Creamy"
+      },
+      {
+        "asset": "horse_v3__horse_chestnut",
+        "geoFile": "horse_v3.geo.json",
+        "geoId": "geometry.horse.v3",
+        "key": "base_chestnut",
+        "label": "Base Chestnut"
+      },
+      {
+        "asset": "horse_v3__horse_black",
+        "geoFile": "horse_v3.geo.json",
+        "geoId": "geometry.horse.v3",
+        "key": "base_black",
+        "label": "Base Black"
+      },
+      {
+        "asset": "horse_v3__horse_gray",
+        "geoFile": "horse_v3.geo.json",
+        "geoId": "geometry.horse.v3",
+        "key": "base_gray",
+        "label": "Base Gray"
+      },
+      {
+        "asset": "horse_v3__horse_darkbrown",
+        "geoFile": "horse_v3.geo.json",
+        "geoId": "geometry.horse.v3",
+        "key": "base_darkbrown",
+        "label": "Base Darkbrown"
+      },
+      {
+        "asset": "horse_v3__horse_markings_none",
+        "geoFile": "horse_v3.geo.json",
+        "geoId": "geometry.horse.v3",
+        "key": "markings_none",
+        "label": "Markings None"
+      },
+      {
+        "asset": "horse_v3__horse_markings_white",
+        "geoFile": "horse_v3.geo.json",
+        "geoId": "geometry.horse.v3",
+        "key": "markings_white",
+        "label": "Markings White"
+      },
+      {
+        "asset": "horse_v3__horse_markings_whitefield",
+        "geoFile": "horse_v3.geo.json",
+        "geoId": "geometry.horse.v3",
+        "key": "markings_whitefield",
+        "label": "Markings Whitefield"
+      },
+      {
+        "asset": "horse_v3__horse_markings_whitedots",
+        "geoFile": "horse_v3.geo.json",
+        "geoId": "geometry.horse.v3",
+        "key": "markings_whitedots",
+        "label": "Markings Whitedots"
+      },
+      {
+        "asset": "horse_v3__horse_markings_blackdots",
+        "geoFile": "horse_v3.geo.json",
+        "geoId": "geometry.horse.v3",
+        "key": "markings_blackdots",
+        "label": "Markings Blackdots"
+      },
+      {
+        "asset": "horse_v3__horse_armor_none",
+        "geoFile": "horse_v3.geo.json",
+        "geoId": "geometry.horse.v3",
+        "key": "armor_none",
+        "label": "Armor None"
+      },
+      {
+        "asset": "horse_v3__horse_armor_leather",
+        "geoFile": "horse_v3.geo.json",
+        "geoId": "geometry.horse.v3",
+        "key": "armor_leather",
+        "label": "Armor Leather"
+      },
+      {
+        "asset": "horse_v3__horse_armor_iron",
+        "geoFile": "horse_v3.geo.json",
+        "geoId": "geometry.horse.v3",
+        "key": "armor_iron",
+        "label": "Armor Iron"
+      },
+      {
+        "asset": "horse_v3__horse_armor_gold",
+        "geoFile": "horse_v3.geo.json",
+        "geoId": "geometry.horse.v3",
+        "key": "armor_gold",
+        "label": "Armor Gold"
+      },
+      {
+        "asset": "horse_v3__horse_armor_diamond",
+        "geoFile": "horse_v3.geo.json",
+        "geoId": "geometry.horse.v3",
+        "key": "armor_diamond",
+        "label": "Armor Diamond"
+      },
+      {
+        "asset": "horse_v3__horse_armor_copper",
+        "geoFile": "horse_v3.geo.json",
+        "geoId": "geometry.horse.v3",
+        "key": "armor_copper",
+        "label": "Armor Copper"
+      },
+      {
+        "asset": "horse_v3__horse_armor_netherite",
+        "geoFile": "horse_v3.geo.json",
+        "geoId": "geometry.horse.v3",
+        "key": "armor_netherite",
+        "label": "Armor Netherite"
+      },
+      {
+        "asset": "horse_baby__horse_brown_baby",
+        "baby": true,
+        "geoFile": "baby_horse.geo.json",
+        "geoId": "geometry.horse.baby",
+        "key": "baby_base_brown",
+        "label": "Baby Base Brown",
+        "pose": "horse.baby"
+      },
+      {
+        "asset": "horse_baby__horse_white_baby",
+        "baby": true,
+        "geoFile": "baby_horse.geo.json",
+        "geoId": "geometry.horse.baby",
+        "key": "baby_base_white",
+        "label": "Baby Base White",
+        "pose": "horse.baby"
+      },
+      {
+        "asset": "horse_baby__horse_creamy_baby",
+        "baby": true,
+        "geoFile": "baby_horse.geo.json",
+        "geoId": "geometry.horse.baby",
+        "key": "baby_base_creamy",
+        "label": "Baby Base Creamy",
+        "pose": "horse.baby"
+      },
+      {
+        "asset": "horse_baby__horse_chestnut_baby",
+        "baby": true,
+        "geoFile": "baby_horse.geo.json",
+        "geoId": "geometry.horse.baby",
+        "key": "baby_base_chestnut",
+        "label": "Baby Base Chestnut",
+        "pose": "horse.baby"
+      },
+      {
+        "asset": "horse_baby__horse_black_baby",
+        "baby": true,
+        "geoFile": "baby_horse.geo.json",
+        "geoId": "geometry.horse.baby",
+        "key": "baby_base_black",
+        "label": "Baby Base Black",
+        "pose": "horse.baby"
+      },
+      {
+        "asset": "horse_baby__horse_gray_baby",
+        "baby": true,
+        "geoFile": "baby_horse.geo.json",
+        "geoId": "geometry.horse.baby",
+        "key": "baby_base_gray",
+        "label": "Baby Base Gray",
+        "pose": "horse.baby"
+      },
+      {
+        "asset": "horse_baby__horse_darkbrown_baby",
+        "baby": true,
+        "geoFile": "baby_horse.geo.json",
+        "geoId": "geometry.horse.baby",
+        "key": "baby_base_darkbrown",
+        "label": "Baby Base Darkbrown",
+        "pose": "horse.baby"
+      },
+      {
+        "asset": "horse_baby__baby_horse_markings_white",
+        "baby": true,
+        "geoFile": "baby_horse.geo.json",
+        "geoId": "geometry.horse.baby",
+        "key": "baby_markings_white",
+        "label": "Baby Markings White",
+        "pose": "horse.baby"
+      },
+      {
+        "asset": "horse_baby__baby_horse_markings_whitefield",
+        "baby": true,
+        "geoFile": "baby_horse.geo.json",
+        "geoId": "geometry.horse.baby",
+        "key": "baby_markings_whitefield",
+        "label": "Baby Markings Whitefield",
+        "pose": "horse.baby"
+      },
+      {
+        "asset": "horse_baby__baby_horse_markings_whitedots",
+        "baby": true,
+        "geoFile": "baby_horse.geo.json",
+        "geoId": "geometry.horse.baby",
+        "key": "baby_markings_whitedots",
+        "label": "Baby Markings Whitedots",
+        "pose": "horse.baby"
+      },
+      {
+        "asset": "horse_baby__baby_horse_markings_blackdots",
+        "baby": true,
+        "geoFile": "baby_horse.geo.json",
+        "geoId": "geometry.horse.baby",
+        "key": "baby_markings_blackdots",
+        "label": "Baby Markings Blackdots",
+        "pose": "horse.baby"
+      }
+    ],
+    "visibility": [
+      [
+        "Saddle",
+        false
+      ],
+      [
+        "Bit*",
+        false
+      ],
+      [
+        "Bridle",
+        false
+      ],
+      [
+        "Reins*",
+        false
+      ],
+      [
+        "Bag*",
+        false
+      ],
+      [
+        "MuleEar*",
+        false
+      ]
+    ]
+  },
+  "minecraft:husk": {
+    "asset": "zombie_husk_v1_8__husk",
+    "geoFile": "husk.geo.json",
+    "geoId": "geometry.zombie.husk.v1.8",
+    "pose": "husk",
+    "variants": [
+      {
+        "asset": "zombie_husk_v1_8__husk",
+        "geoFile": "husk.geo.json",
+        "geoId": "geometry.zombie.husk.v1.8",
+        "key": "default",
+        "label": "Default"
+      },
+      {
+        "asset": "zombie_baby__husk_baby",
+        "baby": true,
+        "geoFile": "baby_zombie.geo.json",
+        "geoId": "geometry.zombie.baby",
+        "key": "baby",
+        "label": "Baby",
+        "pose": "husk.baby"
+      }
+    ]
+  },
+  "minecraft:illusioner": {
+    "asset": null,
+    "reason": "not implemented in Bedrock Edition"
+  },
+  "minecraft:iron_golem": {
+    "asset": "irongolem__iron_golem",
+    "geoFile": "iron_golem.geo.json",
+    "geoId": "geometry.irongolem",
+    "pose": "iron_golem",
+    "variants": [
+      {
+        "asset": "irongolem__iron_golem",
+        "geoFile": "iron_golem.geo.json",
+        "geoId": "geometry.irongolem",
+        "key": "default",
+        "label": "Default"
+      },
+      {
+        "asset": "irongolem__cracked_high",
+        "geoFile": "iron_golem.geo.json",
+        "geoId": "geometry.irongolem",
+        "key": "cracked_high",
+        "label": "Cracked High"
+      },
+      {
+        "asset": "irongolem__cracked_medium",
+        "geoFile": "iron_golem.geo.json",
+        "geoId": "geometry.irongolem",
+        "key": "cracked_med",
+        "label": "Cracked Med"
+      },
+      {
+        "asset": "irongolem__cracked_low",
+        "geoFile": "iron_golem.geo.json",
+        "geoId": "geometry.irongolem",
+        "key": "cracked_low",
+        "label": "Cracked Low"
+      },
+      {
+        "asset": "irongolem__cracked_none",
+        "geoFile": "iron_golem.geo.json",
+        "geoId": "geometry.irongolem",
+        "key": "cracked_none",
+        "label": "Cracked None"
+      }
+    ]
+  },
+  "minecraft:llama": {
+    "asset": "llama_v1_8__llama_creamy",
+    "bindFix": {
+      "body": [
+        90,
+        0,
+        0
+      ]
+    },
+    "geoFile": "llama.geo.json",
+    "geoId": "geometry.llama.v1.8",
+    "pose": "llama",
+    "variants": [
+      {
+        "asset": "llama_v1_8__llama_creamy",
+        "bindFix": {
+          "body": [
+            90,
+            0,
+            0
+          ]
+        },
+        "geoFile": "llama.geo.json",
+        "geoId": "geometry.llama.v1.8",
+        "key": "creamy",
+        "label": "Creamy"
+      },
+      {
+        "asset": "llama_v1_8__llama_white",
+        "bindFix": {
+          "body": [
+            90,
+            0,
+            0
+          ]
+        },
+        "geoFile": "llama.geo.json",
+        "geoId": "geometry.llama.v1.8",
+        "key": "white",
+        "label": "White"
+      },
+      {
+        "asset": "llama_v1_8__llama_brown",
+        "bindFix": {
+          "body": [
+            90,
+            0,
+            0
+          ]
+        },
+        "geoFile": "llama.geo.json",
+        "geoId": "geometry.llama.v1.8",
+        "key": "brown",
+        "label": "Brown"
+      },
+      {
+        "asset": "llama_v1_8__llama_gray",
+        "bindFix": {
+          "body": [
+            90,
+            0,
+            0
+          ]
+        },
+        "geoFile": "llama.geo.json",
+        "geoId": "geometry.llama.v1.8",
+        "key": "gray",
+        "label": "Gray"
+      },
+      {
+        "asset": "llama_v1_8__llama_creamy+llama_v1_8__decor_white",
+        "bindFix": {
+          "body": [
+            90,
+            0,
+            0
+          ]
+        },
+        "geoFile": "llama.geo.json",
+        "geoId": "geometry.llama.v1.8",
+        "key": "decor_white",
+        "label": "Decor White",
+        "layers": [
+          {
+            "asset": "llama_v1_8__llama_creamy"
+          },
+          {
+            "asset": "llama_v1_8__decor_white"
+          }
+        ]
+      },
+      {
+        "asset": "llama_v1_8__llama_creamy+llama_v1_8__decor_orange",
+        "bindFix": {
+          "body": [
+            90,
+            0,
+            0
+          ]
+        },
+        "geoFile": "llama.geo.json",
+        "geoId": "geometry.llama.v1.8",
+        "key": "decor_orange",
+        "label": "Decor Orange",
+        "layers": [
+          {
+            "asset": "llama_v1_8__llama_creamy"
+          },
+          {
+            "asset": "llama_v1_8__decor_orange"
+          }
+        ]
+      },
+      {
+        "asset": "llama_v1_8__llama_creamy+llama_v1_8__decor_magenta",
+        "bindFix": {
+          "body": [
+            90,
+            0,
+            0
+          ]
+        },
+        "geoFile": "llama.geo.json",
+        "geoId": "geometry.llama.v1.8",
+        "key": "decor_magenta",
+        "label": "Decor Magenta",
+        "layers": [
+          {
+            "asset": "llama_v1_8__llama_creamy"
+          },
+          {
+            "asset": "llama_v1_8__decor_magenta"
+          }
+        ]
+      },
+      {
+        "asset": "llama_v1_8__llama_creamy+llama_v1_8__decor_light_blue",
+        "bindFix": {
+          "body": [
+            90,
+            0,
+            0
+          ]
+        },
+        "geoFile": "llama.geo.json",
+        "geoId": "geometry.llama.v1.8",
+        "key": "decor_light_blue",
+        "label": "Decor Light Blue",
+        "layers": [
+          {
+            "asset": "llama_v1_8__llama_creamy"
+          },
+          {
+            "asset": "llama_v1_8__decor_light_blue"
+          }
+        ]
+      },
+      {
+        "asset": "llama_v1_8__llama_creamy+llama_v1_8__decor_yellow",
+        "bindFix": {
+          "body": [
+            90,
+            0,
+            0
+          ]
+        },
+        "geoFile": "llama.geo.json",
+        "geoId": "geometry.llama.v1.8",
+        "key": "decor_yellow",
+        "label": "Decor Yellow",
+        "layers": [
+          {
+            "asset": "llama_v1_8__llama_creamy"
+          },
+          {
+            "asset": "llama_v1_8__decor_yellow"
+          }
+        ]
+      },
+      {
+        "asset": "llama_v1_8__llama_creamy+llama_v1_8__decor_lime",
+        "bindFix": {
+          "body": [
+            90,
+            0,
+            0
+          ]
+        },
+        "geoFile": "llama.geo.json",
+        "geoId": "geometry.llama.v1.8",
+        "key": "decor_lime",
+        "label": "Decor Lime",
+        "layers": [
+          {
+            "asset": "llama_v1_8__llama_creamy"
+          },
+          {
+            "asset": "llama_v1_8__decor_lime"
+          }
+        ]
+      },
+      {
+        "asset": "llama_v1_8__llama_creamy+llama_v1_8__decor_pink",
+        "bindFix": {
+          "body": [
+            90,
+            0,
+            0
+          ]
+        },
+        "geoFile": "llama.geo.json",
+        "geoId": "geometry.llama.v1.8",
+        "key": "decor_pink",
+        "label": "Decor Pink",
+        "layers": [
+          {
+            "asset": "llama_v1_8__llama_creamy"
+          },
+          {
+            "asset": "llama_v1_8__decor_pink"
+          }
+        ]
+      },
+      {
+        "asset": "llama_v1_8__llama_creamy+llama_v1_8__decor_gray",
+        "bindFix": {
+          "body": [
+            90,
+            0,
+            0
+          ]
+        },
+        "geoFile": "llama.geo.json",
+        "geoId": "geometry.llama.v1.8",
+        "key": "decor_gray",
+        "label": "Decor Gray",
+        "layers": [
+          {
+            "asset": "llama_v1_8__llama_creamy"
+          },
+          {
+            "asset": "llama_v1_8__decor_gray"
+          }
+        ]
+      },
+      {
+        "asset": "llama_v1_8__llama_creamy+llama_v1_8__decor_silver",
+        "bindFix": {
+          "body": [
+            90,
+            0,
+            0
+          ]
+        },
+        "geoFile": "llama.geo.json",
+        "geoId": "geometry.llama.v1.8",
+        "key": "decor_silver",
+        "label": "Decor Silver",
+        "layers": [
+          {
+            "asset": "llama_v1_8__llama_creamy"
+          },
+          {
+            "asset": "llama_v1_8__decor_silver"
+          }
+        ]
+      },
+      {
+        "asset": "llama_v1_8__llama_creamy+llama_v1_8__decor_cyan",
+        "bindFix": {
+          "body": [
+            90,
+            0,
+            0
+          ]
+        },
+        "geoFile": "llama.geo.json",
+        "geoId": "geometry.llama.v1.8",
+        "key": "decor_cyan",
+        "label": "Decor Cyan",
+        "layers": [
+          {
+            "asset": "llama_v1_8__llama_creamy"
+          },
+          {
+            "asset": "llama_v1_8__decor_cyan"
+          }
+        ]
+      },
+      {
+        "asset": "llama_v1_8__llama_creamy+llama_v1_8__decor_purple",
+        "bindFix": {
+          "body": [
+            90,
+            0,
+            0
+          ]
+        },
+        "geoFile": "llama.geo.json",
+        "geoId": "geometry.llama.v1.8",
+        "key": "decor_purple",
+        "label": "Decor Purple",
+        "layers": [
+          {
+            "asset": "llama_v1_8__llama_creamy"
+          },
+          {
+            "asset": "llama_v1_8__decor_purple"
+          }
+        ]
+      },
+      {
+        "asset": "llama_v1_8__llama_creamy+llama_v1_8__decor_blue",
+        "bindFix": {
+          "body": [
+            90,
+            0,
+            0
+          ]
+        },
+        "geoFile": "llama.geo.json",
+        "geoId": "geometry.llama.v1.8",
+        "key": "decor_blue",
+        "label": "Decor Blue",
+        "layers": [
+          {
+            "asset": "llama_v1_8__llama_creamy"
+          },
+          {
+            "asset": "llama_v1_8__decor_blue"
+          }
+        ]
+      },
+      {
+        "asset": "llama_v1_8__llama_creamy+llama_v1_8__decor_brown",
+        "bindFix": {
+          "body": [
+            90,
+            0,
+            0
+          ]
+        },
+        "geoFile": "llama.geo.json",
+        "geoId": "geometry.llama.v1.8",
+        "key": "decor_brown",
+        "label": "Decor Brown",
+        "layers": [
+          {
+            "asset": "llama_v1_8__llama_creamy"
+          },
+          {
+            "asset": "llama_v1_8__decor_brown"
+          }
+        ]
+      },
+      {
+        "asset": "llama_v1_8__llama_creamy+llama_v1_8__decor_green",
+        "bindFix": {
+          "body": [
+            90,
+            0,
+            0
+          ]
+        },
+        "geoFile": "llama.geo.json",
+        "geoId": "geometry.llama.v1.8",
+        "key": "decor_green",
+        "label": "Decor Green",
+        "layers": [
+          {
+            "asset": "llama_v1_8__llama_creamy"
+          },
+          {
+            "asset": "llama_v1_8__decor_green"
+          }
+        ]
+      },
+      {
+        "asset": "llama_v1_8__llama_creamy+llama_v1_8__decor_red",
+        "bindFix": {
+          "body": [
+            90,
+            0,
+            0
+          ]
+        },
+        "geoFile": "llama.geo.json",
+        "geoId": "geometry.llama.v1.8",
+        "key": "decor_red",
+        "label": "Decor Red",
+        "layers": [
+          {
+            "asset": "llama_v1_8__llama_creamy"
+          },
+          {
+            "asset": "llama_v1_8__decor_red"
+          }
+        ]
+      },
+      {
+        "asset": "llama_v1_8__llama_creamy+llama_v1_8__decor_black",
+        "bindFix": {
+          "body": [
+            90,
+            0,
+            0
+          ]
+        },
+        "geoFile": "llama.geo.json",
+        "geoId": "geometry.llama.v1.8",
+        "key": "decor_black",
+        "label": "Decor Black",
+        "layers": [
+          {
+            "asset": "llama_v1_8__llama_creamy"
+          },
+          {
+            "asset": "llama_v1_8__decor_black"
+          }
+        ]
+      },
+      {
+        "asset": "llama_baby__llama_creamy_baby",
+        "baby": true,
+        "geoFile": "baby_llama.geo.json",
+        "geoId": "geometry.llama.baby",
+        "key": "baby_creamy",
+        "label": "Baby Creamy",
+        "pose": "llama.baby"
+      },
+      {
+        "asset": "llama_baby__llama_white_baby",
+        "baby": true,
+        "geoFile": "baby_llama.geo.json",
+        "geoId": "geometry.llama.baby",
+        "key": "baby_white",
+        "label": "Baby White",
+        "pose": "llama.baby"
+      },
+      {
+        "asset": "llama_baby__llama_brown_baby",
+        "baby": true,
+        "geoFile": "baby_llama.geo.json",
+        "geoId": "geometry.llama.baby",
+        "key": "baby_brown",
+        "label": "Baby Brown",
+        "pose": "llama.baby"
+      },
+      {
+        "asset": "llama_baby__llama_gray_baby",
+        "baby": true,
+        "geoFile": "baby_llama.geo.json",
+        "geoId": "geometry.llama.baby",
+        "key": "baby_gray",
+        "label": "Baby Gray",
+        "pose": "llama.baby"
+      }
+    ],
+    "visibility": [
+      [
+        "chest*",
+        false
+      ]
+    ]
+  },
+  "minecraft:magma_cube": {
+    "asset": "magma_cube_v2__magmacube_v2",
+    "emissiveAlpha": true,
+    "geoFile": "magma_cube_v2.geo.json",
+    "geoId": "geometry.magma_cube_v2",
+    "pose": "magma_cube"
+  },
+  "minecraft:mooshroom": {
+    "asset": "mooshroom_v2__mooshroom_v2",
+    "geoFile": "mooshroom.v2.geo.json",
+    "geoId": "geometry.mooshroom.v2",
+    "pose": "mooshroom",
+    "variants": [
+      {
+        "asset": "mooshroom_v2__mooshroom_v2",
+        "geoFile": "mooshroom.v2.geo.json",
+        "geoId": "geometry.mooshroom.v2",
+        "key": "default",
+        "label": "Default"
+      },
+      {
+        "asset": "mooshroom_v2__brown_mooshroom_v2",
+        "geoFile": "mooshroom.v2.geo.json",
+        "geoId": "geometry.mooshroom.v2",
+        "key": "brown",
+        "label": "Brown"
+      },
+      {
+        "asset": "cow_baby__mooshroom_red_baby",
+        "baby": true,
+        "geoFile": "baby_cow.geo.json",
+        "geoId": "geometry.cow.baby",
+        "key": "baby_default",
+        "label": "Baby Default",
+        "pose": "mooshroom.baby"
+      },
+      {
+        "asset": "cow_baby__mooshroom_brown_baby",
+        "baby": true,
+        "geoFile": "baby_cow.geo.json",
+        "geoId": "geometry.cow.baby",
+        "key": "baby_brown",
+        "label": "Baby Brown",
+        "pose": "mooshroom.baby"
+      }
+    ]
+  },
+  "minecraft:mule": {
+    "asset": "horse_v3__mule",
+    "geoFile": "horse_v3.geo.json",
+    "geoId": "geometry.horse.v3",
+    "pose": "mule",
+    "variants": [
+      {
+        "asset": "horse_v3__mule",
+        "geoFile": "horse_v3.geo.json",
+        "geoId": "geometry.horse.v3",
+        "key": "mule",
+        "label": "Mule"
+      },
+      {
+        "asset": "horse_v3__horse_markings_none",
+        "geoFile": "horse_v3.geo.json",
+        "geoId": "geometry.horse.v3",
+        "key": "markings_none",
+        "label": "Markings None"
+      },
+      {
+        "asset": "horse_v3__horse_armor_none",
+        "geoFile": "horse_v3.geo.json",
+        "geoId": "geometry.horse.v3",
+        "key": "armor_none",
+        "label": "Armor None"
+      },
+      {
+        "asset": "donkeymule_baby__mule_baby",
+        "baby": true,
+        "geoFile": "baby_donkey_mule.geo.json",
+        "geoId": "geometry.donkeymule.baby",
+        "key": "baby_mule",
+        "label": "Baby Mule",
+        "pose": "mule.baby"
+      }
+    ],
+    "visibility": [
+      [
+        "Saddle",
+        false
+      ],
+      [
+        "Bit*",
+        false
+      ],
+      [
+        "Bridle",
+        false
+      ],
+      [
+        "Reins*",
+        false
+      ],
+      [
+        "Bag*",
+        false
+      ],
+      [
+        "Ear*",
+        false
+      ]
+    ]
+  },
+  "minecraft:nautilus": {
+    "asset": "nautilus__nautilus",
+    "geoFile": "nautilus.geo.json",
+    "geoId": "geometry.nautilus",
+    "pose": "nautilus",
+    "variants": [
+      {
+        "asset": "nautilus__nautilus",
+        "geoFile": "nautilus.geo.json",
+        "geoId": "geometry.nautilus",
+        "key": "default",
+        "label": "Default"
+      },
+      {
+        "asset": "nautilus_baby__nautilus_baby",
+        "baby": true,
+        "geoFile": "nautilus_baby.geo.json",
+        "geoId": "geometry.nautilus.baby",
+        "key": "baby",
+        "label": "Baby",
+        "pose": "nautilus.baby"
+      },
+      {
+        "asset": "nautilus__nautilus_saddle",
+        "geoFile": "nautilus.geo.json",
+        "geoId": "geometry.nautilus",
+        "key": "saddle",
+        "label": "Saddle"
+      },
+      {
+        "asset": "nautilus__horse_armor_none",
+        "geoFile": "nautilus.geo.json",
+        "geoId": "geometry.nautilus",
+        "key": "armor_none",
+        "label": "Armor None"
+      },
+      {
+        "asset": "nautilus__nautilus_armor_copper",
+        "geoFile": "nautilus.geo.json",
+        "geoId": "geometry.nautilus",
+        "key": "armor_copper",
+        "label": "Armor Copper"
+      },
+      {
+        "asset": "nautilus__nautilus_armor_iron",
+        "geoFile": "nautilus.geo.json",
+        "geoId": "geometry.nautilus",
+        "key": "armor_iron",
+        "label": "Armor Iron"
+      },
+      {
+        "asset": "nautilus__nautilus_armor_gold",
+        "geoFile": "nautilus.geo.json",
+        "geoId": "geometry.nautilus",
+        "key": "armor_gold",
+        "label": "Armor Gold"
+      },
+      {
+        "asset": "nautilus__nautilus_armor_diamond",
+        "geoFile": "nautilus.geo.json",
+        "geoId": "geometry.nautilus",
+        "key": "armor_diamond",
+        "label": "Armor Diamond"
+      },
+      {
+        "asset": "nautilus__nautilus_armor_netherite",
+        "geoFile": "nautilus.geo.json",
+        "geoId": "geometry.nautilus",
+        "key": "armor_netherite",
+        "label": "Armor Netherite"
+      }
+    ]
+  },
+  "minecraft:ocelot": {
+    "asset": "ocelot_v1_8__ocelot",
+    "bindFix": {
+      "body": [
+        90,
+        0,
+        0
+      ],
+      "tail1": [
+        90,
+        0,
+        0
+      ],
+      "tail2": [
+        90,
+        0,
+        0
+      ]
+    },
+    "geoFile": "ocelot.geo.json",
+    "geoId": "geometry.ocelot.v1.8",
+    "pose": "ocelot",
+    "variants": [
+      {
+        "asset": "ocelot_v1_8__blackcat",
+        "bindFix": {
+          "body": [
+            90,
+            0,
+            0
+          ],
+          "tail1": [
+            90,
+            0,
+            0
+          ],
+          "tail2": [
+            90,
+            0,
+            0
+          ]
+        },
+        "geoFile": "ocelot.geo.json",
+        "geoId": "geometry.ocelot.v1.8",
+        "key": "black",
+        "label": "Black"
+      },
+      {
+        "asset": "ocelot_v1_8__red",
+        "bindFix": {
+          "body": [
+            90,
+            0,
+            0
+          ],
+          "tail1": [
+            90,
+            0,
+            0
+          ],
+          "tail2": [
+            90,
+            0,
+            0
+          ]
+        },
+        "geoFile": "ocelot.geo.json",
+        "geoId": "geometry.ocelot.v1.8",
+        "key": "red",
+        "label": "Red"
+      },
+      {
+        "asset": "ocelot_v1_8__siamese",
+        "bindFix": {
+          "body": [
+            90,
+            0,
+            0
+          ],
+          "tail1": [
+            90,
+            0,
+            0
+          ],
+          "tail2": [
+            90,
+            0,
+            0
+          ]
+        },
+        "geoFile": "ocelot.geo.json",
+        "geoId": "geometry.ocelot.v1.8",
+        "key": "siamese",
+        "label": "Siamese"
+      },
+      {
+        "asset": "ocelot_v1_8__ocelot",
+        "bindFix": {
+          "body": [
+            90,
+            0,
+            0
+          ],
+          "tail1": [
+            90,
+            0,
+            0
+          ],
+          "tail2": [
+            90,
+            0,
+            0
+          ]
+        },
+        "geoFile": "ocelot.geo.json",
+        "geoId": "geometry.ocelot.v1.8",
+        "key": "wild",
+        "label": "Wild"
+      },
+      {
+        "asset": "cat_baby__ocelot_baby",
+        "baby": true,
+        "geoFile": "baby_cat.geo.json",
+        "geoId": "geometry.cat.baby",
+        "key": "baby_wild",
+        "label": "Baby Wild",
+        "pose": "ocelot.baby"
+      }
+    ]
+  },
+  "minecraft:panda": {
+    "asset": "panda__panda",
+    "geoFile": "panda.geo.json",
+    "geoId": "geometry.panda",
+    "variants": [
+      {
+        "asset": "panda__panda",
+        "geoFile": "panda.geo.json",
+        "geoId": "geometry.panda",
+        "key": "default",
+        "label": "Default"
+      },
+      {
+        "asset": "panda__panda_lazy",
+        "geoFile": "panda.geo.json",
+        "geoId": "geometry.panda",
+        "key": "lazy",
+        "label": "Lazy"
+      },
+      {
+        "asset": "panda__panda_worried",
+        "geoFile": "panda.geo.json",
+        "geoId": "geometry.panda",
+        "key": "worried",
+        "label": "Worried"
+      },
+      {
+        "asset": "panda__panda_playful",
+        "geoFile": "panda.geo.json",
+        "geoId": "geometry.panda",
+        "key": "playful",
+        "label": "Playful"
+      },
+      {
+        "asset": "panda__panda_brown",
+        "geoFile": "panda.geo.json",
+        "geoId": "geometry.panda",
+        "key": "brown",
+        "label": "Brown"
+      },
+      {
+        "asset": "panda__panda_sneezy",
+        "geoFile": "panda.geo.json",
+        "geoId": "geometry.panda",
+        "key": "weak",
+        "label": "Weak"
+      },
+      {
+        "asset": "panda__panda_aggressive",
+        "geoFile": "panda.geo.json",
+        "geoId": "geometry.panda",
+        "key": "aggressive",
+        "label": "Aggressive"
+      },
+      {
+        "asset": "panda_baby__panda_baby",
+        "baby": true,
+        "geoFile": "baby_panda.geo.json",
+        "geoId": "geometry.panda.baby",
+        "key": "baby_default",
+        "label": "Baby Default",
+        "pose": ""
+      },
+      {
+        "asset": "panda_baby__panda_lazy_baby",
+        "baby": true,
+        "geoFile": "baby_panda.geo.json",
+        "geoId": "geometry.panda.baby",
+        "key": "baby_lazy",
+        "label": "Baby Lazy",
+        "pose": ""
+      },
+      {
+        "asset": "panda_baby__panda_worried_baby",
+        "baby": true,
+        "geoFile": "baby_panda.geo.json",
+        "geoId": "geometry.panda.baby",
+        "key": "baby_worried",
+        "label": "Baby Worried",
+        "pose": ""
+      },
+      {
+        "asset": "panda_baby__panda_playful_baby",
+        "baby": true,
+        "geoFile": "baby_panda.geo.json",
+        "geoId": "geometry.panda.baby",
+        "key": "baby_playful",
+        "label": "Baby Playful",
+        "pose": ""
+      },
+      {
+        "asset": "panda_baby__panda_brown_baby",
+        "baby": true,
+        "geoFile": "baby_panda.geo.json",
+        "geoId": "geometry.panda.baby",
+        "key": "baby_brown",
+        "label": "Baby Brown",
+        "pose": ""
+      },
+      {
+        "asset": "panda_baby__panda_weak_baby",
+        "baby": true,
+        "geoFile": "baby_panda.geo.json",
+        "geoId": "geometry.panda.baby",
+        "key": "baby_weak",
+        "label": "Baby Weak",
+        "pose": ""
+      },
+      {
+        "asset": "panda_baby__panda_aggressive_baby",
+        "baby": true,
+        "geoFile": "baby_panda.geo.json",
+        "geoId": "geometry.panda.baby",
+        "key": "baby_aggressive",
+        "label": "Baby Aggressive",
+        "pose": ""
+      }
+    ]
+  },
+  "minecraft:parched": {
+    "asset": "parched__parched",
+    "geoFile": "parched.geo.json",
+    "geoId": "geometry.parched",
+    "pose": "parched"
+  },
+  "minecraft:parrot": {
+    "asset": "parrot__parrot_red_blue",
+    "geoFile": "parrot.geo.json",
+    "geoId": "geometry.parrot",
+    "pose": "parrot",
+    "variants": [
+      {
+        "asset": "parrot__parrot_blue",
+        "geoFile": "parrot.geo.json",
+        "geoId": "geometry.parrot",
+        "key": "blue",
+        "label": "Blue"
+      },
+      {
+        "asset": "parrot__parrot_green",
+        "geoFile": "parrot.geo.json",
+        "geoId": "geometry.parrot",
+        "key": "green",
+        "label": "Green"
+      },
+      {
+        "asset": "parrot__parrot_red_blue",
+        "geoFile": "parrot.geo.json",
+        "geoId": "geometry.parrot",
+        "key": "red_blue",
+        "label": "Red Blue"
+      },
+      {
+        "asset": "parrot__parrot_yellow_blue",
+        "geoFile": "parrot.geo.json",
+        "geoId": "geometry.parrot",
+        "key": "yellow_blue",
+        "label": "Yellow Blue"
+      },
+      {
+        "asset": "parrot__parrot_grey",
+        "geoFile": "parrot.geo.json",
+        "geoId": "geometry.parrot",
+        "key": "grey",
+        "label": "Grey"
+      }
+    ]
+  },
+  "minecraft:phantom": {
+    "asset": "phantom__phantom",
+    "emissiveAlpha": true,
+    "geoFile": "phantom.geo.json",
+    "geoId": "geometry.phantom",
+    "pose": "phantom"
+  },
+  "minecraft:pig": {
+    "asset": "pig_v3__pig_v3",
+    "geoFile": "pig.v3.geo.json",
+    "geoId": "geometry.pig.v3",
+    "pose": "pig",
+    "variants": [
+      {
+        "asset": "pig_v3__pig_v3",
+        "geoFile": "pig.v3.geo.json",
+        "geoId": "geometry.pig.v3",
+        "key": "default",
+        "label": "Default"
+      },
+      {
+        "asset": "pig_v3__pig_saddle",
+        "geoFile": "pig.v3.geo.json",
+        "geoId": "geometry.pig.v3",
+        "key": "saddled",
+        "label": "Saddled"
+      },
+      {
+        "asset": "pig_v3__pig_warm",
+        "geoFile": "pig.v3.geo.json",
+        "geoId": "geometry.pig.v3",
+        "key": "warm",
+        "label": "Warm"
+      },
+      {
+        "asset": "pig_v3__pig_cold",
+        "geoFile": "pig.v3.geo.json",
+        "geoId": "geometry.pig.v3",
+        "key": "cold",
+        "label": "Cold"
+      },
+      {
+        "asset": "pig_v3__saddle_v2",
+        "geoFile": "pig.v3.geo.json",
+        "geoId": "geometry.pig.v3",
+        "key": "saddle",
+        "label": "Saddle"
+      },
+      {
+        "asset": "pig_baby__pig_temperate_baby",
+        "baby": true,
+        "geoFile": "baby_pig.geo.json",
+        "geoId": "geometry.pig.baby",
+        "key": "baby_default",
+        "label": "Baby Default",
+        "pose": "pig.baby"
+      },
+      {
+        "asset": "pig_baby__pig_warm_baby",
+        "baby": true,
+        "geoFile": "baby_pig.geo.json",
+        "geoId": "geometry.pig.baby",
+        "key": "baby_warm",
+        "label": "Baby Warm",
+        "pose": "pig.baby"
+      },
+      {
+        "asset": "pig_baby__pig_cold_baby",
+        "baby": true,
+        "geoFile": "baby_pig.geo.json",
+        "geoId": "geometry.pig.baby",
+        "key": "baby_cold",
+        "label": "Baby Cold",
+        "pose": "pig.baby"
+      }
+    ]
+  },
+  "minecraft:piglin": {
+    "asset": "piglin__piglin",
+    "geoFile": "piglin.geo.json",
+    "geoId": "geometry.piglin",
+    "pose": "piglin",
+    "variants": [
+      {
+        "asset": "piglin__piglin",
+        "geoFile": "piglin.geo.json",
+        "geoId": "geometry.piglin",
+        "key": "default",
+        "label": "Default"
+      },
+      {
+        "asset": "piglin_baby__piglin_baby",
+        "baby": true,
+        "geoFile": "baby_piglin.geo.json",
+        "geoId": "geometry.piglin.baby",
+        "key": "baby",
+        "label": "Baby",
+        "pose": "piglin.baby"
+      }
+    ]
+  },
+  "minecraft:piglin_brute": {
+    "asset": "piglin__piglin_brute",
+    "geoFile": "piglin.geo.json",
+    "geoId": "geometry.piglin",
+    "pose": "piglin_brute"
+  },
+  "minecraft:pillager": {
+    "asset": "pillager__pillager",
+    "geoFile": "pillager.geo.json",
+    "geoId": "geometry.pillager",
+    "pose": "pillager"
+  },
+  "minecraft:player": {
+    "asset": "humanoid_custom__steve",
+    "geoFile": "humanoid.custom.geo.json",
+    "geoId": "geometry.humanoid.custom",
+    "pose": "player",
+    "variants": [
+      {
+        "asset": "humanoid_custom__steve",
+        "geoFile": "humanoid.custom.geo.json",
+        "geoId": "geometry.humanoid.custom",
+        "key": "default",
+        "label": "Default"
+      },
+      {
+        "asset": "humanoid_custom__cape_invisible",
+        "geoFile": "humanoid.custom.geo.json",
+        "geoId": "geometry.humanoid.custom",
+        "key": "cape",
+        "label": "Cape"
+      }
+    ],
+    "visibility": [
+      [
+        "*",
+        true
+      ],
+      [
+        "helmet",
+        false
+      ],
+      [
+        "leftLegging",
+        false
+      ],
+      [
+        "rightLegging",
+        false
+      ],
+      [
+        "leftBoot",
+        false
+      ],
+      [
+        "rightBoot",
+        false
+      ],
+      [
+        "leftSock",
+        false
+      ],
+      [
+        "rightSock",
+        false
+      ],
+      [
+        "bodyArmor",
+        false
+      ],
+      [
+        "leftArmArmor",
+        false
+      ],
+      [
+        "rightArmArmor",
+        false
+      ],
+      [
+        "belt",
+        false
+      ]
+    ]
+  },
+  "minecraft:polar_bear": {
+    "asset": "polarbear__polar_bear",
+    "bindFix": {
+      "body": [
+        90,
+        0,
+        0
+      ]
+    },
+    "geoFile": "polar_bear.geo.json",
+    "geoId": "geometry.polarbear",
+    "pose": "polar_bear",
+    "variants": [
+      {
+        "asset": "polarbear__polar_bear",
+        "bindFix": {
+          "body": [
+            90,
+            0,
+            0
+          ]
+        },
+        "geoFile": "polar_bear.geo.json",
+        "geoId": "geometry.polarbear",
+        "key": "default",
+        "label": "Default"
+      },
+      {
+        "asset": "polar_bear_baby__polar_bear_baby",
+        "baby": true,
+        "geoFile": "baby_polar_bear.geo.json",
+        "geoId": "geometry.polar_bear.baby",
+        "key": "baby",
+        "label": "Baby",
+        "pose": ""
+      }
+    ]
+  },
+  "minecraft:pufferfish": {
+    "asset": "pufferfish_small_v1_8__pufferfish",
+    "geoFile": "pufferfish.geo.json",
+    "geoId": "geometry.pufferfish.small.v1.8",
+    "pose": "pufferfish"
+  },
+  "minecraft:rabbit": {
+    "asset": "rabbit_v2__rabbit_brown",
+    "geoFile": "rabbit.v2.geo.json",
+    "geoId": "geometry.rabbit.v2",
+    "variants": [
+      {
+        "asset": "rabbit_v2__rabbit_brown",
+        "geoFile": "rabbit.v2.geo.json",
+        "geoId": "geometry.rabbit.v2",
+        "key": "brown",
+        "label": "Brown"
+      },
+      {
+        "asset": "rabbit_v2__rabbit_white",
+        "geoFile": "rabbit.v2.geo.json",
+        "geoId": "geometry.rabbit.v2",
+        "key": "white",
+        "label": "White"
+      },
+      {
+        "asset": "rabbit_v2__rabbit_black",
+        "geoFile": "rabbit.v2.geo.json",
+        "geoId": "geometry.rabbit.v2",
+        "key": "black",
+        "label": "Black"
+      },
+      {
+        "asset": "rabbit_v2__rabbit_white_splotched",
+        "geoFile": "rabbit.v2.geo.json",
+        "geoId": "geometry.rabbit.v2",
+        "key": "white_splotched",
+        "label": "White Splotched"
+      },
+      {
+        "asset": "rabbit_v2__rabbit_gold",
+        "geoFile": "rabbit.v2.geo.json",
+        "geoId": "geometry.rabbit.v2",
+        "key": "gold",
+        "label": "Gold"
+      },
+      {
+        "asset": "rabbit_v2__rabbit_salt",
+        "geoFile": "rabbit.v2.geo.json",
+        "geoId": "geometry.rabbit.v2",
+        "key": "salt",
+        "label": "Salt"
+      },
+      {
+        "asset": "rabbit_v2__rabbit_toast",
+        "geoFile": "rabbit.v2.geo.json",
+        "geoId": "geometry.rabbit.v2",
+        "key": "toast",
+        "label": "Toast"
+      },
+      {
+        "asset": "rabbit_baby__rabbit_brown_baby",
+        "baby": true,
+        "geoFile": "baby_rabbit.geo.json",
+        "geoId": "geometry.rabbit.baby",
+        "key": "baby_brown",
+        "label": "Baby Brown",
+        "pose": ""
+      },
+      {
+        "asset": "rabbit_baby__rabbit_white_baby",
+        "baby": true,
+        "geoFile": "baby_rabbit.geo.json",
+        "geoId": "geometry.rabbit.baby",
+        "key": "baby_white",
+        "label": "Baby White",
+        "pose": ""
+      },
+      {
+        "asset": "rabbit_baby__rabbit_black_baby",
+        "baby": true,
+        "geoFile": "baby_rabbit.geo.json",
+        "geoId": "geometry.rabbit.baby",
+        "key": "baby_black",
+        "label": "Baby Black",
+        "pose": ""
+      },
+      {
+        "asset": "rabbit_baby__rabbit_white_splotched_baby",
+        "baby": true,
+        "geoFile": "baby_rabbit.geo.json",
+        "geoId": "geometry.rabbit.baby",
+        "key": "baby_white_splotched",
+        "label": "Baby White Splotched",
+        "pose": ""
+      },
+      {
+        "asset": "rabbit_baby__rabbit_gold_baby",
+        "baby": true,
+        "geoFile": "baby_rabbit.geo.json",
+        "geoId": "geometry.rabbit.baby",
+        "key": "baby_gold",
+        "label": "Baby Gold",
+        "pose": ""
+      },
+      {
+        "asset": "rabbit_baby__rabbit_salt_baby",
+        "baby": true,
+        "geoFile": "baby_rabbit.geo.json",
+        "geoId": "geometry.rabbit.baby",
+        "key": "baby_salt",
+        "label": "Baby Salt",
+        "pose": ""
+      },
+      {
+        "asset": "rabbit_baby__rabbit_toast_baby",
+        "baby": true,
+        "geoFile": "baby_rabbit.geo.json",
+        "geoId": "geometry.rabbit.baby",
+        "key": "baby_toast",
+        "label": "Baby Toast",
+        "pose": ""
+      }
+    ]
+  },
+  "minecraft:ravager": {
+    "asset": "ravager__ravager",
+    "geoFile": "ravager.geo.json",
+    "geoId": "geometry.ravager",
+    "pose": "ravager"
+  },
+  "minecraft:salmon": {
+    "asset": "salmon__salmon",
+    "geoFile": "salmon.geo.json",
+    "geoId": "geometry.salmon",
+    "pose": "salmon"
+  },
+  "minecraft:sheep": {
+    "asset": "sheep_v1_8__sheep",
+    "geoFile": "sheep.geo.json",
+    "geoId": "geometry.sheep.v1.8",
+    "geoParents": [
+      {
+        "geoFile": "sheep.geo.json",
+        "geoId": "geometry.sheep.sheared.v1.8"
+      }
+    ],
+    "opaqueAlpha": true,
+    "pose": "sheep",
+    "variants": [
+      {
+        "asset": "sheep_v1_8__sheep",
+        "geoFile": "sheep.geo.json",
+        "geoId": "geometry.sheep.v1.8",
+        "geoParents": [
+          {
+            "geoFile": "sheep.geo.json",
+            "geoId": "geometry.sheep.sheared.v1.8"
+          }
+        ],
+        "key": "default",
+        "label": "Default"
+      },
+      {
+        "asset": "sheep_baby__sheep_baby",
+        "baby": true,
+        "geoFile": "baby_sheep.geo.json",
+        "geoId": "geometry.sheep.baby",
+        "key": "baby",
+        "label": "Baby",
+        "pose": "sheep.baby"
+      }
+    ]
+  },
+  "minecraft:shulker": {
+    "asset": "shulker_v1_8__shulker_purple",
+    "geoFile": "shulker.geo.json",
+    "geoId": "geometry.shulker.v1.8",
+    "pose": "shulker",
+    "variants": [
+      {
+        "asset": "shulker_v1_8__shulker_undyed",
+        "geoFile": "shulker.geo.json",
+        "geoId": "geometry.shulker.v1.8",
+        "key": "undyed",
+        "label": "Undyed"
+      },
+      {
+        "asset": "shulker_v1_8__shulker_white",
+        "geoFile": "shulker.geo.json",
+        "geoId": "geometry.shulker.v1.8",
+        "key": "white",
+        "label": "White"
+      },
+      {
+        "asset": "shulker_v1_8__shulker_orange",
+        "geoFile": "shulker.geo.json",
+        "geoId": "geometry.shulker.v1.8",
+        "key": "orange",
+        "label": "Orange"
+      },
+      {
+        "asset": "shulker_v1_8__shulker_magenta",
+        "geoFile": "shulker.geo.json",
+        "geoId": "geometry.shulker.v1.8",
+        "key": "magenta",
+        "label": "Magenta"
+      },
+      {
+        "asset": "shulker_v1_8__shulker_light_blue",
+        "geoFile": "shulker.geo.json",
+        "geoId": "geometry.shulker.v1.8",
+        "key": "light_blue",
+        "label": "Light Blue"
+      },
+      {
+        "asset": "shulker_v1_8__shulker_yellow",
+        "geoFile": "shulker.geo.json",
+        "geoId": "geometry.shulker.v1.8",
+        "key": "yellow",
+        "label": "Yellow"
+      },
+      {
+        "asset": "shulker_v1_8__shulker_lime",
+        "geoFile": "shulker.geo.json",
+        "geoId": "geometry.shulker.v1.8",
+        "key": "lime",
+        "label": "Lime"
+      },
+      {
+        "asset": "shulker_v1_8__shulker_pink",
+        "geoFile": "shulker.geo.json",
+        "geoId": "geometry.shulker.v1.8",
+        "key": "pink",
+        "label": "Pink"
+      },
+      {
+        "asset": "shulker_v1_8__shulker_gray",
+        "geoFile": "shulker.geo.json",
+        "geoId": "geometry.shulker.v1.8",
+        "key": "gray",
+        "label": "Gray"
+      },
+      {
+        "asset": "shulker_v1_8__shulker_silver",
+        "geoFile": "shulker.geo.json",
+        "geoId": "geometry.shulker.v1.8",
+        "key": "silver",
+        "label": "Silver"
+      },
+      {
+        "asset": "shulker_v1_8__shulker_cyan",
+        "geoFile": "shulker.geo.json",
+        "geoId": "geometry.shulker.v1.8",
+        "key": "cyan",
+        "label": "Cyan"
+      },
+      {
+        "asset": "shulker_v1_8__shulker_purple",
+        "geoFile": "shulker.geo.json",
+        "geoId": "geometry.shulker.v1.8",
+        "key": "purple",
+        "label": "Purple"
+      },
+      {
+        "asset": "shulker_v1_8__shulker_blue",
+        "geoFile": "shulker.geo.json",
+        "geoId": "geometry.shulker.v1.8",
+        "key": "blue",
+        "label": "Blue"
+      },
+      {
+        "asset": "shulker_v1_8__shulker_brown",
+        "geoFile": "shulker.geo.json",
+        "geoId": "geometry.shulker.v1.8",
+        "key": "brown",
+        "label": "Brown"
+      },
+      {
+        "asset": "shulker_v1_8__shulker_green",
+        "geoFile": "shulker.geo.json",
+        "geoId": "geometry.shulker.v1.8",
+        "key": "green",
+        "label": "Green"
+      },
+      {
+        "asset": "shulker_v1_8__shulker_red",
+        "geoFile": "shulker.geo.json",
+        "geoId": "geometry.shulker.v1.8",
+        "key": "red",
+        "label": "Red"
+      },
+      {
+        "asset": "shulker_v1_8__shulker_black",
+        "geoFile": "shulker.geo.json",
+        "geoId": "geometry.shulker.v1.8",
+        "key": "black",
+        "label": "Black"
+      }
+    ]
+  },
+  "minecraft:silverfish": {
+    "asset": "silverfish__silverfish",
+    "geoFile": "silverfish.geo.json",
+    "geoId": "geometry.silverfish",
+    "pose": "silverfish"
+  },
+  "minecraft:skeleton": {
+    "asset": "skeleton_v1_8__skeleton",
+    "geoFile": "skeleton.geo.json",
+    "geoId": "geometry.skeleton.v1.8",
+    "pose": "skeleton"
+  },
+  "minecraft:skeleton_horse": {
+    "asset": "horse_v3__horse_skeleton",
+    "geoFile": "horse_v3.geo.json",
+    "geoId": "geometry.horse.v3",
+    "pose": "skeleton_horse",
+    "variants": [
+      {
+        "asset": "horse_v3__horse_skeleton",
+        "geoFile": "horse_v3.geo.json",
+        "geoId": "geometry.horse.v3",
+        "key": "skeleton",
+        "label": "Skeleton"
+      },
+      {
+        "asset": "horse_v3__horse_markings_none",
+        "geoFile": "horse_v3.geo.json",
+        "geoId": "geometry.horse.v3",
+        "key": "markings_none",
+        "label": "Markings None"
+      },
+      {
+        "asset": "horse_v3__horse_armor_none",
+        "geoFile": "horse_v3.geo.json",
+        "geoId": "geometry.horse.v3",
+        "key": "armor_none",
+        "label": "Armor None"
+      },
+      {
+        "asset": "horse_baby__horse_skeleton_baby",
+        "baby": true,
+        "geoFile": "baby_horse.geo.json",
+        "geoId": "geometry.horse.baby",
+        "key": "baby_skeleton",
+        "label": "Baby Skeleton",
+        "pose": "skeleton_horse.baby"
+      }
+    ],
+    "visibility": [
+      [
+        "Saddle",
+        false
+      ],
+      [
+        "Bit*",
+        false
+      ],
+      [
+        "Bridle",
+        false
+      ],
+      [
+        "Reins*",
+        false
+      ],
+      [
+        "Bag*",
+        false
+      ],
+      [
+        "MuleEar*",
+        false
+      ]
+    ]
+  },
+  "minecraft:skeleton_horseman": {
+    "asset": "horse_v3__horse_skeleton",
+    "geoFile": "horse_v3.geo.json",
+    "geoId": "geometry.horse.v3",
+    "pose": "skeleton_horseman",
+    "reason": "jockey_mount",
+    "substitute": "minecraft:skeleton_horse",
+    "variants": [
+      {
+        "asset": "horse_v3__horse_skeleton",
+        "geoFile": "horse_v3.geo.json",
+        "geoId": "geometry.horse.v3",
+        "key": "skeleton",
+        "label": "Skeleton"
+      },
+      {
+        "asset": "horse_v3__horse_markings_none",
+        "geoFile": "horse_v3.geo.json",
+        "geoId": "geometry.horse.v3",
+        "key": "markings_none",
+        "label": "Markings None"
+      },
+      {
+        "asset": "horse_v3__horse_armor_none",
+        "geoFile": "horse_v3.geo.json",
+        "geoId": "geometry.horse.v3",
+        "key": "armor_none",
+        "label": "Armor None"
+      },
+      {
+        "asset": "horse_baby__horse_skeleton_baby",
+        "baby": true,
+        "geoFile": "baby_horse.geo.json",
+        "geoId": "geometry.horse.baby",
+        "key": "baby_skeleton",
+        "label": "Baby Skeleton",
+        "pose": "skeleton_horseman.baby"
+      }
+    ],
+    "visibility": [
+      [
+        "Saddle",
+        false
+      ],
+      [
+        "Bit*",
+        false
+      ],
+      [
+        "Bridle",
+        false
+      ],
+      [
+        "Reins*",
+        false
+      ],
+      [
+        "Bag*",
+        false
+      ],
+      [
+        "MuleEar*",
+        false
+      ]
+    ]
+  },
+  "minecraft:slime": {
+    "asset": "slime__slime",
+    "extraLayers": [
+      {
+        "asset": "slime_armor__slime",
+        "bones": [
+          "cube"
+        ],
+        "geoFile": "slime_armor.geo.json",
+        "geoId": "geometry.slime.armor"
+      }
+    ],
+    "geoFile": "slime.geo.json",
+    "geoId": "geometry.slime"
+  },
+  "minecraft:sniffer": {
+    "asset": "sniffer__sniffer",
+    "geoFile": "sniffer.geo.json",
+    "geoId": "geometry.sniffer",
+    "variants": [
+      {
+        "asset": "sniffer__sniffer",
+        "geoFile": "sniffer.geo.json",
+        "geoId": "geometry.sniffer",
+        "key": "default",
+        "label": "Default"
+      },
+      {
+        "asset": "sniffer_baby__snifflet",
+        "baby": true,
+        "geoFile": "snifflet.geo.json",
+        "geoId": "geometry.sniffer.baby",
+        "key": "baby",
+        "label": "Baby",
+        "pose": ""
+      }
+    ]
+  },
+  "minecraft:snow_golem": {
+    "asset": "snowgolem_v1_8__snow_golem",
+    "geoFile": "snow_golem.geo.json",
+    "geoId": "geometry.snowgolem.v1.8",
+    "pose": "snow_golem"
+  },
+  "minecraft:spider": {
+    "asset": "spider_v1_8__spider",
+    "emissiveAlpha": true,
+    "geoFile": "spider.geo.json",
+    "geoId": "geometry.spider.v1.8",
+    "pose": "spider"
+  },
+  "minecraft:spider_jockey": {
+    "asset": "spider_v1_8__spider",
+    "emissiveAlpha": true,
+    "geoFile": "spider.geo.json",
+    "geoId": "geometry.spider.v1.8",
+    "pose": "spider_jockey",
+    "reason": "jockey_mount",
+    "substitute": "minecraft:spider"
+  },
+  "minecraft:squid": {
+    "asset": "squid__squid",
+    "geoFile": "squid.geo.json",
+    "geoId": "geometry.squid",
+    "pose": "squid",
+    "variants": [
+      {
+        "asset": "squid__squid",
+        "geoFile": "squid.geo.json",
+        "geoId": "geometry.squid",
+        "key": "default",
+        "label": "Default"
+      },
+      {
+        "asset": "squid_baby__squid_baby",
+        "baby": true,
+        "geoFile": "baby_squid.geo.json",
+        "geoId": "geometry.squid.baby",
+        "key": "baby",
+        "label": "Baby",
+        "pose": "squid.baby"
+      }
+    ]
+  },
+  "minecraft:stray": {
+    "asset": "skeleton_stray_v1_8__stray",
+    "geoFile": "stray.geo.json",
+    "geoId": "geometry.skeleton.stray.v1.8",
+    "pose": "stray",
+    "variants": [
+      {
+        "asset": "skeleton_stray_v1_8__stray",
+        "geoFile": "stray.geo.json",
+        "geoId": "geometry.skeleton.stray.v1.8",
+        "key": "default",
+        "label": "Default"
+      },
+      {
+        "asset": "skeleton_stray_v1_8__stray_overlay",
+        "geoFile": "stray.geo.json",
+        "geoId": "geometry.skeleton.stray.v1.8",
+        "key": "overlay",
+        "label": "Overlay"
+      }
+    ]
+  },
+  "minecraft:strider": {
+    "asset": "strider__strider",
+    "geoFile": "strider.geo.json",
+    "geoId": "geometry.strider",
+    "pose": "strider",
+    "variants": [
+      {
+        "asset": "strider__strider",
+        "geoFile": "strider.geo.json",
+        "geoId": "geometry.strider",
+        "key": "default",
+        "label": "Default"
+      },
+      {
+        "asset": "strider__strider_saddled",
+        "geoFile": "strider.geo.json",
+        "geoId": "geometry.strider",
+        "key": "saddled",
+        "label": "Saddled"
+      },
+      {
+        "asset": "strider__strider_suffocated",
+        "geoFile": "strider.geo.json",
+        "geoId": "geometry.strider",
+        "key": "suffocated",
+        "label": "Suffocated"
+      },
+      {
+        "asset": "strider__strider_suffocated_saddled",
+        "geoFile": "strider.geo.json",
+        "geoId": "geometry.strider",
+        "key": "suffocated_saddled",
+        "label": "Suffocated Saddled"
+      },
+      {
+        "asset": "strider_baby__strider_baby",
+        "baby": true,
+        "geoFile": "baby_strider.geo.json",
+        "geoId": "geometry.strider.baby",
+        "key": "baby_default",
+        "label": "Baby Default",
+        "pose": "strider.baby"
+      },
+      {
+        "asset": "strider_baby__strider_cold_baby",
+        "baby": true,
+        "geoFile": "baby_strider.geo.json",
+        "geoId": "geometry.strider.baby",
+        "key": "baby_suffocated",
+        "label": "Baby Suffocated",
+        "pose": "strider.baby"
+      }
+    ]
+  },
+  "minecraft:sulfur_cube": {
+    "asset": "sulfur_cube__sulfur_cube_inner",
+    "extraLayers": [
+      {
+        "asset": "sulfur_cube__sulfur_cube_outer",
+        "geoFile": "sulfur_cube.geo.json",
+        "geoId": "geometry.sulfur_cube"
+      }
+    ],
+    "geoFile": "sulfur_cube.geo.json",
+    "geoId": "geometry.sulfur_cube",
+    "pose": "sulfur_cube",
+    "variants": [
+      {
+        "asset": "sulfur_cube__sulfur_cube_inner",
+        "geoFile": "sulfur_cube.geo.json",
+        "geoId": "geometry.sulfur_cube",
+        "key": "default",
+        "label": "Default"
+      },
+      {
+        "asset": "sulfur_cube__sulfur_cube_tnt",
+        "geoFile": "sulfur_cube.geo.json",
+        "geoId": "geometry.sulfur_cube",
+        "key": "tnt",
+        "label": "Tnt"
+      }
+    ]
+  },
+  "minecraft:tadpole": {
+    "asset": "tadpole__tadpole",
+    "geoFile": "tadpole.geo.json",
+    "geoId": "geometry.tadpole"
+  },
+  "minecraft:trader_llama": {
+    "asset": "llama_v1_8__llama_creamy+llama_v1_8__trader_llama_decor",
+    "bindFix": {
+      "body": [
+        90,
+        0,
+        0
+      ]
+    },
+    "geoFile": "llama.geo.json",
+    "geoId": "geometry.llama.v1.8",
+    "layers": [
+      {
+        "asset": "llama_v1_8__llama_creamy"
+      },
+      {
+        "asset": "llama_v1_8__trader_llama_decor"
+      }
+    ],
+    "pose": "trader_llama",
+    "variants": [
+      {
+        "asset": "llama_v1_8__llama_creamy+llama_v1_8__trader_llama_decor",
+        "bindFix": {
+          "body": [
+            90,
+            0,
+            0
+          ]
+        },
+        "geoFile": "llama.geo.json",
+        "geoId": "geometry.llama.v1.8",
+        "key": "creamy",
+        "label": "Creamy",
+        "layers": [
+          {
+            "asset": "llama_v1_8__llama_creamy"
+          },
+          {
+            "asset": "llama_v1_8__trader_llama_decor"
+          }
+        ]
+      },
+      {
+        "asset": "llama_v1_8__llama_white+llama_v1_8__trader_llama_decor",
+        "bindFix": {
+          "body": [
+            90,
+            0,
+            0
+          ]
+        },
+        "geoFile": "llama.geo.json",
+        "geoId": "geometry.llama.v1.8",
+        "key": "white",
+        "label": "White",
+        "layers": [
+          {
+            "asset": "llama_v1_8__llama_white"
+          },
+          {
+            "asset": "llama_v1_8__trader_llama_decor"
+          }
+        ]
+      },
+      {
+        "asset": "llama_v1_8__llama_brown+llama_v1_8__trader_llama_decor",
+        "bindFix": {
+          "body": [
+            90,
+            0,
+            0
+          ]
+        },
+        "geoFile": "llama.geo.json",
+        "geoId": "geometry.llama.v1.8",
+        "key": "brown",
+        "label": "Brown",
+        "layers": [
+          {
+            "asset": "llama_v1_8__llama_brown"
+          },
+          {
+            "asset": "llama_v1_8__trader_llama_decor"
+          }
+        ]
+      },
+      {
+        "asset": "llama_v1_8__llama_gray+llama_v1_8__trader_llama_decor",
+        "bindFix": {
+          "body": [
+            90,
+            0,
+            0
+          ]
+        },
+        "geoFile": "llama.geo.json",
+        "geoId": "geometry.llama.v1.8",
+        "key": "gray",
+        "label": "Gray",
+        "layers": [
+          {
+            "asset": "llama_v1_8__llama_gray"
+          },
+          {
+            "asset": "llama_v1_8__trader_llama_decor"
+          }
+        ]
+      },
+      {
+        "asset": "llama_baby__llama_creamy_baby",
+        "baby": true,
+        "geoFile": "baby_llama.geo.json",
+        "geoId": "geometry.llama.baby",
+        "key": "baby_creamy",
+        "label": "Baby Creamy",
+        "pose": "trader_llama.baby"
+      },
+      {
+        "asset": "llama_baby__llama_white_baby",
+        "baby": true,
+        "geoFile": "baby_llama.geo.json",
+        "geoId": "geometry.llama.baby",
+        "key": "baby_white",
+        "label": "Baby White",
+        "pose": "trader_llama.baby"
+      },
+      {
+        "asset": "llama_baby__llama_brown_baby",
+        "baby": true,
+        "geoFile": "baby_llama.geo.json",
+        "geoId": "geometry.llama.baby",
+        "key": "baby_brown",
+        "label": "Baby Brown",
+        "pose": "trader_llama.baby"
+      },
+      {
+        "asset": "llama_baby__llama_gray_baby",
+        "baby": true,
+        "geoFile": "baby_llama.geo.json",
+        "geoId": "geometry.llama.baby",
+        "key": "baby_gray",
+        "label": "Baby Gray",
+        "pose": "trader_llama.baby"
+      }
+    ],
+    "visibility": [
+      [
+        "chest*",
+        false
+      ]
+    ]
+  },
+  "minecraft:tropical_fish": {
+    "asset": "tropicalfish_a__tropical_a_pattern_1",
+    "geoFile": "tropical_fish.geo.json",
+    "geoId": "geometry.tropicalfish_a",
+    "pose": "tropical_fish",
+    "variants": [
+      {
+        "asset": "tropicalfish_a__tropical_a",
+        "geoFile": "tropical_fish.geo.json",
+        "geoId": "geometry.tropicalfish_a",
+        "key": "typeA",
+        "label": "Type A"
+      },
+      {
+        "asset": "tropicalfish_a__tropical_b",
+        "geoFile": "tropical_fish.geo.json",
+        "geoId": "geometry.tropicalfish_a",
+        "key": "typeB",
+        "label": "Type B"
+      },
+      {
+        "asset": "tropicalfish_a__tropical_a_pattern_1",
+        "geoFile": "tropical_fish.geo.json",
+        "geoId": "geometry.tropicalfish_a",
+        "key": "aPattern1",
+        "label": "A Pattern 1"
+      },
+      {
+        "asset": "tropicalfish_a__tropical_a_pattern_2",
+        "geoFile": "tropical_fish.geo.json",
+        "geoId": "geometry.tropicalfish_a",
+        "key": "aPattern2",
+        "label": "A Pattern 2"
+      },
+      {
+        "asset": "tropicalfish_a__tropical_a_pattern_3",
+        "geoFile": "tropical_fish.geo.json",
+        "geoId": "geometry.tropicalfish_a",
+        "key": "aPattern3",
+        "label": "A Pattern 3"
+      },
+      {
+        "asset": "tropicalfish_a__tropical_a_pattern_4",
+        "geoFile": "tropical_fish.geo.json",
+        "geoId": "geometry.tropicalfish_a",
+        "key": "aPattern4",
+        "label": "A Pattern 4"
+      },
+      {
+        "asset": "tropicalfish_a__tropical_a_pattern_5",
+        "geoFile": "tropical_fish.geo.json",
+        "geoId": "geometry.tropicalfish_a",
+        "key": "aPattern5",
+        "label": "A Pattern 5"
+      },
+      {
+        "asset": "tropicalfish_a__tropical_a_pattern_6",
+        "geoFile": "tropical_fish.geo.json",
+        "geoId": "geometry.tropicalfish_a",
+        "key": "aPattern6",
+        "label": "A Pattern 6"
+      },
+      {
+        "asset": "tropicalfish_a__tropical_b_pattern_1",
+        "geoFile": "tropical_fish.geo.json",
+        "geoId": "geometry.tropicalfish_a",
+        "key": "bPattern1",
+        "label": "B Pattern 1"
+      },
+      {
+        "asset": "tropicalfish_a__tropical_b_pattern_2",
+        "geoFile": "tropical_fish.geo.json",
+        "geoId": "geometry.tropicalfish_a",
+        "key": "bPattern2",
+        "label": "B Pattern 2"
+      },
+      {
+        "asset": "tropicalfish_a__tropical_b_pattern_3",
+        "geoFile": "tropical_fish.geo.json",
+        "geoId": "geometry.tropicalfish_a",
+        "key": "bPattern3",
+        "label": "B Pattern 3"
+      },
+      {
+        "asset": "tropicalfish_a__tropical_b_pattern_4",
+        "geoFile": "tropical_fish.geo.json",
+        "geoId": "geometry.tropicalfish_a",
+        "key": "bPattern4",
+        "label": "B Pattern 4"
+      },
+      {
+        "asset": "tropicalfish_a__tropical_b_pattern_5",
+        "geoFile": "tropical_fish.geo.json",
+        "geoId": "geometry.tropicalfish_a",
+        "key": "bPattern5",
+        "label": "B Pattern 5"
+      },
+      {
+        "asset": "tropicalfish_a__tropical_b_pattern_6",
+        "geoFile": "tropical_fish.geo.json",
+        "geoId": "geometry.tropicalfish_a",
+        "key": "bPattern6",
+        "label": "B Pattern 6"
+      }
+    ]
+  },
+  "minecraft:turtle": {
+    "asset": "turtle__sea_turtle",
+    "geoFile": "turtle.geo.json",
+    "geoId": "geometry.turtle",
+    "pose": "turtle",
+    "variants": [
+      {
+        "asset": "turtle__sea_turtle",
+        "geoFile": "turtle.geo.json",
+        "geoId": "geometry.turtle",
+        "key": "default",
+        "label": "Default"
+      },
+      {
+        "asset": "turtle_baby__sea_turtle_baby",
+        "baby": true,
+        "geoFile": "baby_turtle.geo.json",
+        "geoId": "geometry.turtle.baby",
+        "key": "baby",
+        "label": "Baby",
+        "pose": "turtle.baby"
+      }
+    ]
+  },
+  "minecraft:vex": {
+    "asset": "vex_v1_8__vex",
+    "geoFile": "vex.geo.json",
+    "geoId": "geometry.vex.v1.8",
+    "variants": [
+      {
+        "asset": "vex_v1_8__vex",
+        "geoFile": "vex.geo.json",
+        "geoId": "geometry.vex.v1.8",
+        "key": "default",
+        "label": "Default"
+      },
+      {
+        "asset": "vex_v1_8__vex_charging",
+        "geoFile": "vex.geo.json",
+        "geoId": "geometry.vex.v1.8",
+        "key": "charging",
+        "label": "Charging"
+      }
+    ]
+  },
+  "minecraft:villager": {
+    "asset": "villager_v1_8__farmer",
+    "geoFile": "villager.geo.json",
+    "geoId": "geometry.villager.v1.8",
+    "pose": "villager",
+    "variants": [
+      {
+        "asset": "villager_v1_8__farmer",
+        "geoFile": "villager.geo.json",
+        "geoId": "geometry.villager.v1.8",
+        "key": "farmer",
+        "label": "Farmer"
+      },
+      {
+        "asset": "villager_v1_8__librarian",
+        "geoFile": "villager.geo.json",
+        "geoId": "geometry.villager.v1.8",
+        "key": "librarian",
+        "label": "Librarian"
+      },
+      {
+        "asset": "villager_v1_8__priest",
+        "geoFile": "villager.geo.json",
+        "geoId": "geometry.villager.v1.8",
+        "key": "priest",
+        "label": "Priest"
+      },
+      {
+        "asset": "villager_v1_8__smith",
+        "geoFile": "villager.geo.json",
+        "geoId": "geometry.villager.v1.8",
+        "key": "smith",
+        "label": "Smith"
+      },
+      {
+        "asset": "villager_v1_8__butcher",
+        "geoFile": "villager.geo.json",
+        "geoId": "geometry.villager.v1.8",
+        "key": "butcher",
+        "label": "Butcher"
+      }
+    ]
+  },
+  "minecraft:vindicator": {
+    "asset": "vindicator_v1_8__vindicator",
+    "geoFile": "vindicator.geo.json",
+    "geoId": "geometry.vindicator.v1.8",
+    "pose": "vindicator",
+    "visibility": [
+      [
+        "rightArm",
+        false
+      ],
+      [
+        "leftArm",
+        false
+      ],
+      [
+        "rightItem",
+        false
+      ],
+      [
+        "arms",
+        true
+      ]
+    ]
+  },
+  "minecraft:wandering_trader": {
+    "asset": "villager_v2__wandering_trader",
+    "geoFile": "villager_v2.geo.json",
+    "geoId": "geometry.villager_v2",
+    "pose": "wandering_trader"
+  },
+  "minecraft:warden": {
+    "asset": "warden__warden",
+    "geoFile": "warden.geo.json",
+    "geoId": "geometry.warden",
+    "pose": "warden",
+    "variants": [
+      {
+        "asset": "warden__warden",
+        "geoFile": "warden.geo.json",
+        "geoId": "geometry.warden",
+        "key": "default",
+        "label": "Default"
+      },
+      {
+        "asset": "warden__warden_bioluminescent_layer",
+        "geoFile": "warden.geo.json",
+        "geoId": "geometry.warden",
+        "key": "bioluminescent_layer",
+        "label": "Bioluminescent Layer"
+      },
+      {
+        "asset": "warden__warden_pulsating_spots_1",
+        "geoFile": "warden.geo.json",
+        "geoId": "geometry.warden",
+        "key": "spots_1",
+        "label": "Spots 1"
+      },
+      {
+        "asset": "warden__warden_pulsating_spots_2",
+        "geoFile": "warden.geo.json",
+        "geoId": "geometry.warden",
+        "key": "spots_2",
+        "label": "Spots 2"
+      },
+      {
+        "asset": "warden__warden_tendrils",
+        "geoFile": "warden.geo.json",
+        "geoId": "geometry.warden",
+        "key": "tendrils",
+        "label": "Tendrils"
+      },
+      {
+        "asset": "warden__warden_heart",
+        "geoFile": "warden.geo.json",
+        "geoId": "geometry.warden",
+        "key": "heart",
+        "label": "Heart"
+      }
+    ]
+  },
+  "minecraft:witch": {
+    "asset": "villager_witch_v1_8__witch",
+    "geoFile": "witch.geo.json",
+    "geoId": "geometry.villager.witch.v1.8",
+    "geoParents": [
+      {
+        "geoFile": "villager.geo.json",
+        "geoId": "geometry.villager.v1.8"
+      }
+    ],
+    "pose": "witch"
+  },
+  "minecraft:wither": {
+    "asset": "witherBoss__wither",
+    "geoFile": "wither_boss.geo.json",
+    "geoId": "geometry.witherBoss",
+    "pose": "wither",
+    "variants": [
+      {
+        "asset": "witherBoss__wither",
+        "geoFile": "wither_boss.geo.json",
+        "geoId": "geometry.witherBoss",
+        "key": "default",
+        "label": "Default"
+      },
+      {
+        "asset": "witherBoss__wither_armor_white",
+        "geoFile": "wither_boss.geo.json",
+        "geoId": "geometry.witherBoss",
+        "key": "armor_white",
+        "label": "Armor White"
+      },
+      {
+        "asset": "witherBoss__wither_armor_blue",
+        "geoFile": "wither_boss.geo.json",
+        "geoId": "geometry.witherBoss",
+        "key": "armor_blue",
+        "label": "Armor Blue"
+      },
+      {
+        "asset": "witherBoss__wither_invulnerable",
+        "geoFile": "wither_boss.geo.json",
+        "geoId": "geometry.witherBoss",
+        "key": "invulnerable",
+        "label": "Invulnerable"
+      }
+    ]
+  },
+  "minecraft:wither_skeleton": {
+    "asset": "skeleton_wither_v1_8__wither_skeleton",
+    "geoFile": "wither_skeleton.geo.json",
+    "geoId": "geometry.skeleton.wither.v1.8",
+    "pose": "wither_skeleton"
+  },
+  "minecraft:wolf": {
+    "asset": "wolf__wolf",
+    "geoFile": "wolf.geo.json",
+    "geoId": "geometry.wolf",
+    "pose": "wolf",
+    "variants": [
+      {
+        "asset": "wolf__wolf",
+        "geoFile": "wolf.geo.json",
+        "geoId": "geometry.wolf",
+        "key": "default",
+        "label": "Default"
+      },
+      {
+        "asset": "wolf__wolf_angry",
+        "geoFile": "wolf.geo.json",
+        "geoId": "geometry.wolf",
+        "key": "angry",
+        "label": "Angry"
+      },
+      {
+        "asset": "wolf__wolf_tame",
+        "geoFile": "wolf.geo.json",
+        "geoId": "geometry.wolf",
+        "key": "tame",
+        "label": "Tame"
+      },
+      {
+        "asset": "wolf__wolf_ashen",
+        "geoFile": "wolf.geo.json",
+        "geoId": "geometry.wolf",
+        "key": "ashen_default",
+        "label": "Ashen Default"
+      },
+      {
+        "asset": "wolf__wolf_ashen_angry",
+        "geoFile": "wolf.geo.json",
+        "geoId": "geometry.wolf",
+        "key": "ashen_angry",
+        "label": "Ashen Angry"
+      },
+      {
+        "asset": "wolf__wolf_ashen_tame",
+        "geoFile": "wolf.geo.json",
+        "geoId": "geometry.wolf",
+        "key": "ashen_tame",
+        "label": "Ashen Tame"
+      },
+      {
+        "asset": "wolf__wolf_black",
+        "geoFile": "wolf.geo.json",
+        "geoId": "geometry.wolf",
+        "key": "black_default",
+        "label": "Black Default"
+      },
+      {
+        "asset": "wolf__wolf_black_angry",
+        "geoFile": "wolf.geo.json",
+        "geoId": "geometry.wolf",
+        "key": "black_angry",
+        "label": "Black Angry"
+      },
+      {
+        "asset": "wolf__wolf_black_tame",
+        "geoFile": "wolf.geo.json",
+        "geoId": "geometry.wolf",
+        "key": "black_tame",
+        "label": "Black Tame"
+      },
+      {
+        "asset": "wolf__wolf_chestnut",
+        "geoFile": "wolf.geo.json",
+        "geoId": "geometry.wolf",
+        "key": "chestnut_default",
+        "label": "Chestnut Default"
+      },
+      {
+        "asset": "wolf__wolf_chestnut_angry",
+        "geoFile": "wolf.geo.json",
+        "geoId": "geometry.wolf",
+        "key": "chestnut_angry",
+        "label": "Chestnut Angry"
+      },
+      {
+        "asset": "wolf__wolf_chestnut_tame",
+        "geoFile": "wolf.geo.json",
+        "geoId": "geometry.wolf",
+        "key": "chestnut_tame",
+        "label": "Chestnut Tame"
+      },
+      {
+        "asset": "wolf__wolf_rusty",
+        "geoFile": "wolf.geo.json",
+        "geoId": "geometry.wolf",
+        "key": "rusty_default",
+        "label": "Rusty Default"
+      },
+      {
+        "asset": "wolf__wolf_rusty_angry",
+        "geoFile": "wolf.geo.json",
+        "geoId": "geometry.wolf",
+        "key": "rusty_angry",
+        "label": "Rusty Angry"
+      },
+      {
+        "asset": "wolf__wolf_rusty_tame",
+        "geoFile": "wolf.geo.json",
+        "geoId": "geometry.wolf",
+        "key": "rusty_tame",
+        "label": "Rusty Tame"
+      },
+      {
+        "asset": "wolf__wolf_snowy",
+        "geoFile": "wolf.geo.json",
+        "geoId": "geometry.wolf",
+        "key": "snowy_default",
+        "label": "Snowy Default"
+      },
+      {
+        "asset": "wolf__wolf_snowy_angry",
+        "geoFile": "wolf.geo.json",
+        "geoId": "geometry.wolf",
+        "key": "snowy_angry",
+        "label": "Snowy Angry"
+      },
+      {
+        "asset": "wolf__wolf_snowy_tame",
+        "geoFile": "wolf.geo.json",
+        "geoId": "geometry.wolf",
+        "key": "snowy_tame",
+        "label": "Snowy Tame"
+      },
+      {
+        "asset": "wolf__wolf_spotted",
+        "geoFile": "wolf.geo.json",
+        "geoId": "geometry.wolf",
+        "key": "spotted_default",
+        "label": "Spotted Default"
+      },
+      {
+        "asset": "wolf__wolf_spotted_angry",
+        "geoFile": "wolf.geo.json",
+        "geoId": "geometry.wolf",
+        "key": "spotted_angry",
+        "label": "Spotted Angry"
+      },
+      {
+        "asset": "wolf__wolf_spotted_tame",
+        "geoFile": "wolf.geo.json",
+        "geoId": "geometry.wolf",
+        "key": "spotted_tame",
+        "label": "Spotted Tame"
+      },
+      {
+        "asset": "wolf__wolf_striped",
+        "geoFile": "wolf.geo.json",
+        "geoId": "geometry.wolf",
+        "key": "striped_default",
+        "label": "Striped Default"
+      },
+      {
+        "asset": "wolf__wolf_striped_angry",
+        "geoFile": "wolf.geo.json",
+        "geoId": "geometry.wolf",
+        "key": "striped_angry",
+        "label": "Striped Angry"
+      },
+      {
+        "asset": "wolf__wolf_striped_tame",
+        "geoFile": "wolf.geo.json",
+        "geoId": "geometry.wolf",
+        "key": "striped_tame",
+        "label": "Striped Tame"
+      },
+      {
+        "asset": "wolf__wolf_woods",
+        "geoFile": "wolf.geo.json",
+        "geoId": "geometry.wolf",
+        "key": "woods_default",
+        "label": "Woods Default"
+      },
+      {
+        "asset": "wolf__wolf_woods_angry",
+        "geoFile": "wolf.geo.json",
+        "geoId": "geometry.wolf",
+        "key": "woods_angry",
+        "label": "Woods Angry"
+      },
+      {
+        "asset": "wolf__wolf_woods_tame",
+        "geoFile": "wolf.geo.json",
+        "geoId": "geometry.wolf",
+        "key": "woods_tame",
+        "label": "Woods Tame"
+      },
+      {
+        "asset": "wolf_baby__wolf_baby",
+        "baby": true,
+        "geoFile": "baby_wolf.geo.json",
+        "geoId": "geometry.wolf.baby",
+        "key": "baby_pale_default",
+        "label": "Baby Pale Default",
+        "pose": "wolf.baby"
+      },
+      {
+        "asset": "wolf_baby__wolf_angry_baby",
+        "baby": true,
+        "geoFile": "baby_wolf.geo.json",
+        "geoId": "geometry.wolf.baby",
+        "key": "baby_pale_angry",
+        "label": "Baby Pale Angry",
+        "pose": "wolf.baby"
+      },
+      {
+        "asset": "wolf_baby__wolf_tame_baby",
+        "baby": true,
+        "geoFile": "baby_wolf.geo.json",
+        "geoId": "geometry.wolf.baby",
+        "key": "baby_pale_tame",
+        "label": "Baby Pale Tame",
+        "pose": "wolf.baby"
+      },
+      {
+        "asset": "wolf_baby__wolf_ashen_baby",
+        "baby": true,
+        "geoFile": "baby_wolf.geo.json",
+        "geoId": "geometry.wolf.baby",
+        "key": "baby_ashen_default",
+        "label": "Baby Ashen Default",
+        "pose": "wolf.baby"
+      },
+      {
+        "asset": "wolf_baby__wolf_ashen_angry_baby",
+        "baby": true,
+        "geoFile": "baby_wolf.geo.json",
+        "geoId": "geometry.wolf.baby",
+        "key": "baby_ashen_angry",
+        "label": "Baby Ashen Angry",
+        "pose": "wolf.baby"
+      },
+      {
+        "asset": "wolf_baby__wolf_ashen_tame_baby",
+        "baby": true,
+        "geoFile": "baby_wolf.geo.json",
+        "geoId": "geometry.wolf.baby",
+        "key": "baby_ashen_tame",
+        "label": "Baby Ashen Tame",
+        "pose": "wolf.baby"
+      },
+      {
+        "asset": "wolf_baby__wolf_black_baby",
+        "baby": true,
+        "geoFile": "baby_wolf.geo.json",
+        "geoId": "geometry.wolf.baby",
+        "key": "baby_black_default",
+        "label": "Baby Black Default",
+        "pose": "wolf.baby"
+      },
+      {
+        "asset": "wolf_baby__wolf_black_angry_baby",
+        "baby": true,
+        "geoFile": "baby_wolf.geo.json",
+        "geoId": "geometry.wolf.baby",
+        "key": "baby_black_angry",
+        "label": "Baby Black Angry",
+        "pose": "wolf.baby"
+      },
+      {
+        "asset": "wolf_baby__wolf_black_tame_baby",
+        "baby": true,
+        "geoFile": "baby_wolf.geo.json",
+        "geoId": "geometry.wolf.baby",
+        "key": "baby_black_tame",
+        "label": "Baby Black Tame",
+        "pose": "wolf.baby"
+      },
+      {
+        "asset": "wolf_baby__wolf_chestnut_baby",
+        "baby": true,
+        "geoFile": "baby_wolf.geo.json",
+        "geoId": "geometry.wolf.baby",
+        "key": "baby_chestnut_default",
+        "label": "Baby Chestnut Default",
+        "pose": "wolf.baby"
+      },
+      {
+        "asset": "wolf_baby__wolf_chestnut_angry_baby",
+        "baby": true,
+        "geoFile": "baby_wolf.geo.json",
+        "geoId": "geometry.wolf.baby",
+        "key": "baby_chestnut_angry",
+        "label": "Baby Chestnut Angry",
+        "pose": "wolf.baby"
+      },
+      {
+        "asset": "wolf_baby__wolf_chestnut_tame_baby",
+        "baby": true,
+        "geoFile": "baby_wolf.geo.json",
+        "geoId": "geometry.wolf.baby",
+        "key": "baby_chestnut_tame",
+        "label": "Baby Chestnut Tame",
+        "pose": "wolf.baby"
+      },
+      {
+        "asset": "wolf_baby__wolf_rusty_baby",
+        "baby": true,
+        "geoFile": "baby_wolf.geo.json",
+        "geoId": "geometry.wolf.baby",
+        "key": "baby_rusty_default",
+        "label": "Baby Rusty Default",
+        "pose": "wolf.baby"
+      },
+      {
+        "asset": "wolf_baby__wolf_rusty_angry_baby",
+        "baby": true,
+        "geoFile": "baby_wolf.geo.json",
+        "geoId": "geometry.wolf.baby",
+        "key": "baby_rusty_angry",
+        "label": "Baby Rusty Angry",
+        "pose": "wolf.baby"
+      },
+      {
+        "asset": "wolf_baby__wolf_rusty_tame_baby",
+        "baby": true,
+        "geoFile": "baby_wolf.geo.json",
+        "geoId": "geometry.wolf.baby",
+        "key": "baby_rusty_tame",
+        "label": "Baby Rusty Tame",
+        "pose": "wolf.baby"
+      },
+      {
+        "asset": "wolf_baby__wolf_snowy_baby",
+        "baby": true,
+        "geoFile": "baby_wolf.geo.json",
+        "geoId": "geometry.wolf.baby",
+        "key": "baby_snowy_default",
+        "label": "Baby Snowy Default",
+        "pose": "wolf.baby"
+      },
+      {
+        "asset": "wolf_baby__wolf_snowy_angry_baby",
+        "baby": true,
+        "geoFile": "baby_wolf.geo.json",
+        "geoId": "geometry.wolf.baby",
+        "key": "baby_snowy_angry",
+        "label": "Baby Snowy Angry",
+        "pose": "wolf.baby"
+      },
+      {
+        "asset": "wolf_baby__wolf_snowy_tame_baby",
+        "baby": true,
+        "geoFile": "baby_wolf.geo.json",
+        "geoId": "geometry.wolf.baby",
+        "key": "baby_snowy_tame",
+        "label": "Baby Snowy Tame",
+        "pose": "wolf.baby"
+      },
+      {
+        "asset": "wolf_baby__wolf_spotted_baby",
+        "baby": true,
+        "geoFile": "baby_wolf.geo.json",
+        "geoId": "geometry.wolf.baby",
+        "key": "baby_spotted_default",
+        "label": "Baby Spotted Default",
+        "pose": "wolf.baby"
+      },
+      {
+        "asset": "wolf_baby__wolf_spotted_angry_baby",
+        "baby": true,
+        "geoFile": "baby_wolf.geo.json",
+        "geoId": "geometry.wolf.baby",
+        "key": "baby_spotted_angry",
+        "label": "Baby Spotted Angry",
+        "pose": "wolf.baby"
+      },
+      {
+        "asset": "wolf_baby__wolf_spotted_tame_baby",
+        "baby": true,
+        "geoFile": "baby_wolf.geo.json",
+        "geoId": "geometry.wolf.baby",
+        "key": "baby_spotted_tame",
+        "label": "Baby Spotted Tame",
+        "pose": "wolf.baby"
+      },
+      {
+        "asset": "wolf_baby__wolf_striped_baby",
+        "baby": true,
+        "geoFile": "baby_wolf.geo.json",
+        "geoId": "geometry.wolf.baby",
+        "key": "baby_striped_default",
+        "label": "Baby Striped Default",
+        "pose": "wolf.baby"
+      },
+      {
+        "asset": "wolf_baby__wolf_striped_angry_baby",
+        "baby": true,
+        "geoFile": "baby_wolf.geo.json",
+        "geoId": "geometry.wolf.baby",
+        "key": "baby_striped_angry",
+        "label": "Baby Striped Angry",
+        "pose": "wolf.baby"
+      },
+      {
+        "asset": "wolf_baby__wolf_striped_tame_baby",
+        "baby": true,
+        "geoFile": "baby_wolf.geo.json",
+        "geoId": "geometry.wolf.baby",
+        "key": "baby_striped_tame",
+        "label": "Baby Striped Tame",
+        "pose": "wolf.baby"
+      },
+      {
+        "asset": "wolf_baby__wolf_woods_baby",
+        "baby": true,
+        "geoFile": "baby_wolf.geo.json",
+        "geoId": "geometry.wolf.baby",
+        "key": "baby_woods_default",
+        "label": "Baby Woods Default",
+        "pose": "wolf.baby"
+      },
+      {
+        "asset": "wolf_baby__wolf_woods_angry_baby",
+        "baby": true,
+        "geoFile": "baby_wolf.geo.json",
+        "geoId": "geometry.wolf.baby",
+        "key": "baby_woods_angry",
+        "label": "Baby Woods Angry",
+        "pose": "wolf.baby"
+      },
+      {
+        "asset": "wolf_baby__wolf_woods_tame_baby",
+        "baby": true,
+        "geoFile": "baby_wolf.geo.json",
+        "geoId": "geometry.wolf.baby",
+        "key": "baby_woods_tame",
+        "label": "Baby Woods Tame",
+        "pose": "wolf.baby"
+      }
+    ]
+  },
+  "minecraft:zoglin": {
+    "asset": "hoglin__zoglin",
+    "geoFile": "hoglin.geo.json",
+    "geoId": "geometry.hoglin",
+    "pose": "zoglin",
+    "variants": [
+      {
+        "asset": "hoglin__zoglin",
+        "geoFile": "hoglin.geo.json",
+        "geoId": "geometry.hoglin",
+        "key": "default",
+        "label": "Default"
+      },
+      {
+        "asset": "hoglin_baby__zoglin_baby",
+        "baby": true,
+        "geoFile": "baby_hoglin.geo.json",
+        "geoId": "geometry.hoglin.baby",
+        "key": "baby",
+        "label": "Baby",
+        "pose": "zoglin.baby"
+      }
+    ]
+  },
+  "minecraft:zombie": {
+    "asset": "zombie_v1_8__zombie",
+    "geoFile": "zombie.geo.json",
+    "geoId": "geometry.zombie.v1.8",
+    "pose": "zombie",
+    "variants": [
+      {
+        "asset": "zombie_v1_8__zombie",
+        "geoFile": "zombie.geo.json",
+        "geoId": "geometry.zombie.v1.8",
+        "key": "default",
+        "label": "Default"
+      },
+      {
+        "asset": "zombie_baby__zombie_baby",
+        "baby": true,
+        "geoFile": "baby_zombie.geo.json",
+        "geoId": "geometry.zombie.baby",
+        "key": "baby",
+        "label": "Baby",
+        "pose": "zombie.baby"
+      }
+    ]
+  },
+  "minecraft:zombie_horse": {
+    "asset": "horse_v3__horse_zombie",
+    "geoFile": "horse_v3.geo.json",
+    "geoId": "geometry.horse.v3",
+    "pose": "zombie_horse",
+    "variants": [
+      {
+        "asset": "horse_v3__horse_zombie",
+        "geoFile": "horse_v3.geo.json",
+        "geoId": "geometry.horse.v3",
+        "key": "zombie",
+        "label": "Zombie"
+      },
+      {
+        "asset": "horse_v3__horse_markings_none",
+        "geoFile": "horse_v3.geo.json",
+        "geoId": "geometry.horse.v3",
+        "key": "markings_none",
+        "label": "Markings None"
+      },
+      {
+        "asset": "horse_v3__horse_armor_none",
+        "geoFile": "horse_v3.geo.json",
+        "geoId": "geometry.horse.v3",
+        "key": "armor_none",
+        "label": "Armor None"
+      },
+      {
+        "asset": "horse_v3__horse_armor_leather",
+        "geoFile": "horse_v3.geo.json",
+        "geoId": "geometry.horse.v3",
+        "key": "armor_leather",
+        "label": "Armor Leather"
+      },
+      {
+        "asset": "horse_v3__horse_armor_iron",
+        "geoFile": "horse_v3.geo.json",
+        "geoId": "geometry.horse.v3",
+        "key": "armor_iron",
+        "label": "Armor Iron"
+      },
+      {
+        "asset": "horse_v3__horse_armor_gold",
+        "geoFile": "horse_v3.geo.json",
+        "geoId": "geometry.horse.v3",
+        "key": "armor_gold",
+        "label": "Armor Gold"
+      },
+      {
+        "asset": "horse_v3__horse_armor_diamond",
+        "geoFile": "horse_v3.geo.json",
+        "geoId": "geometry.horse.v3",
+        "key": "armor_diamond",
+        "label": "Armor Diamond"
+      },
+      {
+        "asset": "horse_v3__horse_armor_copper",
+        "geoFile": "horse_v3.geo.json",
+        "geoId": "geometry.horse.v3",
+        "key": "armor_copper",
+        "label": "Armor Copper"
+      },
+      {
+        "asset": "horse_v3__horse_armor_netherite",
+        "geoFile": "horse_v3.geo.json",
+        "geoId": "geometry.horse.v3",
+        "key": "armor_netherite",
+        "label": "Armor Netherite"
+      },
+      {
+        "asset": "horse_baby__horse_zombie_baby",
+        "baby": true,
+        "geoFile": "baby_horse.geo.json",
+        "geoId": "geometry.horse.baby",
+        "key": "baby_zombie",
+        "label": "Baby Zombie",
+        "pose": "zombie_horse.baby"
+      }
+    ],
+    "visibility": [
+      [
+        "Saddle",
+        false
+      ],
+      [
+        "Bit*",
+        false
+      ],
+      [
+        "Bridle",
+        false
+      ],
+      [
+        "Reins*",
+        false
+      ],
+      [
+        "Bag*",
+        false
+      ],
+      [
+        "MuleEar*",
+        false
+      ]
+    ]
+  },
+  "minecraft:zombie_horseman": {
+    "asset": "horse_v3__horse_zombie",
+    "geoFile": "horse_v3.geo.json",
+    "geoId": "geometry.horse.v3",
+    "pose": "zombie_horseman",
+    "reason": "jockey_mount",
+    "substitute": "minecraft:zombie_horse",
+    "variants": [
+      {
+        "asset": "horse_v3__horse_zombie",
+        "geoFile": "horse_v3.geo.json",
+        "geoId": "geometry.horse.v3",
+        "key": "zombie",
+        "label": "Zombie"
+      },
+      {
+        "asset": "horse_v3__horse_markings_none",
+        "geoFile": "horse_v3.geo.json",
+        "geoId": "geometry.horse.v3",
+        "key": "markings_none",
+        "label": "Markings None"
+      },
+      {
+        "asset": "horse_v3__horse_armor_none",
+        "geoFile": "horse_v3.geo.json",
+        "geoId": "geometry.horse.v3",
+        "key": "armor_none",
+        "label": "Armor None"
+      },
+      {
+        "asset": "horse_v3__horse_armor_leather",
+        "geoFile": "horse_v3.geo.json",
+        "geoId": "geometry.horse.v3",
+        "key": "armor_leather",
+        "label": "Armor Leather"
+      },
+      {
+        "asset": "horse_v3__horse_armor_iron",
+        "geoFile": "horse_v3.geo.json",
+        "geoId": "geometry.horse.v3",
+        "key": "armor_iron",
+        "label": "Armor Iron"
+      },
+      {
+        "asset": "horse_v3__horse_armor_gold",
+        "geoFile": "horse_v3.geo.json",
+        "geoId": "geometry.horse.v3",
+        "key": "armor_gold",
+        "label": "Armor Gold"
+      },
+      {
+        "asset": "horse_v3__horse_armor_diamond",
+        "geoFile": "horse_v3.geo.json",
+        "geoId": "geometry.horse.v3",
+        "key": "armor_diamond",
+        "label": "Armor Diamond"
+      },
+      {
+        "asset": "horse_v3__horse_armor_copper",
+        "geoFile": "horse_v3.geo.json",
+        "geoId": "geometry.horse.v3",
+        "key": "armor_copper",
+        "label": "Armor Copper"
+      },
+      {
+        "asset": "horse_v3__horse_armor_netherite",
+        "geoFile": "horse_v3.geo.json",
+        "geoId": "geometry.horse.v3",
+        "key": "armor_netherite",
+        "label": "Armor Netherite"
+      },
+      {
+        "asset": "horse_baby__horse_zombie_baby",
+        "baby": true,
+        "geoFile": "baby_horse.geo.json",
+        "geoId": "geometry.horse.baby",
+        "key": "baby_zombie",
+        "label": "Baby Zombie",
+        "pose": "zombie_horseman.baby"
+      }
+    ],
+    "visibility": [
+      [
+        "Saddle",
+        false
+      ],
+      [
+        "Bit*",
+        false
+      ],
+      [
+        "Bridle",
+        false
+      ],
+      [
+        "Reins*",
+        false
+      ],
+      [
+        "Bag*",
+        false
+      ],
+      [
+        "MuleEar*",
+        false
+      ]
+    ]
+  },
+  "minecraft:zombie_nautilus": {
+    "asset": "nautilus__zombie_nautilus",
+    "geoFile": "nautilus.geo.json",
+    "geoId": "geometry.nautilus",
+    "pose": "zombie_nautilus",
+    "variants": [
+      {
+        "asset": "nautilus__zombie_nautilus",
+        "geoFile": "nautilus.geo.json",
+        "geoId": "geometry.nautilus",
+        "key": "default",
+        "label": "Default"
+      },
+      {
+        "asset": "nautilus__zombie_nautilus_coral",
+        "geoFile": "nautilus.geo.json",
+        "geoId": "geometry.nautilus",
+        "key": "coral",
+        "label": "Coral"
+      },
+      {
+        "asset": "nautilus__nautilus_saddle",
+        "geoFile": "nautilus.geo.json",
+        "geoId": "geometry.nautilus",
+        "key": "saddle",
+        "label": "Saddle"
+      },
+      {
+        "asset": "nautilus__horse_armor_none",
+        "geoFile": "nautilus.geo.json",
+        "geoId": "geometry.nautilus",
+        "key": "armor_none",
+        "label": "Armor None"
+      },
+      {
+        "asset": "nautilus__nautilus_armor_copper",
+        "geoFile": "nautilus.geo.json",
+        "geoId": "geometry.nautilus",
+        "key": "armor_copper",
+        "label": "Armor Copper"
+      },
+      {
+        "asset": "nautilus__nautilus_armor_iron",
+        "geoFile": "nautilus.geo.json",
+        "geoId": "geometry.nautilus",
+        "key": "armor_iron",
+        "label": "Armor Iron"
+      },
+      {
+        "asset": "nautilus__nautilus_armor_gold",
+        "geoFile": "nautilus.geo.json",
+        "geoId": "geometry.nautilus",
+        "key": "armor_gold",
+        "label": "Armor Gold"
+      },
+      {
+        "asset": "nautilus__nautilus_armor_diamond",
+        "geoFile": "nautilus.geo.json",
+        "geoId": "geometry.nautilus",
+        "key": "armor_diamond",
+        "label": "Armor Diamond"
+      },
+      {
+        "asset": "nautilus__nautilus_armor_netherite",
+        "geoFile": "nautilus.geo.json",
+        "geoId": "geometry.nautilus",
+        "key": "armor_netherite",
+        "label": "Armor Netherite"
+      }
+    ]
+  },
+  "minecraft:zombie_nautilus_jockey": {
+    "asset": "nautilus__zombie_nautilus",
+    "geoFile": "nautilus.geo.json",
+    "geoId": "geometry.nautilus",
+    "pose": "zombie_nautilus_jockey",
+    "reason": "jockey_mount",
+    "substitute": "minecraft:zombie_nautilus",
+    "variants": [
+      {
+        "asset": "nautilus__zombie_nautilus",
+        "geoFile": "nautilus.geo.json",
+        "geoId": "geometry.nautilus",
+        "key": "default",
+        "label": "Default"
+      },
+      {
+        "asset": "nautilus__zombie_nautilus_coral",
+        "geoFile": "nautilus.geo.json",
+        "geoId": "geometry.nautilus",
+        "key": "coral",
+        "label": "Coral"
+      },
+      {
+        "asset": "nautilus__nautilus_saddle",
+        "geoFile": "nautilus.geo.json",
+        "geoId": "geometry.nautilus",
+        "key": "saddle",
+        "label": "Saddle"
+      },
+      {
+        "asset": "nautilus__horse_armor_none",
+        "geoFile": "nautilus.geo.json",
+        "geoId": "geometry.nautilus",
+        "key": "armor_none",
+        "label": "Armor None"
+      },
+      {
+        "asset": "nautilus__nautilus_armor_copper",
+        "geoFile": "nautilus.geo.json",
+        "geoId": "geometry.nautilus",
+        "key": "armor_copper",
+        "label": "Armor Copper"
+      },
+      {
+        "asset": "nautilus__nautilus_armor_iron",
+        "geoFile": "nautilus.geo.json",
+        "geoId": "geometry.nautilus",
+        "key": "armor_iron",
+        "label": "Armor Iron"
+      },
+      {
+        "asset": "nautilus__nautilus_armor_gold",
+        "geoFile": "nautilus.geo.json",
+        "geoId": "geometry.nautilus",
+        "key": "armor_gold",
+        "label": "Armor Gold"
+      },
+      {
+        "asset": "nautilus__nautilus_armor_diamond",
+        "geoFile": "nautilus.geo.json",
+        "geoId": "geometry.nautilus",
+        "key": "armor_diamond",
+        "label": "Armor Diamond"
+      },
+      {
+        "asset": "nautilus__nautilus_armor_netherite",
+        "geoFile": "nautilus.geo.json",
+        "geoId": "geometry.nautilus",
+        "key": "armor_netherite",
+        "label": "Armor Netherite"
+      }
+    ]
+  },
+  "minecraft:zombie_villager": {
+    "asset": "zombie_villager_v2__zombie-villager+zombie_villager_v2__biome-plains-zombie+zombie_villager_v2__farmer",
+    "geoFile": "zombie_villager_v2.geo.json",
+    "geoId": "geometry.zombie.villager_v2",
+    "layers": [
+      {
+        "asset": "zombie_villager_v2__zombie-villager"
+      },
+      {
+        "asset": "zombie_villager_v2__biome-plains-zombie"
+      },
+      {
+        "asset": "zombie_villager_v2__farmer"
+      }
+    ],
+    "pose": "zombie_villager",
+    "variants": [
+      {
+        "asset": "zombie_villager_v2__zombie-villager+zombie_villager_v2__biome-plains-zombie+zombie_villager_v2__armorer",
+        "geoFile": "zombie_villager_v2.geo.json",
+        "geoId": "geometry.zombie.villager_v2",
+        "key": "armorer",
+        "label": "Armorer",
+        "layers": [
+          {
+            "asset": "zombie_villager_v2__zombie-villager"
+          },
+          {
+            "asset": "zombie_villager_v2__biome-plains-zombie"
+          },
+          {
+            "asset": "zombie_villager_v2__armorer"
+          }
+        ]
+      },
+      {
+        "asset": "zombie_villager_v2__zombie-villager+zombie_villager_v2__biome-plains-zombie+zombie_villager_v2__butcher",
+        "geoFile": "zombie_villager_v2.geo.json",
+        "geoId": "geometry.zombie.villager_v2",
+        "key": "butcher",
+        "label": "Butcher",
+        "layers": [
+          {
+            "asset": "zombie_villager_v2__zombie-villager"
+          },
+          {
+            "asset": "zombie_villager_v2__biome-plains-zombie"
+          },
+          {
+            "asset": "zombie_villager_v2__butcher"
+          }
+        ]
+      },
+      {
+        "asset": "zombie_villager_v2__zombie-villager+zombie_villager_v2__biome-plains-zombie+zombie_villager_v2__cartographer",
+        "geoFile": "zombie_villager_v2.geo.json",
+        "geoId": "geometry.zombie.villager_v2",
+        "key": "cartographer",
+        "label": "Cartographer",
+        "layers": [
+          {
+            "asset": "zombie_villager_v2__zombie-villager"
+          },
+          {
+            "asset": "zombie_villager_v2__biome-plains-zombie"
+          },
+          {
+            "asset": "zombie_villager_v2__cartographer"
+          }
+        ]
+      },
+      {
+        "asset": "zombie_villager_v2__zombie-villager+zombie_villager_v2__biome-plains-zombie+zombie_villager_v2__cleric",
+        "geoFile": "zombie_villager_v2.geo.json",
+        "geoId": "geometry.zombie.villager_v2",
+        "key": "cleric",
+        "label": "Cleric",
+        "layers": [
+          {
+            "asset": "zombie_villager_v2__zombie-villager"
+          },
+          {
+            "asset": "zombie_villager_v2__biome-plains-zombie"
+          },
+          {
+            "asset": "zombie_villager_v2__cleric"
+          }
+        ]
+      },
+      {
+        "asset": "zombie_villager_v2__zombie-villager+zombie_villager_v2__biome-plains-zombie+zombie_villager_v2__farmer",
+        "geoFile": "zombie_villager_v2.geo.json",
+        "geoId": "geometry.zombie.villager_v2",
+        "key": "farmer",
+        "label": "Farmer",
+        "layers": [
+          {
+            "asset": "zombie_villager_v2__zombie-villager"
+          },
+          {
+            "asset": "zombie_villager_v2__biome-plains-zombie"
+          },
+          {
+            "asset": "zombie_villager_v2__farmer"
+          }
+        ]
+      },
+      {
+        "asset": "zombie_villager_v2__zombie-villager+zombie_villager_v2__biome-plains-zombie+zombie_villager_v2__fisherman",
+        "geoFile": "zombie_villager_v2.geo.json",
+        "geoId": "geometry.zombie.villager_v2",
+        "key": "fisherman",
+        "label": "Fisherman",
+        "layers": [
+          {
+            "asset": "zombie_villager_v2__zombie-villager"
+          },
+          {
+            "asset": "zombie_villager_v2__biome-plains-zombie"
+          },
+          {
+            "asset": "zombie_villager_v2__fisherman"
+          }
+        ]
+      },
+      {
+        "asset": "zombie_villager_v2__zombie-villager+zombie_villager_v2__biome-plains-zombie+zombie_villager_v2__fletcher",
+        "geoFile": "zombie_villager_v2.geo.json",
+        "geoId": "geometry.zombie.villager_v2",
+        "key": "fletcher",
+        "label": "Fletcher",
+        "layers": [
+          {
+            "asset": "zombie_villager_v2__zombie-villager"
+          },
+          {
+            "asset": "zombie_villager_v2__biome-plains-zombie"
+          },
+          {
+            "asset": "zombie_villager_v2__fletcher"
+          }
+        ]
+      },
+      {
+        "asset": "zombie_villager_v2__zombie-villager+zombie_villager_v2__biome-plains-zombie+zombie_villager_v2__leatherworker",
+        "geoFile": "zombie_villager_v2.geo.json",
+        "geoId": "geometry.zombie.villager_v2",
+        "key": "leatherworker",
+        "label": "Leatherworker",
+        "layers": [
+          {
+            "asset": "zombie_villager_v2__zombie-villager"
+          },
+          {
+            "asset": "zombie_villager_v2__biome-plains-zombie"
+          },
+          {
+            "asset": "zombie_villager_v2__leatherworker"
+          }
+        ]
+      },
+      {
+        "asset": "zombie_villager_v2__zombie-villager+zombie_villager_v2__biome-plains-zombie+zombie_villager_v2__librarian",
+        "geoFile": "zombie_villager_v2.geo.json",
+        "geoId": "geometry.zombie.villager_v2",
+        "key": "librarian",
+        "label": "Librarian",
+        "layers": [
+          {
+            "asset": "zombie_villager_v2__zombie-villager"
+          },
+          {
+            "asset": "zombie_villager_v2__biome-plains-zombie"
+          },
+          {
+            "asset": "zombie_villager_v2__librarian"
+          }
+        ]
+      },
+      {
+        "asset": "zombie_villager_v2__zombie-villager+zombie_villager_v2__biome-plains-zombie+zombie_villager_v2__shepherd",
+        "geoFile": "zombie_villager_v2.geo.json",
+        "geoId": "geometry.zombie.villager_v2",
+        "key": "shepherd",
+        "label": "Shepherd",
+        "layers": [
+          {
+            "asset": "zombie_villager_v2__zombie-villager"
+          },
+          {
+            "asset": "zombie_villager_v2__biome-plains-zombie"
+          },
+          {
+            "asset": "zombie_villager_v2__shepherd"
+          }
+        ]
+      },
+      {
+        "asset": "zombie_villager_v2__zombie-villager+zombie_villager_v2__biome-plains-zombie+zombie_villager_v2__toolsmith",
+        "geoFile": "zombie_villager_v2.geo.json",
+        "geoId": "geometry.zombie.villager_v2",
+        "key": "tool_smith",
+        "label": "Tool Smith",
+        "layers": [
+          {
+            "asset": "zombie_villager_v2__zombie-villager"
+          },
+          {
+            "asset": "zombie_villager_v2__biome-plains-zombie"
+          },
+          {
+            "asset": "zombie_villager_v2__toolsmith"
+          }
+        ]
+      },
+      {
+        "asset": "zombie_villager_v2__zombie-villager+zombie_villager_v2__biome-plains-zombie+zombie_villager_v2__weaponsmith",
+        "geoFile": "zombie_villager_v2.geo.json",
+        "geoId": "geometry.zombie.villager_v2",
+        "key": "weapon_smith",
+        "label": "Weapon Smith",
+        "layers": [
+          {
+            "asset": "zombie_villager_v2__zombie-villager"
+          },
+          {
+            "asset": "zombie_villager_v2__biome-plains-zombie"
+          },
+          {
+            "asset": "zombie_villager_v2__weaponsmith"
+          }
+        ]
+      },
+      {
+        "asset": "zombie_villager_v2__zombie-villager+zombie_villager_v2__biome-plains-zombie+zombie_villager_v2__stonemason",
+        "geoFile": "zombie_villager_v2.geo.json",
+        "geoId": "geometry.zombie.villager_v2",
+        "key": "stonemason",
+        "label": "Stonemason",
+        "layers": [
+          {
+            "asset": "zombie_villager_v2__zombie-villager"
+          },
+          {
+            "asset": "zombie_villager_v2__biome-plains-zombie"
+          },
+          {
+            "asset": "zombie_villager_v2__stonemason"
+          }
+        ]
+      },
+      {
+        "asset": "zombie_villager_v2__zombie-villager+zombie_villager_v2__biome-plains-zombie+zombie_villager_v2__nitwit",
+        "geoFile": "zombie_villager_v2.geo.json",
+        "geoId": "geometry.zombie.villager_v2",
+        "key": "nitwit",
+        "label": "Nitwit",
+        "layers": [
+          {
+            "asset": "zombie_villager_v2__zombie-villager"
+          },
+          {
+            "asset": "zombie_villager_v2__biome-plains-zombie"
+          },
+          {
+            "asset": "zombie_villager_v2__nitwit"
+          }
+        ]
+      },
+      {
+        "asset": "zombie_villager_v2__zombie-villager+zombie_villager_v2__biome-plains-zombie+zombie_villager_v2__unskilled",
+        "geoFile": "zombie_villager_v2.geo.json",
+        "geoId": "geometry.zombie.villager_v2",
+        "key": "unskilled",
+        "label": "Unskilled",
+        "layers": [
+          {
+            "asset": "zombie_villager_v2__zombie-villager"
+          },
+          {
+            "asset": "zombie_villager_v2__biome-plains-zombie"
+          },
+          {
+            "asset": "zombie_villager_v2__unskilled"
+          }
+        ]
+      }
+    ]
+  },
+  "minecraft:zombified_piglin": {
+    "asset": "piglin__zombie_piglin",
+    "geoFile": "piglin.geo.json",
+    "geoId": "geometry.piglin",
+    "pose": "zombified_piglin",
+    "variants": [
+      {
+        "asset": "piglin__zombie_piglin",
+        "geoFile": "piglin.geo.json",
+        "geoId": "geometry.piglin",
+        "key": "default",
+        "label": "Default"
+      },
+      {
+        "asset": "piglin_baby__zombie_piglin_baby",
+        "baby": true,
+        "geoFile": "baby_piglin.geo.json",
+        "geoId": "geometry.piglin.baby",
+        "key": "baby",
+        "label": "Baby",
+        "pose": "zombified_piglin.baby"
+      }
+    ]
+  }
+}

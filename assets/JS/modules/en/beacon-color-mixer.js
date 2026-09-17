@@ -1,9 +1,6 @@
 // ===== BEACON REVERSE FARBMISCHER =====
 
 // ---------- Sound & Sprache ----------
-let soundEnabled = localStorage.getItem('mc-craft-sound') !== 'false';
-let currentTheme = localStorage.getItem('mc-craft-theme') || 'overworld';
-let levelUpSound = null;
 
 // ---------- VOLLSTÄNDIGE ÜBERSETZUNGEN----------
 const T = {
@@ -106,123 +103,30 @@ const T = {
     toast_offline_message: "Some features may not be available."
 };
 
-function t(key, params = {}) {
-  let text = T[key] || key;
-  Object.entries(params).forEach(([k, v]) => text = text.replace(`{${k}}`, v));
-  return text;
-}
-
 // ---------- Audio (exakt wie homepage.js) ----------
-function initAudio() {
-  try {
-    levelUpSound = new Audio('/assets/audio/levelup.ogg');
-    levelUpSound.volume = 0.3;
-    levelUpSound.preload = 'auto';
-  } catch (e) {}
-}
-
-function playLevelUpSound() {
-  if (!soundEnabled || !levelUpSound) return;
-  levelUpSound.currentTime = 0;
-  levelUpSound.play().catch(() => {});
-}
-
-function playClickSound() {
-    if (!soundEnabled) return;
-
-    const now = (typeof performance !== 'undefined' && performance.now) ? performance.now() : Date.now();
-    const last = window.__mcCraftLastClickSoundAt || 0;
-    if (now - last < 120) return;
-    window.__mcCraftLastClickSoundAt = now;
-
-    try {
-        const ctx = window.__mcCraftAudioCtx || (window.__mcCraftAudioCtx = new (window.AudioContext || window.webkitAudioContext)());
-
-        if (ctx.state === 'suspended') {
-            ctx.resume().then(() => {
-                window.__mcCraftLastClickSoundAt = 0;
-                playClickSound();
-            }).catch(() => {});
-            return;
-        }
-
-        const osc = ctx.createOscillator();
-        const gain = ctx.createGain();
-        osc.connect(gain);
-        gain.connect(ctx.destination);
-
-        osc.frequency.setValueAtTime(1200, ctx.currentTime);
-        osc.frequency.exponentialRampToValueAtTime(800, ctx.currentTime + 0.1);
-        gain.gain.setValueAtTime(0.08, ctx.currentTime);
-        gain.gain.exponentialRampToValueAtTime(0.01, ctx.currentTime + 0.1);
-
-        osc.start();
-        setTimeout(() => osc.stop(), 100);
-    } catch (e) {}
-}
 
 // ---------- UI Update ----------
-function updateSoundIcon() {
-  const src = soundEnabled ? '/assets/img/backgrounds/sound-on.svg' : '/assets/img/backgrounds/sound-off.svg';
-  ['soundIcon', 'mobileSoundIcon'].forEach(id => {
-    const el = document.getElementById(id);
-    if (el) el.src = src;
-  });
-}
-
-function getThemeName(theme) {
-  switch(theme) {
-    case 'overworld': return t('theme_overworld');
-    case 'nether': return t('theme_nether');
-    case 'end': return t('theme_end');
-    default: return 'Overworld';
-  }
-}
 
 // ---------- Toast (wie Homepage) ----------
-function showToast(title, message, type = 'info') {
-  const container = document.getElementById('toastContainer');
-  if (!container) return;
-  const toast = document.createElement('div');
-  toast.className = `toast ${type === 'error' ? 'error-toast' : ''}`;
-  toast.innerHTML = `
-    <div class="toast-icon"><i class="fas ${type === 'error' ? 'fa-exclamation-triangle' : 'fa-check'}"></i></div>
-    <div class="toast-content">
-      <div class="toast-title">${title}</div>
-      <div class="toast-message">${message}</div>
-    </div>
-  `;
-  container.appendChild(toast);
-  playClickSound();
-  setTimeout(() => toast.classList.add('show'), 100);
-  setTimeout(() => {
-    toast.classList.remove('show');
-    setTimeout(() => toast.remove(), 300);
-  }, 5000);
-  toast.addEventListener('click', () => {
-    toast.classList.remove('show');
-    setTimeout(() => toast.remove(), 300);
-  });
-}
 
 // ---------- Farbmischer Logik ----------
 const glassColors = [
-  { name: 'Weiß',      key: 'white',      hex: '#F9FFFE', rgb: [249,255,254], file: '/assets/img/becon/Invicon_White_Stained_Glass_Pane.png' },
-  { name: 'Orange',    key: 'orange',     hex: '#F9801D', rgb: [249,128,29],  file: '/assets/img/becon/Invicon_Orange_Stained_Glass_Pane.png' },
-  { name: 'Magenta',   key: 'magenta',    hex: '#C74EBD', rgb: [199,78,189],  file: '/assets/img/becon/Invicon_Magenta_Stained_Glass_Pane.png' },
-  { name: 'Hellblau',  key: 'light_blue', hex: '#3AB3DA', rgb: [58,179,218],  file: '/assets/img/becon/Invicon_Light_Blue_Stained_Glass_Pane.png' },
-  { name: 'Gelb',      key: 'yellow',     hex: '#FED83D', rgb: [254,216,61],  file: '/assets/img/becon/Invicon_Yellow_Stained_Glass_Pane.png' },
-  { name: 'Hellgrün',  key: 'lime',       hex: '#80C71F', rgb: [128,199,31],  file: '/assets/img/becon/Invicon_Lime_Stained_Glass_Pane.png' },
-  { name: 'Rosa',      key: 'pink',       hex: '#F38BAA', rgb: [243,139,170], file: '/assets/img/becon/Invicon_Pink_Stained_Glass_Pane.png' },
-  { name: 'Grau',      key: 'gray',       hex: '#474F52', rgb: [71,79,82],    file: '/assets/img/becon/Invicon_Gray_Stained_Glass_Pane.png' },
-  { name: 'Hellgrau',  key: 'light_gray', hex: '#9D9D97', rgb: [157,157,151], file: '/assets/img/becon/Invicon_Light_Gray_Stained_Glass_Pane.png' },
-  { name: 'Cyan',      key: 'cyan',       hex: '#169C9C', rgb: [22,156,156],  file: '/assets/img/becon/Invicon_Cyan_Stained_Glass_Pane.png' },
-  { name: 'Violett',   key: 'purple',     hex: '#8932B8', rgb: [137,50,184],  file: '/assets/img/becon/Invicon_Purple_Stained_Glass_Pane.png' },
-  { name: 'Blau',      key: 'blue',       hex: '#3C44AA', rgb: [60,68,170],   file: '/assets/img/becon/Invicon_Blue_Stained_Glass_Pane.png' },
-  { name: 'Braun',     key: 'brown',      hex: '#835432', rgb: [131,84,50],   file: '/assets/img/becon/Invicon_Brown_Stained_Glass_Pane.png' },
-  { name: 'Grün',      key: 'green',      hex: '#5E7C16', rgb: [94,124,22],   file: '/assets/img/becon/Invicon_Green_Stained_Glass_Pane.png' },
-  { name: 'Rot',       key: 'red',        hex: '#B02E26', rgb: [176,46,38],   file: '/assets/img/becon/Invicon_Red_Stained_Glass_Pane.png' },
-  { name: 'Schwarz',   key: 'black',      hex: '#1D1D21', rgb: [29,29,33],    file: '/assets/img/becon/Invicon_Black_Stained_Glass_Pane.png' },
+  { name: 'White',      key: 'white',      hex: '#F9FFFE', rgb: [249,255,254], file: '/assets/img/becon/Invicon_White_Stained_Glass_Pane.png' },
+  { name: 'Orange',     key: 'orange',     hex: '#F9801D', rgb: [249,128,29],  file: '/assets/img/becon/Invicon_Orange_Stained_Glass_Pane.png' },
+  { name: 'Magenta',    key: 'magenta',    hex: '#C74EBD', rgb: [199,78,189],  file: '/assets/img/becon/Invicon_Magenta_Stained_Glass_Pane.png' },
+  { name: 'Light Blue', key: 'light_blue', hex: '#3AB3DA', rgb: [58,179,218],  file: '/assets/img/becon/Invicon_Light_Blue_Stained_Glass_Pane.png' },
+  { name: 'Yellow',     key: 'yellow',     hex: '#FED83D', rgb: [254,216,61],  file: '/assets/img/becon/Invicon_Yellow_Stained_Glass_Pane.png' },
+  { name: 'Lime',       key: 'lime',       hex: '#80C71F', rgb: [128,199,31],  file: '/assets/img/becon/Invicon_Lime_Stained_Glass_Pane.png' },
+  { name: 'Pink',       key: 'pink',       hex: '#F38BAA', rgb: [243,139,170], file: '/assets/img/becon/Invicon_Pink_Stained_Glass_Pane.png' },
+  { name: 'Gray',       key: 'gray',       hex: '#474F52', rgb: [71,79,82],    file: '/assets/img/becon/Invicon_Gray_Stained_Glass_Pane.png' },
+  { name: 'Light Gray', key: 'light_gray', hex: '#9D9D97', rgb: [157,157,151], file: '/assets/img/becon/Invicon_Light_Gray_Stained_Glass_Pane.png' },
+  { name: 'Cyan',       key: 'cyan',       hex: '#169C9C', rgb: [22,156,156],  file: '/assets/img/becon/Invicon_Cyan_Stained_Glass_Pane.png' },
+  { name: 'Purple',     key: 'purple',     hex: '#8932B8', rgb: [137,50,184],  file: '/assets/img/becon/Invicon_Purple_Stained_Glass_Pane.png' },
+  { name: 'Blue',       key: 'blue',       hex: '#3C44AA', rgb: [60,68,170],   file: '/assets/img/becon/Invicon_Blue_Stained_Glass_Pane.png' },
+  { name: 'Brown',      key: 'brown',      hex: '#835432', rgb: [131,84,50],   file: '/assets/img/becon/Invicon_Brown_Stained_Glass_Pane.png' },
+  { name: 'Green',      key: 'green',      hex: '#5E7C16', rgb: [94,124,22],   file: '/assets/img/becon/Invicon_Green_Stained_Glass_Pane.png' },
+  { name: 'Red',        key: 'red',        hex: '#B02E26', rgb: [176,46,38],   file: '/assets/img/becon/Invicon_Red_Stained_Glass_Pane.png' },
+  { name: 'Black',      key: 'black',      hex: '#1D1D21', rgb: [29,29,33],    file: '/assets/img/becon/Invicon_Black_Stained_Glass_Pane.png' },
 ];
 
 function rebuildGlassNames() {
@@ -281,7 +185,8 @@ function updateResult(targetHex) {
       combination.forEach((color, i) => {
         const div = document.createElement('div');
         div.className = 'glass-stack-item';
-        div.innerHTML = `<span class="pos-number">${i+1}</span><img src="${color.file}" alt="${color.name}" onerror="this.style.display='none'"><span class="glass-label">${color.name}</span>`;
+        div.innerHTML = `<span class="pos-number">${i+1}</span><img src="${color.file}" alt="${color.name}"><span class="glass-label">${color.name}</span>`;
+        div.querySelector('img').addEventListener('error', (e) => { e.target.style.display = 'none'; }, { once: true });
         stack.appendChild(div);
       });
     }
@@ -300,82 +205,17 @@ function updateResult(targetHex) {
 
 // ---------- Initialisierung ----------
 document.addEventListener('DOMContentLoaded', () => {
-  initAudio();
   rebuildGlassNames();
   updateSoundIcon();
 
-  // Loader
-  (() => {
-    const loader = document.getElementById('loader');
-    const loadingProgressEl = document.querySelector('.loading-progress');
-    let loadingProgressBar = null, loadingPercentEl = null;
-    if (loadingProgressEl) {
-      loadingProgressEl.innerHTML = '<div class="loading-progress-bar"></div>';
-      loadingProgressBar = loadingProgressEl.querySelector('.loading-progress-bar');
-      loadingPercentEl = document.createElement('span');
-      loadingPercentEl.className = 'loading-percent';
-      loadingPercentEl.textContent = '0%';
-      loadingProgressEl.insertAdjacentElement('afterend', loadingPercentEl);
-    }
-    const updateLoaderProgress = (value) => {
-      const v = Math.min(100, value);
-      if (loadingProgressBar) loadingProgressBar.style.width = v + '%';
-      if (loadingPercentEl) loadingPercentEl.textContent = v + '%';
-    };
-    let progress = 0;
-    const interval = setInterval(() => {
-      progress += 20;
-      updateLoaderProgress(progress);
-      if (progress >= 100) {
-        clearInterval(interval);
-        setTimeout(() => {
-          if (loader) { loader.classList.add('hidden'); setTimeout(() => loader.style.display = 'none', 500); }
-          playLevelUpSound();
-          showToast(t('toast_welcome_title'), t('toast_welcome_message'));
-        }, 300);
-      }
-    }, 120);
-  })();
-
-  // Theme
-  const savedTheme = localStorage.getItem('mc-craft-theme') || 'overworld';
-  document.documentElement.setAttribute('data-theme', savedTheme);
-  document.querySelectorAll('.theme-option, .theme-option-btn').forEach(btn => {
-    btn.addEventListener('click', () => {
-      const theme = btn.dataset.theme;
-      document.documentElement.setAttribute('data-theme', theme);
-      localStorage.setItem('mc-craft-theme', theme);
-      document.getElementById('themeDropdown')?.classList.remove('show');
-      showToast(t('toast_theme_changed'), t('toast_theme_to', { theme: getThemeName(theme) }));
-    });
-  });
-  document.getElementById('themeBtn')?.addEventListener('click', (e) => {
-    e.stopPropagation();
-    document.getElementById('themeDropdown')?.classList.toggle('show');
+  waitForSplashGone(() => {
+    playLevelUpSound();
+    showWelcomeToast();   // routed through main.js so it can only fire once
   });
 
-  // Mobile Menu
-  document.getElementById('mobileMenuBtn')?.addEventListener('click', () => {
-    document.getElementById('mobileNav')?.classList.add('show');
-  });
-  document.getElementById('closeBtn')?.addEventListener('click', () => {
-    document.getElementById('mobileNav')?.classList.remove('show');
-  });
-
-  // Sound Toggle
-  function toggleSound() {
-    soundEnabled = !soundEnabled;
-    localStorage.setItem('mc-craft-sound', soundEnabled);
-    updateSoundIcon();
-    playClickSound();
-    showToast(t('toast_sound_title'), t(soundEnabled ? 'toast_sound_on' : 'toast_sound_off'));
-  }
-  document.getElementById('soundBtn')?.addEventListener('click', toggleSound);
-  document.getElementById('mobileSoundBtn')?.addEventListener('click', toggleSound);
-
-  // Klick-Sound auf allen interaktiven Elementen
-  document.querySelectorAll('button, .btn, .nav-link, .theme-option, .tool-link, .mobile-nav-link, .sound-btn, .lang-btn, .mobile-sound-btn, .mobile-lang-btn, .dropdown-btn')
-    .forEach(el => el.addEventListener('click', () => setTimeout(playClickSound, 50)));
+  // Theme switcher, mobile drawer, sound toggle and the click sound are wired by
+  // main.js. The copy that used to live here added a SECOND click handler to
+  // #themeBtn and #soundBtn, so each click toggled twice and cancelled itself out.
 
   // Color Picker
   const colorPicker = document.getElementById('targetColor');
@@ -389,19 +229,14 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // Back to Top
-  window.addEventListener('scroll', () => { document.getElementById('backToTop')?.classList.toggle('show', window.scrollY > 300); });
-  document.getElementById('backToTop')?.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+  // Back to Top is handled by initScrollEffects() in main.js.
 
   // Footer Year
   const yearEl = document.getElementById('currentYear');
   if (yearEl) yearEl.textContent = new Date().getFullYear();
 
   // Fehler & Online/Offline Events
-  window.addEventListener('error', function(e) {
-    console.error('JavaScript Error:', e.message);
-    showToast(t('toast_error_title'), t('toast_error_message'), 'error');
-  });
-  window.addEventListener('online', () => showToast(t('toast_online_title'), t('toast_online_message')));
-  window.addEventListener('offline', () => showToast(t('toast_offline_title'), t('toast_offline_message')));
+  
+  
+  
 });

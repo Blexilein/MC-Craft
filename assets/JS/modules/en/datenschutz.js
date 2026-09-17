@@ -1,9 +1,6 @@
 // Privacy Policy Page JavaScript
 
 // ===== CONFIGURATION =====
-let soundEnabled = localStorage.getItem('mc-craft-sound') !== 'false';
-let currentTheme = localStorage.getItem('mc-craft-theme') || 'overworld';
-let levelUpSound = null;
 
 // Translations (English only)
 const T = {
@@ -49,9 +46,10 @@ const T = {
     datenschutz_cardlegal_title: "3. Legal Basis for Processing",
     datenschutz_cardlegal_desc: "We process personal data solely on the basis of the following legal grounds:",
     datenschutz_cardlegal_li1: "<strong>Art. 6(1)(f) GDPR (legitimate interest):</strong> for automatically collected server log data (see point 4) and for technically necessary local storage, e.g. language, theme and sound settings (see point 5) – our legitimate interest lies in the secure and stable operation of the website.",
+    datenschutz_cardlegal_li1b: "<strong>Art. 6(1)(f) GDPR (legitimate interest):</strong> for processing the values you enter (e.g. a player name, UUID, or server address) through our own MC-Craft API (see point 6) – our legitimate interest lies in providing the tools technically without requiring your browser to connect directly to third-party providers.",
     datenschutz_cardlegal_li2: "<strong>Art. 6(1)(a) GDPR in conjunction with § 25(1) TDDDG (consent):</strong> for the one non-technically-necessary external resource (optional font, see point 6), which is only loaded after your explicit consent in the cookie banner.",
     datenschutz_cardlegal_li3: "<strong>§ 25(2) no. 2 TDDDG:</strong> for local storage that is strictly necessary to provide a service you explicitly requested (e.g. your saved language selection) – no separate consent is required for this.",
-    datenschutz_cardlegal_note: "We do not pass your data on to third parties for advertising purposes. The direct connections to Mojang/Microsoft described in point 6 arise solely from your active use of a tool and are outside our control.",
+    datenschutz_cardlegal_note: "We do not pass your data on to third parties for advertising purposes. The direct connections to Mojang described in point 6 now only cover the loading of skin and cape image files, and arise solely from your active use of a tool.",
     datenschutz_card3_title: "4. Hosting and Server Log Files",
     datenschutz_card3_desc: "With each access to our website, connection data is automatically stored:",
     datenschutz_card3_li1: "IP address",
@@ -63,23 +61,20 @@ const T = {
     datenschutz_card3_note: "This data is collected purely for technical purposes – to ensure smooth operation, system security, and to optimize our offering – and is not combined with other data sources. The retention period follows the standard retention periods of our hosting provider Cloudflare for connection and log data; security-relevant incidents may require longer retention for evidentiary purposes.",
     datenschutz_card4_title: "5. Cookies & Local Storage",
     datenschutz_card4_desc: "We do not use classic server-side cookies for tracking. Instead your browser stores a few settings purely locally on your own device (localStorage) – this data is never sent to us:",
-    datenschutz_card4_li1: "<code>mc-craft-lang</code> – chosen language (German/English)",
+    datenschutz_card4_li1: "<code>mc-craft-skin-poser</code> (IndexedDB) – images you save under “My Renders” in the Skin Poser; only when you save them yourself, and you can delete them right in the gallery",
     datenschutz_card4_li2: "<code>mc-craft-theme</code> – chosen color theme (Overworld/Nether/End)",
     datenschutz_card4_li3: "<code>mc-craft-sound</code> – whether sound effects are on or off",
-    datenschutz_card4_li4: "<code>mc-craft-color-edition</code>, <code>mc-craft-color-theme</code> – your settings in the color text converter",
+    datenschutz_card4_li4: "<code>mc-craft-color-edition</code> – chosen edition (Java/Bedrock) in the color text converter",
     datenschutz_card4_li5: "<code>mc-craft-terms-accepted</code>, <code>mc-craft-terms-accepted-date</code> – whether and when you accepted the terms of use",
     datenschutz_card4_li6: "<code>mc-craft-cookie-consent</code> – your own cookie banner decision",
-    datenschutz_card4_note: "On your first visit we show a cookie banner. If you reject \"external content\", the one resource this actually affects (an optional font on the Advancement Generator page, see point 6) really is not loaded – not just the banner hidden. You can change your decision at any time via the cookie button in the bottom-left corner of every page. You can also disable storage entirely in your browser settings.",
+    datenschutz_card4_note: "On your first visit we show a cookie banner. If you reject \"external content\", the content it affects (an optional font on the Advancement Generator page and the Discord widget, see point 6) really is not loaded – not just the banner hidden. You can also load the Discord widget once with a click instead. You can change your decision at any time via the cookie button in the bottom-left corner of every page. You can also disable storage entirely in your browser settings.",
     datenschutz_card5_title: "6. External Services, Fonts & APIs",
-    datenschutz_card5_desc1: "<strong>Self-hosted:</strong> Fonts (Chakra Petch, Space Grotesk – Google Fonts, SIL Open Font License), the Font Awesome icon library, and the three.js/SkinView3D 3D libraries are served from our own server. Your browser does not load them directly from Google, Font Awesome, or their respective external CDNs, but via MC-Craft's hosting infrastructure. Information about the Cloudflare infrastructure used for this is available in point 4 (Hosting and Server Log Files).",
-    datenschutz_card5_desc2: "<strong>The one remaining optional external resource:</strong> on the Advancement Generator page we optionally load a pixel font from fonts.cdnfonts.com for the preview image – this transmits your IP address to that provider. This only happens if you choose \"Accept all\" in the cookie banner. If you reject it, the preview uses a fallback font instead.",
-    datenschutz_card5_desc3: "<strong>External APIs when actively using a tool:</strong> some tools query official Minecraft/Mojang services directly from your browser when needed. Only the values you enter yourself (e.g. a Minecraft username or a server IP) are sent directly to the respective provider – not to us:",
-    datenschutz_card5_li1: "<strong>Server Status:</strong> <code>api.mcsrvstat.us</code>",
-    datenschutz_card5_li2: "<strong>Skin Lookup:</strong> <code>playerdb.co</code>, <code>api.mojang.com</code>, <code>sessionserver.mojang.com</code>, <code>textures.minecraft.net</code>",
-    datenschutz_card5_li3: "<strong>Minecraft API Status:</strong> <code>status.mojang.com</code>, <code>api.mojang.com</code>, <code>api.minecraftservices.com</code>, <code>session.minecraft.net</code>, <code>authserver.mojang.com</code>, <code>account.mojang.com</code>, <code>auth.mojang.com</code>",
-    datenschutz_card5_li4: "<strong>Minecraft Versions:</strong> <code>launchermeta.mojang.com</code>, <code>piston-meta.mojang.com</code>, <code>piston-data.mojang.com</code>, <code>launchercontent.mojang.com</code>, <code>libraries.minecraft.net</code>, <code>resources.download.minecraft.net</code>, <code>www.minecraft.net</code>",
-    datenschutz_card5_li5: "<strong>Cape Gallery / Skin Library / Skin Editor:</strong> <code>textures.minecraft.net</code>, <code>skins.minecraft.net</code>",
-    datenschutz_card5_note: "These requests run directly between your browser and Mojang/Microsoft or the respective service – our server never sees or stores this data. These are official/public Minecraft services, not advertising or tracking providers.",
+    datenschutz_card5_desc1: "<strong>Self-hosted:</strong> Fonts (Chakra Petch, Space Grotesk – Google Fonts, SIL Open Font License), the Font Awesome icon library, the three.js/SkinView3D 3D libraries, the libraries for the 3D mob models (Bridge Model Viewer, Wintersky, MoLang), gif.js for GIF exports, UPNG.js for APNG exports and deepslate for the Schematic Viewer are served from our own server. Your browser does not load them directly from Google, Font Awesome, or their respective external CDNs, but via MC-Craft's hosting infrastructure. Information about the Cloudflare infrastructure used for this is available in point 4 (Hosting and Server Log Files).",
+    datenschutz_card5_desc2: "<strong>Optional external content:</strong> on the Advancement Generator page we optionally load a pixel font from <code>fonts.cdnfonts.com</code> for the preview image. On the Support, Bug Report and Emails pages we show the widget of our Discord server from <code>discord.com</code>; Discord may set its own cookies, and Discord's privacy policy applies. In both cases your IP address is transmitted to the respective provider. Both only happen if you choose \"Accept all\" in the cookie banner – alternatively you can load the Discord widget once with a click. If you reject it, the preview uses a fallback font and a notice is shown instead of the widget.",
+    datenschutz_card5_desc3: "<strong>Our own MC-Craft API:</strong> the Server Status, Skin Lookup, Skin Editor, Skin Poser, Minecraft Versions, and Minecraft API Status tools send the value you enter (e.g. a Minecraft username/UUID or a server address) to our own interface at <code>api.mc-craft.com</code> when actively used. Like our website itself, this runs on Cloudflare's infrastructure (Cloudflare Workers, see point 4) and queries the respective official Minecraft/Mojang services in the background, so your browser no longer has to connect to these third-party providers directly. In Skin Lookup, Skin Editor, and Skin Poser, our API also delivers the skin texture itself (source: <code>textures.minecraft.net</code>), so your browser no longer connects directly to Mojang for that either. Your input is processed only to answer the respective request and is not permanently stored or logged.",
+    datenschutz_card5_desc4: "<strong>Still loaded directly by your browser:</strong> the default skins (Steve/Alex) and cape images in Skin Lookup, Skin Editor, and Skin Poser are fetched directly by your browser, since these are plain image resources. The Capes Database and the Skin Library only use images from our own server:",
+    datenschutz_card5_li1: "<strong>Default skins and cape images (Skin Lookup, Skin Editor, Skin Poser):</strong> <code>textures.minecraft.net</code>",
+    datenschutz_card5_note: "These image requests run directly between your browser and Mojang – our server never sees or stores this data. These are official/public Minecraft services, not advertising or tracking providers.",
     datenschutz_card6_title: "7. Data Security",
     datenschutz_card6_desc: "We use technical and organizational security measures to protect your data against loss, manipulation or unauthorized access.",
     datenschutz_card6_note: "We do not share your data with third parties for advertising or analytics purposes. The direct connections to Mojang/Microsoft services described in point 6 arise solely from your active use of a tool and are outside our control. Once the website is live over HTTPS, data transmission between your browser and our server is encrypted (SSL/TLS).",
@@ -151,303 +146,29 @@ const T = {
 };
 
 // DOM Elements
-const loader = document.getElementById('loader');
-const mobileMenuBtn = document.getElementById('mobileMenuBtn');
-const closeBtn = document.getElementById('closeBtn');
-const mobileNav = document.getElementById('mobileNav');
-const themeBtn = document.getElementById('themeBtn');
-const themeDropdown = document.getElementById('themeDropdown');
-const backToTop = document.getElementById('backToTop');
-const header = document.querySelector('.header');
-const toastContainer = document.getElementById('toastContainer');
 
 // Sound Elements
-const soundBtn = document.getElementById('soundBtn');
-const soundIcon = document.getElementById('soundIcon');
-const mobileSoundBtn = document.getElementById('mobileSoundBtn');
-const mobileSoundIcon = document.getElementById('mobileSoundIcon');
 
 // ===== HELPER FUNCTIONS =====
-function t(key, placeholders = {}) {
-    let text = T[key] || key;
-    for (const [placeholder, value] of Object.entries(placeholders)) {
-        text = text.replace(`{${placeholder}}`, value);
-    }
-    return text;
-}
-
-function getThemeName(theme) {
-    switch(theme) {
-        case 'overworld': return t('theme_overworld');
-        case 'nether': return t('theme_nether');
-        case 'end': return t('theme_end');
-        default: return 'Overworld';
-    }
-}
-
 // ===== INITIALIZATION =====
 window.addEventListener('DOMContentLoaded', () => {
-    initAudio();
-    initLoader();
-    initTheme();
-    initMobileMenu();
-    initThemeSwitcher();
-    initScrollEffects();
-    initFooterYear();
     initDatenschutzCards();
     initPageAnalytics();
-    initSoundToggle();
 });
 
 // ===== AUDIO =====
-function initAudio() {
-    try {
-        levelUpSound = new Audio('/assets/audio/levelup.ogg');
-        levelUpSound.volume = 0.3;
-        levelUpSound.preload = 'auto';
-    } catch (error) {
-        console.log('Failed to initialize audio:', error);
-    }
-}
-
-function playLevelUpSound() {
-    if (!soundEnabled || !levelUpSound) return;
-    try {
-        levelUpSound.currentTime = 0;
-        levelUpSound.play().catch(error => {
-            console.log('Autoplay blocked:', error);
-            const enableSound = () => {
-                levelUpSound.play().catch(() => {});
-                document.removeEventListener('click', enableSound);
-                document.removeEventListener('keydown', enableSound);
-            };
-            document.addEventListener('click', enableSound, { once: true });
-            document.addEventListener('keydown', enableSound, { once: true });
-        });
-    } catch (error) {
-        console.log('Sound error:', error);
-    }
-}
-
-function playClickSound() {
-    if (!soundEnabled) return;
-
-    const now = (typeof performance !== 'undefined' && performance.now) ? performance.now() : Date.now();
-    const last = window.__mcCraftLastClickSoundAt || 0;
-    if (now - last < 120) return;
-    window.__mcCraftLastClickSoundAt = now;
-
-    try {
-        const ctx = window.__mcCraftAudioCtx || (window.__mcCraftAudioCtx = new (window.AudioContext || window.webkitAudioContext)());
-
-        if (ctx.state === 'suspended') {
-            ctx.resume().then(() => {
-                window.__mcCraftLastClickSoundAt = 0;
-                playClickSound();
-            }).catch(() => {});
-            return;
-        }
-
-        const osc = ctx.createOscillator();
-        const gain = ctx.createGain();
-        osc.connect(gain);
-        gain.connect(ctx.destination);
-
-        osc.frequency.setValueAtTime(1200, ctx.currentTime);
-        osc.frequency.exponentialRampToValueAtTime(800, ctx.currentTime + 0.1);
-        gain.gain.setValueAtTime(0.08, ctx.currentTime);
-        gain.gain.exponentialRampToValueAtTime(0.01, ctx.currentTime + 0.1);
-
-        osc.start();
-        setTimeout(() => osc.stop(), 100);
-    } catch (e) {}
-}
 
 // ===== SOUND TOGGLE =====
-function initSoundToggle() {
-    updateSoundIcon();
-    if (soundBtn) soundBtn.addEventListener('click', toggleSound);
-    if (mobileSoundBtn) mobileSoundBtn.addEventListener('click', toggleSound);
-}
-
-function toggleSound() {
-    soundEnabled = !soundEnabled;
-    localStorage.setItem('mc-craft-sound', soundEnabled);
-    updateSoundIcon();
-    playClickSound();
-    showToast(
-        t('toast_sound_title'),
-        t(soundEnabled ? 'toast_sound_on' : 'toast_sound_off'),
-        'info'
-    );
-}
-
-function updateSoundIcon() {
-    const src = soundEnabled ? '/assets/img/backgrounds/sound-on.svg' : '/assets/img/backgrounds/sound-off.svg';
-    if (soundIcon) soundIcon.src = src;
-    if (mobileSoundIcon) mobileSoundIcon.src = src;
-}
 
 // ===== LOADER (adjusted) =====
-function initLoader() {
-    const loadingProgressEl = document.querySelector('.loading-progress');
-    let loadingProgressBar = null, loadingPercentEl = null;
-    if (loadingProgressEl) {
-        loadingProgressEl.innerHTML = '<div class="loading-progress-bar"></div>';
-        loadingProgressBar = loadingProgressEl.querySelector('.loading-progress-bar');
-        loadingPercentEl = document.createElement('span');
-        loadingPercentEl.className = 'loading-percent';
-        loadingPercentEl.textContent = '0%';
-        loadingProgressEl.insertAdjacentElement('afterend', loadingPercentEl);
-    }
-    const updateLoaderProgress = (value) => {
-        const v = Math.min(100, value);
-        if (loadingProgressBar) loadingProgressBar.style.width = v + '%';
-        if (loadingPercentEl) loadingPercentEl.textContent = v + '%';
-    };
-
-    let progress = 0;
-    const loadingText = document.querySelector('.loading-text');
-    const texts = [
-        t('loader_text1_datenschutz'),
-        t('loader_text2'),
-        t('loader_text3'),
-        t('loader_text4'),
-        t('loader_text5')
-    ];
-    let index = 0;
-
-    const progressInterval = setInterval(() => {
-        progress += 20;
-        updateLoaderProgress(progress);
-        if (progress >= 100) {
-            clearInterval(progressInterval);
-            setTimeout(() => {
-                loader.classList.add('hidden');
-                setTimeout(() => {
-                    playLevelUpSound();
-                    showWelcomeToast();
-                }, 150);
-                setTimeout(() => loader.style.display = 'none', 500);
-            }, 300);
-        } else {
-            if (index < texts.length - 1) {
-                index++;
-                loadingText.textContent = texts[index];
-            }
-        }
-    }, 120);
-}
-
-function showWelcomeToast() {
-    showToast(
-        t('toast_welcome_title'),
-        t('toast_welcome_message'),
-        'info'
-    );
-}
 
 // ===== THEME SYSTEM =====
-function initTheme() {
-    applyTheme(currentTheme);
-    updateActiveThemeButtons();
-}
-
-function applyTheme(theme) {
-    document.documentElement.setAttribute('data-theme', theme);
-    localStorage.setItem('mc-craft-theme', theme);
-    currentTheme = theme;
-    updateThemeButtonIcon();
-}
-
-function updateThemeButtonIcon() {
-    const icon = themeBtn.querySelector('i');
-    icon.className = 'fa-solid fa-palette';
-}
-
-function updateActiveThemeButtons() {
-    document.querySelectorAll('.theme-option').forEach(option => {
-        option.classList.toggle('active', option.dataset.theme === currentTheme);
-    });
-    document.querySelectorAll('.theme-option-btn').forEach(option => {
-        option.classList.toggle('active', option.dataset.theme === currentTheme);
-    });
-}
 
 // ===== MOBILE MENU =====
-function initMobileMenu() {
-    mobileMenuBtn.addEventListener('click', () => {
-        mobileNav.classList.add('show');
-        document.body.style.overflow = 'hidden';
-        playClickSound();
-    });
-    closeBtn.addEventListener('click', closeMobileMenu);
-    mobileNav.addEventListener('click', (e) => {
-        if (e.target === mobileNav) closeMobileMenu();
-    });
-    document.querySelectorAll('.mobile-nav-link').forEach(link => {
-        link.addEventListener('click', closeMobileMenu);
-    });
-}
-
-function closeMobileMenu() {
-    mobileNav.classList.remove('show');
-    document.body.style.overflow = '';
-    playClickSound();
-}
 
 // ===== THEME SWITCHER =====
-function initThemeSwitcher() {
-    themeBtn.addEventListener('click', (e) => {
-        e.stopPropagation();
-        themeDropdown.classList.toggle('show');
-        playClickSound();
-    });
-    document.addEventListener('click', (e) => {
-        if (!e.target.closest('.theme-switcher')) {
-            themeDropdown.classList.remove('show');
-        }
-    });
-    document.querySelectorAll('.theme-option, .theme-option-btn').forEach(option => {
-        option.addEventListener('click', () => {
-            const theme = option.dataset.theme;
-            applyTheme(theme);
-            updateActiveThemeButtons();
-            themeDropdown.classList.remove('show');
-            playClickSound();
-            showToast(
-                t('toast_theme_changed'),
-                t('toast_theme_to', { theme: getThemeName(theme) }),
-                'info'
-            );
-        });
-    });
-}
 
 // ===== SCROLL EFFECTS =====
-function initScrollEffects() {
-    window.addEventListener('scroll', () => {
-        header.classList.toggle('scrolled', window.scrollY > 50);
-        backToTop.classList.toggle('show', window.scrollY > 300);
-    });
-    backToTop.addEventListener('click', () => {
-        window.scrollTo({ top: 0, behavior: 'smooth' });
-        playClickSound();
-    });
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function(e) {
-            const href = this.getAttribute('href');
-            if (href === '#') return;
-            e.preventDefault();
-            const target = document.querySelector(href);
-            if (target) {
-                const headerHeight = header.offsetHeight;
-                window.scrollTo({ top: target.offsetTop - headerHeight, behavior: 'smooth' });
-                playClickSound();
-            }
-        });
-    });
-}
 
 // ===== PRIVACY CARDS ANIMATION =====
 function initDatenschutzCards() {
@@ -470,44 +191,8 @@ function initDatenschutzCards() {
 }
 
 // ===== TOAST =====
-function showToast(title, message, type = 'default') {
-    const toast = document.createElement('div');
-    toast.className = 'toast';
-    
-    let icon = 'fas fa-info-circle';
-    if (type === 'error') icon = 'fas fa-exclamation-triangle';
-    if (type === 'warning') icon = 'fas fa-exclamation-circle';
-    if (type === 'success') icon = 'fas fa-check-circle';
-    if (type === 'info') icon = 'fas fa-shield-alt';
-    
-    toast.innerHTML = `
-        <div class="toast-icon">
-            <i class="${icon}"></i>
-        </div>
-        <div class="toast-content">
-            <div class="toast-title">${title}</div>
-            <div class="toast-message">${message}</div>
-        </div>
-    `;
-    
-    toastContainer.appendChild(toast);
-    playClickSound();
-    setTimeout(() => toast.classList.add('show'), 100);
-    setTimeout(() => {
-        toast.classList.remove('show');
-        setTimeout(() => toast.remove(), 300);
-    }, 7000); // ⬅️ 7 Sekunden
-    toast.addEventListener('click', () => {
-        toast.classList.remove('show');
-        setTimeout(() => toast.remove(), 300);
-    });
-}
 
 // ===== FOOTER YEAR =====
-function initFooterYear() {
-    const yearElement = document.getElementById('currentYear');
-    if (yearElement) yearElement.textContent = new Date().getFullYear();
-}
 
 // ===== PAGE ANALYTICS =====
 function initPageAnalytics() {
@@ -515,55 +200,12 @@ function initPageAnalytics() {
 }
 
 // ===== WINDOW RESIZE HANDLER =====
-let resizeTimeout;
-window.addEventListener('resize', () => {
-    clearTimeout(resizeTimeout);
-    resizeTimeout = setTimeout(() => {
-        if (window.innerWidth > 768 && mobileNav.classList.contains('show')) {
-            closeMobileMenu();
-        }
-    }, 250);
-});
-
-// ===== KEYBOARD NAVIGATION =====
-document.addEventListener('keydown', (e) => {
-    if (e.key === 'Escape') {
-        if (mobileNav.classList.contains('show')) closeMobileMenu();
-        if (themeDropdown.classList.contains('show')) themeDropdown.classList.remove('show');
-    }
-    if ((e.key === ' ' || e.key === 'Enter') && e.target === themeBtn) {
-        e.preventDefault();
-        themeDropdown.classList.toggle('show');
-    }
-});
 
 // ===== CLICK SOUND FOR ALL INTERACTIVE ELEMENTS =====
-document.addEventListener('DOMContentLoaded', () => {
-    const interactiveElements = document.querySelectorAll(
-        'button, .btn, .nav-link, .theme-option, .mobile-nav-link, .sound-btn, .lang-btn, .mobile-sound-btn, .mobile-lang-btn, .dropdown-btn'
-    );
-    interactiveElements.forEach(element => {
-        element.addEventListener('click', () => setTimeout(playClickSound, 50));
-    });
-});
 
 // ===== ERROR HANDLING =====
-window.addEventListener('error', function(e) {
-    console.error('JavaScript Error:', e.message);
-    showToast(
-        t('toast_error_title'),
-        t('toast_error_message'),
-        'error'
-    );
-});
 
 // ===== OFFLINE SUPPORT =====
-window.addEventListener('online', () => {
-    showToast(t('toast_online_title'), t('toast_online_message'), 'success');
-});
-window.addEventListener('offline', () => {
-    showToast(t('toast_offline_title'), t('toast_offline_message'), 'warning');
-});
 
 // ===== EXPORT FUNCTIONS FOR HTML =====
 window.scrollToTop = function() {

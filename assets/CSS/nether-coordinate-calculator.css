@@ -1,0 +1,157 @@
+/* Nether Coordinate Calculator
+   Page layout only. Header, hero, section headings, info cards, command box,
+   copy buttons and toasts come from site-modern-v1.css. */
+
+.ncc-section {
+    padding: var(--spacing-2xl) 0;
+}
+
+/* ===== CALCULATOR LAYOUT ===== */
+.ncc-layout {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
+    gap: var(--spacing-lg);
+    align-items: center;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.ncc-panel {
+    min-width: 0;
+    background-color: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-lg);
+    padding: var(--spacing-lg);
+}
+
+.ncc-panel-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--spacing-sm);
+    font-size: var(--text-lg);
+    margin-bottom: var(--spacing-lg);
+    color: var(--text-primary);
+}
+
+.ncc-panel-title i {
+    color: var(--primary);
+}
+
+.ncc-field {
+    margin-bottom: var(--spacing-md);
+}
+
+.ncc-field:last-child {
+    margin-bottom: 0;
+}
+
+.ncc-field label {
+    display: block;
+    font-size: var(--text-sm);
+    font-weight: 600;
+    color: var(--text-secondary);
+    margin-bottom: 6px;
+    text-align: center;
+}
+
+.ncc-field input {
+    width: 100%;
+    padding: 12px 14px;
+    background-color: var(--bg-surface);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-md);
+    color: var(--text-primary);
+    font-family: inherit;
+    font-size: var(--text-base);
+    text-align: center;
+    transition: border-color var(--transition-fast), box-shadow var(--transition-fast);
+}
+
+.ncc-field input:focus {
+    outline: none;
+    border-color: var(--primary);
+    box-shadow: 0 0 0 3px color-mix(in srgb, var(--primary) 22%, transparent);
+}
+
+/* Chrome/Safari/Edge spin buttons look out of place on the dark surface. */
+.ncc-field input::-webkit-outer-spin-button,
+.ncc-field input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.ncc-field input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+.ncc-swap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+    color: var(--text-muted);
+    font-size: var(--text-xs);
+    font-weight: 600;
+}
+
+.ncc-swap i {
+    font-size: 1.5rem;
+    color: var(--primary);
+}
+
+/* ===== COMMAND OUTPUT ===== */
+.ncc-commands {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: var(--spacing-md);
+    max-width: 900px;
+    margin: var(--spacing-xl) auto 0;
+}
+
+.ncc-command {
+    min-width: 0;
+}
+
+.ncc-command-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--spacing-xs);
+    font-size: var(--text-sm);
+    font-weight: 600;
+    color: var(--text-secondary);
+    margin-bottom: var(--spacing-sm);
+}
+
+.ncc-command .command-box code {
+    display: block;
+    align-self: stretch;
+    min-width: 0;
+    font-size: 0.8rem;
+    line-height: 1.5;
+    text-align: center;
+    white-space: normal;
+    word-break: break-all;
+}
+
+.ncc-tips {
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 720px) {
+    .ncc-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .ncc-swap {
+        flex-direction: row;
+    }
+
+    .ncc-swap i {
+        transform: rotate(90deg);
+    }
+}

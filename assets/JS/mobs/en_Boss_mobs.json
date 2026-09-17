@@ -2,12 +2,129 @@
   {
     "id": "minecraft:ender_dragon",
     "name": "Ender Dragon",
+    "numeric_id": "(Bedrock only) Dragon: 53, Ender crown: 79",
     "type": "boss",
+    "category": "Bosses",
     "icon": "/assets/img/mobs/boss/Ender_Dragon.webp",
+    "description": "Ender Dragon is a boss.",
+    "biome": "The End",
+    "aliases": [],
+    "introduced_date": "2011-11-18",
+    "removed_date": "",
+    "gallery": [],
+    "model": "",
+    "animation": [],
+    "source": "",
+    "updated_at": "2026-08-22",
+    "notes": "The ender dragon spawns at the central End island, not in an End city.",
+    "version": "Java Edition 1.0.0 / Bedrock Edition 1.0.0",
+    "edition": "Java Edition, Bedrock Edition",
+    "effects": [],
+    "effect_immunities": [
+      "Almost all status effects"
+    ],
+    "status": "Available",
+    "tags": [
+      "Bosses",
+      "Boss"
+    ],
+    "related_entries": [],
+    "command": "/summon minecraft:ender_dragon",
+    "version_history": [
+      {
+        "version": "Java Edition 1.0.0 / Bedrock Edition 1.0.0",
+        "change": "Added.",
+        "type": "added",
+        "date": "2011-11-18"
+      }
+    ],
+    "texture": [
+      {
+        "name": "Enderdragon Dragon Exploding",
+        "category": "standard",
+        "description": "Variant: Enderdragon Dragon Exploding.",
+        "file": "/assets/img/texture/mobs/enderdragon/dragon_exploding.png"
+      },
+      {
+        "name": "Enderdragon Dragon Eyes",
+        "category": "eyes",
+        "description": "Variant: Enderdragon Dragon Eyes.",
+        "file": "/assets/img/texture/mobs/enderdragon/dragon_eyes.png"
+      },
+      {
+        "name": "Enderdragon Dragon Fireball",
+        "category": "standard",
+        "description": "Variant: Enderdragon Dragon Fireball.",
+        "file": "/assets/img/texture/mobs/enderdragon/dragon_fireball.png"
+      },
+      {
+        "name": "Enderdragon Dragon",
+        "category": "standard",
+        "description": "Variant: Enderdragon Dragon.",
+        "file": "/assets/img/texture/mobs/enderdragon/dragon.png"
+      }
+    ],
+    "sounds": [
+      {
+        "name": "Dragon roars",
+        "event": "entity.ender_dragon.ambient",
+        "files": [
+          "/assets/sounds/mob/enderdragon/growl1.ogg",
+          "/assets/sounds/mob/enderdragon/growl2.ogg",
+          "/assets/sounds/mob/enderdragon/growl3.ogg",
+          "/assets/sounds/mob/enderdragon/growl4.ogg"
+        ]
+      },
+      {
+        "name": "Dragon dies",
+        "event": "entity.ender_dragon.death",
+        "files": [
+          "/assets/sounds/mob/enderdragon/end.ogg"
+        ]
+      },
+      {
+        "name": "Dragon flaps",
+        "event": "entity.ender_dragon.flap",
+        "files": [
+          "/assets/sounds/mob/enderdragon/wings1.ogg",
+          "/assets/sounds/mob/enderdragon/wings2.ogg",
+          "/assets/sounds/mob/enderdragon/wings3.ogg",
+          "/assets/sounds/mob/enderdragon/wings4.ogg",
+          "/assets/sounds/mob/enderdragon/wings5.ogg",
+          "/assets/sounds/mob/enderdragon/wings6.ogg"
+        ]
+      },
+      {
+        "name": "Dragon growls",
+        "event": "entity.ender_dragon.growl",
+        "files": [
+          "/assets/sounds/mob/enderdragon/growl1.ogg",
+          "/assets/sounds/mob/enderdragon/growl2.ogg",
+          "/assets/sounds/mob/enderdragon/growl3.ogg",
+          "/assets/sounds/mob/enderdragon/growl4.ogg"
+        ]
+      },
+      {
+        "name": "Dragon hurts",
+        "event": "entity.ender_dragon.hurt",
+        "files": [
+          "/assets/sounds/mob/enderdragon/hit1.ogg",
+          "/assets/sounds/mob/enderdragon/hit2.ogg",
+          "/assets/sounds/mob/enderdragon/hit3.ogg",
+          "/assets/sounds/mob/enderdragon/hit4.ogg"
+        ]
+      },
+      {
+        "name": "Dragon shoots",
+        "event": "entity.ender_dragon.shoot",
+        "files": [
+          "/assets/sounds/mob/ghast/fireball4.ogg"
+        ]
+      }
+    ],
     "health": 200,
-    "mob_type": "Monster",
     "damage": {
-      "melee": {
+      "head": {
         "peaceful": 0,
         "easy": 6,
         "normal": 10,
@@ -19,111 +136,349 @@
         "normal": 5,
         "hard": 7.5
       },
-      "dragon_breath": 3,
-      "dragon_fireball": 6
+      "dragon_breath_per_half_second": 3,
+      "fireball_direct_hit": 6
     },
-    "description": "Final boss of the game. Can be weakened by destroying end crystals. Respawnable with end crystals.",
-    "version": "1.9 (Combat Update)",
-    "numeric_id": "( Bedrock only ) dragon: 53 ender_crystal: 79",
-    "dimension": "End",
+    "armor": 0,
+    "experience": "First victory: 12,000; later summons: 500",
+    "dimension": "The End",
     "movement_speed": 0.7,
     "size": {
-      "width": 16,
-      "height": 8
+      "width": "Width: 16.0",
+      "height": "Height: 8.0"
     },
+    "spawn": {
+      "light_level": [
+        "Any"
+      ],
+      "biome": "The End",
+      "structure": "Automatically on the first trip to the End; again with four end crystals on the exit portal"
+    },
+    "light_level": [
+      "Any"
+    ],
+    "classification": "Boss",
+    "renewable": "Yes, can be summoned again; dragon egg only once",
+    "can_despawn": "No",
+    "tameable": "No",
+    "breedable": "No",
+    "duplicable": "No",
+    "duplication_item": "",
+    "leashable": "No",
+    "rideable": "No",
+    "baby_variant": "No",
+    "drops": [
+      {
+        "item": "minecraft:dragon_egg",
+        "chance": "100 %",
+        "amount": "1",
+        "condition": "Only after the very first victory in this world; appears on the exit portal"
+      }
+    ],
+    "abilities": [
+      "Flies",
+      "Destroys many blocks it flies through",
+      "Is healed by end crystals",
+      "Creates dragon's breath clouds",
+      "Opens the exit portal and an end gateway after its first death"
+    ],
+    "fun_fact": "The ender dragon spawns at the central End island, not in an End city.",
+    "attack_type": "Head/wing contact, dragon breath and dragon fireball",
+    "targets": [
+      "Players"
+    ],
+    "enemy_mobs": [],
+    "follows": [],
+    "healing_item": "",
+    "fire_immune": "Yes",
+    "undead": "No",
+    "boss_bar": "Yes",
+    "knockback_resistance": 1,
+    "loot_table": "minecraft:entities/ender_dragon",
+    "java_entity_id": "minecraft:ender_dragon",
+    "bedrock_entity_id": "minecraft:ender_dragon",
+    "mob_type": "Monster",
     "dragon_fireball": {
       "size": {
         "width": 1,
         "height": 1
       }
     },
-    "spawn": {
-      "light_level": "any",
-      "biome": "End",
-      "structure": "End City"
-    },
-    "fun_fact": "Originally pink, later redesigned.",
-    "abilities": [
-      "Flight",
-      "Dragon breath (lingering potion effects)",
-      "Destroys blocks",
-      "Regeneration through end crystals"
-    ],
-    "drops": [
-      {
-        "item": "minecraft:dragon_egg",
-        "chance": "100%",
-        "amount": "1"
+    "game": {
+      "version": "26.3",
+      "attributes": [
+        {
+          "id": "max_health",
+          "name": "Max Health",
+          "value": 200.0
+        },
+        {
+          "id": "movement_speed",
+          "name": "Speed",
+          "value": 0.7
+        },
+        {
+          "id": "follow_range",
+          "name": "Mob Follow Range",
+          "value": 16.0
+        }
+      ],
+      "size": {
+        "width": 16.0,
+        "height": 8.0
       },
-      {
-        "item": "experience: 12000",
-        "chance": "100%",
-        "amount": "1"
-      }
-    ]
+      "category": {
+        "id": "monster",
+        "name": "Monster"
+      },
+      "fire_immune": true
+    }
   },
   {
     "id": "minecraft:wither",
     "name": "Wither",
+    "numeric_id": "(Bedrock only) wither: 52 wither_skull: 89 (wither_skull dangerous: 91)",
     "type": "boss",
+    "category": "Bosses",
     "icon": "/assets/img/mobs/boss/Wither.webp",
-    "health": 300,
-    "mob_type": "Undead, Monster",
-    "damage": {
-      "birth_explosion": {
-        "peaceful": 0,
-        "easy": 35.5,
-        "normal": 69,
-        "hard": 103.5
+    "description": "Wither is a boss / undead.",
+    "biome": "No fixed biome",
+    "aliases": [],
+    "introduced_date": "2012-10-25",
+    "removed_date": "",
+    "gallery": [],
+    "model": "",
+    "animation": [],
+    "source": "",
+    "updated_at": "2026-08-22",
+    "notes": "The wither does not heal from destroyed blocks; it regenerates passively and additionally heals when its projectiles kill targets.",
+    "version": "Java Edition 1.4.2 / Bedrock Edition 0.16.0",
+    "edition": "Java Edition, Bedrock Edition",
+    "effects": [],
+    "effect_immunities": [
+      "Poison",
+      "Regeneration",
+      "Wither",
+      "Fire",
+      "Drowning",
+      "Suffocation"
+    ],
+    "status": "Available",
+    "tags": [
+      "Bosses",
+      "Boss / undead",
+      "Undead"
+    ],
+    "related_entries": [],
+    "command": "/summon minecraft:wither",
+    "version_history": [
+      {
+        "version": "Java Edition 1.4.2 / Bedrock Edition 0.16.0",
+        "change": "Added.",
+        "type": "added",
+        "date": "2012-10-25"
+      }
+    ],
+    "texture": [
+      {
+        "name": "Wither Wither Armor",
+        "category": "armor",
+        "description": "Variant: Wither Wither Armor.",
+        "file": "/assets/img/texture/mobs/wither/wither_armor.png"
       },
+      {
+        "name": "Wither Wither Invulnerable",
+        "category": "invulnerable",
+        "description": "Variant: Wither Wither Invulnerable.",
+        "file": "/assets/img/texture/mobs/wither/wither_invulnerable.png"
+      },
+      {
+        "name": "Wither Wither",
+        "category": "standard",
+        "description": "Variant: Wither Wither.",
+        "file": "/assets/img/texture/mobs/wither/wither.png"
+      }
+    ],
+    "sounds": [
+      {
+        "name": "Wither angers",
+        "event": "entity.wither.ambient",
+        "files": [
+          "/assets/sounds/mob/wither/idle1.ogg",
+          "/assets/sounds/mob/wither/idle2.ogg",
+          "/assets/sounds/mob/wither/idle3.ogg",
+          "/assets/sounds/mob/wither/idle4.ogg"
+        ]
+      },
+      {
+        "name": "Wither attacks",
+        "event": "entity.wither.break_block",
+        "files": [
+          "/assets/sounds/mob/zombie/woodbreak.ogg"
+        ]
+      },
+      {
+        "name": "Wither dies",
+        "event": "entity.wither.death",
+        "files": [
+          "/assets/sounds/mob/wither/death.ogg"
+        ]
+      },
+      {
+        "name": "Wither hurts",
+        "event": "entity.wither.hurt",
+        "files": [
+          "/assets/sounds/mob/wither/hurt1.ogg",
+          "/assets/sounds/mob/wither/hurt2.ogg",
+          "/assets/sounds/mob/wither/hurt3.ogg",
+          "/assets/sounds/mob/wither/hurt4.ogg"
+        ]
+      },
+      {
+        "name": "Wither attacks",
+        "event": "entity.wither.shoot",
+        "files": [
+          "/assets/sounds/mob/wither/shoot.ogg"
+        ]
+      },
+      {
+        "name": "Wither released",
+        "event": "entity.wither.spawn",
+        "files": [
+          "/assets/sounds/mob/wither/spawn.ogg"
+        ]
+      }
+    ],
+    "health": {
+      "java": 300,
+      "bedrock_easy": 300,
+      "bedrock_normal": 450,
+      "bedrock_hard": 600
+    },
+    "damage": {
+      "spawn_explosion": "Very high explosion power 7; damage depends on distance and difficulty",
       "wither_skull": {
-        "peaceful": 0,
         "easy": 5,
         "normal": 8,
         "hard": 12
       },
-      "wither_skull_explosion": 5,
-      "wither_effect": {
-        "peaceful": "unknown",
-        "easy": "unknown",
-        "normal": "Wither II for 10 sec (1 per sec)",
-        "hard": "Wither II for 40 sec (1 per sec)"
-      }
+      "blue_skull": "Same direct damage, stronger block destruction",
+      "wither_effect": "Normal: Wither II for 10 seconds; Hard: Wither II for 40 seconds; edition differences possible"
     },
-    "description": "Summoned by placing 4 soul sand and 3 wither skeleton skulls.",
-    "version": "1.4.2 (Pretty Scary Update)",
-    "numeric_id": "( Bedrock only ) wither: 52 wither_skull: 89 (wither_skull dangerous: 91)",
-    "dimension": "all",
+    "armor": 4,
+    "experience": "50",
+    "dimension": "All",
     "movement_speed": 0.6,
     "size": {
-      "width": 0.9,
-      "height": 3.5
+      "width": "Width: 0.9",
+      "height": "Height: 3.5"
     },
+    "spawn": {
+      "light_level": [
+        "Any"
+      ],
+      "biome": "All",
+      "structure": "Player construction",
+      "spawn_delay": "10-second charging phase; explosion after 11 seconds"
+    },
+    "light_level": [
+      "Any"
+    ],
+    "classification": "Boss / undead",
+    "renewable": "Yes",
+    "can_despawn": "No",
+    "tameable": "No",
+    "breedable": "No",
+    "duplicable": "No",
+    "duplication_item": "",
+    "leashable": "No",
+    "rideable": "No",
+    "baby_variant": "No",
+    "drops": [
+      {
+        "item": "minecraft:nether_star",
+        "chance": "100 %",
+        "amount": "1",
+        "condition": "Not affected by Looting; does not explode and despawns more slowly"
+      }
+    ],
+    "abilities": [
+      "Flies",
+      "Shoots black and rarely blue wither skulls",
+      "Regenerates health passively",
+      "Gains wither armor at half health and becomes immune to arrows",
+      "Destroys blocks when damaged and while moving; Bedrock has additional attack phases"
+    ],
+    "fun_fact": "The wither does not heal from destroyed blocks; it regenerates passively and additionally heals when its projectiles kill targets.",
+    "attack_type": "Explosive wither skulls, spawn explosion and ramming attack in Bedrock",
+    "targets": [
+      "Almost all non-undead living beings; behavior differs by edition"
+    ],
+    "enemy_mobs": [],
+    "follows": [],
+    "healing_item": "",
+    "fire_immune": "Yes",
+    "undead": "Yes",
+    "boss_bar": "Yes",
+    "knockback_resistance": 1,
+    "loot_table": "minecraft:entities/wither",
+    "java_entity_id": "minecraft:wither",
+    "bedrock_entity_id": "minecraft:wither",
+    "mob_type": "Undead, Monster",
     "wither_skull": {
       "size": {
         "width": 0.3125,
         "height": 0.3125
       }
     },
-    "spawn": {
-      "light_level": "any",
-      "biome": "all",
-      "structure": "built by player",
-      "spawn_delay": "11 seconds"
-    },
-    "fun_fact": "Its spawn lightning was a bug that became a feature!",
-    "abilities": [
-      "Flight",
-      "Explosive Projectiles",
-      "Wither Effect",
-      "Healing when destroying blocks"
-    ],
-    "drops": [
-      {
-        "item": "minecraft:nether_star",
-        "chance": "100%",
-        "amount": "1"
-      }
-    ]
+    "game": {
+      "version": "26.3",
+      "attributes": [
+        {
+          "id": "max_health",
+          "name": "Max Health",
+          "value": 300.0
+        },
+        {
+          "id": "attack_damage",
+          "name": "Attack Damage",
+          "value": 2.0
+        },
+        {
+          "id": "movement_speed",
+          "name": "Speed",
+          "value": 0.6
+        },
+        {
+          "id": "follow_range",
+          "name": "Mob Follow Range",
+          "value": 40.0
+        },
+        {
+          "id": "armor",
+          "name": "Armor",
+          "value": 4.0
+        },
+        {
+          "id": "flying_speed",
+          "name": "Flying Speed",
+          "value": 0.6
+        }
+      ],
+      "damage": {
+        "easy": 2.0,
+        "normal": 2.0,
+        "hard": 3.0
+      },
+      "size": {
+        "width": 0.9,
+        "height": 3.5
+      },
+      "category": {
+        "id": "monster",
+        "name": "Monster"
+      },
+      "fire_immune": true
+    }
   }
 ]

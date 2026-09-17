@@ -1,0 +1,1 @@
+{"animations":{"animation.villager.general":{"loop":true,"bones":{"arms":{"position":[0.0,-1.0,-1.0],"rotation":["-42.97 - this",0.0,0.0]}}},"animation.witch.general":{"loop":true,"bones":{"nose":{"rotation":["(variable.isholdingitem ? -25.7831 : (math.sin(query.life_time * 57.296) * 4.5)) - this",0.0,"(math.cos(query.life_time * 57.296) * 2.5) - this"]}}}}}

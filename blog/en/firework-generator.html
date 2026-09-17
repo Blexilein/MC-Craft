@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="overworld">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Mohamad Laith AKA 'Blexilein'">
+    <meta name="robots" content="index, follow">
+    <meta name="description" content="Minecraft firework generator: build rockets with all 5 shapes, colours, fades, trail and twinkle – with a faithful preview, crafting steps and /give and /summon commands (Java 26.3).">
+    <meta name="keywords" content="Minecraft, fireworks, firework rocket, firework star, firework generator, firework command, Minecraft rocket">
+    <link rel="canonical" href="https://mc-craft.com/blog/en/firework-generator.html">
+    <link rel="alternate" hreflang="de" href="https://mc-craft.com/blog/de/feuerwerk-generator.html">
+    <link rel="alternate" hreflang="en" href="https://mc-craft.com/blog/en/firework-generator.html">
+    <link rel="alternate" hreflang="x-default" href="https://mc-craft.com/blog/de/feuerwerk-generator.html">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="MC-Craft | Firework Generator">
+    <meta property="og:description" content="Minecraft firework generator: build rockets with all 5 shapes, colours, fades, trail and twinkle – with a faithful preview, crafting steps and /give and /summon commands (Java 26.3).">
+    <meta property="og:url" content="https://mc-craft.com/blog/en/firework-generator.html">
+    <meta property="og:image" content="https://mc-craft.com/assets/img/favicon/overworld/mc-craft-overworld.png">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="1254">
+    <meta property="og:image:height" content="1254">
+    <meta property="og:image:alt" content="MC-Craft Logo">
+    <meta property="og:site_name" content="MC-Craft">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:locale:alternate" content="de_DE">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="MC-Craft | Firework Generator">
+    <meta name="twitter:description" content="Minecraft firework generator: build rockets with all 5 shapes, colours, fades, trail and twinkle – with a faithful preview, crafting steps and /give and /summon commands (Java 26.3).">
+    <meta name="twitter:image" content="https://mc-craft.com/assets/img/favicon/overworld/mc-craft-overworld.png">
+    <meta name="theme-color" content="#148200">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicon/overworld/favicon-16x16.png?v=20260910v121c" data-theme-icon="favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon/overworld/favicon-32x32.png?v=20260910v121c" data-theme-icon="favicon-32x32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/favicon/overworld/apple-touch-icon.png?v=20260910v121c" data-theme-icon="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/assets/img/favicon/overworld/android-chrome-192x192.png?v=20260910v121c" data-theme-icon="android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="/assets/img/favicon/overworld/android-chrome-512x512.png?v=20260910v121c" data-theme-icon="android-chrome-512x512.png">
+    <link rel="icon" href="/assets/img/favicon/overworld/favicon.ico?v=20260910v121c" data-theme-icon="favicon.ico">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="stylesheet" href="/assets/fontawesome/all.min.css?v=20260910v121c">
+    <link rel="stylesheet" href="/assets/CSS/firework-generator.css?v=20260917c">
+    <link rel="stylesheet" href="/assets/CSS/site-modern-v1.css?v=20260917b">
+    <title>MC-Craft | Firework Generator</title>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Organization",
+          "@id": "https://mc-craft.com/#organization",
+          "name": "MC-Craft",
+          "url": "https://mc-craft.com/",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://mc-craft.com/assets/img/favicon/overworld/mc-craft-overworld.png",
+            "width": 1254,
+            "height": 1254
+          },
+          "sameAs": [
+            "https://github.com/Blexilein",
+            "https://discord.gg/eVVpQD75w4",
+            "https://x.com/Blexi_1"
+          ]
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://mc-craft.com/#website",
+          "name": "MC-Craft",
+          "url": "https://mc-craft.com/",
+          "inLanguage": "en-US",
+          "publisher": {
+            "@id": "https://mc-craft.com/#organization"
+          }
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://mc-craft.com/blog/en/firework-generator.html#webpage",
+          "url": "https://mc-craft.com/blog/en/firework-generator.html",
+          "name": "MC-Craft | Firework Generator",
+          "description": "Minecraft firework generator: build rockets with all 5 shapes, colours, fades, trail and twinkle – with a faithful preview, crafting steps and /give and /summon commands (Java 26.3).",
+          "inLanguage": "en-US",
+          "isPartOf": {
+            "@id": "https://mc-craft.com/#website"
+          },
+          "breadcrumb": {
+            "@id": "https://mc-craft.com/blog/en/firework-generator.html#breadcrumb"
+          }
+        },
+        {
+          "@type": "BreadcrumbList",
+          "@id": "https://mc-craft.com/blog/en/firework-generator.html#breadcrumb",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://mc-craft.com/en/index.html"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Firework Generator"
+            }
+          ]
+        }
+      ]
+    }
+    </script>
+</head>
+<body>
+    <a class="skip-link" href="#main">Skip to main content</a>
+
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <a href="/en/index.html" class="logo">
+                    <div class="logo-icon"></div>
+                    <span class="logo-text">MC-Craft</span>
+                </a>
+                <nav class="navigation">
+                    <ul class="nav-list">
+                        <li><a href="/en/index.html" class="nav-link">Home</a></li>
+                        <li class="dropdown">
+                            <button class="dropdown-btn nav-link">Tools</button>
+                            <ul class="dropdown-menu">
+                                <li><a href="/blog/en/text-converter.html">Text Converter</a></li>
+                                <li><a href="/blog/en/color-text.html">Color Text</a></li>
+                                <li><a href="/blog/en/structure-converter.html">Structure Converter</a></li>
+                                <li><a href="/blog/en/schematic-viewer.html">Schematic Viewer</a></li>
+                                <li><a href="/blog/en/map-art-generator.html">Map Art Generator</a></li>
+                                <li><a href="/blog/en/nether-coordinate-calculator.html">Nether Coordinate Calculator</a></li>
+                                <li><a href="/blog/en/minecraft-command-generator.html">Minecraft Command Generator</a></li>
+                                <li><a href="/blog/en/items.html">Items Database</a></li>
+                                <li><a href="/blog/en/mobs.html">Mobs Database</a></li>
+                                <li><a href="/blog/en/server-status.html">Server Status</a></li>
+                                <li><a href="/blog/en/minecraft-api-status.html">Minecraft API Status</a></li>
+                                <li><a href="/blog/en/api-documentation.html">API Documentation</a></li>
+                                <li><a href="/blog/en/skin-lookup.html">Skin Lookup</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <button class="dropdown-btn nav-link">Discover</button>
+                            <ul class="dropdown-menu">
+                                <li><a href="/blog/en/skin-editor.html">Skin Editor</a></li>
+                                <li><a href="/blog/en/skin-poser.html">Skin Poser</a></li>
+                                <li><a href="/blog/en/chibi-skin-maker.html">Chibi Skin Maker</a></li>
+                                <li><a href="/blog/en/day-night-cycle.html">Day-Night Cycle</a></li>
+                                <li><a href="/blog/en/end_poem.html">End Poem</a></li>
+                                <li><a href="/blog/en/minecraft-capes.html">Cape Database</a></li>
+                                <li><a href="/blog/en/minecraft-heads.html">Heads Database</a></li>
+                                <li><a href="/blog/en/head-texture-generator.html">Head Texture Generator</a></li>
+                                <li><a href="/blog/en/minecraft-versions.html">Minecraft Versions</a></li>
+                                <li><a href="/blog/en/minecraft-skins.html">Skin Library</a></li>
+                                <li><a href="/blog/en/beacon-color-mixer.html">Beacon Color Mixer</a></li>
+                                <li><a href="/blog/en/qr-generator.html">QR Generator</a></li>
+                                <li><a href="/blog/en/advancement-generator.html">Advancement Generator</a></li>
+                                <li><a href="/blog/en/sign-generator.html">Sign Generator</a></li>
+                                <li><a href="/blog/en/crafting-recipes.html">Crafting Recipes</a></li>
+                                <li><a href="/blog/en/armor-trim-generator.html">Armor Trim Generator</a></li>
+                                <li><a href="/blog/en/firework-generator.html" class="active">Firework Generator</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="sound-toggle">
+                    <button class="sound-btn" id="soundBtn" aria-label="Sound on/off">
+                        <img src="/assets/img/backgrounds/sound-on.svg?v=20260910v121c" alt="Sound on" class="sound-icon" id="soundIcon">
+                    </button>
+                </div>
+                <div class="lang-switcher">
+                    <a class="lang-btn" id="langBtn" href="/blog/de/feuerwerk-generator.html" aria-label="Zu Deutsch wechseln">
+                        <img src="/assets/img/backgrounds/en.svg?v=20260910v121c" alt="English" class="flag-icon" id="langFlag">
+                    </a>
+                </div>
+                <div class="theme-switcher">
+                    <button class="theme-btn" id="themeBtn">
+                        <i class="fa-solid fa-palette"></i>
+                    </button>
+                    <div class="theme-dropdown" id="themeDropdown">
+                        <button class="theme-option" data-theme="overworld">
+                            <i class="fas fa-cube"></i>
+                            <span>Overworld</span>
+                        </button>
+                        <button class="theme-option" data-theme="nether">
+                            <i class="fas fa-fire"></i>
+                            <span>Nether</span>
+                        </button>
+                        <button class="theme-option" data-theme="end">
+                            <i class="fas fa-moon"></i>
+                            <span>The End</span>
+                        </button>
+                    </div>
+                </div>
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <div class="mobile-nav" id="mobileNav">
+        <div class="mobile-nav-header">
+            <div class="logo">
+                <div class="logo-icon"></div>
+                <span class="logo-text">MC-Craft</span>
+            </div>
+            <button class="close-btn" id="closeBtn">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <ul class="mobile-nav-list">
+            <li><a href="/en/index.html" class="mobile-nav-link">Home</a></li>
+            <li><a href="/blog/en/text-converter.html" class="mobile-nav-link">Text Converter</a></li>
+            <li><a href="/blog/en/color-text.html" class="mobile-nav-link">Color Text</a></li>
+            <li><a href="/blog/en/structure-converter.html" class="mobile-nav-link">Structure Converter</a></li>
+            <li><a href="/blog/en/schematic-viewer.html" class="mobile-nav-link">Schematic Viewer</a></li>
+            <li><a href="/blog/en/map-art-generator.html" class="mobile-nav-link">Map Art Generator</a></li>
+            <li><a href="/blog/en/nether-coordinate-calculator.html" class="mobile-nav-link">Nether Coordinate Calculator</a></li>
+            <li><a href="/blog/en/minecraft-command-generator.html" class="mobile-nav-link">Minecraft Command Generator</a></li>
+            <li><a href="/blog/en/items.html" class="mobile-nav-link">Items Database</a></li>
+            <li><a href="/blog/en/mobs.html" class="mobile-nav-link">Mobs Database</a></li>
+            <li><a href="/blog/en/server-status.html" class="mobile-nav-link">Server Status</a></li>
+            <li><a href="/blog/en/minecraft-api-status.html" class="mobile-nav-link">Minecraft API Status</a></li>
+            <li><a href="/blog/en/api-documentation.html" class="mobile-nav-link">API Documentation</a></li>
+            <li><a href="/blog/en/skin-lookup.html" class="mobile-nav-link">Skin Lookup</a></li>
+            <li><a href="/blog/en/skin-editor.html" class="mobile-nav-link">Skin Editor</a></li>
+            <li><a href="/blog/en/skin-poser.html" class="mobile-nav-link">Skin Poser</a></li>
+            <li><a href="/blog/en/chibi-skin-maker.html" class="mobile-nav-link">Chibi Skin Maker</a></li>
+            <li><a href="/blog/en/day-night-cycle.html" class="mobile-nav-link">Day-Night Cycle</a></li>
+            <li><a href="/blog/en/end_poem.html" class="mobile-nav-link">End Poem</a></li>
+            <li><a href="/blog/en/minecraft-capes.html" class="mobile-nav-link">Cape Database</a></li>
+            <li><a href="/blog/en/minecraft-heads.html" class="mobile-nav-link">Heads Database</a></li>
+            <li><a href="/blog/en/head-texture-generator.html" class="mobile-nav-link">Head Texture Generator</a></li>
+            <li><a href="/blog/en/minecraft-versions.html" class="mobile-nav-link">Minecraft Versions</a></li>
+            <li><a href="/blog/en/minecraft-skins.html" class="mobile-nav-link">Skin Library</a></li>
+            <li><a href="/blog/en/beacon-color-mixer.html" class="mobile-nav-link">Beacon Color Mixer</a></li>
+            <li><a href="/blog/en/qr-generator.html" class="mobile-nav-link">QR Generator</a></li>
+            <li><a href="/blog/en/advancement-generator.html" class="mobile-nav-link">Advancement Generator</a></li>
+            <li><a href="/blog/en/sign-generator.html" class="mobile-nav-link">Sign Generator</a></li>
+            <li><a href="/blog/en/crafting-recipes.html" class="mobile-nav-link">Crafting Recipes</a></li>
+            <li><a href="/blog/en/armor-trim-generator.html" class="mobile-nav-link">Armor Trim Generator</a></li>
+            <li><a href="/blog/en/firework-generator.html" class="mobile-nav-link">Firework Generator</a></li>
+        </ul>
+        <div class="mobile-theme-switcher">
+            <h4>Choose theme:</h4>
+            <div class="theme-options">
+                <button class="theme-option-btn" data-theme="overworld">
+                    <i class="fas fa-cube"></i> <span>Overworld</span>
+                </button>
+                <button class="theme-option-btn" data-theme="nether">
+                    <i class="fas fa-fire"></i> <span>Nether</span>
+                </button>
+                <button class="theme-option-btn" data-theme="end">
+                    <i class="fas fa-moon"></i> <span>The End</span>
+                </button>
+            </div>
+            <div class="mobile-sound-lang">
+                <button class="mobile-sound-btn" id="mobileSoundBtn">
+                    <img src="/assets/img/backgrounds/sound-on.svg?v=20260910v121c" alt="Sound on" class="sound-icon" id="mobileSoundIcon">
+                    <span>Sound</span>
+                </button>
+                <a class="mobile-lang-btn" id="mobileLangBtn" href="/blog/de/feuerwerk-generator.html">
+                    <img src="/assets/img/backgrounds/en.svg?v=20260910v121c" alt="English" class="flag-icon" id="mobileLangFlag">
+                    <span>Language</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <main class="main" id="main" tabindex="-1">
+        <section class="hero" id="home">
+            <div class="hero-bg-grid"></div>
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-badge"><span class="hero-badge-dot"></span> V 1.0.0 IS HERE</div>
+                    <h1 class="hero-title">YOUR <span class="highlight">FIREWORK</span> GENERATOR</h1>
+                    <p class="hero-description">Build firework rockets with all five shapes, 16 colours, fades, trail and twinkle – with a real preview based on Minecraft’s code, crafting steps and ready-made commands.</p>
+                    <div class="hero-buttons">
+                        <a href="#generator" class="btn btn-primary"><i class="fas fa-rocket"></i> <span>Open the generator</span></a>
+                        <a href="/en/index.html#tools" class="btn btn-secondary"><i class="fas fa-tools"></i> <span>All Tools</span></a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="hero-grid-staggered">
+                        <div class="hero-stagger-col hero-stagger-left">
+                            <div class="grid-item">
+                                <i class="fas fa-rocket"></i>
+                                <span>5 SHAPES</span>
+                            </div>
+                            <div class="grid-item">
+                                <i class="fas fa-palette"></i>
+                                <span>16 COLOURS</span>
+                            </div>
+                        </div>
+                        <div class="hero-stagger-col hero-stagger-right">
+                            <div class="grid-item">
+                                <i class="fas fa-wand-magic-sparkles"></i>
+                                <span>LIVE PREVIEW</span>
+                            </div>
+                            <div class="grid-item">
+                                <i class="fas fa-terminal"></i>
+                                <span>READY COMMANDS</span>
+                            </div>
+                        </div>
+                        <div class="floating-cube floating-cube-1"></div>
+                        <div class="floating-cube floating-cube-2"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="firework-section" id="generator">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Launch your <span class="highlight">fireworks</span></h2>
+                    <p class="section-subtitle">Flight duration, stars and effects – the preview shows it like the game</p>
+                </div>
+
+                <div id="fireworkApp">
+                    <div class="fw-presets" id="fwPresets" role="group" aria-label="Presets"></div>
+
+                    <div class="fw-layout">
+                        <div class="fw-panel fw-preview">
+                            <div class="fw-stage" id="fwStage">
+                                <canvas id="fwCanvas" role="img" aria-label="Preview of the firework in the night sky"></canvas>
+                                <p class="fw-status" id="fwStatus"></p>
+                                <div class="fw-subtitles" id="fwSubtitles" aria-hidden="true"></div>
+                            </div>
+                            <div class="fw-view-actions">
+                                <button type="button" class="fw-btn fw-btn--primary" id="fwLaunch"><i class="fas fa-rocket" aria-hidden="true"></i> <span>Launch</span></button>
+                                <button type="button" class="fw-btn" id="fwBurst"><i class="fas fa-burst" aria-hidden="true"></i> <span>Explosion only</span></button>
+                                <button type="button" class="fw-btn active" id="fwAuto" aria-pressed="true"><i class="fas fa-repeat" aria-hidden="true"></i> <span>Repeat</span></button>
+                                <button type="button" class="fw-btn" id="fwSlow" aria-pressed="false"><i class="fas fa-gauge" aria-hidden="true"></i> <span>Slow motion</span></button>
+                                <div class="fw-seg" id="fwViews" role="group" aria-label="Camera">
+                                    <button type="button" class="active" data-view="overview" aria-pressed="true">Overview</button>
+                                    <button type="button" data-view="player" aria-pressed="false">Player</button>
+                                </div>
+                                <button type="button" class="fw-btn" id="fwSound" aria-pressed="true"><i class="fas fa-volume-high" aria-hidden="true"></i> <span>Sound</span></button>
+                                <button type="button" class="fw-btn" id="fwScreenshot"><i class="fas fa-camera" aria-hidden="true"></i> <span>Save image</span></button>
+                            </div>
+                            <div class="fw-summary">
+                                <div class="fw-tooltip" id="fwTooltip"></div>
+                                <dl class="fw-stats" id="fwStats"></dl>
+                                <p class="fw-stat-note" id="fwStatNote" hidden></p>
+                            </div>
+                        </div>
+
+                        <div class="fw-panel fw-controls">
+                            <h2><i class="fas fa-rocket" aria-hidden="true"></i> <span>Rocket</span></h2>
+                            <h3><i class="fas fa-clock" aria-hidden="true"></i> <span>Flight duration</span></h3>
+                            <div class="fw-flight" id="fwFlight"></div>
+                            <label class="fw-flight-custom" id="fwFlightCustom" for="fwFlightInput">
+                                <span>Custom flight duration (commands only)</span>
+                                <input type="number" id="fwFlightInput" min="0" max="255" step="1" value="2" inputmode="numeric">
+                            </label>
+                            <h3><i class="fas fa-star" aria-hidden="true"></i> <span>Firework stars</span> <span class="fw-count-badge" id="fwStarCount"></span></h3>
+                            <div class="fw-stars" id="fwStars"></div>
+                            <button type="button" class="fw-btn fw-add-star" id="fwAddStar"><i class="fas fa-plus" aria-hidden="true"></i> <span>Add star</span></button>
+
+                            <div class="fw-editor" id="fwEditor">
+                                <h3><i class="fas fa-pen" aria-hidden="true"></i> <span id="fwEditorTitle"></span></h3>
+                                <h4>Shape</h4>
+                                <div class="fw-options" id="fwShapes"></div>
+                                <h4>Colours</h4>
+                                <div class="fw-picked" id="fwColors"></div>
+                                <div class="fw-palette" id="fwPalette"></div>
+                                <div class="fw-custom-row">
+                                    <label for="fwCustomColor">Custom colour (commands only)</label>
+                                    <input type="color" id="fwCustomColor" value="#FF8800">
+                                    <button type="button" class="fw-btn" data-add-custom="colors" data-input="fwCustomColor"><i class="fas fa-plus" aria-hidden="true"></i> <span>Add</span></button>
+                                </div>
+                                <h4>Fade colours</h4>
+                                <div class="fw-picked" id="fwFade"></div>
+                                <div class="fw-palette" id="fwFadePalette"></div>
+                                <div class="fw-custom-row">
+                                    <label for="fwCustomFade">Custom colour (commands only)</label>
+                                    <input type="color" id="fwCustomFade" value="#88CCFF">
+                                    <button type="button" class="fw-btn" data-add-custom="fade" data-input="fwCustomFade"><i class="fas fa-plus" aria-hidden="true"></i> <span>Add</span></button>
+                                </div>
+                                <h4>Effects</h4>
+                                <div class="fw-options" id="fwEffects"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="fw-panel fw-craft-panel">
+                        <h2><i class="fas fa-hammer" aria-hidden="true"></i> <span>How to craft the rocket</span></h2>
+                        <div id="fwCraft"></div>
+                        <a class="fw-craft-link" href="/blog/en/crafting-recipes.html#item=firework_rocket"><i class="fas fa-book-open" aria-hidden="true"></i> View all recipes</a>
+                    </div>
+
+                    <div class="fw-panel fw-commands-panel">
+                        <div class="fw-commands-head">
+                            <h2><i class="fas fa-terminal" aria-hidden="true"></i> <span>Commands</span></h2>
+                            <div class="fw-commands-tools">
+                                <label class="fw-label" for="fwWho">Player <input class="fw-input" type="text" id="fwWho" value="@p" spellcheck="false" autocomplete="off"></label>
+                                <label class="fw-label" for="fwCount">Amount <input class="fw-input" type="number" id="fwCount" value="1" min="1" max="99"></label>
+                                <div class="fw-seg" id="fwFormat" role="group" aria-label="Format">
+                                    <button type="button" class="active" data-format="new" aria-pressed="true">26.x / 1.20.5+</button>
+                                    <button type="button" data-format="legacy" aria-pressed="false">1.13–1.20.4</button>
+                                </div>
+                                <button type="button" class="fw-btn" id="fwCopyAll"><i class="fas fa-copy" aria-hidden="true"></i> <span>Copy all</span></button>
+                                <button type="button" class="fw-btn" id="fwShare"><i class="fas fa-link" aria-hidden="true"></i> <span>Copy link</span></button>
+                            </div>
+                        </div>
+                        <div class="fw-commands" id="fwCommands"></div>
+                        <p class="fw-note" id="fwNote"></p>
+                        <details class="fw-import">
+                            <summary><i class="fas fa-file-import" aria-hidden="true"></i> Import a command</summary>
+                            <p>Paste a /give or /summon command – the new format (1.20.5+) and the old NBT format are both recognised.</p>
+                            <textarea id="fwImportText" rows="3" spellcheck="false" aria-label="Import a command" placeholder="/give @p firework_rocket[fireworks={flight_duration:1,explosions:[...]}]"></textarea>
+                            <button type="button" class="fw-btn" id="fwImport"><i class="fas fa-check" aria-hidden="true"></i> <span>Apply</span></button>
+                        </details>
+                    </div>
+                </div>
+
+                <div class="tips fw-tips">
+                    <h4><i class="fas fa-lightbulb"></i> Good to know</h4>
+                    <ul>
+                        <li>With one gunpowder up to seven stars fit into the crafting table, with three gunpowder still five. A recipe always gives three rockets.</li>
+                        <li>Rockets with stars deal damage when they explode: 5 plus 2 per star, weaker up to 5 blocks away. For flying with elytra, use rockets without stars.</li>
+                        <li>Three or more stars or a large ball make a louder bang. Twinkle makes the firework last 15 ticks longer and ends with a crackle.</li>
+                        <li>A dispenser fires rockets in the direction it faces – point it up and wire it with redstone to build whole firework shows.</li>
+                        <li>Drag to turn the camera and use the mouse wheel to zoom. A click into the preview launches a rocket.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="shapes-section" id="shapes">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Every <span class="highlight">shape</span></h2>
+                    <p class="section-subtitle">Which ingredient gives which explosion</p>
+                </div>
+                <div class="fw-shape-gallery" id="fwShapeGallery"></div>
+            </div>
+        </section>
+
+        <section class="info-section" id="how">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">How your <span class="highlight">firework</span> is made</h2>
+                    <p class="section-subtitle">Three steps at the crafting table</p>
+                </div>
+                <div class="info-grid-container">
+                    <div class="info-card">
+                        <div class="info-card-icon">
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h4>Craft a star</h4>
+                        <p>Gunpowder, at least one dye and optionally a shape ingredient, a diamond for the trail and glowstone dust for the twinkle.</p>
+                    </div>
+                    <div class="info-card">
+                        <div class="info-card-icon">
+                            <i class="fas fa-droplet"></i>
+                        </div>
+                        <h4>Add a fade</h4>
+                        <p>Put the finished star into the crafting table with more dyes – the sparks then change to these colours as they burn out.</p>
+                    </div>
+                    <div class="info-card">
+                        <div class="info-card-icon">
+                            <i class="fas fa-rocket"></i>
+                        </div>
+                        <h4>Build the rocket</h4>
+                        <p>Paper, one to three gunpowder for the flight duration and your stars make three rockets.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta">
+            <div class="container">
+                <div class="cta-content">
+                    <h2 class="cta-title">Every recipe at a <span class="highlight">glance</span>?</h2>
+                    <p class="cta-description">
+                        The Crafting Recipes page lists every firework and dye recipe.
+                    </p>
+                    <div class="cta-buttons">
+                        <a href="/blog/en/crafting-recipes.html" class="btn btn-primary btn-large">
+                            <i class="fas fa-book-open"></i> Crafting Recipes
+                        </a>
+                        <a href="/en/index.html#tools" class="btn btn-outline">
+                            <i class="fas fa-eye"></i> View All Tools
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-grid">
+                    <div class="footer-col">
+                        <a href="/en/index.html" class="footer-logo">
+                            <div class="logo-icon"></div>
+                            <span class="logo-text">MC-Craft</span>
+                        </a>
+                        <p class="footer-description">Free Minecraft tools for the community. Made by players for players.</p>
+                        <div class="social-links">
+                            <a href="https://github.com/Blexilein" class="social-link" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                            <a href="https://discord.gg/eVVpQD75w4" class="social-link"><i class="fab fa-discord"></i></a>
+                            <a href="https://x.com/Blexi_1" class="social-link" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        </div>
+                    </div>
+                    <div class="footer-col">
+                        <h4 class="footer-title">Tools</h4>
+                        <ul class="footer-links">
+                            <li><a href="/blog/en/text-converter.html">Text Converter</a></li>
+                            <li><a href="/blog/en/color-text.html">Color Text</a></li>
+                            <li><a href="/blog/en/structure-converter.html">Structure Converter</a></li>
+                            <li><a href="/blog/en/schematic-viewer.html">Schematic Viewer</a></li>
+                            <li><a href="/blog/en/map-art-generator.html">Map Art Generator</a></li>
+                            <li><a href="/blog/en/nether-coordinate-calculator.html">Nether Coordinate Calculator</a></li>
+                            <li><a href="/blog/en/minecraft-command-generator.html">Minecraft Command Generator</a></li>
+                            <li><a href="/blog/en/items.html">Items Database</a></li>
+                            <li><a href="/blog/en/mobs.html">Mobs Database</a></li>
+                            <li><a href="/blog/en/day-night-cycle.html">Day-Night Cycle</a></li>
+                            <li><a href="/blog/en/beacon-color-mixer.html">Beacon Color Mixer</a></li>
+                            <li><a href="/blog/en/qr-generator.html">QR Generator</a></li>
+                            <li><a href="/blog/en/advancement-generator.html">Advancement Generator</a></li>
+                            <li><a href="/blog/en/sign-generator.html">Sign Generator</a></li>
+                            <li><a href="/blog/en/crafting-recipes.html">Crafting Recipes</a></li>
+                            <li><a href="/blog/en/armor-trim-generator.html">Armor Trim Generator</a></li>
+                            <li><a href="/blog/en/firework-generator.html">Firework Generator</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4 class="footer-title">More tools</h4>
+                        <ul class="footer-links">
+                            <li><a href="/blog/en/server-status.html">Server Status</a></li>
+                            <li><a href="/blog/en/minecraft-api-status.html">Minecraft API Status</a></li>
+                            <li><a href="/blog/en/api-documentation.html">API Documentation</a></li>
+                            <li><a href="/blog/en/skin-lookup.html">Skin Lookup</a></li>
+                            <li><a href="/blog/en/skin-editor.html">Skin Editor</a></li>
+                            <li><a href="/blog/en/skin-poser.html">Skin Poser</a></li>
+                            <li><a href="/blog/en/chibi-skin-maker.html">Chibi Skin Maker</a></li>
+                            <li><a href="/blog/en/minecraft-skins.html">Skin gallery</a></li>
+                            <li><a href="/blog/en/minecraft-capes.html">Cape gallery</a></li>
+                            <li><a href="/blog/en/minecraft-heads.html">Heads Database</a></li>
+                            <li><a href="/blog/en/head-texture-generator.html">Head Texture Generator</a></li>
+                            <li><a href="/blog/en/minecraft-versions.html">Minecraft Versions</a></li>
+                            <li><a href="/blog/en/end_poem.html">End Poem</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4 class="footer-title">Legal</h4>
+                        <ul class="footer-links">
+                            <li><a href="/blog/en/imprint.html">Imprint</a></li>
+                            <li><a href="/blog/en/privacy-policy.html">Privacy</a></li>
+                            <li><a href="/blog/en/terms-of-use.html">Terms of use</a></li>
+                            <li><a href="/blog/en/copyright.html">Copyright</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4 class="footer-title">About us</h4>
+                        <ul class="footer-links">
+                            <li><a href="/blog/en/history.html">MC-Craft history</a></li>
+                            <li><a href="/blog/en/team.html">Our team</a></li>
+                            <li><a href="/blog/en/about.html">About us</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4 class="footer-title">Support</h4>
+                        <ul class="footer-links">
+                            <li><a href="/blog/en/faq.html">FAQ & help</a></li>
+                            <li><a href="/blog/en/bug-report.html">Report a bug</a></li>
+                            <li><a href="/blog/en/support.html">Support contact</a></li>
+                            <li><a href="/blog/en/e-mails.html">E-mails</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <div class="copyright">
+                        <p>&copy; <span id="currentYear">2026</span> MC-Craft. <span>All rights reserved.</span></p>
+                        <p class="disclaimer">Minecraft is a trademark of Mojang Studios. This site is not affiliated with Mojang or Microsoft.</p>
+                    </div>
+                    <div class="footer-meta">
+                        <span class="version">Version 1.2.0</span>
+                        <a href="/blog/en/changelog.html" class="changelog active">Changelog</a>
+                        <a href="/blog/en/api-documentation.html" class="api-docs"><i class="fas fa-book-open" aria-hidden="true"></i> API Docs</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <button class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <div class="toast-container" id="toastContainer"></div>
+
+    <script src="/assets/JS/modules/mc-preferences.js?v=20260917b"></script>
+    <script src="/assets/JS/main.js?v=20260917a"></script>
+
+    <script src="/assets/JS/modules/firework-generator.js?v=20260917c"></script>
+</body>
+</html>

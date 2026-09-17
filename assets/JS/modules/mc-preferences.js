@@ -5,9 +5,15 @@
     var EXTERNAL_FONT_CSS = 'https://fonts.cdnfonts.com/css/minecraft-4';
     var EXTERNAL_FONT_MARK = 'minecraft-font';
 
-    var SITE_VERSION = '1.1.1';
+    var SITE_VERSION = '1.2.0';
 
-    var GUARDED_KEYS = ['mc-craft-theme', 'mc-craft-sound', 'mc-craft-color-edition', 'mc-craft-color-theme'];
+    var GUARDED_KEYS = ['mc-craft-theme', 'mc-craft-sound', 'mc-craft-color-edition'];
+
+    // Keys older versions stored that nothing reads any more - removed so storage matches the cookie list.
+    var LEGACY_KEYS = ['mc-craft-lang', 'mc-craft-color-theme'];
+    try {
+        LEGACY_KEYS.forEach(function (key) { localStorage.removeItem(key); });
+    } catch (e) {}
 
     function readConsentLevel() {
         try {
@@ -24,7 +30,7 @@
         var nativeSetItem = Storage.prototype.setItem;
         Storage.prototype.setItem = function (key, value) {
             if (GUARDED_KEYS.indexOf(key) !== -1 && readConsentLevel() === 'reject') {
-                return; // Alle ablehnen: notwendige Praeferenz-Keys werden gar nicht erst geschrieben
+                return;
             }
             return nativeSetItem.call(this, key, value);
         };
@@ -36,25 +42,8 @@
 
     var currentLang = detectLang();
 
-    // Splash-screen artwork video, shown uncropped (object-fit:contain) inside
-    // the framed art box. If it fails to load, the box falls back to the
-    // "drop artwork here" placeholder text the original DesignSync mockups used.
     var SPLASH_ART_SRC = '/assets/img/splash/minecraft.mp4';
 
-    // ===== LOADING SPLASH =====
-    // Ported from the 2 DesignSync mockups (MC-Craft-Launcher-Splash[.html] /
-    // -2.html): same layout/animations (grid drift, glow-pulse frame, sweep
-    // highlight, scanlines, popping corner brackets, flickering title, blinking
-    // dots), but recolored to the site's own --primary/--secondary/--accent
-    // theme vars (so it matches Overworld/Nether/End like every other page)
-    // instead of the mockups' standalone cyan/green-orange-purple, and using
-    // the site's self-hosted fonts instead of a new external Google Fonts
-    // dependency. Runs on every page (this file is loaded site-wide). The two
-    // mockups become "single" (one glow color) and "tri" (3-color cycling
-    // glow) variants, picked at random on each load. The mockups had no real
-    // progress readout (just a decorative looping bar) — percentage here is a
-    // smooth animated approach to 90% that only completes once the real
-    // `load` event fires, so it reflects actual page readiness.
     function injectSplashStyles() {
         if (document.getElementById('mcSplashStyle')) return;
         var style = document.createElement('style');
@@ -63,9 +52,8 @@
             '.mc-splash-overlay{position:fixed;inset:0;z-index:999999;display:flex;flex-direction:column;align-items:center;justify-content:center;' +
                 'overflow:hidden;background:var(--bg-primary,#0F172A);color:var(--text-primary,#F8FAFC);' +
                 'font-family:var(--ui-font,"Space Grotesk",sans-serif);padding:60px 26px 64px;box-sizing:border-box;' +
-                'opacity:1;transition:opacity .5s ease;' +
+                'opacity:1;transition:opacity .25s ease;' +
                 '--mc-c1:var(--primary);--mc-c2:var(--primary);--mc-c3:var(--primary);}' +
-            '.mc-splash-overlay.mc-splash-tri{--mc-c2:var(--secondary,#3b82f6);--mc-c3:var(--accent,#FF6B6B);}' +
             '.mc-splash-overlay.mc-splash-hide{opacity:0;pointer-events:none;}' +
             '.mc-splash-grid{position:absolute;inset:0;pointer-events:none;' +
                 'background-image:linear-gradient(rgba(255,255,255,.03) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.03) 1px,transparent 1px);' +
@@ -94,8 +82,6 @@
                 'background:linear-gradient(180deg,transparent,color-mix(in srgb,var(--mc-c1) 35%,transparent),transparent);' +
                 'animation:mcSplashSweep 3.6s linear infinite;mix-blend-mode:screen;}' +
             '@keyframes mcSplashSweep{0%{transform:translateY(-120%);opacity:0;}12%{opacity:.55;}88%{opacity:.55;}100%{transform:translateY(520%);opacity:0;}}' +
-            '.mc-splash-scan{position:absolute;inset:0;pointer-events:none;' +
-                'background:repeating-linear-gradient(0deg,rgba(0,0,0,.16) 0 1px,transparent 1px 3px);}' +
             '.mc-splash-corner{position:absolute;width:30px;height:30px;animation:mcSplashBracket 2.8s ease-in-out infinite;}' +
             '.mc-splash-corner.tl{top:-5px;left:-5px;border-top:4px solid var(--mc-c1);border-left:4px solid var(--mc-c1);}' +
             '.mc-splash-corner.tr{top:-5px;right:-5px;border-top:4px solid var(--mc-c2);border-right:4px solid var(--mc-c2);animation-delay:.35s;}' +
@@ -118,8 +104,6 @@
             '.mc-splash-bar-fill{height:100%;width:0%;transition:width .25s ease-out;' +
                 'background:repeating-linear-gradient(90deg,var(--mc-c1) 0 10px,color-mix(in srgb,var(--mc-c1) 55%,transparent) 10px 20px);' +
                 'background-size:200% 100%;animation:mcSplashBarSlide 1.6s linear infinite;}' +
-            '.mc-splash-tri .mc-splash-bar-fill{background:repeating-linear-gradient(90deg,var(--mc-c1) 0 16px,var(--mc-c2) 16px 32px,var(--mc-c3) 32px 48px);' +
-                'background-size:200% 100%;}' +
             '@keyframes mcSplashBarSlide{from{background-position:0 0;}to{background-position:120px 0;}}' +
             '.mc-splash-status{font-size:12px;letter-spacing:3px;text-transform:uppercase;color:var(--text-secondary,rgba(248,250,252,.5));text-align:center;}' +
             '.mc-splash-percent{font-family:var(--title-font,"Chakra Petch",sans-serif);font-weight:600;font-size:13px;color:var(--text-secondary,rgba(248,250,252,.6));}' +
@@ -135,7 +119,7 @@
         if (document.getElementById('mcSplashOverlay') || !document.body) return;
         injectSplashStyles();
 
-        var variant = Math.random() < 0.5 ? 'single' : 'tri';
+        var variant = 'single';
         var statusLines = currentLang === 'de'
             ? ['Ressourcen werden geladen', 'Assets werden geprüft', 'Welt wird vorbereitet', 'Fast fertig']
             : ['Loading resources', 'Checking assets', 'Preparing world', 'Almost done'];
@@ -152,7 +136,6 @@
                         '<video class="mc-splash-art" id="mcSplashArt" src="' + SPLASH_ART_SRC + '" autoplay muted loop playsinline></video>' +
                         '<div class="mc-splash-art-placeholder">' + (currentLang === 'de' ? 'Splash-Artwork hier ablegen' : 'Drop splash artwork here') + '</div>' +
                         '<div class="mc-splash-sweep"></div>' +
-                        '<div class="mc-splash-scan"></div>' +
                     '</div>' +
                     '<span class="mc-splash-corner tl"></span><span class="mc-splash-corner tr"></span>' +
                     '<span class="mc-splash-corner bl"></span><span class="mc-splash-corner br"></span>' +
@@ -187,12 +170,7 @@
         var fillEl = document.getElementById('mcSplashBarFill');
         var statusEl = document.getElementById('mcSplashStatus');
         var startTime = Date.now();
-        // Real page-load speed alone made this play out in a single frame (jumping
-        // straight to "Fertig"/100% without ever showing the status carousel or a
-        // counting percentage) — MIN_PLAY_MS is a floor so the animation is always
-        // actually visible; real (slower) loads still wait past it for the true
-        // `load` event instead of lying about being done.
-        var MIN_PLAY_MS = 3200;
+        var MIN_PLAY_MS = 1200;
         var pct = 0;
         var loaded = document.readyState === 'complete';
         var statusIdx = 0;
@@ -215,8 +193,8 @@
             setTimeout(function () {
                 overlay.classList.add('mc-splash-hide');
                 document.documentElement.classList.remove('mc-splash-lock');
-                setTimeout(function () { overlay.remove(); }, 550);
-            }, 400);
+                setTimeout(function () { overlay.remove(); }, 300);
+            }, 150);
         }
 
         function tick() {
@@ -244,7 +222,7 @@
             necessaryLabel: 'Technisch notwendig',
             necessaryDesc: 'Theme- und Sound-Einstellung – wird nur gespeichert, wenn du "Nur notwendige" oder "Alle akzeptieren" wählst.',
             optionalLabel: 'Optional',
-            optionalDesc: 'Eine externe Schriftart von fonts.cdnfonts.com für die Vorschau im Advancement-Generator – dabei wird deine IP-Adresse an diesen Anbieter übertragen. Wird nur bei "Alle akzeptieren" geladen.',
+            optionalDesc: 'Eine externe Schriftart von fonts.cdnfonts.com für die Vorschau im Advancement-Generator und das Discord-Widget von discord.com auf den Seiten Support, Bug melden und E-Mails – dabei wird deine IP-Adresse an diese Anbieter übertragen, Discord kann zusätzlich Cookies setzen. Wird nur bei "Alle akzeptieren" geladen.',
             linkText: 'Vollständige Liste aller externen Dienste in unserer',
             linkLabel: 'Datenschutzerklärung',
             detailsBtn: 'Cookies im Detail anzeigen',
@@ -264,9 +242,12 @@
             statusNecessary: 'Cookies: Nur notwendige',
             statusReject: 'Cookies: Abgelehnt',
             toastAllTitle: 'Alle Cookies akzeptiert',
-            toastAllMsg: 'Notwendige Einstellungen und die externe Schriftart werden gespeichert bzw. geladen.',
+            toastAllMsg: 'Notwendige Einstellungen werden gespeichert, externe Inhalte (Schriftart, Discord-Widget) werden geladen.',
             toastNecessaryTitle: 'Nur notwendige Cookies',
-            toastNecessaryMsg: 'Theme und Sound werden gespeichert, die externe Schriftart bleibt blockiert.',
+            toastNecessaryMsg: 'Theme und Sound werden gespeichert, externe Inhalte (Schriftart, Discord-Widget) bleiben blockiert.',
+            frameText: 'Dieser Inhalt wird von {host} geladen. Dabei wird deine IP-Adresse an den Anbieter übertragen, und er kann Cookies setzen. Er wird erst geladen, wenn du zustimmst.',
+            frameLoad: 'Einmal laden',
+            frameSettings: 'Cookie-Einstellungen',
             toastRejectTitle: 'Alle Cookies abgelehnt',
             toastRejectMsg: 'Es wird nichts gespeichert außer dieser Entscheidung selbst.'
         },
@@ -276,7 +257,7 @@
             necessaryLabel: 'Technically necessary',
             necessaryDesc: 'Theme and sound setting – only stored if you choose "Necessary only" or "Accept all".',
             optionalLabel: 'Optional',
-            optionalDesc: 'An external font from fonts.cdnfonts.com for the preview in the Advancement Generator – this transmits your IP address to that provider. Only loaded on "Accept all".',
+            optionalDesc: 'An external font from fonts.cdnfonts.com for the preview in the Advancement Generator and the Discord widget from discord.com on the Support, Bug Report and Emails pages – this transmits your IP address to these providers, and Discord may also set cookies. Only loaded on "Accept all".',
             linkText: 'Full list of every external service in our',
             linkLabel: 'privacy policy',
             detailsBtn: 'Show cookies in detail',
@@ -296,9 +277,12 @@
             statusNecessary: 'Cookies: Necessary only',
             statusReject: 'Cookies: Rejected',
             toastAllTitle: 'All cookies accepted',
-            toastAllMsg: 'Necessary preferences and the external font will be saved / loaded.',
+            toastAllMsg: 'Necessary preferences are saved, external content (font, Discord widget) is loaded.',
             toastNecessaryTitle: 'Necessary cookies only',
-            toastNecessaryMsg: 'Theme and sound will be saved; the external font stays blocked.',
+            toastNecessaryMsg: 'Theme and sound will be saved; external content (font, Discord widget) stays blocked.',
+            frameText: 'This content is loaded from {host}. Your IP address is transmitted to the provider, and it may set cookies. It is only loaded once you agree.',
+            frameLoad: 'Load once',
+            frameSettings: 'Cookie settings',
             toastRejectTitle: 'All cookies rejected',
             toastRejectMsg: 'Nothing is stored except this decision itself.'
         }
@@ -316,8 +300,8 @@
             necessary: true
         },
         {
-            name: 'mc-craft-color-edition, mc-craft-color-theme',
-            purpose: { de: 'Deine Einstellungen im Farbtext-Konverter', en: 'Your settings in the color text converter' },
+            name: 'mc-craft-color-edition',
+            purpose: { de: 'Gewählte Edition (Java/Bedrock) im Farbtext-Konverter', en: 'Chosen edition (Java/Bedrock) in the color text converter' },
             necessary: true
         },
         {
@@ -331,8 +315,20 @@
             necessary: true
         },
         {
+            name: 'mc-craft-skin-poser (IndexedDB)',
+            purpose: { de: 'Bilder, die du im Skin-Poser unter „Meine Renders“ speicherst – nur wenn du selbst speicherst', en: 'Images you save under “My Renders” in the Skin Poser – only when you save them yourself' },
+            necessary: true
+        },
+        {
             name: 'fonts.cdnfonts.com',
             purpose: { de: 'Externe Pixel-Schriftart fürs Advancement-Generator-Vorschaubild', en: 'External pixel font for the Advancement Generator preview image' },
+            duration: { de: 'Beim Anbieter – siehe dessen Datenschutzerklärung', en: 'At the provider – see its privacy policy' },
+            necessary: false
+        },
+        {
+            name: 'discord.com',
+            purpose: { de: 'Discord-Widget auf den Seiten Support, Bug melden und E-Mails – Discord kann dabei eigene Cookies setzen', en: 'Discord widget on the Support, Bug Report and Emails pages – Discord may set its own cookies' },
+            duration: { de: 'Beim Anbieter – siehe dessen Datenschutzerklärung', en: 'At the provider – see its privacy policy' },
             necessary: false
         }
     ];
@@ -345,9 +341,8 @@
         var rows = COOKIE_TABLE.map(function (row) {
             var typeLabel = row.necessary ? t('typeNecessary') : t('typeOptional');
             var typeClass = row.necessary ? 'mc-pref-type-necessary' : 'mc-pref-type-optional';
-            var duration = currentLang === 'de'
-                ? 'Lokal gespeichert, bis gelöscht'
-                : 'Stored locally until deleted';
+            var duration = row.duration ? row.duration[currentLang === 'de' ? 'de' : 'en']
+                : currentLang === 'de' ? 'Lokal gespeichert, bis gelöscht' : 'Stored locally until deleted';
             return '<tr>' +
                 '<td><code>' + row.name + '</code></td>' +
                 '<td>' + row.purpose[currentLang === 'de' ? 'de' : 'en'] + '</td>' +
@@ -388,8 +383,46 @@
         } catch (e) {}
     }
 
+    // Embeds from other sites (<iframe data-consent-src>) only load with "Accept all" or a click on "Load once".
+    function applyConsentFrames(level) {
+        document.querySelectorAll('iframe[data-consent-src]').forEach(function (frame) {
+            var holder = frame.previousElementSibling;
+            if (!holder || !holder.classList.contains('mc-consent-placeholder')) {
+                var host = '';
+                try { host = new URL(frame.getAttribute('data-consent-src')).hostname; } catch (e) {}
+                holder = document.createElement('div');
+                holder.className = 'mc-consent-placeholder';
+                holder.innerHTML =
+                    '<i class="fas fa-shield-halved" aria-hidden="true"></i>' +
+                    '<p></p>' +
+                    '<div class="mc-consent-actions">' +
+                        '<button type="button" class="btn btn-primary" data-consent-load>' + t('frameLoad') + '</button>' +
+                        '<button type="button" class="btn btn-outline" data-consent-settings>' + t('frameSettings') + '</button>' +
+                    '</div>';
+                holder.querySelector('p').textContent = t('frameText').replace('{host}', host);
+                holder.querySelector('[data-consent-load]').addEventListener('click', function () {
+                    frame.setAttribute('data-consent-once', '1');
+                    applyConsentFrames(window.mcCraftConsent ? window.mcCraftConsent.level : null);
+                });
+                holder.querySelector('[data-consent-settings]').addEventListener('click', buildOverlay);
+                frame.parentNode.insertBefore(holder, frame);
+            }
+            var allowed = level === 'all' || frame.getAttribute('data-consent-once') === '1';
+            if (allowed) {
+                if (frame.getAttribute('src') !== frame.getAttribute('data-consent-src')) {
+                    frame.setAttribute('src', frame.getAttribute('data-consent-src'));
+                }
+            } else if (frame.hasAttribute('src')) {
+                frame.removeAttribute('src');
+            }
+            frame.style.display = allowed ? '' : 'none';
+            holder.hidden = allowed;
+        });
+    }
+
     function applyConsent(level) {
         window.mcCraftConsent = { decided: true, level: level, external: level === 'all' };
+        applyConsentFrames(level);
         document.dispatchEvent(new CustomEvent('mc-craft-consent-changed', { detail: { level: level } }));
 
         var existingLink = document.querySelector('link[data-consent-gated="' + EXTERNAL_FONT_MARK + '"]');
@@ -431,7 +464,9 @@
         // Fallback, falls eine Seite (noch) kein eigenes Toast-System hat.
         var toast = document.createElement('div');
         toast.className = 'mc-pref-fallback-toast';
-        toast.innerHTML = '<strong>' + title + '</strong><p>' + message + '</p>';
+        toast.innerHTML = '<strong></strong><p></p>';
+        toast.querySelector('strong').textContent = title;
+        toast.querySelector('p').textContent = message;
         document.body.appendChild(toast);
         setTimeout(function () { toast.classList.add('show'); }, 20);
         setTimeout(function () {
@@ -480,7 +515,7 @@
                 '<i class="fas fa-list"></i> ' + t('detailsBtn') +
             '</button>' +
             buildTableHtml() +
-            '<p class="mc-pref-link">' + t('linkText') + ' <a href="' + (currentLang === 'de' ? '/blog/de/datenschutz.html' : '/blog/en/datenschutz.html') + '">' + t('linkLabel') + '</a>.</p>' +
+            '<p class="mc-pref-link">' + t('linkText') + ' <a href="' + (currentLang === 'de' ? '/blog/de/datenschutz.html' : '/blog/en/privacy-policy.html') + '">' + t('linkLabel') + '</a>.</p>' +
             '<p class="mc-pref-reject-note">' + t('rejectNote') + '</p>' +
             '<div class="mc-pref-actions">' +
                 '<button type="button" class="btn btn-outline" id="mcPrefRejectBtn">' + t('reject') + '</button>' +
@@ -636,12 +671,37 @@
         applyHeroVersionBadge();
     }
 
+    var FAVICON_THEMES = ['overworld', 'nether', 'end'];
+    var THEME_BAR_COLORS = { overworld: '#148200', nether: '#FF5722', end: '#9C27B0' };
+
+    function applyThemeFavicons(theme) {
+        if (FAVICON_THEMES.indexOf(theme) === -1) theme = 'overworld';
+        document.querySelectorAll('link[data-theme-icon]').forEach(function (link) {
+            var query = (link.getAttribute('href') || '').split('?')[1];
+            var href = '/assets/img/favicon/' + theme + '/' + link.getAttribute('data-theme-icon') + (query ? '?' + query : '');
+            if (link.getAttribute('href') !== href) link.setAttribute('href', href);
+        });
+        var bar = document.querySelector('meta[name="theme-color"]');
+        if (bar && bar.getAttribute('content') !== THEME_BAR_COLORS[theme]) bar.setAttribute('content', THEME_BAR_COLORS[theme]);
+    }
+
+    (function initThemeFavicons() {
+        var root = document.documentElement;
+        var stored = null;
+        try { stored = localStorage.getItem('mc-craft-theme'); } catch (e) {}
+        applyThemeFavicons(FAVICON_THEMES.indexOf(stored) !== -1 ? stored : root.getAttribute('data-theme'));
+        new MutationObserver(function () {
+            applyThemeFavicons(root.getAttribute('data-theme'));
+        }).observe(root, { attributes: true, attributeFilter: ['data-theme'] });
+    })();
+
     document.addEventListener('DOMContentLoaded', function () {
         var stored = getStoredConsent();
         if (stored && stored.decided) {
             applyConsent(stored.level);
         } else {
             window.mcCraftConsent = { decided: false, level: null, external: false };
+            applyConsentFrames(null);
             buildOverlay();
         }
         buildToggleButton();

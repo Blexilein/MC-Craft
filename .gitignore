@@ -1,4 +1,4 @@
-
+.DS_Store
 Thumbs.db
 desktop.ini
 
@@ -7,6 +7,17 @@ npm-debug.log*
 
 .env
 .env.local
+.dev.vars
+.dev.vars.*
 
 .vscode/
 .claude/
+
+.texture-cache/
+.sound-cache/
+.cache/
+.cache
+
+tools/
+__pycache__/
+*.pyc

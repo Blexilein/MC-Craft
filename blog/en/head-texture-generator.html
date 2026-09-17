@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="overworld">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Mohamad Laith AKA 'Blexilein'">
+    <meta name="robots" content="index, follow">
+    <meta name="description" content="Head Texture Generator for Minecraft Java 1.21.9+: put vanilla item, block, mob, villager and player textures on a player head – with a ready-to-copy /give command.">
+    <meta name="keywords" content="minecraft, player head, head texture generator, give command, profile texture, minecraft java 1.21.9, villager head">
+    <link rel="canonical" href="https://mc-craft.com/blog/en/head-texture-generator.html">
+    <link rel="alternate" hreflang="de" href="https://mc-craft.com/blog/de/kopf-textur-generator.html">
+    <link rel="alternate" hreflang="en" href="https://mc-craft.com/blog/en/head-texture-generator.html">
+    <link rel="alternate" hreflang="x-default" href="https://mc-craft.com/blog/de/kopf-textur-generator.html">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="MC-Craft | Head Texture Generator">
+    <meta property="og:description" content="Head Texture Generator for Minecraft Java 1.21.9+: put vanilla item, block, mob, villager and player textures on a player head – with a ready-to-copy /give command.">
+    <meta property="og:url" content="https://mc-craft.com/blog/en/head-texture-generator.html">
+    <meta property="og:image" content="https://mc-craft.com/assets/img/favicon/overworld/mc-craft-overworld.png">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="1254">
+    <meta property="og:image:height" content="1254">
+    <meta property="og:image:alt" content="MC-Craft Logo">
+    <meta property="og:site_name" content="MC-Craft">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:locale:alternate" content="de_DE">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="MC-Craft | Head Texture Generator">
+    <meta name="twitter:description" content="Head Texture Generator for Minecraft Java 1.21.9+: put vanilla item, block, mob, villager and player textures on a player head – with a ready-to-copy /give command.">
+    <meta name="twitter:image" content="https://mc-craft.com/assets/img/favicon/overworld/mc-craft-overworld.png">
+    <meta name="theme-color" content="#148200">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicon/overworld/favicon-16x16.png?v=20260910v121c" data-theme-icon="favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon/overworld/favicon-32x32.png?v=20260910v121c" data-theme-icon="favicon-32x32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/favicon/overworld/apple-touch-icon.png?v=20260910v121c" data-theme-icon="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/assets/img/favicon/overworld/android-chrome-192x192.png?v=20260910v121c" data-theme-icon="android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="/assets/img/favicon/overworld/android-chrome-512x512.png?v=20260910v121c" data-theme-icon="android-chrome-512x512.png">
+    <link rel="icon" href="/assets/img/favicon/overworld/favicon.ico?v=20260910v121c" data-theme-icon="favicon.ico">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="stylesheet" href="/assets/fontawesome/all.min.css?v=20260910v121c">
+    <link rel="stylesheet" href="/assets/CSS/head-texture-generator.css?v=20260910v121c">
+    <link rel="stylesheet" href="/assets/CSS/site-modern-v1.css?v=20260917b">
+    <title>MC-Craft | Head Texture Generator</title>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Organization",
+          "@id": "https://mc-craft.com/#organization",
+          "name": "MC-Craft",
+          "url": "https://mc-craft.com/",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://mc-craft.com/assets/img/favicon/overworld/mc-craft-overworld.png",
+            "width": 1254,
+            "height": 1254
+          },
+          "sameAs": [
+            "https://github.com/Blexilein",
+            "https://discord.gg/eVVpQD75w4",
+            "https://x.com/Blexi_1"
+          ]
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://mc-craft.com/#website",
+          "name": "MC-Craft",
+          "url": "https://mc-craft.com/",
+          "inLanguage": "en-US",
+          "publisher": {
+            "@id": "https://mc-craft.com/#organization"
+          }
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://mc-craft.com/blog/en/head-texture-generator.html#webpage",
+          "url": "https://mc-craft.com/blog/en/head-texture-generator.html",
+          "name": "MC-Craft | Head Texture Generator",
+          "description": "Head Texture Generator for Minecraft Java 1.21.9+: put vanilla item, block, mob, villager and player textures on a player head – with a ready-to-copy /give command.",
+          "inLanguage": "en-US",
+          "isPartOf": {
+            "@id": "https://mc-craft.com/#website"
+          },
+          "breadcrumb": {
+            "@id": "https://mc-craft.com/blog/en/head-texture-generator.html#breadcrumb"
+          }
+        },
+        {
+          "@type": "BreadcrumbList",
+          "@id": "https://mc-craft.com/blog/en/head-texture-generator.html#breadcrumb",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://mc-craft.com/en/index.html"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Head Texture Generator"
+            }
+          ]
+        }
+      ]
+    }
+    </script>
+</head>
+<body>
+    <a class="skip-link" href="#main">Skip to main content</a>
+
+        <!-- Header -->
+     <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <a href="/en/index.html" class="logo">
+                    <div class="logo-icon"></div>
+                    <span class="logo-text">MC-Craft</span>
+                </a>
+                <nav class="navigation">
+                    <ul class="nav-list">
+                        <li><a href="/en/index.html" class="nav-link">Home</a></li>
+                        <li class="dropdown">
+                            <button class="dropdown-btn nav-link">Tools</button>
+                            <ul class="dropdown-menu">
+                                <li><a href="/blog/en/text-converter.html">Text Converter</a></li>
+                                <li><a href="/blog/en/color-text.html">Color Text</a></li>
+                                <li><a href="/blog/en/structure-converter.html">Structure Converter</a></li>
+                                <li><a href="/blog/en/schematic-viewer.html">Schematic Viewer</a></li>
+                                <li><a href="/blog/en/map-art-generator.html">Map Art Generator</a></li>
+                                <li><a href="/blog/en/nether-coordinate-calculator.html">Nether Coordinate Calculator</a></li>
+                                <li><a href="/blog/en/minecraft-command-generator.html">Minecraft Command Generator</a></li>
+                                <li><a href="/blog/en/items.html">Items Database</a></li>
+                                <li><a href="/blog/en/mobs.html">Mobs Database</a></li>
+                                <li><a href="/blog/en/server-status.html">Server Status</a></li>
+                                <li><a href="/blog/en/minecraft-api-status.html">Minecraft API Status</a></li>
+                                <li><a href="/blog/en/api-documentation.html">API Documentation</a></li>
+                                <li><a href="/blog/en/skin-lookup.html">Skin Lookup</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <button class="dropdown-btn nav-link">Discover</button>
+                            <ul class="dropdown-menu">
+                                <li><a href="/blog/en/skin-editor.html">Skin Editor</a></li>
+                                <li><a href="/blog/en/skin-poser.html">Skin Poser</a></li>
+                                <li><a href="/blog/en/chibi-skin-maker.html">Chibi Skin Maker</a></li>
+                               <li><a href="/blog/en/day-night-cycle.html">Day-Night Cycle</a></li>
+                                <li><a href="/blog/en/end_poem.html">End Poem</a></li>
+                                <li><a href="/blog/en/minecraft-capes.html">Capes Database</a></li>
+                                <li><a href="/blog/en/minecraft-heads.html">Heads Database</a></li>
+                                <li><a href="/blog/en/head-texture-generator.html">Head Texture Generator</a></li>
+                                <li><a href="/blog/en/minecraft-versions.html">Minecraft Versions</a></li>
+                                <li><a href="/blog/en/minecraft-skins.html">Skin Library</a></li>
+                                <li><a href="/blog/en/beacon-color-mixer.html">Beacon Color Mixer</a></li>
+                                <li><a href="/blog/en/qr-generator.html">QR Generator</a></li>
+                                <li><a href="/blog/en/advancement-generator.html">Advancement Generator</a></li>
+                                <li><a href="/blog/en/sign-generator.html">Sign Generator</a></li>
+                                <li><a href="/blog/en/crafting-recipes.html">Crafting Recipes</a></li>
+                                <li><a href="/blog/en/armor-trim-generator.html">Armor Trim Generator</a></li>
+                                <li><a href="/blog/en/firework-generator.html">Firework Generator</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="sound-toggle">
+                    <button class="sound-btn" id="soundBtn" aria-label="Toggle sound">
+                        <img src="/assets/img/backgrounds/sound-on.svg?v=20260910v121c" alt="Sound on" class="sound-icon" id="soundIcon">
+                    </button>
+                </div>
+                <div class="lang-switcher">
+                    <a class="lang-btn" id="langBtn" href="/blog/de/kopf-textur-generator.html" aria-label="Auf Deutsch wechseln">
+                        <img src="/assets/img/backgrounds/en.svg?v=20260910v121c" alt="English" class="flag-icon" id="langFlag">
+                    </a>
+                </div>
+                <div class="theme-switcher">
+                    <button class="theme-btn" id="themeBtn">
+                        <i class="fa-solid fa-palette"></i>
+                    </button>
+                    <div class="theme-dropdown" id="themeDropdown">
+                        <button class="theme-option" data-theme="overworld">
+                            <i class="fas fa-cube"></i>
+                            <span>Overworld</span>
+                        </button>
+                        <button class="theme-option" data-theme="nether">
+                            <i class="fas fa-fire"></i>
+                            <span>Nether</span>
+                        </button>
+                        <button class="theme-option" data-theme="end">
+                            <i class="fas fa-moon"></i>
+                            <span>The End</span>
+                        </button>
+                    </div>
+                </div>
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Navigation -->
+    <div class="mobile-nav" id="mobileNav">
+        <div class="mobile-nav-header">
+            <div class="logo">
+                <div class="logo-icon"></div>
+                <span class="logo-text">MC-Craft</span>
+            </div>
+            <button class="close-btn" id="closeBtn">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <ul class="mobile-nav-list">
+            <li><a href="/en/index.html" class="mobile-nav-link">Home</a></li>
+            <li><a href="/blog/en/text-converter.html" class="mobile-nav-link">Text Converter</a></li>
+            <li><a href="/blog/en/color-text.html" class="mobile-nav-link">Color Text</a></li>
+            <li><a href="/blog/en/structure-converter.html" class="mobile-nav-link">Structure Converter</a></li>
+            <li><a href="/blog/en/schematic-viewer.html" class="mobile-nav-link">Schematic Viewer</a></li>
+            <li><a href="/blog/en/map-art-generator.html" class="mobile-nav-link">Map Art Generator</a></li>
+            <li><a href="/blog/en/nether-coordinate-calculator.html" class="mobile-nav-link">Nether Coordinate Calculator</a></li>
+            <li><a href="/blog/en/minecraft-command-generator.html" class="mobile-nav-link">Minecraft Command Generator</a></li>
+            <li><a href="/blog/en/items.html" class="mobile-nav-link">Items Database</a></li>
+            <li><a href="/blog/en/mobs.html" class="mobile-nav-link">Mobs Database</a></li>
+            <li><a href="/blog/en/server-status.html" class="mobile-nav-link">Server Status</a></li>
+            <li><a href="/blog/en/minecraft-api-status.html" class="mobile-nav-link">Minecraft API Status</a></li>
+            <li><a href="/blog/en/api-documentation.html" class="mobile-nav-link">API Documentation</a></li>
+            <li><a href="/blog/en/skin-lookup.html" class="mobile-nav-link">Skin Lookup</a></li>
+            <li><a href="/blog/en/skin-editor.html" class="mobile-nav-link">Skin Editor</a></li>
+            <li><a href="/blog/en/skin-poser.html" class="mobile-nav-link">Skin Poser</a></li>
+            <li><a href="/blog/en/chibi-skin-maker.html" class="mobile-nav-link">Chibi Skin Maker</a></li>
+            <li><a href="/blog/en/day-night-cycle.html" class="mobile-nav-link">Day-Night Cycle</a></li>
+            <li><a href="/blog/en/end_poem.html" class="mobile-nav-link">End Poem</a></li>
+            <li><a href="/blog/en/minecraft-capes.html" class="mobile-nav-link">Capes Database</a></li>
+            <li><a href="/blog/en/minecraft-heads.html" class="mobile-nav-link">Heads Database</a></li>
+            <li><a href="/blog/en/head-texture-generator.html" class="mobile-nav-link">Head Texture Generator</a></li>
+            <li><a href="/blog/en/minecraft-versions.html" class="mobile-nav-link">Minecraft Versions</a></li>
+            <li><a href="/blog/en/minecraft-skins.html" class="mobile-nav-link">Skin Library</a></li>
+            <li><a href="/blog/en/beacon-color-mixer.html" class="mobile-nav-link">Beacon Color Mixer</a></li>
+            <li><a href="/blog/en/qr-generator.html" class="mobile-nav-link">QR Generator</a></li>
+            <li><a href="/blog/en/advancement-generator.html" class="mobile-nav-link">Advancement Generator</a></li>
+            <li><a href="/blog/en/sign-generator.html" class="mobile-nav-link">Sign Generator</a></li>
+            <li><a href="/blog/en/crafting-recipes.html" class="mobile-nav-link">Crafting Recipes</a></li>
+            <li><a href="/blog/en/armor-trim-generator.html" class="mobile-nav-link">Armor Trim Generator</a></li>
+            <li><a href="/blog/en/firework-generator.html" class="mobile-nav-link">Firework Generator</a></li>
+        </ul>
+        <div class="mobile-theme-switcher">
+            <h4>Choose theme:</h4>
+            <div class="theme-options">
+                <button class="theme-option-btn" data-theme="overworld">
+                    <i class="fas fa-cube"></i> <span>Overworld</span>
+                </button>
+                <button class="theme-option-btn" data-theme="nether">
+                    <i class="fas fa-fire"></i> <span>Nether</span>
+                </button>
+                <button class="theme-option-btn" data-theme="end">
+                    <i class="fas fa-moon"></i> <span>The End</span>
+                </button>
+            </div>
+            <div class="mobile-sound-lang">
+                <button class="mobile-sound-btn" id="mobileSoundBtn">
+                    <img src="/assets/img/backgrounds/sound-on.svg?v=20260910v121c" alt="Sound on" class="sound-icon" id="mobileSoundIcon">
+                    <span>Sound</span>
+                </button>
+                <a class="mobile-lang-btn" id="mobileLangBtn" href="/blog/de/kopf-textur-generator.html">
+                    <img src="/assets/img/backgrounds/en.svg?v=20260910v121c" alt="English" class="flag-icon" id="mobileLangFlag">
+                    <span>Language</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+
+    <main class="main" id="main" tabindex="-1">
+        <!-- Hero Section -->
+        <section class="hero" id="home">
+            <div class="hero-bg-grid"></div>
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-badge">
+                        <span class="hero-badge-dot"></span>
+                        V 1.2.0 IS HERE
+                    </div>
+                    <h1 class="hero-title">Head Texture <span class="highlight">Generator</span></h1>
+                    <p class="hero-description">
+                        Create player heads using vanilla Minecraft textures. Pick a texture from items, blocks, mobs,
+                        villagers or player skins – the matching <code>/give</code> command updates live.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#generator" class="btn btn-primary">
+                            <i class="fas fa-wand-magic-sparkles"></i> Open Generator
+                        </a>
+                        <a href="#examples" class="btn btn-secondary">
+                            <i class="fas fa-terminal"></i> Examples
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="hero-grid-staggered">
+                        <div class="hero-stagger-col hero-stagger-left">
+                            <div class="grid-item">
+                                <i class="fas fa-cube"></i>
+                                <span>Items &amp; Blocks</span>
+                            </div>
+                            <div class="grid-item">
+                                <i class="fas fa-user-group"></i>
+                                <span>Villagers &amp; Mobs</span>
+                            </div>
+                        </div>
+                        <div class="hero-stagger-col hero-stagger-right">
+                            <div class="grid-item">
+                                <i class="fas fa-terminal"></i>
+                                <span>/give Command</span>
+                            </div>
+                            <div class="grid-item">
+                                <i class="fas fa-eye"></i>
+                                <span>Live Preview</span>
+                            </div>
+                        </div>
+                        <div class="floating-cube floating-cube-1"></div>
+                        <div class="floating-cube floating-cube-2"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Generator Section -->
+        <section class="htg-section" id="generator">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Choose a <span class="highlight">texture</span></h2>
+                    <p class="section-subtitle">Pick a vanilla texture – command and preview update live.</p>
+                </div>
+
+                <div class="htg-notice" role="note">
+                    <i class="fas fa-circle-info" aria-hidden="true"></i>
+                    <p><strong>Minecraft Java Edition only.</strong> Available from Minecraft Java Edition 1.21.9. Some textures were not originally designed for the player head model and may therefore appear distorted or unusual.</p>
+                </div>
+
+                <div class="htg-layout">
+                    <div class="htg-browser">
+                        <div class="htg-tabs" role="tablist" aria-label="Texture categories">
+                            <button type="button" class="htg-tab active" role="tab" aria-selected="true" data-tab="items"><i class="fas fa-gem" aria-hidden="true"></i> Items</button>
+                            <button type="button" class="htg-tab" role="tab" aria-selected="false" data-tab="blocks"><i class="fas fa-cube" aria-hidden="true"></i> Blocks</button>
+                            <button type="button" class="htg-tab" role="tab" aria-selected="false" data-tab="entities"><i class="fas fa-paw" aria-hidden="true"></i> Entities</button>
+                            <button type="button" class="htg-tab" role="tab" aria-selected="false" data-tab="villagers"><i class="fas fa-house-chimney" aria-hidden="true"></i> Villagers</button>
+                            <button type="button" class="htg-tab" role="tab" aria-selected="false" data-tab="players"><i class="fas fa-user" aria-hidden="true"></i> Player</button>
+                            <button type="button" class="htg-tab" role="tab" aria-selected="false" data-tab="custom"><i class="fas fa-code" aria-hidden="true"></i> Custom Texture Path</button>
+                        </div>
+
+                        <div id="htgListView">
+                            <div class="htg-toolbar">
+                                <div class="search-box">
+                                    <i class="fas fa-search" aria-hidden="true"></i>
+                                    <input type="search" id="htgSearch" placeholder="Search items: name or ID ..." autocomplete="off" aria-label="Search textures">
+                                </div>
+                                <select id="htgCategory" class="htg-select" aria-label="Category">
+                                    <option value="all">All categories</option>
+                                </select>
+                            </div>
+                            <div class="htg-toolbar">
+                                <span class="htg-stats" id="htgStats" aria-live="polite">Loading data ...</span>
+                                <label class="htg-check" id="htgUnavailableWrap" hidden>
+                                    <input type="checkbox" id="htgShowUnavailable">
+                                    <span id="htgUnavailableLabel">Show unavailable</span>
+                                </label>
+                            </div>
+                            <div class="htg-grid" id="htgGrid"></div>
+                        </div>
+
+                        <div class="htg-custom" id="htgCustomView" hidden>
+                            <label class="htg-field" for="htgCustomPath">
+                                <span>Texture path</span>
+                                <input type="text" id="htgCustomPath" class="htg-input" placeholder="e.g. entity/villager/profession/farmer" autocomplete="off" spellcheck="false">
+                            </label>
+                            <p class="htg-hint">Examples: <code>block/stone</code>, <code>item/diamond</code>, <code>entity/villager/profession/farmer</code>. A leading <code>assets/minecraft/textures/</code> and the <code>.png</code> extension are removed automatically.</p>
+                            <p class="htg-status" id="htgCustomStatus" aria-live="polite"></p>
+                        </div>
+                    </div>
+
+                    <aside class="htg-panel" id="htgPanel" aria-labelledby="htgPanelTitle">
+                        <h3 class="htg-panel-title" id="htgPanelTitle">Selection</h3>
+                        <p class="htg-empty" id="htgEmpty">Choose a texture to build the command.</p>
+                        <div id="htgSelection" hidden>
+                            <div class="htg-preview" id="htgPreview">
+                                <div class="htg-preview-3d" id="htgViewerWrap">
+                                    <canvas id="htgViewer" width="180" height="180" aria-label="3D preview of the player head"></canvas>
+                                    <button type="button" class="htg-anim-btn" id="htgAnimBtn"><i class="fas fa-pause" aria-hidden="true"></i> <span>Stop animation</span></button>
+                                </div>
+                                <div class="htg-preview-2d">
+                                    <img id="htgTexture" alt="" width="88" height="88">
+                                    <span class="htg-preview-label">Original texture</span>
+                                </div>
+                            </div>
+                            <p class="htg-preview-error" id="htgPreviewError" hidden>This texture is currently unavailable.</p>
+                            <p class="htg-selected-name" id="htgName" aria-live="polite"></p>
+                            <code class="htg-path" id="htgPath"></code>
+                            <p class="htg-newer" id="htgNewer" hidden></p>
+                            <label class="htg-field" id="htgFaceField" hidden>
+                                <span>Texture</span>
+                                <select id="htgFace" class="htg-select"></select>
+                            </label>
+                            <p class="htg-hint">The head uses a player head's UV mapping – an unusual look is expected.</p>
+                        </div>
+
+                        <div class="htg-options">
+                            <label class="htg-field">
+                                <span>Target</span>
+                                <select id="htgTarget" class="htg-select">
+                                    <option value="@s">@s – yourself</option>
+                                    <option value="@p">@p – nearest player</option>
+                                    <option value="@a">@a – all players</option>
+                                    <option value="@r">@r – random player</option>
+                                    <option value="custom">Custom player name</option>
+                                </select>
+                            </label>
+                            <label class="htg-field" id="htgTargetNameField" hidden>
+                                <span>Player name</span>
+                                <input type="text" id="htgTargetName" class="htg-input" maxlength="16" placeholder="e.g. Blexilein" autocomplete="off" spellcheck="false">
+                            </label>
+                            <div class="htg-field-row">
+                                <label class="htg-field">
+                                    <span>Count</span>
+                                    <input type="number" id="htgCount" class="htg-input" min="1" max="64" step="1" value="1" inputmode="numeric">
+                                </label>
+                                <label class="htg-field">
+                                    <span>Model</span>
+                                    <select id="htgModel" class="htg-select">
+                                        <option value="auto">Automatic</option>
+                                        <option value="wide">wide</option>
+                                        <option value="slim">slim</option>
+                                    </select>
+                                </label>
+                            </div>
+                            <p class="htg-error" id="htgError" role="alert" hidden></p>
+                        </div>
+
+                        <div class="htg-command-box">
+                            <span class="htg-command-label">Command</span>
+                            <code class="htg-command" id="htgCommand">–</code>
+                        </div>
+                        <button type="button" class="btn btn-primary htg-copy" id="htgCopy" disabled>
+                            <i class="fas fa-copy" aria-hidden="true"></i> Copy Command
+                        </button>
+                    </aside>
+                </div>
+            </div>
+        </section>
+
+        <!-- Info Section -->
+        <section class="info-section htg-info-section" id="info">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">How does it <span class="highlight">work?</span></h2>
+                    <p class="section-subtitle">Vanilla textures on a player head</p>
+                </div>
+                <div class="info-card htg-info">
+                    <div class="info-card-icon">
+                        <i class="fas fa-circle-question"></i>
+                    </div>
+                    <p>Since version 1.21.9, Minecraft Java can override the skin texture of a player head through the <code>minecraft:profile</code> component. A vanilla texture from the Minecraft resource pack can be specified for this.</p>
+                    <p>A player head still uses the geometry and UV mapping of a player's head. Item, block or entity textures may therefore look different from how they normally appear in the game.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Examples Section -->
+        <section class="htg-section" id="examples">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title"><span class="highlight">Examples</span></h2>
+                    <p class="section-subtitle">Ready-made commands to copy right away</p>
+                </div>
+                <div class="htg-examples">
+                    <div class="htg-example">
+                        <h3>Farmer (Villager)</h3>
+                        <div class="htg-example-box"><code>/give @s minecraft:player_head[minecraft:profile={texture:"entity/villager/profession/farmer"}]</code><button type="button" class="copy-btn" aria-label="Copy Command"><i class="fas fa-copy" aria-hidden="true"></i></button></div>
+                    </div>
+                    <div class="htg-example">
+                        <h3>Stone</h3>
+                        <div class="htg-example-box"><code>/give @s minecraft:player_head[minecraft:profile={texture:"block/stone"}]</code><button type="button" class="copy-btn" aria-label="Copy Command"><i class="fas fa-copy" aria-hidden="true"></i></button></div>
+                    </div>
+                    <div class="htg-example">
+                        <h3>Diamond</h3>
+                        <div class="htg-example-box"><code>/give @s minecraft:player_head[minecraft:profile={texture:"item/diamond"}]</code><button type="button" class="copy-btn" aria-label="Copy Command"><i class="fas fa-copy" aria-hidden="true"></i></button></div>
+                    </div>
+                    <div class="htg-example">
+                        <h3>Steve</h3>
+                        <div class="htg-example-box"><code>/give @s minecraft:player_head[minecraft:profile={texture:"entity/player/wide/steve"}]</code><button type="button" class="copy-btn" aria-label="Copy Command"><i class="fas fa-copy" aria-hidden="true"></i></button></div>
+                    </div>
+                    <div class="htg-example">
+                        <h3>Alex</h3>
+                        <div class="htg-example-box"><code>/give @s minecraft:player_head[minecraft:profile={texture:"entity/player/slim/alex",model:"slim"}]</code><button type="button" class="copy-btn" aria-label="Copy Command"><i class="fas fa-copy" aria-hidden="true"></i></button></div>
+                    </div>
+                    <div class="htg-example">
+                        <h3>Drowned outer layer</h3>
+                        <div class="htg-example-box"><code>/give @s minecraft:player_head[minecraft:profile={texture:"entity/zombie/drowned_outer_layer"}]</code><button type="button" class="copy-btn" aria-label="Copy Command"><i class="fas fa-copy" aria-hidden="true"></i></button></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta">
+            <div class="container">
+                <div class="cta-content">
+                    <h2 class="cta-title">Discover more Minecraft <span class="highlight">tools</span>?</h2>
+                    <p class="cta-description">
+                        MC-Craft offers many more useful tools for your Minecraft adventure.
+                    </p>
+                    <div class="cta-buttons">
+                        <a href="/blog/en/minecraft-heads.html" class="btn btn-primary btn-large">
+                            <i class="fas fa-cubes"></i> Heads Database
+                        </a>
+                        <a href="/en/index.html#tools" class="btn btn-outline">
+                            <i class="fas fa-eye"></i> View all tools
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+        <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-grid">
+                    <!-- Column 1 -->
+                    <div class="footer-col">
+                        <a href="/en/index.html" class="footer-logo">
+                            <div class="logo-icon"></div>
+                            <span class="logo-text">MC-Craft</span>
+                        </a>
+                        <p class="footer-description">Free Minecraft tools for the community. Built by players, for players.</p>
+                        <div class="social-links">
+                           <a href="https://github.com/Blexilein" class="social-link" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                            <a href="https://discord.gg/eVVpQD75w4" class="social-link"><i class="fab fa-discord"></i></a>
+                            <a href="https://x.com/Blexi_1" class="social-link" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        </div>
+                    </div>
+                    <!-- Column 2 -->
+                    <div class="footer-col">
+                        <h4 class="footer-title">Tools</h4>
+                        <ul class="footer-links">
+                            <li><a href="/blog/en/text-converter.html">Text Converter</a></li>
+                            <li><a href="/blog/en/color-text.html">Color Text Converter</a></li>
+                            <li><a href="/blog/en/structure-converter.html">Structure Converter</a></li>
+                            <li><a href="/blog/en/schematic-viewer.html">Schematic Viewer</a></li>
+                            <li><a href="/blog/en/map-art-generator.html">Map Art Generator</a></li>
+                            <li><a href="/blog/en/nether-coordinate-calculator.html">Nether Coordinate Calculator</a></li>
+                            <li><a href="/blog/en/minecraft-command-generator.html">Minecraft Command Generator</a></li>
+                            <li><a href="/blog/en/items.html">Items Database</a></li>
+                            <li><a href="/blog/en/mobs.html">Mobs Database</a></li>
+                            <li><a href="/blog/en/day-night-cycle.html">Day-Night Cycle</a></li>
+                            <li><a href="/blog/en/beacon-color-mixer.html">Beacon Color Mixer</a></li>
+                                <li><a href="/blog/en/qr-generator.html">QR Generator</a></li>
+                                <li><a href="/blog/en/advancement-generator.html">Advancement Generator</a></li>
+                                <li><a href="/blog/en/sign-generator.html">Sign Generator</a></li>
+                                <li><a href="/blog/en/crafting-recipes.html">Crafting Recipes</a></li>
+                                <li><a href="/blog/en/armor-trim-generator.html">Armor Trim Generator</a></li>
+                                <li><a href="/blog/en/firework-generator.html">Firework Generator</a></li>
+                        </ul>
+                    </div>
+                    <!-- Column 3 -->
+                    <div class="footer-col">
+                        <h4 class="footer-title">More Tools</h4>
+                        <ul class="footer-links">
+                            <li><a href="/blog/en/server-status.html">Server Status</a></li>
+                                <li><a href="/blog/en/minecraft-api-status.html">Minecraft API Status</a></li>
+                                <li><a href="/blog/en/api-documentation.html">API Documentation</a></li>
+                            <li><a href="/blog/en/skin-lookup.html">Skin Lookup</a></li>
+                            <li><a href="/blog/en/skin-editor.html">Skin Editor</a></li>
+                            <li><a href="/blog/en/skin-poser.html">Skin Poser</a></li>
+                            <li><a href="/blog/en/chibi-skin-maker.html">Chibi Skin Maker</a></li>
+                            <li><a href="/blog/en/minecraft-skins.html">Skin Gallery</a></li>
+                            <li><a href="/blog/en/minecraft-capes.html">Cape Gallery</a></li>
+                            <li><a href="/blog/en/minecraft-heads.html">Heads Database</a></li>
+                            <li><a href="/blog/en/head-texture-generator.html">Head Texture Generator</a></li>
+                            <li><a href="/blog/en/minecraft-versions.html">Minecraft Versions</a></li>
+                            <li><a href="/blog/en/end_poem.html">End Poem</a></li>
+                        </ul>
+                    </div>
+                    <!-- Column 4 -->
+                    <div class="footer-col">
+                        <h4 class="footer-title">Legal</h4>
+                        <ul class="footer-links">
+                            <li><a href="/blog/en/imprint.html">Legal Notice</a></li>
+                            <li><a href="/blog/en/privacy-policy.html">Privacy Policy</a></li>
+                            <li><a href="/blog/en/terms-of-use.html">Terms of Use</a></li>
+                            <li><a href="/blog/en/copyright.html">Copyright</a></li>
+                        </ul>
+                    </div>
+                    <!-- Column 5 -->
+                    <div class="footer-col">
+                        <h4 class="footer-title">About Us</h4>
+                        <ul class="footer-links">
+                            <li><a href="/blog/en/history.html">MC-Craft History</a></li>
+                            <li><a href="/blog/en/team.html">Our Team</a></li>
+                            <li><a href="/blog/en/about.html">About Us</a></li>
+                        </ul>
+                    </div>
+                    <!-- Column 6 -->
+                    <div class="footer-col">
+                        <h4 class="footer-title">Support</h4>
+                        <ul class="footer-links">
+                            <li><a href="/blog/en/faq.html">FAQ & Help</a></li>
+                            <li><a href="/blog/en/bug-report.html">Report a Bug</a></li>
+                            <li><a href="/blog/en/support.html">Contact Support</a></li>
+                            <li><a href="/blog/en/e-mails.html">E-mails</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <div class="copyright">
+                        <p>&copy; <span id="currentYear">2026</span> MC-Craft. <span>All rights reserved.</span></p>
+                        <p class="disclaimer">Minecraft is a trademark of Mojang Studios. This site is not affiliated with Mojang or Microsoft.</p>
+                    </div>
+                    <div class="footer-meta">
+                        <span class="version">Version 1.2.0</span>
+                        <a href="/blog/en/changelog.html" class="changelog active">Changelog</a>
+                        <a href="/blog/en/api-documentation.html" class="api-docs"><i class="fas fa-book-open" aria-hidden="true"></i> API Docs</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Notification Toast -->
+    <div class="toast-container" id="toastContainer"></div>
+
+    <!-- JavaScript -->
+    <script src="/assets/JS/modules/mc-preferences.js?v=20260917b"></script>
+    <script src="/assets/JS/main.js?v=20260917a"></script>
+    <script src="/assets/JS/modules/head-texture-generator.js?v=20260910v121c" defer></script>
+</body>
+</html>

@@ -1,0 +1,9 @@
+{
+    "images": [
+        { "file": "sunset.png", "caption_de": "Sonnenuntergang", "caption_en": "Sunset" },
+        { "file": "night.png", "caption_de": "Nacht", "caption_en": "Night" },
+        { "file": "forest.png", "caption_de": "Wald", "caption_en": "Forest" },
+        { "file": "ocean.png", "caption_de": "Ozean", "caption_en": "Ocean" },
+        { "file": "studio.png", "caption_de": "Studio", "caption_en": "Studio" }
+    ]
+}

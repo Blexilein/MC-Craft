@@ -41,6 +41,13 @@
         "category": "Item",
         "description": "Inventar-Textur von Kohle.",
         "file": "/assets/img/items/Coal.png"
+      },
+      {
+        "name": "coal",
+        "category": "Item",
+        "description": "item/coal.png",
+        "file": "/assets/img/textures/item/coal.png",
+        "path": "item/coal"
       }
     ],
     "sounds": [],
@@ -127,6 +134,13 @@
         "category": "Item",
         "description": "Inventar-Textur von Holzkohle.",
         "file": "/assets/img/items/Charcoal.png"
+      },
+      {
+        "name": "charcoal",
+        "category": "Item",
+        "description": "item/charcoal.png",
+        "file": "/assets/img/textures/item/charcoal.png",
+        "path": "item/charcoal"
       }
     ],
     "sounds": [],
@@ -213,6 +227,13 @@
         "category": "Item",
         "description": "Inventar-Textur von Smaragd.",
         "file": "/assets/img/items/Emerald.png"
+      },
+      {
+        "name": "emerald",
+        "category": "Item",
+        "description": "item/emerald.png",
+        "file": "/assets/img/textures/item/emerald.png",
+        "path": "item/emerald"
       }
     ],
     "sounds": [],
@@ -299,6 +320,13 @@
         "category": "Item",
         "description": "Inventar-Textur von Lapislazuli.",
         "file": "/assets/img/items/Lapis_Lazuli.png"
+      },
+      {
+        "name": "lapis_lazuli",
+        "category": "Item",
+        "description": "item/lapis_lazuli.png",
+        "file": "/assets/img/textures/item/lapis_lazuli.png",
+        "path": "item/lapis_lazuli"
       }
     ],
     "sounds": [],
@@ -385,6 +413,13 @@
         "category": "Item",
         "description": "Inventar-Textur von Amethystscherbe.",
         "file": "/assets/img/items/Amethyst_Shard.png"
+      },
+      {
+        "name": "amethyst_shard",
+        "category": "Item",
+        "description": "item/amethyst_shard.png",
+        "file": "/assets/img/textures/item/amethyst_shard.png",
+        "path": "item/amethyst_shard"
       }
     ],
     "sounds": [],
@@ -469,6 +504,13 @@
         "category": "Item",
         "description": "Inventar-Textur von Netherquarz.",
         "file": "/assets/img/items/Nether_Quartz.png"
+      },
+      {
+        "name": "quartz",
+        "category": "Item",
+        "description": "item/quartz.png",
+        "file": "/assets/img/textures/item/quartz.png",
+        "path": "item/quartz"
       }
     ],
     "sounds": [],
@@ -555,6 +597,13 @@
         "category": "Item",
         "description": "Inventar-Textur von Rohkupfer.",
         "file": "/assets/img/items/Raw_Copper.png"
+      },
+      {
+        "name": "raw_copper",
+        "category": "Item",
+        "description": "item/raw_copper.png",
+        "file": "/assets/img/textures/item/raw_copper.png",
+        "path": "item/raw_copper"
       }
     ],
     "sounds": [],
@@ -641,6 +690,13 @@
         "category": "Item",
         "description": "Inventar-Textur von Roheisen.",
         "file": "/assets/img/items/Raw_Iron.png"
+      },
+      {
+        "name": "raw_iron",
+        "category": "Item",
+        "description": "item/raw_iron.png",
+        "file": "/assets/img/textures/item/raw_iron.png",
+        "path": "item/raw_iron"
       }
     ],
     "sounds": [],
@@ -727,6 +783,13 @@
         "category": "Item",
         "description": "Inventar-Textur von Rohgold.",
         "file": "/assets/img/items/Raw_Gold.png"
+      },
+      {
+        "name": "raw_gold",
+        "category": "Item",
+        "description": "item/raw_gold.png",
+        "file": "/assets/img/textures/item/raw_gold.png",
+        "path": "item/raw_gold"
       }
     ],
     "sounds": [],
@@ -779,7 +842,7 @@
     "type": "Item",
     "category": "Materialien",
     "icon": "/assets/img/items/Diamond.png",
-    "description": "Wertvollster Rohstoff für toole, Rüstungen und Verzauberungstische.",
+    "description": "Wertvollster Rohstoff für Werkzeuge, Rüstungen und Verzauberungstische.",
     "biome": "Nicht zutreffend",
     "aliases": [],
     "introduced_date": "",
@@ -789,7 +852,7 @@
     "animation": [],
     "source": "",
     "updated_at": "2026-08-22",
-    "notes": "Wertvollster Rohstoff für toole, Rüstungen und Verzauberungstische.",
+    "notes": "Wertvollster Rohstoff für Werkzeuge, Rüstungen und Verzauberungstische.",
     "version": "Klassisch",
     "version_history": [
       {
@@ -813,6 +876,13 @@
         "category": "Item",
         "description": "Inventar-Textur von Diamant.",
         "file": "/assets/img/items/Diamond.png"
+      },
+      {
+        "name": "diamond",
+        "category": "Item",
+        "description": "item/diamond.png",
+        "file": "/assets/img/textures/item/diamond.png",
+        "path": "item/diamond"
       }
     ],
     "sounds": [],
@@ -822,7 +892,7 @@
     "renewable": "Nein",
     "stackable": "Ja (64)",
     "stack": 64,
-    "used_as": "Wertvollster Rohstoff für toole, Rüstungen und Verzauberungstische.",
+    "used_as": "Wertvollster Rohstoff für Werkzeuge, Rüstungen und Verzauberungstische.",
     "durability": "Nicht zutreffend",
     "damage": "Nicht zutreffend",
     "attack_speed": "Nicht zutreffend",
@@ -899,9 +969,82 @@
         "category": "Item",
         "description": "Inventar-Textur von Antiker Schrott.",
         "file": "/assets/img/blocks/Ancient_Debris.png"
+      },
+      {
+        "name": "ancient_debris_top",
+        "category": "Block",
+        "description": "block/ancient_debris_top.png",
+        "file": "/assets/img/textures/block/ancient_debris_top.png",
+        "path": "block/ancient_debris_top"
+      },
+      {
+        "name": "ancient_debris_side",
+        "category": "Block",
+        "description": "block/ancient_debris_side.png",
+        "file": "/assets/img/textures/block/ancient_debris_side.png",
+        "path": "block/ancient_debris_side"
       }
     ],
-    "sounds": [],
+    "sounds": [
+      {
+        "name": "Block zerstört",
+        "event": "block.ancient_debris.break",
+        "files": [
+          "/assets/sounds/block/ancient_debris/break1.ogg",
+          "/assets/sounds/block/ancient_debris/break2.ogg",
+          "/assets/sounds/block/ancient_debris/break3.ogg",
+          "/assets/sounds/block/ancient_debris/break4.ogg",
+          "/assets/sounds/block/ancient_debris/break5.ogg"
+        ]
+      },
+      {
+        "name": "Etwas fällt auf einen Block",
+        "event": "block.ancient_debris.fall",
+        "files": [
+          "/assets/sounds/block/basalt/step1.ogg",
+          "/assets/sounds/block/basalt/step2.ogg",
+          "/assets/sounds/block/basalt/step3.ogg",
+          "/assets/sounds/block/basalt/step4.ogg",
+          "/assets/sounds/block/basalt/step5.ogg",
+          "/assets/sounds/block/basalt/step6.ogg"
+        ]
+      },
+      {
+        "name": "Block bricht",
+        "event": "block.ancient_debris.hit",
+        "files": [
+          "/assets/sounds/block/basalt/step1.ogg",
+          "/assets/sounds/block/basalt/step2.ogg",
+          "/assets/sounds/block/basalt/step3.ogg",
+          "/assets/sounds/block/basalt/step4.ogg",
+          "/assets/sounds/block/basalt/step5.ogg",
+          "/assets/sounds/block/basalt/step6.ogg"
+        ]
+      },
+      {
+        "name": "Block platziert",
+        "event": "block.ancient_debris.place",
+        "files": [
+          "/assets/sounds/block/ancient_debris/break1.ogg",
+          "/assets/sounds/block/ancient_debris/break2.ogg",
+          "/assets/sounds/block/ancient_debris/break3.ogg",
+          "/assets/sounds/block/ancient_debris/break4.ogg",
+          "/assets/sounds/block/ancient_debris/break5.ogg"
+        ]
+      },
+      {
+        "name": "Schritte",
+        "event": "block.ancient_debris.step",
+        "files": [
+          "/assets/sounds/block/basalt/step1.ogg",
+          "/assets/sounds/block/basalt/step2.ogg",
+          "/assets/sounds/block/basalt/step3.ogg",
+          "/assets/sounds/block/basalt/step4.ogg",
+          "/assets/sounds/block/basalt/step5.ogg",
+          "/assets/sounds/block/basalt/step6.ogg"
+        ]
+      }
+    ],
     "command": "/give @p minecraft:ancient_debris 1",
     "effects": [],
     "rarity": "Selten",
@@ -983,6 +1126,13 @@
         "category": "Item",
         "description": "Inventar-Textur von Kupferklumpen.",
         "file": "/assets/img/items/Copper_Nugget.png"
+      },
+      {
+        "name": "copper_nugget",
+        "category": "Item",
+        "description": "item/copper_nugget.png",
+        "file": "/assets/img/textures/item/copper_nugget.png",
+        "path": "item/copper_nugget"
       }
     ],
     "sounds": [],
@@ -1069,6 +1219,13 @@
         "category": "Item",
         "description": "Inventar-Textur von Eisenklumpen.",
         "file": "/assets/img/items/Iron_Nugget.png"
+      },
+      {
+        "name": "iron_nugget",
+        "category": "Item",
+        "description": "item/iron_nugget.png",
+        "file": "/assets/img/textures/item/iron_nugget.png",
+        "path": "item/iron_nugget"
       }
     ],
     "sounds": [],
@@ -1091,7 +1248,7 @@
     "enchantable": "Nein",
     "enchantability": 0,
     "obtain": [
-      "Hergestellt aus Eisenbarren (1 Barren = 9 Klumpen), Drop von Zombies, Eisen-Golems"
+      "Hergestellt aus Eisenbarren (1 Barren = 9 Klumpen), Beute von Zombies, Eisen-Golems"
     ],
     "crafting_recipe": null,
     "repair_material": "Nicht zutreffend",
@@ -1155,6 +1312,13 @@
         "category": "Item",
         "description": "Inventar-Textur von Goldklumpen.",
         "file": "/assets/img/items/Gold_Nugget.png"
+      },
+      {
+        "name": "gold_nugget",
+        "category": "Item",
+        "description": "item/gold_nugget.png",
+        "file": "/assets/img/textures/item/gold_nugget.png",
+        "path": "item/gold_nugget"
       }
     ],
     "sounds": [],
@@ -1177,7 +1341,7 @@
     "enchantable": "Nein",
     "enchantability": 0,
     "obtain": [
-      "Hergestellt aus Goldbarren (1 Barren = 9 Klumpen), Drop von Zombie-Piglins, Goldschmelzen"
+      "Hergestellt aus Goldbarren (1 Barren = 9 Klumpen), Beute von Zombie-Piglins, Goldschmelzen"
     ],
     "crafting_recipe": null,
     "repair_material": "Nicht zutreffend",
@@ -1241,6 +1405,13 @@
         "category": "Item",
         "description": "Inventar-Textur von Kupferbarren.",
         "file": "/assets/img/items/Copper_Ingot.png"
+      },
+      {
+        "name": "copper_ingot",
+        "category": "Item",
+        "description": "item/copper_ingot.png",
+        "file": "/assets/img/textures/item/copper_ingot.png",
+        "path": "item/copper_ingot"
       }
     ],
     "sounds": [],
@@ -1327,6 +1498,13 @@
         "category": "Item",
         "description": "Inventar-Textur von Eisenbarren.",
         "file": "/assets/img/items/Iron_Ingot.png"
+      },
+      {
+        "name": "iron_ingot",
+        "category": "Item",
+        "description": "item/iron_ingot.png",
+        "file": "/assets/img/textures/item/iron_ingot.png",
+        "path": "item/iron_ingot"
       }
     ],
     "sounds": [],
@@ -1411,6 +1589,13 @@
         "category": "Item",
         "description": "Inventar-Textur von Goldbarren.",
         "file": "/assets/img/items/Gold_Ingot.png"
+      },
+      {
+        "name": "gold_ingot",
+        "category": "Item",
+        "description": "item/gold_ingot.png",
+        "file": "/assets/img/textures/item/gold_ingot.png",
+        "path": "item/gold_ingot"
       }
     ],
     "sounds": [],
@@ -1495,6 +1680,13 @@
         "category": "Item",
         "description": "Inventar-Textur von Netheritplatte.",
         "file": "/assets/img/items/Netherite_Scrap.png"
+      },
+      {
+        "name": "netherite_scrap",
+        "category": "Item",
+        "description": "item/netherite_scrap.png",
+        "file": "/assets/img/textures/item/netherite_scrap.png",
+        "path": "item/netherite_scrap"
       }
     ],
     "sounds": [],
@@ -1547,7 +1739,7 @@
     "type": "Item",
     "category": "Materialien",
     "icon": "/assets/img/items/Netherite_Ingot2.png",
-    "description": "Wird für Netheritausrüstung und -toole benötigt.",
+    "description": "Wird für Netheritausrüstung und -werkzeuge benötigt.",
     "biome": "Nicht zutreffend",
     "aliases": [],
     "introduced_date": "",
@@ -1557,7 +1749,7 @@
     "animation": [],
     "source": "",
     "updated_at": "2026-08-22",
-    "notes": "Wird für Netheritausrüstung und -toole benötigt.",
+    "notes": "Wird für Netheritausrüstung und -werkzeuge benötigt.",
     "version": "Java Edition 1.16",
     "version_history": [
       {
@@ -1581,6 +1773,13 @@
         "category": "Item",
         "description": "Inventar-Textur von Netheritbarren.",
         "file": "/assets/img/items/Netherite_Ingot2.png"
+      },
+      {
+        "name": "netherite_ingot",
+        "category": "Item",
+        "description": "item/netherite_ingot.png",
+        "file": "/assets/img/textures/item/netherite_ingot.png",
+        "path": "item/netherite_ingot"
       }
     ],
     "sounds": [],
@@ -1590,7 +1789,7 @@
     "renewable": "Ja",
     "stackable": "Ja (64)",
     "stack": 64,
-    "used_as": "Wird für Netheritausrüstung und -toole benötigt.",
+    "used_as": "Wird für Netheritausrüstung und -werkzeuge benötigt.",
     "durability": "Nicht zutreffend",
     "damage": "Nicht zutreffend",
     "attack_speed": "Nicht zutreffend",
@@ -1633,7 +1832,7 @@
     "type": "Item",
     "category": "Materialien",
     "icon": "/assets/img/items/Stick.png",
-    "description": "Wird für unzählige Rezepte verwendet: toole, Fackeln, Schienen, etc.",
+    "description": "Wird für unzählige Rezepte verwendet: Werkzeuge, Fackeln, Schienen, etc.",
     "biome": "Nicht zutreffend",
     "aliases": [],
     "introduced_date": "",
@@ -1643,7 +1842,7 @@
     "animation": [],
     "source": "",
     "updated_at": "2026-08-22",
-    "notes": "Wird für unzählige Rezepte verwendet: toole, Fackeln, Schienen, etc.",
+    "notes": "Wird für unzählige Rezepte verwendet: Werkzeuge, Fackeln, Schienen, etc.",
     "version": "Klassisch",
     "version_history": [
       {
@@ -1667,6 +1866,13 @@
         "category": "Item",
         "description": "Inventar-Textur von Stock.",
         "file": "/assets/img/items/Stick.png"
+      },
+      {
+        "name": "stick",
+        "category": "Item",
+        "description": "item/stick.png",
+        "file": "/assets/img/textures/item/stick.png",
+        "path": "item/stick"
       }
     ],
     "sounds": [],
@@ -1676,7 +1882,7 @@
     "renewable": "Ja",
     "stackable": "Ja (64)",
     "stack": 64,
-    "used_as": "Wird für unzählige Rezepte verwendet: toole, Fackeln, Schienen, etc.",
+    "used_as": "Wird für unzählige Rezepte verwendet: Werkzeuge, Fackeln, Schienen, etc.",
     "durability": "Nicht zutreffend",
     "damage": "Nicht zutreffend",
     "attack_speed": "Nicht zutreffend",
@@ -1689,7 +1895,7 @@
     "enchantable": "Nein",
     "enchantability": 0,
     "obtain": [
-      "Hergestellt aus Brettern, Drop von Stachelrochen, Hexen"
+      "Hergestellt aus Brettern, Beute von Stachelrochen, Hexen"
     ],
     "crafting_recipe": null,
     "repair_material": "Nicht zutreffend",
@@ -1753,6 +1959,13 @@
         "category": "Item",
         "description": "Inventar-Textur von Feuerstein.",
         "file": "/assets/img/items/Flint.png"
+      },
+      {
+        "name": "flint",
+        "category": "Item",
+        "description": "item/flint.png",
+        "file": "/assets/img/textures/item/flint.png",
+        "path": "item/flint"
       }
     ],
     "sounds": [],
@@ -1839,6 +2052,13 @@
         "category": "Item",
         "description": "Inventar-Textur von Weizen.",
         "file": "/assets/img/blocks/Wheat.png"
+      },
+      {
+        "name": "wheat",
+        "category": "Item",
+        "description": "item/wheat.png",
+        "file": "/assets/img/textures/item/wheat.png",
+        "path": "item/wheat"
       }
     ],
     "sounds": [],
@@ -1889,7 +2109,7 @@
     "type": "Item",
     "category": "Materialien",
     "icon": "/assets/img/items/Bone.png",
-    "description": "Drop von Skeletten. Kann zu Knochenmehl verarbeitet werden.",
+    "description": "Beute von Skeletten. Kann zu Knochenmehl verarbeitet werden.",
     "biome": "Nicht zutreffend",
     "aliases": [],
     "introduced_date": "",
@@ -1899,7 +2119,7 @@
     "animation": [],
     "source": "",
     "updated_at": "2026-08-22",
-    "notes": "Drop von Skeletten. Kann zu Knochenmehl verarbeitet werden.",
+    "notes": "Beute von Skeletten. Kann zu Knochenmehl verarbeitet werden.",
     "version": "Klassisch",
     "version_history": [
       {
@@ -1923,6 +2143,13 @@
         "category": "Item",
         "description": "Inventar-Textur von Knochen.",
         "file": "/assets/img/items/Bone.png"
+      },
+      {
+        "name": "bone",
+        "category": "Item",
+        "description": "item/bone.png",
+        "file": "/assets/img/textures/item/bone.png",
+        "path": "item/bone"
       }
     ],
     "sounds": [],
@@ -2007,9 +2234,28 @@
         "category": "Item",
         "description": "Inventar-Textur von Knochenmehl.",
         "file": "/assets/img/items/Bone_Meal.png"
+      },
+      {
+        "name": "bone_meal",
+        "category": "Item",
+        "description": "item/bone_meal.png",
+        "file": "/assets/img/textures/item/bone_meal.png",
+        "path": "item/bone_meal"
       }
     ],
-    "sounds": [],
+    "sounds": [
+      {
+        "name": "Knochenmehl rieselt",
+        "event": "item.bone_meal.use",
+        "files": [
+          "/assets/sounds/item/bonemeal/bonemeal1.ogg",
+          "/assets/sounds/item/bonemeal/bonemeal2.ogg",
+          "/assets/sounds/item/bonemeal/bonemeal3.ogg",
+          "/assets/sounds/item/bonemeal/bonemeal4.ogg",
+          "/assets/sounds/item/bonemeal/bonemeal5.ogg"
+        ]
+      }
+    ],
     "command": "/give @p minecraft:bone_meal 1",
     "effects": [],
     "rarity": "Gewöhnlich",
@@ -2057,7 +2303,7 @@
     "type": "Item",
     "category": "Materialien",
     "icon": "/assets/img/items/String.png",
-    "description": "Drop von Spinnen, zum Herstellen von Bögen, Angel, Wolle etc.",
+    "description": "Beute von Spinnen, zum Herstellen von Bögen, Angel, Wolle etc.",
     "biome": "Nicht zutreffend",
     "aliases": [],
     "introduced_date": "",
@@ -2067,7 +2313,7 @@
     "animation": [],
     "source": "",
     "updated_at": "2026-08-22",
-    "notes": "Drop von Spinnen, zum Herstellen von Bögen, Angel, Wolle etc.",
+    "notes": "Beute von Spinnen, zum Herstellen von Bögen, Angel, Wolle etc.",
     "version": "Klassisch",
     "version_history": [
       {
@@ -2091,9 +2337,111 @@
         "category": "Item",
         "description": "Inventar-Textur von Faden.",
         "file": "/assets/img/items/String.png"
+      },
+      {
+        "name": "string",
+        "category": "Item",
+        "description": "item/string.png",
+        "file": "/assets/img/textures/item/string.png",
+        "path": "item/string"
+      },
+      {
+        "name": "tripwire",
+        "category": "Block",
+        "description": "block/tripwire.png",
+        "file": "/assets/img/textures/block/tripwire.png",
+        "path": "block/tripwire"
       }
     ],
-    "sounds": [],
+    "sounds": [
+      {
+        "name": "Stolperdraht gespannt",
+        "event": "block.tripwire.attach",
+        "files": [
+          "/assets/sounds/random/click.ogg"
+        ]
+      },
+      {
+        "name": "Stolperdraht ausgelöst",
+        "event": "block.tripwire.click_off",
+        "files": [
+          "/assets/sounds/random/click.ogg"
+        ]
+      },
+      {
+        "name": "Stolperdraht ausgelöst",
+        "event": "block.tripwire.click_on",
+        "files": [
+          "/assets/sounds/random/click.ogg"
+        ]
+      },
+      {
+        "name": "Stolperdraht entspannt",
+        "event": "block.tripwire.detach",
+        "files": [
+          "/assets/sounds/random/bowhit1.ogg",
+          "/assets/sounds/random/bowhit2.ogg",
+          "/assets/sounds/random/bowhit3.ogg",
+          "/assets/sounds/random/bowhit4.ogg"
+        ]
+      },
+      {
+        "name": "Block zerstört",
+        "event": "block.stone.break",
+        "files": [
+          "/assets/sounds/dig/stone1.ogg",
+          "/assets/sounds/dig/stone2.ogg",
+          "/assets/sounds/dig/stone3.ogg",
+          "/assets/sounds/dig/stone4.ogg"
+        ]
+      },
+      {
+        "name": "Schritte",
+        "event": "block.stone.step",
+        "files": [
+          "/assets/sounds/step/stone1.ogg",
+          "/assets/sounds/step/stone2.ogg",
+          "/assets/sounds/step/stone3.ogg",
+          "/assets/sounds/step/stone4.ogg",
+          "/assets/sounds/step/stone5.ogg",
+          "/assets/sounds/step/stone6.ogg"
+        ]
+      },
+      {
+        "name": "Block platziert",
+        "event": "block.stone.place",
+        "files": [
+          "/assets/sounds/dig/stone1.ogg",
+          "/assets/sounds/dig/stone2.ogg",
+          "/assets/sounds/dig/stone3.ogg",
+          "/assets/sounds/dig/stone4.ogg"
+        ]
+      },
+      {
+        "name": "Block bricht",
+        "event": "block.stone.hit",
+        "files": [
+          "/assets/sounds/step/stone1.ogg",
+          "/assets/sounds/step/stone2.ogg",
+          "/assets/sounds/step/stone3.ogg",
+          "/assets/sounds/step/stone4.ogg",
+          "/assets/sounds/step/stone5.ogg",
+          "/assets/sounds/step/stone6.ogg"
+        ]
+      },
+      {
+        "name": "Etwas fällt auf einen Block",
+        "event": "block.stone.fall",
+        "files": [
+          "/assets/sounds/step/stone1.ogg",
+          "/assets/sounds/step/stone2.ogg",
+          "/assets/sounds/step/stone3.ogg",
+          "/assets/sounds/step/stone4.ogg",
+          "/assets/sounds/step/stone5.ogg",
+          "/assets/sounds/step/stone6.ogg"
+        ]
+      }
+    ],
     "command": "/give @p minecraft:string 1",
     "effects": [],
     "rarity": "Gewöhnlich",
@@ -2175,6 +2523,13 @@
         "category": "Item",
         "description": "Inventar-Textur von Feder.",
         "file": "/assets/img/items/Feather.png"
+      },
+      {
+        "name": "feather",
+        "category": "Item",
+        "description": "item/feather.png",
+        "file": "/assets/img/textures/item/feather.png",
+        "path": "item/feather"
       }
     ],
     "sounds": [],
@@ -2197,7 +2552,7 @@
     "enchantable": "Nein",
     "enchantability": 0,
     "obtain": [
-      "Drop von Hühnern (0-2)"
+      "Beute von Hühnern (0-2)"
     ],
     "crafting_recipe": null,
     "repair_material": "Nicht zutreffend",
@@ -2261,9 +2616,24 @@
         "category": "Item",
         "description": "Inventar-Textur von Schneeball.",
         "file": "/assets/img/items/Snowball.png"
+      },
+      {
+        "name": "snowball",
+        "category": "Item",
+        "description": "item/snowball.png",
+        "file": "/assets/img/textures/item/snowball.png",
+        "path": "item/snowball"
       }
     ],
-    "sounds": [],
+    "sounds": [
+      {
+        "name": "Schneeball fliegt",
+        "event": "entity.snowball.throw",
+        "files": [
+          "/assets/sounds/random/bow.ogg"
+        ]
+      }
+    ],
     "command": "/give @p minecraft:snowball 1",
     "effects": [],
     "rarity": "Gewöhnlich",
@@ -2345,9 +2715,24 @@
         "category": "Item",
         "description": "Inventar-Textur von Ei.",
         "file": "/assets/img/items/Egg.png"
+      },
+      {
+        "name": "egg",
+        "category": "Item",
+        "description": "item/egg.png",
+        "file": "/assets/img/textures/item/egg.png",
+        "path": "item/egg"
       }
     ],
-    "sounds": [],
+    "sounds": [
+      {
+        "name": "Ei fliegt",
+        "event": "entity.egg.throw",
+        "files": [
+          "/assets/sounds/random/bow.ogg"
+        ]
+      }
+    ],
     "command": "/give @p minecraft:egg 1",
     "effects": [],
     "rarity": "Gewöhnlich",
@@ -2429,9 +2814,24 @@
         "category": "Item",
         "description": "Inventar-Textur von Braunes Ei.",
         "file": "/assets/img/items/Brown_Egg.png"
+      },
+      {
+        "name": "brown_egg",
+        "category": "Item",
+        "description": "item/brown_egg.png",
+        "file": "/assets/img/textures/item/brown_egg.png",
+        "path": "item/brown_egg"
       }
     ],
-    "sounds": [],
+    "sounds": [
+      {
+        "name": "Ei fliegt",
+        "event": "entity.egg.throw",
+        "files": [
+          "/assets/sounds/random/bow.ogg"
+        ]
+      }
+    ],
     "command": "/give @p minecraft:brown_egg 1",
     "effects": [],
     "rarity": "Gewöhnlich",
@@ -2513,9 +2913,24 @@
         "category": "Item",
         "description": "Inventar-Textur von Blaues Ei.",
         "file": "/assets/img/items/Blue_Egg.png"
+      },
+      {
+        "name": "blue_egg",
+        "category": "Item",
+        "description": "item/blue_egg.png",
+        "file": "/assets/img/textures/item/blue_egg.png",
+        "path": "item/blue_egg"
       }
     ],
-    "sounds": [],
+    "sounds": [
+      {
+        "name": "Ei fliegt",
+        "event": "entity.egg.throw",
+        "files": [
+          "/assets/sounds/random/bow.ogg"
+        ]
+      }
+    ],
     "command": "/give @p minecraft:blue_egg 1",
     "effects": [],
     "rarity": "Gewöhnlich",
@@ -2597,6 +3012,13 @@
         "category": "Item",
         "description": "Inventar-Textur von Leder.",
         "file": "/assets/img/items/Leather.png"
+      },
+      {
+        "name": "leather",
+        "category": "Item",
+        "description": "item/leather.png",
+        "file": "/assets/img/textures/item/leather.png",
+        "path": "item/leather"
       }
     ],
     "sounds": [],
@@ -2619,7 +3041,7 @@
     "enchantable": "Nein",
     "enchantability": 0,
     "obtain": [
-      "Drop von Kühen, Pferden, Lamas, Mooshrooms (0-2)"
+      "Beute von Kühen, Pferden, Lamas, Mooshrooms (0-2)"
     ],
     "crafting_recipe": null,
     "repair_material": "Nicht zutreffend",
@@ -2683,6 +3105,13 @@
         "category": "Item",
         "description": "Inventar-Textur von Kaninchenfell.",
         "file": "/assets/img/items/Rabbit_Hide.png"
+      },
+      {
+        "name": "rabbit_hide",
+        "category": "Item",
+        "description": "item/rabbit_hide.png",
+        "file": "/assets/img/textures/item/rabbit_hide.png",
+        "path": "item/rabbit_hide"
       }
     ],
     "sounds": [],
@@ -2705,7 +3134,7 @@
     "enchantable": "Nein",
     "enchantability": 0,
     "obtain": [
-      "Drop von Kaninchen (0-1)"
+      "Beute von Kaninchen (0-1)"
     ],
     "crafting_recipe": null,
     "repair_material": "Nicht zutreffend",
@@ -2769,9 +3198,26 @@
         "category": "Item",
         "description": "Inventar-Textur von Honigwabe.",
         "file": "/assets/img/items/Honeycomb.png"
+      },
+      {
+        "name": "honeycomb",
+        "category": "Item",
+        "description": "item/honeycomb.png",
+        "file": "/assets/img/textures/item/honeycomb.png",
+        "path": "item/honeycomb"
       }
     ],
-    "sounds": [],
+    "sounds": [
+      {
+        "name": "Wachsen",
+        "event": "item.honeycomb.wax_on",
+        "files": [
+          "/assets/sounds/item/honeycomb/wax_on1.ogg",
+          "/assets/sounds/item/honeycomb/wax_on2.ogg",
+          "/assets/sounds/item/honeycomb/wax_on3.ogg"
+        ]
+      }
+    ],
     "command": "/give @p minecraft:honeycomb 1",
     "effects": [],
     "rarity": "Gewöhnlich",
@@ -2853,9 +3299,56 @@
         "category": "Item",
         "description": "Inventar-Textur von Harzklumpen.",
         "file": "/assets/img/textures/item/resin_clump.png"
+      },
+      {
+        "name": "resin_clump",
+        "category": "Block",
+        "description": "block/resin_clump.png",
+        "file": "/assets/img/textures/block/resin_clump.png",
+        "path": "block/resin_clump"
       }
     ],
-    "sounds": [],
+    "sounds": [
+      {
+        "name": "Block zerstört",
+        "event": "block.resin.break",
+        "files": [
+          "/assets/sounds/block/resin/resin_break1.ogg",
+          "/assets/sounds/block/resin/resin_break2.ogg",
+          "/assets/sounds/block/resin/resin_break3.ogg",
+          "/assets/sounds/block/resin/resin_break4.ogg",
+          "/assets/sounds/block/resin/resin_break5.ogg"
+        ]
+      },
+      {
+        "name": "Schritte",
+        "event": "block.resin.step",
+        "files": [
+          "/assets/sounds/block/resin/resin_step1.ogg",
+          "/assets/sounds/block/resin/resin_step2.ogg",
+          "/assets/sounds/block/resin/resin_step3.ogg",
+          "/assets/sounds/block/resin/resin_step4.ogg",
+          "/assets/sounds/block/resin/resin_step5.ogg"
+        ]
+      },
+      {
+        "name": "Block platziert",
+        "event": "block.resin.place",
+        "files": [
+          "/assets/sounds/block/resin/resin_place1.ogg",
+          "/assets/sounds/block/resin/resin_place2.ogg",
+          "/assets/sounds/block/resin/resin_place3.ogg",
+          "/assets/sounds/block/resin/resin_place4.ogg"
+        ]
+      },
+      {
+        "name": "Etwas fällt auf einen Block",
+        "event": "block.resin.fall",
+        "files": [
+          "/assets/sounds/block/resin/resin_fall.ogg"
+        ]
+      }
+    ],
     "command": "/give @p minecraft:resin_clump 1",
     "effects": [],
     "rarity": "Gewöhnlich",
@@ -2905,7 +3398,7 @@
     "type": "Item",
     "category": "Materialien",
     "icon": "/assets/img/items/Ink_Sac.png",
-    "description": "Drop von Tintenfischen. Ergibt schwarzen Farbstoff.",
+    "description": "Beute von Tintenfischen. Ergibt schwarzen Farbstoff.",
     "biome": "Nicht zutreffend",
     "aliases": [],
     "introduced_date": "",
@@ -2915,7 +3408,7 @@
     "animation": [],
     "source": "",
     "updated_at": "2026-08-22",
-    "notes": "Drop von Tintenfischen. Ergibt schwarzen Farbstoff.",
+    "notes": "Beute von Tintenfischen. Ergibt schwarzen Farbstoff.",
     "version": "Klassisch",
     "version_history": [
       {
@@ -2939,9 +3432,26 @@
         "category": "Item",
         "description": "Inventar-Textur von Tintenbeutel.",
         "file": "/assets/img/items/Ink_Sac.png"
+      },
+      {
+        "name": "ink_sac",
+        "category": "Item",
+        "description": "item/ink_sac.png",
+        "file": "/assets/img/textures/item/ink_sac.png",
+        "path": "item/ink_sac"
       }
     ],
-    "sounds": [],
+    "sounds": [
+      {
+        "name": "Tintenbeutel kleckst",
+        "event": "item.ink_sac.use",
+        "files": [
+          "/assets/sounds/item/ink_sac/ink_sac1.ogg",
+          "/assets/sounds/item/ink_sac/ink_sac2.ogg",
+          "/assets/sounds/item/ink_sac/ink_sac3.ogg"
+        ]
+      }
+    ],
     "command": "/give @p minecraft:ink_sac 1",
     "effects": [],
     "rarity": "Gewöhnlich",
@@ -2989,7 +3499,7 @@
     "type": "Item",
     "category": "Materialien",
     "icon": "/assets/img/items/Glow_Ink_Sac.png",
-    "description": "Drop von Glühtintenfischen. Ergibt leuchtenden schwarzen Farbstoff.",
+    "description": "Beute von Glühtintenfischen. Ergibt leuchtenden schwarzen Farbstoff.",
     "biome": "Nicht zutreffend",
     "aliases": [],
     "introduced_date": "",
@@ -2999,7 +3509,7 @@
     "animation": [],
     "source": "",
     "updated_at": "2026-08-22",
-    "notes": "Drop von Glühtintenfischen. Ergibt leuchtenden schwarzen Farbstoff.",
+    "notes": "Beute von Glühtintenfischen. Ergibt leuchtenden schwarzen Farbstoff.",
     "version": "Java Edition 1.17",
     "version_history": [
       {
@@ -3023,9 +3533,26 @@
         "category": "Item",
         "description": "Inventar-Textur von Leuchttintenbeutel.",
         "file": "/assets/img/items/Glow_Ink_Sac.png"
+      },
+      {
+        "name": "glow_ink_sac",
+        "category": "Item",
+        "description": "item/glow_ink_sac.png",
+        "file": "/assets/img/textures/item/glow_ink_sac.png",
+        "path": "item/glow_ink_sac"
       }
     ],
-    "sounds": [],
+    "sounds": [
+      {
+        "name": "Leuchttintenbeutel kleckst",
+        "event": "item.glow_ink_sac.use",
+        "files": [
+          "/assets/sounds/item/ink_sac/ink_sac1.ogg",
+          "/assets/sounds/item/ink_sac/ink_sac2.ogg",
+          "/assets/sounds/item/ink_sac/ink_sac3.ogg"
+        ]
+      }
+    ],
     "command": "/give @p minecraft:glow_ink_sac 1",
     "effects": [],
     "rarity": "Gewöhnlich",
@@ -3107,6 +3634,13 @@
         "category": "Item",
         "description": "Inventar-Textur von Schildkrötenpanzer.",
         "file": "/assets/img/items/Turtle_Scute.png"
+      },
+      {
+        "name": "turtle_scute",
+        "category": "Item",
+        "description": "item/turtle_scute.png",
+        "file": "/assets/img/textures/item/turtle_scute.png",
+        "path": "item/turtle_scute"
       }
     ],
     "sounds": [],
@@ -3129,7 +3663,7 @@
     "enchantable": "Nein",
     "enchantability": 0,
     "obtain": [
-      "Drop von Baby-Schildkröten beim Erwachsenwerden"
+      "Beute von Baby-Schildkröten beim Erwachsenwerden"
     ],
     "crafting_recipe": null,
     "repair_material": "Nicht zutreffend",
@@ -3159,7 +3693,7 @@
     "type": "Item",
     "category": "Materialien",
     "icon": "/assets/img/items/Armadillo_Scute.png",
-    "description": "Drop von Gürteltieren. Wird für Wolfspanzer benötigt.",
+    "description": "Beute von Gürteltieren. Wird für Wolfspanzer benötigt.",
     "biome": "Nicht zutreffend",
     "aliases": [],
     "introduced_date": "",
@@ -3169,7 +3703,7 @@
     "animation": [],
     "source": "",
     "updated_at": "2026-08-22",
-    "notes": "Drop von Gürteltieren. Wird für Wolfspanzer benötigt.",
+    "notes": "Beute von Gürteltieren. Wird für Wolfspanzer benötigt.",
     "version": "Java Edition 1.20.5",
     "version_history": [
       {
@@ -3193,6 +3727,13 @@
         "category": "Item",
         "description": "Inventar-Textur von Gürteltierschild.",
         "file": "/assets/img/items/Armadillo_Scute.png"
+      },
+      {
+        "name": "armadillo_scute",
+        "category": "Item",
+        "description": "item/armadillo_scute.png",
+        "file": "/assets/img/textures/item/armadillo_scute.png",
+        "path": "item/armadillo_scute"
       }
     ],
     "sounds": [],
@@ -3243,7 +3784,7 @@
     "type": "Item",
     "category": "Materialien",
     "icon": "/assets/img/items/Slimeball.png",
-    "description": "Drop von kleinen Schleimen. Wird für klebrige Kolben, Schleimblöcke und Magmacreme benötigt.",
+    "description": "Beute von kleinen Schleimen. Wird für klebrige Kolben, Schleimblöcke und Magmacreme benötigt.",
     "biome": "Nicht zutreffend",
     "aliases": [],
     "introduced_date": "",
@@ -3253,7 +3794,7 @@
     "animation": [],
     "source": "",
     "updated_at": "2026-08-22",
-    "notes": "Drop von kleinen Schleimen. Wird für klebrige Kolben, Schleimblöcke und Magmacreme benötigt.",
+    "notes": "Beute von kleinen Schleimen. Wird für klebrige Kolben, Schleimblöcke und Magmacreme benötigt.",
     "version": "Klassisch",
     "version_history": [
       {
@@ -3277,6 +3818,13 @@
         "category": "Item",
         "description": "Inventar-Textur von Schleimball.",
         "file": "/assets/img/items/Slimeball.png"
+      },
+      {
+        "name": "slime_ball",
+        "category": "Item",
+        "description": "item/slime_ball.png",
+        "file": "/assets/img/textures/item/slime_ball.png",
+        "path": "item/slime_ball"
       }
     ],
     "sounds": [],
@@ -3361,6 +3909,13 @@
         "category": "Item",
         "description": "Inventar-Textur von Tonklumpen.",
         "file": "/assets/img/items/Clay_Ball.png"
+      },
+      {
+        "name": "clay_ball",
+        "category": "Item",
+        "description": "item/clay_ball.png",
+        "file": "/assets/img/textures/item/clay_ball.png",
+        "path": "item/clay_ball"
       }
     ],
     "sounds": [],
@@ -3447,6 +4002,13 @@
         "category": "Item",
         "description": "Inventar-Textur von Prismarinscherbe.",
         "file": "/assets/img/items/Prismarine_Shard.png"
+      },
+      {
+        "name": "prismarine_shard",
+        "category": "Item",
+        "description": "item/prismarine_shard.png",
+        "file": "/assets/img/textures/item/prismarine_shard.png",
+        "path": "item/prismarine_shard"
       }
     ],
     "sounds": [],
@@ -3469,7 +4031,7 @@
     "enchantable": "Nein",
     "enchantability": 0,
     "obtain": [
-      "Drop von Wächtern und großen Wächtern"
+      "Beute von Wächtern und großen Wächtern"
     ],
     "crafting_recipe": null,
     "repair_material": "Nicht zutreffend",
@@ -3533,6 +4095,13 @@
         "category": "Item",
         "description": "Inventar-Textur von Prismarinkristall.",
         "file": "/assets/img/items/Prismarine_Crystals.png"
+      },
+      {
+        "name": "prismarine_crystals",
+        "category": "Item",
+        "description": "item/prismarine_crystals.png",
+        "file": "/assets/img/textures/item/prismarine_crystals.png",
+        "path": "item/prismarine_crystals"
       }
     ],
     "sounds": [],
@@ -3555,7 +4124,7 @@
     "enchantable": "Nein",
     "enchantability": 0,
     "obtain": [
-      "Drop von Wächtern und großen Wächtern, Abbau von Seelaternen"
+      "Beute von Wächtern und großen Wächtern, Abbau von Seelaternen"
     ],
     "crafting_recipe": null,
     "repair_material": "Nicht zutreffend",
@@ -3619,6 +4188,13 @@
         "category": "Item",
         "description": "Inventar-Textur von Nautilusschale.",
         "file": "/assets/img/items/Nautilus_Shell2.png"
+      },
+      {
+        "name": "nautilus_shell",
+        "category": "Item",
+        "description": "item/nautilus_shell.png",
+        "file": "/assets/img/textures/item/nautilus_shell.png",
+        "path": "item/nautilus_shell"
       }
     ],
     "sounds": [],
@@ -3641,7 +4217,7 @@
     "enchantable": "Nein",
     "enchantability": 0,
     "obtain": [
-      "Angeln, Handel mit Fahrenden Händlern, Drop von Ertrunkenen"
+      "Angeln, Handel mit Fahrenden Händlern, Beute von Ertrunkenen"
     ],
     "crafting_recipe": null,
     "repair_material": "Nicht zutreffend",
@@ -3705,6 +4281,13 @@
         "category": "Item",
         "description": "Inventar-Textur von Herz des Meeres.",
         "file": "/assets/img/items/Heart_of_the_Sea2.png"
+      },
+      {
+        "name": "heart_of_the_sea",
+        "category": "Item",
+        "description": "item/heart_of_the_sea.png",
+        "file": "/assets/img/textures/item/heart_of_the_sea.png",
+        "path": "item/heart_of_the_sea"
       }
     ],
     "sounds": [],
@@ -3791,9 +4374,24 @@
         "category": "Item",
         "description": "Inventar-Textur von Feuerkugel.",
         "file": "/assets/img/items/Fire_Charge.png"
+      },
+      {
+        "name": "fire_charge",
+        "category": "Item",
+        "description": "item/fire_charge.png",
+        "file": "/assets/img/textures/item/fire_charge.png",
+        "path": "item/fire_charge"
       }
     ],
-    "sounds": [],
+    "sounds": [
+      {
+        "name": "Feuerkugel zischt",
+        "event": "item.firecharge.use",
+        "files": [
+          "/assets/sounds/mob/ghast/fireball4.ogg"
+        ]
+      }
+    ],
     "command": "/give @p minecraft:fire_charge 1",
     "effects": [],
     "rarity": "Gewöhnlich",
@@ -3875,6 +4473,13 @@
         "category": "Item",
         "description": "Inventar-Textur von Lohenrute.",
         "file": "/assets/img/items/Blaze_Rod.png"
+      },
+      {
+        "name": "blaze_rod",
+        "category": "Item",
+        "description": "item/blaze_rod.png",
+        "file": "/assets/img/textures/item/blaze_rod.png",
+        "path": "item/blaze_rod"
       }
     ],
     "sounds": [],
@@ -3961,6 +4566,13 @@
         "category": "Item",
         "description": "Inventar-Textur von Böenrute.",
         "file": "/assets/img/items/Breeze_Rod.png"
+      },
+      {
+        "name": "breeze_rod",
+        "category": "Item",
+        "description": "item/breeze_rod.png",
+        "file": "/assets/img/textures/item/breeze_rod.png",
+        "path": "item/breeze_rod"
       }
     ],
     "sounds": [],
@@ -4047,9 +4659,67 @@
         "category": "Item",
         "description": "Inventar-Textur von Schwerer Kern.",
         "file": "/assets/img/blocks/Heavy_Core.png"
+      },
+      {
+        "name": "heavy_core",
+        "category": "Block",
+        "description": "block/heavy_core.png",
+        "file": "/assets/img/textures/block/heavy_core.png",
+        "path": "block/heavy_core"
       }
     ],
-    "sounds": [],
+    "sounds": [
+      {
+        "name": "Block zerstört",
+        "event": "block.heavy_core.break",
+        "files": [
+          "/assets/sounds/block/heavy_core/break1.ogg",
+          "/assets/sounds/block/heavy_core/break2.ogg",
+          "/assets/sounds/block/heavy_core/break3.ogg",
+          "/assets/sounds/block/heavy_core/break4.ogg"
+        ]
+      },
+      {
+        "name": "Etwas fällt auf einen Block",
+        "event": "block.heavy_core.fall",
+        "files": [
+          "/assets/sounds/block/heavy_core/step1.ogg",
+          "/assets/sounds/block/heavy_core/step2.ogg",
+          "/assets/sounds/block/heavy_core/step3.ogg",
+          "/assets/sounds/block/heavy_core/step4.ogg"
+        ]
+      },
+      {
+        "name": "Block bricht",
+        "event": "block.heavy_core.hit",
+        "files": [
+          "/assets/sounds/block/heavy_core/step1.ogg",
+          "/assets/sounds/block/heavy_core/step2.ogg",
+          "/assets/sounds/block/heavy_core/step3.ogg",
+          "/assets/sounds/block/heavy_core/step4.ogg"
+        ]
+      },
+      {
+        "name": "Block platziert",
+        "event": "block.heavy_core.place",
+        "files": [
+          "/assets/sounds/block/heavy_core/break1.ogg",
+          "/assets/sounds/block/heavy_core/break2.ogg",
+          "/assets/sounds/block/heavy_core/break3.ogg",
+          "/assets/sounds/block/heavy_core/break4.ogg"
+        ]
+      },
+      {
+        "name": "Schritte",
+        "event": "block.heavy_core.step",
+        "files": [
+          "/assets/sounds/block/heavy_core/step1.ogg",
+          "/assets/sounds/block/heavy_core/step2.ogg",
+          "/assets/sounds/block/heavy_core/step3.ogg",
+          "/assets/sounds/block/heavy_core/step4.ogg"
+        ]
+      }
+    ],
     "command": "/give @p minecraft:heavy_core 1",
     "effects": [],
     "rarity": "Selten",
@@ -4133,6 +4803,13 @@
         "category": "Item",
         "description": "Inventar-Textur von Netherstern.",
         "file": "/assets/img/items/Nether_Star.gif"
+      },
+      {
+        "name": "nether_star",
+        "category": "Item",
+        "description": "item/nether_star.png",
+        "file": "/assets/img/textures/item/nether_star.png",
+        "path": "item/nether_star"
       }
     ],
     "sounds": [],
@@ -4155,7 +4832,7 @@
     "enchantable": "Nein",
     "enchantability": 0,
     "obtain": [
-      "Drop des Withers"
+      "Beute des Withers"
     ],
     "crafting_recipe": null,
     "repair_material": "Nicht zutreffend",
@@ -4219,9 +4896,32 @@
         "category": "Item",
         "description": "Inventar-Textur von Enderperle.",
         "file": "/assets/img/items/Ender_Pearl.png"
+      },
+      {
+        "name": "ender_pearl",
+        "category": "Item",
+        "description": "item/ender_pearl.png",
+        "file": "/assets/img/textures/item/ender_pearl.png",
+        "path": "item/ender_pearl"
       }
     ],
-    "sounds": [],
+    "sounds": [
+      {
+        "name": "Enderperle fliegt",
+        "event": "entity.ender_pearl.throw",
+        "files": [
+          "/assets/sounds/random/bow.ogg"
+        ]
+      },
+      {
+        "name": "Spieler teleportiert",
+        "event": "entity.player.teleport",
+        "files": [
+          "/assets/sounds/mob/endermen/portal.ogg",
+          "/assets/sounds/mob/endermen/portal2.ogg"
+        ]
+      }
+    ],
     "command": "/give @p minecraft:ender_pearl 1",
     "effects": [],
     "rarity": "Gewöhnlich",
@@ -4303,9 +5003,33 @@
         "category": "Item",
         "description": "Inventar-Textur von Enderauge.",
         "file": "/assets/img/items/Eye_of_Ender.png"
+      },
+      {
+        "name": "ender_eye",
+        "category": "Item",
+        "description": "item/ender_eye.png",
+        "file": "/assets/img/textures/item/ender_eye.png",
+        "path": "item/ender_eye"
       }
     ],
-    "sounds": [],
+    "sounds": [
+      {
+        "name": "Enderauge platzt",
+        "event": "entity.ender_eye.death",
+        "files": [
+          "/assets/sounds/entity/endereye/dead1.ogg",
+          "/assets/sounds/entity/endereye/dead2.ogg"
+        ]
+      },
+      {
+        "name": "Enderauge geworfen",
+        "event": "entity.ender_eye.launch",
+        "files": [
+          "/assets/sounds/entity/endereye/endereye_launch1.ogg",
+          "/assets/sounds/entity/endereye/endereye_launch2.ogg"
+        ]
+      }
+    ],
     "command": "/give @p minecraft:ender_eye 1",
     "effects": [],
     "rarity": "Gewöhnlich",
@@ -4387,6 +5111,13 @@
         "category": "Item",
         "description": "Inventar-Textur von Shulker-Schale.",
         "file": "/assets/img/items/Shulker_Shell.png"
+      },
+      {
+        "name": "shulker_shell",
+        "category": "Item",
+        "description": "item/shulker_shell.png",
+        "file": "/assets/img/textures/item/shulker_shell.png",
+        "path": "item/shulker_shell"
       }
     ],
     "sounds": [],
@@ -4409,7 +5140,7 @@
     "enchantable": "Nein",
     "enchantability": 0,
     "obtain": [
-      "Drop von Shulkern (0-1)"
+      "Beute von Shulkern (0-1)"
     ],
     "crafting_recipe": null,
     "repair_material": "Nicht zutreffend",
@@ -4473,6 +5204,13 @@
         "category": "Item",
         "description": "Inventar-Textur von Geplatzte Chorusfrucht.",
         "file": "/assets/img/items/Popped_Chorus_Fruit.png"
+      },
+      {
+        "name": "popped_chorus_fruit",
+        "category": "Item",
+        "description": "item/popped_chorus_fruit.png",
+        "file": "/assets/img/textures/item/popped_chorus_fruit.png",
+        "path": "item/popped_chorus_fruit"
       }
     ],
     "sounds": [],
@@ -4559,6 +5297,13 @@
         "category": "Item",
         "description": "Inventar-Textur von Echoscherbe.",
         "file": "/assets/img/items/Echo_Shard.png"
+      },
+      {
+        "name": "echo_shard",
+        "category": "Item",
+        "description": "item/echo_shard.png",
+        "file": "/assets/img/textures/item/echo_shard.png",
+        "path": "item/echo_shard"
       }
     ],
     "sounds": [],
@@ -4645,6 +5390,13 @@
         "category": "Item",
         "description": "Inventar-Textur von Plattenfragment.",
         "file": "/assets/img/items/Disc_Fragment_5.png"
+      },
+      {
+        "name": "disc_fragment_5",
+        "category": "Item",
+        "description": "item/disc_fragment_5.png",
+        "file": "/assets/img/textures/item/disc_fragment_5.png",
+        "path": "item/disc_fragment_5"
       }
     ],
     "sounds": [],
@@ -4667,7 +5419,7 @@
     "enchantable": "Nein",
     "enchantability": 0,
     "obtain": [
-      "Drop von Eindringlingen in antiken Stätten"
+      "Beute von Eindringlingen in antiken Stätten"
     ],
     "crafting_recipe": null,
     "repair_material": "Nicht zutreffend",
@@ -4731,9 +5483,24 @@
         "category": "Item",
         "description": "Inventar-Textur von Weißer Farbstoff.",
         "file": "/assets/img/items/White_Dye.png"
+      },
+      {
+        "name": "white_dye",
+        "category": "Item",
+        "description": "item/white_dye.png",
+        "file": "/assets/img/textures/item/white_dye.png",
+        "path": "item/white_dye"
       }
     ],
-    "sounds": [],
+    "sounds": [
+      {
+        "name": "Farbstoff färbt",
+        "event": "item.dye.use",
+        "files": [
+          "/assets/sounds/item/dye/dye.ogg"
+        ]
+      }
+    ],
     "command": "/give @p minecraft:white_dye 1",
     "effects": [],
     "rarity": "Gewöhnlich",
@@ -4815,9 +5582,24 @@
         "category": "Item",
         "description": "Inventar-Textur von Oranger Farbstoff.",
         "file": "/assets/img/items/Orange_Dye.png"
+      },
+      {
+        "name": "orange_dye",
+        "category": "Item",
+        "description": "item/orange_dye.png",
+        "file": "/assets/img/textures/item/orange_dye.png",
+        "path": "item/orange_dye"
       }
     ],
-    "sounds": [],
+    "sounds": [
+      {
+        "name": "Farbstoff färbt",
+        "event": "item.dye.use",
+        "files": [
+          "/assets/sounds/item/dye/dye.ogg"
+        ]
+      }
+    ],
     "command": "/give @p minecraft:orange_dye 1",
     "effects": [],
     "rarity": "Gewöhnlich",
@@ -4899,9 +5681,24 @@
         "category": "Item",
         "description": "Inventar-Textur von Magenta Farbstoff.",
         "file": "/assets/img/items/Magenta_Dye.png"
+      },
+      {
+        "name": "magenta_dye",
+        "category": "Item",
+        "description": "item/magenta_dye.png",
+        "file": "/assets/img/textures/item/magenta_dye.png",
+        "path": "item/magenta_dye"
       }
     ],
-    "sounds": [],
+    "sounds": [
+      {
+        "name": "Farbstoff färbt",
+        "event": "item.dye.use",
+        "files": [
+          "/assets/sounds/item/dye/dye.ogg"
+        ]
+      }
+    ],
     "command": "/give @p minecraft:magenta_dye 1",
     "effects": [],
     "rarity": "Gewöhnlich",
@@ -4983,9 +5780,24 @@
         "category": "Item",
         "description": "Inventar-Textur von Hellblauer Farbstoff.",
         "file": "/assets/img/items/Light_Blue_Dye.png"
+      },
+      {
+        "name": "light_blue_dye",
+        "category": "Item",
+        "description": "item/light_blue_dye.png",
+        "file": "/assets/img/textures/item/light_blue_dye.png",
+        "path": "item/light_blue_dye"
       }
     ],
-    "sounds": [],
+    "sounds": [
+      {
+        "name": "Farbstoff färbt",
+        "event": "item.dye.use",
+        "files": [
+          "/assets/sounds/item/dye/dye.ogg"
+        ]
+      }
+    ],
     "command": "/give @p minecraft:light_blue_dye 1",
     "effects": [],
     "rarity": "Gewöhnlich",
@@ -5067,9 +5879,24 @@
         "category": "Item",
         "description": "Inventar-Textur von Gelber Farbstoff.",
         "file": "/assets/img/items/Yellow_Dye.png"
+      },
+      {
+        "name": "yellow_dye",
+        "category": "Item",
+        "description": "item/yellow_dye.png",
+        "file": "/assets/img/textures/item/yellow_dye.png",
+        "path": "item/yellow_dye"
       }
     ],
-    "sounds": [],
+    "sounds": [
+      {
+        "name": "Farbstoff färbt",
+        "event": "item.dye.use",
+        "files": [
+          "/assets/sounds/item/dye/dye.ogg"
+        ]
+      }
+    ],
     "command": "/give @p minecraft:yellow_dye 1",
     "effects": [],
     "rarity": "Gewöhnlich",
@@ -5151,9 +5978,24 @@
         "category": "Item",
         "description": "Inventar-Textur von Hellgrüner Farbstoff.",
         "file": "/assets/img/items/Lime_Dye.png"
+      },
+      {
+        "name": "lime_dye",
+        "category": "Item",
+        "description": "item/lime_dye.png",
+        "file": "/assets/img/textures/item/lime_dye.png",
+        "path": "item/lime_dye"
       }
     ],
-    "sounds": [],
+    "sounds": [
+      {
+        "name": "Farbstoff färbt",
+        "event": "item.dye.use",
+        "files": [
+          "/assets/sounds/item/dye/dye.ogg"
+        ]
+      }
+    ],
     "command": "/give @p minecraft:lime_dye 1",
     "effects": [],
     "rarity": "Gewöhnlich",
@@ -5235,9 +6077,24 @@
         "category": "Item",
         "description": "Inventar-Textur von Rosa Farbstoff.",
         "file": "/assets/img/items/Pink_Dye.png"
+      },
+      {
+        "name": "pink_dye",
+        "category": "Item",
+        "description": "item/pink_dye.png",
+        "file": "/assets/img/textures/item/pink_dye.png",
+        "path": "item/pink_dye"
       }
     ],
-    "sounds": [],
+    "sounds": [
+      {
+        "name": "Farbstoff färbt",
+        "event": "item.dye.use",
+        "files": [
+          "/assets/sounds/item/dye/dye.ogg"
+        ]
+      }
+    ],
     "command": "/give @p minecraft:pink_dye 1",
     "effects": [],
     "rarity": "Gewöhnlich",
@@ -5319,9 +6176,24 @@
         "category": "Item",
         "description": "Inventar-Textur von Grauer Farbstoff.",
         "file": "/assets/img/items/Gray_Dye.png"
+      },
+      {
+        "name": "gray_dye",
+        "category": "Item",
+        "description": "item/gray_dye.png",
+        "file": "/assets/img/textures/item/gray_dye.png",
+        "path": "item/gray_dye"
       }
     ],
-    "sounds": [],
+    "sounds": [
+      {
+        "name": "Farbstoff färbt",
+        "event": "item.dye.use",
+        "files": [
+          "/assets/sounds/item/dye/dye.ogg"
+        ]
+      }
+    ],
     "command": "/give @p minecraft:gray_dye 1",
     "effects": [],
     "rarity": "Gewöhnlich",
@@ -5403,9 +6275,24 @@
         "category": "Item",
         "description": "Inventar-Textur von Hellgrauer Farbstoff.",
         "file": "/assets/img/items/Light_Gray_Dye.png"
+      },
+      {
+        "name": "light_gray_dye",
+        "category": "Item",
+        "description": "item/light_gray_dye.png",
+        "file": "/assets/img/textures/item/light_gray_dye.png",
+        "path": "item/light_gray_dye"
       }
     ],
-    "sounds": [],
+    "sounds": [
+      {
+        "name": "Farbstoff färbt",
+        "event": "item.dye.use",
+        "files": [
+          "/assets/sounds/item/dye/dye.ogg"
+        ]
+      }
+    ],
     "command": "/give @p minecraft:light_gray_dye 1",
     "effects": [],
     "rarity": "Gewöhnlich",
@@ -5487,9 +6374,24 @@
         "category": "Item",
         "description": "Inventar-Textur von Türkiser Farbstoff.",
         "file": "/assets/img/items/Cyan_Dye.png"
+      },
+      {
+        "name": "cyan_dye",
+        "category": "Item",
+        "description": "item/cyan_dye.png",
+        "file": "/assets/img/textures/item/cyan_dye.png",
+        "path": "item/cyan_dye"
       }
     ],
-    "sounds": [],
+    "sounds": [
+      {
+        "name": "Farbstoff färbt",
+        "event": "item.dye.use",
+        "files": [
+          "/assets/sounds/item/dye/dye.ogg"
+        ]
+      }
+    ],
     "command": "/give @p minecraft:cyan_dye 1",
     "effects": [],
     "rarity": "Gewöhnlich",
@@ -5571,9 +6473,24 @@
         "category": "Item",
         "description": "Inventar-Textur von Violetter Farbstoff.",
         "file": "/assets/img/items/Purple_Dye.png"
+      },
+      {
+        "name": "purple_dye",
+        "category": "Item",
+        "description": "item/purple_dye.png",
+        "file": "/assets/img/textures/item/purple_dye.png",
+        "path": "item/purple_dye"
       }
     ],
-    "sounds": [],
+    "sounds": [
+      {
+        "name": "Farbstoff färbt",
+        "event": "item.dye.use",
+        "files": [
+          "/assets/sounds/item/dye/dye.ogg"
+        ]
+      }
+    ],
     "command": "/give @p minecraft:purple_dye 1",
     "effects": [],
     "rarity": "Gewöhnlich",
@@ -5655,9 +6572,24 @@
         "category": "Item",
         "description": "Inventar-Textur von Blauer Farbstoff.",
         "file": "/assets/img/items/Blue_Dye.png"
+      },
+      {
+        "name": "blue_dye",
+        "category": "Item",
+        "description": "item/blue_dye.png",
+        "file": "/assets/img/textures/item/blue_dye.png",
+        "path": "item/blue_dye"
       }
     ],
-    "sounds": [],
+    "sounds": [
+      {
+        "name": "Farbstoff färbt",
+        "event": "item.dye.use",
+        "files": [
+          "/assets/sounds/item/dye/dye.ogg"
+        ]
+      }
+    ],
     "command": "/give @p minecraft:blue_dye 1",
     "effects": [],
     "rarity": "Gewöhnlich",
@@ -5739,9 +6671,24 @@
         "category": "Item",
         "description": "Inventar-Textur von Brauner Farbstoff.",
         "file": "/assets/img/items/Brown_Dye.png"
+      },
+      {
+        "name": "brown_dye",
+        "category": "Item",
+        "description": "item/brown_dye.png",
+        "file": "/assets/img/textures/item/brown_dye.png",
+        "path": "item/brown_dye"
       }
     ],
-    "sounds": [],
+    "sounds": [
+      {
+        "name": "Farbstoff färbt",
+        "event": "item.dye.use",
+        "files": [
+          "/assets/sounds/item/dye/dye.ogg"
+        ]
+      }
+    ],
     "command": "/give @p minecraft:brown_dye 1",
     "effects": [],
     "rarity": "Gewöhnlich",
@@ -5823,9 +6770,24 @@
         "category": "Item",
         "description": "Inventar-Textur von Grüner Farbstoff.",
         "file": "/assets/img/items/Green_Dye.png"
+      },
+      {
+        "name": "green_dye",
+        "category": "Item",
+        "description": "item/green_dye.png",
+        "file": "/assets/img/textures/item/green_dye.png",
+        "path": "item/green_dye"
       }
     ],
-    "sounds": [],
+    "sounds": [
+      {
+        "name": "Farbstoff färbt",
+        "event": "item.dye.use",
+        "files": [
+          "/assets/sounds/item/dye/dye.ogg"
+        ]
+      }
+    ],
     "command": "/give @p minecraft:green_dye 1",
     "effects": [],
     "rarity": "Gewöhnlich",
@@ -5907,9 +6869,24 @@
         "category": "Item",
         "description": "Inventar-Textur von Roter Farbstoff.",
         "file": "/assets/img/items/Red_Dye.png"
+      },
+      {
+        "name": "red_dye",
+        "category": "Item",
+        "description": "item/red_dye.png",
+        "file": "/assets/img/textures/item/red_dye.png",
+        "path": "item/red_dye"
       }
     ],
-    "sounds": [],
+    "sounds": [
+      {
+        "name": "Farbstoff färbt",
+        "event": "item.dye.use",
+        "files": [
+          "/assets/sounds/item/dye/dye.ogg"
+        ]
+      }
+    ],
     "command": "/give @p minecraft:red_dye 1",
     "effects": [],
     "rarity": "Gewöhnlich",
@@ -5991,9 +6968,24 @@
         "category": "Item",
         "description": "Inventar-Textur von Schwarzer Farbstoff.",
         "file": "/assets/img/items/Black_Dye.png"
+      },
+      {
+        "name": "black_dye",
+        "category": "Item",
+        "description": "item/black_dye.png",
+        "file": "/assets/img/textures/item/black_dye.png",
+        "path": "item/black_dye"
       }
     ],
-    "sounds": [],
+    "sounds": [
+      {
+        "name": "Farbstoff färbt",
+        "event": "item.dye.use",
+        "files": [
+          "/assets/sounds/item/dye/dye.ogg"
+        ]
+      }
+    ],
     "command": "/give @p minecraft:black_dye 1",
     "effects": [],
     "rarity": "Gewöhnlich",
@@ -6075,6 +7067,13 @@
         "category": "Item",
         "description": "Inventar-Textur von Schüssel.",
         "file": "/assets/img/items/Bowl.png"
+      },
+      {
+        "name": "bowl",
+        "category": "Item",
+        "description": "item/bowl.png",
+        "file": "/assets/img/textures/item/bowl.png",
+        "path": "item/bowl"
       }
     ],
     "sounds": [],
@@ -6159,6 +7158,13 @@
         "category": "Item",
         "description": "Inventar-Textur von Ziegel.",
         "file": "/assets/img/items/Brick.png"
+      },
+      {
+        "name": "brick",
+        "category": "Item",
+        "description": "item/brick.png",
+        "file": "/assets/img/textures/item/brick.png",
+        "path": "item/brick"
       }
     ],
     "sounds": [],
@@ -6245,6 +7251,13 @@
         "category": "Item",
         "description": "Inventar-Textur von Netherziegel.",
         "file": "/assets/img/items/Nether_Brick.png"
+      },
+      {
+        "name": "nether_brick",
+        "category": "Item",
+        "description": "item/nether_brick.png",
+        "file": "/assets/img/textures/item/nether_brick.png",
+        "path": "item/nether_brick"
       }
     ],
     "sounds": [],
@@ -6331,6 +7344,13 @@
         "category": "Item",
         "description": "Inventar-Textur von Harzziegel.",
         "file": "/assets/img/items/Resin_Brick.png"
+      },
+      {
+        "name": "resin_brick",
+        "category": "Item",
+        "description": "item/resin_brick.png",
+        "file": "/assets/img/textures/item/resin_brick.png",
+        "path": "item/resin_brick"
       }
     ],
     "sounds": [],
@@ -6417,6 +7437,13 @@
         "category": "Item",
         "description": "Inventar-Textur von Papier.",
         "file": "/assets/img/items/Paper.png"
+      },
+      {
+        "name": "paper",
+        "category": "Item",
+        "description": "item/paper.png",
+        "file": "/assets/img/textures/item/paper.png",
+        "path": "item/paper"
       }
     ],
     "sounds": [],
@@ -6503,9 +7530,34 @@
         "category": "Item",
         "description": "Inventar-Textur von Buch.",
         "file": "/assets/img/items/Book.png"
+      },
+      {
+        "name": "book",
+        "category": "Item",
+        "description": "item/book.png",
+        "file": "/assets/img/textures/item/book.png",
+        "path": "item/book"
       }
     ],
-    "sounds": [],
+    "sounds": [
+      {
+        "name": "Seite raschelt",
+        "event": "item.book.page_turn",
+        "files": [
+          "/assets/sounds/item/book/open_flip1.ogg",
+          "/assets/sounds/item/book/open_flip2.ogg",
+          "/assets/sounds/item/book/open_flip3.ogg"
+        ]
+      },
+      {
+        "name": "Buch klatscht",
+        "event": "item.book.put",
+        "files": [
+          "/assets/sounds/item/book/close_put1.ogg",
+          "/assets/sounds/item/book/close_put2.ogg"
+        ]
+      }
+    ],
     "command": "/give @p minecraft:book 1",
     "effects": [],
     "rarity": "Gewöhnlich",
@@ -6587,6 +7639,20 @@
         "category": "Item",
         "description": "Inventar-Textur von Feuerwerksstern.",
         "file": "/assets/img/items/Firework_Star.png"
+      },
+      {
+        "name": "firework_star",
+        "category": "Item",
+        "description": "item/firework_star.png",
+        "file": "/assets/img/textures/item/firework_star.png",
+        "path": "item/firework_star"
+      },
+      {
+        "name": "firework_star_overlay",
+        "category": "Item",
+        "description": "item/firework_star_overlay.png",
+        "file": "/assets/img/textures/item/firework_star_overlay.png",
+        "path": "item/firework_star_overlay"
       }
     ],
     "sounds": [],
@@ -6673,9 +7739,35 @@
         "category": "Item",
         "description": "Inventar-Textur von Glasflasche.",
         "file": "/assets/img/items/Glass_Bottle.png"
+      },
+      {
+        "name": "glass_bottle",
+        "category": "Item",
+        "description": "item/glass_bottle.png",
+        "file": "/assets/img/textures/item/glass_bottle.png",
+        "path": "item/glass_bottle"
       }
     ],
-    "sounds": [],
+    "sounds": [
+      {
+        "name": "Flasche gefüllt",
+        "event": "item.bottle.fill_dragonbreath",
+        "files": [
+          "/assets/sounds/item/bottle/fill_dragonbreath1.ogg",
+          "/assets/sounds/item/bottle/fill_dragonbreath2.ogg"
+        ]
+      },
+      {
+        "name": "Flasche gefüllt",
+        "event": "item.bottle.fill",
+        "files": [
+          "/assets/sounds/item/bottle/fill1.ogg",
+          "/assets/sounds/item/bottle/fill2.ogg",
+          "/assets/sounds/item/bottle/fill3.ogg",
+          "/assets/sounds/item/bottle/fill4.ogg"
+        ]
+      }
+    ],
     "command": "/give @p minecraft:glass_bottle 1",
     "effects": [],
     "rarity": "Gewöhnlich",
@@ -6757,9 +7849,98 @@
         "category": "Item",
         "description": "Inventar-Textur von Netherwarze.",
         "file": "/assets/img/items/Nether_Wart.png"
+      },
+      {
+        "name": "nether_wart",
+        "category": "Item",
+        "description": "item/nether_wart.png",
+        "file": "/assets/img/textures/item/nether_wart.png",
+        "path": "item/nether_wart"
+      },
+      {
+        "name": "nether_wart_stage0",
+        "category": "Block",
+        "description": "block/nether_wart_stage0.png",
+        "file": "/assets/img/textures/block/nether_wart_stage0.png",
+        "path": "block/nether_wart_stage0"
+      },
+      {
+        "name": "nether_wart_stage1",
+        "category": "Block",
+        "description": "block/nether_wart_stage1.png",
+        "file": "/assets/img/textures/block/nether_wart_stage1.png",
+        "path": "block/nether_wart_stage1"
+      },
+      {
+        "name": "nether_wart_stage2",
+        "category": "Block",
+        "description": "block/nether_wart_stage2.png",
+        "file": "/assets/img/textures/block/nether_wart_stage2.png",
+        "path": "block/nether_wart_stage2"
       }
     ],
-    "sounds": [],
+    "sounds": [
+      {
+        "name": "Block platziert",
+        "event": "item.nether_wart.plant",
+        "files": [
+          "/assets/sounds/item/plant/netherwart1.ogg",
+          "/assets/sounds/item/plant/netherwart2.ogg",
+          "/assets/sounds/item/plant/netherwart3.ogg",
+          "/assets/sounds/item/plant/netherwart4.ogg",
+          "/assets/sounds/item/plant/netherwart5.ogg",
+          "/assets/sounds/item/plant/netherwart6.ogg"
+        ]
+      },
+      {
+        "name": "Block zerstört",
+        "event": "block.nether_wart.break",
+        "files": [
+          "/assets/sounds/item/plant/netherwart1.ogg",
+          "/assets/sounds/item/plant/netherwart2.ogg",
+          "/assets/sounds/item/plant/netherwart3.ogg",
+          "/assets/sounds/item/plant/netherwart4.ogg",
+          "/assets/sounds/item/plant/netherwart5.ogg",
+          "/assets/sounds/item/plant/netherwart6.ogg"
+        ]
+      },
+      {
+        "name": "Schritte",
+        "event": "block.stone.step",
+        "files": [
+          "/assets/sounds/step/stone1.ogg",
+          "/assets/sounds/step/stone2.ogg",
+          "/assets/sounds/step/stone3.ogg",
+          "/assets/sounds/step/stone4.ogg",
+          "/assets/sounds/step/stone5.ogg",
+          "/assets/sounds/step/stone6.ogg"
+        ]
+      },
+      {
+        "name": "Block bricht",
+        "event": "block.stone.hit",
+        "files": [
+          "/assets/sounds/step/stone1.ogg",
+          "/assets/sounds/step/stone2.ogg",
+          "/assets/sounds/step/stone3.ogg",
+          "/assets/sounds/step/stone4.ogg",
+          "/assets/sounds/step/stone5.ogg",
+          "/assets/sounds/step/stone6.ogg"
+        ]
+      },
+      {
+        "name": "Etwas fällt auf einen Block",
+        "event": "block.stone.fall",
+        "files": [
+          "/assets/sounds/step/stone1.ogg",
+          "/assets/sounds/step/stone2.ogg",
+          "/assets/sounds/step/stone3.ogg",
+          "/assets/sounds/step/stone4.ogg",
+          "/assets/sounds/step/stone5.ogg",
+          "/assets/sounds/step/stone6.ogg"
+        ]
+      }
+    ],
     "command": "/give @p minecraft:nether_wart 1",
     "effects": [],
     "rarity": "Gewöhnlich",
@@ -6843,9 +8024,101 @@
         "category": "Item",
         "description": "Inventar-Textur von Redstone-Staub.",
         "file": "/assets/img/items/Redstone_Dust.png"
+      },
+      {
+        "name": "redstone",
+        "category": "Item",
+        "description": "item/redstone.png",
+        "file": "/assets/img/textures/item/redstone.png",
+        "path": "item/redstone"
+      },
+      {
+        "name": "redstone_dust_dot",
+        "category": "Block",
+        "description": "block/redstone_dust_dot.png",
+        "file": "/assets/img/textures/block/redstone_dust_dot.png",
+        "path": "block/redstone_dust_dot"
+      },
+      {
+        "name": "redstone_dust_overlay",
+        "category": "Block",
+        "description": "block/redstone_dust_overlay.png",
+        "file": "/assets/img/textures/block/redstone_dust_overlay.png",
+        "path": "block/redstone_dust_overlay"
+      },
+      {
+        "name": "redstone_dust_line0",
+        "category": "Block",
+        "description": "block/redstone_dust_line0.png",
+        "file": "/assets/img/textures/block/redstone_dust_line0.png",
+        "path": "block/redstone_dust_line0"
+      },
+      {
+        "name": "redstone_dust_line1",
+        "category": "Block",
+        "description": "block/redstone_dust_line1.png",
+        "file": "/assets/img/textures/block/redstone_dust_line1.png",
+        "path": "block/redstone_dust_line1"
       }
     ],
-    "sounds": [],
+    "sounds": [
+      {
+        "name": "Block zerstört",
+        "event": "block.stone.break",
+        "files": [
+          "/assets/sounds/dig/stone1.ogg",
+          "/assets/sounds/dig/stone2.ogg",
+          "/assets/sounds/dig/stone3.ogg",
+          "/assets/sounds/dig/stone4.ogg"
+        ]
+      },
+      {
+        "name": "Schritte",
+        "event": "block.stone.step",
+        "files": [
+          "/assets/sounds/step/stone1.ogg",
+          "/assets/sounds/step/stone2.ogg",
+          "/assets/sounds/step/stone3.ogg",
+          "/assets/sounds/step/stone4.ogg",
+          "/assets/sounds/step/stone5.ogg",
+          "/assets/sounds/step/stone6.ogg"
+        ]
+      },
+      {
+        "name": "Block platziert",
+        "event": "block.stone.place",
+        "files": [
+          "/assets/sounds/dig/stone1.ogg",
+          "/assets/sounds/dig/stone2.ogg",
+          "/assets/sounds/dig/stone3.ogg",
+          "/assets/sounds/dig/stone4.ogg"
+        ]
+      },
+      {
+        "name": "Block bricht",
+        "event": "block.stone.hit",
+        "files": [
+          "/assets/sounds/step/stone1.ogg",
+          "/assets/sounds/step/stone2.ogg",
+          "/assets/sounds/step/stone3.ogg",
+          "/assets/sounds/step/stone4.ogg",
+          "/assets/sounds/step/stone5.ogg",
+          "/assets/sounds/step/stone6.ogg"
+        ]
+      },
+      {
+        "name": "Etwas fällt auf einen Block",
+        "event": "block.stone.fall",
+        "files": [
+          "/assets/sounds/step/stone1.ogg",
+          "/assets/sounds/step/stone2.ogg",
+          "/assets/sounds/step/stone3.ogg",
+          "/assets/sounds/step/stone4.ogg",
+          "/assets/sounds/step/stone5.ogg",
+          "/assets/sounds/step/stone6.ogg"
+        ]
+      }
+    ],
     "command": "/give @p minecraft:redstone 1",
     "effects": [],
     "rarity": "Gewöhnlich",
@@ -6887,7 +8160,7 @@
   },
   {
     "id": "minecraft:glowstone_dust",
-    "name": "Glowstone-Staub",
+    "name": "Leuchtsteinstaub",
     "variant": "",
     "numeric_id": "Keine numerische ID in aktuellen Versionen",
     "type": "Item",
@@ -6908,7 +8181,7 @@
     "version_history": [
       {
         "version": "Klassisch",
-        "change": "Glowstone-Staub wurde hinzugefügt.",
+        "change": "Leuchtsteinstaub wurde hinzugefügt.",
         "type": "added",
         "date": ""
       }
@@ -6923,10 +8196,17 @@
     "related_entries": [],
     "texture": [
       {
-        "name": "Glowstone-Staub",
+        "name": "Leuchtsteinstaub",
         "category": "Item",
-        "description": "Inventar-Textur von Glowstone-Staub.",
+        "description": "Inventar-Textur von Leuchtsteinstaub.",
         "file": "/assets/img/items/Glowstone_Dust.png"
+      },
+      {
+        "name": "glowstone_dust",
+        "category": "Item",
+        "description": "item/glowstone_dust.png",
+        "file": "/assets/img/textures/item/glowstone_dust.png",
+        "path": "item/glowstone_dust"
       }
     ],
     "sounds": [],
@@ -6949,7 +8229,7 @@
     "enchantable": "Nein",
     "enchantability": 0,
     "obtain": [
-      "Abbau von Glowstone (2-4 Staub), Handel mit Dorfbewohnern"
+      "Abbau von Leuchtstein (2-4 Staub), Handel mit Dorfbewohnern"
     ],
     "crafting_recipe": null,
     "repair_material": "Nicht zutreffend",
@@ -7013,6 +8293,13 @@
         "category": "Item",
         "description": "Inventar-Textur von Schießpulver.",
         "file": "/assets/img/items/Gunpowder.png"
+      },
+      {
+        "name": "gunpowder",
+        "category": "Item",
+        "description": "item/gunpowder.png",
+        "file": "/assets/img/textures/item/gunpowder.png",
+        "path": "item/gunpowder"
       }
     ],
     "sounds": [],
@@ -7035,7 +8322,7 @@
     "enchantable": "Nein",
     "enchantability": 0,
     "obtain": [
-      "Drop von Creepers, Ghasts, Hexen, in Truhen"
+      "Beute von Creepern, Ghasts, Hexen, in Truhen"
     ],
     "crafting_recipe": null,
     "repair_material": "Nicht zutreffend",
@@ -7185,6 +8472,13 @@
         "category": "Item",
         "description": "Inventar-Textur von Fermentiertes Spinnenauge.",
         "file": "/assets/img/items/Fermented_Spider_Eye.png"
+      },
+      {
+        "name": "fermented_spider_eye",
+        "category": "Item",
+        "description": "item/fermented_spider_eye.png",
+        "file": "/assets/img/textures/item/fermented_spider_eye.png",
+        "path": "item/fermented_spider_eye"
       }
     ],
     "sounds": [],
@@ -7271,6 +8565,13 @@
         "category": "Item",
         "description": "Inventar-Textur von Lohenstaub.",
         "file": "/assets/img/items/Blaze_Powder.png"
+      },
+      {
+        "name": "blaze_powder",
+        "category": "Item",
+        "description": "item/blaze_powder.png",
+        "file": "/assets/img/textures/item/blaze_powder.png",
+        "path": "item/blaze_powder"
       }
     ],
     "sounds": [],
@@ -7357,6 +8658,13 @@
         "category": "Item",
         "description": "Inventar-Textur von Zucker.",
         "file": "/assets/img/items/Sugar.png"
+      },
+      {
+        "name": "sugar",
+        "category": "Item",
+        "description": "item/sugar.png",
+        "file": "/assets/img/textures/item/sugar.png",
+        "path": "item/sugar"
       }
     ],
     "sounds": [],
@@ -7463,7 +8771,7 @@
     "enchantable": "Nein",
     "enchantability": 0,
     "obtain": [
-      "Drop von Kaninchen (10% Chance)"
+      "Beute von Kaninchen (10% Chance)"
     ],
     "crafting_recipe": null,
     "repair_material": "Nicht zutreffend",
@@ -7527,6 +8835,13 @@
         "category": "Item",
         "description": "Inventar-Textur von Glitzernde Melonenscheibe.",
         "file": "/assets/img/items/Glistering_Melon_Slice.png"
+      },
+      {
+        "name": "glistering_melon_slice",
+        "category": "Item",
+        "description": "item/glistering_melon_slice.png",
+        "file": "/assets/img/textures/item/glistering_melon_slice.png",
+        "path": "item/glistering_melon_slice"
       }
     ],
     "sounds": [],
@@ -7613,9 +8928,26 @@
         "category": "Item",
         "description": "Inventar-Textur von Spinnenauge.",
         "file": "/assets/img/items/Spider_Eye.png"
+      },
+      {
+        "name": "spider_eye",
+        "category": "Item",
+        "description": "item/spider_eye.png",
+        "file": "/assets/img/textures/item/spider_eye.png",
+        "path": "item/spider_eye"
       }
     ],
-    "sounds": [],
+    "sounds": [
+      {
+        "name": "Essen",
+        "event": "entity.generic.eat",
+        "files": [
+          "/assets/sounds/random/eat1.ogg",
+          "/assets/sounds/random/eat2.ogg",
+          "/assets/sounds/random/eat3.ogg"
+        ]
+      }
+    ],
     "command": "/give @p minecraft:spider_eye 1",
     "effects": [],
     "rarity": "Gewöhnlich",
@@ -7697,9 +9029,26 @@
         "category": "Item",
         "description": "Inventar-Textur von Kugelfisch.",
         "file": "/assets/img/items/Pufferfish.png"
+      },
+      {
+        "name": "pufferfish",
+        "category": "Item",
+        "description": "item/pufferfish.png",
+        "file": "/assets/img/textures/item/pufferfish.png",
+        "path": "item/pufferfish"
       }
     ],
-    "sounds": [],
+    "sounds": [
+      {
+        "name": "Essen",
+        "event": "entity.generic.eat",
+        "files": [
+          "/assets/sounds/random/eat1.ogg",
+          "/assets/sounds/random/eat2.ogg",
+          "/assets/sounds/random/eat3.ogg"
+        ]
+      }
+    ],
     "command": "/give @p minecraft:pufferfish 1",
     "effects": [],
     "rarity": "Gewöhnlich",
@@ -7781,6 +9130,13 @@
         "category": "Item",
         "description": "Inventar-Textur von Magmacreme.",
         "file": "/assets/img/items/Magma_Cream.png"
+      },
+      {
+        "name": "magma_cream",
+        "category": "Item",
+        "description": "item/magma_cream.png",
+        "file": "/assets/img/textures/item/magma_cream.png",
+        "path": "item/magma_cream"
       }
     ],
     "sounds": [],
@@ -7803,7 +9159,7 @@
     "enchantable": "Nein",
     "enchantability": 0,
     "obtain": [
-      "Drop von Magmawürfeln (0-1), hergestellt aus Lohenstaub + Schleimball"
+      "Beute von Magmawürfeln (0-1), hergestellt aus Lohenstaub + Schleimball"
     ],
     "crafting_recipe": null,
     "repair_material": "Nicht zutreffend",
@@ -7867,9 +9223,26 @@
         "category": "Item",
         "description": "Inventar-Textur von Goldene Karotte.",
         "file": "/assets/img/items/Golden_Carrot.png"
+      },
+      {
+        "name": "golden_carrot",
+        "category": "Item",
+        "description": "item/golden_carrot.png",
+        "file": "/assets/img/textures/item/golden_carrot.png",
+        "path": "item/golden_carrot"
       }
     ],
-    "sounds": [],
+    "sounds": [
+      {
+        "name": "Essen",
+        "event": "entity.generic.eat",
+        "files": [
+          "/assets/sounds/random/eat1.ogg",
+          "/assets/sounds/random/eat2.ogg",
+          "/assets/sounds/random/eat3.ogg"
+        ]
+      }
+    ],
     "command": "/give @p minecraft:golden_carrot 1",
     "effects": [],
     "rarity": "Gewöhnlich",
@@ -7951,6 +9324,13 @@
         "category": "Item",
         "description": "Inventar-Textur von Ghast-Träne.",
         "file": "/assets/img/items/Ghast_Tear.png"
+      },
+      {
+        "name": "ghast_tear",
+        "category": "Item",
+        "description": "item/ghast_tear.png",
+        "file": "/assets/img/textures/item/ghast_tear.png",
+        "path": "item/ghast_tear"
       }
     ],
     "sounds": [],
@@ -7973,7 +9353,7 @@
     "enchantable": "Nein",
     "enchantability": 0,
     "obtain": [
-      "Drop von Ghasts (0-1)"
+      "Beute von Ghasts (0-1)"
     ],
     "crafting_recipe": null,
     "repair_material": "Nicht zutreffend",
@@ -8037,9 +9417,38 @@
         "category": "Item",
         "description": "Inventar-Textur von Schildkrötenpanzer.",
         "file": "/assets/img/textures/item/turtle_helmet.png"
+      },
+      {
+        "name": "turtle_scute",
+        "category": "Entität",
+        "description": "entity/equipment/humanoid/turtle_scute.png",
+        "file": "/assets/img/textures/entity/equipment/humanoid/turtle_scute.png",
+        "path": "entity/equipment/humanoid/turtle_scute"
+      },
+      {
+        "name": "turtle_scute",
+        "category": "Entität",
+        "description": "entity/equipment/humanoid_baby/turtle_scute.png",
+        "file": "/assets/img/textures/entity/equipment/humanoid_baby/turtle_scute.png",
+        "path": "entity/equipment/humanoid_baby/turtle_scute"
       }
     ],
-    "sounds": [],
+    "sounds": [
+      {
+        "name": "Schildkrötenpanzer klappert",
+        "event": "item.armor.equip_turtle",
+        "files": [
+          "/assets/sounds/mob/turtle/armor.ogg"
+        ]
+      },
+      {
+        "name": "Gegenstand zerbricht",
+        "event": "entity.item.break",
+        "files": [
+          "/assets/sounds/random/break.ogg"
+        ]
+      }
+    ],
     "command": "/give @p minecraft:turtle_helmet 1",
     "effects": [],
     "rarity": "Gewöhnlich",
@@ -8121,6 +9530,13 @@
         "category": "Item",
         "description": "Inventar-Textur von Phantomhaut.",
         "file": "/assets/img/items/Phantom_Membrane.png"
+      },
+      {
+        "name": "phantom_membrane",
+        "category": "Item",
+        "description": "item/phantom_membrane.png",
+        "file": "/assets/img/textures/item/phantom_membrane.png",
+        "path": "item/phantom_membrane"
       }
     ],
     "sounds": [],
@@ -8143,7 +9559,7 @@
     "enchantable": "Nein",
     "enchantability": 0,
     "obtain": [
-      "Drop von Phantomen (0-1)"
+      "Beute von Phantomen (0-1)"
     ],
     "crafting_recipe": null,
     "repair_material": "Nicht zutreffend",
@@ -8207,6 +9623,13 @@
         "category": "Item",
         "description": "Inventar-Textur von Mauerung-Bannervorlage.",
         "file": "/assets/img/items/Field_Masoned_Banner_Pattern2.png"
+      },
+      {
+        "name": "field_masoned_banner_pattern",
+        "category": "Item",
+        "description": "item/field_masoned_banner_pattern.png",
+        "file": "/assets/img/textures/item/field_masoned_banner_pattern.png",
+        "path": "item/field_masoned_banner_pattern"
       }
     ],
     "sounds": [],
@@ -8293,6 +9716,13 @@
         "category": "Item",
         "description": "Inventar-Textur von Spickelbord-Bannervorlage.",
         "file": "/assets/img/items/Bordure_Indented_Banner_Pattern2.png"
+      },
+      {
+        "name": "bordure_indented_banner_pattern",
+        "category": "Item",
+        "description": "item/bordure_indented_banner_pattern.png",
+        "file": "/assets/img/textures/item/bordure_indented_banner_pattern.png",
+        "path": "item/bordure_indented_banner_pattern"
       }
     ],
     "sounds": [],
@@ -8379,6 +9809,13 @@
         "category": "Item",
         "description": "Inventar-Textur von Blumen-Bannervorlage.",
         "file": "/assets/img/items/Flower_Charge_Banner_Pattern.png"
+      },
+      {
+        "name": "flower_banner_pattern",
+        "category": "Item",
+        "description": "item/flower_banner_pattern.png",
+        "file": "/assets/img/textures/item/flower_banner_pattern.png",
+        "path": "item/flower_banner_pattern"
       }
     ],
     "sounds": [],
@@ -8465,6 +9902,13 @@
         "category": "Item",
         "description": "Inventar-Textur von Creeper-Bannervorlage.",
         "file": "/assets/img/items/Creeper_Charge_Banner_Pattern.png"
+      },
+      {
+        "name": "creeper_banner_pattern",
+        "category": "Item",
+        "description": "item/creeper_banner_pattern.png",
+        "file": "/assets/img/textures/item/creeper_banner_pattern.png",
+        "path": "item/creeper_banner_pattern"
       }
     ],
     "sounds": [],
@@ -8551,6 +9995,13 @@
         "category": "Item",
         "description": "Inventar-Textur von Schädel-Bannervorlage.",
         "file": "/assets/img/items/Skull_Charge_Banner_Pattern.png"
+      },
+      {
+        "name": "skull_banner_pattern",
+        "category": "Item",
+        "description": "item/skull_banner_pattern.png",
+        "file": "/assets/img/textures/item/skull_banner_pattern.png",
+        "path": "item/skull_banner_pattern"
       }
     ],
     "sounds": [],
@@ -8637,6 +10088,13 @@
         "category": "Item",
         "description": "Inventar-Textur von Mojang-Logo-Bannervorlage.",
         "file": "/assets/img/items/Thing_Banner_Pattern.png"
+      },
+      {
+        "name": "mojang_banner_pattern",
+        "category": "Item",
+        "description": "item/mojang_banner_pattern.png",
+        "file": "/assets/img/textures/item/mojang_banner_pattern.png",
+        "path": "item/mojang_banner_pattern"
       }
     ],
     "sounds": [],
@@ -8723,6 +10181,13 @@
         "category": "Item",
         "description": "Inventar-Textur von Globus-Bannervorlage.",
         "file": "/assets/img/items/Globe_Banner_Pattern.png"
+      },
+      {
+        "name": "globe_banner_pattern",
+        "category": "Item",
+        "description": "item/globe_banner_pattern.png",
+        "file": "/assets/img/textures/item/globe_banner_pattern.png",
+        "path": "item/globe_banner_pattern"
       }
     ],
     "sounds": [],
@@ -8768,7 +10233,7 @@
     "enchanting_recipe": null
   },
   {
-    "id": "minecraft:snout_banner_pattern",
+    "id": "minecraft:piglin_banner_pattern",
     "name": "Schnauzen-Bannervorlage",
     "variant": "",
     "numeric_id": "Keine numerische ID in aktuellen Versionen",
@@ -8809,10 +10274,17 @@
         "category": "Item",
         "description": "Inventar-Textur von Schnauzen-Bannervorlage.",
         "file": "/assets/img/items/Snout_Banner_Pattern.png"
+      },
+      {
+        "name": "piglin_banner_pattern",
+        "category": "Item",
+        "description": "item/piglin_banner_pattern.png",
+        "file": "/assets/img/textures/item/piglin_banner_pattern.png",
+        "path": "item/piglin_banner_pattern"
       }
     ],
     "sounds": [],
-    "command": "/give @p minecraft:snout_banner_pattern 1",
+    "command": "/give @p minecraft:piglin_banner_pattern 1",
     "effects": [],
     "rarity": "Ungewöhnlich",
     "renewable": "Nein",
@@ -8849,8 +10321,8 @@
     "smelting_time": "Nicht zutreffend",
     "trade_info": [],
     "container_item": "Keines",
-    "java_item_id": "minecraft:snout_banner_pattern",
-    "bedrock_item_id": "minecraft:snout_banner_pattern",
+    "java_item_id": "minecraft:piglin_banner_pattern",
+    "bedrock_item_id": "minecraft:piglin_banner_pattern",
     "enchanting_recipe": null
   },
   {
@@ -8895,6 +10367,13 @@
         "category": "Item",
         "description": "Inventar-Textur von Fluss-Bannervorlage.",
         "file": "/assets/img/items/Flow_Banner_Pattern.png"
+      },
+      {
+        "name": "flow_banner_pattern",
+        "category": "Item",
+        "description": "item/flow_banner_pattern.png",
+        "file": "/assets/img/textures/item/flow_banner_pattern.png",
+        "path": "item/flow_banner_pattern"
       }
     ],
     "sounds": [],
@@ -8947,7 +10426,7 @@
     "type": "Item",
     "category": "Materialien",
     "icon": "/assets/img/items/Guster_Banner_Pattern.png",
-    "description": "Ermöglicht das Guster-Muster auf Bannern, das einen Böen-Körper darstellt.",
+    "description": "Ermöglicht das Windstoßer-Muster auf Bannern, das einen Böen-Körper darstellt.",
     "biome": "Nicht zutreffend",
     "aliases": [],
     "introduced_date": "",
@@ -8957,7 +10436,7 @@
     "animation": [],
     "source": "",
     "updated_at": "2026-08-22",
-    "notes": "Ermöglicht das Guster-Muster auf Bannern, das einen Böen-Körper darstellt.",
+    "notes": "Ermöglicht das Windstoßer-Muster auf Bannern, das einen Böen-Körper darstellt.",
     "version": "Java Edition 1.21",
     "version_history": [
       {
@@ -8981,6 +10460,13 @@
         "category": "Item",
         "description": "Inventar-Textur von Windstoßer-Bannervorlage.",
         "file": "/assets/img/items/Guster_Banner_Pattern.png"
+      },
+      {
+        "name": "guster_banner_pattern",
+        "category": "Item",
+        "description": "item/guster_banner_pattern.png",
+        "file": "/assets/img/textures/item/guster_banner_pattern.png",
+        "path": "item/guster_banner_pattern"
       }
     ],
     "sounds": [],
@@ -8990,7 +10476,7 @@
     "renewable": "Nein",
     "stackable": "Nein (1)",
     "stack": 1,
-    "used_as": "Ermöglicht das Guster-Muster auf Bannern, das einen Böen-Körper darstellt.",
+    "used_as": "Ermöglicht das Windstoßer-Muster auf Bannern, das einen Böen-Körper darstellt.",
     "durability": "Nicht zutreffend",
     "damage": "Nicht zutreffend",
     "attack_speed": "Nicht zutreffend",
@@ -9067,6 +10553,13 @@
         "category": "Item",
         "description": "Inventar-Textur von Angler-Töpferscherbe.",
         "file": "/assets/img/items/Angler_Pottery_Sherd.png"
+      },
+      {
+        "name": "angler_pottery_sherd",
+        "category": "Item",
+        "description": "item/angler_pottery_sherd.png",
+        "file": "/assets/img/textures/item/angler_pottery_sherd.png",
+        "path": "item/angler_pottery_sherd"
       }
     ],
     "sounds": [],
@@ -9153,6 +10646,13 @@
         "category": "Item",
         "description": "Inventar-Textur von Schützen-Töpferscherbe.",
         "file": "/assets/img/items/Archer_Pottery_Sherd.png"
+      },
+      {
+        "name": "archer_pottery_sherd",
+        "category": "Item",
+        "description": "item/archer_pottery_sherd.png",
+        "file": "/assets/img/textures/item/archer_pottery_sherd.png",
+        "path": "item/archer_pottery_sherd"
       }
     ],
     "sounds": [],
@@ -9239,6 +10739,13 @@
         "category": "Item",
         "description": "Inventar-Textur von Gebärden-Töpferscherbe.",
         "file": "/assets/img/items/Arms_Up_Pottery_Sherd2.png"
+      },
+      {
+        "name": "arms_up_pottery_sherd",
+        "category": "Item",
+        "description": "item/arms_up_pottery_sherd.png",
+        "file": "/assets/img/textures/item/arms_up_pottery_sherd.png",
+        "path": "item/arms_up_pottery_sherd"
       }
     ],
     "sounds": [],
@@ -9325,6 +10832,13 @@
         "category": "Item",
         "description": "Inventar-Textur von Klingen-Töpferscherbe.",
         "file": "/assets/img/items/Blade_Pottery_Sherd.png"
+      },
+      {
+        "name": "blade_pottery_sherd",
+        "category": "Item",
+        "description": "item/blade_pottery_sherd.png",
+        "file": "/assets/img/textures/item/blade_pottery_sherd.png",
+        "path": "item/blade_pottery_sherd"
       }
     ],
     "sounds": [],
@@ -9411,6 +10925,13 @@
         "category": "Item",
         "description": "Inventar-Textur von Brauer-Töpferscherbe.",
         "file": "/assets/img/items/Brewer_Pottery_Sherd.png"
+      },
+      {
+        "name": "brewer_pottery_sherd",
+        "category": "Item",
+        "description": "item/brewer_pottery_sherd.png",
+        "file": "/assets/img/textures/item/brewer_pottery_sherd.png",
+        "path": "item/brewer_pottery_sherd"
       }
     ],
     "sounds": [],
@@ -9497,6 +11018,13 @@
         "category": "Item",
         "description": "Inventar-Textur von Flammen-Töpferscherbe.",
         "file": "/assets/img/items/Burn_Pottery_Sherd.png"
+      },
+      {
+        "name": "burn_pottery_sherd",
+        "category": "Item",
+        "description": "item/burn_pottery_sherd.png",
+        "file": "/assets/img/textures/item/burn_pottery_sherd.png",
+        "path": "item/burn_pottery_sherd"
       }
     ],
     "sounds": [],
@@ -9583,6 +11111,13 @@
         "category": "Item",
         "description": "Inventar-Textur von Gefahren-Töpferscherbe.",
         "file": "/assets/img/items/Danger_Pottery_Sherd.png"
+      },
+      {
+        "name": "danger_pottery_sherd",
+        "category": "Item",
+        "description": "item/danger_pottery_sherd.png",
+        "file": "/assets/img/textures/item/danger_pottery_sherd.png",
+        "path": "item/danger_pottery_sherd"
       }
     ],
     "sounds": [],
@@ -9669,6 +11204,13 @@
         "category": "Item",
         "description": "Inventar-Textur von Entdecker-Töpferscherbe.",
         "file": "/assets/img/items/Explorer_Pottery_Sherd.png"
+      },
+      {
+        "name": "explorer_pottery_sherd",
+        "category": "Item",
+        "description": "item/explorer_pottery_sherd.png",
+        "file": "/assets/img/textures/item/explorer_pottery_sherd.png",
+        "path": "item/explorer_pottery_sherd"
       }
     ],
     "sounds": [],
@@ -9755,6 +11297,13 @@
         "category": "Item",
         "description": "Inventar-Textur von Fluss-Töpferscherbe.",
         "file": "/assets/img/items/Flow_Pottery_Sherd.png"
+      },
+      {
+        "name": "flow_pottery_sherd",
+        "category": "Item",
+        "description": "item/flow_pottery_sherd.png",
+        "file": "/assets/img/textures/item/flow_pottery_sherd.png",
+        "path": "item/flow_pottery_sherd"
       }
     ],
     "sounds": [],
@@ -9841,6 +11390,13 @@
         "category": "Item",
         "description": "Inventar-Textur von Freundes-Töpferscherbe.",
         "file": "/assets/img/items/Friend_Pottery_Sherd.png"
+      },
+      {
+        "name": "friend_pottery_sherd",
+        "category": "Item",
+        "description": "item/friend_pottery_sherd.png",
+        "file": "/assets/img/textures/item/friend_pottery_sherd.png",
+        "path": "item/friend_pottery_sherd"
       }
     ],
     "sounds": [],
@@ -9887,7 +11443,7 @@
   },
   {
     "id": "minecraft:guster_pottery_sherd",
-    "name": "Guster-Töpferscherbe",
+    "name": "Windstoßer-Töpferscherbe",
     "variant": "",
     "numeric_id": "Keine numerische ID in aktuellen Versionen",
     "type": "Item",
@@ -9908,7 +11464,7 @@
     "version_history": [
       {
         "version": "Java Edition 1.21",
-        "change": "Guster-Töpferscherbe wurde hinzugefügt.",
+        "change": "Windstoßer-Töpferscherbe wurde hinzugefügt.",
         "type": "added",
         "date": ""
       }
@@ -9923,10 +11479,17 @@
     "related_entries": [],
     "texture": [
       {
-        "name": "Guster-Töpferscherbe",
+        "name": "Windstoßer-Töpferscherbe",
         "category": "Item",
-        "description": "Inventar-Textur von Guster-Töpferscherbe.",
+        "description": "Inventar-Textur von Windstoßer-Töpferscherbe.",
         "file": "/assets/img/items/Guster_Pottery_Sherd.png"
+      },
+      {
+        "name": "guster_pottery_sherd",
+        "category": "Item",
+        "description": "item/guster_pottery_sherd.png",
+        "file": "/assets/img/textures/item/guster_pottery_sherd.png",
+        "path": "item/guster_pottery_sherd"
       }
     ],
     "sounds": [],
@@ -10013,6 +11576,13 @@
         "category": "Item",
         "description": "Inventar-Textur von Herz-Töpferscherbe.",
         "file": "/assets/img/items/Heart_Pottery_Sherd.png"
+      },
+      {
+        "name": "heart_pottery_sherd",
+        "category": "Item",
+        "description": "item/heart_pottery_sherd.png",
+        "file": "/assets/img/textures/item/heart_pottery_sherd.png",
+        "path": "item/heart_pottery_sherd"
       }
     ],
     "sounds": [],
@@ -10099,6 +11669,13 @@
         "category": "Item",
         "description": "Inventar-Textur von Herzschmerz-Töpferscherbe.",
         "file": "/assets/img/items/Heartbreak_Pottery_Sherd.png"
+      },
+      {
+        "name": "heartbreak_pottery_sherd",
+        "category": "Item",
+        "description": "item/heartbreak_pottery_sherd.png",
+        "file": "/assets/img/textures/item/heartbreak_pottery_sherd.png",
+        "path": "item/heartbreak_pottery_sherd"
       }
     ],
     "sounds": [],
@@ -10185,6 +11762,13 @@
         "category": "Item",
         "description": "Inventar-Textur von Geheul-Töpferscherbe.",
         "file": "/assets/img/items/Howl_Pottery_Sherd.png"
+      },
+      {
+        "name": "howl_pottery_sherd",
+        "category": "Item",
+        "description": "item/howl_pottery_sherd.png",
+        "file": "/assets/img/textures/item/howl_pottery_sherd.png",
+        "path": "item/howl_pottery_sherd"
       }
     ],
     "sounds": [],
@@ -10271,6 +11855,13 @@
         "category": "Item",
         "description": "Inventar-Textur von Bergarbeiter-Töpferscherbe.",
         "file": "/assets/img/items/Miner_Pottery_Sherd.png"
+      },
+      {
+        "name": "miner_pottery_sherd",
+        "category": "Item",
+        "description": "item/miner_pottery_sherd.png",
+        "file": "/assets/img/textures/item/miner_pottery_sherd.png",
+        "path": "item/miner_pottery_sherd"
       }
     ],
     "sounds": [],
@@ -10357,6 +11948,13 @@
         "category": "Item",
         "description": "Inventar-Textur von Wimmerer-Töpferscherbe.",
         "file": "/assets/img/items/Mourner_Pottery_Sherd.png"
+      },
+      {
+        "name": "mourner_pottery_sherd",
+        "category": "Item",
+        "description": "item/mourner_pottery_sherd.png",
+        "file": "/assets/img/textures/item/mourner_pottery_sherd.png",
+        "path": "item/mourner_pottery_sherd"
       }
     ],
     "sounds": [],
@@ -10443,6 +12041,13 @@
         "category": "Item",
         "description": "Inventar-Textur von Reichtums-Töpferscherbe.",
         "file": "/assets/img/items/Plenty_Pottery_Sherd.png"
+      },
+      {
+        "name": "plenty_pottery_sherd",
+        "category": "Item",
+        "description": "item/plenty_pottery_sherd.png",
+        "file": "/assets/img/textures/item/plenty_pottery_sherd.png",
+        "path": "item/plenty_pottery_sherd"
       }
     ],
     "sounds": [],
@@ -10529,6 +12134,13 @@
         "category": "Item",
         "description": "Inventar-Textur von Juwelen-Töpferscherbe.",
         "file": "/assets/img/items/Prize_Pottery_Sherd2.png"
+      },
+      {
+        "name": "prize_pottery_sherd",
+        "category": "Item",
+        "description": "item/prize_pottery_sherd.png",
+        "file": "/assets/img/textures/item/prize_pottery_sherd.png",
+        "path": "item/prize_pottery_sherd"
       }
     ],
     "sounds": [],
@@ -10615,6 +12227,13 @@
         "category": "Item",
         "description": "Inventar-Textur von Abschabe-Töpferscherbe.",
         "file": "/assets/img/items/Scrape_Pottery_Sherd.png"
+      },
+      {
+        "name": "scrape_pottery_sherd",
+        "category": "Item",
+        "description": "item/scrape_pottery_sherd.png",
+        "file": "/assets/img/textures/item/scrape_pottery_sherd.png",
+        "path": "item/scrape_pottery_sherd"
       }
     ],
     "sounds": [],
@@ -10701,6 +12320,13 @@
         "category": "Item",
         "description": "Inventar-Textur von Garben-Töpferscherbe.",
         "file": "/assets/img/items/Sheaf_Pottery_Sherd.png"
+      },
+      {
+        "name": "sheaf_pottery_sherd",
+        "category": "Item",
+        "description": "item/sheaf_pottery_sherd.png",
+        "file": "/assets/img/textures/item/sheaf_pottery_sherd.png",
+        "path": "item/sheaf_pottery_sherd"
       }
     ],
     "sounds": [],
@@ -10787,6 +12413,13 @@
         "category": "Item",
         "description": "Inventar-Textur von Zufluchts-Töpferscherbe.",
         "file": "/assets/img/items/Shelter_Pottery_Sherd.png"
+      },
+      {
+        "name": "shelter_pottery_sherd",
+        "category": "Item",
+        "description": "item/shelter_pottery_sherd.png",
+        "file": "/assets/img/textures/item/shelter_pottery_sherd.png",
+        "path": "item/shelter_pottery_sherd"
       }
     ],
     "sounds": [],
@@ -10873,6 +12506,13 @@
         "category": "Item",
         "description": "Inventar-Textur von Totenkopf-Töpferscherbe.",
         "file": "/assets/img/items/Skull_Pottery_Sherd2.png"
+      },
+      {
+        "name": "skull_pottery_sherd",
+        "category": "Item",
+        "description": "item/skull_pottery_sherd.png",
+        "file": "/assets/img/textures/item/skull_pottery_sherd.png",
+        "path": "item/skull_pottery_sherd"
       }
     ],
     "sounds": [],
@@ -10959,6 +12599,13 @@
         "category": "Item",
         "description": "Inventar-Textur von Schnaub-Töpferscherbe.",
         "file": "/assets/img/items/Snort_Pottery_Sherd.png"
+      },
+      {
+        "name": "snort_pottery_sherd",
+        "category": "Item",
+        "description": "item/snort_pottery_sherd.png",
+        "file": "/assets/img/textures/item/snort_pottery_sherd.png",
+        "path": "item/snort_pottery_sherd"
       }
     ],
     "sounds": [],
@@ -11045,6 +12692,13 @@
         "category": "Item",
         "description": "Inventar-Textur von Netheritaufwertung.",
         "file": "/assets/img/items/Netherite_Upgrade_Smithing_Template.png"
+      },
+      {
+        "name": "netherite_upgrade_smithing_template",
+        "category": "Item",
+        "description": "item/netherite_upgrade_smithing_template.png",
+        "file": "/assets/img/textures/item/netherite_upgrade_smithing_template.png",
+        "path": "item/netherite_upgrade_smithing_template"
       }
     ],
     "sounds": [],
@@ -11131,6 +12785,13 @@
         "category": "Item",
         "description": "Inventar-Textur von Wachen-Rüstungsbesatz.",
         "file": "/assets/img/items/Sentry_Armor_Trim_Smithing_Template.png"
+      },
+      {
+        "name": "sentry_armor_trim_smithing_template",
+        "category": "Item",
+        "description": "item/sentry_armor_trim_smithing_template.png",
+        "file": "/assets/img/textures/item/sentry_armor_trim_smithing_template.png",
+        "path": "item/sentry_armor_trim_smithing_template"
       }
     ],
     "sounds": [],
@@ -11217,6 +12878,13 @@
         "category": "Item",
         "description": "Inventar-Textur von Plagegeister-Rüstungsbesatz.",
         "file": "/assets/img/items/Vex_Armor_Trim_Smithing_Template.png"
+      },
+      {
+        "name": "vex_armor_trim_smithing_template",
+        "category": "Item",
+        "description": "item/vex_armor_trim_smithing_template.png",
+        "file": "/assets/img/textures/item/vex_armor_trim_smithing_template.png",
+        "path": "item/vex_armor_trim_smithing_template"
       }
     ],
     "sounds": [],
@@ -11303,6 +12971,13 @@
         "category": "Item",
         "description": "Inventar-Textur von Wildnis-Rüstungsbesatz.",
         "file": "/assets/img/items/Wild_Armor_Trim_Smithing_Template.png"
+      },
+      {
+        "name": "wild_armor_trim_smithing_template",
+        "category": "Item",
+        "description": "item/wild_armor_trim_smithing_template.png",
+        "file": "/assets/img/textures/item/wild_armor_trim_smithing_template.png",
+        "path": "item/wild_armor_trim_smithing_template"
       }
     ],
     "sounds": [],
@@ -11389,6 +13064,13 @@
         "category": "Item",
         "description": "Inventar-Textur von Küsten-Rüstungsbesatz.",
         "file": "/assets/img/items/Coast_Armor_Trim_Smithing_Template.png"
+      },
+      {
+        "name": "coast_armor_trim_smithing_template",
+        "category": "Item",
+        "description": "item/coast_armor_trim_smithing_template.png",
+        "file": "/assets/img/textures/item/coast_armor_trim_smithing_template.png",
+        "path": "item/coast_armor_trim_smithing_template"
       }
     ],
     "sounds": [],
@@ -11475,6 +13157,13 @@
         "category": "Item",
         "description": "Inventar-Textur von Dünen-Rüstungsbesatz.",
         "file": "/assets/img/items/Dune_Armor_Trim_Smithing_Template.png"
+      },
+      {
+        "name": "dune_armor_trim_smithing_template",
+        "category": "Item",
+        "description": "item/dune_armor_trim_smithing_template.png",
+        "file": "/assets/img/textures/item/dune_armor_trim_smithing_template.png",
+        "path": "item/dune_armor_trim_smithing_template"
       }
     ],
     "sounds": [],
@@ -11561,6 +13250,13 @@
         "category": "Item",
         "description": "Inventar-Textur von Wegfinder-Rüstungsbesatz.",
         "file": "/assets/img/items/Wayfinder_Armor_Trim_Smithing_Template.png"
+      },
+      {
+        "name": "wayfinder_armor_trim_smithing_template",
+        "category": "Item",
+        "description": "item/wayfinder_armor_trim_smithing_template.png",
+        "file": "/assets/img/textures/item/wayfinder_armor_trim_smithing_template.png",
+        "path": "item/wayfinder_armor_trim_smithing_template"
       }
     ],
     "sounds": [],
@@ -11647,6 +13343,13 @@
         "category": "Item",
         "description": "Inventar-Textur von Aufzieher-Rüstungsbesatz.",
         "file": "/assets/img/items/Raiser_Armor_Trim_Smithing_Template.png"
+      },
+      {
+        "name": "raiser_armor_trim_smithing_template",
+        "category": "Item",
+        "description": "item/raiser_armor_trim_smithing_template.png",
+        "file": "/assets/img/textures/item/raiser_armor_trim_smithing_template.png",
+        "path": "item/raiser_armor_trim_smithing_template"
       }
     ],
     "sounds": [],
@@ -11733,6 +13436,13 @@
         "category": "Item",
         "description": "Inventar-Textur von Gestalter-Rüstungsbesatz.",
         "file": "/assets/img/items/Shaper_Armor_Trim_Smithing_Template.png"
+      },
+      {
+        "name": "shaper_armor_trim_smithing_template",
+        "category": "Item",
+        "description": "item/shaper_armor_trim_smithing_template.png",
+        "file": "/assets/img/textures/item/shaper_armor_trim_smithing_template.png",
+        "path": "item/shaper_armor_trim_smithing_template"
       }
     ],
     "sounds": [],
@@ -11819,6 +13529,13 @@
         "category": "Item",
         "description": "Inventar-Textur von Gastwirts-Rüstungsbesatz.",
         "file": "/assets/img/items/Host_Armor_Trim_Smithing_Template.png"
+      },
+      {
+        "name": "host_armor_trim_smithing_template",
+        "category": "Item",
+        "description": "item/host_armor_trim_smithing_template.png",
+        "file": "/assets/img/textures/item/host_armor_trim_smithing_template.png",
+        "path": "item/host_armor_trim_smithing_template"
       }
     ],
     "sounds": [],
@@ -11905,6 +13622,13 @@
         "category": "Item",
         "description": "Inventar-Textur von Warthof-Rüstungsbesatz.",
         "file": "/assets/img/items/Ward_Armor_Trim_Smithing_Template.png"
+      },
+      {
+        "name": "ward_armor_trim_smithing_template",
+        "category": "Item",
+        "description": "item/ward_armor_trim_smithing_template.png",
+        "file": "/assets/img/textures/item/ward_armor_trim_smithing_template.png",
+        "path": "item/ward_armor_trim_smithing_template"
       }
     ],
     "sounds": [],
@@ -11991,6 +13715,13 @@
         "category": "Item",
         "description": "Inventar-Textur von Stille-Rüstungsbesatz.",
         "file": "/assets/img/items/Silence_Armor_Trim_Smithing_Template.png"
+      },
+      {
+        "name": "silence_armor_trim_smithing_template",
+        "category": "Item",
+        "description": "item/silence_armor_trim_smithing_template.png",
+        "file": "/assets/img/textures/item/silence_armor_trim_smithing_template.png",
+        "path": "item/silence_armor_trim_smithing_template"
       }
     ],
     "sounds": [],
@@ -12077,6 +13808,13 @@
         "category": "Item",
         "description": "Inventar-Textur von Gezeiten-Rüstungsbesatz.",
         "file": "/assets/img/items/Tide_Armor_Trim_Smithing_Template.png"
+      },
+      {
+        "name": "tide_armor_trim_smithing_template",
+        "category": "Item",
+        "description": "item/tide_armor_trim_smithing_template.png",
+        "file": "/assets/img/textures/item/tide_armor_trim_smithing_template.png",
+        "path": "item/tide_armor_trim_smithing_template"
       }
     ],
     "sounds": [],
@@ -12099,7 +13837,7 @@
     "enchantable": "Nein",
     "enchantability": 0,
     "obtain": [
-      "Drop von Großen Wächtern (0-1)"
+      "Beute von Großen Wächtern (0-1)"
     ],
     "crafting_recipe": null,
     "repair_material": "Nicht zutreffend",
@@ -12163,6 +13901,13 @@
         "category": "Item",
         "description": "Inventar-Textur von Schnauzen-Rüstungsbesatz.",
         "file": "/assets/img/items/Snout_Armor_Trim_Smithing_Template.png"
+      },
+      {
+        "name": "snout_armor_trim_smithing_template",
+        "category": "Item",
+        "description": "item/snout_armor_trim_smithing_template.png",
+        "file": "/assets/img/textures/item/snout_armor_trim_smithing_template.png",
+        "path": "item/snout_armor_trim_smithing_template"
       }
     ],
     "sounds": [],
@@ -12249,6 +13994,13 @@
         "category": "Item",
         "description": "Inventar-Textur von Rippen-Rüstungsbesatz.",
         "file": "/assets/img/items/Rib_Armor_Trim_Smithing_Template.png"
+      },
+      {
+        "name": "rib_armor_trim_smithing_template",
+        "category": "Item",
+        "description": "item/rib_armor_trim_smithing_template.png",
+        "file": "/assets/img/textures/item/rib_armor_trim_smithing_template.png",
+        "path": "item/rib_armor_trim_smithing_template"
       }
     ],
     "sounds": [],
@@ -12335,6 +14087,13 @@
         "category": "Item",
         "description": "Inventar-Textur von Augen-Rüstungsbesatz.",
         "file": "/assets/img/items/Eye_Armor_Trim_Smithing_Template.png"
+      },
+      {
+        "name": "eye_armor_trim_smithing_template",
+        "category": "Item",
+        "description": "item/eye_armor_trim_smithing_template.png",
+        "file": "/assets/img/textures/item/eye_armor_trim_smithing_template.png",
+        "path": "item/eye_armor_trim_smithing_template"
       }
     ],
     "sounds": [],
@@ -12421,6 +14180,13 @@
         "category": "Item",
         "description": "Inventar-Textur von Turmspitzen-Rüstungsbesatz.",
         "file": "/assets/img/items/Spire_Armor_Trim_Smithing_Template.png"
+      },
+      {
+        "name": "spire_armor_trim_smithing_template",
+        "category": "Item",
+        "description": "item/spire_armor_trim_smithing_template.png",
+        "file": "/assets/img/textures/item/spire_armor_trim_smithing_template.png",
+        "path": "item/spire_armor_trim_smithing_template"
       }
     ],
     "sounds": [],
@@ -12507,6 +14273,13 @@
         "category": "Item",
         "description": "Inventar-Textur von Fluss-Rüstungsbesatz.",
         "file": "/assets/img/items/Flow_Armor_Trim_Smithing_Template.png"
+      },
+      {
+        "name": "flow_armor_trim_smithing_template",
+        "category": "Item",
+        "description": "item/flow_armor_trim_smithing_template.png",
+        "file": "/assets/img/textures/item/flow_armor_trim_smithing_template.png",
+        "path": "item/flow_armor_trim_smithing_template"
       }
     ],
     "sounds": [],
@@ -12593,6 +14366,13 @@
         "category": "Item",
         "description": "Inventar-Textur von Bolzen-Rüstungsbesatz.",
         "file": "/assets/img/items/Bolt_Armor_Trim_Smithing_Template.png"
+      },
+      {
+        "name": "bolt_armor_trim_smithing_template",
+        "category": "Item",
+        "description": "item/bolt_armor_trim_smithing_template.png",
+        "file": "/assets/img/textures/item/bolt_armor_trim_smithing_template.png",
+        "path": "item/bolt_armor_trim_smithing_template"
       }
     ],
     "sounds": [],
@@ -12645,7 +14425,7 @@
     "type": "Item",
     "category": "Materialien",
     "icon": "/assets/img/items/Enchanting_Bottle.gif",
-    "description": "Gibt beim Werfen Erfahrungspunkte (3–11). Erhältlich durch Handel oder als Drop.",
+    "description": "Gibt beim Werfen Erfahrungspunkte (3–11). Erhältlich durch Handel oder als Beute.",
     "biome": "Nicht zutreffend",
     "aliases": [],
     "introduced_date": "",
@@ -12655,7 +14435,7 @@
     "animation": [],
     "source": "",
     "updated_at": "2026-08-22",
-    "notes": "Gibt beim Werfen Erfahrungspunkte (3–11). Erhältlich durch Handel oder als Drop.",
+    "notes": "Gibt beim Werfen Erfahrungspunkte (3–11). Erhältlich durch Handel oder als Beute.",
     "version": "Java Edition 1.4.2",
     "version_history": [
       {
@@ -12679,9 +14459,24 @@
         "category": "Item",
         "description": "Inventar-Textur von Erfahrungsfläschchen.",
         "file": "/assets/img/items/Enchanting_Bottle.gif"
+      },
+      {
+        "name": "experience_bottle",
+        "category": "Item",
+        "description": "item/experience_bottle.png",
+        "file": "/assets/img/textures/item/experience_bottle.png",
+        "path": "item/experience_bottle"
       }
     ],
-    "sounds": [],
+    "sounds": [
+      {
+        "name": "Flasche geworfen",
+        "event": "entity.experience_bottle.throw",
+        "files": [
+          "/assets/sounds/random/bow.ogg"
+        ]
+      }
+    ],
     "command": "/give @p minecraft:experience_bottle 1",
     "effects": [],
     "rarity": "Selten",
@@ -12729,7 +14524,7 @@
     "type": "Item",
     "category": "Materialien",
     "icon": "/assets/img/items/Trial_Key.png",
-    "description": "Zum Öffnen von Tresoren in Prüfungskammern. Drop von Gegnern während einer Prüfung.",
+    "description": "Zum Öffnen von Tresoren in Prüfungskammern. Beute von Gegnern während einer Prüfung.",
     "biome": "Nicht zutreffend",
     "aliases": [],
     "introduced_date": "",
@@ -12739,7 +14534,7 @@
     "animation": [],
     "source": "",
     "updated_at": "2026-08-22",
-    "notes": "Zum Öffnen von Tresoren in Prüfungskammern. Drop von Gegnern während einer Prüfung.",
+    "notes": "Zum Öffnen von Tresoren in Prüfungskammern. Beute von Gegnern während einer Prüfung.",
     "version": "Java Edition 1.21",
     "version_history": [
       {
@@ -12763,6 +14558,13 @@
         "category": "Item",
         "description": "Inventar-Textur von Prüfungsschlüssel.",
         "file": "/assets/img/items/Trial_Key.png"
+      },
+      {
+        "name": "trial_key",
+        "category": "Item",
+        "description": "item/trial_key.png",
+        "file": "/assets/img/textures/item/trial_key.png",
+        "path": "item/trial_key"
       }
     ],
     "sounds": [],
@@ -12847,6 +14649,13 @@
         "category": "Item",
         "description": "Inventar-Textur von Unheilvoller Prüfungsschlüssel.",
         "file": "/assets/img/items/Ominous_Trial_Key.png"
+      },
+      {
+        "name": "ominous_trial_key",
+        "category": "Item",
+        "description": "item/ominous_trial_key.png",
+        "file": "/assets/img/textures/item/ominous_trial_key.png",
+        "path": "item/ominous_trial_key"
       }
     ],
     "sounds": [],
@@ -12934,6 +14743,13 @@
         "category": "Item",
         "description": "Inventar-Textur von Verzaubertes Buch – Wasseraffinität I.",
         "file": "/assets/img/items/Enchanted_Book.gif"
+      },
+      {
+        "name": "enchanted_book",
+        "category": "Item",
+        "description": "item/enchanted_book.png",
+        "file": "/assets/img/textures/item/enchanted_book.png",
+        "path": "item/enchanted_book"
       }
     ],
     "sounds": [],
@@ -13026,6 +14842,13 @@
         "category": "Item",
         "description": "Inventar-Textur von Verzaubertes Buch – Nemesis der Gliederfüßer V.",
         "file": "/assets/img/items/Enchanted_Book.gif"
+      },
+      {
+        "name": "enchanted_book",
+        "category": "Item",
+        "description": "item/enchanted_book.png",
+        "file": "/assets/img/textures/item/enchanted_book.png",
+        "path": "item/enchanted_book"
       }
     ],
     "sounds": [],
@@ -13118,6 +14941,13 @@
         "category": "Item",
         "description": "Inventar-Textur von Verzaubertes Buch – Fluch der Bindung I.",
         "file": "/assets/img/items/Enchanted_Book.gif"
+      },
+      {
+        "name": "enchanted_book",
+        "category": "Item",
+        "description": "item/enchanted_book.png",
+        "file": "/assets/img/textures/item/enchanted_book.png",
+        "path": "item/enchanted_book"
       }
     ],
     "sounds": [],
@@ -13210,6 +15040,13 @@
         "category": "Item",
         "description": "Inventar-Textur von Verzaubertes Buch – Explosionsschutz IV.",
         "file": "/assets/img/items/Enchanted_Book.gif"
+      },
+      {
+        "name": "enchanted_book",
+        "category": "Item",
+        "description": "item/enchanted_book.png",
+        "file": "/assets/img/textures/item/enchanted_book.png",
+        "path": "item/enchanted_book"
       }
     ],
     "sounds": [],
@@ -13302,6 +15139,13 @@
         "category": "Item",
         "description": "Inventar-Textur von Verzaubertes Buch – Durchbruch IV.",
         "file": "/assets/img/items/Enchanted_Book.gif"
+      },
+      {
+        "name": "enchanted_book",
+        "category": "Item",
+        "description": "item/enchanted_book.png",
+        "file": "/assets/img/textures/item/enchanted_book.png",
+        "path": "item/enchanted_book"
       }
     ],
     "sounds": [],
@@ -13394,6 +15238,13 @@
         "category": "Item",
         "description": "Inventar-Textur von Verzaubertes Buch – Entladung I.",
         "file": "/assets/img/items/Enchanted_Book.gif"
+      },
+      {
+        "name": "enchanted_book",
+        "category": "Item",
+        "description": "item/enchanted_book.png",
+        "file": "/assets/img/textures/item/enchanted_book.png",
+        "path": "item/enchanted_book"
       }
     ],
     "sounds": [],
@@ -13486,6 +15337,13 @@
         "category": "Item",
         "description": "Inventar-Textur von Verzaubertes Buch – Dichte V.",
         "file": "/assets/img/items/Enchanted_Book.gif"
+      },
+      {
+        "name": "enchanted_book",
+        "category": "Item",
+        "description": "item/enchanted_book.png",
+        "file": "/assets/img/textures/item/enchanted_book.png",
+        "path": "item/enchanted_book"
       }
     ],
     "sounds": [],
@@ -13578,6 +15436,13 @@
         "category": "Item",
         "description": "Inventar-Textur von Verzaubertes Buch – Wasserläufer III.",
         "file": "/assets/img/items/Enchanted_Book.gif"
+      },
+      {
+        "name": "enchanted_book",
+        "category": "Item",
+        "description": "item/enchanted_book.png",
+        "file": "/assets/img/textures/item/enchanted_book.png",
+        "path": "item/enchanted_book"
       }
     ],
     "sounds": [],
@@ -13670,6 +15535,13 @@
         "category": "Item",
         "description": "Inventar-Textur von Verzaubertes Buch – Effizienz V.",
         "file": "/assets/img/items/Enchanted_Book.gif"
+      },
+      {
+        "name": "enchanted_book",
+        "category": "Item",
+        "description": "item/enchanted_book.png",
+        "file": "/assets/img/textures/item/enchanted_book.png",
+        "path": "item/enchanted_book"
       }
     ],
     "sounds": [],
@@ -13762,6 +15634,13 @@
         "category": "Item",
         "description": "Inventar-Textur von Verzaubertes Buch – Federfall IV.",
         "file": "/assets/img/items/Enchanted_Book.gif"
+      },
+      {
+        "name": "enchanted_book",
+        "category": "Item",
+        "description": "item/enchanted_book.png",
+        "file": "/assets/img/textures/item/enchanted_book.png",
+        "path": "item/enchanted_book"
       }
     ],
     "sounds": [],
@@ -13854,6 +15733,13 @@
         "category": "Item",
         "description": "Inventar-Textur von Verzaubertes Buch – Verbrennung II.",
         "file": "/assets/img/items/Enchanted_Book.gif"
+      },
+      {
+        "name": "enchanted_book",
+        "category": "Item",
+        "description": "item/enchanted_book.png",
+        "file": "/assets/img/textures/item/enchanted_book.png",
+        "path": "item/enchanted_book"
       }
     ],
     "sounds": [],
@@ -13946,6 +15832,13 @@
         "category": "Item",
         "description": "Inventar-Textur von Verzaubertes Buch – Feuerschutz IV.",
         "file": "/assets/img/items/Enchanted_Book.gif"
+      },
+      {
+        "name": "enchanted_book",
+        "category": "Item",
+        "description": "item/enchanted_book.png",
+        "file": "/assets/img/textures/item/enchanted_book.png",
+        "path": "item/enchanted_book"
       }
     ],
     "sounds": [],
@@ -14038,6 +15931,13 @@
         "category": "Item",
         "description": "Inventar-Textur von Verzaubertes Buch – Flamme I.",
         "file": "/assets/img/items/Enchanted_Book.gif"
+      },
+      {
+        "name": "enchanted_book",
+        "category": "Item",
+        "description": "item/enchanted_book.png",
+        "file": "/assets/img/textures/item/enchanted_book.png",
+        "path": "item/enchanted_book"
       }
     ],
     "sounds": [],
@@ -14130,6 +16030,13 @@
         "category": "Item",
         "description": "Inventar-Textur von Verzaubertes Buch – Glück III.",
         "file": "/assets/img/items/Enchanted_Book.gif"
+      },
+      {
+        "name": "enchanted_book",
+        "category": "Item",
+        "description": "item/enchanted_book.png",
+        "file": "/assets/img/textures/item/enchanted_book.png",
+        "path": "item/enchanted_book"
       }
     ],
     "sounds": [],
@@ -14222,6 +16129,13 @@
         "category": "Item",
         "description": "Inventar-Textur von Verzaubertes Buch – Eisläufer II.",
         "file": "/assets/img/items/Enchanted_Book.gif"
+      },
+      {
+        "name": "enchanted_book",
+        "category": "Item",
+        "description": "item/enchanted_book.png",
+        "file": "/assets/img/textures/item/enchanted_book.png",
+        "path": "item/enchanted_book"
       }
     ],
     "sounds": [],
@@ -14314,6 +16228,13 @@
         "category": "Item",
         "description": "Inventar-Textur von Verzaubertes Buch – Harpune V.",
         "file": "/assets/img/items/Enchanted_Book.gif"
+      },
+      {
+        "name": "enchanted_book",
+        "category": "Item",
+        "description": "item/enchanted_book.png",
+        "file": "/assets/img/textures/item/enchanted_book.png",
+        "path": "item/enchanted_book"
       }
     ],
     "sounds": [],
@@ -14406,6 +16327,13 @@
         "category": "Item",
         "description": "Inventar-Textur von Verzaubertes Buch – Unendlichkeit I.",
         "file": "/assets/img/items/Enchanted_Book.gif"
+      },
+      {
+        "name": "enchanted_book",
+        "category": "Item",
+        "description": "item/enchanted_book.png",
+        "file": "/assets/img/textures/item/enchanted_book.png",
+        "path": "item/enchanted_book"
       }
     ],
     "sounds": [],
@@ -14498,6 +16426,13 @@
         "category": "Item",
         "description": "Inventar-Textur von Verzaubertes Buch – Rückstoß II.",
         "file": "/assets/img/items/Enchanted_Book.gif"
+      },
+      {
+        "name": "enchanted_book",
+        "category": "Item",
+        "description": "item/enchanted_book.png",
+        "file": "/assets/img/textures/item/enchanted_book.png",
+        "path": "item/enchanted_book"
       }
     ],
     "sounds": [],
@@ -14590,6 +16525,13 @@
         "category": "Item",
         "description": "Inventar-Textur von Verzaubertes Buch – Plünderung III.",
         "file": "/assets/img/items/Enchanted_Book.gif"
+      },
+      {
+        "name": "enchanted_book",
+        "category": "Item",
+        "description": "item/enchanted_book.png",
+        "file": "/assets/img/textures/item/enchanted_book.png",
+        "path": "item/enchanted_book"
       }
     ],
     "sounds": [],
@@ -14682,6 +16624,13 @@
         "category": "Item",
         "description": "Inventar-Textur von Verzaubertes Buch – Treue III.",
         "file": "/assets/img/items/Enchanted_Book.gif"
+      },
+      {
+        "name": "enchanted_book",
+        "category": "Item",
+        "description": "item/enchanted_book.png",
+        "file": "/assets/img/textures/item/enchanted_book.png",
+        "path": "item/enchanted_book"
       }
     ],
     "sounds": [],
@@ -14774,6 +16723,13 @@
         "category": "Item",
         "description": "Inventar-Textur von Verzaubertes Buch – Glück des Meeres III.",
         "file": "/assets/img/items/Enchanted_Book.gif"
+      },
+      {
+        "name": "enchanted_book",
+        "category": "Item",
+        "description": "item/enchanted_book.png",
+        "file": "/assets/img/textures/item/enchanted_book.png",
+        "path": "item/enchanted_book"
       }
     ],
     "sounds": [],
@@ -14866,6 +16822,13 @@
         "category": "Item",
         "description": "Inventar-Textur von Verzaubertes Buch – Ausfallschritt III.",
         "file": "/assets/img/items/Enchanted_Book.gif"
+      },
+      {
+        "name": "enchanted_book",
+        "category": "Item",
+        "description": "item/enchanted_book.png",
+        "file": "/assets/img/textures/item/enchanted_book.png",
+        "path": "item/enchanted_book"
       }
     ],
     "sounds": [],
@@ -14958,6 +16921,13 @@
         "category": "Item",
         "description": "Inventar-Textur von Verzaubertes Buch – Köder III.",
         "file": "/assets/img/items/Enchanted_Book.gif"
+      },
+      {
+        "name": "enchanted_book",
+        "category": "Item",
+        "description": "item/enchanted_book.png",
+        "file": "/assets/img/textures/item/enchanted_book.png",
+        "path": "item/enchanted_book"
       }
     ],
     "sounds": [],
@@ -15050,6 +17020,13 @@
         "category": "Item",
         "description": "Inventar-Textur von Verzaubertes Buch – Reparatur I.",
         "file": "/assets/img/items/Enchanted_Book.gif"
+      },
+      {
+        "name": "enchanted_book",
+        "category": "Item",
+        "description": "item/enchanted_book.png",
+        "file": "/assets/img/textures/item/enchanted_book.png",
+        "path": "item/enchanted_book"
       }
     ],
     "sounds": [],
@@ -15142,6 +17119,13 @@
         "category": "Item",
         "description": "Inventar-Textur von Verzaubertes Buch – Mehrfachschuss I.",
         "file": "/assets/img/items/Enchanted_Book.gif"
+      },
+      {
+        "name": "enchanted_book",
+        "category": "Item",
+        "description": "item/enchanted_book.png",
+        "file": "/assets/img/textures/item/enchanted_book.png",
+        "path": "item/enchanted_book"
       }
     ],
     "sounds": [],
@@ -15234,6 +17218,13 @@
         "category": "Item",
         "description": "Inventar-Textur von Verzaubertes Buch – Durchschuss IV.",
         "file": "/assets/img/items/Enchanted_Book.gif"
+      },
+      {
+        "name": "enchanted_book",
+        "category": "Item",
+        "description": "item/enchanted_book.png",
+        "file": "/assets/img/textures/item/enchanted_book.png",
+        "path": "item/enchanted_book"
       }
     ],
     "sounds": [],
@@ -15326,6 +17317,13 @@
         "category": "Item",
         "description": "Inventar-Textur von Verzaubertes Buch – Stärke V.",
         "file": "/assets/img/items/Enchanted_Book.gif"
+      },
+      {
+        "name": "enchanted_book",
+        "category": "Item",
+        "description": "item/enchanted_book.png",
+        "file": "/assets/img/textures/item/enchanted_book.png",
+        "path": "item/enchanted_book"
       }
     ],
     "sounds": [],
@@ -15418,6 +17416,13 @@
         "category": "Item",
         "description": "Inventar-Textur von Verzaubertes Buch – Schussschutz IV.",
         "file": "/assets/img/items/Enchanted_Book.gif"
+      },
+      {
+        "name": "enchanted_book",
+        "category": "Item",
+        "description": "item/enchanted_book.png",
+        "file": "/assets/img/textures/item/enchanted_book.png",
+        "path": "item/enchanted_book"
       }
     ],
     "sounds": [],
@@ -15510,6 +17515,13 @@
         "category": "Item",
         "description": "Inventar-Textur von Verzaubertes Buch – Schutz IV.",
         "file": "/assets/img/items/Enchanted_Book.gif"
+      },
+      {
+        "name": "enchanted_book",
+        "category": "Item",
+        "description": "item/enchanted_book.png",
+        "file": "/assets/img/textures/item/enchanted_book.png",
+        "path": "item/enchanted_book"
       }
     ],
     "sounds": [],
@@ -15602,6 +17614,13 @@
         "category": "Item",
         "description": "Inventar-Textur von Verzaubertes Buch – Schlag II.",
         "file": "/assets/img/items/Enchanted_Book.gif"
+      },
+      {
+        "name": "enchanted_book",
+        "category": "Item",
+        "description": "item/enchanted_book.png",
+        "file": "/assets/img/textures/item/enchanted_book.png",
+        "path": "item/enchanted_book"
       }
     ],
     "sounds": [],
@@ -15694,6 +17713,13 @@
         "category": "Item",
         "description": "Inventar-Textur von Verzaubertes Buch – Schnellladen III.",
         "file": "/assets/img/items/Enchanted_Book.gif"
+      },
+      {
+        "name": "enchanted_book",
+        "category": "Item",
+        "description": "item/enchanted_book.png",
+        "file": "/assets/img/textures/item/enchanted_book.png",
+        "path": "item/enchanted_book"
       }
     ],
     "sounds": [],
@@ -15786,6 +17812,13 @@
         "category": "Item",
         "description": "Inventar-Textur von Verzaubertes Buch – Atmung III.",
         "file": "/assets/img/items/Enchanted_Book.gif"
+      },
+      {
+        "name": "enchanted_book",
+        "category": "Item",
+        "description": "item/enchanted_book.png",
+        "file": "/assets/img/textures/item/enchanted_book.png",
+        "path": "item/enchanted_book"
       }
     ],
     "sounds": [],
@@ -15878,6 +17911,13 @@
         "category": "Item",
         "description": "Inventar-Textur von Verzaubertes Buch – Sog III.",
         "file": "/assets/img/items/Enchanted_Book.gif"
+      },
+      {
+        "name": "enchanted_book",
+        "category": "Item",
+        "description": "item/enchanted_book.png",
+        "file": "/assets/img/textures/item/enchanted_book.png",
+        "path": "item/enchanted_book"
       }
     ],
     "sounds": [],
@@ -15970,6 +18010,13 @@
         "category": "Item",
         "description": "Inventar-Textur von Verzaubertes Buch – Schärfe V.",
         "file": "/assets/img/items/Enchanted_Book.gif"
+      },
+      {
+        "name": "enchanted_book",
+        "category": "Item",
+        "description": "item/enchanted_book.png",
+        "file": "/assets/img/textures/item/enchanted_book.png",
+        "path": "item/enchanted_book"
       }
     ],
     "sounds": [],
@@ -16062,6 +18109,13 @@
         "category": "Item",
         "description": "Inventar-Textur von Verzaubertes Buch – Behutsamkeit I.",
         "file": "/assets/img/items/Enchanted_Book.gif"
+      },
+      {
+        "name": "enchanted_book",
+        "category": "Item",
+        "description": "item/enchanted_book.png",
+        "file": "/assets/img/textures/item/enchanted_book.png",
+        "path": "item/enchanted_book"
       }
     ],
     "sounds": [],
@@ -16154,6 +18208,13 @@
         "category": "Item",
         "description": "Inventar-Textur von Verzaubertes Buch – Bann V.",
         "file": "/assets/img/items/Enchanted_Book.gif"
+      },
+      {
+        "name": "enchanted_book",
+        "category": "Item",
+        "description": "item/enchanted_book.png",
+        "file": "/assets/img/textures/item/enchanted_book.png",
+        "path": "item/enchanted_book"
       }
     ],
     "sounds": [],
@@ -16246,6 +18307,13 @@
         "category": "Item",
         "description": "Inventar-Textur von Verzaubertes Buch – Seelenläufer III.",
         "file": "/assets/img/items/Enchanted_Book.gif"
+      },
+      {
+        "name": "enchanted_book",
+        "category": "Item",
+        "description": "item/enchanted_book.png",
+        "file": "/assets/img/textures/item/enchanted_book.png",
+        "path": "item/enchanted_book"
       }
     ],
     "sounds": [],
@@ -16338,6 +18406,13 @@
         "category": "Item",
         "description": "Inventar-Textur von Verzaubertes Buch – Schwungkraft III.",
         "file": "/assets/img/items/Enchanted_Book.gif"
+      },
+      {
+        "name": "enchanted_book",
+        "category": "Item",
+        "description": "item/enchanted_book.png",
+        "file": "/assets/img/textures/item/enchanted_book.png",
+        "path": "item/enchanted_book"
       }
     ],
     "sounds": [],
@@ -16430,6 +18505,13 @@
         "category": "Item",
         "description": "Inventar-Textur von Verzaubertes Buch – Huschen III.",
         "file": "/assets/img/items/Enchanted_Book.gif"
+      },
+      {
+        "name": "enchanted_book",
+        "category": "Item",
+        "description": "item/enchanted_book.png",
+        "file": "/assets/img/textures/item/enchanted_book.png",
+        "path": "item/enchanted_book"
       }
     ],
     "sounds": [],
@@ -16522,6 +18604,13 @@
         "category": "Item",
         "description": "Inventar-Textur von Verzaubertes Buch – Dornen III.",
         "file": "/assets/img/items/Enchanted_Book.gif"
+      },
+      {
+        "name": "enchanted_book",
+        "category": "Item",
+        "description": "item/enchanted_book.png",
+        "file": "/assets/img/textures/item/enchanted_book.png",
+        "path": "item/enchanted_book"
       }
     ],
     "sounds": [],
@@ -16614,6 +18703,13 @@
         "category": "Item",
         "description": "Inventar-Textur von Verzaubertes Buch – Haltbarkeit III.",
         "file": "/assets/img/items/Enchanted_Book.gif"
+      },
+      {
+        "name": "enchanted_book",
+        "category": "Item",
+        "description": "item/enchanted_book.png",
+        "file": "/assets/img/textures/item/enchanted_book.png",
+        "path": "item/enchanted_book"
       }
     ],
     "sounds": [],
@@ -16706,6 +18802,13 @@
         "category": "Item",
         "description": "Inventar-Textur von Verzaubertes Buch – Fluch des Verschwindens I.",
         "file": "/assets/img/items/Enchanted_Book.gif"
+      },
+      {
+        "name": "enchanted_book",
+        "category": "Item",
+        "description": "item/enchanted_book.png",
+        "file": "/assets/img/textures/item/enchanted_book.png",
+        "path": "item/enchanted_book"
       }
     ],
     "sounds": [],
@@ -16798,6 +18901,13 @@
         "category": "Item",
         "description": "Inventar-Textur von Verzaubertes Buch – Windstoß III.",
         "file": "/assets/img/items/Enchanted_Book.gif"
+      },
+      {
+        "name": "enchanted_book",
+        "category": "Item",
+        "description": "item/enchanted_book.png",
+        "file": "/assets/img/textures/item/enchanted_book.png",
+        "path": "item/enchanted_book"
       }
     ],
     "sounds": [],

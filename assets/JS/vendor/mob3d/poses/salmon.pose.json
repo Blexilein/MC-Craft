@@ -1,0 +1,1 @@
+{"animations":{"animation.salmon.flop":{"loop":true,"bones":{"body_back":{"rotation":[0.0,"math.cos(variable.animationamountblend * 45.0) * -21.75",0.0]},"body_front":{"rotation":[0.0,"math.cos(variable.animationamountblend * 45.0) * 4.0","variable.zrot"]},"tailfin":{"rotation":[0.0,"math.cos(variable.animationamountblend * 45.0) * -40.0",0.0]}}}}}

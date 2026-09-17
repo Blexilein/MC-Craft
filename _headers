@@ -1,0 +1,10 @@
+/*
+  Content-Security-Policy: default-src 'self'; script-src 'self' 'sha256-9LK5BN5JdQGeLsIQxxIiuddUc8CRMwH1V+YLNyCPW7s=' 'sha256-O53XqtZ1rpKcLHAGta3KfgJ6ZzD/a7fTtEA62MHzUn4='; style-src 'self' 'unsafe-inline' https://fonts.cdnfonts.com; img-src 'self' data: blob: https://textures.minecraft.net https://skins.minecraft.net; font-src 'self' https://fonts.cdnfonts.com; media-src 'self'; connect-src 'self' https://api.mc-craft.com https://textures.minecraft.net https://skins.minecraft.net; frame-src https://discord.com; frame-ancestors 'none'; base-uri 'self'; form-action 'self'; object-src 'none'
+  Strict-Transport-Security: max-age=63072000; includeSubDomains; preload
+  X-Frame-Options: DENY
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: accelerometer=(), camera=(), geolocation=(), gyroscope=(), microphone=(), payment=(), usb=()
+  Cross-Origin-Opener-Policy: same-origin
+  Cross-Origin-Resource-Policy: same-origin
+  Access-Control-Allow-Origin: https://mc-craft.com

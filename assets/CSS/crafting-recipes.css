@@ -1,0 +1,764 @@
+/* Crafting recipes - page layout only; header, footer, hero, tips, info cards and CTA come from site-modern-v1.css. */
+
+.main {
+    padding-top: 0;
+    padding-bottom: 56px;
+    --rc-panel: color-mix(in srgb, var(--bg-card) 92%, transparent);
+    --rc-field: color-mix(in srgb, var(--bg-primary) 80%, transparent);
+    --rc-line: var(--border-color);
+    --rc-accent: var(--primary);
+    --rc-accent-soft: color-mix(in srgb, var(--primary) 16%, transparent);
+    --rc-slot-bg: color-mix(in srgb, var(--bg-primary) 72%, #000);
+}
+
+.main [hidden],
+.rc-tooltip[hidden] {
+    display: none !important;
+}
+
+.hero {
+    margin-bottom: 22px;
+    padding: 140px 0 80px;
+}
+
+.recipe-section {
+    padding: 24px 0 8px;
+}
+
+.rc-app {
+    display: grid;
+    gap: 18px;
+}
+
+.rc-panel {
+    background: var(--rc-panel);
+    border: 1px solid var(--rc-line);
+    border-radius: 18px;
+    padding: 18px;
+    box-shadow: var(--shadow-lg);
+    min-width: 0;
+}
+
+/* ---------- Toolbar ---------- */
+
+.rc-toolbar {
+    display: grid;
+    gap: 14px;
+}
+
+.rc-search-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    align-items: center;
+    justify-content: center;
+}
+
+.rc-search {
+    position: relative;
+    flex: 1 1 320px;
+    max-width: 560px;
+}
+
+.rc-search > i {
+    position: absolute;
+    left: 14px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--text-muted);
+    pointer-events: none;
+}
+
+.rc-search input {
+    width: 100%;
+    border: 1px solid var(--rc-line);
+    background: var(--rc-field);
+    color: var(--text-primary);
+    border-radius: 12px;
+    padding: 12px 42px;
+    font-size: 0.95rem;
+    text-align: left;
+}
+
+.rc-search input::-webkit-search-cancel-button {
+    display: none;
+}
+
+.rc-search input:focus {
+    outline: none;
+    border-color: var(--rc-accent);
+    box-shadow: 0 0 0 3px var(--rc-accent-soft);
+}
+
+.rc-search button {
+    position: absolute;
+    right: 6px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 32px;
+    height: 32px;
+    border: 0;
+    border-radius: 8px;
+    background: transparent;
+    color: var(--text-muted);
+    cursor: pointer;
+}
+
+.rc-search button:hover {
+    color: var(--text-primary);
+    background: var(--rc-accent-soft);
+}
+
+.rc-modes {
+    display: inline-flex;
+    padding: 4px;
+    border: 1px solid var(--rc-line);
+    border-radius: 12px;
+    background: var(--rc-field);
+}
+
+.rc-modes button {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    border: 0;
+    border-radius: 9px;
+    padding: 8px 14px;
+    background: transparent;
+    color: var(--text-secondary);
+    font-weight: 600;
+    font-size: 0.85rem;
+    cursor: pointer;
+    transition: background var(--transition-fast), color var(--transition-fast);
+}
+
+.rc-modes button.active {
+    background: var(--rc-accent);
+    color: var(--bg-primary);
+}
+
+.rc-tabs,
+.rc-cats {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    justify-content: center;
+}
+
+.rc-tab {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 7px 12px 7px 8px;
+    border: 1px solid var(--rc-line);
+    border-radius: 12px;
+    background: var(--rc-field);
+    color: var(--text-secondary);
+    font-weight: 600;
+    font-size: 0.88rem;
+    cursor: pointer;
+    transition: border-color var(--transition-fast), background var(--transition-fast), color var(--transition-fast);
+}
+
+.rc-tab img,
+.rc-tab > i {
+    width: 26px;
+    height: 26px;
+    object-fit: contain;
+    display: grid;
+    place-items: center;
+    color: var(--rc-accent);
+}
+
+.rc-tab-count {
+    padding: 1px 7px;
+    border-radius: var(--radius-full, 999px);
+    background: color-mix(in srgb, var(--text-muted) 16%, transparent);
+    color: var(--text-muted);
+    font-size: 0.72rem;
+}
+
+.rc-tab:hover {
+    border-color: var(--rc-accent);
+    color: var(--text-primary);
+}
+
+.rc-tab.active {
+    border-color: var(--rc-accent);
+    background: var(--rc-accent-soft);
+    color: var(--text-primary);
+}
+
+.rc-tab.active .rc-tab-count {
+    background: var(--rc-accent);
+    color: var(--bg-primary);
+}
+
+.rc-cat {
+    padding: 5px 12px;
+    border: 1px solid var(--rc-line);
+    border-radius: var(--radius-full, 999px);
+    background: transparent;
+    color: var(--text-secondary);
+    font-size: 0.8rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.rc-cat:hover,
+.rc-cat.active {
+    border-color: var(--rc-accent);
+    color: var(--rc-accent);
+}
+
+.rc-cat.active {
+    background: var(--rc-accent-soft);
+}
+
+/* ---------- Browser + detail ---------- */
+
+.rc-main {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 540px);
+    gap: 18px;
+    align-items: start;
+}
+
+.rc-browser-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    margin-bottom: 12px;
+}
+
+.rc-browser-head h3 {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin: 0;
+    font-size: 1rem;
+}
+
+.rc-browser-head h3 i {
+    color: var(--rc-accent);
+}
+
+#recipeCount {
+    color: var(--text-muted);
+    font-size: 0.82rem;
+}
+
+.rc-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(52px, 1fr));
+    gap: 6px;
+    max-height: min(72vh, 820px);
+    overflow-y: auto;
+    padding: 2px 4px 2px 2px;
+    overscroll-behavior: contain;
+}
+
+.rc-state,
+.rc-placeholder,
+.rc-empty {
+    grid-column: 1 / -1;
+    margin: 18px 0;
+    color: var(--text-muted);
+    font-size: 0.9rem;
+}
+
+.rc-placeholder i {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 1.6rem;
+    color: var(--rc-accent);
+}
+
+.rc-tile {
+    position: relative;
+    aspect-ratio: 1;
+    display: grid;
+    place-items: center;
+    padding: 6px;
+    border: 1px solid var(--rc-line);
+    border-radius: 9px;
+    background: var(--rc-slot-bg);
+    cursor: pointer;
+    transition: border-color var(--transition-fast), background var(--transition-fast), transform var(--transition-fast);
+}
+
+/* Absolute, so tall or wide pictures never grow the slot. */
+.rc-tile img,
+.rc-slot img {
+    position: absolute;
+    inset: 12%;
+    width: 76%;
+    height: 76%;
+    object-fit: contain;
+    pointer-events: none;
+}
+
+.is-pixel {
+    image-rendering: pixelated;
+}
+
+.rc-tile:hover,
+.rc-tile:focus-visible {
+    border-color: var(--rc-accent);
+    background: color-mix(in srgb, var(--rc-accent) 14%, var(--rc-slot-bg));
+    transform: translateY(-1px);
+}
+
+.rc-tile.active {
+    border-color: var(--rc-accent);
+    background: color-mix(in srgb, var(--rc-accent) 24%, var(--rc-slot-bg));
+    box-shadow: 0 0 0 2px var(--rc-accent-soft);
+}
+
+.rc-detail {
+    position: sticky;
+    top: 92px;
+    max-height: calc(100vh - 112px);
+    overflow-y: auto;
+    overscroll-behavior: contain;
+}
+
+.rc-detail-head {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding-bottom: 14px;
+    border-bottom: 1px solid var(--rc-line);
+    --slot: 58px;
+}
+
+.rc-detail-title {
+    flex: 1;
+    min-width: 0;
+}
+
+.rc-detail-title h2,
+.rc-detail-title p {
+    text-align: left;
+}
+
+.rc-detail-title h2 {
+    margin: 0;
+    font-size: 1.25rem;
+    line-height: 1.25;
+    overflow-wrap: anywhere;
+}
+
+.rc-detail-title p {
+    margin: 3px 0 0;
+    color: var(--text-muted);
+    font-size: 0.8rem;
+    overflow-wrap: anywhere;
+}
+
+.rc-detail-title .rc-detail-effect {
+    color: #7b8cff;
+}
+
+.rc-detail-actions {
+    display: flex;
+    gap: 6px;
+    align-self: flex-start;
+}
+
+.rc-icon-btn,
+.rc-copy {
+    width: 34px;
+    height: 34px;
+    flex-shrink: 0;
+    display: grid;
+    place-items: center;
+    border: 1px solid var(--rc-line);
+    border-radius: 9px;
+    background: var(--rc-field);
+    color: var(--text-secondary);
+    cursor: pointer;
+    transition: border-color var(--transition-fast), color var(--transition-fast);
+}
+
+.rc-icon-btn:hover,
+.rc-copy:hover {
+    border-color: var(--rc-accent);
+    color: var(--rc-accent);
+}
+
+.rc-detail-section {
+    padding: 14px 0 0;
+}
+
+.rc-detail-heading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    margin: 0 0 12px;
+    font-size: 0.98rem;
+}
+
+.rc-detail-heading i {
+    color: var(--rc-accent);
+}
+
+.rc-badge {
+    padding: 1px 8px;
+    border-radius: var(--radius-full, 999px);
+    background: var(--rc-accent-soft);
+    color: var(--rc-accent);
+    font-size: 0.75rem;
+}
+
+.rc-cards {
+    display: grid;
+    gap: 12px;
+}
+
+.rc-uses {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(44px, 1fr));
+    gap: 5px;
+    max-height: 280px;
+    overflow-y: auto;
+    padding: 2px;
+}
+
+.rc-tile--small {
+    padding: 5px;
+    border-radius: 7px;
+}
+
+/* ---------- Recipe cards ---------- */
+
+.rc-card {
+    --slot: 44px;
+    padding: 14px;
+    border: 1px solid var(--rc-line);
+    border-radius: 14px;
+    background: var(--rc-field);
+}
+
+.rc-card-head {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 14px;
+}
+
+.rc-station {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+}
+
+.rc-card-title {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.25;
+}
+
+.rc-card-title strong,
+.rc-card-title span {
+    text-align: left;
+}
+
+.rc-card-title strong {
+    font-size: 0.92rem;
+}
+
+.rc-card-title span {
+    color: var(--text-muted);
+    font-size: 0.76rem;
+}
+
+.rc-chip {
+    margin-left: auto;
+    padding: 2px 9px;
+    border: 1px solid var(--rc-line);
+    border-radius: var(--radius-full, 999px);
+    color: var(--text-secondary);
+    font-size: 0.72rem;
+    white-space: nowrap;
+}
+
+.rc-layout {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+    flex-wrap: wrap;
+}
+
+.rc-grid3 {
+    display: grid;
+    grid-template-columns: repeat(3, var(--slot));
+    gap: 4px;
+}
+
+.rc-row {
+    display: flex;
+    gap: 4px;
+}
+
+/* Inventory slot: dark well with the game's bevel. */
+.rc-slot {
+    position: relative;
+    width: var(--slot);
+    height: var(--slot);
+    display: grid;
+    place-items: center;
+    padding: calc(var(--slot) * 0.12);
+    border: 0;
+    border-radius: 4px;
+    background: var(--rc-slot-bg);
+    box-shadow: inset 2px 2px 0 rgba(0, 0, 0, 0.45), inset -2px -2px 0 rgba(255, 255, 255, 0.07);
+    cursor: pointer;
+    transition: background var(--transition-fast);
+}
+
+button.rc-slot:hover,
+button.rc-slot:focus-visible {
+    background: color-mix(in srgb, #fff 14%, var(--rc-slot-bg));
+}
+
+.rc-slot.is-empty {
+    cursor: default;
+}
+
+.rc-slot--big {
+    width: calc(var(--slot) * 1.36);
+    height: calc(var(--slot) * 1.36);
+    outline: 2px solid color-mix(in srgb, var(--rc-accent) 45%, transparent);
+    outline-offset: 2px;
+}
+
+.rc-slot--hero {
+    cursor: default;
+    outline: none;
+}
+
+.rc-count {
+    position: absolute;
+    z-index: 1;
+    right: 3px;
+    bottom: 0;
+    color: #fff;
+    font-weight: 700;
+    font-size: 0.9rem;
+    line-height: 1.2;
+    text-shadow: 2px 2px 0 #3f3f3f;
+    pointer-events: none;
+}
+
+.rc-arrow {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2px;
+    min-width: 40px;
+    color: var(--text-muted);
+    font-size: 1.6rem;
+}
+
+.rc-arrow-label {
+    font-size: 0.72rem;
+    font-weight: 600;
+}
+
+.rc-shapeless {
+    font-size: 0.85rem;
+    color: var(--rc-accent);
+    cursor: help;
+}
+
+.rc-plus {
+    color: var(--text-muted);
+}
+
+.rc-furnace {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+}
+
+.rc-flame {
+    color: #ff9d2e;
+    font-size: 1.1rem;
+    animation: rc-flicker 1.6s ease-in-out infinite;
+}
+
+@keyframes rc-flicker {
+    0%, 100% { opacity: 1; transform: scale(1); }
+    50% { opacity: 0.72; transform: scale(0.9); }
+}
+
+.rc-note {
+    margin: 14px 0 0;
+    color: var(--text-secondary);
+    font-size: 0.8rem;
+    line-height: 1.5;
+}
+
+.rc-card-foot {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    align-items: center;
+    gap: 6px 8px;
+    margin-top: 14px;
+    padding-top: 12px;
+    border-top: 1px dashed var(--rc-line);
+}
+
+.rc-cmd-label {
+    grid-column: 1 / -1;
+    color: var(--text-muted);
+    font-size: 0.72rem;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+}
+
+.rc-cmd {
+    padding: 6px 10px;
+    border-radius: 8px;
+    background: var(--rc-slot-bg);
+    color: var(--text-primary);
+    font-size: 0.78rem;
+    overflow-wrap: anywhere;
+    text-align: left;
+}
+
+.rc-locked {
+    grid-column: 1 / -1;
+    color: var(--text-muted);
+    font-size: 0.78rem;
+}
+
+.rc-locked i {
+    color: var(--rc-accent);
+}
+
+/* ---------- Tooltip (game style) ---------- */
+
+.rc-tooltip {
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 10050;
+    max-width: 300px;
+    padding: 7px 10px;
+    border: 2px solid #2d0a6b;
+    border-radius: 4px;
+    background: rgba(16, 0, 16, 0.94);
+    box-shadow: inset 0 0 0 1px rgba(80, 0, 255, 0.35), 0 8px 24px rgba(0, 0, 0, 0.35);
+    color: #fff;
+    font-size: 0.85rem;
+    line-height: 1.4;
+    pointer-events: none;
+}
+
+.rc-tooltip span,
+.rc-tooltip strong {
+    display: block;
+    text-align: left;
+}
+
+.rc-tip-name {
+    color: #fff;
+    font-weight: 600;
+}
+
+.rc-tip-sub,
+.rc-tip-tag {
+    color: #aaa;
+}
+
+.rc-tip-effect {
+    color: #7b8cff;
+}
+
+.rc-tip-id {
+    color: #707070;
+    font-size: 0.75rem;
+}
+
+.rc-tips {
+    margin-top: 22px;
+}
+
+/* ---------- Responsive ---------- */
+
+@media (max-width: 960px) {
+    .rc-main {
+        grid-template-columns: minmax(0, 1fr);
+    }
+
+    .rc-grid {
+        max-height: 52vh;
+    }
+
+    .rc-detail {
+        position: static;
+        max-height: none;
+        overflow: visible;
+        scroll-margin-top: 80px;
+    }
+}
+
+@media (max-width: 560px) {
+    .hero {
+        padding: 110px 0 56px;
+    }
+
+    .rc-panel {
+        padding: 14px;
+        border-radius: 14px;
+    }
+
+    .rc-modes {
+        width: 100%;
+    }
+
+    .rc-modes button {
+        flex: 1;
+        justify-content: center;
+    }
+
+    .rc-tab {
+        padding: 6px 10px 6px 6px;
+        font-size: 0.8rem;
+    }
+
+    .rc-tab img,
+    .rc-tab > i {
+        width: 22px;
+        height: 22px;
+    }
+
+    .rc-grid {
+        grid-template-columns: repeat(auto-fill, minmax(44px, 1fr));
+        gap: 5px;
+    }
+
+    .rc-card {
+        --slot: 36px;
+        padding: 12px 10px;
+    }
+
+    .rc-layout {
+        gap: 8px;
+    }
+
+    .rc-arrow {
+        min-width: 28px;
+        font-size: 1.3rem;
+    }
+
+    .rc-detail-head {
+        --slot: 48px;
+    }
+}

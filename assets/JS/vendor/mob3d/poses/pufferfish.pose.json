@@ -1,0 +1,1 @@
+{"animations":{"animation.pufferfish.flop":{"loop":true,"bones":{"body":{"rotation":[0.0,0.0,"variable.zrot"]},"tailfin":{"rotation":[0.0,"math.cos(variable.animationamountblend * 45.0) * -5.75",0.0]}}}}}

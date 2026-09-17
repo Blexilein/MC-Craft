@@ -1,0 +1,1091 @@
+{
+ "version": "26.3",
+ "woods": [
+  {
+   "id": "oak",
+   "name": {
+    "de": "Eichenholzschild",
+    "en": "Oak Sign"
+   },
+   "hanging_name": {
+    "de": "Eichenholzhängeschild",
+    "en": "Oak Hanging Sign"
+   },
+   "texture": "/assets/img/textures/block/oak_sign.png",
+   "hanging_texture": "/assets/img/textures/block/oak_hanging_sign.png",
+   "icon": "/assets/img/textures/item/oak_sign.png",
+   "hanging_icon": "/assets/img/textures/item/oak_hanging_sign.png"
+  },
+  {
+   "id": "spruce",
+   "name": {
+    "de": "Fichtenholzschild",
+    "en": "Spruce Sign"
+   },
+   "hanging_name": {
+    "de": "Fichtenholzhängeschild",
+    "en": "Spruce Hanging Sign"
+   },
+   "texture": "/assets/img/textures/block/spruce_sign.png",
+   "hanging_texture": "/assets/img/textures/block/spruce_hanging_sign.png",
+   "icon": "/assets/img/textures/item/spruce_sign.png",
+   "hanging_icon": "/assets/img/textures/item/spruce_hanging_sign.png"
+  },
+  {
+   "id": "birch",
+   "name": {
+    "de": "Birkenholzschild",
+    "en": "Birch Sign"
+   },
+   "hanging_name": {
+    "de": "Birkenholzhängeschild",
+    "en": "Birch Hanging Sign"
+   },
+   "texture": "/assets/img/textures/block/birch_sign.png",
+   "hanging_texture": "/assets/img/textures/block/birch_hanging_sign.png",
+   "icon": "/assets/img/textures/item/birch_sign.png",
+   "hanging_icon": "/assets/img/textures/item/birch_hanging_sign.png"
+  },
+  {
+   "id": "jungle",
+   "name": {
+    "de": "Tropenholzschild",
+    "en": "Jungle Sign"
+   },
+   "hanging_name": {
+    "de": "Tropenholzhängeschild",
+    "en": "Jungle Hanging Sign"
+   },
+   "texture": "/assets/img/textures/block/jungle_sign.png",
+   "hanging_texture": "/assets/img/textures/block/jungle_hanging_sign.png",
+   "icon": "/assets/img/textures/item/jungle_sign.png",
+   "hanging_icon": "/assets/img/textures/item/jungle_hanging_sign.png"
+  },
+  {
+   "id": "acacia",
+   "name": {
+    "de": "Akazienholzschild",
+    "en": "Acacia Sign"
+   },
+   "hanging_name": {
+    "de": "Akazienholzhängeschild",
+    "en": "Acacia Hanging Sign"
+   },
+   "texture": "/assets/img/textures/block/acacia_sign.png",
+   "hanging_texture": "/assets/img/textures/block/acacia_hanging_sign.png",
+   "icon": "/assets/img/textures/item/acacia_sign.png",
+   "hanging_icon": "/assets/img/textures/item/acacia_hanging_sign.png"
+  },
+  {
+   "id": "cherry",
+   "name": {
+    "de": "Kirschholzschild",
+    "en": "Cherry Sign"
+   },
+   "hanging_name": {
+    "de": "Kirschholzhängeschild",
+    "en": "Cherry Hanging Sign"
+   },
+   "texture": "/assets/img/textures/block/cherry_sign.png",
+   "hanging_texture": "/assets/img/textures/block/cherry_hanging_sign.png",
+   "icon": "/assets/img/textures/item/cherry_sign.png",
+   "hanging_icon": "/assets/img/textures/item/cherry_hanging_sign.png"
+  },
+  {
+   "id": "dark_oak",
+   "name": {
+    "de": "Schwarzeichenholzschild",
+    "en": "Dark Oak Sign"
+   },
+   "hanging_name": {
+    "de": "Schwarzeichenholzhängeschild",
+    "en": "Dark Oak Hanging Sign"
+   },
+   "texture": "/assets/img/textures/block/dark_oak_sign.png",
+   "hanging_texture": "/assets/img/textures/block/dark_oak_hanging_sign.png",
+   "icon": "/assets/img/textures/item/dark_oak_sign.png",
+   "hanging_icon": "/assets/img/textures/item/dark_oak_hanging_sign.png"
+  },
+  {
+   "id": "pale_oak",
+   "name": {
+    "de": "Blasseichenholzschild",
+    "en": "Pale Oak Sign"
+   },
+   "hanging_name": {
+    "de": "Blasseichenholzhängeschild",
+    "en": "Pale Oak Hanging Sign"
+   },
+   "texture": "/assets/img/textures/block/pale_oak_sign.png",
+   "hanging_texture": "/assets/img/textures/block/pale_oak_hanging_sign.png",
+   "icon": "/assets/img/textures/item/pale_oak_sign.png",
+   "hanging_icon": "/assets/img/textures/item/pale_oak_hanging_sign.png"
+  },
+  {
+   "id": "mangrove",
+   "name": {
+    "de": "Mangrovenholzschild",
+    "en": "Mangrove Sign"
+   },
+   "hanging_name": {
+    "de": "Mangrovenholzhängeschild",
+    "en": "Mangrove Hanging Sign"
+   },
+   "texture": "/assets/img/textures/block/mangrove_sign.png",
+   "hanging_texture": "/assets/img/textures/block/mangrove_hanging_sign.png",
+   "icon": "/assets/img/textures/item/mangrove_sign.png",
+   "hanging_icon": "/assets/img/textures/item/mangrove_hanging_sign.png"
+  },
+  {
+   "id": "poplar",
+   "name": {
+    "de": "Pappelholzschild",
+    "en": "Poplar Sign"
+   },
+   "hanging_name": {
+    "de": "Pappelholzhängeschild",
+    "en": "Poplar Hanging Sign"
+   },
+   "texture": "/assets/img/textures/block/poplar_sign.png",
+   "hanging_texture": "/assets/img/textures/block/poplar_hanging_sign.png",
+   "icon": "/assets/img/textures/item/poplar_sign.png",
+   "hanging_icon": "/assets/img/textures/item/poplar_hanging_sign.png"
+  },
+  {
+   "id": "bamboo",
+   "name": {
+    "de": "Bambusschild",
+    "en": "Bamboo Sign"
+   },
+   "hanging_name": {
+    "de": "Bambushängeschild",
+    "en": "Bamboo Hanging Sign"
+   },
+   "texture": "/assets/img/textures/block/bamboo_sign.png",
+   "hanging_texture": "/assets/img/textures/block/bamboo_hanging_sign.png",
+   "icon": "/assets/img/textures/item/bamboo_sign.png",
+   "hanging_icon": "/assets/img/textures/item/bamboo_hanging_sign.png"
+  },
+  {
+   "id": "crimson",
+   "name": {
+    "de": "Karmesinschild",
+    "en": "Crimson Sign"
+   },
+   "hanging_name": {
+    "de": "Karmesinhängeschild",
+    "en": "Crimson Hanging Sign"
+   },
+   "texture": "/assets/img/textures/block/crimson_sign.png",
+   "hanging_texture": "/assets/img/textures/block/crimson_hanging_sign.png",
+   "icon": "/assets/img/textures/item/crimson_sign.png",
+   "hanging_icon": "/assets/img/textures/item/crimson_hanging_sign.png"
+  },
+  {
+   "id": "warped",
+   "name": {
+    "de": "Wirrschild",
+    "en": "Warped Sign"
+   },
+   "hanging_name": {
+    "de": "Wirrhängeschild",
+    "en": "Warped Hanging Sign"
+   },
+   "texture": "/assets/img/textures/block/warped_sign.png",
+   "hanging_texture": "/assets/img/textures/block/warped_hanging_sign.png",
+   "icon": "/assets/img/textures/item/warped_sign.png",
+   "hanging_icon": "/assets/img/textures/item/warped_hanging_sign.png"
+  }
+ ],
+ "dyes": [
+  {
+   "id": "white",
+   "text": "#FFFFFF",
+   "name": {
+    "de": "Weiß",
+    "en": "White"
+   }
+  },
+  {
+   "id": "orange",
+   "text": "#FF681F",
+   "name": {
+    "de": "Orange",
+    "en": "Orange"
+   }
+  },
+  {
+   "id": "magenta",
+   "text": "#FF00FF",
+   "name": {
+    "de": "Magenta",
+    "en": "Magenta"
+   }
+  },
+  {
+   "id": "light_blue",
+   "text": "#9AC0CD",
+   "name": {
+    "de": "Hellblau",
+    "en": "Light Blue"
+   }
+  },
+  {
+   "id": "yellow",
+   "text": "#FFFF00",
+   "name": {
+    "de": "Gelb",
+    "en": "Yellow"
+   }
+  },
+  {
+   "id": "lime",
+   "text": "#BFFF00",
+   "name": {
+    "de": "Hellgrün",
+    "en": "Lime"
+   }
+  },
+  {
+   "id": "pink",
+   "text": "#FF69B4",
+   "name": {
+    "de": "Rosa",
+    "en": "Pink"
+   }
+  },
+  {
+   "id": "gray",
+   "text": "#808080",
+   "name": {
+    "de": "Grau",
+    "en": "Gray"
+   }
+  },
+  {
+   "id": "light_gray",
+   "text": "#D3D3D3",
+   "name": {
+    "de": "Hellgrau",
+    "en": "Light Gray"
+   }
+  },
+  {
+   "id": "cyan",
+   "text": "#00FFFF",
+   "name": {
+    "de": "Türkis",
+    "en": "Cyan"
+   }
+  },
+  {
+   "id": "purple",
+   "text": "#A020F0",
+   "name": {
+    "de": "Violett",
+    "en": "Purple"
+   }
+  },
+  {
+   "id": "blue",
+   "text": "#0000FF",
+   "name": {
+    "de": "Blau",
+    "en": "Blue"
+   }
+  },
+  {
+   "id": "brown",
+   "text": "#8B4513",
+   "name": {
+    "de": "Braun",
+    "en": "Brown"
+   }
+  },
+  {
+   "id": "green",
+   "text": "#00FF00",
+   "name": {
+    "de": "Grün",
+    "en": "Green"
+   }
+  },
+  {
+   "id": "red",
+   "text": "#FF0000",
+   "name": {
+    "de": "Rot",
+    "en": "Red"
+   }
+  },
+  {
+   "id": "black",
+   "text": "#000000",
+   "name": {
+    "de": "Schwarz",
+    "en": "Black"
+   }
+  }
+ ],
+ "dark_factor": 0.4,
+ "glow_black_outline": "#F0EBCC",
+ "kinds": {
+  "standing": {
+   "block": "_sign",
+   "entity": "minecraft:sign",
+   "states": {
+    "rotation": [
+     "0",
+     "1",
+     "2",
+     "3",
+     "4",
+     "5",
+     "6",
+     "7",
+     "8",
+     "9",
+     "10",
+     "11",
+     "12",
+     "13",
+     "14",
+     "15"
+    ]
+   },
+   "line_height": 10,
+   "max_width": 90,
+   "text_per_unit": 6.0,
+   "parts": [
+    {
+     "from": [
+      7.33333,
+      0,
+      7.33333
+     ],
+     "to": [
+      8.66667,
+      9.33333,
+      8.66667
+     ],
+     "front": [
+      14,
+      0,
+      15,
+      7
+     ],
+     "back": [
+      14,
+      8,
+      15,
+      15
+     ]
+    },
+    {
+     "from": [
+      0,
+      9.33333,
+      7.33333
+     ],
+     "to": [
+      16,
+      17.33333,
+      8.66667
+     ],
+     "front": [
+      0,
+      1,
+      12,
+      7
+     ],
+     "back": [
+      0,
+      8,
+      12,
+      14
+     ]
+    }
+   ],
+   "board": 1
+  },
+  "wall": {
+   "block": "_wall_sign",
+   "entity": "minecraft:sign",
+   "states": {
+    "facing": [
+     "east",
+     "north",
+     "south",
+     "west"
+    ]
+   },
+   "line_height": 10,
+   "max_width": 90,
+   "text_per_unit": 6.0,
+   "parts": [
+    {
+     "from": [
+      0,
+      4.33333,
+      0.33333
+     ],
+     "to": [
+      16,
+      12.33333,
+      1.66667
+     ],
+     "front": [
+      0,
+      1,
+      12,
+      7
+     ],
+     "back": [
+      0,
+      8,
+      12,
+      14
+     ]
+    }
+   ],
+   "board": 0
+  },
+  "hanging": {
+   "block": "_hanging_sign",
+   "entity": "minecraft:hanging_sign",
+   "states": {
+    "attached": [
+     "false",
+     "true"
+    ],
+    "rotation": [
+     "0",
+     "1",
+     "2",
+     "3",
+     "4",
+     "5",
+     "6",
+     "7",
+     "8",
+     "9",
+     "10",
+     "11",
+     "12",
+     "13",
+     "14",
+     "15"
+    ]
+   },
+   "line_height": 9,
+   "max_width": 60,
+   "text_per_unit": 4.4444,
+   "parts": [
+    {
+     "from": [
+      1,
+      0,
+      7
+     ],
+     "to": [
+      15,
+      10,
+      9
+     ],
+     "front": [
+      1,
+      8,
+      8,
+      13
+     ],
+     "back": [
+      9,
+      8,
+      16,
+      13
+     ]
+    },
+    {
+     "from": [
+      2.96447,
+      10,
+      4.46447
+     ],
+     "to": [
+      5.96447,
+      16,
+      4.46447
+     ],
+     "front": [
+      11,
+      3.5,
+      12.5,
+      6.5
+     ],
+     "back": [
+      12.5,
+      3.5,
+      11,
+      6.5
+     ],
+     "angle": 45,
+     "origin": [
+      8,
+      0,
+      8
+     ]
+    },
+    {
+     "from": [
+      2.96447,
+      11,
+      11.53553
+     ],
+     "to": [
+      5.96447,
+      15,
+      11.53553
+     ],
+     "front": [
+      14,
+      4,
+      15.5,
+      6
+     ],
+     "back": [
+      15.5,
+      4,
+      14,
+      6
+     ],
+     "angle": -45,
+     "origin": [
+      8,
+      0,
+      8
+     ]
+    },
+    {
+     "from": [
+      10.03553,
+      10,
+      11.53553
+     ],
+     "to": [
+      13.03553,
+      16,
+      11.53553
+     ],
+     "front": [
+      11,
+      3.5,
+      12.5,
+      6.5
+     ],
+     "back": [
+      12.5,
+      3.5,
+      11,
+      6.5
+     ],
+     "angle": 45,
+     "origin": [
+      8,
+      0,
+      8
+     ]
+    },
+    {
+     "from": [
+      10.03553,
+      11,
+      4.46447
+     ],
+     "to": [
+      13.03553,
+      15,
+      4.46447
+     ],
+     "front": [
+      14,
+      4,
+      15.5,
+      6
+     ],
+     "back": [
+      15.5,
+      4,
+      14,
+      6
+     ],
+     "angle": -45,
+     "origin": [
+      8,
+      0,
+      8
+     ]
+    }
+   ],
+   "board": 0
+  },
+  "hanging_attached": {
+   "block": "_hanging_sign",
+   "entity": "minecraft:hanging_sign",
+   "states": {
+    "attached": [
+     "false",
+     "true"
+    ],
+    "rotation": [
+     "0",
+     "1",
+     "2",
+     "3",
+     "4",
+     "5",
+     "6",
+     "7",
+     "8",
+     "9",
+     "10",
+     "11",
+     "12",
+     "13",
+     "14",
+     "15"
+    ]
+   },
+   "line_height": 9,
+   "max_width": 60,
+   "text_per_unit": 4.4444,
+   "parts": [
+    {
+     "from": [
+      1,
+      0,
+      7
+     ],
+     "to": [
+      15,
+      10,
+      9
+     ],
+     "front": [
+      1,
+      8,
+      8,
+      13
+     ],
+     "back": [
+      9,
+      8,
+      16,
+      13
+     ]
+    },
+    {
+     "from": [
+      2,
+      10,
+      8
+     ],
+     "to": [
+      14,
+      16,
+      8
+     ],
+     "front": [
+      10,
+      0,
+      16,
+      3
+     ],
+     "back": [
+      16,
+      0,
+      10,
+      3
+     ]
+    }
+   ],
+   "board": 0
+  },
+  "wall_hanging": {
+   "block": "_wall_hanging_sign",
+   "entity": "minecraft:hanging_sign",
+   "states": {
+    "facing": [
+     "east",
+     "north",
+     "south",
+     "west"
+    ]
+   },
+   "line_height": 9,
+   "max_width": 60,
+   "text_per_unit": 4.4444,
+   "parts": [
+    {
+     "from": [
+      1,
+      0,
+      7
+     ],
+     "to": [
+      15,
+      10,
+      9
+     ],
+     "front": [
+      1,
+      8,
+      8,
+      13
+     ],
+     "back": [
+      9,
+      8,
+      16,
+      13
+     ]
+    },
+    {
+     "from": [
+      0,
+      14,
+      6
+     ],
+     "to": [
+      16,
+      16,
+      10
+     ],
+     "front": [
+      0,
+      2,
+      8,
+      3
+     ],
+     "back": [
+      0,
+      3.5,
+      8,
+      4.5
+     ]
+    },
+    {
+     "from": [
+      1.5,
+      10,
+      8
+     ],
+     "to": [
+      4.5,
+      12,
+      8
+     ],
+     "front": [
+      11,
+      5.5,
+      12.5,
+      6.5
+     ],
+     "back": [
+      12.5,
+      5.5,
+      11,
+      6.5
+     ],
+     "angle": 45,
+     "origin": [
+      3,
+      11,
+      8
+     ]
+    },
+    {
+     "from": [
+      1.5,
+      11,
+      8
+     ],
+     "to": [
+      4.5,
+      14,
+      8
+     ],
+     "front": [
+      14,
+      4.5,
+      15.5,
+      6
+     ],
+     "back": [
+      15.5,
+      4.5,
+      14,
+      6
+     ],
+     "angle": -45,
+     "origin": [
+      3,
+      12,
+      8
+     ]
+    },
+    {
+     "from": [
+      11.5,
+      10,
+      8
+     ],
+     "to": [
+      14.5,
+      12,
+      8
+     ],
+     "front": [
+      11,
+      5.5,
+      12.5,
+      6.5
+     ],
+     "back": [
+      12.5,
+      5.5,
+      11,
+      6.5
+     ],
+     "angle": 45,
+     "origin": [
+      13,
+      11,
+      8
+     ]
+    },
+    {
+     "from": [
+      11.5,
+      11,
+      8
+     ],
+     "to": [
+      14.5,
+      14,
+      8
+     ],
+     "front": [
+      14,
+      4.5,
+      15.5,
+      6
+     ],
+     "back": [
+      15.5,
+      4.5,
+      14,
+      6
+     ],
+     "angle": -45,
+     "origin": [
+      13,
+      12,
+      8
+     ]
+    }
+   ],
+   "board": 0
+  }
+ },
+ "font": [
+  {
+   "type": "space",
+   "advances": {
+    " ": 4,
+    "‌": 0
+   }
+  },
+  {
+   "type": "bitmap",
+   "file": "/assets/img/textures/font/nonlatin_european.png",
+   "height": 8,
+   "ascent": 7,
+   "chars": [
+    "¡‰­·₴≠¿×ØÞһðøþΑΒ",
+    "ΓΔΕΖΗΘΙΚΛΜΝΞΟΠΡΣ",
+    "ΤΥΦΧΨΩαβγδεζηθικ",
+    "λμνξοπρςστυφχψωЂ",
+    "ЅІЈЉЊЋАБВГДЕЖЗИК",
+    "ЛМНОПРСТУФХЦЧШЩЪ",
+    "ЫЬЭЮЯабвгдежзикл",
+    "мнопрстуфхцчшщъы",
+    "ьэюяєѕіјљњ–—‘’“”",
+    "„…⁊←↑→↓⇄＋ƏəɛɪҮүӨ",
+    "өʻˌ;ĸẞß₽€ѢѣѴѵӀѲѳ",
+    "⁰¹³⁴⁵⁶⁷⁸⁹⁺⁻⁼⁽⁾ⁱ™",
+    "ʔʕ⧈⚔☠ҚқҒғҰұӘәҖҗҢ",
+    "ңҺאבגדהוזחטיכלמם",
+    "נןסעפףצץקר¢¤¥©®µ",
+    "¶¼½¾·‐‚†‡•‱′″‴‵‶",
+    "‷‹›※‼‽⁂⁈⁉⁋⁎⁏⁑⁒⁗℗",
+    "−∓∞☀☁☈Є☲☵☽♀♂⚥♠♣♥",
+    "♦♩♪♫♬♭♮♯⚀⚁⚂⚃⚄⚅ʬ⚡",
+    "⛏✔❄❌❤⭐⸘⸮⸵⸸⹁⹋⥝ᘔƐ߈",
+    "ϛㄥⱯᗺƆᗡƎℲ⅁ꞰꞀԀꝹᴚ⟘∩",
+    "Ʌ⅄ɐɔǝɟᵷɥᴉɾʞꞁɯɹʇʌ",
+    "ʍʎԱԲԳԴԶԷԹԺԻԼԽԾԿՀ",
+    "ՁՂՃՄՅՆՇՈՉՋՌՍՎՏՐՑ",
+    "ՒՓՔՕՖՙաբգդեզէըթժ",
+    "իլխծկհձղճմյնշոչպ",
+    "ջռսվտրցւփքօֆևשתԸ",
+    "՚՛՜՝՞՟ՠֈ֏¯ſƷʒǷƿȜ",
+    "ȝȤȥ˙Ꝛꝛ‑⅋⏏⏩⏪⏭⏮⏯⏴⏵",
+    "⏶⏷⏸⏹⏺⏻⏼⏽⭘▲▶▼◀●◦◘",
+    "⚓⛨ĲĳǉꜨꜩꜹꜻﬀﬁﬂﬃﬅ�Ե",
+    "Պᚠᚢᚣᚤᚥᚦᚧᚨᚩᚪᚫᚬᚭᚮᚯ",
+    "ᚰᚱᚲᚳᚴᚶᚷᚸᚹᚺᚻᚼᚽᚾᚿᛀ",
+    "ᛁᛂᛃᛄᛅᛆᛇᛈᛉᛊᛋᛌᛍᛎᛏᛐ",
+    "ᛑᛒᛓᛔᛕᛖᛗᛘᛙᛚᛛᛜᛝᛞᛟᛠ",
+    "ᛡᛢᛣᛤᛥᛦᛧᛨᛩᛪ᛫᛬᛭ᛮᛯᛰ",
+    "ᛱᛲᛳᛴᛵᛶᛷᛸ☺☻¦☹ך׳״װ",
+    "ױײ־׃׆´¨ᴀʙᴄᴅᴇꜰɢʜᴊ",
+    "ᴋʟᴍɴᴏᴘꞯʀꜱᴛᴜᴠᴡʏᴢ§",
+    "ɱɳɲʈɖɡʡɕʑɸʝʢɻʁɦʋ",
+    "ɰɬɮʘǀǃǂǁɓɗᶑʄɠʛɧɫ",
+    "ɨʉʊɘɵɤɜɞɑɒɚɝƁƉƑƩ",
+    "ƲႠႡႢႣႤႥႦႧႨႩႪႫႬႭႮ",
+    "ႯႰႱႲႳႴႵႶႷႸႹႺႻႼႽႾ",
+    "ႿჀჁჂჃჄჅჇჍაბგდევზ",
+    "თიკლმნოპჟრსტუფქღ",
+    "ყშჩცძწჭხჯჰჱჲჳჴჵჶ",
+    "ჷჸჹჺ჻ჼჽჾჿתּשׂפֿפּכּײַיִ",
+    "וֹוּבֿבּꜧꜦɺⱱʠʗʖɭɷɿʅʆ",
+    "ʓʚ₪₾֊ⴀⴁⴂⴃⴄⴅⴆⴡⴇⴈⴉ",
+    "ⴊⴋⴌⴢⴍⴎⴏⴐⴑⴒⴣⴓⴔⴕⴖⴗ",
+    "ⴘⴙⴚⴛⴜⴝⴞⴤⴟⴠⴥ⅛⅜⅝⅞⅓",
+    "⅔✉☂☔☄⛄☃⌛⌚⚐✎❣♤♧♡♢",
+    "⛈☰☱☳☴☶☷↔⇒⇏⇔⇵∀∃∄∉",
+    "∋∌⊂⊃⊄⊅∧∨⊻⊼⊽∥≢⋆∑⊤",
+    "⊥⊢⊨≔∁∴∵∛∜∂⋃⊆⊇□△▷",
+    "▽◁◆◇○◎☆★✘₀₁₂₃₄₅₆",
+    "₇₈₉₊₋₌₍₎∫∮∝⌀⌂⌘〒ɼ",
+    "ƄƅẟȽƚƛȠƞƟƧƨƪƸƹƻƼ",
+    "ƽƾȡȴȵȶȺⱥȻȼɆɇȾⱦɁɂ",
+    "ɃɄɈɉɊɋɌɍɎɏẜẝỼỽỾỿ",
+    "Ꞩꞩ𐌰𐌱𐌲𐌳𐌴𐌵𐌶𐌷𐌸𐌹𐌺𐌻𐌼𐌽",
+    "𐌾𐌿𐍀𐍁𐍂𐍃𐍄𐍅𐍆𐍇𐍈𐍉𐍊🌧🔥🌊",
+    "⅐⅑⅕⅖⅗⅙⅚⅟↉🗡🏹🪓🔱🎣🧪⚗",
+    "⯪⯫Ɑ🛡✂🍖🪣🔔⏳⚑₠₡₢₣₤₥",
+    "₦₩₫₭₮₰₱₲₳₵₶₷₸₹₺₻",
+    "₼₿\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000"
+   ]
+  },
+  {
+   "type": "bitmap",
+   "file": "/assets/img/textures/font/accented.png",
+   "height": 12,
+   "ascent": 10,
+   "chars": [
+    "ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏ",
+    "ÐÑÒÓÔÕÖÙÚÛÜÝàáâã",
+    "äåæçìíîïñòóôõöùú",
+    "ûüýÿĀāĂăĄąĆćĈĉĊċ",
+    "ČčĎďĐđĒēĔĕĖėĘęĚě",
+    "ĜĝḠḡĞğĠġĢģĤĥĦħĨĩ",
+    "ĪīĬĭĮįİıĴĵĶķĹĺĻļ",
+    "ĽľĿŀŁłŃńŅņŇňŊŋŌō",
+    "ŎŏŐőŒœŔŕŖŗŘřŚśŜŝ",
+    "ŞşŠšŢţŤťŦŧŨũŪūŬŭ",
+    "ŮůŰűŲųŴŵŶŷŸŹźŻżŽ",
+    "žǼǽǾǿȘșȚțΆΈΉΊΌΎΏ",
+    "ΐΪΫάέήίΰϊϋόύώЀЁЃ",
+    "ЇЌЍЎЙйѐёђѓїћќѝўџ",
+    "ҐґḂḃḊḋḞḟḢḣḰḱṀṁṖṗ",
+    "ṠṡṪṫẀẁẂẃẄẅỲỳèéêë",
+    "ŉǧǫЏḍḥṛṭẒỊịỌọỤụ№",
+    "ȇƔɣʃ⁇ǱǲǳǄǅǆǇǈǊǋǌ",
+    "ℹᵫꜲꜳꜴꜵꜶꜷꜸꜺꜼꜽꝎꝏꝠꝡ",
+    "ﬄﬆᚡᚵƠơƯưẮắẤấẾếốỚ",
+    "ớỨứẰằẦầỀềồỜờỪừẢả",
+    "ẲẳẨẩẺẻổỞỂểỈỉỎỏỔở",
+    "ỦủỬửỶỷẠạẶặẬậẸẹỆệ",
+    "ỘộỢợỰựỴỵỐƕẪẫỖỗữ☞",
+    "☜☮ẴẵẼẽỄễỒỠỡỮỸỹҘҙ",
+    "ҠҡҪҫǶ⚠⓪①②③④⑤⑥⑦⑧⑨",
+    "⑩⑪⑫⑬⑭⑮⑯⑰⑱⑲⑳ⒶⒷⒸⒹⒺ",
+    "ⒻⒼⒽⒾⒿⓀⓁⓂⓃⓄⓅⓆⓇⓈⓉⓊ",
+    "ⓋⓌⓍⓎⓏⓐⓑⓒⓓⓔⓕⓖⓗⓘⓙⓚ",
+    "ⓛⓜⓝⓞⓟⓠⓡⓢⓣⓤⓥⓦⓧⓨⓩ̧",
+    "ʂʐɶǍǎǞǟǺǻȂȃȦȧǠǡḀ",
+    "ḁȀȁḆḇḄḅᵬḈḉḐḑḒḓḎḏ",
+    "ḌᵭḔḕḖḗḘḙḜḝȨȩḚḛȄȅ",
+    "ȆᵮǴǵǦḦḧḨḩḪḫȞȟḤẖḮ",
+    "ḯȊȋǏǐȈȉḬḭǰȷǨǩḲḳḴ",
+    "ḵḺḻḼḽḶḷḸḹⱢḾḿṂṃᵯṄ",
+    "ṅṆṇṊṋǸǹṈṉᵰǬǭȬȭṌṍ",
+    "ṎṏṐṑṒṓȎȏȪȫǑǒȮȯȰȱ",
+    "ȌȍǪṔṕᵱȒȓṘṙṜṝṞṟȐȑ",
+    "ṚᵳᵲṤṥṦṧṢṣṨṩᵴṰṱṮṯ",
+    "ṬẗᵵṲṳṶṷṸṹṺṻǓǔǕǖǗ",
+    "ǘǙǚǛǜṴṵȔȕȖṾṿṼṽẆẇ",
+    "ẈẉẘẌẍẊẋȲȳẎẏẙẔẕẐẑ",
+    "ẓᵶǮǯẛꜾꜿǢǣᵺỻᴂᴔꭣȸʣ",
+    "ʥʤʩʪʫȹʨʦʧꭐꭑ₧Ỻאַאָƀ",
+    "ƂƃƇƈƊƋƌƓǤǥƗƖɩƘƙƝ",
+    "ƤƥɽƦƬƭƫƮȗƱƜƳƴƵƶƢ",
+    "ƣȢȣʭʮʯﬔﬕﬗﬖﬓӐӑӒӓӶ",
+    "ӷҔҕӖӗҼҽҾҿӚӛӜӝӁӂӞ",
+    "ӟӢӣӤӥӦӧӪӫӰӱӮӯӲӳӴ",
+    "ӵӸӹӬӭѶѷӔӺԂꚂꚀꚈԪԬꚄ",
+    "ԄԐӠԆҊӃҞҜԞԚӅԮԒԠԈԔ",
+    "ӍӉԨӇҤԢԊҨԤҦҎԖԌꚐҬꚊ",
+    "ꚌԎҲӼӾԦꚔҴꚎҶӋҸꚒꚖꚆҌ",
+    "ԘԜӕӻԃꚃꚁꚉԫԭꚅԅԑӡԇҋ",
+    "ӄҟҝԟԛӆԯԓԡԉԕӎӊԩӈҥ",
+    "ԣԋҩԥҧҏԗԍꚑҭꚋꚍԏҳӽӿ",
+    "ԧꚕҵꚏҷӌҹꚓꚗꚇҍԙԝἈἀἉ",
+    "ἁἊἂἋἃἌἄἍἅἎἆἏἇᾺὰᾸ",
+    "ᾰᾹᾱΆάᾈᾀᾉᾁᾊᾂᾋᾃᾌᾄᾍ",
+    "ᾅᾎᾆᾏᾇᾼᾴᾶᾷᾲᾳἘἐἙἑἚ",
+    "ἒἛἓἜἔἝἕῈΈὲέἨἠῊὴἩ",
+    "ἡἪἢἫἣἬἤἭἥἮἦἯἧᾘᾐᾙ",
+    "ᾑᾚᾒᾛᾓᾜᾔᾝᾕᾞᾖᾟᾗΉήῌ",
+    "ῃῂῄῆῇῚὶΊίἸἰἹἱἺἲἻ",
+    "ἳἼἴἽἵἾἶἿἷῘῐῙῑῒΐῖ",
+    "ῗῸὸΌόὈὀὉὁὊὂὋὃὌὄὍ",
+    "ὅῬῤῥῪὺΎύὙὑὛὓὝὕὟὗ",
+    "ῨῠῩῡϓϔῢΰῧὐὒὔῦὖῺὼ",
+    "ΏώὨὠὩὡὪὢὫὣὬὤὭὥὮὦ",
+    "Ὧὧᾨᾠᾩᾡᾪᾢᾫᾣᾬᾤᾭᾥᾮᾦ",
+    "ᾯᾧῼῳῲῴῶῷ☯☐☑☒ƍƺⱾȿ",
+    "ⱿɀᶀꟄꞔᶁᶂᶃꞕᶄᶅᶆᶇᶈᶉᶊ",
+    "ᶋᶌᶍꟆᶎᶏᶐᶒᶓᶔᶕᶖᶗᶘᶙᶚ",
+    "ẚ⅒⅘₨₯\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000"
+   ]
+  },
+  {
+   "type": "bitmap",
+   "file": "/assets/img/textures/font/ascii.png",
+   "height": 8,
+   "ascent": 7,
+   "chars": [
+    "\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+    "\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+    " !\"#$%&'()*+,-./",
+    "0123456789:;<=>?",
+    "@ABCDEFGHIJKLMNO",
+    "PQRSTUVWXYZ[\\]^_",
+    "`abcdefghijklmno",
+    "pqrstuvwxyz{|}~\u0000",
+    "\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+    "\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000£\u0000\u0000ƒ",
+    "\u0000\u0000\u0000\u0000\u0000\u0000ªº\u0000\u0000¬\u0000\u0000\u0000«»",
+    "░▒▓│┤╡╢╖╕╣║╗╝╜╛┐",
+    "└┴┬├─┼╞╟╚╔╩╦╠═╬╧",
+    "╨╤╥╙╘╒╓╫╪┘┌█▄▌▐▀",
+    "\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000∅∈\u0000",
+    "≡±≥≤⌠⌡÷≈°∙\u0000√ⁿ²■\u0000"
+   ]
+  }
+ ]
+}

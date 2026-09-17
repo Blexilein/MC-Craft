@@ -16,7 +16,10 @@
     <meta property="og:title" content="MC-Craft | Minecraft Tools">
     <meta property="og:description" content="Free Minecraft tools: text converter, items and mobs database, skin lookup, server status and more - fast, low-ad and no sign-up required.">
     <meta property="og:url" content="https://mc-craft.com/en/index.html">
-    <meta property="og:image" content="https://mc-craft.com/assets/img/favicon/mc-craft.png">
+    <meta property="og:image" content="https://mc-craft.com/assets/img/favicon/overworld/mc-craft-overworld.png">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="1254">
+    <meta property="og:image:height" content="1254">
     <meta property="og:image:alt" content="MC-Craft Logo">
     <meta property="og:site_name" content="MC-Craft">
     <meta property="og:locale" content="en_US">
@@ -24,33 +27,69 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="MC-Craft | Minecraft Tools">
     <meta name="twitter:description" content="Free Minecraft tools: text converter, items and mobs database, skin lookup, server status and more - fast, low-ad and no sign-up required.">
-    <meta name="twitter:image" content="https://mc-craft.com/assets/img/favicon/mc-craft.png">
+    <meta name="twitter:image" content="https://mc-craft.com/assets/img/favicon/overworld/mc-craft-overworld.png">
     <meta name="theme-color" content="#148200">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicon/favicon-16x16.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon/favicon-32x32.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="192x192" href="/assets/img/favicon/android-chrome-192x192.png">
-    <link rel="icon" type="image/png" sizes="512x512" href="/assets/img/favicon/android-chrome-512x512.png">
-    <link rel="icon" href="/assets/img/favicon/favicon.ico">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicon/overworld/favicon-16x16.png?v=20260910v121c" data-theme-icon="favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon/overworld/favicon-32x32.png?v=20260910v121c" data-theme-icon="favicon-32x32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/favicon/overworld/apple-touch-icon.png?v=20260910v121c" data-theme-icon="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/assets/img/favicon/overworld/android-chrome-192x192.png?v=20260910v121c" data-theme-icon="android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="/assets/img/favicon/overworld/android-chrome-512x512.png?v=20260910v121c" data-theme-icon="android-chrome-512x512.png">
+    <link rel="icon" href="/assets/img/favicon/overworld/favicon.ico?v=20260910v121c" data-theme-icon="favicon.ico">
     <link rel="manifest" href="/site.webmanifest">
-    <link rel="stylesheet" href="/assets/fontawesome/all.min.css">
-    <link rel="stylesheet" href="/assets/CSS/homepage.css">
-    <link rel="stylesheet" href="/assets/CSS/site-modern-v1.css">
+    <link rel="preload" href="/assets/fonts/chakra-petch-700.woff2?v=20260910v121c" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/assets/fonts/space-grotesk-400.woff2?v=20260910v121c" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="/assets/fonts/fonts.css?v=20260910v121c">
+    <link rel="stylesheet" href="/assets/fontawesome/all.min.css?v=20260910v121c">
+    <link rel="stylesheet" href="/assets/CSS/homepage.css?v=20260917c">
+    <link rel="stylesheet" href="/assets/CSS/site-modern-v1.css?v=20260917b">
     <title>MC-Craft | Minecraft Tools</title>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Organization",
+          "@id": "https://mc-craft.com/#organization",
+          "name": "MC-Craft",
+          "url": "https://mc-craft.com/",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://mc-craft.com/assets/img/favicon/overworld/mc-craft-overworld.png",
+            "width": 1254,
+            "height": 1254
+          },
+          "sameAs": [
+            "https://github.com/Blexilein",
+            "https://discord.gg/eVVpQD75w4",
+            "https://x.com/Blexi_1"
+          ]
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://mc-craft.com/#website",
+          "name": "MC-Craft",
+          "url": "https://mc-craft.com/",
+          "inLanguage": "en-US",
+          "publisher": { "@id": "https://mc-craft.com/#organization" }
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://mc-craft.com/en/index.html#webpage",
+          "url": "https://mc-craft.com/en/index.html",
+          "name": "MC-Craft | Minecraft Tools",
+          "description": "Free Minecraft tools: text converter, items and mobs database, skin lookup, server status and more - fast, low-ad and no sign-up required.",
+          "inLanguage": "en-US",
+          "isPartOf": { "@id": "https://mc-craft.com/#website" },
+          "about": { "@id": "https://mc-craft.com/#organization" }
+        }
+      ]
+    }
+    </script>
 </head>
 <body>
-    <!-- Loading Screen -->
-    <div class="loader" id="loader">
-        <div class="loader-content">
-            <div class="loading-spinner">
-                <div class="spinner"></div>
-            </div>
-            <p class="loading-text">MC-Craft is loading...</p>
-            <div class="loading-progress"></div>
-        </div>
-    </div>
+    <a class="skip-link" href="#main">Skip to main content</a>
 
         <!-- Header -->
      <header class="header">
@@ -60,51 +99,63 @@
                     <div class="logo-icon"></div>
                     <span class="logo-text">MC-Craft</span>
                 </a>
-                <nav class="navigation">
+                <nav class="navigation" aria-label="Main navigation">
                     <ul class="nav-list">
                     <!-- <li><a href="/en/index.html" class="nav-link">Home</a></li> -->
                         <li class="dropdown">
-                            <button class="dropdown-btn nav-link">Tools</button>
+                            <button class="dropdown-btn nav-link" type="button" aria-expanded="false" aria-haspopup="true">Tools</button>
                             <ul class="dropdown-menu">
                                 <li><a href="/blog/en/text-converter.html">Text Converter</a></li>
                                 <li><a href="/blog/en/color-text.html">Color Text</a></li>
                                 <li><a href="/blog/en/structure-converter.html">Structure Converter</a></li>
+                                <li><a href="/blog/en/schematic-viewer.html">Schematic Viewer</a></li>
                                 <li><a href="/blog/en/map-art-generator.html">Map Art Generator</a></li>
+                                <li><a href="/blog/en/nether-coordinate-calculator.html">Nether Coordinate Calculator</a></li>
+                                <li><a href="/blog/en/minecraft-command-generator.html">Minecraft Command Generator</a></li>
                                 <li><a href="/blog/en/items.html">Items Database</a></li>
                                 <li><a href="/blog/en/mobs.html">Mobs Database</a></li>
                                 <li><a href="/blog/en/server-status.html">Server Status</a></li>
                                 <li><a href="/blog/en/minecraft-api-status.html">Minecraft API Status</a></li>
+                                <li><a href="/blog/en/api-documentation.html">API Documentation</a></li>
                                 <li><a href="/blog/en/skin-lookup.html">Skin Lookup</a></li>
                             </ul>
                         </li>
                         <li class="dropdown">
-                            <button class="dropdown-btn nav-link">Explore</button>
+                            <button class="dropdown-btn nav-link" type="button" aria-expanded="false" aria-haspopup="true">Explore</button>
                             <ul class="dropdown-menu">
                                 <li><a href="/blog/en/skin-editor.html">Skin Editor</a></li>
+                                <li><a href="/blog/en/skin-poser.html">Skin Poser</a></li>
+                                <li><a href="/blog/en/chibi-skin-maker.html">Chibi Skin Maker</a></li>
                                <li><a href="/blog/en/day-night-cycle.html">Day-Night Cycle</a></li>
                                 <li><a href="/blog/en/end_poem.html">End Poem</a></li>
                                 <li><a href="/blog/en/minecraft-capes.html">Capes Database</a></li>
+                                <li><a href="/blog/en/minecraft-heads.html">Heads Database</a></li>
+                                <li><a href="/blog/en/head-texture-generator.html">Head Texture Generator</a></li>
                                 <li><a href="/blog/en/minecraft-versions.html">Minecraft Versions</a></li>
                                 <li><a href="/blog/en/minecraft-skins.html">Skin Library</a></li>
                                 <li><a href="/blog/en/beacon-color-mixer.html">Beacon Color Mixer</a></li>
                                 <li><a href="/blog/en/qr-generator.html">QR Generator</a></li>
                                 <li><a href="/blog/en/advancement-generator.html">Advancement Generator</a></li>
+                                <li><a href="/blog/en/sign-generator.html">Sign Generator</a></li>
+                                <li><a href="/blog/en/crafting-recipes.html">Crafting Recipes</a></li>
+                                <li><a href="/blog/en/armor-trim-generator.html">Armor Trim Generator</a></li>
+                                <li><a href="/blog/en/firework-generator.html">Firework Generator</a></li>
                             </ul>
                         </li>
                     </ul>
                 </nav>
                 <div class="sound-toggle">
                     <button class="sound-btn" id="soundBtn" aria-label="Sound on/off">
-                        <img src="/assets/img/backgrounds/sound-on.svg" alt="Sound on" class="sound-icon" id="soundIcon">
+                        <img src="/assets/img/backgrounds/sound-on.svg?v=20260910v121c" alt="Sound on" class="sound-icon" id="soundIcon" width="24" height="24">
                     </button>
                 </div>
                 <div class="lang-switcher">
                     <a class="lang-btn" id="langBtn" href="/index.html" aria-label="Zu Deutsch wechseln">
-                        <img src="/assets/img/backgrounds/en.svg" alt="English" class="flag-icon" id="langFlag">
+                        <img src="/assets/img/backgrounds/en.svg?v=20260910v121c" alt="English" class="flag-icon" id="langFlag" width="24" height="24">
                     </a>
                 </div>
                 <div class="theme-switcher">
-                    <button class="theme-btn" id="themeBtn">
+                    <button class="theme-btn" id="themeBtn" type="button" aria-label="Choose colour theme" aria-expanded="false" aria-haspopup="true" aria-controls="themeDropdown">
                         <i class="fa-solid fa-palette"></i>
                     </button>
                     <div class="theme-dropdown" id="themeDropdown">
@@ -122,7 +173,7 @@
                         </button>
                     </div>
                 </div>
-                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <button class="mobile-menu-btn" id="mobileMenuBtn" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobileNav">
                     <i class="fas fa-bars"></i>
                 </button>
             </div>
@@ -130,13 +181,14 @@
     </header>
 
     <!-- Mobile Navigation -->
-    <div class="mobile-nav" id="mobileNav">
+    <div class="mobile-nav-overlay" id="mobileNavOverlay" hidden></div>
+    <nav class="mobile-nav" id="mobileNav" aria-label="Mobile navigation" inert>
         <div class="mobile-nav-header">
             <div class="logo">
                 <div class="logo-icon"></div>
                 <span class="logo-text">MC-Craft</span>
             </div>
-            <button class="close-btn" id="closeBtn">
+            <button class="close-btn" id="closeBtn" type="button" aria-label="Close menu">
                 <i class="fas fa-times"></i>
             </button>
         </div>
@@ -145,21 +197,33 @@
             <li><a href="/blog/en/text-converter.html" class="mobile-nav-link">Text Converter</a></li>
             <li><a href="/blog/en/color-text.html" class="mobile-nav-link">Color Text</a></li>
             <li><a href="/blog/en/structure-converter.html" class="mobile-nav-link">Structure Converter</a></li>
+            <li><a href="/blog/en/schematic-viewer.html" class="mobile-nav-link">Schematic Viewer</a></li>
             <li><a href="/blog/en/map-art-generator.html" class="mobile-nav-link">Map Art Generator</a></li>
+            <li><a href="/blog/en/nether-coordinate-calculator.html" class="mobile-nav-link">Nether Coordinate Calculator</a></li>
+            <li><a href="/blog/en/minecraft-command-generator.html" class="mobile-nav-link">Minecraft Command Generator</a></li>
             <li><a href="/blog/en/items.html" class="mobile-nav-link">Items Database</a></li>
             <li><a href="/blog/en/mobs.html" class="mobile-nav-link">Mobs Database</a></li>
             <li><a href="/blog/en/server-status.html" class="mobile-nav-link">Server Status</a></li>
             <li><a href="/blog/en/minecraft-api-status.html" class="mobile-nav-link">Minecraft API Status</a></li>
+            <li><a href="/blog/en/api-documentation.html" class="mobile-nav-link">API Documentation</a></li>
             <li><a href="/blog/en/skin-lookup.html" class="mobile-nav-link">Skin Lookup</a></li>
             <li><a href="/blog/en/skin-editor.html" class="mobile-nav-link">Skin Editor</a></li>
+            <li><a href="/blog/en/skin-poser.html" class="mobile-nav-link">Skin Poser</a></li>
+            <li><a href="/blog/en/chibi-skin-maker.html" class="mobile-nav-link">Chibi Skin Maker</a></li>
             <li><a href="/blog/en/day-night-cycle.html" class="mobile-nav-link">Day-Night Cycle</a></li>
             <li><a href="/blog/en/end_poem.html" class="mobile-nav-link">End Poem</a></li>
             <li><a href="/blog/en/minecraft-capes.html" class="mobile-nav-link">Capes Database</a></li>
+            <li><a href="/blog/en/minecraft-heads.html" class="mobile-nav-link">Heads Database</a></li>
+            <li><a href="/blog/en/head-texture-generator.html" class="mobile-nav-link">Head Texture Generator</a></li>
             <li><a href="/blog/en/minecraft-versions.html" class="mobile-nav-link">Minecraft Versions</a></li>
             <li><a href="/blog/en/minecraft-skins.html" class="mobile-nav-link">Skin Library</a></li>
             <li><a href="/blog/en/beacon-color-mixer.html" class="mobile-nav-link">Beacon Color Mixer</a></li>
             <li><a href="/blog/en/qr-generator.html" class="mobile-nav-link">QR Generator</a></li>
             <li><a href="/blog/en/advancement-generator.html" class="mobile-nav-link">Advancement Generator</a></li>
+            <li><a href="/blog/en/sign-generator.html" class="mobile-nav-link">Sign Generator</a></li>
+            <li><a href="/blog/en/crafting-recipes.html" class="mobile-nav-link">Crafting Recipes</a></li>
+            <li><a href="/blog/en/armor-trim-generator.html" class="mobile-nav-link">Armor Trim Generator</a></li>
+            <li><a href="/blog/en/firework-generator.html" class="mobile-nav-link">Firework Generator</a></li>
         </ul>
         <div class="mobile-theme-switcher">
             <h4>Choose Theme:</h4>
@@ -176,27 +240,27 @@
             </div>
             <div class="mobile-sound-lang">
                 <button class="mobile-sound-btn" id="mobileSoundBtn">
-                    <img src="/assets/img/backgrounds/sound-on.svg" alt="Sound on" class="sound-icon" id="mobileSoundIcon">
+                    <img src="/assets/img/backgrounds/sound-on.svg?v=20260910v121c" alt="Sound on" class="sound-icon" id="mobileSoundIcon" width="20" height="20">
                     <span>Sound</span>
                 </button>
                 <a class="mobile-lang-btn" id="mobileLangBtn" href="/index.html">
-                    <img src="/assets/img/backgrounds/en.svg" alt="English" class="flag-icon" id="mobileLangFlag">
+                    <img src="/assets/img/backgrounds/en.svg?v=20260910v121c" alt="English" class="flag-icon" id="mobileLangFlag" width="20" height="20">
                     <span>Language</span>
                 </a>
             </div>
         </div>
-    </div>
+    </nav>
 
     <!-- Main Content -->
 
-    <main class="main">
+    <main class="main" id="main" tabindex="-1">
         <!-- Hero Section -->
         <section class="hero" id="home">
-            <div class="hero-bg-grid"></div>
+            <div class="hero-bg-grid" aria-hidden="true"></div>
             <div class="container">
                 <div class="hero-content">
                 <div class="hero-badge">
-                        <span class="hero-badge-dot"></span>
+                        <span class="hero-badge-dot" aria-hidden="true"></span>
                         V 1.0.0 IS HERE
                     </div>
                     <h1 class="hero-title">
@@ -237,150 +301,274 @@
                                 <span>SERVER CHECK</span>
                             </div>
                         </div>
-                        <div class="floating-cube floating-cube-1"></div>
-                        <div class="floating-cube floating-cube-2"></div>
+                        <div class="floating-cube floating-cube-1" aria-hidden="true"></div>
+                        <div class="floating-cube floating-cube-2" aria-hidden="true"></div>
                     </div>
                 </div>
             </div>
         </section>
 
         <!-- Features Section (Tools) -->
-        <section class="features" id="tools">
+        <section class="features" id="tools" aria-labelledby="tools-heading">
             <div class="container">
                 <div class="section-header">
-                    <h2 class="section-title">Our <span class="highlight">Tools</span></h2>
+                    <h2 class="section-title" id="tools-heading">Our <span class="highlight">Tools</span></h2>
                     <p class="section-subtitle">Everything you need for your Minecraft adventure</p>
                 </div>
 
-                <div class="tools-grid">
-                    <!-- Tool 1: Text Converter -->
-                    <div class="tool-card">
-                        <div class="tool-icon"><i class="fas fa-font"></i></div>
-                        <h3 class="tool-title">Text Converter</h3>
-                        <p class="tool-description">Convert normal text into Minecraft's Standard Galactic Alphabet for your projects.</p>
-                        <a href="/blog/en/text-converter.html" class="tool-link"><span>Open Tool</span> <i class="fas fa-arrow-right"></i></a>
-                    </div>
+                <nav class="tool-jump" aria-label="Tool categories">
+                    <a href="#tools-databases" class="tool-jump-link" data-accent="a">
+                        <i class="fas fa-database" aria-hidden="true"></i>
+                        <span>Databases</span>
+                        <span class="tool-jump-count">4</span>
+                    </a>
+                    <a href="#tools-generators" class="tool-jump-link" data-accent="b">
+                        <i class="fas fa-wand-magic-sparkles" aria-hidden="true"></i>
+                        <span>Generators</span>
+                        <span class="tool-jump-count">7</span>
+                    </a>
+                    <a href="#tools-editors" class="tool-jump-link" data-accent="c">
+                        <i class="fas fa-pen-ruler" aria-hidden="true"></i>
+                        <span>Skin Editors</span>
+                        <span class="tool-jump-count">3</span>
+                    </a>
+                    <a href="#tools-converters" class="tool-jump-link" data-accent="a">
+                        <i class="fas fa-right-left" aria-hidden="true"></i>
+                        <span>Converters &amp; Viewers</span>
+                        <span class="tool-jump-count">4</span>
+                    </a>
+                    <a href="#tools-calculators" class="tool-jump-link" data-accent="b">
+                        <i class="fas fa-calculator" aria-hidden="true"></i>
+                        <span>Calculators &amp; Helpers</span>
+                        <span class="tool-jump-count">3</span>
+                    </a>
+                    <a href="#tools-servers" class="tool-jump-link" data-accent="c">
+                        <i class="fas fa-server" aria-hidden="true"></i>
+                        <span>Servers &amp; Players</span>
+                        <span class="tool-jump-count">3</span>
+                    </a>
+                </nav>
 
-                    <!-- Tool 2: Color Text Converter -->
-                    <div class="tool-card">
-                        <div class="tool-icon"><i class="fas fa-palette"></i></div>
-                        <h3 class="tool-title">Color Text Converter</h3>
-                        <p class="tool-description">Create colored text for your server MOTD or chat using simple color codes.</p>
-                        <a href="/blog/en/color-text.html" class="tool-link"><span>Open Tool</span> <i class="fas fa-arrow-right"></i></a>
+                <div class="tool-groups">
+                    <div class="tool-group" id="tools-databases" data-accent="a">
+                        <div class="tool-group-header">
+                            <span class="tool-group-icon" aria-hidden="true"><i class="fas fa-database"></i></span>
+                            <div class="tool-group-text">
+                                <h3 class="tool-group-title">Databases <span class="tool-group-count">4 tools</span></h3>
+                                <p class="tool-group-description">Look up items, mobs, recipes and versions</p>
+                            </div>
+                        </div>
+                        <div class="tools-grid">
+                            <div class="tool-card">
+                                <div class="tool-icon"><i class="fas fa-cube"></i></div>
+                                <h4 class="tool-title">Items Database</h4>
+                                <p class="tool-description">Find all Minecraft items with detailed information (Java Edition only).</p>
+                                <a href="/blog/en/items.html" class="tool-link"><span>Open Tool</span> <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                            <div class="tool-card">
+                                <div class="tool-icon"><i class="fas fa-dragon"></i></div>
+                                <h4 class="tool-title">Mobs Guide</h4>
+                                <p class="tool-description">All Minecraft mobs with properties, behavior and drops at a glance (Java Edition only).</p>
+                                <a href="/blog/en/mobs.html" class="tool-link"><span>Open Tool</span> <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                            <div class="tool-card">
+                                <div class="tool-icon"><i class="fas fa-book-open"></i></div>
+                                <h4 class="tool-title">Crafting Recipes</h4>
+                                <p class="tool-description">Every recipe for the crafting table, furnaces, stonecutter, smithing table and brewing stand – with search and ingredient lookup.</p>
+                                <a href="/blog/en/crafting-recipes.html" class="tool-link"><span>Open Tool</span> <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                            <div class="tool-card">
+                                <div class="tool-icon"><i class="fas fa-code-branch"></i></div>
+                                <h4 class="tool-title">Minecraft Versions</h4>
+                                <p class="tool-description">Browse stable releases, snapshot preview, beta, and alpha in one view without download labels.</p>
+                                <a href="/blog/en/minecraft-versions.html" class="tool-link"><span>Open Tool</span> <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </div>
                     </div>
-
-                    <!-- Tool 3: Beacon Color Mixer -->
-                    <div class="tool-card">
-                        <div class="tool-icon"><i class="fas fa-palette"></i></div>
-                        <h3 class="tool-title">Beacon Color Mixer</h3>
-                        <p class="tool-description">Pick a target color and get the right glass combination for your beacon beam.</p>
-                        <a href="/blog/en/beacon-color-mixer.html" class="tool-link"><span>Open Tool</span> <i class="fas fa-arrow-right"></i></a>
+                    <div class="tool-group" id="tools-generators" data-accent="b">
+                        <div class="tool-group-header">
+                            <span class="tool-group-icon" aria-hidden="true"><i class="fas fa-wand-magic-sparkles"></i></span>
+                            <div class="tool-group-text">
+                                <h3 class="tool-group-title">Generators <span class="tool-group-count">7 tools</span></h3>
+                                <p class="tool-group-description">Create commands, signs, armor, fireworks and images</p>
+                            </div>
+                        </div>
+                        <div class="tools-grid">
+                            <div class="tool-card">
+                                <div class="tool-icon"><i class="fas fa-terminal"></i></div>
+                                <h4 class="tool-title">Minecraft Command Generator</h4>
+                                <p class="tool-description">Build /give, /summon, /effect, /enchant, /teleport, /gamemode, /weather and /time commands live and copy them instantly.</p>
+                                <a href="/blog/en/minecraft-command-generator.html" class="tool-link"><span>Open Tool</span> <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                            <div class="tool-card">
+                                <div class="tool-icon"><i class="fas fa-signs-post"></i></div>
+                                <h4 class="tool-title">Sign Generator</h4>
+                                <p class="tool-description">Write on signs and hanging signs with colours and formatting – with a preview, PNG and ready-made commands.</p>
+                                <a href="/blog/en/sign-generator.html" class="tool-link"><span>Open Tool</span> <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                            <div class="tool-card">
+                                <div class="tool-icon"><i class="fas fa-shield-halved"></i></div>
+                                <h4 class="tool-title">Armor Trim Generator</h4>
+                                <p class="tool-description">Try every trim pattern and material in 3D – with ready-made commands and every place to find the templates.</p>
+                                <a href="/blog/en/armor-trim-generator.html" class="tool-link"><span>Open Tool</span> <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                            <div class="tool-card">
+                                <div class="tool-icon"><i class="fas fa-rocket"></i></div>
+                                <h4 class="tool-title">Firework Generator</h4>
+                                <p class="tool-description">Build firework rockets with every shape and colour – with a live preview, crafting steps and ready-made commands.</p>
+                                <a href="/blog/en/firework-generator.html" class="tool-link"><span>Open Tool</span> <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                            <div class="tool-card">
+                                <div class="tool-icon"><i class="fas fa-trophy"></i></div>
+                                <h4 class="tool-title">Advancement Generator</h4>
+                                <p class="tool-description">Create your own achievement and advancement images with icon, two text lines and custom colors as PNG.</p>
+                                <a href="/blog/en/advancement-generator.html" class="tool-link"><span>Open Tool</span> <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                            <div class="tool-card">
+                                <div class="tool-icon"><i class="fas fa-qrcode"></i></div>
+                                <h4 class="tool-title">QR Generator</h4>
+                                <p class="tool-description">Create scannable QR codes with Minecraft faces, full mob bodies, items or blocks.</p>
+                                <a href="/blog/en/qr-generator.html" class="tool-link"><span>Open Tool</span> <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                            <div class="tool-card">
+                                <div class="tool-icon"><i class="fas fa-image"></i></div>
+                                <h4 class="tool-title">Map Art Generator</h4>
+                                <p class="tool-description">Turn an image into real Minecraft building blocks, with staircasing for more colors – direct .litematic download.</p>
+                                <a href="/blog/en/map-art-generator.html" class="tool-link"><span>Open Tool</span> <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </div>
                     </div>
-
-                    <!-- Tool 4: QR Generator -->
-                    <div class="tool-card">
-                        <div class="tool-icon"><i class="fas fa-qrcode"></i></div>
-                        <h3 class="tool-title">QR Generator</h3>
-                        <p class="tool-description">Create scannable QR codes with Minecraft faces, full mob bodies, items or blocks.</p>
-                        <a href="/blog/en/qr-generator.html" class="tool-link"><span>Open Tool</span> <i class="fas fa-arrow-right"></i></a>
+                    <div class="tool-group" id="tools-editors" data-accent="c">
+                        <div class="tool-group-header">
+                            <span class="tool-group-icon" aria-hidden="true"><i class="fas fa-pen-ruler"></i></span>
+                            <div class="tool-group-text">
+                                <h3 class="tool-group-title">Skin Editors <span class="tool-group-count">3 tools</span></h3>
+                                <p class="tool-group-description">Edit skins, pose them in 3D and transform them</p>
+                            </div>
+                        </div>
+                        <div class="tools-grid">
+                            <div class="tool-card">
+                                <div class="tool-icon"><i class="fas fa-edit"></i></div>
+                                <h4 class="tool-title">Skin Editor (Beta V 0.8.0)</h4>
+                                <p class="tool-description">Edit and create your own Minecraft skins in the browser (Java Edition only).</p>
+                                <a href="/blog/en/skin-editor.html" class="tool-link"><span>Open Tool</span> <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                            <div class="tool-card">
+                                <div class="tool-icon"><i class="fas fa-child-reaching"></i></div>
+                                <h4 class="tool-title">3D Skin Poser</h4>
+                                <p class="tool-description">Load a skin by upload or username, pose it in 3D and download it as an image.</p>
+                                <a href="/blog/en/skin-poser.html" class="tool-link"><span>Start Posing</span> <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                            <div class="tool-card">
+                                <div class="tool-icon"><i class="fas fa-child"></i></div>
+                                <h4 class="tool-title">Chibi Skin Maker</h4>
+                                <p class="tool-description">Turn a skin into a cute, big-headed 2D pixel-art sprite and download it as a transparent PNG.</p>
+                                <a href="/blog/en/chibi-skin-maker.html" class="tool-link"><span>Convert Now</span> <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </div>
                     </div>
-
-                    <!-- Tool 5: Advancement Generator -->
-                    <div class="tool-card">
-                        <div class="tool-icon"><i class="fas fa-trophy"></i></div>
-                        <h3 class="tool-title">Advancement Generator</h3>
-                        <p class="tool-description">Create your own achievement and advancement images with icon, two text lines and custom colors as PNG.</p>
-                        <a href="/blog/en/advancement-generator.html" class="tool-link"><span>Open Tool</span> <i class="fas fa-arrow-right"></i></a>
+                    <div class="tool-group" id="tools-converters" data-accent="a">
+                        <div class="tool-group-header">
+                            <span class="tool-group-icon" aria-hidden="true"><i class="fas fa-right-left"></i></span>
+                            <div class="tool-group-text">
+                                <h3 class="tool-group-title">Converters &amp; Viewers <span class="tool-group-count">4 tools</span></h3>
+                                <p class="tool-group-description">Convert text and builds, and view them in 3D</p>
+                            </div>
+                        </div>
+                        <div class="tools-grid">
+                            <div class="tool-card">
+                                <div class="tool-icon"><i class="fas fa-font"></i></div>
+                                <h4 class="tool-title">Text Converter</h4>
+                                <p class="tool-description">Convert normal text into Minecraft's Standard Galactic Alphabet for your projects.</p>
+                                <a href="/blog/en/text-converter.html" class="tool-link"><span>Open Tool</span> <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                            <div class="tool-card">
+                                <div class="tool-icon"><i class="fas fa-palette"></i></div>
+                                <h4 class="tool-title">Color Text Converter</h4>
+                                <p class="tool-description">Create colored text for your server MOTD or chat using simple color codes.</p>
+                                <a href="/blog/en/color-text.html" class="tool-link"><span>Open Tool</span> <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                            <div class="tool-card">
+                                <div class="tool-icon"><i class="fas fa-cubes"></i></div>
+                                <h4 class="tool-title">Structure Converter</h4>
+                                <p class="tool-description">Convert Minecraft structures between .schematic, .schem, .litematic, and .nbt – entirely in your browser.</p>
+                                <a href="/blog/en/structure-converter.html" class="tool-link"><span>Open Tool</span> <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                            <div class="tool-card">
+                                <div class="tool-icon"><i class="fas fa-cube"></i></div>
+                                <h4 class="tool-title">Schematic Viewer</h4>
+                                <p class="tool-description">View .schem, .schematic, .litematic and .nbt files in 3D – with a layer view and a material list.</p>
+                                <a href="/blog/en/schematic-viewer.html" class="tool-link"><span>Open Tool</span> <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </div>
                     </div>
-
-                    <!-- Tool 6: Items Database -->
-                    <div class="tool-card">
-                        <div class="tool-icon"><i class="fas fa-cube"></i></div>
-                        <h3 class="tool-title">Items Database</h3>
-                        <p class="tool-description">Find all Minecraft items with detailed information (Java Edition only).</p>
-                        <a href="/blog/en/items.html" class="tool-link"><span>Open Tool</span> <i class="fas fa-arrow-right"></i></a>
+                    <div class="tool-group" id="tools-calculators" data-accent="b">
+                        <div class="tool-group-header">
+                            <span class="tool-group-icon" aria-hidden="true"><i class="fas fa-calculator"></i></span>
+                            <div class="tool-group-text">
+                                <h3 class="tool-group-title">Calculators &amp; Helpers <span class="tool-group-count">3 tools</span></h3>
+                                <p class="tool-group-description">Coordinates, beacon colours and the time of day</p>
+                            </div>
+                        </div>
+                        <div class="tools-grid">
+                            <div class="tool-card">
+                                <div class="tool-icon"><i class="fas fa-calculator"></i></div>
+                                <h4 class="tool-title">Nether Coordinate Calculator</h4>
+                                <p class="tool-description">Convert Overworld and Nether coordinates live (×8/÷8) and copy the matching teleport command.</p>
+                                <a href="/blog/en/nether-coordinate-calculator.html" class="tool-link"><span>Open Tool</span> <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                            <div class="tool-card">
+                                <div class="tool-icon"><i class="fas fa-palette"></i></div>
+                                <h4 class="tool-title">Beacon Color Mixer</h4>
+                                <p class="tool-description">Pick a target color and get the right glass combination for your beacon beam.</p>
+                                <a href="/blog/en/beacon-color-mixer.html" class="tool-link"><span>Open Tool</span> <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                            <div class="tool-card">
+                                <div class="tool-icon"><i class="fas fa-sun"></i></div>
+                                <h4 class="tool-title">Day-Night Cycle</h4>
+                                <p class="tool-description">Set the Minecraft time and understand the day-night cycle and how it affects your gameplay.</p>
+                                <a href="/blog/en/day-night-cycle.html" class="tool-link"><span>Open Tool</span> <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </div>
                     </div>
-
-                    <!-- Tool 7: Mobs Guide -->
-                    <div class="tool-card">
-                        <div class="tool-icon"><i class="fas fa-dragon"></i></div>
-                        <h3 class="tool-title">Mobs Guide</h3>
-                        <p class="tool-description">All Minecraft mobs with properties, behavior and drops at a glance (Java Edition only).</p>
-                        <a href="/blog/en/mobs.html" class="tool-link"><span>Open Tool</span> <i class="fas fa-arrow-right"></i></a>
-                    </div>
-
-                    <!-- Tool 8: Day-Night Cycle -->
-                    <div class="tool-card">
-                        <div class="tool-icon"><i class="fas fa-sun"></i></div>
-                        <h3 class="tool-title">Day-Night Cycle</h3>
-                        <p class="tool-description">Set the Minecraft time and understand the day-night cycle and how it affects your gameplay.</p>
-                        <a href="/blog/en/day-night-cycle.html" class="tool-link"><span>Open Tool</span> <i class="fas fa-arrow-right"></i></a>
-                    </div>
-
-                    <!-- Tool 9: Server Status -->
-                    <div class="tool-card">
-                        <div class="tool-icon"><i class="fas fa-server"></i></div>
-                        <h3 class="tool-title">Server Status</h3>
-                        <p class="tool-description">Check the status of Minecraft servers (Java & Bedrock Edition) in real time.</p>
-                        <a href="/blog/en/server-status.html" class="tool-link"><span>Open Tool</span> <i class="fas fa-arrow-right"></i></a>
-                    </div>
-
-                    <!-- Tool 10: Skin Lookup -->
-                    <div class="tool-card">
-                        <div class="tool-icon"><i class="fas fa-user"></i></div>
-                        <h3 class="tool-title">Skin Lookup</h3>
-                        <p class="tool-description">Find Minecraft skins, UUIDs and cape information of players (Java Edition only).</p>
-                        <a href="/blog/en/skin-lookup.html" class="tool-link"><span>Open Tool</span> <i class="fas fa-arrow-right"></i></a>
-                    </div>
-
-                    <!-- Tool 11: Skin Editor (Beta) -->
-                    <div class="tool-card">
-                        <div class="tool-icon"><i class="fas fa-edit"></i></div>
-                        <h3 class="tool-title">Skin Editor (Beta V 0.8.0)</h3>
-                        <p class="tool-description">Edit and create your own Minecraft skins in the browser (Java Edition only).</p>
-                        <a href="/blog/en/skin-editor.html" class="tool-link"><span>Open Tool</span> <i class="fas fa-arrow-right"></i></a>
-                    </div>
-
-                    <!-- Tool 12: Minecraft Versions -->
-                    <div class="tool-card">
-                        <div class="tool-icon"><i class="fas fa-code-branch"></i></div>
-                        <h3 class="tool-title">Minecraft Versions</h3>
-                        <p class="tool-description">Browse stable releases, snapshot preview, beta, and alpha in one view without download labels.</p>
-                        <a href="/blog/en/minecraft-versions.html" class="tool-link"><span>Open Tool</span> <i class="fas fa-arrow-right"></i></a>
-                    </div>
-
-                    <!-- Tool 13: Minecraft API Status -->
-                    <div class="tool-card">
-                    <div class="tool-icon"> <i class="fas fa-network-wired"></i> </div>
-                        <h3 class="tool-title">Minecraft API Status</h3>
-                        <p class="tool-description">Check the current status of the official Minecraft and Mojang services.</p>
-                        <a href="/blog/en/minecraft-api-status.html" class="tool-link"><span>Open Tool</span><i class="fas fa-arrow-right"></i></a>
-                    </div>
-
-                    <!-- Tool 14: Structure Converter -->
-                    <div class="tool-card">
-                        <div class="tool-icon"><i class="fas fa-cubes"></i></div>
-                        <h3 class="tool-title">Structure Converter</h3>
-                        <p class="tool-description">Convert Minecraft structures between .schematic, .schem, .litematic, and .nbt – entirely in your browser.</p>
-                        <a href="/blog/en/structure-converter.html" class="tool-link"><span>Open Tool</span> <i class="fas fa-arrow-right"></i></a>
-                    </div>
-
-                    <!-- Tool 15: Map Art Generator -->
-                    <div class="tool-card">
-                        <div class="tool-icon"><i class="fas fa-image"></i></div>
-                        <h3 class="tool-title">Map Art Generator</h3>
-                        <p class="tool-description">Turn an image into real Minecraft building blocks, with staircasing for more colors – direct .litematic download.</p>
-                        <a href="/blog/en/map-art-generator.html" class="tool-link"><span>Open Tool</span> <i class="fas fa-arrow-right"></i></a>
+                    <div class="tool-group" id="tools-servers" data-accent="c">
+                        <div class="tool-group-header">
+                            <span class="tool-group-icon" aria-hidden="true"><i class="fas fa-server"></i></span>
+                            <div class="tool-group-text">
+                                <h3 class="tool-group-title">Servers &amp; Players <span class="tool-group-count">3 tools</span></h3>
+                                <p class="tool-group-description">Check servers, Mojang services and player skins</p>
+                            </div>
+                        </div>
+                        <div class="tools-grid">
+                            <div class="tool-card">
+                                <div class="tool-icon"><i class="fas fa-server"></i></div>
+                                <h4 class="tool-title">Server Status</h4>
+                                <p class="tool-description">Check the status of Minecraft servers (Java & Bedrock Edition) in real time.</p>
+                                <a href="/blog/en/server-status.html" class="tool-link"><span>Open Tool</span> <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                            <div class="tool-card">
+                                <div class="tool-icon"><i class="fas fa-network-wired"></i></div>
+                                <h4 class="tool-title">Minecraft API Status</h4>
+                                <p class="tool-description">Check the current status of the official Minecraft and Mojang services.</p>
+                                <a href="/blog/en/minecraft-api-status.html" class="tool-link"><span>Open Tool</span> <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                            <div class="tool-card">
+                                <div class="tool-icon"><i class="fas fa-user"></i></div>
+                                <h4 class="tool-title">Skin Lookup</h4>
+                                <p class="tool-description">Find Minecraft skins, UUIDs and cape information of players (Java Edition only).</p>
+                                <a href="/blog/en/skin-lookup.html" class="tool-link"><span>Open Tool</span> <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
         <!-- Minecraft Capes & Skins & End Poem Section -->
-        <section class="features" id="capes-skins">
+        <section class="features" id="capes-skins" aria-labelledby="capes-skins-heading">
             <div class="container">
                 <div class="section-header">
-                    <h2 class="section-title">Minecraft <span class="highlight">Capes & Skins & End Poem</span></h2>
+                    <h2 class="section-title" id="capes-skins-heading">Minecraft <span class="highlight">Capes & Skins & End Poem</span></h2>
                     <p class="section-subtitle">Official Minecraft capes and skin collections</p>
                 </div>
 
@@ -391,6 +579,20 @@
                         <h3 class="tool-title">Capes Database</h3>
                         <p class="tool-description">All official Minecraft capes: Minecon, Migrator, Realms & more with details.</p>
                         <a href="/blog/en/minecraft-capes.html" class="tool-link"><span>Discover Capes</span> <i class="fas fa-arrow-right"></i></a>
+                    </div>
+
+                    <!-- Heads Database -->
+                    <div class="tool-card">
+                        <div class="tool-icon"><i class="fas fa-cubes"></i></div>
+                        <h3 class="tool-title">Heads Database</h3>
+                        <p class="tool-description">All MHF heads with a ready-to-copy /give command, plus logo heads like Discord & YouTube.</p>
+                        <a href="/blog/en/minecraft-heads.html" class="tool-link"><span>Discover Heads</span> <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                    <div class="tool-card">
+                        <div class="tool-icon"><i class="fas fa-swatchbook"></i></div>
+                        <h3 class="tool-title">Head Texture Generator</h3>
+                        <p class="tool-description">Turn vanilla item, block, mob and villager textures into a player head – with a ready /give command (Java 1.21.9+).</p>
+                        <a href="/blog/en/head-texture-generator.html" class="tool-link"><span>Open Generator</span> <i class="fas fa-arrow-right"></i></a>
                     </div>
 
                     <!-- Skin Library -->
@@ -434,33 +636,9 @@
 
                     <div class="roadmap-preview-grid">
                         <article class="roadmap-preview-item">
-                            <span class="roadmap-preview-icon"><i class="fas fa-hat-wizard" aria-hidden="true"></i></span>
-                            <div>
-                                <h3>Enchantment Planner</h3>
-                                <span>Planned</span>
-                            </div>
-                        </article>
-
-                        <article class="roadmap-preview-item">
-                            <span class="roadmap-preview-icon"><i class="fas fa-calculator" aria-hidden="true"></i></span>
-                            <div>
-                                <h3>Nether Coordinate Calculator</h3>
-                                <span>Planned</span>
-                            </div>
-                        </article>
-
-                        <article class="roadmap-preview-item">
                             <span class="roadmap-preview-icon"><i class="fas fa-cubes" aria-hidden="true"></i></span>
                             <div>
                                 <h3>Stack Calculator</h3>
-                                <span>Planned</span>
-                            </div>
-                        </article>
-
-                        <article class="roadmap-preview-item">
-                            <span class="roadmap-preview-icon"><i class="fas fa-terminal" aria-hidden="true"></i></span>
-                            <div>
-                                <h3>Command Generator</h3>
                                 <span>Planned</span>
                             </div>
                         </article>
@@ -519,14 +697,14 @@
                 <div class="footer-grid">
                     <!-- Column 1 -->
                     <div class="footer-col">
-                        <div class="footer-logo">
+                        <a href="/en/index.html" class="footer-logo">
                             <div class="logo-icon"></div>
                             <span class="logo-text">MC-Craft</span>
-                        </div>
+                        </a>
                         <p class="footer-description">Free Minecraft tools for the community. Developed by players for players.</p>
                         <div class="social-links">
                            <a href="https://github.com/Blexilein" class="social-link" aria-label="GitHub"><i class="fab fa-github"></i></a>
-                            <a href="https://discord.gg/eVVpQD75w4" class="social-link"><i class="fab fa-discord"></i></a>
+                            <a href="https://discord.gg/eVVpQD75w4" class="social-link" aria-label="Discord"><i class="fab fa-discord"></i></a>
                             <a href="https://x.com/Blexi_1" class="social-link" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
                         </div>
                     </div>
@@ -537,13 +715,20 @@
                             <li><a href="/blog/en/text-converter.html">Text Converter</a></li>
                             <li><a href="/blog/en/color-text.html">Color Text Converter</a></li>
                             <li><a href="/blog/en/structure-converter.html">Structure Converter</a></li>
+                            <li><a href="/blog/en/schematic-viewer.html">Schematic Viewer</a></li>
                             <li><a href="/blog/en/map-art-generator.html">Map Art Generator</a></li>
+                            <li><a href="/blog/en/nether-coordinate-calculator.html">Nether Coordinate Calculator</a></li>
+                            <li><a href="/blog/en/minecraft-command-generator.html">Minecraft Command Generator</a></li>
                             <li><a href="/blog/en/items.html">Items Database</a></li>
                             <li><a href="/blog/en/mobs.html">Mobs Database</a></li>
                             <li><a href="/blog/en/day-night-cycle.html">Day-Night Cycle</a></li>
                             <li><a href="/blog/en/beacon-color-mixer.html">Beacon Color Mixer</a></li>
                             <li><a href="/blog/en/qr-generator.html">QR Generator</a></li>
                             <li><a href="/blog/en/advancement-generator.html">Advancement Generator</a></li>
+                            <li><a href="/blog/en/sign-generator.html">Sign Generator</a></li>
+                            <li><a href="/blog/en/crafting-recipes.html">Crafting Recipes</a></li>
+                            <li><a href="/blog/en/armor-trim-generator.html">Armor Trim Generator</a></li>
+                            <li><a href="/blog/en/firework-generator.html">Firework Generator</a></li>
                         </ul>
                     </div>
                     <!-- Column 3 -->
@@ -552,10 +737,15 @@
                         <ul class="footer-links">
                             <li><a href="/blog/en/server-status.html">Server Status</a></li>
                             <li><a href="/blog/en/minecraft-api-status.html">Minecraft API Status</a></li>
+                            <li><a href="/blog/en/api-documentation.html">API Documentation</a></li>
                             <li><a href="/blog/en/skin-lookup.html">Skin Lookup</a></li>
                             <li><a href="/blog/en/skin-editor.html">Skin Editor</a></li>
+                            <li><a href="/blog/en/skin-poser.html">Skin Poser</a></li>
+                            <li><a href="/blog/en/chibi-skin-maker.html">Chibi Skin Maker</a></li>
                             <li><a href="/blog/en/minecraft-skins.html">Skin Gallery</a></li>
                             <li><a href="/blog/en/minecraft-capes.html">Cape Gallery</a></li>
+                            <li><a href="/blog/en/minecraft-heads.html">Heads Database</a></li>
+                            <li><a href="/blog/en/head-texture-generator.html">Head Texture Generator</a></li>
                             <li><a href="/blog/en/minecraft-versions.html">Minecraft Versions</a></li>
                             <li><a href="/blog/en/end_poem.html">End Poem</a></li>
                         </ul>
@@ -564,9 +754,9 @@
                     <div class="footer-col">
                         <h4 class="footer-title">Legal</h4>
                         <ul class="footer-links">
-                            <li><a href="/blog/en/impressum.html">Imprint</a></li>
-                            <li><a href="/blog/en/datenschutz.html">Privacy Policy</a></li>
-                            <li><a href="/blog/en/nutzungsbedingungen.html">Terms of Use</a></li>
+                            <li><a href="/blog/en/imprint.html">Imprint</a></li>
+                            <li><a href="/blog/en/privacy-policy.html">Privacy Policy</a></li>
+                            <li><a href="/blog/en/terms-of-use.html">Terms of Use</a></li>
                             <li><a href="/blog/en/copyright.html">Copyright</a></li>
                         </ul>
                     </div>
@@ -596,8 +786,9 @@
                         <p class="disclaimer">Minecraft is a trademark of Mojang Studios. This site is not officially affiliated with Mojang or Microsoft.</p>
                     </div>
                     <div class="footer-meta">
-                        <span class="version">Version 1.0.0</span>
+                        <span class="version">Version 1.2.0</span>
                         <a href="/blog/en/changelog.html" class="changelog active">Changelog</a>
+                        <a href="/blog/en/api-documentation.html" class="api-docs"><i class="fas fa-book-open" aria-hidden="true"></i> API Docs</a>
                     </div>
                 </div>
             </div>
@@ -606,15 +797,16 @@
 
     <!-- Back to Top Button -->
 
-    <button class="back-to-top" id="backToTop">
+    <button class="back-to-top" id="backToTop" type="button" aria-label="Scroll back to top">
         <i class="fas fa-arrow-up"></i>
     </button>
 
     <!-- Notification Toast -->
-    <div class="toast-container" id="toastContainer"></div>
+    <div class="toast-container" id="toastContainer" role="status" aria-live="polite" aria-label="Notifications"></div>
 
     <!-- JavaScript -->
-    <script src="/assets/JS/modules/mc-preferences.js"></script>
-    <script src="/assets/JS/modules/en/homepage.js"></script>
+    <script src="/assets/JS/modules/mc-preferences.js?v=20260917b"></script>
+    <script src="/assets/JS/main.js?v=20260917a"></script>
+    <script src="/assets/JS/modules/en/homepage.js?v=20260917a"></script>
 </body>
 </html>

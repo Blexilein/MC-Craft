@@ -1,0 +1,1286 @@
+{
+ "version": "26.3",
+ "trim_sheets": {
+  "files": {
+   "amethyst": "/assets/img/armor-trims/trims-amethyst.png",
+   "copper": "/assets/img/armor-trims/trims-copper.png",
+   "copper_darker": "/assets/img/armor-trims/trims-copper_darker.png",
+   "diamond": "/assets/img/armor-trims/trims-diamond.png",
+   "diamond_darker": "/assets/img/armor-trims/trims-diamond_darker.png",
+   "emerald": "/assets/img/armor-trims/trims-emerald.png",
+   "gold": "/assets/img/armor-trims/trims-gold.png",
+   "gold_darker": "/assets/img/armor-trims/trims-gold_darker.png",
+   "iron": "/assets/img/armor-trims/trims-iron.png",
+   "iron_darker": "/assets/img/armor-trims/trims-iron_darker.png",
+   "lapis": "/assets/img/armor-trims/trims-lapis.png",
+   "netherite": "/assets/img/armor-trims/trims-netherite.png",
+   "netherite_darker": "/assets/img/armor-trims/trims-netherite_darker.png",
+   "quartz": "/assets/img/armor-trims/trims-quartz.png",
+   "redstone": "/assets/img/armor-trims/trims-redstone.png",
+   "resin": "/assets/img/armor-trims/trims-resin.png"
+  },
+  "layers": [
+   "humanoid",
+   "humanoid_leggings"
+  ],
+  "size": [
+   64,
+   32
+  ]
+ },
+ "item_sheet": {
+  "file": "/assets/img/armor-trims/items.png",
+  "palettes": [
+   "amethyst",
+   "copper",
+   "copper_darker",
+   "diamond",
+   "diamond_darker",
+   "emerald",
+   "gold",
+   "gold_darker",
+   "iron",
+   "iron_darker",
+   "lapis",
+   "netherite",
+   "netherite_darker",
+   "quartz",
+   "redstone",
+   "resin"
+  ],
+  "slots": [
+   "helmet",
+   "chestplate",
+   "leggings",
+   "boots"
+  ]
+ },
+ "skins": {
+  "steve": "/assets/img/textures/entity/player/wide/steve.png",
+  "alex": "/assets/img/textures/entity/player/slim/alex.png"
+ },
+ "armors": [
+  {
+   "id": "leather",
+   "asset": "leather",
+   "slots": {
+    "helmet": {
+     "item": "leather_helmet",
+     "textures": [
+      "/assets/img/textures/item/leather_helmet.png",
+      "/assets/img/textures/item/leather_helmet_overlay.png"
+     ]
+    },
+    "chestplate": {
+     "item": "leather_chestplate",
+     "textures": [
+      "/assets/img/textures/item/leather_chestplate.png",
+      "/assets/img/textures/item/leather_chestplate_overlay.png"
+     ]
+    },
+    "leggings": {
+     "item": "leather_leggings",
+     "textures": [
+      "/assets/img/textures/item/leather_leggings.png",
+      "/assets/img/textures/item/leather_leggings_overlay.png"
+     ]
+    },
+    "boots": {
+     "item": "leather_boots",
+     "textures": [
+      "/assets/img/textures/item/leather_boots.png",
+      "/assets/img/textures/item/leather_boots_overlay.png"
+     ]
+    }
+   },
+   "layers": {
+    "humanoid": [
+     {
+      "texture": "/assets/img/textures/entity/equipment/humanoid/leather.png",
+      "dye": "#A06540"
+     },
+     {
+      "texture": "/assets/img/textures/entity/equipment/humanoid/leather_overlay.png"
+     }
+    ],
+    "humanoid_leggings": [
+     {
+      "texture": "/assets/img/textures/entity/equipment/humanoid_leggings/leather.png",
+      "dye": "#A06540"
+     },
+     {
+      "texture": "/assets/img/textures/entity/equipment/humanoid_leggings/leather_overlay.png"
+     }
+    ]
+   },
+   "overrides": {}
+  },
+  {
+   "id": "chainmail",
+   "asset": "chainmail",
+   "slots": {
+    "helmet": {
+     "item": "chainmail_helmet",
+     "textures": [
+      "/assets/img/textures/item/chainmail_helmet.png"
+     ]
+    },
+    "chestplate": {
+     "item": "chainmail_chestplate",
+     "textures": [
+      "/assets/img/textures/item/chainmail_chestplate.png"
+     ]
+    },
+    "leggings": {
+     "item": "chainmail_leggings",
+     "textures": [
+      "/assets/img/textures/item/chainmail_leggings.png"
+     ]
+    },
+    "boots": {
+     "item": "chainmail_boots",
+     "textures": [
+      "/assets/img/textures/item/chainmail_boots.png"
+     ]
+    }
+   },
+   "layers": {
+    "humanoid": [
+     {
+      "texture": "/assets/img/textures/entity/equipment/humanoid/chainmail.png"
+     }
+    ],
+    "humanoid_leggings": [
+     {
+      "texture": "/assets/img/textures/entity/equipment/humanoid_leggings/chainmail.png"
+     }
+    ]
+   },
+   "overrides": {}
+  },
+  {
+   "id": "copper",
+   "asset": "copper",
+   "slots": {
+    "helmet": {
+     "item": "copper_helmet",
+     "textures": [
+      "/assets/img/textures/item/copper_helmet.png"
+     ]
+    },
+    "chestplate": {
+     "item": "copper_chestplate",
+     "textures": [
+      "/assets/img/textures/item/copper_chestplate.png"
+     ]
+    },
+    "leggings": {
+     "item": "copper_leggings",
+     "textures": [
+      "/assets/img/textures/item/copper_leggings.png"
+     ]
+    },
+    "boots": {
+     "item": "copper_boots",
+     "textures": [
+      "/assets/img/textures/item/copper_boots.png"
+     ]
+    }
+   },
+   "layers": {
+    "humanoid": [
+     {
+      "texture": "/assets/img/textures/entity/equipment/humanoid/copper.png"
+     }
+    ],
+    "humanoid_leggings": [
+     {
+      "texture": "/assets/img/textures/entity/equipment/humanoid_leggings/copper.png"
+     }
+    ]
+   },
+   "overrides": {
+    "copper": "copper_darker"
+   }
+  },
+  {
+   "id": "iron",
+   "asset": "iron",
+   "slots": {
+    "helmet": {
+     "item": "iron_helmet",
+     "textures": [
+      "/assets/img/textures/item/iron_helmet.png"
+     ]
+    },
+    "chestplate": {
+     "item": "iron_chestplate",
+     "textures": [
+      "/assets/img/textures/item/iron_chestplate.png"
+     ]
+    },
+    "leggings": {
+     "item": "iron_leggings",
+     "textures": [
+      "/assets/img/textures/item/iron_leggings.png"
+     ]
+    },
+    "boots": {
+     "item": "iron_boots",
+     "textures": [
+      "/assets/img/textures/item/iron_boots.png"
+     ]
+    }
+   },
+   "layers": {
+    "humanoid": [
+     {
+      "texture": "/assets/img/textures/entity/equipment/humanoid/iron.png"
+     }
+    ],
+    "humanoid_leggings": [
+     {
+      "texture": "/assets/img/textures/entity/equipment/humanoid_leggings/iron.png"
+     }
+    ]
+   },
+   "overrides": {
+    "iron": "iron_darker"
+   }
+  },
+  {
+   "id": "golden",
+   "asset": "gold",
+   "slots": {
+    "helmet": {
+     "item": "golden_helmet",
+     "textures": [
+      "/assets/img/textures/item/golden_helmet.png"
+     ]
+    },
+    "chestplate": {
+     "item": "golden_chestplate",
+     "textures": [
+      "/assets/img/textures/item/golden_chestplate.png"
+     ]
+    },
+    "leggings": {
+     "item": "golden_leggings",
+     "textures": [
+      "/assets/img/textures/item/golden_leggings.png"
+     ]
+    },
+    "boots": {
+     "item": "golden_boots",
+     "textures": [
+      "/assets/img/textures/item/golden_boots.png"
+     ]
+    }
+   },
+   "layers": {
+    "humanoid": [
+     {
+      "texture": "/assets/img/textures/entity/equipment/humanoid/gold.png"
+     }
+    ],
+    "humanoid_leggings": [
+     {
+      "texture": "/assets/img/textures/entity/equipment/humanoid_leggings/gold.png"
+     }
+    ]
+   },
+   "overrides": {
+    "gold": "gold_darker"
+   }
+  },
+  {
+   "id": "diamond",
+   "asset": "diamond",
+   "slots": {
+    "helmet": {
+     "item": "diamond_helmet",
+     "textures": [
+      "/assets/img/textures/item/diamond_helmet.png"
+     ]
+    },
+    "chestplate": {
+     "item": "diamond_chestplate",
+     "textures": [
+      "/assets/img/textures/item/diamond_chestplate.png"
+     ]
+    },
+    "leggings": {
+     "item": "diamond_leggings",
+     "textures": [
+      "/assets/img/textures/item/diamond_leggings.png"
+     ]
+    },
+    "boots": {
+     "item": "diamond_boots",
+     "textures": [
+      "/assets/img/textures/item/diamond_boots.png"
+     ]
+    }
+   },
+   "layers": {
+    "humanoid": [
+     {
+      "texture": "/assets/img/textures/entity/equipment/humanoid/diamond.png"
+     }
+    ],
+    "humanoid_leggings": [
+     {
+      "texture": "/assets/img/textures/entity/equipment/humanoid_leggings/diamond.png"
+     }
+    ]
+   },
+   "overrides": {
+    "diamond": "diamond_darker"
+   }
+  },
+  {
+   "id": "netherite",
+   "asset": "netherite",
+   "slots": {
+    "helmet": {
+     "item": "netherite_helmet",
+     "textures": [
+      "/assets/img/textures/item/netherite_helmet.png"
+     ]
+    },
+    "chestplate": {
+     "item": "netherite_chestplate",
+     "textures": [
+      "/assets/img/textures/item/netherite_chestplate.png"
+     ]
+    },
+    "leggings": {
+     "item": "netherite_leggings",
+     "textures": [
+      "/assets/img/textures/item/netherite_leggings.png"
+     ]
+    },
+    "boots": {
+     "item": "netherite_boots",
+     "textures": [
+      "/assets/img/textures/item/netherite_boots.png"
+     ]
+    }
+   },
+   "layers": {
+    "humanoid": [
+     {
+      "texture": "/assets/img/textures/entity/equipment/humanoid/netherite.png"
+     }
+    ],
+    "humanoid_leggings": [
+     {
+      "texture": "/assets/img/textures/entity/equipment/humanoid_leggings/netherite.png"
+     }
+    ]
+   },
+   "overrides": {
+    "netherite": "netherite_darker"
+   }
+  },
+  {
+   "id": "turtle",
+   "asset": "turtle_scute",
+   "slots": {
+    "helmet": {
+     "item": "turtle_helmet",
+     "textures": [
+      "/assets/img/textures/item/turtle_helmet.png"
+     ]
+    }
+   },
+   "layers": {
+    "humanoid": [
+     {
+      "texture": "/assets/img/textures/entity/equipment/humanoid/turtle_scute.png"
+     }
+    ]
+   },
+   "overrides": {}
+  }
+ ],
+ "patterns": [
+  {
+   "id": "bolt",
+   "name": [
+    "Bolzen-Rüstungsbesatz",
+    "Bolt Armor Trim"
+   ],
+   "template": "bolt_armor_trim_smithing_template",
+   "copy_material": "copper_block",
+   "decal": false,
+   "sources": [
+    {
+     "table": "chests/trial_chambers/reward",
+     "name": [
+      "Prüfungskammer (Tresor)",
+      "Trial Chambers (vault)"
+     ],
+     "chance": 0.25
+    }
+   ]
+  },
+  {
+   "id": "coast",
+   "name": [
+    "Küsten-Rüstungsbesatz",
+    "Coast Armor Trim"
+   ],
+   "template": "coast_armor_trim_smithing_template",
+   "copy_material": "cobblestone",
+   "decal": false,
+   "sources": [
+    {
+     "table": "chests/shipwreck_map",
+     "name": [
+      "Schiffswrack (Kartentruhe)",
+      "Shipwreck (map chest)"
+     ],
+     "chance": 0.1667
+    },
+    {
+     "table": "chests/shipwreck_supply",
+     "name": [
+      "Schiffswrack (Vorratstruhe)",
+      "Shipwreck (supply chest)"
+     ],
+     "chance": 0.1667
+    },
+    {
+     "table": "chests/shipwreck_treasure",
+     "name": [
+      "Schiffswrack (Schatztruhe)",
+      "Shipwreck (treasure chest)"
+     ],
+     "chance": 0.1667
+    }
+   ]
+  },
+  {
+   "id": "dune",
+   "name": [
+    "Dünen-Rüstungsbesatz",
+    "Dune Armor Trim"
+   ],
+   "template": "dune_armor_trim_smithing_template",
+   "copy_material": "sandstone",
+   "decal": false,
+   "sources": [
+    {
+     "table": "chests/desert_pyramid",
+     "name": [
+      "Wüstentempel",
+      "Desert Pyramid"
+     ],
+     "chance": 0.1429
+    }
+   ]
+  },
+  {
+   "id": "eye",
+   "name": [
+    "Augen-Rüstungsbesatz",
+    "Eye Armor Trim"
+   ],
+   "template": "eye_armor_trim_smithing_template",
+   "copy_material": "end_stone",
+   "decal": false,
+   "sources": [
+    {
+     "table": "chests/stronghold_library",
+     "name": [
+      "Festung (Bibliothek)",
+      "Stronghold (library)"
+     ],
+     "chance": 1.0
+    },
+    {
+     "table": "chests/stronghold_corridor",
+     "name": [
+      "Festung (Altartruhe)",
+      "Stronghold (altar chest)"
+     ],
+     "chance": 0.1
+    }
+   ]
+  },
+  {
+   "id": "flow",
+   "name": [
+    "Fluss-Rüstungsbesatz",
+    "Flow Armor Trim"
+   ],
+   "template": "flow_armor_trim_smithing_template",
+   "copy_material": "breeze_rod",
+   "decal": false,
+   "sources": [
+    {
+     "table": "chests/trial_chambers/reward_ominous",
+     "name": [
+      "Prüfungskammer (unheilvoller Tresor)",
+      "Trial Chambers (ominous vault)"
+     ],
+     "chance": 0.3
+    }
+   ]
+  },
+  {
+   "id": "host",
+   "name": [
+    "Gastwirts-Rüstungsbesatz",
+    "Host Armor Trim"
+   ],
+   "template": "host_armor_trim_smithing_template",
+   "copy_material": "terracotta",
+   "decal": false,
+   "sources": [
+    {
+     "table": "archaeology/trail_ruins_rare",
+     "name": [
+      "Pfadruine (seltener Fund mit dem Pinsel)",
+      "Trail Ruins (rare find, brushing)"
+     ],
+     "chance": 0.0833
+    }
+   ]
+  },
+  {
+   "id": "raiser",
+   "name": [
+    "Aufzieher-Rüstungsbesatz",
+    "Raiser Armor Trim"
+   ],
+   "template": "raiser_armor_trim_smithing_template",
+   "copy_material": "terracotta",
+   "decal": false,
+   "sources": [
+    {
+     "table": "archaeology/trail_ruins_rare",
+     "name": [
+      "Pfadruine (seltener Fund mit dem Pinsel)",
+      "Trail Ruins (rare find, brushing)"
+     ],
+     "chance": 0.0833
+    }
+   ]
+  },
+  {
+   "id": "rib",
+   "name": [
+    "Rippen-Rüstungsbesatz",
+    "Rib Armor Trim"
+   ],
+   "template": "rib_armor_trim_smithing_template",
+   "copy_material": "netherrack",
+   "decal": false,
+   "sources": [
+    {
+     "table": "chests/nether_bridge",
+     "name": [
+      "Netherfestung",
+      "Nether Fortress"
+     ],
+     "chance": 0.0667
+    }
+   ]
+  },
+  {
+   "id": "sentry",
+   "name": [
+    "Wachen-Rüstungsbesatz",
+    "Sentry Armor Trim"
+   ],
+   "template": "sentry_armor_trim_smithing_template",
+   "copy_material": "cobblestone",
+   "decal": false,
+   "sources": [
+    {
+     "table": "chests/pillager_outpost",
+     "name": [
+      "Plünderer-Außenposten",
+      "Pillager Outpost"
+     ],
+     "chance": 0.25
+    }
+   ]
+  },
+  {
+   "id": "shaper",
+   "name": [
+    "Gestalter-Rüstungsbesatz",
+    "Shaper Armor Trim"
+   ],
+   "template": "shaper_armor_trim_smithing_template",
+   "copy_material": "terracotta",
+   "decal": false,
+   "sources": [
+    {
+     "table": "archaeology/trail_ruins_rare",
+     "name": [
+      "Pfadruine (seltener Fund mit dem Pinsel)",
+      "Trail Ruins (rare find, brushing)"
+     ],
+     "chance": 0.0833
+    }
+   ]
+  },
+  {
+   "id": "silence",
+   "name": [
+    "Stille-Rüstungsbesatz",
+    "Silence Armor Trim"
+   ],
+   "template": "silence_armor_trim_smithing_template",
+   "copy_material": "cobbled_deepslate",
+   "decal": false,
+   "sources": [
+    {
+     "table": "chests/ancient_city",
+     "name": [
+      "Antike Stätte",
+      "Ancient City"
+     ],
+     "chance": 0.0125
+    }
+   ]
+  },
+  {
+   "id": "snout",
+   "name": [
+    "Schnauzen-Rüstungsbesatz",
+    "Snout Armor Trim"
+   ],
+   "template": "snout_armor_trim_smithing_template",
+   "copy_material": "blackstone",
+   "decal": false,
+   "sources": [
+    {
+     "table": "chests/bastion_bridge",
+     "name": [
+      "Bastionsruine (Brücke)",
+      "Bastion Remnant (bridge)"
+     ],
+     "chance": 0.0833
+    },
+    {
+     "table": "chests/bastion_hoglin_stable",
+     "name": [
+      "Bastionsruine (Hoglin-Stall)",
+      "Bastion Remnant (hoglin stable)"
+     ],
+     "chance": 0.0833
+    },
+    {
+     "table": "chests/bastion_other",
+     "name": [
+      "Bastionsruine (sonstige Truhen)",
+      "Bastion Remnant (other chests)"
+     ],
+     "chance": 0.0833
+    },
+    {
+     "table": "chests/bastion_treasure",
+     "name": [
+      "Bastionsruine (Schatzraum)",
+      "Bastion Remnant (treasure room)"
+     ],
+     "chance": 0.0833
+    }
+   ]
+  },
+  {
+   "id": "spire",
+   "name": [
+    "Turmspitzen-Rüstungsbesatz",
+    "Spire Armor Trim"
+   ],
+   "template": "spire_armor_trim_smithing_template",
+   "copy_material": "purpur_block",
+   "decal": false,
+   "sources": [
+    {
+     "table": "chests/end_city_treasure",
+     "name": [
+      "Endsiedlung",
+      "End City"
+     ],
+     "chance": 0.0667
+    }
+   ]
+  },
+  {
+   "id": "tide",
+   "name": [
+    "Gezeiten-Rüstungsbesatz",
+    "Tide Armor Trim"
+   ],
+   "template": "tide_armor_trim_smithing_template",
+   "copy_material": "prismarine",
+   "decal": false,
+   "sources": [
+    {
+     "table": "entities/elder_guardian",
+     "name": [
+      "Großwächter",
+      "Elder Guardian"
+     ],
+     "chance": 0.2
+    }
+   ]
+  },
+  {
+   "id": "vex",
+   "name": [
+    "Plagegeister-Rüstungsbesatz",
+    "Vex Armor Trim"
+   ],
+   "template": "vex_armor_trim_smithing_template",
+   "copy_material": "cobblestone",
+   "decal": false,
+   "sources": [
+    {
+     "table": "chests/woodland_mansion",
+     "name": [
+      "Waldanwesen",
+      "Woodland Mansion"
+     ],
+     "chance": 0.5
+    }
+   ]
+  },
+  {
+   "id": "ward",
+   "name": [
+    "Warthof-Rüstungsbesatz",
+    "Ward Armor Trim"
+   ],
+   "template": "ward_armor_trim_smithing_template",
+   "copy_material": "cobbled_deepslate",
+   "decal": false,
+   "sources": [
+    {
+     "table": "chests/ancient_city",
+     "name": [
+      "Antike Stätte",
+      "Ancient City"
+     ],
+     "chance": 0.05
+    }
+   ]
+  },
+  {
+   "id": "wayfinder",
+   "name": [
+    "Wegfinder-Rüstungsbesatz",
+    "Wayfinder Armor Trim"
+   ],
+   "template": "wayfinder_armor_trim_smithing_template",
+   "copy_material": "terracotta",
+   "decal": false,
+   "sources": [
+    {
+     "table": "archaeology/trail_ruins_rare",
+     "name": [
+      "Pfadruine (seltener Fund mit dem Pinsel)",
+      "Trail Ruins (rare find, brushing)"
+     ],
+     "chance": 0.0833
+    }
+   ]
+  },
+  {
+   "id": "wild",
+   "name": [
+    "Wildnis-Rüstungsbesatz",
+    "Wild Armor Trim"
+   ],
+   "template": "wild_armor_trim_smithing_template",
+   "copy_material": "mossy_cobblestone",
+   "decal": false,
+   "sources": [
+    {
+     "table": "chests/jungle_temple",
+     "name": [
+      "Dschungeltempel",
+      "Jungle Pyramid"
+     ],
+     "chance": 0.3333
+    }
+   ]
+  }
+ ],
+ "materials": [
+  {
+   "id": "amethyst",
+   "name": [
+    "Amethyst",
+    "Amethyst Material"
+   ],
+   "color": "#9A5CC6",
+   "palette": "amethyst",
+   "item": "amethyst_shard"
+  },
+  {
+   "id": "copper",
+   "name": [
+    "Kupfer",
+    "Copper Material"
+   ],
+   "color": "#B4684D",
+   "palette": "copper",
+   "item": "copper_ingot"
+  },
+  {
+   "id": "diamond",
+   "name": [
+    "Diamant",
+    "Diamond Material"
+   ],
+   "color": "#6EECD2",
+   "palette": "diamond",
+   "item": "diamond"
+  },
+  {
+   "id": "emerald",
+   "name": [
+    "Smaragd",
+    "Emerald Material"
+   ],
+   "color": "#11A036",
+   "palette": "emerald",
+   "item": "emerald"
+  },
+  {
+   "id": "gold",
+   "name": [
+    "Gold",
+    "Gold Material"
+   ],
+   "color": "#DEB12D",
+   "palette": "gold",
+   "item": "gold_ingot"
+  },
+  {
+   "id": "iron",
+   "name": [
+    "Eisen",
+    "Iron Material"
+   ],
+   "color": "#ECECEC",
+   "palette": "iron",
+   "item": "iron_ingot"
+  },
+  {
+   "id": "lapis",
+   "name": [
+    "Lapislazuli",
+    "Lapis Material"
+   ],
+   "color": "#416E97",
+   "palette": "lapis",
+   "item": "lapis_lazuli"
+  },
+  {
+   "id": "netherite",
+   "name": [
+    "Netherit",
+    "Netherite Material"
+   ],
+   "color": "#625859",
+   "palette": "netherite",
+   "item": "netherite_ingot"
+  },
+  {
+   "id": "quartz",
+   "name": [
+    "Quarz",
+    "Quartz Material"
+   ],
+   "color": "#E3D4C4",
+   "palette": "quartz",
+   "item": "quartz"
+  },
+  {
+   "id": "redstone",
+   "name": [
+    "Redstone",
+    "Redstone Material"
+   ],
+   "color": "#971607",
+   "palette": "redstone",
+   "item": "redstone"
+  },
+  {
+   "id": "resin",
+   "name": [
+    "Harz",
+    "Resin Material"
+   ],
+   "color": "#FC7812",
+   "palette": "resin",
+   "item": "resin_brick"
+  }
+ ],
+ "items": {
+  "leather_helmet": [
+   "Lederkappe",
+   "Leather Cap",
+   "/assets/img/items/Leather_Cap.png"
+  ],
+  "leather_chestplate": [
+   "Lederjacke",
+   "Leather Tunic",
+   "/assets/img/items/Leather_Tunic.png"
+  ],
+  "leather_leggings": [
+   "Lederhose",
+   "Leather Pants",
+   "/assets/img/items/Leather_Pants.png"
+  ],
+  "leather_boots": [
+   "Lederstiefel",
+   "Leather Boots",
+   "/assets/img/items/Leather_Boots.png"
+  ],
+  "chainmail_helmet": [
+   "Kettenhaube",
+   "Chainmail Helmet",
+   "/assets/img/items/Chainmail_Helmet.png"
+  ],
+  "chainmail_chestplate": [
+   "Kettenhemd",
+   "Chainmail Chestplate",
+   "/assets/img/items/Chainmail_Chestplate.png"
+  ],
+  "chainmail_leggings": [
+   "Kettenhose",
+   "Chainmail Leggings",
+   "/assets/img/items/Chainmail_Leggings.png"
+  ],
+  "chainmail_boots": [
+   "Kettenstiefel",
+   "Chainmail Boots",
+   "/assets/img/items/Chainmail_Boots.png"
+  ],
+  "copper_helmet": [
+   "Kupferhelm",
+   "Copper Helmet",
+   "/assets/img/items/Copper_Helmet.png"
+  ],
+  "copper_chestplate": [
+   "Kupferharnisch",
+   "Copper Chestplate",
+   "/assets/img/items/Copper_Chestplate.png"
+  ],
+  "copper_leggings": [
+   "Kupferbeinschutz",
+   "Copper Leggings",
+   "/assets/img/items/Copper_Leggings.png"
+  ],
+  "copper_boots": [
+   "Kupferstiefel",
+   "Copper Boots",
+   "/assets/img/items/Copper_Boots.png"
+  ],
+  "iron_helmet": [
+   "Eisenhelm",
+   "Iron Helmet",
+   "/assets/img/items/Iron_Helmet.png"
+  ],
+  "iron_chestplate": [
+   "Eisenharnisch",
+   "Iron Chestplate",
+   "/assets/img/items/Iron_Chestplate.png"
+  ],
+  "iron_leggings": [
+   "Eisenbeinschutz",
+   "Iron Leggings",
+   "/assets/img/items/Iron_Leggings.png"
+  ],
+  "iron_boots": [
+   "Eisenstiefel",
+   "Iron Boots",
+   "/assets/img/items/Iron_Boots.png"
+  ],
+  "golden_helmet": [
+   "Goldhelm",
+   "Golden Helmet",
+   "/assets/img/items/Golden_Helmet.png"
+  ],
+  "golden_chestplate": [
+   "Goldharnisch",
+   "Golden Chestplate",
+   "/assets/img/items/Golden_Chestplate.png"
+  ],
+  "golden_leggings": [
+   "Goldbeinschutz",
+   "Golden Leggings",
+   "/assets/img/items/Golden_Leggings.png"
+  ],
+  "golden_boots": [
+   "Goldstiefel",
+   "Golden Boots",
+   "/assets/img/items/Golden_Boots.png"
+  ],
+  "diamond_helmet": [
+   "Diamanthelm",
+   "Diamond Helmet",
+   "/assets/img/items/Diamond_Helmet.png"
+  ],
+  "diamond_chestplate": [
+   "Diamantharnisch",
+   "Diamond Chestplate",
+   "/assets/img/items/Diamond_Chestplate.png"
+  ],
+  "diamond_leggings": [
+   "Diamantbeinschutz",
+   "Diamond Leggings",
+   "/assets/img/items/Diamond_Leggings.png"
+  ],
+  "diamond_boots": [
+   "Diamantstiefel",
+   "Diamond Boots",
+   "/assets/img/items/Diamond_Boots.png"
+  ],
+  "netherite_helmet": [
+   "Netherithelm",
+   "Netherite Helmet",
+   "/assets/img/items/Netherite_Helmet.png"
+  ],
+  "netherite_chestplate": [
+   "Netheritharnisch",
+   "Netherite Chestplate",
+   "/assets/img/items/Netherite_Chestplate.png"
+  ],
+  "netherite_leggings": [
+   "Netheritbeinschutz",
+   "Netherite Leggings",
+   "/assets/img/items/Netherite_Leggings.png"
+  ],
+  "netherite_boots": [
+   "Netheritstiefel",
+   "Netherite Boots",
+   "/assets/img/textures/item/netherite_boots.png"
+  ],
+  "turtle_helmet": [
+   "Schildkrötenpanzer",
+   "Turtle Shell",
+   "/assets/img/textures/item/turtle_helmet.png"
+  ],
+  "bolt_armor_trim_smithing_template": [
+   "Schmiedevorlage",
+   "Smithing Template",
+   "/assets/img/textures/item/bolt_armor_trim_smithing_template.png"
+  ],
+  "copper_block": [
+   "Kupferblock",
+   "Block of Copper",
+   "/assets/img/blocks/Block_of_Copper.png"
+  ],
+  "coast_armor_trim_smithing_template": [
+   "Schmiedevorlage",
+   "Smithing Template",
+   "/assets/img/textures/item/coast_armor_trim_smithing_template.png"
+  ],
+  "cobblestone": [
+   "Bruchstein",
+   "Cobblestone",
+   "/assets/img/blocks/Cobblestone.png"
+  ],
+  "dune_armor_trim_smithing_template": [
+   "Schmiedevorlage",
+   "Smithing Template",
+   "/assets/img/textures/item/dune_armor_trim_smithing_template.png"
+  ],
+  "sandstone": [
+   "Sandstein",
+   "Sandstone",
+   "/assets/img/blocks/Sandstone.png"
+  ],
+  "eye_armor_trim_smithing_template": [
+   "Schmiedevorlage",
+   "Smithing Template",
+   "/assets/img/textures/item/eye_armor_trim_smithing_template.png"
+  ],
+  "end_stone": [
+   "Endstein",
+   "End Stone",
+   "/assets/img/blocks/End_Stone.png"
+  ],
+  "flow_armor_trim_smithing_template": [
+   "Schmiedevorlage",
+   "Smithing Template",
+   "/assets/img/textures/item/flow_armor_trim_smithing_template.png"
+  ],
+  "breeze_rod": [
+   "Böenrute",
+   "Breeze Rod",
+   "/assets/img/textures/item/breeze_rod.png"
+  ],
+  "host_armor_trim_smithing_template": [
+   "Schmiedevorlage",
+   "Smithing Template",
+   "/assets/img/textures/item/host_armor_trim_smithing_template.png"
+  ],
+  "terracotta": [
+   "Keramik",
+   "Terracotta",
+   "/assets/img/blocks/Terracotta.png"
+  ],
+  "raiser_armor_trim_smithing_template": [
+   "Schmiedevorlage",
+   "Smithing Template",
+   "/assets/img/textures/item/raiser_armor_trim_smithing_template.png"
+  ],
+  "rib_armor_trim_smithing_template": [
+   "Schmiedevorlage",
+   "Smithing Template",
+   "/assets/img/textures/item/rib_armor_trim_smithing_template.png"
+  ],
+  "netherrack": [
+   "Netherrack",
+   "Netherrack",
+   "/assets/img/blocks/Netherrack.png"
+  ],
+  "sentry_armor_trim_smithing_template": [
+   "Schmiedevorlage",
+   "Smithing Template",
+   "/assets/img/textures/item/sentry_armor_trim_smithing_template.png"
+  ],
+  "shaper_armor_trim_smithing_template": [
+   "Schmiedevorlage",
+   "Smithing Template",
+   "/assets/img/textures/item/shaper_armor_trim_smithing_template.png"
+  ],
+  "silence_armor_trim_smithing_template": [
+   "Schmiedevorlage",
+   "Smithing Template",
+   "/assets/img/textures/item/silence_armor_trim_smithing_template.png"
+  ],
+  "cobbled_deepslate": [
+   "Bruchtiefenschiefer",
+   "Cobbled Deepslate",
+   "/assets/img/blocks/Cobbled_Deepslate.png"
+  ],
+  "snout_armor_trim_smithing_template": [
+   "Schmiedevorlage",
+   "Smithing Template",
+   "/assets/img/textures/item/snout_armor_trim_smithing_template.png"
+  ],
+  "blackstone": [
+   "Schwarzstein",
+   "Blackstone",
+   "/assets/img/blocks/Blackstone.png"
+  ],
+  "spire_armor_trim_smithing_template": [
+   "Schmiedevorlage",
+   "Smithing Template",
+   "/assets/img/textures/item/spire_armor_trim_smithing_template.png"
+  ],
+  "purpur_block": [
+   "Purpurblock",
+   "Purpur Block",
+   "/assets/img/blocks/Purpur_Block.png"
+  ],
+  "tide_armor_trim_smithing_template": [
+   "Schmiedevorlage",
+   "Smithing Template",
+   "/assets/img/textures/item/tide_armor_trim_smithing_template.png"
+  ],
+  "prismarine": [
+   "Prismarin",
+   "Prismarine",
+   "/assets/img/blocks/Prismarine.gif"
+  ],
+  "vex_armor_trim_smithing_template": [
+   "Schmiedevorlage",
+   "Smithing Template",
+   "/assets/img/textures/item/vex_armor_trim_smithing_template.png"
+  ],
+  "ward_armor_trim_smithing_template": [
+   "Schmiedevorlage",
+   "Smithing Template",
+   "/assets/img/textures/item/ward_armor_trim_smithing_template.png"
+  ],
+  "wayfinder_armor_trim_smithing_template": [
+   "Schmiedevorlage",
+   "Smithing Template",
+   "/assets/img/textures/item/wayfinder_armor_trim_smithing_template.png"
+  ],
+  "wild_armor_trim_smithing_template": [
+   "Schmiedevorlage",
+   "Smithing Template",
+   "/assets/img/textures/item/wild_armor_trim_smithing_template.png"
+  ],
+  "mossy_cobblestone": [
+   "Bemooster Bruchstein",
+   "Mossy Cobblestone",
+   "/assets/img/blocks/Mossy_Cobblestone.png"
+  ],
+  "amethyst_shard": [
+   "Amethystscherbe",
+   "Amethyst Shard",
+   "/assets/img/textures/item/amethyst_shard.png"
+  ],
+  "copper_ingot": [
+   "Kupferbarren",
+   "Copper Ingot",
+   "/assets/img/textures/item/copper_ingot.png"
+  ],
+  "diamond": [
+   "Diamant",
+   "Diamond",
+   "/assets/img/textures/item/diamond.png"
+  ],
+  "emerald": [
+   "Smaragd",
+   "Emerald",
+   "/assets/img/textures/item/emerald.png"
+  ],
+  "gold_ingot": [
+   "Goldbarren",
+   "Gold Ingot",
+   "/assets/img/textures/item/gold_ingot.png"
+  ],
+  "iron_ingot": [
+   "Eisenbarren",
+   "Iron Ingot",
+   "/assets/img/textures/item/iron_ingot.png"
+  ],
+  "lapis_lazuli": [
+   "Lapislazuli",
+   "Lapis Lazuli",
+   "/assets/img/textures/item/lapis_lazuli.png"
+  ],
+  "netherite_ingot": [
+   "Netheritbarren",
+   "Netherite Ingot",
+   "/assets/img/textures/item/netherite_ingot.png"
+  ],
+  "quartz": [
+   "Netherquarz",
+   "Nether Quartz",
+   "/assets/img/textures/item/quartz.png"
+  ],
+  "redstone": [
+   "Redstone-Staub",
+   "Redstone Dust",
+   "/assets/img/textures/item/redstone.png"
+  ],
+  "resin_brick": [
+   "Harzziegel",
+   "Resin Brick",
+   "/assets/img/textures/item/resin_brick.png"
+  ]
+ },
+ "smithing_table": [
+  "Schmiedetisch",
+  "Smithing Table",
+  "/assets/img/blocks/Smithing_Table.png"
+ ]
+}

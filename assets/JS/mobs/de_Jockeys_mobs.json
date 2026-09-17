@@ -18,7 +18,7 @@
     "animation": [],
     "source": "",
     "updated_at": "2026-08-22",
-    "notes": "Kein einzelnes Wesen: Lebenspunkte, Drops und Erfahrung werden für jede Komponente getrennt berechnet.",
+    "notes": "Kein einzelnes Wesen: Lebenspunkte, Beute und Erfahrung werden für jede Komponente getrennt berechnet.",
     "version": "Java Edition 1.21.11 / Bedrock Edition 1.21.130",
     "edition": "Java Edition, Bedrock Edition",
     "effects": [],
@@ -52,7 +52,7 @@
       "parched": 2
     },
     "experience": "Komponenten geben ihre Erfahrung getrennt ab",
-    "dimension": "Overworld",
+    "dimension": "Oberwelt",
     "movement_speed": 0.25,
     "size": {
       "width": "Breite: 1.4",
@@ -69,7 +69,7 @@
     "light_level": [
       "Blocklicht 0 für die feindlichen Reiter"
     ],
-    "classification": "Feindliche Reiter auf untotem Reittier; keine eigene Entity",
+    "classification": "Feindliche Reiter auf untotem Reittier; keine eigene Entität",
     "renewable": "Ja",
     "can_despawn": "Ja, sofern die normalen Despawn-Regeln gelten",
     "tameable": "Kamelhülle: Ja, nachdem die Reiter entfernt wurden",
@@ -81,8 +81,8 @@
     "baby_variant": "Nein",
     "drops": [
       {
-        "item": "Drops der Kamelhülle, Hülle und des Ausgedörrten",
-        "chance": "Jeweils nach eigener Loot-Tabelle",
+        "item": "Beute der Kamelhülle, Hülle und des Ausgedörrten",
+        "chance": "Jeweils nach eigener Beutetabelle",
         "amount": "Getrennt je Komponente"
       },
       {
@@ -97,7 +97,7 @@
       "Der Ausgedörrte greift mit dem Bogen an",
       "Die Kamelhülle bleibt nach dem Tod der Reiter bestehen"
     ],
-    "fun_fact": "Kein einzelnes Wesen: Lebenspunkte, Drops und Erfahrung werden für jede Komponente getrennt berechnet.",
+    "fun_fact": "Kein einzelnes Wesen: Lebenspunkte, Beute und Erfahrung werden für jede Komponente getrennt berechnet.",
     "attack_type": "Nah- und Fernkampf",
     "targets": [
       "Spieler",
@@ -133,7 +133,7 @@
     "animation": [],
     "source": "",
     "updated_at": "2026-08-22",
-    "notes": "Der Reiter ist eine Kombination aus minecraft:zombie und minecraft:zombie_horse, keine eigene Entity.",
+    "notes": "Der Reiter ist eine Kombination aus minecraft:zombie und minecraft:zombie_horse, keine eigene Entität.",
     "version": "Java Edition 1.21.11 / Bedrock Edition 1.21.130",
     "edition": "Java Edition, Bedrock Edition",
     "effects": [],
@@ -166,7 +166,7 @@
       "zombie": 2
     },
     "experience": "Zombie: 5 plus Ausrüstungsboni; Zombiepferd: eigene Komponentenerfahrung",
-    "dimension": "Overworld",
+    "dimension": "Oberwelt",
     "movement_speed": 0.25,
     "size": {
       "width": "Breite: 1.4",
@@ -183,7 +183,7 @@
     "light_level": [
       "Blocklicht 0 für den Zombie"
     ],
-    "classification": "Feindlicher Reiter; keine eigene Entity",
+    "classification": "Feindlicher Reiter; keine eigene Entität",
     "renewable": "Ja",
     "can_despawn": "Ja, sofern die normalen Despawn-Regeln gelten",
     "tameable": "Zombiepferd: Ja",
@@ -195,8 +195,8 @@
     "baby_variant": "Nein",
     "drops": [
       {
-        "item": "Drops von Zombie und Zombiepferd",
-        "chance": "Nach den jeweiligen Loot-Tabellen",
+        "item": "Beute von Zombie und Zombiepferd",
+        "chance": "Nach den jeweiligen Beutetabellen",
         "amount": "Getrennt je Komponente"
       },
       {
@@ -209,7 +209,7 @@
       "Zombie und Pferd haben getrennte Lebenspunkte",
       "Das Zombiepferd kann nach dem Entfernen des Reiters übernommen werden"
     ],
-    "fun_fact": "Der Reiter ist eine Kombination aus minecraft:zombie und minecraft:zombie_horse, keine eigene Entity.",
+    "fun_fact": "Der Reiter ist eine Kombination aus minecraft:zombie und minecraft:zombie_horse, keine eigene Entität.",
     "attack_type": "Speer-Nah- und Fernkampf",
     "targets": [
       "Spieler",
@@ -248,7 +248,7 @@
     "animation": [],
     "source": "",
     "updated_at": "2026-08-22",
-    "notes": "Kein eigener Entity-Typ; der Nautilus lässt keine Nautilusschale als normalen Drop fallen.",
+    "notes": "Kein eigener Entitätstyp; der Nautilus lässt keine Nautilusschale als normale Beute fallen.",
     "version": "Java Edition 1.21.11 / Bedrock Edition 1.21.130",
     "edition": "Java Edition, Bedrock Edition",
     "effects": [],
@@ -281,7 +281,7 @@
       "drowned": 2
     },
     "experience": "Komponenten geben Erfahrung getrennt ab",
-    "dimension": "Overworld",
+    "dimension": "Oberwelt",
     "movement_speed": 0.2,
     "size": {
       "width": "Breite: 1.0",
@@ -298,7 +298,7 @@
     "light_level": [
       "Wasser- und Dunkelheitsbedingungen des Ertrunkenen"
     ],
-    "classification": "Feindlicher Wasser-Jockey; keine eigene Entity",
+    "classification": "Feindlicher Wasser-Jockey; keine eigene Entität",
     "renewable": "Ja",
     "can_despawn": "Ja, sofern die normalen Despawn-Regeln gelten",
     "tameable": "Zombie-Nautilus: Ja",
@@ -325,7 +325,7 @@
       "Reittier und Reiter besitzen getrennte Lebenspunkte",
       "Warme Ozeane können die Korallenvariante hervorbringen"
     ],
-    "fun_fact": "Kein eigener Entity-Typ; der Nautilus lässt keine Nautilusschale als normalen Drop fallen.",
+    "fun_fact": "Kein eigener Entitätstyp; der Nautilus lässt keine Nautilusschale als normale Beute fallen.",
     "attack_type": "Dreizack-Fern- und Nahkampf",
     "targets": [
       "Spieler",
@@ -396,7 +396,7 @@
       "skeleton": 0
     },
     "experience": "Skelett und Skelettpferd getrennt",
-    "dimension": "Overworld",
+    "dimension": "Oberwelt",
     "movement_speed": 0.3,
     "size": {
       "width": "Breite: 1.4",
@@ -413,7 +413,7 @@
     "light_level": [
       "Lichtunabhängig während Gewitter"
     ],
-    "classification": "Feindlicher Reiter; keine eigene Entity",
+    "classification": "Feindlicher Reiter; keine eigene Entität",
     "renewable": "Ja",
     "can_despawn": "Ja, sofern die normalen Despawn-Regeln gelten",
     "tameable": "Das erzeugte Skelettpferd ist gezähmt",
@@ -426,11 +426,11 @@
     "drops": [
       {
         "item": "Knochen, Pfeile und eventuell Bogen/Ausrüstung",
-        "chance": "Loot des Skeletts"
+        "chance": "Beute des Skeletts"
       },
       {
         "item": "Knochen",
-        "chance": "Loot des Skelettpferds"
+        "chance": "Beute des Skelettpferds"
       }
     ],
     "abilities": [
@@ -507,7 +507,7 @@
       "baby_zombie": 2
     },
     "experience": "Baby-Zombie: 12 plus Ausrüstungsboni; Huhn separat",
-    "dimension": "Overworld und je nach Baby-Zombie-Variante weitere Orte",
+    "dimension": "Oberwelt und je nach Baby-Zombie-Variante weitere Orte",
     "movement_speed": 0.25,
     "size": {
       "width": "Breite: 0.6",
@@ -524,7 +524,7 @@
     "light_level": [
       "Nach Spawnregeln der Baby-Zombie-Variante"
     ],
-    "classification": "Feindlicher Reiter; keine eigene Entity",
+    "classification": "Feindlicher Reiter; keine eigene Entität",
     "renewable": "Ja",
     "can_despawn": "Ja, sofern die normalen Despawn-Regeln gelten",
     "tameable": "Nein",
@@ -536,12 +536,12 @@
     "baby_variant": "Der Reiter ist immer eine Baby-Zombie-Variante",
     "drops": [
       {
-        "item": "Drops der jeweiligen Baby-Zombie-Variante",
-        "chance": "Nach deren Loot-Tabelle"
+        "item": "Beute der jeweiligen Baby-Zombie-Variante",
+        "chance": "Nach deren Beutetabelle"
       },
       {
         "item": "Rohes Huhn und Federn",
-        "chance": "Nach der Huhn-Loot-Tabelle"
+        "chance": "Nach der Huhn-Beutetabelle"
       }
     ],
     "abilities": [
@@ -618,7 +618,7 @@
       "skeleton": 0
     },
     "experience": "Spinne und Reiter getrennt",
-    "dimension": "Overworld",
+    "dimension": "Oberwelt",
     "movement_speed": 0.3,
     "size": {
       "width": "Breite: 1.4",
@@ -635,7 +635,7 @@
     "light_level": [
       "Nach den Spawnregeln der Spinne"
     ],
-    "classification": "Feindlicher Reiter; keine eigene Entity",
+    "classification": "Feindlicher Reiter; keine eigene Entität",
     "renewable": "Ja",
     "can_despawn": "Ja, sofern die normalen Despawn-Regeln gelten",
     "tameable": "Nein",
@@ -647,12 +647,12 @@
     "baby_variant": "Nein",
     "drops": [
       {
-        "item": "Drops der Spinne",
-        "chance": "Nach Spinnen-Loot-Tabelle"
+        "item": "Beute der Spinne",
+        "chance": "Nach Spinnen-Beutetabelle"
       },
       {
-        "item": "Drops des Skeletts",
-        "chance": "Nach Skelett-Loot-Tabelle"
+        "item": "Beute des Skeletts",
+        "chance": "Nach Skelett-Beutetabelle"
       }
     ],
     "abilities": [
@@ -729,7 +729,7 @@
       "rider": "Variiert"
     },
     "experience": "Reittier und Reiter getrennt",
-    "dimension": "Overworld",
+    "dimension": "Oberwelt",
     "movement_speed": 0.3,
     "size": {
       "width": "Breite: 0.7",
@@ -746,7 +746,7 @@
     "light_level": [
       "Nicht als regulärer natürlicher Jockey"
     ],
-    "classification": "Befehlskombination; keine eigene Entity",
+    "classification": "Befehlskombination; keine eigene Entität",
     "renewable": "Ja",
     "can_despawn": "Ja, sofern die normalen Despawn-Regeln gelten",
     "tameable": "Nein",
@@ -758,8 +758,8 @@
     "baby_variant": "Nein",
     "drops": [
       {
-        "item": "Drops der Höhlenspinne und des gewählten Reiters",
-        "chance": "Jeweils nach eigener Loot-Tabelle"
+        "item": "Beute der Höhlenspinne und des gewählten Reiters",
+        "chance": "Jeweils nach eigener Beutetabelle"
       }
     ],
     "abilities": [

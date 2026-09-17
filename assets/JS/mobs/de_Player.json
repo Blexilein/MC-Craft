@@ -9,7 +9,7 @@
     "description": "Die vom Menschen gesteuerte Spielfigur. Steve, Alex, Ari, Efe, Kai, Makena, Noor, Sunny und Zuri sind Standard-Skinfiguren, aber keine unterschiedlichen Mobs.",
     "biome": "Alle Biome",
     "structure": "Keine feste Struktur",
-    "dimension": "Overworld, Nether und The End",
+    "dimension": "Oberwelt, Nether und das Ende",
     "movement_speed": {
       "attribute": 0.1,
       "walking": "ca. 4,317 Blöcke/Sekunde",
@@ -55,14 +55,14 @@
       "Schwimmen",
       "Kriechen",
       "Fliegen",
-      "Elytra-Gleiten",
+      "Elytren-Gleiten",
       "Schlafen",
       "Angreifen",
       "Benutzen"
     ],
     "source": "",
     "updated_at": "2026-08-22",
-    "notes": "Der Spieler ist technisch eine Entity, aber kein Mob. Er kann nicht mit /summon erzeugt werden und besitzt keine normale Mob-Loot-Tabelle.",
+    "notes": "Der Spieler ist technisch eine Entität, aber kein Mob. Er kann nicht mit /summon erzeugt werden und besitzt keine normale Mob-Beutetabelle.",
     "version": "Java Edition Pre-Classic rd-132328; Bedrock-Vorgänger Pocket Edition Alpha v0.1.0",
     "edition": "Java Edition, Bedrock Edition",
     "effects": [],
@@ -111,121 +111,319 @@
     ],
     "texture": [
       {
-        "name": "Player Slim Alex",
-        "category": "Slim-Spielermodell",
-        "description": "Variante: Player Slim Alex.",
+        "name": "Spieler – schmal Alex",
+        "category": "Schmales Spielermodell",
+        "description": "Variante: Spieler – schmal Alex.",
         "file": "/assets/img/texture/mobs/player/slim/alex.png"
       },
       {
-        "name": "Player Slim Ari",
-        "category": "Slim-Spielermodell",
-        "description": "Variante: Player Slim Ari.",
+        "name": "Spieler – schmal Ari",
+        "category": "Schmales Spielermodell",
+        "description": "Variante: Spieler – schmal Ari.",
         "file": "/assets/img/texture/mobs/player/slim/ari.png"
       },
       {
-        "name": "Player Slim Efe",
-        "category": "Slim-Spielermodell",
-        "description": "Variante: Player Slim Efe.",
+        "name": "Spieler – schmal Efe",
+        "category": "Schmales Spielermodell",
+        "description": "Variante: Spieler – schmal Efe.",
         "file": "/assets/img/texture/mobs/player/slim/efe.png"
       },
       {
-        "name": "Player Slim Kai",
-        "category": "Slim-Spielermodell",
-        "description": "Variante: Player Slim Kai.",
+        "name": "Spieler – schmal Kai",
+        "category": "Schmales Spielermodell",
+        "description": "Variante: Spieler – schmal Kai.",
         "file": "/assets/img/texture/mobs/player/slim/kai.png"
       },
       {
-        "name": "Player Slim Makena",
-        "category": "Slim-Spielermodell",
-        "description": "Variante: Player Slim Makena.",
+        "name": "Spieler – schmal Makena",
+        "category": "Schmales Spielermodell",
+        "description": "Variante: Spieler – schmal Makena.",
         "file": "/assets/img/texture/mobs/player/slim/makena.png"
       },
       {
-        "name": "Player Slim Noor",
-        "category": "Slim-Spielermodell",
-        "description": "Variante: Player Slim Noor.",
+        "name": "Spieler – schmal Noor",
+        "category": "Schmales Spielermodell",
+        "description": "Variante: Spieler – schmal Noor.",
         "file": "/assets/img/texture/mobs/player/slim/noor.png"
       },
       {
-        "name": "Player Slim Steve",
-        "category": "Slim-Spielermodell",
-        "description": "Variante: Player Slim Steve.",
+        "name": "Spieler – schmal Steve",
+        "category": "Schmales Spielermodell",
+        "description": "Variante: Spieler – schmal Steve.",
         "file": "/assets/img/texture/mobs/player/slim/steve.png"
       },
       {
-        "name": "Player Slim Sunny",
-        "category": "Slim-Spielermodell",
-        "description": "Variante: Player Slim Sunny.",
+        "name": "Spieler – schmal Sunny",
+        "category": "Schmales Spielermodell",
+        "description": "Variante: Spieler – schmal Sunny.",
         "file": "/assets/img/texture/mobs/player/slim/sunny.png"
       },
       {
-        "name": "Player Slim Zuri",
-        "category": "Slim-Spielermodell",
-        "description": "Variante: Player Slim Zuri.",
+        "name": "Spieler – schmal Zuri",
+        "category": "Schmales Spielermodell",
+        "description": "Variante: Spieler – schmal Zuri.",
         "file": "/assets/img/texture/mobs/player/slim/zuri.png"
       },
       {
-        "name": "Player Wide Alex",
-        "category": "Wide-Spielermodell",
-        "description": "Variante: Player Wide Alex.",
+        "name": "Spieler – breit Alex",
+        "category": "Breites Spielermodell",
+        "description": "Variante: Spieler – breit Alex.",
         "file": "/assets/img/texture/mobs/player/wide/alex.png"
       },
       {
-        "name": "Player Wide Ari",
-        "category": "Wide-Spielermodell",
-        "description": "Variante: Player Wide Ari.",
+        "name": "Spieler – breit Ari",
+        "category": "Breites Spielermodell",
+        "description": "Variante: Spieler – breit Ari.",
         "file": "/assets/img/texture/mobs/player/wide/ari.png"
       },
       {
-        "name": "Player Wide Efe",
-        "category": "Wide-Spielermodell",
-        "description": "Variante: Player Wide Efe.",
+        "name": "Spieler – breit Efe",
+        "category": "Breites Spielermodell",
+        "description": "Variante: Spieler – breit Efe.",
         "file": "/assets/img/texture/mobs/player/wide/efe.png"
       },
       {
-        "name": "Player Wide Kai",
-        "category": "Wide-Spielermodell",
-        "description": "Variante: Player Wide Kai.",
+        "name": "Spieler – breit Kai",
+        "category": "Breites Spielermodell",
+        "description": "Variante: Spieler – breit Kai.",
         "file": "/assets/img/texture/mobs/player/wide/kai.png"
       },
       {
-        "name": "Player Wide Makena",
-        "category": "Wide-Spielermodell",
-        "description": "Variante: Player Wide Makena.",
+        "name": "Spieler – breit Makena",
+        "category": "Breites Spielermodell",
+        "description": "Variante: Spieler – breit Makena.",
         "file": "/assets/img/texture/mobs/player/wide/makena.png"
       },
       {
-        "name": "Player Wide Noor",
-        "category": "Wide-Spielermodell",
-        "description": "Variante: Player Wide Noor.",
+        "name": "Spieler – breit Noor",
+        "category": "Breites Spielermodell",
+        "description": "Variante: Spieler – breit Noor.",
         "file": "/assets/img/texture/mobs/player/wide/noor.png"
       },
       {
-        "name": "Player Wide Steve",
-        "category": "Wide-Spielermodell",
-        "description": "Variante: Player Wide Steve.",
+        "name": "Spieler – breit Steve",
+        "category": "Breites Spielermodell",
+        "description": "Variante: Spieler – breit Steve.",
         "file": "/assets/img/texture/mobs/player/wide/steve.png"
       },
       {
-        "name": "Player Wide Sunny",
-        "category": "Wide-Spielermodell",
-        "description": "Variante: Player Wide Sunny.",
+        "name": "Spieler – breit Sunny",
+        "category": "Breites Spielermodell",
+        "description": "Variante: Spieler – breit Sunny.",
         "file": "/assets/img/texture/mobs/player/wide/sunny.png"
       },
       {
-        "name": "Player Wide Zuri",
-        "category": "Wide-Spielermodell",
-        "description": "Variante: Player Wide Zuri.",
+        "name": "Spieler – breit Zuri",
+        "category": "Breites Spielermodell",
+        "description": "Variante: Spieler – breit Zuri.",
         "file": "/assets/img/texture/mobs/player/wide/zuri.png"
       },
       {
-        "name": "Equipment Wings Elytra",
+        "name": "Spieler – Flügel Elytren",
         "category": "Ausrüstung",
-        "description": "Variante: Equipment Wings Elytra.",
+        "description": "Variante: Spieler – Flügel Elytren.",
         "file": "/assets/img/texture/mobs/equipment/wings/elytra.png"
       }
     ],
-    "sounds": [],
+    "sounds": [
+      {
+        "name": "Volltreffer",
+        "event": "entity.player.attack.crit",
+        "files": [
+          "/assets/sounds/entity/player/attack/crit1.ogg",
+          "/assets/sounds/entity/player/attack/crit2.ogg",
+          "/assets/sounds/entity/player/attack/crit3.ogg"
+        ]
+      },
+      {
+        "name": "Rückstoßangriff",
+        "event": "entity.player.attack.knockback",
+        "files": [
+          "/assets/sounds/entity/player/attack/knockback1.ogg",
+          "/assets/sounds/entity/player/attack/knockback2.ogg",
+          "/assets/sounds/entity/player/attack/knockback3.ogg",
+          "/assets/sounds/entity/player/attack/knockback4.ogg"
+        ]
+      },
+      {
+        "name": "Schwacher Angriff",
+        "event": "entity.player.attack.nodamage",
+        "files": [
+          "/assets/sounds/entity/player/attack/weak1.ogg",
+          "/assets/sounds/entity/player/attack/weak2.ogg",
+          "/assets/sounds/entity/player/attack/weak3.ogg",
+          "/assets/sounds/entity/player/attack/weak4.ogg"
+        ]
+      },
+      {
+        "name": "Starker Angriff",
+        "event": "entity.player.attack.strong",
+        "files": [
+          "/assets/sounds/entity/player/attack/strong1.ogg",
+          "/assets/sounds/entity/player/attack/strong2.ogg",
+          "/assets/sounds/entity/player/attack/strong3.ogg",
+          "/assets/sounds/entity/player/attack/strong4.ogg",
+          "/assets/sounds/entity/player/attack/strong5.ogg",
+          "/assets/sounds/entity/player/attack/strong6.ogg"
+        ]
+      },
+      {
+        "name": "Schwungangriff",
+        "event": "entity.player.attack.sweep",
+        "files": [
+          "/assets/sounds/entity/player/attack/sweep1.ogg",
+          "/assets/sounds/entity/player/attack/sweep2.ogg",
+          "/assets/sounds/entity/player/attack/sweep3.ogg",
+          "/assets/sounds/entity/player/attack/sweep4.ogg",
+          "/assets/sounds/entity/player/attack/sweep5.ogg",
+          "/assets/sounds/entity/player/attack/sweep6.ogg",
+          "/assets/sounds/entity/player/attack/sweep7.ogg"
+        ]
+      },
+      {
+        "name": "Schwacher Angriff",
+        "event": "entity.player.attack.weak",
+        "files": [
+          "/assets/sounds/entity/player/attack/weak1.ogg",
+          "/assets/sounds/entity/player/attack/weak2.ogg",
+          "/assets/sounds/entity/player/attack/weak3.ogg",
+          "/assets/sounds/entity/player/attack/weak4.ogg"
+        ]
+      },
+      {
+        "name": "Etwas ist gefallen",
+        "event": "entity.player.big_fall",
+        "files": [
+          "/assets/sounds/damage/fallbig.ogg"
+        ]
+      },
+      {
+        "event": "entity.player.breath",
+        "files": [
+          "/assets/sounds/random/breath.ogg"
+        ]
+      },
+      {
+        "name": "Rülpser",
+        "event": "entity.player.burp",
+        "files": [
+          "/assets/sounds/random/burp.ogg"
+        ]
+      },
+      {
+        "name": "Spieler stirbt",
+        "event": "entity.player.death",
+        "files": [
+          "/assets/sounds/damage/hit1.ogg",
+          "/assets/sounds/damage/hit2.ogg",
+          "/assets/sounds/damage/hit3.ogg"
+        ]
+      },
+      {
+        "name": "Spieler nimmt Schaden",
+        "event": "entity.player.hurt",
+        "files": [
+          "/assets/sounds/damage/hit1.ogg",
+          "/assets/sounds/damage/hit2.ogg",
+          "/assets/sounds/damage/hit3.ogg"
+        ]
+      },
+      {
+        "name": "Spieler ertrinkt",
+        "event": "entity.player.hurt_drown",
+        "files": [
+          "/assets/sounds/entity/player/hurt/drown1.ogg",
+          "/assets/sounds/entity/player/hurt/drown2.ogg",
+          "/assets/sounds/entity/player/hurt/drown3.ogg",
+          "/assets/sounds/entity/player/hurt/drown4.ogg"
+        ]
+      },
+      {
+        "name": "Spieler friert",
+        "event": "entity.player.hurt_freeze",
+        "files": [
+          "/assets/sounds/entity/player/hurt/freeze_hurt1.ogg",
+          "/assets/sounds/entity/player/hurt/freeze_hurt2.ogg",
+          "/assets/sounds/entity/player/hurt/freeze_hurt3.ogg",
+          "/assets/sounds/entity/player/hurt/freeze_hurt4.ogg",
+          "/assets/sounds/entity/player/hurt/freeze_hurt5.ogg"
+        ]
+      },
+      {
+        "name": "Spieler brennt",
+        "event": "entity.player.hurt_on_fire",
+        "files": [
+          "/assets/sounds/entity/player/hurt/fire_hurt1.ogg",
+          "/assets/sounds/entity/player/hurt/fire_hurt2.ogg",
+          "/assets/sounds/entity/player/hurt/fire_hurt3.ogg"
+        ]
+      },
+      {
+        "name": "Spieler nimmt Schaden",
+        "event": "entity.player.hurt_sweet_berry_bush",
+        "files": [
+          "/assets/sounds/entity/player/hurt/berrybush_hurt1.ogg",
+          "/assets/sounds/entity/player/hurt/berrybush_hurt2.ogg"
+        ]
+      },
+      {
+        "name": "Spieler bimmelt",
+        "event": "entity.player.levelup",
+        "files": [
+          "/assets/sounds/random/levelup.ogg"
+        ]
+      },
+      {
+        "name": "Etwas stolpert",
+        "event": "entity.player.small_fall",
+        "files": [
+          "/assets/sounds/damage/fallsmall.ogg"
+        ]
+      },
+      {
+        "name": "Platschen",
+        "event": "entity.player.splash",
+        "files": [
+          "/assets/sounds/liquid/splash.ogg",
+          "/assets/sounds/liquid/splash2.ogg"
+        ]
+      },
+      {
+        "name": "Platschen",
+        "event": "entity.player.splash.high_speed",
+        "files": [
+          "/assets/sounds/liquid/heavy_splash.ogg"
+        ]
+      },
+      {
+        "name": "Schwimmen",
+        "event": "entity.player.swim",
+        "files": [
+          "/assets/sounds/liquid/swim5.ogg",
+          "/assets/sounds/liquid/swim6.ogg",
+          "/assets/sounds/liquid/swim7.ogg",
+          "/assets/sounds/liquid/swim8.ogg",
+          "/assets/sounds/liquid/swim9.ogg",
+          "/assets/sounds/liquid/swim10.ogg",
+          "/assets/sounds/liquid/swim11.ogg",
+          "/assets/sounds/liquid/swim12.ogg",
+          "/assets/sounds/liquid/swim13.ogg",
+          "/assets/sounds/liquid/swim14.ogg",
+          "/assets/sounds/liquid/swim15.ogg",
+          "/assets/sounds/liquid/swim16.ogg",
+          "/assets/sounds/liquid/swim17.ogg",
+          "/assets/sounds/liquid/swim18.ogg"
+        ]
+      },
+      {
+        "name": "Spieler teleportiert",
+        "event": "entity.player.teleport",
+        "files": [
+          "/assets/sounds/mob/endermen/portal.ogg",
+          "/assets/sounds/mob/endermen/portal2.ogg"
+        ]
+      }
+    ],
     "health": "Standard: 20; durch Attribute und Befehle veränderbar",
     "damage": "Unbewaffnet: 1; mit Gegenständen abhängig von Waffe, Verzauberungen, Angriffsstärke und Edition",
     "armor": "0–20 Rüstungspunkte; zusätzlich Rüstungshärte und Verzauberungen möglich",
@@ -249,7 +447,7 @@
     "duplicable": "Nein",
     "duplication_item": "Keines",
     "leashable": "Nein",
-    "rideable": "Kann andere reitbare Entities benutzen; selbst kein normales Reittier",
+    "rideable": "Kann andere reitbare Entitäten benutzen; selbst kein normales Reittier",
     "baby_variant": "Nein",
     "drops": [
       {
@@ -299,6 +497,41 @@
       "fist": "1 Schaden",
       "items": "Abhängig von Gegenstand und Edition",
       "java_cooldown": "Seit Java 1.9 beeinflusst die Angriffsstärke den verursachten Schaden"
+    },
+    "game": {
+      "version": "26.3",
+      "attributes": [
+        {
+          "id": "max_health",
+          "name": "Maximale Gesundheit",
+          "value": 20.0
+        },
+        {
+          "id": "attack_damage",
+          "name": "Angriffsschaden",
+          "value": 1.0
+        },
+        {
+          "id": "movement_speed",
+          "name": "Geschwindigkeit",
+          "value": 0.1
+        }
+      ],
+      "damage": {
+        "easy": 1.0,
+        "normal": 1.0,
+        "hard": 1.5
+      },
+      "size": {
+        "width": 0.6,
+        "height": 1.8,
+        "eye_height": 1.62
+      },
+      "category": {
+        "id": "misc",
+        "name": "Sonstiges"
+      },
+      "fire_immune": false
     }
   }
 ]

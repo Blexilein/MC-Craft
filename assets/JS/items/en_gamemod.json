@@ -42,9 +42,102 @@
         "category": "Block",
         "description": "Block texture for Command Block.",
         "file": "/assets/img/blocks/Impulse_Command_Block.gif"
+      },
+      {
+        "name": "command_block_side",
+        "category": "Block",
+        "description": "block/command_block_side.png",
+        "file": "/assets/img/textures/block/command_block_side.png",
+        "path": "block/command_block_side",
+        "frames": 4,
+        "frametime": 10
+      },
+      {
+        "name": "command_block_front",
+        "category": "Block",
+        "description": "block/command_block_front.png",
+        "file": "/assets/img/textures/block/command_block_front.png",
+        "path": "block/command_block_front",
+        "frames": 4,
+        "frametime": 10
+      },
+      {
+        "name": "command_block_back",
+        "category": "Block",
+        "description": "block/command_block_back.png",
+        "file": "/assets/img/textures/block/command_block_back.png",
+        "path": "block/command_block_back",
+        "frames": 4,
+        "frametime": 10
+      },
+      {
+        "name": "command_block_conditional",
+        "category": "Block",
+        "description": "block/command_block_conditional.png",
+        "file": "/assets/img/textures/block/command_block_conditional.png",
+        "path": "block/command_block_conditional",
+        "frames": 4,
+        "frametime": 10
       }
     ],
-    "sounds": [],
+    "sounds": [
+      {
+        "name": "Block broken",
+        "event": "block.stone.break",
+        "files": [
+          "/assets/sounds/dig/stone1.ogg",
+          "/assets/sounds/dig/stone2.ogg",
+          "/assets/sounds/dig/stone3.ogg",
+          "/assets/sounds/dig/stone4.ogg"
+        ]
+      },
+      {
+        "name": "Footsteps",
+        "event": "block.stone.step",
+        "files": [
+          "/assets/sounds/step/stone1.ogg",
+          "/assets/sounds/step/stone2.ogg",
+          "/assets/sounds/step/stone3.ogg",
+          "/assets/sounds/step/stone4.ogg",
+          "/assets/sounds/step/stone5.ogg",
+          "/assets/sounds/step/stone6.ogg"
+        ]
+      },
+      {
+        "name": "Block placed",
+        "event": "block.stone.place",
+        "files": [
+          "/assets/sounds/dig/stone1.ogg",
+          "/assets/sounds/dig/stone2.ogg",
+          "/assets/sounds/dig/stone3.ogg",
+          "/assets/sounds/dig/stone4.ogg"
+        ]
+      },
+      {
+        "name": "Block breaking",
+        "event": "block.stone.hit",
+        "files": [
+          "/assets/sounds/step/stone1.ogg",
+          "/assets/sounds/step/stone2.ogg",
+          "/assets/sounds/step/stone3.ogg",
+          "/assets/sounds/step/stone4.ogg",
+          "/assets/sounds/step/stone5.ogg",
+          "/assets/sounds/step/stone6.ogg"
+        ]
+      },
+      {
+        "name": "Something falls on a block",
+        "event": "block.stone.fall",
+        "files": [
+          "/assets/sounds/step/stone1.ogg",
+          "/assets/sounds/step/stone2.ogg",
+          "/assets/sounds/step/stone3.ogg",
+          "/assets/sounds/step/stone4.ogg",
+          "/assets/sounds/step/stone5.ogg",
+          "/assets/sounds/step/stone6.ogg"
+        ]
+      }
+    ],
     "command": "/give @p minecraft:command_block 1",
     "effects": [],
     "rarity": "Common",
@@ -162,9 +255,102 @@
         "category": "Block",
         "description": "Block texture for Chain Command Block.",
         "file": "/assets/img/blocks/Chain_Command_Block.gif"
+      },
+      {
+        "name": "chain_command_block_side",
+        "category": "Block",
+        "description": "block/chain_command_block_side.png",
+        "file": "/assets/img/textures/block/chain_command_block_side.png",
+        "path": "block/chain_command_block_side",
+        "frames": 4,
+        "frametime": 10
+      },
+      {
+        "name": "chain_command_block_front",
+        "category": "Block",
+        "description": "block/chain_command_block_front.png",
+        "file": "/assets/img/textures/block/chain_command_block_front.png",
+        "path": "block/chain_command_block_front",
+        "frames": 4,
+        "frametime": 10
+      },
+      {
+        "name": "chain_command_block_back",
+        "category": "Block",
+        "description": "block/chain_command_block_back.png",
+        "file": "/assets/img/textures/block/chain_command_block_back.png",
+        "path": "block/chain_command_block_back",
+        "frames": 4,
+        "frametime": 10
+      },
+      {
+        "name": "chain_command_block_conditional",
+        "category": "Block",
+        "description": "block/chain_command_block_conditional.png",
+        "file": "/assets/img/textures/block/chain_command_block_conditional.png",
+        "path": "block/chain_command_block_conditional",
+        "frames": 4,
+        "frametime": 10
       }
     ],
-    "sounds": [],
+    "sounds": [
+      {
+        "name": "Block broken",
+        "event": "block.stone.break",
+        "files": [
+          "/assets/sounds/dig/stone1.ogg",
+          "/assets/sounds/dig/stone2.ogg",
+          "/assets/sounds/dig/stone3.ogg",
+          "/assets/sounds/dig/stone4.ogg"
+        ]
+      },
+      {
+        "name": "Footsteps",
+        "event": "block.stone.step",
+        "files": [
+          "/assets/sounds/step/stone1.ogg",
+          "/assets/sounds/step/stone2.ogg",
+          "/assets/sounds/step/stone3.ogg",
+          "/assets/sounds/step/stone4.ogg",
+          "/assets/sounds/step/stone5.ogg",
+          "/assets/sounds/step/stone6.ogg"
+        ]
+      },
+      {
+        "name": "Block placed",
+        "event": "block.stone.place",
+        "files": [
+          "/assets/sounds/dig/stone1.ogg",
+          "/assets/sounds/dig/stone2.ogg",
+          "/assets/sounds/dig/stone3.ogg",
+          "/assets/sounds/dig/stone4.ogg"
+        ]
+      },
+      {
+        "name": "Block breaking",
+        "event": "block.stone.hit",
+        "files": [
+          "/assets/sounds/step/stone1.ogg",
+          "/assets/sounds/step/stone2.ogg",
+          "/assets/sounds/step/stone3.ogg",
+          "/assets/sounds/step/stone4.ogg",
+          "/assets/sounds/step/stone5.ogg",
+          "/assets/sounds/step/stone6.ogg"
+        ]
+      },
+      {
+        "name": "Something falls on a block",
+        "event": "block.stone.fall",
+        "files": [
+          "/assets/sounds/step/stone1.ogg",
+          "/assets/sounds/step/stone2.ogg",
+          "/assets/sounds/step/stone3.ogg",
+          "/assets/sounds/step/stone4.ogg",
+          "/assets/sounds/step/stone5.ogg",
+          "/assets/sounds/step/stone6.ogg"
+        ]
+      }
+    ],
     "command": "/give @p minecraft:chain_command_block 1",
     "effects": [],
     "rarity": "Common",
@@ -282,9 +468,102 @@
         "category": "Block",
         "description": "Block texture for Repeating Command Block.",
         "file": "/assets/img/blocks/Repeating_Command_Block.gif"
+      },
+      {
+        "name": "repeating_command_block_side",
+        "category": "Block",
+        "description": "block/repeating_command_block_side.png",
+        "file": "/assets/img/textures/block/repeating_command_block_side.png",
+        "path": "block/repeating_command_block_side",
+        "frames": 4,
+        "frametime": 10
+      },
+      {
+        "name": "repeating_command_block_front",
+        "category": "Block",
+        "description": "block/repeating_command_block_front.png",
+        "file": "/assets/img/textures/block/repeating_command_block_front.png",
+        "path": "block/repeating_command_block_front",
+        "frames": 4,
+        "frametime": 10
+      },
+      {
+        "name": "repeating_command_block_back",
+        "category": "Block",
+        "description": "block/repeating_command_block_back.png",
+        "file": "/assets/img/textures/block/repeating_command_block_back.png",
+        "path": "block/repeating_command_block_back",
+        "frames": 4,
+        "frametime": 10
+      },
+      {
+        "name": "repeating_command_block_conditional",
+        "category": "Block",
+        "description": "block/repeating_command_block_conditional.png",
+        "file": "/assets/img/textures/block/repeating_command_block_conditional.png",
+        "path": "block/repeating_command_block_conditional",
+        "frames": 4,
+        "frametime": 10
       }
     ],
-    "sounds": [],
+    "sounds": [
+      {
+        "name": "Block broken",
+        "event": "block.stone.break",
+        "files": [
+          "/assets/sounds/dig/stone1.ogg",
+          "/assets/sounds/dig/stone2.ogg",
+          "/assets/sounds/dig/stone3.ogg",
+          "/assets/sounds/dig/stone4.ogg"
+        ]
+      },
+      {
+        "name": "Footsteps",
+        "event": "block.stone.step",
+        "files": [
+          "/assets/sounds/step/stone1.ogg",
+          "/assets/sounds/step/stone2.ogg",
+          "/assets/sounds/step/stone3.ogg",
+          "/assets/sounds/step/stone4.ogg",
+          "/assets/sounds/step/stone5.ogg",
+          "/assets/sounds/step/stone6.ogg"
+        ]
+      },
+      {
+        "name": "Block placed",
+        "event": "block.stone.place",
+        "files": [
+          "/assets/sounds/dig/stone1.ogg",
+          "/assets/sounds/dig/stone2.ogg",
+          "/assets/sounds/dig/stone3.ogg",
+          "/assets/sounds/dig/stone4.ogg"
+        ]
+      },
+      {
+        "name": "Block breaking",
+        "event": "block.stone.hit",
+        "files": [
+          "/assets/sounds/step/stone1.ogg",
+          "/assets/sounds/step/stone2.ogg",
+          "/assets/sounds/step/stone3.ogg",
+          "/assets/sounds/step/stone4.ogg",
+          "/assets/sounds/step/stone5.ogg",
+          "/assets/sounds/step/stone6.ogg"
+        ]
+      },
+      {
+        "name": "Something falls on a block",
+        "event": "block.stone.fall",
+        "files": [
+          "/assets/sounds/step/stone1.ogg",
+          "/assets/sounds/step/stone2.ogg",
+          "/assets/sounds/step/stone3.ogg",
+          "/assets/sounds/step/stone4.ogg",
+          "/assets/sounds/step/stone5.ogg",
+          "/assets/sounds/step/stone6.ogg"
+        ]
+      }
+    ],
     "command": "/give @p minecraft:repeating_command_block 1",
     "effects": [],
     "rarity": "Common",
@@ -402,6 +681,13 @@
         "category": "Item",
         "description": "Item texture for Minecart with Command Block.",
         "file": "/assets/img/items/Minecart_with_Command_Block.gif"
+      },
+      {
+        "name": "command_block_minecart",
+        "category": "Item",
+        "description": "item/command_block_minecart.png",
+        "file": "/assets/img/textures/item/command_block_minecart.png",
+        "path": "item/command_block_minecart"
       }
     ],
     "sounds": [],
@@ -486,9 +772,94 @@
         "category": "Block",
         "description": "Block texture for Jigsaw.",
         "file": "/assets/img/blocks/Jigsaw_Block.png"
+      },
+      {
+        "name": "jigsaw_side",
+        "category": "Block",
+        "description": "block/jigsaw_side.png",
+        "file": "/assets/img/textures/block/jigsaw_side.png",
+        "path": "block/jigsaw_side"
+      },
+      {
+        "name": "jigsaw_lock",
+        "category": "Block",
+        "description": "block/jigsaw_lock.png",
+        "file": "/assets/img/textures/block/jigsaw_lock.png",
+        "path": "block/jigsaw_lock"
+      },
+      {
+        "name": "jigsaw_top",
+        "category": "Block",
+        "description": "block/jigsaw_top.png",
+        "file": "/assets/img/textures/block/jigsaw_top.png",
+        "path": "block/jigsaw_top"
+      },
+      {
+        "name": "jigsaw_bottom",
+        "category": "Block",
+        "description": "block/jigsaw_bottom.png",
+        "file": "/assets/img/textures/block/jigsaw_bottom.png",
+        "path": "block/jigsaw_bottom"
       }
     ],
-    "sounds": [],
+    "sounds": [
+      {
+        "name": "Block broken",
+        "event": "block.stone.break",
+        "files": [
+          "/assets/sounds/dig/stone1.ogg",
+          "/assets/sounds/dig/stone2.ogg",
+          "/assets/sounds/dig/stone3.ogg",
+          "/assets/sounds/dig/stone4.ogg"
+        ]
+      },
+      {
+        "name": "Footsteps",
+        "event": "block.stone.step",
+        "files": [
+          "/assets/sounds/step/stone1.ogg",
+          "/assets/sounds/step/stone2.ogg",
+          "/assets/sounds/step/stone3.ogg",
+          "/assets/sounds/step/stone4.ogg",
+          "/assets/sounds/step/stone5.ogg",
+          "/assets/sounds/step/stone6.ogg"
+        ]
+      },
+      {
+        "name": "Block placed",
+        "event": "block.stone.place",
+        "files": [
+          "/assets/sounds/dig/stone1.ogg",
+          "/assets/sounds/dig/stone2.ogg",
+          "/assets/sounds/dig/stone3.ogg",
+          "/assets/sounds/dig/stone4.ogg"
+        ]
+      },
+      {
+        "name": "Block breaking",
+        "event": "block.stone.hit",
+        "files": [
+          "/assets/sounds/step/stone1.ogg",
+          "/assets/sounds/step/stone2.ogg",
+          "/assets/sounds/step/stone3.ogg",
+          "/assets/sounds/step/stone4.ogg",
+          "/assets/sounds/step/stone5.ogg",
+          "/assets/sounds/step/stone6.ogg"
+        ]
+      },
+      {
+        "name": "Something falls on a block",
+        "event": "block.stone.fall",
+        "files": [
+          "/assets/sounds/step/stone1.ogg",
+          "/assets/sounds/step/stone2.ogg",
+          "/assets/sounds/step/stone3.ogg",
+          "/assets/sounds/step/stone4.ogg",
+          "/assets/sounds/step/stone5.ogg",
+          "/assets/sounds/step/stone6.ogg"
+        ]
+      }
+    ],
     "command": "/give @p minecraft:jigsaw 1",
     "effects": [],
     "rarity": "Common",
@@ -606,9 +977,101 @@
         "category": "Block",
         "description": "Block texture for Structure Block.",
         "file": "/assets/img/blocks/Structure_Block.png"
+      },
+      {
+        "name": "structure_block",
+        "category": "Block",
+        "description": "block/structure_block.png",
+        "file": "/assets/img/textures/block/structure_block.png",
+        "path": "block/structure_block"
+      },
+      {
+        "name": "structure_block_corner",
+        "category": "Block",
+        "description": "block/structure_block_corner.png",
+        "file": "/assets/img/textures/block/structure_block_corner.png",
+        "path": "block/structure_block_corner"
+      },
+      {
+        "name": "structure_block_data",
+        "category": "Block",
+        "description": "block/structure_block_data.png",
+        "file": "/assets/img/textures/block/structure_block_data.png",
+        "path": "block/structure_block_data"
+      },
+      {
+        "name": "structure_block_load",
+        "category": "Block",
+        "description": "block/structure_block_load.png",
+        "file": "/assets/img/textures/block/structure_block_load.png",
+        "path": "block/structure_block_load"
+      },
+      {
+        "name": "structure_block_save",
+        "category": "Block",
+        "description": "block/structure_block_save.png",
+        "file": "/assets/img/textures/block/structure_block_save.png",
+        "path": "block/structure_block_save"
       }
     ],
-    "sounds": [],
+    "sounds": [
+      {
+        "name": "Block broken",
+        "event": "block.stone.break",
+        "files": [
+          "/assets/sounds/dig/stone1.ogg",
+          "/assets/sounds/dig/stone2.ogg",
+          "/assets/sounds/dig/stone3.ogg",
+          "/assets/sounds/dig/stone4.ogg"
+        ]
+      },
+      {
+        "name": "Footsteps",
+        "event": "block.stone.step",
+        "files": [
+          "/assets/sounds/step/stone1.ogg",
+          "/assets/sounds/step/stone2.ogg",
+          "/assets/sounds/step/stone3.ogg",
+          "/assets/sounds/step/stone4.ogg",
+          "/assets/sounds/step/stone5.ogg",
+          "/assets/sounds/step/stone6.ogg"
+        ]
+      },
+      {
+        "name": "Block placed",
+        "event": "block.stone.place",
+        "files": [
+          "/assets/sounds/dig/stone1.ogg",
+          "/assets/sounds/dig/stone2.ogg",
+          "/assets/sounds/dig/stone3.ogg",
+          "/assets/sounds/dig/stone4.ogg"
+        ]
+      },
+      {
+        "name": "Block breaking",
+        "event": "block.stone.hit",
+        "files": [
+          "/assets/sounds/step/stone1.ogg",
+          "/assets/sounds/step/stone2.ogg",
+          "/assets/sounds/step/stone3.ogg",
+          "/assets/sounds/step/stone4.ogg",
+          "/assets/sounds/step/stone5.ogg",
+          "/assets/sounds/step/stone6.ogg"
+        ]
+      },
+      {
+        "name": "Something falls on a block",
+        "event": "block.stone.fall",
+        "files": [
+          "/assets/sounds/step/stone1.ogg",
+          "/assets/sounds/step/stone2.ogg",
+          "/assets/sounds/step/stone3.ogg",
+          "/assets/sounds/step/stone4.ogg",
+          "/assets/sounds/step/stone5.ogg",
+          "/assets/sounds/step/stone6.ogg"
+        ]
+      }
+    ],
     "command": "/give @p minecraft:structure_block 1",
     "effects": [],
     "rarity": "Common",
@@ -726,9 +1189,73 @@
         "category": "Block",
         "description": "Block texture for Structure Void.",
         "file": "/assets/img/blocks/Structure_Void2.png"
+      },
+      {
+        "name": "structure_void",
+        "category": "Item",
+        "description": "item/structure_void.png",
+        "file": "/assets/img/textures/item/structure_void.png",
+        "path": "item/structure_void"
       }
     ],
-    "sounds": [],
+    "sounds": [
+      {
+        "name": "Block broken",
+        "event": "block.stone.break",
+        "files": [
+          "/assets/sounds/dig/stone1.ogg",
+          "/assets/sounds/dig/stone2.ogg",
+          "/assets/sounds/dig/stone3.ogg",
+          "/assets/sounds/dig/stone4.ogg"
+        ]
+      },
+      {
+        "name": "Footsteps",
+        "event": "block.stone.step",
+        "files": [
+          "/assets/sounds/step/stone1.ogg",
+          "/assets/sounds/step/stone2.ogg",
+          "/assets/sounds/step/stone3.ogg",
+          "/assets/sounds/step/stone4.ogg",
+          "/assets/sounds/step/stone5.ogg",
+          "/assets/sounds/step/stone6.ogg"
+        ]
+      },
+      {
+        "name": "Block placed",
+        "event": "block.stone.place",
+        "files": [
+          "/assets/sounds/dig/stone1.ogg",
+          "/assets/sounds/dig/stone2.ogg",
+          "/assets/sounds/dig/stone3.ogg",
+          "/assets/sounds/dig/stone4.ogg"
+        ]
+      },
+      {
+        "name": "Block breaking",
+        "event": "block.stone.hit",
+        "files": [
+          "/assets/sounds/step/stone1.ogg",
+          "/assets/sounds/step/stone2.ogg",
+          "/assets/sounds/step/stone3.ogg",
+          "/assets/sounds/step/stone4.ogg",
+          "/assets/sounds/step/stone5.ogg",
+          "/assets/sounds/step/stone6.ogg"
+        ]
+      },
+      {
+        "name": "Something falls on a block",
+        "event": "block.stone.fall",
+        "files": [
+          "/assets/sounds/step/stone1.ogg",
+          "/assets/sounds/step/stone2.ogg",
+          "/assets/sounds/step/stone3.ogg",
+          "/assets/sounds/step/stone4.ogg",
+          "/assets/sounds/step/stone5.ogg",
+          "/assets/sounds/step/stone6.ogg"
+        ]
+      }
+    ],
     "command": "/give @p minecraft:structure_void 1",
     "effects": [],
     "rarity": "Common",
@@ -846,9 +1373,73 @@
         "category": "Block",
         "description": "Block texture for Barrier.",
         "file": "/assets/img/blocks/Barrier.png"
+      },
+      {
+        "name": "barrier",
+        "category": "Item",
+        "description": "item/barrier.png",
+        "file": "/assets/img/textures/item/barrier.png",
+        "path": "item/barrier"
       }
     ],
-    "sounds": [],
+    "sounds": [
+      {
+        "name": "Block broken",
+        "event": "block.stone.break",
+        "files": [
+          "/assets/sounds/dig/stone1.ogg",
+          "/assets/sounds/dig/stone2.ogg",
+          "/assets/sounds/dig/stone3.ogg",
+          "/assets/sounds/dig/stone4.ogg"
+        ]
+      },
+      {
+        "name": "Footsteps",
+        "event": "block.stone.step",
+        "files": [
+          "/assets/sounds/step/stone1.ogg",
+          "/assets/sounds/step/stone2.ogg",
+          "/assets/sounds/step/stone3.ogg",
+          "/assets/sounds/step/stone4.ogg",
+          "/assets/sounds/step/stone5.ogg",
+          "/assets/sounds/step/stone6.ogg"
+        ]
+      },
+      {
+        "name": "Block placed",
+        "event": "block.stone.place",
+        "files": [
+          "/assets/sounds/dig/stone1.ogg",
+          "/assets/sounds/dig/stone2.ogg",
+          "/assets/sounds/dig/stone3.ogg",
+          "/assets/sounds/dig/stone4.ogg"
+        ]
+      },
+      {
+        "name": "Block breaking",
+        "event": "block.stone.hit",
+        "files": [
+          "/assets/sounds/step/stone1.ogg",
+          "/assets/sounds/step/stone2.ogg",
+          "/assets/sounds/step/stone3.ogg",
+          "/assets/sounds/step/stone4.ogg",
+          "/assets/sounds/step/stone5.ogg",
+          "/assets/sounds/step/stone6.ogg"
+        ]
+      },
+      {
+        "name": "Something falls on a block",
+        "event": "block.stone.fall",
+        "files": [
+          "/assets/sounds/step/stone1.ogg",
+          "/assets/sounds/step/stone2.ogg",
+          "/assets/sounds/step/stone3.ogg",
+          "/assets/sounds/step/stone4.ogg",
+          "/assets/sounds/step/stone5.ogg",
+          "/assets/sounds/step/stone6.ogg"
+        ]
+      }
+    ],
     "command": "/give @p minecraft:barrier 1",
     "effects": [],
     "rarity": "Common",
@@ -966,6 +1557,13 @@
         "category": "Item",
         "description": "Item texture for Debug Stick.",
         "file": "/assets/img/items/Debug_Stick.gif"
+      },
+      {
+        "name": "stick",
+        "category": "Item",
+        "description": "item/stick.png",
+        "file": "/assets/img/textures/item/stick.png",
+        "path": "item/stick"
       }
     ],
     "sounds": [],
@@ -1050,9 +1648,73 @@
         "category": "Block",
         "description": "Block texture for Test Instance Block.",
         "file": "/assets/img/blocks/Test_Instance_Block.png"
+      },
+      {
+        "name": "test_instance_block",
+        "category": "Block",
+        "description": "block/test_instance_block.png",
+        "file": "/assets/img/textures/block/test_instance_block.png",
+        "path": "block/test_instance_block"
       }
     ],
-    "sounds": [],
+    "sounds": [
+      {
+        "name": "Block broken",
+        "event": "block.stone.break",
+        "files": [
+          "/assets/sounds/dig/stone1.ogg",
+          "/assets/sounds/dig/stone2.ogg",
+          "/assets/sounds/dig/stone3.ogg",
+          "/assets/sounds/dig/stone4.ogg"
+        ]
+      },
+      {
+        "name": "Footsteps",
+        "event": "block.stone.step",
+        "files": [
+          "/assets/sounds/step/stone1.ogg",
+          "/assets/sounds/step/stone2.ogg",
+          "/assets/sounds/step/stone3.ogg",
+          "/assets/sounds/step/stone4.ogg",
+          "/assets/sounds/step/stone5.ogg",
+          "/assets/sounds/step/stone6.ogg"
+        ]
+      },
+      {
+        "name": "Block placed",
+        "event": "block.stone.place",
+        "files": [
+          "/assets/sounds/dig/stone1.ogg",
+          "/assets/sounds/dig/stone2.ogg",
+          "/assets/sounds/dig/stone3.ogg",
+          "/assets/sounds/dig/stone4.ogg"
+        ]
+      },
+      {
+        "name": "Block breaking",
+        "event": "block.stone.hit",
+        "files": [
+          "/assets/sounds/step/stone1.ogg",
+          "/assets/sounds/step/stone2.ogg",
+          "/assets/sounds/step/stone3.ogg",
+          "/assets/sounds/step/stone4.ogg",
+          "/assets/sounds/step/stone5.ogg",
+          "/assets/sounds/step/stone6.ogg"
+        ]
+      },
+      {
+        "name": "Something falls on a block",
+        "event": "block.stone.fall",
+        "files": [
+          "/assets/sounds/step/stone1.ogg",
+          "/assets/sounds/step/stone2.ogg",
+          "/assets/sounds/step/stone3.ogg",
+          "/assets/sounds/step/stone4.ogg",
+          "/assets/sounds/step/stone5.ogg",
+          "/assets/sounds/step/stone6.ogg"
+        ]
+      }
+    ],
     "command": "/give @p minecraft:test_instance_block 1",
     "effects": [],
     "rarity": "Common",
@@ -1170,9 +1832,94 @@
         "category": "Block",
         "description": "Block texture for Test Block (Start).",
         "file": "/assets/img/blocks/Test_Block_start.png"
+      },
+      {
+        "name": "test_block_log",
+        "category": "Block",
+        "description": "block/test_block_log.png",
+        "file": "/assets/img/textures/block/test_block_log.png",
+        "path": "block/test_block_log"
+      },
+      {
+        "name": "test_block_fail",
+        "category": "Block",
+        "description": "block/test_block_fail.png",
+        "file": "/assets/img/textures/block/test_block_fail.png",
+        "path": "block/test_block_fail"
+      },
+      {
+        "name": "test_block_accept",
+        "category": "Block",
+        "description": "block/test_block_accept.png",
+        "file": "/assets/img/textures/block/test_block_accept.png",
+        "path": "block/test_block_accept"
+      },
+      {
+        "name": "test_block_start",
+        "category": "Block",
+        "description": "block/test_block_start.png",
+        "file": "/assets/img/textures/block/test_block_start.png",
+        "path": "block/test_block_start"
       }
     ],
-    "sounds": [],
+    "sounds": [
+      {
+        "name": "Block broken",
+        "event": "block.stone.break",
+        "files": [
+          "/assets/sounds/dig/stone1.ogg",
+          "/assets/sounds/dig/stone2.ogg",
+          "/assets/sounds/dig/stone3.ogg",
+          "/assets/sounds/dig/stone4.ogg"
+        ]
+      },
+      {
+        "name": "Footsteps",
+        "event": "block.stone.step",
+        "files": [
+          "/assets/sounds/step/stone1.ogg",
+          "/assets/sounds/step/stone2.ogg",
+          "/assets/sounds/step/stone3.ogg",
+          "/assets/sounds/step/stone4.ogg",
+          "/assets/sounds/step/stone5.ogg",
+          "/assets/sounds/step/stone6.ogg"
+        ]
+      },
+      {
+        "name": "Block placed",
+        "event": "block.stone.place",
+        "files": [
+          "/assets/sounds/dig/stone1.ogg",
+          "/assets/sounds/dig/stone2.ogg",
+          "/assets/sounds/dig/stone3.ogg",
+          "/assets/sounds/dig/stone4.ogg"
+        ]
+      },
+      {
+        "name": "Block breaking",
+        "event": "block.stone.hit",
+        "files": [
+          "/assets/sounds/step/stone1.ogg",
+          "/assets/sounds/step/stone2.ogg",
+          "/assets/sounds/step/stone3.ogg",
+          "/assets/sounds/step/stone4.ogg",
+          "/assets/sounds/step/stone5.ogg",
+          "/assets/sounds/step/stone6.ogg"
+        ]
+      },
+      {
+        "name": "Something falls on a block",
+        "event": "block.stone.fall",
+        "files": [
+          "/assets/sounds/step/stone1.ogg",
+          "/assets/sounds/step/stone2.ogg",
+          "/assets/sounds/step/stone3.ogg",
+          "/assets/sounds/step/stone4.ogg",
+          "/assets/sounds/step/stone5.ogg",
+          "/assets/sounds/step/stone6.ogg"
+        ]
+      }
+    ],
     "command": "/give @p minecraft:test_block 1",
     "effects": [],
     "rarity": "Common",
@@ -1292,9 +2039,94 @@
         "category": "Block",
         "description": "Block texture for Test Block (Log).",
         "file": "/assets/img/blocks/Test_Block_log.png"
+      },
+      {
+        "name": "test_block_log",
+        "category": "Block",
+        "description": "block/test_block_log.png",
+        "file": "/assets/img/textures/block/test_block_log.png",
+        "path": "block/test_block_log"
+      },
+      {
+        "name": "test_block_fail",
+        "category": "Block",
+        "description": "block/test_block_fail.png",
+        "file": "/assets/img/textures/block/test_block_fail.png",
+        "path": "block/test_block_fail"
+      },
+      {
+        "name": "test_block_accept",
+        "category": "Block",
+        "description": "block/test_block_accept.png",
+        "file": "/assets/img/textures/block/test_block_accept.png",
+        "path": "block/test_block_accept"
+      },
+      {
+        "name": "test_block_start",
+        "category": "Block",
+        "description": "block/test_block_start.png",
+        "file": "/assets/img/textures/block/test_block_start.png",
+        "path": "block/test_block_start"
       }
     ],
-    "sounds": [],
+    "sounds": [
+      {
+        "name": "Block broken",
+        "event": "block.stone.break",
+        "files": [
+          "/assets/sounds/dig/stone1.ogg",
+          "/assets/sounds/dig/stone2.ogg",
+          "/assets/sounds/dig/stone3.ogg",
+          "/assets/sounds/dig/stone4.ogg"
+        ]
+      },
+      {
+        "name": "Footsteps",
+        "event": "block.stone.step",
+        "files": [
+          "/assets/sounds/step/stone1.ogg",
+          "/assets/sounds/step/stone2.ogg",
+          "/assets/sounds/step/stone3.ogg",
+          "/assets/sounds/step/stone4.ogg",
+          "/assets/sounds/step/stone5.ogg",
+          "/assets/sounds/step/stone6.ogg"
+        ]
+      },
+      {
+        "name": "Block placed",
+        "event": "block.stone.place",
+        "files": [
+          "/assets/sounds/dig/stone1.ogg",
+          "/assets/sounds/dig/stone2.ogg",
+          "/assets/sounds/dig/stone3.ogg",
+          "/assets/sounds/dig/stone4.ogg"
+        ]
+      },
+      {
+        "name": "Block breaking",
+        "event": "block.stone.hit",
+        "files": [
+          "/assets/sounds/step/stone1.ogg",
+          "/assets/sounds/step/stone2.ogg",
+          "/assets/sounds/step/stone3.ogg",
+          "/assets/sounds/step/stone4.ogg",
+          "/assets/sounds/step/stone5.ogg",
+          "/assets/sounds/step/stone6.ogg"
+        ]
+      },
+      {
+        "name": "Something falls on a block",
+        "event": "block.stone.fall",
+        "files": [
+          "/assets/sounds/step/stone1.ogg",
+          "/assets/sounds/step/stone2.ogg",
+          "/assets/sounds/step/stone3.ogg",
+          "/assets/sounds/step/stone4.ogg",
+          "/assets/sounds/step/stone5.ogg",
+          "/assets/sounds/step/stone6.ogg"
+        ]
+      }
+    ],
     "command": "/give @p minecraft:test_block 1",
     "effects": [],
     "rarity": "Common",
@@ -1414,9 +2246,94 @@
         "category": "Block",
         "description": "Block texture for Test Block (Fail).",
         "file": "/assets/img/blocks/Test_Block_fail.png"
+      },
+      {
+        "name": "test_block_log",
+        "category": "Block",
+        "description": "block/test_block_log.png",
+        "file": "/assets/img/textures/block/test_block_log.png",
+        "path": "block/test_block_log"
+      },
+      {
+        "name": "test_block_fail",
+        "category": "Block",
+        "description": "block/test_block_fail.png",
+        "file": "/assets/img/textures/block/test_block_fail.png",
+        "path": "block/test_block_fail"
+      },
+      {
+        "name": "test_block_accept",
+        "category": "Block",
+        "description": "block/test_block_accept.png",
+        "file": "/assets/img/textures/block/test_block_accept.png",
+        "path": "block/test_block_accept"
+      },
+      {
+        "name": "test_block_start",
+        "category": "Block",
+        "description": "block/test_block_start.png",
+        "file": "/assets/img/textures/block/test_block_start.png",
+        "path": "block/test_block_start"
       }
     ],
-    "sounds": [],
+    "sounds": [
+      {
+        "name": "Block broken",
+        "event": "block.stone.break",
+        "files": [
+          "/assets/sounds/dig/stone1.ogg",
+          "/assets/sounds/dig/stone2.ogg",
+          "/assets/sounds/dig/stone3.ogg",
+          "/assets/sounds/dig/stone4.ogg"
+        ]
+      },
+      {
+        "name": "Footsteps",
+        "event": "block.stone.step",
+        "files": [
+          "/assets/sounds/step/stone1.ogg",
+          "/assets/sounds/step/stone2.ogg",
+          "/assets/sounds/step/stone3.ogg",
+          "/assets/sounds/step/stone4.ogg",
+          "/assets/sounds/step/stone5.ogg",
+          "/assets/sounds/step/stone6.ogg"
+        ]
+      },
+      {
+        "name": "Block placed",
+        "event": "block.stone.place",
+        "files": [
+          "/assets/sounds/dig/stone1.ogg",
+          "/assets/sounds/dig/stone2.ogg",
+          "/assets/sounds/dig/stone3.ogg",
+          "/assets/sounds/dig/stone4.ogg"
+        ]
+      },
+      {
+        "name": "Block breaking",
+        "event": "block.stone.hit",
+        "files": [
+          "/assets/sounds/step/stone1.ogg",
+          "/assets/sounds/step/stone2.ogg",
+          "/assets/sounds/step/stone3.ogg",
+          "/assets/sounds/step/stone4.ogg",
+          "/assets/sounds/step/stone5.ogg",
+          "/assets/sounds/step/stone6.ogg"
+        ]
+      },
+      {
+        "name": "Something falls on a block",
+        "event": "block.stone.fall",
+        "files": [
+          "/assets/sounds/step/stone1.ogg",
+          "/assets/sounds/step/stone2.ogg",
+          "/assets/sounds/step/stone3.ogg",
+          "/assets/sounds/step/stone4.ogg",
+          "/assets/sounds/step/stone5.ogg",
+          "/assets/sounds/step/stone6.ogg"
+        ]
+      }
+    ],
     "command": "/give @p minecraft:test_block 1",
     "effects": [],
     "rarity": "Common",
@@ -1536,9 +2453,94 @@
         "category": "Block",
         "description": "Block texture for Test Block (Accept).",
         "file": "/assets/img/blocks/Test_Block_accept.png"
+      },
+      {
+        "name": "test_block_log",
+        "category": "Block",
+        "description": "block/test_block_log.png",
+        "file": "/assets/img/textures/block/test_block_log.png",
+        "path": "block/test_block_log"
+      },
+      {
+        "name": "test_block_fail",
+        "category": "Block",
+        "description": "block/test_block_fail.png",
+        "file": "/assets/img/textures/block/test_block_fail.png",
+        "path": "block/test_block_fail"
+      },
+      {
+        "name": "test_block_accept",
+        "category": "Block",
+        "description": "block/test_block_accept.png",
+        "file": "/assets/img/textures/block/test_block_accept.png",
+        "path": "block/test_block_accept"
+      },
+      {
+        "name": "test_block_start",
+        "category": "Block",
+        "description": "block/test_block_start.png",
+        "file": "/assets/img/textures/block/test_block_start.png",
+        "path": "block/test_block_start"
       }
     ],
-    "sounds": [],
+    "sounds": [
+      {
+        "name": "Block broken",
+        "event": "block.stone.break",
+        "files": [
+          "/assets/sounds/dig/stone1.ogg",
+          "/assets/sounds/dig/stone2.ogg",
+          "/assets/sounds/dig/stone3.ogg",
+          "/assets/sounds/dig/stone4.ogg"
+        ]
+      },
+      {
+        "name": "Footsteps",
+        "event": "block.stone.step",
+        "files": [
+          "/assets/sounds/step/stone1.ogg",
+          "/assets/sounds/step/stone2.ogg",
+          "/assets/sounds/step/stone3.ogg",
+          "/assets/sounds/step/stone4.ogg",
+          "/assets/sounds/step/stone5.ogg",
+          "/assets/sounds/step/stone6.ogg"
+        ]
+      },
+      {
+        "name": "Block placed",
+        "event": "block.stone.place",
+        "files": [
+          "/assets/sounds/dig/stone1.ogg",
+          "/assets/sounds/dig/stone2.ogg",
+          "/assets/sounds/dig/stone3.ogg",
+          "/assets/sounds/dig/stone4.ogg"
+        ]
+      },
+      {
+        "name": "Block breaking",
+        "event": "block.stone.hit",
+        "files": [
+          "/assets/sounds/step/stone1.ogg",
+          "/assets/sounds/step/stone2.ogg",
+          "/assets/sounds/step/stone3.ogg",
+          "/assets/sounds/step/stone4.ogg",
+          "/assets/sounds/step/stone5.ogg",
+          "/assets/sounds/step/stone6.ogg"
+        ]
+      },
+      {
+        "name": "Something falls on a block",
+        "event": "block.stone.fall",
+        "files": [
+          "/assets/sounds/step/stone1.ogg",
+          "/assets/sounds/step/stone2.ogg",
+          "/assets/sounds/step/stone3.ogg",
+          "/assets/sounds/step/stone4.ogg",
+          "/assets/sounds/step/stone5.ogg",
+          "/assets/sounds/step/stone6.ogg"
+        ]
+      }
+    ],
     "command": "/give @p minecraft:test_block 1",
     "effects": [],
     "rarity": "Common",
@@ -1658,9 +2660,178 @@
         "category": "Block",
         "description": "Block texture for Light Block (Level 15).",
         "file": "/assets/img/items/Light_15.png"
+      },
+      {
+        "name": "light_00",
+        "category": "Item",
+        "description": "item/light_00.png",
+        "file": "/assets/img/textures/item/light_00.png",
+        "path": "item/light_00"
+      },
+      {
+        "name": "light_01",
+        "category": "Item",
+        "description": "item/light_01.png",
+        "file": "/assets/img/textures/item/light_01.png",
+        "path": "item/light_01"
+      },
+      {
+        "name": "light_02",
+        "category": "Item",
+        "description": "item/light_02.png",
+        "file": "/assets/img/textures/item/light_02.png",
+        "path": "item/light_02"
+      },
+      {
+        "name": "light_03",
+        "category": "Item",
+        "description": "item/light_03.png",
+        "file": "/assets/img/textures/item/light_03.png",
+        "path": "item/light_03"
+      },
+      {
+        "name": "light_04",
+        "category": "Item",
+        "description": "item/light_04.png",
+        "file": "/assets/img/textures/item/light_04.png",
+        "path": "item/light_04"
+      },
+      {
+        "name": "light_05",
+        "category": "Item",
+        "description": "item/light_05.png",
+        "file": "/assets/img/textures/item/light_05.png",
+        "path": "item/light_05"
+      },
+      {
+        "name": "light_06",
+        "category": "Item",
+        "description": "item/light_06.png",
+        "file": "/assets/img/textures/item/light_06.png",
+        "path": "item/light_06"
+      },
+      {
+        "name": "light_07",
+        "category": "Item",
+        "description": "item/light_07.png",
+        "file": "/assets/img/textures/item/light_07.png",
+        "path": "item/light_07"
+      },
+      {
+        "name": "light_08",
+        "category": "Item",
+        "description": "item/light_08.png",
+        "file": "/assets/img/textures/item/light_08.png",
+        "path": "item/light_08"
+      },
+      {
+        "name": "light_09",
+        "category": "Item",
+        "description": "item/light_09.png",
+        "file": "/assets/img/textures/item/light_09.png",
+        "path": "item/light_09"
+      },
+      {
+        "name": "light_10",
+        "category": "Item",
+        "description": "item/light_10.png",
+        "file": "/assets/img/textures/item/light_10.png",
+        "path": "item/light_10"
+      },
+      {
+        "name": "light_11",
+        "category": "Item",
+        "description": "item/light_11.png",
+        "file": "/assets/img/textures/item/light_11.png",
+        "path": "item/light_11"
+      },
+      {
+        "name": "light_12",
+        "category": "Item",
+        "description": "item/light_12.png",
+        "file": "/assets/img/textures/item/light_12.png",
+        "path": "item/light_12"
+      },
+      {
+        "name": "light_13",
+        "category": "Item",
+        "description": "item/light_13.png",
+        "file": "/assets/img/textures/item/light_13.png",
+        "path": "item/light_13"
+      },
+      {
+        "name": "light_14",
+        "category": "Item",
+        "description": "item/light_14.png",
+        "file": "/assets/img/textures/item/light_14.png",
+        "path": "item/light_14"
+      },
+      {
+        "name": "light_15",
+        "category": "Item",
+        "description": "item/light_15.png",
+        "file": "/assets/img/textures/item/light_15.png",
+        "path": "item/light_15"
       }
     ],
-    "sounds": [],
+    "sounds": [
+      {
+        "name": "Block broken",
+        "event": "block.stone.break",
+        "files": [
+          "/assets/sounds/dig/stone1.ogg",
+          "/assets/sounds/dig/stone2.ogg",
+          "/assets/sounds/dig/stone3.ogg",
+          "/assets/sounds/dig/stone4.ogg"
+        ]
+      },
+      {
+        "name": "Footsteps",
+        "event": "block.stone.step",
+        "files": [
+          "/assets/sounds/step/stone1.ogg",
+          "/assets/sounds/step/stone2.ogg",
+          "/assets/sounds/step/stone3.ogg",
+          "/assets/sounds/step/stone4.ogg",
+          "/assets/sounds/step/stone5.ogg",
+          "/assets/sounds/step/stone6.ogg"
+        ]
+      },
+      {
+        "name": "Block placed",
+        "event": "block.stone.place",
+        "files": [
+          "/assets/sounds/dig/stone1.ogg",
+          "/assets/sounds/dig/stone2.ogg",
+          "/assets/sounds/dig/stone3.ogg",
+          "/assets/sounds/dig/stone4.ogg"
+        ]
+      },
+      {
+        "name": "Block breaking",
+        "event": "block.stone.hit",
+        "files": [
+          "/assets/sounds/step/stone1.ogg",
+          "/assets/sounds/step/stone2.ogg",
+          "/assets/sounds/step/stone3.ogg",
+          "/assets/sounds/step/stone4.ogg",
+          "/assets/sounds/step/stone5.ogg",
+          "/assets/sounds/step/stone6.ogg"
+        ]
+      },
+      {
+        "name": "Something falls on a block",
+        "event": "block.stone.fall",
+        "files": [
+          "/assets/sounds/step/stone1.ogg",
+          "/assets/sounds/step/stone2.ogg",
+          "/assets/sounds/step/stone3.ogg",
+          "/assets/sounds/step/stone4.ogg",
+          "/assets/sounds/step/stone5.ogg",
+          "/assets/sounds/step/stone6.ogg"
+        ]
+      }
+    ],
     "command": "/setblock ~ ~ ~ minecraft:light[level=15]",
     "effects": [],
     "rarity": "Common",
@@ -1780,9 +2951,178 @@
         "category": "Block",
         "description": "Block texture for Light Block (Level 14).",
         "file": "/assets/img/items/Light_14.png"
+      },
+      {
+        "name": "light_00",
+        "category": "Item",
+        "description": "item/light_00.png",
+        "file": "/assets/img/textures/item/light_00.png",
+        "path": "item/light_00"
+      },
+      {
+        "name": "light_01",
+        "category": "Item",
+        "description": "item/light_01.png",
+        "file": "/assets/img/textures/item/light_01.png",
+        "path": "item/light_01"
+      },
+      {
+        "name": "light_02",
+        "category": "Item",
+        "description": "item/light_02.png",
+        "file": "/assets/img/textures/item/light_02.png",
+        "path": "item/light_02"
+      },
+      {
+        "name": "light_03",
+        "category": "Item",
+        "description": "item/light_03.png",
+        "file": "/assets/img/textures/item/light_03.png",
+        "path": "item/light_03"
+      },
+      {
+        "name": "light_04",
+        "category": "Item",
+        "description": "item/light_04.png",
+        "file": "/assets/img/textures/item/light_04.png",
+        "path": "item/light_04"
+      },
+      {
+        "name": "light_05",
+        "category": "Item",
+        "description": "item/light_05.png",
+        "file": "/assets/img/textures/item/light_05.png",
+        "path": "item/light_05"
+      },
+      {
+        "name": "light_06",
+        "category": "Item",
+        "description": "item/light_06.png",
+        "file": "/assets/img/textures/item/light_06.png",
+        "path": "item/light_06"
+      },
+      {
+        "name": "light_07",
+        "category": "Item",
+        "description": "item/light_07.png",
+        "file": "/assets/img/textures/item/light_07.png",
+        "path": "item/light_07"
+      },
+      {
+        "name": "light_08",
+        "category": "Item",
+        "description": "item/light_08.png",
+        "file": "/assets/img/textures/item/light_08.png",
+        "path": "item/light_08"
+      },
+      {
+        "name": "light_09",
+        "category": "Item",
+        "description": "item/light_09.png",
+        "file": "/assets/img/textures/item/light_09.png",
+        "path": "item/light_09"
+      },
+      {
+        "name": "light_10",
+        "category": "Item",
+        "description": "item/light_10.png",
+        "file": "/assets/img/textures/item/light_10.png",
+        "path": "item/light_10"
+      },
+      {
+        "name": "light_11",
+        "category": "Item",
+        "description": "item/light_11.png",
+        "file": "/assets/img/textures/item/light_11.png",
+        "path": "item/light_11"
+      },
+      {
+        "name": "light_12",
+        "category": "Item",
+        "description": "item/light_12.png",
+        "file": "/assets/img/textures/item/light_12.png",
+        "path": "item/light_12"
+      },
+      {
+        "name": "light_13",
+        "category": "Item",
+        "description": "item/light_13.png",
+        "file": "/assets/img/textures/item/light_13.png",
+        "path": "item/light_13"
+      },
+      {
+        "name": "light_14",
+        "category": "Item",
+        "description": "item/light_14.png",
+        "file": "/assets/img/textures/item/light_14.png",
+        "path": "item/light_14"
+      },
+      {
+        "name": "light_15",
+        "category": "Item",
+        "description": "item/light_15.png",
+        "file": "/assets/img/textures/item/light_15.png",
+        "path": "item/light_15"
       }
     ],
-    "sounds": [],
+    "sounds": [
+      {
+        "name": "Block broken",
+        "event": "block.stone.break",
+        "files": [
+          "/assets/sounds/dig/stone1.ogg",
+          "/assets/sounds/dig/stone2.ogg",
+          "/assets/sounds/dig/stone3.ogg",
+          "/assets/sounds/dig/stone4.ogg"
+        ]
+      },
+      {
+        "name": "Footsteps",
+        "event": "block.stone.step",
+        "files": [
+          "/assets/sounds/step/stone1.ogg",
+          "/assets/sounds/step/stone2.ogg",
+          "/assets/sounds/step/stone3.ogg",
+          "/assets/sounds/step/stone4.ogg",
+          "/assets/sounds/step/stone5.ogg",
+          "/assets/sounds/step/stone6.ogg"
+        ]
+      },
+      {
+        "name": "Block placed",
+        "event": "block.stone.place",
+        "files": [
+          "/assets/sounds/dig/stone1.ogg",
+          "/assets/sounds/dig/stone2.ogg",
+          "/assets/sounds/dig/stone3.ogg",
+          "/assets/sounds/dig/stone4.ogg"
+        ]
+      },
+      {
+        "name": "Block breaking",
+        "event": "block.stone.hit",
+        "files": [
+          "/assets/sounds/step/stone1.ogg",
+          "/assets/sounds/step/stone2.ogg",
+          "/assets/sounds/step/stone3.ogg",
+          "/assets/sounds/step/stone4.ogg",
+          "/assets/sounds/step/stone5.ogg",
+          "/assets/sounds/step/stone6.ogg"
+        ]
+      },
+      {
+        "name": "Something falls on a block",
+        "event": "block.stone.fall",
+        "files": [
+          "/assets/sounds/step/stone1.ogg",
+          "/assets/sounds/step/stone2.ogg",
+          "/assets/sounds/step/stone3.ogg",
+          "/assets/sounds/step/stone4.ogg",
+          "/assets/sounds/step/stone5.ogg",
+          "/assets/sounds/step/stone6.ogg"
+        ]
+      }
+    ],
     "command": "/setblock ~ ~ ~ minecraft:light[level=14]",
     "effects": [],
     "rarity": "Common",
@@ -1902,9 +3242,178 @@
         "category": "Block",
         "description": "Block texture for Light Block (Level 13).",
         "file": "/assets/img/items/Light_13.png"
+      },
+      {
+        "name": "light_00",
+        "category": "Item",
+        "description": "item/light_00.png",
+        "file": "/assets/img/textures/item/light_00.png",
+        "path": "item/light_00"
+      },
+      {
+        "name": "light_01",
+        "category": "Item",
+        "description": "item/light_01.png",
+        "file": "/assets/img/textures/item/light_01.png",
+        "path": "item/light_01"
+      },
+      {
+        "name": "light_02",
+        "category": "Item",
+        "description": "item/light_02.png",
+        "file": "/assets/img/textures/item/light_02.png",
+        "path": "item/light_02"
+      },
+      {
+        "name": "light_03",
+        "category": "Item",
+        "description": "item/light_03.png",
+        "file": "/assets/img/textures/item/light_03.png",
+        "path": "item/light_03"
+      },
+      {
+        "name": "light_04",
+        "category": "Item",
+        "description": "item/light_04.png",
+        "file": "/assets/img/textures/item/light_04.png",
+        "path": "item/light_04"
+      },
+      {
+        "name": "light_05",
+        "category": "Item",
+        "description": "item/light_05.png",
+        "file": "/assets/img/textures/item/light_05.png",
+        "path": "item/light_05"
+      },
+      {
+        "name": "light_06",
+        "category": "Item",
+        "description": "item/light_06.png",
+        "file": "/assets/img/textures/item/light_06.png",
+        "path": "item/light_06"
+      },
+      {
+        "name": "light_07",
+        "category": "Item",
+        "description": "item/light_07.png",
+        "file": "/assets/img/textures/item/light_07.png",
+        "path": "item/light_07"
+      },
+      {
+        "name": "light_08",
+        "category": "Item",
+        "description": "item/light_08.png",
+        "file": "/assets/img/textures/item/light_08.png",
+        "path": "item/light_08"
+      },
+      {
+        "name": "light_09",
+        "category": "Item",
+        "description": "item/light_09.png",
+        "file": "/assets/img/textures/item/light_09.png",
+        "path": "item/light_09"
+      },
+      {
+        "name": "light_10",
+        "category": "Item",
+        "description": "item/light_10.png",
+        "file": "/assets/img/textures/item/light_10.png",
+        "path": "item/light_10"
+      },
+      {
+        "name": "light_11",
+        "category": "Item",
+        "description": "item/light_11.png",
+        "file": "/assets/img/textures/item/light_11.png",
+        "path": "item/light_11"
+      },
+      {
+        "name": "light_12",
+        "category": "Item",
+        "description": "item/light_12.png",
+        "file": "/assets/img/textures/item/light_12.png",
+        "path": "item/light_12"
+      },
+      {
+        "name": "light_13",
+        "category": "Item",
+        "description": "item/light_13.png",
+        "file": "/assets/img/textures/item/light_13.png",
+        "path": "item/light_13"
+      },
+      {
+        "name": "light_14",
+        "category": "Item",
+        "description": "item/light_14.png",
+        "file": "/assets/img/textures/item/light_14.png",
+        "path": "item/light_14"
+      },
+      {
+        "name": "light_15",
+        "category": "Item",
+        "description": "item/light_15.png",
+        "file": "/assets/img/textures/item/light_15.png",
+        "path": "item/light_15"
       }
     ],
-    "sounds": [],
+    "sounds": [
+      {
+        "name": "Block broken",
+        "event": "block.stone.break",
+        "files": [
+          "/assets/sounds/dig/stone1.ogg",
+          "/assets/sounds/dig/stone2.ogg",
+          "/assets/sounds/dig/stone3.ogg",
+          "/assets/sounds/dig/stone4.ogg"
+        ]
+      },
+      {
+        "name": "Footsteps",
+        "event": "block.stone.step",
+        "files": [
+          "/assets/sounds/step/stone1.ogg",
+          "/assets/sounds/step/stone2.ogg",
+          "/assets/sounds/step/stone3.ogg",
+          "/assets/sounds/step/stone4.ogg",
+          "/assets/sounds/step/stone5.ogg",
+          "/assets/sounds/step/stone6.ogg"
+        ]
+      },
+      {
+        "name": "Block placed",
+        "event": "block.stone.place",
+        "files": [
+          "/assets/sounds/dig/stone1.ogg",
+          "/assets/sounds/dig/stone2.ogg",
+          "/assets/sounds/dig/stone3.ogg",
+          "/assets/sounds/dig/stone4.ogg"
+        ]
+      },
+      {
+        "name": "Block breaking",
+        "event": "block.stone.hit",
+        "files": [
+          "/assets/sounds/step/stone1.ogg",
+          "/assets/sounds/step/stone2.ogg",
+          "/assets/sounds/step/stone3.ogg",
+          "/assets/sounds/step/stone4.ogg",
+          "/assets/sounds/step/stone5.ogg",
+          "/assets/sounds/step/stone6.ogg"
+        ]
+      },
+      {
+        "name": "Something falls on a block",
+        "event": "block.stone.fall",
+        "files": [
+          "/assets/sounds/step/stone1.ogg",
+          "/assets/sounds/step/stone2.ogg",
+          "/assets/sounds/step/stone3.ogg",
+          "/assets/sounds/step/stone4.ogg",
+          "/assets/sounds/step/stone5.ogg",
+          "/assets/sounds/step/stone6.ogg"
+        ]
+      }
+    ],
     "command": "/setblock ~ ~ ~ minecraft:light[level=13]",
     "effects": [],
     "rarity": "Common",
@@ -2024,9 +3533,178 @@
         "category": "Block",
         "description": "Block texture for Light Block (Level 12).",
         "file": "/assets/img/items/Light_12.png"
+      },
+      {
+        "name": "light_00",
+        "category": "Item",
+        "description": "item/light_00.png",
+        "file": "/assets/img/textures/item/light_00.png",
+        "path": "item/light_00"
+      },
+      {
+        "name": "light_01",
+        "category": "Item",
+        "description": "item/light_01.png",
+        "file": "/assets/img/textures/item/light_01.png",
+        "path": "item/light_01"
+      },
+      {
+        "name": "light_02",
+        "category": "Item",
+        "description": "item/light_02.png",
+        "file": "/assets/img/textures/item/light_02.png",
+        "path": "item/light_02"
+      },
+      {
+        "name": "light_03",
+        "category": "Item",
+        "description": "item/light_03.png",
+        "file": "/assets/img/textures/item/light_03.png",
+        "path": "item/light_03"
+      },
+      {
+        "name": "light_04",
+        "category": "Item",
+        "description": "item/light_04.png",
+        "file": "/assets/img/textures/item/light_04.png",
+        "path": "item/light_04"
+      },
+      {
+        "name": "light_05",
+        "category": "Item",
+        "description": "item/light_05.png",
+        "file": "/assets/img/textures/item/light_05.png",
+        "path": "item/light_05"
+      },
+      {
+        "name": "light_06",
+        "category": "Item",
+        "description": "item/light_06.png",
+        "file": "/assets/img/textures/item/light_06.png",
+        "path": "item/light_06"
+      },
+      {
+        "name": "light_07",
+        "category": "Item",
+        "description": "item/light_07.png",
+        "file": "/assets/img/textures/item/light_07.png",
+        "path": "item/light_07"
+      },
+      {
+        "name": "light_08",
+        "category": "Item",
+        "description": "item/light_08.png",
+        "file": "/assets/img/textures/item/light_08.png",
+        "path": "item/light_08"
+      },
+      {
+        "name": "light_09",
+        "category": "Item",
+        "description": "item/light_09.png",
+        "file": "/assets/img/textures/item/light_09.png",
+        "path": "item/light_09"
+      },
+      {
+        "name": "light_10",
+        "category": "Item",
+        "description": "item/light_10.png",
+        "file": "/assets/img/textures/item/light_10.png",
+        "path": "item/light_10"
+      },
+      {
+        "name": "light_11",
+        "category": "Item",
+        "description": "item/light_11.png",
+        "file": "/assets/img/textures/item/light_11.png",
+        "path": "item/light_11"
+      },
+      {
+        "name": "light_12",
+        "category": "Item",
+        "description": "item/light_12.png",
+        "file": "/assets/img/textures/item/light_12.png",
+        "path": "item/light_12"
+      },
+      {
+        "name": "light_13",
+        "category": "Item",
+        "description": "item/light_13.png",
+        "file": "/assets/img/textures/item/light_13.png",
+        "path": "item/light_13"
+      },
+      {
+        "name": "light_14",
+        "category": "Item",
+        "description": "item/light_14.png",
+        "file": "/assets/img/textures/item/light_14.png",
+        "path": "item/light_14"
+      },
+      {
+        "name": "light_15",
+        "category": "Item",
+        "description": "item/light_15.png",
+        "file": "/assets/img/textures/item/light_15.png",
+        "path": "item/light_15"
       }
     ],
-    "sounds": [],
+    "sounds": [
+      {
+        "name": "Block broken",
+        "event": "block.stone.break",
+        "files": [
+          "/assets/sounds/dig/stone1.ogg",
+          "/assets/sounds/dig/stone2.ogg",
+          "/assets/sounds/dig/stone3.ogg",
+          "/assets/sounds/dig/stone4.ogg"
+        ]
+      },
+      {
+        "name": "Footsteps",
+        "event": "block.stone.step",
+        "files": [
+          "/assets/sounds/step/stone1.ogg",
+          "/assets/sounds/step/stone2.ogg",
+          "/assets/sounds/step/stone3.ogg",
+          "/assets/sounds/step/stone4.ogg",
+          "/assets/sounds/step/stone5.ogg",
+          "/assets/sounds/step/stone6.ogg"
+        ]
+      },
+      {
+        "name": "Block placed",
+        "event": "block.stone.place",
+        "files": [
+          "/assets/sounds/dig/stone1.ogg",
+          "/assets/sounds/dig/stone2.ogg",
+          "/assets/sounds/dig/stone3.ogg",
+          "/assets/sounds/dig/stone4.ogg"
+        ]
+      },
+      {
+        "name": "Block breaking",
+        "event": "block.stone.hit",
+        "files": [
+          "/assets/sounds/step/stone1.ogg",
+          "/assets/sounds/step/stone2.ogg",
+          "/assets/sounds/step/stone3.ogg",
+          "/assets/sounds/step/stone4.ogg",
+          "/assets/sounds/step/stone5.ogg",
+          "/assets/sounds/step/stone6.ogg"
+        ]
+      },
+      {
+        "name": "Something falls on a block",
+        "event": "block.stone.fall",
+        "files": [
+          "/assets/sounds/step/stone1.ogg",
+          "/assets/sounds/step/stone2.ogg",
+          "/assets/sounds/step/stone3.ogg",
+          "/assets/sounds/step/stone4.ogg",
+          "/assets/sounds/step/stone5.ogg",
+          "/assets/sounds/step/stone6.ogg"
+        ]
+      }
+    ],
     "command": "/setblock ~ ~ ~ minecraft:light[level=12]",
     "effects": [],
     "rarity": "Common",
@@ -2146,9 +3824,178 @@
         "category": "Block",
         "description": "Block texture for Light Block (Level 11).",
         "file": "/assets/img/items/Light_11.png"
+      },
+      {
+        "name": "light_00",
+        "category": "Item",
+        "description": "item/light_00.png",
+        "file": "/assets/img/textures/item/light_00.png",
+        "path": "item/light_00"
+      },
+      {
+        "name": "light_01",
+        "category": "Item",
+        "description": "item/light_01.png",
+        "file": "/assets/img/textures/item/light_01.png",
+        "path": "item/light_01"
+      },
+      {
+        "name": "light_02",
+        "category": "Item",
+        "description": "item/light_02.png",
+        "file": "/assets/img/textures/item/light_02.png",
+        "path": "item/light_02"
+      },
+      {
+        "name": "light_03",
+        "category": "Item",
+        "description": "item/light_03.png",
+        "file": "/assets/img/textures/item/light_03.png",
+        "path": "item/light_03"
+      },
+      {
+        "name": "light_04",
+        "category": "Item",
+        "description": "item/light_04.png",
+        "file": "/assets/img/textures/item/light_04.png",
+        "path": "item/light_04"
+      },
+      {
+        "name": "light_05",
+        "category": "Item",
+        "description": "item/light_05.png",
+        "file": "/assets/img/textures/item/light_05.png",
+        "path": "item/light_05"
+      },
+      {
+        "name": "light_06",
+        "category": "Item",
+        "description": "item/light_06.png",
+        "file": "/assets/img/textures/item/light_06.png",
+        "path": "item/light_06"
+      },
+      {
+        "name": "light_07",
+        "category": "Item",
+        "description": "item/light_07.png",
+        "file": "/assets/img/textures/item/light_07.png",
+        "path": "item/light_07"
+      },
+      {
+        "name": "light_08",
+        "category": "Item",
+        "description": "item/light_08.png",
+        "file": "/assets/img/textures/item/light_08.png",
+        "path": "item/light_08"
+      },
+      {
+        "name": "light_09",
+        "category": "Item",
+        "description": "item/light_09.png",
+        "file": "/assets/img/textures/item/light_09.png",
+        "path": "item/light_09"
+      },
+      {
+        "name": "light_10",
+        "category": "Item",
+        "description": "item/light_10.png",
+        "file": "/assets/img/textures/item/light_10.png",
+        "path": "item/light_10"
+      },
+      {
+        "name": "light_11",
+        "category": "Item",
+        "description": "item/light_11.png",
+        "file": "/assets/img/textures/item/light_11.png",
+        "path": "item/light_11"
+      },
+      {
+        "name": "light_12",
+        "category": "Item",
+        "description": "item/light_12.png",
+        "file": "/assets/img/textures/item/light_12.png",
+        "path": "item/light_12"
+      },
+      {
+        "name": "light_13",
+        "category": "Item",
+        "description": "item/light_13.png",
+        "file": "/assets/img/textures/item/light_13.png",
+        "path": "item/light_13"
+      },
+      {
+        "name": "light_14",
+        "category": "Item",
+        "description": "item/light_14.png",
+        "file": "/assets/img/textures/item/light_14.png",
+        "path": "item/light_14"
+      },
+      {
+        "name": "light_15",
+        "category": "Item",
+        "description": "item/light_15.png",
+        "file": "/assets/img/textures/item/light_15.png",
+        "path": "item/light_15"
       }
     ],
-    "sounds": [],
+    "sounds": [
+      {
+        "name": "Block broken",
+        "event": "block.stone.break",
+        "files": [
+          "/assets/sounds/dig/stone1.ogg",
+          "/assets/sounds/dig/stone2.ogg",
+          "/assets/sounds/dig/stone3.ogg",
+          "/assets/sounds/dig/stone4.ogg"
+        ]
+      },
+      {
+        "name": "Footsteps",
+        "event": "block.stone.step",
+        "files": [
+          "/assets/sounds/step/stone1.ogg",
+          "/assets/sounds/step/stone2.ogg",
+          "/assets/sounds/step/stone3.ogg",
+          "/assets/sounds/step/stone4.ogg",
+          "/assets/sounds/step/stone5.ogg",
+          "/assets/sounds/step/stone6.ogg"
+        ]
+      },
+      {
+        "name": "Block placed",
+        "event": "block.stone.place",
+        "files": [
+          "/assets/sounds/dig/stone1.ogg",
+          "/assets/sounds/dig/stone2.ogg",
+          "/assets/sounds/dig/stone3.ogg",
+          "/assets/sounds/dig/stone4.ogg"
+        ]
+      },
+      {
+        "name": "Block breaking",
+        "event": "block.stone.hit",
+        "files": [
+          "/assets/sounds/step/stone1.ogg",
+          "/assets/sounds/step/stone2.ogg",
+          "/assets/sounds/step/stone3.ogg",
+          "/assets/sounds/step/stone4.ogg",
+          "/assets/sounds/step/stone5.ogg",
+          "/assets/sounds/step/stone6.ogg"
+        ]
+      },
+      {
+        "name": "Something falls on a block",
+        "event": "block.stone.fall",
+        "files": [
+          "/assets/sounds/step/stone1.ogg",
+          "/assets/sounds/step/stone2.ogg",
+          "/assets/sounds/step/stone3.ogg",
+          "/assets/sounds/step/stone4.ogg",
+          "/assets/sounds/step/stone5.ogg",
+          "/assets/sounds/step/stone6.ogg"
+        ]
+      }
+    ],
     "command": "/setblock ~ ~ ~ minecraft:light[level=11]",
     "effects": [],
     "rarity": "Common",
@@ -2268,9 +4115,178 @@
         "category": "Block",
         "description": "Block texture for Light Block (Level 10).",
         "file": "/assets/img/items/Light_10.png"
+      },
+      {
+        "name": "light_00",
+        "category": "Item",
+        "description": "item/light_00.png",
+        "file": "/assets/img/textures/item/light_00.png",
+        "path": "item/light_00"
+      },
+      {
+        "name": "light_01",
+        "category": "Item",
+        "description": "item/light_01.png",
+        "file": "/assets/img/textures/item/light_01.png",
+        "path": "item/light_01"
+      },
+      {
+        "name": "light_02",
+        "category": "Item",
+        "description": "item/light_02.png",
+        "file": "/assets/img/textures/item/light_02.png",
+        "path": "item/light_02"
+      },
+      {
+        "name": "light_03",
+        "category": "Item",
+        "description": "item/light_03.png",
+        "file": "/assets/img/textures/item/light_03.png",
+        "path": "item/light_03"
+      },
+      {
+        "name": "light_04",
+        "category": "Item",
+        "description": "item/light_04.png",
+        "file": "/assets/img/textures/item/light_04.png",
+        "path": "item/light_04"
+      },
+      {
+        "name": "light_05",
+        "category": "Item",
+        "description": "item/light_05.png",
+        "file": "/assets/img/textures/item/light_05.png",
+        "path": "item/light_05"
+      },
+      {
+        "name": "light_06",
+        "category": "Item",
+        "description": "item/light_06.png",
+        "file": "/assets/img/textures/item/light_06.png",
+        "path": "item/light_06"
+      },
+      {
+        "name": "light_07",
+        "category": "Item",
+        "description": "item/light_07.png",
+        "file": "/assets/img/textures/item/light_07.png",
+        "path": "item/light_07"
+      },
+      {
+        "name": "light_08",
+        "category": "Item",
+        "description": "item/light_08.png",
+        "file": "/assets/img/textures/item/light_08.png",
+        "path": "item/light_08"
+      },
+      {
+        "name": "light_09",
+        "category": "Item",
+        "description": "item/light_09.png",
+        "file": "/assets/img/textures/item/light_09.png",
+        "path": "item/light_09"
+      },
+      {
+        "name": "light_10",
+        "category": "Item",
+        "description": "item/light_10.png",
+        "file": "/assets/img/textures/item/light_10.png",
+        "path": "item/light_10"
+      },
+      {
+        "name": "light_11",
+        "category": "Item",
+        "description": "item/light_11.png",
+        "file": "/assets/img/textures/item/light_11.png",
+        "path": "item/light_11"
+      },
+      {
+        "name": "light_12",
+        "category": "Item",
+        "description": "item/light_12.png",
+        "file": "/assets/img/textures/item/light_12.png",
+        "path": "item/light_12"
+      },
+      {
+        "name": "light_13",
+        "category": "Item",
+        "description": "item/light_13.png",
+        "file": "/assets/img/textures/item/light_13.png",
+        "path": "item/light_13"
+      },
+      {
+        "name": "light_14",
+        "category": "Item",
+        "description": "item/light_14.png",
+        "file": "/assets/img/textures/item/light_14.png",
+        "path": "item/light_14"
+      },
+      {
+        "name": "light_15",
+        "category": "Item",
+        "description": "item/light_15.png",
+        "file": "/assets/img/textures/item/light_15.png",
+        "path": "item/light_15"
       }
     ],
-    "sounds": [],
+    "sounds": [
+      {
+        "name": "Block broken",
+        "event": "block.stone.break",
+        "files": [
+          "/assets/sounds/dig/stone1.ogg",
+          "/assets/sounds/dig/stone2.ogg",
+          "/assets/sounds/dig/stone3.ogg",
+          "/assets/sounds/dig/stone4.ogg"
+        ]
+      },
+      {
+        "name": "Footsteps",
+        "event": "block.stone.step",
+        "files": [
+          "/assets/sounds/step/stone1.ogg",
+          "/assets/sounds/step/stone2.ogg",
+          "/assets/sounds/step/stone3.ogg",
+          "/assets/sounds/step/stone4.ogg",
+          "/assets/sounds/step/stone5.ogg",
+          "/assets/sounds/step/stone6.ogg"
+        ]
+      },
+      {
+        "name": "Block placed",
+        "event": "block.stone.place",
+        "files": [
+          "/assets/sounds/dig/stone1.ogg",
+          "/assets/sounds/dig/stone2.ogg",
+          "/assets/sounds/dig/stone3.ogg",
+          "/assets/sounds/dig/stone4.ogg"
+        ]
+      },
+      {
+        "name": "Block breaking",
+        "event": "block.stone.hit",
+        "files": [
+          "/assets/sounds/step/stone1.ogg",
+          "/assets/sounds/step/stone2.ogg",
+          "/assets/sounds/step/stone3.ogg",
+          "/assets/sounds/step/stone4.ogg",
+          "/assets/sounds/step/stone5.ogg",
+          "/assets/sounds/step/stone6.ogg"
+        ]
+      },
+      {
+        "name": "Something falls on a block",
+        "event": "block.stone.fall",
+        "files": [
+          "/assets/sounds/step/stone1.ogg",
+          "/assets/sounds/step/stone2.ogg",
+          "/assets/sounds/step/stone3.ogg",
+          "/assets/sounds/step/stone4.ogg",
+          "/assets/sounds/step/stone5.ogg",
+          "/assets/sounds/step/stone6.ogg"
+        ]
+      }
+    ],
     "command": "/setblock ~ ~ ~ minecraft:light[level=10]",
     "effects": [],
     "rarity": "Common",
@@ -2390,9 +4406,178 @@
         "category": "Block",
         "description": "Block texture for Light Block (Level 9).",
         "file": "/assets/img/items/Light_9.png"
+      },
+      {
+        "name": "light_00",
+        "category": "Item",
+        "description": "item/light_00.png",
+        "file": "/assets/img/textures/item/light_00.png",
+        "path": "item/light_00"
+      },
+      {
+        "name": "light_01",
+        "category": "Item",
+        "description": "item/light_01.png",
+        "file": "/assets/img/textures/item/light_01.png",
+        "path": "item/light_01"
+      },
+      {
+        "name": "light_02",
+        "category": "Item",
+        "description": "item/light_02.png",
+        "file": "/assets/img/textures/item/light_02.png",
+        "path": "item/light_02"
+      },
+      {
+        "name": "light_03",
+        "category": "Item",
+        "description": "item/light_03.png",
+        "file": "/assets/img/textures/item/light_03.png",
+        "path": "item/light_03"
+      },
+      {
+        "name": "light_04",
+        "category": "Item",
+        "description": "item/light_04.png",
+        "file": "/assets/img/textures/item/light_04.png",
+        "path": "item/light_04"
+      },
+      {
+        "name": "light_05",
+        "category": "Item",
+        "description": "item/light_05.png",
+        "file": "/assets/img/textures/item/light_05.png",
+        "path": "item/light_05"
+      },
+      {
+        "name": "light_06",
+        "category": "Item",
+        "description": "item/light_06.png",
+        "file": "/assets/img/textures/item/light_06.png",
+        "path": "item/light_06"
+      },
+      {
+        "name": "light_07",
+        "category": "Item",
+        "description": "item/light_07.png",
+        "file": "/assets/img/textures/item/light_07.png",
+        "path": "item/light_07"
+      },
+      {
+        "name": "light_08",
+        "category": "Item",
+        "description": "item/light_08.png",
+        "file": "/assets/img/textures/item/light_08.png",
+        "path": "item/light_08"
+      },
+      {
+        "name": "light_09",
+        "category": "Item",
+        "description": "item/light_09.png",
+        "file": "/assets/img/textures/item/light_09.png",
+        "path": "item/light_09"
+      },
+      {
+        "name": "light_10",
+        "category": "Item",
+        "description": "item/light_10.png",
+        "file": "/assets/img/textures/item/light_10.png",
+        "path": "item/light_10"
+      },
+      {
+        "name": "light_11",
+        "category": "Item",
+        "description": "item/light_11.png",
+        "file": "/assets/img/textures/item/light_11.png",
+        "path": "item/light_11"
+      },
+      {
+        "name": "light_12",
+        "category": "Item",
+        "description": "item/light_12.png",
+        "file": "/assets/img/textures/item/light_12.png",
+        "path": "item/light_12"
+      },
+      {
+        "name": "light_13",
+        "category": "Item",
+        "description": "item/light_13.png",
+        "file": "/assets/img/textures/item/light_13.png",
+        "path": "item/light_13"
+      },
+      {
+        "name": "light_14",
+        "category": "Item",
+        "description": "item/light_14.png",
+        "file": "/assets/img/textures/item/light_14.png",
+        "path": "item/light_14"
+      },
+      {
+        "name": "light_15",
+        "category": "Item",
+        "description": "item/light_15.png",
+        "file": "/assets/img/textures/item/light_15.png",
+        "path": "item/light_15"
       }
     ],
-    "sounds": [],
+    "sounds": [
+      {
+        "name": "Block broken",
+        "event": "block.stone.break",
+        "files": [
+          "/assets/sounds/dig/stone1.ogg",
+          "/assets/sounds/dig/stone2.ogg",
+          "/assets/sounds/dig/stone3.ogg",
+          "/assets/sounds/dig/stone4.ogg"
+        ]
+      },
+      {
+        "name": "Footsteps",
+        "event": "block.stone.step",
+        "files": [
+          "/assets/sounds/step/stone1.ogg",
+          "/assets/sounds/step/stone2.ogg",
+          "/assets/sounds/step/stone3.ogg",
+          "/assets/sounds/step/stone4.ogg",
+          "/assets/sounds/step/stone5.ogg",
+          "/assets/sounds/step/stone6.ogg"
+        ]
+      },
+      {
+        "name": "Block placed",
+        "event": "block.stone.place",
+        "files": [
+          "/assets/sounds/dig/stone1.ogg",
+          "/assets/sounds/dig/stone2.ogg",
+          "/assets/sounds/dig/stone3.ogg",
+          "/assets/sounds/dig/stone4.ogg"
+        ]
+      },
+      {
+        "name": "Block breaking",
+        "event": "block.stone.hit",
+        "files": [
+          "/assets/sounds/step/stone1.ogg",
+          "/assets/sounds/step/stone2.ogg",
+          "/assets/sounds/step/stone3.ogg",
+          "/assets/sounds/step/stone4.ogg",
+          "/assets/sounds/step/stone5.ogg",
+          "/assets/sounds/step/stone6.ogg"
+        ]
+      },
+      {
+        "name": "Something falls on a block",
+        "event": "block.stone.fall",
+        "files": [
+          "/assets/sounds/step/stone1.ogg",
+          "/assets/sounds/step/stone2.ogg",
+          "/assets/sounds/step/stone3.ogg",
+          "/assets/sounds/step/stone4.ogg",
+          "/assets/sounds/step/stone5.ogg",
+          "/assets/sounds/step/stone6.ogg"
+        ]
+      }
+    ],
     "command": "/setblock ~ ~ ~ minecraft:light[level=9]",
     "effects": [],
     "rarity": "Common",
@@ -2512,9 +4697,178 @@
         "category": "Block",
         "description": "Block texture for Light Block (Level 8).",
         "file": "/assets/img/items/Light_8.png"
+      },
+      {
+        "name": "light_00",
+        "category": "Item",
+        "description": "item/light_00.png",
+        "file": "/assets/img/textures/item/light_00.png",
+        "path": "item/light_00"
+      },
+      {
+        "name": "light_01",
+        "category": "Item",
+        "description": "item/light_01.png",
+        "file": "/assets/img/textures/item/light_01.png",
+        "path": "item/light_01"
+      },
+      {
+        "name": "light_02",
+        "category": "Item",
+        "description": "item/light_02.png",
+        "file": "/assets/img/textures/item/light_02.png",
+        "path": "item/light_02"
+      },
+      {
+        "name": "light_03",
+        "category": "Item",
+        "description": "item/light_03.png",
+        "file": "/assets/img/textures/item/light_03.png",
+        "path": "item/light_03"
+      },
+      {
+        "name": "light_04",
+        "category": "Item",
+        "description": "item/light_04.png",
+        "file": "/assets/img/textures/item/light_04.png",
+        "path": "item/light_04"
+      },
+      {
+        "name": "light_05",
+        "category": "Item",
+        "description": "item/light_05.png",
+        "file": "/assets/img/textures/item/light_05.png",
+        "path": "item/light_05"
+      },
+      {
+        "name": "light_06",
+        "category": "Item",
+        "description": "item/light_06.png",
+        "file": "/assets/img/textures/item/light_06.png",
+        "path": "item/light_06"
+      },
+      {
+        "name": "light_07",
+        "category": "Item",
+        "description": "item/light_07.png",
+        "file": "/assets/img/textures/item/light_07.png",
+        "path": "item/light_07"
+      },
+      {
+        "name": "light_08",
+        "category": "Item",
+        "description": "item/light_08.png",
+        "file": "/assets/img/textures/item/light_08.png",
+        "path": "item/light_08"
+      },
+      {
+        "name": "light_09",
+        "category": "Item",
+        "description": "item/light_09.png",
+        "file": "/assets/img/textures/item/light_09.png",
+        "path": "item/light_09"
+      },
+      {
+        "name": "light_10",
+        "category": "Item",
+        "description": "item/light_10.png",
+        "file": "/assets/img/textures/item/light_10.png",
+        "path": "item/light_10"
+      },
+      {
+        "name": "light_11",
+        "category": "Item",
+        "description": "item/light_11.png",
+        "file": "/assets/img/textures/item/light_11.png",
+        "path": "item/light_11"
+      },
+      {
+        "name": "light_12",
+        "category": "Item",
+        "description": "item/light_12.png",
+        "file": "/assets/img/textures/item/light_12.png",
+        "path": "item/light_12"
+      },
+      {
+        "name": "light_13",
+        "category": "Item",
+        "description": "item/light_13.png",
+        "file": "/assets/img/textures/item/light_13.png",
+        "path": "item/light_13"
+      },
+      {
+        "name": "light_14",
+        "category": "Item",
+        "description": "item/light_14.png",
+        "file": "/assets/img/textures/item/light_14.png",
+        "path": "item/light_14"
+      },
+      {
+        "name": "light_15",
+        "category": "Item",
+        "description": "item/light_15.png",
+        "file": "/assets/img/textures/item/light_15.png",
+        "path": "item/light_15"
       }
     ],
-    "sounds": [],
+    "sounds": [
+      {
+        "name": "Block broken",
+        "event": "block.stone.break",
+        "files": [
+          "/assets/sounds/dig/stone1.ogg",
+          "/assets/sounds/dig/stone2.ogg",
+          "/assets/sounds/dig/stone3.ogg",
+          "/assets/sounds/dig/stone4.ogg"
+        ]
+      },
+      {
+        "name": "Footsteps",
+        "event": "block.stone.step",
+        "files": [
+          "/assets/sounds/step/stone1.ogg",
+          "/assets/sounds/step/stone2.ogg",
+          "/assets/sounds/step/stone3.ogg",
+          "/assets/sounds/step/stone4.ogg",
+          "/assets/sounds/step/stone5.ogg",
+          "/assets/sounds/step/stone6.ogg"
+        ]
+      },
+      {
+        "name": "Block placed",
+        "event": "block.stone.place",
+        "files": [
+          "/assets/sounds/dig/stone1.ogg",
+          "/assets/sounds/dig/stone2.ogg",
+          "/assets/sounds/dig/stone3.ogg",
+          "/assets/sounds/dig/stone4.ogg"
+        ]
+      },
+      {
+        "name": "Block breaking",
+        "event": "block.stone.hit",
+        "files": [
+          "/assets/sounds/step/stone1.ogg",
+          "/assets/sounds/step/stone2.ogg",
+          "/assets/sounds/step/stone3.ogg",
+          "/assets/sounds/step/stone4.ogg",
+          "/assets/sounds/step/stone5.ogg",
+          "/assets/sounds/step/stone6.ogg"
+        ]
+      },
+      {
+        "name": "Something falls on a block",
+        "event": "block.stone.fall",
+        "files": [
+          "/assets/sounds/step/stone1.ogg",
+          "/assets/sounds/step/stone2.ogg",
+          "/assets/sounds/step/stone3.ogg",
+          "/assets/sounds/step/stone4.ogg",
+          "/assets/sounds/step/stone5.ogg",
+          "/assets/sounds/step/stone6.ogg"
+        ]
+      }
+    ],
     "command": "/setblock ~ ~ ~ minecraft:light[level=8]",
     "effects": [],
     "rarity": "Common",
@@ -2634,9 +4988,178 @@
         "category": "Block",
         "description": "Block texture for Light Block (Level 7).",
         "file": "/assets/img/items/Light_7.png"
+      },
+      {
+        "name": "light_00",
+        "category": "Item",
+        "description": "item/light_00.png",
+        "file": "/assets/img/textures/item/light_00.png",
+        "path": "item/light_00"
+      },
+      {
+        "name": "light_01",
+        "category": "Item",
+        "description": "item/light_01.png",
+        "file": "/assets/img/textures/item/light_01.png",
+        "path": "item/light_01"
+      },
+      {
+        "name": "light_02",
+        "category": "Item",
+        "description": "item/light_02.png",
+        "file": "/assets/img/textures/item/light_02.png",
+        "path": "item/light_02"
+      },
+      {
+        "name": "light_03",
+        "category": "Item",
+        "description": "item/light_03.png",
+        "file": "/assets/img/textures/item/light_03.png",
+        "path": "item/light_03"
+      },
+      {
+        "name": "light_04",
+        "category": "Item",
+        "description": "item/light_04.png",
+        "file": "/assets/img/textures/item/light_04.png",
+        "path": "item/light_04"
+      },
+      {
+        "name": "light_05",
+        "category": "Item",
+        "description": "item/light_05.png",
+        "file": "/assets/img/textures/item/light_05.png",
+        "path": "item/light_05"
+      },
+      {
+        "name": "light_06",
+        "category": "Item",
+        "description": "item/light_06.png",
+        "file": "/assets/img/textures/item/light_06.png",
+        "path": "item/light_06"
+      },
+      {
+        "name": "light_07",
+        "category": "Item",
+        "description": "item/light_07.png",
+        "file": "/assets/img/textures/item/light_07.png",
+        "path": "item/light_07"
+      },
+      {
+        "name": "light_08",
+        "category": "Item",
+        "description": "item/light_08.png",
+        "file": "/assets/img/textures/item/light_08.png",
+        "path": "item/light_08"
+      },
+      {
+        "name": "light_09",
+        "category": "Item",
+        "description": "item/light_09.png",
+        "file": "/assets/img/textures/item/light_09.png",
+        "path": "item/light_09"
+      },
+      {
+        "name": "light_10",
+        "category": "Item",
+        "description": "item/light_10.png",
+        "file": "/assets/img/textures/item/light_10.png",
+        "path": "item/light_10"
+      },
+      {
+        "name": "light_11",
+        "category": "Item",
+        "description": "item/light_11.png",
+        "file": "/assets/img/textures/item/light_11.png",
+        "path": "item/light_11"
+      },
+      {
+        "name": "light_12",
+        "category": "Item",
+        "description": "item/light_12.png",
+        "file": "/assets/img/textures/item/light_12.png",
+        "path": "item/light_12"
+      },
+      {
+        "name": "light_13",
+        "category": "Item",
+        "description": "item/light_13.png",
+        "file": "/assets/img/textures/item/light_13.png",
+        "path": "item/light_13"
+      },
+      {
+        "name": "light_14",
+        "category": "Item",
+        "description": "item/light_14.png",
+        "file": "/assets/img/textures/item/light_14.png",
+        "path": "item/light_14"
+      },
+      {
+        "name": "light_15",
+        "category": "Item",
+        "description": "item/light_15.png",
+        "file": "/assets/img/textures/item/light_15.png",
+        "path": "item/light_15"
       }
     ],
-    "sounds": [],
+    "sounds": [
+      {
+        "name": "Block broken",
+        "event": "block.stone.break",
+        "files": [
+          "/assets/sounds/dig/stone1.ogg",
+          "/assets/sounds/dig/stone2.ogg",
+          "/assets/sounds/dig/stone3.ogg",
+          "/assets/sounds/dig/stone4.ogg"
+        ]
+      },
+      {
+        "name": "Footsteps",
+        "event": "block.stone.step",
+        "files": [
+          "/assets/sounds/step/stone1.ogg",
+          "/assets/sounds/step/stone2.ogg",
+          "/assets/sounds/step/stone3.ogg",
+          "/assets/sounds/step/stone4.ogg",
+          "/assets/sounds/step/stone5.ogg",
+          "/assets/sounds/step/stone6.ogg"
+        ]
+      },
+      {
+        "name": "Block placed",
+        "event": "block.stone.place",
+        "files": [
+          "/assets/sounds/dig/stone1.ogg",
+          "/assets/sounds/dig/stone2.ogg",
+          "/assets/sounds/dig/stone3.ogg",
+          "/assets/sounds/dig/stone4.ogg"
+        ]
+      },
+      {
+        "name": "Block breaking",
+        "event": "block.stone.hit",
+        "files": [
+          "/assets/sounds/step/stone1.ogg",
+          "/assets/sounds/step/stone2.ogg",
+          "/assets/sounds/step/stone3.ogg",
+          "/assets/sounds/step/stone4.ogg",
+          "/assets/sounds/step/stone5.ogg",
+          "/assets/sounds/step/stone6.ogg"
+        ]
+      },
+      {
+        "name": "Something falls on a block",
+        "event": "block.stone.fall",
+        "files": [
+          "/assets/sounds/step/stone1.ogg",
+          "/assets/sounds/step/stone2.ogg",
+          "/assets/sounds/step/stone3.ogg",
+          "/assets/sounds/step/stone4.ogg",
+          "/assets/sounds/step/stone5.ogg",
+          "/assets/sounds/step/stone6.ogg"
+        ]
+      }
+    ],
     "command": "/setblock ~ ~ ~ minecraft:light[level=7]",
     "effects": [],
     "rarity": "Common",
@@ -2756,9 +5279,178 @@
         "category": "Block",
         "description": "Block texture for Light Block (Level 6).",
         "file": "/assets/img/items/Light_6.png"
+      },
+      {
+        "name": "light_00",
+        "category": "Item",
+        "description": "item/light_00.png",
+        "file": "/assets/img/textures/item/light_00.png",
+        "path": "item/light_00"
+      },
+      {
+        "name": "light_01",
+        "category": "Item",
+        "description": "item/light_01.png",
+        "file": "/assets/img/textures/item/light_01.png",
+        "path": "item/light_01"
+      },
+      {
+        "name": "light_02",
+        "category": "Item",
+        "description": "item/light_02.png",
+        "file": "/assets/img/textures/item/light_02.png",
+        "path": "item/light_02"
+      },
+      {
+        "name": "light_03",
+        "category": "Item",
+        "description": "item/light_03.png",
+        "file": "/assets/img/textures/item/light_03.png",
+        "path": "item/light_03"
+      },
+      {
+        "name": "light_04",
+        "category": "Item",
+        "description": "item/light_04.png",
+        "file": "/assets/img/textures/item/light_04.png",
+        "path": "item/light_04"
+      },
+      {
+        "name": "light_05",
+        "category": "Item",
+        "description": "item/light_05.png",
+        "file": "/assets/img/textures/item/light_05.png",
+        "path": "item/light_05"
+      },
+      {
+        "name": "light_06",
+        "category": "Item",
+        "description": "item/light_06.png",
+        "file": "/assets/img/textures/item/light_06.png",
+        "path": "item/light_06"
+      },
+      {
+        "name": "light_07",
+        "category": "Item",
+        "description": "item/light_07.png",
+        "file": "/assets/img/textures/item/light_07.png",
+        "path": "item/light_07"
+      },
+      {
+        "name": "light_08",
+        "category": "Item",
+        "description": "item/light_08.png",
+        "file": "/assets/img/textures/item/light_08.png",
+        "path": "item/light_08"
+      },
+      {
+        "name": "light_09",
+        "category": "Item",
+        "description": "item/light_09.png",
+        "file": "/assets/img/textures/item/light_09.png",
+        "path": "item/light_09"
+      },
+      {
+        "name": "light_10",
+        "category": "Item",
+        "description": "item/light_10.png",
+        "file": "/assets/img/textures/item/light_10.png",
+        "path": "item/light_10"
+      },
+      {
+        "name": "light_11",
+        "category": "Item",
+        "description": "item/light_11.png",
+        "file": "/assets/img/textures/item/light_11.png",
+        "path": "item/light_11"
+      },
+      {
+        "name": "light_12",
+        "category": "Item",
+        "description": "item/light_12.png",
+        "file": "/assets/img/textures/item/light_12.png",
+        "path": "item/light_12"
+      },
+      {
+        "name": "light_13",
+        "category": "Item",
+        "description": "item/light_13.png",
+        "file": "/assets/img/textures/item/light_13.png",
+        "path": "item/light_13"
+      },
+      {
+        "name": "light_14",
+        "category": "Item",
+        "description": "item/light_14.png",
+        "file": "/assets/img/textures/item/light_14.png",
+        "path": "item/light_14"
+      },
+      {
+        "name": "light_15",
+        "category": "Item",
+        "description": "item/light_15.png",
+        "file": "/assets/img/textures/item/light_15.png",
+        "path": "item/light_15"
       }
     ],
-    "sounds": [],
+    "sounds": [
+      {
+        "name": "Block broken",
+        "event": "block.stone.break",
+        "files": [
+          "/assets/sounds/dig/stone1.ogg",
+          "/assets/sounds/dig/stone2.ogg",
+          "/assets/sounds/dig/stone3.ogg",
+          "/assets/sounds/dig/stone4.ogg"
+        ]
+      },
+      {
+        "name": "Footsteps",
+        "event": "block.stone.step",
+        "files": [
+          "/assets/sounds/step/stone1.ogg",
+          "/assets/sounds/step/stone2.ogg",
+          "/assets/sounds/step/stone3.ogg",
+          "/assets/sounds/step/stone4.ogg",
+          "/assets/sounds/step/stone5.ogg",
+          "/assets/sounds/step/stone6.ogg"
+        ]
+      },
+      {
+        "name": "Block placed",
+        "event": "block.stone.place",
+        "files": [
+          "/assets/sounds/dig/stone1.ogg",
+          "/assets/sounds/dig/stone2.ogg",
+          "/assets/sounds/dig/stone3.ogg",
+          "/assets/sounds/dig/stone4.ogg"
+        ]
+      },
+      {
+        "name": "Block breaking",
+        "event": "block.stone.hit",
+        "files": [
+          "/assets/sounds/step/stone1.ogg",
+          "/assets/sounds/step/stone2.ogg",
+          "/assets/sounds/step/stone3.ogg",
+          "/assets/sounds/step/stone4.ogg",
+          "/assets/sounds/step/stone5.ogg",
+          "/assets/sounds/step/stone6.ogg"
+        ]
+      },
+      {
+        "name": "Something falls on a block",
+        "event": "block.stone.fall",
+        "files": [
+          "/assets/sounds/step/stone1.ogg",
+          "/assets/sounds/step/stone2.ogg",
+          "/assets/sounds/step/stone3.ogg",
+          "/assets/sounds/step/stone4.ogg",
+          "/assets/sounds/step/stone5.ogg",
+          "/assets/sounds/step/stone6.ogg"
+        ]
+      }
+    ],
     "command": "/setblock ~ ~ ~ minecraft:light[level=6]",
     "effects": [],
     "rarity": "Common",
@@ -2878,9 +5570,178 @@
         "category": "Block",
         "description": "Block texture for Light Block (Level 5).",
         "file": "/assets/img/items/Light_5.png"
+      },
+      {
+        "name": "light_00",
+        "category": "Item",
+        "description": "item/light_00.png",
+        "file": "/assets/img/textures/item/light_00.png",
+        "path": "item/light_00"
+      },
+      {
+        "name": "light_01",
+        "category": "Item",
+        "description": "item/light_01.png",
+        "file": "/assets/img/textures/item/light_01.png",
+        "path": "item/light_01"
+      },
+      {
+        "name": "light_02",
+        "category": "Item",
+        "description": "item/light_02.png",
+        "file": "/assets/img/textures/item/light_02.png",
+        "path": "item/light_02"
+      },
+      {
+        "name": "light_03",
+        "category": "Item",
+        "description": "item/light_03.png",
+        "file": "/assets/img/textures/item/light_03.png",
+        "path": "item/light_03"
+      },
+      {
+        "name": "light_04",
+        "category": "Item",
+        "description": "item/light_04.png",
+        "file": "/assets/img/textures/item/light_04.png",
+        "path": "item/light_04"
+      },
+      {
+        "name": "light_05",
+        "category": "Item",
+        "description": "item/light_05.png",
+        "file": "/assets/img/textures/item/light_05.png",
+        "path": "item/light_05"
+      },
+      {
+        "name": "light_06",
+        "category": "Item",
+        "description": "item/light_06.png",
+        "file": "/assets/img/textures/item/light_06.png",
+        "path": "item/light_06"
+      },
+      {
+        "name": "light_07",
+        "category": "Item",
+        "description": "item/light_07.png",
+        "file": "/assets/img/textures/item/light_07.png",
+        "path": "item/light_07"
+      },
+      {
+        "name": "light_08",
+        "category": "Item",
+        "description": "item/light_08.png",
+        "file": "/assets/img/textures/item/light_08.png",
+        "path": "item/light_08"
+      },
+      {
+        "name": "light_09",
+        "category": "Item",
+        "description": "item/light_09.png",
+        "file": "/assets/img/textures/item/light_09.png",
+        "path": "item/light_09"
+      },
+      {
+        "name": "light_10",
+        "category": "Item",
+        "description": "item/light_10.png",
+        "file": "/assets/img/textures/item/light_10.png",
+        "path": "item/light_10"
+      },
+      {
+        "name": "light_11",
+        "category": "Item",
+        "description": "item/light_11.png",
+        "file": "/assets/img/textures/item/light_11.png",
+        "path": "item/light_11"
+      },
+      {
+        "name": "light_12",
+        "category": "Item",
+        "description": "item/light_12.png",
+        "file": "/assets/img/textures/item/light_12.png",
+        "path": "item/light_12"
+      },
+      {
+        "name": "light_13",
+        "category": "Item",
+        "description": "item/light_13.png",
+        "file": "/assets/img/textures/item/light_13.png",
+        "path": "item/light_13"
+      },
+      {
+        "name": "light_14",
+        "category": "Item",
+        "description": "item/light_14.png",
+        "file": "/assets/img/textures/item/light_14.png",
+        "path": "item/light_14"
+      },
+      {
+        "name": "light_15",
+        "category": "Item",
+        "description": "item/light_15.png",
+        "file": "/assets/img/textures/item/light_15.png",
+        "path": "item/light_15"
       }
     ],
-    "sounds": [],
+    "sounds": [
+      {
+        "name": "Block broken",
+        "event": "block.stone.break",
+        "files": [
+          "/assets/sounds/dig/stone1.ogg",
+          "/assets/sounds/dig/stone2.ogg",
+          "/assets/sounds/dig/stone3.ogg",
+          "/assets/sounds/dig/stone4.ogg"
+        ]
+      },
+      {
+        "name": "Footsteps",
+        "event": "block.stone.step",
+        "files": [
+          "/assets/sounds/step/stone1.ogg",
+          "/assets/sounds/step/stone2.ogg",
+          "/assets/sounds/step/stone3.ogg",
+          "/assets/sounds/step/stone4.ogg",
+          "/assets/sounds/step/stone5.ogg",
+          "/assets/sounds/step/stone6.ogg"
+        ]
+      },
+      {
+        "name": "Block placed",
+        "event": "block.stone.place",
+        "files": [
+          "/assets/sounds/dig/stone1.ogg",
+          "/assets/sounds/dig/stone2.ogg",
+          "/assets/sounds/dig/stone3.ogg",
+          "/assets/sounds/dig/stone4.ogg"
+        ]
+      },
+      {
+        "name": "Block breaking",
+        "event": "block.stone.hit",
+        "files": [
+          "/assets/sounds/step/stone1.ogg",
+          "/assets/sounds/step/stone2.ogg",
+          "/assets/sounds/step/stone3.ogg",
+          "/assets/sounds/step/stone4.ogg",
+          "/assets/sounds/step/stone5.ogg",
+          "/assets/sounds/step/stone6.ogg"
+        ]
+      },
+      {
+        "name": "Something falls on a block",
+        "event": "block.stone.fall",
+        "files": [
+          "/assets/sounds/step/stone1.ogg",
+          "/assets/sounds/step/stone2.ogg",
+          "/assets/sounds/step/stone3.ogg",
+          "/assets/sounds/step/stone4.ogg",
+          "/assets/sounds/step/stone5.ogg",
+          "/assets/sounds/step/stone6.ogg"
+        ]
+      }
+    ],
     "command": "/setblock ~ ~ ~ minecraft:light[level=5]",
     "effects": [],
     "rarity": "Common",
@@ -3000,9 +5861,178 @@
         "category": "Block",
         "description": "Block texture for Light Block (Level 4).",
         "file": "/assets/img/items/Light_4.png"
+      },
+      {
+        "name": "light_00",
+        "category": "Item",
+        "description": "item/light_00.png",
+        "file": "/assets/img/textures/item/light_00.png",
+        "path": "item/light_00"
+      },
+      {
+        "name": "light_01",
+        "category": "Item",
+        "description": "item/light_01.png",
+        "file": "/assets/img/textures/item/light_01.png",
+        "path": "item/light_01"
+      },
+      {
+        "name": "light_02",
+        "category": "Item",
+        "description": "item/light_02.png",
+        "file": "/assets/img/textures/item/light_02.png",
+        "path": "item/light_02"
+      },
+      {
+        "name": "light_03",
+        "category": "Item",
+        "description": "item/light_03.png",
+        "file": "/assets/img/textures/item/light_03.png",
+        "path": "item/light_03"
+      },
+      {
+        "name": "light_04",
+        "category": "Item",
+        "description": "item/light_04.png",
+        "file": "/assets/img/textures/item/light_04.png",
+        "path": "item/light_04"
+      },
+      {
+        "name": "light_05",
+        "category": "Item",
+        "description": "item/light_05.png",
+        "file": "/assets/img/textures/item/light_05.png",
+        "path": "item/light_05"
+      },
+      {
+        "name": "light_06",
+        "category": "Item",
+        "description": "item/light_06.png",
+        "file": "/assets/img/textures/item/light_06.png",
+        "path": "item/light_06"
+      },
+      {
+        "name": "light_07",
+        "category": "Item",
+        "description": "item/light_07.png",
+        "file": "/assets/img/textures/item/light_07.png",
+        "path": "item/light_07"
+      },
+      {
+        "name": "light_08",
+        "category": "Item",
+        "description": "item/light_08.png",
+        "file": "/assets/img/textures/item/light_08.png",
+        "path": "item/light_08"
+      },
+      {
+        "name": "light_09",
+        "category": "Item",
+        "description": "item/light_09.png",
+        "file": "/assets/img/textures/item/light_09.png",
+        "path": "item/light_09"
+      },
+      {
+        "name": "light_10",
+        "category": "Item",
+        "description": "item/light_10.png",
+        "file": "/assets/img/textures/item/light_10.png",
+        "path": "item/light_10"
+      },
+      {
+        "name": "light_11",
+        "category": "Item",
+        "description": "item/light_11.png",
+        "file": "/assets/img/textures/item/light_11.png",
+        "path": "item/light_11"
+      },
+      {
+        "name": "light_12",
+        "category": "Item",
+        "description": "item/light_12.png",
+        "file": "/assets/img/textures/item/light_12.png",
+        "path": "item/light_12"
+      },
+      {
+        "name": "light_13",
+        "category": "Item",
+        "description": "item/light_13.png",
+        "file": "/assets/img/textures/item/light_13.png",
+        "path": "item/light_13"
+      },
+      {
+        "name": "light_14",
+        "category": "Item",
+        "description": "item/light_14.png",
+        "file": "/assets/img/textures/item/light_14.png",
+        "path": "item/light_14"
+      },
+      {
+        "name": "light_15",
+        "category": "Item",
+        "description": "item/light_15.png",
+        "file": "/assets/img/textures/item/light_15.png",
+        "path": "item/light_15"
       }
     ],
-    "sounds": [],
+    "sounds": [
+      {
+        "name": "Block broken",
+        "event": "block.stone.break",
+        "files": [
+          "/assets/sounds/dig/stone1.ogg",
+          "/assets/sounds/dig/stone2.ogg",
+          "/assets/sounds/dig/stone3.ogg",
+          "/assets/sounds/dig/stone4.ogg"
+        ]
+      },
+      {
+        "name": "Footsteps",
+        "event": "block.stone.step",
+        "files": [
+          "/assets/sounds/step/stone1.ogg",
+          "/assets/sounds/step/stone2.ogg",
+          "/assets/sounds/step/stone3.ogg",
+          "/assets/sounds/step/stone4.ogg",
+          "/assets/sounds/step/stone5.ogg",
+          "/assets/sounds/step/stone6.ogg"
+        ]
+      },
+      {
+        "name": "Block placed",
+        "event": "block.stone.place",
+        "files": [
+          "/assets/sounds/dig/stone1.ogg",
+          "/assets/sounds/dig/stone2.ogg",
+          "/assets/sounds/dig/stone3.ogg",
+          "/assets/sounds/dig/stone4.ogg"
+        ]
+      },
+      {
+        "name": "Block breaking",
+        "event": "block.stone.hit",
+        "files": [
+          "/assets/sounds/step/stone1.ogg",
+          "/assets/sounds/step/stone2.ogg",
+          "/assets/sounds/step/stone3.ogg",
+          "/assets/sounds/step/stone4.ogg",
+          "/assets/sounds/step/stone5.ogg",
+          "/assets/sounds/step/stone6.ogg"
+        ]
+      },
+      {
+        "name": "Something falls on a block",
+        "event": "block.stone.fall",
+        "files": [
+          "/assets/sounds/step/stone1.ogg",
+          "/assets/sounds/step/stone2.ogg",
+          "/assets/sounds/step/stone3.ogg",
+          "/assets/sounds/step/stone4.ogg",
+          "/assets/sounds/step/stone5.ogg",
+          "/assets/sounds/step/stone6.ogg"
+        ]
+      }
+    ],
     "command": "/setblock ~ ~ ~ minecraft:light[level=4]",
     "effects": [],
     "rarity": "Common",
@@ -3122,9 +6152,178 @@
         "category": "Block",
         "description": "Block texture for Light Block (Level 3).",
         "file": "/assets/img/items/Light_3.png"
+      },
+      {
+        "name": "light_00",
+        "category": "Item",
+        "description": "item/light_00.png",
+        "file": "/assets/img/textures/item/light_00.png",
+        "path": "item/light_00"
+      },
+      {
+        "name": "light_01",
+        "category": "Item",
+        "description": "item/light_01.png",
+        "file": "/assets/img/textures/item/light_01.png",
+        "path": "item/light_01"
+      },
+      {
+        "name": "light_02",
+        "category": "Item",
+        "description": "item/light_02.png",
+        "file": "/assets/img/textures/item/light_02.png",
+        "path": "item/light_02"
+      },
+      {
+        "name": "light_03",
+        "category": "Item",
+        "description": "item/light_03.png",
+        "file": "/assets/img/textures/item/light_03.png",
+        "path": "item/light_03"
+      },
+      {
+        "name": "light_04",
+        "category": "Item",
+        "description": "item/light_04.png",
+        "file": "/assets/img/textures/item/light_04.png",
+        "path": "item/light_04"
+      },
+      {
+        "name": "light_05",
+        "category": "Item",
+        "description": "item/light_05.png",
+        "file": "/assets/img/textures/item/light_05.png",
+        "path": "item/light_05"
+      },
+      {
+        "name": "light_06",
+        "category": "Item",
+        "description": "item/light_06.png",
+        "file": "/assets/img/textures/item/light_06.png",
+        "path": "item/light_06"
+      },
+      {
+        "name": "light_07",
+        "category": "Item",
+        "description": "item/light_07.png",
+        "file": "/assets/img/textures/item/light_07.png",
+        "path": "item/light_07"
+      },
+      {
+        "name": "light_08",
+        "category": "Item",
+        "description": "item/light_08.png",
+        "file": "/assets/img/textures/item/light_08.png",
+        "path": "item/light_08"
+      },
+      {
+        "name": "light_09",
+        "category": "Item",
+        "description": "item/light_09.png",
+        "file": "/assets/img/textures/item/light_09.png",
+        "path": "item/light_09"
+      },
+      {
+        "name": "light_10",
+        "category": "Item",
+        "description": "item/light_10.png",
+        "file": "/assets/img/textures/item/light_10.png",
+        "path": "item/light_10"
+      },
+      {
+        "name": "light_11",
+        "category": "Item",
+        "description": "item/light_11.png",
+        "file": "/assets/img/textures/item/light_11.png",
+        "path": "item/light_11"
+      },
+      {
+        "name": "light_12",
+        "category": "Item",
+        "description": "item/light_12.png",
+        "file": "/assets/img/textures/item/light_12.png",
+        "path": "item/light_12"
+      },
+      {
+        "name": "light_13",
+        "category": "Item",
+        "description": "item/light_13.png",
+        "file": "/assets/img/textures/item/light_13.png",
+        "path": "item/light_13"
+      },
+      {
+        "name": "light_14",
+        "category": "Item",
+        "description": "item/light_14.png",
+        "file": "/assets/img/textures/item/light_14.png",
+        "path": "item/light_14"
+      },
+      {
+        "name": "light_15",
+        "category": "Item",
+        "description": "item/light_15.png",
+        "file": "/assets/img/textures/item/light_15.png",
+        "path": "item/light_15"
       }
     ],
-    "sounds": [],
+    "sounds": [
+      {
+        "name": "Block broken",
+        "event": "block.stone.break",
+        "files": [
+          "/assets/sounds/dig/stone1.ogg",
+          "/assets/sounds/dig/stone2.ogg",
+          "/assets/sounds/dig/stone3.ogg",
+          "/assets/sounds/dig/stone4.ogg"
+        ]
+      },
+      {
+        "name": "Footsteps",
+        "event": "block.stone.step",
+        "files": [
+          "/assets/sounds/step/stone1.ogg",
+          "/assets/sounds/step/stone2.ogg",
+          "/assets/sounds/step/stone3.ogg",
+          "/assets/sounds/step/stone4.ogg",
+          "/assets/sounds/step/stone5.ogg",
+          "/assets/sounds/step/stone6.ogg"
+        ]
+      },
+      {
+        "name": "Block placed",
+        "event": "block.stone.place",
+        "files": [
+          "/assets/sounds/dig/stone1.ogg",
+          "/assets/sounds/dig/stone2.ogg",
+          "/assets/sounds/dig/stone3.ogg",
+          "/assets/sounds/dig/stone4.ogg"
+        ]
+      },
+      {
+        "name": "Block breaking",
+        "event": "block.stone.hit",
+        "files": [
+          "/assets/sounds/step/stone1.ogg",
+          "/assets/sounds/step/stone2.ogg",
+          "/assets/sounds/step/stone3.ogg",
+          "/assets/sounds/step/stone4.ogg",
+          "/assets/sounds/step/stone5.ogg",
+          "/assets/sounds/step/stone6.ogg"
+        ]
+      },
+      {
+        "name": "Something falls on a block",
+        "event": "block.stone.fall",
+        "files": [
+          "/assets/sounds/step/stone1.ogg",
+          "/assets/sounds/step/stone2.ogg",
+          "/assets/sounds/step/stone3.ogg",
+          "/assets/sounds/step/stone4.ogg",
+          "/assets/sounds/step/stone5.ogg",
+          "/assets/sounds/step/stone6.ogg"
+        ]
+      }
+    ],
     "command": "/setblock ~ ~ ~ minecraft:light[level=3]",
     "effects": [],
     "rarity": "Common",
@@ -3244,9 +6443,178 @@
         "category": "Block",
         "description": "Block texture for Light Block (Level 2).",
         "file": "/assets/img/items/Light_2.png"
+      },
+      {
+        "name": "light_00",
+        "category": "Item",
+        "description": "item/light_00.png",
+        "file": "/assets/img/textures/item/light_00.png",
+        "path": "item/light_00"
+      },
+      {
+        "name": "light_01",
+        "category": "Item",
+        "description": "item/light_01.png",
+        "file": "/assets/img/textures/item/light_01.png",
+        "path": "item/light_01"
+      },
+      {
+        "name": "light_02",
+        "category": "Item",
+        "description": "item/light_02.png",
+        "file": "/assets/img/textures/item/light_02.png",
+        "path": "item/light_02"
+      },
+      {
+        "name": "light_03",
+        "category": "Item",
+        "description": "item/light_03.png",
+        "file": "/assets/img/textures/item/light_03.png",
+        "path": "item/light_03"
+      },
+      {
+        "name": "light_04",
+        "category": "Item",
+        "description": "item/light_04.png",
+        "file": "/assets/img/textures/item/light_04.png",
+        "path": "item/light_04"
+      },
+      {
+        "name": "light_05",
+        "category": "Item",
+        "description": "item/light_05.png",
+        "file": "/assets/img/textures/item/light_05.png",
+        "path": "item/light_05"
+      },
+      {
+        "name": "light_06",
+        "category": "Item",
+        "description": "item/light_06.png",
+        "file": "/assets/img/textures/item/light_06.png",
+        "path": "item/light_06"
+      },
+      {
+        "name": "light_07",
+        "category": "Item",
+        "description": "item/light_07.png",
+        "file": "/assets/img/textures/item/light_07.png",
+        "path": "item/light_07"
+      },
+      {
+        "name": "light_08",
+        "category": "Item",
+        "description": "item/light_08.png",
+        "file": "/assets/img/textures/item/light_08.png",
+        "path": "item/light_08"
+      },
+      {
+        "name": "light_09",
+        "category": "Item",
+        "description": "item/light_09.png",
+        "file": "/assets/img/textures/item/light_09.png",
+        "path": "item/light_09"
+      },
+      {
+        "name": "light_10",
+        "category": "Item",
+        "description": "item/light_10.png",
+        "file": "/assets/img/textures/item/light_10.png",
+        "path": "item/light_10"
+      },
+      {
+        "name": "light_11",
+        "category": "Item",
+        "description": "item/light_11.png",
+        "file": "/assets/img/textures/item/light_11.png",
+        "path": "item/light_11"
+      },
+      {
+        "name": "light_12",
+        "category": "Item",
+        "description": "item/light_12.png",
+        "file": "/assets/img/textures/item/light_12.png",
+        "path": "item/light_12"
+      },
+      {
+        "name": "light_13",
+        "category": "Item",
+        "description": "item/light_13.png",
+        "file": "/assets/img/textures/item/light_13.png",
+        "path": "item/light_13"
+      },
+      {
+        "name": "light_14",
+        "category": "Item",
+        "description": "item/light_14.png",
+        "file": "/assets/img/textures/item/light_14.png",
+        "path": "item/light_14"
+      },
+      {
+        "name": "light_15",
+        "category": "Item",
+        "description": "item/light_15.png",
+        "file": "/assets/img/textures/item/light_15.png",
+        "path": "item/light_15"
       }
     ],
-    "sounds": [],
+    "sounds": [
+      {
+        "name": "Block broken",
+        "event": "block.stone.break",
+        "files": [
+          "/assets/sounds/dig/stone1.ogg",
+          "/assets/sounds/dig/stone2.ogg",
+          "/assets/sounds/dig/stone3.ogg",
+          "/assets/sounds/dig/stone4.ogg"
+        ]
+      },
+      {
+        "name": "Footsteps",
+        "event": "block.stone.step",
+        "files": [
+          "/assets/sounds/step/stone1.ogg",
+          "/assets/sounds/step/stone2.ogg",
+          "/assets/sounds/step/stone3.ogg",
+          "/assets/sounds/step/stone4.ogg",
+          "/assets/sounds/step/stone5.ogg",
+          "/assets/sounds/step/stone6.ogg"
+        ]
+      },
+      {
+        "name": "Block placed",
+        "event": "block.stone.place",
+        "files": [
+          "/assets/sounds/dig/stone1.ogg",
+          "/assets/sounds/dig/stone2.ogg",
+          "/assets/sounds/dig/stone3.ogg",
+          "/assets/sounds/dig/stone4.ogg"
+        ]
+      },
+      {
+        "name": "Block breaking",
+        "event": "block.stone.hit",
+        "files": [
+          "/assets/sounds/step/stone1.ogg",
+          "/assets/sounds/step/stone2.ogg",
+          "/assets/sounds/step/stone3.ogg",
+          "/assets/sounds/step/stone4.ogg",
+          "/assets/sounds/step/stone5.ogg",
+          "/assets/sounds/step/stone6.ogg"
+        ]
+      },
+      {
+        "name": "Something falls on a block",
+        "event": "block.stone.fall",
+        "files": [
+          "/assets/sounds/step/stone1.ogg",
+          "/assets/sounds/step/stone2.ogg",
+          "/assets/sounds/step/stone3.ogg",
+          "/assets/sounds/step/stone4.ogg",
+          "/assets/sounds/step/stone5.ogg",
+          "/assets/sounds/step/stone6.ogg"
+        ]
+      }
+    ],
     "command": "/setblock ~ ~ ~ minecraft:light[level=2]",
     "effects": [],
     "rarity": "Common",
@@ -3366,9 +6734,178 @@
         "category": "Block",
         "description": "Block texture for Light Block (Level 1).",
         "file": "/assets/img/items/Light_1.png"
+      },
+      {
+        "name": "light_00",
+        "category": "Item",
+        "description": "item/light_00.png",
+        "file": "/assets/img/textures/item/light_00.png",
+        "path": "item/light_00"
+      },
+      {
+        "name": "light_01",
+        "category": "Item",
+        "description": "item/light_01.png",
+        "file": "/assets/img/textures/item/light_01.png",
+        "path": "item/light_01"
+      },
+      {
+        "name": "light_02",
+        "category": "Item",
+        "description": "item/light_02.png",
+        "file": "/assets/img/textures/item/light_02.png",
+        "path": "item/light_02"
+      },
+      {
+        "name": "light_03",
+        "category": "Item",
+        "description": "item/light_03.png",
+        "file": "/assets/img/textures/item/light_03.png",
+        "path": "item/light_03"
+      },
+      {
+        "name": "light_04",
+        "category": "Item",
+        "description": "item/light_04.png",
+        "file": "/assets/img/textures/item/light_04.png",
+        "path": "item/light_04"
+      },
+      {
+        "name": "light_05",
+        "category": "Item",
+        "description": "item/light_05.png",
+        "file": "/assets/img/textures/item/light_05.png",
+        "path": "item/light_05"
+      },
+      {
+        "name": "light_06",
+        "category": "Item",
+        "description": "item/light_06.png",
+        "file": "/assets/img/textures/item/light_06.png",
+        "path": "item/light_06"
+      },
+      {
+        "name": "light_07",
+        "category": "Item",
+        "description": "item/light_07.png",
+        "file": "/assets/img/textures/item/light_07.png",
+        "path": "item/light_07"
+      },
+      {
+        "name": "light_08",
+        "category": "Item",
+        "description": "item/light_08.png",
+        "file": "/assets/img/textures/item/light_08.png",
+        "path": "item/light_08"
+      },
+      {
+        "name": "light_09",
+        "category": "Item",
+        "description": "item/light_09.png",
+        "file": "/assets/img/textures/item/light_09.png",
+        "path": "item/light_09"
+      },
+      {
+        "name": "light_10",
+        "category": "Item",
+        "description": "item/light_10.png",
+        "file": "/assets/img/textures/item/light_10.png",
+        "path": "item/light_10"
+      },
+      {
+        "name": "light_11",
+        "category": "Item",
+        "description": "item/light_11.png",
+        "file": "/assets/img/textures/item/light_11.png",
+        "path": "item/light_11"
+      },
+      {
+        "name": "light_12",
+        "category": "Item",
+        "description": "item/light_12.png",
+        "file": "/assets/img/textures/item/light_12.png",
+        "path": "item/light_12"
+      },
+      {
+        "name": "light_13",
+        "category": "Item",
+        "description": "item/light_13.png",
+        "file": "/assets/img/textures/item/light_13.png",
+        "path": "item/light_13"
+      },
+      {
+        "name": "light_14",
+        "category": "Item",
+        "description": "item/light_14.png",
+        "file": "/assets/img/textures/item/light_14.png",
+        "path": "item/light_14"
+      },
+      {
+        "name": "light_15",
+        "category": "Item",
+        "description": "item/light_15.png",
+        "file": "/assets/img/textures/item/light_15.png",
+        "path": "item/light_15"
       }
     ],
-    "sounds": [],
+    "sounds": [
+      {
+        "name": "Block broken",
+        "event": "block.stone.break",
+        "files": [
+          "/assets/sounds/dig/stone1.ogg",
+          "/assets/sounds/dig/stone2.ogg",
+          "/assets/sounds/dig/stone3.ogg",
+          "/assets/sounds/dig/stone4.ogg"
+        ]
+      },
+      {
+        "name": "Footsteps",
+        "event": "block.stone.step",
+        "files": [
+          "/assets/sounds/step/stone1.ogg",
+          "/assets/sounds/step/stone2.ogg",
+          "/assets/sounds/step/stone3.ogg",
+          "/assets/sounds/step/stone4.ogg",
+          "/assets/sounds/step/stone5.ogg",
+          "/assets/sounds/step/stone6.ogg"
+        ]
+      },
+      {
+        "name": "Block placed",
+        "event": "block.stone.place",
+        "files": [
+          "/assets/sounds/dig/stone1.ogg",
+          "/assets/sounds/dig/stone2.ogg",
+          "/assets/sounds/dig/stone3.ogg",
+          "/assets/sounds/dig/stone4.ogg"
+        ]
+      },
+      {
+        "name": "Block breaking",
+        "event": "block.stone.hit",
+        "files": [
+          "/assets/sounds/step/stone1.ogg",
+          "/assets/sounds/step/stone2.ogg",
+          "/assets/sounds/step/stone3.ogg",
+          "/assets/sounds/step/stone4.ogg",
+          "/assets/sounds/step/stone5.ogg",
+          "/assets/sounds/step/stone6.ogg"
+        ]
+      },
+      {
+        "name": "Something falls on a block",
+        "event": "block.stone.fall",
+        "files": [
+          "/assets/sounds/step/stone1.ogg",
+          "/assets/sounds/step/stone2.ogg",
+          "/assets/sounds/step/stone3.ogg",
+          "/assets/sounds/step/stone4.ogg",
+          "/assets/sounds/step/stone5.ogg",
+          "/assets/sounds/step/stone6.ogg"
+        ]
+      }
+    ],
     "command": "/setblock ~ ~ ~ minecraft:light[level=1]",
     "effects": [],
     "rarity": "Common",
@@ -3488,9 +7025,178 @@
         "category": "Block",
         "description": "Block texture for Light Block (Level 0).",
         "file": "/assets/img/items/Light_0.png"
+      },
+      {
+        "name": "light_00",
+        "category": "Item",
+        "description": "item/light_00.png",
+        "file": "/assets/img/textures/item/light_00.png",
+        "path": "item/light_00"
+      },
+      {
+        "name": "light_01",
+        "category": "Item",
+        "description": "item/light_01.png",
+        "file": "/assets/img/textures/item/light_01.png",
+        "path": "item/light_01"
+      },
+      {
+        "name": "light_02",
+        "category": "Item",
+        "description": "item/light_02.png",
+        "file": "/assets/img/textures/item/light_02.png",
+        "path": "item/light_02"
+      },
+      {
+        "name": "light_03",
+        "category": "Item",
+        "description": "item/light_03.png",
+        "file": "/assets/img/textures/item/light_03.png",
+        "path": "item/light_03"
+      },
+      {
+        "name": "light_04",
+        "category": "Item",
+        "description": "item/light_04.png",
+        "file": "/assets/img/textures/item/light_04.png",
+        "path": "item/light_04"
+      },
+      {
+        "name": "light_05",
+        "category": "Item",
+        "description": "item/light_05.png",
+        "file": "/assets/img/textures/item/light_05.png",
+        "path": "item/light_05"
+      },
+      {
+        "name": "light_06",
+        "category": "Item",
+        "description": "item/light_06.png",
+        "file": "/assets/img/textures/item/light_06.png",
+        "path": "item/light_06"
+      },
+      {
+        "name": "light_07",
+        "category": "Item",
+        "description": "item/light_07.png",
+        "file": "/assets/img/textures/item/light_07.png",
+        "path": "item/light_07"
+      },
+      {
+        "name": "light_08",
+        "category": "Item",
+        "description": "item/light_08.png",
+        "file": "/assets/img/textures/item/light_08.png",
+        "path": "item/light_08"
+      },
+      {
+        "name": "light_09",
+        "category": "Item",
+        "description": "item/light_09.png",
+        "file": "/assets/img/textures/item/light_09.png",
+        "path": "item/light_09"
+      },
+      {
+        "name": "light_10",
+        "category": "Item",
+        "description": "item/light_10.png",
+        "file": "/assets/img/textures/item/light_10.png",
+        "path": "item/light_10"
+      },
+      {
+        "name": "light_11",
+        "category": "Item",
+        "description": "item/light_11.png",
+        "file": "/assets/img/textures/item/light_11.png",
+        "path": "item/light_11"
+      },
+      {
+        "name": "light_12",
+        "category": "Item",
+        "description": "item/light_12.png",
+        "file": "/assets/img/textures/item/light_12.png",
+        "path": "item/light_12"
+      },
+      {
+        "name": "light_13",
+        "category": "Item",
+        "description": "item/light_13.png",
+        "file": "/assets/img/textures/item/light_13.png",
+        "path": "item/light_13"
+      },
+      {
+        "name": "light_14",
+        "category": "Item",
+        "description": "item/light_14.png",
+        "file": "/assets/img/textures/item/light_14.png",
+        "path": "item/light_14"
+      },
+      {
+        "name": "light_15",
+        "category": "Item",
+        "description": "item/light_15.png",
+        "file": "/assets/img/textures/item/light_15.png",
+        "path": "item/light_15"
       }
     ],
-    "sounds": [],
+    "sounds": [
+      {
+        "name": "Block broken",
+        "event": "block.stone.break",
+        "files": [
+          "/assets/sounds/dig/stone1.ogg",
+          "/assets/sounds/dig/stone2.ogg",
+          "/assets/sounds/dig/stone3.ogg",
+          "/assets/sounds/dig/stone4.ogg"
+        ]
+      },
+      {
+        "name": "Footsteps",
+        "event": "block.stone.step",
+        "files": [
+          "/assets/sounds/step/stone1.ogg",
+          "/assets/sounds/step/stone2.ogg",
+          "/assets/sounds/step/stone3.ogg",
+          "/assets/sounds/step/stone4.ogg",
+          "/assets/sounds/step/stone5.ogg",
+          "/assets/sounds/step/stone6.ogg"
+        ]
+      },
+      {
+        "name": "Block placed",
+        "event": "block.stone.place",
+        "files": [
+          "/assets/sounds/dig/stone1.ogg",
+          "/assets/sounds/dig/stone2.ogg",
+          "/assets/sounds/dig/stone3.ogg",
+          "/assets/sounds/dig/stone4.ogg"
+        ]
+      },
+      {
+        "name": "Block breaking",
+        "event": "block.stone.hit",
+        "files": [
+          "/assets/sounds/step/stone1.ogg",
+          "/assets/sounds/step/stone2.ogg",
+          "/assets/sounds/step/stone3.ogg",
+          "/assets/sounds/step/stone4.ogg",
+          "/assets/sounds/step/stone5.ogg",
+          "/assets/sounds/step/stone6.ogg"
+        ]
+      },
+      {
+        "name": "Something falls on a block",
+        "event": "block.stone.fall",
+        "files": [
+          "/assets/sounds/step/stone1.ogg",
+          "/assets/sounds/step/stone2.ogg",
+          "/assets/sounds/step/stone3.ogg",
+          "/assets/sounds/step/stone4.ogg",
+          "/assets/sounds/step/stone5.ogg",
+          "/assets/sounds/step/stone6.ogg"
+        ]
+      }
+    ],
     "command": "/setblock ~ ~ ~ minecraft:light[level=0]",
     "effects": [],
     "rarity": "Common",
@@ -3610,9 +7316,36 @@
         "category": "Item",
         "description": "Item texture for Painting (Earth).",
         "file": "/assets/img/items/Dirt_Painting.png"
+      },
+      {
+        "name": "painting",
+        "category": "Item",
+        "description": "item/painting.png",
+        "file": "/assets/img/textures/item/painting.png",
+        "path": "item/painting"
       }
     ],
-    "sounds": [],
+    "sounds": [
+      {
+        "name": "Painting broken",
+        "event": "entity.painting.break",
+        "files": [
+          "/assets/sounds/entity/painting/break1.ogg",
+          "/assets/sounds/entity/painting/break2.ogg",
+          "/assets/sounds/entity/painting/break3.ogg"
+        ]
+      },
+      {
+        "name": "Painting placed",
+        "event": "entity.painting.place",
+        "files": [
+          "/assets/sounds/entity/painting/place1.ogg",
+          "/assets/sounds/entity/painting/place2.ogg",
+          "/assets/sounds/entity/painting/place3.ogg",
+          "/assets/sounds/entity/painting/place4.ogg"
+        ]
+      }
+    ],
     "command": "/summon minecraft:painting ~ ~ ~ {variant:\"minecraft:earth\"}",
     "effects": [],
     "rarity": "Common",
@@ -3694,9 +7427,36 @@
         "category": "Item",
         "description": "Item texture for Painting (Water).",
         "file": "/assets/img/items/Water_Painting.png"
+      },
+      {
+        "name": "painting",
+        "category": "Item",
+        "description": "item/painting.png",
+        "file": "/assets/img/textures/item/painting.png",
+        "path": "item/painting"
       }
     ],
-    "sounds": [],
+    "sounds": [
+      {
+        "name": "Painting broken",
+        "event": "entity.painting.break",
+        "files": [
+          "/assets/sounds/entity/painting/break1.ogg",
+          "/assets/sounds/entity/painting/break2.ogg",
+          "/assets/sounds/entity/painting/break3.ogg"
+        ]
+      },
+      {
+        "name": "Painting placed",
+        "event": "entity.painting.place",
+        "files": [
+          "/assets/sounds/entity/painting/place1.ogg",
+          "/assets/sounds/entity/painting/place2.ogg",
+          "/assets/sounds/entity/painting/place3.ogg",
+          "/assets/sounds/entity/painting/place4.ogg"
+        ]
+      }
+    ],
     "command": "/summon minecraft:painting ~ ~ ~ {variant:\"minecraft:water\"}",
     "effects": [],
     "rarity": "Common",
@@ -3778,9 +7538,36 @@
         "category": "Item",
         "description": "Item texture for Painting (Fire).",
         "file": "/assets/img/items/Fire_Painting.png"
+      },
+      {
+        "name": "painting",
+        "category": "Item",
+        "description": "item/painting.png",
+        "file": "/assets/img/textures/item/painting.png",
+        "path": "item/painting"
       }
     ],
-    "sounds": [],
+    "sounds": [
+      {
+        "name": "Painting broken",
+        "event": "entity.painting.break",
+        "files": [
+          "/assets/sounds/entity/painting/break1.ogg",
+          "/assets/sounds/entity/painting/break2.ogg",
+          "/assets/sounds/entity/painting/break3.ogg"
+        ]
+      },
+      {
+        "name": "Painting placed",
+        "event": "entity.painting.place",
+        "files": [
+          "/assets/sounds/entity/painting/place1.ogg",
+          "/assets/sounds/entity/painting/place2.ogg",
+          "/assets/sounds/entity/painting/place3.ogg",
+          "/assets/sounds/entity/painting/place4.ogg"
+        ]
+      }
+    ],
     "command": "/summon minecraft:painting ~ ~ ~ {variant:\"minecraft:fire\"}",
     "effects": [],
     "rarity": "Common",
@@ -3862,9 +7649,36 @@
         "category": "Item",
         "description": "Item texture for Painting (Wind).",
         "file": "/assets/img/items/Air_Painting.png"
+      },
+      {
+        "name": "painting",
+        "category": "Item",
+        "description": "item/painting.png",
+        "file": "/assets/img/textures/item/painting.png",
+        "path": "item/painting"
       }
     ],
-    "sounds": [],
+    "sounds": [
+      {
+        "name": "Painting broken",
+        "event": "entity.painting.break",
+        "files": [
+          "/assets/sounds/entity/painting/break1.ogg",
+          "/assets/sounds/entity/painting/break2.ogg",
+          "/assets/sounds/entity/painting/break3.ogg"
+        ]
+      },
+      {
+        "name": "Painting placed",
+        "event": "entity.painting.place",
+        "files": [
+          "/assets/sounds/entity/painting/place1.ogg",
+          "/assets/sounds/entity/painting/place2.ogg",
+          "/assets/sounds/entity/painting/place3.ogg",
+          "/assets/sounds/entity/painting/place4.ogg"
+        ]
+      }
+    ],
     "command": "/summon minecraft:painting ~ ~ ~ {variant:\"minecraft:wind\"}",
     "effects": [],
     "rarity": "Common",
@@ -3946,6 +7760,13 @@
         "category": "Item",
         "description": "Item texture for Enchanted Book.",
         "file": "/assets/img/items/Enchanted_Book.gif"
+      },
+      {
+        "name": "enchanted_book",
+        "category": "Item",
+        "description": "item/enchanted_book.png",
+        "file": "/assets/img/textures/item/enchanted_book.png",
+        "path": "item/enchanted_book"
       }
     ],
     "sounds": [],
@@ -4030,6 +7851,13 @@
         "category": "Item",
         "description": "Item texture for Knowledge Book.",
         "file": "/assets/img/items/Knowledge_Book.png"
+      },
+      {
+        "name": "knowledge_book",
+        "category": "Item",
+        "description": "item/knowledge_book.png",
+        "file": "/assets/img/textures/item/knowledge_book.png",
+        "path": "item/knowledge_book"
       }
     ],
     "sounds": [],
@@ -4114,6 +7942,13 @@
         "category": "Item",
         "description": "Item texture for Wither Spawn Egg.",
         "file": "/assets/img/items/Wither_Spawn_Egg.png"
+      },
+      {
+        "name": "wither_spawn_egg",
+        "category": "Item",
+        "description": "item/wither_spawn_egg.png",
+        "file": "/assets/img/textures/item/wither_spawn_egg.png",
+        "path": "item/wither_spawn_egg"
       }
     ],
     "sounds": [],
@@ -4198,6 +8033,13 @@
         "category": "Item",
         "description": "Item texture for Ender Dragon Spawn Egg.",
         "file": "/assets/img/items/Ender_Dragon_Spawn_Egg.png"
+      },
+      {
+        "name": "ender_dragon_spawn_egg",
+        "category": "Item",
+        "description": "item/ender_dragon_spawn_egg.png",
+        "file": "/assets/img/textures/item/ender_dragon_spawn_egg.png",
+        "path": "item/ender_dragon_spawn_egg"
       }
     ],
     "sounds": [],
@@ -4282,9 +8124,73 @@
         "category": "Block",
         "description": "Block texture for Petrified Oak Slab.",
         "file": "/assets/img/blocks/Oak_Slab.png"
+      },
+      {
+        "name": "oak_planks",
+        "category": "Block",
+        "description": "block/oak_planks.png",
+        "file": "/assets/img/textures/block/oak_planks.png",
+        "path": "block/oak_planks"
       }
     ],
-    "sounds": [],
+    "sounds": [
+      {
+        "name": "Block broken",
+        "event": "block.stone.break",
+        "files": [
+          "/assets/sounds/dig/stone1.ogg",
+          "/assets/sounds/dig/stone2.ogg",
+          "/assets/sounds/dig/stone3.ogg",
+          "/assets/sounds/dig/stone4.ogg"
+        ]
+      },
+      {
+        "name": "Footsteps",
+        "event": "block.stone.step",
+        "files": [
+          "/assets/sounds/step/stone1.ogg",
+          "/assets/sounds/step/stone2.ogg",
+          "/assets/sounds/step/stone3.ogg",
+          "/assets/sounds/step/stone4.ogg",
+          "/assets/sounds/step/stone5.ogg",
+          "/assets/sounds/step/stone6.ogg"
+        ]
+      },
+      {
+        "name": "Block placed",
+        "event": "block.stone.place",
+        "files": [
+          "/assets/sounds/dig/stone1.ogg",
+          "/assets/sounds/dig/stone2.ogg",
+          "/assets/sounds/dig/stone3.ogg",
+          "/assets/sounds/dig/stone4.ogg"
+        ]
+      },
+      {
+        "name": "Block breaking",
+        "event": "block.stone.hit",
+        "files": [
+          "/assets/sounds/step/stone1.ogg",
+          "/assets/sounds/step/stone2.ogg",
+          "/assets/sounds/step/stone3.ogg",
+          "/assets/sounds/step/stone4.ogg",
+          "/assets/sounds/step/stone5.ogg",
+          "/assets/sounds/step/stone6.ogg"
+        ]
+      },
+      {
+        "name": "Something falls on a block",
+        "event": "block.stone.fall",
+        "files": [
+          "/assets/sounds/step/stone1.ogg",
+          "/assets/sounds/step/stone2.ogg",
+          "/assets/sounds/step/stone3.ogg",
+          "/assets/sounds/step/stone4.ogg",
+          "/assets/sounds/step/stone5.ogg",
+          "/assets/sounds/step/stone6.ogg"
+        ]
+      }
+    ],
     "command": "/give @p minecraft:petrified_oak_slab 1",
     "effects": [],
     "rarity": "Common",

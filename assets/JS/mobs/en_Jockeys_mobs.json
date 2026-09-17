@@ -2,70 +2,56 @@
   {
     "id": "minecraft:camel_husk_jockey",
     "name": "Camel Husk Jockey",
-    "type": "hostile",
-    "icon": "/assets/img/mobs/hostile/Camel_Husk_Jockey.png",
-    "health": 32,
-    "damage": "Varies (Husk: 2.5–4.5, Parched: 2–4)",
-    "description": "A rare jockey where a Husk and a Parched ride a camel together. The Husk attacks up close, while the Parched fires arrows from a distance.",
-    "version": "1.20",
     "numeric_id": "–",
-    "dimension": "Overworld (Desert Biomes)",
-    "movement_speed": 0.25,
-    "size": {
-      "width": "Width: 1.4",
-      "height": "Height: 2.0"
-    },
-    "spawn": {
-      "light_level": [
-        "7–15"
-      ],
-      "biome": "Desert, Badlands",
-      "structure": "Desert Temples, Villages",
-      "note": "Spawns only at night in desert biomes"
-    },
-    "equipment": {
-      "husk": "Iron Spear (may be enchanted), Armor (rarely)",
-      "parched": "Bow (may be enchanted), Armor (rarely)"
-    },
-    "light_level": [
-      "7–15"
+    "type": "hostile",
+    "category": "Jockeys",
+    "icon": "/assets/img/mobs/hostile/Camel_Husk_Jockey.png",
+    "description": "Camel Husk Jockey is a group of hostile riders on an undead mount; not a separate entity.",
+    "biome": "Desert",
+    "aliases": [
+      "Camel Husk Jockey"
     ],
-    "fun_fact": "The Parched is an undead variant of the Husk that only appears in this combination.",
-    "abilities": [
-      "Husk attacks with spear in melee",
-      "Parched shoots arrows from range",
-      "Camel moves faster than normal Husks"
+    "introduced_date": "2025-12-09",
+    "removed_date": "",
+    "gallery": [],
+    "model": "",
+    "animation": [],
+    "source": "",
+    "updated_at": "2026-08-22",
+    "notes": "Not a single creature: health, drops and experience are calculated separately for each component.",
+    "version": "Java Edition 1.21.11 / Bedrock Edition 1.21.130",
+    "edition": "Java Edition, Bedrock Edition",
+    "effects": [],
+    "effect_immunities": [],
+    "status": "Available",
+    "tags": [
+      "Jockeys",
+      "Hostile riders on an undead mount; not a separate entity"
     ],
-    "drops": [
+    "related_entries": [],
+    "command": "/summon minecraft:camel_husk ~ ~ ~ {Passengers:[{id:\"minecraft:husk\",Passengers:[{id:\"minecraft:parched\"}]}]}",
+    "version_history": [
       {
-        "item": "Rotten Flesh",
-        "chance": "100% (Husk)"
-      },
-      {
-        "item": "Iron Spear",
-        "chance": "8.5% (Husk)"
-      },
-      {
-        "item": "Bow",
-        "chance": "8.5% (Parched)"
-      },
-      {
-        "item": "Experience",
-        "chance": "5–10"
+        "version": "Java Edition 1.21.11 / Bedrock Edition 1.21.130",
+        "change": "Added.",
+        "type": "added",
+        "date": "2025-12-09"
       }
     ],
-    "xp": "5–10"
-  },
-  {
-    "id": "minecraft:zombie_horseman",
-    "name": "Zombie Horseman",
-    "type": "hostile",
-    "icon": "/assets/img/mobs/hostile/Zombie_Horseman.png",
-    "health": 25,
-    "damage": 3,
-    "description": "A zombie riding a zombie horse. Both attack the player; the zombie uses a spear or fists, while the horse kicks.",
-    "version": "1.14",
-    "numeric_id": "–",
+    "texture": [],
+    "sounds": [],
+    "health": {
+      "camel_husk": 32,
+      "husk": 20,
+      "parched": 16
+    },
+    "damage": "Split by rider: husk in melee, parched with a bow; depends on difficulty and equipment",
+    "armor": {
+      "camel_husk": 0,
+      "husk": 2,
+      "parched": 2
+    },
+    "experience": "Components drop their experience separately",
     "dimension": "Overworld",
     "movement_speed": 0.25,
     "size": {
@@ -74,49 +60,237 @@
     },
     "spawn": {
       "light_level": [
-        "7–15"
+        "Block light 0 for the hostile riders"
       ],
-      "biome": "All Overworld biomes",
+      "biome": "Desert",
       "structure": "None",
-      "note": "Rare spawn event at night"
+      "condition": "Rare natural combination of camel husk, husk and parched"
     },
+    "light_level": [
+      "Block light 0 for the hostile riders"
+    ],
+    "classification": "Hostile riders on an undead mount; not a separate entity",
+    "renewable": "Yes",
+    "can_despawn": "Yes, as long as the normal despawn rules apply",
+    "tameable": "Camel husk: Yes, after the riders have been removed",
+    "breedable": "No",
+    "duplicable": "No",
+    "duplication_item": "",
+    "leashable": "No",
+    "rideable": "The camel husk can be tamed and ridden after removing the riders",
+    "baby_variant": "No",
+    "drops": [
+      {
+        "item": "Drops of the camel husk, husk and parched",
+        "chance": "Each according to its own loot table",
+        "amount": "Separately per component"
+      },
+      {
+        "item": "Naturally equipped weapons and armor",
+        "chance": "Normal equipment drop chance",
+        "condition": "If the respective component drops its equipment"
+      }
+    ],
+    "abilities": [
+      "Three separate creatures with separate health",
+      "The husk attacks with a spear",
+      "The parched attacks with a bow",
+      "The camel husk remains after the riders die"
+    ],
+    "fun_fact": "Not a single creature: health, drops and experience are calculated separately for each component.",
+    "attack_type": "Melee and ranged",
+    "targets": [
+      "Players",
+      "Iron golem"
+    ],
+    "enemy_mobs": [],
+    "follows": [],
+    "healing_item": "",
+    "fire_immune": "No",
+    "undead": "All three components are undead",
+    "boss_bar": "No",
+    "knockback_resistance": "",
+    "loot_table": "Loot tables of the individual components",
+    "java_entity_id": "No separate entity ID",
+    "bedrock_entity_id": "No separate entity ID",
+    "equipment": {
+      "husk": "Iron Spear (may be enchanted), Armor (rarely)",
+      "parched": "Bow (may be enchanted), Armor (rarely)"
+    },
+    "xp": "5–10"
+  },
+  {
+    "id": "minecraft:zombie_horseman",
+    "name": "Zombie Horseman",
+    "numeric_id": "–",
+    "type": "hostile",
+    "category": "Jockeys",
+    "icon": "/assets/img/mobs/hostile/Zombie_Horseman.png",
+    "description": "Zombie Horseman is a hostile rider; not a separate entity.",
+    "biome": "Plains and savannas",
+    "aliases": [
+      "Zombie Horseman"
+    ],
+    "introduced_date": "2025-12-09",
+    "removed_date": "",
+    "gallery": [],
+    "model": "",
+    "animation": [],
+    "source": "",
+    "updated_at": "2026-08-22",
+    "notes": "The rider is a combination of minecraft:zombie and minecraft:zombie_horse, not a separate entity.",
+    "version": "Java Edition 1.21.11 / Bedrock Edition 1.21.130",
+    "edition": "Java Edition, Bedrock Edition",
+    "effects": [],
+    "effect_immunities": [],
+    "status": "Available",
+    "tags": [
+      "Jockeys",
+      "Hostile rider; not a separate entity",
+      "Undead"
+    ],
+    "related_entries": [],
+    "command": "/summon minecraft:zombie_horse ~ ~ ~ {Passengers:[{id:\"minecraft:zombie\"}]}",
+    "version_history": [
+      {
+        "version": "Java Edition 1.21.11 / Bedrock Edition 1.21.130",
+        "change": "Added.",
+        "type": "added",
+        "date": "2025-12-09"
+      }
+    ],
+    "texture": [],
+    "sounds": [],
+    "health": {
+      "zombie_horse": 25,
+      "zombie": 20
+    },
+    "damage": "Zombie: depends on difficulty and spear/equipment; the zombie horse does not attack itself",
+    "armor": {
+      "zombie_horse": 0,
+      "zombie": 2
+    },
+    "experience": "Zombie: 5 plus equipment bonuses; zombie horse: its own component experience",
+    "dimension": "Overworld",
+    "movement_speed": 0.25,
+    "size": {
+      "width": "Width: 1.4",
+      "height": "Height: 2.0"
+    },
+    "spawn": {
+      "light_level": [
+        "Block light 0 for the zombie"
+      ],
+      "biome": "Plains and savannas",
+      "structure": "None",
+      "condition": "Rare natural combination of a zombie with an iron spear on a zombie horse"
+    },
+    "light_level": [
+      "Block light 0 for the zombie"
+    ],
+    "classification": "Hostile rider; not a separate entity",
+    "renewable": "Yes",
+    "can_despawn": "Yes, as long as the normal despawn rules apply",
+    "tameable": "Zombie horse: Yes",
+    "breedable": "No",
+    "duplicable": "No",
+    "duplication_item": "",
+    "leashable": "No",
+    "rideable": "Zombie horse: Yes, after the rider has been removed and the horse tamed",
+    "baby_variant": "No",
+    "drops": [
+      {
+        "item": "Drops of the zombie and zombie horse",
+        "chance": "According to the respective loot tables",
+        "amount": "Separately per component"
+      },
+      {
+        "item": "Iron spear and other equipment",
+        "chance": "Normal equipment drop chance"
+      }
+    ],
+    "abilities": [
+      "The zombie fights with an iron spear",
+      "Zombie and horse have separate health",
+      "The zombie horse can be taken over after removing the rider"
+    ],
+    "fun_fact": "The rider is a combination of minecraft:zombie and minecraft:zombie_horse, not a separate entity.",
+    "attack_type": "Spear melee and ranged",
+    "targets": [
+      "Players",
+      "Villagers",
+      "Iron golem"
+    ],
+    "enemy_mobs": [],
+    "follows": [
+      "Red mushroom"
+    ],
+    "healing_item": "Red mushroom",
+    "fire_immune": "No; many undead burn in sunlight unless protected",
+    "undead": "Yes",
+    "boss_bar": "No",
+    "knockback_resistance": "",
+    "loot_table": "Loot tables of the individual components",
+    "java_entity_id": "No separate entity ID",
+    "bedrock_entity_id": "No separate entity ID",
     "equipment": {
       "zombie": "Iron Spear (may be enchanted), Armor (rarely)"
     },
-    "light_level": [
-      "7–15"
-    ],
-    "fun_fact": "The zombie horse is an undead horse variant and cannot be tamed.",
-    "abilities": [
-      "Zombie attacks with spear or fists"
-    ],
-    "drops": [
-      {
-        "item": "Rotten Flesh",
-        "chance": "100% (Zombie)"
-      },
-      {
-        "item": "Iron Spear",
-        "chance": "8.5% (Zombie)"
-      },
-      {
-        "item": "Experience",
-        "chance": "5–10"
-      }
-    ],
     "xp": "5–10"
   },
   {
     "id": "minecraft:zombie_nautilus_jockey",
     "name": "Zombie Nautilus Jockey",
-    "type": "hostile",
-    "icon": "/assets/img/mobs/hostile/Zombie_Nautilus_Jockey.png",
-    "health": 15,
-    "damage": 4,
-    "description": "A drowned zombie riding a zombie nautilus. The drowned throws tridents, while the nautilus attacks with tentacles.",
-    "version": "1.19",
     "numeric_id": "–",
-    "dimension": "Ocean, Rivers",
+    "type": "hostile",
+    "category": "Jockeys",
+    "icon": "/assets/img/mobs/hostile/Zombie_Nautilus_Jockey.png",
+    "description": "Zombie Nautilus Jockey is a hostile water jockey; not a separate entity.",
+    "biome": "Oceans; coral variant in warm oceans",
+    "aliases": [
+      "Zombie Nautilus Jockey"
+    ],
+    "introduced_date": "2025-12-09",
+    "removed_date": "",
+    "gallery": [],
+    "model": "",
+    "animation": [],
+    "source": "",
+    "updated_at": "2026-08-22",
+    "notes": "Not a separate entity type; the nautilus does not drop a nautilus shell as a normal drop.",
+    "version": "Java Edition 1.21.11 / Bedrock Edition 1.21.130",
+    "edition": "Java Edition, Bedrock Edition",
+    "effects": [],
+    "effect_immunities": [],
+    "status": "Available",
+    "tags": [
+      "Jockeys",
+      "Hostile water jockey; not a separate entity",
+      "Undead"
+    ],
+    "related_entries": [],
+    "command": "/summon minecraft:zombie_nautilus ~ ~ ~ {Passengers:[{id:\"minecraft:drowned\"}]}",
+    "version_history": [
+      {
+        "version": "Java Edition 1.21.11 / Bedrock Edition 1.21.130",
+        "change": "Added.",
+        "type": "added",
+        "date": "2025-12-09"
+      }
+    ],
+    "texture": [],
+    "sounds": [],
+    "health": {
+      "zombie_nautilus": 15,
+      "drowned": 20
+    },
+    "damage": "Drowned: depends on difficulty and trident; the zombie nautilus only attacks hostilely with a rider",
+    "armor": {
+      "zombie_nautilus": 0,
+      "drowned": 2
+    },
+    "experience": "Components drop experience separately",
+    "dimension": "Overworld",
     "movement_speed": 0.2,
     "size": {
       "width": "Width: 1.0",
@@ -124,52 +298,117 @@
     },
     "spawn": {
       "light_level": [
-        "0–7 (underwater)"
+        "The drowned's water and darkness conditions"
       ],
-      "biome": "Ocean, River, Swamp",
-      "structure": "Underwater Ruins, Shipwrecks",
-      "note": "Spawns only underwater"
+      "biome": "Ocean",
+      "structure": "None",
+      "condition": "Natural combination of a drowned with a trident and a zombie nautilus"
     },
+    "light_level": [
+      "The drowned's water and darkness conditions"
+    ],
+    "classification": "Hostile water jockey; not a separate entity",
+    "renewable": "Yes",
+    "can_despawn": "Yes, as long as the normal despawn rules apply",
+    "tameable": "Zombie nautilus: Yes",
+    "breedable": "No",
+    "duplicable": "No",
+    "duplication_item": "",
+    "leashable": "No",
+    "rideable": "Zombie nautilus: after removing the rider and taming",
+    "baby_variant": "No",
+    "drops": [
+      {
+        "item": "minecraft:rotten_flesh",
+        "chance": "100 %",
+        "amount": "Zombie nautilus: 0–3; drowned separately"
+      },
+      {
+        "item": "The drowned's equipment",
+        "chance": "Normal equipment drop chance"
+      }
+    ],
+    "abilities": [
+      "Moves quickly underwater",
+      "The drowned throws a trident",
+      "Mount and rider have separate health",
+      "Warm oceans can produce the coral variant"
+    ],
+    "fun_fact": "Not a separate entity type; the nautilus does not drop a nautilus shell as a normal drop.",
+    "attack_type": "Trident ranged and melee",
+    "targets": [
+      "Players",
+      "Villagers",
+      "Iron golem"
+    ],
+    "enemy_mobs": [],
+    "follows": [],
+    "healing_item": "",
+    "fire_immune": "No; many undead burn in sunlight unless protected",
+    "undead": "Yes",
+    "boss_bar": "No",
+    "knockback_resistance": "",
+    "loot_table": "Loot tables of the individual components",
+    "java_entity_id": "No separate entity ID",
+    "bedrock_entity_id": "No separate entity ID",
     "equipment": {
       "drowned": "Trident (may be enchanted)"
     },
-    "light_level": [
-      "0–7"
-    ],
-    "fun_fact": "The zombie nautilus is a living nautilus shell that exists only in this combination.",
-    "abilities": [
-      "Drowned throws tridents (also melee with hands)"
-    ],
-    "drops": [
-      {
-        "item": "Rotten Flesh",
-        "chance": "100% (Drowned)"
-      },
-      {
-        "item": "Trident",
-        "chance": "8.5% (Drowned)"
-      },
-      {
-        "item": "Nautilus Shell",
-        "chance": "10% (Nautilus)"
-      },
-      {
-        "item": "Experience",
-        "chance": "5–10"
-      }
-    ],
     "xp": "5–10"
   },
   {
     "id": "minecraft:skeleton_horseman",
     "name": "Skeleton Horseman",
-    "type": "hostile",
-    "icon": "/assets/img/mobs/hostile/Skeleton_Horseman.png",
-    "health": 15,
-    "damage": 3,
-    "description": "A skeleton riding a skeleton horse. It appears when the player triggers a skeleton trap. The skeleton shoots arrows, and the horse can also kick.",
-    "version": "1.9",
     "numeric_id": "–",
+    "type": "hostile",
+    "category": "Jockeys",
+    "icon": "/assets/img/mobs/hostile/Skeleton_Horseman.png",
+    "description": "Skeleton Horseman is a hostile rider; not a separate entity.",
+    "biome": "Suitable Overworld biomes",
+    "aliases": [
+      "Skeleton Horseman",
+      "Skeleton trap"
+    ],
+    "introduced_date": "2016-02-29",
+    "removed_date": "",
+    "gallery": [],
+    "model": "",
+    "animation": [],
+    "source": "",
+    "updated_at": "2026-08-22",
+    "notes": "",
+    "version": "Java Edition 1.9 / Bedrock Edition 0.15.0",
+    "edition": "Java Edition, Bedrock Edition",
+    "effects": [],
+    "effect_immunities": [],
+    "status": "Available",
+    "tags": [
+      "Jockeys",
+      "Hostile rider; not a separate entity",
+      "Undead"
+    ],
+    "related_entries": [],
+    "command": "/summon minecraft:skeleton_horse ~ ~ ~ {Tame:1b,Passengers:[{id:\"minecraft:skeleton\"}]}",
+    "version_history": [
+      {
+        "version": "Java Edition 1.9 / Bedrock Edition 0.15.0",
+        "change": "Added.",
+        "type": "added",
+        "date": "2016-02-29"
+      }
+    ],
+    "texture": [],
+    "sounds": [],
+    "health": {
+      "skeleton_horse": 15,
+      "skeleton": 20
+    },
+    "damage": "Skeleton's bow depending on difficulty; the skeleton horse does not attack itself",
+    "armor": {
+      "skeleton_horse": 0,
+      "skeleton": 0
+    },
+    "experience": "Skeleton and skeleton horse separately",
     "dimension": "Overworld",
     "movement_speed": 0.3,
     "size": {
@@ -178,53 +417,114 @@
     },
     "spawn": {
       "light_level": [
-        "Only triggered by skeleton trap"
+        "Light-independent during thunderstorms"
       ],
-      "biome": "All",
+      "biome": "Suitable Overworld biomes",
       "structure": "None",
-      "note": "Appears only during thunderstorms when a player is nearby."
+      "condition": "A skeleton trap horse is struck by lightning when approached during a thunderstorm and creates four skeleton horsemen in total"
     },
+    "light_level": [
+      "Light-independent during thunderstorms"
+    ],
+    "classification": "Hostile rider; not a separate entity",
+    "renewable": "Yes",
+    "can_despawn": "Yes, as long as the normal despawn rules apply",
+    "tameable": "The created skeleton horse is tamed",
+    "breedable": "No",
+    "duplicable": "No",
+    "duplication_item": "",
+    "leashable": "No",
+    "rideable": "Skeleton horse: Yes, after removing the rider",
+    "baby_variant": "No",
+    "drops": [
+      {
+        "item": "Bones, arrows and possibly a bow/equipment",
+        "chance": "The skeleton's loot"
+      },
+      {
+        "item": "Bones",
+        "chance": "The skeleton horse's loot"
+      }
+    ],
+    "abilities": [
+      "Created as a group of four riders from a triggered skeleton trap",
+      "The skeleton carries an enchanted iron helmet and an enchanted bow",
+      "The skeleton horse can be ridden after the fight",
+      "Skeleton horses can be ridden underwater"
+    ],
+    "fun_fact": "The Skeleton Horseman is the only way to obtain a skeleton horse (it can later be tamed).",
+    "attack_type": "Bow ranged",
+    "targets": [
+      "Players",
+      "Iron golem"
+    ],
+    "enemy_mobs": [],
+    "follows": [],
+    "healing_item": "",
+    "fire_immune": "No",
+    "undead": "Yes",
+    "boss_bar": "No",
+    "knockback_resistance": "",
+    "loot_table": "Loot tables of the individual components",
+    "java_entity_id": "No separate entity ID",
+    "bedrock_entity_id": "No separate entity ID",
     "equipment": {
       "skeleton": "Bow (enchanted), Iron Helmet (enchanted), Armor (rarely)"
     },
-    "light_level": [
-      "–"
-    ],
-    "fun_fact": "The Skeleton Horseman is the only way to obtain a skeleton horse (it can later be tamed).",
-    "abilities": [
-      "Skeleton shoots arrows"
-    ],
-    "drops": [
-      {
-        "item": "Bone",
-        "chance": "100% (Skeleton)"
-      },
-      {
-        "item": "Bow",
-        "chance": "8.5% (Skeleton)"
-      },
-      {
-        "item": "Iron Helmet",
-        "chance": "8.5% (Skeleton)"
-      },
-      {
-        "item": "Experience",
-        "chance": "5–10"
-      }
-    ],
     "xp": "5–10"
   },
   {
     "id": "minecraft:chicken_jockey",
     "name": "Chicken Jockey",
-    "type": "hostile",
-    "icon": "/assets/img/mobs/hostile/Chicken_Jockey.png",
-    "health": 20,
-    "damage": 3,
-    "description": "A baby zombie (or variant) riding a chicken. It moves quickly and is hard to hit.",
-    "version": "1.8",
     "numeric_id": "–",
-    "dimension": "Overworld",
+    "type": "hostile",
+    "category": "Jockeys",
+    "icon": "/assets/img/mobs/hostile/Chicken_Jockey.png",
+    "description": "Chicken Jockey is a hostile rider; not a separate entity.",
+    "biome": "Depends on the rider variant",
+    "aliases": [
+      "Chicken Jockey"
+    ],
+    "introduced_date": "2013-12-10",
+    "removed_date": "",
+    "gallery": [],
+    "model": "",
+    "animation": [],
+    "source": "",
+    "updated_at": "2026-08-22",
+    "notes": "",
+    "version": "Java Edition 1.7.4 / Bedrock Edition 0.11.0",
+    "edition": "Java Edition, Bedrock Edition",
+    "effects": [],
+    "effect_immunities": [],
+    "status": "Available",
+    "tags": [
+      "Jockeys",
+      "Hostile rider; not a separate entity"
+    ],
+    "related_entries": [],
+    "command": "/summon minecraft:chicken ~ ~ ~ {IsChickenJockey:1b,Passengers:[{id:\"minecraft:zombie\",IsBaby:1b}]}",
+    "version_history": [
+      {
+        "version": "Java Edition 1.7.4 / Bedrock Edition 0.11.0",
+        "change": "Added.",
+        "type": "added",
+        "date": "2013-12-10"
+      }
+    ],
+    "texture": [],
+    "sounds": [],
+    "health": {
+      "chicken": 4,
+      "baby_zombie": 20
+    },
+    "damage": "Baby zombie: depends on difficulty and equipment; the chicken deals no attack damage",
+    "armor": {
+      "chicken": 0,
+      "baby_zombie": 2
+    },
+    "experience": "Baby zombie: 12 plus equipment bonuses; chicken separately",
+    "dimension": "Overworld and other places depending on the baby zombie variant",
     "movement_speed": 0.25,
     "size": {
       "width": "Width: 0.6",
@@ -232,54 +532,114 @@
     },
     "spawn": {
       "light_level": [
-        "7–15"
+        "According to the spawn rules of the baby zombie variant"
       ],
-      "biome": "All Overworld biomes",
+      "biome": "Depends on the rider variant",
       "structure": "None",
-      "note": "Very rare; baby zombie spawns with a 5% chance on a chicken."
+      "condition": "Rare chance when a baby zombie variant spawns; existing chickens can be used"
     },
+    "light_level": [
+      "According to the spawn rules of the baby zombie variant"
+    ],
+    "classification": "Hostile rider; not a separate entity",
+    "renewable": "Yes",
+    "can_despawn": "Yes, as long as the normal despawn rules apply",
+    "tameable": "No",
+    "breedable": "The chicken generally yes; the jockey state is not a breeding variant",
+    "duplicable": "No",
+    "duplication_item": "",
+    "leashable": "No",
+    "rideable": "No",
+    "baby_variant": "The rider is always a baby zombie variant",
+    "drops": [
+      {
+        "item": "Drops of the respective baby zombie variant",
+        "chance": "According to their loot table"
+      },
+      {
+        "item": "Raw chicken and feathers",
+        "chance": "According to the chicken loot table"
+      }
+    ],
+    "abilities": [
+      "Is faster and fits through smaller openings than adult zombies",
+      "The chicken prevents the rider's fall damage",
+      "In Java, a chicken marked as a jockey does not lay eggs"
+    ],
+    "fun_fact": "The chicken continues to lay eggs after the jockey dies and can be tamed.",
+    "attack_type": "Fast melee",
+    "targets": [
+      "Players",
+      "Villagers",
+      "Iron golem"
+    ],
+    "enemy_mobs": [],
+    "follows": [],
+    "healing_item": "",
+    "fire_immune": "No",
+    "undead": "Only the rider",
+    "boss_bar": "No",
+    "knockback_resistance": "",
+    "loot_table": "Loot tables of the individual components",
+    "java_entity_id": "No separate entity ID",
+    "bedrock_entity_id": "No separate entity ID",
     "equipment": {
       "zombie": "Iron Spear (may be enchanted), Armor (rarely)"
     },
-    "light_level": [
-      "7–15"
-    ],
-    "fun_fact": "The chicken continues to lay eggs after the jockey dies and can be tamed.",
-    "abilities": [
-      "Baby zombie attacks",
-      "Chicken moves fast and drops Eggs"
-    ],
-    "drops": [
-      {
-        "item": "Rotten Flesh",
-        "chance": "100% (Zombie)"
-      },
-      {
-        "item": "Iron Spear",
-        "chance": "8.5% (Zombie)"
-      },
-      {
-        "item": "Raw Chicken",
-        "chance": "100% (Chicken)"
-      },
-      {
-        "item": "Experience",
-        "chance": "5–10"
-      }
-    ],
     "xp": "5–10"
   },
   {
     "id": "minecraft:spider_jockey",
     "name": "Spider Jockey",
-    "type": "hostile",
-    "icon": "/assets/img/mobs/hostile/Spider_Jockey.png",
-    "health": 16,
-    "damage": 3,
-    "description": "A skeleton (or Bogged/Wither Skeleton) riding a spider. The rider shoots arrows, and the spider leaps and attacks with its legs.",
-    "version": "Alpha",
     "numeric_id": "–",
-    "dimension": "Overworld (Spiders) / Nether (Wither Skeleton)",
+    "type": "hostile",
+    "category": "Jockeys",
+    "icon": "/assets/img/mobs/hostile/Spider_Jockey.png",
+    "description": "Spider Jockey is a hostile rider; not a separate entity.",
+    "biome": "The spider's biome; the rider variant may vary by edition",
+    "aliases": [
+      "Spider Jockey"
+    ],
+    "introduced_date": "2010-08-20",
+    "removed_date": "",
+    "gallery": [],
+    "model": "",
+    "animation": [],
+    "source": "",
+    "updated_at": "2026-08-22",
+    "notes": "",
+    "version": "Java Edition Alpha v1.0.17 / Bedrock Edition 0.11.0",
+    "edition": "Java Edition, Bedrock Edition",
+    "effects": [],
+    "effect_immunities": [],
+    "status": "Available",
+    "tags": [
+      "Jockeys",
+      "Hostile rider; not a separate entity"
+    ],
+    "related_entries": [],
+    "command": "/summon minecraft:spider ~ ~ ~ {Passengers:[{id:\"minecraft:skeleton\"}]}",
+    "version_history": [
+      {
+        "version": "Java Edition Alpha v1.0.17 / Bedrock Edition 0.11.0",
+        "change": "Added.",
+        "type": "added",
+        "date": "2010-08-20"
+      }
+    ],
+    "texture": [],
+    "sounds": [],
+    "health": {
+      "spider": 16,
+      "skeleton": 20
+    },
+    "damage": "Spider: Easy 2, Normal 2, Hard 3; skeleton arrows depending on difficulty",
+    "armor": {
+      "spider": 0,
+      "skeleton": 0
+    },
+    "experience": "Spider and rider separately",
+    "dimension": "Overworld",
     "movement_speed": 0.3,
     "size": {
       "width": "Width: 1.4",
@@ -287,60 +647,116 @@
     },
     "spawn": {
       "light_level": [
-        "7–15 (Overworld)"
+        "According to the spider's spawn rules"
       ],
-      "biome": "All Overworld biomes (Spider); Wither Skeleton only in Nether",
-      "structure": "Nether Fortress",
-      "note": "Very rare; 1% of spiders spawn with a skeleton rider."
+      "biome": "Suitable Overworld biomes",
+      "structure": "None",
+      "condition": "1% chance that a naturally spawning spider is generated with a skeleton rider"
     },
+    "light_level": [
+      "According to the spider's spawn rules"
+    ],
+    "classification": "Hostile rider; not a separate entity",
+    "renewable": "Yes",
+    "can_despawn": "Yes, as long as the normal despawn rules apply",
+    "tameable": "No",
+    "breedable": "No",
+    "duplicable": "No",
+    "duplication_item": "",
+    "leashable": "No",
+    "rideable": "No",
+    "baby_variant": "No",
+    "drops": [
+      {
+        "item": "The spider's drops",
+        "chance": "According to the spider loot table"
+      },
+      {
+        "item": "The skeleton's drops",
+        "chance": "According to the skeleton loot table"
+      }
+    ],
+    "abilities": [
+      "The spider climbs walls",
+      "The rider shoots independently of the spider's jump",
+      "Both components can choose different targets",
+      "Both have separate health"
+    ],
+    "fun_fact": "In Nether Fortresses, a Wither Skeleton can also ride a spider.",
+    "attack_type": "The spider's melee and the skeleton's ranged attack",
+    "targets": [
+      "Players",
+      "Iron golem"
+    ],
+    "enemy_mobs": [],
+    "follows": [],
+    "healing_item": "",
+    "fire_immune": "No",
+    "undead": "Only the rider",
+    "boss_bar": "No",
+    "knockback_resistance": "",
+    "loot_table": "Loot tables of the individual components",
+    "java_entity_id": "No separate entity ID",
+    "bedrock_entity_id": "No separate entity ID",
     "equipment": {
       "skeleton": "Bow (may be enchanted), Armor (rarely)",
       "bogged": "Bow (may be enchanted), Armor (rarely)",
       "wither_skeleton": "Stone Sword"
     },
-    "light_level": [
-      "7–15"
-    ],
-    "fun_fact": "In Nether Fortresses, a Wither Skeleton can also ride a spider.",
-    "abilities": [
-      "Rider shoots arrows or attacks with sword",
-      "Spider jumps and climbs walls"
-    ],
-    "drops": [
-      {
-        "item": "Bone",
-        "chance": "100% (Skeleton)"
-      },
-      {
-        "item": "Bow",
-        "chance": "8.5% (Skeleton)"
-      },
-      {
-        "item": "Stone Sword",
-        "chance": "8.5% (Wither Skeleton)"
-      },
-      {
-        "item": "Spider Eye",
-        "chance": "33% (Spider)"
-      },
-      {
-        "item": "Experience",
-        "chance": "5–10"
-      }
-    ],
     "xp": "5–10"
   },
   {
     "id": "minecraft:cave_spider_jockey",
     "name": "Cave Spider Jockey",
-    "type": "hostile",
-    "icon": "/assets/img/mobs/hostile/Cave_Spider_Jockey.png",
-    "health": 12,
-    "damage": 2,
-    "description": "A skeleton (or variant) riding a cave spider. The cave spider poisons, and the rider shoots arrows or attacks with a sword.",
-    "version": "1.8",
     "numeric_id": "–",
-    "dimension": "Overworld (Mines, Dungeons)",
+    "type": "hostile",
+    "category": "Jockeys",
+    "icon": "/assets/img/mobs/hostile/Cave_Spider_Jockey.png",
+    "description": "Cave Spider Jockey is a command combination; not a separate entity.",
+    "biome": "No regular natural biome assignment",
+    "aliases": [
+      "Cave Spider Jockey"
+    ],
+    "introduced_date": "2011-09-14",
+    "removed_date": "",
+    "gallery": [],
+    "model": "",
+    "animation": [],
+    "source": "",
+    "updated_at": "2026-08-22",
+    "notes": "Unlike the normal spider jockey, this combination is not a regular natural spawn in Java.",
+    "version": "Components available since Java Edition Beta 1.8",
+    "edition": "Java Edition, Bedrock Edition",
+    "effects": [],
+    "effect_immunities": [],
+    "status": "Only via commands/custom generation",
+    "tags": [
+      "Jockeys",
+      "Command combination; not a separate entity"
+    ],
+    "related_entries": [],
+    "command": "/summon minecraft:cave_spider ~ ~ ~ {Passengers:[{id:\"minecraft:skeleton\"}]}",
+    "version_history": [
+      {
+        "version": "Components available since Java Edition Beta 1.8",
+        "change": "Added.",
+        "type": "added",
+        "date": "2011-09-14"
+      }
+    ],
+    "texture": [],
+    "sounds": [],
+    "health": {
+      "cave_spider": 12,
+      "rider": 20
+    },
+    "damage": "Cave spider: melee plus Poison on Normal/Hard; rider depends on type and equipment",
+    "armor": {
+      "cave_spider": 0,
+      "rider": "Varies"
+    },
+    "experience": "Mount and rider separately",
+    "dimension": "Overworld",
     "movement_speed": 0.3,
     "size": {
       "width": "Width: 0.7",
@@ -348,12 +764,51 @@
     },
     "spawn": {
       "light_level": [
-        "7–15"
+        "Not as a regular natural jockey"
       ],
-      "biome": "All (mainly in mines and dungeons)",
-      "structure": "Mines, Dungeons, Strongholds",
-      "note": "Very rare; 1% of cave spiders spawn with a rider."
+      "biome": "None",
+      "structure": "No regular natural generation",
+      "condition": "Can be created via commands or custom data packs"
     },
+    "light_level": [
+      "Not as a regular natural jockey"
+    ],
+    "classification": "Command combination; not a separate entity",
+    "renewable": "Yes",
+    "can_despawn": "Yes, as long as the normal despawn rules apply",
+    "tameable": "No",
+    "breedable": "No",
+    "duplicable": "No",
+    "duplication_item": "",
+    "leashable": "No",
+    "rideable": "No",
+    "baby_variant": "No",
+    "drops": [
+      {
+        "item": "Drops of the cave spider and the chosen rider",
+        "chance": "Each according to its own loot table"
+      }
+    ],
+    "abilities": [
+      "The cave spider fits through very small openings",
+      "Poisons on Normal and Hard",
+      "Rider and mount have separate health"
+    ],
+    "fun_fact": "Unlike the normal spider jockey, this combination is not a regular natural spawn in Java.",
+    "attack_type": "Poison melee and the rider's attack",
+    "targets": [
+      "Players"
+    ],
+    "enemy_mobs": [],
+    "follows": [],
+    "healing_item": "",
+    "fire_immune": "No",
+    "undead": "Only with an undead rider",
+    "boss_bar": "No",
+    "knockback_resistance": "",
+    "loot_table": "Loot tables of the individual components",
+    "java_entity_id": "No separate entity ID",
+    "bedrock_entity_id": "No separate entity ID",
     "equipment": {
       "skeleton": "Bow (may be enchanted), Armor (rarely)",
       "stray": "Bow (may be enchanted), Armor (rarely)",
@@ -361,37 +816,6 @@
       "parched": "Bow (may be enchanted), Armor (rarely)",
       "wither_skeleton": "Stone Sword"
     },
-    "light_level": [
-      "7–15"
-    ],
-    "fun_fact": "The cave spider is smaller than normal spiders and inflicts poison (for 7 seconds on Normal).",
-    "abilities": [
-      "Rider shoots arrows or attacks with sword",
-      "Cave spider attacks and poisons",
-      "Can pass through narrow spaces"
-    ],
-    "drops": [
-      {
-        "item": "Bone",
-        "chance": "100% (Skeleton)"
-      },
-      {
-        "item": "Bow",
-        "chance": "8.5% (Skeleton)"
-      },
-      {
-        "item": "Stone Sword",
-        "chance": "8.5% (Wither Skeleton)"
-      },
-      {
-        "item": "Spider Eye",
-        "chance": "33% (Cave Spider)"
-      },
-      {
-        "item": "Experience",
-        "chance": "5–10"
-      }
-    ],
     "xp": "5–10"
   }
 ]

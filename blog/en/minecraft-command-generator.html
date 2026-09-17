@@ -1,0 +1,899 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="overworld">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Mohamad Laith AKA 'Blexilein'">
+    <meta name="robots" content="index, follow">
+    <meta name="description" content="Minecraft Command Generator: build /give, /summon, /effect, /enchant, /teleport, /gamemode, /weather and /time commands live and copy them instantly.">
+    <meta name="keywords" content="minecraft command generator, give command, summon command, effect command, enchant command, teleport command, gamemode command">
+    <link rel="canonical" href="https://mc-craft.com/blog/en/minecraft-command-generator.html">
+    <link rel="alternate" hreflang="de" href="https://mc-craft.com/blog/de/minecraft-befehl-generator.html">
+    <link rel="alternate" hreflang="en" href="https://mc-craft.com/blog/en/minecraft-command-generator.html">
+    <link rel="alternate" hreflang="x-default" href="https://mc-craft.com/blog/de/minecraft-befehl-generator.html">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="MC-Craft | Minecraft Command Generator">
+    <meta property="og:description" content="Minecraft Command Generator: build /give, /summon, /effect, /enchant, /teleport, /gamemode, /weather and /time commands live and copy them instantly.">
+    <meta property="og:url" content="https://mc-craft.com/blog/en/minecraft-command-generator.html">
+    <meta property="og:image" content="https://mc-craft.com/assets/img/favicon/overworld/mc-craft-overworld.png">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="1254">
+    <meta property="og:image:height" content="1254">
+    <meta property="og:image:alt" content="MC-Craft Logo">
+    <meta property="og:site_name" content="MC-Craft">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:locale:alternate" content="de_DE">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="MC-Craft | Minecraft Command Generator">
+    <meta name="twitter:description" content="Minecraft Command Generator: build /give, /summon, /effect, /enchant, /teleport, /gamemode, /weather and /time commands live and copy them instantly.">
+    <meta name="twitter:image" content="https://mc-craft.com/assets/img/favicon/overworld/mc-craft-overworld.png">
+    <meta name="theme-color" content="#148200">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicon/overworld/favicon-16x16.png?v=20260911v122" data-theme-icon="favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon/overworld/favicon-32x32.png?v=20260911v122" data-theme-icon="favicon-32x32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/favicon/overworld/apple-touch-icon.png?v=20260911v122" data-theme-icon="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/assets/img/favicon/overworld/android-chrome-192x192.png?v=20260911v122" data-theme-icon="android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="/assets/img/favicon/overworld/android-chrome-512x512.png?v=20260911v122" data-theme-icon="android-chrome-512x512.png">
+    <link rel="icon" href="/assets/img/favicon/overworld/favicon.ico?v=20260911v122" data-theme-icon="favicon.ico">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="stylesheet" href="/assets/fontawesome/all.min.css?v=20260911v122">
+    <link rel="stylesheet" href="/assets/CSS/minecraft-command-generator.css?v=20260911v122">
+    <link rel="stylesheet" href="/assets/CSS/site-modern-v1.css?v=20260917b">
+    <title>MC-Craft | Minecraft Command Generator</title>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Organization",
+          "@id": "https://mc-craft.com/#organization",
+          "name": "MC-Craft",
+          "url": "https://mc-craft.com/",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://mc-craft.com/assets/img/favicon/overworld/mc-craft-overworld.png",
+            "width": 1254,
+            "height": 1254
+          },
+          "sameAs": [
+            "https://github.com/Blexilein",
+            "https://discord.gg/eVVpQD75w4",
+            "https://x.com/Blexi_1"
+          ]
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://mc-craft.com/#website",
+          "name": "MC-Craft",
+          "url": "https://mc-craft.com/",
+          "inLanguage": "en-US",
+          "publisher": {
+            "@id": "https://mc-craft.com/#organization"
+          }
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://mc-craft.com/blog/en/minecraft-command-generator.html#webpage",
+          "url": "https://mc-craft.com/blog/en/minecraft-command-generator.html",
+          "name": "MC-Craft | Minecraft Command Generator",
+          "description": "Minecraft Command Generator: build /give, /summon, /effect, /enchant, /teleport, /gamemode, /weather and /time commands live and copy them instantly.",
+          "inLanguage": "en-US",
+          "isPartOf": {
+            "@id": "https://mc-craft.com/#website"
+          },
+          "breadcrumb": {
+            "@id": "https://mc-craft.com/blog/en/minecraft-command-generator.html#breadcrumb"
+          }
+        },
+        {
+          "@type": "BreadcrumbList",
+          "@id": "https://mc-craft.com/blog/en/minecraft-command-generator.html#breadcrumb",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://mc-craft.com/en/index.html"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Minecraft Command Generator"
+            }
+          ]
+        }
+      ]
+    }
+    </script>
+</head>
+<body>
+    <a class="skip-link" href="#main">Skip to main content</a>
+
+        <!-- Header -->
+     <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <a href="/en/index.html" class="logo">
+                    <div class="logo-icon"></div>
+                    <span class="logo-text">MC-Craft</span>
+                </a>
+                <nav class="navigation">
+                    <ul class="nav-list">
+                        <li><a href="/en/index.html" class="nav-link">Home</a></li>
+                        <li class="dropdown">
+                            <button class="dropdown-btn nav-link">Tools</button>
+                            <ul class="dropdown-menu">
+                                <li><a href="/blog/en/text-converter.html">Text Converter</a></li>
+                                <li><a href="/blog/en/color-text.html">Color Text</a></li>
+                                <li><a href="/blog/en/structure-converter.html">Structure Converter</a></li>
+                                <li><a href="/blog/en/schematic-viewer.html">Schematic Viewer</a></li>
+                                <li><a href="/blog/en/map-art-generator.html">Map Art Generator</a></li>
+                                <li><a href="/blog/en/nether-coordinate-calculator.html">Nether Coordinate Calculator</a></li>
+                                <li><a href="/blog/en/minecraft-command-generator.html" class="active">Minecraft Command Generator</a></li>
+                                <li><a href="/blog/en/items.html">Items Database</a></li>
+                                <li><a href="/blog/en/mobs.html">Mobs Database</a></li>
+                                <li><a href="/blog/en/server-status.html">Server Status</a></li>
+                                <li><a href="/blog/en/minecraft-api-status.html">Minecraft API Status</a></li>
+                                <li><a href="/blog/en/api-documentation.html">API Documentation</a></li>
+                                <li><a href="/blog/en/skin-lookup.html">Skin Lookup</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <button class="dropdown-btn nav-link">Discover</button>
+                            <ul class="dropdown-menu">
+                                <li><a href="/blog/en/skin-editor.html">Skin Editor</a></li>
+                                <li><a href="/blog/en/skin-poser.html">Skin Poser</a></li>
+                                <li><a href="/blog/en/chibi-skin-maker.html">Chibi Skin Maker</a></li>
+                               <li><a href="/blog/en/day-night-cycle.html">Day-Night Cycle</a></li>
+                                <li><a href="/blog/en/end_poem.html">End Poem</a></li>
+                                <li><a href="/blog/en/minecraft-capes.html">Capes Database</a></li>
+                                <li><a href="/blog/en/minecraft-heads.html">Heads Database</a></li>
+                                <li><a href="/blog/en/head-texture-generator.html">Head Texture Generator</a></li>
+                                <li><a href="/blog/en/minecraft-versions.html">Minecraft Versions</a></li>
+                                <li><a href="/blog/en/minecraft-skins.html">Skin Library</a></li>
+                                <li><a href="/blog/en/beacon-color-mixer.html">Beacon Color Mixer</a></li>
+                                <li><a href="/blog/en/qr-generator.html">QR Generator</a></li>
+                                <li><a href="/blog/en/advancement-generator.html">Advancement Generator</a></li>
+                                <li><a href="/blog/en/sign-generator.html">Sign Generator</a></li>
+                                <li><a href="/blog/en/crafting-recipes.html">Crafting Recipes</a></li>
+                                <li><a href="/blog/en/armor-trim-generator.html">Armor Trim Generator</a></li>
+                                <li><a href="/blog/en/firework-generator.html">Firework Generator</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="sound-toggle">
+                    <button class="sound-btn" id="soundBtn" aria-label="Toggle sound">
+                        <img src="/assets/img/backgrounds/sound-on.svg?v=20260911v122" alt="Sound on" class="sound-icon" id="soundIcon">
+                    </button>
+                </div>
+                <div class="lang-switcher">
+                    <a class="lang-btn" id="langBtn" href="/blog/de/minecraft-befehl-generator.html" aria-label="Auf Deutsch wechseln">
+                        <img src="/assets/img/backgrounds/en.svg?v=20260911v122" alt="English" class="flag-icon" id="langFlag">
+                    </a>
+                </div>
+                <div class="theme-switcher">
+                    <button class="theme-btn" id="themeBtn">
+                        <i class="fa-solid fa-palette"></i>
+                    </button>
+                    <div class="theme-dropdown" id="themeDropdown">
+                        <button class="theme-option" data-theme="overworld">
+                            <i class="fas fa-cube"></i>
+                            <span>Overworld</span>
+                        </button>
+                        <button class="theme-option" data-theme="nether">
+                            <i class="fas fa-fire"></i>
+                            <span>Nether</span>
+                        </button>
+                        <button class="theme-option" data-theme="end">
+                            <i class="fas fa-moon"></i>
+                            <span>The End</span>
+                        </button>
+                    </div>
+                </div>
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Navigation -->
+    <div class="mobile-nav" id="mobileNav">
+        <div class="mobile-nav-header">
+            <div class="logo">
+                <div class="logo-icon"></div>
+                <span class="logo-text">MC-Craft</span>
+            </div>
+            <button class="close-btn" id="closeBtn">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <ul class="mobile-nav-list">
+            <li><a href="/en/index.html" class="mobile-nav-link">Home</a></li>
+            <li><a href="/blog/en/text-converter.html" class="mobile-nav-link">Text Converter</a></li>
+            <li><a href="/blog/en/color-text.html" class="mobile-nav-link">Color Text</a></li>
+            <li><a href="/blog/en/structure-converter.html" class="mobile-nav-link">Structure Converter</a></li>
+            <li><a href="/blog/en/schematic-viewer.html" class="mobile-nav-link">Schematic Viewer</a></li>
+            <li><a href="/blog/en/map-art-generator.html" class="mobile-nav-link">Map Art Generator</a></li>
+            <li><a href="/blog/en/nether-coordinate-calculator.html" class="mobile-nav-link">Nether Coordinate Calculator</a></li>
+            <li><a href="/blog/en/minecraft-command-generator.html" class="mobile-nav-link active">Minecraft Command Generator</a></li>
+            <li><a href="/blog/en/items.html" class="mobile-nav-link">Items Database</a></li>
+            <li><a href="/blog/en/mobs.html" class="mobile-nav-link">Mobs Database</a></li>
+            <li><a href="/blog/en/server-status.html" class="mobile-nav-link">Server Status</a></li>
+            <li><a href="/blog/en/minecraft-api-status.html" class="mobile-nav-link">Minecraft API Status</a></li>
+            <li><a href="/blog/en/api-documentation.html" class="mobile-nav-link">API Documentation</a></li>
+            <li><a href="/blog/en/skin-lookup.html" class="mobile-nav-link">Skin Lookup</a></li>
+            <li><a href="/blog/en/skin-editor.html" class="mobile-nav-link">Skin Editor</a></li>
+            <li><a href="/blog/en/skin-poser.html" class="mobile-nav-link">Skin Poser</a></li>
+            <li><a href="/blog/en/chibi-skin-maker.html" class="mobile-nav-link">Chibi Skin Maker</a></li>
+            <li><a href="/blog/en/day-night-cycle.html" class="mobile-nav-link">Day-Night Cycle</a></li>
+            <li><a href="/blog/en/end_poem.html" class="mobile-nav-link">End Poem</a></li>
+            <li><a href="/blog/en/minecraft-capes.html" class="mobile-nav-link">Capes Database</a></li>
+            <li><a href="/blog/en/minecraft-heads.html" class="mobile-nav-link">Heads Database</a></li>
+            <li><a href="/blog/en/head-texture-generator.html" class="mobile-nav-link">Head Texture Generator</a></li>
+            <li><a href="/blog/en/minecraft-versions.html" class="mobile-nav-link">Minecraft Versions</a></li>
+            <li><a href="/blog/en/minecraft-skins.html" class="mobile-nav-link">Skin Library</a></li>
+            <li><a href="/blog/en/beacon-color-mixer.html" class="mobile-nav-link">Beacon Color Mixer</a></li>
+            <li><a href="/blog/en/qr-generator.html" class="mobile-nav-link">QR Generator</a></li>
+            <li><a href="/blog/en/advancement-generator.html" class="mobile-nav-link">Advancement Generator</a></li>
+            <li><a href="/blog/en/sign-generator.html" class="mobile-nav-link">Sign Generator</a></li>
+            <li><a href="/blog/en/crafting-recipes.html" class="mobile-nav-link">Crafting Recipes</a></li>
+            <li><a href="/blog/en/armor-trim-generator.html" class="mobile-nav-link">Armor Trim Generator</a></li>
+            <li><a href="/blog/en/firework-generator.html" class="mobile-nav-link">Firework Generator</a></li>
+        </ul>
+        <div class="mobile-theme-switcher">
+            <h4>Choose theme:</h4>
+            <div class="theme-options">
+                <button class="theme-option-btn" data-theme="overworld">
+                    <i class="fas fa-cube"></i> <span>Overworld</span>
+                </button>
+                <button class="theme-option-btn" data-theme="nether">
+                    <i class="fas fa-fire"></i> <span>Nether</span>
+                </button>
+                <button class="theme-option-btn" data-theme="end">
+                    <i class="fas fa-moon"></i> <span>The End</span>
+                </button>
+            </div>
+            <div class="mobile-sound-lang">
+                <button class="mobile-sound-btn" id="mobileSoundBtn">
+                    <img src="/assets/img/backgrounds/sound-on.svg?v=20260911v122" alt="Sound on" class="sound-icon" id="mobileSoundIcon">
+                    <span>Sound</span>
+                </button>
+                <a class="mobile-lang-btn" id="mobileLangBtn" href="/blog/de/minecraft-befehl-generator.html">
+                    <img src="/assets/img/backgrounds/en.svg?v=20260911v122" alt="English" class="flag-icon" id="mobileLangFlag">
+                    <span>Language</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+
+    <main class="main" id="main" tabindex="-1">
+        <!-- Hero Section -->
+        <section class="hero" id="home">
+            <div class="hero-bg-grid"></div>
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-badge">
+                        <span class="hero-badge-dot"></span>
+                        V 1.2.0 IS HERE
+                    </div>
+                    <h1 class="hero-title">Minecraft Command <span class="highlight">Generator</span></h1>
+                    <p class="hero-description">
+                        Build <code>/give</code>, <code>/summon</code>, <code>/effect</code>, <code>/enchant</code>,
+                        <code>/teleport</code>, <code>/gamemode</code>, <code>/weather</code> and <code>/time</code> commands –
+                        pick a type, fill in the fields and copy the finished command.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#generator" class="btn btn-primary">
+                            <i class="fas fa-terminal"></i> Go to Generator
+                        </a>
+                        <a href="#how" class="btn btn-secondary">
+                            <i class="fas fa-circle-info"></i> How It Works
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="hero-grid-staggered">
+                        <div class="hero-stagger-col hero-stagger-left">
+                            <div class="grid-item">
+                                <i class="fas fa-box"></i>
+                                <span>/give</span>
+                            </div>
+                            <div class="grid-item">
+                                <i class="fas fa-dragon"></i>
+                                <span>/summon</span>
+                            </div>
+                        </div>
+                        <div class="hero-stagger-col hero-stagger-right">
+                            <div class="grid-item">
+                                <i class="fas fa-wand-sparkles"></i>
+                                <span>/effect</span>
+                            </div>
+                            <div class="grid-item">
+                                <i class="fas fa-copy"></i>
+                                <span>Copy</span>
+                            </div>
+                        </div>
+                        <div class="floating-cube floating-cube-1"></div>
+                        <div class="floating-cube floating-cube-2"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Generator Section -->
+        <section class="mcg-section" id="generator">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Build the <span class="highlight">Command</span></h2>
+                    <p class="section-subtitle">Pick a command type – the finished command appears live below.</p>
+                </div>
+
+                <div class="mcg-tabs" role="tablist">
+                    <button type="button" class="mcg-tab active" data-tab="give"><i class="fas fa-box"></i> Give</button>
+                    <button type="button" class="mcg-tab" data-tab="summon"><i class="fas fa-dragon"></i> Summon</button>
+                    <button type="button" class="mcg-tab" data-tab="effect"><i class="fas fa-wand-sparkles"></i> Effect</button>
+                    <button type="button" class="mcg-tab" data-tab="enchant"><i class="fas fa-hat-wizard"></i> Enchant</button>
+                    <button type="button" class="mcg-tab" data-tab="teleport"><i class="fas fa-person-walking-arrow-right"></i> Teleport</button>
+                    <button type="button" class="mcg-tab" data-tab="gamemode"><i class="fas fa-gamepad"></i> Gamemode</button>
+                    <button type="button" class="mcg-tab" data-tab="weather"><i class="fas fa-cloud-rain"></i> Weather</button>
+                    <button type="button" class="mcg-tab" data-tab="time"><i class="fas fa-clock"></i> Time</button>
+                </div>
+
+                <div class="mcg-panel-wrap">
+                    <!-- GIVE -->
+                    <div class="mcg-panel" data-panel="give">
+                        <h3 class="mcg-panel-title"><i class="fas fa-box"></i> Give an Item</h3>
+                        <p class="mcg-panel-hint">Gives a target a certain amount of an item.</p>
+                        <div class="mcg-form">
+                            <div class="mcg-field">
+                                <label for="mcgGiveTarget">Target</label>
+                                <select class="mcg-select" id="mcgGiveTarget">
+                                    <option value="@s">@s – myself</option>
+                                    <option value="@p">@p – nearest player</option>
+                                    <option value="@r">@r – random player</option>
+                                    <option value="@a">@a – all players</option>
+                                    <option value="@e">@e – all entities</option>
+                                    <option value="custom">Custom name …</option>
+                                </select>
+                            </div>
+                            <div class="mcg-field" id="mcgGiveTargetCustomWrap" hidden>
+                                <label for="mcgGiveTargetCustom">Player name</label>
+                                <input type="text" class="mcg-input" id="mcgGiveTargetCustom" placeholder="Notch">
+                            </div>
+                            <div class="mcg-field mcg-span-full">
+                                <label>Item</label>
+                                <div class="mcg-picker">
+                                    <input type="search" class="mcg-input mcg-picker-search" id="mcgGiveItemSearch" autocomplete="off" placeholder="Search item …">
+                                    <div class="mcg-picker-tabs" id="mcgGiveItemTabs"></div>
+                                    <div class="mcg-picker-grid" id="mcgGiveItemGrid">
+                                        <p class="mcg-picker-state">Loading …</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mcg-field">
+                                <label for="mcgGiveCount">Count</label>
+                                <input type="number" class="mcg-input" id="mcgGiveCount" min="1" max="64" step="1" value="1">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- SUMMON -->
+                    <div class="mcg-panel" data-panel="summon" hidden>
+                        <h3 class="mcg-panel-title"><i class="fas fa-dragon"></i> Summon a Mob</h3>
+                        <p class="mcg-panel-hint">Summons a mob at the given position.</p>
+                        <div class="mcg-form">
+                            <div class="mcg-field mcg-span-full">
+                                <label>Mob</label>
+                                <div class="mcg-picker">
+                                    <input type="search" class="mcg-input mcg-picker-search" id="mcgSummonMobSearch" autocomplete="off" placeholder="Search mob …">
+                                    <div class="mcg-picker-tabs" id="mcgSummonMobTabs"></div>
+                                    <div class="mcg-picker-grid" id="mcgSummonMobGrid">
+                                        <p class="mcg-picker-state">Loading …</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mcg-field mcg-span-2">
+                                <label>Position</label>
+                                <div class="mcg-coords">
+                                    <input type="text" class="mcg-input" id="mcgSummonX" placeholder="X" value="~">
+                                    <input type="text" class="mcg-input" id="mcgSummonY" placeholder="Y" value="~">
+                                    <input type="text" class="mcg-input" id="mcgSummonZ" placeholder="Z" value="~">
+                                </div>
+                            </div>
+                            <div class="mcg-field mcg-span-2">
+                                <label for="mcgSummonName">Custom name (optional)</label>
+                                <input type="text" class="mcg-input" id="mcgSummonName" placeholder="e.g. Boss Zombie">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- EFFECT -->
+                    <div class="mcg-panel" data-panel="effect" hidden>
+                        <h3 class="mcg-panel-title"><i class="fas fa-wand-sparkles"></i> Give an Effect</h3>
+                        <p class="mcg-panel-hint">Gives a target a status effect for a set duration.</p>
+                        <div class="mcg-form">
+                            <div class="mcg-field">
+                                <label for="mcgEffectTarget">Target</label>
+                                <select class="mcg-select" id="mcgEffectTarget">
+                                    <option value="@s">@s – myself</option>
+                                    <option value="@p">@p – nearest player</option>
+                                    <option value="@r">@r – random player</option>
+                                    <option value="@a">@a – all players</option>
+                                    <option value="@e">@e – all entities</option>
+                                    <option value="custom">Custom name …</option>
+                                </select>
+                            </div>
+                            <div class="mcg-field" id="mcgEffectTargetCustomWrap" hidden>
+                                <label for="mcgEffectTargetCustom">Player name</label>
+                                <input type="text" class="mcg-input" id="mcgEffectTargetCustom" placeholder="Notch">
+                            </div>
+                            <div class="mcg-field mcg-span-2">
+                                <label for="mcgEffectType">Effect</label>
+                                <select class="mcg-select" id="mcgEffectType">
+                                    <option value="speed">Speed</option>
+                                    <option value="slowness">Slowness</option>
+                                    <option value="haste">Haste</option>
+                                    <option value="mining_fatigue">Mining Fatigue</option>
+                                    <option value="strength">Strength</option>
+                                    <option value="instant_health">Instant Health</option>
+                                    <option value="instant_damage">Instant Damage</option>
+                                    <option value="jump_boost">Jump Boost</option>
+                                    <option value="nausea">Nausea</option>
+                                    <option value="regeneration">Regeneration</option>
+                                    <option value="resistance">Resistance</option>
+                                    <option value="fire_resistance">Fire Resistance</option>
+                                    <option value="water_breathing">Water Breathing</option>
+                                    <option value="invisibility">Invisibility</option>
+                                    <option value="blindness">Blindness</option>
+                                    <option value="night_vision">Night Vision</option>
+                                    <option value="hunger">Hunger</option>
+                                    <option value="weakness">Weakness</option>
+                                    <option value="poison">Poison</option>
+                                    <option value="wither">Wither</option>
+                                    <option value="health_boost">Health Boost</option>
+                                    <option value="absorption">Absorption</option>
+                                    <option value="saturation">Saturation</option>
+                                    <option value="glowing">Glowing</option>
+                                    <option value="levitation">Levitation</option>
+                                    <option value="luck">Luck</option>
+                                    <option value="unluck">Bad Luck</option>
+                                    <option value="slow_falling">Slow Falling</option>
+                                    <option value="conduit_power">Conduit Power</option>
+                                    <option value="dolphins_grace">Dolphin's Grace</option>
+                                    <option value="bad_omen">Bad Omen</option>
+                                    <option value="hero_of_the_village">Hero of the Village</option>
+                                    <option value="darkness">Darkness</option>
+                                </select>
+                            </div>
+                            <div class="mcg-field" id="mcgEffectDurationField">
+                                <label for="mcgEffectDuration">Duration (seconds)</label>
+                                <input type="number" class="mcg-input" id="mcgEffectDuration" min="1" max="1000000" step="1" value="30">
+                            </div>
+                            <div class="mcg-check">
+                                <input type="checkbox" id="mcgEffectInfinite">
+                                <label for="mcgEffectInfinite">Infinite</label>
+                            </div>
+                            <div class="mcg-field">
+                                <label for="mcgEffectAmplifier">Level (0 = level 1)</label>
+                                <input type="number" class="mcg-input" id="mcgEffectAmplifier" min="0" max="255" step="1" value="0">
+                            </div>
+                            <div class="mcg-check">
+                                <input type="checkbox" id="mcgEffectHide">
+                                <label for="mcgEffectHide">Hide particles</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ENCHANT -->
+                    <div class="mcg-panel" data-panel="enchant" hidden>
+                        <h3 class="mcg-panel-title"><i class="fas fa-hat-wizard"></i> Enchant</h3>
+                        <p class="mcg-panel-hint">Gives a target an already-enchanted item – no matter what it's currently holding. Note: Minecraft validates the enchantment the same way normal enchanting does – it has no effect on blocks or non-enchantable items, and every enchantment has its own maximum level.</p>
+                        <div class="mcg-form">
+                            <div class="mcg-field">
+                                <label for="mcgEnchantTarget">Target</label>
+                                <select class="mcg-select" id="mcgEnchantTarget">
+                                    <option value="@s">@s – myself</option>
+                                    <option value="@p">@p – nearest player</option>
+                                    <option value="@r">@r – random player</option>
+                                    <option value="@a">@a – all players</option>
+                                    <option value="@e">@e – all entities</option>
+                                    <option value="custom">Custom name …</option>
+                                </select>
+                            </div>
+                            <div class="mcg-field" id="mcgEnchantTargetCustomWrap" hidden>
+                                <label for="mcgEnchantTargetCustom">Player name</label>
+                                <input type="text" class="mcg-input" id="mcgEnchantTargetCustom" placeholder="Notch">
+                            </div>
+                            <div class="mcg-field mcg-span-full">
+                                <label>Item</label>
+                                <div class="mcg-picker">
+                                    <input type="search" class="mcg-input mcg-picker-search" id="mcgEnchantItemSearch" autocomplete="off" placeholder="Search item …">
+                                    <div class="mcg-picker-tabs" id="mcgEnchantItemTabs"></div>
+                                    <div class="mcg-picker-grid" id="mcgEnchantItemGrid">
+                                        <p class="mcg-picker-state">Loading …</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mcg-field mcg-span-2">
+                                <label for="mcgEnchantType">Enchantment</label>
+                                <select class="mcg-select" id="mcgEnchantType">
+                                    <option value="sharpness">Sharpness</option>
+                                    <option value="protection">Protection</option>
+                                    <option value="efficiency">Efficiency</option>
+                                    <option value="unbreaking">Unbreaking</option>
+                                    <option value="fortune">Fortune</option>
+                                    <option value="looting">Looting</option>
+                                    <option value="silk_touch">Silk Touch</option>
+                                    <option value="power">Power</option>
+                                    <option value="infinity">Infinity</option>
+                                    <option value="flame">Flame</option>
+                                    <option value="punch">Punch</option>
+                                    <option value="knockback">Knockback</option>
+                                    <option value="fire_aspect">Fire Aspect</option>
+                                    <option value="mending">Mending</option>
+                                    <option value="sweeping_edge">Sweeping Edge</option>
+                                    <option value="smite">Smite</option>
+                                    <option value="bane_of_arthropods">Bane of Arthropods</option>
+                                    <option value="respiration">Respiration</option>
+                                    <option value="aqua_affinity">Aqua Affinity</option>
+                                    <option value="depth_strider">Depth Strider</option>
+                                    <option value="frost_walker">Frost Walker</option>
+                                    <option value="feather_falling">Feather Falling</option>
+                                    <option value="thorns">Thorns</option>
+                                    <option value="blast_protection">Blast Protection</option>
+                                    <option value="fire_protection">Fire Protection</option>
+                                    <option value="projectile_protection">Projectile Protection</option>
+                                    <option value="binding_curse">Curse of Binding</option>
+                                    <option value="vanishing_curse">Curse of Vanishing</option>
+                                    <option value="soul_speed">Soul Speed</option>
+                                    <option value="swift_sneak">Swift Sneak</option>
+                                    <option value="luck_of_the_sea">Luck of the Sea</option>
+                                    <option value="lure">Lure</option>
+                                    <option value="loyalty">Loyalty</option>
+                                    <option value="riptide">Riptide</option>
+                                    <option value="channeling">Channeling</option>
+                                    <option value="impaling">Impaling</option>
+                                    <option value="multishot">Multishot</option>
+                                    <option value="piercing">Piercing</option>
+                                    <option value="quick_charge">Quick Charge</option>
+                                </select>
+                            </div>
+                            <div class="mcg-field">
+                                <label for="mcgEnchantLevel">Level</label>
+                                <input type="number" class="mcg-input" id="mcgEnchantLevel" min="1" max="255" step="1" value="1">
+                            </div>
+                            <div class="mcg-field mcg-span-full">
+                                <button type="button" class="btn btn-secondary" id="mcgEnchantAdd"><i class="fas fa-plus"></i> Add enchantment</button>
+                            </div>
+                            <div class="mcg-field mcg-span-full">
+                                <label>Added enchantments</label>
+                                <div class="mcg-enchant-list" id="mcgEnchantList">
+                                    <p class="mcg-enchant-empty">No enchantment added yet – the item will be given without one.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- TELEPORT -->
+                    <div class="mcg-panel" data-panel="teleport" hidden>
+                        <h3 class="mcg-panel-title"><i class="fas fa-person-walking-arrow-right"></i> Teleport</h3>
+                        <p class="mcg-panel-hint">Teleports a target to coordinates or to another player.</p>
+                        <div class="mcg-form" style="margin-bottom: var(--spacing-md);">
+                            <div class="mcg-field mcg-span-full">
+                                <label for="mcgTpTarget">Target</label>
+                                <select class="mcg-select" id="mcgTpTarget">
+                                    <option value="@s">@s – myself</option>
+                                    <option value="@p">@p – nearest player</option>
+                                    <option value="@r">@r – random player</option>
+                                    <option value="@a">@a – all players</option>
+                                    <option value="@e">@e – all entities</option>
+                                    <option value="custom">Custom name …</option>
+                                </select>
+                            </div>
+                            <div class="mcg-field mcg-span-full" id="mcgTpTargetCustomWrap" hidden>
+                                <label for="mcgTpTargetCustom">Player name</label>
+                                <input type="text" class="mcg-input" id="mcgTpTargetCustom" placeholder="Notch">
+                            </div>
+                        </div>
+                        <div class="mcg-radio-row">
+                            <label class="mcg-radio"><input type="radio" name="mcgTpMode" value="coords" checked> To coordinates</label>
+                            <label class="mcg-radio"><input type="radio" name="mcgTpMode" value="player"> To player</label>
+                        </div>
+                        <div class="mcg-form">
+                            <div class="mcg-field mcg-span-full" id="mcgTpCoordsWrap">
+                                <label>Coordinates</label>
+                                <div class="mcg-coords">
+                                    <input type="text" class="mcg-input" id="mcgTpX" placeholder="X" value="~">
+                                    <input type="text" class="mcg-input" id="mcgTpY" placeholder="Y" value="~">
+                                    <input type="text" class="mcg-input" id="mcgTpZ" placeholder="Z" value="~">
+                                </div>
+                            </div>
+                            <div class="mcg-field mcg-span-full" id="mcgTpPlayerWrap" hidden>
+                                <label for="mcgTpPlayer">Destination player</label>
+                                <input type="text" class="mcg-input" id="mcgTpPlayer" placeholder="Notch" value="Notch">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- GAMEMODE -->
+                    <div class="mcg-panel" data-panel="gamemode" hidden>
+                        <h3 class="mcg-panel-title"><i class="fas fa-gamepad"></i> Game Mode</h3>
+                        <p class="mcg-panel-hint">Changes a target's game mode.</p>
+                        <div class="mcg-form">
+                            <div class="mcg-field">
+                                <label for="mcgGmMode">Mode</label>
+                                <select class="mcg-select" id="mcgGmMode">
+                                    <option value="survival">Survival</option>
+                                    <option value="creative">Creative</option>
+                                    <option value="adventure">Adventure</option>
+                                    <option value="spectator">Spectator</option>
+                                </select>
+                            </div>
+                            <div class="mcg-field">
+                                <label for="mcgGmTarget">Target</label>
+                                <select class="mcg-select" id="mcgGmTarget">
+                                    <option value="@s">@s – myself</option>
+                                    <option value="@p">@p – nearest player</option>
+                                    <option value="@r">@r – random player</option>
+                                    <option value="@a">@a – all players</option>
+                                    <option value="custom">Custom name …</option>
+                                </select>
+                            </div>
+                            <div class="mcg-field mcg-span-2" id="mcgGmTargetCustomWrap" hidden>
+                                <label for="mcgGmTargetCustom">Player name</label>
+                                <input type="text" class="mcg-input" id="mcgGmTargetCustom" placeholder="Notch">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- WEATHER -->
+                    <div class="mcg-panel" data-panel="weather" hidden>
+                        <h3 class="mcg-panel-title"><i class="fas fa-cloud-rain"></i> Weather</h3>
+                        <p class="mcg-panel-hint">Changes the world's weather.</p>
+                        <div class="mcg-form">
+                            <div class="mcg-field">
+                                <label for="mcgWeatherType">Weather</label>
+                                <select class="mcg-select" id="mcgWeatherType">
+                                    <option value="clear">Clear</option>
+                                    <option value="rain">Rain</option>
+                                    <option value="thunder">Thunder</option>
+                                </select>
+                            </div>
+                            <div class="mcg-field">
+                                <label for="mcgWeatherDuration">Duration in seconds (optional)</label>
+                                <input type="number" class="mcg-input" id="mcgWeatherDuration" min="1" step="1" placeholder="e.g. 300">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- TIME -->
+                    <div class="mcg-panel" data-panel="time" hidden>
+                        <h3 class="mcg-panel-title"><i class="fas fa-clock"></i> Time</h3>
+                        <p class="mcg-panel-hint">Sets the world's time of day.</p>
+                        <div class="mcg-preset-row">
+                            <button type="button" class="mcg-preset active" data-time="day">Day</button>
+                            <button type="button" class="mcg-preset" data-time="noon">Noon</button>
+                            <button type="button" class="mcg-preset" data-time="night">Night</button>
+                            <button type="button" class="mcg-preset" data-time="midnight">Midnight</button>
+                            <button type="button" class="mcg-preset" data-time="custom">Custom value</button>
+                        </div>
+                        <div class="mcg-form">
+                            <div class="mcg-field" style="display:none;">
+                                <select class="mcg-select" id="mcgTimeMode">
+                                    <option value="day">Day</option>
+                                    <option value="noon">Noon</option>
+                                    <option value="night">Night</option>
+                                    <option value="midnight">Midnight</option>
+                                    <option value="custom">Custom value</option>
+                                </select>
+                            </div>
+                            <div class="mcg-field mcg-span-2" id="mcgTimeCustomWrap" hidden>
+                                <label for="mcgTimeCustom">Ticks (0–24000)</label>
+                                <input type="number" class="mcg-input" id="mcgTimeCustom" min="0" max="24000" step="1" value="0">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mcg-result">
+                    <p class="mcg-result-title"><i class="fas fa-terminal" aria-hidden="true"></i> Finished Command</p>
+                    <div class="command-box">
+                        <code id="mcgCommand">–</code>
+                        <button type="button" class="copy-btn" id="mcgCopy" aria-label="Copy command">
+                            <i class="fas fa-copy"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="tips mcg-tips">
+                    <h4><i class="fas fa-lightbulb"></i> Good to Know</h4>
+                    <ul>
+                        <li>Commands work in chat (starting with <code>/</code>), in command blocks, or in a <code>function</code> file.</li>
+                        <li>In singleplayer you need cheats enabled; on servers you need the right permissions.</li>
+                        <li><code>@s</code> means "myself", <code>@p</code> "nearest player", <code>@a</code> "all players" and <code>@e</code> "all entities".</li>
+                        <li><code>~</code> in coordinates means "relative to your current position" – so <code>~ ~ ~</code> is right where you're standing.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Info Section -->
+        <section class="info-section" id="how">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">How It <span class="highlight">Really</span> Works</h2>
+                    <p class="section-subtitle">Three steps to a finished command</p>
+                </div>
+                <div class="info-grid-container">
+                    <div class="info-card">
+                        <div class="info-card-icon">
+                            <i class="fas fa-list-check"></i>
+                        </div>
+                        <h4>1. Pick a Command Type</h4>
+                        <p>Click one of the eight tabs above – Give, Summon, Effect, Enchant, Teleport, Gamemode, Weather or Time.</p>
+                    </div>
+                    <div class="info-card">
+                        <div class="info-card-icon">
+                            <i class="fas fa-sliders"></i>
+                        </div>
+                        <h4>2. Fill in the Fields</h4>
+                        <p>Choose a target, item, mob, effect or coordinates – the command below updates instantly.</p>
+                    </div>
+                    <div class="info-card">
+                        <div class="info-card-icon">
+                            <i class="fas fa-copy"></i>
+                        </div>
+                        <h4>3. Copy &amp; Paste</h4>
+                        <p>Click the copy button, then paste it into chat, a command block, or a datapack.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta">
+            <div class="container">
+                <div class="cta-content">
+                    <h2 class="cta-title">Discover More Minecraft <span class="highlight">Tools</span>?</h2>
+                    <p class="cta-description">
+                        MC-Craft offers plenty more useful tools for your Minecraft adventures.
+                    </p>
+                    <div class="cta-buttons">
+                        <a href="/blog/en/items.html" class="btn btn-primary btn-large">
+                            <i class="fas fa-cube"></i> Items Database
+                        </a>
+                        <a href="/en/index.html#tools" class="btn btn-outline">
+                            <i class="fas fa-eye"></i> View All Tools
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+        <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-grid">
+                    <!-- Column 1 -->
+                    <div class="footer-col">
+                        <a href="/en/index.html" class="footer-logo">
+                            <div class="logo-icon"></div>
+                            <span class="logo-text">MC-Craft</span>
+                        </a>
+                        <p class="footer-description">Free Minecraft tools for the community. Built by players, for players.</p>
+                        <div class="social-links">
+                           <a href="https://github.com/Blexilein" class="social-link" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                            <a href="https://discord.gg/eVVpQD75w4" class="social-link"><i class="fab fa-discord"></i></a>
+                            <a href="https://x.com/Blexi_1" class="social-link" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        </div>
+                    </div>
+                    <!-- Column 2 -->
+                    <div class="footer-col">
+                        <h4 class="footer-title">Tools</h4>
+                        <ul class="footer-links">
+                            <li><a href="/blog/en/text-converter.html">Text Converter</a></li>
+                            <li><a href="/blog/en/color-text.html">Color Text Converter</a></li>
+                            <li><a href="/blog/en/structure-converter.html">Structure Converter</a></li>
+                            <li><a href="/blog/en/schematic-viewer.html">Schematic Viewer</a></li>
+                            <li><a href="/blog/en/map-art-generator.html">Map Art Generator</a></li>
+                            <li><a href="/blog/en/nether-coordinate-calculator.html">Nether Coordinate Calculator</a></li>
+                            <li><a href="/blog/en/minecraft-command-generator.html">Minecraft Command Generator</a></li>
+                            <li><a href="/blog/en/items.html">Items Database</a></li>
+                            <li><a href="/blog/en/mobs.html">Mobs Database</a></li>
+                            <li><a href="/blog/en/day-night-cycle.html">Day-Night Cycle</a></li>
+                            <li><a href="/blog/en/beacon-color-mixer.html">Beacon Color Mixer</a></li>
+                                <li><a href="/blog/en/qr-generator.html">QR Generator</a></li>
+                                <li><a href="/blog/en/advancement-generator.html">Advancement Generator</a></li>
+                                <li><a href="/blog/en/sign-generator.html">Sign Generator</a></li>
+                                <li><a href="/blog/en/crafting-recipes.html">Crafting Recipes</a></li>
+                                <li><a href="/blog/en/armor-trim-generator.html">Armor Trim Generator</a></li>
+                                <li><a href="/blog/en/firework-generator.html">Firework Generator</a></li>
+                        </ul>
+                    </div>
+                    <!-- Column 3 -->
+                    <div class="footer-col">
+                        <h4 class="footer-title">More Tools</h4>
+                        <ul class="footer-links">
+                            <li><a href="/blog/en/server-status.html">Server Status</a></li>
+                                <li><a href="/blog/en/minecraft-api-status.html">Minecraft API Status</a></li>
+                                <li><a href="/blog/en/api-documentation.html">API Documentation</a></li>
+                            <li><a href="/blog/en/skin-lookup.html">Skin Lookup</a></li>
+                            <li><a href="/blog/en/skin-editor.html">Skin Editor</a></li>
+                            <li><a href="/blog/en/skin-poser.html">Skin Poser</a></li>
+                            <li><a href="/blog/en/chibi-skin-maker.html">Chibi Skin Maker</a></li>
+                            <li><a href="/blog/en/minecraft-skins.html">Skin Gallery</a></li>
+                            <li><a href="/blog/en/minecraft-capes.html">Cape Gallery</a></li>
+                            <li><a href="/blog/en/minecraft-heads.html">Heads Database</a></li>
+                            <li><a href="/blog/en/head-texture-generator.html">Head Texture Generator</a></li>
+                            <li><a href="/blog/en/minecraft-versions.html">Minecraft Versions</a></li>
+                            <li><a href="/blog/en/end_poem.html">End Poem</a></li>
+                        </ul>
+                    </div>
+                    <!-- Column 4 -->
+                    <div class="footer-col">
+                        <h4 class="footer-title">Legal</h4>
+                        <ul class="footer-links">
+                            <li><a href="/blog/en/imprint.html">Imprint</a></li>
+                            <li><a href="/blog/en/privacy-policy.html">Privacy Policy</a></li>
+                            <li><a href="/blog/en/terms-of-use.html">Terms of Use</a></li>
+                            <li><a href="/blog/en/copyright.html">Copyright</a></li>
+                        </ul>
+                    </div>
+                    <!-- Column 5 -->
+                    <div class="footer-col">
+                        <h4 class="footer-title">About Us</h4>
+                        <ul class="footer-links">
+                            <li><a href="/blog/en/history.html">MC-Craft History</a></li>
+                            <li><a href="/blog/en/team.html">Our Team</a></li>
+                            <li><a href="/blog/en/about.html">About us</a></li>
+                        </ul>
+                    </div>
+                    <!-- Column 6 -->
+                    <div class="footer-col">
+                        <h4 class="footer-title">Support</h4>
+                        <ul class="footer-links">
+                            <li><a href="/blog/en/faq.html">FAQ &amp; Help</a></li>
+                            <li><a href="/blog/en/bug-report.html">Report Bug</a></li>
+                            <li><a href="/blog/en/support.html">Support Contact</a></li>
+                            <li><a href="/blog/en/e-mails.html">E-mails</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <div class="copyright">
+                        <p>&copy; <span id="currentYear">2026</span> MC-Craft. <span>All rights reserved.</span></p>
+                        <p class="disclaimer">Minecraft is a trademark of Mojang Studios. This site is not officially affiliated with Mojang or Microsoft.</p>
+                    </div>
+                    <div class="footer-meta">
+                        <span class="version">Version 1.2.0</span>
+                        <a href="/blog/en/changelog.html" class="changelog active">Changelog</a>
+                        <a href="/blog/en/api-documentation.html" class="api-docs"><i class="fas fa-book-open" aria-hidden="true"></i> API Docs</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Notification Toast -->
+    <div class="toast-container" id="toastContainer"></div>
+
+    <!-- JavaScript -->
+    <script src="/assets/JS/modules/mc-preferences.js?v=20260917b"></script>
+    <script src="/assets/JS/main.js?v=20260917a"></script>
+    <script src="/assets/JS/modules/minecraft-command-generator.js?v=20260911v122" defer></script>
+</body>
+</html>

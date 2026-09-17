@@ -2,18 +2,186 @@
 /* Self-hosted (no request to Google's servers, see assets/fonts/fonts.css) */
 @import url('/assets/fonts/fonts.css');
 
-/* Site-wide custom cursor: the Diamond Sword item icon, cropped to its native
-   16x16 pixel-art grid and scaled 2x (32x32) with nearest-neighbor resampling
-   so it stays crisp/blocky instead of blurry. Hotspot (28,2) sits right at the
-   blade tip, matching how a normal arrow cursor's hotspot sits at its tip.
-   !important + the universal selector because dozens of page-specific
-   stylesheets set their own `cursor: pointer` on buttons/links, and this file
-   loads last but many of those rules match with equal specificity — without
-   overriding them, the sword would only ever show over plain backgrounds.
-   Real text inputs keep the native text-beam cursor since a static sword
-   there would make it hard to see where the caret will land. */
-*:not(input[type="text"]):not(input[type="search"]):not(input[type="email"]):not(input[type="number"]):not(input[type="url"]):not(input[type="password"]):not(textarea):not([contenteditable="true"]) {
-    cursor: url('/assets/img/cursor/sword-cursor.png') 28 2, auto !important;
+/* =====================================================================
+   CURSOR HIERARCHY
+   One cascade and no !important, so every page rule and inline style can
+   override it (the skin editor sets its canvas cursor from JS, the chibi
+   editor its resize/drag handles):
+     page scrollbar            -> browser default (html)
+     page area                 -> MC-Craft sword (body, inherited)
+     readable text and code    -> text
+     text inputs, editable     -> text
+     links, buttons, controls  -> pointer
+     disabled controls         -> not-allowed
+     resize / drag / canvas    -> set by the page that owns the control
+   This replaces `*:not(...) { cursor: url(sword) !important }`, which put the
+   sword on buttons, sliders, resize handles and the scrollbar and silently
+   overrode every cursor rule in the page stylesheets.
+   ===================================================================== */
+html {
+    cursor: default;
+}
+
+body {
+    cursor: url('/assets/img/cursor/sword-cursor.png') 28 2, auto;
+}
+
+p, li, dd, dt, blockquote, figcaption, caption, td, th,
+h1, h2, h3, h4, h5, h6, pre, code, kbd, samp {
+    cursor: text;
+}
+
+input:not([type]), input[type="text"], input[type="search"], input[type="email"],
+input[type="url"], input[type="password"], input[type="number"], input[type="tel"],
+textarea, [contenteditable=""], [contenteditable="true"] {
+    cursor: text;
+}
+
+a[href], button, summary, select, label[for],
+label:has(> input[type="checkbox"], > input[type="radio"]),
+input[type="checkbox"], input[type="radio"], input[type="range"], input[type="color"],
+input[type="file"], input[type="submit"], input[type="button"], input[type="reset"],
+[role="button"], [role="tab"], [role="menuitem"], [role="option"], [role="switch"],
+[onclick] {
+    cursor: pointer;
+}
+
+/* Text inside a link or button behaves like the control, not like prose. */
+:is(a[href], button, summary, label[for], [role="button"], [role="tab"], [role="menuitem"], [onclick])
+    :is(p, li, span, strong, em, small, code, h1, h2, h3, h4, h5, h6, i, svg, img) {
+    cursor: pointer;
+}
+
+/* Raised specificity (0,2,0): site-modern's own .btn rules further down and the
+   page stylesheets set cursor: pointer on buttons, so an equally specific
+   :disabled lost to them on source order. */
+:is(button, input, select, textarea, a, .btn, [role="button"]):is(:disabled, [aria-disabled="true"]) {
+    cursor: not-allowed;
+}
+
+/* =====================================================================
+   1. DESIGN TOKENS
+   Moved here from the ~35 page stylesheets, each of which carried its own
+   copy of the palette. This file is linked last on every page, so these
+   values now win everywhere and there is one place to change a colour.
+   A page may still declare extra variables of its own (qr-generator's
+   --card / --card-border, for example): the cascade works per property, so
+   anything not named below keeps whatever the page stylesheet set.
+   ===================================================================== */
+
+/* ===== CSS RESET & VARIABLES ===== */
+
+
+:root {
+    --mono-font: 'JetBrains Mono', 'Fira Code', 'Cascadia Code', Consolas, 'Liberation Mono', monospace;
+    /* Overworld Theme (Default) */
+    --primary: #00A86B;
+    --primary-dark: #008A5B;
+    --primary-light: #00C47A;
+    --primary-gradient: linear-gradient(135deg, #00A86B, #00C47A);
+    
+    --secondary: #6C63FF;
+    --secondary-dark: #5A52E0;
+    --secondary-light: #8580FF;
+    --secondary-gradient: linear-gradient(135deg, #6C63FF, #8580FF);
+    
+    --accent: #be2323;
+    --warning: #FFA726;
+    --success: #4CAF50;
+    --info: #2196F3;
+    
+    /* Background Colors */
+    --bg-primary: #0F172A;
+    --bg-secondary: #1E293B;
+    --bg-surface: #334155;
+    --bg-card: #1E293B;
+    
+    /* Text Colors */
+    --text-primary: #F8FAFC;
+    --text-secondary: #94A3B8;
+    --text-muted: #64748B;
+    
+    /* Border Colors */
+    --border-color: #334155;
+    --border-light: #475569;
+    
+    /* Shadow Colors - deeper than a light UI needs, because on a near-black
+       page a 0.15 alpha shadow is invisible and cards end up looking flat. */
+    --shadow-sm: 0 2px 6px rgba(2, 6, 16, 0.35);
+    --shadow-md: 0 6px 18px rgba(2, 6, 16, 0.45);
+    --shadow-lg: 0 14px 34px rgba(2, 6, 16, 0.5);
+    --shadow-xl: 0 22px 54px rgba(2, 6, 16, 0.58);
+
+    /* Vertical rhythm: one shared value so every section breathes identically
+       instead of each one re-deciding its own padding. */
+    --section-pad: clamp(3.25rem, 6vw, 5.5rem);
+    --section-gap: clamp(1.75rem, 3.4vw, 3rem);
+    
+    /* Border Radius */
+    --radius-sm: 6px;
+    --radius-md: 12px;
+    --radius-lg: 16px;
+    --radius-xl: 24px;
+    --radius-full: 9999px;
+    
+    /* Spacing */
+    --spacing-xs: 0.5rem;
+    --spacing-sm: 1rem;
+    --spacing-md: 1.5rem;
+    --spacing-lg: 2rem;
+    --spacing-xl: 3rem;
+    --spacing-2xl: 4rem;
+    
+    /* Transitions */
+    --transition-fast: 150ms ease;
+    --transition-normal: 300ms ease;
+    --transition-slow: 500ms ease;
+    
+    /* Font Sizes */
+    --text-xs: 0.75rem;
+    --text-sm: 0.875rem;
+    --text-base: 1rem;
+    --text-lg: 1.125rem;
+    --text-xl: 1.25rem;
+    --text-2xl: 1.5rem;
+    --text-3xl: 1.875rem;
+    --text-4xl: 2.25rem;
+    --text-5xl: 3rem;
+    --text-6xl: 3.75rem;
+}
+
+/* Nether Theme */
+[data-theme="nether"] {
+    --primary: #FF5722;
+    --primary-dark: #D84315;
+    --primary-light: #FF7043;
+    --primary-gradient: linear-gradient(135deg, #FF5722, #FF7043);
+    
+    --secondary: #FF9800;
+    --secondary-dark: #F57C00;
+    --secondary-light: #FFB74D;
+    
+    --bg-primary: #1A0A0A;
+    --bg-secondary: #2B1515;
+    --bg-surface: #3F1F1F;
+    --bg-card: #2B1515;
+}
+
+/* End Theme */
+[data-theme="end"] {
+    --primary: #9C27B0;
+    --primary-dark: #7B1FA2;
+    --primary-light: #BA68C8;
+    --primary-gradient: linear-gradient(135deg, #9C27B0, #BA68C8);
+    
+    --secondary: #673AB7;
+    --secondary-dark: #512DA8;
+    --secondary-light: #9575CD;
+    
+    --bg-primary: #0A0A1A;
+    --bg-secondary: #15152B;
+    --bg-surface: #1F1F3F;
+    --bg-card: #15152B;
 }
 
 :root {
@@ -43,10 +211,1291 @@
     --chroma-c: #f39cff;
 }
 
+/* ===== BASE STYLES ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    /* clip, not hidden: hidden turns html/body into scroll containers and breaks position: sticky. */
+    overflow-x: hidden;
+    overflow-x: clip;
+    width: 100%;
+}
+
+body {
+    font-family: 'Minecraft', 'Poppins', -apple-system, BlinkMacSystemFont, sans-serif;
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    line-height: 1.6;
+    overflow-x: hidden;
+    overflow-x: clip;
+    width: 100%;
+    max-width: 100vw;
+    transition: background-color var(--transition-normal);
+}
+
+/* Keyboard users land on this first; it stays off-screen until focused. */
+.skip-link {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    z-index: 2500;
+    transform: translate(-50%, -140%);
+    padding: 12px 22px;
+    background: var(--primary);
+    color: #fff;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 0 0 var(--radius-md) var(--radius-md);
+    transition: transform var(--transition-fast);
+}
+
+/* :focus as well as :focus-visible - a skip link is only ever reached by
+   keyboard, and this way it also appears for programmatic focus. */
+.skip-link:focus,
+.skip-link:focus-visible {
+    transform: translate(-50%, 0);
+    outline: 2px solid #fff;
+    outline-offset: -5px;
+}
+
+/* The skip target needs tabindex="-1" to accept focus, which would otherwise
+   draw a ring around the whole page after the jump. */
+.main:focus {
+    outline: none;
+}
+
+/* Container */
+.container {
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 var(--spacing-md);
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: var(--spacing-sm);
+}
+
+/* ===== LOADER ===== */
+.loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--bg-primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+    transition: opacity 0.05s ease;
+}
+
+.loader.hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.loader-content {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--spacing-md);
+}
+
+.loading-spinner {
+    position: relative;
+    width: 60px;
+    height: 60px;
+}
+
+.spinner {
+    width: 100%;
+    height: 100%;
+    border: 4px solid transparent;
+    border-top-color: var(--primary);
+    border-radius: 50%;
+    animation: spin 0.4s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.loading-text {
+    font-size: var(--text-lg);
+    color: var(--text-secondary);
+    font-weight: 500;
+}
+
+/* ===== HEADER ===== */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(15, 23, 42, 0.95);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid var(--border-color);
+    z-index: 1000;
+    /* Only the two properties that actually change on scroll, so the fixed
+       header is not re-evaluating every animatable property on every frame. */
+    transition: background-color var(--transition-normal), box-shadow var(--transition-normal);
+}
+
+.header.scrolled {
+    background-color: rgba(15, 23, 42, 0.98);
+    box-shadow: var(--shadow-lg);
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 70px;
+}
+
+/* Logo */
+.logo {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+    text-decoration: none;
+    color: var(--text-primary);
+    font-weight: 700;
+    font-size: var(--text-xl);
+    transition: transform var(--transition-fast);
+}
+
+.logo:hover {
+    transform: translateY(-2px);
+}
+.logo-icon {
+    width: 36px;
+    height: 36px;
+    background: var(--primary-gradient);
+    border-radius: var(--radius-md);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 18px;
+}
+.logo-text {
+    font-weight: 700;
+}
+
+/* Navigation */
+.navigation {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-list {
+    display: flex;
+    gap: var(--spacing-sm);
+    list-style: none;
+    align-items: center;
+}
+
+.nav-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    min-height: 40px;
+    padding: var(--spacing-xs) var(--spacing-md);
+    text-decoration: none;
+    color: var(--text-secondary);
+    font-weight: 600;
+    font-size: var(--text-sm);
+    letter-spacing: 0.02em;
+    border-radius: var(--radius-full);
+    transition: color var(--transition-fast), background-color var(--transition-fast);
+    position: relative;
+}
+
+.nav-link:hover {
+    color: var(--text-primary);
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+.nav-link.active {
+    color: var(--primary);
+    background-color: rgba(0, 168, 107, 0.1);
+}
+
+.nav-link.active::after {
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 4px;
+    height: 4px;
+    background-color: var(--primary);
+    border-radius: 50%;
+}
+
+/* Theme Switcher */
+.theme-switcher {
+    position: relative;
+}
+
+.theme-btn {
+    width: 40px;
+    height: 40px;
+    background-color: var(--bg-surface);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-md);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-primary);
+    cursor: pointer;
+    transition: all var(--transition-fast);
+}
+
+.theme-btn:hover {
+    background-color: var(--primary);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+}
+
+.theme-dropdown {
+    position: absolute;
+    top: calc(100% + 8px);
+    right: 0;
+    width: 160px;
+    background-color: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-md);
+    padding: var(--spacing-sm);
+    box-shadow: var(--shadow-lg);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+    transition: all var(--transition-normal);
+    z-index: 1001;
+}
+
+.theme-dropdown.show {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.theme-option {
+    width: 100%;
+    padding: var(--spacing-sm);
+    background: none;
+    border: none;
+    border-radius: var(--radius-sm);
+    color: var(--text-secondary);
+    font-family: inherit;
+    font-size: var(--text-sm);
+    text-align: left;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+    transition: all var(--transition-fast);
+}
+
+.theme-option:hover {
+    background-color: rgba(255, 255, 255, 0.05);
+    color: var(--text-primary);
+}
+
+.theme-option.active {
+    color: var(--primary);
+    background-color: rgba(0, 168, 107, 0.1);
+}
+
+/* ===== THEME IMAGES ===== */
+[data-theme="overworld"] .logo-icon {
+    background-image: url('/assets/img/icons/grassblock.gif');
+    background-size: cover;
+}
+
+[data-theme="nether"] .logo-icon {
+    background-image: url('/assets/img/icons/Lava.gif');
+    background-size: cover;
+}
+
+[data-theme="end"] .logo-icon {
+    background-image: url('/assets/img/icons/crystal.gif');
+    background-size: cover;
+}
+
+/* Mobile Menu Button */
+.mobile-menu-btn {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    background: none;
+    border: none;
+    border-radius: var(--radius-md);
+    color: var(--text-primary);
+    font-size: 20px;
+    cursor: pointer;
+    transition: background-color var(--transition-fast);
+}
+
+.mobile-menu-btn:hover {
+    background-color: var(--bg-surface);
+}
+
+/* Dimmed backdrop behind the drawer. Previously the drawer's own click handler
+   was the only way to dismiss it by tapping "outside", but the drawer element is
+   the 280px panel itself, so a tap on the page never reached it and the menu felt
+   stuck. This layer gives the tap somewhere to land and the drawer visual depth. */
+.mobile-nav-overlay {
+    position: fixed;
+    inset: 0;
+    z-index: 1350;
+    background: rgba(2, 6, 16, 0.62);
+    backdrop-filter: blur(2px);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity var(--transition-normal), visibility var(--transition-normal);
+}
+
+.mobile-nav-overlay.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Mobile Navigation */
+.mobile-nav {
+    position: fixed;
+    top: 70px;
+    left: -100%;
+    width: 280px;
+    height: calc(100vh - 70px);
+    background-color: var(--bg-primary);
+    border-right: 1px solid var(--border-color);
+    z-index: 1001;
+    transition: left var(--transition-normal);
+    overflow-y: auto;
+    overscroll-behavior: contain;
+    -webkit-overflow-scrolling: touch;
+}
+
+.mobile-nav.show {
+    left: 0;
+}
+
+.mobile-nav-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: var(--spacing-md);
+    border-bottom: 1px solid var(--border-color);
+}
+
+.close-btn {
+    background: none;
+    border: none;
+    color: var(--text-primary);
+    font-size: 20px;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: var(--radius-md);
+    transition: background-color var(--transition-fast);
+}
+
+.close-btn:hover {
+    background-color: var(--bg-surface);
+}
+
+.mobile-nav-list {
+    list-style: none;
+    padding: var(--spacing-sm) var(--spacing-md) var(--spacing-md);
+}
+
+.mobile-nav-link {
+    display: flex;
+    align-items: center;
+    min-height: 44px;
+    padding: 10px var(--spacing-sm);
+    color: var(--text-secondary);
+    text-decoration: none;
+    font-size: var(--text-sm);
+    font-weight: 500;
+    border-radius: var(--radius-md);
+    border-left: 2px solid transparent;
+    margin-bottom: 2px;
+    transition: color var(--transition-fast), background-color var(--transition-fast), border-color var(--transition-fast);
+}
+
+.mobile-nav-link:hover,
+.mobile-nav-link:focus-visible,
+.mobile-nav-link.active {
+    color: var(--text-primary);
+    background-color: color-mix(in srgb, var(--primary) 14%, transparent);
+    border-left-color: var(--primary);
+}
+
+.mobile-nav-link.active {
+    color: var(--primary);
+    font-weight: 600;
+}
+
+.mobile-theme-switcher {
+    padding: var(--spacing-md);
+    border-top: 1px solid var(--border-color);
+}
+
+.mobile-theme-switcher h4 {
+    font-size: var(--text-xs);
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--text-muted);
+    margin-bottom: var(--spacing-sm);
+}
+
+.theme-options {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-xs);
+}
+
+.theme-option-btn {
+    min-height: 44px;
+    padding: var(--spacing-sm);
+    background-color: var(--bg-surface);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-md);
+    color: var(--text-secondary);
+    font-family: inherit;
+    font-size: var(--text-sm);
+    text-align: left;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+    transition: color var(--transition-fast), background-color var(--transition-fast), border-color var(--transition-fast);
+}
+
+.theme-option-btn:hover,
+.theme-option-btn.active {
+    background-color: var(--primary);
+    color: white;
+    border-color: var(--primary);
+}
+
+/* The active theme also needs to be readable without relying on the fill alone. */
+.theme-option-btn.active {
+    font-weight: 600;
+}
+
+/* ===== DROPDOWN MENÜS ===== */
+.dropdown {
+    position: relative;
+}
+
+.dropdown-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    min-height: 40px;
+    background: none;
+    border: none;
+    font-family: inherit;
+    font-size: var(--text-sm);
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    color: var(--text-secondary);
+    cursor: pointer;
+    padding: var(--spacing-xs) var(--spacing-md);
+    border-radius: var(--radius-full);
+    transition: color var(--transition-fast), background-color var(--transition-fast);
+}
+
+/* Chevron drawn in CSS so the menus advertise that they open, without having
+   to add an icon element to every trigger in both language trees. */
+.dropdown-btn::after {
+    content: '';
+    width: 7px;
+    height: 7px;
+    border-right: 2px solid currentColor;
+    border-bottom: 2px solid currentColor;
+    transform: translateY(-2px) rotate(45deg);
+    transition: transform var(--transition-fast);
+}
+
+.dropdown-btn:hover {
+    color: var(--text-primary);
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+.dropdown:hover .dropdown-btn,
+.dropdown:focus-within .dropdown-btn,
+.dropdown-btn[aria-expanded="true"] {
+    color: var(--text-primary);
+    background-color: rgba(255, 255, 255, 0.07);
+}
+
+.dropdown:hover .dropdown-btn::after,
+.dropdown:focus-within .dropdown-btn::after,
+.dropdown-btn[aria-expanded="true"]::after {
+    transform: translateY(1px) rotate(225deg);
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: calc(100% + 6px);
+    left: 0;
+    min-width: 232px;
+    max-height: min(70vh, 560px);
+    overflow-y: auto;
+    overscroll-behavior: contain;
+    background-color: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-md);
+    padding: var(--spacing-xs);
+    box-shadow: var(--shadow-xl);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-8px);
+    transition: opacity var(--transition-fast), transform var(--transition-fast), visibility var(--transition-fast);
+    z-index: 1001;
+    list-style: none;
+}
+
+/* A 6px gap now sits between trigger and panel; this keeps the pointer inside
+   the hover target while crossing it, so the menu no longer snaps shut. */
+.dropdown::after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 10px;
+}
+
+.dropdown:hover .dropdown-menu,
+.dropdown:focus-within .dropdown-menu,
+.dropdown-btn[aria-expanded="true"] + .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.dropdown-menu li {
+    margin-bottom: var(--spacing-xs);
+}
+
+.dropdown-menu li:last-child {
+    margin-bottom: 0;
+}
+
+.dropdown-menu a {
+    display: block;
+    padding: 9px var(--spacing-sm);
+    color: var(--text-secondary);
+    text-decoration: none;
+    font-size: var(--text-sm);
+    border-radius: var(--radius-sm);
+    border-left: 2px solid transparent;
+    transition: color var(--transition-fast), background-color var(--transition-fast), border-color var(--transition-fast);
+}
+
+.dropdown-menu a:hover,
+.dropdown-menu a:focus-visible {
+    background-color: color-mix(in srgb, var(--primary) 14%, transparent);
+    border-left-color: var(--primary);
+    color: var(--text-primary);
+}
+
+/* Abstände für Sound/Language Buttons */
+.sound-toggle,
+.lang-switcher {
+    margin-left: 8px;
+}
+.lang-switcher {
+    margin-right: 12px;
+}
+
+/* Mobile Anpassung: Dropdowns in mobilen Nav */
+@media (max-width: 768px) {
+    .dropdown-menu {
+        position: static;
+        opacity: 1;
+        visibility: visible;
+        transform: none;
+        box-shadow: none;
+        border: none;
+        padding-left: var(--spacing-lg);
+        background-color: transparent;
+    }
+    .dropdown-btn {
+        display: none;
+    }
+}
+
+/* ===== SOUND & LANGUAGE BUTTONS (mit Bildern) ===== */
+.sound-toggle,
+.lang-switcher {
+    margin-left: 8px;
+    margin-right: 12px;
+}
+
+.sound-btn,
+.lang-btn {
+    width: 40px;
+    height: 40px;
+    background-color: var(--bg-surface);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-md);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all var(--transition-fast);
+    padding: 0;
+}
+
+.sound-btn:hover,
+.lang-btn:hover {
+    background-color: var(--primary);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+}
+
+.sound-icon,
+.flag-icon {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+}
+
+/* Mobile Sound & Language Buttons */
+.mobile-sound-lang {
+    display: flex;
+    gap: 8px;
+    margin-top: 16px;
+    padding-top: 16px;
+    border-top: 1px solid var(--border-color);
+}
+
+.mobile-sound-btn,
+.mobile-lang-btn {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 10px;
+    background-color: var(--bg-surface);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-md);
+    color: var(--text-primary);
+    font-family: inherit;
+    font-size: var(--text-sm);
+    cursor: pointer;
+    transition: all var(--transition-fast);
+}
+
+.mobile-sound-btn:hover,
+.mobile-lang-btn:hover {
+    background-color: var(--primary);
+    color: white;
+}
+
+.mobile-sound-btn img,
+.mobile-lang-btn img {
+    width: 20px;
+    height: 20px;
+}
+
+@media (max-width: 768px) {
+    .sound-toggle,
+    .lang-switcher {
+        display: none;
+    }
+}
+
+/* ===== BUTTONS ===== */
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--spacing-sm);
+    padding: 12px 24px;
+    font-family: inherit;
+    font-size: var(--text-base);
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: var(--radius-md);
+    transition: transform var(--transition-fast), box-shadow var(--transition-fast), background-color var(--transition-fast), color var(--transition-fast);
+    cursor: pointer;
+    border: 2px solid transparent;
+}
+
+.btn-primary {
+    background: var(--primary-gradient);
+    color: white;
+    /* Theme-derived rather than a fixed green rgba, which stayed green on the
+       Nether and End palettes. */
+    box-shadow: 0 6px 18px color-mix(in srgb, var(--primary) 34%, transparent);
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 24px color-mix(in srgb, var(--primary) 45%, transparent);
+}
+
+.btn-secondary {
+    background-color: var(--bg-surface);
+    color: var(--text-primary);
+    border-color: var(--border-color);
+}
+
+.btn-secondary:hover {
+    background-color: rgba(255, 255, 255, 0.05);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+}
+
+.btn-outline {
+    background: transparent;
+    color: var(--primary);
+    border-color: var(--primary);
+}
+
+.btn-outline:hover {
+    background-color: color-mix(in srgb, var(--primary) 12%, transparent);
+    transform: translateY(-2px);
+}
+
+.btn-large {
+    padding: 16px 32px;
+    font-size: var(--text-lg);
+}
+
+.btn:active {
+    transform: translateY(0);
+}
+
+/* ===== HERO SECTION ===== */
+.hero {
+    padding: clamp(118px, 13vw, 168px) 0 clamp(2.25rem, 4vw, 3.5rem);
+    /* Runs light-to-dark downwards so the hero settles onto the --bg-primary
+       that the tools section starts from - the old direction ended on
+       --bg-secondary and left a visible step at the section boundary. */
+    background: linear-gradient(177deg, var(--bg-secondary) 0%, var(--bg-primary) 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+/* ===== FOOTER ===== */
+.footer {
+    background-color: var(--bg-primary);
+    border-top: 1px solid var(--border-color);
+    padding: var(--spacing-2xl) 0 var(--spacing-lg);
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: var(--spacing-xl);
+    margin-bottom: var(--spacing-2xl);
+}
+
+.footer-col {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+    margin-bottom: var(--spacing-md);
+    text-decoration: none;
+    color: var(--text-primary);
+    font-weight: 700;
+    font-size: var(--text-lg);
+}
+
+.footer-description {
+    color: var(--text-secondary);
+    font-size: var(--text-sm);
+    line-height: 1.6;
+    margin-bottom: var(--spacing-md);
+}
+
+.social-links {
+    display: flex;
+    gap: var(--spacing-sm);
+    margin-top: auto;
+}
+
+.social-link {
+    width: 36px;
+    height: 36px;
+    background-color: var(--bg-surface);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-md);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-secondary);
+    text-decoration: none;
+    transition: all var(--transition-fast);
+}
+
+.social-link:hover {
+    background-color: var(--primary);
+    color: white;
+    border-color: var(--primary);
+    transform: translateY(-2px);
+}
+
+.footer-title {
+    font-size: var(--text-base);
+    font-weight: 600;
+    margin-bottom: var(--spacing-md);
+    color: var(--text-primary);
+}
+
+.footer-links {
+    list-style: none;
+}
+
+.footer-links li {
+    margin-bottom: var(--spacing-sm);
+}
+
+.footer-links a {
+    color: var(--text-secondary);
+    text-decoration: none;
+    font-size: var(--text-sm);
+    transition: color var(--transition-fast);
+}
+
+.footer-links a:hover {
+    color: var(--primary);
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: var(--spacing-lg);
+    border-top: 1px solid var(--border-color);
+    flex-wrap: wrap;
+    gap: var(--spacing-md);
+}
+
+.copyright {
+    color: var(--text-muted);
+    font-size: var(--text-sm);
+}
+
+.disclaimer {
+    margin-top: var(--spacing-xs);
+    font-size: var(--text-xs);
+    opacity: 0.8;
+}
+
+.footer-meta {
+    display: flex;
+    /* Four pills (version, changelog, API docs, cookies) do not fit on one line
+       on a phone - without wrapping they ran off both edges of the screen. */
+    flex-wrap: wrap;
+    gap: var(--spacing-md);
+    align-items: center;
+    justify-content: center;
+}
+
+.version {
+    background-color: var(--bg-surface);
+    color: var(--text-secondary);
+    padding: 4px 12px;
+    border-radius: var(--radius-full);
+    font-size: var(--text-xs);
+    font-weight: 500;
+}
+
+.changelog {
+    color: var(--primary);
+    text-decoration: none;
+    font-size: var(--text-xs);
+    font-weight: 500;
+}
+
+.changelog:hover {
+    text-decoration: underline;
+}
+
+.changelog.active {
+    background-color: var(--primary);
+    color: white;
+    padding: 4px 12px;
+    border-radius: var(--radius-full);
+}
+
+/* ===== BACK TO TOP ===== */
+.back-to-top {
+    position: fixed;
+    /* Keeps clear of the iOS/Android home indicator on phones. */
+    bottom: max(24px, env(safe-area-inset-bottom, 0px) + 16px);
+    right: clamp(16px, 2.4vw, 30px);
+    width: 48px;
+    height: 48px;
+    background-color: var(--bg-card);
+    border: 1px solid var(--border-light);
+    border-radius: var(--radius-md);
+    color: var(--text-primary);
+    font-size: 18px;
+    cursor: pointer;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(20px);
+    transition: opacity var(--transition-normal), visibility var(--transition-normal), transform var(--transition-normal), background-color var(--transition-normal);
+    box-shadow: var(--shadow-lg);
+    z-index: 999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.back-to-top.show {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.back-to-top:hover {
+    background-color: var(--primary);
+    border-color: var(--primary);
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-md);
+}
+
+/* ===== TOAST NOTIFICATIONS ===== */
+.toast-container {
+    /* Top right - the user's decision (2026-09-11, after trying top centre).
+       The text inside each toast stays centred (.toast-content). `right` is set
+       here last-in-cascade, which also neutralises the dead
+       `.toast-container { right: 10px }` mobile rules in 21 page stylesheets. */
+    position: fixed;
+    top: 100px;
+    right: 20px;
+    z-index: 1001;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: min(350px, calc(100vw - 40px));
+    pointer-events: none;
+}
+
+.toast {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    width: 100%;
+    padding: 14px 16px;
+    background-color: color-mix(in srgb, var(--bg-card) 94%, transparent);
+    border: 1px solid var(--border-color);
+    border-left: 3px solid var(--primary);
+    border-radius: var(--radius-md);
+    box-shadow: 0 14px 34px rgba(0, 0, 0, 0.32);
+    backdrop-filter: blur(10px);
+    pointer-events: auto;
+    /* One transition for both directions: showToast() adds .show to open and
+       removes it before the node is dropped 300ms later, so closing plays the
+       same motion in reverse. transform + opacity only - nothing that relayouts. */
+    opacity: 0;
+    transform: translateX(24px) scale(0.97);
+    transition: opacity 220ms ease, transform 280ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.toast.show {
+    opacity: 1;
+    transform: translateX(0) scale(1);
+}
+
+.toast.error-toast {
+    border-left-color: #FF6B6B;
+}
+
+.toast-icon {
+    width: 28px;
+    height: 28px;
+    background: var(--primary-gradient);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 14px;
+    flex-shrink: 0;
+}
+
+.toast-content {
+    /* Title and message are centred inside the toast; the icon stays on the left.
+       min-width 0 lets long words wrap instead of widening the toast on phones. */
+    flex: 1;
+    min-width: 0;
+    text-align: center;
+    overflow-wrap: anywhere;
+}
+
+@media (max-width: 768px) {
+    .toast-container {
+        top: 80px;
+        right: 16px;
+        width: min(350px, calc(100vw - 32px));
+    }
+}
+
+.toast-title {
+    font-weight: 600;
+    margin-bottom: 4px;
+    font-size: var(--text-sm);
+    color: var(--text-primary);
+}
+
+.toast-message {
+    color: var(--text-secondary);
+    font-size: var(--text-sm);
+    line-height: 1.4;
+}
+
+/* Scrollbar Styling
+   The original MC-Craft look, which the user prefers: a primary-to-secondary
+   gradient thumb that reverses on hover, on a --bg-secondary track. Added on
+   top without changing the look: the corner piece, the default cursor, and
+   Firefox colours (scoped with @supports, because Chromium ignores all
+   ::-webkit-scrollbar styling once the standard properties are set). */
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+::-webkit-scrollbar-track,
+::-webkit-scrollbar-corner {
+    background: var(--bg-secondary);
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(var(--primary), var(--secondary));
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(var(--secondary), var(--primary));
+}
+
+/* Best effort for inner scroll areas; the page scrollbar already gets the
+   default cursor from html. */
+::-webkit-scrollbar,
+::-webkit-scrollbar-thumb,
+::-webkit-scrollbar-track {
+    cursor: default;
+}
+
+@supports not selector(::-webkit-scrollbar) {
+    html {
+        scrollbar-color: var(--primary) var(--bg-secondary);
+    }
+}
+
+/* Selection */
+::selection {
+    background-color: var(--primary);
+    color: white;
+}
+
+/* Focus Styles - :focus-visible so a mouse click does not leave a ring behind,
+   while keyboard and other non-pointer focus still get a clear one. */
+:focus-visible {
+    outline: 2px solid var(--ring, var(--primary));
+    outline-offset: 2px;
+}
+
+/* Print Styles */
+@media print {
+    .header,
+    .footer,
+    .back-to-top,
+    .mobile-menu-btn {
+        display: none !important;
+    }
+    
+    body {
+        background: white !important;
+        color: black !important;
+    }
+    
+    .hero,
+    .features,
+    .roadmap-preview,
+    .stats,
+    .cta {
+        padding: 20px 0 !important;
+    }
+    
+    .btn {
+        display: none !important;
+    }
+}
+
+/* ===== SOUND VISUAL EFFECTS ===== */
+@keyframes soundWave {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    50% {
+        transform: scale(1.1);
+        opacity: 0.8;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes levelUpGlow {
+    0% {
+        box-shadow: 0 0 5px var(--primary),
+                   0 0 10px var(--primary),
+                   0 0 15px var(--primary);
+    }
+    50% {
+        box-shadow: 0 0 10px var(--primary),
+                   0 0 20px var(--primary),
+                   0 0 30px var(--primary);
+    }
+    100% {
+        box-shadow: 0 0 5px var(--primary),
+                   0 0 10px var(--primary),
+                   0 0 15px var(--primary);
+    }
+}
+
+/* Loader Sound Animation */
+.loader.sound-playing .spinner {
+    animation: spin 0.4s linear infinite, levelUpGlow 2s ease-in-out;
+}
+
+/* Button Sound Feedback */
+.btn:active,
+.nav-link:active,
+.theme-option:active {
+    animation: soundWave 0.3s ease;
+}
+
+/* Progress Bar Animation für Loader */
+@keyframes progressFill {
+    0% { width: 0%; }
+    100% { width: 100%; }
+}
+
+.loading-progress {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 3px;
+    background: var(--primary-gradient);
+    width: 0%;
+    animation: progressFill 2s ease-in-out forwards;
+}
+
+/* Audio Controls (falls benötigt) */
+.audio-controls {
+    position: fixed;
+    bottom: 90px;
+    right: 30px;
+    z-index: 999;
+}
+
+.audio-toggle {
+    width: 40px;
+    height: 40px;
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-primary);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.audio-toggle:hover {
+    background: var(--primary);
+    transform: scale(1.1);
+}
+
+.audio-toggle.muted {
+    color: var(--text-muted);
+}
+
+/* Sound Visualizer für Loader */
+.sound-visualizer {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    gap: 4px;
+    height: 20px;
+    margin-top: 10px;
+}
+
+.sound-bar {
+    width: 3px;
+    background: var(--primary);
+    border-radius: 2px;
+    animation: soundBar 1.5s ease-in-out infinite;
+}
+
+/* Heights included so the 21 page stylesheets that repeated this equaliser
+   have nothing left of their own to declare. */
+.sound-bar:nth-child(1) { height: 20px; animation-delay: 0.1s; }
+.sound-bar:nth-child(2) { height: 30px; animation-delay: 0.2s; }
+.sound-bar:nth-child(3) { height: 40px; animation-delay: 0.3s; }
+.sound-bar:nth-child(4) { height: 30px; animation-delay: 0.4s; }
+.sound-bar:nth-child(5) { height: 20px; animation-delay: 0.5s; }
+
+@keyframes soundBar {
+    0%, 100% { height: 5px; }
+    50% { height: 20px; }
+}
+
+/* =====================================================================
+   3. VISUAL REFINEMENTS
+   Layered on top of the foundation above.
+   ===================================================================== */
+
+
 html {
     -webkit-text-size-adjust: 100%;
     text-size-adjust: 100%;
     overflow-x: hidden;
+    overflow-x: clip;
     width: 100%;
 }
 
@@ -57,18 +1506,11 @@ body {
         radial-gradient(900px 500px at 100% 0%, color-mix(in srgb, var(--secondary, #3b82f6) 22%, transparent), transparent 68%),
         var(--bg-primary);
     overflow-x: hidden;
+    overflow-x: clip;
     width: 100%;
     max-width: 100vw;
 }
 
-/* Global typography lock so all pages look consistent.
-   Some page-specific stylesheets still set font-family: 'Minecraft' (loaded from
-   the unreliable third-party fonts.cdnfonts.com CDN) on scattered elements, which
-   made text look different from page to page whenever that CDN font failed to
-   load. This lock forces every text element site-wide onto the two fonts below,
-   regardless of what any individual page CSS says. Icon glyphs (Font Awesome,
-   rendered via <i class="fa..."> tags) are intentionally left untouched below so
-   icons keep rendering as icons instead of as their fallback letters. */
 body,
 button,
 input,
@@ -87,19 +1529,35 @@ strong,
 em,
 b,
 blockquote,
-code,
-pre,
 figcaption,
 caption,
 legend,
 dt,
 dd {
     font-family: var(--ui-font) !important;
+    text-align: center;
+}
+
+/* Code keeps a monospace face. `code` and `pre` used to sit in the font lock
+   above, which forced Space Grotesk onto every code sample, URL and JSON block.
+   Excluded from that list rather than "reverted" afterwards - a revert rolls
+   back to the browser stylesheet, not to another author rule. Local fonts only,
+   so no network request. */
+code,
+pre,
+kbd,
+samp {
+    font-family: var(--mono-font);
 }
 
 h1, h2, h3, h4, h5, h6, .hero-title, .section-title, .logo-text, .tool-title, .cta-title, .footer-title {
     font-family: var(--title-font) !important;
     letter-spacing: 0.02em;
+}
+
+.hero-content {
+    max-width: 600px;
+    text-align: center;
 }
 
 h1,
@@ -115,6 +1573,13 @@ h2,
     color: var(--text-primary);
     text-shadow: 0 0 26px color-mix(in srgb, var(--chroma-a) 30%, transparent);
     animation: heroTitleSpectrum 5.2s ease-in-out infinite;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: var(--spacing-md);
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 h3,
@@ -138,6 +1603,7 @@ h6,
 
 .hero .hero-title,
 section .hero-title {
+    color: var(--chroma-a);
     background: var(--heading-gradient);
     background-size: 220% 220%;
     -webkit-background-clip: text;
@@ -211,6 +1677,7 @@ section .hero-title .highlight {
 }
 
 .logo-text {
+    color: var(--chroma-a);
     background: linear-gradient(90deg, var(--chroma-a), var(--chroma-b));
     -webkit-background-clip: text;
     background-clip: text;
@@ -271,6 +1738,11 @@ section .hero-title .highlight {
 .item-card,
 .mob-card {
     border: var(--soft-border);
+}
+
+.theme-dropdown,
+.dropdown-menu,
+.mobile-nav {
     backdrop-filter: blur(10px);
 }
 
@@ -285,6 +1757,7 @@ section .hero-title .highlight {
 
 .footer-col {
     backdrop-filter: blur(10px);
+    align-items: center;
 }
 
 .btn,
@@ -317,13 +1790,6 @@ section .hero-title .highlight {
     filter: brightness(1.06);
 }
 
-/* Verbindliche Grundfarben fuer alle drei Button-Varianten, damit sie auf
-   jeder Seite gleich aussehen - manche Seiten-CSS-Dateien (z.B. coming-soon.css)
-   definieren .btn-primary/.btn-outline gar nicht, andere (z.B.
-   advancement-generator.css) ueberschreiben nur den Rahmen und lassen den
-   Rest unstyled zurueck. !important auf den entscheidenden Eigenschaften,
-   damit das nicht mehr passieren kann, egal was eine einzelne Seite sonst
-   noch an .btn-Regeln mitbringt. */
 .btn-primary {
     background: var(--primary-gradient, var(--primary, #00A86B)) !important;
     color: #fff !important;
@@ -359,6 +1825,7 @@ img {
 .loading-progress {
     width: min(320px, 78vw);
     height: 6px;
+    margin-top: var(--spacing-md);
     border-radius: 999px;
     background: color-mix(in srgb, var(--bg-surface) 88%, #000 12%);
     overflow: hidden;
@@ -400,6 +1867,7 @@ html {
 
 body {
     overflow-x: hidden;
+    overflow-x: clip;
 }
 
 .container > * {
@@ -463,6 +1931,7 @@ section[id],
     gap: var(--spacing-md);
     align-items: center;
     flex-wrap: wrap;
+    flex-direction: column;
     align-content: center;
 }
 
@@ -540,6 +2009,8 @@ body {
     z-index: 1001;
     transition: left var(--transition-normal);
     overflow-y: auto;
+    overscroll-behavior: contain;
+    -webkit-overflow-scrolling: touch;
 }
 
 .mobile-nav {
@@ -617,10 +2088,6 @@ body {
     animation: backTopPop 300ms cubic-bezier(0.34, 1.56, 0.64, 1) both;
 }
 
-.toast.show {
-    animation: toastSlideIn 340ms cubic-bezier(0.22, 1, 0.36, 1) both;
-}
-
 @keyframes pageFadeIn {
     from { opacity: 0; }
     to { opacity: 1; }
@@ -629,11 +2096,13 @@ body {
 @keyframes riseFadeIn {
     from {
         opacity: 0;
-        transform: translateY(24px) scale(0.985);
+        translate: 0 24px;
+        scale: 0.985;
     }
     to {
         opacity: 1;
-        transform: translateY(0) scale(1);
+        translate: 0 0;
+        scale: 1;
     }
 }
 
@@ -650,17 +2119,6 @@ body {
     to {
         opacity: 1;
         transform: translateY(0) scale(1);
-    }
-}
-
-@keyframes toastSlideIn {
-    from {
-        opacity: 0;
-        transform: translateX(18px) scale(0.98);
-    }
-    to {
-        opacity: 1;
-        transform: translateX(0) scale(1);
     }
 }
 
@@ -748,7 +2206,7 @@ body {
 
     .footer-meta {
         width: 100%;
-        justify-content: space-between;
+      /*justify-content: space-between;*/
     }
 
     .footer-grid {
@@ -822,6 +2280,1004 @@ body {
     }
 }
 
+/* ===== SHARED HERO SYSTEM =============================================
+   Every page on the site ships the same hero markup (badge, headline,
+   description, buttons, and a staggered cluster of four .grid-item tiles), but
+   about thirty page stylesheets each carried their own copy of the styling for
+   it and they had drifted apart. These rules are the single definition; because
+   this file loads last and matches at equal or higher specificity, the per-page
+   copies are superseded rather than having to be deleted from each file.
+   ====================================================================== */
+
+/* The `.hero-bg-grid { position: relative }` declared further up this file
+   collapsed the overlay to a 0-height box in normal flow, so both the blueprint
+   grid and the ambient radials painted into its ::before/::after were being
+   drawn into nothing. */
+.hero .hero-bg-grid {
+    position: absolute;
+    inset: 0;
+    background-image:
+        linear-gradient(rgba(255, 255, 255, 0.035) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 255, 255, 0.035) 1px, transparent 1px);
+    background-size: 44px 44px;
+    /* Fades the grid out towards the edges so it reads as texture, not a table. */
+    -webkit-mask-image: radial-gradient(115% 85% at 50% 32%, #000 35%, transparent 78%);
+    mask-image: radial-gradient(115% 85% at 50% 32%, #000 35%, transparent 78%);
+    pointer-events: none;
+    z-index: 0;
+}
+
+/* Left-aligned against the right-hand tile cluster: the copy used to be centred
+   inside its own half-width column, so badge, headline, text and buttons each
+   started on a different x position with artwork sitting beside them. */
+.hero .hero-content {
+    max-width: 620px;
+    text-align: center;
+}
+
+.hero .hero-buttons {
+    justify-content: center;
+}
+
+.hero-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 9px;
+    padding: 7px 16px;
+    /* Theme-derived rather than a hard-coded green, so the badge follows the
+       Nether and End palettes with the rest of the hero. */
+    background-color: color-mix(in srgb, var(--primary) 12%, transparent);
+    color: color-mix(in srgb, var(--text-primary) 82%, var(--primary) 18%);
+    font-size: var(--text-xs, 0.75rem);
+    font-weight: 700;
+    border-radius: 999px;
+    border: 1px solid color-mix(in srgb, var(--primary) 30%, transparent);
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    margin-bottom: var(--spacing-lg, 2rem);
+}
+
+.hero-badge-dot {
+    width: 8px;
+    height: 8px;
+    background-color: var(--primary);
+    border-radius: 50%;
+    flex-shrink: 0;
+    box-shadow: 0 0 6px var(--primary);
+    animation: badgePulse 2s ease-in-out infinite;
+}
+
+@keyframes badgePulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.5; }
+}
+
+.hero .hero-title {
+    margin-bottom: var(--spacing-md, 1.5rem);
+    line-height: 1.05;
+    text-transform: uppercase;
+    letter-spacing: 0.01em;
+    text-wrap: balance;
+    /* Single long compounds do occur as page titles here
+       ("DATENSCHUTZERKLÄRUNG"), and at the top of the fluid size they are wider
+       than the text column. Without these the word simply ran past the column
+       and was clipped by the hero's overflow:hidden. Hyphenation uses the
+       document's lang attribute and is preferred; break-word is the fallback
+       for words the dictionary cannot split. */
+    overflow-wrap: break-word;
+    hyphens: auto;
+    /* Without a floor, the hyphenation dictionary happily splits short proper
+       nouns to fill a line - "MOJANG" came out as "MO-JANG". Only words of 14+
+       characters may break, which is the case this exists for in the first
+       place. Browsers without hyphenate-limit-chars fall back to plain
+       `hyphens: auto`; break-word above is the last resort either way. */
+    -webkit-hyphenate-limit-before: 7;
+    -webkit-hyphenate-limit-after: 4;
+    hyphenate-limit-chars: 14 7 4;
+}
+
+/* Sentence case, and capped at a comfortable measure. Page stylesheets set
+   `text-transform: uppercase` here, which turned every hero paragraph on the
+   site into a block of shouted text that is measurably slower to read. */
+.hero .hero-description {
+    font-size: clamp(1rem, 1.05vw + 0.78rem, 1.18rem);
+    color: var(--text-secondary);
+    max-width: 46ch;
+    margin-bottom: var(--spacing-xl, 3rem);
+    line-height: 1.65;
+    text-transform: none;
+    letter-spacing: normal;
+}
+
+.hero-image {
+    display: flex;
+    justify-content: center;
+}
+
+.hero-grid-staggered {
+    position: relative;
+    display: flex;
+    gap: var(--spacing-md, 1.5rem);
+    align-items: flex-start;
+}
+
+/* Ambient glow behind the tile cluster.
+   The page copies of this were a four-stop rainbow (green -> purple -> orange ->
+   blue) blurred at 45px and animated across 300% of its own box, which resolved
+   to a muddy magenta wash that tinted the tiles in front of it and fought
+   whichever theme was active. Two stops from the theme's own primary/secondary
+   read as light coming off the cluster and recolour with Overworld/Nether/End. */
+.hero-grid-staggered::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 118%;
+    height: 118%;
+    transform: translate(-50%, -50%);
+    background:
+        radial-gradient(circle at 32% 30%, color-mix(in srgb, var(--primary) 55%, transparent), transparent 62%),
+        radial-gradient(circle at 72% 74%, color-mix(in srgb, var(--secondary) 45%, transparent), transparent 66%);
+    border-radius: 50%;
+    filter: blur(58px);
+    opacity: 0.55;
+    z-index: 0;
+    pointer-events: none;
+    animation: heroGlowDrift 9s ease-in-out infinite alternate;
+}
+
+/* Sparse pixel motes. The previous version animated `filter: hue-rotate()` over
+   a full 360deg every frame - a full-element repaint that also sent the
+   particles through colours belonging to no theme. */
+.hero-grid-staggered::after {
+    content: '';
+    position: absolute;
+    inset: -28px;
+    background-image:
+        radial-gradient(2px 2px at 18% 26%, color-mix(in srgb, var(--primary) 85%, #fff 15%), transparent),
+        radial-gradient(2px 2px at 82% 68%, color-mix(in srgb, var(--secondary) 85%, #fff 15%), transparent),
+        radial-gradient(3px 3px at 42% 84%, color-mix(in srgb, var(--primary-light, var(--primary)) 75%, transparent), transparent),
+        radial-gradient(2px 2px at 68% 14%, color-mix(in srgb, var(--secondary-light, var(--secondary)) 75%, transparent), transparent);
+    background-size: 180% 180%;
+    z-index: -1;
+    pointer-events: none;
+    opacity: 0.55;
+    animation: heroMoteDrift 14s ease-in-out infinite alternate;
+}
+
+@keyframes heroGlowDrift {
+    0%   { transform: translate(-50%, -50%) scale(1);    opacity: 0.42; }
+    100% { transform: translate(-50%, -50%) scale(1.12); opacity: 0.62; }
+}
+
+@keyframes heroMoteDrift {
+    0%   { background-position: 0% 0%;   opacity: 0.4; }
+    100% { background-position: 60% 55%; opacity: 0.7; }
+}
+
+.hero-stagger-col {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-md, 1.5rem);
+    position: relative;
+    z-index: 2;
+}
+
+.hero-stagger-right {
+    margin-top: -72px;
+}
+
+.grid-item {
+    position: relative;
+    overflow: hidden;
+    /* Opaque and slightly lifted. The tiles used to inherit a flat --bg-card
+       that the glow behind them washed straight through, leaving them looking
+       like faint outlines rather than objects. */
+    background:
+        linear-gradient(160deg, color-mix(in srgb, var(--bg-surface) 55%, var(--bg-card) 45%), var(--bg-card));
+    border: 1px solid color-mix(in srgb, var(--border-light) 60%, var(--primary) 40%);
+    border-radius: var(--radius-lg, 16px);
+    padding: var(--spacing-lg, 2rem);
+    text-align: center;
+    transition: transform 300ms ease, border-color 300ms ease, box-shadow 300ms ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    width: 232px;
+    box-shadow: var(--shadow-md);
+}
+
+/* Notched top-left corner - a nod to the blocky Minecraft grid that keeps the
+   tiles from reading as generic rounded cards. */
+.grid-item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 14px;
+    height: 14px;
+    border-top: 2px solid var(--primary);
+    border-left: 2px solid var(--primary);
+    border-top-left-radius: var(--radius-lg, 16px);
+    opacity: 0.75;
+    transition: opacity 300ms ease;
+}
+
+.grid-item:hover {
+    transform: translateY(-6px);
+    border-color: var(--primary);
+    box-shadow: var(--shadow-xl);
+}
+
+.grid-item:hover::before {
+    opacity: 1;
+}
+
+.grid-item i {
+    font-size: 26px;
+    color: var(--primary);
+}
+
+.grid-item span {
+    font-size: var(--text-xs, 0.75rem);
+    color: color-mix(in srgb, var(--text-secondary) 78%, var(--text-primary) 22%);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+.floating-cube {
+    position: absolute;
+    width: 34px;
+    height: 34px;
+    background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark, var(--primary)) 100%);
+    border-radius: 6px;
+    opacity: 0.85;
+    box-shadow: var(--shadow-md);
+}
+
+.floating-cube-1 {
+    z-index: 3;
+    bottom: -20px;
+    left: 20px;
+    transform: rotate(-20deg);
+    animation: floatCube1 4s ease-in-out infinite;
+}
+
+.floating-cube-2 {
+    top: -30px;
+    right: -30px;
+    width: 26px;
+    height: 26px;
+    transform: rotate(15deg);
+    animation: floatCube2 5s ease-in-out infinite;
+}
+
+@keyframes floatCube1 {
+    0%, 100% { transform: rotate(-20deg) translateY(0); }
+    50% { transform: rotate(-20deg) translateY(-12px); }
+}
+
+@keyframes floatCube2 {
+    0%, 100% { transform: rotate(15deg) translateY(0); }
+    50% { transform: rotate(15deg) translateY(-10px); }
+}
+
+
+/* The hero used to end on a hard horizontal seam against the tools section.
+   A short gradient wash blends the two so the page reads as one surface. */
+.hero::after {
+    content: '';
+    position: absolute;
+    inset: auto 0 0;
+    height: 120px;
+    background: linear-gradient(to bottom, transparent, var(--bg-primary));
+    pointer-events: none;
+    z-index: 0;
+}
+
+/* The hero layout, badge, headline, tile cluster and their responsive rules now
+   live in site-modern-v1.css: the markup is identical on every page of the site,
+   but roughly thirty page stylesheets each carried their own drifting copy of it.
+   Only what is specific to this file's pages stays here. */
+.hero .container {
+    display: flex;
+    grid-template-columns: minmax(0, 1.02fr) minmax(0, 0.98fr);
+    gap: clamp(2rem, 4.5vw, 4rem);
+    align-items: center;
+    position: relative;
+    z-index: 1;
+}
+
+@media (max-width: 1024px) {
+    .hero .container {
+        gap: var(--spacing-xl);
+    }
+}
+
+@media (max-width: 1024px) {
+    /* The hero collapses to one centred column at this width. */
+    .hero .hero-content {
+        max-width: 640px;
+        text-align: center;
+    }
+
+    .hero .hero-description {
+        max-width: 58ch;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .hero .hero-buttons {
+        justify-content: center;
+    }
+
+    .hero-badge {
+        justify-content: center;
+    }
+
+    .hero-grid-staggered {
+        justify-content: center;
+    }
+
+    .hero-stagger-right {
+        margin-top: 0;
+    }
+}
+
+/* Between phone and desktop the hero/CTA buttons inherit `width: 100%` from the
+   stacked-button rule above, which stretched them to ~640px on a tablet. Capping
+   them keeps the pair looking like buttons rather than banners; on phones the
+   full width is still what you want. */
+@media (min-width: 577px) and (max-width: 1024px) {
+    .hero-buttons .btn,
+    .cta-buttons .btn {
+        max-width: 360px;
+    }
+}
+
+@media (max-width: 768px) {
+    .grid-item {
+        width: 100%;
+        padding: var(--spacing-md, 1.5rem);
+    }
+}
+
+@media (max-width: 576px) {
+    /* Two by two rather than a four-tile tower: stacked, the decorative cluster
+       alone took roughly a full phone screen of scrolling before any real
+       content appeared. */
+    .hero-grid-staggered {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: var(--spacing-sm, 1rem);
+        width: 100%;
+        max-width: 380px;
+    }
+
+    .hero-stagger-col {
+        width: 100%;
+        gap: var(--spacing-sm, 1rem);
+    }
+
+    .grid-item {
+        padding: var(--spacing-md, 1.5rem) var(--spacing-sm, 1rem);
+        gap: 8px;
+    }
+
+    .grid-item i {
+        font-size: 22px;
+    }
+
+    /* The cubes have no room to float clear of the tiles at this width. */
+    .floating-cube {
+        display: none;
+    }
+}
+
+@media (max-width: 400px) {
+    .hero-badge {
+        font-size: 0.68rem;
+        padding: 5px 12px;
+    }
+}
+
+/* =====================================================================
+   4. SHARED COMPONENTS
+   Patterns that recur across many page stylesheets. Each block notes how
+   many of the ~37 page stylesheets carried its own copy before this.
+   MC-Craft is a centred design: short display content (headings, cards,
+   stats, CTAs, empty states) is centred here by default. Long-form reading
+   content stays left-aligned in the page stylesheets that need it.
+   ===================================================================== */
+
+
+/* --- Section shells (index + skin-editor share .features) ------------ */
+.features {
+    padding: var(--section-pad) 0;
+    /* --bg-card and --bg-secondary are the same colour, so on the old
+       --bg-secondary background the tool cards were the exact shade of the
+       surface behind them and only their border said a card was there. */
+    background-color: var(--bg-primary);
+    position: relative;
+}
+
+/* The two tool sections sat back to back on identical backgrounds and merged
+   into one endless band. A hairline rule and a faint accent bloom separate them
+   without a jarring colour step. */
+.features + .features {
+    background-image: radial-gradient(72% 46% at 50% 0%, color-mix(in srgb, var(--secondary) 11%, transparent), transparent 70%);
+}
+
+.features + .features::before {
+    content: '';
+    position: absolute;
+    inset: 0 0 auto;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--border-light), transparent);
+}
+
+/* --- Section headings (26 stylesheets carried their own copy) -------- */
+.section-header {
+    text-align: center;
+    margin-bottom: var(--section-gap);
+    max-width: 760px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.section-title {
+    margin-bottom: 0.6rem;
+    text-wrap: balance;
+}
+
+.section-subtitle {
+    font-size: clamp(0.98rem, 0.6vw + 0.85rem, 1.1rem);
+    color: var(--text-secondary);
+    line-height: 1.6;
+}
+
+/* --- Call to action (up to 21 stylesheets) --------------------------- */
+.cta {
+    position: relative;
+    overflow: hidden;
+    padding: var(--section-pad) 0;
+    background:
+        radial-gradient(70% 100% at 50% 0%, color-mix(in srgb, var(--primary) 15%, transparent), transparent 68%),
+        linear-gradient(180deg, var(--bg-primary) 0%, var(--bg-secondary) 100%);
+    border-top: 1px solid var(--border-color);
+    text-align: center;
+}
+
+.cta-section {
+    padding: var(--section-pad) 0;
+    background-color: var(--bg-primary);
+    text-align: center;
+}
+
+.cta-content {
+    max-width: 720px;
+    margin: 0 auto;
+}
+
+.cta-title {
+    /* Page stylesheets set var(--text-4xl) here; matching the section titles
+       keeps the two display sizes on a page in step and scales on phones. */
+    font-size: var(--section-title-fluid);
+    margin-bottom: var(--spacing-md);
+    text-wrap: balance;
+}
+
+.cta-description {
+    font-size: clamp(1rem, 0.7vw + 0.86rem, 1.14rem);
+    color: var(--text-secondary);
+    margin-bottom: var(--spacing-xl);
+    line-height: 1.65;
+}
+
+.cta-buttons {
+    display: flex;
+    gap: var(--spacing-md);
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* --- Info cards (5 stylesheets, byte-identical in all five) ---------- */
+.info-section {
+    padding: var(--section-pad) 0;
+    background-color: var(--bg-primary);
+}
+
+.info-grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: clamp(1rem, 1.6vw, 1.4rem);
+    margin-top: var(--spacing-xl);
+}
+
+.info-card {
+    background:
+        linear-gradient(180deg, color-mix(in srgb, var(--bg-surface) 30%, var(--bg-card)), var(--bg-card));
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-lg);
+    padding: var(--spacing-xl);
+    text-align: center;
+    box-shadow: var(--shadow-sm);
+    transition: transform var(--transition-normal), border-color var(--transition-normal), box-shadow var(--transition-normal);
+}
+
+.info-card:hover {
+    transform: translateY(-5px);
+    border-color: color-mix(in srgb, var(--primary) 55%, var(--border-color));
+    box-shadow: var(--shadow-lg);
+}
+
+.info-card-icon {
+    width: 60px;
+    height: 60px;
+    background: var(--primary-gradient);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto var(--spacing-md);
+    color: white;
+    font-size: 24px;
+}
+
+.info-card h4 {
+    font-size: var(--text-lg);
+    margin-bottom: var(--spacing-sm);
+    color: var(--text-primary);
+}
+
+.info-card p {
+    color: var(--text-secondary);
+    font-size: var(--text-base);
+    line-height: 1.6;
+}
+
+/* --- Key/value info lists (4 stylesheets) ---------------------------- */
+.info-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: var(--spacing-md);
+    margin-bottom: var(--spacing-xl);
+}
+
+.info-item {
+    margin-bottom: var(--spacing-sm);
+}
+
+.info-label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--spacing-xs);
+    font-size: var(--text-sm);
+    font-weight: 600;
+    color: var(--text-secondary);
+    margin-bottom: 5px;
+}
+
+.info-value {
+    background-color: var(--bg-surface);
+    padding: var(--spacing-sm);
+    border-radius: var(--radius-sm);
+    font-size: var(--text-sm);
+    word-break: break-all;
+    border: 1px solid var(--border-color);
+    min-height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* --- Empty state (6 stylesheets) ------------------------------------- */
+.no-results {
+    grid-column: 1 / -1;
+    text-align: center;
+    padding: var(--spacing-2xl);
+    color: var(--text-secondary);
+}
+
+.no-results i {
+    font-size: 48px;
+    color: var(--text-muted);
+ /* margin-bottom: var(--spacing-md); */
+}
+
+.no-results h3 {
+    color: var(--text-primary);
+    margin-bottom: var(--spacing-sm);
+}
+
+.no-results p {
+    color: var(--text-secondary);
+}
+
+/* --- Search / form controls (up to 7 stylesheets) -------------------- */
+.search-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: var(--spacing-md);
+}
+
+.search-box {
+    flex: 1;
+    min-width: min(300px, 100%);
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.search-box input {
+    width: 100%;
+    padding: 12px 16px 12px 48px;
+    background-color: var(--bg-surface);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-md);
+    color: var(--text-primary);
+    font-family: inherit;
+    font-size: var(--text-base);
+    transition: border-color var(--transition-fast), box-shadow var(--transition-fast);
+}
+
+.search-box input:focus {
+    outline: none;
+    border-color: var(--primary);
+    box-shadow: 0 0 0 3px color-mix(in srgb, var(--primary) 22%, transparent);
+}
+
+.search-icon {
+    position: absolute;
+    left: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--text-secondary);
+    font-size: 18px;
+    pointer-events: none;
+}
+
+/* --- Copy button / command box (up to 5 stylesheets) ----------------- */
+.command-box {
+    display: flex;
+    gap: var(--spacing-sm);
+    background-color: var(--bg-surface);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-md);
+    padding: var(--spacing-md);
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.copy-btn {
+    width: 40px;
+    height: 40px;
+    flex-shrink: 0;
+    background-color: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-md);
+    color: var(--text-secondary);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color var(--transition-fast), border-color var(--transition-fast), color var(--transition-fast);
+}
+
+.copy-btn:hover {
+    background-color: var(--primary);
+    border-color: var(--primary);
+    color: white;
+}
+
+.copy-success {
+    position: relative;
+}
+
+/* --- Tips panel (4 stylesheets) -------------------------------------- */
+.tips {
+    background-color: var(--bg-surface);
+    border-radius: var(--radius-md);
+    padding: var(--spacing-lg);
+    margin-top: var(--spacing-xl);
+    border-left: 4px solid var(--primary);
+}
+
+.tips h4 {
+    color: var(--primary);
+    margin-bottom: var(--spacing-md);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--spacing-sm);
+    font-size: var(--text-xl);
+}
+
+.tips ul {
+    text-align: center;
+    list-style: none;
+    padding: 0;
+}
+
+.tips li {
+    margin-bottom: var(--spacing-sm);
+    color: var(--text-secondary);
+    padding-left: var(--spacing-lg);
+    position: relative;
+    line-height: 1.6;
+}
+
+/* --- Upload drop zone (4 stylesheets) -------------------------------- */
+.upload-area {
+    background-color: var(--bg-card);
+    border: 2px dashed var(--border-color);
+    border-radius: var(--radius-xl);
+    padding: var(--spacing-2xl);
+    text-align: center;
+    transition: border-color var(--transition-normal), background-color var(--transition-normal);
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.upload-area:hover {
+    border-color: var(--primary);
+    background-color: color-mix(in srgb, var(--primary) 6%, transparent);
+}
+
+.upload-icon {
+    width: 80px;
+    height: 80px;
+    background: var(--primary-gradient);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: var(--spacing-lg);
+    color: white;
+    font-size: 32px;
+}
+
+.upload-area h3 {
+    font-size: var(--text-xl);
+    margin-bottom: var(--spacing-sm);
+}
+
+.upload-area p {
+    color: var(--text-secondary);
+    margin-bottom: var(--spacing-lg);
+}
+
+/* --- Feature list (up to 5 stylesheets) ------------------------------ */
+.features-section {
+    margin: var(--section-pad) 0;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: clamp(1rem, 1.6vw, 1.4rem);
+    margin-top: var(--spacing-xl);
+}
+
+.feature-icon {
+    width: 70px;
+    height: 70px;
+    background: var(--primary-gradient);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 28px;
+}
+
+/* --- Tool cards ------------------------------------------------------
+   Used by the homepage grid and by the skin-editor / chibi-skin-maker
+   feature grids, which ship the same markup (.tools-grid > .tool-card with
+   a .tool-icon, a heading and a paragraph) but had their own flatter copy
+   of the styling. One definition keeps the three in step.               */
+.tools-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(272px, 1fr));
+    gap: clamp(1rem, 1.6vw, 1.4rem);
+}
+
+.tools-grid .tool-card {
+    /* Rotating accent from the existing chroma ramp, so a grid of cards reads
+       as a set of distinct tools rather than one green texture, and follows
+       the active Overworld/Nether/End theme. */
+    --card-accent: var(--chroma-a, #00d084);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    isolation: isolate;
+    padding: clamp(1.25rem, 1.9vw, 1.65rem);
+    background:
+        linear-gradient(180deg, color-mix(in srgb, var(--bg-surface) 32%, var(--bg-card)), var(--bg-card));
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-sm);
+    overflow: hidden;
+    transition: transform var(--transition-normal), border-color var(--transition-normal), box-shadow var(--transition-normal);
+}
+
+.tools-grid .tool-card:nth-child(3n + 2) { --card-accent: var(--chroma-b, #48a8ff); }
+.tools-grid .tool-card:nth-child(3n + 3) { --card-accent: var(--chroma-c, #ff8a3d); }
+
+/* Accent wash that only appears on hover/focus - the card stays calm at rest. */
+.tools-grid .tool-card::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    background: radial-gradient(120% 80% at 12% 0%, color-mix(in srgb, var(--card-accent) 16%, transparent), transparent 60%);
+    opacity: 0;
+    transition: opacity var(--transition-normal);
+    pointer-events: none;
+}
+
+/* Replaces the old 4px bar that grew from 0 to full height on hover: it
+   animated `height`, forcing layout work on every frame of every card hover. */
+.tools-grid .tool-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(90deg, var(--card-accent), transparent);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform var(--transition-normal);
+}
+
+.tools-grid .tool-card:hover,
+.tools-grid .tool-card:focus-within {
+    transform: translateY(-6px);
+    border-color: color-mix(in srgb, var(--card-accent) 55%, var(--border-color));
+    box-shadow: var(--shadow-xl);
+}
+
+.tools-grid .tool-card:hover::before,
+.tools-grid .tool-card:focus-within::before { transform: scaleX(1); }
+
+.tools-grid .tool-card:hover::after,
+.tools-grid .tool-card:focus-within::after { opacity: 1; }
+
+.tools-grid .tool-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 52px;
+    height: 52px;
+    margin: 0 0 var(--spacing-md);
+    /* Tinted plate with an accent glyph. A solid fill would need a different
+       glyph colour per accent to stay legible - white on orange is only
+       2.3:1 - whereas the accent on the card surface clears 7:1 for all three. */
+    background: color-mix(in srgb, var(--card-accent) 15%, transparent);
+    border: 1px solid color-mix(in srgb, var(--card-accent) 38%, transparent);
+    border-radius: var(--radius-md);
+    color: var(--card-accent);
+    font-size: 22px;
+    transition: background-color var(--transition-normal), border-color var(--transition-normal), transform var(--transition-normal);
+}
+
+.tools-grid .tool-card:hover .tool-icon,
+.tools-grid .tool-card:focus-within .tool-icon {
+    background: color-mix(in srgb, var(--card-accent) 26%, transparent);
+    border-color: color-mix(in srgb, var(--card-accent) 62%, transparent);
+    transform: translateY(-2px);
+}
+
+/* The homepage marks the heading .tool-title; the skin-editor and chibi grids
+   use a bare <h3>. Both are the same component. */
+.tools-grid .tool-title,
+.tools-grid .tool-card > h3 {
+    margin-bottom: 0.45rem;
+    font-size: var(--text-lg);
+    line-height: 1.28;
+    text-align: center;
+    text-wrap: balance;
+}
+
+.tools-grid .tool-description,
+.tools-grid .tool-card > p {
+    /* flex:1 pushes the link to the card floor. Card heights are equalised by
+       the grid, so without this the link floated at a different height in
+       every card depending on how long its description ran. */
+    flex: 1 1 auto;
+    margin-bottom: var(--spacing-md);
+    color: var(--text-secondary);
+    font-size: 0.94rem;
+    line-height: 1.6;
+    text-align: center;
+}
+
+.tools-grid .tool-card > p:last-child {
+    margin-bottom: 0;
+}
+
+.tools-grid .tool-link {
+    /* Centred, as it was before the CSS was centralised. */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    margin-top: auto;
+    padding-top: 0.75rem;
+    border-top: 1px solid color-mix(in srgb, var(--border-color) 70%, transparent);
+    /* Deliberately not --card-accent: the accent marks which tool a card is,
+       while every card's action reads in the same brand colour. */
+    color: var(--primary);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: var(--text-sm);
+}
+
+/* Makes the whole card the click target while keeping exactly one link in the
+   accessibility tree (no duplicate anchors to tab through). */
+.tools-grid .tool-link::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+}
+
+.tools-grid .tool-link i { transition: transform var(--transition-fast); }
+
+.tools-grid .tool-card:hover .tool-link i,
+.tools-grid .tool-link:focus-visible i { transform: translateX(4px); }
+
+/* With the card acting as the hit area, the ring belongs on the card. */
+.tools-grid .tool-link:focus-visible { outline: none; }
+
+.tools-grid .tool-card:focus-within {
+    outline: 2px solid var(--ring, var(--primary));
+    outline-offset: 3px;
+}
+
+@media (max-width: 768px) {
+    .tools-grid {
+        grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    }
+
+    .tools-grid .tool-card {
+        padding: var(--spacing-md);
+    }
+}
+
+@media (max-width: 576px) {
+    /* Below this width a 272px minimum plus the container padding no longer
+       fits two tracks, and auto-fill would leave cards narrower than content. */
+    .tools-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 400px) {
+    .tools-grid .tool-icon {
+        width: 46px;
+        height: 46px;
+        font-size: 19px;
+    }
+
+    .tools-grid .tool-title,
+    .tools-grid .tool-card > h3 {
+        font-size: var(--text-base);
+    }
+}
+
 @media (prefers-reduced-motion: reduce) {
     *, *::before, *::after {
         animation-duration: 0.01ms !important;
@@ -829,6 +3285,45 @@ body {
         transition-duration: 0.01ms !important;
         scroll-behavior: auto !important;
     }
+}
+
+/* Placeholder for external embeds that wait for consent (mc-preferences.js). */
+.mc-consent-placeholder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: var(--spacing-md);
+    min-height: 260px;
+    padding: var(--spacing-lg);
+    border: 1px dashed var(--border-color);
+    border-radius: var(--radius-md);
+    background: color-mix(in srgb, var(--bg-primary) 60%, transparent);
+    color: var(--text-secondary);
+    text-align: center;
+}
+
+.mc-consent-placeholder[hidden] {
+    display: none;
+}
+
+.mc-consent-placeholder > i {
+    color: var(--primary);
+    font-size: 1.8rem;
+}
+
+.mc-consent-placeholder p {
+    max-width: 420px;
+    margin: 0;
+    font-size: var(--text-sm);
+    line-height: 1.6;
+}
+
+.mc-consent-actions {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: var(--spacing-sm);
 }
 
 /* ===== Datenschutz-Hinweis (zentriertes Modal) =====
@@ -1045,7 +3540,32 @@ body {
     white-space: nowrap;
 }
 
-/* Steht als Badge im Footer neben Version/Changelog, kein schwebender Button */
+.footer-meta .api-docs {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    border: var(--soft-border);
+    border-radius: 999px;
+    padding: 6px 12px;
+    background: transparent;
+    color: var(--text-secondary, #94A3B8);
+    font-size: 0.85rem;
+    line-height: 1;
+    cursor: pointer;
+    transition: border-color 180ms ease, color 180ms ease;
+}
+
+.footer-meta .api-docs:hover,
+.footer-meta .api-docs:focus-visible {
+    color: var(--text-primary);
+    border-color: color-mix(in srgb, var(--chroma-b) 45%, var(--border-color) 55%);
+}
+
+.footer-meta .api-docs[aria-current="page"] {
+    color: var(--text-primary);
+    border-color: color-mix(in srgb, var(--primary) 55%, var(--border-color) 45%);
+}
+
 .mc-pref-toggle-btn {
     display: inline-flex;
     align-items: center;
@@ -1110,4 +3630,123 @@ body {
         flex: 1 1 100%;
         justify-content: center;
     }
+}
+
+/* Site-wide footer centering, requested 2026-09-06. Scoped to just the
+   footer columns/links/social icons (not the broad text-align used and
+   reverted earlier, see the incident note above) so it can't leak into
+   cards, tables, or any other page content. */
+.footer-col {
+    text-align: center;
+    align-items: center;
+}
+
+.footer-links {
+    text-align: center;
+}
+
+.social-links {
+    justify-content: center;
+}
+
+/* =====================================================================
+   PARTS VISIBILITY LIST - chibi skin maker and 3D skin poser
+   One row per body part plus an indented row for its overlay layer, each with
+   an eye toggle. Scoped to .mv-parts so page rules for labels and inputs inside
+   cards (e.g. .poser-field label) cannot bend it. The chibi editor still has its
+   own #viewer-section copies with the same values; they win there by specificity
+   and were left untouched on purpose.
+   ===================================================================== */
+.mv-parts {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    width: 100%;
+    align-self: stretch;
+}
+
+.mv-parts .vp-part {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+    padding: 6px 10px;
+    background: var(--bg-primary);
+    border: 1px solid transparent;
+    border-radius: var(--radius-sm);
+    transition: border-color 0.2s ease;
+}
+
+.mv-parts .vp-part:hover {
+    border-color: var(--border-color);
+}
+
+.mv-parts .vp-part-sub {
+    margin-left: var(--spacing-lg);
+}
+
+.mv-parts .vp-part-name {
+    flex: 1;
+    color: var(--text-primary);
+    font-size: var(--text-sm);
+}
+
+.mv-parts .mv-layer-icon {
+    flex-shrink: 0;
+    width: 20px;
+    height: 20px;
+    color: var(--text-secondary);
+}
+
+.mv-parts .vp-eye {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    margin: 0;
+    cursor: pointer;
+}
+
+.mv-parts .vp-eye input[type="checkbox"] {
+    position: absolute;
+    width: 0;
+    height: 0;
+    opacity: 0;
+}
+
+.mv-parts .vp-eye .eye-on,
+.mv-parts .vp-eye .eye-off {
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    stroke: var(--text-secondary);
+    transition: stroke 0.2s ease;
+}
+
+.mv-parts .vp-eye input:checked ~ .eye-on {
+    stroke: var(--primary);
+}
+
+.mv-parts .vp-eye input:not(:checked) ~ .eye-on,
+.mv-parts .vp-eye input:checked ~ .eye-off {
+    display: none;
+}
+
+/* The checkbox is visually hidden, so keyboard focus shows on the eye. */
+.mv-parts .vp-eye:has(input:focus-visible) {
+    outline: 2px solid var(--ring, var(--primary));
+    outline-offset: 2px;
+    border-radius: 6px;
+}
+
+.mv-showall {
+    margin-top: var(--spacing-sm);
+}
+
+.mv-parts-hint {
+    margin-top: var(--spacing-sm);
+    color: var(--text-secondary);
+    font-size: var(--text-xs);
+    opacity: 0.8;
 }

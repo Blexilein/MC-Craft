@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="overworld">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Mohamad Laith AKA 'Blexilein'">
+    <meta name="robots" content="index, follow">
+    <meta name="description" content="Nether Coordinate Calculator for Minecraft: convert Overworld and Nether coordinates live (×8/÷8), including a ready-to-copy teleport command.">
+    <meta name="keywords" content="minecraft, nether coordinates, coordinate calculator, nether portal calculator, overworld nether conversion, tp command, minecraft nether calculator">
+    <link rel="canonical" href="https://mc-craft.com/blog/en/nether-coordinate-calculator.html">
+    <link rel="alternate" hreflang="de" href="https://mc-craft.com/blog/de/nether-koordinaten-rechner.html">
+    <link rel="alternate" hreflang="en" href="https://mc-craft.com/blog/en/nether-coordinate-calculator.html">
+    <link rel="alternate" hreflang="x-default" href="https://mc-craft.com/blog/de/nether-koordinaten-rechner.html">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="MC-Craft | Nether Coordinate Calculator">
+    <meta property="og:description" content="Nether Coordinate Calculator for Minecraft: convert Overworld and Nether coordinates live (×8/÷8), including a ready-to-copy teleport command.">
+    <meta property="og:url" content="https://mc-craft.com/blog/en/nether-coordinate-calculator.html">
+    <meta property="og:image" content="https://mc-craft.com/assets/img/favicon/overworld/mc-craft-overworld.png">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="1254">
+    <meta property="og:image:height" content="1254">
+    <meta property="og:image:alt" content="MC-Craft Logo">
+    <meta property="og:site_name" content="MC-Craft">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:locale:alternate" content="de_DE">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="MC-Craft | Nether Coordinate Calculator">
+    <meta name="twitter:description" content="Nether Coordinate Calculator for Minecraft: convert Overworld and Nether coordinates live (×8/÷8), including a ready-to-copy teleport command.">
+    <meta name="twitter:image" content="https://mc-craft.com/assets/img/favicon/overworld/mc-craft-overworld.png">
+    <meta name="theme-color" content="#148200">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicon/overworld/favicon-16x16.png?v=20260911v122" data-theme-icon="favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon/overworld/favicon-32x32.png?v=20260911v122" data-theme-icon="favicon-32x32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/favicon/overworld/apple-touch-icon.png?v=20260911v122" data-theme-icon="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/assets/img/favicon/overworld/android-chrome-192x192.png?v=20260911v122" data-theme-icon="android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="/assets/img/favicon/overworld/android-chrome-512x512.png?v=20260911v122" data-theme-icon="android-chrome-512x512.png">
+    <link rel="icon" href="/assets/img/favicon/overworld/favicon.ico?v=20260911v122" data-theme-icon="favicon.ico">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="stylesheet" href="/assets/fontawesome/all.min.css?v=20260911v122">
+    <link rel="stylesheet" href="/assets/CSS/nether-coordinate-calculator.css?v=20260911v122">
+    <link rel="stylesheet" href="/assets/CSS/site-modern-v1.css?v=20260917b">
+    <title>MC-Craft | Nether Coordinate Calculator</title>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Organization",
+          "@id": "https://mc-craft.com/#organization",
+          "name": "MC-Craft",
+          "url": "https://mc-craft.com/",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://mc-craft.com/assets/img/favicon/overworld/mc-craft-overworld.png",
+            "width": 1254,
+            "height": 1254
+          },
+          "sameAs": [
+            "https://github.com/Blexilein",
+            "https://discord.gg/eVVpQD75w4",
+            "https://x.com/Blexi_1"
+          ]
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://mc-craft.com/#website",
+          "name": "MC-Craft",
+          "url": "https://mc-craft.com/",
+          "inLanguage": "en-US",
+          "publisher": {
+            "@id": "https://mc-craft.com/#organization"
+          }
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://mc-craft.com/blog/en/nether-coordinate-calculator.html#webpage",
+          "url": "https://mc-craft.com/blog/en/nether-coordinate-calculator.html",
+          "name": "MC-Craft | Nether Coordinate Calculator",
+          "description": "Nether Coordinate Calculator for Minecraft: convert Overworld and Nether coordinates live (×8/÷8), including a ready-to-copy teleport command.",
+          "inLanguage": "en-US",
+          "isPartOf": {
+            "@id": "https://mc-craft.com/#website"
+          },
+          "breadcrumb": {
+            "@id": "https://mc-craft.com/blog/en/nether-coordinate-calculator.html#breadcrumb"
+          }
+        },
+        {
+          "@type": "BreadcrumbList",
+          "@id": "https://mc-craft.com/blog/en/nether-coordinate-calculator.html#breadcrumb",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://mc-craft.com/en/index.html"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Nether Coordinate Calculator"
+            }
+          ]
+        }
+      ]
+    }
+    </script>
+</head>
+<body>
+    <a class="skip-link" href="#main">Skip to main content</a>
+
+        <!-- Header -->
+     <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <a href="/en/index.html" class="logo">
+                    <div class="logo-icon"></div>
+                    <span class="logo-text">MC-Craft</span>
+                </a>
+                <nav class="navigation">
+                    <ul class="nav-list">
+                        <li><a href="/en/index.html" class="nav-link">Home</a></li>
+                        <li class="dropdown">
+                            <button class="dropdown-btn nav-link">Tools</button>
+                            <ul class="dropdown-menu">
+                                <li><a href="/blog/en/text-converter.html">Text Converter</a></li>
+                                <li><a href="/blog/en/color-text.html">Color Text</a></li>
+                                <li><a href="/blog/en/structure-converter.html">Structure Converter</a></li>
+                                <li><a href="/blog/en/schematic-viewer.html">Schematic Viewer</a></li>
+                                <li><a href="/blog/en/map-art-generator.html">Map Art Generator</a></li>
+                                <li><a href="/blog/en/nether-coordinate-calculator.html" class="active">Nether Coordinate Calculator</a></li>
+                                <li><a href="/blog/en/minecraft-command-generator.html">Minecraft Command Generator</a></li>
+                                <li><a href="/blog/en/items.html">Items Database</a></li>
+                                <li><a href="/blog/en/mobs.html">Mobs Database</a></li>
+                                <li><a href="/blog/en/server-status.html">Server Status</a></li>
+                                <li><a href="/blog/en/minecraft-api-status.html">Minecraft API Status</a></li>
+                                <li><a href="/blog/en/api-documentation.html">API Documentation</a></li>
+                                <li><a href="/blog/en/skin-lookup.html">Skin Lookup</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <button class="dropdown-btn nav-link">Discover</button>
+                            <ul class="dropdown-menu">
+                                <li><a href="/blog/en/skin-editor.html">Skin Editor</a></li>
+                                <li><a href="/blog/en/skin-poser.html">Skin Poser</a></li>
+                                <li><a href="/blog/en/chibi-skin-maker.html">Chibi Skin Maker</a></li>
+                               <li><a href="/blog/en/day-night-cycle.html">Day-Night Cycle</a></li>
+                                <li><a href="/blog/en/end_poem.html">End Poem</a></li>
+                                <li><a href="/blog/en/minecraft-capes.html">Capes Database</a></li>
+                                <li><a href="/blog/en/minecraft-heads.html">Heads Database</a></li>
+                                <li><a href="/blog/en/head-texture-generator.html">Head Texture Generator</a></li>
+                                <li><a href="/blog/en/minecraft-versions.html">Minecraft Versions</a></li>
+                                <li><a href="/blog/en/minecraft-skins.html">Skin Library</a></li>
+                                <li><a href="/blog/en/beacon-color-mixer.html">Beacon Color Mixer</a></li>
+                                <li><a href="/blog/en/qr-generator.html">QR Generator</a></li>
+                                <li><a href="/blog/en/advancement-generator.html">Advancement Generator</a></li>
+                                <li><a href="/blog/en/sign-generator.html">Sign Generator</a></li>
+                                <li><a href="/blog/en/crafting-recipes.html">Crafting Recipes</a></li>
+                                <li><a href="/blog/en/armor-trim-generator.html">Armor Trim Generator</a></li>
+                                <li><a href="/blog/en/firework-generator.html">Firework Generator</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="sound-toggle">
+                    <button class="sound-btn" id="soundBtn" aria-label="Toggle sound">
+                        <img src="/assets/img/backgrounds/sound-on.svg?v=20260911v122" alt="Sound on" class="sound-icon" id="soundIcon">
+                    </button>
+                </div>
+                <div class="lang-switcher">
+                    <a class="lang-btn" id="langBtn" href="/blog/de/nether-koordinaten-rechner.html" aria-label="Auf Deutsch wechseln">
+                        <img src="/assets/img/backgrounds/en.svg?v=20260911v122" alt="English" class="flag-icon" id="langFlag">
+                    </a>
+                </div>
+                <div class="theme-switcher">
+                    <button class="theme-btn" id="themeBtn">
+                        <i class="fa-solid fa-palette"></i>
+                    </button>
+                    <div class="theme-dropdown" id="themeDropdown">
+                        <button class="theme-option" data-theme="overworld">
+                            <i class="fas fa-cube"></i>
+                            <span>Overworld</span>
+                        </button>
+                        <button class="theme-option" data-theme="nether">
+                            <i class="fas fa-fire"></i>
+                            <span>Nether</span>
+                        </button>
+                        <button class="theme-option" data-theme="end">
+                            <i class="fas fa-moon"></i>
+                            <span>The End</span>
+                        </button>
+                    </div>
+                </div>
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Navigation -->
+    <div class="mobile-nav" id="mobileNav">
+        <div class="mobile-nav-header">
+            <div class="logo">
+                <div class="logo-icon"></div>
+                <span class="logo-text">MC-Craft</span>
+            </div>
+            <button class="close-btn" id="closeBtn">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <ul class="mobile-nav-list">
+            <li><a href="/en/index.html" class="mobile-nav-link">Home</a></li>
+            <li><a href="/blog/en/text-converter.html" class="mobile-nav-link">Text Converter</a></li>
+            <li><a href="/blog/en/color-text.html" class="mobile-nav-link">Color Text</a></li>
+            <li><a href="/blog/en/structure-converter.html" class="mobile-nav-link">Structure Converter</a></li>
+            <li><a href="/blog/en/schematic-viewer.html" class="mobile-nav-link">Schematic Viewer</a></li>
+            <li><a href="/blog/en/map-art-generator.html" class="mobile-nav-link">Map Art Generator</a></li>
+            <li><a href="/blog/en/nether-coordinate-calculator.html" class="mobile-nav-link active">Nether Coordinate Calculator</a></li>
+            <li><a href="/blog/en/minecraft-command-generator.html" class="mobile-nav-link">Minecraft Command Generator</a></li>
+            <li><a href="/blog/en/items.html" class="mobile-nav-link">Items Database</a></li>
+            <li><a href="/blog/en/mobs.html" class="mobile-nav-link">Mobs Database</a></li>
+            <li><a href="/blog/en/server-status.html" class="mobile-nav-link">Server Status</a></li>
+            <li><a href="/blog/en/minecraft-api-status.html" class="mobile-nav-link">Minecraft API Status</a></li>
+            <li><a href="/blog/en/api-documentation.html" class="mobile-nav-link">API Documentation</a></li>
+            <li><a href="/blog/en/skin-lookup.html" class="mobile-nav-link">Skin Lookup</a></li>
+            <li><a href="/blog/en/skin-editor.html" class="mobile-nav-link">Skin Editor</a></li>
+            <li><a href="/blog/en/skin-poser.html" class="mobile-nav-link">Skin Poser</a></li>
+            <li><a href="/blog/en/chibi-skin-maker.html" class="mobile-nav-link">Chibi Skin Maker</a></li>
+            <li><a href="/blog/en/day-night-cycle.html" class="mobile-nav-link">Day-Night Cycle</a></li>
+            <li><a href="/blog/en/end_poem.html" class="mobile-nav-link">End Poem</a></li>
+            <li><a href="/blog/en/minecraft-capes.html" class="mobile-nav-link">Capes Database</a></li>
+            <li><a href="/blog/en/minecraft-heads.html" class="mobile-nav-link">Heads Database</a></li>
+            <li><a href="/blog/en/head-texture-generator.html" class="mobile-nav-link">Head Texture Generator</a></li>
+            <li><a href="/blog/en/minecraft-versions.html" class="mobile-nav-link">Minecraft Versions</a></li>
+            <li><a href="/blog/en/minecraft-skins.html" class="mobile-nav-link">Skin Library</a></li>
+            <li><a href="/blog/en/beacon-color-mixer.html" class="mobile-nav-link">Beacon Color Mixer</a></li>
+            <li><a href="/blog/en/qr-generator.html" class="mobile-nav-link">QR Generator</a></li>
+            <li><a href="/blog/en/advancement-generator.html" class="mobile-nav-link">Advancement Generator</a></li>
+            <li><a href="/blog/en/sign-generator.html" class="mobile-nav-link">Sign Generator</a></li>
+            <li><a href="/blog/en/crafting-recipes.html" class="mobile-nav-link">Crafting Recipes</a></li>
+            <li><a href="/blog/en/armor-trim-generator.html" class="mobile-nav-link">Armor Trim Generator</a></li>
+            <li><a href="/blog/en/firework-generator.html" class="mobile-nav-link">Firework Generator</a></li>
+        </ul>
+        <div class="mobile-theme-switcher">
+            <h4>Choose theme:</h4>
+            <div class="theme-options">
+                <button class="theme-option-btn" data-theme="overworld">
+                    <i class="fas fa-cube"></i> <span>Overworld</span>
+                </button>
+                <button class="theme-option-btn" data-theme="nether">
+                    <i class="fas fa-fire"></i> <span>Nether</span>
+                </button>
+                <button class="theme-option-btn" data-theme="end">
+                    <i class="fas fa-moon"></i> <span>The End</span>
+                </button>
+            </div>
+            <div class="mobile-sound-lang">
+                <button class="mobile-sound-btn" id="mobileSoundBtn">
+                    <img src="/assets/img/backgrounds/sound-on.svg?v=20260911v122" alt="Sound on" class="sound-icon" id="mobileSoundIcon">
+                    <span>Sound</span>
+                </button>
+                <a class="mobile-lang-btn" id="mobileLangBtn" href="/blog/de/nether-koordinaten-rechner.html">
+                    <img src="/assets/img/backgrounds/en.svg?v=20260911v122" alt="English" class="flag-icon" id="mobileLangFlag">
+                    <span>Language</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+
+    <main class="main" id="main" tabindex="-1">
+        <!-- Hero Section -->
+        <section class="hero" id="home">
+            <div class="hero-bg-grid"></div>
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-badge">
+                        <span class="hero-badge-dot"></span>
+                        V 1.2.0 IS HERE
+                    </div>
+                    <h1 class="hero-title">Nether Coordinate <span class="highlight">Calculator</span></h1>
+                    <p class="hero-description">
+                        Convert Overworld and Nether coordinates into each other live. 1 Nether block equals
+                        8 Overworld blocks – enter one side and the other updates instantly.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#calculator" class="btn btn-primary">
+                            <i class="fas fa-calculator"></i> Go to Calculator
+                        </a>
+                        <a href="#how" class="btn btn-secondary">
+                            <i class="fas fa-circle-info"></i> How It Works
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="hero-grid-staggered">
+                        <div class="hero-stagger-col hero-stagger-left">
+                            <div class="grid-item">
+                                <i class="fas fa-cube"></i>
+                                <span>Overworld</span>
+                            </div>
+                            <div class="grid-item">
+                                <i class="fas fa-fire"></i>
+                                <span>Nether</span>
+                            </div>
+                        </div>
+                        <div class="hero-stagger-col hero-stagger-right">
+                            <div class="grid-item">
+                                <i class="fas fa-right-left"></i>
+                                <span>×8 / ÷8</span>
+                            </div>
+                            <div class="grid-item">
+                                <i class="fas fa-terminal"></i>
+                                <span>/tp Command</span>
+                            </div>
+                        </div>
+                        <div class="floating-cube floating-cube-1"></div>
+                        <div class="floating-cube floating-cube-2"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Calculator Section -->
+        <section class="ncc-section" id="calculator">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Convert <span class="highlight">Coordinates</span></h2>
+                    <p class="section-subtitle">Enter values on either side – the other side updates automatically.</p>
+                </div>
+
+                <div class="ncc-layout">
+                    <div class="ncc-panel">
+                        <h3 class="ncc-panel-title"><i class="fas fa-cube"></i> Overworld</h3>
+                        <div class="ncc-field">
+                            <label for="nccOwX">X</label>
+                            <input type="number" id="nccOwX" step="1" value="0">
+                        </div>
+                        <div class="ncc-field">
+                            <label for="nccOwY">Y</label>
+                            <input type="number" id="nccOwY" step="1" value="64">
+                        </div>
+                        <div class="ncc-field">
+                            <label for="nccOwZ">Z</label>
+                            <input type="number" id="nccOwZ" step="1" value="0">
+                        </div>
+                    </div>
+
+                    <div class="ncc-swap">
+                        <span>÷ 8</span>
+                        <i class="fas fa-right-left" aria-hidden="true"></i>
+                        <span>× 8</span>
+                    </div>
+
+                    <div class="ncc-panel">
+                        <h3 class="ncc-panel-title"><i class="fas fa-fire"></i> Nether</h3>
+                        <div class="ncc-field">
+                            <label for="nccNX">X</label>
+                            <input type="number" id="nccNX" step="1" value="0">
+                        </div>
+                        <div class="ncc-field">
+                            <label for="nccNY">Y</label>
+                            <input type="number" id="nccNY" step="1" value="64">
+                        </div>
+                        <div class="ncc-field">
+                            <label for="nccNZ">Z</label>
+                            <input type="number" id="nccNZ" step="1" value="0">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="ncc-commands">
+                    <div class="ncc-command">
+                        <p class="ncc-command-title"><i class="fas fa-cube" aria-hidden="true"></i> Teleport Command (Overworld)</p>
+                        <div class="command-box">
+                            <code id="nccOwCommand">–</code>
+                            <button type="button" class="copy-btn" id="nccOwCopy" aria-label="Copy command">
+                                <i class="fas fa-copy"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="ncc-command">
+                        <p class="ncc-command-title"><i class="fas fa-fire" aria-hidden="true"></i> Teleport Command (Nether)</p>
+                        <div class="command-box">
+                            <code id="nccNCommand">–</code>
+                            <button type="button" class="copy-btn" id="nccNCopy" aria-label="Copy command">
+                                <i class="fas fa-copy"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tips ncc-tips">
+                    <h4><i class="fas fa-lightbulb"></i> Good to Know</h4>
+                    <ul>
+                        <li>1 Nether block equals 8 Overworld blocks – that makes Nether portals great for covering long distances in the Overworld.</li>
+                        <li>The Y coordinate (height) stays unchanged during conversion.</li>
+                        <li>Overworld → Nether is rounded, since block coordinates are always whole numbers.</li>
+                        <li>Portals that are less than 128 blocks apart in Nether coordinates often link to an existing portal instead of creating a new one.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Info Section -->
+        <section class="info-section" id="how">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">How It <span class="highlight">Really</span> Works</h2>
+                    <p class="section-subtitle">The math behind the Nether conversion</p>
+                </div>
+                <div class="info-grid-container">
+                    <div class="info-card">
+                        <div class="info-card-icon">
+                            <i class="fas fa-divide"></i>
+                        </div>
+                        <h4>Overworld → Nether</h4>
+                        <p>Divide X and Z by 8 to get the matching Nether coordinate.</p>
+                    </div>
+                    <div class="info-card">
+                        <div class="info-card-icon">
+                            <i class="fas fa-xmark"></i>
+                        </div>
+                        <h4>Nether → Overworld</h4>
+                        <p>Multiply X and Z by 8 to get the Overworld coordinate.</p>
+                    </div>
+                    <div class="info-card">
+                        <div class="info-card-icon">
+                            <i class="fas fa-arrows-up-down"></i>
+                        </div>
+                        <h4>Y Stays the Same</h4>
+                        <p>Height (Y) is not scaled – it is identical in both dimensions.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta">
+            <div class="container">
+                <div class="cta-content">
+                    <h2 class="cta-title">Discover More Minecraft <span class="highlight">Tools</span>?</h2>
+                    <p class="cta-description">
+                        MC-Craft offers plenty more useful tools for your Minecraft adventures.
+                    </p>
+                    <div class="cta-buttons">
+                        <a href="/blog/en/map-art-generator.html" class="btn btn-primary btn-large">
+                            <i class="fas fa-image"></i> Map Art Generator
+                        </a>
+                        <a href="/en/index.html#tools" class="btn btn-outline">
+                            <i class="fas fa-eye"></i> View All Tools
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+        <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-grid">
+                    <!-- Column 1 -->
+                    <div class="footer-col">
+                        <a href="/en/index.html" class="footer-logo">
+                            <div class="logo-icon"></div>
+                            <span class="logo-text">MC-Craft</span>
+                        </a>
+                        <p class="footer-description">Free Minecraft tools for the community. Built by players, for players.</p>
+                        <div class="social-links">
+                           <a href="https://github.com/Blexilein" class="social-link" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                            <a href="https://discord.gg/eVVpQD75w4" class="social-link"><i class="fab fa-discord"></i></a>
+                            <a href="https://x.com/Blexi_1" class="social-link" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        </div>
+                    </div>
+                    <!-- Column 2 -->
+                    <div class="footer-col">
+                        <h4 class="footer-title">Tools</h4>
+                        <ul class="footer-links">
+                            <li><a href="/blog/en/text-converter.html">Text Converter</a></li>
+                            <li><a href="/blog/en/color-text.html">Color Text Converter</a></li>
+                            <li><a href="/blog/en/structure-converter.html">Structure Converter</a></li>
+                            <li><a href="/blog/en/schematic-viewer.html">Schematic Viewer</a></li>
+                            <li><a href="/blog/en/map-art-generator.html">Map Art Generator</a></li>
+                            <li><a href="/blog/en/nether-coordinate-calculator.html">Nether Coordinate Calculator</a></li>
+                            <li><a href="/blog/en/minecraft-command-generator.html">Minecraft Command Generator</a></li>
+                            <li><a href="/blog/en/items.html">Items Database</a></li>
+                            <li><a href="/blog/en/mobs.html">Mobs Database</a></li>
+                            <li><a href="/blog/en/day-night-cycle.html">Day-Night Cycle</a></li>
+                            <li><a href="/blog/en/beacon-color-mixer.html">Beacon Color Mixer</a></li>
+                                <li><a href="/blog/en/qr-generator.html">QR Generator</a></li>
+                                <li><a href="/blog/en/advancement-generator.html">Advancement Generator</a></li>
+                                <li><a href="/blog/en/sign-generator.html">Sign Generator</a></li>
+                                <li><a href="/blog/en/crafting-recipes.html">Crafting Recipes</a></li>
+                                <li><a href="/blog/en/armor-trim-generator.html">Armor Trim Generator</a></li>
+                                <li><a href="/blog/en/firework-generator.html">Firework Generator</a></li>
+                        </ul>
+                    </div>
+                    <!-- Column 3 -->
+                    <div class="footer-col">
+                        <h4 class="footer-title">More Tools</h4>
+                        <ul class="footer-links">
+                            <li><a href="/blog/en/server-status.html">Server Status</a></li>
+                                <li><a href="/blog/en/minecraft-api-status.html">Minecraft API Status</a></li>
+                                <li><a href="/blog/en/api-documentation.html">API Documentation</a></li>
+                            <li><a href="/blog/en/skin-lookup.html">Skin Lookup</a></li>
+                            <li><a href="/blog/en/skin-editor.html">Skin Editor</a></li>
+                            <li><a href="/blog/en/skin-poser.html">Skin Poser</a></li>
+                            <li><a href="/blog/en/chibi-skin-maker.html">Chibi Skin Maker</a></li>
+                            <li><a href="/blog/en/minecraft-skins.html">Skin Gallery</a></li>
+                            <li><a href="/blog/en/minecraft-capes.html">Cape Gallery</a></li>
+                            <li><a href="/blog/en/minecraft-heads.html">Heads Database</a></li>
+                            <li><a href="/blog/en/head-texture-generator.html">Head Texture Generator</a></li>
+                            <li><a href="/blog/en/minecraft-versions.html">Minecraft Versions</a></li>
+                            <li><a href="/blog/en/end_poem.html">End Poem</a></li>
+                        </ul>
+                    </div>
+                    <!-- Column 4 -->
+                    <div class="footer-col">
+                        <h4 class="footer-title">Legal</h4>
+                        <ul class="footer-links">
+                            <li><a href="/blog/en/imprint.html">Imprint</a></li>
+                            <li><a href="/blog/en/privacy-policy.html">Privacy Policy</a></li>
+                            <li><a href="/blog/en/terms-of-use.html">Terms of Use</a></li>
+                            <li><a href="/blog/en/copyright.html">Copyright</a></li>
+                        </ul>
+                    </div>
+                    <!-- Column 5 -->
+                    <div class="footer-col">
+                        <h4 class="footer-title">About Us</h4>
+                        <ul class="footer-links">
+                            <li><a href="/blog/en/history.html">MC-Craft History</a></li>
+                            <li><a href="/blog/en/team.html">Our Team</a></li>
+                            <li><a href="/blog/en/about.html">About us</a></li>
+                        </ul>
+                    </div>
+                    <!-- Column 6 -->
+                    <div class="footer-col">
+                        <h4 class="footer-title">Support</h4>
+                        <ul class="footer-links">
+                            <li><a href="/blog/en/faq.html">FAQ &amp; Help</a></li>
+                            <li><a href="/blog/en/bug-report.html">Report Bug</a></li>
+                            <li><a href="/blog/en/support.html">Support Contact</a></li>
+                            <li><a href="/blog/en/e-mails.html">E-mails</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <div class="copyright">
+                        <p>&copy; <span id="currentYear">2026</span> MC-Craft. <span>All rights reserved.</span></p>
+                        <p class="disclaimer">Minecraft is a trademark of Mojang Studios. This site is not officially affiliated with Mojang or Microsoft.</p>
+                    </div>
+                    <div class="footer-meta">
+                        <span class="version">Version 1.2.0</span>
+                        <a href="/blog/en/changelog.html" class="changelog">Changelog</a>
+                        <a href="/blog/en/api-documentation.html" class="api-docs"><i class="fas fa-book-open" aria-hidden="true"></i> API Docs</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Notification Toast -->
+    <div class="toast-container" id="toastContainer"></div>
+
+    <!-- JavaScript -->
+    <script src="/assets/JS/modules/mc-preferences.js?v=20260917b"></script>
+    <script src="/assets/JS/main.js?v=20260917a"></script>
+    <script src="/assets/JS/modules/nether-coordinate-calculator.js?v=20260911v122" defer></script>
+</body>
+</html>

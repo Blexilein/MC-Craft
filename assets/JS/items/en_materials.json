@@ -42,6 +42,13 @@
         "category": "Item",
         "description": "Item texture for Coal.",
         "file": "/assets/img/items/Coal.png"
+      },
+      {
+        "name": "coal",
+        "category": "Item",
+        "description": "item/coal.png",
+        "file": "/assets/img/textures/item/coal.png",
+        "path": "item/coal"
       }
     ],
     "sounds": [],
@@ -129,6 +136,13 @@
         "category": "Item",
         "description": "Item texture for Charcoal.",
         "file": "/assets/img/items/Charcoal.png"
+      },
+      {
+        "name": "charcoal",
+        "category": "Item",
+        "description": "item/charcoal.png",
+        "file": "/assets/img/textures/item/charcoal.png",
+        "path": "item/charcoal"
       }
     ],
     "sounds": [],
@@ -216,6 +230,13 @@
         "category": "Item",
         "description": "Item texture for Emerald.",
         "file": "/assets/img/items/Emerald.png"
+      },
+      {
+        "name": "emerald",
+        "category": "Item",
+        "description": "item/emerald.png",
+        "file": "/assets/img/textures/item/emerald.png",
+        "path": "item/emerald"
       }
     ],
     "sounds": [],
@@ -303,6 +324,13 @@
         "category": "Item",
         "description": "Item texture for Lapis Lazuli.",
         "file": "/assets/img/items/Lapis_Lazuli.png"
+      },
+      {
+        "name": "lapis_lazuli",
+        "category": "Item",
+        "description": "item/lapis_lazuli.png",
+        "file": "/assets/img/textures/item/lapis_lazuli.png",
+        "path": "item/lapis_lazuli"
       }
     ],
     "sounds": [],
@@ -390,6 +418,13 @@
         "category": "Item",
         "description": "Item texture for Amethyst Shard.",
         "file": "/assets/img/items/Amethyst_Shard.png"
+      },
+      {
+        "name": "amethyst_shard",
+        "category": "Item",
+        "description": "item/amethyst_shard.png",
+        "file": "/assets/img/textures/item/amethyst_shard.png",
+        "path": "item/amethyst_shard"
       }
     ],
     "sounds": [],
@@ -475,6 +510,13 @@
         "category": "Item",
         "description": "Item texture for Quartz.",
         "file": "/assets/img/items/Nether_Quartz.png"
+      },
+      {
+        "name": "quartz",
+        "category": "Item",
+        "description": "item/quartz.png",
+        "file": "/assets/img/textures/item/quartz.png",
+        "path": "item/quartz"
       }
     ],
     "sounds": [],
@@ -562,6 +604,13 @@
         "category": "Item",
         "description": "Item texture for Raw Copper.",
         "file": "/assets/img/items/Raw_Copper.png"
+      },
+      {
+        "name": "raw_copper",
+        "category": "Item",
+        "description": "item/raw_copper.png",
+        "file": "/assets/img/textures/item/raw_copper.png",
+        "path": "item/raw_copper"
       }
     ],
     "sounds": [],
@@ -649,6 +698,13 @@
         "category": "Item",
         "description": "Item texture for Raw Iron.",
         "file": "/assets/img/items/Raw_Iron.png"
+      },
+      {
+        "name": "raw_iron",
+        "category": "Item",
+        "description": "item/raw_iron.png",
+        "file": "/assets/img/textures/item/raw_iron.png",
+        "path": "item/raw_iron"
       }
     ],
     "sounds": [],
@@ -736,6 +792,13 @@
         "category": "Item",
         "description": "Item texture for Raw Gold.",
         "file": "/assets/img/items/Raw_Gold.png"
+      },
+      {
+        "name": "raw_gold",
+        "category": "Item",
+        "description": "item/raw_gold.png",
+        "file": "/assets/img/textures/item/raw_gold.png",
+        "path": "item/raw_gold"
       }
     ],
     "sounds": [],
@@ -823,6 +886,13 @@
         "category": "Item",
         "description": "Item texture for Diamond.",
         "file": "/assets/img/items/Diamond.png"
+      },
+      {
+        "name": "diamond",
+        "category": "Item",
+        "description": "item/diamond.png",
+        "file": "/assets/img/textures/item/diamond.png",
+        "path": "item/diamond"
       }
     ],
     "sounds": [],
@@ -910,9 +980,82 @@
         "category": "Item",
         "description": "Item texture for Ancient Debris.",
         "file": "/assets/img/blocks/Ancient_Debris.png"
+      },
+      {
+        "name": "ancient_debris_top",
+        "category": "Block",
+        "description": "block/ancient_debris_top.png",
+        "file": "/assets/img/textures/block/ancient_debris_top.png",
+        "path": "block/ancient_debris_top"
+      },
+      {
+        "name": "ancient_debris_side",
+        "category": "Block",
+        "description": "block/ancient_debris_side.png",
+        "file": "/assets/img/textures/block/ancient_debris_side.png",
+        "path": "block/ancient_debris_side"
       }
     ],
-    "sounds": [],
+    "sounds": [
+      {
+        "name": "Block broken",
+        "event": "block.ancient_debris.break",
+        "files": [
+          "/assets/sounds/block/ancient_debris/break1.ogg",
+          "/assets/sounds/block/ancient_debris/break2.ogg",
+          "/assets/sounds/block/ancient_debris/break3.ogg",
+          "/assets/sounds/block/ancient_debris/break4.ogg",
+          "/assets/sounds/block/ancient_debris/break5.ogg"
+        ]
+      },
+      {
+        "name": "Something falls on a block",
+        "event": "block.ancient_debris.fall",
+        "files": [
+          "/assets/sounds/block/basalt/step1.ogg",
+          "/assets/sounds/block/basalt/step2.ogg",
+          "/assets/sounds/block/basalt/step3.ogg",
+          "/assets/sounds/block/basalt/step4.ogg",
+          "/assets/sounds/block/basalt/step5.ogg",
+          "/assets/sounds/block/basalt/step6.ogg"
+        ]
+      },
+      {
+        "name": "Block breaking",
+        "event": "block.ancient_debris.hit",
+        "files": [
+          "/assets/sounds/block/basalt/step1.ogg",
+          "/assets/sounds/block/basalt/step2.ogg",
+          "/assets/sounds/block/basalt/step3.ogg",
+          "/assets/sounds/block/basalt/step4.ogg",
+          "/assets/sounds/block/basalt/step5.ogg",
+          "/assets/sounds/block/basalt/step6.ogg"
+        ]
+      },
+      {
+        "name": "Block placed",
+        "event": "block.ancient_debris.place",
+        "files": [
+          "/assets/sounds/block/ancient_debris/break1.ogg",
+          "/assets/sounds/block/ancient_debris/break2.ogg",
+          "/assets/sounds/block/ancient_debris/break3.ogg",
+          "/assets/sounds/block/ancient_debris/break4.ogg",
+          "/assets/sounds/block/ancient_debris/break5.ogg"
+        ]
+      },
+      {
+        "name": "Footsteps",
+        "event": "block.ancient_debris.step",
+        "files": [
+          "/assets/sounds/block/basalt/step1.ogg",
+          "/assets/sounds/block/basalt/step2.ogg",
+          "/assets/sounds/block/basalt/step3.ogg",
+          "/assets/sounds/block/basalt/step4.ogg",
+          "/assets/sounds/block/basalt/step5.ogg",
+          "/assets/sounds/block/basalt/step6.ogg"
+        ]
+      }
+    ],
     "command": "/give @p minecraft:ancient_debris 1",
     "effects": [],
     "rarity": "Rare",
@@ -995,6 +1138,13 @@
         "category": "Item",
         "description": "Item texture for Copper Nugget.",
         "file": "/assets/img/items/Copper_Nugget.png"
+      },
+      {
+        "name": "copper_nugget",
+        "category": "Item",
+        "description": "item/copper_nugget.png",
+        "file": "/assets/img/textures/item/copper_nugget.png",
+        "path": "item/copper_nugget"
       }
     ],
     "sounds": [],
@@ -1082,6 +1232,13 @@
         "category": "Item",
         "description": "Item texture for Iron Nugget.",
         "file": "/assets/img/items/Iron_Nugget.png"
+      },
+      {
+        "name": "iron_nugget",
+        "category": "Item",
+        "description": "item/iron_nugget.png",
+        "file": "/assets/img/textures/item/iron_nugget.png",
+        "path": "item/iron_nugget"
       }
     ],
     "sounds": [],
@@ -1169,6 +1326,13 @@
         "category": "Item",
         "description": "Item texture for Gold Nugget.",
         "file": "/assets/img/items/Gold_Nugget.png"
+      },
+      {
+        "name": "gold_nugget",
+        "category": "Item",
+        "description": "item/gold_nugget.png",
+        "file": "/assets/img/textures/item/gold_nugget.png",
+        "path": "item/gold_nugget"
       }
     ],
     "sounds": [],
@@ -1256,6 +1420,13 @@
         "category": "Item",
         "description": "Item texture for Copper Ingot.",
         "file": "/assets/img/items/Copper_Ingot.png"
+      },
+      {
+        "name": "copper_ingot",
+        "category": "Item",
+        "description": "item/copper_ingot.png",
+        "file": "/assets/img/textures/item/copper_ingot.png",
+        "path": "item/copper_ingot"
       }
     ],
     "sounds": [],
@@ -1343,6 +1514,13 @@
         "category": "Item",
         "description": "Item texture for Iron Ingot.",
         "file": "/assets/img/items/Iron_Ingot.png"
+      },
+      {
+        "name": "iron_ingot",
+        "category": "Item",
+        "description": "item/iron_ingot.png",
+        "file": "/assets/img/textures/item/iron_ingot.png",
+        "path": "item/iron_ingot"
       }
     ],
     "sounds": [],
@@ -1428,6 +1606,13 @@
         "category": "Item",
         "description": "Item texture for Gold Ingot.",
         "file": "/assets/img/items/Gold_Ingot.png"
+      },
+      {
+        "name": "gold_ingot",
+        "category": "Item",
+        "description": "item/gold_ingot.png",
+        "file": "/assets/img/textures/item/gold_ingot.png",
+        "path": "item/gold_ingot"
       }
     ],
     "sounds": [],
@@ -1513,6 +1698,13 @@
         "category": "Item",
         "description": "Item texture for Netherite Scrap.",
         "file": "/assets/img/items/Netherite_Scrap.png"
+      },
+      {
+        "name": "netherite_scrap",
+        "category": "Item",
+        "description": "item/netherite_scrap.png",
+        "file": "/assets/img/textures/item/netherite_scrap.png",
+        "path": "item/netherite_scrap"
       }
     ],
     "sounds": [],
@@ -1600,6 +1792,13 @@
         "category": "Item",
         "description": "Item texture for Netherite Ingot.",
         "file": "/assets/img/items/Netherite_Ingot2.png"
+      },
+      {
+        "name": "netherite_ingot",
+        "category": "Item",
+        "description": "item/netherite_ingot.png",
+        "file": "/assets/img/textures/item/netherite_ingot.png",
+        "path": "item/netherite_ingot"
       }
     ],
     "sounds": [],
@@ -1687,6 +1886,13 @@
         "category": "Item",
         "description": "Item texture for Stick.",
         "file": "/assets/img/items/Stick.png"
+      },
+      {
+        "name": "stick",
+        "category": "Item",
+        "description": "item/stick.png",
+        "file": "/assets/img/textures/item/stick.png",
+        "path": "item/stick"
       }
     ],
     "sounds": [],
@@ -1774,6 +1980,13 @@
         "category": "Item",
         "description": "Item texture for Flint.",
         "file": "/assets/img/items/Flint.png"
+      },
+      {
+        "name": "flint",
+        "category": "Item",
+        "description": "item/flint.png",
+        "file": "/assets/img/textures/item/flint.png",
+        "path": "item/flint"
       }
     ],
     "sounds": [],
@@ -1861,6 +2074,13 @@
         "category": "Item",
         "description": "Item texture for Wheat.",
         "file": "/assets/img/blocks/Wheat.png"
+      },
+      {
+        "name": "wheat",
+        "category": "Item",
+        "description": "item/wheat.png",
+        "file": "/assets/img/textures/item/wheat.png",
+        "path": "item/wheat"
       }
     ],
     "sounds": [],
@@ -1946,6 +2166,13 @@
         "category": "Item",
         "description": "Item texture for Bone.",
         "file": "/assets/img/items/Bone.png"
+      },
+      {
+        "name": "bone",
+        "category": "Item",
+        "description": "item/bone.png",
+        "file": "/assets/img/textures/item/bone.png",
+        "path": "item/bone"
       }
     ],
     "sounds": [],
@@ -2031,9 +2258,28 @@
         "category": "Item",
         "description": "Item texture for Bone Meal.",
         "file": "/assets/img/items/Bone_Meal.png"
+      },
+      {
+        "name": "bone_meal",
+        "category": "Item",
+        "description": "item/bone_meal.png",
+        "file": "/assets/img/textures/item/bone_meal.png",
+        "path": "item/bone_meal"
       }
     ],
-    "sounds": [],
+    "sounds": [
+      {
+        "name": "Bone Meal crinkles",
+        "event": "item.bone_meal.use",
+        "files": [
+          "/assets/sounds/item/bonemeal/bonemeal1.ogg",
+          "/assets/sounds/item/bonemeal/bonemeal2.ogg",
+          "/assets/sounds/item/bonemeal/bonemeal3.ogg",
+          "/assets/sounds/item/bonemeal/bonemeal4.ogg",
+          "/assets/sounds/item/bonemeal/bonemeal5.ogg"
+        ]
+      }
+    ],
     "command": "/give @p minecraft:bone_meal 1",
     "effects": [],
     "rarity": "Common",
@@ -2116,9 +2362,111 @@
         "category": "Item",
         "description": "Item texture for String.",
         "file": "/assets/img/items/String.png"
+      },
+      {
+        "name": "string",
+        "category": "Item",
+        "description": "item/string.png",
+        "file": "/assets/img/textures/item/string.png",
+        "path": "item/string"
+      },
+      {
+        "name": "tripwire",
+        "category": "Block",
+        "description": "block/tripwire.png",
+        "file": "/assets/img/textures/block/tripwire.png",
+        "path": "block/tripwire"
       }
     ],
-    "sounds": [],
+    "sounds": [
+      {
+        "name": "Tripwire attaches",
+        "event": "block.tripwire.attach",
+        "files": [
+          "/assets/sounds/random/click.ogg"
+        ]
+      },
+      {
+        "name": "Tripwire clicks",
+        "event": "block.tripwire.click_off",
+        "files": [
+          "/assets/sounds/random/click.ogg"
+        ]
+      },
+      {
+        "name": "Tripwire clicks",
+        "event": "block.tripwire.click_on",
+        "files": [
+          "/assets/sounds/random/click.ogg"
+        ]
+      },
+      {
+        "name": "Tripwire detaches",
+        "event": "block.tripwire.detach",
+        "files": [
+          "/assets/sounds/random/bowhit1.ogg",
+          "/assets/sounds/random/bowhit2.ogg",
+          "/assets/sounds/random/bowhit3.ogg",
+          "/assets/sounds/random/bowhit4.ogg"
+        ]
+      },
+      {
+        "name": "Block broken",
+        "event": "block.stone.break",
+        "files": [
+          "/assets/sounds/dig/stone1.ogg",
+          "/assets/sounds/dig/stone2.ogg",
+          "/assets/sounds/dig/stone3.ogg",
+          "/assets/sounds/dig/stone4.ogg"
+        ]
+      },
+      {
+        "name": "Footsteps",
+        "event": "block.stone.step",
+        "files": [
+          "/assets/sounds/step/stone1.ogg",
+          "/assets/sounds/step/stone2.ogg",
+          "/assets/sounds/step/stone3.ogg",
+          "/assets/sounds/step/stone4.ogg",
+          "/assets/sounds/step/stone5.ogg",
+          "/assets/sounds/step/stone6.ogg"
+        ]
+      },
+      {
+        "name": "Block placed",
+        "event": "block.stone.place",
+        "files": [
+          "/assets/sounds/dig/stone1.ogg",
+          "/assets/sounds/dig/stone2.ogg",
+          "/assets/sounds/dig/stone3.ogg",
+          "/assets/sounds/dig/stone4.ogg"
+        ]
+      },
+      {
+        "name": "Block breaking",
+        "event": "block.stone.hit",
+        "files": [
+          "/assets/sounds/step/stone1.ogg",
+          "/assets/sounds/step/stone2.ogg",
+          "/assets/sounds/step/stone3.ogg",
+          "/assets/sounds/step/stone4.ogg",
+          "/assets/sounds/step/stone5.ogg",
+          "/assets/sounds/step/stone6.ogg"
+        ]
+      },
+      {
+        "name": "Something falls on a block",
+        "event": "block.stone.fall",
+        "files": [
+          "/assets/sounds/step/stone1.ogg",
+          "/assets/sounds/step/stone2.ogg",
+          "/assets/sounds/step/stone3.ogg",
+          "/assets/sounds/step/stone4.ogg",
+          "/assets/sounds/step/stone5.ogg",
+          "/assets/sounds/step/stone6.ogg"
+        ]
+      }
+    ],
     "command": "/give @p minecraft:string 1",
     "effects": [],
     "rarity": "Common",
@@ -2201,6 +2549,13 @@
         "category": "Item",
         "description": "Item texture for Feather.",
         "file": "/assets/img/items/Feather.png"
+      },
+      {
+        "name": "feather",
+        "category": "Item",
+        "description": "item/feather.png",
+        "file": "/assets/img/textures/item/feather.png",
+        "path": "item/feather"
       }
     ],
     "sounds": [],
@@ -2288,9 +2643,24 @@
         "category": "Item",
         "description": "Item texture for Snowball.",
         "file": "/assets/img/items/Snowball.png"
+      },
+      {
+        "name": "snowball",
+        "category": "Item",
+        "description": "item/snowball.png",
+        "file": "/assets/img/textures/item/snowball.png",
+        "path": "item/snowball"
       }
     ],
-    "sounds": [],
+    "sounds": [
+      {
+        "name": "Snowball flies",
+        "event": "entity.snowball.throw",
+        "files": [
+          "/assets/sounds/random/bow.ogg"
+        ]
+      }
+    ],
     "command": "/give @p minecraft:snowball 1",
     "effects": [],
     "rarity": "Common",
@@ -2373,9 +2743,24 @@
         "category": "Item",
         "description": "Item texture for Egg.",
         "file": "/assets/img/items/Egg.png"
+      },
+      {
+        "name": "egg",
+        "category": "Item",
+        "description": "item/egg.png",
+        "file": "/assets/img/textures/item/egg.png",
+        "path": "item/egg"
       }
     ],
-    "sounds": [],
+    "sounds": [
+      {
+        "name": "Egg flies",
+        "event": "entity.egg.throw",
+        "files": [
+          "/assets/sounds/random/bow.ogg"
+        ]
+      }
+    ],
     "command": "/give @p minecraft:egg 1",
     "effects": [],
     "rarity": "Common",
@@ -2458,9 +2843,24 @@
         "category": "Item",
         "description": "Item texture for Brown Egg.",
         "file": "/assets/img/items/Brown_Egg.png"
+      },
+      {
+        "name": "brown_egg",
+        "category": "Item",
+        "description": "item/brown_egg.png",
+        "file": "/assets/img/textures/item/brown_egg.png",
+        "path": "item/brown_egg"
       }
     ],
-    "sounds": [],
+    "sounds": [
+      {
+        "name": "Egg flies",
+        "event": "entity.egg.throw",
+        "files": [
+          "/assets/sounds/random/bow.ogg"
+        ]
+      }
+    ],
     "command": "/give @p minecraft:brown_egg 1",
     "effects": [],
     "rarity": "Common",
@@ -2543,9 +2943,24 @@
         "category": "Item",
         "description": "Item texture for Blue Egg.",
         "file": "/assets/img/items/Blue_Egg.png"
+      },
+      {
+        "name": "blue_egg",
+        "category": "Item",
+        "description": "item/blue_egg.png",
+        "file": "/assets/img/textures/item/blue_egg.png",
+        "path": "item/blue_egg"
       }
     ],
-    "sounds": [],
+    "sounds": [
+      {
+        "name": "Egg flies",
+        "event": "entity.egg.throw",
+        "files": [
+          "/assets/sounds/random/bow.ogg"
+        ]
+      }
+    ],
     "command": "/give @p minecraft:blue_egg 1",
     "effects": [],
     "rarity": "Common",
@@ -2628,6 +3043,13 @@
         "category": "Item",
         "description": "Item texture for Leather.",
         "file": "/assets/img/items/Leather.png"
+      },
+      {
+        "name": "leather",
+        "category": "Item",
+        "description": "item/leather.png",
+        "file": "/assets/img/textures/item/leather.png",
+        "path": "item/leather"
       }
     ],
     "sounds": [],
@@ -2715,6 +3137,13 @@
         "category": "Item",
         "description": "Item texture for Rabbit Hide.",
         "file": "/assets/img/items/Rabbit_Hide.png"
+      },
+      {
+        "name": "rabbit_hide",
+        "category": "Item",
+        "description": "item/rabbit_hide.png",
+        "file": "/assets/img/textures/item/rabbit_hide.png",
+        "path": "item/rabbit_hide"
       }
     ],
     "sounds": [],
@@ -2802,9 +3231,26 @@
         "category": "Item",
         "description": "Item texture for Honeycomb.",
         "file": "/assets/img/items/Honeycomb.png"
+      },
+      {
+        "name": "honeycomb",
+        "category": "Item",
+        "description": "item/honeycomb.png",
+        "file": "/assets/img/textures/item/honeycomb.png",
+        "path": "item/honeycomb"
       }
     ],
-    "sounds": [],
+    "sounds": [
+      {
+        "name": "Wax on",
+        "event": "item.honeycomb.wax_on",
+        "files": [
+          "/assets/sounds/item/honeycomb/wax_on1.ogg",
+          "/assets/sounds/item/honeycomb/wax_on2.ogg",
+          "/assets/sounds/item/honeycomb/wax_on3.ogg"
+        ]
+      }
+    ],
     "command": "/give @p minecraft:honeycomb 1",
     "effects": [],
     "rarity": "Common",
@@ -2887,9 +3333,56 @@
         "category": "Item",
         "description": "Item texture for Resin Clump.",
         "file": "/assets/img/textures/item/resin_clump.png"
+      },
+      {
+        "name": "resin_clump",
+        "category": "Block",
+        "description": "block/resin_clump.png",
+        "file": "/assets/img/textures/block/resin_clump.png",
+        "path": "block/resin_clump"
       }
     ],
-    "sounds": [],
+    "sounds": [
+      {
+        "name": "Block broken",
+        "event": "block.resin.break",
+        "files": [
+          "/assets/sounds/block/resin/resin_break1.ogg",
+          "/assets/sounds/block/resin/resin_break2.ogg",
+          "/assets/sounds/block/resin/resin_break3.ogg",
+          "/assets/sounds/block/resin/resin_break4.ogg",
+          "/assets/sounds/block/resin/resin_break5.ogg"
+        ]
+      },
+      {
+        "name": "Footsteps",
+        "event": "block.resin.step",
+        "files": [
+          "/assets/sounds/block/resin/resin_step1.ogg",
+          "/assets/sounds/block/resin/resin_step2.ogg",
+          "/assets/sounds/block/resin/resin_step3.ogg",
+          "/assets/sounds/block/resin/resin_step4.ogg",
+          "/assets/sounds/block/resin/resin_step5.ogg"
+        ]
+      },
+      {
+        "name": "Block placed",
+        "event": "block.resin.place",
+        "files": [
+          "/assets/sounds/block/resin/resin_place1.ogg",
+          "/assets/sounds/block/resin/resin_place2.ogg",
+          "/assets/sounds/block/resin/resin_place3.ogg",
+          "/assets/sounds/block/resin/resin_place4.ogg"
+        ]
+      },
+      {
+        "name": "Something falls on a block",
+        "event": "block.resin.fall",
+        "files": [
+          "/assets/sounds/block/resin/resin_fall.ogg"
+        ]
+      }
+    ],
     "command": "/give @p minecraft:resin_clump 1",
     "effects": [],
     "rarity": "Common",
@@ -2974,9 +3467,26 @@
         "category": "Item",
         "description": "Item texture for Ink Sac.",
         "file": "/assets/img/items/Ink_Sac.png"
+      },
+      {
+        "name": "ink_sac",
+        "category": "Item",
+        "description": "item/ink_sac.png",
+        "file": "/assets/img/textures/item/ink_sac.png",
+        "path": "item/ink_sac"
       }
     ],
-    "sounds": [],
+    "sounds": [
+      {
+        "name": "Ink Sac splotches",
+        "event": "item.ink_sac.use",
+        "files": [
+          "/assets/sounds/item/ink_sac/ink_sac1.ogg",
+          "/assets/sounds/item/ink_sac/ink_sac2.ogg",
+          "/assets/sounds/item/ink_sac/ink_sac3.ogg"
+        ]
+      }
+    ],
     "command": "/give @p minecraft:ink_sac 1",
     "effects": [],
     "rarity": "Common",
@@ -3059,9 +3569,26 @@
         "category": "Item",
         "description": "Item texture for Glow Ink Sac.",
         "file": "/assets/img/items/Glow_Ink_Sac.png"
+      },
+      {
+        "name": "glow_ink_sac",
+        "category": "Item",
+        "description": "item/glow_ink_sac.png",
+        "file": "/assets/img/textures/item/glow_ink_sac.png",
+        "path": "item/glow_ink_sac"
       }
     ],
-    "sounds": [],
+    "sounds": [
+      {
+        "name": "Glow Ink Sac splotches",
+        "event": "item.glow_ink_sac.use",
+        "files": [
+          "/assets/sounds/item/ink_sac/ink_sac1.ogg",
+          "/assets/sounds/item/ink_sac/ink_sac2.ogg",
+          "/assets/sounds/item/ink_sac/ink_sac3.ogg"
+        ]
+      }
+    ],
     "command": "/give @p minecraft:glow_ink_sac 1",
     "effects": [],
     "rarity": "Common",
@@ -3144,6 +3671,13 @@
         "category": "Item",
         "description": "Item texture for Turtle Scute.",
         "file": "/assets/img/items/Turtle_Scute.png"
+      },
+      {
+        "name": "turtle_scute",
+        "category": "Item",
+        "description": "item/turtle_scute.png",
+        "file": "/assets/img/textures/item/turtle_scute.png",
+        "path": "item/turtle_scute"
       }
     ],
     "sounds": [],
@@ -3231,6 +3765,13 @@
         "category": "Item",
         "description": "Item texture for Armadillo Scute.",
         "file": "/assets/img/items/Armadillo_Scute.png"
+      },
+      {
+        "name": "armadillo_scute",
+        "category": "Item",
+        "description": "item/armadillo_scute.png",
+        "file": "/assets/img/textures/item/armadillo_scute.png",
+        "path": "item/armadillo_scute"
       }
     ],
     "sounds": [],
@@ -3316,6 +3857,13 @@
         "category": "Item",
         "description": "Item texture for Slime Ball.",
         "file": "/assets/img/items/Slimeball.png"
+      },
+      {
+        "name": "slime_ball",
+        "category": "Item",
+        "description": "item/slime_ball.png",
+        "file": "/assets/img/textures/item/slime_ball.png",
+        "path": "item/slime_ball"
       }
     ],
     "sounds": [],
@@ -3401,6 +3949,13 @@
         "category": "Item",
         "description": "Item texture for Clay Ball.",
         "file": "/assets/img/items/Clay_Ball.png"
+      },
+      {
+        "name": "clay_ball",
+        "category": "Item",
+        "description": "item/clay_ball.png",
+        "file": "/assets/img/textures/item/clay_ball.png",
+        "path": "item/clay_ball"
       }
     ],
     "sounds": [],
@@ -3488,6 +4043,13 @@
         "category": "Item",
         "description": "Item texture for Prismarine Shard.",
         "file": "/assets/img/items/Prismarine_Shard.png"
+      },
+      {
+        "name": "prismarine_shard",
+        "category": "Item",
+        "description": "item/prismarine_shard.png",
+        "file": "/assets/img/textures/item/prismarine_shard.png",
+        "path": "item/prismarine_shard"
       }
     ],
     "sounds": [],
@@ -3575,6 +4137,13 @@
         "category": "Item",
         "description": "Item texture for Prismarine Crystals.",
         "file": "/assets/img/items/Prismarine_Crystals.png"
+      },
+      {
+        "name": "prismarine_crystals",
+        "category": "Item",
+        "description": "item/prismarine_crystals.png",
+        "file": "/assets/img/textures/item/prismarine_crystals.png",
+        "path": "item/prismarine_crystals"
       }
     ],
     "sounds": [],
@@ -3662,6 +4231,13 @@
         "category": "Item",
         "description": "Item texture for Nautilus Shell.",
         "file": "/assets/img/items/Nautilus_Shell2.png"
+      },
+      {
+        "name": "nautilus_shell",
+        "category": "Item",
+        "description": "item/nautilus_shell.png",
+        "file": "/assets/img/textures/item/nautilus_shell.png",
+        "path": "item/nautilus_shell"
       }
     ],
     "sounds": [],
@@ -3749,6 +4325,13 @@
         "category": "Item",
         "description": "Item texture for Heart Of The Sea.",
         "file": "/assets/img/items/Heart_of_the_Sea2.png"
+      },
+      {
+        "name": "heart_of_the_sea",
+        "category": "Item",
+        "description": "item/heart_of_the_sea.png",
+        "file": "/assets/img/textures/item/heart_of_the_sea.png",
+        "path": "item/heart_of_the_sea"
       }
     ],
     "sounds": [],
@@ -3836,9 +4419,24 @@
         "category": "Item",
         "description": "Item texture for Fire Charge.",
         "file": "/assets/img/items/Fire_Charge.png"
+      },
+      {
+        "name": "fire_charge",
+        "category": "Item",
+        "description": "item/fire_charge.png",
+        "file": "/assets/img/textures/item/fire_charge.png",
+        "path": "item/fire_charge"
       }
     ],
-    "sounds": [],
+    "sounds": [
+      {
+        "name": "Fireball whooshes",
+        "event": "item.firecharge.use",
+        "files": [
+          "/assets/sounds/mob/ghast/fireball4.ogg"
+        ]
+      }
+    ],
     "command": "/give @p minecraft:fire_charge 1",
     "effects": [],
     "rarity": "Common",
@@ -3921,6 +4519,13 @@
         "category": "Item",
         "description": "Item texture for Blaze Rod.",
         "file": "/assets/img/items/Blaze_Rod.png"
+      },
+      {
+        "name": "blaze_rod",
+        "category": "Item",
+        "description": "item/blaze_rod.png",
+        "file": "/assets/img/textures/item/blaze_rod.png",
+        "path": "item/blaze_rod"
       }
     ],
     "sounds": [],
@@ -4008,6 +4613,13 @@
         "category": "Item",
         "description": "Item texture for Breeze Rod.",
         "file": "/assets/img/items/Breeze_Rod.png"
+      },
+      {
+        "name": "breeze_rod",
+        "category": "Item",
+        "description": "item/breeze_rod.png",
+        "file": "/assets/img/textures/item/breeze_rod.png",
+        "path": "item/breeze_rod"
       }
     ],
     "sounds": [],
@@ -4095,9 +4707,67 @@
         "category": "Item",
         "description": "Item texture for Heavy Core.",
         "file": "/assets/img/blocks/Heavy_Core.png"
+      },
+      {
+        "name": "heavy_core",
+        "category": "Block",
+        "description": "block/heavy_core.png",
+        "file": "/assets/img/textures/block/heavy_core.png",
+        "path": "block/heavy_core"
       }
     ],
-    "sounds": [],
+    "sounds": [
+      {
+        "name": "Block broken",
+        "event": "block.heavy_core.break",
+        "files": [
+          "/assets/sounds/block/heavy_core/break1.ogg",
+          "/assets/sounds/block/heavy_core/break2.ogg",
+          "/assets/sounds/block/heavy_core/break3.ogg",
+          "/assets/sounds/block/heavy_core/break4.ogg"
+        ]
+      },
+      {
+        "name": "Something falls on a block",
+        "event": "block.heavy_core.fall",
+        "files": [
+          "/assets/sounds/block/heavy_core/step1.ogg",
+          "/assets/sounds/block/heavy_core/step2.ogg",
+          "/assets/sounds/block/heavy_core/step3.ogg",
+          "/assets/sounds/block/heavy_core/step4.ogg"
+        ]
+      },
+      {
+        "name": "Block breaking",
+        "event": "block.heavy_core.hit",
+        "files": [
+          "/assets/sounds/block/heavy_core/step1.ogg",
+          "/assets/sounds/block/heavy_core/step2.ogg",
+          "/assets/sounds/block/heavy_core/step3.ogg",
+          "/assets/sounds/block/heavy_core/step4.ogg"
+        ]
+      },
+      {
+        "name": "Block placed",
+        "event": "block.heavy_core.place",
+        "files": [
+          "/assets/sounds/block/heavy_core/break1.ogg",
+          "/assets/sounds/block/heavy_core/break2.ogg",
+          "/assets/sounds/block/heavy_core/break3.ogg",
+          "/assets/sounds/block/heavy_core/break4.ogg"
+        ]
+      },
+      {
+        "name": "Footsteps",
+        "event": "block.heavy_core.step",
+        "files": [
+          "/assets/sounds/block/heavy_core/step1.ogg",
+          "/assets/sounds/block/heavy_core/step2.ogg",
+          "/assets/sounds/block/heavy_core/step3.ogg",
+          "/assets/sounds/block/heavy_core/step4.ogg"
+        ]
+      }
+    ],
     "command": "/give @p minecraft:heavy_core 1",
     "effects": [],
     "rarity": "Rare",
@@ -4182,6 +4852,13 @@
         "category": "Item",
         "description": "Item texture for Nether Star.",
         "file": "/assets/img/items/Nether_Star.gif"
+      },
+      {
+        "name": "nether_star",
+        "category": "Item",
+        "description": "item/nether_star.png",
+        "file": "/assets/img/textures/item/nether_star.png",
+        "path": "item/nether_star"
       }
     ],
     "sounds": [],
@@ -4269,9 +4946,32 @@
         "category": "Item",
         "description": "Item texture for Ender Pearl.",
         "file": "/assets/img/items/Ender_Pearl.png"
+      },
+      {
+        "name": "ender_pearl",
+        "category": "Item",
+        "description": "item/ender_pearl.png",
+        "file": "/assets/img/textures/item/ender_pearl.png",
+        "path": "item/ender_pearl"
       }
     ],
-    "sounds": [],
+    "sounds": [
+      {
+        "name": "Ender Pearl flies",
+        "event": "entity.ender_pearl.throw",
+        "files": [
+          "/assets/sounds/random/bow.ogg"
+        ]
+      },
+      {
+        "name": "Player teleports",
+        "event": "entity.player.teleport",
+        "files": [
+          "/assets/sounds/mob/endermen/portal.ogg",
+          "/assets/sounds/mob/endermen/portal2.ogg"
+        ]
+      }
+    ],
     "command": "/give @p minecraft:ender_pearl 1",
     "effects": [],
     "rarity": "Common",
@@ -4354,9 +5054,33 @@
         "category": "Item",
         "description": "Item texture for Eye of Ender.",
         "file": "/assets/img/items/Eye_of_Ender.png"
+      },
+      {
+        "name": "ender_eye",
+        "category": "Item",
+        "description": "item/ender_eye.png",
+        "file": "/assets/img/textures/item/ender_eye.png",
+        "path": "item/ender_eye"
       }
     ],
-    "sounds": [],
+    "sounds": [
+      {
+        "name": "Eye of Ender falls",
+        "event": "entity.ender_eye.death",
+        "files": [
+          "/assets/sounds/entity/endereye/dead1.ogg",
+          "/assets/sounds/entity/endereye/dead2.ogg"
+        ]
+      },
+      {
+        "name": "Eye of Ender shoots",
+        "event": "entity.ender_eye.launch",
+        "files": [
+          "/assets/sounds/entity/endereye/endereye_launch1.ogg",
+          "/assets/sounds/entity/endereye/endereye_launch2.ogg"
+        ]
+      }
+    ],
     "command": "/give @p minecraft:ender_eye 1",
     "effects": [],
     "rarity": "Common",
@@ -4439,6 +5163,13 @@
         "category": "Item",
         "description": "Item texture for Shulker Shell.",
         "file": "/assets/img/items/Shulker_Shell.png"
+      },
+      {
+        "name": "shulker_shell",
+        "category": "Item",
+        "description": "item/shulker_shell.png",
+        "file": "/assets/img/textures/item/shulker_shell.png",
+        "path": "item/shulker_shell"
       }
     ],
     "sounds": [],
@@ -4526,6 +5257,13 @@
         "category": "Item",
         "description": "Item texture for Popped Chorus Fruit.",
         "file": "/assets/img/items/Popped_Chorus_Fruit.png"
+      },
+      {
+        "name": "popped_chorus_fruit",
+        "category": "Item",
+        "description": "item/popped_chorus_fruit.png",
+        "file": "/assets/img/textures/item/popped_chorus_fruit.png",
+        "path": "item/popped_chorus_fruit"
       }
     ],
     "sounds": [],
@@ -4613,6 +5351,13 @@
         "category": "Item",
         "description": "Item texture for Echo Shard.",
         "file": "/assets/img/items/Echo_Shard.png"
+      },
+      {
+        "name": "echo_shard",
+        "category": "Item",
+        "description": "item/echo_shard.png",
+        "file": "/assets/img/textures/item/echo_shard.png",
+        "path": "item/echo_shard"
       }
     ],
     "sounds": [],
@@ -4700,6 +5445,13 @@
         "category": "Item",
         "description": "Item texture for Disc Fragment (5).",
         "file": "/assets/img/items/Disc_Fragment_5.png"
+      },
+      {
+        "name": "disc_fragment_5",
+        "category": "Item",
+        "description": "item/disc_fragment_5.png",
+        "file": "/assets/img/textures/item/disc_fragment_5.png",
+        "path": "item/disc_fragment_5"
       }
     ],
     "sounds": [],
@@ -4787,9 +5539,24 @@
         "category": "Item",
         "description": "Item texture for White Dye.",
         "file": "/assets/img/items/White_Dye.png"
+      },
+      {
+        "name": "white_dye",
+        "category": "Item",
+        "description": "item/white_dye.png",
+        "file": "/assets/img/textures/item/white_dye.png",
+        "path": "item/white_dye"
       }
     ],
-    "sounds": [],
+    "sounds": [
+      {
+        "name": "Dye stains",
+        "event": "item.dye.use",
+        "files": [
+          "/assets/sounds/item/dye/dye.ogg"
+        ]
+      }
+    ],
     "command": "/give @p minecraft:white_dye 1",
     "effects": [],
     "rarity": "Common",
@@ -4872,9 +5639,24 @@
         "category": "Item",
         "description": "Item texture for Orange Dye.",
         "file": "/assets/img/items/Orange_Dye.png"
+      },
+      {
+        "name": "orange_dye",
+        "category": "Item",
+        "description": "item/orange_dye.png",
+        "file": "/assets/img/textures/item/orange_dye.png",
+        "path": "item/orange_dye"
       }
     ],
-    "sounds": [],
+    "sounds": [
+      {
+        "name": "Dye stains",
+        "event": "item.dye.use",
+        "files": [
+          "/assets/sounds/item/dye/dye.ogg"
+        ]
+      }
+    ],
     "command": "/give @p minecraft:orange_dye 1",
     "effects": [],
     "rarity": "Common",
@@ -4957,9 +5739,24 @@
         "category": "Item",
         "description": "Item texture for Magenta Dye.",
         "file": "/assets/img/items/Magenta_Dye.png"
+      },
+      {
+        "name": "magenta_dye",
+        "category": "Item",
+        "description": "item/magenta_dye.png",
+        "file": "/assets/img/textures/item/magenta_dye.png",
+        "path": "item/magenta_dye"
       }
     ],
-    "sounds": [],
+    "sounds": [
+      {
+        "name": "Dye stains",
+        "event": "item.dye.use",
+        "files": [
+          "/assets/sounds/item/dye/dye.ogg"
+        ]
+      }
+    ],
     "command": "/give @p minecraft:magenta_dye 1",
     "effects": [],
     "rarity": "Common",
@@ -5042,9 +5839,24 @@
         "category": "Item",
         "description": "Item texture for Light Blue Dye.",
         "file": "/assets/img/items/Light_Blue_Dye.png"
+      },
+      {
+        "name": "light_blue_dye",
+        "category": "Item",
+        "description": "item/light_blue_dye.png",
+        "file": "/assets/img/textures/item/light_blue_dye.png",
+        "path": "item/light_blue_dye"
       }
     ],
-    "sounds": [],
+    "sounds": [
+      {
+        "name": "Dye stains",
+        "event": "item.dye.use",
+        "files": [
+          "/assets/sounds/item/dye/dye.ogg"
+        ]
+      }
+    ],
     "command": "/give @p minecraft:light_blue_dye 1",
     "effects": [],
     "rarity": "Common",
@@ -5127,9 +5939,24 @@
         "category": "Item",
         "description": "Item texture for Yellow Dye.",
         "file": "/assets/img/items/Yellow_Dye.png"
+      },
+      {
+        "name": "yellow_dye",
+        "category": "Item",
+        "description": "item/yellow_dye.png",
+        "file": "/assets/img/textures/item/yellow_dye.png",
+        "path": "item/yellow_dye"
       }
     ],
-    "sounds": [],
+    "sounds": [
+      {
+        "name": "Dye stains",
+        "event": "item.dye.use",
+        "files": [
+          "/assets/sounds/item/dye/dye.ogg"
+        ]
+      }
+    ],
     "command": "/give @p minecraft:yellow_dye 1",
     "effects": [],
     "rarity": "Common",
@@ -5212,9 +6039,24 @@
         "category": "Item",
         "description": "Item texture for Lime Dye.",
         "file": "/assets/img/items/Lime_Dye.png"
+      },
+      {
+        "name": "lime_dye",
+        "category": "Item",
+        "description": "item/lime_dye.png",
+        "file": "/assets/img/textures/item/lime_dye.png",
+        "path": "item/lime_dye"
       }
     ],
-    "sounds": [],
+    "sounds": [
+      {
+        "name": "Dye stains",
+        "event": "item.dye.use",
+        "files": [
+          "/assets/sounds/item/dye/dye.ogg"
+        ]
+      }
+    ],
     "command": "/give @p minecraft:lime_dye 1",
     "effects": [],
     "rarity": "Common",
@@ -5297,9 +6139,24 @@
         "category": "Item",
         "description": "Item texture for Pink Dye.",
         "file": "/assets/img/items/Pink_Dye.png"
+      },
+      {
+        "name": "pink_dye",
+        "category": "Item",
+        "description": "item/pink_dye.png",
+        "file": "/assets/img/textures/item/pink_dye.png",
+        "path": "item/pink_dye"
       }
     ],
-    "sounds": [],
+    "sounds": [
+      {
+        "name": "Dye stains",
+        "event": "item.dye.use",
+        "files": [
+          "/assets/sounds/item/dye/dye.ogg"
+        ]
+      }
+    ],
     "command": "/give @p minecraft:pink_dye 1",
     "effects": [],
     "rarity": "Common",
@@ -5382,9 +6239,24 @@
         "category": "Item",
         "description": "Item texture for Gray Dye.",
         "file": "/assets/img/items/Gray_Dye.png"
+      },
+      {
+        "name": "gray_dye",
+        "category": "Item",
+        "description": "item/gray_dye.png",
+        "file": "/assets/img/textures/item/gray_dye.png",
+        "path": "item/gray_dye"
       }
     ],
-    "sounds": [],
+    "sounds": [
+      {
+        "name": "Dye stains",
+        "event": "item.dye.use",
+        "files": [
+          "/assets/sounds/item/dye/dye.ogg"
+        ]
+      }
+    ],
     "command": "/give @p minecraft:gray_dye 1",
     "effects": [],
     "rarity": "Common",
@@ -5467,9 +6339,24 @@
         "category": "Item",
         "description": "Item texture for Light Gray Dye.",
         "file": "/assets/img/items/Light_Gray_Dye.png"
+      },
+      {
+        "name": "light_gray_dye",
+        "category": "Item",
+        "description": "item/light_gray_dye.png",
+        "file": "/assets/img/textures/item/light_gray_dye.png",
+        "path": "item/light_gray_dye"
       }
     ],
-    "sounds": [],
+    "sounds": [
+      {
+        "name": "Dye stains",
+        "event": "item.dye.use",
+        "files": [
+          "/assets/sounds/item/dye/dye.ogg"
+        ]
+      }
+    ],
     "command": "/give @p minecraft:light_gray_dye 1",
     "effects": [],
     "rarity": "Common",
@@ -5552,9 +6439,24 @@
         "category": "Item",
         "description": "Item texture for Cyan Dye.",
         "file": "/assets/img/items/Cyan_Dye.png"
+      },
+      {
+        "name": "cyan_dye",
+        "category": "Item",
+        "description": "item/cyan_dye.png",
+        "file": "/assets/img/textures/item/cyan_dye.png",
+        "path": "item/cyan_dye"
       }
     ],
-    "sounds": [],
+    "sounds": [
+      {
+        "name": "Dye stains",
+        "event": "item.dye.use",
+        "files": [
+          "/assets/sounds/item/dye/dye.ogg"
+        ]
+      }
+    ],
     "command": "/give @p minecraft:cyan_dye 1",
     "effects": [],
     "rarity": "Common",
@@ -5637,9 +6539,24 @@
         "category": "Item",
         "description": "Item texture for Purple Dye.",
         "file": "/assets/img/items/Purple_Dye.png"
+      },
+      {
+        "name": "purple_dye",
+        "category": "Item",
+        "description": "item/purple_dye.png",
+        "file": "/assets/img/textures/item/purple_dye.png",
+        "path": "item/purple_dye"
       }
     ],
-    "sounds": [],
+    "sounds": [
+      {
+        "name": "Dye stains",
+        "event": "item.dye.use",
+        "files": [
+          "/assets/sounds/item/dye/dye.ogg"
+        ]
+      }
+    ],
     "command": "/give @p minecraft:purple_dye 1",
     "effects": [],
     "rarity": "Common",
@@ -5722,9 +6639,24 @@
         "category": "Item",
         "description": "Item texture for Blue Dye.",
         "file": "/assets/img/items/Blue_Dye.png"
+      },
+      {
+        "name": "blue_dye",
+        "category": "Item",
+        "description": "item/blue_dye.png",
+        "file": "/assets/img/textures/item/blue_dye.png",
+        "path": "item/blue_dye"
       }
     ],
-    "sounds": [],
+    "sounds": [
+      {
+        "name": "Dye stains",
+        "event": "item.dye.use",
+        "files": [
+          "/assets/sounds/item/dye/dye.ogg"
+        ]
+      }
+    ],
     "command": "/give @p minecraft:blue_dye 1",
     "effects": [],
     "rarity": "Common",
@@ -5807,9 +6739,24 @@
         "category": "Item",
         "description": "Item texture for Brown Dye.",
         "file": "/assets/img/items/Brown_Dye.png"
+      },
+      {
+        "name": "brown_dye",
+        "category": "Item",
+        "description": "item/brown_dye.png",
+        "file": "/assets/img/textures/item/brown_dye.png",
+        "path": "item/brown_dye"
       }
     ],
-    "sounds": [],
+    "sounds": [
+      {
+        "name": "Dye stains",
+        "event": "item.dye.use",
+        "files": [
+          "/assets/sounds/item/dye/dye.ogg"
+        ]
+      }
+    ],
     "command": "/give @p minecraft:brown_dye 1",
     "effects": [],
     "rarity": "Common",
@@ -5892,9 +6839,24 @@
         "category": "Item",
         "description": "Item texture for Green Dye.",
         "file": "/assets/img/items/Green_Dye.png"
+      },
+      {
+        "name": "green_dye",
+        "category": "Item",
+        "description": "item/green_dye.png",
+        "file": "/assets/img/textures/item/green_dye.png",
+        "path": "item/green_dye"
       }
     ],
-    "sounds": [],
+    "sounds": [
+      {
+        "name": "Dye stains",
+        "event": "item.dye.use",
+        "files": [
+          "/assets/sounds/item/dye/dye.ogg"
+        ]
+      }
+    ],
     "command": "/give @p minecraft:green_dye 1",
     "effects": [],
     "rarity": "Common",
@@ -5977,9 +6939,24 @@
         "category": "Item",
         "description": "Item texture for Red Dye.",
         "file": "/assets/img/items/Red_Dye.png"
+      },
+      {
+        "name": "red_dye",
+        "category": "Item",
+        "description": "item/red_dye.png",
+        "file": "/assets/img/textures/item/red_dye.png",
+        "path": "item/red_dye"
       }
     ],
-    "sounds": [],
+    "sounds": [
+      {
+        "name": "Dye stains",
+        "event": "item.dye.use",
+        "files": [
+          "/assets/sounds/item/dye/dye.ogg"
+        ]
+      }
+    ],
     "command": "/give @p minecraft:red_dye 1",
     "effects": [],
     "rarity": "Common",
@@ -6062,9 +7039,24 @@
         "category": "Item",
         "description": "Item texture for Black Dye.",
         "file": "/assets/img/items/Black_Dye.png"
+      },
+      {
+        "name": "black_dye",
+        "category": "Item",
+        "description": "item/black_dye.png",
+        "file": "/assets/img/textures/item/black_dye.png",
+        "path": "item/black_dye"
       }
     ],
-    "sounds": [],
+    "sounds": [
+      {
+        "name": "Dye stains",
+        "event": "item.dye.use",
+        "files": [
+          "/assets/sounds/item/dye/dye.ogg"
+        ]
+      }
+    ],
     "command": "/give @p minecraft:black_dye 1",
     "effects": [],
     "rarity": "Common",
@@ -6147,6 +7139,13 @@
         "category": "Item",
         "description": "Item texture for Bowl.",
         "file": "/assets/img/items/Bowl.png"
+      },
+      {
+        "name": "bowl",
+        "category": "Item",
+        "description": "item/bowl.png",
+        "file": "/assets/img/textures/item/bowl.png",
+        "path": "item/bowl"
       }
     ],
     "sounds": [],
@@ -6232,6 +7231,13 @@
         "category": "Item",
         "description": "Item texture for Brick.",
         "file": "/assets/img/items/Brick.png"
+      },
+      {
+        "name": "brick",
+        "category": "Item",
+        "description": "item/brick.png",
+        "file": "/assets/img/textures/item/brick.png",
+        "path": "item/brick"
       }
     ],
     "sounds": [],
@@ -6319,6 +7325,13 @@
         "category": "Item",
         "description": "Item texture for Nether Brick.",
         "file": "/assets/img/items/Nether_Brick.png"
+      },
+      {
+        "name": "nether_brick",
+        "category": "Item",
+        "description": "item/nether_brick.png",
+        "file": "/assets/img/textures/item/nether_brick.png",
+        "path": "item/nether_brick"
       }
     ],
     "sounds": [],
@@ -6406,6 +7419,13 @@
         "category": "Item",
         "description": "Item texture for Resin Brick.",
         "file": "/assets/img/items/Resin_Brick.png"
+      },
+      {
+        "name": "resin_brick",
+        "category": "Item",
+        "description": "item/resin_brick.png",
+        "file": "/assets/img/textures/item/resin_brick.png",
+        "path": "item/resin_brick"
       }
     ],
     "sounds": [],
@@ -6493,6 +7513,13 @@
         "category": "Item",
         "description": "Item texture for Paper.",
         "file": "/assets/img/items/Paper.png"
+      },
+      {
+        "name": "paper",
+        "category": "Item",
+        "description": "item/paper.png",
+        "file": "/assets/img/textures/item/paper.png",
+        "path": "item/paper"
       }
     ],
     "sounds": [],
@@ -6580,9 +7607,34 @@
         "category": "Item",
         "description": "Item texture for Book.",
         "file": "/assets/img/items/Book.png"
+      },
+      {
+        "name": "book",
+        "category": "Item",
+        "description": "item/book.png",
+        "file": "/assets/img/textures/item/book.png",
+        "path": "item/book"
       }
     ],
-    "sounds": [],
+    "sounds": [
+      {
+        "name": "Page rustles",
+        "event": "item.book.page_turn",
+        "files": [
+          "/assets/sounds/item/book/open_flip1.ogg",
+          "/assets/sounds/item/book/open_flip2.ogg",
+          "/assets/sounds/item/book/open_flip3.ogg"
+        ]
+      },
+      {
+        "name": "Book thumps",
+        "event": "item.book.put",
+        "files": [
+          "/assets/sounds/item/book/close_put1.ogg",
+          "/assets/sounds/item/book/close_put2.ogg"
+        ]
+      }
+    ],
     "command": "/give @p minecraft:book 1",
     "effects": [],
     "rarity": "Common",
@@ -6665,6 +7717,20 @@
         "category": "Item",
         "description": "Item texture for Firework Star.",
         "file": "/assets/img/items/Firework_Star.png"
+      },
+      {
+        "name": "firework_star",
+        "category": "Item",
+        "description": "item/firework_star.png",
+        "file": "/assets/img/textures/item/firework_star.png",
+        "path": "item/firework_star"
+      },
+      {
+        "name": "firework_star_overlay",
+        "category": "Item",
+        "description": "item/firework_star_overlay.png",
+        "file": "/assets/img/textures/item/firework_star_overlay.png",
+        "path": "item/firework_star_overlay"
       }
     ],
     "sounds": [],
@@ -6752,9 +7818,35 @@
         "category": "Item",
         "description": "Item texture for Glass Bottle.",
         "file": "/assets/img/items/Glass_Bottle.png"
+      },
+      {
+        "name": "glass_bottle",
+        "category": "Item",
+        "description": "item/glass_bottle.png",
+        "file": "/assets/img/textures/item/glass_bottle.png",
+        "path": "item/glass_bottle"
       }
     ],
-    "sounds": [],
+    "sounds": [
+      {
+        "name": "Bottle fills",
+        "event": "item.bottle.fill_dragonbreath",
+        "files": [
+          "/assets/sounds/item/bottle/fill_dragonbreath1.ogg",
+          "/assets/sounds/item/bottle/fill_dragonbreath2.ogg"
+        ]
+      },
+      {
+        "name": "Bottle fills",
+        "event": "item.bottle.fill",
+        "files": [
+          "/assets/sounds/item/bottle/fill1.ogg",
+          "/assets/sounds/item/bottle/fill2.ogg",
+          "/assets/sounds/item/bottle/fill3.ogg",
+          "/assets/sounds/item/bottle/fill4.ogg"
+        ]
+      }
+    ],
     "command": "/give @p minecraft:glass_bottle 1",
     "effects": [],
     "rarity": "Common",
@@ -6837,9 +7929,98 @@
         "category": "Item",
         "description": "Item texture for Nether Wart.",
         "file": "/assets/img/items/Nether_Wart.png"
+      },
+      {
+        "name": "nether_wart",
+        "category": "Item",
+        "description": "item/nether_wart.png",
+        "file": "/assets/img/textures/item/nether_wart.png",
+        "path": "item/nether_wart"
+      },
+      {
+        "name": "nether_wart_stage0",
+        "category": "Block",
+        "description": "block/nether_wart_stage0.png",
+        "file": "/assets/img/textures/block/nether_wart_stage0.png",
+        "path": "block/nether_wart_stage0"
+      },
+      {
+        "name": "nether_wart_stage1",
+        "category": "Block",
+        "description": "block/nether_wart_stage1.png",
+        "file": "/assets/img/textures/block/nether_wart_stage1.png",
+        "path": "block/nether_wart_stage1"
+      },
+      {
+        "name": "nether_wart_stage2",
+        "category": "Block",
+        "description": "block/nether_wart_stage2.png",
+        "file": "/assets/img/textures/block/nether_wart_stage2.png",
+        "path": "block/nether_wart_stage2"
       }
     ],
-    "sounds": [],
+    "sounds": [
+      {
+        "name": "Block placed",
+        "event": "item.nether_wart.plant",
+        "files": [
+          "/assets/sounds/item/plant/netherwart1.ogg",
+          "/assets/sounds/item/plant/netherwart2.ogg",
+          "/assets/sounds/item/plant/netherwart3.ogg",
+          "/assets/sounds/item/plant/netherwart4.ogg",
+          "/assets/sounds/item/plant/netherwart5.ogg",
+          "/assets/sounds/item/plant/netherwart6.ogg"
+        ]
+      },
+      {
+        "name": "Block broken",
+        "event": "block.nether_wart.break",
+        "files": [
+          "/assets/sounds/item/plant/netherwart1.ogg",
+          "/assets/sounds/item/plant/netherwart2.ogg",
+          "/assets/sounds/item/plant/netherwart3.ogg",
+          "/assets/sounds/item/plant/netherwart4.ogg",
+          "/assets/sounds/item/plant/netherwart5.ogg",
+          "/assets/sounds/item/plant/netherwart6.ogg"
+        ]
+      },
+      {
+        "name": "Footsteps",
+        "event": "block.stone.step",
+        "files": [
+          "/assets/sounds/step/stone1.ogg",
+          "/assets/sounds/step/stone2.ogg",
+          "/assets/sounds/step/stone3.ogg",
+          "/assets/sounds/step/stone4.ogg",
+          "/assets/sounds/step/stone5.ogg",
+          "/assets/sounds/step/stone6.ogg"
+        ]
+      },
+      {
+        "name": "Block breaking",
+        "event": "block.stone.hit",
+        "files": [
+          "/assets/sounds/step/stone1.ogg",
+          "/assets/sounds/step/stone2.ogg",
+          "/assets/sounds/step/stone3.ogg",
+          "/assets/sounds/step/stone4.ogg",
+          "/assets/sounds/step/stone5.ogg",
+          "/assets/sounds/step/stone6.ogg"
+        ]
+      },
+      {
+        "name": "Something falls on a block",
+        "event": "block.stone.fall",
+        "files": [
+          "/assets/sounds/step/stone1.ogg",
+          "/assets/sounds/step/stone2.ogg",
+          "/assets/sounds/step/stone3.ogg",
+          "/assets/sounds/step/stone4.ogg",
+          "/assets/sounds/step/stone5.ogg",
+          "/assets/sounds/step/stone6.ogg"
+        ]
+      }
+    ],
     "command": "/give @p minecraft:nether_wart 1",
     "effects": [],
     "rarity": "Common",
@@ -6924,9 +8105,101 @@
         "category": "Item",
         "description": "Item texture for Redstone Dust.",
         "file": "/assets/img/items/Redstone_Dust.png"
+      },
+      {
+        "name": "redstone",
+        "category": "Item",
+        "description": "item/redstone.png",
+        "file": "/assets/img/textures/item/redstone.png",
+        "path": "item/redstone"
+      },
+      {
+        "name": "redstone_dust_dot",
+        "category": "Block",
+        "description": "block/redstone_dust_dot.png",
+        "file": "/assets/img/textures/block/redstone_dust_dot.png",
+        "path": "block/redstone_dust_dot"
+      },
+      {
+        "name": "redstone_dust_overlay",
+        "category": "Block",
+        "description": "block/redstone_dust_overlay.png",
+        "file": "/assets/img/textures/block/redstone_dust_overlay.png",
+        "path": "block/redstone_dust_overlay"
+      },
+      {
+        "name": "redstone_dust_line0",
+        "category": "Block",
+        "description": "block/redstone_dust_line0.png",
+        "file": "/assets/img/textures/block/redstone_dust_line0.png",
+        "path": "block/redstone_dust_line0"
+      },
+      {
+        "name": "redstone_dust_line1",
+        "category": "Block",
+        "description": "block/redstone_dust_line1.png",
+        "file": "/assets/img/textures/block/redstone_dust_line1.png",
+        "path": "block/redstone_dust_line1"
       }
     ],
-    "sounds": [],
+    "sounds": [
+      {
+        "name": "Block broken",
+        "event": "block.stone.break",
+        "files": [
+          "/assets/sounds/dig/stone1.ogg",
+          "/assets/sounds/dig/stone2.ogg",
+          "/assets/sounds/dig/stone3.ogg",
+          "/assets/sounds/dig/stone4.ogg"
+        ]
+      },
+      {
+        "name": "Footsteps",
+        "event": "block.stone.step",
+        "files": [
+          "/assets/sounds/step/stone1.ogg",
+          "/assets/sounds/step/stone2.ogg",
+          "/assets/sounds/step/stone3.ogg",
+          "/assets/sounds/step/stone4.ogg",
+          "/assets/sounds/step/stone5.ogg",
+          "/assets/sounds/step/stone6.ogg"
+        ]
+      },
+      {
+        "name": "Block placed",
+        "event": "block.stone.place",
+        "files": [
+          "/assets/sounds/dig/stone1.ogg",
+          "/assets/sounds/dig/stone2.ogg",
+          "/assets/sounds/dig/stone3.ogg",
+          "/assets/sounds/dig/stone4.ogg"
+        ]
+      },
+      {
+        "name": "Block breaking",
+        "event": "block.stone.hit",
+        "files": [
+          "/assets/sounds/step/stone1.ogg",
+          "/assets/sounds/step/stone2.ogg",
+          "/assets/sounds/step/stone3.ogg",
+          "/assets/sounds/step/stone4.ogg",
+          "/assets/sounds/step/stone5.ogg",
+          "/assets/sounds/step/stone6.ogg"
+        ]
+      },
+      {
+        "name": "Something falls on a block",
+        "event": "block.stone.fall",
+        "files": [
+          "/assets/sounds/step/stone1.ogg",
+          "/assets/sounds/step/stone2.ogg",
+          "/assets/sounds/step/stone3.ogg",
+          "/assets/sounds/step/stone4.ogg",
+          "/assets/sounds/step/stone5.ogg",
+          "/assets/sounds/step/stone6.ogg"
+        ]
+      }
+    ],
     "command": "/give @p minecraft:redstone 1",
     "effects": [],
     "rarity": "Common",
@@ -7009,6 +8282,13 @@
         "category": "Item",
         "description": "Item texture for Glowstone Dust.",
         "file": "/assets/img/items/Glowstone_Dust.png"
+      },
+      {
+        "name": "glowstone_dust",
+        "category": "Item",
+        "description": "item/glowstone_dust.png",
+        "file": "/assets/img/textures/item/glowstone_dust.png",
+        "path": "item/glowstone_dust"
       }
     ],
     "sounds": [],
@@ -7096,6 +8376,13 @@
         "category": "Item",
         "description": "Item texture for Gunpowder.",
         "file": "/assets/img/items/Gunpowder.png"
+      },
+      {
+        "name": "gunpowder",
+        "category": "Item",
+        "description": "item/gunpowder.png",
+        "file": "/assets/img/textures/item/gunpowder.png",
+        "path": "item/gunpowder"
       }
     ],
     "sounds": [],
@@ -7270,6 +8557,13 @@
         "category": "Item",
         "description": "Item texture for Fermented Spider Eye.",
         "file": "/assets/img/items/Fermented_Spider_Eye.png"
+      },
+      {
+        "name": "fermented_spider_eye",
+        "category": "Item",
+        "description": "item/fermented_spider_eye.png",
+        "file": "/assets/img/textures/item/fermented_spider_eye.png",
+        "path": "item/fermented_spider_eye"
       }
     ],
     "sounds": [],
@@ -7357,6 +8651,13 @@
         "category": "Item",
         "description": "Item texture for Blaze Powder.",
         "file": "/assets/img/items/Blaze_Powder.png"
+      },
+      {
+        "name": "blaze_powder",
+        "category": "Item",
+        "description": "item/blaze_powder.png",
+        "file": "/assets/img/textures/item/blaze_powder.png",
+        "path": "item/blaze_powder"
       }
     ],
     "sounds": [],
@@ -7444,6 +8745,13 @@
         "category": "Item",
         "description": "Item texture for Sugar.",
         "file": "/assets/img/items/Sugar.png"
+      },
+      {
+        "name": "sugar",
+        "category": "Item",
+        "description": "item/sugar.png",
+        "file": "/assets/img/textures/item/sugar.png",
+        "path": "item/sugar"
       }
     ],
     "sounds": [],
@@ -7616,6 +8924,13 @@
         "category": "Item",
         "description": "Item texture for Glistering Melon Slice.",
         "file": "/assets/img/items/Glistering_Melon_Slice.png"
+      },
+      {
+        "name": "glistering_melon_slice",
+        "category": "Item",
+        "description": "item/glistering_melon_slice.png",
+        "file": "/assets/img/textures/item/glistering_melon_slice.png",
+        "path": "item/glistering_melon_slice"
       }
     ],
     "sounds": [],
@@ -7703,9 +9018,26 @@
         "category": "Item",
         "description": "Item texture for Spider Eye.",
         "file": "/assets/img/items/Spider_Eye.png"
+      },
+      {
+        "name": "spider_eye",
+        "category": "Item",
+        "description": "item/spider_eye.png",
+        "file": "/assets/img/textures/item/spider_eye.png",
+        "path": "item/spider_eye"
       }
     ],
-    "sounds": [],
+    "sounds": [
+      {
+        "name": "Eating",
+        "event": "entity.generic.eat",
+        "files": [
+          "/assets/sounds/random/eat1.ogg",
+          "/assets/sounds/random/eat2.ogg",
+          "/assets/sounds/random/eat3.ogg"
+        ]
+      }
+    ],
     "command": "/give @p minecraft:spider_eye 1",
     "effects": [],
     "rarity": "Common",
@@ -7788,9 +9120,26 @@
         "category": "Item",
         "description": "Item texture for Pufferfish.",
         "file": "/assets/img/items/Pufferfish.png"
+      },
+      {
+        "name": "pufferfish",
+        "category": "Item",
+        "description": "item/pufferfish.png",
+        "file": "/assets/img/textures/item/pufferfish.png",
+        "path": "item/pufferfish"
       }
     ],
-    "sounds": [],
+    "sounds": [
+      {
+        "name": "Eating",
+        "event": "entity.generic.eat",
+        "files": [
+          "/assets/sounds/random/eat1.ogg",
+          "/assets/sounds/random/eat2.ogg",
+          "/assets/sounds/random/eat3.ogg"
+        ]
+      }
+    ],
     "command": "/give @p minecraft:pufferfish 1",
     "effects": [],
     "rarity": "Common",
@@ -7873,6 +9222,13 @@
         "category": "Item",
         "description": "Item texture for Magma Cream.",
         "file": "/assets/img/items/Magma_Cream.png"
+      },
+      {
+        "name": "magma_cream",
+        "category": "Item",
+        "description": "item/magma_cream.png",
+        "file": "/assets/img/textures/item/magma_cream.png",
+        "path": "item/magma_cream"
       }
     ],
     "sounds": [],
@@ -7960,9 +9316,26 @@
         "category": "Item",
         "description": "Item texture for Golden Carrot.",
         "file": "/assets/img/items/Golden_Carrot.png"
+      },
+      {
+        "name": "golden_carrot",
+        "category": "Item",
+        "description": "item/golden_carrot.png",
+        "file": "/assets/img/textures/item/golden_carrot.png",
+        "path": "item/golden_carrot"
       }
     ],
-    "sounds": [],
+    "sounds": [
+      {
+        "name": "Eating",
+        "event": "entity.generic.eat",
+        "files": [
+          "/assets/sounds/random/eat1.ogg",
+          "/assets/sounds/random/eat2.ogg",
+          "/assets/sounds/random/eat3.ogg"
+        ]
+      }
+    ],
     "command": "/give @p minecraft:golden_carrot 1",
     "effects": [],
     "rarity": "Common",
@@ -8045,6 +9418,13 @@
         "category": "Item",
         "description": "Item texture for Ghast Tear.",
         "file": "/assets/img/items/Ghast_Tear.png"
+      },
+      {
+        "name": "ghast_tear",
+        "category": "Item",
+        "description": "item/ghast_tear.png",
+        "file": "/assets/img/textures/item/ghast_tear.png",
+        "path": "item/ghast_tear"
       }
     ],
     "sounds": [],
@@ -8132,9 +9512,38 @@
         "category": "Item",
         "description": "Item texture for Turtle Helmet.",
         "file": "/assets/img/textures/item/turtle_helmet.png"
+      },
+      {
+        "name": "turtle_scute",
+        "category": "Entity",
+        "description": "entity/equipment/humanoid/turtle_scute.png",
+        "file": "/assets/img/textures/entity/equipment/humanoid/turtle_scute.png",
+        "path": "entity/equipment/humanoid/turtle_scute"
+      },
+      {
+        "name": "turtle_scute",
+        "category": "Entity",
+        "description": "entity/equipment/humanoid_baby/turtle_scute.png",
+        "file": "/assets/img/textures/entity/equipment/humanoid_baby/turtle_scute.png",
+        "path": "entity/equipment/humanoid_baby/turtle_scute"
       }
     ],
-    "sounds": [],
+    "sounds": [
+      {
+        "name": "Turtle Shell thunks",
+        "event": "item.armor.equip_turtle",
+        "files": [
+          "/assets/sounds/mob/turtle/armor.ogg"
+        ]
+      },
+      {
+        "name": "Item breaks",
+        "event": "entity.item.break",
+        "files": [
+          "/assets/sounds/random/break.ogg"
+        ]
+      }
+    ],
     "command": "/give @p minecraft:turtle_helmet 1",
     "effects": [],
     "rarity": "Common",
@@ -8217,6 +9626,13 @@
         "category": "Item",
         "description": "Item texture for Phantom Membrane.",
         "file": "/assets/img/items/Phantom_Membrane.png"
+      },
+      {
+        "name": "phantom_membrane",
+        "category": "Item",
+        "description": "item/phantom_membrane.png",
+        "file": "/assets/img/textures/item/phantom_membrane.png",
+        "path": "item/phantom_membrane"
       }
     ],
     "sounds": [],
@@ -8304,6 +9720,13 @@
         "category": "Item",
         "description": "Item texture for Field Masoned Banner Pattern.",
         "file": "/assets/img/items/Field_Masoned_Banner_Pattern2.png"
+      },
+      {
+        "name": "field_masoned_banner_pattern",
+        "category": "Item",
+        "description": "item/field_masoned_banner_pattern.png",
+        "file": "/assets/img/textures/item/field_masoned_banner_pattern.png",
+        "path": "item/field_masoned_banner_pattern"
       }
     ],
     "sounds": [],
@@ -8391,6 +9814,13 @@
         "category": "Item",
         "description": "Item texture for Bordure Indented Banner Pattern.",
         "file": "/assets/img/items/Bordure_Indented_Banner_Pattern2.png"
+      },
+      {
+        "name": "bordure_indented_banner_pattern",
+        "category": "Item",
+        "description": "item/bordure_indented_banner_pattern.png",
+        "file": "/assets/img/textures/item/bordure_indented_banner_pattern.png",
+        "path": "item/bordure_indented_banner_pattern"
       }
     ],
     "sounds": [],
@@ -8478,6 +9908,13 @@
         "category": "Item",
         "description": "Item texture for Flower Banner Pattern.",
         "file": "/assets/img/items/Flower_Charge_Banner_Pattern.png"
+      },
+      {
+        "name": "flower_banner_pattern",
+        "category": "Item",
+        "description": "item/flower_banner_pattern.png",
+        "file": "/assets/img/textures/item/flower_banner_pattern.png",
+        "path": "item/flower_banner_pattern"
       }
     ],
     "sounds": [],
@@ -8565,6 +10002,13 @@
         "category": "Item",
         "description": "Item texture for Creeper Banner Pattern.",
         "file": "/assets/img/items/Creeper_Charge_Banner_Pattern.png"
+      },
+      {
+        "name": "creeper_banner_pattern",
+        "category": "Item",
+        "description": "item/creeper_banner_pattern.png",
+        "file": "/assets/img/textures/item/creeper_banner_pattern.png",
+        "path": "item/creeper_banner_pattern"
       }
     ],
     "sounds": [],
@@ -8652,6 +10096,13 @@
         "category": "Item",
         "description": "Item texture for Skull Banner Pattern.",
         "file": "/assets/img/items/Skull_Charge_Banner_Pattern.png"
+      },
+      {
+        "name": "skull_banner_pattern",
+        "category": "Item",
+        "description": "item/skull_banner_pattern.png",
+        "file": "/assets/img/textures/item/skull_banner_pattern.png",
+        "path": "item/skull_banner_pattern"
       }
     ],
     "sounds": [],
@@ -8739,6 +10190,13 @@
         "category": "Item",
         "description": "Item texture for Mojang Banner Pattern.",
         "file": "/assets/img/items/Thing_Banner_Pattern.png"
+      },
+      {
+        "name": "mojang_banner_pattern",
+        "category": "Item",
+        "description": "item/mojang_banner_pattern.png",
+        "file": "/assets/img/textures/item/mojang_banner_pattern.png",
+        "path": "item/mojang_banner_pattern"
       }
     ],
     "sounds": [],
@@ -8826,6 +10284,13 @@
         "category": "Item",
         "description": "Item texture for Globe Banner Pattern.",
         "file": "/assets/img/items/Globe_Banner_Pattern.png"
+      },
+      {
+        "name": "globe_banner_pattern",
+        "category": "Item",
+        "description": "item/globe_banner_pattern.png",
+        "file": "/assets/img/textures/item/globe_banner_pattern.png",
+        "path": "item/globe_banner_pattern"
       }
     ],
     "sounds": [],
@@ -8871,7 +10336,7 @@
     "enchanting_recipe": null
   },
   {
-    "id": "minecraft:snout_banner_pattern",
+    "id": "minecraft:piglin_banner_pattern",
     "name": "Snout Banner Pattern",
     "variant": "",
     "numeric_id": "No numeric ID in current versions",
@@ -8913,10 +10378,17 @@
         "category": "Item",
         "description": "Item texture for Snout Banner Pattern.",
         "file": "/assets/img/items/Snout_Banner_Pattern.png"
+      },
+      {
+        "name": "piglin_banner_pattern",
+        "category": "Item",
+        "description": "item/piglin_banner_pattern.png",
+        "file": "/assets/img/textures/item/piglin_banner_pattern.png",
+        "path": "item/piglin_banner_pattern"
       }
     ],
     "sounds": [],
-    "command": "/give @p minecraft:snout_banner_pattern 1",
+    "command": "/give @p minecraft:piglin_banner_pattern 1",
     "effects": [],
     "rarity": "Uncommon",
     "renewable": "No",
@@ -8953,8 +10425,8 @@
     "smelting_time": "Not applicable",
     "trade_info": [],
     "container_item": "None",
-    "java_item_id": "minecraft:snout_banner_pattern",
-    "bedrock_item_id": "minecraft:snout_banner_pattern",
+    "java_item_id": "minecraft:piglin_banner_pattern",
+    "bedrock_item_id": "minecraft:piglin_banner_pattern",
     "enchanting_recipe": null
   },
   {
@@ -9000,6 +10472,13 @@
         "category": "Item",
         "description": "Item texture for Flow Banner Pattern.",
         "file": "/assets/img/items/Flow_Banner_Pattern.png"
+      },
+      {
+        "name": "flow_banner_pattern",
+        "category": "Item",
+        "description": "item/flow_banner_pattern.png",
+        "file": "/assets/img/textures/item/flow_banner_pattern.png",
+        "path": "item/flow_banner_pattern"
       }
     ],
     "sounds": [],
@@ -9087,6 +10566,13 @@
         "category": "Item",
         "description": "Item texture for Guster Banner Pattern.",
         "file": "/assets/img/items/Guster_Banner_Pattern.png"
+      },
+      {
+        "name": "guster_banner_pattern",
+        "category": "Item",
+        "description": "item/guster_banner_pattern.png",
+        "file": "/assets/img/textures/item/guster_banner_pattern.png",
+        "path": "item/guster_banner_pattern"
       }
     ],
     "sounds": [],
@@ -9174,6 +10660,13 @@
         "category": "Item",
         "description": "Item texture for Angler Pottery Sherd.",
         "file": "/assets/img/items/Angler_Pottery_Sherd.png"
+      },
+      {
+        "name": "angler_pottery_sherd",
+        "category": "Item",
+        "description": "item/angler_pottery_sherd.png",
+        "file": "/assets/img/textures/item/angler_pottery_sherd.png",
+        "path": "item/angler_pottery_sherd"
       }
     ],
     "sounds": [],
@@ -9261,6 +10754,13 @@
         "category": "Item",
         "description": "Item texture for Archer Pottery Sherd.",
         "file": "/assets/img/items/Archer_Pottery_Sherd.png"
+      },
+      {
+        "name": "archer_pottery_sherd",
+        "category": "Item",
+        "description": "item/archer_pottery_sherd.png",
+        "file": "/assets/img/textures/item/archer_pottery_sherd.png",
+        "path": "item/archer_pottery_sherd"
       }
     ],
     "sounds": [],
@@ -9348,6 +10848,13 @@
         "category": "Item",
         "description": "Item texture for Arms Up Pottery Sherd.",
         "file": "/assets/img/items/Arms_Up_Pottery_Sherd2.png"
+      },
+      {
+        "name": "arms_up_pottery_sherd",
+        "category": "Item",
+        "description": "item/arms_up_pottery_sherd.png",
+        "file": "/assets/img/textures/item/arms_up_pottery_sherd.png",
+        "path": "item/arms_up_pottery_sherd"
       }
     ],
     "sounds": [],
@@ -9435,6 +10942,13 @@
         "category": "Item",
         "description": "Item texture for Blade Pottery Sherd.",
         "file": "/assets/img/items/Blade_Pottery_Sherd.png"
+      },
+      {
+        "name": "blade_pottery_sherd",
+        "category": "Item",
+        "description": "item/blade_pottery_sherd.png",
+        "file": "/assets/img/textures/item/blade_pottery_sherd.png",
+        "path": "item/blade_pottery_sherd"
       }
     ],
     "sounds": [],
@@ -9522,6 +11036,13 @@
         "category": "Item",
         "description": "Item texture for Brewer Pottery Sherd.",
         "file": "/assets/img/items/Brewer_Pottery_Sherd.png"
+      },
+      {
+        "name": "brewer_pottery_sherd",
+        "category": "Item",
+        "description": "item/brewer_pottery_sherd.png",
+        "file": "/assets/img/textures/item/brewer_pottery_sherd.png",
+        "path": "item/brewer_pottery_sherd"
       }
     ],
     "sounds": [],
@@ -9609,6 +11130,13 @@
         "category": "Item",
         "description": "Item texture for Burn Pottery Sherd.",
         "file": "/assets/img/items/Burn_Pottery_Sherd.png"
+      },
+      {
+        "name": "burn_pottery_sherd",
+        "category": "Item",
+        "description": "item/burn_pottery_sherd.png",
+        "file": "/assets/img/textures/item/burn_pottery_sherd.png",
+        "path": "item/burn_pottery_sherd"
       }
     ],
     "sounds": [],
@@ -9696,6 +11224,13 @@
         "category": "Item",
         "description": "Item texture for Danger Pottery Sherd.",
         "file": "/assets/img/items/Danger_Pottery_Sherd.png"
+      },
+      {
+        "name": "danger_pottery_sherd",
+        "category": "Item",
+        "description": "item/danger_pottery_sherd.png",
+        "file": "/assets/img/textures/item/danger_pottery_sherd.png",
+        "path": "item/danger_pottery_sherd"
       }
     ],
     "sounds": [],
@@ -9783,6 +11318,13 @@
         "category": "Item",
         "description": "Item texture for Explorer Pottery Sherd.",
         "file": "/assets/img/items/Explorer_Pottery_Sherd.png"
+      },
+      {
+        "name": "explorer_pottery_sherd",
+        "category": "Item",
+        "description": "item/explorer_pottery_sherd.png",
+        "file": "/assets/img/textures/item/explorer_pottery_sherd.png",
+        "path": "item/explorer_pottery_sherd"
       }
     ],
     "sounds": [],
@@ -9870,6 +11412,13 @@
         "category": "Item",
         "description": "Item texture for Flow Pottery Sherd.",
         "file": "/assets/img/items/Flow_Pottery_Sherd.png"
+      },
+      {
+        "name": "flow_pottery_sherd",
+        "category": "Item",
+        "description": "item/flow_pottery_sherd.png",
+        "file": "/assets/img/textures/item/flow_pottery_sherd.png",
+        "path": "item/flow_pottery_sherd"
       }
     ],
     "sounds": [],
@@ -9957,6 +11506,13 @@
         "category": "Item",
         "description": "Item texture for Friend Pottery Sherd.",
         "file": "/assets/img/items/Friend_Pottery_Sherd.png"
+      },
+      {
+        "name": "friend_pottery_sherd",
+        "category": "Item",
+        "description": "item/friend_pottery_sherd.png",
+        "file": "/assets/img/textures/item/friend_pottery_sherd.png",
+        "path": "item/friend_pottery_sherd"
       }
     ],
     "sounds": [],
@@ -10044,6 +11600,13 @@
         "category": "Item",
         "description": "Item texture for Guster Pottery Sherd.",
         "file": "/assets/img/items/Guster_Pottery_Sherd.png"
+      },
+      {
+        "name": "guster_pottery_sherd",
+        "category": "Item",
+        "description": "item/guster_pottery_sherd.png",
+        "file": "/assets/img/textures/item/guster_pottery_sherd.png",
+        "path": "item/guster_pottery_sherd"
       }
     ],
     "sounds": [],
@@ -10131,6 +11694,13 @@
         "category": "Item",
         "description": "Item texture for Heart Pottery Sherd.",
         "file": "/assets/img/items/Heart_Pottery_Sherd.png"
+      },
+      {
+        "name": "heart_pottery_sherd",
+        "category": "Item",
+        "description": "item/heart_pottery_sherd.png",
+        "file": "/assets/img/textures/item/heart_pottery_sherd.png",
+        "path": "item/heart_pottery_sherd"
       }
     ],
     "sounds": [],
@@ -10218,6 +11788,13 @@
         "category": "Item",
         "description": "Item texture for Heartbreak Pottery Sherd.",
         "file": "/assets/img/items/Heartbreak_Pottery_Sherd.png"
+      },
+      {
+        "name": "heartbreak_pottery_sherd",
+        "category": "Item",
+        "description": "item/heartbreak_pottery_sherd.png",
+        "file": "/assets/img/textures/item/heartbreak_pottery_sherd.png",
+        "path": "item/heartbreak_pottery_sherd"
       }
     ],
     "sounds": [],
@@ -10305,6 +11882,13 @@
         "category": "Item",
         "description": "Item texture for Howl Pottery Sherd.",
         "file": "/assets/img/items/Howl_Pottery_Sherd.png"
+      },
+      {
+        "name": "howl_pottery_sherd",
+        "category": "Item",
+        "description": "item/howl_pottery_sherd.png",
+        "file": "/assets/img/textures/item/howl_pottery_sherd.png",
+        "path": "item/howl_pottery_sherd"
       }
     ],
     "sounds": [],
@@ -10392,6 +11976,13 @@
         "category": "Item",
         "description": "Item texture for Miner Pottery Sherd.",
         "file": "/assets/img/items/Miner_Pottery_Sherd.png"
+      },
+      {
+        "name": "miner_pottery_sherd",
+        "category": "Item",
+        "description": "item/miner_pottery_sherd.png",
+        "file": "/assets/img/textures/item/miner_pottery_sherd.png",
+        "path": "item/miner_pottery_sherd"
       }
     ],
     "sounds": [],
@@ -10479,6 +12070,13 @@
         "category": "Item",
         "description": "Item texture for Mourner Pottery Sherd.",
         "file": "/assets/img/items/Mourner_Pottery_Sherd.png"
+      },
+      {
+        "name": "mourner_pottery_sherd",
+        "category": "Item",
+        "description": "item/mourner_pottery_sherd.png",
+        "file": "/assets/img/textures/item/mourner_pottery_sherd.png",
+        "path": "item/mourner_pottery_sherd"
       }
     ],
     "sounds": [],
@@ -10566,6 +12164,13 @@
         "category": "Item",
         "description": "Item texture for Plenty Pottery Sherd.",
         "file": "/assets/img/items/Plenty_Pottery_Sherd.png"
+      },
+      {
+        "name": "plenty_pottery_sherd",
+        "category": "Item",
+        "description": "item/plenty_pottery_sherd.png",
+        "file": "/assets/img/textures/item/plenty_pottery_sherd.png",
+        "path": "item/plenty_pottery_sherd"
       }
     ],
     "sounds": [],
@@ -10653,6 +12258,13 @@
         "category": "Item",
         "description": "Item texture for Prize Pottery Sherd.",
         "file": "/assets/img/items/Prize_Pottery_Sherd2.png"
+      },
+      {
+        "name": "prize_pottery_sherd",
+        "category": "Item",
+        "description": "item/prize_pottery_sherd.png",
+        "file": "/assets/img/textures/item/prize_pottery_sherd.png",
+        "path": "item/prize_pottery_sherd"
       }
     ],
     "sounds": [],
@@ -10740,6 +12352,13 @@
         "category": "Item",
         "description": "Item texture for Scrape Pottery Sherd.",
         "file": "/assets/img/items/Scrape_Pottery_Sherd.png"
+      },
+      {
+        "name": "scrape_pottery_sherd",
+        "category": "Item",
+        "description": "item/scrape_pottery_sherd.png",
+        "file": "/assets/img/textures/item/scrape_pottery_sherd.png",
+        "path": "item/scrape_pottery_sherd"
       }
     ],
     "sounds": [],
@@ -10827,6 +12446,13 @@
         "category": "Item",
         "description": "Item texture for Sheaf Pottery Sherd.",
         "file": "/assets/img/items/Sheaf_Pottery_Sherd.png"
+      },
+      {
+        "name": "sheaf_pottery_sherd",
+        "category": "Item",
+        "description": "item/sheaf_pottery_sherd.png",
+        "file": "/assets/img/textures/item/sheaf_pottery_sherd.png",
+        "path": "item/sheaf_pottery_sherd"
       }
     ],
     "sounds": [],
@@ -10914,6 +12540,13 @@
         "category": "Item",
         "description": "Item texture for Shelter Pottery Sherd.",
         "file": "/assets/img/items/Shelter_Pottery_Sherd.png"
+      },
+      {
+        "name": "shelter_pottery_sherd",
+        "category": "Item",
+        "description": "item/shelter_pottery_sherd.png",
+        "file": "/assets/img/textures/item/shelter_pottery_sherd.png",
+        "path": "item/shelter_pottery_sherd"
       }
     ],
     "sounds": [],
@@ -11001,6 +12634,13 @@
         "category": "Item",
         "description": "Item texture for Skull Pottery Sherd.",
         "file": "/assets/img/items/Skull_Pottery_Sherd2.png"
+      },
+      {
+        "name": "skull_pottery_sherd",
+        "category": "Item",
+        "description": "item/skull_pottery_sherd.png",
+        "file": "/assets/img/textures/item/skull_pottery_sherd.png",
+        "path": "item/skull_pottery_sherd"
       }
     ],
     "sounds": [],
@@ -11088,6 +12728,13 @@
         "category": "Item",
         "description": "Item texture for Snort Pottery Sherd.",
         "file": "/assets/img/items/Snort_Pottery_Sherd.png"
+      },
+      {
+        "name": "snort_pottery_sherd",
+        "category": "Item",
+        "description": "item/snort_pottery_sherd.png",
+        "file": "/assets/img/textures/item/snort_pottery_sherd.png",
+        "path": "item/snort_pottery_sherd"
       }
     ],
     "sounds": [],
@@ -11175,6 +12822,13 @@
         "category": "Item",
         "description": "Item texture for Netherite Upgrade Smithing Template.",
         "file": "/assets/img/items/Netherite_Upgrade_Smithing_Template.png"
+      },
+      {
+        "name": "netherite_upgrade_smithing_template",
+        "category": "Item",
+        "description": "item/netherite_upgrade_smithing_template.png",
+        "file": "/assets/img/textures/item/netherite_upgrade_smithing_template.png",
+        "path": "item/netherite_upgrade_smithing_template"
       }
     ],
     "sounds": [],
@@ -11262,6 +12916,13 @@
         "category": "Item",
         "description": "Item texture for Sentry Armor Trim Smithing Template.",
         "file": "/assets/img/items/Sentry_Armor_Trim_Smithing_Template.png"
+      },
+      {
+        "name": "sentry_armor_trim_smithing_template",
+        "category": "Item",
+        "description": "item/sentry_armor_trim_smithing_template.png",
+        "file": "/assets/img/textures/item/sentry_armor_trim_smithing_template.png",
+        "path": "item/sentry_armor_trim_smithing_template"
       }
     ],
     "sounds": [],
@@ -11349,6 +13010,13 @@
         "category": "Item",
         "description": "Item texture for Vex Armor Trim Smithing Template.",
         "file": "/assets/img/items/Vex_Armor_Trim_Smithing_Template.png"
+      },
+      {
+        "name": "vex_armor_trim_smithing_template",
+        "category": "Item",
+        "description": "item/vex_armor_trim_smithing_template.png",
+        "file": "/assets/img/textures/item/vex_armor_trim_smithing_template.png",
+        "path": "item/vex_armor_trim_smithing_template"
       }
     ],
     "sounds": [],
@@ -11436,6 +13104,13 @@
         "category": "Item",
         "description": "Item texture for Wild Armor Trim Smithing Template.",
         "file": "/assets/img/items/Wild_Armor_Trim_Smithing_Template.png"
+      },
+      {
+        "name": "wild_armor_trim_smithing_template",
+        "category": "Item",
+        "description": "item/wild_armor_trim_smithing_template.png",
+        "file": "/assets/img/textures/item/wild_armor_trim_smithing_template.png",
+        "path": "item/wild_armor_trim_smithing_template"
       }
     ],
     "sounds": [],
@@ -11523,6 +13198,13 @@
         "category": "Item",
         "description": "Item texture for Coast Armor Trim Smithing Template.",
         "file": "/assets/img/items/Coast_Armor_Trim_Smithing_Template.png"
+      },
+      {
+        "name": "coast_armor_trim_smithing_template",
+        "category": "Item",
+        "description": "item/coast_armor_trim_smithing_template.png",
+        "file": "/assets/img/textures/item/coast_armor_trim_smithing_template.png",
+        "path": "item/coast_armor_trim_smithing_template"
       }
     ],
     "sounds": [],
@@ -11610,6 +13292,13 @@
         "category": "Item",
         "description": "Item texture for Dune Armor Trim Smithing Template.",
         "file": "/assets/img/items/Dune_Armor_Trim_Smithing_Template.png"
+      },
+      {
+        "name": "dune_armor_trim_smithing_template",
+        "category": "Item",
+        "description": "item/dune_armor_trim_smithing_template.png",
+        "file": "/assets/img/textures/item/dune_armor_trim_smithing_template.png",
+        "path": "item/dune_armor_trim_smithing_template"
       }
     ],
     "sounds": [],
@@ -11697,6 +13386,13 @@
         "category": "Item",
         "description": "Item texture for Wayfinder Armor Trim Smithing Template.",
         "file": "/assets/img/items/Wayfinder_Armor_Trim_Smithing_Template.png"
+      },
+      {
+        "name": "wayfinder_armor_trim_smithing_template",
+        "category": "Item",
+        "description": "item/wayfinder_armor_trim_smithing_template.png",
+        "file": "/assets/img/textures/item/wayfinder_armor_trim_smithing_template.png",
+        "path": "item/wayfinder_armor_trim_smithing_template"
       }
     ],
     "sounds": [],
@@ -11784,6 +13480,13 @@
         "category": "Item",
         "description": "Item texture for Raiser Armor Trim Smithing Template.",
         "file": "/assets/img/items/Raiser_Armor_Trim_Smithing_Template.png"
+      },
+      {
+        "name": "raiser_armor_trim_smithing_template",
+        "category": "Item",
+        "description": "item/raiser_armor_trim_smithing_template.png",
+        "file": "/assets/img/textures/item/raiser_armor_trim_smithing_template.png",
+        "path": "item/raiser_armor_trim_smithing_template"
       }
     ],
     "sounds": [],
@@ -11871,6 +13574,13 @@
         "category": "Item",
         "description": "Item texture for Shaper Armor Trim Smithing Template.",
         "file": "/assets/img/items/Shaper_Armor_Trim_Smithing_Template.png"
+      },
+      {
+        "name": "shaper_armor_trim_smithing_template",
+        "category": "Item",
+        "description": "item/shaper_armor_trim_smithing_template.png",
+        "file": "/assets/img/textures/item/shaper_armor_trim_smithing_template.png",
+        "path": "item/shaper_armor_trim_smithing_template"
       }
     ],
     "sounds": [],
@@ -11958,6 +13668,13 @@
         "category": "Item",
         "description": "Item texture for Host Armor Trim Smithing Template.",
         "file": "/assets/img/items/Host_Armor_Trim_Smithing_Template.png"
+      },
+      {
+        "name": "host_armor_trim_smithing_template",
+        "category": "Item",
+        "description": "item/host_armor_trim_smithing_template.png",
+        "file": "/assets/img/textures/item/host_armor_trim_smithing_template.png",
+        "path": "item/host_armor_trim_smithing_template"
       }
     ],
     "sounds": [],
@@ -12045,6 +13762,13 @@
         "category": "Item",
         "description": "Item texture for Ward Armor Trim Smithing Template.",
         "file": "/assets/img/items/Ward_Armor_Trim_Smithing_Template.png"
+      },
+      {
+        "name": "ward_armor_trim_smithing_template",
+        "category": "Item",
+        "description": "item/ward_armor_trim_smithing_template.png",
+        "file": "/assets/img/textures/item/ward_armor_trim_smithing_template.png",
+        "path": "item/ward_armor_trim_smithing_template"
       }
     ],
     "sounds": [],
@@ -12132,6 +13856,13 @@
         "category": "Item",
         "description": "Item texture for Silence Armor Trim Smithing Template.",
         "file": "/assets/img/items/Silence_Armor_Trim_Smithing_Template.png"
+      },
+      {
+        "name": "silence_armor_trim_smithing_template",
+        "category": "Item",
+        "description": "item/silence_armor_trim_smithing_template.png",
+        "file": "/assets/img/textures/item/silence_armor_trim_smithing_template.png",
+        "path": "item/silence_armor_trim_smithing_template"
       }
     ],
     "sounds": [],
@@ -12219,6 +13950,13 @@
         "category": "Item",
         "description": "Item texture for Tide Armor Trim Smithing Template.",
         "file": "/assets/img/items/Tide_Armor_Trim_Smithing_Template.png"
+      },
+      {
+        "name": "tide_armor_trim_smithing_template",
+        "category": "Item",
+        "description": "item/tide_armor_trim_smithing_template.png",
+        "file": "/assets/img/textures/item/tide_armor_trim_smithing_template.png",
+        "path": "item/tide_armor_trim_smithing_template"
       }
     ],
     "sounds": [],
@@ -12306,6 +14044,13 @@
         "category": "Item",
         "description": "Item texture for Snout Armor Trim Smithing Template.",
         "file": "/assets/img/items/Snout_Armor_Trim_Smithing_Template.png"
+      },
+      {
+        "name": "snout_armor_trim_smithing_template",
+        "category": "Item",
+        "description": "item/snout_armor_trim_smithing_template.png",
+        "file": "/assets/img/textures/item/snout_armor_trim_smithing_template.png",
+        "path": "item/snout_armor_trim_smithing_template"
       }
     ],
     "sounds": [],
@@ -12393,6 +14138,13 @@
         "category": "Item",
         "description": "Item texture for Rib Armor Trim Smithing Template.",
         "file": "/assets/img/items/Rib_Armor_Trim_Smithing_Template.png"
+      },
+      {
+        "name": "rib_armor_trim_smithing_template",
+        "category": "Item",
+        "description": "item/rib_armor_trim_smithing_template.png",
+        "file": "/assets/img/textures/item/rib_armor_trim_smithing_template.png",
+        "path": "item/rib_armor_trim_smithing_template"
       }
     ],
     "sounds": [],
@@ -12480,6 +14232,13 @@
         "category": "Item",
         "description": "Item texture for Eye Armor Trim Smithing Template.",
         "file": "/assets/img/items/Eye_Armor_Trim_Smithing_Template.png"
+      },
+      {
+        "name": "eye_armor_trim_smithing_template",
+        "category": "Item",
+        "description": "item/eye_armor_trim_smithing_template.png",
+        "file": "/assets/img/textures/item/eye_armor_trim_smithing_template.png",
+        "path": "item/eye_armor_trim_smithing_template"
       }
     ],
     "sounds": [],
@@ -12567,6 +14326,13 @@
         "category": "Item",
         "description": "Item texture for Spire Armor Trim Smithing Template.",
         "file": "/assets/img/items/Spire_Armor_Trim_Smithing_Template.png"
+      },
+      {
+        "name": "spire_armor_trim_smithing_template",
+        "category": "Item",
+        "description": "item/spire_armor_trim_smithing_template.png",
+        "file": "/assets/img/textures/item/spire_armor_trim_smithing_template.png",
+        "path": "item/spire_armor_trim_smithing_template"
       }
     ],
     "sounds": [],
@@ -12654,6 +14420,13 @@
         "category": "Item",
         "description": "Item texture for Flow Armor Trim Smithing Template.",
         "file": "/assets/img/items/Flow_Armor_Trim_Smithing_Template.png"
+      },
+      {
+        "name": "flow_armor_trim_smithing_template",
+        "category": "Item",
+        "description": "item/flow_armor_trim_smithing_template.png",
+        "file": "/assets/img/textures/item/flow_armor_trim_smithing_template.png",
+        "path": "item/flow_armor_trim_smithing_template"
       }
     ],
     "sounds": [],
@@ -12741,6 +14514,13 @@
         "category": "Item",
         "description": "Item texture for Bolt Armor Trim Smithing Template.",
         "file": "/assets/img/items/Bolt_Armor_Trim_Smithing_Template.png"
+      },
+      {
+        "name": "bolt_armor_trim_smithing_template",
+        "category": "Item",
+        "description": "item/bolt_armor_trim_smithing_template.png",
+        "file": "/assets/img/textures/item/bolt_armor_trim_smithing_template.png",
+        "path": "item/bolt_armor_trim_smithing_template"
       }
     ],
     "sounds": [],
@@ -12828,9 +14608,24 @@
         "category": "Item",
         "description": "Item texture for Bottle o’ Enchanting.",
         "file": "/assets/img/items/Enchanting_Bottle.gif"
+      },
+      {
+        "name": "experience_bottle",
+        "category": "Item",
+        "description": "item/experience_bottle.png",
+        "file": "/assets/img/textures/item/experience_bottle.png",
+        "path": "item/experience_bottle"
       }
     ],
-    "sounds": [],
+    "sounds": [
+      {
+        "name": "Bottle thrown",
+        "event": "entity.experience_bottle.throw",
+        "files": [
+          "/assets/sounds/random/bow.ogg"
+        ]
+      }
+    ],
     "command": "/give @p minecraft:experience_bottle 1",
     "effects": [],
     "rarity": "Rare",
@@ -12913,6 +14708,13 @@
         "category": "Item",
         "description": "Item texture for Trial Key.",
         "file": "/assets/img/items/Trial_Key.png"
+      },
+      {
+        "name": "trial_key",
+        "category": "Item",
+        "description": "item/trial_key.png",
+        "file": "/assets/img/textures/item/trial_key.png",
+        "path": "item/trial_key"
       }
     ],
     "sounds": [],
@@ -12998,6 +14800,13 @@
         "category": "Item",
         "description": "Item texture for Ominous Trial Key.",
         "file": "/assets/img/items/Ominous_Trial_Key.png"
+      },
+      {
+        "name": "ominous_trial_key",
+        "category": "Item",
+        "description": "item/ominous_trial_key.png",
+        "file": "/assets/img/textures/item/ominous_trial_key.png",
+        "path": "item/ominous_trial_key"
       }
     ],
     "sounds": [],
@@ -13085,6 +14894,13 @@
         "category": "Item",
         "description": "Item texture for Enchanted Book — Aqua Affinity I.",
         "file": "/assets/img/items/Enchanted_Book.gif"
+      },
+      {
+        "name": "enchanted_book",
+        "category": "Item",
+        "description": "item/enchanted_book.png",
+        "file": "/assets/img/textures/item/enchanted_book.png",
+        "path": "item/enchanted_book"
       }
     ],
     "sounds": [],
@@ -13177,6 +14993,13 @@
         "category": "Item",
         "description": "Item texture for Enchanted Book — Bane Of Arthropods V.",
         "file": "/assets/img/items/Enchanted_Book.gif"
+      },
+      {
+        "name": "enchanted_book",
+        "category": "Item",
+        "description": "item/enchanted_book.png",
+        "file": "/assets/img/textures/item/enchanted_book.png",
+        "path": "item/enchanted_book"
       }
     ],
     "sounds": [],
@@ -13269,6 +15092,13 @@
         "category": "Item",
         "description": "Item texture for Enchanted Book — Binding Curse I.",
         "file": "/assets/img/items/Enchanted_Book.gif"
+      },
+      {
+        "name": "enchanted_book",
+        "category": "Item",
+        "description": "item/enchanted_book.png",
+        "file": "/assets/img/textures/item/enchanted_book.png",
+        "path": "item/enchanted_book"
       }
     ],
     "sounds": [],
@@ -13361,6 +15191,13 @@
         "category": "Item",
         "description": "Item texture for Enchanted Book — Blast Protection IV.",
         "file": "/assets/img/items/Enchanted_Book.gif"
+      },
+      {
+        "name": "enchanted_book",
+        "category": "Item",
+        "description": "item/enchanted_book.png",
+        "file": "/assets/img/textures/item/enchanted_book.png",
+        "path": "item/enchanted_book"
       }
     ],
     "sounds": [],
@@ -13453,6 +15290,13 @@
         "category": "Item",
         "description": "Item texture for Enchanted Book — Breach IV.",
         "file": "/assets/img/items/Enchanted_Book.gif"
+      },
+      {
+        "name": "enchanted_book",
+        "category": "Item",
+        "description": "item/enchanted_book.png",
+        "file": "/assets/img/textures/item/enchanted_book.png",
+        "path": "item/enchanted_book"
       }
     ],
     "sounds": [],
@@ -13545,6 +15389,13 @@
         "category": "Item",
         "description": "Item texture for Enchanted Book — Channeling I.",
         "file": "/assets/img/items/Enchanted_Book.gif"
+      },
+      {
+        "name": "enchanted_book",
+        "category": "Item",
+        "description": "item/enchanted_book.png",
+        "file": "/assets/img/textures/item/enchanted_book.png",
+        "path": "item/enchanted_book"
       }
     ],
     "sounds": [],
@@ -13637,6 +15488,13 @@
         "category": "Item",
         "description": "Item texture for Enchanted Book — Density V.",
         "file": "/assets/img/items/Enchanted_Book.gif"
+      },
+      {
+        "name": "enchanted_book",
+        "category": "Item",
+        "description": "item/enchanted_book.png",
+        "file": "/assets/img/textures/item/enchanted_book.png",
+        "path": "item/enchanted_book"
       }
     ],
     "sounds": [],
@@ -13729,6 +15587,13 @@
         "category": "Item",
         "description": "Item texture for Enchanted Book — Depth Strider III.",
         "file": "/assets/img/items/Enchanted_Book.gif"
+      },
+      {
+        "name": "enchanted_book",
+        "category": "Item",
+        "description": "item/enchanted_book.png",
+        "file": "/assets/img/textures/item/enchanted_book.png",
+        "path": "item/enchanted_book"
       }
     ],
     "sounds": [],
@@ -13821,6 +15686,13 @@
         "category": "Item",
         "description": "Item texture for Enchanted Book — Efficiency V.",
         "file": "/assets/img/items/Enchanted_Book.gif"
+      },
+      {
+        "name": "enchanted_book",
+        "category": "Item",
+        "description": "item/enchanted_book.png",
+        "file": "/assets/img/textures/item/enchanted_book.png",
+        "path": "item/enchanted_book"
       }
     ],
     "sounds": [],
@@ -13913,6 +15785,13 @@
         "category": "Item",
         "description": "Item texture for Enchanted Book — Feather Falling IV.",
         "file": "/assets/img/items/Enchanted_Book.gif"
+      },
+      {
+        "name": "enchanted_book",
+        "category": "Item",
+        "description": "item/enchanted_book.png",
+        "file": "/assets/img/textures/item/enchanted_book.png",
+        "path": "item/enchanted_book"
       }
     ],
     "sounds": [],
@@ -14005,6 +15884,13 @@
         "category": "Item",
         "description": "Item texture for Enchanted Book — Fire Aspect II.",
         "file": "/assets/img/items/Enchanted_Book.gif"
+      },
+      {
+        "name": "enchanted_book",
+        "category": "Item",
+        "description": "item/enchanted_book.png",
+        "file": "/assets/img/textures/item/enchanted_book.png",
+        "path": "item/enchanted_book"
       }
     ],
     "sounds": [],
@@ -14097,6 +15983,13 @@
         "category": "Item",
         "description": "Item texture for Enchanted Book — Fire Protection IV.",
         "file": "/assets/img/items/Enchanted_Book.gif"
+      },
+      {
+        "name": "enchanted_book",
+        "category": "Item",
+        "description": "item/enchanted_book.png",
+        "file": "/assets/img/textures/item/enchanted_book.png",
+        "path": "item/enchanted_book"
       }
     ],
     "sounds": [],
@@ -14189,6 +16082,13 @@
         "category": "Item",
         "description": "Item texture for Enchanted Book — Flame I.",
         "file": "/assets/img/items/Enchanted_Book.gif"
+      },
+      {
+        "name": "enchanted_book",
+        "category": "Item",
+        "description": "item/enchanted_book.png",
+        "file": "/assets/img/textures/item/enchanted_book.png",
+        "path": "item/enchanted_book"
       }
     ],
     "sounds": [],
@@ -14281,6 +16181,13 @@
         "category": "Item",
         "description": "Item texture for Enchanted Book — Fortune III.",
         "file": "/assets/img/items/Enchanted_Book.gif"
+      },
+      {
+        "name": "enchanted_book",
+        "category": "Item",
+        "description": "item/enchanted_book.png",
+        "file": "/assets/img/textures/item/enchanted_book.png",
+        "path": "item/enchanted_book"
       }
     ],
     "sounds": [],
@@ -14373,6 +16280,13 @@
         "category": "Item",
         "description": "Item texture for Enchanted Book — Frost Walker II.",
         "file": "/assets/img/items/Enchanted_Book.gif"
+      },
+      {
+        "name": "enchanted_book",
+        "category": "Item",
+        "description": "item/enchanted_book.png",
+        "file": "/assets/img/textures/item/enchanted_book.png",
+        "path": "item/enchanted_book"
       }
     ],
     "sounds": [],
@@ -14465,6 +16379,13 @@
         "category": "Item",
         "description": "Item texture for Enchanted Book — Impaling V.",
         "file": "/assets/img/items/Enchanted_Book.gif"
+      },
+      {
+        "name": "enchanted_book",
+        "category": "Item",
+        "description": "item/enchanted_book.png",
+        "file": "/assets/img/textures/item/enchanted_book.png",
+        "path": "item/enchanted_book"
       }
     ],
     "sounds": [],
@@ -14557,6 +16478,13 @@
         "category": "Item",
         "description": "Item texture for Enchanted Book — Infinity I.",
         "file": "/assets/img/items/Enchanted_Book.gif"
+      },
+      {
+        "name": "enchanted_book",
+        "category": "Item",
+        "description": "item/enchanted_book.png",
+        "file": "/assets/img/textures/item/enchanted_book.png",
+        "path": "item/enchanted_book"
       }
     ],
     "sounds": [],
@@ -14649,6 +16577,13 @@
         "category": "Item",
         "description": "Item texture for Enchanted Book — Knockback II.",
         "file": "/assets/img/items/Enchanted_Book.gif"
+      },
+      {
+        "name": "enchanted_book",
+        "category": "Item",
+        "description": "item/enchanted_book.png",
+        "file": "/assets/img/textures/item/enchanted_book.png",
+        "path": "item/enchanted_book"
       }
     ],
     "sounds": [],
@@ -14741,6 +16676,13 @@
         "category": "Item",
         "description": "Item texture for Enchanted Book — Looting III.",
         "file": "/assets/img/items/Enchanted_Book.gif"
+      },
+      {
+        "name": "enchanted_book",
+        "category": "Item",
+        "description": "item/enchanted_book.png",
+        "file": "/assets/img/textures/item/enchanted_book.png",
+        "path": "item/enchanted_book"
       }
     ],
     "sounds": [],
@@ -14833,6 +16775,13 @@
         "category": "Item",
         "description": "Item texture for Enchanted Book — Loyalty III.",
         "file": "/assets/img/items/Enchanted_Book.gif"
+      },
+      {
+        "name": "enchanted_book",
+        "category": "Item",
+        "description": "item/enchanted_book.png",
+        "file": "/assets/img/textures/item/enchanted_book.png",
+        "path": "item/enchanted_book"
       }
     ],
     "sounds": [],
@@ -14925,6 +16874,13 @@
         "category": "Item",
         "description": "Item texture for Enchanted Book — Luck Of The Sea III.",
         "file": "/assets/img/items/Enchanted_Book.gif"
+      },
+      {
+        "name": "enchanted_book",
+        "category": "Item",
+        "description": "item/enchanted_book.png",
+        "file": "/assets/img/textures/item/enchanted_book.png",
+        "path": "item/enchanted_book"
       }
     ],
     "sounds": [],
@@ -15017,6 +16973,13 @@
         "category": "Item",
         "description": "Item texture for Enchanted Book — Lunge III.",
         "file": "/assets/img/items/Enchanted_Book.gif"
+      },
+      {
+        "name": "enchanted_book",
+        "category": "Item",
+        "description": "item/enchanted_book.png",
+        "file": "/assets/img/textures/item/enchanted_book.png",
+        "path": "item/enchanted_book"
       }
     ],
     "sounds": [],
@@ -15109,6 +17072,13 @@
         "category": "Item",
         "description": "Item texture for Enchanted Book — Lure III.",
         "file": "/assets/img/items/Enchanted_Book.gif"
+      },
+      {
+        "name": "enchanted_book",
+        "category": "Item",
+        "description": "item/enchanted_book.png",
+        "file": "/assets/img/textures/item/enchanted_book.png",
+        "path": "item/enchanted_book"
       }
     ],
     "sounds": [],
@@ -15201,6 +17171,13 @@
         "category": "Item",
         "description": "Item texture for Enchanted Book — Mending I.",
         "file": "/assets/img/items/Enchanted_Book.gif"
+      },
+      {
+        "name": "enchanted_book",
+        "category": "Item",
+        "description": "item/enchanted_book.png",
+        "file": "/assets/img/textures/item/enchanted_book.png",
+        "path": "item/enchanted_book"
       }
     ],
     "sounds": [],
@@ -15293,6 +17270,13 @@
         "category": "Item",
         "description": "Item texture for Enchanted Book — Multishot I.",
         "file": "/assets/img/items/Enchanted_Book.gif"
+      },
+      {
+        "name": "enchanted_book",
+        "category": "Item",
+        "description": "item/enchanted_book.png",
+        "file": "/assets/img/textures/item/enchanted_book.png",
+        "path": "item/enchanted_book"
       }
     ],
     "sounds": [],
@@ -15385,6 +17369,13 @@
         "category": "Item",
         "description": "Item texture for Enchanted Book — Piercing IV.",
         "file": "/assets/img/items/Enchanted_Book.gif"
+      },
+      {
+        "name": "enchanted_book",
+        "category": "Item",
+        "description": "item/enchanted_book.png",
+        "file": "/assets/img/textures/item/enchanted_book.png",
+        "path": "item/enchanted_book"
       }
     ],
     "sounds": [],
@@ -15477,6 +17468,13 @@
         "category": "Item",
         "description": "Item texture for Enchanted Book — Power V.",
         "file": "/assets/img/items/Enchanted_Book.gif"
+      },
+      {
+        "name": "enchanted_book",
+        "category": "Item",
+        "description": "item/enchanted_book.png",
+        "file": "/assets/img/textures/item/enchanted_book.png",
+        "path": "item/enchanted_book"
       }
     ],
     "sounds": [],
@@ -15569,6 +17567,13 @@
         "category": "Item",
         "description": "Item texture for Enchanted Book — Projectile Protection IV.",
         "file": "/assets/img/items/Enchanted_Book.gif"
+      },
+      {
+        "name": "enchanted_book",
+        "category": "Item",
+        "description": "item/enchanted_book.png",
+        "file": "/assets/img/textures/item/enchanted_book.png",
+        "path": "item/enchanted_book"
       }
     ],
     "sounds": [],
@@ -15661,6 +17666,13 @@
         "category": "Item",
         "description": "Item texture for Enchanted Book — Protection IV.",
         "file": "/assets/img/items/Enchanted_Book.gif"
+      },
+      {
+        "name": "enchanted_book",
+        "category": "Item",
+        "description": "item/enchanted_book.png",
+        "file": "/assets/img/textures/item/enchanted_book.png",
+        "path": "item/enchanted_book"
       }
     ],
     "sounds": [],
@@ -15753,6 +17765,13 @@
         "category": "Item",
         "description": "Item texture for Enchanted Book — Punch II.",
         "file": "/assets/img/items/Enchanted_Book.gif"
+      },
+      {
+        "name": "enchanted_book",
+        "category": "Item",
+        "description": "item/enchanted_book.png",
+        "file": "/assets/img/textures/item/enchanted_book.png",
+        "path": "item/enchanted_book"
       }
     ],
     "sounds": [],
@@ -15845,6 +17864,13 @@
         "category": "Item",
         "description": "Item texture for Enchanted Book — Quick Charge III.",
         "file": "/assets/img/items/Enchanted_Book.gif"
+      },
+      {
+        "name": "enchanted_book",
+        "category": "Item",
+        "description": "item/enchanted_book.png",
+        "file": "/assets/img/textures/item/enchanted_book.png",
+        "path": "item/enchanted_book"
       }
     ],
     "sounds": [],
@@ -15937,6 +17963,13 @@
         "category": "Item",
         "description": "Item texture for Enchanted Book — Respiration III.",
         "file": "/assets/img/items/Enchanted_Book.gif"
+      },
+      {
+        "name": "enchanted_book",
+        "category": "Item",
+        "description": "item/enchanted_book.png",
+        "file": "/assets/img/textures/item/enchanted_book.png",
+        "path": "item/enchanted_book"
       }
     ],
     "sounds": [],
@@ -16029,6 +18062,13 @@
         "category": "Item",
         "description": "Item texture for Enchanted Book — Riptide III.",
         "file": "/assets/img/items/Enchanted_Book.gif"
+      },
+      {
+        "name": "enchanted_book",
+        "category": "Item",
+        "description": "item/enchanted_book.png",
+        "file": "/assets/img/textures/item/enchanted_book.png",
+        "path": "item/enchanted_book"
       }
     ],
     "sounds": [],
@@ -16121,6 +18161,13 @@
         "category": "Item",
         "description": "Item texture for Enchanted Book — Sharpness V.",
         "file": "/assets/img/items/Enchanted_Book.gif"
+      },
+      {
+        "name": "enchanted_book",
+        "category": "Item",
+        "description": "item/enchanted_book.png",
+        "file": "/assets/img/textures/item/enchanted_book.png",
+        "path": "item/enchanted_book"
       }
     ],
     "sounds": [],
@@ -16213,6 +18260,13 @@
         "category": "Item",
         "description": "Item texture for Enchanted Book — Silk Touch I.",
         "file": "/assets/img/items/Enchanted_Book.gif"
+      },
+      {
+        "name": "enchanted_book",
+        "category": "Item",
+        "description": "item/enchanted_book.png",
+        "file": "/assets/img/textures/item/enchanted_book.png",
+        "path": "item/enchanted_book"
       }
     ],
     "sounds": [],
@@ -16305,6 +18359,13 @@
         "category": "Item",
         "description": "Item texture for Enchanted Book — Smite V.",
         "file": "/assets/img/items/Enchanted_Book.gif"
+      },
+      {
+        "name": "enchanted_book",
+        "category": "Item",
+        "description": "item/enchanted_book.png",
+        "file": "/assets/img/textures/item/enchanted_book.png",
+        "path": "item/enchanted_book"
       }
     ],
     "sounds": [],
@@ -16397,6 +18458,13 @@
         "category": "Item",
         "description": "Item texture for Enchanted Book — Soul Speed III.",
         "file": "/assets/img/items/Enchanted_Book.gif"
+      },
+      {
+        "name": "enchanted_book",
+        "category": "Item",
+        "description": "item/enchanted_book.png",
+        "file": "/assets/img/textures/item/enchanted_book.png",
+        "path": "item/enchanted_book"
       }
     ],
     "sounds": [],
@@ -16489,6 +18557,13 @@
         "category": "Item",
         "description": "Item texture for Enchanted Book — Sweeping Edge III.",
         "file": "/assets/img/items/Enchanted_Book.gif"
+      },
+      {
+        "name": "enchanted_book",
+        "category": "Item",
+        "description": "item/enchanted_book.png",
+        "file": "/assets/img/textures/item/enchanted_book.png",
+        "path": "item/enchanted_book"
       }
     ],
     "sounds": [],
@@ -16581,6 +18656,13 @@
         "category": "Item",
         "description": "Item texture for Enchanted Book — Swift Sneak III.",
         "file": "/assets/img/items/Enchanted_Book.gif"
+      },
+      {
+        "name": "enchanted_book",
+        "category": "Item",
+        "description": "item/enchanted_book.png",
+        "file": "/assets/img/textures/item/enchanted_book.png",
+        "path": "item/enchanted_book"
       }
     ],
     "sounds": [],
@@ -16673,6 +18755,13 @@
         "category": "Item",
         "description": "Item texture for Enchanted Book — Thorns III.",
         "file": "/assets/img/items/Enchanted_Book.gif"
+      },
+      {
+        "name": "enchanted_book",
+        "category": "Item",
+        "description": "item/enchanted_book.png",
+        "file": "/assets/img/textures/item/enchanted_book.png",
+        "path": "item/enchanted_book"
       }
     ],
     "sounds": [],
@@ -16765,6 +18854,13 @@
         "category": "Item",
         "description": "Item texture for Enchanted Book — Unbreaking III.",
         "file": "/assets/img/items/Enchanted_Book.gif"
+      },
+      {
+        "name": "enchanted_book",
+        "category": "Item",
+        "description": "item/enchanted_book.png",
+        "file": "/assets/img/textures/item/enchanted_book.png",
+        "path": "item/enchanted_book"
       }
     ],
     "sounds": [],
@@ -16857,6 +18953,13 @@
         "category": "Item",
         "description": "Item texture for Enchanted Book — Vanishing Curse I.",
         "file": "/assets/img/items/Enchanted_Book.gif"
+      },
+      {
+        "name": "enchanted_book",
+        "category": "Item",
+        "description": "item/enchanted_book.png",
+        "file": "/assets/img/textures/item/enchanted_book.png",
+        "path": "item/enchanted_book"
       }
     ],
     "sounds": [],
@@ -16949,6 +19052,13 @@
         "category": "Item",
         "description": "Item texture for Enchanted Book — Wind Burst III.",
         "file": "/assets/img/items/Enchanted_Book.gif"
+      },
+      {
+        "name": "enchanted_book",
+        "category": "Item",
+        "description": "item/enchanted_book.png",
+        "file": "/assets/img/textures/item/enchanted_book.png",
+        "path": "item/enchanted_book"
       }
     ],
     "sounds": [],

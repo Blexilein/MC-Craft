@@ -1,0 +1,1 @@
+{"animations":{"animation.iron_golem.move":{"loop":true,"bones":{"arm0":{"rotation":["-variable.modified_tcos0 * 2.0",0.0,0.0]},"arm1":{"rotation":["variable.modified_tcos0 * 2.0",0.0,0.0]}}}}}

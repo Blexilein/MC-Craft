@@ -1,8 +1,5 @@
 // Structure Converter page (English) — UI glue only.
 // All format logic (NBT, gzip, bit-packing, ...) lives in the shared,
-let soundEnabled = localStorage.getItem('mc-craft-sound') !== 'false';
-let currentTheme = localStorage.getItem('mc-craft-theme') || 'overworld';
-let levelUpSound = null;
 
 const T = {
     loader_text: "Structure Converter is loading...",
@@ -45,19 +42,7 @@ const T = {
     error_UNKNOWN: "An unexpected error occurred."
 };
 
-function t(key, params = {}) {
-    let text = T[key] || key;
-    Object.entries(params).forEach(([name, value]) => { text = text.replace(`{${name}}`, value); });
-    return text;
-}
-
 const FORMAT_LABELS = { schematic: '.schematic', schem: '.schem', litematic: '.litematic', nbt: '.nbt' };
-
-const toastContainer = document.getElementById('toastContainer');
-const loader = document.getElementById('loader');
-const header = document.querySelector('.header');
-const themeBtn = document.getElementById('themeBtn');
-const themeDropdown = document.getElementById('themeDropdown');
 
 const uploadArea = document.getElementById('uploadArea');
 const fileInput = document.getElementById('fileInput');
@@ -82,100 +67,15 @@ let detectedFormat = null;
 let convertedResult = null;
 
 /* --------------------------------- Toast --------------------------------- */
-function showToast(title, message, type = 'info') {
-    if (!toastContainer) return;
-    let cls = '', icon = 'fa-check';
-    if (type === 'error') { cls = 'error-toast'; icon = 'fa-exclamation-triangle'; }
-    else if (type === 'warning') { cls = 'warning-toast'; icon = 'fa-triangle-exclamation'; }
-    const toast = document.createElement('div');
-    toast.className = `toast ${cls}`;
-    toast.innerHTML = `
-        <div class="toast-icon"><i class="fas ${icon}"></i></div>
-        <div class="toast-content">
-            <div class="toast-title">${title}</div>
-            <div class="toast-message">${message}</div>
-        </div>
-    `;
-    toastContainer.appendChild(toast);
-    setTimeout(() => toast.classList.add('show'), 80);
-    setTimeout(() => {
-        toast.classList.remove('show');
-        setTimeout(() => toast.remove(), 250);
-    }, 3000);
-}
 
 /* --------------------------------- Sound -------------------------------- */
-function initAudio() {
-    try {
-        levelUpSound = new Audio('/assets/audio/levelup.ogg');
-        levelUpSound.volume = 0.25;
-        levelUpSound.preload = 'auto';
-    } catch (_) {}
-}
-function playLevelUpSound() {
-    if (!soundEnabled || !levelUpSound) return;
-    levelUpSound.currentTime = 0;
-    levelUpSound.volume = 0.25;
-    levelUpSound.play().catch(() => {});
-}
-function playClickSound() {
-    if (!soundEnabled) return;
-    const now = (typeof performance !== 'undefined' && performance.now) ? performance.now() : Date.now();
-    const last = window.__mcCraftLastClickSoundAt || 0;
-    if (now - last < 120) return;
-    window.__mcCraftLastClickSoundAt = now;
-    try {
-        const audioCtx = window.__mcCraftAudioCtx || (window.__mcCraftAudioCtx = new (window.AudioContext || window.webkitAudioContext)());
-        if (audioCtx.state === 'suspended') {
-            audioCtx.resume().then(() => { window.__mcCraftLastClickSoundAt = 0; playClickSound(); }).catch(() => {});
-            return;
-        }
-        const osc = audioCtx.createOscillator();
-        const gain = audioCtx.createGain();
-        osc.connect(gain);
-        gain.connect(audioCtx.destination);
-        osc.frequency.setValueAtTime(1200, audioCtx.currentTime);
-        osc.frequency.exponentialRampToValueAtTime(800, audioCtx.currentTime + 0.1);
-        gain.gain.setValueAtTime(0.08, audioCtx.currentTime);
-        gain.gain.exponentialRampToValueAtTime(0.01, audioCtx.currentTime + 0.1);
-        osc.start();
-        setTimeout(() => osc.stop(), 100);
-    } catch (e) {}
-}
-function updateSoundIcon() {
-    const src = soundEnabled ? '/assets/img/backgrounds/sound-on.svg' : '/assets/img/backgrounds/sound-off.svg';
-    ['soundIcon', 'mobileSoundIcon'].forEach((id) => {
-        const icon = document.getElementById(id);
-        if (icon) icon.src = src;
-    });
-}
-function initSound() {
-    const toggleSound = () => {
-        soundEnabled = !soundEnabled;
-        localStorage.setItem('mc-craft-sound', String(soundEnabled));
-        updateSoundIcon();
-        playClickSound();
-        showToast(t('toast_sound_title'), soundEnabled ? t('toast_sound_on') : t('toast_sound_off'));
-    };
-    ['soundBtn', 'mobileSoundBtn'].forEach((id) => {
-        const btn = document.getElementById(id);
-        if (btn) btn.addEventListener('click', toggleSound);
-    });
-}
+
+// The sound toggle is bound by initSoundToggle() in main.js. The copy that
+// used to live here bound a second handler, so every click toggled twice and
+// the button appeared to do nothing.
 
 /* --------------------------------- Theme -------------------------------- */
-function getThemeName(theme) {
-    if (theme === 'nether') return t('theme_nether');
-    if (theme === 'end') return t('theme_end');
-    return t('theme_overworld');
-}
-function initTheme() {
-    const theme = localStorage.getItem('mc-craft-theme') || 'overworld';
-    document.documentElement.setAttribute('data-theme', theme);
-    document.querySelectorAll('.theme-option, .theme-option-btn').forEach((btn) => {
-        btn.classList.toggle('active', btn.dataset.theme === theme);
-    });
-}
+
 function setTheme(theme) {
     document.documentElement.setAttribute('data-theme', theme);
     localStorage.setItem('mc-craft-theme', theme);
@@ -208,98 +108,12 @@ function initThemeSwitcher() {
 }
 
 /* ------------------------------ Mobile menu ------------------------------ */
-function initMobileMenu() {
-    const mobileMenuBtn = document.getElementById('mobileMenuBtn');
-    const mobileNav = document.getElementById('mobileNav');
-    const closeBtn = document.getElementById('closeBtn');
-    if (!mobileMenuBtn || !mobileNav || !closeBtn) return;
-    mobileMenuBtn.addEventListener('click', () => {
-        mobileNav.classList.add('show');
-        document.body.style.overflow = 'hidden';
-        playClickSound();
-    });
-    closeBtn.addEventListener('click', () => {
-        mobileNav.classList.remove('show');
-        document.body.style.overflow = '';
-        playClickSound();
-    });
-    mobileNav.addEventListener('click', (event) => {
-        if (event.target === mobileNav) {
-            mobileNav.classList.remove('show');
-            document.body.style.overflow = '';
-        }
-    });
-    mobileNav.querySelectorAll('.mobile-nav-link').forEach((link) => {
-        link.addEventListener('click', () => {
-            mobileNav.classList.remove('show');
-            document.body.style.overflow = '';
-        });
-    });
-}
-
-function initTopButton() {
-    const backToTop = document.getElementById('backToTop');
-    if (!backToTop && !header) return;
-    window.addEventListener('scroll', () => {
-        if (header) header.classList.toggle('scrolled', window.scrollY > 30);
-        if (backToTop) backToTop.classList.toggle('show', window.scrollY > 400);
-    });
-    if (backToTop) {
-        backToTop.addEventListener('click', () => {
-            window.scrollTo({ top: 0, behavior: 'smooth' });
-            playClickSound();
-        });
-    }
-}
 
 /* --------------------------------- Loader --------------------------------- */
-function initLoader() {
-    const loadingProgressEl = document.querySelector('.loading-progress');
-    let loadingProgressBar = null, loadingPercentEl = null;
-    if (loadingProgressEl) {
-        loadingProgressEl.innerHTML = '<div class="loading-progress-bar"></div>';
-        loadingProgressBar = loadingProgressEl.querySelector('.loading-progress-bar');
-        loadingPercentEl = document.createElement('span');
-        loadingPercentEl.className = 'loading-percent';
-        loadingPercentEl.textContent = '0%';
-        loadingProgressEl.insertAdjacentElement('afterend', loadingPercentEl);
-    }
-    const updateLoaderProgress = (value) => {
-        const v = Math.min(100, value);
-        if (loadingProgressBar) loadingProgressBar.style.width = v + '%';
-        if (loadingPercentEl) loadingPercentEl.textContent = v + '%';
-    };
-    if (!loader) return;
-    let progress = 0;
-    const loadingText = loader.querySelector('.loading-text');
-    const texts = [t('loader_text'), t('loader_text2'), t('loader_text3')];
-    let index = 0;
-    const progressInterval = window.setInterval(() => {
-        progress += 25;
-        updateLoaderProgress(progress);
-        if (progress >= 100) {
-            window.clearInterval(progressInterval);
-            window.setTimeout(() => {
-                loader.classList.add('hidden');
-                window.setTimeout(() => {
-                    loader.style.display = 'none';
-                    showToast(t('toast_loaded_title'), t('toast_loaded_message'));
-                    playLevelUpSound();
-                }, 150);
-            }, 300);
-            return;
-        }
-        if (loadingText && index < texts.length - 1) {
-            index += 1;
-            loadingText.textContent = texts[index];
-        }
-    }, 120);
-}
-
-function initFooterYear() {
-    const el = document.getElementById('currentYear');
-    if (el) el.textContent = String(new Date().getFullYear());
-}
+// initLoader() is main.js's now: it also dismisses the full-screen .loader
+// overlay this page carries. The copy here only fired the load toast, which
+// showWelcomeToast() does via its toast_loaded_* fallback - and it would have
+// left the overlay on screen for good.
 
 /* ------------------------------ Converter UI ------------------------------ */
 function setStatus(msg) { if (scStatus) scStatus.textContent = msg; }
@@ -425,14 +239,6 @@ function initUpload() {
 
 /* --------------------------------- Init --------------------------------- */
 window.addEventListener('DOMContentLoaded', () => {
-    initFooterYear();
-    initAudio();
-    initTheme();
-    initThemeSwitcher();
-    initMobileMenu();
-    initTopButton();
-    initSound();
     updateSoundIcon();
     initUpload();
-    initLoader();
 });

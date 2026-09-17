@@ -1,0 +1,1055 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="overworld">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Mohamad Laith AKA 'Blexilein'">
+    <meta name="robots" content="index, follow">
+    <meta name="description" content="Full documentation for the MC-Craft API: Items, Mobs, Capes, Heads, Skins, Player, Server status, QR code and Advancement generator – with structure, parameters and ready-made test links.">
+    <meta name="keywords" content="MC-Craft API, Minecraft API, API documentation, REST API, Items API, Mobs API, Player API, Server status API, QR code API, Advancement API">
+    <link rel="canonical" href="https://mc-craft.com/blog/en/api-documentation.html">
+    <link rel="alternate" hreflang="de" href="https://mc-craft.com/blog/de/api-dokumentation.html">
+    <link rel="alternate" hreflang="en" href="https://mc-craft.com/blog/en/api-documentation.html">
+    <link rel="alternate" hreflang="x-default" href="https://mc-craft.com/blog/de/api-dokumentation.html">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="MC-Craft | API Documentation">
+    <meta property="og:description" content="Full documentation for the MC-Craft API: Items, Mobs, Capes, Heads, Skins, Player, Server status, QR code and Advancement generator – with structure, parameters and ready-made test links.">
+    <meta property="og:url" content="https://mc-craft.com/blog/en/api-documentation.html">
+    <meta property="og:image" content="https://mc-craft.com/assets/img/favicon/overworld/mc-craft-overworld.png">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="1254">
+    <meta property="og:image:height" content="1254">
+    <meta property="og:image:alt" content="MC-Craft Logo">
+    <meta property="og:site_name" content="MC-Craft">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:locale:alternate" content="de_DE">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="MC-Craft | API Documentation">
+    <meta name="twitter:description" content="Full documentation for the MC-Craft API: Items, Mobs, Capes, Heads, Skins, Player, Server status, QR code and Advancement generator – with structure, parameters and ready-made test links.">
+    <meta name="twitter:image" content="https://mc-craft.com/assets/img/favicon/overworld/mc-craft-overworld.png">
+    <meta name="theme-color" content="#148200">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicon/overworld/favicon-16x16.png?v=20260910v121c" data-theme-icon="favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon/overworld/favicon-32x32.png?v=20260910v121c" data-theme-icon="favicon-32x32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/favicon/overworld/apple-touch-icon.png?v=20260910v121c" data-theme-icon="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/assets/img/favicon/overworld/android-chrome-192x192.png?v=20260910v121c" data-theme-icon="android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="/assets/img/favicon/overworld/android-chrome-512x512.png?v=20260910v121c" data-theme-icon="android-chrome-512x512.png">
+    <link rel="icon" href="/assets/img/favicon/overworld/favicon.ico?v=20260910v121c" data-theme-icon="favicon.ico">
+    <link rel="manifest" href="/site.webmanifest">
+        <link rel="stylesheet" href="/assets/fontawesome/all.min.css?v=20260910v121c">
+    <link rel="stylesheet" href="/assets/CSS/api-documentation.css?v=20260910v121c">
+    <link rel="stylesheet" href="/assets/CSS/site-modern-v1.css?v=20260917b">
+    <title>MC-Craft | API Documentation</title>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Organization",
+          "@id": "https://mc-craft.com/#organization",
+          "name": "MC-Craft",
+          "url": "https://mc-craft.com/",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://mc-craft.com/assets/img/favicon/overworld/mc-craft-overworld.png",
+            "width": 1254,
+            "height": 1254
+          },
+          "sameAs": [
+            "https://github.com/Blexilein",
+            "https://discord.gg/eVVpQD75w4",
+            "https://x.com/Blexi_1"
+          ]
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://mc-craft.com/#website",
+          "name": "MC-Craft",
+          "url": "https://mc-craft.com/",
+          "inLanguage": "en-US",
+          "publisher": {
+            "@id": "https://mc-craft.com/#organization"
+          }
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://mc-craft.com/blog/en/api-documentation.html#webpage",
+          "url": "https://mc-craft.com/blog/en/api-documentation.html",
+          "name": "MC-Craft | API Documentation",
+          "description": "Full documentation for the MC-Craft API: Items, Mobs, Capes, Heads, Skins, Player, Server status, QR code and Advancement generator – with structure, parameters and ready-made test links.",
+          "inLanguage": "en-US",
+          "isPartOf": {
+            "@id": "https://mc-craft.com/#website"
+          },
+          "breadcrumb": {
+            "@id": "https://mc-craft.com/blog/en/api-documentation.html#breadcrumb"
+          }
+        },
+        {
+          "@type": "BreadcrumbList",
+          "@id": "https://mc-craft.com/blog/en/api-documentation.html#breadcrumb",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://mc-craft.com/en/index.html"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "API Documentation"
+            }
+          ]
+        }
+      ]
+    }
+    </script>
+</head>
+<body>
+    <a class="skip-link" href="#main">Skip to main content</a>
+
+        <!-- Header -->
+     <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <a href="/en/index.html" class="logo">
+                    <div class="logo-icon"></div>
+                    <span class="logo-text">MC-Craft</span>
+                </a>
+                <nav class="navigation">
+                    <ul class="nav-list">
+                        <li><a href="/en/index.html" class="nav-link">Home</a></li>
+                        <li class="dropdown">
+                            <button class="dropdown-btn nav-link">Tools</button>
+                            <ul class="dropdown-menu">
+                                <li><a href="/blog/en/text-converter.html">Text Converter</a></li>
+                                <li><a href="/blog/en/color-text.html">Color Text</a></li>
+                                <li><a href="/blog/en/structure-converter.html">Structure Converter</a></li>
+                                <li><a href="/blog/en/schematic-viewer.html">Schematic Viewer</a></li>
+                                <li><a href="/blog/en/map-art-generator.html">Map Art Generator</a></li>
+                                <li><a href="/blog/en/nether-coordinate-calculator.html">Nether Coordinate Calculator</a></li>
+                                <li><a href="/blog/en/minecraft-command-generator.html">Minecraft Command Generator</a></li>
+                                <li><a href="/blog/en/items.html">Items Database</a></li>
+                                <li><a href="/blog/en/mobs.html">Mobs Database</a></li>
+                                <li><a href="/blog/en/server-status.html">Server Status</a></li>
+                                <li><a href="/blog/en/minecraft-api-status.html">Minecraft API Status</a></li>
+                                <li><a href="/blog/en/api-documentation.html" class="active">API Documentation</a></li>
+                                <li><a href="/blog/en/skin-lookup.html">Skin Lookup</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <button class="dropdown-btn nav-link">Discover</button>
+                            <ul class="dropdown-menu">
+                                <li><a href="/blog/en/skin-editor.html">Skin Editor</a></li>
+                                <li><a href="/blog/en/skin-poser.html">Skin Poser</a></li>
+                                <li><a href="/blog/en/chibi-skin-maker.html">Chibi Skin Maker</a></li>
+                               <li><a href="/blog/en/day-night-cycle.html">Day-Night Cycle</a></li>
+                                <li><a href="/blog/en/end_poem.html">End Poem</a></li>
+                                <li><a href="/blog/en/minecraft-capes.html">Capes Database</a></li>
+                                <li><a href="/blog/en/minecraft-heads.html">Heads Database</a></li>
+                                <li><a href="/blog/en/head-texture-generator.html">Head Texture Generator</a></li>
+                                <li><a href="/blog/en/minecraft-versions.html">Minecraft Versions</a></li>
+                                <li><a href="/blog/en/minecraft-skins.html">Skin Library</a></li>
+                                <li><a href="/blog/en/beacon-color-mixer.html">Beacon Color Mixer</a></li>
+                                <li><a href="/blog/en/qr-generator.html">QR Generator</a></li>
+                                <li><a href="/blog/en/advancement-generator.html">Advancement Generator</a></li>
+                                <li><a href="/blog/en/sign-generator.html">Sign Generator</a></li>
+                                <li><a href="/blog/en/crafting-recipes.html">Crafting Recipes</a></li>
+                                <li><a href="/blog/en/armor-trim-generator.html">Armor Trim Generator</a></li>
+                                <li><a href="/blog/en/firework-generator.html">Firework Generator</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="sound-toggle">
+                    <button class="sound-btn" id="soundBtn" aria-label="Toggle sound">
+                        <img src="/assets/img/backgrounds/sound-on.svg?v=20260910v121c" alt="Sound on" class="sound-icon" id="soundIcon">
+                    </button>
+                </div>
+                <div class="lang-switcher">
+                    <a class="lang-btn" id="langBtn" href="/blog/de/api-dokumentation.html" aria-label="Zu Deutsch wechseln">
+                        <img src="/assets/img/backgrounds/en.svg?v=20260910v121c" alt="English" class="flag-icon" id="langFlag">
+                    </a>
+                </div>
+                <div class="theme-switcher">
+                    <button class="theme-btn" id="themeBtn">
+                        <i class="fa-solid fa-palette"></i>
+                    </button>
+                    <div class="theme-dropdown" id="themeDropdown">
+                        <button class="theme-option" data-theme="overworld">
+                            <i class="fas fa-cube"></i>
+                            <span>Overworld</span>
+                        </button>
+                        <button class="theme-option" data-theme="nether">
+                            <i class="fas fa-fire"></i>
+                            <span>Nether</span>
+                        </button>
+                        <button class="theme-option" data-theme="end">
+                            <i class="fas fa-moon"></i>
+                            <span>The End</span>
+                        </button>
+                    </div>
+                </div>
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Navigation -->
+    <div class="mobile-nav" id="mobileNav">
+        <div class="mobile-nav-header">
+            <div class="logo">
+                <div class="logo-icon"></div>
+                <span class="logo-text">MC-Craft</span>
+            </div>
+            <button class="close-btn" id="closeBtn">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <ul class="mobile-nav-list">
+            <li><a href="/en/index.html" class="mobile-nav-link">Home</a></li>
+            <li><a href="/blog/en/text-converter.html" class="mobile-nav-link">Text Converter</a></li>
+            <li><a href="/blog/en/color-text.html" class="mobile-nav-link">Color Text</a></li>
+            <li><a href="/blog/en/structure-converter.html" class="mobile-nav-link">Structure Converter</a></li>
+            <li><a href="/blog/en/schematic-viewer.html" class="mobile-nav-link">Schematic Viewer</a></li>
+            <li><a href="/blog/en/map-art-generator.html" class="mobile-nav-link">Map Art Generator</a></li>
+            <li><a href="/blog/en/nether-coordinate-calculator.html" class="mobile-nav-link">Nether Coordinate Calculator</a></li>
+            <li><a href="/blog/en/minecraft-command-generator.html" class="mobile-nav-link">Minecraft Command Generator</a></li>
+            <li><a href="/blog/en/items.html" class="mobile-nav-link">Items Database</a></li>
+            <li><a href="/blog/en/mobs.html" class="mobile-nav-link">Mobs Database</a></li>
+            <li><a href="/blog/en/server-status.html" class="mobile-nav-link">Server Status</a></li>
+            <li><a href="/blog/en/minecraft-api-status.html" class="mobile-nav-link">Minecraft API Status</a></li>
+            <li><a href="/blog/en/api-documentation.html" class="mobile-nav-link active">API Documentation</a></li>
+            <li><a href="/blog/en/skin-lookup.html" class="mobile-nav-link">Skin Lookup</a></li>
+            <li><a href="/blog/en/skin-editor.html" class="mobile-nav-link">Skin Editor</a></li>
+            <li><a href="/blog/en/skin-poser.html" class="mobile-nav-link">Skin Poser</a></li>
+            <li><a href="/blog/en/chibi-skin-maker.html" class="mobile-nav-link">Chibi Skin Maker</a></li>
+            <li><a href="/blog/en/day-night-cycle.html" class="mobile-nav-link">Day-Night Cycle</a></li>
+            <li><a href="/blog/en/end_poem.html" class="mobile-nav-link">End Poem</a></li>
+            <li><a href="/blog/en/minecraft-capes.html" class="mobile-nav-link">Capes Database</a></li>
+            <li><a href="/blog/en/minecraft-heads.html" class="mobile-nav-link">Heads Database</a></li>
+            <li><a href="/blog/en/head-texture-generator.html" class="mobile-nav-link">Head Texture Generator</a></li>
+            <li><a href="/blog/en/minecraft-versions.html" class="mobile-nav-link">Minecraft Versions</a></li>
+            <li><a href="/blog/en/minecraft-skins.html" class="mobile-nav-link">Skin Library</a></li>
+            <li><a href="/blog/en/beacon-color-mixer.html" class="mobile-nav-link">Beacon Color Mixer</a></li>
+            <li><a href="/blog/en/qr-generator.html" class="mobile-nav-link">QR Generator</a></li>
+            <li><a href="/blog/en/advancement-generator.html" class="mobile-nav-link">Advancement Generator</a></li>
+            <li><a href="/blog/en/sign-generator.html" class="mobile-nav-link">Sign Generator</a></li>
+            <li><a href="/blog/en/crafting-recipes.html" class="mobile-nav-link">Crafting Recipes</a></li>
+            <li><a href="/blog/en/armor-trim-generator.html" class="mobile-nav-link">Armor Trim Generator</a></li>
+            <li><a href="/blog/en/firework-generator.html" class="mobile-nav-link">Firework Generator</a></li>
+        </ul>
+        <div class="mobile-theme-switcher">
+            <h4>Choose theme:</h4>
+            <div class="theme-options">
+                <button class="theme-option-btn" data-theme="overworld">
+                    <i class="fas fa-cube"></i> <span>Overworld</span>
+                </button>
+                <button class="theme-option-btn" data-theme="nether">
+                    <i class="fas fa-fire"></i> <span>Nether</span>
+                </button>
+                <button class="theme-option-btn" data-theme="end">
+                    <i class="fas fa-moon"></i> <span>The End</span>
+                </button>
+            </div>
+            <div class="mobile-sound-lang">
+                <button class="mobile-sound-btn" id="mobileSoundBtn">
+                    <img src="/assets/img/backgrounds/sound-on.svg?v=20260910v121c" alt="Sound on" class="sound-icon" id="mobileSoundIcon">
+                    <span>Sound</span>
+                </button>
+                <a class="mobile-lang-btn" id="mobileLangBtn" href="/blog/de/api-dokumentation.html">
+                    <img src="/assets/img/backgrounds/en.svg?v=20260910v121c" alt="English" class="flag-icon" id="mobileLangFlag">
+                    <span>Language</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+
+    <main class="main" id="main" tabindex="-1">
+        <!-- Hero Section -->
+        <section class="hero" id="home">
+            <div class="hero-bg-grid"></div>
+            <div class="container">
+                <div class="hero-content">
+                <div class="hero-badge">
+                        <span class="hero-badge-dot"></span>
+                        API VERSION 1.3.6
+                    </div><br><br><br>
+                    <h1 class="hero-title">MC-Craft <span class="highlight">API Documentation</span></h1>
+                    <p class="hero-description">
+                        The complete link structure of the MC-Craft API, explained simply: Items, Mobs, Capes, Heads,
+                        Skins, Player, Server status, QR codes and Advancements – all through a single REST API.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#basics" class="btn btn-primary">
+                            <i class="fas fa-rocket"></i> View the Basics
+                        </a>
+                        <a href="#testlinks" class="btn btn-secondary">
+                            <i class="fas fa-flask"></i> Try Test Links
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="base-url-card">
+                        <span class="base-url-label"><i class="fas fa-server"></i> Base URL</span>
+                        <div class="code-block code-block-inline">
+                            <code id="baseUrlCode">https://api.mc-craft.com</code>
+                            <button class="copy-btn" data-copy-target="baseUrlCode" aria-label="Copy base URL">
+                                <i class="fas fa-copy"></i>
+                            </button>
+                        </div>
+                        <ul class="base-url-facts">
+                            <li><i class="fas fa-check"></i> No authentication required</li>
+                            <li><i class="fas fa-check"></i> Responses as JSON</li>
+                            <li><i class="fas fa-check"></i> Usable directly from bots &amp; websites</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Docs Layout -->
+        <section class="docs-section" id="docs">
+            <div class="container">
+                <div class="docs-layout">
+
+                    <!-- Sidebar -->
+                    <aside class="docs-sidebar" id="docsSidebar">
+                        <button class="docs-sidebar-toggle" id="docsSidebarToggle">
+                            <i class="fas fa-list"></i> <span>Table of Contents</span>
+                            <i class="fas fa-chevron-down docs-sidebar-chevron"></i>
+                        </button>
+                        <nav class="docs-nav" id="docsNav">
+                            <div class="docs-nav-group">
+                                <span class="docs-nav-title">Basics</span>
+                                <a href="#basics" class="docs-nav-link">Structure &amp; Rules</a>
+                            </div>
+                            <div class="docs-nav-group">
+                                <span class="docs-nav-title">Databases</span>
+                                <a href="#items" class="docs-nav-link">Items</a>
+                                <a href="#mobs" class="docs-nav-link">Mobs</a>
+                                <a href="#capes" class="docs-nav-link">Capes</a>
+                                <a href="#heads" class="docs-nav-link">Heads</a>
+                                <a href="#skins" class="docs-nav-link">Skins</a>
+                            </div>
+                            <div class="docs-nav-group">
+                                <span class="docs-nav-title">Player &amp; Server</span>
+                                <a href="#player" class="docs-nav-link">Player</a>
+                                <a href="#server" class="docs-nav-link">Server</a>
+                            </div>
+                            <div class="docs-nav-group">
+                                <span class="docs-nav-title">Generators</span>
+                                <a href="#qr" class="docs-nav-link">QR Code</a>
+                                <a href="#advancement" class="docs-nav-link">Advancement</a>
+                            </div>
+                            <div class="docs-nav-group">
+                                <span class="docs-nav-title">Reference</span>
+                                <a href="#encoding" class="docs-nav-link">URL Encoding</a>
+                                <a href="#quickref" class="docs-nav-link">Quick Reference</a>
+                                <a href="#testlinks" class="docs-nav-link">Test Links</a>
+                            </div>
+                        </nav>
+                    </aside>
+
+                    <!-- Content -->
+                    <div class="docs-content">
+
+                        <!-- 1. Basics -->
+                        <article class="docs-block" id="basics">
+                            <h2 class="docs-block-title"><i class="fas fa-shapes"></i> Basics</h2>
+                            <p class="docs-block-desc">
+                                Every link to the MC-Craft API starts with the base URL. After that comes the section
+                                you want to use, e.g. <code>/items</code>, <code>/mobs</code> or <code>/qr</code>.
+                            </p>
+
+                            <div class="code-block">
+                                <code>https://api.mc-craft.com/mobs/en</code>
+                                <button class="copy-btn" aria-label="Copy example"><i class="fas fa-copy"></i></button>
+                            </div>
+
+                            <div class="basics-breakdown">
+                                <div class="breakdown-item">
+                                    <code>https://api.mc-craft.com</code>
+                                    <span>= your API (base URL)</span>
+                                </div>
+                                <div class="breakdown-item">
+                                    <code>/mobs</code>
+                                    <span>= mob database</span>
+                                </div>
+                                <div class="breakdown-item">
+                                    <code>/en</code>
+                                    <span>= English data</span>
+                                </div>
+                            </div>
+
+                            <h3 class="docs-sub-title">What do <code>/</code> <code>?</code> <code>=</code> <code>&amp;</code> mean</h3>
+                            <div class="param-table-wrap">
+                                <table class="param-table">
+                                    <thead>
+                                        <tr><th>Character</th><th>Meaning</th><th>Example</th></tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr><td><code>/</code></td><td>Separates path segments</td><td><code>/mobs/en/hostile</code></td></tr>
+                                        <tr><td><code>?</code></td><td>Starts the <strong>first</strong> parameter</td><td><code>?q=zombie</code></td></tr>
+                                        <tr><td><code>=</code></td><td>Connects parameter and value</td><td><code>lang=en</code></td></tr>
+                                        <tr><td><code>&amp;</code></td><td>Connects <strong>further</strong> parameters</td><td><code>?lang=en&amp;q=zombie</code></td></tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <div class="docs-callout docs-callout-good">
+                                <i class="fas fa-check-circle"></i>
+                                <div>
+                                    <strong>Correct:</strong> <code>?text=Hello&amp;size=512&amp;ec=H</code><br>
+                                    Only the <strong>first</strong> parameter starts with <code>?</code>, every other one with <code>&amp;</code>.
+                                </div>
+                            </div>
+                            <div class="docs-callout docs-callout-bad">
+                                <i class="fas fa-times-circle"></i>
+                                <div>
+                                    <strong>Wrong:</strong> <code>?text=Hello?size=512?ec=H</code>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- 2. Items -->
+                        <article class="docs-block" id="items">
+                            <h2 class="docs-block-title"><i class="fas fa-cube"></i> Items</h2>
+                            <p class="docs-block-desc">
+                                The item database has an endpoint for <strong>multiple</strong> items (<code>/items</code>) and
+                                one for <strong>exactly one</strong> item (<code>/item</code>, no s).
+                            </p>
+
+                            <div class="endpoint-card">
+                                <div class="endpoint-header">
+                                    <span class="endpoint-method">GET</span>
+                                    <code class="endpoint-path">/items/<wbr>{language}</code>
+                                </div>
+                                <p>All items in one language.</p>
+                                <div class="code-block">
+                                    <code>https://api.mc-craft.com/items/en</code>
+                                    <button class="copy-btn" aria-label="Copy"><i class="fas fa-copy"></i></button>
+                                </div>
+                            </div>
+
+                            <div class="endpoint-card">
+                                <div class="endpoint-header">
+                                    <span class="endpoint-method">GET</span>
+                                    <code class="endpoint-path">/items/<wbr>{language}/<wbr>{category}</code>
+                                </div>
+                                <p>Only items from one specific category.</p>
+                                <div class="code-block">
+                                    <code>https://api.mc-craft.com/items/en/combat</code>
+                                    <button class="copy-btn" aria-label="Copy"><i class="fas fa-copy"></i></button>
+                                </div>
+                                <div class="chip-list">
+                                    <span class="chip">building</span><span class="chip">color</span><span class="chip">combat</span>
+                                    <span class="chip">food</span><span class="chip">gamemod</span><span class="chip">materials</span>
+                                    <span class="chip">nature</span><span class="chip">redstone</span><span class="chip">spawneggs</span>
+                                    <span class="chip">tools</span><span class="chip">utility</span>
+                                </div>
+                            </div>
+
+                            <div class="endpoint-card">
+                                <div class="endpoint-header">
+                                    <span class="endpoint-method">GET</span>
+                                    <code class="endpoint-path">/items/<wbr>{language}<wbr>?q={query}</code>
+                                </div>
+                                <p>Search across <strong>all</strong> categories. Can be combined with a category:
+                                    <code>/items/{language}/{category}?q={query}</code>.</p>
+                                <div class="code-block">
+                                    <code>https://api.mc-craft.com/items/en?q=diamond</code>
+                                    <button class="copy-btn" aria-label="Copy"><i class="fas fa-copy"></i></button>
+                                </div>
+                            </div>
+
+                            <div class="endpoint-card">
+                                <div class="endpoint-header">
+                                    <span class="endpoint-method">GET</span>
+                                    <code class="endpoint-path">/item/<wbr>{language}/<wbr>{id}</code>
+                                </div>
+                                <p>Exactly <strong>one</strong> item by its ID.</p>
+                                <div class="code-block">
+                                    <code>https://api.mc-craft.com/item/en/diamond</code>
+                                    <button class="copy-btn" aria-label="Copy"><i class="fas fa-copy"></i></button>
+                                </div>
+                                <div class="docs-callout docs-callout-tip">
+                                    <i class="fas fa-lightbulb"></i>
+                                    <div>
+                                        Don't know the ID? Search first with <code>/items/en?q=diamond</code>, then take the
+                                        <code>"id"</code> field from the response and put it after <code>/item/en/</code>.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="docs-callout docs-callout-info">
+                                <i class="fas fa-image"></i>
+                                <div>
+                                    <strong>Images, textures &amp; sounds:</strong> fields like <code>icon</code>, <code>texture[].file</code>
+                                    and <code>sounds[].file</code> already contain full URLs (e.g. to
+                                    <code>mc-craft.com/assets/img/...</code>) and can be used directly by bots or websites.
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- 3. Mobs -->
+                        <article class="docs-block" id="mobs">
+                            <h2 class="docs-block-title"><i class="fas fa-ghost"></i> Mobs</h2>
+                            <p class="docs-block-desc">
+                                Works exactly like the items API: <code>/mobs</code> for lists, <code>/mob</code> (no s) for exactly one mob.
+                            </p>
+
+                            <div class="endpoint-card">
+                                <div class="endpoint-header">
+                                    <span class="endpoint-method">GET</span>
+                                    <code class="endpoint-path">/mobs/<wbr>{language}</code>
+                                </div>
+                                <p>All mobs in one language.</p>
+                                <div class="code-block">
+                                    <code>https://api.mc-craft.com/mobs/en</code>
+                                    <button class="copy-btn" aria-label="Copy"><i class="fas fa-copy"></i></button>
+                                </div>
+                            </div>
+
+                            <div class="endpoint-card">
+                                <div class="endpoint-header">
+                                    <span class="endpoint-method">GET</span>
+                                    <code class="endpoint-path">/mobs/<wbr>{language}/<wbr>{category}</code>
+                                </div>
+                                <p>Only mobs from one specific category.</p>
+                                <div class="code-block">
+                                    <code>https://api.mc-craft.com/mobs/en/hostile</code>
+                                    <button class="copy-btn" aria-label="Copy"><i class="fas fa-copy"></i></button>
+                                </div>
+                                <div class="chip-list">
+                                    <span class="chip">boss</span><span class="chip">hostile</span><span class="chip">jockeys</span>
+                                    <span class="chip">neutral</span><span class="chip">passive</span><span class="chip">player</span>
+                                    <span class="chip">unused</span>
+                                </div>
+                            </div>
+
+                            <div class="endpoint-card">
+                                <div class="endpoint-header">
+                                    <span class="endpoint-method">GET</span>
+                                    <code class="endpoint-path">/mobs/<wbr>{language}<wbr>?q={query}</code>
+                                </div>
+                                <p>Search across all categories, optionally combined with <code>/mobs/{language}/{category}?q=...</code>.</p>
+                                <div class="code-block">
+                                    <code>https://api.mc-craft.com/mobs/en/hostile?q=zombie</code>
+                                    <button class="copy-btn" aria-label="Copy"><i class="fas fa-copy"></i></button>
+                                </div>
+                            </div>
+
+                            <div class="endpoint-card">
+                                <div class="endpoint-header">
+                                    <span class="endpoint-method">GET</span>
+                                    <code class="endpoint-path">/mob/<wbr>{language}/<wbr>{id}</code>
+                                </div>
+                                <p>Exactly <strong>one</strong> mob by its ID.</p>
+                                <div class="code-block">
+                                    <code>https://api.mc-craft.com/mob/en/zombie</code>
+                                    <button class="copy-btn" aria-label="Copy"><i class="fas fa-copy"></i></button>
+                                </div>
+                            </div>
+
+                            <div class="docs-callout docs-callout-info">
+                                <i class="fas fa-image"></i>
+                                <div>
+                                    For mobs too, <code>icon</code>, <code>texture[].file</code> and <code>sounds[].file</code>
+                                    return full, directly usable URLs.
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- 4. Capes -->
+                        <article class="docs-block" id="capes">
+                            <h2 class="docs-block-title"><i class="fas fa-mask"></i> Capes</h2>
+                            <p class="docs-block-desc">
+                                Every known Minecraft cape (Mojang, con, physical, virtual, and more) with an image, description, and
+                                category. Unlike Items/Mobs, there is <strong>no</strong> dedicated language path segment here – the
+                                language is chosen via the <code>lang=</code> parameter, and there's no separate singular word.
+                            </p>
+                            <div class="param-table-wrap">
+                                <table class="param-table">
+                                    <thead><tr><th>Structure</th><th>Example</th></tr></thead>
+                                    <tbody>
+                                        <tr><td>All capes</td><td><code>/capes</code></td></tr>
+                                        <tr><td>By language</td><td><code>/capes?lang=en</code></td></tr>
+                                        <tr><td>Search</td><td><code>/capes?q=migrator&amp;lang=en</code></td></tr>
+                                        <tr><td>A single cape</td><td><code>/capes/{id}?lang=en</code></td></tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="code-block">
+                                <code>https://api.mc-craft.com/capes/migrator-cape?lang=en</code>
+                                <button class="copy-btn" aria-label="Copy"><i class="fas fa-copy"></i></button>
+                            </div>
+                        </article>
+
+                        <!-- 5. Heads -->
+                        <article class="docs-block" id="heads">
+                            <h2 class="docs-block-title"><i class="fas fa-cubes"></i> Heads</h2>
+                            <p class="docs-block-desc">
+                                70+ player-head items (MHF heads of creatures, blocks, and symbols) plus logo heads, including a
+                                ready-to-use <code>/give</code> command right in the response. The head database has no language or
+                                category paths, only search and single lookup.
+                            </p>
+                            <div class="param-table-wrap">
+                                <table class="param-table">
+                                    <thead><tr><th>Structure</th><th>Example</th></tr></thead>
+                                    <tbody>
+                                        <tr><td>All heads</td><td><code>/heads</code></td></tr>
+                                        <tr><td>Search</td><td><code>/heads?q=zombie</code></td></tr>
+                                        <tr><td>A specific head</td><td><code>/heads/{id}</code></td></tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="docs-callout docs-callout-tip">
+                                <i class="fas fa-lightbulb"></i>
+                                <div>Don't know the ID? Search first (<code>?q=...</code>), then take the <code>"id"</code> field from the response and put it after <code>/heads/</code>.</div>
+                            </div>
+                        </article>
+
+                        <!-- 6. Skins -->
+                        <article class="docs-block" id="skins">
+                            <h2 class="docs-block-title"><i class="fas fa-shirt"></i> Skins Database</h2>
+                            <p class="docs-block-desc">
+                                MC-Craft's curated skin gallery (hand-made themed skins like Steampunk, not player uploads) – not to
+                                be confused with a real player's actual skin via <code>/player/{name}/skin</code> further below.
+                            </p>
+                            <div class="param-table-wrap">
+                                <table class="param-table">
+                                    <thead><tr><th>Structure</th><th>Example</th></tr></thead>
+                                    <tbody>
+                                        <tr><td>All skins</td><td><code>/skins</code></td></tr>
+                                        <tr><td>By language</td><td><code>/skins?lang=en</code></td></tr>
+                                        <tr><td>Search</td><td><code>/skins?q=steampunk&amp;lang=en</code></td></tr>
+                                        <tr><td>A single skin</td><td><code>/skins/{id}?lang=en</code></td></tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </article>
+
+                        <!-- 7. Player -->
+                        <article class="docs-block" id="player">
+                            <h2 class="docs-block-title"><i class="fas fa-user"></i> Player</h2>
+                            <p class="docs-block-desc">
+                                Public Mojang profile data for any Minecraft account (name, UUID) plus its current skin – look it up
+                                by username or UUID, perfect for Discord bots or player profiles on your own website.
+                            </p>
+                            <div class="endpoint-card">
+                                <div class="endpoint-header">
+                                    <span class="endpoint-method">GET</span>
+                                    <code class="endpoint-path">/player/<wbr>{name-or-uuid}</code>
+                                </div>
+                                <p>Player data by name or UUID.</p>
+                                <div class="code-block">
+                                    <code>https://api.mc-craft.com/player/Notch</code>
+                                    <button class="copy-btn" aria-label="Copy"><i class="fas fa-copy"></i></button>
+                                </div>
+                            </div>
+                            <div class="endpoint-card">
+                                <div class="endpoint-header">
+                                    <span class="endpoint-method">GET</span>
+                                    <code class="endpoint-path">/player/<wbr>{name}/<wbr>skin</code>
+                                </div>
+                                <p>Returns the player's skin <strong>directly as an image</strong> (not JSON) – perfect for <code>&lt;img src="..."&gt;</code>.</p>
+                                <div class="code-block">
+                                    <code>https://api.mc-craft.com/player/Notch/skin</code>
+                                    <button class="copy-btn" aria-label="Copy"><i class="fas fa-copy"></i></button>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- 8. Server -->
+                        <article class="docs-block" id="server">
+                            <h2 class="docs-block-title"><i class="fas fa-server"></i> Server</h2>
+                            <p class="docs-block-desc">
+                                Live status for any Minecraft server – player count, MOTD, version, icon, and more – for both Java
+                                and Bedrock servers. Great for showing your own server's status on a website or in a Discord bot.
+                            </p>
+                            <div class="endpoint-card">
+                                <div class="endpoint-header">
+                                    <span class="endpoint-method">GET</span>
+                                    <code class="endpoint-path">/server/<wbr>{java|bedrock}/<wbr>{address}</code>
+                                </div>
+                                <p>Live status of a Minecraft server, for both editions. Replace <code>(server)</code> below with your
+                                    own server address.</p>
+                                <div class="code-block">
+                                    <code>https://api.mc-craft.com/server/java/(server)</code>
+                                    <button class="copy-btn" aria-label="Copy"><i class="fas fa-copy"></i></button>
+                                </div>
+                                <div class="code-block">
+                                    <code>https://api.mc-craft.com/server/bedrock/(server)</code>
+                                    <button class="copy-btn" aria-label="Copy"><i class="fas fa-copy"></i></button>
+                                </div>
+                                <div class="docs-callout docs-callout-tip">
+                                    <i class="fas fa-lightbulb"></i>
+                                    <div>
+                                        Address with a port? URL-encode the colon: <code>example.com:25565</code> →
+                                        <code>example.com%3A25565</code>.
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- 9. QR -->
+                        <article class="docs-block" id="qr">
+                            <h2 class="docs-block-title"><i class="fas fa-qrcode"></i> QR Code Generator</h2>
+                            <div class="endpoint-card">
+                                <div class="endpoint-header">
+                                    <span class="endpoint-method">GET</span>
+                                    <code class="endpoint-path">/qr<wbr>?text={content}</code>
+                                </div>
+                                <p>Basic principle: <code>text</code> is the only required parameter, everything else is optional.</p>
+                            </div>
+
+                            <h3 class="docs-sub-title">Parameters</h3>
+                            <div class="param-table-wrap">
+                                <table class="param-table">
+                                    <thead><tr><th>Parameter</th><th>Values</th><th>Meaning</th></tr></thead>
+                                    <tbody>
+                                        <tr><td><code>text</code></td><td>any text</td><td>QR code content (URL-encoded)</td></tr>
+                                        <tr><td><code>design</code></td><td><code>normal</code> / <code>frame</code></td><td>without image, or with a centered icon</td></tr>
+                                        <tr><td><code>size</code></td><td>~128–2048</td><td>image size in pixels</td></tr>
+                                        <tr><td><code>ec</code></td><td><code>L</code> <code>M</code> <code>Q</code> <code>H</code></td><td>error correction, low → very high (H recommended with icons)</td></tr>
+                                        <tr><td><code>icon</code></td><td>see below</td><td>icon image, only with <code>design=frame</code></td></tr>
+                                        <tr><td><code>iconScale</code></td><td>~0.12–0.24</td><td>icon size relative to the QR code</td></tr>
+                                        <tr><td><code>bg</code></td><td>hex color</td><td>background color</td></tr>
+                                        <tr><td><code>dark</code></td><td>hex color</td><td>QR module color</td></tr>
+                                        <tr><td><code>finderDark</code></td><td>hex color</td><td>color of the finder frames (corners)</td></tr>
+                                        <tr><td><code>finderCenter</code></td><td>hex color</td><td>color of the finder centers</td></tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <h3 class="docs-sub-title">Icon scheme (only with <code>design=frame</code>)</h3>
+                            <div class="param-table-wrap">
+                                <table class="param-table">
+                                    <thead><tr><th>Scheme</th><th>Example</th></tr></thead>
+                                    <tbody>
+                                        <tr><td><code>item:{item-id}</code></td><td><code>icon=item:diamond</code></td></tr>
+                                        <tr><td><code>mob:{mob-id}</code></td><td><code>icon=mob:zombie</code></td></tr>
+                                        <tr><td><code>mob:{mob-id}:body</code></td><td><code>icon=mob:zombie:body</code> (full body instead of head)</td></tr>
+                                        <tr><td><code>heart:{filename}</code></td><td><code>icon=heart:full</code></td></tr>
+                                        <tr><td><code>dialog:{filename}</code></td><td><code>icon=dialog:{filename}</code></td></tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <div class="docs-callout docs-callout-good">
+                                <i class="fas fa-hashtag"></i>
+                                <div>Hex colors need a URL-encoded <code>#</code>: <code>#00ff99</code> → <code>%2300ff99</code>.</div>
+                            </div>
+
+                            <h3 class="docs-sub-title">Complete example</h3>
+                            <div class="code-block code-block-wrap">
+                                <code id="qrFullExample">https://api.mc-craft.com/qr?text=https%3A%2F%2Fmc-craft.com&amp;size=768&amp;ec=H&amp;design=frame&amp;icon=item:diamond&amp;lang=en&amp;bg=%23ffffff&amp;dark=%23111111&amp;finderDark=%23000000&amp;finderCenter=%2300ff99&amp;iconScale=0.20</code>
+                                <button class="copy-btn" data-copy-target="qrFullExample" aria-label="Copy"><i class="fas fa-copy"></i></button>
+                            </div>
+                        </article>
+
+                        <!-- 10. Advancement -->
+                        <article class="docs-block" id="advancement">
+                            <h2 class="docs-block-title"><i class="fas fa-trophy"></i> Advancement Generator</h2>
+                            <div class="endpoint-card">
+                                <div class="endpoint-header">
+                                    <span class="endpoint-method">GET</span>
+                                    <code class="endpoint-path">/advancement<wbr>?line1={text}<wbr>&amp;line2={text}</code>
+                                </div>
+                                <p>Generates a Minecraft advancement toast as an image. Up to 4 text lines (<code>line1</code>–<code>line4</code>) possible.</p>
+                                <div class="code-block">
+                                    <code>https://api.mc-craft.com/advancement?line1=Advancement%20Made!&amp;line2=Diamonds!&amp;icon=item:diamond</code>
+                                    <button class="copy-btn" aria-label="Copy"><i class="fas fa-copy"></i></button>
+                                </div>
+                            </div>
+
+                            <h3 class="docs-sub-title">Parameters</h3>
+                            <div class="param-table-wrap">
+                                <table class="param-table">
+                                    <thead><tr><th>Parameter</th><th>Values</th><th>Meaning</th></tr></thead>
+                                    <tbody>
+                                        <tr><td><code>line1</code>–<code>line4</code></td><td>text</td><td>up to 4 text lines</td></tr>
+                                        <tr><td><code>icon</code></td><td><code>item:{id}</code> / <code>mob:{id}</code> / <code>mob:{id}:body</code></td><td>toast icon, same as the QR code</td></tr>
+                                        <tr><td><code>frame</code></td><td><code>achievement</code> <code>advancement</code> <code>challenge</code> <code>goal</code></td><td>advancement type (frame shape)</td></tr>
+                                        <tr><td><code>style</code></td><td><code>toast-dark/light/blue/system</code>, <code>box-dark/gold/blue/teal/purple/night</code></td><td>visual style</td></tr>
+                                        <tr><td><code>line1Color</code>–<code>line4Color</code></td><td>hex color</td><td>text color per line</td></tr>
+                                        <tr><td><code>fill</code> / <code>border</code> / <code>outline</code></td><td>hex color</td><td>box fill, border and outline</td></tr>
+                                        <tr><td><code>background</code></td><td><code>transparent</code> <code>solid</code> <code>gradient</code></td><td>background type (with <code>gradient</code>, also set <code>bgA</code>/<code>bgB</code>)</td></tr>
+                                        <tr><td><code>scale</code></td><td>~1–8</td><td>image size</td></tr>
+                                        <tr><td><code>width</code></td><td><code>auto</code> <code>vanilla</code> <code>fixed</code> / number</td><td>box width</td></tr>
+                                        <tr><td><code>shadow</code></td><td><code>true</code> / <code>false</code></td><td>drop shadow on/off</td></tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <h3 class="docs-sub-title">Complete example</h3>
+                            <div class="code-block code-block-wrap">
+                                <code id="advFullExample">https://api.mc-craft.com/advancement?frame=challenge&amp;style=box-gold&amp;line1=Challenge%20Complete!&amp;line2=Diamonds!&amp;line3=MC-Craft&amp;line4=%3DD&amp;icon=item:diamond&amp;lang=en&amp;scale=4&amp;width=300&amp;background=gradient&amp;bgA=%230f2a16&amp;bgB=%23050520&amp;line1Color=%23ff55ff&amp;line2Color=%23ffffff&amp;fill=%23121212&amp;border=%2300ff99&amp;outline=%23000000&amp;shadow=true</code>
+                                <button class="copy-btn" data-copy-target="advFullExample" aria-label="Copy"><i class="fas fa-copy"></i></button>
+                            </div>
+                        </article>
+
+                        <!-- 11. Encoding -->
+                        <article class="docs-block" id="encoding">
+                            <h2 class="docs-block-title"><i class="fas fa-code"></i> URL Encoding</h2>
+                            <p class="docs-block-desc">Special characters in parameters (spaces, colors, colons …) must be URL-encoded.</p>
+                            <div class="param-table-wrap">
+                                <table class="param-table">
+                                    <thead><tr><th>Character</th><th>Encoded</th></tr></thead>
+                                    <tbody>
+                                        <tr><td>Space</td><td><code>%20</code></td></tr>
+                                        <tr><td><code>:</code></td><td><code>%3A</code></td></tr>
+                                        <tr><td><code>/</code></td><td><code>%2F</code></td></tr>
+                                        <tr><td><code>#</code></td><td><code>%23</code></td></tr>
+                                        <tr><td><code>=</code></td><td><code>%3D</code></td></tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <h3 class="docs-sub-title">Automatically with JavaScript</h3>
+                            <div class="code-block code-block-multiline">
+<pre><code>const text = encodeURIComponent('Getting an Upgrade');
+const url = `https://api.mc-craft.com/advancement?line2=${text}`;</code></pre>
+                                <button class="copy-btn" aria-label="Copy"><i class="fas fa-copy"></i></button>
+                            </div>
+                        </article>
+
+                        <!-- 12. Quickref -->
+                        <article class="docs-block" id="quickref">
+                            <h2 class="docs-block-title"><i class="fas fa-bolt"></i> Quick Reference</h2>
+                            <div class="param-table-wrap">
+                                <table class="param-table quickref-table">
+                                    <thead><tr><th>Pattern</th><th>Meaning</th></tr></thead>
+                                    <tbody>
+                                        <tr><td><code>/items/en</code></td><td>Multiple items (list)</td></tr>
+                                        <tr><td><code>/item/en/{id}</code></td><td>A single item</td></tr>
+                                        <tr><td><code>/items/en?q=diamond</code></td><td>Search items</td></tr>
+                                        <tr><td><code>/items/en/combat</code></td><td>Items in one category</td></tr>
+                                        <tr><td><code>/mobs/en</code></td><td>Multiple mobs (list)</td></tr>
+                                        <tr><td><code>/mob/en/{id}</code></td><td>A single mob</td></tr>
+                                        <tr><td><code>/mobs/en?q=zombie</code></td><td>Search mobs</td></tr>
+                                        <tr><td><code>/mobs/en/hostile</code></td><td>Mobs in one category</td></tr>
+                                        <tr><td><code>/capes?lang=en</code></td><td>Cape list</td></tr>
+                                        <tr><td><code>/heads?q=zombie</code></td><td>Search heads</td></tr>
+                                        <tr><td><code>/skins?lang=en</code></td><td>Skin gallery</td></tr>
+                                        <tr><td><code>/player/{name}</code></td><td>Player data</td></tr>
+                                        <tr><td><code>/player/{name}/skin</code></td><td>Player skin as an image</td></tr>
+                                        <tr><td><code>/server/java/{address}</code></td><td>Java server status</td></tr>
+                                        <tr><td><code>/server/bedrock/{address}</code></td><td>Bedrock server status</td></tr>
+                                        <tr><td><code>/qr?text=...&amp;design=normal</code></td><td>QR code without image</td></tr>
+                                        <tr><td><code>/qr?text=...&amp;design=frame&amp;icon=item:diamond</code></td><td>QR code with icon</td></tr>
+                                        <tr><td><code>/advancement?line1=...&amp;line2=...</code></td><td>Advancement toast</td></tr>
+                                        <tr><td><code>/advancement?...&amp;icon=item:diamond</code></td><td>Advancement with icon</td></tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </article>
+
+                        <!-- 13. Test Links -->
+                        <article class="docs-block" id="testlinks">
+                            <h2 class="docs-block-title"><i class="fas fa-flask"></i> Ready-Made Test Links</h2>
+                            <p class="docs-block-desc">For trying it out directly – every link opens in a new tab.</p>
+
+                            <div class="testlink-group">
+                                <h3 class="docs-sub-title">Items</h3>
+                                <div class="testlink-grid">
+                                    <a class="testlink" href="https://api.mc-craft.com/items/en" target="_blank" rel="noopener">/items/en</a>
+                                    <a class="testlink" href="https://api.mc-craft.com/items/en/combat" target="_blank" rel="noopener">/items/en/combat</a>
+                                    <a class="testlink" href="https://api.mc-craft.com/items/en?q=diamond" target="_blank" rel="noopener">/items/en?q=diamond</a>
+                                    <a class="testlink" href="https://api.mc-craft.com/item/en/diamond" target="_blank" rel="noopener">/item/en/diamond</a>
+                                </div>
+                            </div>
+
+                            <div class="testlink-group">
+                                <h3 class="docs-sub-title">Mobs</h3>
+                                <div class="testlink-grid">
+                                    <a class="testlink" href="https://api.mc-craft.com/mobs/en" target="_blank" rel="noopener">/mobs/en</a>
+                                    <a class="testlink" href="https://api.mc-craft.com/mobs/en/hostile" target="_blank" rel="noopener">/mobs/en/hostile</a>
+                                    <a class="testlink" href="https://api.mc-craft.com/mobs/en?q=zombie" target="_blank" rel="noopener">/mobs/en?q=zombie</a>
+                                    <a class="testlink" href="https://api.mc-craft.com/mob/en/zombie" target="_blank" rel="noopener">/mob/en/zombie</a>
+                                </div>
+                            </div>
+
+                            <div class="testlink-group">
+                                <h3 class="docs-sub-title">Capes, Heads &amp; Skins</h3>
+                                <div class="testlink-grid">
+                                    <a class="testlink" href="https://api.mc-craft.com/capes?lang=en" target="_blank" rel="noopener">/capes?lang=en</a>
+                                    <a class="testlink" href="https://api.mc-craft.com/capes/migrator-cape?lang=en" target="_blank" rel="noopener">/capes/migrator-cape?lang=en</a>
+                                    <a class="testlink" href="https://api.mc-craft.com/heads?q=zombie" target="_blank" rel="noopener">/heads?q=zombie</a>
+                                    <a class="testlink" href="https://api.mc-craft.com/skins?q=steampunk&amp;lang=en" target="_blank" rel="noopener">/skins?q=steampunk&amp;lang=en</a>
+                                </div>
+                            </div>
+
+                            <div class="testlink-group">
+                                <h3 class="docs-sub-title">Player</h3>
+                                <div class="testlink-grid">
+                                    <a class="testlink" href="https://api.mc-craft.com/player/Notch" target="_blank" rel="noopener">/player/Notch</a>
+                                    <a class="testlink" href="https://api.mc-craft.com/player/Notch/skin" target="_blank" rel="noopener">/player/Notch/skin</a>
+                                </div>
+                            </div>
+
+                            <div class="testlink-group">
+                                <h3 class="docs-sub-title">QR Code &amp; Advancement</h3>
+                                <div class="testlink-grid">
+                                    <a class="testlink" href="https://api.mc-craft.com/qr?text=MC-Craft&amp;design=normal&amp;size=768&amp;ec=H" target="_blank" rel="noopener">/qr … design=normal</a>
+                                    <a class="testlink" href="https://api.mc-craft.com/qr?text=MC-Craft&amp;design=frame&amp;icon=mob:zombie&amp;ec=H" target="_blank" rel="noopener">/qr … icon=mob:zombie</a>
+                                    <a class="testlink" href="https://api.mc-craft.com/qr?text=MC-Craft&amp;design=frame&amp;icon=item:diamond&amp;ec=H" target="_blank" rel="noopener">/qr … icon=item:diamond</a>
+                                    <a class="testlink" href="https://api.mc-craft.com/advancement?line1=Advancement%20Made!&amp;line2=Diamonds!&amp;icon=item:diamond" target="_blank" rel="noopener">/advancement … Diamonds!</a>
+                                    <a class="testlink" href="https://api.mc-craft.com/advancement?line1=Monster%20Hunter&amp;line2=Zombie&amp;icon=mob:zombie" target="_blank" rel="noopener">/advancement … Monster Hunter</a>
+                                </div>
+                            </div>
+                        </article>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta-section" id="cta">
+            <div class="container">
+                <div class="cta-content">
+                    <h2 class="cta-title">Questions about the API?</h2>
+                    <p class="cta-description">
+                        Join our Discord – we're happy to help with integrating it into your bot or website.
+                    </p>
+                    <div class="cta-buttons">
+                        <a href="https://discord.gg/eVVpQD75w4" class="btn btn-primary">
+                            <i class="fab fa-discord"></i> Discord Community
+                        </a>
+                        <a href="/blog/en/minecraft-api-status.html" class="btn btn-outline">
+                            <i class="fas fa-heart-pulse"></i> Check API Status
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+        <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-grid">
+                    <!-- Column 1 -->
+                    <div class="footer-col">
+                        <a href="/en/index.html" class="footer-logo">
+                            <div class="logo-icon"></div>
+                            <span class="logo-text">MC-Craft</span>
+                        </a>
+                        <p class="footer-description">Free Minecraft tools for the community. Built by players, for players.</p>
+                        <div class="social-links">
+                           <a href="https://github.com/Blexilein" class="social-link" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                            <a href="https://discord.gg/eVVpQD75w4" class="social-link"><i class="fab fa-discord"></i></a>
+                            <a href="https://x.com/Blexi_1" class="social-link" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        </div>
+                    </div>
+                    <!-- Column 2 -->
+                    <div class="footer-col">
+                        <h4 class="footer-title">Tools</h4>
+                        <ul class="footer-links">
+                            <li><a href="/blog/en/text-converter.html">Text Converter</a></li>
+                            <li><a href="/blog/en/color-text.html">Color Text</a></li>
+                            <li><a href="/blog/en/structure-converter.html">Structure Converter</a></li>
+                            <li><a href="/blog/en/schematic-viewer.html">Schematic Viewer</a></li>
+                            <li><a href="/blog/en/map-art-generator.html">Map Art Generator</a></li>
+                            <li><a href="/blog/en/nether-coordinate-calculator.html">Nether Coordinate Calculator</a></li>
+                            <li><a href="/blog/en/minecraft-command-generator.html">Minecraft Command Generator</a></li>
+                            <li><a href="/blog/en/items.html">Items Database</a></li>
+                            <li><a href="/blog/en/mobs.html">Mobs Database</a></li>
+                            <li><a href="/blog/en/day-night-cycle.html">Day-Night Cycle</a></li>
+                            <li><a href="/blog/en/beacon-color-mixer.html">Beacon Color Mixer</a></li>
+                                <li><a href="/blog/en/qr-generator.html">QR Generator</a></li>
+                                <li><a href="/blog/en/advancement-generator.html">Advancement Generator</a></li>
+                                <li><a href="/blog/en/sign-generator.html">Sign Generator</a></li>
+                                <li><a href="/blog/en/crafting-recipes.html">Crafting Recipes</a></li>
+                                <li><a href="/blog/en/armor-trim-generator.html">Armor Trim Generator</a></li>
+                                <li><a href="/blog/en/firework-generator.html">Firework Generator</a></li>
+                        </ul>
+                    </div>
+                    <!-- Column 3 -->
+                    <div class="footer-col">
+                        <h4 class="footer-title">More Tools</h4>
+                        <ul class="footer-links">
+                            <li><a href="/blog/en/server-status.html">Server Status</a></li>
+                                <li><a href="/blog/en/minecraft-api-status.html">Minecraft API Status</a></li>
+                                <li><a href="/blog/en/api-documentation.html">API Documentation</a></li>
+                            <li><a href="/blog/en/skin-lookup.html">Skin Lookup</a></li>
+                            <li><a href="/blog/en/skin-editor.html">Skin Editor</a></li>
+                            <li><a href="/blog/en/skin-poser.html">Skin Poser</a></li>
+                            <li><a href="/blog/en/chibi-skin-maker.html">Chibi Skin Maker</a></li>
+                            <li><a href="/blog/en/minecraft-skins.html">Skin Library</a></li>
+                            <li><a href="/blog/en/minecraft-capes.html">Cape Gallery</a></li>
+                            <li><a href="/blog/en/minecraft-heads.html">Heads Database</a></li>
+                            <li><a href="/blog/en/head-texture-generator.html">Head Texture Generator</a></li>
+                            <li><a href="/blog/en/minecraft-versions.html">Minecraft Versions</a></li>
+                            <li><a href="/blog/en/end_poem.html">End Poem</a></li>
+                        </ul>
+                    </div>
+                    <!-- Column 4 -->
+                    <div class="footer-col">
+                        <h4 class="footer-title">Legal</h4>
+                        <ul class="footer-links">
+                            <li><a href="/blog/en/imprint.html">Imprint</a></li>
+                            <li><a href="/blog/en/privacy-policy.html">Privacy Policy</a></li>
+                            <li><a href="/blog/en/terms-of-use.html">Terms of Use</a></li>
+                            <li><a href="/blog/en/copyright.html">Copyright</a></li>
+                        </ul>
+                    </div>
+                    <!-- Column 5 -->
+                    <div class="footer-col">
+                        <h4 class="footer-title">About Us</h4>
+                        <ul class="footer-links">
+                            <li><a href="/blog/en/history.html">MC-Craft History</a></li>
+                            <li><a href="/blog/en/team.html">Our Team</a></li>
+                            <li><a href="/blog/en/about.html">About Us</a></li>
+                        </ul>
+                    </div>
+                    <!-- Column 6 -->
+                    <div class="footer-col">
+                        <h4 class="footer-title">Support</h4>
+                        <ul class="footer-links">
+                            <li><a href="/blog/en/faq.html">FAQ &amp; Help</a></li>
+                            <li><a href="/blog/en/bug-report.html">Report a Bug</a></li>
+                            <li><a href="/blog/en/support.html">Support Contact</a></li>
+                            <li><a href="/blog/en/e-mails.html">E-mails</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <div class="copyright">
+                        <p>&copy; <span id="currentYear">2026</span> MC-Craft. <span>All rights reserved.</span></p>
+                        <p class="disclaimer">Minecraft is a trademark of Mojang Studios. This site is not officially affiliated with Mojang or Microsoft.</p>
+                    </div>
+                    <div class="footer-meta">
+                        <span class="version">Version 1.2.0</span>
+                        <a href="/blog/en/changelog.html" class="changelog active">Changelog</a>
+                        <a href="/blog/en/api-documentation.html" class="api-docs" aria-current="page"><i class="fas fa-book-open" aria-hidden="true"></i> API Docs</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+
+    <button class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Notification Toast -->
+    <div class="toast-container" id="toastContainer"></div>
+
+    <!-- JavaScript -->
+    <script src="/assets/JS/modules/mc-preferences.js?v=20260917b"></script>
+    <script src="/assets/JS/main.js?v=20260917a"></script>
+    <script src="/assets/JS/modules/en/api-documentation.js?v=20260910v121c"></script>
+</body>
+</html>
