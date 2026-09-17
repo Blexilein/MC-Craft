@@ -2,8 +2,10 @@
 
 ![Version](https://img.shields.io/badge/version-1.2.0-brightgreen)
 ![License](https://img.shields.io/badge/license-All%20Rights%20Reserved-red)
-![Made with](https://img.shields.io/badge/made%20with-HTML%2FCSS%2FJS)
-
+![Made with](https://img.shields.io/badge/made%20with-orange)
+![HTML](https://img.shields.io/badge/HTML-E34F26)
+![CSS](https://img.shields.io/badge/CSS-1572B6)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E)
 ## 🌐 Links
 
 [![Discord](https://img.shields.io/badge/Discord-%237289DA.svg?logo=discord&logoColor=white)](https://discord.gg/eVVpQD75w4)
